@@ -1,0 +1,12 @@
+h1, h2 {
+	font-family: var(--heading-font);
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+input, textarea, button {
+	font: inherit;
+}
