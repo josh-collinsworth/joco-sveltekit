@@ -5,7 +5,7 @@
 		<ul>
 			{#each posts as post}
 				<li>
-					<a href={'/blog/' + post.slug}>{post.slug}</a>
+					<a href={'/blog/' + post.slug}>{post.title}</a>
 				</li>
 			{/each}
 		</ul>

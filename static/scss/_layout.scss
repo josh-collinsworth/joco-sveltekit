@@ -1,3 +1,21 @@
+body {
+	margin: 0 var(--margin);
+}
+
 main {
-	min-height: calc(100vh - 200px);
+	min-height: calc(100vh);
+	max-width: 768px;
+	margin: 0 auto;
+	padding: var(--margin);
+}
+
+header,
+footer {
+	padding: 1rem;
+	background-color: var(--darkBlue);
+	color: var(--paper);
+
+	a {
+		color: pink; // NOT WORKING!?!?
+	}
 }
