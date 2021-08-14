@@ -1,12 +1,188 @@
-h1, h2 {
-	font-family: var(--heading-font);
-	font-weight: normal;
+html {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  
+  @media (min-width: 760px){
+    font-size: 1.25em;
+  }
+  
+  @media (min-width: 1600px){
+    font-size: 1.375em;
+  }
+}
+
+ul,
+ol {
+  margin: 2rem 0;
+  
+  li {
+    margin-bottom: .5rem;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  
+  & + h1,
+  & + h2 {
+    margin-top: .25em;
+  }
+}
+
+p,
+ul,
+ol {
+  
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+  }
+  
+  img {
+    margin: 2em 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  line-height: 1.1;
+  position: relative;
+  margin: 4rem 0 1rem 0;
+  padding: 0 0 .5rem;
+  color: var(--header-color);
+  
+  a {
+    text-decoration: none;
+  }
 }
 
 h1 {
-	font-size: 3rem;
+  font-size: 2.6rem;
+  border-bottom: 1px solid;
+  margin-top: 0;
+  
+  @media(min-width: 768px) {
+    font-size: 3.4rem;
+  }
 }
 
-input, textarea, button {
-	font: inherit;
+h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid;
+  display: inline-block;
+  margin-right: auto;
+  
+  @media(min-width: 768px) {
+    font-size: 2.6rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 0;
+  
+  
+  & + ul {
+    margin-top: 0;
+  }
+}
+
+h4 {
+  font-family: inherit;
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+input,
+textarea,
+a,
+button,
+ul,
+li,
+figcaption {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+blockquote,
+figcaption,
+.fancy {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.fancy + h1 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+figure  {
+  margin: 2em;
+}
+
+figcaption {
+  font-size: .8rem;
+  text-align: center;
+  margin: .5rem 0 3rem;
+}
+
+pre, code {
+  font-family: 'MonoLisa', 'Courier', monospace;
+  font-style: normal;
+  font-weight: normal;
+}
+
+code {
+  font-size: .8em;
+  font-weight: bold;
+  background: rgba(123, 167, 188, 0.2);
+  padding: 0.3em 0.4em 0.2em;
+  border-radius: 2px;
+  line-height: 1!important;
+}
+
+.content > p:first-of-type::first-letter,
+.content > hr + p:first-letter {
+  font-size: 3.4em;
+  font-family: var(--heading-font);
+  float: left;
+  line-height: 0.7em;
+  margin: 0.4rem .4rem 0 0;
+  color: inherit;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.highlight {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  margin: 2rem 0;
+  font-weight: normal;
+  font-style: italic;
+  
+  @media(min-width: $narrow) {
+    font-weight: bold;
+    font-style: normal;
+  }
 }
