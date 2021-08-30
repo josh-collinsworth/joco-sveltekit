@@ -1,9 +1,9 @@
 <script lang="typescript">
-	export let codeLang: string;
+	export let lang: string;
 </script>
 
-<pre class="language-{codeLang}">
-	<code class="language-{codeLang}">
+<pre class="language-{lang}">
+	<code class="language-{lang}">
 		<slot />
 	</code>
 </pre>

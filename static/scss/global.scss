@@ -1,6 +1,7 @@
 @import './_fonts.scss';
 @import './_typography.scss';
 @import './_layout.scss';
+@import './_prism.scss';
 
 :root {
 	--body-font: 'Averta Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -49,14 +50,14 @@
   }
 
 
-	@media(prefers-color-scheme: dark) {
-    --paper: #101820;
-    --ink: #ffffff;
-    --header-color: var(--white);
-    --accent-color: var(--lightBlue);
-    --link-color: var(--lightBlue);
-    --highlight-color: var(--darkerGray);
-  }
+	// @media(prefers-color-scheme: dark) {
+  //   --paper: #101820;
+  //   --ink: #ffffff;
+  //   --header-color: var(--white);
+  //   --accent-color: var(--lightBlue);
+  //   --link-color: var(--lightBlue);
+  //   --highlight-color: var(--darkerGray);
+  // }
 
 	font-size: 18px;
 }

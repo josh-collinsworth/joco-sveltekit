@@ -11,12 +11,19 @@
 
 	<footer>
 		&copy; 2021 Josh Collinsworth
+
 	</footer>
+
 </template>
 
 
 <script>
-	// import '$lib/scss/global.scss'
+	import { onMount } from 'svelte'
+	import prism from '$lib/assets/js/prism.js'
+
+	onMount(() => {
+		prism.init()
+	})
 </script>
 
 <style>

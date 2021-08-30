@@ -111,7 +111,7 @@ Call this function just like the one above, e.g., `getDuplicates(items, 'id')`, 
 
 <Code lang="javascript">{
 `getDuplicates(items, 'id')
-
+ 
 // [42, 42]`
 }</Code>
 

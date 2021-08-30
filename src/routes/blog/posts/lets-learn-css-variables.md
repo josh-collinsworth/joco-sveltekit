@@ -28,11 +28,11 @@ To demonstrate what CSS variables are good for, let's take a common example: you
 `h1 {
     color: #ffd100;
 }
-<br/><br/>
+ 
 button {
     background-color: #ffd100;
 }
-<br/><br/>
+ 
 input {
     border: 2px solid #ffd100;
 }`
@@ -57,15 +57,15 @@ But instead of talking about it, let me show you how you might use it:
 `:root {
     --brand-yellow: #ffd100;
 }
-<br/><br/>
+ 
 h1 {
     color: var(--brand-yellow);
 }
-<br/><br/>
+ 
 button {
     background-color: var(--brand-yellow);
 }
-<br/><br/>
+ 
 input:focus {
     border: 2px solid var(--brand-yellow);
 }`
@@ -103,11 +103,11 @@ If you have a particular unit of measurement you're using over and over again—
 `:root {
     --unit: 16px;
 }
-<br/><br/>
+ 
 header {
     padding: var(--unit);
 }
-<br/><br/>
+ 
 h1 {
     margin-bottom: var(--unit);
 }`
@@ -127,12 +127,12 @@ Once more, let's have a look at the whole thing put all together in a new exampl
 `:root {
     --base-size: 18px;
 }
-<br/><br/>
+ 
 p {
     font-size: var(--base-size);
     margin-bottom: var(--base-size);
 }
-<br/><br/>
+ 
 header {
     padding: var(--base-size);
 }`
@@ -164,7 +164,7 @@ Feast your eyes on this example CSS:
 `:root {
   --base-unit: 16px;
 }
-<br/><br/>
+ 
 .container {
   font-size: calc( var(--base-unit) * 1.2);
   padding: calc( var(--base-unit) * 1.5);   
@@ -183,7 +183,7 @@ Another example I really like: resizing CSS grid columns individually. Ordinaril
   display: grid;
   grid-template-columns: var(--left-column), 32rem, 1fr;
 }
-<br/><br/>
+ 
 /* Make the left column wider at certain breakpoints,
    without touching the rest of the grid. /*
 @media (min-width: 768px) {
@@ -191,7 +191,7 @@ Another example I really like: resizing CSS grid columns individually. Ordinaril
     --left-column: 2rem;
   }
 }
-<br/><br/>
+ 
 @media (min-width: 1200px) {
   .grid {
     --left-column: 4rem;
@@ -209,13 +209,13 @@ Let's keep using the example above; 16px might be a suitable unit of measurement
 `:root {
   --base-unit: 12px;
 }
-<br/><br/>
+ 
 @media (min-width: 600px){
   :root {
     --base-unit: 16px;
   }
 }
-<br/><br/>
+ 
 @media (min-width: 900px) {
   :root {
     --base-unit: 22px;
