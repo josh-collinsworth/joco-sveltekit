@@ -1,4 +1,4 @@
-html {
+:root {
   font-size: 1.125em;
   line-height: 1.5em;
   
@@ -17,6 +17,7 @@ ol {
   
   li {
     margin-bottom: .5rem;
+    outline: 2px dotted orange;
   }
 }
 

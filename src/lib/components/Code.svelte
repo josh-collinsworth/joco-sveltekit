@@ -1,5 +1,5 @@
 <script lang="typescript">
-export let codeLang: string;
+	export let codeLang: string;
 </script>
 
 <pre class="language-{codeLang}">

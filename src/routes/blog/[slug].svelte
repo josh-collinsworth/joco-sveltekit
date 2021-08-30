@@ -1,0 +1,24 @@
+<script context=module>
+  export async function load({page}) {
+    const Post = await import(`./posts/${page.params.slug}.md`)
+
+    return {
+      props: {
+        Post: Post.default,
+        meta: Post.metadata
+      }
+    }
+  }
+</script>
+
+<script>
+  export let Post, meta
+</script>
+
+<main>
+  <img src="/src/lib/assets/images/post_images/{meta.coverImage}" alt="" />
+
+  <h1>{ meta.title }</h1>
+  
+  <Post />
+</main>
