@@ -9,10 +9,10 @@ coverImage: "wordpress-bg-medblue.png"
 excerpt: When you’re just starting out with WordPress, it’s easy to think that you can just open up the style.css file included with your theme and begin making alterations. And that will work—at least for a while—but it won’t be a good idea…
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
-import Code from '$lib/components/Code.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
+  import Code from '$lib/components/Code.svelte'
 </script>
 
 One lesson a lot of WordPress novices learn the hard way, just like I did, is that if you want to customize anything about your theme itself—whether that's editing the CSS styles, adding functionality like a custom post type, changing the header code or creating a custom page template—you _need_ to be using a WordPress child theme.

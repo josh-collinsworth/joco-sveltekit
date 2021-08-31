@@ -11,9 +11,9 @@ coverImage: "social-share-image.png"
 excerpt: "The story of building Quina, a word game Progressive Web App built with Nuxt, and launched on the Google Play Store."
 ---
 <script>
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
-import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
 </script>
 
 <SideNote>

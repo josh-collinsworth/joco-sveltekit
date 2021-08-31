@@ -11,9 +11,9 @@ coverImage: "Untitled.png"
 excerpt: Enjoy all the convenience of easy local WordPress development with Local, plus build tools with CodeKit, without any of the tricky command line setup.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 [Local](https://localwp.com/) (formerly known as Local by Flywheel) is the go-to tool for developing WordPress websites—where else?—locally. It's fast (especially the new "[lightning](https://localwp.com/community/t/local-5-2-3/16870)" release), incredibly easy to use, cross-platform, and completely free.

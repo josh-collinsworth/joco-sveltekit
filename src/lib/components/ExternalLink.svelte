@@ -1,5 +1,6 @@
-<script>
-export let to, openInNewTab
+<script lang="ts">
+export let to: string
+export let openInNewTab: string = 'false'
   
 $: sanitizedTo = to.split('//').pop()
 $: target = openInNewTab == 'true' ? '_blank' : 'false'

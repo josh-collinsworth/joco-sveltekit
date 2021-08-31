@@ -9,9 +9,9 @@ coverImage: "money.png"
 excerpt: Any executive or business owner will say their company values integrity, and virtually every company claims that they reward and value their employees exhibiting their brand values. But is that really accurate?
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 [](/src/lib/assets/images/post_images/money.png)Working at a branding agency, you frequently find yourself in preliminary meetings where people describe their organization to you. “What makes you different?” is the question at the heart of branding and marketing. And whether the organization in question is a nonprofit, a Fortune 500 company or a local startup, the people at the head of it always have very specific ideas about what makes their particular outfit different from any other.

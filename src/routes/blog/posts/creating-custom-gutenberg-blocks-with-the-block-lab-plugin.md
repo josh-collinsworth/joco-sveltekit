@@ -11,10 +11,10 @@ coverImage: "block-lab-banner.png"
 excerpt: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0. This post explains how to use it, even if you only know basic HTML.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
-import Code from '$lib/components/Code.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
+  import Code from '$lib/components/Code.svelte'
 </script>
 
 I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in my post on [going headless with Gridsome](https://api.joshcollinsworth.com/a-new-headless-site-with-gridsome/), but I find it to be such a handy plugin that I thought I'd write just a bit more in depth on what it does and how to use it, as well as how I've adapted it specifically to my workflow in writing content for a headless WordPress site.

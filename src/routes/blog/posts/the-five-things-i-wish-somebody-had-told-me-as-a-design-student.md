@@ -10,9 +10,9 @@ coverImage: "what-i-wish.png"
 excerpt: Your worst instructor as a design student will lay out clear goals and expectations which will not change; this is not a given with clients.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 I recently had the privilege of attending [Meet the Pros 2016](http://www.meetthepros.org/2016/) and addressing multiple small design student groups in roundtable discussions focused on the question: what do you wish you would have known about being a professional while you were still a design student?
@@ -21,7 +21,7 @@ I was at Meet the Pros myself two years ago, and it was a seminal experience in 
 
 Here's what I answered, and what I told the design students I spoke to last Tuesday. It was fun to think about and write for me; hopefully it's helpful for you in some way as well.
 
-### Being a Great Person is Just as Important as Having a Great Portfolio
+### Being a Great Person is Just as important as Having a Great Portfolio
 
 I've written about this topic before, but I feel it bears repeating: we're reminded constantly as design students that the goal of everything we're doing is to come out of our program with an amazing portfolio. That portfolio, of course, will (hopefully) get us a job. And we have the message drilled into our heads on an almost daily basis: _a bad portfolio can cost you a job that you might have otherwise gotten_.
 

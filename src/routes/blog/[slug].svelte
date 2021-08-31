@@ -21,4 +21,8 @@
   <h1>{ meta.title }</h1>
   
   <Post />
+
+  <hr>
+
+  <a href="/blog">Back to blog posts</a>
 </main>

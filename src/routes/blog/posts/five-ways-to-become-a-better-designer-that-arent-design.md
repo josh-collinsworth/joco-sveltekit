@@ -9,9 +9,9 @@ coverImage: "toa-heftiba-195458-1-1.jpg"
 excerpt: There’s vast world of design learning and opportunity right in front of us constantly. All we need to do is take the time to notice it and learn from it.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 Though this post is geared toward traditional graphic designers, when I say "designer," I really mean virtually any kind of creative—particularly those who do commercial design of some kind. Whether you're a web designer, UI/UX designer, interior designer, copy writer, or any other kind of creative-for-hire: this is my list of recommendations for you.
@@ -20,7 +20,7 @@ Though this post is geared toward traditional graphic designers, when I say "des
 
 ## 1\. Embrace Public Speaking
 
-If you're doing any kind of creative work for hire, it's not going to be too long before you need to do a presentation of some kind. And in many cases,the importance of effectively selling your work rivals the importance of the work itself.
+If you're doing any kind of creative work for hire, it's not going to be too long before you need to do a presentation of some kind. And in many cases,the import ance of effectively selling your work rivals the import ance of the work itself.
 
 If you're an introvert and this sounds like your nightmare, don't panic. This doesn't need to be a TED talk. I'm not talking about a stage or a room full of people. You might not even need a screen or slides or a microphone.
 

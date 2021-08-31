@@ -9,9 +9,9 @@ coverImage: "ColorPost-4.jpg"
 excerpt: One of the most difficult things for me to learn in my transition from the classroom to a professional branding agency was how to properly handle color output. So I decided to write this post in the hope of saving you some from some of the pitfalls that I failed to avoid.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 One of the most difficult things for me to learn in my transition from the classroom to a [professional branding agency](http://dday.com) was how to properly handle color output. Sure, I learned in my classes how to open the swatch palette and find the Pantone swatch I wanted, but how to properly utilize that swatch and ensure its consistency across all print and web mediums—this was something new to me.

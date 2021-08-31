@@ -8,9 +8,9 @@ $widest: 1960px;
   --white: #ffffff;
   --black: #101820;
 
-  --body-font: "Averta Std", -apple-system, system-ui, BlinkMacSystemFont,
+  --body-font: "Averta-Std", -apple-system, system-ui, BlinkMacSystemFont,
   "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --heading-font: "Pensum Display", Georgia, serif;
+  --heading-font: "Pensum-Display", Georgia, serif;
 
   --yellow: #ffd100;
   --orange: #ff6a13;
@@ -51,12 +51,12 @@ $widest: 1960px;
     --margin: 12rem;
   }
 
-  @media(prefers-color-scheme: dark) {
-    --paper: #101820;
-    --ink: #ffffff;
-    --header-color: var(--white);
-    --accent-color: var(--lightBlue);
-    --link-color: var(--lightBlue);
-    --highlight-color: var(--darkerGray);
-  }
+  // @media(prefers-color-scheme: dark) {
+  //   --paper: #101820;
+  //   --ink: #ffffff;
+  //   --header-color: var(--white);
+  //   --accent-color: var(--lightBlue);
+  //   --link-color: var(--lightBlue);
+  //   --highlight-color: var(--darkerGray);
+  // }
 }

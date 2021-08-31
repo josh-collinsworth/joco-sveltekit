@@ -10,9 +10,9 @@ coverImage: "Screen-Shot-2015-09-03-at-9_14_54-AM.png"
 excerpt: "No matter how simple the end product, design is hard work. To come up with something that looks good, something people like, is at best tangential to the main point. The question is: does it succeed at meeting the project goals? And you don’t know how to answer that question."
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 <SideNote>I once had a design student read this post, and mistakenly think I was advising them against redesigning logos in an academic context. Far from it; redesign can be an excellent creative exercise for students. This post is about the rather toxic habit some in the design community have of spending a day (or an hour) tweaking a logo or brand and calling it "better."</SideNote>

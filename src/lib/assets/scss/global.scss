@@ -8,9 +8,9 @@
 @import 'forms';
 
 :root {
-	--body-font: 'Averta Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+	--body-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
-	--heading-font: 'Pensum Display', Georgia, serif;
+	--heading-font: 'Pensum-Display', Georgia, serif;
 
 	--white: #fff;
 	--black: #101820;
@@ -66,9 +66,39 @@
 	font-size: 18px;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	color: var(--ink);
 	margin: 0;
 	min-height: 100vh;
 	font-family: var(--body-font);
+	scroll-behavior: smooth;
+}
+
+// This is all experimental goofing around, but might be cool??
+@keyframes fade-in-up {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+main * {
+	animation: fade-in-up .8s cubic-bezier(.17,.84,.44,1) forwards;
+	opacity: 0;
+}
+
+@for $i from 6 through 25 {
+	main *:nth-child(#{$i - 5}) {
+		animation-delay: $i * 0.05 + s;
+	}
 }

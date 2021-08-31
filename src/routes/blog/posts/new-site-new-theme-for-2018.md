@@ -11,9 +11,9 @@ coverImage: "2018-logo.jpg"
 excerpt: Building a WordPress theme (and a new brand) from scratch.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 <SideNote>This site is no longer on WordPress, so the theme described here can't actually be seen anywhere, and the features described mostly aren't on this website any longer.</SideNote>

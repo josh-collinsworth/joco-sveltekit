@@ -1,16 +1,20 @@
 <template>
-  <div class="cell-grid" aria-hidden="true">
-    {#each Array(count) as cell, i}
-			<GridCell color={randomColor()} />
-		{/each}
-	</div>
+  {#key refresh}
+    <div class="cell-grid" class:inverted aria-hidden="true">
+      {#each Array(count) as cell, i}
+        <GridCell color={randomColor()} />
+      {/each}
+    </div>
+  {/key}
 </template>
 
 
-<script lang="typescript">
+<script lang="ts">
   import GridCell from './GridCell.svelte'
   import { onMount } from 'svelte'
 
+  export let refresh: string = ''
+  export let inverted: boolean = false
   export const density: number = 42
 
   let count: number = 0
@@ -56,9 +60,5 @@
 	grid-auto-flow: dense;
 	position: relative;
 	z-index: 2;
-
-	.cell {
-		padding: 50% 0;
-	}
 }
 </style>

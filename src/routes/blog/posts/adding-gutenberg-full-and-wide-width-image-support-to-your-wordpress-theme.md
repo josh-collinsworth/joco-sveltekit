@@ -10,10 +10,10 @@ coverImage: "gutenberg-wide-illustration.png"
 excerpt: Gutenberg brings with it the ability to set image blocks as full-width or wide-width. This article talks about how to enable support for that feature in your theme, and one way to write the CSS that makes it work.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
-import Code from '$lib/components/Code.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
+  import Code from '$lib/components/Code.svelte'
 </script>
 
 Recently, I've been using (and loving) the new [Gutenberg editor](https://wordpress.org/gutenberg/) in WordPress 5.0+. It's a huge step forward in both what developers can offer, and what users can expect out of their content creation experience.

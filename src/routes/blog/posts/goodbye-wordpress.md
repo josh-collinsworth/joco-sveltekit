@@ -10,11 +10,11 @@ coverImage: "gw.png"
 excerpt: WordPress was potentially the most impactful and empowering technology I've yet encountered. It transformed my career path and enabled me to do anything I wanted at every point in my journey. So why leave it now?
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
-import Code from '$lib/components/Code.svelte'
-import xa from '$lib/components/ExternalLink.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
+  import Code from '$lib/components/Code.svelte'
+  import Xa from '$lib/components/ExternalLink.svelte'
 </script>
 
 <SideNote>
@@ -94,7 +94,7 @@ As I write this, WP Engine and, no doubt, many other hosts are working on the he
 
 ## So what's the alternative?
 
-When this site was headless WordPress, the front-end was already built in <xa to="gridsome.org">Gridsome</xa>, a Vue-based static site generator that could be fairly described as Vue's equivalent of [Gatsby](https://www.gatsbyjs.com/).
+When this site was headless WordPress, the front-end was already built in <Xa to="gridsome.org">Gridsome</Xa>, a Vue-based static site generator that could be fairly described as Vue's equivalent of [Gatsby](https://www.gatsbyjs.com/).
 
 <SideNote>A <b>static site generator</b> (or SSG) is a tool that takes input of some kind—maybe Markdown files, maybe JSON from an API, or maybe even a combination of different data sources—and turn it all into a traditional, static HTML website. This allows the site to be hosted cheaply and easily on a CDN-backed host for optimum performance.</SideNote>
 
@@ -108,7 +108,7 @@ You might ask: **so if you're cutting out WordPress, where does the content come
 
 Gridsome, along with many other static site generators, has the ability to generate content from Markdown files. Markdown is a very nice way to write, and while it certainly misses some of the conveniences of authoring posts in WordPress's block editor (AKA Gutenberg), it also comes with a lot of upside.
 
-<SideNote>If you're not familiar with Markdown: it's a simple way of authoring formatted text that's much closer to natural typing than HTML. There's a pretty neat <xa to="dillinger.io/">Markdown playground here</xa> that covers the general syntax.</SideNote>
+<SideNote>If you're not familiar with Markdown: it's a simple way of authoring formatted text that's much closer to natural typing than HTML. There's a pretty neat <Xa to="dillinger.io/">Markdown playground here</Xa> that covers the general syntax.</SideNote>
 
 The front end of this site was already using Markdown to create content with its projects; each project is a Markdown file with the project's details. Here's an example project Markdown file, just to get general the idea across on how Gridsome scrapes content from files and converts it into a content type:
 
@@ -150,7 +150,7 @@ templates: {
 }`
 }</Code>
 
-*The above config code tells Gridsome how to convert Markdown files to HTML content. Other SSGs, like <xa to="11ty.dev">Eleventy</xa> or Gatsby, work similarly.*
+*The above config code tells Gridsome how to convert Markdown files to HTML content. Other SSGs, like <Xa to="11ty.dev">Eleventy</Xa> or Gatsby, work similarly.*
 
 Finally, the template file for rendering the data collected from the Markdown files (the `single_project.vue` file seen above, simplified here just to communicate the general idea):
 

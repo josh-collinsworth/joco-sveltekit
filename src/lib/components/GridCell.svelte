@@ -1,18 +1,18 @@
 <template>
 	<div
 		class="cell"
-		style={`
-      background: ${color};
-			grid-area: span ${size} / span ${size};
-			animation-delay: ${randomDelay()};
-			transform: translateY(${randomDrop()});
-    `}
+		style="
+      background: {color};
+			grid-area: span {size} / span {size};
+			animation-delay: {randomDelay()};
+			transform: translateY({randomDrop()});
+    "
 	>
 	</div>
 </template>
 
 
-<script lang="typescript">
+<script lang="ts">
   import { onMount } from 'svelte'
   export let color: string
 
@@ -47,10 +47,16 @@
 </script>
 
 
-<style>
+<style lang="scss">
 .cell {
 	opacity: 0;
 	animation: fadeCellIn .2s ease-out forwards;
+	padding: 50% 0;
+
+  &.inverted {
+    transform: rotateX(180deg);
+    top: 1rem;
+  }
 }
 
 @keyframes fadeCellIn {

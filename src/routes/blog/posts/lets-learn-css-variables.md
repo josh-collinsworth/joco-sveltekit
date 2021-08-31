@@ -8,10 +8,10 @@ coverImage: "css-variables-1.png"
 excerpt: CSS variables (otherwise known as CSS custom properties) give previously impossible superpowers to CSS developers. This post covers what they are, how they work, and a couple of nifty ways you can implement them on your own website.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
-import Code from '$lib/components/Code.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
+  import Code from '$lib/components/Code.svelte'
 </script>
 
 The usefulness of CSS variables should be fairly apparent if you've managed any sizable stylesheet before. If you have, you probably already know how untidy it can be at large scale. In fact, that's one of the biggest knocks against CSS; it's very easy for a stylesheet to balloon, making updates difficult as you're forced to search through hundreds (or thousands) of lines of code to make changes.

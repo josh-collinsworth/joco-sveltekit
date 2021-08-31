@@ -11,10 +11,10 @@ coverImage: "wp-plus-gridsome.png"
 excerpt: A lengthy write-up diving into what headless means, its advantages and disadvantages, some of the techniques and gotchas involved, and, finally, the new design of this site specifically.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
-import Code from '$lib/components/Code.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
+  import Code from '$lib/components/Code.svelte'
 </script>
 
 <SideNote>This post is a bit outdated; this website still looks and works mostly the same, but technically it's no longer headless WordPress; just pure static Gridsome. So a few of the smaller features described here, like the search bar, aren't in place anymore.</SideNote>

@@ -12,10 +12,11 @@
 	</main>
 </template>
 
-<script context="module" lang="typescript">
+<script context="module" lang="ts">
 	export async function load({ fetch }) {
 		const res = await fetch(`/blog/posts.json`)
 		const { posts } = await res.json()
+
 
 		return {
 			props: { posts }

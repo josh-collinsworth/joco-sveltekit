@@ -3,15 +3,18 @@ body {
 }
 
 main {
-	min-height: calc(100vh);
+	min-height: 100vh;
 	max-width: 768px;
 	margin: 4rem auto;
-	padding: var(--margin);
+	padding: 0;
 }
 
 header,
 footer {
-	padding: 1rem;
+	padding: 2rem var(--margin);
+}
+
+footer {
 	background-color: var(--darkBlue);
 	color: var(--paper);
 }

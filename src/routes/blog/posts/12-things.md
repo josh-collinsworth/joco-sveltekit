@@ -13,9 +13,9 @@ coverImage: "Untitled-21.png"
 excerpt: I’m beginning to believe that becoming more connected with everyone is making me less connected with anyone.
 ---
 <script>
-import Highlight from '$lib/components/Highlight.svelte'
-import Callout from '$lib/components/Callout.svelte'
-import SideNote from '$lib/components/SideNote.svelte'
+  import Highlight from '$lib/components/Highlight.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 <SideNote>I wrote this post back in early 2015, and gave up Facebook permanently later that year. I've since deleted Instagram as well, though you can still find me on Twitter for the time being (despite the fact that some of these things are uncomfortably true there as well).</SideNote>
