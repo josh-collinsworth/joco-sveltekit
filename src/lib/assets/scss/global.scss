@@ -1,7 +1,11 @@
-@import './_fonts.scss';
-@import './_typography.scss';
-@import './_layout.scss';
-@import './_prism.scss';
+@import 'vars';
+@import 'fonts';
+@import 'typography';
+@import 'utilities';
+@import 'layout';
+@import 'nav';
+@import 'animation';
+@import 'forms';
 
 :root {
 	--body-font: 'Averta Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,

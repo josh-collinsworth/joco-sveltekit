@@ -6,6 +6,7 @@
 			<a href="/blog">Blog</a>
 		</nav>
 	</header>
+	<Grid />
 
 	<slot></slot>
 
@@ -19,6 +20,7 @@
 
 <script>
 	import { onMount } from 'svelte'
+	import Grid from '$lib/components/Grid.svelte'
 	import prism from '$lib/assets/js/prism.js'
 
 	onMount(() => {

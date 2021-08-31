@@ -55,7 +55,7 @@ But in any of those cases, it's a hassle _and_ too much to expect of content aut
 
 Ideally, authors would just be able to click a button to create a side note block and fill it in instead—and that's exactly what a custom block allows you to do! No memorization or extra configuration required. Here's how it works, with the example side note you just saw above:
 
-![The WordPress block editor's block selection screen, showing a "side note" block option](/src/lib/assets/images/post_images/block-selection.png)
+![The WordPress block editor's block selection screen, showing a “side note” block option](/src/lib/assets/images/post_images/block-selection.png)
 
 Custom blocks can be easily selected from the normal block menu…
 
@@ -73,7 +73,7 @@ The natural first step is to install the Block Lab plugin, which of course you c
 
 Either way, once it's installed and activated, you'll find a new "**Block Lab**" item in the WordPress admin sidebar. Head there, and choose "**New block**."
 
-![The "add new block" options screen in WordPress](/src/lib/assets/images/post_images/add-new-block-1024x687.png)
+![The “add new block” options screen in WordPress](/src/lib/assets/images/post_images/add-new-block-1024x687.png)
 
 
 
@@ -117,7 +117,7 @@ I'm not going to go into the other options here since they're, well, optional, b
 
 If it helps, this is how my example "Side Note" block from above is set up:
 
-![The config options for my example “Side Note” block from this site; as a textarea field type with field location set to "Editor."](/src/lib/assets/images/post_images/side-note-options-1024x694.png)
+![The config options for my example “Side Note” block from this site; as a textarea field type with field location set to “Editor.”](/src/lib/assets/images/post_images/side-note-options-1024x694.png)
 
 I don't fill in the help text since I'm the only editor on this site, but it's a good idea if your block(s) will be used by others.
 
@@ -125,7 +125,7 @@ In any case, once you're happy with the setup of your block, hit the **Publish**
 
 Helpfully, Block Lab gives you a popup detailing your next step, which is: creating a template file for your block, which you'll place inside your theme.
 
-![Instructions to place a PHP template file in the active theme, in a "blocks" directory](/src/lib/assets/images/post_images/next-step-1024x381.png)
+![Instructions to place a PHP template file in the active theme, in a “blocks” directory](/src/lib/assets/images/post_images/next-step-1024x381.png)
 
 As you can see, Block Lab helpfully lets you know what to do next once you've published your block.
 
@@ -179,7 +179,7 @@ Here's the actual CSS code I use on this site to create that Side Note component
   font-style: italic;
   border: 1px solid var(--lightBlue);
 }
-
+ 
 .side-note:before {
   content: 'Side Note';
   position: absolute;

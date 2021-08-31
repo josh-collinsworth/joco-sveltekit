@@ -11,9 +11,9 @@ coverImage: "social-share-image.png"
 excerpt: "The story of building Quina, a word game Progressive Web App built with Nuxt, and launched on the Google Play Store."
 ---
 <script>
-import Callout from '~/components/Callout.svelte'
-import SideNote from '~/components/SideNote.svelte'
-import Highlight from '~/components/Highlight.svelte'
+import Callout from '$lib/components/Callout.svelte'
+import SideNote from '$lib/components/SideNote.svelte'
+import Highlight from '$lib/components/Highlight.svelte'
 </script>
 
 <SideNote>
@@ -28,7 +28,7 @@ However, at some point, I found out that the Google Play Store allows certain we
 
 Finally, after four months, dozens of nights and weekends, hundreds of git commits, and more debugging-related curse words than I'd care to try counting, I'm thrilled to introduce my first app ever: **[Quina](https://quina.app/)**!
 
-![](/src/lib/assets/images/post_images/tutorial-1-1024x576.png)
+![A preview of Quina on mobile](/src/lib/assets/images/post_images/tutorial-1-1024x576.png)
 
 Quina is a classic word game where users attempt to guess a secret five-letter word.
 
@@ -55,7 +55,7 @@ There are two ways to install Quina:
 
 When visiting the website, you _should_ see a prompt like this one (though it will depend on your browser; if you don't see the prompt, you can [follow these directions](https://mobilesyrup.com/2020/05/24/how-install-progressive-web-app-pwa-android-ios-pc-mac/)):
 
-![](/src/lib/assets/images/post_images/image-1024x124.png)
+![Add Quina to Home Screen? Install!](/src/lib/assets/images/post_images/image-1024x124.png)
 
 You should see the "Add Quina to home screen" prompt when visiting quina.app.
 
@@ -73,17 +73,17 @@ Beyond the core word game, Quina has a number of features to hopefully keep it e
 - There's a quick-start tutorial, as well as a more in-depth explanation of the rules.
 - As you play, you can mark up your guesses to help you deduce the meaning behind the clues.
 
-![](/src/lib/assets/images/post_images/tutorial-3-1024x576.png)
+![A demonstration of guess letters either crossed out or highlighted](/src/lib/assets/images/post_images/tutorial-3-1024x576.png)
 
 - Quina tracks your **game history** and shows your **statistics** (data is saved in your device's local storage; no need to sign in or create an account, and no security risks)!
 
-![](/src/lib/assets/images/post_images/tutorial-4-1024x576.png)
+![Quina's stats screen, showing win streaks, win/loss record across game types, and other stats.](/src/lib/assets/images/post_images/tutorial-4-1024x576.png)
 
 - The game also offers **25 awards** you can unlock for specific achievements, like winning five games in a row, or playing a certain number of games without hints.
 - There's a built-in **dark mode** and the option to reduce motion, both of which detect and default to your OS preference.
 - Finally, just to give it that native feel, the game also uses (sparing) sound effects and device vibration.
 
-![](/src/lib/assets/images/post_images/02-Google-Pixel-4-Front-1024x923.png)
+![A demo of how light and dark mode look](/src/lib/assets/images/post_images/02-Google-Pixel-4-Front-1024x923.png)
 
 ## The tech behind the app
 
@@ -119,7 +119,7 @@ The game actually runs as a static site, however (albeit with a healthy dose of 
 
 <SideNote>I did have a version of Quina working with Firebase authentication and Firestore for permanent accounts and data storage, but I abandoned that when security became too difficult and I realized it was overkill for what I was trying to do.</SideNote>
 
-![](/src/lib/assets/images/post_images/01-Google-Pixel-4-Front-879x1024.jpg)
+![The Quina home screen](/src/lib/assets/images/post_images/01-Google-Pixel-4-Front-879x1024.jpg)
 
 The app is deployed on [Netlify](https://www.netlify.com/), by the way, in case you were curious. (That part was never a question; Netlify is amazing.)
 

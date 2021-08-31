@@ -217,7 +217,7 @@ Also fortunately: I like my current solution to custom blocks better anyway.
 
 One of the amazing things that WordPress does for you, for free and out of the box, is generate multiple image sizes and serve your content images with responsive source sets. This means users always load the appropriate image size for their device, which is a big benefit to both user experience and performance. If you're using Jetpack, you also get your images (optionally) loaded from WordPress.com's global CDN servers for faster load times.
 
-<Callout>Gridsome ships with a <code><g-image></code> component that handles loading appropriately sized images, <em>and</em> goes a step further with automatic lazy loading.</Callout>
+<Callout>Gridsome ships with a <code>g-image</code> component that handles loading appropriately sized images, <em>and</em> goes a step further with automatic lazy loading.</Callout>
 
 Moving away from WordPress means those benefits are gone. Fortunately, Gridsome ships with a `<g-image>` component that handles loading appropriately sized images, _and_ goes a step further with automatic lazy loading. And when you're deploying on Netlify, you have a CDN already, so that's all sorted.
 
