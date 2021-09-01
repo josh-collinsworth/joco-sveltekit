@@ -19,13 +19,13 @@ excerpt: "No matter how simple the end product, design is hard work. To come up 
 
 Earlier this week, [Google](http://google.com) unveiled their new sans-serif identity, ditching the familiar serifs for which the company has been known since its inception for a cleaner, simpler look:
 
-![Google's new logo on its iconic homescreen.](/src/lib/assets/images/post_images/Screen-Shot-2015-09-03-at-9_14_54-AM.png)
+![Google's new logo on its iconic homescreen.](/images/post_images/Screen-Shot-2015-09-03-at-9_14_54-AM.png)
 
 Among the population in general, and particularly among designers, reviews have been mixed. Some herald this as a fresh new direction, perhaps _the_ emblematic tech company boldly being unafraid to leave behind the conventions of the past to embrace the present and future. Others…well, others thought it might have been better.
 
 That's an understatement, really. Barely 48 hours had passed since the announcement when, with a cursory search of the word "Google" in [Dribbble](https://dribbble.com/), I came upon pages and pages full of graphic designers posting their ideas for a "fixed" or "better" version of Google's new logo. Here's just a small glance at everything that was out there (believe me—there were hundreds more, and again, this was less than two days after the new identity system was announced):
 
-![Designers scrambling to 'fix' Google's new logo](/src/lib/assets/images/post_images/Screen-Shot-2015-09-03-at-9.07.07-AM.png)
+![Designers scrambling to 'fix' Google's new logo](/images/post_images/Screen-Shot-2015-09-03-at-9.07.07-AM.png)
 
 To say that this behavior was limited to Dribbble would be inaccurate. The announcement was made on Tuesday, and before the day was even over there were slews of articles, some thousands of words long, popping up all across the internet, many of which filled with righteous indignation over Google's decision to go with something so supposedly unoriginal, plain, radically different, or just bad (in the opinion of the writer, of course).
 

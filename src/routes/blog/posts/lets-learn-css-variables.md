@@ -71,7 +71,7 @@ input:focus {
 }`
 }</Code>
 
-![Showing CSS properties changing as CSS variables are altered](/src/lib/assets/images/post_images/changing-css-var-color.gif)
+![Showing CSS properties changing as CSS variables are altered](/images/post_images/changing-css-var-color.gif)
 
 **Whoa!** That might look like a lot of new syntax, depending on your current familiarity with CSS. And some of it _is_ brand new, so let's break it down piece by piece, starting at the top.
 
@@ -223,7 +223,7 @@ Let's keep using the example above; 16px might be a suitable unit of measurement
 }`
 }</Code>
 
-![ ](/src/lib/assets/images/post_images/css-variables-media-queries-3.gif)
+![ ](/images/post_images/css-variables-media-queries-3.gif)
 
 You can't tell me that's not cool (and _much_ easier than updating each of those values individually at every breakpoint)!
 
@@ -231,7 +231,7 @@ You can't tell me that's not cool (and _much_ easier than updating each of those
 
 As with any new feature, browser support is key. Fortunately, as of this writing, there's very little to be wary about as far as using CSS variables right away; the only major browser without support is Internet Explorer 11 (and lower):
 
-![CanIUse.com screenshot showing global support for custom CSS properties (CSS variables) at around 90%](/src/lib/assets/images/post_images/caniuse-css-vars-1-1.png)
+![CanIUse.com screenshot showing global support for custom CSS properties (CSS variables) at around 90%](/images/post_images/caniuse-css-vars-1-1.png)
 
 Global support is near 90%, with IE11 and Opera Mini (which seems to have many gaps in support) making up the vast majority of the remaining 10%.
 

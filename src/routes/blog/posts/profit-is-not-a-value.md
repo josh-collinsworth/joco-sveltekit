@@ -14,7 +14,7 @@ excerpt: Any executive or business owner will say their company values integrity
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-[](/src/lib/assets/images/post_images/money.png)Working at a branding agency, you frequently find yourself in preliminary meetings where people describe their organization to you. “What makes you different?” is the question at the heart of branding and marketing. And whether the organization in question is a nonprofit, a Fortune 500 company or a local startup, the people at the head of it always have very specific ideas about what makes their particular outfit different from any other.
+[](/images/post_images/money.png)Working at a branding agency, you frequently find yourself in preliminary meetings where people describe their organization to you. “What makes you different?” is the question at the heart of branding and marketing. And whether the organization in question is a nonprofit, a Fortune 500 company or a local startup, the people at the head of it always have very specific ideas about what makes their particular outfit different from any other.
 
 (Whether these ideas are original is another matter—"Integrity" is such a popular word in these conversations that it's immediately rejected as soon as it's spoken. Phrases like "we put service first," or "we have a commitment to excellence" are so similarly generic as to be rendered meaningless by their ubiquity. What organization _wouldn't_ say those things?)
 

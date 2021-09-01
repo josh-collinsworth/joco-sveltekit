@@ -54,7 +54,7 @@ So you probably can't print actual Pantone _inks_ on your own, but there's good 
 
 <Highlight>Each Pantone swatch in the book includes CMYK, RGB and HTML values to reproduce that swatch color as accurately as possible in standard print and onscreen applications.</Highlight>
 
-![Pantone swatches include recommended CMYK, RGB and HTML values](/src/lib/assets/images/post_images/ColorPost-2.jpg)
+![Pantone swatches include recommended CMYK, RGB and HTML values](/images/post_images/ColorPost-2.jpg)
 
 Always be sure to use the CMYK, RGB and/or HTML values recommended here on the Pantone swatch. Avoid converting by any other method.
 
@@ -66,7 +66,7 @@ Why must you do this? Because spot color swatches in a design program aren't mea
 
 In other words, because the input doesn't match the output.
 
-![InDesign's swatch panel](/src/lib/assets/images/post_images/Swatch-Panel.jpg)
+![InDesign's swatch panel](/images/post_images/Swatch-Panel.jpg)
 
 As shown in the image above, standard color swatches (such as the "Dark Red" swatch) are indicated in the InDesign swatch panel by a checkered box icon to the right of the swatch name. Spot color swatches (like Pantone swatches) are indicated with a small dot icon in the same position. If you are using any spot color swatches in your document and you are not going to be printing those with true spot color inks, you _must_ convert those spot color swatches and all instances of those colors in your document to standard CMYK values for best results.
 
@@ -80,7 +80,7 @@ This is where problems arise, as whatever method seems right to the computer wil
 
 Put another, less technical way: sending a document with spot colors through a standard 4-color process print is a little like translating the same sentence into a new language over and over. The end result might look passable, but it will almost certainly be missing the finer nuances of the original source material.
 
-![The 'print' modal window in InDesign](/src/lib/assets/images/post_images/Screen-Shot-2015-04-01-at-11.59.07-AM.png)
+![The 'print' modal window in InDesign](/images/post_images/Screen-Shot-2015-04-01-at-11.59.07-AM.png)
 
 In the print popup window, select "output" on the left and see how many inks are in the ink section. If it's more than the basic four process inks, you'll want to convert your spot colors to process colors for optimal print results.
 
@@ -92,21 +92,21 @@ So we've established that we need to change our spot colors to process colors be
 
 That's what I thought, too, but I was very wrong.
 
-![The InDesign color panel, showing Pantone 132 C](/src/lib/assets/images/post_images/Screen-Shot-2015-04-01-at-12.02.15-PM.png)
+![The InDesign color panel, showing Pantone 132 C](/images/post_images/Screen-Shot-2015-04-01-at-12.02.15-PM.png)
 
 Here's the color panel with a Pantone swatch selected.
 
-![The InDesign color panel, showing the color conversion menu options](/src/lib/assets/images/post_images/Screen-Shot-2015-04-01-at-12.02.28-PM.png)
+![The InDesign color panel, showing the color conversion menu options](/images/post_images/Screen-Shot-2015-04-01-at-12.02.28-PM.png)
 
 If you open the panel menu and change the color to CMYK...
 
-![The InDesign color panel, showing the newly converted and incorrect CMYK values](/src/lib/assets/images/post_images/Screen-Shot-2015-04-01-at-12.02.37-PM.png)
+![The InDesign color panel, showing the newly converted and incorrect CMYK values](/images/post_images/Screen-Shot-2015-04-01-at-12.02.37-PM.png)
 
 ...you will not end up with the correct CMYK values for your Pantone swatch.
 
 Changing the document color mode and/or the color mode in the color panel of a design program will _NOT_ change a spot color to the appropriate CMYK, RGB or HTML value. _You must get those from the Pantone swatch book and enter them manually._ (There are easy ways to do this using the tools in the swatch panel, but I won't go into that here.)
 
-![A Pantone book swatch, detailing RGB, CMYK, and HTML values](/src/lib/assets/images/post_images/20150401_142813-300x206.jpg)
+![A Pantone book swatch, detailing RGB, CMYK, and HTML values](/images/post_images/20150401_142813-300x206.jpg)
 
 Take the example in the above image: the recommended CMYK formula for Pantone 132 C is 9/38/100/32. That's _very_ far from the values that InDesign dialed up for me in the color panel in the screenshot before that. (A telltale sign of improperly converted CMYK swatches is that they involve decimal points, e.g., the 13.04% black shown in the color panel screenshot above. No Pantone swatch's recommended CMYK value ever calls for decimals.)
 
@@ -124,7 +124,7 @@ _Uncoated_ stock, on the other hand, absorbs ink. No matter how white the actual
 
 Compare the coated and uncoated versions of the same Pantone swatch, such as Pantone 186 C and Pantone 186 U below. (Fun fact: that's official Husker red. Know your audience.) You'll notice that the uncoated swatch is a bit lighter. This is because of the darkening that occurs when printing on uncoated stock. The same Pantone spot color will look a bit different on coated and on uncoated stock.
 
-![Pantone swatches of 186 C and 186 U, showing the uncoated version is noticeably lighter than the coated version.](/src/lib/assets/images/post_images/ColorPost-1-1024x316.jpg)
+![Pantone swatches of 186 C and 186 U, showing the uncoated version is noticeably lighter than the coated version.](/images/post_images/ColorPost-1-1024x316.jpg)
 
 Uncoated swatches (such as the right swatch in the image above) tend to be slightly lighter than coated (left) to offset the natural darkening effect that uncoated paper has. Notice that the CMYK values are all lower.
 
@@ -142,7 +142,7 @@ Have a look through a Pantone swatch book and you'll notice each individual swat
 
 You'll see that these side-by-side samples of spot color and process color are not always an exact match, with the degree of discrepancy varying from swatch to swatch. This is mostly because CMYK has a limited gamut (color range) and simply cannot reproduce all colors with 100% accuracy, so this is not a foolproof system. Also, as mentioned earlier, spot colors print a solid layer of ink, while process printing creates color with halftone dots. Still, the values listed on these Pantone swatches are generally your best bet for at least getting as close as possible.
 
-![The same swatch in PMS and CMYK can come out very different due to gamut restrictions](/src/lib/assets/images/post_images/ColorPost-3-1024x611.jpg)
+![The same swatch in PMS and CMYK can come out very different due to gamut restrictions](/images/post_images/ColorPost-3-1024x611.jpg)
 
 Due to the limitations of the CMYK gamut and halftone printing, some colors will be more consistent than others when translated from Pantone.
 

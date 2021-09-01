@@ -22,7 +22,7 @@ Full disclosure: I currently work for [Flywheel](https://getflywheel.com/), the 
 
 As amazing as Local is on its own, though, some of the biggest benefits of developing locally (automatic browser refreshing, for example) aren't built in. That's where [CodeKit](https://codekitapp.com/) shines!
 
-![CodeKit (on a Vue project, and in dark mode)](/src/lib/assets/images/post_images/codekit-window.png)
+![CodeKit (on a Vue project, and in dark mode)](/images/post_images/codekit-window.png)
 
 
 ## What is CodeKit?
@@ -51,7 +51,7 @@ It's probably pretty easy to imagine the benefits of getting all that cool stuff
 
 First step: if you haven't already, start by creating a site in Local. (If you've already got one you want to use, that's fine too; just skip ahead.) The specific configuration options in Local don't matter; any Local site will do!
 
-![Creating a new site in Local](/src/lib/assets/images/post_images/local-new-site-setup.png)
+![Creating a new site in Local](/images/post_images/local-new-site-setup.png)
 
 Create a new site in Local if you don't have one, or just use one you already have.
 
@@ -59,7 +59,7 @@ Create a new site in Local if you don't have one, or just use one you already ha
 
 You _might_ see a warning about a port conflict in Local. If you do, just go ahead and click the button to fix the issue. You won't be able to use a custom domain this way, but the CodeKit connection will still work. The site URL in the browser just won't look as nice.
 
-![Port conflict warning](/src/lib/assets/images/post_images/port-conflict.png)
+![Port conflict warning](/images/post_images/port-conflict.png)
 
 If you see a port conflict, just click the button to proceed. No big deal.
 
@@ -70,7 +70,7 @@ Again, the specific setup of the site doesn't really matter. The only things to 
 1. The site is running; and
 2. You note the Site Host (in the case of my screenshot, `localhost:10008`, but yours might be a custom `.local` domain instead)
 
-![](/src/lib/assets/images/post_images/Image-2020-02-20-at-8.47.39-PM-1024x691.png)
+![](/images/post_images/Image-2020-02-20-at-8.47.39-PM-1024x691.png)
 
 ### 3\. Add Your Project to CodeKit
 
@@ -86,7 +86,7 @@ The `public` folder is your Local WordPress site's root directory. You'll want t
 
 Once you've added your project, you'll see CodeKit look something like this:
 
-![A Local CodeKit project](/src/lib/assets/images/post_images/codekit-public-folder.png)
+![A Local CodeKit project](/images/post_images/codekit-public-folder.png)
 
 
 ### 4\. Configure the CodeKit Project's Settings
@@ -97,31 +97,31 @@ Now that your project (site) has been added in CodeKit, head into Project Settin
 
 In Project Settings, head to **Browser-Refreshing** and scroll down to the External Server Options section.
 
-![CodeKit's Project Settings > Browser-Refreshing area](/src/lib/assets/images/post_images/Image-2020-02-20-at-9.10.43-PM-1024x699.png)
+![CodeKit's Project Settings > Browser-Refreshing area](/images/post_images/Image-2020-02-20-at-9.10.43-PM-1024x699.png)
 
 Here, you'll take the two steps necessary to connect CodeKit with Local:
 
 1. Toggle on the **Use An External Server** button;
 2. Copy your Local site's **Site Host** setting, and paste it into the **External Server Address** box in Codekit
 
-![Toggle External Server on, and enter your Local site's Site Host URL as the address](/src/lib/assets/images/post_images/image-1024x557.png)
+![Toggle External Server on, and enter your Local site's Site Host URL as the address](/images/post_images/image-1024x557.png)
 
 
 ### 5\. Click the CodeKit Preview Link
 
 **That's it! You're connected!** Now all you need to do is preview in CodeKit to see changes live in real time. You can either go to **File > Preview** **in Browser…**, or hit the preview button at the top of the CodeKit window:
 
-![The Browser Preview button](/src/lib/assets/images/post_images/image-1-1024x155.png)
+![The Browser Preview button](/images/post_images/image-1-1024x155.png)
 
 (Note that the URL you see in your browser window may not match what you just entered from Local. That's ok, as long as the page works.)
 
 Now as you make changes in your code—for example, changing CSS files or editing the HTML on a page—your browser will just automatically refresh like magic! ✨
 
-![](/src/lib/assets/images/post_images/codekit-magic.gif) 
+![](/images/post_images/codekit-magic.gif) 
 
 **If you're having issues**: be sure that the site is running in Local, and that the protocol matches between the two (http or https; it should be the same both places. You might need to check or un-check the TLS box under Security Options and/or restart the server):
 
-![Make sure the TLS setting in CodeKit matches your Local site's protocol](/src/lib/assets/images/post_images/codekit-preview-window.png) 
+![Make sure the TLS setting in CodeKit matches your Local site's protocol](/images/post_images/codekit-preview-window.png) 
 
 The Preview Server URLs box (shown above) is also where you'll find the URLs you can use to view your Local site on other devices! Want to check out your site on your phone? It's as simple as heading to the Bonjour URL (iPhone) or Non-Bonjour URL (anything else) in your device's browser!
 
@@ -131,13 +131,13 @@ Just to provide an example of how easy CodeKit makes it to get set up with thing
 
 If you have a Sass file that you'd like to compile into CSS on the fly, find that file in Codekit and click to select it. You'll immediately see a suite of options in the right sidebar:
 
-![Select a file to see the compilation options](/src/lib/assets/images/post_images/image-2-1024x865.png)
+![Select a file to see the compilation options](/images/post_images/image-2-1024x865.png)
 
 Making CodeKit compile your Sass is as simple as choosing the options you want, and the path where you want CodeKit to output the compiled CSS file!
 
 As a bonus, if you have any errors in your Sass syntax (like here, where I forgot a semicolon at the end of a line), CodeKit will highlight those and let you know right away as soon as you save the file:
 
-![Errors shown in CodeKit](/src/lib/assets/images/post_images/image-3-1024x449.png)
+![Errors shown in CodeKit](/images/post_images/image-3-1024x449.png)
 
 A similar set of options (minify, compile, generate source maps, etc.) is available with JavaScript files, plus many other file types.
 

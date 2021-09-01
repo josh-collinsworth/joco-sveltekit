@@ -183,9 +183,9 @@ This change in fonts also necessitated a redesign of my personal logo, since the
 
 I'll be honest: every time I create a new version of my logo, I feel less and less pressure to make it "something," and instead just go with what feels right to me. I suppose you could view this either as atrophy or maturation of my design skills; I'll let you be the judge of that. But in any case, this logo is a little bit of a remix of the last one, but doesn't try quite so hard to wink at you (at least, not until you hover on it in the site header).
 
-![The 2018 version of the logo, in Amsi Pro Ultra](/src/lib/assets/images/post_images/Full-Logo-2018.svg)
+![The 2018 version of the logo, in Amsi Pro Ultra](/images/post_images/Full-Logo-2018.svg)
 
-![The newer 2020 version of the logo, in Pensum Display Basic Bold](/src/lib/assets/images/post_images/2020-logo-final.svg)
+![The newer 2020 version of the logo, in Pensum Display Basic Bold](/images/post_images/2020-logo-final.svg)
 
 As a nice side effect, the old favicon uses two pairs of brackets, where the new one uses only one, which makes it easy to distinguish between the secondary back-end (where I didn't bother updating the favicon) and the primary front-end at a glance in my browser tabs.
 
@@ -215,12 +215,12 @@ The site also features a settings menu (which you'll notice sticking around, pun
 
 And finally, as far as benefits, I think the results speak for themselves. Here's the **Lighthouse mobile test result**:
 
-![The mobile results for this site's homepage in a Lighthouse test, with perfect 100 scores in performance, accessibility, best practices and SEO.](/src/lib/assets/images/post_images/Image-2020-06-05-at-11.47.11-AM-1024x391.png)
+![The mobile results for this site's homepage in a Lighthouse test, with perfect 100 scores in performance, accessibility, best practices and SEO.](/images/post_images/Image-2020-06-05-at-11.47.11-AM-1024x391.png)
 
 
 And here's the **GTMetrix** score:
 
-![GTMetrix gives this site a 100% on PageSpeed and a 98% from YSlow.](/src/lib/assets/images/post_images/gtmetrix-1024x330.png)
+![GTMetrix gives this site a 100% on PageSpeed and a 98% from YSlow.](/images/post_images/gtmetrix-1024x330.png)
 
 Incidentally, the 98% is because YSlow wants me to compress _everything_, but Netlify doesn't compress components that are already less than 1kb to begin with. So I'd be trying to bloat a component just to make a speed test happy in order to get that last two percent, ironically.
 

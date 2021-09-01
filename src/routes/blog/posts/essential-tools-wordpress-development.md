@@ -23,7 +23,7 @@ This is a list of the things that help me toward that goal. If you handed me a b
 
 <SideNote>This post hasn’t been updated for a while; Wunderlist isn’t a thing anymore, and neither is Spectacle (it’s a new app called Rectangle now, which honestly is better). Some of the pricing has changed; neither LastPass nor Chrome are my first choices in their category anymore; and in this moment at least, I’d definitely add Block Lab to the list. Still, I leave the post as-is both in the interest of not rewriting history, and because I still think the list is mostly helpful. You can check my /uses page for more.</SideNote>
 
-![Dropbox Logo](/src/lib/assets/images/post_images/Dropbox.svg)
+![Dropbox Logo](/images/post_images/Dropbox.svg)
 
 ### [Dropbox](https://www.dropbox.com)
 
@@ -31,7 +31,7 @@ This is a list of the things that help me toward that goal. If you handed me a b
 
 You're going to need somewhere to store your files, and [Dropbox](https://www.dropbox.com) syncs beautifully with all your devices. You can also set up synced folders, so that anything you save in a particular folder on your machine is available on any machine, thus creating both a local and cloud copy. It can also automatically save screenshots, upload pics from your smartphone's camera for safe storage, and send/receive client files easily.
 
-![LastPass logo](/src/lib/assets/images/post_images/LastPass-Logo-Color.svg)
+![LastPass logo](/images/post_images/LastPass-Logo-Color.svg)
 
 ### [LastPass/1Password](http://www.lastpass.com)
 
@@ -40,7 +40,7 @@ You're going to need somewhere to store your files, and [Dropbox](https://www.dr
 
 I don't have a strong preference between the two, but there's no excuse for not using a password manager in this day and age. Odds are good you'll have at least two usernames and passwords to remember for every single site you work on—maybe more—and repeating the same one or making it easy to type and remember is an awful idea when you're using the world's most popular CMS. Saving brain power is making your life better and your workflow more efficient. And besides, these are extremely affordable apps; LastPass is only $12 per year. Make like Nike and just do it.
 
-![VS Code logo](/src/lib/assets/images/post_images/32078472-5053adea-baa7-11e7-9034-519002f12ac7.png)
+![VS Code logo](/images/post_images/32078472-5053adea-baa7-11e7-9034-519002f12ac7.png)
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -56,7 +56,7 @@ I highly recommend the following extensions, but you can mix and match your own 
 - **highlight-matching-tag** (Shows where the closing tag is for a selected opening tag and vice versa)
 - **WordPress Toolbox** (for auto-completion of many WordPress PHP functions; a real life-saver)
 
-![GenerateWP logo](/src/lib/assets/images/post_images/GenerateWP.png)
+![GenerateWP logo](/images/post_images/GenerateWP.png)
 
 ### [GenerateWP.com](http://generatewp.com/)
 
@@ -66,7 +66,7 @@ There's a _ton_ of PHP to remember in WordPress, the difficulty of which is comp
 
 GenerateWP does the work for you in generating blocks of code. You just fill out some fields telling the site what you're after and it will spit out the code for you to copy and paste in the appropriate PHP file. Everything from custom `WP_Query` loops to defining custom post types and much, much more can now be handled by checking some boxes and filling out a few fields instead of peering through the WordPress Codex trying to remember the difference between `get_header()` and `wp_head()`.
 
-![Local logo](/src/lib/assets/images/post_images/Local-Logo.svg)
+![Local logo](/images/post_images/Local-Logo.svg)
 
 ### Local by Flywheel
 
@@ -78,7 +78,7 @@ The most amazing thing about Local, though: you can actually give a link to your
 
 Quick disclaimer: I do work for Flywheel, but I'd be writing this even if I didn't. With MAMP, I had to actually download WordPress, spin up a database, configure and run the install manually. Local does all of that automatically with a click of a button. (Plus the links thing above.)
 
-![CodeKit logo](/src/lib/assets/images/post_images/CodeKit.png)
+![CodeKit logo](/images/post_images/CodeKit.png)
 
 ### [CodeKit](http://incident57.com/codekit)
 
@@ -88,7 +88,7 @@ It's very hard to explain what [CodeKit](http://incident57.com/codekit) does in 
 
 That alone, to me, is well worth the low $32 price tag, but that's really only scratching the surface. It can grab external libraries for you, plus concatenate and minify your files so you're ready to go to production with a lean, efficient set of CSS and JS files, and so much more. I promise you that if you give CodeKit a real shot, it will become an indispensable part of your workflow.
 
-![Advanced Custom Fields PRO logo](/src/lib/assets/images/post_images/acf-pro-dev-launch.png)
+![Advanced Custom Fields PRO logo](/images/post_images/acf-pro-dev-launch.png)
 
 ### [Advanced Custom Fields (PRO)](https://www.advancedcustomfields.com/)
 
@@ -102,7 +102,7 @@ Aside from that though, ACF is perhaps the single most important piece of making
 
 In short, ACF makes the experience of using the WordPress site you've built for them less like trying to cobble a page design together in a word processor, and more like using an elegant custom app constructed exclusively for the user. (And it has the bonus effect of preventing the client from screwing things up too badly, too.)
 
-![Google Chrome browser logo](/src/lib/assets/images/post_images/Chrome.png)
+![Google Chrome browser logo](/images/post_images/Chrome.png)
 
 ### [Google Chrome](https://www.google.com/chrome/browser/desktop/)
 
@@ -116,7 +116,7 @@ Your choice of browser is less and less relevant these days, but Chrome is still
 - [**Website IP**](https://chrome.google.com/webstore/detail/website-ip/ghbmhlgniedlklkpimlibbaoomlpacmk?hl=en) – View the IP address of the site you're viewing. Helpful when dealing with DNS changes and site migrations
 - [**Type Sample**](https://www.typesample.com/) – Hover over text in the browser to see its font-family and -size, and click to type your own phrase in the selected typeface. Neat!
 
-![](/src/lib/assets/images/post_images/github_desktop.png)
+![](/images/post_images/github_desktop.png)
 
 ### [GitHub Desktop](https://desktop.github.com/)
 
@@ -126,7 +126,7 @@ I like version control and having a repository of my code changes, but I really 
 
 Git and version control can be a bit intimidating, but GitHub Desktop does a nice job of abstracting the fear about as much as possible and making it simple.
 
-![Transmit FTP client logo](/src/lib/assets/images/post_images/Transmit.png)
+![Transmit FTP client logo](/images/post_images/Transmit.png)
 
 ### [Transmit](https://panic.com/transmit/)
 
@@ -136,7 +136,7 @@ If I'm being honest here, I couldn't give you much of an elevator speech on why 
 
 Still, Transmit is the industry gold standard in FTP clients, so there must be some reason for that (and the $34 price tag). I guess I just haven't used other FTP clients enough to really know the difference, so if you're into cutting cost, this might be a good place.
 
-![Alfred app logo](/src/lib/assets/images/post_images/Alfred.png)
+![Alfred app logo](/images/post_images/Alfred.png)
 
 ### [Alfred](https://www.alfredapp.com/)
 
@@ -148,7 +148,7 @@ The "spotlight" feature (see what I did there?) is that Alfred can search for an
 
 It's one of those tools that you won't realize you ever wanted until you try it and realize you can't live without it anymore. In fact, there's a very good chance it would be the very first thing I installed on a new computer.
 
-![Spectacle app logo](/src/lib/assets/images/post_images/Spectacle-Logo.jpg)
+![Spectacle app logo](/images/post_images/Spectacle-Logo.jpg)
 
 ### [Spectacle](https://www.spectacleapp.com/)
 
@@ -162,7 +162,7 @@ Sound familiar?
 
 Gallons of wasted time and effort are accumulated a drip at a time. Spectacle is one of those apps that helps stop the drip.
 
-![Tiny PNG Logo](/src/lib/assets/images/post_images/Image-2017-01-24-at-9.45.27-AM-1024x359.png)
+![Tiny PNG Logo](/images/post_images/Image-2017-01-24-at-9.45.27-AM-1024x359.png)
 
 ### [TinyPNG](https://tinypng.com/)
 
@@ -177,7 +177,7 @@ The good news, though, is that the overage fee is 9¢ per image (which, again ca
 
 Of course, if cost and limits are a factor, you can always manually drop your images into TinyPNG.com before uploading them to WordPress as much as you like for free.
 
-![ClipMenu Mac app logo](/src/lib/assets/images/post_images/ClipMenu.png)
+![ClipMenu Mac app logo](/images/post_images/ClipMenu.png)
 
 ### [ClipMenu](http://www.clipmenu.com/)
 
@@ -191,7 +191,7 @@ Or how about this: how many times have you gone through the tedious process of c
 
 [ClipMenu](http://www.clipmenu.com/) stores a history of your clipboard so that you can paste from dozens of the last things you've copied. No more going back and forth or accidentally copying something new, and no more worrying that you accidentally got rid of something you meant to keep on your clipboard. ClipMenu can be configured to store anywhere from a small number to dozens and dozens of the things you've hit command + c on.
 
-![Wunderlist app logo](/src/lib/assets/images/post_images/Wunderlist_Logo.png)
+![Wunderlist app logo](/images/post_images/Wunderlist_Logo.png)
 
 ### [Wunderlist](https://www.wunderlist.com/)
 
@@ -205,7 +205,7 @@ It's a desktop app, a smartphone app and a browser extension, so you can make li
 
 And, of course, there's that whole conserving mental energy thing I'm a big fan of.
 
-![WordPress.com plus Jetpack logos](/src/lib/assets/images/post_images/WP-plus-Jetpack.png)
+![WordPress.com plus Jetpack logos](/images/post_images/WP-plus-Jetpack.png)
 
 ### [Calypso/Jetpack](https://developer.wordpress.com/calypso/)
 
@@ -216,13 +216,13 @@ You might know it as Calypso, the new WordPress.com, the WordPress.com app, Jetp
 
 Let's backtrack: in 2016, WordPress.com announced an all-new dashboard interface, codenamed "Calypso." This new, elegantly simple JavaScript-based app could be used to manage the main features of all of a user's WordPress.com sites—posts, plugins, themes, etc. This was fantastic news for owners of sites hosted on WordPress.com, but for the rest of the world, self-hosting their own WordPress sites, [Automattic](https://automattic.com/) (the company behind WordPress, run by WordPress co-creator [Matt Mullenweg](https://en.wikipedia.org/wiki/Matt_Mullenweg)) offered a way to connect as well: through their already mega-popular plugin, Jetpack.
 
-![Managing plugins with Jetpack, using auto update](/src/lib/assets/images/post_images/Jetpack_plugins.png)
+![Managing plugins with Jetpack, using auto update](/images/post_images/Jetpack_plugins.png)
 
 So in short, Calypso—AKA the WordPress.com app—allows you to connect all your sites together to manage them in one simple dashboard. To do this, you'll just need to sign up for a free account on WordPress.com, if you don't have one already (and odds are good if you've been using WordPress for any length of time that you already do). Then you just install the Jetpack plugin (which has many of its own excellent features already, including a mini image CDN) and enter your WordPress.com credentials.
 
 You'll have access to one app dashboard to manage all your sites. The major key feature for me: you can update plugins and themes remotely, so you don't have to sign in to each site individually. On its own, that's fantastic, but the icing on the cake is: you can even set plugins and themes to update _automatically_. (Or should I say: automattically?) It's a beautiful thing, and we haven't even scratched the surface of all the other cool things Jetpack can do on its own.
 
-![CodePen.io logo](/src/lib/assets/images/post_images/codepen.svg)
+![CodePen.io logo](/images/post_images/codepen.svg)
 
 ### [CodePen](http://codepen.io)
 
@@ -230,7 +230,7 @@ You'll have access to one app dashboard to manage all your sites. The major key 
 
 It may seem completely unrelated, but I can't tell you how handy it is to have an open playground for HTML, CSS and JS available at your fingertips at any time. I've learned lots of tricks, skills and shortcuts from trying things out in [CodePen](http://codepen.io) or looking at other users' code to see how they built their neat-o creation. It's also handy, when in lack of another solution, as a JavaScript linter and a debugging tool, or as a place to save code snippets for work or demo later. But more than anything, it's a sandbox. And you can learn a lot by building things in it.
 
-![Affinity Photo logo](/src/lib/assets/images/post_images/affinity-photo-available-on-the-mac-app-store.png)
+![Affinity Photo logo](/images/post_images/affinity-photo-available-on-the-mac-app-store.png)
 
 ### [Affinity Photo](https://affinity.serif.com/photo/)
 
@@ -240,7 +240,7 @@ Photoshop also works, if you have access to it. So do the wide range of free or 
 
 It may not quite have all the features of Photoshop (though it's pretty close) or be quite the photo editing ninja that Lightroom is (though it's no slouch), but to replace the two apps together for a comparably low price tag, I feel the tradeoff is more than worth it.
 
-![Elegant Themes logo](/src/lib/assets/images/post_images/elegant-themes-logo.svg)
+![Elegant Themes logo](/images/post_images/elegant-themes-logo.svg)
 
 ### A Great Premium Theme
 
@@ -256,7 +256,7 @@ On projects with lean budgets, I often implement custom developed pages and temp
 
 In short: when you need to build quickly and on a budget, you need a framework to reach for. Maybe that's in theme form; maybe not. But having one that you know handy is essential for client work.
 
-![Flywheel logo](/src/lib/assets/images/post_images/Flywheel-Logo.svg)
+![Flywheel logo](/images/post_images/Flywheel-Logo.svg)
 
 ### [Flywheel](https://getflywheel.com/)
 
