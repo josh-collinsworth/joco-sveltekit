@@ -15,6 +15,10 @@
   export let Post, meta
 </script>
 
+<svelte:head>
+  <title>{meta.title}</title>
+</svelte:head>
+
 <main>
   <img src="/images/post_images/{meta.coverImage}" alt="" />
 

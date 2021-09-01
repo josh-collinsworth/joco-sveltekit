@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Josh Collinsworth | Frontend developer and designer</title>
+</svelte:head>
+
 <main>
 	<div class="intro">
 		<h1>Hi, I’m Josh.</h1>
