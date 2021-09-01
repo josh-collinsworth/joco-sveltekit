@@ -8,7 +8,7 @@
 Senior developer at [Shopify](https://shopify.com);
 maker and designer of <i>Quina</i> ([web](https://quina.app)/[Android](https://play.google.com/store/apps/details?id=app.quina.collinsworth));
 occasional author on [my own blog](/blog)
-and on [CSS&nbsp;Tricks](css-tricks.com/author/joshcollinsworth/).
+and on [CSS&nbsp;Tricks](https://css-tricks.com/author/joshcollinsworth/).
 
 
 ## Previously:
