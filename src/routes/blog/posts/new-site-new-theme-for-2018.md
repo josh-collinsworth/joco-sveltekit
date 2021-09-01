@@ -36,7 +36,7 @@ I also implemented [CodeKit](https://codekitapp.com/), for minification, auto br
 
 Speaking of Sass: it's invaluable. During theme development, I set up variables for breakpoint widths, colors, some font families, and created a mixin for flexbox settings.
 
-[![A list of Sass variables used for colors, breakpoints, fonts and Flexbox settings](/images/post_images/sass-variables.png)](/assets/images/post_images/sass-variables.png)
+[![A list of Sass variables used for colors, breakpoints, fonts and Flexbox settings](/images/post_images/sass-variables.png)](/images/post_images/sass-variables.png)
 
 (That's the [ColorHelper](https://packagecontrol.io/packages/ColorHelper) Sublime extension creating the color boxes, by the way.)
 
@@ -50,7 +50,7 @@ The theme runs mostly off a single index.php file which dynamically pulls in the
 
 I also took this opportunity to use CSS grid on a project for the first time—specifically, on the [design](https://api.joshcollinsworth.com/design/) page. It turns out, CSS grid mixes really well with [Advanced Custom Fields](https://www.advancedcustomfields.com/), particularly the Pro Repeater field. I set up fields for images, height and width, to control the size of images in the grid:
 
-[![Custom fields that allow for a width and height property to use in the image grid](/images/post_images/acf-fields-1-1024x797.png)](/assets/images/post_images/acf-fields-1.png)
+[![Custom fields that allow for a width and height property to use in the image grid](/images/post_images/acf-fields-1-1024x797.png)](/images/post_images/acf-fields-1.png)
 
 The width and height have max values, and a Sass loop (and a media query) sets CSS for those values with classes:
 
