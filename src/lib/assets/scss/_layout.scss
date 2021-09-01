@@ -4,9 +4,8 @@ body {
 
 main {
 	min-height: 100vh;
-	max-width: 768px;
-	margin: 4rem auto;
-	padding: 2rem 0;
+	margin: 2rem auto 2rem 0;
+	max-width: 48rem;
 }
 
 header,
@@ -21,4 +20,83 @@ footer {
 
 img {
 	max-width: 100%;
+}
+
+//Imported from Default.vue layout
+#app.mounted {
+  transition: inherit;
+}
+
+.categories li a {
+  background: var(--header-color);
+  padding: 0.5em;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--paper);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fullwidth {
+  width: 100vw;
+  margin-left: calc(var(--margin) * -1);
+}
+
+.wider {
+  width: calc(100vw - 1rem);
+  margin-left: -.5rem;
+
+  @media (min-width: 768px) {
+    width: calc(100vw - 4rem);
+    margin-left: calc(var(--margin) / -2);
+  }
+
+  @media (min-width: 1024px) {
+    width: calc(100vw - 8rem);
+  }
+
+  @media (min-width: 1200px) {
+    width: calc(100vw - 12rem);
+  }
+
+  @media (min-width: 1680px) {
+    width: calc(200%);
+    margin-left: -25%;
+  }
+}
+
+.layout {
+  margin: 0 var(--margin) 4rem var(--margin);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100% - (var(--margin) * 2));
+  padding-top: 6rem;
+
+  @media (min-width: $wider) {
+    display: grid;
+    grid-template-columns: var(--max-width) 1fr var(--sidebar-width);
+    gap: 2rem;
+    margin-right: 2rem;
+    width: 100%;
+
+    #sidebar {
+      display: block;
+    }
+  }
+
+  @media (min-width: $widest) {
+    margin-right: var(--margin);
+  }
+
+  main {
+    width: 100%;
+    max-width: var(--max-width);
+
+    &.span {
+      grid-column: 1 / -1;
+      max-width: unset;
+    }
+  }
 }

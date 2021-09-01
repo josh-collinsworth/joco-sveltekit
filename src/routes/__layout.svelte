@@ -1,16 +1,17 @@
-<template>
-	<Header {key} />
+<div class=""> <!-- TODO: reduce-motion, prefers-dark, prefers-light, mounted (?)-->
+	<Header {key} /> 
 	
 	<PageTransition refresh={key}>
-		<slot></slot>
+		<div class="layout">
+			<slot></slot>
+		</div>
 	</PageTransition>
-		
+	
 	<footer>
 		<Grid inverted={true} density={50} refresh={key} />
 		&copy; 2021 Josh Collinsworth
 	</footer>
-
-</template>
+</div>
 
 
 <script>

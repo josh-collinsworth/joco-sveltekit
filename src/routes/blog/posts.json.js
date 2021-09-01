@@ -3,7 +3,6 @@ export const get = async () => {
 		let posts = await Promise.all(
 			Object.entries(import.meta.glob('./posts/*.md')).map(async ([path, page]) => {
 				const { metadata } = await page()
-				console.log(metadata)
 				const slug = path.split('/').pop().split('.').shift()
 				return { ...metadata, slug }
 			})

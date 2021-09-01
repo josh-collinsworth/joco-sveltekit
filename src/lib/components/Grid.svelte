@@ -35,7 +35,6 @@
       / (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
 			* 4)
 		)
-    console.log(count)
   })
 
   const randomColor = () => {

@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<!-- TODO: needs to pass event up...? -->
 		<HamburgerButton {menuOpen} {toggleMenu}/>
 
 		<nav
@@ -10,7 +9,7 @@
 			role="navigation"
 			aria-hidden={!menuOpen}
 		>
-      <NavLinks mobile={true} {menuOpen} />
+      <NavLinks mobile={true} {menuOpen} {toggleMenu}/>
 		</nav>
 
 		<nav id="desktop-nav" class="main-nav nav" role="navigation">

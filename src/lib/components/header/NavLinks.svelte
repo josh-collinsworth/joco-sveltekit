@@ -1,21 +1,21 @@
 <ul class:mobile={mobile}>
   <li class:open={menuOpen}>
-    <a href="/">
+    <a sveltekit:prefetch href="/" on:click={closeMobileMenu}>
       <span>Home</span>
     </a>
   </li>
   <li class:open={menuOpen}>
-    <a href="/about">
+    <a sveltekit:prefetch href="/about" on:click={closeMobileMenu}>
       <span>About</span>
     </a>
   </li>
   <li class:open={menuOpen}>
-    <a href="/blog">
+    <a sveltekit:prefetch href="/blog" on:click={closeMobileMenu}>
       <span>Blog</span>
     </a>
   </li>
   <li class:open={menuOpen}>
-    <a href="/uses">
+    <a sveltekit:prefetch href="/uses" on:click={closeMobileMenu}>
       <span>Uses</span>
     </a>
   </li>
@@ -25,6 +25,11 @@
 <script lang="ts">
   export let mobile: boolean = false
   export let menuOpen: boolean = false
+  export let toggleMenu
+
+  const closeMobileMenu = () => {
+    if (menuOpen) toggleMenu()
+  }
 </script>
 
 
