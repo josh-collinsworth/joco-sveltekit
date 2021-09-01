@@ -16,7 +16,7 @@
 </script>
 
 <main>
-  <img src="/src/lib/assets/images/post_images/{meta.coverImage}" alt="" />
+  <img src="/images/post_images/{meta.coverImage}" alt="" />
 
   <h1>{ meta.title }</h1>
   
