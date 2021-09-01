@@ -1,21 +1,19 @@
 <template>
-	<main>
-		<h1>Blog</h1>
+	<h1>Blog</h1>
 
-		<ul>
-			{#each posts as post}
-				<li>
-					<article>
-						<a href={'/blog/' + post.slug}>
-							<img src="/images/post_images/{post.coverImage}" alt="" />
-							<h2>{post.title}</h2>
-						</a>
-						<p>{post.excerpt}</p>
-					</article>
-				</li>
-			{/each}
-		</ul>
-	</main>
+	<ul>
+		{#each posts as post}
+			<li>
+				<article>
+					<a href={'/blog/' + post.slug}>
+						<img src="/images/post_images/{post.coverImage}" alt="" />
+						<h2>{post.title}</h2>
+					</a>
+					<p>{post.excerpt}</p>
+				</article>
+			</li>
+		{/each}
+	</ul>
 </template>
 
 <script context="module" lang="ts">
@@ -31,7 +29,7 @@
 </script>
 
 <script>
-	export let posts;
+	export let posts
 </script>
 
 <style lang="scss">

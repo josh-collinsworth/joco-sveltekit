@@ -11,16 +11,56 @@ main {
 header,
 footer {
 	padding: 2rem var(--margin);
+	width: 100%;
 }
 
 footer {
 	background-color: var(--darkBlue);
 	color: var(--paper);
+	padding-top: 2.5rem;
+
+  //Ensure there's always room for the settings button
+  @media (max-width: $medium) {
+    --margin: 4rem;
+  }
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  & + h1 {
+    margin-bottom: 2rem;
+  }
 }
+
+hr {
+  width: 100%;
+  margin: 2rem 0;
+  border: none;
+  border-bottom: 1px solid var(--lightGray);
+}
+
+.details {
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  font-style: italic;
+}
+
+.pre-heading {
+  margin-bottom: 0rem;
+}
+
+h1 + .details {
+  font-size: 1rem;
+}
+
+h2 + .details {
+  font-size: 0.9rem;
+}
+
+
+
 
 //Imported from Default.vue layout
 #app.mounted {
@@ -71,7 +111,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: calc(100% - (var(--margin) * 2));
   padding-top: 6rem;
 
   @media (min-width: $wider) {
@@ -79,7 +118,6 @@ img {
     grid-template-columns: var(--max-width) 1fr var(--sidebar-width);
     gap: 2rem;
     margin-right: 2rem;
-    width: 100%;
 
     #sidebar {
       display: block;

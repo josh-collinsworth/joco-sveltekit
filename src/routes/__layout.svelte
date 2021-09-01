@@ -1,25 +1,30 @@
-<div class=""> <!-- TODO: reduce-motion, prefers-dark, prefers-light, mounted (?)-->
+<template>
 	<Header {key} /> 
 	
-	<PageTransition refresh={key}>
-		<div class="layout">
-			<slot></slot>
-		</div>
-	</PageTransition>
-	
-	<footer>
-		<Grid inverted={true} density={50} refresh={key} />
-		&copy; 2021 Josh Collinsworth
-	</footer>
-</div>
+	<div class="layout"> 
+		<PageTransition refresh={key}>
+		<!-- TODO: dynamic sidebar -->
+			<main tabindex="-1">
+				<slot></slot>
+			</main>
+		</PageTransition>
+		
+		<Sidebar />
+	</div>
+
+	<Footer />
+</template>
 
 
 <script>
-	import { onMount, tick } from 'svelte'
+	import { onMount } from 'svelte'
 	import Grid from '$lib/components/Grid.svelte'
 	import Header from '$lib/components/header/Header.svelte'
+	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/PageTransition.svelte';
 	import prism from '$lib/assets/js/prism.js'
+	import Sidebar from '$lib/components/Sidebar.svelte'
+	
 	import '$lib/assets/scss/global.scss'
 
 	export let key

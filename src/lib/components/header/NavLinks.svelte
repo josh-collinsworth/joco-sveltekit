@@ -1,30 +1,28 @@
 <ul class:mobile={mobile}>
-  <li class:open={menuOpen}>
-    <a sveltekit:prefetch href="/" on:click={closeMobileMenu}>
-      <span>Home</span>
-    </a>
+  <li class:open={menuOpen} class="nav__link">
+    <NavLink to="/" text="Home" {closeMobileMenu} {key} />
   </li>
-  <li class:open={menuOpen}>
-    <a sveltekit:prefetch href="/about" on:click={closeMobileMenu}>
-      <span>About</span>
-    </a>
+
+  <li class:open={menuOpen} class="nav__link">
+    <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} />
   </li>
-  <li class:open={menuOpen}>
-    <a sveltekit:prefetch href="/blog" on:click={closeMobileMenu}>
-      <span>Blog</span>
-    </a>
+
+  <li class:open={menuOpen} class="nav__link">
+    <NavLink to="/blog" text="Blog" {closeMobileMenu} {key} />
   </li>
-  <li class:open={menuOpen}>
-    <a sveltekit:prefetch href="/uses" on:click={closeMobileMenu}>
-      <span>Uses</span>
-    </a>
+
+  <li class:open={menuOpen} class="nav__link">
+    <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} />
   </li>
 </ul>
 
 
 <script lang="ts">
+  import NavLink from './NavLink.svelte'
+
   export let mobile: boolean = false
   export let menuOpen: boolean = false
+  export let key: string
   export let toggleMenu
 
   const closeMobileMenu = () => {

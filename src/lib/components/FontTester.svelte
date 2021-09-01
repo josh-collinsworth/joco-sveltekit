@@ -39,7 +39,7 @@
 		{/if}
 
 		<p v-if="link" class="details">
-			<Xa to={link}>{ text } family</Xa>
+			<a rel="external" href={link}>{ text } family</a>
       <i> (click text to edit)</i>
 		</p>
 	</form>
@@ -48,7 +48,6 @@
 
 <script type="typescript">
   import { onMount } from 'svelte'
-  import Xa from '$lib/components/ExternalLink.svelte'
 
   export let font: string
   export let label: string = ''

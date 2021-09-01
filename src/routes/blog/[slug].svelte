@@ -19,7 +19,7 @@
   <title>{meta.title}</title>
 </svelte:head>
 
-<main>
+<template>
   <img src="/images/post_images/{meta.coverImage}" alt="" />
 
   <h1>{ meta.title }</h1>
@@ -29,4 +29,4 @@
   <hr>
 
   <a href="/blog">Back to blog posts</a>
-</main>
+</template>

@@ -9,7 +9,7 @@
       <span class="sr">Home</span>
     </a>
 
-    <NavMenus {menuOpen} {toggleMenu} />
+    <NavMenus {menuOpen} {toggleMenu} {key} />
   </header>
   <Grid refresh={key} />
 </div>

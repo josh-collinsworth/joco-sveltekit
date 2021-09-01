@@ -59,5 +59,10 @@
 	grid-auto-flow: dense;
 	position: relative;
 	z-index: 2;
+
+  &.inverted {
+    transform: rotateX(180deg);
+    top: 1rem;
+  }
 }
 </style>

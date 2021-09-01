@@ -9,11 +9,11 @@
 			role="navigation"
 			aria-hidden={!menuOpen}
 		>
-      <NavLinks mobile={true} {menuOpen} {toggleMenu}/>
+      <NavLinks mobile={true} {menuOpen} {toggleMenu} {key} />
 		</nav>
 
 		<nav id="desktop-nav" class="main-nav nav" role="navigation">
-			<NavLinks {menuOpen} />
+			<NavLinks {menuOpen} {key} />
 		</nav>
 	</div>
 </template>
@@ -23,6 +23,7 @@
 	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
 
 	export let menuOpen: boolean
+	export let key: string
 	export let toggleMenu // TODO: type?
 </script>
 

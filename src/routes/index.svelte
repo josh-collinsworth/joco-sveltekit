@@ -2,11 +2,10 @@
 	<title>Josh Collinsworth | Frontend developer and designer</title>
 </svelte:head>
 
-<main>
-	<div class="intro">
-		<Homepage />
-	</div>
-</main>
+
+<div class="intro">
+	<Homepage />
+</div>
 
 
 <script context="module">
