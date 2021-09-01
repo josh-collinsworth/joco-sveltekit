@@ -3,7 +3,8 @@
   <footer class="footer">
     <div>
       <ul class="footer__links">
-        <li><a href="/rss.xml">RSS</a></li>
+        <!-- TODO: find an XML replacement? -->
+        <!-- <li><a href="/rss.xml">RSS</a></li> -->
         <li><a rel="external" href="github.com/josh-collinsworth">GitHub</a></li>
         <li><a rel="external" href="codepen.io/collinsworth">CodePen</a></li>
         <li><a rel="external" href="twitter.com/jjcollinsworth">Twitter</a></li>
