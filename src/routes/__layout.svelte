@@ -19,6 +19,7 @@
 	import Header from '$lib/components/header/Header.svelte'
 	import PageTransition from '$lib/components/PageTransition.svelte';
 	import prism from '$lib/assets/js/prism.js'
+	import '$lib/assets/scss/global.scss'
 
 	export let key
 
