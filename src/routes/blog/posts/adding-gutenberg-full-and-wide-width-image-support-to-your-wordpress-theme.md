@@ -83,7 +83,7 @@ Back to our fullwidth image: in order to make the image the full width of the sc
 
 Instead, we're going to send our image _halfway to the right._ That's the `50%` portion of our `calc` formula:
 
-![Setting a side margin of 50% on the image puts its left side directly in the center of its parent element.](/images/post_images//fullwidth-left.png)
+![Setting a side margin of 50% on the image puts its left side directly in the center of its parent element.](/images/post_images/fullwidth-left.png)
 
 Now we can begin to see the full picture (no pun intended)!
 
