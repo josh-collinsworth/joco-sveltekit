@@ -15,7 +15,7 @@
   export let text: string
   export let to: string
   export let key: string
-  export let mobile: string
+  export let mobile: boolean = false
 
   export let menuOpen: boolean = false
   export let closeMobileMenu //TODO: type?
@@ -45,11 +45,15 @@ li.open {
       transition-delay: $i * 0.10 + s;
     }
   }
+
+  a {
+    color: var(--white);
+    width: max-content;
+  }
 }
 
 a {
   padding: .5rem 0 .25rem;
-  color: var(--white);
   display: block;
 
   span {

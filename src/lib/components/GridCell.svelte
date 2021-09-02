@@ -14,11 +14,11 @@
 
 <script lang="ts">
   import { onMount } from 'svelte'
-  export let color: string
+  export let color: string = 'transparent'
 
   let size: number = 1
 
-  onMount(() => {
+  onMount((): void => {
 		const cellSize = Math.random()
 		if (cellSize > 0.95) {
 			size = 3
@@ -27,11 +27,11 @@
 		}
   })
 
-  const randomDelay = () => {
+  const randomDelay = (): string => {
     return Math.random() * .5 + "s"
   }
 
-  const randomDrop = () => {
+  const randomDrop = (): string => {
     const drop = Math.random() * 100
 			if (drop > 93) {
 				return '1rem'
@@ -52,11 +52,6 @@
 	opacity: 0;
 	animation: fadeCellIn .2s ease-out forwards;
 	padding: 50% 0;
-
-  &.inverted {
-    transform: rotateX(180deg);
-    top: 1rem;
-  }
 }
 
 @keyframes fadeCellIn {

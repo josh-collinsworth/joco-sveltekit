@@ -28,12 +28,13 @@
 
   <hr>
 
-  <a href="/blog">Back to blog posts</a>
-</template>
+  <ul>
+    <li>
+      <a href="/contact">Send me a note about this post</a>
+    </li>
+    <li>
+      <a href="/blog">Back to all posts</a>
+    </li>
+  </ul>
 
-<style global>
-/* TODO: even if this works there are probably better options */
-.layout * {
-  /* width: 100%; */
-}
-</style>
+</template>

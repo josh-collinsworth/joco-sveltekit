@@ -17,11 +17,6 @@
       </a>
     </li> -->
     <li>
-      <a href="/contact">
-        Contact
-      </a>
-    </li>
-    <li>
       <a rel="external" href="https://github.com/josh-collinsworth">
         GitHub
       </a>
@@ -63,7 +58,7 @@
 import { onMount } from 'svelte'
 import LogoSVG from './header/LogoSVG.svelte'
 
-let posts = []
+let posts: object[] = []
 let onBlogIndexPage: boolean = false
 
 onMount(async () => {
@@ -80,8 +75,6 @@ onMount(async () => {
   
   posts = info
 })
-
-// export let posts
 </script>
 
 

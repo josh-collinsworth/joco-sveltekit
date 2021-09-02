@@ -28,9 +28,12 @@
 	}
 </script>
 
-<script>
-	export let posts
+
+<script lang="ts">
+	import type Post from '$lib/assets/js/interfaces/post.js'
+	export let posts: Post[]
 </script>
+
 
 <style lang="scss">
 	ul {

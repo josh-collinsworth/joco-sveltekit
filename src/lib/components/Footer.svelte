@@ -25,11 +25,10 @@
   </footer>
 </div>
 
-<script>
+<script lang="ts">
 import Grid from './Grid.svelte'
 
-const currentYear = new Date().getFullYear()
-
+const currentYear: number = new Date().getFullYear()
 </script>
 
 <style lang="scss">

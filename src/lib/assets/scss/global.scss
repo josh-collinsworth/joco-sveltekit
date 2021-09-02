@@ -99,7 +99,7 @@ body {
 #app {
   width: 100%;
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - 450px);
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;

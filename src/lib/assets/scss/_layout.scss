@@ -3,7 +3,6 @@ body {
 }
 
 main {
-	min-height: 100vh;
 	margin: 2rem auto 2rem 0;
 	max-width: 48rem;
 }
@@ -131,6 +130,10 @@ h2 + .details {
   main {
     width: 100%;
     max-width: var(--max-width);
+
+    @media (min-width: $medium) {
+      width: var(--max-width); //This seems unnecessary but it helps prevent a page transition issue
+    }
 
     &.span {
       grid-column: 1 / -1;

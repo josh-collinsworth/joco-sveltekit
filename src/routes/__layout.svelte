@@ -1,7 +1,7 @@
 <template>
 	<Header {key} /> 
 	
-	<div class="layout"> 
+	<div id="app" class="layout"> 
 		<PageTransition refresh={key}>
 		<!-- TODO: dynamic sidebar -->
 			<main tabindex="-1">
@@ -16,9 +16,8 @@
 </template>
 
 
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte'
-	import Grid from '$lib/components/Grid.svelte'
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/PageTransition.svelte';
@@ -27,7 +26,7 @@
 	
 	import '$lib/assets/scss/global.scss'
 
-	export let key
+	export let key: string
 
 	onMount(() => {
 		prism.init()

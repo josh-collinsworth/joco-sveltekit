@@ -15,7 +15,7 @@
 
   export let refresh: string = ''
   export let inverted: boolean = false
-  export const density: number = 42
+  export let density: number = 42
 
   let count: number = 0
   let colors: string[] = [
@@ -29,7 +29,7 @@
   ]
 
   onMount(() => {
-		if(typeof window == 'undefined') return
+		if (typeof window == 'undefined') return
 		count = Math.floor(
 			(window.innerWidth
       / (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
@@ -41,7 +41,7 @@
     const color = Math.floor(Math.random() * 7)
     const percent = Math.floor(Math.random() * 100)
 
-    if(percent < density) {
+    if (percent < density) {
       return colors[color]
     }
 

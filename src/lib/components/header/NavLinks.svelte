@@ -13,7 +13,7 @@
   export let mobile: boolean = false
   export let menuOpen: boolean = false
   export let key: string
-  export let toggleMenu
+  export let toggleMenu = null
 
   const closeMobileMenu = () => {
     if (menuOpen) toggleMenu()

@@ -48,10 +48,6 @@
 
 		--ink: var(--white);
 	}
-
-	svg {
-		width: auto;
-	}
 }
 
 .header {

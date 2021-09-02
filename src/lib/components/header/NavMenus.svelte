@@ -24,7 +24,7 @@
 
 	export let menuOpen: boolean
 	export let key: string
-	export let toggleMenu // TODO: type?
+	export let toggleMenu = null
 </script>
 
 <style lang="scss">

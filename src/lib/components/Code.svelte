@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let lang: string;
+	export let lang: string = '';
 </script>
 
 <pre class="language-{lang}">
