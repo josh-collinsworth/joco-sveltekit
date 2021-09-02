@@ -1,19 +1,9 @@
 <ul class:mobile={mobile}>
-  <li class:open={menuOpen} class="nav__link">
-    <NavLink to="/" text="Home" {closeMobileMenu} {key} />
-  </li>
-
-  <li class:open={menuOpen} class="nav__link">
-    <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} />
-  </li>
-
-  <li class:open={menuOpen} class="nav__link">
-    <NavLink to="/blog" text="Blog" {closeMobileMenu} {key} />
-  </li>
-
-  <li class:open={menuOpen} class="nav__link">
-    <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} />
-  </li>
+  <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
+  <NavLink to="/" text="Home" {closeMobileMenu} {key} {mobile} {menuOpen} />
+  <NavLink to="/blog" text="Blog" {closeMobileMenu} {key} {mobile} {menuOpen}  />
+  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} {menuOpen}  />
+  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} {menuOpen}  />
 </ul>
 
 
@@ -60,37 +50,7 @@ ul.mobile {
   list-style-type: none;
   text-align: left;
   width: 100%;
-
-  li {
-    transform: translateX(-3em);
-    opacity: 0;
-    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    margin-bottom: .75rem;
-    font-size: 1.25rem;
-    line-height: 1.5em;
-    color: var(--white);
-    width: 100%;
-
-    &.open {
-      transform: translateX(0vw);
-      opacity: 1;
-
-      @for $i from 1 through 9 {
-        &:nth-of-type(#{$i}) {
-          transition-delay: $i * 0.10 + s;
-        }
-      }
-    }
-
-    a {
-      padding: .5rem 0 .25rem;
-      color: var(--white);
-      display: block;
-
-      span {
-        display: inline-block;
-      }
-    }
-  }
+  display: block;
+  margin: 0;
 }
 </style>

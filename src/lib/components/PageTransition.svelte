@@ -14,3 +14,9 @@
     <slot />
   </div>
 {/key}
+
+<style>
+  div {
+    width: 100%;
+  }
+</style>

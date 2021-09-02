@@ -1,4 +1,4 @@
-<li class:open={menuOpen}>
+<li class:mobile={mobile} class:open={menuOpen} >
   <a
     sveltekit:prefetch
     href={to}
@@ -15,9 +15,45 @@
   export let text: string
   export let to: string
   export let key: string
+  export let mobile: string
 
   export let menuOpen: boolean = false
   export let closeMobileMenu //TODO: type?
 
   $: isCurrentPage = key === to
 </script>
+
+
+<style lang="scss">
+li.mobile {
+  transform: translateX(-3em);
+  opacity: 0;
+  transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  color: var(--white);
+  width: 100%;
+}
+
+li.open {
+  transform: translateX(0vw);
+  opacity: 1;
+
+  @for $i from 1 through 9 {
+    &:nth-of-type(#{$i}) {
+      transition-delay: $i * 0.10 + s;
+    }
+  }
+}
+
+a {
+  padding: .5rem 0 .25rem;
+  color: var(--white);
+  display: block;
+
+  span {
+    display: inline-block;
+  }
+}
+</style>

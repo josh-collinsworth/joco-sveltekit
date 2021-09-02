@@ -30,3 +30,10 @@
 
   <a href="/blog">Back to blog posts</a>
 </template>
+
+<style global>
+/* TODO: even if this works there are probably better options */
+.layout * {
+  /* width: 100%; */
+}
+</style>
