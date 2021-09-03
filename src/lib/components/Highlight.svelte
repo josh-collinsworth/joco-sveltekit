@@ -10,13 +10,9 @@
   font-size: 1.3em;
   line-height: 1.5em;
   margin: 2rem 0;
-  font-weight: normal;
-  font-style: italic;
   position: relative;
-  
-  @media(min-width: 800px) {
-    font-weight: bold;
-    font-style: normal;
-  }
+  font-family: var(--highlight-font);
+  font-style: var(--highlight-font-style);
+  font-weight: var(--highlight-font-weight);
 }
 </style>

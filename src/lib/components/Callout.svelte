@@ -6,9 +6,10 @@
 
 
 <style lang="scss">
+@import '../assets/scss/_vars.scss';
+
 .callout {
   margin: 3rem 1rem;
-  font-style: italic;
   font-size: 1.1rem;
   line-height: 1.5em;
   position: relative;
@@ -16,6 +17,10 @@
   overflow: hidden;
   padding: 0 1rem 1rem 0;
   display: none;
+
+  font-family: var(--callout-font);
+  font-style: var(--callout-font-style);
+  font-weight: var(--callout-font-weight);
   
   .wrapper {
     margin: 0;
@@ -50,7 +55,7 @@
     margin-right: calc(-2rem - 12vw);
   }
   
-  @media(min-width: 1680px) {
+  @media(min-width: $evenWider) {
     margin-right: -8rem;
   }
   

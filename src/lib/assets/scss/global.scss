@@ -7,63 +7,6 @@
 @import 'animation';
 @import 'forms';
 
-:root {
-	--body-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		'Helvetica Neue', Arial, sans-serif;
-	--heading-font: 'Pensum-Display', Georgia, serif;
-
-	--white: #fff;
-	--black: #101820;
-	--yellow: #ffd100;
-	--orange: #ff6a13;
-	--red: #e4002b;
-	--lightGray: #a7a8aa;
-	--midGray: #888b8d;
-	--darkGray: #53565a;
-	--darkerGray: #341f23;
-	--lightBlue: #7ba7bc;
-	--darkBlue: #34657f;
-	--darkBlueRGB: 52, 101, 127;
-
-	--ink: var(--darkGray);
-	--paper: var(--white);
-	--header-color: var(--darkGray);
-	--accent-color: var(--darkBlue);
-	--link-color: var(--darkBlue);
-	--highlight-color: var(--darkGray);
-
-	--column-width: 12vw;
-  --max-width: 32rem;
-  --sidebar-width: 14rem;
-  --margin: 1rem;
-
-	@media (min-width: 768px){
-    --margin: 2rem;
-  }
-
-	@media (min-width: 1024px){
-    --margin: 4rem;
-  }
-
-	@media (min-width: 1200px){
-    --margin: 6rem;
-  }
-
-  @media (min-width: 1680px){
-    --margin: 12rem;
-  }
-
-
-	// @media(prefers-color-scheme: dark) {
-  //   --paper: #101820;
-  //   --ink: #ffffff;
-  //   --header-color: var(--white);
-  //   --accent-color: var(--lightBlue);
-  //   --link-color: var(--lightBlue);
-  //   --highlight-color: var(--darkerGray);
-  // }
-}
-
 *, *:before, *:after {
   box-sizing: border-box;
   font-family: inherit;

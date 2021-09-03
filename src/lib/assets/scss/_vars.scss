@@ -2,15 +2,29 @@ $narrow: 768px;
 $medium: 1024px;
 $wide: 1200px;
 $wider: 1440px;
+$evenWider: 1680px;
 $widest: 1960px;
 
 :root {
   --white: #ffffff;
   --black: #101820;
 
-  --body-font: "Averta-Std", -apple-system, system-ui, BlinkMacSystemFont,
-  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --body-font: "Averta-Std", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --body-font-weight: normal;
+  --body-line-height: 1.5em;
+  --body-font-size: 1.125rem; 
+
+  @media (min-width: $narrow){
+    --body-font-size: 1.25rem;
+  }
+  
+  @media (min-width: $evenWider){
+    --body-font-size: 1.375rem;
+  }
+
   --heading-font: "Pensum-Display", Georgia, serif;
+  --heading-font-weight: normal;
+  --heading-font-style: normal;
 
   --yellow: #ffd100;
   --orange: #ff6a13;
@@ -35,28 +49,56 @@ $widest: 1960px;
   --sidebar-width: 14rem;
   --margin: 1rem;
 
-	@media (min-width: 768px){
+  --callout-font: var(--body-font);
+  --callout-font-style: italic;
+  --callout-font-weight: normal
+
+  --highlight-font: var(--body-font);
+  --highlight-font-style: normal;
+  --highlight-font-weight: normal;
+
+  @media (min-width: $narrow) {
+    --highlight-font-weight: bold;
+    --highlight-font-style: normal;
     --margin: 2rem;
   }
 
-	@media (min-width: 1024px){
+	@media (min-width: $medium){
     --margin: 4rem;
   }
 
-	@media (min-width: 1200px){
+	@media (min-width: $wide){
     --margin: 6rem;
   }
 
-  @media (min-width: 1680px){
+  @media (min-width: $evenWider){
     --margin: 12rem;
   }
 
-  // @media(prefers-color-scheme: dark) {
-  //   --paper: #101820;
-  //   --ink: #ffffff;
-  //   --header-color: var(--white);
-  //   --accent-color: var(--lightBlue);
-  //   --link-color: var(--lightBlue);
-  //   --highlight-color: var(--darkerGray);
-  // }
+  @media(prefers-color-scheme: dark) {
+    --paper: #101820;
+    --ink: #ffffff;
+    --header-color: var(--white);
+    --accent-color: var(--lightBlue);
+    --link-color: var(--lightBlue);
+    --highlight-color: var(--darkerGray);
+  }
+
+  --heading-font: "Gazpacho";
+  --heading-font-weight: 900;
+
+  // --body-font: "Brother 1816 Web";
+  // --body-font: "Uniform";
+  --body-font-weight: 400;
+  --body-line-height: 1.6;
+  // --body-font-size: 1.375rem !important;
+
+  --callout-font: "Gazpacho Italic";
+  --callout-font-weight: 900;
+  --callout-font-style: normal;
+
+  // --highlight-font-style: italic !important;
+  --highlight-font-weight: normal !important;
+
+  font-size: var(--body-font-size);
 }

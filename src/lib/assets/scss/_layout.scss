@@ -90,7 +90,7 @@ h2 + .details {
     width: calc(100vw - 12rem);
   }
 
-  @media (min-width: 1680px) {
+  @media (min-width: $evenWider) {
     width: calc(200%);
     margin-left: -25%;
   }

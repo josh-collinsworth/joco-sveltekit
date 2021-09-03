@@ -1,14 +1,6 @@
-:root {
-  font-size: 1.125em;
-  line-height: 1.5em;
-  
-  @media (min-width: 760px){
-    font-size: 1.25em;
-  }
-  
-  @media (min-width: 1600px){
-    font-size: 1.375em;
-  }
+body {
+  line-height: var(--body-line-height);
+  font-weight: var(--body-font-weight);
 }
   
 ul,
@@ -52,11 +44,13 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  color: var(--header-color);
   line-height: 1.1;
   position: relative;
   margin: 4rem 0 1rem 0;
   padding: 0 0 .5rem;
-  color: var(--header-color);
   
   a {
     text-decoration: none;
@@ -104,11 +98,6 @@ h4,
   font-family: var(--body-font);
   font-size: 1.4rem;
   font-weight: bold;
-}
-
-h1,
-h2 {
-  font-weight: normal
 }
 
 h1,
