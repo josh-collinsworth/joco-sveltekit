@@ -11,7 +11,7 @@ $widest: 1960px;
 
   --body-font: "Averta-Std", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --body-font-weight: normal;
-  --body-line-height: 1.5em;
+  --body-line-height: 1.5;
   --body-font-size: 1.125rem; 
 
   @media (min-width: $narrow){
@@ -84,21 +84,21 @@ $widest: 1960px;
     --highlight-color: var(--darkerGray);
   }
 
-  --heading-font: "Gazpacho";
-  --heading-font-weight: 900;
+  // --heading-font: "Gazpacho";
+  // --heading-font-weight: 900;
 
-  // --body-font: "Brother 1816 Web";
-  // --body-font: "Uniform";
-  --body-font-weight: 400;
-  --body-line-height: 1.6;
-  // --body-font-size: 1.375rem !important;
+  // --body-font: "Corporative Sans";
+  // --body-font: "Causten Round";
+  // --body-font-weight: 500;
+  // --body-line-height: 1.6;
+  // // --body-font-size: 1.375rem !important;
 
-  --callout-font: "Gazpacho Italic";
-  --callout-font-weight: 900;
-  --callout-font-style: normal;
+  // --callout-font: "Gazpacho Italic";
+  // --callout-font-weight: 900;
+  // --callout-font-style: normal;
 
-  // --highlight-font-style: italic !important;
-  --highlight-font-weight: normal !important;
+  // // --highlight-font-style: italic !important;
+  // --highlight-font-weight: 700 !important;
 
   font-size: var(--body-font-size);
 }
