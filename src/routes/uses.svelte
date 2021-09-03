@@ -1,5 +1,25 @@
-<template>
+<script lang="ts">
+  import FontTester from '$lib/components/FontTester.svelte'
 
+  const colors: string[] = [
+    '#ffd100',
+    '#34657f',
+    '#7ba7bc',
+    '#ff6a13',
+    '#e4002b',
+    '#a7a8aa',
+    '#888b8d',
+    '#53565a',
+    '#341F23',
+    '#101820',
+  ]
+</script>
+
+
+<svelte:head>
+  <title>Josh Collinsworth Uses</title>
+</svelte:head>
+<template>
   <h1>Uses</h1>
 
   <p class="fancy details">Things that I use and like, professionally or otherwise.</p>
@@ -13,12 +33,12 @@
       <ul>
         <li>
           <strong>Theme: </strong>
-          currently on <b><a rel="external" href="draculatheme.com/pro">Dracula Pro</a></b>. It's a premium theme that includes skins for iTerm, Slack, etc. and that matches well with my pretty particular color preferences. But if I'm picking a free one, I'm probably going with the built-in <strong><a rel="external" href="marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Monokai</a></strong> theme.
+          currently on <b><a rel="external" href="https://draculatheme.com/pro">Dracula Pro</a></b>. It's a premium theme that includes skins for iTerm, Slack, etc. and that matches well with my pretty particular color preferences. But if I'm picking a free one, I'm probably going with the built-in <strong><a rel="external" href="marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Monokai</a></strong> theme.
         </li>
         <li>
           <strong>Font: <a rel="external" href="www.monolisa.dev/">MonoLisa</a></strong>.
           I’m a code nerd and a font nerd, so I don't take this choice lightly, but this is my favorite dev font. I love its combination of legibility and subtle personality, and plus, the code ligatures are great. (If you’re not willing to spend the money, though—and I definitely understand if that’s the case—
-          <strong><a rel="external" href="github.com/tonsky/FiraCode">Fira Code</a></strong> is my runner-up.)
+          <strong><a rel="external" href="https://github.com/tonsky/FiraCode">Fira Code</a></strong> is my runner-up.)
           </li>
         <li>
           <strong>Extensions</strong>:
@@ -66,11 +86,11 @@
       took some getting used to, but it’s a great browser with some awesome tools. It may not be as performant as Chromium browsers in some regards, but I personally view that as feature, not a bug; if I can make a transition or animation smooth in Firefox, I know it's buttery everywhere else, too.
     </li>
     <li>
-      <strong><a rel="external" href="localwp.com/">Local</a></strong>:
+      <strong><a rel="external" href="https://localwp.com/">Local</a></strong>:
       hands-down the best way to develop WordPress sites. Fast and easy (especially if you host with Flywheel or WP Engine; you can push and pull sites directly).
       </li>
     <li>
-      <strong><a rel="external" href="codekitapp.com/">CodeKit</a></strong>:
+      <strong><a rel="external" href="https://codekitapp.com/">CodeKit</a></strong>:
       there’s nothing CodeKit does that I couldn’t accomplish by fiddling with NPM scripts, but why bother? It’s smooth and easy to use, and as a bonus, it works great with Local.
       </li>
     <li>
@@ -80,7 +100,7 @@
     <li>
       <strong><a rel="external" href="www.netlify.com/">Netlify</a></strong>:
       I’m also a fan of
-      <strong><a rel="external" href="vercel.com/home">Now</a></strong>, but Netlify has taken over my JAMstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
+      <strong><a rel="external" href="https://vercel.com/home">Now</a></strong>, but Netlify has taken over my JAMstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
     </li>
   </ul>
 
@@ -90,12 +110,12 @@
   <ul>
     <li>
       ES6+ JavaScript is my main language these days, and
-      <strong><a rel="external" href="vuejs.org/">Vue</a></strong> is my main go-to for anything I’m building (I’m unsurprisingly, therefore, a huge fan of
-      <strong><a rel="external" href="nuxtjs.org">Nuxt</a></strong> and
-      <strong><a rel="external" href="gridsome.org/">Gridsome</a></strong> as well).
+      <strong><a rel="external" href="https://vuejs.org/">Vue</a></strong> is my main go-to for anything I’m building (I’m unsurprisingly, therefore, a huge fan of
+      <strong><a rel="external" href="https://nuxtjs.org">Nuxt</a></strong> and
+      <strong><a rel="external" href="https://gridsome.org/">Gridsome</a></strong> as well).
     </li>
     <li>
-      I’m also a big fan of <strong><a rel="external" href="svelte.dev/">Svelte</a></strong>, and have made several projects in <strong><a rel="external" href="reactjs.org/">React</a></strong> as well. I've got working experience with jQuery and Knockout and am working on implementing TypeScript in my projects.
+      I’m also a big fan of <strong><a rel="external" href="https://svelte.dev/">Svelte</a></strong>, and have made several projects in <strong><a rel="external" href="https://reactjs.org/">React</a></strong> as well. I've got working experience with jQuery and Knockout and am working on implementing TypeScript in my projects.
     </li>
     <li>
       I love <strong>CSS</strong> passionately, but I don’t use any libraries or frameworks; all my CSS is from-scratch, responsive, and custom (usually written in
@@ -105,7 +125,7 @@
       I'm a strong proponent of well-architected, accessible, and semantic <b>HTML</b>. (I create and use SVG often.)
     </li>
     <li>
-      I’m a <a rel="external" href="wordpress.org/">
+      I’m a <a rel="external" href="https://wordpress.org/">
       <strong>WordPress</strong></a> expert and generally prefer to build themes from scratch. I'm capable with PHP and MySQL.
     </li>
     <li>
@@ -152,11 +172,11 @@
       taking screenshots and videos is a many-times-daily activity for me, and CloudApp makes it as seamless as possible.
     </li>
     <li>
-      <strong><a rel="external" href="rightfontapp.com/">RightFont</a></strong>:
+      <strong><a rel="external" href="https://rightfontapp.com/">RightFont</a></strong>:
       a simple, minimalist app for managing your computer’s fonts that looks and works better than Mac’s built-in FontBook.
     </li>
     <li>
-      <strong><a rel="external" href="rectangleapp.com/">Rectangle</a></strong>:
+      <strong><a rel="external" href="https://rectangleapp.com/">Rectangle</a></strong>:
       never drag or resize another window again. Keyboard shortcuts to put everything right where you need it.
     </li>
     <li>
@@ -164,11 +184,11 @@
       helps wrangle all those app icons in your taskbar if you’re a minimalist like me.
     </li>
     <li>
-      <strong><a rel="external" href="matthewpalmer.net/rocket/">Rocket</a></strong>:
+      <strong><a rel="external" href="https://matthewpalmer.net/rocket/">Rocket</a></strong>:
       lends you Slack-like ability to use emoji anywhere. Way better than the OSX default emoji picker.
     </li>
     <li>
-      <strong><a rel="external" href="notion.so">Notion</a></strong>:
+      <strong><a rel="external" href="https://notion.so">Notion</a></strong>:
       my current favorite notes app. Can grow and get as complex as you need it to be, but for simple notes, the markdown and code highlight support is fantastic.
     </li>
   </ul>
@@ -222,23 +242,6 @@
 
   <p>(I know you do not care, but this is here mostly just for my own memory.)</p>
 </template>
-
-<script lang="ts">
-  import FontTester from '$lib/components/FontTester.svelte'
-
-  const colors: string[] = [
-    '#ffd100',
-    '#34657f',
-    '#7ba7bc',
-    '#ff6a13',
-    '#e4002b',
-    '#a7a8aa',
-    '#888b8d',
-    '#53565a',
-    '#341F23',
-    '#101820',
-  ]
-</script>
 
 
 <style lang="scss">

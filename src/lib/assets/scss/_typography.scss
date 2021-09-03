@@ -63,7 +63,8 @@ h6 {
   }
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 2.6rem;
   border-bottom: 1px solid;
   margin-top: 1rem;
@@ -73,7 +74,8 @@ h1 {
   }
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 2rem;
   border-bottom: 1px solid;
   display: inline-block;
@@ -84,7 +86,8 @@ h2 {
   }
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
   font-family: var(--body-font);
   font-weight: bold;
@@ -96,9 +99,11 @@ h3 {
   }
 }
 
-h4 {
-  font-family: inherit;
+h4,
+.h4 {
+  font-family: var(--body-font);
   font-size: 1.4rem;
+  font-weight: bold;
 }
 
 h1,

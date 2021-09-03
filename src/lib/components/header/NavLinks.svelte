@@ -1,12 +1,3 @@
-<ul class:mobile={mobile}>
-  <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
-  <NavLink to="/" text="Home" {closeMobileMenu} {key} {mobile} {menuOpen} />
-  <NavLink to="/blog" text="Blog" {closeMobileMenu} {key} {mobile} {menuOpen}  />
-  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} {menuOpen}  />
-  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} {menuOpen}  />
-</ul>
-
-
 <script lang="ts">
   import NavLink from './NavLink.svelte'
 
@@ -19,6 +10,15 @@
     if (menuOpen) toggleMenu()
   }
 </script>
+
+
+<ul class:mobile={mobile}>
+  <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
+  <NavLink to="/" text="Home" {closeMobileMenu} {key} {mobile} {menuOpen} />
+  <NavLink to="/blog" text="Blog" {closeMobileMenu} {key} {mobile} {menuOpen}  />
+  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} {menuOpen}  />
+  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} {menuOpen}  />
+</ul>  
 
 
 <style lang="scss">

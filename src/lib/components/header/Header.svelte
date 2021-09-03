@@ -1,3 +1,24 @@
+<script lang="ts">
+	import LogoSVG from '$lib/components/header/LogoSVG.svelte'
+	import Grid from '$lib/components/Grid.svelte'
+	import NavMenus from '$lib/components/header/NavMenus.svelte'
+
+	export let key: string
+
+	let menuOpen: boolean = false
+
+	const toggleMenu = () => {
+		menuOpen = !menuOpen
+	}
+	
+	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
+	const focusMain = () => {
+		const main = document.querySelector('main');
+		main.focus();
+	}
+</script>
+
+
 <div>
   <header class="header">
     <a on:click={focusMain} class="skip-to-content-link" href="#main">
@@ -14,25 +35,6 @@
   <Grid refresh={key} />
 </div>
 
-<script lang="ts">
-  import LogoSVG from '$lib/components/header/LogoSVG.svelte'
-  import Grid from '$lib/components/Grid.svelte'
-  import NavMenus from '$lib/components/header/NavMenus.svelte'
-
-  export let key: string
-
-  let menuOpen: boolean = false
-
-  const toggleMenu = () => {
-    menuOpen = !menuOpen
-  }
-  
-  // I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
-  const focusMain = () => {
-    const main = document.querySelector('main');
-    main.focus();
-  }
-</script>
 
 <style lang="scss">
 #logo {

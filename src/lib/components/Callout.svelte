@@ -1,10 +1,8 @@
-<template>
-  <aside class="callout" aria-hidden="true">
-    <div class="wrapper">
-      <slot />
-    </div>
-  </aside>
-</template>
+<aside class="callout" aria-hidden="true">
+  <div class="wrapper">
+    <slot />
+  </div>
+</aside>
 
 
 <style lang="scss">

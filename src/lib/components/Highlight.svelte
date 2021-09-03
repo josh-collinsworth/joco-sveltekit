@@ -1,10 +1,9 @@
-<template>
-  <div class="highlight">
-    <p>
-      <slot />
-    </p>
-  </div>
-</template>
+<div class="highlight">
+  <p>
+    <slot />
+  </p>
+</div>
+
 
 <style lang="scss">
 .highlight {
@@ -18,23 +17,6 @@
   @media(min-width: 800px) {
     font-weight: bold;
     font-style: normal;
-    padding: 1rem 2rem;
-
-      // &::before,
-      // &::after {
-      //   content: '';
-      //   height: 2rem;
-      //   position: absolute;
-      //   width: 0;
-      //   border-right: 1px solid var(--lightBlue);
-      //   top: -3rem;
-      //   left: 50%;
-      // }
-
-      // &::after {
-      //   top: unset;
-      //   bottom: -3rem;
-      // }
   }
 }
 </style>

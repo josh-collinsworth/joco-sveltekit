@@ -1,3 +1,13 @@
+<script lang="ts">
+	import NavLinks from '$lib/components/header/NavLinks.svelte'
+	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
+
+	export let menuOpen: boolean
+	export let key: string
+	export let toggleMenu = null
+</script>
+
+
 <template>
 	<div>
 		<HamburgerButton {menuOpen} {toggleMenu}/>
@@ -18,14 +28,6 @@
 	</div>
 </template>
 
-<script lang="ts">
-	import NavLinks from '$lib/components/header/NavLinks.svelte'
-	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
-
-	export let menuOpen: boolean
-	export let key: string
-	export let toggleMenu = null
-</script>
 
 <style lang="scss">
 .main-nav {

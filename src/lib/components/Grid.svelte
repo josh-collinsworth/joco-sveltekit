@@ -1,14 +1,3 @@
-<template>
-  {#key refresh}
-    <div class="cell-grid" class:inverted aria-hidden="true">
-      {#each Array(count) as cell, i}
-        <GridCell color={randomColor()} />
-      {/each}
-    </div>
-  {/key}
-</template>
-
-
 <script lang="ts">
   import GridCell from './GridCell.svelte'
   import { onMount } from 'svelte'
@@ -48,6 +37,17 @@
     return colors[0]
   }
 </script>
+
+
+<template>
+  {#key refresh}
+    <div class="cell-grid" class:inverted aria-hidden="true">
+      {#each Array(count) as cell, i}
+        <GridCell color={randomColor()} />
+      {/each}
+    </div>
+  {/key}
+</template>
 
 
 <style lang="scss">

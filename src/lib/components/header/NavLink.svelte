@@ -1,16 +1,3 @@
-<li class:mobile={mobile} class:open={menuOpen} >
-  <a
-    sveltekit:prefetch
-    href={to}
-    class="nav__link"
-    class:active={isCurrentPage}
-    aria-current={isCurrentPage ? 'page' : false}
-    on:click={closeMobileMenu}
-  >
-    <span>{text}</span>
-  </a>
-</li>
-
 <script lang="ts">
   export let text: string
   export let to: string
@@ -22,6 +9,20 @@
 
   $: isCurrentPage = key === to
 </script>
+
+
+<li class:mobile={mobile} class:open={menuOpen} >
+  <a
+    sveltekit:prefetch
+    href={to}
+    class="nav__link"
+    class:active={isCurrentPage}
+    aria-current={isCurrentPage ? 'page' : false}
+    on:click={closeMobileMenu}
+  >  
+    <span>{text}</span>
+  </a>  
+</li>  
 
 
 <style lang="scss">

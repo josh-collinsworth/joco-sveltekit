@@ -1,17 +1,3 @@
-<template>
-	<div
-		class="cell"
-		style="
-      background: {color};
-			grid-area: span {size} / span {size};
-			animation-delay: {randomDelay()};
-			transform: translateY({randomDrop()});
-    "
-	>
-	</div>
-</template>
-
-
 <script lang="ts">
   import { onMount } from 'svelte'
   export let color: string = 'transparent'
@@ -45,6 +31,20 @@
 			return '0'
   }
 </script>
+
+
+<template>
+	<div
+		class="cell"
+		style="
+      background: {color};
+			grid-area: span {size} / span {size};
+			animation-delay: {randomDelay()};
+			transform: translateY({randomDrop()});
+    "
+	>
+	</div>
+</template>
 
 
 <style lang="scss">

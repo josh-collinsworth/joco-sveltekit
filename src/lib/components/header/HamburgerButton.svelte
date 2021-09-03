@@ -1,24 +1,24 @@
-<template>
-	<button
-    id="hamburger"
-    aria-pressed={menuOpen}
-    class:sticky={menuOpen}
-    on:click={toggleMenu}
-  >
-		<span class="sr"> menuOpenReadableOpposite} menu</span>
-		<div class="line" aria-hidden="true" />
-		<div class="line" aria-hidden="true" />
-		<div class="line" aria-hidden="true" />
-	</button>
-</template>
-
 <script lang="ts">
-  export let menuOpen: boolean
-  export let toggleMenu //TODO: Type?
+	export let menuOpen: boolean
+	export let toggleMenu //TODO: Type?
 
-  let menuOpenReadableOpposite: string
-  $: menuOpenReadableOpposite = menuOpen ? 'Close' : 'Open'
+	let menuOpenReadableOpposite: string
+	$: menuOpenReadableOpposite = menuOpen ? 'Close' : 'Open'
 </script>
+
+
+<button
+	id="hamburger"
+	aria-pressed={menuOpen}
+	class:sticky={menuOpen}
+	on:click={toggleMenu}
+>
+	<span class="sr"> menuOpenReadableOpposite} menu</span>
+	<div class="line" aria-hidden="true" />
+	<div class="line" aria-hidden="true" />
+	<div class="line" aria-hidden="true" />
+</button>
+
 
 <style lang="scss">
 #hamburger {

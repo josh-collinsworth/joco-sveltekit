@@ -1,3 +1,38 @@
+<script type="typescript">
+  import { onMount } from 'svelte'
+
+  export let font: string
+  export let label: string = ''
+  export let fontStyle: string = 'normal'
+  export let fontWeight: string = 'normal'
+  export let placeholder: string = ''
+  export let link: string = ''
+  export let bold: boolean = false
+  export let italic: boolean = false
+
+  let size: number = 42
+	let text: string = ''
+  let displayBold: boolean = false
+  let displayItalic: boolean = false
+
+  let sizeInPx: string
+  $: sizeInPx = size + 'px'
+
+  let fontName: string
+  $: fontName = (label || font)
+
+  let computedFontWeight: string
+  $: computedFontWeight = (displayBold && 'bold') || fontWeight || 'normal'
+  
+  let computedFontStyle: string
+  $: computedFontStyle = (displayItalic && 'italic') || fontStyle || 'normal'
+
+  onMount(() => { text = label || font })
+
+  const select = (e: Event) => e.target.select()
+</script>
+
+
 <template>
 	<form class="tester-form" on:submit|preventDefault>
 		<div class="flex-container">
@@ -46,41 +81,6 @@
 </template>
 
 
-<script type="typescript">
-  import { onMount } from 'svelte'
-
-  export let font: string
-  export let label: string = ''
-  export let fontStyle: string = 'normal'
-  export let fontWeight: string = 'normal'
-  export let placeholder: string = ''
-  export let link: string = ''
-  export let bold: boolean = false
-  export let italic: boolean = false
-
-  let size: number = 42
-	let text: string = ''
-  let displayBold: boolean = false
-  let displayItalic: boolean = false
-
-  let sizeInPx: string
-  $: sizeInPx = size + 'px'
-
-  let fontName: string
-  $: fontName = (label || font)
-
-  let computedFontWeight: string
-  $: computedFontWeight = (displayBold && 'bold') || fontWeight || 'normal'
-  
-  let computedFontStyle: string
-  $: computedFontStyle = (displayItalic && 'italic') || fontStyle || 'normal'
-
-  onMount(() => { text = label || font })
-
-  const select = (e: Event) => e.target.select()
-</script>
-
-
 <style lang="scss">
 .tester-form {
 	overflow: visible;
@@ -106,7 +106,7 @@
 		border: none;
 		margin: 0;
 		padding: .6em 0;
-		width: 100vw;
+		width: 100%;
 		line-height: 1em;
 		height: 1em;
 		overflow: visible;

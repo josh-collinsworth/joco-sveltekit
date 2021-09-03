@@ -1,3 +1,28 @@
+<script lang="ts">
+	let formData = {}
+	let isSubmitted: boolean = false
+
+	const encode = (data) => {
+		return Object.keys(data)
+			.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+			.join('&')
+	}
+
+	const handleSubmit = (e) => {
+		fetch('/', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: encode({
+					'form-name': e.target.getAttribute('name'),
+					...formData,
+				}),
+			})
+			.then(() => { isSubmitted = true })
+			.catch(error => alert(error))
+	}
+</script>
+
+
 <svelte:head>
 	<title>Josh Collinsworth | Contact</title>
 </svelte:head>
@@ -48,32 +73,8 @@
 
 		<p>I'll follow up by email if this wasn't spam. :)</p>
 	{/if}
-
 </template>
 
-<script lang="ts">
-	let formData = {}
-	let isSubmitted: boolean = false
-
-	const encode = (data) => {
-		return Object.keys(data)
-			.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-			.join('&')
-	}
-
-	const handleSubmit = (e) => {
-		fetch('/', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: encode({
-					'form-name': e.target.getAttribute('name'),
-					...formData,
-				}),
-			})
-			.then(() => { isSubmitted = true })
-			.catch(error => alert(error))
-	}
-</script>
 
 <style lang="scss">
 #contact-form {

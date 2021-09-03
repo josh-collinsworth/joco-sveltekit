@@ -58,14 +58,6 @@ h2 + .details {
   font-size: 0.9rem;
 }
 
-
-
-
-//Imported from Default.vue layout
-#app.mounted {
-  transition: inherit;
-}
-
 .categories li a {
   background: var(--header-color);
   padding: 0.5em;
@@ -106,21 +98,21 @@ h2 + .details {
 
 .layout {
   margin: 0 var(--margin) 4rem var(--margin);
+  width: calc(100% - (var(--margin) * 2));
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-top: 6rem;
+  min-height: calc(100vh - 450px);
+  background: var(--paper);
+  color: var(--ink);
 
   @media (min-width: $wider) {
     display: grid;
     grid-template-columns: var(--max-width) 1fr var(--sidebar-width);
     gap: 2rem;
     margin-right: 2rem;
-
-    #sidebar {
-      display: block;
-    }
   }
 
   @media (min-width: $widest) {

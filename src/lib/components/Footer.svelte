@@ -1,12 +1,19 @@
+<script lang="ts">
+  import Grid from './Grid.svelte'
+
+  const currentYear: number = new Date().getFullYear()
+</script>
+
+
 <div class="footer-wrapper">
   <Grid density={50} inverted={true} />
   <footer class="footer">
     <div>
       <ul class="footer__links">
         <li><a href="/rss.xml">RSS</a></li>
-        <li><a rel="external" href="github.com/josh-collinsworth">GitHub</a></li>
-        <li><a rel="external" href="codepen.io/collinsworth">CodePen</a></li>
-        <li><a rel="external" href="twitter.com/jjcollinsworth">Twitter</a></li>
+        <li><a rel="external" href="https://github.com/josh-collinsworth">GitHub</a></li>
+        <li><a rel="external" href="https://codepen.io/collinsworth">CodePen</a></li>
+        <li><a rel="external" href="https://twitter.com/jjcollinsworth">Twitter</a></li>
       </ul>
     </div>
 
@@ -19,17 +26,12 @@
         <del>Gridsome</del>
         <a rel="external" href="https://kit.svelte.dev/">SvelteKit</a>;
         <br />
-        hosted on <a rel="external" href="netlify.com">Netlify</a>.
+        hosted on <a rel="external" href="https://netlify.com">Netlify</a>.
       </p>
     </div>
   </footer>
 </div>
 
-<script lang="ts">
-import Grid from './Grid.svelte'
-
-const currentYear: number = new Date().getFullYear()
-</script>
 
 <style lang="scss">
 .footer {

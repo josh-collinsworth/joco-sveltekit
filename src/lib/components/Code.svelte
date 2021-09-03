@@ -2,13 +2,15 @@
 	export let lang: string = '';
 </script>
 
+
 <pre class="language-{lang}">
 	<code class="language-{lang}">
 		<slot />
 	</code>
 </pre>
 
-<style lang="scss">
+
+<style lang="scss" global>
 $background: #2c292d;
 
 pre {

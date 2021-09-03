@@ -3,8 +3,9 @@
   import { cubicIn, cubicOut } from 'svelte/easing'
   export let refresh: string = ''
 
-  let time: number = 360
+  const time: number = 360
 </script>
+
 
 {#key refresh}
   <div
@@ -14,6 +15,7 @@
     <slot />
   </div>
 {/key}
+
 
 <style>
   div {

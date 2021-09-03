@@ -1,3 +1,29 @@
+<script lang="ts">
+  import type Post from '$lib/assets/js/interfaces/post.js'
+  import LogoSVG from './header/LogoSVG.svelte'
+  
+  import { onMount } from 'svelte'
+  
+  let posts: Post[] = []
+  let allCategories: string[] = []
+  let onBlogIndexPage: boolean = false
+  
+  onMount(async () => {
+    if (typeof window !== 'undefined') {
+      onBlogIndexPage = window.location.pathname === '/blog'
+    }
+  
+    const res = await fetch('/blog/posts.json')
+    const resJSON = await res.json()
+    
+    posts = resJSON.posts
+      .map(post => ({ slug: post.slug, title: post.title }))
+      .sort((a, b) => Number(new Date(a.date)) - Number(new Date(b.date)))
+      .slice(0, 3)
+    
+    allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
+  })
+</script>
 
 <aside id="sidebar">
   <a href="/" class="home-link">
@@ -48,38 +74,23 @@
       </li>
     {/if}
   </ul>
+
+  <h2>Categories</h2>
+  <ul class="display-flex">
+    {#each allCategories as category}
+      <li>
+        <a href="/blog/category/{category}">
+          { category }
+        </a>
+      </li>
+    {/each}
+  </ul>
 </aside>
 
 
-
-<script lang="ts">
-// import TagList from './TagList'
-// import Tag from './Tag'
-import { onMount } from 'svelte'
-import LogoSVG from './header/LogoSVG.svelte'
-
-let posts: object[] = []
-let onBlogIndexPage: boolean = false
-
-onMount(async () => {
-  if (typeof window !== 'undefined') {
-    onBlogIndexPage = window.location.pathname === '/blog'
-  }
-
-  const res = await fetch('/blog/posts.json')
-  const resJSON = await res.json()
-  const info = resJSON.posts
-    .map(post => ({ slug: post.slug, title: post.title }))
-    .sort((a, b) => new Date(a.date) - new Date(b.date))
-    .slice(0, 3)
-  
-  posts = info
-})
-</script>
-
-
-
 <style lang="scss" global>
+@import '../assets/scss/_vars.scss';
+
 #sidebar {
   font-size: .85rem;
   display: none;
@@ -88,6 +99,10 @@ onMount(async () => {
   top: 2rem;
   grid-column: 3 / 4;
   text-align: right;
+
+  @media (min-width: $widest) {
+    display: block;
+  }
 
   .home-link {
     display: block;
@@ -103,6 +118,7 @@ onMount(async () => {
   h2 {
     font-family: var(--body-font);
     font-size: .8em;
+    font-weight: bold;
     text-transform: uppercase;
     margin: 3em 0 1.5em;
     padding: 0 0 .1em 0;

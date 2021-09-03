@@ -1,13 +1,3 @@
-<svelte:head>
-	<title>Josh Collinsworth | Frontend developer and designer</title>
-</svelte:head>
-
-
-<div class="intro">
-	<Homepage />
-</div>
-
-
 <script context="module">
 	export async function load({ page }) {
 		const Homepage = await import('$lib/markdown/homepage.md')
@@ -23,6 +13,15 @@
 <script lang="ts">
 	export let Homepage
 </script>
+
+
+<svelte:head>
+	<title>Josh Collinsworth | Frontend developer and designer</title>
+</svelte:head>
+
+<div class="intro">
+	<Homepage />
+</div>
 
 
 <style lang="scss" global>
