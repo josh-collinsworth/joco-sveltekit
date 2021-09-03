@@ -116,7 +116,7 @@ Your choice of browser is less and less relevant these days, but Chrome is still
 - [**Website IP**](https://chrome.google.com/webstore/detail/website-ip/ghbmhlgniedlklkpimlibbaoomlpacmk?hl=en) – View the IP address of the site you're viewing. Helpful when dealing with DNS changes and site migrations
 - [**Type Sample**](https://www.typesample.com/) – Hover over text in the browser to see its font-family and -size, and click to type your own phrase in the selected typeface. Neat!
 
-![](/images/post_images/github_desktop.png)
+![GitHub](/images/post_images/github_desktop.png)
 
 ### [GitHub Desktop](https://desktop.github.com/)
 

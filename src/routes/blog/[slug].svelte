@@ -1,11 +1,18 @@
 <script context=module>
   export async function load({page}) {
-    const Post = await import(`./posts/${page.params.slug}.md`)
-
-    return {
-      props: {
-        Post: Post.default,
-        meta: Post.metadata
+    try {
+      const Post = await import(`./posts/${page.params.slug}.md`)
+      
+      return {
+        props: {
+          Post: Post.default,
+          meta: Post.metadata
+        }
+      }
+    } catch(error) {
+      return {
+        status: 404,
+        error: error.message
       }
     }
   }

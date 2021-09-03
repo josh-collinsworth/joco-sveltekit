@@ -7,6 +7,7 @@
 </script>
 
 
+
 <button
 	id="hamburger"
 	aria-pressed={menuOpen}
@@ -18,6 +19,7 @@
 	<div class="line" aria-hidden="true" />
 	<div class="line" aria-hidden="true" />
 </button>
+
 
 
 <style lang="scss">
@@ -36,10 +38,6 @@
 	z-index: 4;
 
 	&.sticky {
-		position: fixed;
-		top: 2.5rem;
-		right: 1rem;
-
 		.line {
 			background: var(--white);
 		}

@@ -70,7 +70,7 @@ Again, the specific setup of the site doesn't really matter. The only things to 
 1. The site is running; and
 2. You note the Site Host (in the case of my screenshot, `localhost:10008`, but yours might be a custom `.local` domain instead)
 
-![](/images/post_images/Image-2020-02-20-at-8.47.39-PM-1024x691.png)
+![Look for 'Site host' in the Overview tab in Local](/images/post_images/Image-2020-02-20-at-8.47.39-PM-1024x691.png)
 
 ### 3\. Add Your Project to CodeKit
 
@@ -117,7 +117,7 @@ Here, you'll take the two steps necessary to connect CodeKit with Local:
 
 Now as you make changes in your code—for example, changing CSS files or editing the HTML on a page—your browser will just automatically refresh like magic! ✨
 
-![](/images/post_images/codekit-magic.gif) 
+![Now as you save your code changes, the page will automatically update and refresh!](/images/post_images/codekit-magic.gif) 
 
 **If you're having issues**: be sure that the site is running in Local, and that the protocol matches between the two (http or https; it should be the same both places. You might need to check or un-check the TLS box under Security Options and/or restart the server):
 

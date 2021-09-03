@@ -58,7 +58,7 @@ The width and height have max values, and a Sass loop (and a media query) sets C
 
 I've been using the same logo for myself since I was in school. On a whim, I decided to create a new one that more closely matches where I am now; more focused on development and applying design principles to the web.
 
-![](/images/post_images/Full-Logo-2018.svg)
+![2018 logo](/images/post_images/Full-Logo-2018.svg)
 
 As in the header, the logo's "icon" form simply removes the lettering, leaving only two sets of brackets, implying code (particularly delving into objects or arrays), with the middle two characters highlighted and in the vague shape of a "J" and a "C" (my initials, of course). I like to think it also hints at my own duality of designer/developer.
 

@@ -2,8 +2,10 @@
 	import LogoSVG from '$lib/components/header/LogoSVG.svelte'
 	import Grid from '$lib/components/Grid.svelte'
 	import NavMenus from '$lib/components/header/NavMenus.svelte'
+	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 
 	export let key: string
+	export let setPrefersDarkMode: (goDark: boolean) => void
 
 	let menuOpen: boolean = false
 
@@ -25,32 +27,49 @@
       Skip to main content
     </a>
 
-    <a id="logo" href="/" class:sticky={ menuOpen }>
-      <LogoSVG />
-      <span class="sr">Home</span>
-    </a>
-
-    <NavMenus {menuOpen} {toggleMenu} {key} />
+		<a href="/" class="logo" class:sticky={menuOpen}>
+			<LogoSVG />
+			<span class="sr">Home</span>
+		</a>
+		
+		<div class="icon-container" class:sticky={menuOpen}>
+			<DarkModeToggle {setPrefersDarkMode} />
+			<NavMenus {menuOpen} {toggleMenu} {key} />
+		</div>
   </header>
   <Grid refresh={key} />
 </div>
 
 
 <style lang="scss">
-#logo {
+.logo {
 	width: auto;
 	height: 2rem;
 	display: block;
 	position: relative;
 	z-index: 4;
+}
+
+.icon-container {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	position: relative;
 
 	&.sticky {
-		position: fixed;
-		top: 2.5rem;
-
-		--ink: var(--white);
+		right: 1rem;
+		top: calc(2.5rem - 2px);
 	}
 }
+
+.sticky {
+	position: fixed;
+	top: 2.5rem;
+
+	--ink: var(--white);
+	--paper: var(--darkBlue);
+}
+
 
 .header {
   display: flex;

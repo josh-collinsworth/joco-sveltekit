@@ -97,6 +97,9 @@ body {
 }
 
 #app {
+  background: var(--paper);
+  color: var(--ink);
+
   &.reduce-motion * {
     transition: none!important;
     animation: none!important;

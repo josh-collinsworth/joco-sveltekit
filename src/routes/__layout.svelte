@@ -1,9 +1,28 @@
-<script context="module">
-	export const load = async({ page }) => ({
-		props: {
-			key: page.path
+<script context="module" lang="ts">
+	export const load = async({ page }) => {
+		let reduceMotion: boolean = false
+		let ready: boolean = false
+
+		if (typeof window != 'undefined') {
+			// TODO: should this also get dark mode preference?
+			const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+			const storedMotionPreference = window.localStorage.getItem('collinsworth-reduce-motion')
+
+			if ((userMotionPreference && storedMotionPreference != 'false') || storedMotionPreference == 'true') {
+				reduceMotion = true
+			}
+
+			ready = true
 		}
-	})
+
+		return {
+			props: {
+				key: page.path,
+				reduceMotion,
+				ready
+			}
+		}
+	}
 </script>
 
 <script lang="ts">
@@ -15,17 +34,43 @@
 	import '$lib/assets/scss/global.scss'
 
 	export let key: string
+  export let reduceMotion:boolean = false
+  export let ready:boolean = false
+	
+  let prefersDark:boolean = false
+  let prefersLight:boolean = true
 
-	console.log(key)
+
+	const toggleReduceMotion = () => {
+		if (typeof window == 'undefined') return
+
+		reduceMotion = !reduceMotion
+
+		window.localStorage.setItem(
+			'collinsworth-reduce-motion',
+			JSON.stringify(reduceMotion)
+		)
+	}
+
+	const setPrefersDarkMode = (setAsDark: boolean): void => {
+		prefersLight = !setAsDark;
+		prefersDark = setAsDark;
+	}
 </script>
 
 
-<template>
-	<Header {key} /> 
-	
-	<div id="app" class="layout"> 
+<div
+	id="app"
+	class:reduce-motion={reduceMotion}
+	class:prefers-dark={prefersDark}
+	class:prefers-light={prefersLight}
+	class:mounted={ready}
+>
+	<Header {key} {setPrefersDarkMode} /> 
+
+	<div class="layout"> 
 		<PageTransition refresh={key}>
-		<!-- TODO: dynamic sidebar -->
+		<!-- [x] TODO: dynamic sidebar -->
 			<main tabindex="-1">
 				<slot></slot>
 			</main>
@@ -35,4 +80,4 @@
 	</div>
 
 	<Footer />
-</template>
+</div>

@@ -25,7 +25,7 @@
 ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 2em;
+  margin: 0;
   width: auto;
   font-size: .875rem;
   list-style-type: none;
