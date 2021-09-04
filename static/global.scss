@@ -1,4 +1,5 @@
 @import '../src/lib/assets/scss/_vars.scss';
+@import '../src/lib/assets/scss/_preferences.scss';
 @import '../src/lib/assets/scss/_fonts.scss';
 @import '../src/lib/assets/scss/_typography.scss';
 @import '../src/lib/assets/scss/_utilities.scss';
@@ -38,39 +39,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-#app {
-  background: var(--paper);
-  color: var(--ink);
-
-  &.reduce-motion * {
-    transition: none!important;
-    animation: none!important;
-
-    .cell-grid .cell {
-      opacity: 1!important;
-    }
-  }
-
-  &.prefers-dark {
-    --paper: #101820;
-    --ink: #ffffff;
-    --header-color: var(--white);
-    --accent-color: var(--lightBlue);
-    --link-color: var(--ink);
-    --highlight-color: var(--darkerGray);
-  }
-
-  &.prefers-light {
-    --paper: #ffffff;
-    --ink: #53565a;
-    --header-color: var(--darkGray);
-    --accent-color: var(--darkBlue);
-    --link-color: var(--darkBlue);
-    --highlight-color: var(--darkGray);
-  }
-}
-
 
 // This is all experimental goofing around, but might be cool??
 // @keyframes fade-in-up {
