@@ -1,4 +1,6 @@
 <script context="module" lang="ts">
+	import { dev } from '$app/env'; 
+
 	export const load = async({ page }) => {
 		let ready: boolean = false
 
@@ -9,7 +11,8 @@
 		return {
 			props: {
 				key: page.path,
-				ready
+				ready,
+				dev
 			}
 		}
 	}
@@ -22,11 +25,12 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	
 	export let key: string
+	export let dev: boolean
   export let ready: boolean = false
 	
   let reduceMotion: boolean = false
-  let prefersDark:boolean = false
-  let prefersLight:boolean = true
+  let prefersDark: boolean = false
+  let prefersLight: boolean = true
 
 	const setReduceMotion = (reduce: boolean): void => {
 		reduceMotion = reduce
@@ -42,6 +46,15 @@
 		prefersDark = setAsDark;
 	}
 </script>
+
+
+<svelte:head>
+	{#if dev}
+		<style>
+			@import '/global.scss';
+		</style>
+	{/if}
+</svelte:head>
 
 <div
 	id="app"

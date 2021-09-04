@@ -4,10 +4,13 @@
 
   export let refresh: string = ''
   export let inverted: boolean = false
-  export let density: number = 42
 
   let count: number = 0
   let colors: string[] = [
+    // The more instances of 'transparent' there are in the array, the more sparse the grid will look.
+    'transparent',
+    'transparent',
+    'transparent',
     'transparent',
     'var(--lightGray)',
     'var(--ink)',
@@ -27,14 +30,9 @@
   })
 
   const randomColor = () => {
-    const color = Math.floor(Math.random() * 7)
-    const percent = Math.floor(Math.random() * 100)
+    const color = Math.floor(Math.random() * colors.length)
 
-    if (percent < density) {
-      return colors[color]
-    }
-
-    return colors[0]
+    return colors[color]
   }
 </script>
 

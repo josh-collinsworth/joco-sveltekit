@@ -6,7 +6,7 @@
 
 
 <div class="footer-wrapper">
-  <Grid density={50} inverted={true} />
+  <Grid inverted={true} />
   <footer class="footer">
     <div>
       <ul class="footer__links">
