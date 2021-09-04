@@ -10,7 +10,7 @@
     <li>
       <article>
         <a href={'/blog/' + post.slug}>
-          <img src="/images/post_images/{post.coverImage}" alt="" />
+          <img src="/images/post_images/{post.coverImage}" alt="" loading="lazy" />
           <h2>{post.title}</h2>
         </a>
         <p>{post.excerpt}</p>

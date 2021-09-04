@@ -106,7 +106,7 @@
 		border: none;
 		margin: 0;
 		padding: .6em 0;
-		width: 100%;
+		width: calc(100vw - var(--margin));
 		line-height: 1em;
 		height: 1em;
 		overflow: visible;

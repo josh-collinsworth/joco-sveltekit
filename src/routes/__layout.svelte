@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const load = async({ page }) => {
+	export const load = async({ page, fetch }) => {
 		let reduceMotion: boolean = false
 		let ready: boolean = false
 

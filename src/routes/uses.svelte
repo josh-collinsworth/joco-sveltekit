@@ -19,6 +19,7 @@
 <svelte:head>
   <title>Josh Collinsworth Uses</title>
 </svelte:head>
+
 <template>
   <h1>Uses</h1>
 
