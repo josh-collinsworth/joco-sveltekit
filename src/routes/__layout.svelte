@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
 	import { dev } from '$app/env'; 
 
-	const styleRoute = dev ? 'src/lib' : ''
+	let styleRoute = dev ? 'src/lib' : ''
 
 	export const load = async({ page }) => {
 		let ready: boolean = false
@@ -28,7 +28,7 @@
 	
 	export let key: string
   export let ready: boolean = false
-  export let styleRoute: string = ''
+  export let styleRoute: string
 	
   let reduceMotion: boolean = false
   let prefersDark:boolean = false
