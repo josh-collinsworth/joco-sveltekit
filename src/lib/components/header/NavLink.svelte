@@ -5,7 +5,7 @@
   export let mobile: boolean = false
 
   export let menuOpen: boolean = false
-  export let closeMobileMenu //TODO: type?
+  export let closeMobileMenu: () => void
 
   $: isCurrentPage = key === to
 </script>
@@ -18,6 +18,7 @@
     class="nav__link"
     class:active={isCurrentPage}
     aria-current={isCurrentPage ? 'page' : false}
+    tabindex={mobile && !menuOpen ? '-1' : '0'}
     on:click={closeMobileMenu}
   >  
     <span>{text}</span>
