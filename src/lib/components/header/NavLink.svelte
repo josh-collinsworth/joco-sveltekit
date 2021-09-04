@@ -18,7 +18,7 @@
     class="nav__link"
     class:active={isCurrentPage}
     aria-current={isCurrentPage ? 'page' : false}
-    tabindex={mobile && !menuOpen ? '-1' : '0'}
+    tabindex={mobile && !menuOpen ? -1 : 0}
     on:click={closeMobileMenu}
   >  
     <span>{text}</span>

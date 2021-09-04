@@ -15,7 +15,8 @@ export const get = async () => {
 					slug: post.slug,
 					excerpt: post.excerpt,
 					coverImage: post.coverImage,
-					date: post.date
+					date: post.date,
+					categories: post.categories,
 				}))
 				.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
 		)
