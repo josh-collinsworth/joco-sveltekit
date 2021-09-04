@@ -1,9 +1,8 @@
 <script context="module" lang="ts">
 	import { dev } from '$app/env'; 
 
-	let styleRoute = dev ? 'src/lib' : ''
-
 	export const load = async({ page }) => {
+		let styleRoute = dev ? 'src/lib' : ''
 		let ready: boolean = false
 
 		if (typeof window != 'undefined') {
