@@ -1,6 +1,4 @@
 <script context="module" lang="ts">
-	import { dev } from '$app/env'; 
-
 	export const load = async({ page }) => {
 		let ready: boolean = false
 
@@ -12,7 +10,6 @@
 			props: {
 				key: page.path,
 				ready,
-				dev
 			}
 		}
 	}
@@ -25,7 +22,6 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	
 	export let key: string
-	export let dev: boolean
   export let ready: boolean = false
 	
   let reduceMotion: boolean = false
@@ -47,14 +43,6 @@
 	}
 </script>
 
-
-<svelte:head>
-	{#if dev}
-		<style>
-			@import '/global.scss';
-		</style>
-	{/if}
-</svelte:head>
 
 <div
 	id="app"
@@ -78,3 +66,8 @@
 
 	<Footer />
 </div>
+
+
+<style lang="scss" global>
+	@import '../lib/assets/scss/global.scss';
+</style>

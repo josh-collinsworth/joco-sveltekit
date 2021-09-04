@@ -21,7 +21,7 @@
 </svelte:head>
 
 <div class="intro">
-	<Homepage />
+	<svelte:component this={Homepage} />
 </div>
 
 

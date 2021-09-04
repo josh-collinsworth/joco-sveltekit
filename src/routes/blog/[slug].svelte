@@ -41,7 +41,7 @@
 
   <h1>{ meta.title }</h1>
   
-  <Post />
+  <svelte:component this={Post} />
 
   <hr>
 
