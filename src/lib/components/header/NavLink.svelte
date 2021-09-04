@@ -27,6 +27,20 @@
 
 
 <style lang="scss">
+li {
+  margin: 0;
+  margin-left: 1.5em;
+}
+
+a {
+  color: var(--ink);
+  margin: 0;
+
+  &:hover {
+    color: var(--link-color);
+  }
+}
+
 li.mobile {
   transform: translateX(-3em);
   opacity: 0;
@@ -50,7 +64,7 @@ li.open {
 
   a {
     color: var(--white);
-    width: max-content;
+    width: calc(100% - 4rem);
   }
 }
 

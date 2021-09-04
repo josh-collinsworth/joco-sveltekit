@@ -5,5 +5,5 @@ export default interface Post {
   excerpt: string;
   slug: string;
   title: string;
-  updated: string;
+  updated?: string;
 }
