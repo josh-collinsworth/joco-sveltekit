@@ -4,7 +4,6 @@
 		let ready: boolean = false
 
 		if (typeof window != 'undefined') {
-			// TODO: should this also get dark mode preference?
 			const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 			const storedMotionPreference = window.localStorage.getItem('collinsworth-reduce-motion')
 
@@ -40,7 +39,6 @@
   let prefersDark:boolean = false
   let prefersLight:boolean = true
 
-
 	const toggleReduceMotion = () => {
 		if (typeof window == 'undefined') return
 
@@ -66,7 +64,7 @@
 	class:prefers-light={prefersLight}
 	class:mounted={ready}
 >
-	<Header {key} {setPrefersDarkMode} /> 
+	<Header {key} {setPrefersDarkMode} {reduceMotion} {toggleReduceMotion} /> 
 
 	<div class="layout"> 
 		<PageTransition refresh={key}>

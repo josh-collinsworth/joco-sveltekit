@@ -40,6 +40,7 @@ const toggleDarkMode = () => {
   id="dark-mode-toggle"
   on:click={toggleDarkMode}
   class:dark={darkMode}
+  class="settings-toggle"
   title="{enableOrDisable} dark mode"
   aria-pressed={darkMode}
 >
@@ -49,25 +50,7 @@ const toggleDarkMode = () => {
 
 
 <style lang="scss" global>
-
-button#dark-mode-toggle {
-  --button-size: 2.2rem;
-
-  cursor: pointer;
-  height: var(--button-size);
-  width: var(--button-size);
-  overflow: hidden;
-  padding: 0;
-  border-radius: 2rem;
-  border: .1rem solid var(--ink);
-  background: var(--paper);
-  transition: all .25s cubic-bezier(1, 0, 0, 1);
-  z-index: 4;
-
-  &:hover {
-    background: var(--paper);
-  }
-
+#dark-mode-toggle {
 	&:hover svg {
 		path, circle {
 			stroke: var(--yellow);

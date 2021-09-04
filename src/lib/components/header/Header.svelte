@@ -3,9 +3,12 @@
 	import Grid from '$lib/components/Grid.svelte'
 	import NavMenus from '$lib/components/header/NavMenus.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
+	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte';
 
 	export let key: string
+	export let reduceMotion: boolean
 	export let setPrefersDarkMode: (goDark: boolean) => void
+	export let toggleReduceMotion: () => void
 
 	let menuOpen: boolean = false
 
@@ -33,6 +36,7 @@
 		</a>
 		
 		<div class="icon-container" class:sticky={menuOpen}>
+			<ReduceMotionToggle {reduceMotion} {toggleReduceMotion} />
 			<DarkModeToggle {setPrefersDarkMode} />
 			<NavMenus {menuOpen} {toggleMenu} {key} />
 		</div>
