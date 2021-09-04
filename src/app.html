@@ -3,16 +3,6 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61693930-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-61693930-1');
-		</script> -->
-
 		<link rel="icon" href="/2020-icon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -30,5 +20,15 @@
 		%svelte.head%
 	</head>
 		<div id="svelte">%svelte.body%</div>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61693930-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-61693930-1');
+		</script>
 	</body>
 </html>
