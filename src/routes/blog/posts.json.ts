@@ -1,6 +1,7 @@
 import type Post from '$lib/assets/js/interfaces/post.js'
+import type APIResponse from '$lib/assets/js/interfaces/api-response.js'
 
-export const get = async () => {
+export const get = async (): Promise<APIResponse> => {
 	try {
 		const posts: Post[] = await Promise.all(
 			Object.entries(import.meta.glob('./posts/*.md')).map(async ([path, page]) => {

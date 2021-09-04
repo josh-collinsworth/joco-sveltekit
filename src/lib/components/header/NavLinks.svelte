@@ -30,20 +30,6 @@ ul {
   font-size: .875rem;
   list-style-type: none;
   padding: 0;
-
-  li {
-    margin: 0;
-    margin-left: 1.5em;
-  }
-
-  a {
-    color: var(--ink);
-    margin: 0;
-
-    &:hover {
-      color: var(--link-color);
-    }
-  }
 }
 
 ul.mobile {

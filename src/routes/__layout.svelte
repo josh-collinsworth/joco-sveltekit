@@ -1,5 +1,7 @@
 <script context="module" lang="ts">
-	import '$lib/assets/scss/global.scss'
+	import { dev } from '$app/env'; 
+
+	const styleRoute = dev ? 'src/lib' : ''
 
 	export const load = async({ page }) => {
 		let ready: boolean = false
@@ -11,7 +13,8 @@
 		return {
 			props: {
 				key: page.path,
-				ready
+				ready,
+				styleRoute
 			}
 		}
 	}
@@ -24,7 +27,8 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	
 	export let key: string
-  export let ready:boolean = false
+  export let ready: boolean = false
+  export let styleRoute: string = ''
 	
   let reduceMotion: boolean = false
   let prefersDark:boolean = false
@@ -45,6 +49,10 @@
 	}
 </script>
 
+
+<svelte:head>
+	<link rel="stylesheet" href="/{styleRoute}/assets/scss/global.scss">
+</svelte:head>
 
 <div
 	id="app"
