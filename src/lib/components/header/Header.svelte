@@ -8,7 +8,7 @@
 	export let key: string
 	export let reduceMotion: boolean
 	export let setPrefersDarkMode: (goDark: boolean) => void
-	export let toggleReduceMotion: () => void
+	export let setReduceMotion: (reduce: boolean) => void
 
 	let menuOpen: boolean = false
 
@@ -36,7 +36,7 @@
 		</a>
 		
 		<div class="icon-container" class:sticky={menuOpen}>
-			<ReduceMotionToggle {reduceMotion} {toggleReduceMotion} />
+			<ReduceMotionToggle {reduceMotion} {setReduceMotion} />
 			<DarkModeToggle {setPrefersDarkMode} />
 			<NavMenus {menuOpen} {toggleMenu} {key} />
 		</div>

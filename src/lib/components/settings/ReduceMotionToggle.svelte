@@ -1,6 +1,19 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
+
   export let reduceMotion: boolean = false
-  export let toggleReduceMotion: () => void
+  export let setReduceMotion: (reduce: boolean) => void
+
+  onMount(() => {
+    const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+			const storedMotionPreference = window.localStorage.getItem('collinsworth-reduce-motion')
+
+			if (
+        (userMotionPreference && storedMotionPreference != 'false') 
+        || storedMotionPreference == 'true') {
+				reduceMotion = true
+			}
+  })
 
   let enableOrDisable: string
   $: enableOrDisable = reduceMotion ? 'Disable' : 'Enable'
@@ -10,7 +23,7 @@
 <button
   id="motion-toggle"
   class="settings-toggle"
-  on:click={toggleReduceMotion}
+  on:click={() => setReduceMotion(!reduceMotion)}
   title="{enableOrDisable} reduced motion"
   aria-pressed={reduceMotion}
 >

@@ -1,14 +1,14 @@
 <script lang="ts">
-	let formData = {}
+	let formData: object = {}
 	let isSubmitted: boolean = false
 
-	const encode = (data) => {
+	const encode = (data: object): string => {
 		return Object.keys(data)
 			.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
 			.join('&')
 	}
 
-	const handleSubmit = (e) => {
+	const handleSubmit = (e): void => {
 		fetch('/', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },

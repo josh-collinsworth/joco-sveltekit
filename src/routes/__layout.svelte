@@ -4,20 +4,12 @@
 		let ready: boolean = false
 
 		if (typeof window != 'undefined') {
-			const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-			const storedMotionPreference = window.localStorage.getItem('collinsworth-reduce-motion')
-
-			if ((userMotionPreference && storedMotionPreference != 'false') || storedMotionPreference == 'true') {
-				reduceMotion = true
-			}
-
 			ready = true
 		}
 
 		return {
 			props: {
 				key: page.path,
-				reduceMotion,
 				ready
 			}
 		}
@@ -33,16 +25,14 @@
 	import '$lib/assets/scss/global.scss'
 
 	export let key: string
-  export let reduceMotion:boolean = false
+  export let reduceMotion: boolean = false
   export let ready:boolean = false
 	
   let prefersDark:boolean = false
   let prefersLight:boolean = true
 
-	const toggleReduceMotion = () => {
-		if (typeof window == 'undefined') return
-
-		reduceMotion = !reduceMotion
+	const setReduceMotion = (reduce: boolean): void => {
+		reduceMotion = reduce
 
 		window.localStorage.setItem(
 			'collinsworth-reduce-motion',
@@ -64,7 +54,7 @@
 	class:prefers-light={prefersLight}
 	class:mounted={ready}
 >
-	<Header {key} {setPrefersDarkMode} {reduceMotion} {toggleReduceMotion} /> 
+	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
 	<div class="layout"> 
 		<PageTransition refresh={key}>
