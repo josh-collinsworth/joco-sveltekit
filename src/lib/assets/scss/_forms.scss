@@ -1,5 +1,4 @@
 input[type="checkbox"] {
-	@extend .sr;
 
 	& + label {
 		display: flex;

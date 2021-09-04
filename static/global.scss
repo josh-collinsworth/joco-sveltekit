@@ -1,11 +1,11 @@
-@import 'vars';
-@import 'fonts';
-@import 'typography';
-@import 'utilities';
-@import 'layout';
-@import 'nav';
-@import 'animation';
-@import 'forms';
+@import '../src/lib/assets/scss/_vars.scss';
+@import '../src/lib/assets/scss/_fonts.scss';
+@import '../src/lib/assets/scss/_typography.scss';
+@import '../src/lib/assets/scss/_utilities.scss';
+@import '../src/lib/assets/scss/_layout.scss';
+@import '../src/lib/assets/scss/_nav.scss';
+@import '../src/lib/assets/scss/_animation.scss';
+@import '../src/lib/assets/scss/_forms.scss';
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -69,19 +69,6 @@ body {
     --link-color: var(--darkBlue);
     --highlight-color: var(--darkGray);
   }
-}
-
-.sr {
-  position: absolute;
-  left: -100vw;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: none;
-  word-wrap: normal;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
 }
 
 

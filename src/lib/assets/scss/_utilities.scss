@@ -15,7 +15,8 @@
   align-items: center;
 }
 
-.sr {
+.sr,
+input[type=checkbox] {
   position: absolute;
   left: -100vw;
   opacity: 0;

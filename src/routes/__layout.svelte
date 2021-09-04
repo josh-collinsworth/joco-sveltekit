@@ -1,8 +1,5 @@
 <script context="module" lang="ts">
-	import { dev } from '$app/env'; 
-
 	export const load = async({ page }) => {
-		let styleRoute = dev ? 'src/lib' : ''
 		let ready: boolean = false
 
 		if (typeof window != 'undefined') {
@@ -12,8 +9,7 @@
 		return {
 			props: {
 				key: page.path,
-				ready,
-				styleRoute
+				ready
 			}
 		}
 	}
@@ -27,7 +23,6 @@
 	
 	export let key: string
   export let ready: boolean = false
-  export let styleRoute: string
 	
   let reduceMotion: boolean = false
   let prefersDark:boolean = false
@@ -47,11 +42,6 @@
 		prefersDark = setAsDark;
 	}
 </script>
-
-
-<svelte:head>
-	<link rel="stylesheet" href="/{styleRoute}/assets/scss/global.scss">
-</svelte:head>
 
 <div
 	id="app"
