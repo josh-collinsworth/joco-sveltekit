@@ -1,6 +1,7 @@
 <script context="module" lang="ts">
-	export const load = async({ page, fetch }) => {
-		let reduceMotion: boolean = false
+	import '$lib/assets/scss/global.scss'
+
+	export const load = async({ page }) => {
 		let ready: boolean = false
 
 		if (typeof window != 'undefined') {
@@ -22,12 +23,10 @@
 	import PageTransition from '$lib/components/PageTransition.svelte';
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	
-	import '$lib/assets/scss/global.scss'
-
 	export let key: string
-  export let reduceMotion: boolean = false
   export let ready:boolean = false
 	
+  let reduceMotion: boolean = false
   let prefersDark:boolean = false
   let prefersLight:boolean = true
 

@@ -18,6 +18,7 @@
 
 <svelte:head>
   <title>Josh Collinsworth Uses</title>
+	<meta data-key="description" name="description" content="Things I use and like">
 </svelte:head>
 
 <template>

@@ -16,6 +16,11 @@
 	export let posts: Post[]
 </script>
 
+<svelte:head>
+	<title>Josh Collinsworth | Blog</title>
+	<meta data-key="description" name="description" content="I usually write multiple posts per year! (Caveat: two is technically multiple.)">
+</svelte:head>
+
 <template>
 	<h1>Blog</h1>
 

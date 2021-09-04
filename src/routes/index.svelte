@@ -16,7 +16,8 @@
 
 
 <svelte:head>
-	<title>Josh Collinsworth | Frontend developer and designer</title>
+	<title>Josh Collinsworth</title>
+	<meta data-key="description" name="description" content="Front-end developer and designer">
 </svelte:head>
 
 <div class="intro">
