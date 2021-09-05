@@ -1,6 +1,6 @@
-import { SITE_DOMAIN } from '$lib/assets/js/constants.js'
+import type RSSResponse from '$lib/assets/js/interfaces/rss-response'
 
-export const get = async () => {
+export const get = async (): Promise<RSSResponse> => {
   const data = await Promise.all(
     Object.entries(import.meta.glob('./blog/posts/*.md')).map(async ([path, page]) => {
       const { metadata } = await page()

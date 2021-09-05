@@ -2,7 +2,7 @@
 	export async function load({ fetch, page }) {
     const category = page.params.category
     //TODO: maybe add a way to fetch with query parameter to avoid filtering?
-		const res = await fetch(`/blog/posts-detail.json`)
+		const res = await fetch(`/blog/posts.json`)
 		const { posts } = await res.json()
     const matchingPosts = posts.filter(post => post.categories.includes(category));
 
@@ -13,7 +13,7 @@
 </script>
 
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post.js'
+  import type Post from '$lib/assets/js/interfaces/post'
   import PostList from '$lib/components/PostList.svelte'
 
   export let posts: Post[]

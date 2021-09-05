@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post.js'
+  import type Post from '$lib/assets/js/interfaces/post'
   
   export let posts: Post[]
 </script>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post.js'
+  import type Post from '$lib/assets/js/interfaces/post'
   import LogoSVG from './header/LogoSVG.svelte'
   
   import { onMount } from 'svelte'

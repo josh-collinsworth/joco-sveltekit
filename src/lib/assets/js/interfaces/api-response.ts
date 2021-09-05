@@ -1,4 +1,4 @@
-import type Post from './post.js'
+import type Post from './post'
 
 export default interface APIResponse {
   status: number;

@@ -10,7 +10,7 @@
 </script>
 
 <script lang="ts">
-	import type Post from '$lib/assets/js/interfaces/post.js'
+	import type Post from '$lib/assets/js/interfaces/post'
 	import PostList from '$lib/components/PostList.svelte'
 
 	export let posts: Post[]
