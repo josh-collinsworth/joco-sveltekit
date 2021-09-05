@@ -10,7 +10,7 @@
 
 .callout {
   margin: 3rem 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5em;
   position: relative;
   background: var(--paper);
@@ -24,8 +24,6 @@
   
   .wrapper {
     margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
     &:after {
       content: '';

@@ -1,19 +1,18 @@
 <div class="side-note">
-	<p>
-		<slot />
-	</p>
+	<slot />
 </div>
 
 
 <style>
 .side-note {
-  padding: .5rem 1.5rem;
+  padding: 1.5rem;
   position: relative;
   margin: 3rem 1rem;
   max-width: calc(100% - 2rem);
   font-size: .9rem;
   font-style: italic;
   border: 1px solid var(--lightBlue);
+	line-height: var(--body-line-height);
 }
 
 .side-note:before {

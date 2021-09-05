@@ -1,3 +1,4 @@
+<!-- TODO: this currently returns all posts. At some point, it will probably be worth adding pagination. -->
 <script context="module" lang="ts">
 	export async function load({ fetch }) {
 		const res = await fetch(`/blog/posts-detail.json`)
@@ -14,6 +15,7 @@
 	import Loader from '$lib/components/Loader.svelte'
 	import PostList from '$lib/components/PostList.svelte'
 	import TransitionWrapper from '$lib/components/transitions/TransitionWrapper.svelte'
+	import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
 
 	export let posts: Post[] = []
 
@@ -23,11 +25,18 @@
 
 <svelte:head>
 	<title>Josh Collinsworth | Blog</title>
-	<meta data-key="description" name="description" content="I usually write multiple posts per year! (Caveat: two is technically multiple.)">
+	<meta data-key="description" name="description" content="Writings on development, design, and random thoughts.">
 </svelte:head>
 
 <template>
-	<h1>Blog</h1>
+	<h1>Writing</h1>
+
+	<h2>External writing:</h2>
+
+	<PostList posts={EXTERNAL_POSTS} external={true} />
+
+
+	<h2>My blog:</h2>
 
 	{#if postsAreLoaded}
 		<TransitionWrapper>
@@ -39,3 +48,17 @@
 		</TransitionWrapper>
 	{/if}
 </template>
+
+
+<style lang="scss">
+	h3,
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	h2 {
+		margin-bottom: 0;
+		border: none;
+	}
+</style>

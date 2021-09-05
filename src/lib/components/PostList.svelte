@@ -2,6 +2,10 @@
   import type Post from '$lib/assets/js/interfaces/post'
   
   export let posts: Post[]
+  export let external: boolean = false
+  
+  let imageRoute: string|null
+  $: imageRoute = external ? '' : '/images/post_images/'
 </script>
 
 
@@ -10,8 +14,8 @@
     <li>
       <article>
         <a href={'/blog/' + post.slug}>
-          <img src="/images/post_images/{post.coverImage}" alt="" loading="lazy" />
-          <h2>{post.title}</h2>
+          <img src="{imageRoute}{post.coverImage}" alt="" loading="lazy" />
+          <h3>{post.title}</h3>
         </a>
         <p>{post.excerpt}</p>
       </article>
@@ -28,7 +32,7 @@ ul {
   article {
     margin-bottom: 8rem;
     
-    h2 {
+    h3 {
       margin: 0;
       border: 0;
       padding: 0;

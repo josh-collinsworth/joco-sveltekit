@@ -11,7 +11,7 @@ $widest: 1960px;
 
   --body-font: "Averta-Std", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --body-font-weight: normal;
-  --body-line-height: 1.5;
+  --body-line-height: 1.6em;
   --body-font-size: 1.125rem; 
 
   @media (min-width: $narrow){
@@ -50,12 +50,12 @@ $widest: 1960px;
   --margin: 1rem;
 
   --callout-font: var(--body-font);
-  --callout-font-style: italic;
+  --callout-font-style: normal;
   --callout-font-weight: bold;
 
   --highlight-font: var(--body-font);
   --highlight-font-style: normal;
-  --highlight-font-weight: normal;
+  --highlight-font-weight: bold;
 
   @media (min-width: $narrow) {
     --margin: 2rem;

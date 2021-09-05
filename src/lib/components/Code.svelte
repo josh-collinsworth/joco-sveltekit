@@ -26,8 +26,6 @@ pre {
 	font-size: .8rem;
 	overflow: auto;
 	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 pre code {

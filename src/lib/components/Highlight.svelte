@@ -1,20 +1,16 @@
 <div class="highlight">
-  <span>
-    <slot />
-  </span>
+  <slot />
 </div>
 
 
 <style lang="scss">
 .highlight {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin: 2rem 0;
   position: relative;
   font-family: var(--highlight-font);
   font-style: var(--highlight-font-style);
   font-weight: var(--highlight-font-weight);
-  span {
-    background: var(--yellow);
-  }
+  line-height: var(--body-line-height);
 }
 </style>
