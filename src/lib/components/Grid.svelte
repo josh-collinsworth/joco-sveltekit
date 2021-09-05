@@ -1,24 +1,12 @@
 <script lang="ts">
   import GridCell from './GridCell.svelte'
+  import { SITE_COLORS } from '$lib/assets/js/constants'
   import { onMount } from 'svelte'
 
   export let refresh: string = ''
   export let inverted: boolean = false
 
   let count: number = 0
-  let colors: string[] = [
-    // The more instances of 'transparent' there are in the array, the more sparse the grid will look.
-    'transparent',
-    'transparent',
-    'transparent',
-    'transparent',
-    'var(--lightGray)',
-    'var(--ink)',
-    'var(--lightBlue)',
-    'var(--darkBlue)',
-    'var(--yellow)',
-    'var(--orange)',
-  ]
 
   onMount(() => {
 		if (typeof window == 'undefined') return
@@ -30,9 +18,9 @@
   })
 
   const randomColor = () => {
-    const color = Math.floor(Math.random() * colors.length)
+    const color = Math.floor(Math.random() * SITE_COLORS.length)
 
-    return colors[color]
+    return SITE_COLORS[color]
   }
 </script>
 
