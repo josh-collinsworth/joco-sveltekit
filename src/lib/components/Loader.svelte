@@ -1,65 +1,130 @@
 <script>
-  import { onMount } from 'svelte'
   import { SITE_COLORS } from '$lib/assets/js/constants'
 
   const randomColor = () => {
     return SITE_COLORS[Math.floor(Math.random() * SITE_COLORS.length)]
   }
-
-  onMount(() => {
-    setInterval(() => {
-      const boxes = document.querySelectorAll('.loading-wrapper__box')
-
-      boxes.forEach((box, i) => {
-        setTimeout(() => {
-          box.style.backgroundColor = randomColor()
-          
-          const randomNumber = Math.random()
-
-          box.style.gridColumn = 'span 1'
-          box.style.gridRow = 'span 1'
-          
-          if (randomNumber > .80) {
-            box.style.gridColumn = 'span 2'
-            box.style.gridRow = 'span 2'
-          }
-          
-          if (randomNumber > .95) {
-            box.style.gridColumn = 'span 3'
-            box.style.gridRow = 'span 3'
-          }
-        }, i * 200)
-      })
-    }, 400)
-  })
 </script>
 
 
 <div>
-  <h2 class="h3">Loading…</h2>
+  <h2>Loading…</h2>
   
   <div class="loading-wrapper">
-    <div class="loading-wrapper__box"></div>
-    <div class="loading-wrapper__box"></div>
-    <div class="loading-wrapper__box"></div>
-    <div class="loading-wrapper__box"></div>
-    <div class="loading-wrapper__box"></div>
-    <div class="loading-wrapper__box"></div>
-    <div class="loading-wrapper__box"></div>
+    <div class="dot outer first"></div>
+    <div class="dot outer second"></div>
+    <div class="dot outer third"></div>
+
+    <div class="dot inner first"></div>
+    <div class="dot inner second"></div>
+    <div class="dot inner third"></div>
   </div>
 </div>
 
 
 <style lang="scss">
-  .loading-wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1rem);
-    grid-template-rows: repeat(7, 1rem);
+h2 {
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  border: none;
+  width: 100%;
+  font-family: var(--body-font);
+  font-size: 1.2rem;
+}
 
-    &__box {
-      width: 100%;
-      height: 100%;
-      background: var(--lightBlue);
+.loading-wrapper {
+  --unit: 2rem;
+  --easing: cubic-bezier(0.08, 0.82, 0.17, 1);
+
+  display: grid;
+  grid-template-columns: 1fr repeat(3, var(--unit)) 1fr;
+  grid-gap: 1rem;
+
+  .dot {
+    width: var(--unit);
+    height: var(--unit);
+    border-radius: var(--unit);
+    grid-row: 1 / 2;
+    transform: scale(0);
+
+    &.outer {
+      animation: outer_pop 1000ms infinite var(--easing);
+      background: var(--yellow);
+      
+      &:nth-of-type(2) {
+        animation-delay: 100ms;
+        background: var(--lightBlue);
+      }
+      
+      &:nth-of-type(3) {
+        animation-delay: 200ms;
+        background: var(--lightGray);
+      }
+    }
+    
+    &.inner {
+      // display: none;
+      background: rgba(255, 255, 0, 0.7);
+      background: var(--paper);
+      animation: inner_pop 1000ms infinite var(--easing);
+      
+      + .inner {
+        animation-delay: 100ms;
+
+        + .inner {
+          animation-delay: 200ms;
+        }
+      }
     }
   }
+  
+  .first {
+    grid-column: 2 / 3;
+  }
+
+  .second {
+    grid-column: 3 / 4;
+  }
+
+  .third {
+    grid-column: 4 / 5;
+  }
+}
+
+@keyframes outer_pop {
+  0% {
+    transform: scale(0)
+  }
+  50% {
+    transform: scale(1)
+  }
+  75% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(0)
+  }
+}
+
+@keyframes inner_pop {
+  0% {
+    transform: scale(0);
+  }
+  35% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1);
+  }
+  95% {
+    transform: scale(1);
+  }
+  96% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 </style>

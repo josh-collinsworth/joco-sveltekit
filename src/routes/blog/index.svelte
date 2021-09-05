@@ -17,8 +17,8 @@
 
 	export let posts: Post[] = []
 
-	let postsAreLoaded: boolean = false
-	// $: postsAreLoaded = posts.length > 0
+	let postsAreLoaded: boolean
+	$: postsAreLoaded = posts.length > 0
 </script>
 
 <svelte:head>
