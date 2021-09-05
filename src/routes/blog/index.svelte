@@ -11,9 +11,14 @@
 
 <script lang="ts">
 	import type Post from '$lib/assets/js/interfaces/post'
+	import Loader from '$lib/components/Loader.svelte'
 	import PostList from '$lib/components/PostList.svelte'
+	import TransitionWrapper from '$lib/components/TransitionWrapper.svelte'
 
-	export let posts: Post[]
+	export let posts: Post[] = []
+
+	let postsAreLoaded: boolean = false
+	// $: postsAreLoaded = posts.length > 0
 </script>
 
 <svelte:head>
@@ -24,5 +29,13 @@
 <template>
 	<h1>Blog</h1>
 
-	<PostList {posts} />	
+	{#if postsAreLoaded}
+		<TransitionWrapper>
+			<PostList {posts} />	
+		</TransitionWrapper>
+	{:else}
+		<TransitionWrapper>	
+			<Loader	/>
+		</TransitionWrapper>
+	{/if}
 </template>
