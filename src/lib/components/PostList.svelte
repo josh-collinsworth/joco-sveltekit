@@ -4,8 +4,11 @@
   export let posts: Post[]
   export let external: boolean = false
   
-  let imageRoute: string|null
+  let imageRoute: string
   $: imageRoute = external ? '' : '/images/post_images/'
+
+  let slugPath: string
+  $: slugPath = external ? '' : '/blog/'
 </script>
 
 
@@ -13,8 +16,8 @@
   {#each posts as post}
     <li>
       <article>
-        <a href={'/blog/' + post.slug}>
-          <img src="{imageRoute}{post.coverImage}" alt="" loading="lazy" />
+        <a href={slugPath + post.slug}>
+          <img src="{imageRoute + post.coverImage}" alt="" loading="lazy" />
           <h3>{post.title}</h3>
         </a>
         <p>{post.excerpt}</p>
@@ -28,6 +31,7 @@
 ul {
   padding: 0;
   list-style-type: none;
+  margin-top: 1rem;
   
   article {
     margin-bottom: 8rem;
