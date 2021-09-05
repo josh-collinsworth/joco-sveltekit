@@ -1,7 +1,7 @@
 <script context=module>
   export async function load({page}) {
     try {
-      const Post = await import(`./posts/${page.params.slug}.md`)
+      const Post = await import(`./posts/${page.params.post}.md`)
       
       return {
         props: {
@@ -69,3 +69,13 @@
     </li>
   </ul>
 </template>
+
+<style>
+@font-face {
+	font-family: 'MonoLisa';
+	src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
+	font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+</style>

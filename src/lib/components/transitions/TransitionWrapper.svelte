@@ -12,3 +12,10 @@ const time: number = 360
 >
   <slot />
 </div>
+
+
+<style>
+div {
+  width: 100%;
+}
+</style>

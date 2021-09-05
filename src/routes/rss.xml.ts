@@ -1,16 +1,8 @@
 import type RSSResponse from '$lib/assets/js/interfaces/rss-response'
+import fetchPosts from '$lib/assets/js/utils/fetchPosts'
 
 export const get = async (): Promise<RSSResponse> => {
-  const data = await Promise.all(
-    Object.entries(import.meta.glob('./blog/posts/*.md')).map(async ([path, page]) => {
-      const { metadata } = await page()
-      const slug = path.split('/').pop().split('.').shift()
-      return { ...metadata, slug }
-    })
-  ).then(posts => 
-    posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
-  )
-
+  const data = await fetchPosts({ withContent: false })
 
   const body = render(data)
   const headers = {

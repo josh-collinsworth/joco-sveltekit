@@ -149,9 +149,9 @@ The naming convention is: `block-slug.php`, where `slug` becomes the actual "slu
 What you actually want inside your template depends on how you'd like it to look and what content it will hold, but let's assume we just want a basic `div` wrapping the content with a special class. In that case, here's what our `block-side-note.php` might look like:
 
 <Code lang="php">{
-`  &lt;div class="side-note"&gt;
+`<div class="side-note">
     <?php block_field( 'note-text' ); ?>
-  &lt;/div&gt;`
+</div>`
 }</Code>
 
 Remember how I said you wouldn't need to know any PHP? That's because for basic blocks, the above is all you need, and you can easily just copy, paste, and adapt that code for whatever fields you have.

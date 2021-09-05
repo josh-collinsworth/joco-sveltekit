@@ -5,7 +5,7 @@ import fetchPosts from '$lib/assets/js/utils/fetchPosts'
 export const get = async (): Promise<APIResponse> => {
 	
 	try {
-		const posts = await fetchPosts()
+		const posts = await fetchPosts({ withContent: true })
 		return {
 			status: 200,
 			body: {

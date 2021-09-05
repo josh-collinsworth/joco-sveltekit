@@ -51,15 +51,13 @@ $widest: 1960px;
 
   --callout-font: var(--body-font);
   --callout-font-style: italic;
-  --callout-font-weight: normal
+  --callout-font-weight: bold;
 
   --highlight-font: var(--body-font);
   --highlight-font-style: normal;
   --highlight-font-weight: normal;
 
   @media (min-width: $narrow) {
-    --highlight-font-weight: bold;
-    --highlight-font-style: normal;
     --margin: 2rem;
   }
 
@@ -83,22 +81,6 @@ $widest: 1960px;
     --link-color: var(--lightBlue);
     --highlight-color: var(--darkerGray);
   }
-
-  // --heading-font: "Gazpacho";
-  // --heading-font-weight: 900;
-
-  // --body-font: "Corporative Sans";
-  // --body-font: "Causten Round";
-  // --body-font-weight: 500;
-  // --body-line-height: 1.6;
-  // // --body-font-size: 1.375rem !important;
-
-  // --callout-font: "Gazpacho Italic";
-  // --callout-font-weight: 900;
-  // --callout-font-style: normal;
-
-  // // --highlight-font-style: italic !important;
-  // --highlight-font-weight: 700 !important;
 
   font-size: var(--body-font-size);
 }

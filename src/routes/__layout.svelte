@@ -18,7 +18,7 @@
 <script lang="ts">
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
-	import PageTransition from '$lib/components/PageTransition.svelte';
+	import PageTransition from '$lib/components/transitions/PageTransition.svelte';
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	
 	export let key: string

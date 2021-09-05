@@ -4,11 +4,6 @@ body {
 	margin: 0 var(--margin);
 }
 
-main {
-	margin: 2rem auto 2rem 0;
-	max-width: 48rem;
-}
-
 header,
 footer {
 	padding: 2rem var(--margin);
@@ -123,9 +118,11 @@ h2 + .details {
 
   main {
     width: 100%;
-    max-width: var(--max-width);
+    margin: 2rem auto 2rem 0;
+    max-width: 100%;
 
     @media (min-width: $medium) {
+      max-width: var(--max-width);
       width: var(--max-width); //This seems unnecessary but it helps prevent a page transition issue
     }
 
