@@ -13,7 +13,7 @@
       onBlogIndexPage = window.location.pathname === '/blog'
     }
   
-    const res = await fetch('/blog/posts.json')
+    const res = await fetch('/blog/posts-detail.json')
     const resJSON = await res.json()
     
     posts = resJSON.posts

@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	export async function load({ fetch }) {
-		const res = await fetch(`/blog/posts.json`)
+		const res = await fetch(`/blog/posts-detail.json`)
 		const { posts } = await res.json()
 
 		return {

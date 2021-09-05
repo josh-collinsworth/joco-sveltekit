@@ -2,7 +2,7 @@
 	export async function load({ fetch, page }) {
     const category = page.params.category
     //TODO: maybe add a way to fetch with query parameter to avoid filtering?
-		const res = await fetch(`/blog/posts.json`)
+		const res = await fetch(`/blog/posts-detail.json`)
 		const { posts } = await res.json()
     const matchingPosts = posts.filter(post => post.categories.includes(category));
 

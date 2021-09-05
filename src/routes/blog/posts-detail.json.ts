@@ -1,11 +1,9 @@
 import type APIResponse from '$lib/assets/js/interfaces/api-response.js'
 import fetchPosts from '$lib/assets/js/utils/fetchPosts'
 
-//TODO: this file has a lot of duplication with posts-detail.json.ts. 
 export const get = async (): Promise<APIResponse> => {
-	
 	try {
-		const posts = await fetchPosts()
+		const posts = await fetchPosts(true)
 		return {
 			status: 200,
 			body: {
@@ -13,7 +11,6 @@ export const get = async (): Promise<APIResponse> => {
 			}
 		}
 	}
-
 	catch {
 		return {
 			status: 500,

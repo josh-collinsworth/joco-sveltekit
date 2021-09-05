@@ -1,9 +1,18 @@
 import { SITE_DOMAIN } from '$lib/assets/js/constants.js'
 
 export const get = async () => {
-  const res = await fetch(`https://${SITE_DOMAIN}/blog/posts.json`)
-  const data = await res.json();
-  const body = render(data.posts);
+  const data = await Promise.all(
+    Object.entries(import.meta.glob('./blog/posts/*.md')).map(async ([path, page]) => {
+      const { metadata } = await page()
+      const slug = path.split('/').pop().split('.').shift()
+      return { ...metadata, slug }
+    })
+  ).then(posts => 
+    posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+  )
+
+
+  const body = render(data)
   const headers = {
     'Cache-Control': `max-age=0, s-max-age=${600}`,
     'Content-Type': 'application/xml',
