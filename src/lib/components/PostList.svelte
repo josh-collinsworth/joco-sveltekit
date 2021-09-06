@@ -41,19 +41,25 @@
 
 
 <style lang="scss">
+@import '../assets/scss/_vars';
+
 ul {
   padding: 0;
   list-style-type: none;
   margin-top: 1rem;
   
   article {
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     padding: 1.5rem;
     box-shadow: 0.25rem 0.25rem 4px 0 rgba(var(--lightGrayRGB), 0.2);
     border-radius: 8px;
     border: 1px solid var(--lightGray);
     transition: .2s;
     transform-origin: bottom left;
+
+    @media (min-width: $narrow) {
+      margin-bottom: 2rem;
+    }
 
     .prefers-dark & {
       box-shadow: 0.25rem 0.25rem 4px 0 rgba(0, 0, 0, 0.2);
