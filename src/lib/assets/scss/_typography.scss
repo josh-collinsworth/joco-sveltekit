@@ -24,7 +24,10 @@ a {
 
 p,
 ul,
-ol {
+ol,
+.side-note,
+.callout,
+.highlight {
   
   a {
     color: var(--link-color);
@@ -49,7 +52,7 @@ h6 {
   color: var(--header-color);
   line-height: 1.1;
   position: relative;
-  margin: 4rem 0 1rem 0;
+  margin: 6rem 0 0;
   padding: 0 0 .5rem;
   
   a {
@@ -84,11 +87,6 @@ h3,
 .h3 {
   font-size: 1.6rem;
   padding: 0;
-  
-  
-  & + ul {
-    margin-top: 0;
-  }
 }
 
 h4,

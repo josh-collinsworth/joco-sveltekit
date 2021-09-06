@@ -20,7 +20,7 @@ const EXTERNAL_POSTS: Post[] = [
     coverImage: 'https://pbs.twimg.com/card_img/1432781135554154496/gZDxkOJh?format=jpg&name=medium',
     date: '2021-05-21',
     excerpt: 'I fell in love with coding the moment I created my first CSS :hover effect. Years later, that initial bite into interactivity on the web led me to a new goal: making a game.',
-    categories: []
+    categories: ['vue', 'javascript', 'design', 'web']
   }
 ]
 

@@ -15,15 +15,21 @@
 <style lang="scss">
 a.tag {
 	display: block;
-	padding: .5em 1em;
-	background: var(--darkBlue);
-	margin: 0 .5em 0 0;
+	padding: 0.5em 1em;
+	background: var(--lightBlue);
+	margin: 0 .5rem 0 0;
 	color: var(--white);
 	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.75em;
+	line-height: 1;
+	text-transform: uppercase;
+	transition: background .15s, color .15s;
 
-	&:hover {
-		background: var(--lightBlue);
-		color: var(--ink);
+	&:hover,
+	&:focus {
+		background: var(--yellow);
+		color: var(--black);
 	}
 }
 </style>

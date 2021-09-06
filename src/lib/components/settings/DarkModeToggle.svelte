@@ -62,14 +62,15 @@ const toggleDarkMode = () => {
 	}
 
 	svg {
+    --item-transition: .4s cubic-bezier(.7,-0.01,0,1.01);
 		width: 2rem;
 		height: 4rem;
 		transform: translateY(-1.975rem);
-		transition: all .4s cubic-bezier(.7,-0.01,0,1.01);
+		transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
 
 		path,
 		circle {
-			transition: all .4s cubic-bezier(.7,-0.01,0,1.01);
+			transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
 			stroke: var(--ink);
 		}
 	}

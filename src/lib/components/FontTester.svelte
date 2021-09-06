@@ -84,7 +84,7 @@
 <style lang="scss">
 .tester-form {
 	overflow: visible;
-	margin: 5rem 0 0;
+	margin: 4rem 0 0;
 	position: relative;
 
 	label {
@@ -107,6 +107,7 @@
 		margin: 0;
 		padding: .6em 0;
 		width: calc(100vw - var(--margin));
+		max-width: calc(100vw - var(--margin));
 		line-height: 1em;
 		height: 1em;
 		overflow: visible;

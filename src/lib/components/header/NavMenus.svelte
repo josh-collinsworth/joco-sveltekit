@@ -35,7 +35,7 @@
 	&#mobile-nav {
 		display: block;
 		position: fixed;
-		transition: all .4s cubic-bezier(1, 0, 0, 1);
+		transition: transform .4s cubic-bezier(1, 0, 0, 1);
 		transform: translateX(-100vw);
 		background: var(--darkBlue);
 		width: 100vw;

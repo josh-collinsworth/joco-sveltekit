@@ -42,9 +42,11 @@ a {
 }
 
 li.mobile {
+  --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
   transform: translateX(-3em);
   opacity: 0;
-  transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform var(--item-transition), opacity var(--item-transition);
   margin-bottom: .75rem;
   font-size: 1.25rem;
   line-height: 1.5em;

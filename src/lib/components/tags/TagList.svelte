@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-top: 1rem;
+  margin: 2rem 0 0;
   padding: 0;
   font-size: .9rem;
 }

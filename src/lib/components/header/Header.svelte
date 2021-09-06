@@ -86,10 +86,13 @@
 }
 
 .skip-to-content-link {
-	transition: all .15s cubic-bezier(0.86, 0, 0.07, 1);
+	--item-transition: .15s cubic-bezier(0.86, 0, 0.07, 1);
+
+	transition: transform var(--item-transition), opacity var(--item-transition);
 	position: absolute;
-	top: 0;
-	left: -100vw;
+	top: 1rem;
+	left: 1rem;
+	transform: translateX(-100%);
 	padding: .5em;
 	opacity: 0;
 	display: flex;
@@ -100,7 +103,7 @@
 	color: var(--white);
 
 	&:focus {
-		left: 0;
+		transform: translateX(0)	;
 		opacity: 1;
 		z-index: 10;
 	}

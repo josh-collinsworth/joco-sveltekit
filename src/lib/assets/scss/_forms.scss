@@ -65,6 +65,7 @@ button {
 
 .settings-toggle {
 	--button-size: 2.2rem;
+	--item-transition: .25s cubic-bezier(1, 0, 0, 1);
 
   cursor: pointer;
   height: var(--button-size);
@@ -75,7 +76,7 @@ button {
   border-radius: 2rem;
   border: .1rem solid var(--ink);
   background: var(--paper);
-  transition: all .25s cubic-bezier(1, 0, 0, 1);
+  transition: background var(--item-transition), color var(--item-transition), border-color var(--item-transition);
   z-index: 4;
 
 	&:hover {
