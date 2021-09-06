@@ -12,7 +12,7 @@ $: enableOrDisable = darkMode ? 'Disable' : 'Enable'
 
 onMount(() => {  
   const userPrefersDark = 
-    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
   darkMode = JSON.parse(localStorage.getItem('collinsworth-dark-mode'))
 

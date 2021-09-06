@@ -4,7 +4,7 @@
     //TODO: maybe add a way to fetch with query parameter to avoid filtering?
 		const res = await fetch(`/blog/posts.json`)
 		const { posts } = await res.json()
-    const matchingPosts = posts.filter(post => post.categories.includes(category));
+    const matchingPosts = posts.filter(post => post.categories.includes(category))
 
 		return {
 			props: { posts: matchingPosts, category }

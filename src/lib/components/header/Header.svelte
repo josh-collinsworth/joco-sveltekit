@@ -3,7 +3,7 @@
 	import Grid from '$lib/components/Grid.svelte'
 	import NavMenus from '$lib/components/header/NavMenus.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
-	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte';
+	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
 
 	export let key: string
 	export let reduceMotion: boolean
@@ -18,8 +18,8 @@
 	
 	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
 	const focusMain = () => {
-		const main = document.querySelector('main');
-		main.focus();
+		const main = document.querySelector('main')
+		main.focus()
 	}
 </script>
 
