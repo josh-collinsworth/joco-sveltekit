@@ -131,4 +131,13 @@ h2 + .details {
       max-width: unset;
     }
   }
+
+  &.fullwidth {
+    display: block;
+
+    main {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
 }

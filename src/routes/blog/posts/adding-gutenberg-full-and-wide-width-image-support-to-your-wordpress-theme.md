@@ -13,7 +13,6 @@ excerpt: Gutenberg brings with it the ability to set image blocks as full-width 
   import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import Code from '$lib/components/Code.svelte'
 </script>
 
 Recently, I've been using (and loving) the new [Gutenberg editor](https://wordpress.org/gutenberg/) in WordPress 5.0+. It's a huge step forward in both what developers can offer, and what users can expect out of their content creation experience.
@@ -30,11 +29,11 @@ Here's a visual example of what I mean:
 
 Adding support for wide- and full-width images is up to the theme developer. Fortunately, from the backend, it's dead simple; just add this line to the theme's `functions.php` file (please be sure to use a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) as appropriate):
 
-<Code lang="php">{
-`//functions.php 
+```php
+//functions.php 
  
-add_theme_support( 'align-wide' );`
-}</Code>
+add_theme_support( 'align-wide' );
+```
 
 That tidy little snippet will make two new options available for image blocks in the Gutenberg editor, in addition to the usual options: "wide width" and "full width," highlighted in the image below:
 
@@ -50,14 +49,14 @@ However, we still need to actually _implement_ these layout techniques on the fr
 
 I wanted to write this post mainly to share one technique that I came across online, which I feel is particularly clever in this situation (and which is not at all exclusive to Gutenberg or WordPress):
 
-<Code lang="css">{
-`/* style.css */
+```css
+/* style.css */
  
 .alignfull {
     width: 100vw;
     margin-left: calc(50% - 50vw);
-}`
-}</Code>
+}
+```
 
 Even though that bit of CSS above is very brief (only two properties!), I still want to be sure we cover what it's doing, because it's a pretty elegant solution for our needs.
 
@@ -69,9 +68,9 @@ However, making the image `100vw` wide on its own doesn't do us much good on its
 
 That brings us to the `margin` property, which is the clever part. This is where the real CSS magic happens:
 
-<Code lang="css">{
-`margin-left: calc(50% - 50vw);`
-}</Code>
+```css
+margin-left: calc(50% - 50vw);
+```
 
 In case you're new to the `calc` function, in essence, it lets you do math to set CSS values. It's most commonly used in responsive design to, say, let your image take up a quarter of the available space, minus an 8px margin (which would be `width: calc(25% - 8px);`).
 
@@ -98,20 +97,20 @@ Now that our image's left side is directly in the center of the screen, the rest
 
 Once more, here's the CSS from above:
 
-<Code lang="css">{
-`.alignfull {
+```css
+.alignfull {
     width: 100vw;
     margin-left: calc(50% - 50vw);
-}`
-}</Code>
+}
+```
 
 There's one small issue here, which is: we don't take into account the possibility that our `.alignfull` element might already have a right margin. If it does, it will actually be taking up _more than_ the full width of the screen, and that's no good.
 
 Plus, we probably want space above and below our fullwidth image, just to make it stand out a little more. So really, instead of setting just a `margin-left` property, we'd most likely be better off setting all four sides at once:
 
-<Code lang="css">{
-`margin: 2rem calc(50% - 50vw);`
-}</Code>
+```css
+margin: 2rem calc(50% - 50vw);
+```
 
 This way, we've made sure all four sides of our image are accounted for while also giving the image a little breathing room.
 
@@ -125,13 +124,13 @@ Wide-width images work similarly to the above, but naturally, we don't want to m
 
 How wide the image should be, exactly, as well as how to achieve the effect, is ultimately up to the theme author. However, I find something like this bit of CSS works quite well:
 
-<Code lang="css">{
-`.alignwide {
+```css
+.alignwide {
     width: calc(100% + 20vw);
     position: relative;
     left: -10vw;
-}`
-}</Code>
+}
+```
 
 ![A wide-width image, breaking outside its content container by an additional 20 VW](/images/post_images/wide-width-only-1024x713.png)
 
@@ -153,8 +152,8 @@ Another note here: unless you're ok with your wide-width images bleeding off the
 
 I eventually landed on something like this for my personal use on wide-width images; they're fullscreen up to a certain screen size (since they may as well be on mobile), then differentiate themselves starting at a certain `@media` breakpoint (likely the same one, or just above, where your content container element stops expanding and centers itself at a static width instead):
 
-<Code lang="css">{
-`/* style.css */
+```css
+/* style.css */
  
 .alignwide {
   width: 100vw;
@@ -166,7 +165,7 @@ I eventually landed on something like this for my personal use on wide-width ima
     width: calc(100% + 20vw);
     margin: 2rem -10vw;
   }
-}`
-}</Code>
+}
+```
 
 **That's it!** I hope this was helpful in getting your theme's images set up for Gutenberg support. Enjoy your new content editing experience!

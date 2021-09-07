@@ -24,7 +24,13 @@ const EXTERNAL_POSTS: Post[] = [
   }
 ]
 
+const FULLWIDTH_PAGES: string[] = [
+  '/projects',
+  '/blog'
+]
+
 export {
   SITE_COLORS,
-  EXTERNAL_POSTS
+  EXTERNAL_POSTS,
+  FULLWIDTH_PAGES
 }

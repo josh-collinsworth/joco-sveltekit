@@ -22,7 +22,10 @@
           <img src="{imageRoute + post.coverImage}" alt="" loading="lazy" />
           <h3>{post.title}</h3>
         </a>
-        <p>{post.excerpt}</p>
+        <p>
+          {post.excerpt}
+          <a href="{slugPath + post.slug}">Read more…</a>
+        </p>
 
         <TagList>
           {#each post.categories as category}
@@ -33,7 +36,6 @@
             </Tag>
           {/each}
         </TagList>
-
       </article>
     </li>
   {/each}
@@ -47,12 +49,18 @@ ul {
   padding: 0;
   list-style-type: none;
   margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
   
   article {
+    --padding-unit: 1.5rem;
+
     margin-bottom: 1rem;
-    padding: 1.5rem;
-    box-shadow: 0.25rem 0.25rem 4px 0 rgba(var(--lightGrayRGB), 0.2);
-    border-radius: 8px;
+    padding: var(--padding-unit);
+    box-shadow: 0.25rem 0.25rem 0 0 rgba(var(--lightGrayRGB), 0.2);
+    border-radius: 0;
     border: 1px solid var(--lightGray);
     transition: .2s;
     transform-origin: bottom left;
@@ -62,7 +70,7 @@ ul {
     }
 
     .prefers-dark & {
-      box-shadow: 0.25rem 0.25rem 4px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0.25rem 0.25rem 0 0 rgba(0, 0, 0, 0.2);
       background: rgba(var(--lightGrayRGB), 0.05);
       border: none;
     }
@@ -75,11 +83,14 @@ ul {
     }
     
     img {
-      margin: 0 0 .5rem;
+      width: calc(100% + (var(--padding-unit) * 2));
+      max-width: unset;
+      margin: calc(var(--padding-unit) * -1) 0 1rem calc(var(--padding-unit) * -1);
     }
     
     p {
       font-style: italic;
+      margin-bottom: 2rem;
     }
   }
 }

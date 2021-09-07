@@ -11,7 +11,6 @@ excerpt: CSS variables (otherwise known as CSS custom properties) give previousl
   import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import Code from '$lib/components/Code.svelte'
 </script>
 
 The usefulness of CSS variables should be fairly apparent if you've managed any sizable stylesheet before. If you have, you probably already know how untidy it can be at large scale. In fact, that's one of the biggest knocks against CSS; it's very easy for a stylesheet to balloon, making updates difficult as you're forced to search through hundreds (or thousands) of lines of code to make changes.
@@ -24,8 +23,8 @@ Fortunately for us, browsers are always adapting newer and better ways of doing 
 
 To demonstrate what CSS variables are good for, let's take a common example: you're managing a robust stylesheet for a client, and their brand color is used all over the place. It's in buttons, borders, backgrounds, text colors, and all kinds of other places, something like this:
 
-<Code lang="css">{
-`h1 {
+```css
+h1 {
     color: #ffd100;
 }
  
@@ -35,8 +34,8 @@ button {
  
 input {
     border: 2px solid #ffd100;
-}`
-}</Code>
+}
+```
 
 
 And so on and so on. Eventually, though, your client decides that this is not the proper color, or rebrands, or for whatever other reason, this color needs to change and be updated _everywhere_ it exists on the website.
@@ -53,8 +52,8 @@ Then, if you ever want to change the value, you only need to update it in one lo
 
 But instead of talking about it, let me show you how you might use it:
 
-<Code lang="css">{
-`:root {
+```css
+:root {
     --brand-yellow: #ffd100;
 }
  
@@ -68,8 +67,8 @@ button {
  
 input:focus {
     border: 2px solid var(--brand-yellow);
-}`
-}</Code>
+}
+```
 
 ![Showing CSS properties changing as CSS variables are altered](/images/post_images/changing-css-var-color.gif)
 
@@ -99,8 +98,8 @@ So you could name your variable something like `--myYellow` or `--brand-orange` 
 
 If you have a particular unit of measurement you're using over and over again—say, for example, `16px`—you could set a CSS variable for it, and use it anywhere you need!
 
-<Code lang="css">{
-`:root {
+```css
+:root {
     --unit: 16px;
 }
  
@@ -110,8 +109,8 @@ header {
  
 h1 {
     margin-bottom: var(--unit);
-}`
-}</Code>
+}
+```
 
 And so on. **Anything that can be a CSS value can be a CSS variable!** So if you're repeating it often, it may be worth setting a variable for it. That way, if you decide to change all of those instances—if `16px` needed to change to `18px`, for example—you only need to make the change in one place!
 
@@ -123,8 +122,8 @@ As you probably guessed, "var" is short for "variable," and the `var()` function
 
 Once more, let's have a look at the whole thing put all together in a new example:
 
-<Code lang="css">{
-`:root {
+```css
+:root {
     --base-size: 18px;
 }
  
@@ -135,8 +134,8 @@ p {
  
 header {
     padding: var(--base-size);
-}`
-}</Code>
+}
+```
 
 In the above example, we've got a `--base-size` variable set to 18px, and our `<p>` elements will use it as both their font-size and their bottom margin. Plus, it will be the padding measure used by our `<header>` element. And if we ever decide that's too much or too little, all we need to do is update the value of the variable where it's declared in the `:root`, and all changes will be made together quickly and neatly!
 
@@ -146,11 +145,11 @@ In the above example, we've got a `--base-size` variable set to 18px, and our `<
 
 You might be familiar with another of CSS's (few) functions, `calc()`. The `calc()` function (short, fairly obviously, for "calculation") allows you to have CSS do math that would otherwise be impossible in the language. Here's a basic example of `calc()` in action:
 
-<Code lang="css">{
-`.container {
+```css
+.container {
     width: calc(100% - 32px);
-}`
-}</Code>
+}
+```
 
 That bit of CSS sets elements with the `.container` class to be 100% wide, but then _subtracts_ 32px from whatever that total may be (probably to account for 16 pixels of padding or margin on each side of the element).
 
@@ -160,8 +159,8 @@ Mixing units of measurement like this—units such as `%` and `px` (or even `vw`
 
 Feast your eyes on this example CSS:
 
-<Code lang="css">{
-`:root {
+```css
+:root {
   --base-unit: 16px;
 }
  
@@ -169,15 +168,15 @@ Feast your eyes on this example CSS:
   font-size: calc( var(--base-unit) * 1.2);
   padding: calc( var(--base-unit) * 1.5);   
   margin-bottom: calc( var(--base-unit) / 2);
-}`
-}</Code>
+}
+```
 
 **Nifty, huh?** By using `calc( var(--base-unit) * 1.2)`, we've had CSS take our `--base-unit` variable (which, remember, is `16px`) and multiply it by 1.2—resulting in a font-size of roughly 19px. The padding is 1.5 times our `--base-unit` variable, resulting in a value of 24px, and the bottom margin is the variable _divided_ by two, thus, 8px.
 
 Another example I really like: resizing CSS grid columns individually. Ordinarily, to redefine one column in your grid, you'd need to rewrite the whole rule, but with CSS variables, you can reach in and adjust at will without touching what you don't need to:
 
-<Code lang="css">{
-`/* Set the default styling for the .grid class */
+```css
+/* Set the default styling for the .grid class */
 .grid {
   --left-column: 1rem;
   display: grid;
@@ -196,8 +195,8 @@ Another example I really like: resizing CSS grid columns individually. Ordinaril
   .grid {
     --left-column: 4rem;
   }
-}`
-}</Code>
+}
+```
 
 Are you excited? I'm excited.
 
@@ -205,8 +204,8 @@ Are you excited? I'm excited.
 
 Let's keep using the example above; 16px might be a suitable unit of measurement for _some_ screens, but we might want it to grow or shrink depending on the screen size. Easy! Just use a media query:
 
-<Code lang="css">{
-`:root {
+```css
+:root {
   --base-unit: 12px;
 }
  
@@ -220,8 +219,8 @@ Let's keep using the example above; 16px might be a suitable unit of measurement
   :root {
     --base-unit: 22px;
   }
-}`
-}</Code>
+}
+```
 
 ![ ](/images/post_images/css-variables-media-queries-3.gif)
 
@@ -239,11 +238,11 @@ But this post will age, so you can check [caniuse.com](http://caniuse.com) for u
 
 Right now, I personally wouldn't hesitate to use CSS variables in production; that's hefty support. But it will depend on your site's users. If some are likely to be on IE11, I'd definitely recommend using fallback values for custom properties, like so:
 
-<Code lang="css">{
-`h1 {
+```css
+h1 {
   color: #53565a;
   color: var(--brand-primary);
-}`
-}</Code>
+}
+```
 
 But regardless, I hope you've enjoyed, and have fun with using CSS variables in your next project!

@@ -234,15 +234,15 @@
 
   <p class="fancy details">
     Other fonts I've used previously:
-      <a rel="external" href="www.myfonts.com/fonts/jcfonts/korb/">Korb</a>
-      (both on its own and paired with <a rel="external" href="fonts.google.com/specimen/Bitter">Bitter</a>);
-      <a rel="external" href="www.myfonts.com/fonts/bitstream/clarendon/">Clarendon BT Pro</a> +
-      <a rel="external" href="www.myfonts.com/fonts/latinotype/texta/">Texta</a>; and
-      <a rel="external" href="www.myfonts.com/fonts/stawix/amsi-pro/">Amsi Pro</a> +
-      <a rel="external" href="www.myfonts.com/search/sagona">Sagona</a>.
+    <a rel="external" href="www.myfonts.com/fonts/jcfonts/korb/">Korb</a>
+    (both on its own and paired with <a rel="external" href="fonts.google.com/specimen/Bitter">Bitter</a>);
+    <a rel="external" href="www.myfonts.com/fonts/bitstream/clarendon/">Clarendon BT Pro</a> +
+    <a rel="external" href="www.myfonts.com/fonts/latinotype/texta/">Texta</a>; and
+    <a rel="external" href="www.myfonts.com/fonts/stawix/amsi-pro/">Amsi Pro</a> +
+    <a rel="external" href="www.myfonts.com/search/sagona">Sagona</a>.
+    (I know you do not care, but this is here mostly just for my own memory.)
   </p>
 
-  <p>(I know you do not care, but this is here mostly just for my own memory.)</p>
 </template>
 
 

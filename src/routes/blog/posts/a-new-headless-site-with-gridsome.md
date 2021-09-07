@@ -14,7 +14,6 @@ excerpt: A lengthy write-up diving into what headless means, its advantages and 
   import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import Code from '$lib/components/Code.svelte'
 </script>
 
 <SideNote>This post is a bit outdated; this website still looks and works mostly the same, but technically it's no longer headless WordPress; just pure static Gridsome. So a few of the smaller features described here, like the search bar, aren't in place anymore.</SideNote>
@@ -163,19 +162,19 @@ One of the uses for (at least some of) those fonts: code and preformatted code b
 
 Want to get super meta? Here's what a code block looks like on this new site, along with some of the CSS rendering it:
 
-<Code lang="css">{
-`pre[class*="language-"] {
+```css
+pre[class*="language-"] {
   padding: 4rem 1rem 1.5rem;
   margin: 2rem 0;
   overflow: auto;
   border-radius: 0.3em;
   position: relative;
 }
-<br></br>
+
 pre.language-css:before {
   content: 'CSS:';
-}`
-}</Code>
+}
+```
 
 <SideNote>This site may load up to six fonts on a page, which is admittedly quite a few by web standards. I didn’t want to compromise on the design, though, so I used other means to mitigate the performance impact, including subsetting each font, conditional loading, and setting font-display: swap to avoid invisible text.</SideNote>
 

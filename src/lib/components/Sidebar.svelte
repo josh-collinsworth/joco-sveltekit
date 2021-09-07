@@ -9,19 +9,25 @@
   let onBlogIndexPage: boolean = false
   
   onMount(async () => {
-    if (typeof window !== 'undefined') {
-      onBlogIndexPage = window.location.pathname === '/blog'
-    }
-  
-    const res = await fetch('/blog/posts-detail.json')
-    const resJSON = await res.json()
-    
-    posts = resJSON.posts
+    try {
+
+      if (typeof window !== 'undefined') {
+        onBlogIndexPage = window.location.pathname === '/blog'
+      }
+      
+      const res = await fetch('/blog/posts-detail.json')
+      const resJSON = await res.json()
+      
+      posts = resJSON.posts
       .map(post => ({ slug: post.slug, title: post.title }))
       .sort((a, b) => Number(new Date(a.date)) - Number(new Date(b.date)))
       .slice(0, 3)
-    
-    allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
+      
+      allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
+    }
+    catch(error) {
+      posts = [{ title: 'ERROR'}]
+    }
   })
 </script>
 

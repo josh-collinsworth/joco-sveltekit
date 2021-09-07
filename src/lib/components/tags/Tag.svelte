@@ -13,11 +13,11 @@
 
 
 <style lang="scss">
-a.tag {
+.tag {
 	display: block;
 	padding: 0.5em 1em;
 	background: var(--lightBlue);
-	margin: 0 .5rem 0 0;
+	margin: 0;
 	color: var(--white);
 	text-decoration: none;
 	font-weight: bold;

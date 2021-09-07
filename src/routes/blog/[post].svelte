@@ -21,14 +21,10 @@
 <script>
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
-	import prism from '$lib/assets/js/prism.js'
-  import { onMount } from 'svelte'
+  
+  import '$lib/assets/scss/code.scss'
 
   export let Post, meta
-
-  onMount(() => {
-		prism.init()
-	})
 </script>
 
 
@@ -45,8 +41,8 @@
 
   <hr>
 
-  {#if meta.categories}
-    <aside>
+  <aside>
+    {#if meta.categories}
       <h2 class="h4">Posted in: </h2>
       <TagList>
         {#each meta.categories as category}
@@ -57,17 +53,19 @@
           </Tag>
         {/each}
       </TagList>
-    </aside>
-  {/if}
+    {/if}
 
-  <ul>
-    <li>
-      <a href="/contact">Send me a note about this post</a>
-    </li>
-    <li>
-      <a href="/blog">Back to all posts</a>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <a href="/contact">Send me a note about this post</a>
+      </li>
+      <li>
+        <a href="/blog">Back to all posts</a>
+      </li>
+    </ul>
+  </aside>
+
+
 </template>
 
 <style>
@@ -77,5 +75,10 @@
 	font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+aside h2 {
+  margin-top: 1rem;
+  border: 0;
 }
 </style>

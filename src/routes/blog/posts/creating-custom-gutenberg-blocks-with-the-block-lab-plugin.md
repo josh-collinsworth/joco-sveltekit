@@ -14,7 +14,6 @@ excerpt: Block Lab is a WordPress plugin that simplifies the process of creating
   import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import Code from '$lib/components/Code.svelte'
 </script>
 
 I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in my post on [going headless with Gridsome](https://api.joshcollinsworth.com/a-new-headless-site-with-gridsome/), but I find it to be such a handy plugin that I thought I'd write just a bit more in depth on what it does and how to use it, as well as how I've adapted it specifically to my workflow in writing content for a headless WordPress site.
@@ -148,11 +147,11 @@ The naming convention is: `block-slug.php`, where `slug` becomes the actual "slu
 
 What you actually want inside your template depends on how you'd like it to look and what content it will hold, but let's assume we just want a basic `div` wrapping the content with a special class. In that case, here's what our `block-side-note.php` might look like:
 
-<Code lang="php">{
-`<div class="side-note">
+```php
+<div class="side-note">
     <?php block_field( 'note-text' ); ?>
-</div>`
-}</Code>
+</div>
+```
 
 Remember how I said you wouldn't need to know any PHP? That's because for basic blocks, the above is all you need, and you can easily just copy, paste, and adapt that code for whatever fields you have.
 
@@ -170,8 +169,8 @@ To do this, create a `blocks.css` file, also in the `blocks` folder in your acti
 
 Here's the actual CSS code I use on this site to create that Side Note component, if you're interested or want to try this block out on your site:
 
-<Code lang="css">{
-`.side-note {
+```css
+.side-note {
   padding: .5rem 1.5rem;
   position: relative;
   margin: 3rem 0;
@@ -192,8 +191,8 @@ Here's the actual CSS code I use on this site to create that Side Note component
   text-transform: uppercase;
   font-size: .7rem;
   color: var(--lightBlue);
-}`
-}</Code>
+}
+```
 
 ## Recap
 
@@ -211,11 +210,11 @@ In the meantime, the plugin will continue working for the foreseeable future. An
 
 That needs to be done manually, of course, and will need to be re-done any time the plugin updates (if it does). But to do this: you can simply go into the plugin's folder, open `php/class-util.php`, and change the `is_pro()` function (on line 31, as of this writing) to return `true`, like so:
 
-<Code lang="php">{
-`public function is_pro() {
+```php
+public function is_pro() {
   return true; //This line is edited
-}`
-}</Code>
+}
+```
 
 That will open up a handful of additional extremely handy fields for you to use in your blocks, including the all-powerful repeater field, and the ever-useful rich text field.
 

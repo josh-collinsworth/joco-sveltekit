@@ -13,7 +13,6 @@ excerpt: WordPress was potentially the most impactful and empowering technology 
   import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import Code from '$lib/components/Code.svelte'
 </script>
 
 <SideNote>
@@ -89,8 +88,6 @@ Granted, the tech hurdle is higher—not just anybody can code up a static site,
 As I write this, WP Engine and, no doubt, many other hosts are working on the headless WordPress story, and figuring out how to empower that tech stack and solve its problems in the same way they solved WordPress's. I have no doubt they'll come forward with something very compelling that will meet a great many customers' needs, but I also have no doubt it won't be cheap—certainly not as cheap as what the Jamstack is currently offering. And I think that will make many more people ask the same question I asked, and come to the same conclusion; WordPress just won't continue to be worth it for everyone all the time.
 
 
-
-
 ## So what's the alternative?
 
 When this site was headless WordPress, the front-end was already built in <a rel="external" href="gridsome.org">Gridsome</a>, a Vue-based static site generator that could be fairly described as Vue's equivalent of [Gatsby](https://www.gatsbyjs.com/).
@@ -111,21 +108,21 @@ Gridsome, along with many other static site generators, has the ability to gener
 
 The front end of this site was already using Markdown to create content with its projects; each project is a Markdown file with the project's details. Here's an example project Markdown file, just to get general the idea across on how Gridsome scrapes content from files and converts it into a content type:
 
-<Code lang="markdown">{
-`---
+```markdown
+---
 title: My Awesome Project
 featuredMedia: projects/image.png
 category: design + illustration
 summary: This project was awesome
 ---
  
-The project content Markdown would go here. Neato!`
-}</Code>
+The project content Markdown would go here. Neato!
+```
 
 Any Markdown files in the `/projects` directory are processed into content for the <g-link to="/projects">projects page</g-link>, using just a bit of config setup that directs Gridsome to the folder where it can find project files, and what Vue template(s) to render them with:
 
-<Code lang="javascript">{
-`//gridsome.config.js
+```javascript
+//gridsome.config.js
 plugins: [
   {
     use: '@gridsome/source-filesystem',
@@ -146,15 +143,15 @@ templates: {
       component: 'src/templates/single_project.vue'
     },
   ],
-}`
-}</Code>
+}
+```
 
 *The above config code tells Gridsome how to convert Markdown files to HTML content. Other SSGs, like <a rel="external" href="11ty.dev">Eleventy</a> or Gatsby, work similarly.*
 
 Finally, the template file for rendering the data collected from the Markdown files (the `single_project.vue` file seen above, simplified here just to communicate the general idea):
 
-<Code lang="html">{
-`<!-- The Vue template -->
+```html
+<!-- The Vue template -->
 <​template>
   <Layout>
     <h1>{{ project.title }}</h1>
@@ -162,8 +159,8 @@ Finally, the template file for rendering the data collected from the Markdown fi
     <img :src="project.featuredMedia"/>
     <div v-html="project.content" />
   </Layout>
-</template>`
-}</Code>
+</template>
+```
 
 _(Not pictured: there's also a GraphQL query to grab the currently viewed project. I just didn't show that for the sake of simplicity.)_
 
@@ -197,9 +194,9 @@ This miraculous little CLI tool takes your WordPress export XML file, and not on
 
 While I had a few small hiccups with it (mostly not really the tool's fault), the biggest was my custom blocks. The info on what a custom block should look like is *not* stored in the database; instead, there's just some text like this:
 
-<Code>{
-`<!-- wp:block-lab/block_name_here -->`
-}</Code>
+```
+<!-- wp:block-lab/block_name_here -->
+```
 
 WordPress apparently matches that line from the database to the PHP file that renders its contents at run time, rather than having the HTML for the block stored in the database as it would with typical blocks, like headings and text. (As you can infer, I'm using the Block Lab plugin for my custom blocks here. I'm not sure if this is a Block Lab-specific problem, or if this is the case for _any_ custom block.)
 
@@ -239,8 +236,8 @@ This means I can still have the functionality of all my custom blocks even while
 
 Here's an example:
 
-<Code lang="markdown">{
-`# Some generic Markdown
+```markdown
+# Some generic Markdown
  
 A paragraph _also_ using _Markdown_.
  
@@ -250,8 +247,8 @@ A paragraph _also_ using _Markdown_.
  
 ## Back to Markdown!
  
-_Neat, huh?_`
-}</Code>
+_Neat, huh?_
+```
 
 All the custom blocks I had on WordPress have now been faithfully recreated in simple Vue single-file components, available to import and use at will in these posts.
 
@@ -270,8 +267,8 @@ Personally, I created a `drafts` folder inside my `posts` folder, and then added
 
 Also note that generating taxonomy pages (categories, tags, etc.) will likely be an extra manual challenge with any static site generator. In the case of Gridsome, you can modify the `gridsome.server.js` file to add new collections. Here's how I achieved mine:
 
-<Code lang="javascript">{
-`module.exports = function(api) {
+```javascript
+module.exports = function(api) {
   api.loadSource(actions => {
  
     //Create a new "categories" collection
@@ -297,8 +294,8 @@ Also note that generating taxonomy pages (categories, tags, etc.) will likely be
       })
     })
   })
-}`
-}</Code>
+}
+```
 
 <SideNote>There are more efficient ways to achieve the above; my first try used <code>flatMap</code>. But turns out: Node doesn't have the <code>flatMap</code> array method, so it wouldn't compile on Netlify's servers. So this was my slightly longer workaround.</SideNote>
 

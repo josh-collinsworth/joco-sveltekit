@@ -12,7 +12,6 @@ excerpt: When you’re just starting out with WordPress, it’s easy to think th
   import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import Code from '$lib/components/Code.svelte'
 </script>
 
 One lesson a lot of WordPress novices learn the hard way, just like I did, is that if you want to customize anything about your theme itself—whether that's editing the CSS styles, adding functionality like a custom post type, changing the header code or creating a custom page template—you _need_ to be using a WordPress child theme.
@@ -65,8 +64,8 @@ As far as the file itself, you can either create it in your FTP client and then 
 
 If you look at the [Codex entry for child themes](https://codex.wordpress.org/Child_Themes), you'll find the following snippet of code to copy and paste into your child theme's style.css file. Don't copy and paste this just yet, though; I'm only giving you the full list of things you might see at the top of a theme's style.css file:
 
-<Code lang="css">{
-`/*
+```css
+/*
  Theme Name: Twenty Fifteen Child
  Theme URI: http://example.com/twenty-fifteen-child/
  Description: Twenty Fifteen Child Theme
@@ -78,8 +77,8 @@ If you look at the [Codex entry for child themes](https://codex.wordpress.org/Ch
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain: twenty-fifteen-child
-*/`
-}</Code>
+*/
+```
 
 It looks scary, but I'll let you in on a little secret: almost none of the above is actually required for your child theme to work properly. In fact, most of it is there for people who intend build a new theme and distribute it.
 
@@ -95,13 +94,13 @@ You'd be mostly right, but actually, browsers and servers _do_ read comments. (O
 
 In fact, if you want to save yourself the hassle, here's all you'll really need to worry about:
 
-<Code lang="css">{
-`/*
+```css
+/*
  Theme Name: Your Theme Name
  Template: parent-theme-name
  Text Domain: your-theme-name
-*/`
-}</Code>
+*/
+```
 
 Even of the above three lines, the Template line is the only one that's strictly necessary for the child theme to function, but you'll want to fill out the others too. Here's what each one does:
 
@@ -153,8 +152,8 @@ When any given WordPress theme is active, any code in that theme's functions.php
 
 ### Step 4: Copy the Enqueuing Function to functions.php
 
-<Code lang="php">{
-`<?php
+```php
+<?php
   function theme_enqueue_styles() {
  
     $parent_style = 'parent-style';
@@ -167,8 +166,8 @@ When any given WordPress theme is active, any code in that theme's functions.php
   }
  
   add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-?>`
-}</Code>
+?>
+```
 
 **If you're not familiar with (or intimidated by) PHP, don't worry—you don't have to make any changes to the above code, or even understand it, really.** You just need to copy and paste it into your WordPress child theme's new, blank functions.php file. (Technically, it would be best practice to change the two instances of "theme\_enqueue\_styles" to reflect your custom theme name in order to avoid any potential conflicts, but it's not strictly mandatory.)
 

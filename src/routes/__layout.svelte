@@ -20,6 +20,7 @@
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
+	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
 	
 	export let key: string
   export let ready: boolean = false
@@ -27,6 +28,9 @@
   let reduceMotion: boolean = false
   let prefersDark: boolean = false
   let prefersLight: boolean = true
+	let isFullwidthPage: boolean
+
+	$: isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 
 	const setReduceMotion = (reduce: boolean): void => {
 		reduceMotion = reduce
@@ -53,7 +57,7 @@
 >
 	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
-	<div class="layout"> 
+	<div class="layout" class:fullwidth={isFullwidthPage}> 
 		<PageTransition refresh={key}>
 		<!-- [x] TODO: dynamic sidebar -->
 			<main tabindex="-1">
@@ -61,7 +65,9 @@
 			</main>
 		</PageTransition>
 		
-		<Sidebar />
+		{#if !isFullwidthPage}
+			<Sidebar />
+		{/if}
 	</div>
 
 	<Footer />

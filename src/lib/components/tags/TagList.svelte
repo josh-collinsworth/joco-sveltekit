@@ -9,8 +9,9 @@
 .tag-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5rem;
   list-style-type: none;
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0;
   font-size: .9rem;
 }
