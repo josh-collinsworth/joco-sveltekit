@@ -4,6 +4,7 @@ export default interface Post {
   date: string;
   excerpt: string;
   slug: string;
+  subtitle?: string;
   title: string;
   updated?: string;
 }

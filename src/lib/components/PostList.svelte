@@ -22,9 +22,12 @@
           <img src="{imageRoute + post.coverImage}" alt="" loading="lazy" />
           <h3>{post.title}</h3>
         </a>
-        <p>
+        {#if post.subtitle}
+          <p class="subtitle">{post.subtitle}</p>
+        {/if}
+        <p class="excerpt">
           {post.excerpt}
-          <a href="{slugPath + post.slug}">Read more…</a>
+          <a href="{slugPath + post.slug}">Read&nbsp;more…</a>
         </p>
 
         <TagList>
@@ -76,8 +79,8 @@ ul {
     }
     
     h3 {
-      margin: 0 0 2rem;
-      line-height: 1.4;
+      margin: 0;
+      line-height: 1.2;
       border: 0;
       padding: 0;
     }
@@ -88,9 +91,18 @@ ul {
       margin: calc(var(--padding-unit) * -1) 0 1rem calc(var(--padding-unit) * -1);
     }
     
-    p {
+    p.subtitle {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      margin: 0.5rem 0 0;
+    }
+
+    p.excerpt {
       font-style: italic;
-      margin-bottom: 2rem;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
   }
 }

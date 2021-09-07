@@ -21,7 +21,7 @@
 	color: var(--white);
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 0.75em;
+	font-size: 0.65em;
 	line-height: 1;
 	text-transform: uppercase;
 	transition: background .15s, color .15s;

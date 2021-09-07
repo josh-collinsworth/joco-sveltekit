@@ -71,7 +71,6 @@ li.open {
 }
 
 a {
-  padding: .5rem 0 .25rem;
   display: block;
 
   span {

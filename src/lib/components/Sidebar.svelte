@@ -31,6 +31,7 @@
   })
 </script>
 
+
 <aside id="sidebar">
   <a href="/" class="home-link">
     <LogoSVG iconOnly={true} />
@@ -106,7 +107,7 @@
   grid-column: 3 / 4;
   text-align: right;
 
-  @media (min-width: $widest) {
+  @media (min-width: $wider) {
     display: block;
   }
 

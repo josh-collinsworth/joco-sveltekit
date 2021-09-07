@@ -65,11 +65,6 @@ h2 + .details {
   text-decoration: none;
 }
 
-.fullwidth {
-  width: 100vw;
-  margin-left: calc(var(--margin) * -1);
-}
-
 .wider {
   width: calc(100vw - 1rem);
   margin-left: -.5rem;
@@ -116,9 +111,20 @@ h2 + .details {
     margin-right: var(--margin);
   }
 
+  .transition-wrapper {
+
+    &.fullwidth {
+      grid-column: 1 / 3;
+
+      main {
+        width: 100%;
+        max-width: unset;
+      }
+    }
+  }
+
   main {
     width: 100%;
-    margin: 2rem auto 2rem 0;
     max-width: 100%;
 
     @media (min-width: $medium) {
@@ -126,18 +132,14 @@ h2 + .details {
       width: var(--max-width); //This seems unnecessary but it helps prevent a page transition issue
     }
 
-    &.span {
-      grid-column: 1 / -1;
-      max-width: unset;
+    > h1, h2 {
+      &:first-child {
+        margin-top: 0;
+      }
     }
-  }
 
-  &.fullwidth {
-    display: block;
-
-    main {
-      width: 100% !important;
-      max-width: 100% !important;
+    h1.sr + h2 {
+      margin-top: 0;
     }
   }
 }

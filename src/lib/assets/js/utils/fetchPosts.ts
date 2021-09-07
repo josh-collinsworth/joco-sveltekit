@@ -9,10 +9,8 @@ interface fetchPostsOptions {
 const fetchPosts = async (options: fetchPostsOptions): Promise<Post[]> => {
   const { withContent, offset, limit } = options
 
-  
   const posts = await Promise.all(
     Object.entries(import.meta.glob('../../../../routes/blog/posts/*.md')).map(async ([path, page]) => {
-      console.log('post')
       const { metadata } = await page()
       const slug = path.split('/').pop().split('.').shift()
       return { ...metadata, slug }

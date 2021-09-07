@@ -24,12 +24,12 @@
 </script>
 
 <svelte:head>
-	<title>Josh Collinsworth | Blog</title>
+	<title>Josh Collinsworth | Writing</title>
 	<meta data-key="description" name="description" content="Writings on development, design, and random thoughts.">
 </svelte:head>
 
 <template>
-	<h1>Writing</h1>
+	<h1 class="sr">Writing</h1>
 
 	<h2>External writing:</h2>
 

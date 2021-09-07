@@ -29,15 +29,26 @@
   export let images: object[]
 </script>
 
-<h1>Projects</h1>
+<template>
+  <h1 class="sr">Projects</h1>
+  
+  <h2>Featured project</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor, libero sed tincidunt vehicula, mi quam faucibus purus, nec pulvinar tortor lacus ac quam. Maecenas orci justo, vestibulum at leo et, ultricies eleifend mi. Pellentesque non cursus dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  
+  
+  <h2>Code projects</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor, libero sed tincidunt vehicula, mi quam faucibus purus, nec pulvinar tortor lacus ac quam. Maecenas orci justo, vestibulum at leo et, ultricies eleifend mi. Pellentesque non cursus dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-<ul id="gallery">
-  {#each images as image}
+  <h2>Design and illustration</h2>
+
+  <ul id="gallery">
+    {#each images as image}
     <li>
       <img src="/images/projects/{image.slug}.png" alt="">
     </li>
-  {/each}
-</ul>
+    {/each}
+  </ul>
+</template>
 
 
 <style lang="scss">

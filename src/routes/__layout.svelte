@@ -57,17 +57,15 @@
 >
 	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
-	<div class="layout" class:fullwidth={isFullwidthPage}> 
-		<PageTransition refresh={key}>
+	<div class="layout"> 
 		<!-- [x] TODO: dynamic sidebar -->
+		<PageTransition refresh={key} fullwidth={isFullwidthPage}>
 			<main tabindex="-1">
 				<slot></slot>
 			</main>
 		</PageTransition>
 		
-		{#if !isFullwidthPage}
-			<Sidebar />
-		{/if}
+		<Sidebar />
 	</div>
 
 	<Footer />
