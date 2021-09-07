@@ -56,7 +56,7 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 
   img,
   li {

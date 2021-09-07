@@ -31,12 +31,17 @@
 <template>
 	<h1 class="sr">Writing</h1>
 
-	<h2>External writing:</h2>
-
+	<div class="heading-wrapper">
+		<h2>External writing</h2>
+		<p>Works for other publications and websites</p>
+	</div>
+	
 	<PostList posts={EXTERNAL_POSTS} external={true} />
-
-
-	<h2>My blog:</h2>
+	
+	<div class="heading-wrapper">
+		<h2>My blog</h2>
+		<p>Published on this website only</p>
+	</div>
 
 	{#if postsAreLoaded}
 		<TransitionWrapper>
@@ -51,14 +56,20 @@
 
 
 <style lang="scss">
-	h3,
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
+.heading-wrapper {
 	h2 {
 		margin-bottom: 0;
-		border: none;
+		border: 0;
+		padding: 0 0 0.25rem;
 	}
+
+	p {
+		margin: 0 0 2rem;
+		font-style: italic;
+	}
+}
+
+ul + .heading-wrapper {
+
+}
 </style>

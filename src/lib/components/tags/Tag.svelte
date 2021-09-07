@@ -13,6 +13,10 @@
 
 
 <style lang="scss">
+li {
+	margin: 0;
+}
+
 .tag {
 	display: block;
 	padding: 0.5em 1em;
