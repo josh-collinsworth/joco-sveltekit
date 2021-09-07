@@ -14,11 +14,6 @@ footer {
 	background-color: var(--darkBlue);
 	color: var(--paper);
 	padding-top: 2.5rem;
-
-  //Ensure there's always room for the settings button
-  @media (max-width: $medium) {
-    --margin: 4rem;
-  }
 }
 
 img {

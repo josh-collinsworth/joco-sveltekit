@@ -66,11 +66,11 @@ $widest: 1960px;
     --margin: 4rem;
   }
 
-	@media (min-width: $wide){
+	@media (min-width: $wider){
     --margin: 6rem;
   }
 
-  @media (min-width: $evenWider){
+  @media (min-width: $widest){
     --margin: 12rem;
   }
 

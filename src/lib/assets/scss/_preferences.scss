@@ -28,4 +28,23 @@
     --link-color: var(--darkBlue);
     --highlight-color: var(--darkGray);
   }
+
+  &.fullwidth {
+    @media (min-width: $evenWider){
+      --margin: 6rem;
+    }
+
+    @media (min-width: $widest){
+      --margin: 12rem;
+    }
+
+    .transition-wrapper {
+      grid-column: 1 / 3;
+    }
+
+    main {
+      width: 100%;
+      max-width: unset;
+    }
+  }
 }

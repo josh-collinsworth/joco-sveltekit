@@ -36,7 +36,7 @@
     }
   }
 
-  @media(min-width: 768px) {
+  @media(min-width: $narrow) {
     margin: 3rem -2rem 3rem 3rem;
     padding-right: 0;
     display: block;
@@ -44,21 +44,21 @@
     width: 50%;
   }
   
-  @media(min-width: 1024px) {
+  @media(min-width: $wide) {
     width: 20em;
     margin-right: calc(-3rem - 12vw);
   }
   
-  @media(min-width: 1200px) {
-    margin-right: calc(-2rem - 12vw);
+  @media(min-width: $wider) {
+    margin-right: calc(2rem - 12vw);
   }
   
   @media(min-width: $evenWider) {
-    margin-right: -8rem;
+    margin-right: -12rem;
   }
   
   @media(min-width: 1960px) {
-    margin-right: -12rem;
+    margin-right: -14rem;
   }
 }
 </style>

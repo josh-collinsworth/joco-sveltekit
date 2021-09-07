@@ -21,6 +21,7 @@
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
+	import '$lib/assets/scss/global.scss'
 	
 	export let key: string
   export let ready: boolean = false
@@ -54,12 +55,13 @@
 	class:prefers-dark={prefersDark}
 	class:prefers-light={prefersLight}
 	class:mounted={ready}
+	class:fullwidth={isFullwidthPage}
 >
 	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
 	<div class="layout"> 
 		<!-- [x] TODO: dynamic sidebar -->
-		<PageTransition refresh={key} fullwidth={isFullwidthPage}>
+		<PageTransition refresh={key}>
 			<main tabindex="-1">
 				<slot></slot>
 			</main>
@@ -70,8 +72,3 @@
 
 	<Footer />
 </div>
-
-
-<style lang="scss" global>
-	@import '../lib/assets/scss/global.scss';
-</style>
