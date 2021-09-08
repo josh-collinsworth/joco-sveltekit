@@ -28,7 +28,7 @@ const time: number = 360
   }
 
   &.sidebar {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
   }
 }
 </style>

@@ -5,9 +5,6 @@
   
   export let posts: Post[]
   export let external: boolean = false
-  
-  let imageRoute: string
-  $: imageRoute = external ? '' : '/images/post_images/'
 
   let slugPath: string
   $: slugPath = external ? '' : '/blog/'
@@ -19,7 +16,7 @@
     <li>
       <article>
         <a href={slugPath + post.slug}>
-          <img src="{imageRoute + post.coverImage}" alt="" loading="lazy" />
+          <img src="/images/post_images/{post.coverImage}" alt="" loading="lazy" />
           <h3>{post.title}</h3>
         </a>
 
