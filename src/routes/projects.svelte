@@ -1,5 +1,4 @@
 <script lang="ts" context="module">
-
 	export async function load({}) {
     try {
       const images = await Promise.all(
@@ -9,6 +8,7 @@
           return { ...metadata, slug }
         })
       )
+
       return {
         props: { images }
       }
@@ -26,8 +26,11 @@
 </script>
 
 <script lang="ts">
+  import CodePens from '$lib/codepens/CodePens.svelte'
+
   export let images: object[]
 </script>
+
 
 <template>
   <h1 class="sr">Projects</h1>
@@ -37,15 +40,19 @@
   
   
   <h2>Code projects</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor, libero sed tincidunt vehicula, mi quam faucibus purus, nec pulvinar tortor lacus ac quam. Maecenas orci justo, vestibulum at leo et, ultricies eleifend mi. Pellentesque non cursus dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+  <div id="pens">
+    <CodePens />
+  </div>
+
 
   <h2>Design and illustration</h2>
 
   <ul id="gallery">
     {#each images as image}
-    <li>
-      <img src="/images/projects/{image.slug}.png" alt="">
-    </li>
+      <li>
+        <img src="/images/projects/{image.slug}.png" alt="">
+      </li>
     {/each}
   </ul>
 </template>
@@ -56,7 +63,14 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center left;
+  }
 
   img,
   li {
@@ -64,5 +78,15 @@
     padding: 0;
     display: block;
   }
+}
+
+p {
+  max-width: var(--max-width);
+}
+
+#pens {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  grid-gap: 1rem;
 }
 </style>

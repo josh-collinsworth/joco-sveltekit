@@ -108,11 +108,10 @@ h2 + .details {
 
   main {
     width: 100%;
-    max-width: 100%;
+    max-width: var(--max-width);
 
-    @media (min-width: $medium) {
-      max-width: var(--max-width);
-      width: var(--max-width); //This seems unnecessary but it helps prevent a page transition issue
+    @media (min-width: $wider) {
+      max-width: 100%;
     }
 
     > h1, h2 {

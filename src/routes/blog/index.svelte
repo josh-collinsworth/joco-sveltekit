@@ -68,8 +68,4 @@
 		font-style: italic;
 	}
 }
-
-ul + .heading-wrapper {
-
-}
 </style>

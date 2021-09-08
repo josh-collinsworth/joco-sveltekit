@@ -1,15 +1,17 @@
 <script context="module" lang="ts">
-	export const load = async({ page }) => {
-		let ready: boolean = false
+	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
 
-		if (typeof window != 'undefined') {
-			ready = true
-		}
+	export const load = async({ page }) => {
+
+		const key: string = page.path
+		const isFullwidthPage: boolean = FULLWIDTH_PAGES.includes(key)
+		const pageHasSidebar: boolean = key.includes('/blog')
 
 		return {
 			props: {
-				key: page.path,
-				ready,
+				key,
+				isFullwidthPage,
+				pageHasSidebar
 			}
 		}
 	}
@@ -20,18 +22,16 @@
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
-	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
+
 	import '$lib/assets/scss/global.scss'
 	
 	export let key: string
-  export let ready: boolean = false
+	export let isFullwidthPage: boolean
+	export let pageHasSidebar: boolean
 	
   let reduceMotion: boolean = false
   let prefersDark: boolean = false
   let prefersLight: boolean = true
-	let isFullwidthPage: boolean
-
-	$: isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 
 	const setReduceMotion = (reduce: boolean): void => {
 		reduceMotion = reduce
@@ -54,20 +54,19 @@
 	class:reduce-motion={reduceMotion}
 	class:prefers-dark={prefersDark}
 	class:prefers-light={prefersLight}
-	class:mounted={ready}
-	class:fullwidth={isFullwidthPage}
 >
 	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
 	<div class="layout"> 
-		<!-- [x] TODO: dynamic sidebar -->
-		<PageTransition refresh={key}>
-			<main tabindex="-1">
+		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar}>
+			<main>
 				<slot></slot>
 			</main>
 		</PageTransition>
 		
-		<Sidebar />
+		{#if pageHasSidebar}
+			<Sidebar />
+		{/if}
 	</div>
 
 	<Footer />

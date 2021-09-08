@@ -16,14 +16,13 @@ Senior JavaScript developer at [Aware3](https://aware3.com);
 front-end engineer at [WP Engine](https://wpengine.com);
 senior support lead at [Flywheel](https://getflywheel.com);
 course instructor for [AIM Code School](https://interfaceschool.com);
-graphic designer and contractor;
+graphic designer;
 seasoned bartender who makes a pretty good old fashioned. 
 
 
 ## Personally:
 
 Hobby coder;
-infrequent blog author;
 font hoarder;
 husband;
 dad (with both the jokes and bod to match);
