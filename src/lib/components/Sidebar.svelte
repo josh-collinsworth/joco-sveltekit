@@ -39,7 +39,7 @@
     {/if}
     {#each EXTERNAL_POSTS as post}
       <li>
-        <a href="/blog/{post.slug}">
+        <a rel="external" href="{post.slug}">
           <span>{post.title}</span>
         </a>
       </li>    
