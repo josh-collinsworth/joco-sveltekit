@@ -47,7 +47,7 @@ li.mobile {
   transform: translateX(-3em);
   opacity: 0;
   transition: transform var(--item-transition), opacity var(--item-transition);
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.5em;
   color: var(--white);

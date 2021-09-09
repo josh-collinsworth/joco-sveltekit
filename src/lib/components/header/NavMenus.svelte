@@ -46,13 +46,15 @@
 		flex-wrap: wrap;
 		place-content: center;
 		padding: 3rem;
+		opacity: 0;
 
 		@media (min-width: 768px) {
 			display: none;
 		}
 
 		&.open {
-			transform: translateX(0)
+			transform: translateX(0);
+			opacity: 1;
 		}
 	}
 

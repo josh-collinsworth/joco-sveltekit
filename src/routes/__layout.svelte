@@ -58,7 +58,7 @@
 	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
 	<div class="layout"> 
-		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar}>
+		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} {reduceMotion}>
 			<main>
 				<slot></slot>
 			</main>

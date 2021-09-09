@@ -6,12 +6,14 @@
 
   onMount(() => {
     const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-			const storedMotionPreference = window.localStorage.getItem('collinsworth-reduce-motion')
+			const storedMotionPreference = JSON.parse(window.localStorage.getItem('collinsworth-reduce-motion'))
 
+			console.log(userMotionPreference)
 			if (
-        (userMotionPreference && storedMotionPreference != 'false') 
-        || storedMotionPreference == 'true') {
+        (userMotionPreference && storedMotionPreference !== false) 
+        || storedMotionPreference === true) {
 				reduceMotion = true
+				setReduceMotion(reduceMotion)
 			}
   })
 
@@ -28,7 +30,8 @@
   aria-pressed={reduceMotion}
 >
   <span class="sr">{ enableOrDisable } reduced motion</span>
-  Motion
+  <!-- Motion -->
+	{reduceMotion}
 </button>
 
 

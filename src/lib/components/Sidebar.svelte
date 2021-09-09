@@ -1,27 +1,22 @@
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
   import LogoSVG from './header/LogoSVG.svelte'
+  import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
   
   import { onMount } from 'svelte'
   
   let posts: Post[] = []
   let allCategories: string[] = []
-  let onBlogIndexPage: boolean = false
   
   onMount(async () => {
     try {
-
-      if (typeof window !== 'undefined') {
-        onBlogIndexPage = window.location.pathname === '/blog'
-      }
-      
       const res = await fetch('/blog/posts-detail.json')
       const resJSON = await res.json()
       
       posts = resJSON.posts
-      .map(post => ({ slug: post.slug, title: post.title }))
-      .sort((a, b) => Number(new Date(a.date)) - Number(new Date(b.date)))
-      .slice(0, 3)
+        .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+        .map(post => ({ slug: post.slug, title: post.title }))
+        .slice(0, 3)
       
       allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
     }
@@ -37,31 +32,21 @@
     <LogoSVG iconOnly={true} />
   </a>
 
-  <h2>Links</h2>
+  <h2>External Writing</h2>
   <ul>
-    <li>
-      <a href="/contact">
-        Contact
-      </a>
-    </li>
-    <!-- <li>
-      <a href="/projects">
-        Projects
-      </a>
-    </li> -->
-    <li>
-      <a rel="external" href="https://github.com/josh-collinsworth">
-        GitHub
-      </a>
-    </li>
-    <li>
-      <a rel="external" href="https://codepen.io/collinsworth/">
-        CodePen
-      </a>
-    </li>
+    {#if !EXTERNAL_POSTS.length}
+      <li>Loading…</li>
+    {/if}
+    {#each EXTERNAL_POSTS as post}
+      <li>
+        <a href="/blog/{post.slug}">
+          <span>{post.title}</span>
+        </a>
+      </li>    
+    {/each}
   </ul>
 
-  <h2>Recent posts</h2>
+  <h2>Recent blog posts</h2>
   <ul>
     {#if !posts.length}
       <li>Loading…</li>
@@ -69,17 +54,10 @@
     {#each posts as post}
       <li>
         <a href="/blog/{post.slug}">
-          {post.title}
+          <span>{post.title}</span>
         </a>
       </li>
     {/each}
-    {#if !onBlogIndexPage}
-      <li>
-        <a href="/blog">
-          More…
-        </a>
-      </li>
-    {/if}
   </ul>
 
   <h2>Categories</h2>
@@ -87,7 +65,7 @@
     {#each allCategories as category}
       <li>
         <a href="/blog/category/{category}">
-          { category }
+          <span>{ category }</span>
         </a>
       </li>
     {/each}
@@ -127,7 +105,7 @@
     font-size: .8em;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 3em 0 1.5em;
+    margin: 3em 0 1em;
     padding: 0 0 .1em 0;
     border: none;
     border-bottom: .15em solid;
@@ -157,21 +135,26 @@
         color: inherit;
         text-decoration-color: var(--lightGray);
         position: relative;
+        display: inline-block;
+
+        &:hover span,
+        &:focus span {
+          position: relative;
+          outline: none;
+
+          &:before {
+            position: absolute;
+            content: '[';
+            left: -.5em;
+          }
+        }
 
         &:hover,
         &:focus {
           outline: none;
 
-          &:before,
           &:after {
             position: absolute;
-          }
-
-          &:before {
-            content: '[';
-            left: -.5em;
-          }
-          &:after {
             content: ']';
             right: -.5em;
           }

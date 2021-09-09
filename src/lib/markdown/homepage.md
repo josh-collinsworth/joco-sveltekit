@@ -2,13 +2,11 @@
 
 👋🏼 I’m a front-end developer and designer.
 
-
 ## Professionally:
 
-Senior developer at [Shopify](https://shopify.com);
+Senior frontend developer at [Shopify](https://shopify.com);
 maker and designer of <i>Quina</i> ([web](https://quina.app)/[Android](https://play.google.com/store/apps/details?id=app.quina.collinsworth));
-occasional [tech and design writer](/blog).
-
+occasional [tech blog author](/blog).
 
 ## Previously:
 
@@ -17,8 +15,7 @@ front-end engineer at [WP Engine](https://wpengine.com);
 senior support lead at [Flywheel](https://getflywheel.com);
 course instructor for [AIM Code School](https://interfaceschool.com);
 graphic designer;
-seasoned bartender who makes a pretty good old fashioned. 
-
+seasoned bartender who makes a pretty good old fashioned.
 
 ## Personally:
 

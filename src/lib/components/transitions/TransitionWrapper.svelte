@@ -4,8 +4,11 @@ import { cubicIn, cubicOut } from 'svelte/easing'
 
 export let fullwidth: boolean = false
 export let sidebar: boolean = false
+export let reduceMotion: boolean = false
 
 const time: number = 360
+const yIn: number = reduceMotion ? 0 : 12
+const yOut: number = reduceMotion ? 0 : -12
 </script>
 
 
@@ -13,8 +16,8 @@ const time: number = 360
   class="transition-wrapper"
   class:fullwidth
   class:sidebar
-  in:fly={{ y: 12, duration: time, delay: time, easing: cubicOut }}
-  out:fly={{ y: -12, duration: time, easing: cubicIn }}
+  in:fly={{ y: yIn, duration: time, delay: time, easing: cubicOut }}
+  out:fly={{ y: yOut, duration: time, easing: cubicIn }}
 >
   <slot />
 </div>
@@ -29,6 +32,10 @@ const time: number = 360
 
   &.sidebar {
     grid-column: 1 / 2;
+  }
+
+  &.fullwidth.sidebar {
+    grid-column: 1 / 3;
   }
 }
 </style>

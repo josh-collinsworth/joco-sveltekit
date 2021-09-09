@@ -1,31 +1,31 @@
 #app {
-  background: var(--paper);
-  color: var(--ink);
+	background: var(--paper);
+	color: var(--ink);
 
-  &.reduce-motion * {
-    transition: none!important;
-    animation: none!important;
+	&.reduce-motion * {
+		transition: opacity 0.2s !important;
+		// animation: none !important;
 
-    .cell-grid .cell {
-      opacity: 1!important;
-    }
-  }
+		.cell-grid .cell {
+			opacity: 1 !important;
+		}
+	}
 
-  &.prefers-dark {
-    --paper: #101820;
-    --ink: #ffffff;
-    --header-color: var(--white);
-    --accent-color: var(--lightBlue);
-    --link-color: var(--ink);
-    --highlight-color: var(--darkerGray);
-  }
+	&.prefers-dark {
+		--paper: #3885d3;
+		--ink: #ffffff;
+		--header-color: var(--white);
+		--accent-color: var(--lightBlue);
+		--link-color: var(--ink);
+		--highlight-color: var(--darkerGray);
+	}
 
-  &.prefers-light {
-    --paper: #ffffff;
-    --ink: #53565a;
-    --header-color: var(--darkGray);
-    --accent-color: var(--darkBlue);
-    --link-color: var(--darkBlue);
-    --highlight-color: var(--darkGray);
-  }
+	&.prefers-light {
+		--paper: #ffffff;
+		--ink: #53565a;
+		--header-color: var(--darkGray);
+		--accent-color: var(--darkBlue);
+		--link-color: var(--darkBlue);
+		--highlight-color: var(--darkGray);
+	}
 }
