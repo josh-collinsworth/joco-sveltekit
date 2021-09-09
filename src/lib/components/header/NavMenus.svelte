@@ -35,13 +35,13 @@
 	&#mobile-nav {
 		display: block;
 		position: fixed;
-		transition: transform .4s cubic-bezier(1, 0, 0, 1);
-		transform: translateX(-100vw);
+		transition: transform .4s cubic-bezier(1, 0, 0, 1), opacity .4s cubic-bezier(1, 0, 0, 1);
+		transform: translateX(0);
 		background: var(--darkBlue);
 		width: 100vw;
 		height: 100vh;
 		top: 0;
-		left: 0;
+		left: -100vw;
 		display: flex;
 		flex-wrap: wrap;
 		place-content: center;
@@ -53,7 +53,7 @@
 		}
 
 		&.open {
-			transform: translateX(0);
+			transform: translateX(100vw);
 			opacity: 1;
 		}
 	}

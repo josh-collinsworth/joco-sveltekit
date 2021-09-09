@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PlayPauseIcon from './PlayPauseIcon.svelte';
   import { onMount } from 'svelte'
 
   export let reduceMotion: boolean = false
@@ -8,9 +9,8 @@
     const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 			const storedMotionPreference = JSON.parse(window.localStorage.getItem('collinsworth-reduce-motion'))
 
-			console.log(userMotionPreference)
 			if (
-        (userMotionPreference && storedMotionPreference !== false) 
+        (userMotionPreference && !storedMotionPreference) 
         || storedMotionPreference === true) {
 				reduceMotion = true
 				setReduceMotion(reduceMotion)
@@ -30,31 +30,42 @@
   aria-pressed={reduceMotion}
 >
   <span class="sr">{ enableOrDisable } reduced motion</span>
-  <!-- Motion -->
-	{reduceMotion}
+  <PlayPauseIcon />
 </button>
 
 
-<style lang="scss">
+<style lang="scss" global>
 #motion-toggle {
-	font-weight: bold;
-	font-size: .5rem;
 	color: var(--ink);
-
-	&[aria-pressed="true"]::before {
-		content: '';
-		width: 100%;
-		height: .1rem;
-		background: var(--ink);
-		display: block;
-		position: absolute;
-		transform-origin: center;
-		top: calc(50% - .05rem);
-		transform: rotate(-45deg);
-	}
 
 	&:hover {
 		color: var(--yellow);
 	}
+
+	&:hover svg {
+		path, rect {
+			stroke: var(--yellow);
+		}
+	}
+
+	&[aria-pressed=true] svg {
+		transform: translateY(0);
+	}
+
+	svg {
+    --item-transition: .4s cubic-bezier(.7,-0.01,0,1.01);
+
+		width: 2rem;
+		height: 4rem;
+		transform: translateY(-1.975rem);
+		transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
+
+		path,
+		rect {
+			transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
+			stroke: var(--ink);
+		}
+	}
 }
+
 </style>

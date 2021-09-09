@@ -9,7 +9,7 @@
 
 
 {#key refresh}
-  <TransitionWrapper {fullwidth} {sidebar} {reduceMotion}>
+  <TransitionWrapper {fullwidth} {sidebar} bind:reduceMotion>
     <slot />
   </TransitionWrapper>
 {/key}

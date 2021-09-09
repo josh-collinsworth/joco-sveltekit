@@ -7,8 +7,11 @@ export let sidebar: boolean = false
 export let reduceMotion: boolean = false
 
 const time: number = 360
-const yIn: number = reduceMotion ? 0 : 12
-const yOut: number = reduceMotion ? 0 : -12
+let yIn: number
+let yOut: number
+
+$: yIn = reduceMotion ? 0 : 12
+$: yOut = reduceMotion ? 0 : -12
 </script>
 
 

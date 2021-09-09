@@ -4,15 +4,10 @@
 
 	&.reduce-motion * {
 		transition: opacity 0.2s !important;
-		// animation: none !important;
-
-		.cell-grid .cell {
-			opacity: 1 !important;
-		}
 	}
 
 	&.prefers-dark {
-		--paper: #3885d3;
+		--paper: #101820;
 		--ink: #ffffff;
 		--header-color: var(--white);
 		--accent-color: var(--lightBlue);

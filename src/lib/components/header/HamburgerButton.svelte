@@ -31,7 +31,7 @@
 	width: 2.5rem;
 	height: 2rem;
 	padding: .5rem;
-	margin-left: auto;
+	margin-left: 0.5rem;
 	border: none;
 	background: transparent;
 	position: relative;

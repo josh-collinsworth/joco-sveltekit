@@ -1,5 +1,4 @@
-input[type="checkbox"] {
-
+input[type='checkbox'] {
 	& + label {
 		display: flex;
 		align-items: center;
@@ -9,23 +8,22 @@ input[type="checkbox"] {
 			content: '';
 			width: 1rem;
 			height: 1rem;
-			border: .1rem solid;
+			border: 0.1rem solid;
 			display: inline-block;
-			margin-right: .5rem;
+			margin-right: 0.5rem;
 		}
 	}
 
 	&:checked + label {
-
 		&:after {
 			content: '';
-			width: .4rem;
-			height: .7rem;
-			border-bottom: .2rem solid var(--yellow);
-			border-right: .2rem solid var(--yellow);
+			width: 0.4rem;
+			height: 0.7rem;
+			border-bottom: 0.2rem solid var(--yellow);
+			border-right: 0.2rem solid var(--yellow);
 			position: absolute;
-			left: .3rem;
-			bottom: .45rem;
+			left: 0.3rem;
+			bottom: 0.45rem;
 			z-index: 2;
 			display: block;
 			transform: rotate(45deg);
@@ -38,12 +36,13 @@ label {
 	margin: 0;
 }
 
-input, textarea {
+input,
+textarea {
 	display: block;
 	width: 100%;
 	background: transparent;
 	border: 1px solid var(--ink);
-	padding: .5rem;
+	padding: 0.5rem;
 	color: inherit;
 	font-size: 1rem;
 	font-style: italic;
@@ -52,7 +51,7 @@ input, textarea {
 
 button {
 	border: 1px solid;
-	padding: .5rem 1rem;
+	padding: 0.5rem 1rem;
 	font-size: 1rem;
 	background: transparent;
 	color: var(--ink);
@@ -65,21 +64,23 @@ button {
 
 .settings-toggle {
 	--button-size: 2.2rem;
-	--item-transition: .25s cubic-bezier(1, 0, 0, 1);
+	--item-transition: 0.25s cubic-bezier(1, 0, 0, 1);
 
-  cursor: pointer;
-  height: var(--button-size);
-  width: var(--button-size);
-  overflow: hidden;
-  padding: 0;
+	cursor: pointer;
+	height: var(--button-size);
+	width: var(--button-size);
+	overflow: hidden;
+	margin-left: 0.75rem;
+	padding: 0;
 	position: relative;
-  border-radius: 2rem;
-  border: .1rem solid var(--ink);
-  background: var(--paper);
-  transition: background var(--item-transition), color var(--item-transition), border-color var(--item-transition);
-  z-index: 4;
+	border-radius: 2rem;
+	border: 0.1rem solid var(--ink);
+	background: var(--paper);
+	transition: background var(--item-transition), color var(--item-transition),
+		border-color var(--item-transition);
+	z-index: 4;
 
 	&:hover {
-    background: var(--paper);
-  }
+		background: var(--paper);
+	}
 }
