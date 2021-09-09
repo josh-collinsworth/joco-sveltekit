@@ -68,7 +68,7 @@
 
 </template>
 
-<style>
+<style global>
 @font-face {
 	font-family: 'MonoLisa';
 	src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
@@ -80,5 +80,15 @@
 aside h2 {
   margin-top: 1rem;
   border: 0;
+}
+
+main > p:first-of-type::first-letter,
+main > hr + p:first-letter {
+	font-size: 3.4em;
+	font-family: var(--heading-font);
+	float: left;
+	line-height: 0.7em;
+	margin: 0.5rem 0.4rem 0 0;
+	color: inherit;
 }
 </style>

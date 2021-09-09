@@ -25,6 +25,15 @@ img {
 	}
 }
 
+main img,
+main > p img {
+	@media (max-width: 626px) {
+		margin-left: calc(var(--margin) * -1);
+		width: calc(100% + calc(var(--margin) * 2));
+		max-width: unset;
+	}
+}
+
 hr {
 	width: 100%;
 	margin: 2rem 0;
@@ -125,4 +134,12 @@ h2 + .details {
 			margin-top: 0;
 		}
 	}
+
+	.fullwidth main {
+		max-width: 100%;
+	}
+}
+
+.cp_embed_wrapper {
+	margin-bottom: 2rem;
 }

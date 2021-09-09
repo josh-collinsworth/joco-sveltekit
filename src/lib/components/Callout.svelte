@@ -6,8 +6,6 @@
 
 
 <style lang="scss">
-@import '../assets/scss/_vars.scss';
-
 .callout {
   margin: 3rem 1rem;
   font-size: 1rem;

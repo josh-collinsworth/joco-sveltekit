@@ -1,6 +1,5 @@
 <script lang="ts">
 import LightDarkIcon from './LightDarkIcon.svelte'
-
 import { onMount } from 'svelte'
 
 export let setPrefersDarkMode: (goDark: boolean) => void

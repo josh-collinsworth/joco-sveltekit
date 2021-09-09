@@ -1,15 +1,16 @@
 ---
-title: "Announcing Quina (My First App)!"
-date: "2020-12-10"
-updated: "2021-02-11"
+title: 'Announcing Quina (My First App)!'
+date: '2020-12-10'
+updated: '2021-02-11'
 categories:
-  - "javascript"
-  - "design"
-  - "web"
-  - "vue"
-coverImage: "social-share-image.png"
-excerpt: "The story of building Quina, a word game Progressive Web App built with Nuxt, and launched on the Google Play Store."
+  - 'javascript'
+  - 'design'
+  - 'web'
+  - 'vue'
+coverImage: 'social-share-image.png'
+excerpt: 'The story of building Quina, a word game Progressive Web App built with Nuxt, and launched on the Google Play Store.'
 ---
+
 <script>
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'

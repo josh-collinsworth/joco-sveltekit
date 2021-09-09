@@ -41,6 +41,7 @@
       <li>
         <a rel="external" href="{post.slug}">
           <span>{post.title}</span>
+          <i>({post.subtitle})</i>
         </a>
       </li>    
     {/each}
@@ -74,8 +75,6 @@
 
 
 <style lang="scss" global>
-@import '../assets/scss/_vars.scss';
-
 #sidebar {
   font-size: .85rem;
   display: none;

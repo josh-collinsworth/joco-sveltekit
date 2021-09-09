@@ -1,15 +1,16 @@
 ---
-title: "A New Headless Site with Gridsome"
-date: "2020-06-06"
-updated: "2021-01-19"
+title: 'A New Headless Site with Gridsome'
+date: '2020-06-06'
+updated: '2021-01-19'
 categories:
-  - "javascript"
-  - "web"
-  - "vue"
-  - "wordpress"
-coverImage: "wp-plus-gridsome.png"
+  - 'javascript'
+  - 'web'
+  - 'vue'
+  - 'wordpress'
+coverImage: 'wp-plus-gridsome.png'
 excerpt: A lengthy write-up diving into what headless means, its advantages and disadvantages, some of the techniques and gotchas involved, and, finally, the new design of this site specifically.
 ---
+
 <script>
   import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
@@ -163,16 +164,16 @@ One of the uses for (at least some of) those fonts: code and preformatted code b
 Want to get super meta? Here's what a code block looks like on this new site, along with some of the CSS rendering it:
 
 ```css
-pre[class*="language-"] {
-  padding: 4rem 1rem 1.5rem;
-  margin: 2rem 0;
-  overflow: auto;
-  border-radius: 0.3em;
-  position: relative;
+pre[class*='language-'] {
+	padding: 4rem 1rem 1.5rem;
+	margin: 2rem 0;
+	overflow: auto;
+	border-radius: 0.3em;
+	position: relative;
 }
 
 pre.language-css:before {
-  content: 'CSS:';
+	content: 'CSS:';
 }
 ```
 
@@ -182,9 +183,11 @@ This change in fonts also necessitated a redesign of my personal logo, since the
 
 I'll be honest: every time I create a new version of my logo, I feel less and less pressure to make it "something," and instead just go with what feels right to me. I suppose you could view this either as atrophy or maturation of my design skills; I'll let you be the judge of that. But in any case, this logo is a little bit of a remix of the last one, but doesn't try quite so hard to wink at you (at least, not until you hover on it in the site header).
 
-![The 2018 version of the logo, in Amsi Pro Ultra](/images/post_images/Full-Logo-2018.svg)
+<div style="padding: 2rem; background: var(--white)">
+  <img src="/images/post_images/Full-Logo-2018.svg" alt="The 2018 version of the logo, in Amsi Pro Ultra" style="margin-bottom: 4rem"/>
 
-![The newer 2020 version of the logo, in Pensum Display Basic Bold](/images/post_images/2020-logo-final.svg)
+  <img src="/images/post_images/2020-logo-final.svg" alt="The newer 2020 version of the logo, in Pensum Display Basic Bold" />
+</div>
 
 As a nice side effect, the old favicon uses two pairs of brackets, where the new one uses only one, which makes it easy to distinguish between the secondary back-end (where I didn't bother updating the favicon) and the primary front-end at a glance in my browser tabs.
 
@@ -215,7 +218,6 @@ The site also features a settings menu (which you'll notice sticking around, pun
 And finally, as far as benefits, I think the results speak for themselves. Here's the **Lighthouse mobile test result**:
 
 ![The mobile results for this site's homepage in a Lighthouse test, with perfect 100 scores in performance, accessibility, best practices and SEO.](/images/post_images/Image-2020-06-05-at-11.47.11-AM-1024x391.png)
-
 
 And here's the **GTMetrix** score:
 

@@ -47,8 +47,6 @@
 
 
 <style lang="scss">
-@import '../assets/scss/_vars';
-
 ul {
   padding: 0;
   list-style-type: none;
