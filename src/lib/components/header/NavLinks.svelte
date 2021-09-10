@@ -15,10 +15,10 @@
 
 <ul class:mobile={mobile}>
   <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
-  <NavLink to="/projects" text="Projects" {closeMobileMenu} {key} {mobile} {menuOpen} on:startloading />
-  <NavLink to="/blog" text="Writing" {closeMobileMenu} {key} {mobile} {menuOpen} on:startloading />
-  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} {menuOpen} on:startloading />
-  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} {menuOpen} on:startloading />
+  <NavLink to="/projects" text="Projects" {closeMobileMenu} {key} {mobile} {menuOpen} />
+  <NavLink to="/blog" text="Writing" {closeMobileMenu} {key} {mobile} {menuOpen} />
+  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} {menuOpen} />
+  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} {menuOpen} />
 </ul>  
 
 

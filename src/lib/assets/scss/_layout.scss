@@ -97,15 +97,14 @@ h2 + .details {
 	width: calc(100% - (var(--margin) * 2));
 	position: relative;
 	display: grid;
-	align-items: center;
+	grid-template-columns: 1fr;
+	align-items: start;
 	justify-content: start;
-	padding-top: 6rem;
-	min-height: calc(100vh - 450px);
+	padding-top: 2rem;
 	background: var(--paper);
 	color: var(--ink);
 
 	@media (min-width: $wider) {
-		display: grid;
 		grid-template-columns: var(--max-width) 1fr var(--sidebar-width);
 		gap: 2rem;
 		margin-right: 2rem;

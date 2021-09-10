@@ -13,7 +13,7 @@
 
 <style lang="scss">
 .loader {
-  background: rgba(var(--paperRGB), 0.2);
+  background: rgba(var(--paperRGB), 0.4);
   position: fixed;
   z-index: 3;
   width: 100vw;

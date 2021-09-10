@@ -5,14 +5,12 @@
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
 
-	import { createEventDispatcher } from 'svelte'
+	import { isLoading } from '$lib/assets/js/store'
 
 	export let key: string
 	export let reduceMotion: boolean
 	export let setPrefersDarkMode: (goDark: boolean) => void
 	export let setReduceMotion: (reduce: boolean) => void
-
-	const dispatch = createEventDispatcher()
 
 	let menuOpen: boolean = false
 
@@ -20,8 +18,9 @@
 		menuOpen = !menuOpen
 	}
 
-	const closeMenuIfOpen = () => {
+	const handleClick = () => {
 		if (menuOpen) toggleMenu()
+		if (window?.location?.pathname !== '/') isLoading.set(true)
 	}
 	
 	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
@@ -29,16 +28,12 @@
 		const main = document.querySelector('main')
 		main.focus()
 	}
-
-	const startLoading = () => {
-		dispatch('startloading')
-	}
 </script>
 
 
 <div>
   <header class="header">
-    <a on:click={focusMain} on:click={startLoading} class="skip-to-content-link" href="#main">
+    <a on:click={focusMain} class="skip-to-content-link" href="#main">
       Skip to main content
     </a>
 
@@ -46,7 +41,7 @@
 			href="/"
 			class="logo"
 			class:sticky={menuOpen}
-			on:click={closeMenuIfOpen}
+			on:click={handleClick}
 		>
 			<LogoSVG />
 			<span class="sr">Home</span>
@@ -55,7 +50,7 @@
 		<div class="icon-container" class:sticky={menuOpen}>
 			<ReduceMotionToggle {reduceMotion} {setReduceMotion} />
 			<DarkModeToggle {setPrefersDarkMode} />
-			<NavMenus {menuOpen} {toggleMenu} {key} on:startloading />
+			<NavMenus {menuOpen} {toggleMenu} {key} />
 		</div>
   </header>
   <Grid refresh={key} />

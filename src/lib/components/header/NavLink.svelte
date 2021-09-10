@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { createEventDispatcher} from 'svelte'
+  import { isLoading } from '$lib/assets/js/store'
 
   export let text: string
   export let to: string
@@ -9,10 +9,9 @@
   export let menuOpen: boolean = false
   export let closeMobileMenu: () => void
 
-  const dispatch = createEventDispatcher()
-
-  const startLoading = () => {
-    dispatch('startloading')
+  const handleClick = (): void => {
+    closeMobileMenu()
+    isLoading.set(true)
   }
 
   $: isCurrentPage = key === to
@@ -27,8 +26,7 @@
     class:active={isCurrentPage}
     aria-current={isCurrentPage ? 'page' : false}
     tabindex={mobile && !menuOpen ? -1 : 0}
-    on:click={closeMobileMenu}
-    on:click={startLoading}
+    on:click={handleClick}
   >  
     <span>{text}</span>
   </a>  

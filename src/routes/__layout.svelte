@@ -1,30 +1,26 @@
 <script context="module" lang="ts">
-	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
-
 	export const load = async({ page }) => {
 
 		const key: string = page.path
-		const isFullwidthPage: boolean = FULLWIDTH_PAGES.includes(key)
-		const pageHasSidebar: boolean = key.includes('/blog')
 
 		return {
 			props: {
 				key,
-				isFullwidthPage,
-				pageHasSidebar
 			}
 		}
 	}
 </script>
 
 <script lang="ts">
+	import '$lib/assets/scss/global.scss'
+
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
-
-	import '$lib/assets/scss/global.scss'
+	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
+	import { isLoading } from '$lib/assets/js/store'
 	
 	export let key: string
 	export let isFullwidthPage: boolean
@@ -33,7 +29,11 @@
   let reduceMotion: boolean = false
   let prefersDark: boolean = false
   let prefersLight: boolean = true
-  let loading: boolean = false
+
+	const sidebarCheck = new RegExp(/^\/blog/)
+
+	$: isFullwidthPage = FULLWIDTH_PAGES.includes(key)
+	$: pageHasSidebar = sidebarCheck.test(key)
 
 	const setReduceMotion = (reduce: boolean): void => {
 		reduceMotion = reduce
@@ -49,8 +49,9 @@
 		prefersDark = setAsDark
 	}
 
-	const setLoading = (isLoading: boolean): void => {
-		loading = isLoading
+	const setLoading = (newState: boolean): void => {
+		console.log($isLoading)
+		isLoading.set(newState)
 	}
 </script>
 
@@ -61,13 +62,13 @@
 	class:prefers-dark={prefersDark}
 	class:prefers-light={prefersLight}
 >
-	{#if loading}
+	{#if $isLoading}
 		<Loader />
 	{/if}
-	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} on:startloading={() => setLoading(true)} /> 
+	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
 	<div class="layout"> 
-		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion on:loaded={() => setLoading(false)}>
+		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion on:loaded={() => { console.log('***LOADED***'); setLoading(false) }}>
 			<main>
 				<slot></slot>
 			</main>

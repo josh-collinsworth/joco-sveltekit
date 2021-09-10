@@ -1,6 +1,7 @@
 <script lang="ts">
   import TransitionWrapper from './TransitionWrapper.svelte'
-  import { createEventDispatcher } from 'svelte'
+  import { createEventDispatcher, onMount } from 'svelte'
+
 
   export let refresh: string = ''
   export let fullwidth: boolean = false
@@ -8,9 +9,13 @@
   export let reduceMotion: boolean = false
 
   const dispatch = createEventDispatcher()
+  
+  //For some reason these are both needed; otherwise the first click won't trigger the loaded event.
+  onMount(() => {
+    dispatch('loaded', { refresh })
+  })
 
-  $: if (refresh) {
-    console.log({refresh})
+  $: {
     dispatch('loaded', { refresh })
   }
 </script>

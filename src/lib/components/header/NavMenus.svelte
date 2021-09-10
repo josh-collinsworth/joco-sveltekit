@@ -19,11 +19,11 @@
 			role="navigation"
 			aria-hidden={!menuOpen}
 		>
-      <NavLinks mobile={true} {menuOpen} {toggleMenu} {key} on:startloading />
+      <NavLinks mobile={true} {menuOpen} {toggleMenu} {key} />
 		</nav>
 
 		<nav id="desktop-nav" class="main-nav nav" role="navigation">
-			<NavLinks {menuOpen} {key} on:startloading />
+			<NavLinks {menuOpen} {key} />
 		</nav>
 	</div>
 </template>

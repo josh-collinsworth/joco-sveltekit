@@ -12,17 +12,13 @@
 
 <script lang="ts">
 	import type Post from '$lib/assets/js/interfaces/post'
-	import Loader from '$lib/components/Loader.svelte'
 	import PostList from '$lib/components/PostList.svelte'
-	import TransitionWrapper from '$lib/components/transitions/TransitionWrapper.svelte'
 	import PageHead from '$lib/components/PageHead.svelte'
 	import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
 
 	export let posts: Post[] = []
-
-	let postsAreLoaded: boolean
-	$: postsAreLoaded = posts.length > 0
 </script>
+
 
 <svelte:head>
 	<title>Josh Collinsworth | Writing</title>
@@ -44,15 +40,7 @@
 		<p>Published on this website only</p>
 	</div>
 
-	{#if postsAreLoaded}
-		<TransitionWrapper>
-			<PostList {posts} />	
-		</TransitionWrapper>
-	{:else}
-		<TransitionWrapper>	
-			<Loader	/>
-		</TransitionWrapper>
-	{/if}
+	<PostList {posts} />	
 </template>
 
 

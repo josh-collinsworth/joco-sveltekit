@@ -1,6 +1,16 @@
 #app {
 	background: var(--paper);
 	color: var(--ink);
+	min-height: 100vh;
+	display: flex;
+	align-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+
+	> * {
+		flex: 1 1 100%;
+	}
 
 	&.reduce-motion * {
 		transition: opacity 0.2s !important;

@@ -5,7 +5,7 @@
   
   export let posts: Post[]
   export let external: boolean = false
-
+  
   let slugPath: string
   $: slugPath = external ? '' : '/blog/'
 </script>
