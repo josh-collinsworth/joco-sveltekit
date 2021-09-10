@@ -1,15 +1,4 @@
-<script>
-  import { SITE_COLORS } from '$lib/assets/js/constants'
-
-  const randomColor = () => {
-    return SITE_COLORS[Math.floor(Math.random() * SITE_COLORS.length)]
-  }
-</script>
-
-
-<div>
-  <h2>Loading…</h2>
-  
+<div class="loader">
   <div class="loading-wrapper">
     <div class="dot outer first"></div>
     <div class="dot outer second"></div>
@@ -23,18 +12,19 @@
 
 
 <style lang="scss">
-h2 {
-  text-align: center;
-  font-style: italic;
-  font-weight: normal;
-  border: none;
-  width: 100%;
-  font-family: var(--body-font);
-  font-size: 1.2rem;
+.loader {
+  background: rgba(var(--paperRGB), 0.2);
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loading-wrapper {
-  --unit: 2rem;
+  --unit: 2.5rem;
   --easing: cubic-bezier(0.08, 0.82, 0.17, 1);
 
   display: grid;

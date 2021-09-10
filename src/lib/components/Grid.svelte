@@ -5,22 +5,36 @@
 
   export let refresh: string = ''
   export let inverted: boolean = false
+  export let noDark: boolean = false
+  export let squareCount: number = 0
 
   let count: number = 0
+  let gridColors = SITE_COLORS
 
   onMount(() => {
 		if (typeof window == 'undefined') return
-		count = Math.floor(
-			(window.innerWidth
-      / (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
+
+    if (squareCount) {
+      count = squareCount
+      return
+    }
+
+    count = 
+		  Math.floor(
+        (window.innerWidth
+        / (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
 			* 4)
 		)
   })
 
-  const randomColor = () => {
-    const color = Math.floor(Math.random() * SITE_COLORS.length)
+  if (noDark) {
+    gridColors = SITE_COLORS.filter(color => color !== 'var(--ink)')
+  }
 
-    return SITE_COLORS[color]
+  const randomColor = () => {
+    const color = Math.floor(Math.random() * gridColors.length)
+
+    return gridColors[color]
   }
 </script>
 
@@ -49,6 +63,21 @@
   &.inverted {
     transform: rotateX(180deg);
     top: 1rem;
+
+    &:before {
+      --paperRGB: var(--darkBlueRGB);
+      top: -3rem;
+    }
+  }
+
+  &:before {
+    width: 100%;
+    content: '';
+    background: linear-gradient(60deg, rgba(0,0,0,0) , rgba(var(--paperRGB), 0.6));
+    height: 4rem;
+    position: absolute;
+    top: -1rem;
+    z-index: 2;
   }
 }
 </style>

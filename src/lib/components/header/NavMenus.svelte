@@ -19,11 +19,11 @@
 			role="navigation"
 			aria-hidden={!menuOpen}
 		>
-      <NavLinks mobile={true} {menuOpen} {toggleMenu} {key} />
+      <NavLinks mobile={true} {menuOpen} {toggleMenu} {key} on:startloading />
 		</nav>
 
 		<nav id="desktop-nav" class="main-nav nav" role="navigation">
-			<NavLinks {menuOpen} {key} />
+			<NavLinks {menuOpen} {key} on:startloading />
 		</nav>
 	</div>
 </template>
@@ -47,6 +47,7 @@
 		place-content: center;
 		padding: 3rem;
 		opacity: 0;
+		z-index: 10;
 
 		@media (min-width: 768px) {
 			display: none;

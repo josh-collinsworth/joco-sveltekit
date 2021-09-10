@@ -15,6 +15,7 @@
 	import Loader from '$lib/components/Loader.svelte'
 	import PostList from '$lib/components/PostList.svelte'
 	import TransitionWrapper from '$lib/components/transitions/TransitionWrapper.svelte'
+	import PageHead from '$lib/components/PageHead.svelte'
 	import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
 
 	export let posts: Post[] = []
@@ -29,7 +30,7 @@
 </svelte:head>
 
 <template>
-	<h1 class="sr">Writing</h1>
+	<PageHead>Writing</PageHead>
 
 	<div class="heading-wrapper">
 		<h2>External writing</h2>

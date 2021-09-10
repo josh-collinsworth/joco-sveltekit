@@ -35,7 +35,7 @@
 	border: none;
 	background: transparent;
 	position: relative;
-	z-index: 4;
+	z-index: 11;
 
 	&.sticky {
 		.line {

@@ -1,5 +1,6 @@
 <script lang="ts">
   import FontTester from '$lib/components/FontTester.svelte'
+  import PageHead from '$lib/components/PageHead.svelte'
 
   const colors: string[] = [
     '#ffd100',
@@ -22,9 +23,10 @@
 </svelte:head>
 
 <template>
-  <h1>Uses</h1>
-
-  <p class="fancy details">Things that I use and like, professionally or otherwise.</p>
+  <PageHead>
+    Uses
+    <span slot="subtitle">Things I use and like, professionally and otherwise.</span>
+  </PageHead>
 
   <h2>Development</h2>
 

@@ -78,7 +78,7 @@ button {
 	background: var(--paper);
 	transition: background var(--item-transition), color var(--item-transition),
 		border-color var(--item-transition);
-	z-index: 4;
+	z-index: 11;
 
 	&:hover {
 		background: var(--paper);

@@ -8,7 +8,6 @@
     const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 			const storedMotionPreference = JSON.parse(window.localStorage.getItem('collinsworth-reduce-motion'))
 
-			console.log(userMotionPreference)
 			if (
         (userMotionPreference && storedMotionPreference !== false) 
         || storedMotionPreference === true) {
@@ -51,7 +50,7 @@
 		transform-origin: center;
 		top: calc(50% - 0.05rem);
 		left: -0.05rem;
-		z-index: 2;
+		z-index: 11;
 		border: 0;
 		transform: rotate(45deg);
 	}

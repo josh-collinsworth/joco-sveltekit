@@ -26,8 +26,6 @@
 
 
 <style lang="scss" global>
-@import "../lib/assets/scss/_vars.scss";
-
 :root {
   --max-width: 36rem;
 }
@@ -41,28 +39,28 @@
     margin: 0;
   }
 
-  h1 {
-    font-size: calc(2.2rem + 2vw);
+  // h1 {
+  //   font-size: calc(2.2rem + 2vw);
 		
-    @media (min-width: $widest) {
-			font-size: 4rem;
-    }
+  //   @media (min-width: $widest) {
+	// 		font-size: 4rem;
+  //   }
 
-		+ p {
-			margin-top: .75rem;
-			margin-bottom: 1.5rem;
-			font-size: 1.2rem;
-			font-style: italic;
+	// 	~ p {
+	// 		margin-top: .75rem;
+	// 		margin-bottom: 1.5rem;
+	// 		font-size: 1.2rem;
+	// 		font-style: italic;
 	
-			@media (min-width: $narrow) {
-				font-size: calc(1rem + 0.5vw);
-			}
+	// 		@media (min-width: $narrow) {
+	// 			font-size: calc(1rem + 0.5vw);
+	// 		}
 	
-			@media (min-width: $widest) {
-				font-size: 1.5rem;
-			}
-		}
-  }
+	// 		@media (min-width: $widest) {
+	// 			font-size: 1.5rem;
+	// 		}
+	// 	}
+  // }
 
   h2 {
     font-family: var(--body-font);

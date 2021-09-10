@@ -7,8 +7,9 @@
 	}
 
 	&.prefers-dark {
-		--paper: #101820;
-		--ink: #ffffff;
+		--paper: var(--black);
+		--paperRGB: var(--blackRGB);
+		--ink: var(--white);
 		--header-color: var(--white);
 		--accent-color: var(--lightBlue);
 		--link-color: var(--ink);
@@ -16,8 +17,9 @@
 	}
 
 	&.prefers-light {
-		--paper: #ffffff;
-		--ink: #53565a;
+		--paper: var(--white);
+		--paperRGB: var(--whiteRGB);
+		--ink: var(--darkGray);
 		--header-color: var(--darkGray);
 		--accent-color: var(--darkBlue);
 		--link-color: var(--darkBlue);

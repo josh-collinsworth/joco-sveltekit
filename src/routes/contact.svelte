@@ -1,4 +1,6 @@
 <script lang="ts">
+	import PageHead from '$lib/components/PageHead.svelte'
+
 	let formData: object = {}
 	let isSubmitted: boolean = false
 
@@ -30,9 +32,10 @@
 
 <template>
 	{#if !isSubmitted}
-		<h1>Get in touch</h1>
-
-		<p class="fancy details">Happy to chat.</p>
+		<PageHead>
+			Get in touch
+			<span slot="subtitle">Happy to chat.</span>
+		</PageHead>
 
 		<noscript><h2>Sorry, this form won't work without JavaScript enabled.</h2></noscript>
 
@@ -79,8 +82,7 @@
 
 <style lang="scss">
 #contact-form {
-	width: var(--max-width);
+	width: 100%;
 	margin-top: 4rem;
-	max-width: 100%;
 }
 </style>

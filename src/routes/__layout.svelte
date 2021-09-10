@@ -22,6 +22,7 @@
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
+	import Loader from '$lib/components/Loader.svelte'
 
 	import '$lib/assets/scss/global.scss'
 	
@@ -32,6 +33,7 @@
   let reduceMotion: boolean = false
   let prefersDark: boolean = false
   let prefersLight: boolean = true
+  let loading: boolean = false
 
 	const setReduceMotion = (reduce: boolean): void => {
 		reduceMotion = reduce
@@ -46,6 +48,10 @@
 		prefersLight = !setAsDark
 		prefersDark = setAsDark
 	}
+
+	const setLoading = (isLoading: boolean): void => {
+		loading = isLoading
+	}
 </script>
 
 
@@ -55,10 +61,13 @@
 	class:prefers-dark={prefersDark}
 	class:prefers-light={prefersLight}
 >
-	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
+	{#if loading}
+		<Loader />
+	{/if}
+	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} on:startloading={() => setLoading(true)} /> 
 
 	<div class="layout"> 
-		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion>
+		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion on:loaded={() => setLoading(false)}>
 			<main>
 				<slot></slot>
 			</main>
