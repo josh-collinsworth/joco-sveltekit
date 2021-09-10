@@ -2,6 +2,7 @@
   import type Post from '$lib/assets/js/interfaces/post'
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
+  import { isLoading } from '$lib/assets/js/store'
   
   export let posts: Post[]
   export let external: boolean = false
@@ -15,7 +16,7 @@
   {#each posts as post}
     <li>
       <article>
-        <a href={slugPath + post.slug}>
+        <a on:click={() => isLoading.set(true)} href={slugPath + post.slug}>
           <img src="/images/post_images/{post.coverImage}" alt="" loading="lazy" />
           <h3>{post.title}</h3>
         </a>
@@ -26,7 +27,7 @@
 
         <p class="excerpt">
           {post.excerpt}
-          <a href="{slugPath + post.slug}">Read&nbsp;more…</a>
+          <a on:click={() => isLoading.set(true)} href="{slugPath + post.slug}">Read&nbsp;more…</a>
         </p>
 
         {#if post.categories && !external}
