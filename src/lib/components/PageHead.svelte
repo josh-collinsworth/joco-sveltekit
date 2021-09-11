@@ -15,12 +15,13 @@
     margin-bottom: 4rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     animation: fade-in-left .35s cubic-bezier(0.215, 0.610, 0.355, 1);
     animation-delay: .35s;
 
     h1 {
       font-size: 1.2rem;
-      margin: 0;
+      margin: 0 1rem 0.25rem 0;
       padding: 0;
       width: max-content;
 
@@ -31,10 +32,9 @@
         background-clip: text;
         font-family: var(--body-font);
         text-transform: lowercase;
-      }
-      
-      @media (min-width: $wider) {
-        font-size: 4.4rem;
+        flex: 0 1 auto;
+        white-space: nowrap;
+        line-height: 1.2;
       }
 
       &::before,
@@ -56,7 +56,8 @@
     p.subtitle {
       font-size: 0.8em;
       font-style: italic;
-      margin-left: 1rem;
+      line-height: 1.2;
+      flex: 1 1 auto;
     }
   }
 

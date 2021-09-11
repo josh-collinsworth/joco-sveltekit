@@ -137,6 +137,7 @@
     img {
       margin: 0 auto 2rem;
       display: block;
+      max-width: 100%;
     }
   }
 

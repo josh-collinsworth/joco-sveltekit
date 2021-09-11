@@ -25,7 +25,7 @@
 <template>
   <PageHead>
     Uses
-    <span slot="subtitle">Things I use and like, professionally and otherwise.</span>
+    <span slot="subtitle">Things I find useful.</span>
   </PageHead>
 
   <h2>Development</h2>
