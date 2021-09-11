@@ -27,18 +27,18 @@ $: yOut = reduceMotion ? 0 : -12
 
 
 <style lang="scss">
-.transition-wrapper {
+  .transition-wrapper {
 
-  &.fullwidth {
-    grid-column: 1 / 4;
-  }
+    &.fullwidth {
+      grid-column: 1 / 4;
+    }
 
-  &.sidebar {
-    grid-column: 1 / 2;
-  }
+    &.sidebar {
+      grid-column: 1 / 2;
+    }
 
-  &.fullwidth.sidebar {
-    grid-column: 1 / 3;
+    &.fullwidth.sidebar {
+      grid-column: 1 / 3;
+    }
   }
-}
 </style>

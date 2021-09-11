@@ -34,29 +34,29 @@
 
 
 <style lang="scss">
-#motion-toggle {
-	font-weight: bold;
-	font-size: .6rem;
-	text-transform: uppercase;
-	color: var(--ink);
+	#motion-toggle {
+		font-weight: bold;
+		font-size: .6rem;
+		text-transform: uppercase;
+		color: var(--ink);
 
-	&[aria-pressed="true"]::before {
-		content: '';
-		width: calc(100% + .1rem);
-		height: .1rem;
-		background: var(--ink);
-		display: block;
-		position: absolute;
-		transform-origin: center;
-		top: calc(50% - 0.05rem);
-		left: -0.05rem;
-		z-index: 11;
-		border: 0;
-		transform: rotate(45deg);
-	}
+		&[aria-pressed="true"]::before {
+			content: '';
+			width: calc(100% + .1rem);
+			height: .1rem;
+			background: var(--ink);
+			display: block;
+			position: absolute;
+			transform-origin: center;
+			top: calc(50% - 0.05rem);
+			left: -0.05rem;
+			z-index: 11;
+			border: 0;
+			transform: rotate(45deg);
+		}
 
-	&:hover {
-		color: var(--yellow);
+		&:hover {
+			color: var(--yellow);
+		}
 	}
-}
 </style>

@@ -49,29 +49,29 @@ const toggleDarkMode = () => {
 
 
 <style lang="scss" global>
-#dark-mode-toggle {
-	&:hover svg {
-		path, circle {
-			stroke: var(--yellow);
-		}
-	}
+  #dark-mode-toggle {
+    &:hover svg {
+      path, circle {
+        stroke: var(--yellow);
+      }
+    }
 
-	&.dark svg {
-		transform: translateY(0);
-	}
+    &.dark svg {
+      transform: translateY(0);
+    }
 
-	svg {
-    --item-transition: .4s cubic-bezier(.7,-0.01,0,1.01);
-		width: 2rem;
-		height: 4rem;
-		transform: translateY(-1.975rem);
-		transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
+    svg {
+      --item-transition: .4s cubic-bezier(.7,-0.01,0,1.01);
+      width: 2rem;
+      height: 4rem;
+      transform: translateY(-1.975rem);
+      transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
 
-		path,
-		circle {
-			transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
-			stroke: var(--ink);
-		}
-	}
-}
+      path,
+      circle {
+        transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
+        stroke: var(--ink);
+      }
+    }
+  }
 </style>

@@ -81,8 +81,8 @@
 
 
 <style lang="scss">
-#contact-form {
-	width: 100%;
-	margin-top: 4rem;
-}
+	#contact-form {
+		width: 100%;
+		margin-top: 4rem;
+	}
 </style>

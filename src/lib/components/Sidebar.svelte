@@ -2,6 +2,7 @@
   import type Post from '$lib/assets/js/interfaces/post'
   import LogoSVG from './header/LogoSVG.svelte'
   import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
+  import { isLoading } from '$lib/assets/js/store'
   
   import { onMount } from 'svelte'
   
@@ -24,6 +25,10 @@
       posts = [{ title: 'ERROR'}]
     }
   })
+
+  const startLoading = () => {
+    isLoading.set(true)
+  }
 </script>
 
 
@@ -34,9 +39,6 @@
 
   <h2>External Writing</h2>
   <ul>
-    {#if !EXTERNAL_POSTS.length}
-      <li>Loading…</li>
-    {/if}
     {#each EXTERNAL_POSTS as post}
       <li>
         <a rel="external" href="{post.slug}">
@@ -50,11 +52,11 @@
   <h2>Recent blog posts</h2>
   <ul>
     {#if !posts.length}
-      <li>Loading…</li>
+      Loading…
     {/if}
     {#each posts as post}
       <li>
-        <a href="/blog/{post.slug}">
+        <a href="/blog/{post.slug}" on:click={startLoading} sveltekit:prefetch>
           <span>{post.title}</span>
         </a>
       </li>
@@ -65,7 +67,7 @@
   <ul class="display-flex">
     {#each allCategories as category}
       <li>
-        <a href="/blog/category/{category}">
+        <a href="/blog/category/{category}" on:click={startLoading} sveltekit:prefetch>
           <span>{ category }</span>
         </a>
       </li>
@@ -75,91 +77,91 @@
 
 
 <style lang="scss" global>
-#sidebar {
-  font-size: .85rem;
-  display: none;
-  align-self: start;
-  position: sticky;
-  top: 2rem;
-  grid-column: 3 / 4;
-  text-align: right;
+  #sidebar {
+    font-size: .85rem;
+    display: none;
+    align-self: start;
+    position: sticky;
+    top: 2rem;
+    grid-column: 3 / 4;
+    text-align: right;
 
-  @media (min-width: $wider) {
-    display: block;
-  }
-
-  .home-link {
-    display: block;
-    margin: 0 0 1rem auto;
-    width: 1.5rem;
-    overflow: hidden;
-
-    svg {
-      width: 500%;
-    }
-  }
-
-  h2 {
-    font-family: var(--body-font);
-    font-size: .8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 3em 0 1em;
-    padding: 0 0 .1em 0;
-    border: none;
-    border-bottom: .15em solid;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-  }
-
-  ul {
-    margin: 0;
-    list-style-type: none;
-    padding: 0;
-    justify-content: flex-end;
-    line-height: 1.2;
-
-    &.display-flex li {
-      margin-left: .75em;
+    @media (min-width: $wider) {
+      display: block;
     }
 
-    li {
-      font-size: inherit;
-      margin-bottom: .6em;
+    .home-link {
+      display: block;
+      margin: 0 0 1rem auto;
+      width: 1.5rem;
+      overflow: hidden;
 
-      a {
-        font-size: inerit;
-        color: inherit;
-        text-decoration-color: var(--lightGray);
-        position: relative;
-        display: inline-block;
+      svg {
+        width: 500%;
+      }
+    }
 
-        &:hover span,
-        &:focus span {
+    h2 {
+      font-family: var(--body-font);
+      font-size: .8em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 3em 0 1em;
+      padding: 0 0 .1em 0;
+      border: none;
+      border-bottom: .15em solid;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    ul {
+      margin: 0;
+      list-style-type: none;
+      padding: 0;
+      justify-content: flex-end;
+      line-height: 1.2;
+
+      &.display-flex li {
+        margin-left: .75em;
+      }
+
+      li {
+        font-size: inherit;
+        margin-bottom: .6em;
+
+        a {
+          font-size: inerit;
+          color: inherit;
+          text-decoration-color: var(--lightGray);
           position: relative;
-          outline: none;
+          display: inline-block;
 
-          &:before {
-            position: absolute;
-            content: '[';
-            left: -.5em;
+          &:hover span,
+          &:focus span {
+            position: relative;
+            outline: none;
+
+            &:before {
+              position: absolute;
+              content: '[';
+              left: -.5em;
+            }
           }
-        }
 
-        &:hover,
-        &:focus {
-          outline: none;
+          &:hover,
+          &:focus {
+            outline: none;
 
-          &:after {
-            position: absolute;
-            content: ']';
-            right: -.5em;
+            &:after {
+              position: absolute;
+              content: ']';
+              right: -.5em;
+            }
           }
         }
       }
     }
   }
-}
 </style>

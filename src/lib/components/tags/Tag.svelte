@@ -13,27 +13,27 @@
 
 
 <style lang="scss">
-li {
-	margin: 0;
-}
-
-.tag {
-	display: block;
-	padding: 0.5em 1em;
-	background: var(--lightBlue);
-	margin: 0;
-	color: var(--white);
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 0.65em;
-	line-height: 1;
-	text-transform: uppercase;
-	transition: background .15s, color .15s;
-
-	&:hover,
-	&:focus {
-		background: var(--yellow);
-		color: var(--black);
+	li {
+		margin: 0;
 	}
-}
+
+	.tag {
+		display: block;
+		padding: 0.5em 1em;
+		background: var(--lightBlue);
+		margin: 0;
+		color: var(--white);
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 0.65em;
+		line-height: 1;
+		text-transform: uppercase;
+		transition: background .15s, color .15s;
+
+		&:hover,
+		&:focus {
+			background: var(--yellow);
+			color: var(--black);
+		}
+	}
 </style>

@@ -51,33 +51,33 @@
 
 
 <style lang="scss">
-.cell-grid {
-	display: grid;
-	height: 2.5rem;
-	grid-template-columns: repeat(auto-fill, minmax(.5rem, 1fr));
-	grid-template-rows: repeat(auto-fill, minmax(.5rem, 1fr));
-	grid-auto-flow: dense;
-	position: relative;
-	z-index: 2;
+  .cell-grid {
+    display: grid;
+    height: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(.5rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(.5rem, 1fr));
+    grid-auto-flow: dense;
+    position: relative;
+    z-index: 2;
 
-  &.inverted {
-    transform: rotateX(180deg);
-    top: 1rem;
+    &.inverted {
+      transform: rotateX(180deg);
+      top: 1rem;
+
+      &:before {
+        --paperRGB: var(--darkBlueRGB);
+        top: -3rem;
+      }
+    }
 
     &:before {
-      --paperRGB: var(--darkBlueRGB);
-      top: -3rem;
+      width: 100%;
+      content: '';
+      background: linear-gradient(60deg, rgba(0,0,0,0) , rgba(var(--paperRGB), 0.6));
+      height: 4rem;
+      position: absolute;
+      top: -1rem;
+      z-index: 2;
     }
   }
-
-  &:before {
-    width: 100%;
-    content: '';
-    background: linear-gradient(60deg, rgba(0,0,0,0) , rgba(var(--paperRGB), 0.6));
-    height: 4rem;
-    position: absolute;
-    top: -1rem;
-    z-index: 2;
-  }
-}
 </style>

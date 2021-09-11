@@ -82,48 +82,48 @@
 
 
 <style lang="scss">
-.tester-form {
-	overflow: visible;
-	margin: 4rem 0 0;
-	position: relative;
-
-	label {
-		font-size: .8rem;
-		flex: 1 1 14em;
-		margin-top: .5rem;
-	}
-
-	input[type="range"] {
-		flex: 1 1 70%;
-		padding: 0;
-		margin: .5rem 0 0;
-		max-width: 12rem;
-		outline: none;
-		border: none;
-	}
-
-	input[type=text] {
-		border: none;
-		margin: 0;
-		padding: .6em 0;
-		width: calc(100vw - var(--margin));
-		max-width: calc(100vw - var(--margin));
-		line-height: 1em;
-		height: 1em;
+	.tester-form {
 		overflow: visible;
-		position: absolute;
+		margin: 4rem 0 0;
+		position: relative;
 
-		&:hover {
-			cursor: text;
+		label {
+			font-size: .8rem;
+			flex: 1 1 14em;
+			margin-top: .5rem;
+		}
+
+		input[type="range"] {
+			flex: 1 1 70%;
+			padding: 0;
+			margin: .5rem 0 0;
+			max-width: 12rem;
+			outline: none;
+			border: none;
+		}
+
+		input[type=text] {
+			border: none;
+			margin: 0;
+			padding: .6em 0;
+			width: calc(100vw - var(--margin));
+			max-width: calc(100vw - var(--margin));
+			line-height: 1em;
+			height: 1em;
+			overflow: visible;
+			position: absolute;
+
+			&:hover {
+				cursor: text;
+			}
+		}
+
+		.flex-container {
+			padding-top: 2rem;
+			display: flex;
+			align-items: flex-end;
+			align-content: flex-end;
+			position: relative;
 		}
 	}
-
-	.flex-container {
-		padding-top: 2rem;
-		display: flex;
-		align-items: flex-end;
-		align-content: flex-end;
-		position: relative;
-	}
-}
 </style>

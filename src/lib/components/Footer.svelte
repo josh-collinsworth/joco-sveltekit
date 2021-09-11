@@ -34,44 +34,44 @@
 
 
 <style lang="scss">
-.footer {
-  width: 100%;
-  background: var(--darkBlue);
-  color: var(--white);
-  font-size: .75rem;
-  line-height: 1.6em;
-
-  @media(min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-  }
-
-  a {
-    color: inherit;
-  }
-
-  &__links {
-    list-style-type: square;
-    padding-right: 1rem;
-    margin-right: 2rem;
+  .footer {
+    width: 100%;
+    background: var(--darkBlue);
+    color: var(--white);
+    font-size: .75rem;
+    line-height: 1.6em;
 
     @media(min-width: 768px) {
-      border-right: 1px solid;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-items: center;
     }
 
-    li {
-      margin: 0 0 .5rem;
+    a {
+      color: inherit;
+    }
+
+    &__links {
+      list-style-type: square;
+      padding-right: 1rem;
+      margin-right: 2rem;
+
+      @media(min-width: 768px) {
+        border-right: 1px solid;
+      }
+
+      li {
+        margin: 0 0 .5rem;
+      }
+    }
+
+    .fine-print {
+      font-style: italic;
+
+      p {
+        margin: .5rem 0;
+        max-width: 44em;
+      }
     }
   }
-
-  .fine-print {
-    font-style: italic;
-
-    p {
-      margin: .5rem 0;
-      max-width: 44em;
-    }
-  }
-}
 </style>

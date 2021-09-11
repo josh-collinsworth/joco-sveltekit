@@ -23,21 +23,21 @@
 
 
 <style lang="scss">
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  width: auto;
-  font-size: .875rem;
-  list-style-type: none;
-  padding: 0;
-}
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: auto;
+    font-size: .875rem;
+    list-style-type: none;
+    padding: 0;
+  }
 
-ul.mobile {
-  list-style-type: none;
-  text-align: left;
-  width: 100%;
-  display: block;
-  margin: 0;
-}
+  ul.mobile {
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
 </style>

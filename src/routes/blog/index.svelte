@@ -45,16 +45,16 @@
 
 
 <style lang="scss">
-.heading-wrapper {
-	h2 {
-		margin-bottom: 0;
-		border: 0;
-		padding: 0 0 0.25rem;
-	}
+	.heading-wrapper {
+		h2 {
+			margin-bottom: 0;
+			border: 0;
+			padding: 0 0 0.25rem;
+		}
 
-	p {
-		margin: 0 0 2rem;
-		font-style: italic;
+		p {
+			margin: 0 0 2rem;
+			font-style: italic;
+		}
 	}
-}
 </style>

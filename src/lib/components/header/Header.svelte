@@ -58,65 +58,65 @@
 
 
 <style lang="scss">
-.logo {
-	width: auto;
-	height: 2rem;
-	display: block;
-	position: relative;
-	z-index: 4;
-}
-
-.icon-container {
-	display: flex;
-	align-items: center;
-	position: relative;
-
-	&.sticky {
-		right: 1rem;
-		top: calc(2.5rem - 2px);
+	.logo {
+		width: auto;
+		height: 2rem;
+		display: block;
+		position: relative;
+		z-index: 4;
 	}
-}
 
-.sticky {
-	position: fixed;
-	top: 2.5rem;
+	.icon-container {
+		display: flex;
+		align-items: center;
+		position: relative;
 
-	--ink: var(--white);
-	--paper: var(--darkBlue);
-}
-
-
-.header {
-  display: flex;
-  justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	position: relative;
-	z-index: 3;
-	min-height: calc(90px + 2rem);
-}
-
-.skip-to-content-link {
-	--item-transition: .15s cubic-bezier(0.86, 0, 0.07, 1);
-
-	transition: transform var(--item-transition), opacity var(--item-transition);
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	transform: translateX(-100%);
-	padding: .5em;
-	opacity: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 3rem;
-	background: var(--darkBlue);
-	color: var(--white);
-
-	&:focus {
-		transform: translateX(0)	;
-		opacity: 1;
-		z-index: 11;
+		&.sticky {
+			right: 1rem;
+			top: calc(2.5rem - 2px);
+		}
 	}
-}
+
+	.sticky {
+		position: fixed;
+		top: 2.5rem;
+
+		--ink: var(--white);
+		--paper: var(--darkBlue);
+	}
+
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		min-height: calc(90px + 2rem);
+	}
+
+	.skip-to-content-link {
+		--item-transition: .15s cubic-bezier(0.86, 0, 0.07, 1);
+
+		transition: transform var(--item-transition), opacity var(--item-transition);
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		transform: translateX(-100%);
+		padding: .5em;
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 3rem;
+		background: var(--darkBlue);
+		color: var(--white);
+
+		&:focus {
+			transform: translateX(0)	;
+			opacity: 1;
+			z-index: 11;
+		}
+	}
 </style>

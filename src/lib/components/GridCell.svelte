@@ -48,18 +48,18 @@
 
 
 <style lang="scss">
-.cell {
-	opacity: 0;
-	animation: fadeCellIn .2s ease-out forwards;
-	padding: 50% 0;
-}
-
-@keyframes fadeCellIn {
-	from {
+	.cell {
 		opacity: 0;
+		animation: fadeCellIn .2s ease-out forwards;
+		padding: 50% 0;
 	}
-	to {
-		opacity: 1;
+
+	@keyframes fadeCellIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
-}
 </style>

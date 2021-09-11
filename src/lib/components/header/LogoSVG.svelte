@@ -18,23 +18,23 @@
 
 
 <style lang="scss">
-svg {
-  width: auto;
-}
-
-svg:hover {
-	#bracket-left {
-		transform: translateX(11%);
+	svg {
+		width: auto;
 	}
 
+	svg:hover {
+		#bracket-left {
+			transform: translateX(11%);
+		}
+
+		#bracket-right {
+			transform: translateX(-11%);
+		}
+	}
+
+	#bracket-left,
 	#bracket-right {
-		transform: translateX(-11%);
+		transform: translateX(0);
+		transition: transform .3s cubic-bezier(1, 0, 0, 1);
 	}
-}
-
-#bracket-left,
-#bracket-right {
-	transform: translateX(0);
-	transition: transform .3s cubic-bezier(1, 0, 0, 1);
-}
 </style>

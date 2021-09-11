@@ -34,54 +34,54 @@
 
 
 <style lang="scss">
-li {
-  margin: 0;
-  margin-left: 1.5em;
-}
-
-a {
-  color: var(--ink);
-  margin: 0;
-
-  &:hover {
-    color: var(--link-color);
+  li {
+    margin: 0;
+    margin-left: 1.5em;
   }
-}
 
-li.mobile {
-  --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  a {
+    color: var(--ink);
+    margin: 0;
 
-  transform: translateX(-3em);
-  opacity: 0;
-  transition: transform var(--item-transition), opacity var(--item-transition);
-  margin-bottom: 1.5rem;
-  font-size: 1.25rem;
-  line-height: 1.5em;
-  color: var(--white);
-  width: 100%;
-}
+    &:hover {
+      color: var(--link-color);
+    }
+  }
 
-li.open {
-  transform: translateX(0vw);
-  opacity: 1;
+  li.mobile {
+    --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  @for $i from 1 through 9 {
-    &:nth-of-type(#{$i}) {
-      transition-delay: $i * 0.10 + s;
+    transform: translateX(-3em);
+    opacity: 0;
+    transition: transform var(--item-transition), opacity var(--item-transition);
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    color: var(--white);
+    width: 100%;
+  }
+
+  li.open {
+    transform: translateX(0vw);
+    opacity: 1;
+
+    @for $i from 1 through 9 {
+      &:nth-of-type(#{$i}) {
+        transition-delay: $i * 0.10 + s;
+      }
+    }
+
+    a {
+      color: var(--white);
+      width: calc(100% - 4rem);
     }
   }
 
   a {
-    color: var(--white);
-    width: calc(100% - 4rem);
-  }
-}
+    display: block;
 
-a {
-  display: block;
-
-  span {
-    display: inline-block;
+    span {
+      display: inline-block;
+    }
   }
-}
 </style>
