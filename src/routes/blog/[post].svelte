@@ -36,6 +36,12 @@
   <img src="/images/post_images/{meta.coverImage}" alt="" />
 
   <h1>{ meta.title }</h1>
+
+  <div class="meta">
+    <b>Published:</b> { meta.date }
+    <br>
+    <b>Updated:</b> { meta.updated }
+  </div>
   
   <svelte:component this={Post} />
 
@@ -68,7 +74,7 @@
 
 </template>
 
-<style global>
+<style global lang="scss">
 @font-face {
 	font-family: 'MonoLisa';
 	src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
@@ -82,13 +88,31 @@ aside h2 {
   border: 0;
 }
 
-main > p:first-of-type::first-letter,
-main > hr + p:first-letter {
-	font-size: 3.4em;
-	font-family: var(--heading-font);
-	float: left;
-	line-height: 0.7em;
-	margin: 0.5rem 0.4rem 0 0;
-	color: inherit;
+main {
+  h1 {
+    margin-bottom: 0;
+  }
+  
+  > p:first-of-type::first-letter,
+  > hr + p:first-letter {
+    font-size: 3.4em;
+    font-family: var(--heading-font);
+    float: left;
+    line-height: 0.7em;
+    margin: 0.5rem 0.4rem 0 0;
+    color: inherit;
+  }
+}
+
+.meta {
+  font-size: 0.7rem;
+  line-height: 1.4;
+  font-style: italic;
+  margin: 1rem 0 2rem;
+  
+  b {
+    text-transform: uppercase;
+    font-style: normal;
+  }
 }
 </style>

@@ -16,9 +16,19 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-Let's be honest: lots of things in development—perhaps _especially_ front-end development—are harder than they should be. Some days, it can seem as though everything in frontend development is needlessly over-engineered and convoluted.
+Let's be honest: lots of things in web development are harder than they should be. Some days, it can seem as though everything in the frontend world is needlessly over-engineered and convoluted.
 
 That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh air.
+
+
+## What is Svelte?
+
+Svelte could be considered a JavaScript framework akin to React, Vue, Ember or Angular. It's the newest of the bunch, however, and it seems as though it's definitely learned from the others; its code tends to be the least verbose, and its output tends to be the smallest (which is good for performance; more on that in a bit).
+
+Svelte itself, much like the other frameworks above, is mostly just a view library, not ideal for much except single-page applications on its own. But just as React has Next and Vue has Nuxt, however, Svelte has [SvelteKit](https://kit.svelte.dev/). 
+
+SvelteKit, Next, etc., are what's often called a "meta-framework." They take the underlying framework (Svelte, React, etc.) and add many of the other pieces you'd need for a website or app, like pages and routing, data stores, better control over SEO, and in some cases, image handling.
+
 
 ## Why Svelte?
 
@@ -122,10 +132,53 @@ Svelte is a _ton_ of fun to work in, but developer experience isn't everything (
 
 This is because Svelte does as much as possible _during the build step_, rather than on the client. Parts of the framework that are not used are stripped out at build time, and only the minimal JS needed to make your site and its components work is bundled. (Compared to other frameworks, which ship an entire library as a runtime, no matter how much of it you're actually using.)
 
-As a comparison: the old homepage of this site (built with Gridsome) was 1.6 MB transferred, compared with only _183 KB_ on this site—a reduction of almost ***90%!***
+As a comparison: the old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.6 MB transferred, compared with only _183 KB_ on this site—a reduction of almost ***90%!***
 
 Now, in fairness, there's a good reason the old site was that large to begin with; Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
 That brings up some interesting questions about real performance vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't _feel_ faster. Navigating between pages has a noticeable lag now in some cases. But on the other hand, I'm not sending the user JavaScript they might not ever need, either.
 
 It's an interesting consideration.
+
+
+## Why move away from Gridsome?
+
+As you can see from just perusing the posts list on this blog, it wasn't all that long ago that I moved to Gridsome in the first place. I went to a [headless Gridsome frontend](/blog/a-new-headless-site-with-gridsome) just over a year ago, and converted the site to [fully static](/blog/goodbye-wordpress) barely seven months ago.
+
+<Highlight>At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.</Highlight>
+
+This naturally prompts the question: _why move in the first place_?
+
+I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed actively maintained and was receiving somewhat regular (if slow) updates. But it's been almost exactly two years since the last minor version update of Gridsome, and at this point, it doesn't seem like it's actively maintained. I don't know if more updates will come someday or not. I certainly wouldn't begrudge the creators for at all abandoning it during the pandemic.
+
+Regardless, Gridsome didn't ever really feel _complete_ to me. It was a great way to generate a speedy, static site with Vue, but it also felt very much pre-1.0 at times.
+
+[Gridsome's image handling](https://gridsome.org/docs/images/), for example, was absolutely _magical_, but it also only worked in certain cases unless you modified the Webpack config (no, thank you). Page transitions also required enough swimming upstream as to make them not particularly worthwhile. And there was more than once that I spent a day or two fighting with NPM and the node\_modules folder, unable to even _run_ the site on my machine.
+
+On top of all this, I stopped using Vue in my day job in July, which (for some reason) made it feel less important to keep a foot in the Vue world.
+
+Long story short: I wasn't feeling the love I had for Gridsome reciprocated after two years without an update, and I was ready to try something new.
+
+Granted, SvelteKit is still pre-1.0 as well. But it seems to have a much bigger and more active team behind it, and the hype is there for good reason.
+
+Also, TypeScript has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope, but I've been working on involving it more in my workflows to get better at it.
+
+
+### Other options besides SvelteKit
+
+There were three other things I considered to some degree: [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), and [Gatsby](https://www.gatsbyjs.com/).
+
+#### Astro
+I had just used Astro for another WordPress-to-static migration project, and while it worked well, it also felt _very_ early days. I loved how easy Astro made working with Markdown files, but I also ran into some pretty unexpected issues with it. I think it needs to mature a bit, but I'll definitely keep it on my radar, especially for projects that need to ship absolutely minimal JS or that just need Markdown support.
+
+#### Eleventy
+I tinkered with Eleventy on that same project, and have given it a shot a few times before, but ultimately, I've just never been a fan of things as batteries-unincluded as Eleventy. I see the benefit of the minimalism; you never have to fight the framework or deal with surprises when you're configuring everything yourself. But that's more than I generally want to do, and I'm generally not a fan of, say, bringing my own CSS processing to the party.
+
+I definitely get why some people love Eleventy (and am generally a fan of [Zach Leatherman](https://www.zachleat.com/), Eleventy creator and good human). I may come back to it one day, when the project is right. But for right now, it's less than I wanted.
+
+#### Gatsby
+Gatsby was the last consideration, but also the least serious. The only real reason it even made the list was that I'm working for a React shop for the first time now, and while I do _know_ React, I don't know it on the same level as Vue. I thought it might be valuable to get hands-on with it, but ultimately I decided that:
+
+1. The _only_ reason I would be using Gatsby was for React experience;
+2. Gatsby !== React; and
+3. Since this is my personal project, I should enjoy it. And honestly, I don't enjoy React as much as other frameworks (I think largely because of the JSX dependency).
