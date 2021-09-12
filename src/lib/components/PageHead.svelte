@@ -1,11 +1,62 @@
+<script lang="ts">
+  import { isLoading } from '$lib/assets/js/store'
+  
+  import { onMount } from 'svelte'
+
+  export let title: string
+  export let subtitle: string = ''
+
+  onMount(() => {
+    typeOutPageTitle()
+  })
+
+  const typeOutPageTitle = () => {
+    if (title === '/') {
+      title = "Hi, I'm Josh"
+    } else {
+      title = title.slice(1, title.length)
+    }
+
+    const eventualTitle = [...title]
+    let timer = 350
+
+    title = ''
+
+    eventualTitle.forEach(letter => {
+      timer += 40
+      setTimeout (() => {
+        title += letter
+      }, timer)
+    })
+  }
+
+  $: if ($isLoading) {
+    let eventualTitle = [...title]
+    let timer = 0
+    
+    eventualTitle.forEach(letter => {
+      timer += 20
+      
+      setTimeout (() => {
+        title = title.slice(0, title.length - 1)
+      }, timer)
+    })
+  }
+
+  $: if (!$isLoading) {
+    typeOutPageTitle()
+  }
+</script>
+
+
 <div class="page-head">
   <h1>
     <span>
-      <slot />
+      {title}
     </span>
   </h1>
   <p class="subtitle">
-    <slot name="subtitle" />
+    {subtitle}
   </p>
 </div>
 
@@ -16,8 +67,6 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    animation: fade-in-left .35s cubic-bezier(0.215, 0.610, 0.355, 1);
-    animation-delay: .35s;
 
     h1 {
       font-size: 1.2rem;
@@ -58,17 +107,6 @@
       font-style: italic;
       line-height: 1.2;
       flex: 1 1 auto;
-    }
-  }
-
-  @keyframes fade-in-left {
-    from {
-      opacity: 0;
-      transform: translateY(-1.5rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
     }
   }
 </style>

@@ -12,8 +12,7 @@
 
 <script lang="ts">
 	import type Post from '$lib/assets/js/interfaces/post'
-	import PostList from '$lib/components/PostList.svelte'
-	import PageHead from '$lib/components/PageHead.svelte'
+	import PostList from '$lib/components/posts/PostList.svelte'
 	import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
 
 	export let posts: Post[] = []
@@ -26,8 +25,6 @@
 </svelte:head>
 
 <template>
-	<PageHead>Writing</PageHead>
-
 	<div class="heading-wrapper">
 		<h2>External writing</h2>
 		<p>Works for other publications and websites</p>

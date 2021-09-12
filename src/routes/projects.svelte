@@ -1,5 +1,4 @@
 <script>
-  import PageHead from '$lib/components/PageHead.svelte';
   import { onMount } from 'svelte'
 
   onMount(() => {
@@ -15,8 +14,6 @@
   <title>Josh Collinsworth | Projects</title>
 	<meta data-key="description" name="description" content="A sampling of apps and code projects.">
 </svelte:head>
-
-<PageHead>Projects</PageHead>
 
 <article>
   <div class="sticky">

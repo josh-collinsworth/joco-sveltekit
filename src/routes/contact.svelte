@@ -1,6 +1,4 @@
 <script lang="ts">
-	import PageHead from '$lib/components/PageHead.svelte'
-
 	let formData: object = {}
 	let isSubmitted: boolean = false
 
@@ -32,10 +30,6 @@
 
 <template>
 	{#if !isSubmitted}
-		<PageHead>
-			Get in touch
-			<span slot="subtitle">Happy to chat.</span>
-		</PageHead>
 
 		<noscript><h2>Sorry, this form won't work without JavaScript enabled.</h2></noscript>
 

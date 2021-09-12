@@ -17,6 +17,7 @@
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
+	import PageHead from '$lib/components/PageHead.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
@@ -50,7 +51,6 @@
 	}
 
 	const setLoading = (newState: boolean): void => {
-		console.log($isLoading)
 		isLoading.set(newState)
 	}
 </script>
@@ -68,11 +68,13 @@
 	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
 
 	<div class="layout"> 
-		<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion on:loaded={() => { console.log('***LOADED***'); setLoading(false) }}>
-			<main>
+		<main>
+			<PageHead title={key} />
+
+			<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion on:loaded={() => setLoading(false) }>
 				<slot></slot>
-			</main>
-		</PageTransition>
+			</PageTransition>
+		</main>
 		
 		{#if pageHasSidebar}
 			<Sidebar />

@@ -14,7 +14,7 @@
 
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
-  import PostList from '$lib/components/PostList.svelte'
+  import PostList from '$lib/components/posts/PostList.svelte'
 
   export let posts: Post[]
   export let category: string

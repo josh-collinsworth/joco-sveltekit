@@ -1,14 +1,3 @@
-<script>
-  import PageHead from '$lib/components/PageHead.svelte'
-</script>
-
-<PageHead>
-  Hi, I’m Josh.
-  <span slot="subtitle">
-    I’m a front-end developer and designer.
-  </span>
-</PageHead>
-
 ## Professionally:
 
 Senior frontend developer at [Shopify](https://shopify.com);
