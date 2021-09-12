@@ -166,15 +166,15 @@ Also, TypeScript has first-class support in SvelteKit. I'm relatively new to Typ
 
 ### Other options besides SvelteKit
 
-There were three other things I considered to some degree: [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), and [Gatsby](https://www.gatsbyjs.com/).
+There were three other options I considered to some degree: [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), and [Gatsby](https://www.gatsbyjs.com/).
 
 #### Astro
-I had just used Astro for another WordPress-to-static migration project, and while it worked well, it also felt _very_ early days. I loved how easy Astro made working with Markdown files, but I also ran into some pretty unexpected issues with it. I think it needs to mature a bit, but I'll definitely keep it on my radar, especially for projects that need to ship absolutely minimal JS or that just need Markdown support.
+I had just used Astro for another WordPress-to-static migration project, and while it worked well, it also felt _very_ early days. I loved how easy Astro made working with Markdown files, but I also ran into some pretty unexpected issues with it (most notably, the inability to reference the same post twice in the same template file). I think it needs to mature a bit, but I'll definitely keep it on my radar, especially for projects that need to ship absolutely minimal JS and/or that just need Markdown support, as Astro's flexibility is nice.
 
 #### Eleventy
-I tinkered with Eleventy on that same project, and have given it a shot a few times before, but ultimately, I've just never been a fan of things as batteries-unincluded as Eleventy. I see the benefit of the minimalism; you never have to fight the framework or deal with surprises when you're configuring everything yourself. But that's more than I generally want to do, and I'm generally not a fan of, say, bringing my own CSS processing to the party.
+I tinkered with Eleventy on that same project, and have given it a shot a few times before, but ultimately, I've just never been a fan of tools as minimalist as Eleventy. I see the benefit; you never have to fight the framework or deal with surprises when you're configuring everything yourself from the get-go. But that's more than I wanted to do in this case, and I'm generally not a fan of, say, bringing my own CSS processing to the party.
 
-I definitely get why some people love Eleventy (and am generally a fan of [Zach Leatherman](https://www.zachleat.com/), Eleventy creator and good human). I may come back to it one day, when the project is right. But for right now, it's less than I wanted.
+I definitely get why some people love Eleventy (and am generally a fan of [Zach Leatherman](https://www.zachleat.com/), Eleventy creator and good human). I may come back to it one day, when the project is right and/or when my project configuration preferences are particular enough to tip the balance in Eleventy's favor. But for right now, it's less than I wanted.
 
 #### Gatsby
 Gatsby was the last consideration, but also the least serious. The only real reason it even made the list was that I'm working for a React shop for the first time now, and while I do _know_ React, I don't know it on the same level as Vue. I thought it might be valuable to get hands-on with it, but ultimately I decided that:
