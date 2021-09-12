@@ -70,9 +70,8 @@
       </li>
     </ul>
   </aside>
-
-
 </template>
+
 
 <style global lang="scss">
 @font-face {
@@ -89,6 +88,7 @@ aside h2 {
 }
 
 main {
+
   h1 {
     margin-bottom: 0;
   }

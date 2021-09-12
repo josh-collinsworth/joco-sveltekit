@@ -31,10 +31,11 @@
   let prefersDark: boolean = false
   let prefersLight: boolean = true
 
-	const sidebarCheck = new RegExp(/^\/blog/)
+	const blogPageCheck = new RegExp(/^\/blog/)
 
 	$: isFullwidthPage = FULLWIDTH_PAGES.includes(key)
-	$: pageHasSidebar = sidebarCheck.test(key)
+	$: pageHasSidebar = blogPageCheck.test(key)
+	$: isTopLevelPage = key.split('/').length < 3
 
 	const setReduceMotion = (reduce: boolean): void => {
 		reduceMotion = reduce
@@ -69,7 +70,11 @@
 
 	<div class="layout"> 
 		<main>
-			<PageHead title={key} />
+			<PageTransition refresh={isTopLevelPage}>
+				{#if isTopLevelPage}
+					<PageHead title={key} />
+				{/if}
+			</PageTransition>	
 
 			<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion on:loaded={() => setLoading(false) }>
 				<slot></slot>

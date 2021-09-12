@@ -2,8 +2,7 @@
   import TransitionWrapper from './TransitionWrapper.svelte'
   import { createEventDispatcher, onMount } from 'svelte'
 
-
-  export let refresh: string = ''
+  export let refresh: string|boolean = ''
   export let fullwidth: boolean = false
   export let sidebar: boolean = false
   export let reduceMotion: boolean = false

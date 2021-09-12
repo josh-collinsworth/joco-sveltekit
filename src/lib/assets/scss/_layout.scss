@@ -94,15 +94,15 @@ h2 + .details {
 	margin: 0 var(--margin) 4rem var(--margin);
 	width: calc(100% - (var(--margin) * 2));
 	position: relative;
-	display: grid;
 	grid-template-columns: 1fr;
 	align-items: start;
 	justify-content: start;
 	padding-top: 2rem;
 	background: var(--paper);
 	color: var(--ink);
-
+	
 	@media (min-width: $wider) {
+		display: grid;
 		grid-template-columns: var(--max-width) 1fr var(--sidebar-width);
 		gap: 2rem;
 		margin-right: 2rem;
