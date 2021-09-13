@@ -116,11 +116,6 @@ h2 + .details {
 	main {
 		width: 100%;
 		max-width: var(--max-width);
-
-		@media (min-width: $wider) {
-			max-width: 100%;
-			grid-column: 1 / 3;
-		}
 		
 		.fullwidth & {
 			max-width: 100%;

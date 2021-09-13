@@ -51,6 +51,8 @@
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
 
+		// Janky, but needed to prevent jumps in width while transitioning between pages of different widths.
+		// Tried finding a better way to do this but failed; having the transition wrapper as an element in the grid makes things very complicated.
 		setTimeout(() => {
 			isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 		}, TIMING_DURATION)
