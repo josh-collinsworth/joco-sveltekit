@@ -26,7 +26,9 @@
     }
   })
 
-  const startLoading = () => {
+  const handleClick = (to: string): void => {
+    if (to == window.location.pathname) return
+    
     isLoading.set(true)
   }
 </script>
@@ -56,7 +58,7 @@
     {/if}
     {#each posts as post}
       <li>
-        <a href="/blog/{post.slug}" on:click={startLoading} sveltekit:prefetch>
+        <a href="/blog/{post.slug}" on:click={() => handleClick('/blog/' + post.slug)} sveltekit:prefetch>
           <span>{post.title}</span>
         </a>
       </li>
@@ -67,7 +69,7 @@
   <ul class="display-flex">
     {#each allCategories as category}
       <li>
-        <a href="/blog/category/{category}" on:click={startLoading} sveltekit:prefetch>
+        <a href="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)} sveltekit:prefetch>
           <span>{ category }</span>
         </a>
       </li>

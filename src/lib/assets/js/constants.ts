@@ -39,13 +39,8 @@ const FULLWIDTH_PAGES: string[] = [
   '/blog'
 ]
 
-const PAGE_SLUGS_TO_TITLES: Record<string, string> = {
-  '/': `Hi, I'm Josh`
-}
-
 export {
   SITE_COLORS,
   EXTERNAL_POSTS,
   FULLWIDTH_PAGES,
-  PAGE_SLUGS_TO_TITLES
 }

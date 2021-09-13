@@ -5,15 +5,18 @@
   export let to: string
   export let key: string
   export let mobile: boolean = false
-
   export let menuOpen: boolean = false
   export let closeMobileMenu: () => void
 
   const handleClick = (): void => {
     closeMobileMenu()
-    isLoading.set(true)
+
+    if (!isCurrentPage) {
+      isLoading.set(true)
+    }
   }
 
+  let isCurrentPage: boolean
   $: isCurrentPage = key === to
 </script>
 

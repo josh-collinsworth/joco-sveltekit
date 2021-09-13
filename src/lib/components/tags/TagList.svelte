@@ -1,8 +1,6 @@
-<template>
-	<ul class="tag-list">
-		<slot />
-	</ul>
-</template>
+<ul class="tag-list">
+  <slot />
+</ul>
 
 
 <style lang="scss">

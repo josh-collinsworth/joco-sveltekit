@@ -1,17 +1,17 @@
 <script lang="ts">
-import { fly } from 'svelte/transition'
-import { cubicIn, cubicOut } from 'svelte/easing'
+  import { fly } from 'svelte/transition'
+  import { cubicIn, cubicOut } from 'svelte/easing'
 
-export let fullwidth: boolean = false
-export let sidebar: boolean = false
-export let reduceMotion: boolean = false
+  export let fullwidth: boolean = false
+  export let sidebar: boolean = false
+  export let reduceMotion: boolean = false
 
-const time: number = 360
-let yIn: number
-let yOut: number
+  const time: number = 360
+  let yIn: number
+  let yOut: number
 
-$: yIn = reduceMotion ? 0 : 12
-$: yOut = reduceMotion ? 0 : -12
+  $: yIn = reduceMotion ? 0 : 12
+  $: yOut = reduceMotion ? 0 : -12
 </script>
 
 

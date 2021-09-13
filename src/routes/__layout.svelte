@@ -21,21 +21,33 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
-	import { isLoading } from '$lib/assets/js/store'
+	import { isLoading, prefersDarkMode, prefersLightMode } from '$lib/assets/js/store'
+	import { onMount } from 'svelte'
 	
 	export let key: string
 	export let isFullwidthPage: boolean
 	export let pageHasSidebar: boolean
 	
   let reduceMotion: boolean = false
-  let prefersDark: boolean = false
-  let prefersLight: boolean = true
 
 	const blogPageCheck = new RegExp(/^\/blog/)
 
 	$: isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 	$: pageHasSidebar = blogPageCheck.test(key)
 	$: isTopLevelPage = key.split('/').length < 3
+
+	onMount(() => {
+		const userPrefersDark = 
+      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    let storedDarkModePreference = JSON.parse(localStorage.getItem('collinsworth-dark-mode'))
+
+    const computedUserPreference = 
+			(storedDarkModePreference || (userPrefersDark && storedDarkModePreference !== false))
+
+    prefersDarkMode.set(computedUserPreference)
+    prefersLightMode.set(!computedUserPreference)
+	})
 
 	const setReduceMotion = (reduce: boolean): void => {
 		reduceMotion = reduce
@@ -44,11 +56,6 @@
 			'collinsworth-reduce-motion',
 			JSON.stringify(reduceMotion)
 		)
-	}
-
-	const setPrefersDarkMode = (setAsDark: boolean): void => {
-		prefersLight = !setAsDark
-		prefersDark = setAsDark
 	}
 
 	const setLoading = (newState: boolean): void => {
@@ -60,13 +67,13 @@
 <div
 	id="app"
 	class:reduce-motion={reduceMotion}
-	class:prefers-dark={prefersDark}
-	class:prefers-light={prefersLight}
+	class:prefers-dark={$prefersDarkMode}
+	class:prefers-light={$prefersLightMode}
 >
 	{#if $isLoading}
 		<Loader />
 	{/if}
-	<Header {key} {setPrefersDarkMode} {reduceMotion} {setReduceMotion} /> 
+	<Header {key} {reduceMotion} {setReduceMotion} /> 
 
 	<div class="layout"> 
 		<main>

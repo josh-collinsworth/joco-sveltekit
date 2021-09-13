@@ -1,13 +1,11 @@
 <script lang="ts">
   import { isLoading } from '$lib/assets/js/store'
-  import { onMount } from 'svelte'
 
   export let title: string
   export let subtitle: string = ''
 
-  onMount(() => {
-    typeOutPageTitle()
-  })
+  let computedTitle: string = ''
+  let isWorking: boolean = false
 
   const typeOutPageTitle = () => {
     if (title === '/') {
@@ -17,32 +15,39 @@
     }
 
     const eventualTitle = [...title]
-    let timer = 350
+    let timer = 200
 
-    title = ''
+    computedTitle = ''
 
     eventualTitle.forEach(letter => {
-      timer += 40
+      timer += 50
       setTimeout (() => {
-        title += letter
+        computedTitle += letter
       }, timer)
     })
   }
 
+
   $: if ($isLoading) {
+    isWorking = true
+
     let eventualTitle = [...title]
     let timer = 0
     
-    eventualTitle.forEach(letter => {
-      timer += 20
+    eventualTitle.forEach(_ => {
+      timer += 30
       
       setTimeout (() => {
-        title = title.slice(0, title.length - 1)
+        computedTitle = computedTitle.slice(0, computedTitle.length - 1)
+
+        if (!computedTitle.length) {
+          isWorking = false
+        }
       }, timer)
     })
   }
 
-  $: if (!$isLoading) {
+  $: if (!$isLoading && !isWorking) {
     typeOutPageTitle()
   }
 </script>
@@ -50,9 +55,12 @@
 
 <div class="page-head">
   <h1>
-    <span>
-      {title}
-    </span>
+    <!-- <span>
+      {computedTitle}
+    </span> -->
+    {#each computedTitle as letter}
+      <span class="letter">{letter}</span>
+    {/each}
   </h1>
   <p class="subtitle">
     {subtitle}
@@ -68,7 +76,7 @@
     flex-wrap: wrap;
 
     h1 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin: 0 1rem 0.25rem 0;
       padding: 0;
       width: max-content;
@@ -83,6 +91,7 @@
         flex: 0 1 auto;
         white-space: nowrap;
         line-height: 1.2;
+        animation: fade_in .2s forwards;
       }
 
       &::before,
@@ -98,7 +107,6 @@
         content: ']';
         color: var(--yellow);
       }
-
     }
 
     p.subtitle {
@@ -106,6 +114,15 @@
       font-style: italic;
       line-height: 1.2;
       flex: 1 1 auto;
+    }
+  }
+
+  @keyframes fade_in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 </style>

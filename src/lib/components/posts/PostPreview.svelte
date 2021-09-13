@@ -68,6 +68,7 @@
     border: 1px solid var(--lightGray);
     transition: .2s;
     transform-origin: bottom left;
+    display: block;
 
     .prefers-dark & {
       box-shadow: 0.25rem 0.25rem 0 0 rgba(0, 0, 0, 0.2);
