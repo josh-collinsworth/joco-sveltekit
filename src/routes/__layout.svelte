@@ -51,19 +51,18 @@
 		isLoading.set(newState)
 	}
 
-	let recentlyPressedKeys = [0,0,0,0];
+	let recentlyPressedKeys: string[] = ['','','',''];
 
-	const listenToKeydown = (e) => {
+	let xaby: boolean = false
+
+	const listenToKeydown = (e: KeyboardEvent): void => {
 		recentlyPressedKeys.push(e.key)
-		console.log(recentlyPressedKeys)
 		if (recentlyPressedKeys.length > 4) {
 			recentlyPressedKeys = recentlyPressedKeys.slice(1)
 		}
 		
-		console.log(recentlyPressedKeys)
-
-		if (recentlyPressedKeys.join('') === 'xaby') {
-			console.log('you are a nerd')
+		if (recentlyPressedKeys.join('').toLowerCase() === 'xaby') {
+			xaby = true
 		}
 	}
 </script>
@@ -75,6 +74,7 @@
 	class:reduce-motion={$prefersReducedMotion}
 	class:prefers-dark={$prefersDarkMode}
 	class:prefers-light={$prefersLightMode}
+	class:xaby
 >
 	{#if $isLoading}
 		<Loader />

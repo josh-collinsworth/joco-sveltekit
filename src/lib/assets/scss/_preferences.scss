@@ -41,4 +41,31 @@
 		--link-color: var(--darkBlue);
 		--highlight-color: var(--darkGray);
 	}
+
+	&.xaby {
+		.crono {
+			display: block;
+			height: 36px;
+			width: 16px;
+			animation: celebrate .25s infinite alternate steps(2, end);
+			background-size: contain;
+			background-position: bottom left;
+			transform: scale(1.5);
+
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+
+		@keyframes celebrate {
+			from {
+				background-image: url('/images/crono-1.png');
+				background-position: 0px 0px;
+			}
+			to {
+				background-image: url('/images/crono-2.png');
+				background-position: 0px -1px;
+			}
+		}
+	}
 }

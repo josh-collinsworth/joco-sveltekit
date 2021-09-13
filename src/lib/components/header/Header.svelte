@@ -44,6 +44,7 @@
 		</a>
 		
 		<div class="icon-container" class:sticky={menuOpen}>
+			<div class="crono" />
 			<ReduceMotionToggle />
 			<DarkModeToggle />
 			<NavMenus {menuOpen} {toggleMenu} {key} />
@@ -114,5 +115,9 @@
 			opacity: 1;
 			z-index: 11;
 		}
+	}
+
+	.crono {
+		display: none;
 	}
 </style>
