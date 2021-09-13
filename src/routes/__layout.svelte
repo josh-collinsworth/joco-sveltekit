@@ -50,31 +50,13 @@
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
 	}
-
-	let recentlyPressedKeys: string[] = ['','','',''];
-
-	let xaby: boolean = false
-
-	const listenToKeydown = (e: KeyboardEvent): void => {
-		recentlyPressedKeys.push(e.key)
-		if (recentlyPressedKeys.length > 4) {
-			recentlyPressedKeys = recentlyPressedKeys.slice(1)
-		}
-		
-		if (recentlyPressedKeys.join('').toLowerCase() === 'xaby') {
-			xaby = true
-		}
-	}
 </script>
-
-<svelte:window on:keydown={listenToKeydown} />
 
 <div
 	id="app"
 	class:reduce-motion={$prefersReducedMotion}
 	class:prefers-dark={$prefersDarkMode}
 	class:prefers-light={$prefersLightMode}
-	class:xaby
 >
 	{#if $isLoading}
 		<Loader />
