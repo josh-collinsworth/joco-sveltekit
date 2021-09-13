@@ -4,18 +4,16 @@
 	import NavMenus from '$lib/components/header/NavMenus.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
-	import { isLoading } from '$lib/assets/js/store'
+	import { isLoading, isMenuOpen } from '$lib/assets/js/store'
 
 	export let key: string
 
-	let menuOpen: boolean = false
-
 	const toggleMenu = () => {
-		menuOpen = !menuOpen
+		isMenuOpen.set(!$isMenuOpen)
 	}
 
 	const handleClick = () => {
-		if (menuOpen) toggleMenu()
+		if ($isMenuOpen) toggleMenu()
 		if (window?.location?.pathname !== '/') isLoading.set(true)
 	}
 	
@@ -36,17 +34,17 @@
 		<a
 			href="/"
 			class="logo"
-			class:sticky={menuOpen}
+			class:sticky={$isMenuOpen}
 			on:click={handleClick}
 		>
 			<LogoSVG />
 			<span class="sr">Home</span>
 		</a>
 		
-		<div class="icon-container" class:sticky={menuOpen}>
+		<div class="icon-container" class:sticky={$isMenuOpen}>
 			<ReduceMotionToggle />
 			<DarkModeToggle />
-			<NavMenus {menuOpen} {toggleMenu} {key} />
+			<NavMenus {key} />
 		</div>
   </header>
   <Grid refresh={key} />

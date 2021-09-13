@@ -3,9 +3,6 @@
   import { cubicIn, cubicOut } from 'svelte/easing'
   import { prefersReducedMotion } from '$lib/assets/js/store'
 
-  export let fullwidth: boolean = false
-  export let sidebar: boolean = false
-
   const time: number = 360
   let yIn: number
   let yOut: number
@@ -17,8 +14,6 @@
 
 <div
   class="transition-wrapper"
-  class:fullwidth
-  class:sidebar
   in:fly={{ y: yIn, duration: time, delay: time, easing: cubicOut }}
   out:fly={{ y: yOut, duration: time, easing: cubicIn }}
 >
@@ -26,18 +21,18 @@
 </div>
 
 
-<style lang="scss">
+<style lang="scss" global>
   .transition-wrapper {
 
-    &.fullwidth {
+    .fullwidth & {
       grid-column: 1 / 4;
     }
 
-    &.sidebar {
+    .sidebar & {
       grid-column: 1 / 2;
     }
 
-    &.fullwidth.sidebar {
+    .fullwidth.sidebar & {
       grid-column: 1 / 3;
     }
   }

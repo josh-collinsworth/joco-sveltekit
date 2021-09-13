@@ -1,15 +1,13 @@
 <script lang="ts">
-  import { isLoading } from '$lib/assets/js/store'
+  import { isLoading, isMenuOpen } from '$lib/assets/js/store'
 
   export let text: string
   export let to: string
   export let key: string
   export let mobile: boolean = false
-  export let menuOpen: boolean = false
-  export let closeMobileMenu: () => void
 
   const handleClick = (): void => {
-    closeMobileMenu()
+    isMenuOpen.set(false)
 
     if (!isCurrentPage) {
       isLoading.set(true)
@@ -21,14 +19,14 @@
 </script>
 
 
-<li class:mobile={mobile} class:open={menuOpen} >
+<li class:mobile={mobile} class:open={$isMenuOpen} >
   <a
     sveltekit:prefetch
     href={to}
     class="nav__link"
     class:active={isCurrentPage}
     aria-current={isCurrentPage ? 'page' : false}
-    tabindex={mobile && !menuOpen ? -1 : 0}
+    tabindex={mobile && !$isMenuOpen ? -1 : 0}
     on:click={handleClick}
   >  
     <span>{text}</span>

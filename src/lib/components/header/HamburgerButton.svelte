@@ -1,20 +1,19 @@
 <script lang="ts">
-	export let menuOpen: boolean
-	export let toggleMenu //TODO: Type?
+	import { isMenuOpen } from '$lib/assets/js/store'
 
 	let menuOpenReadableOpposite: string
-	$: menuOpenReadableOpposite = menuOpen ? 'Close' : 'Open'
+	$: menuOpenReadableOpposite = $isMenuOpen ? 'Close' : 'Open'
 </script>
 
 
 
 <button
 	id="hamburger"
-	aria-pressed={menuOpen}
-	class:sticky={menuOpen}
-	on:click={toggleMenu}
+	aria-pressed={$isMenuOpen}
+	class:sticky={$isMenuOpen}
+	on:click={() => isMenuOpen.set(!$isMenuOpen)}
 >
-	<span class="sr"> menuOpenReadableOpposite} menu</span>
+	<span class="sr">{menuOpenReadableOpposite} menu</span>
 	<div class="line" aria-hidden="true" />
 	<div class="line" aria-hidden="true" />
 	<div class="line" aria-hidden="true" />

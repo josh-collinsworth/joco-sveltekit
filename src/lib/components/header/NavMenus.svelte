@@ -1,29 +1,28 @@
 <script lang="ts">
 	import NavLinks from '$lib/components/header/NavLinks.svelte'
 	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
+	import { isMenuOpen } from '$lib/assets/js/store'
 
-	export let menuOpen: boolean
 	export let key: string
-	export let toggleMenu = null
 </script>
 
 
 <template>
 	<div>
-		<HamburgerButton {menuOpen} {toggleMenu}/>
+		<HamburgerButton />
 
 		<nav
 			id="mobile-nav"
 			class="main-nav nav"
-			class:open={menuOpen}
+			class:open={$isMenuOpen}
 			role="navigation"
-			aria-hidden={!menuOpen}
+			aria-hidden={!$isMenuOpen}
 		>
-      <NavLinks mobile={true} {menuOpen} {toggleMenu} {key} />
+      <NavLinks mobile={true} {key} />
 		</nav>
 
 		<nav id="desktop-nav" class="main-nav nav" role="navigation">
-			<NavLinks {menuOpen} {key} />
+			<NavLinks {key} />
 		</nav>
 	</div>
 </template>

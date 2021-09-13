@@ -1,24 +1,25 @@
 <script lang="ts">
   import NavLink from './NavLink.svelte'
+  import { isMenuOpen } from '$lib/assets/js/store'
 
   export let mobile: boolean = false
-  export let menuOpen: boolean = false
   export let key: string
-  export let toggleMenu = null
 
 
   const closeMobileMenu = () => {
-    if (menuOpen) toggleMenu()
+    if ($isMenuOpen) {
+      isMenuOpen.set(false)
+    }
   }
 </script>
 
 
 <ul class:mobile={mobile}>
   <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
-  <NavLink to="/projects" text="Projects" {closeMobileMenu} {key} {mobile} {menuOpen} />
-  <NavLink to="/blog" text="Writing" {closeMobileMenu} {key} {mobile} {menuOpen} />
-  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} {menuOpen} />
-  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} {menuOpen} />
+  <NavLink to="/projects" text="Projects" {closeMobileMenu} {key} {mobile} />
+  <NavLink to="/blog" text="Writing" {closeMobileMenu} {key} {mobile} />
+  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} />
+  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} />
 </ul>  
 
 

@@ -3,8 +3,6 @@
   import { createEventDispatcher, onMount } from 'svelte'
 
   export let refresh: string|boolean = ''
-  export let fullwidth: boolean = false
-  export let sidebar: boolean = false
 
   const dispatch = createEventDispatcher()
   
@@ -20,7 +18,7 @@
 
 
 {#key refresh}
-  <TransitionWrapper {fullwidth} {sidebar} on:loaded>
+  <TransitionWrapper on:loaded>
     <slot />
   </TransitionWrapper>
 {/key}

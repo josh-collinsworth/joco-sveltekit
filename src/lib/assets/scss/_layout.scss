@@ -119,6 +119,12 @@ h2 + .details {
 
 		@media (min-width: $wider) {
 			max-width: 100%;
+			grid-column: 1 / 3;
+		}
+		
+		.fullwidth & {
+			max-width: 100%;
+			grid-column: 1 / 3;
 		}
 
 		> h1,
@@ -131,10 +137,6 @@ h2 + .details {
 		h1.sr + h2 {
 			margin-top: 0;
 		}
-	}
-
-	.fullwidth main {
-		max-width: 100%;
 	}
 }
 

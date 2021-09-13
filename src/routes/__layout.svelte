@@ -57,6 +57,8 @@
 	class:reduce-motion={$prefersReducedMotion}
 	class:prefers-dark={$prefersDarkMode}
 	class:prefers-light={$prefersLightMode}
+	class:fullwidth={isFullwidthPage}
+	class:sidebar={pageHasSidebar}
 >
 	{#if $isLoading}
 		<Loader />
@@ -71,7 +73,7 @@
 				{/if}
 			</PageTransition>	
 
-			<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} on:loaded={() => setLoading(false) }>
+			<PageTransition refresh={key} on:loaded={() => setLoading(false) }>
 				<slot></slot>
 			</PageTransition>
 		</main>
