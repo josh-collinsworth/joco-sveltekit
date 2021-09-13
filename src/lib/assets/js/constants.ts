@@ -39,8 +39,11 @@ const FULLWIDTH_PAGES: string[] = [
   '/blog'
 ]
 
+const TIMING_DURATION = 360
+
 export {
   SITE_COLORS,
   EXTERNAL_POSTS,
   FULLWIDTH_PAGES,
+  TIMING_DURATION,
 }

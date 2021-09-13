@@ -20,17 +20,16 @@
 	import PageHead from '$lib/components/PageHead.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
-	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
+	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/assets/js/constants'
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion } from '$lib/assets/js/store'
 	import { onMount } from 'svelte'
 	
 	export let key: string
-	export let isFullwidthPage: boolean
 	export let pageHasSidebar: boolean
 
 	const blogPageCheck = new RegExp(/^\/blog/)
+	let isFullwidthPage: boolean = false
 
-	$: isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 	$: pageHasSidebar = blogPageCheck.test(key)
 	$: isTopLevelPage = key.split('/').length < 3
 
@@ -45,10 +44,16 @@
 
     prefersDarkMode.set(computedUserPreference)
     prefersLightMode.set(!computedUserPreference)
+
+		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 	})
 
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
+
+		setTimeout(() => {
+			isFullwidthPage = FULLWIDTH_PAGES.includes(key)
+		}, TIMING_DURATION)
 	}
 </script>
 

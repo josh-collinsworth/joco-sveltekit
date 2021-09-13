@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { fly } from 'svelte/transition'
-  import { cubicIn, cubicOut } from 'svelte/easing'
   import { prefersReducedMotion } from '$lib/assets/js/store'
+  import { TIMING_DURATION } from '$lib/assets/js/constants'
+  import { cubicIn, cubicOut } from 'svelte/easing'
+  import { fly } from 'svelte/transition'
 
-  const time: number = 360
   let yIn: number
   let yOut: number
 
@@ -14,8 +14,8 @@
 
 <div
   class="transition-wrapper"
-  in:fly={{ y: yIn, duration: time, delay: time, easing: cubicOut }}
-  out:fly={{ y: yOut, duration: time, easing: cubicIn }}
+  in:fly={{ y: yIn, duration: TIMING_DURATION, delay: TIMING_DURATION, easing: cubicOut }}
+  out:fly={{ y: yOut, duration: TIMING_DURATION, easing: cubicIn }}
 >
   <slot />
 </div>
