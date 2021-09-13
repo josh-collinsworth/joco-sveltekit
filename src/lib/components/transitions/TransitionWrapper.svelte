@@ -1,17 +1,17 @@
 <script lang="ts">
   import { fly } from 'svelte/transition'
   import { cubicIn, cubicOut } from 'svelte/easing'
+  import { prefersReducedMotion } from '$lib/assets/js/store'
 
   export let fullwidth: boolean = false
   export let sidebar: boolean = false
-  export let reduceMotion: boolean = false
 
   const time: number = 360
   let yIn: number
   let yOut: number
 
-  $: yIn = reduceMotion ? 0 : 12
-  $: yOut = reduceMotion ? 0 : -12
+  $: yIn = $prefersReducedMotion ? 0 : 12
+  $: yOut = $prefersReducedMotion ? 0 : -12
 </script>
 
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isLoading } from '$lib/assets/js/store'
+  import { isLoading, prefersReducedMotion } from '$lib/assets/js/store'
 
   export let title: string
   export let subtitle: string = ''
@@ -10,31 +10,34 @@
   const typeOutPageTitle = () => {
     if (title === '/') {
       title = "Hi, I'm Josh"
-    } else {
-      title = title.slice(1, title.length)
+    } else if (title[0] === '/') {
+      title = title.slice(1)
     }
 
-    const eventualTitle = [...title]
+    if ($prefersReducedMotion) {
+      computedTitle = title
+      return
+    }
+
     let timer = 200
 
     computedTitle = ''
 
-    eventualTitle.forEach(letter => {
-      timer += 50
+    for (let letter of title) {
+      timer += 40
       setTimeout (() => {
         computedTitle += letter
       }, timer)
-    })
+    }
   }
 
 
-  $: if ($isLoading) {
+  $: if ($isLoading && !$prefersReducedMotion) {
     isWorking = true
 
-    let eventualTitle = [...title]
     let timer = 0
     
-    eventualTitle.forEach(_ => {
+    for (let _ of title) {
       timer += 30
       
       setTimeout (() => {
@@ -44,7 +47,7 @@
           isWorking = false
         }
       }, timer)
-    })
+    }
   }
 
   $: if (!$isLoading && !isWorking) {

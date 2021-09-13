@@ -5,7 +5,6 @@
   export let refresh: string|boolean = ''
   export let fullwidth: boolean = false
   export let sidebar: boolean = false
-  export let reduceMotion: boolean = false
 
   const dispatch = createEventDispatcher()
   
@@ -21,7 +20,7 @@
 
 
 {#key refresh}
-  <TransitionWrapper {fullwidth} {sidebar} bind:reduceMotion on:loaded>
+  <TransitionWrapper {fullwidth} {sidebar} on:loaded>
     <slot />
   </TransitionWrapper>
 {/key}

@@ -4,12 +4,9 @@
 	import NavMenus from '$lib/components/header/NavMenus.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
-
 	import { isLoading } from '$lib/assets/js/store'
 
 	export let key: string
-	export let reduceMotion: boolean
-	export let setReduceMotion: (reduce: boolean) => void
 
 	let menuOpen: boolean = false
 
@@ -47,7 +44,7 @@
 		</a>
 		
 		<div class="icon-container" class:sticky={menuOpen}>
-			<ReduceMotionToggle {reduceMotion} {setReduceMotion} />
+			<ReduceMotionToggle />
 			<DarkModeToggle />
 			<NavMenus {menuOpen} {toggleMenu} {key} />
 		</div>

@@ -21,14 +21,12 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { FULLWIDTH_PAGES } from '$lib/assets/js/constants'
-	import { isLoading, prefersDarkMode, prefersLightMode } from '$lib/assets/js/store'
+	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion } from '$lib/assets/js/store'
 	import { onMount } from 'svelte'
 	
 	export let key: string
 	export let isFullwidthPage: boolean
 	export let pageHasSidebar: boolean
-	
-  let reduceMotion: boolean = false
 
 	const blogPageCheck = new RegExp(/^\/blog/)
 
@@ -49,31 +47,39 @@
     prefersLightMode.set(!computedUserPreference)
 	})
 
-	const setReduceMotion = (reduce: boolean): void => {
-		reduceMotion = reduce
-
-		window.localStorage.setItem(
-			'collinsworth-reduce-motion',
-			JSON.stringify(reduceMotion)
-		)
-	}
-
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
 	}
+
+	let recentlyPressedKeys = [0,0,0,0];
+
+	const listenToKeydown = (e) => {
+		recentlyPressedKeys.push(e.key)
+		console.log(recentlyPressedKeys)
+		if (recentlyPressedKeys.length > 4) {
+			recentlyPressedKeys = recentlyPressedKeys.slice(1)
+		}
+		
+		console.log(recentlyPressedKeys)
+
+		if (recentlyPressedKeys.join('') === 'xaby') {
+			console.log('you are a nerd')
+		}
+	}
 </script>
 
+<svelte:window on:keydown={listenToKeydown} />
 
 <div
 	id="app"
-	class:reduce-motion={reduceMotion}
+	class:reduce-motion={$prefersReducedMotion}
 	class:prefers-dark={$prefersDarkMode}
 	class:prefers-light={$prefersLightMode}
 >
 	{#if $isLoading}
 		<Loader />
 	{/if}
-	<Header {key} {reduceMotion} {setReduceMotion} /> 
+	<Header {key} /> 
 
 	<div class="layout"> 
 		<main>
@@ -83,7 +89,7 @@
 				{/if}
 			</PageTransition>	
 
-			<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} bind:reduceMotion on:loaded={() => setLoading(false) }>
+			<PageTransition refresh={key} fullwidth={isFullwidthPage} sidebar={pageHasSidebar} on:loaded={() => setLoading(false) }>
 				<slot></slot>
 			</PageTransition>
 		</main>

@@ -5,7 +5,6 @@
 
   export let refresh: string = ''
   export let inverted: boolean = false
-  export let noDark: boolean = false
   export let squareCount: number = 0
 
   let count: number = 0
@@ -26,10 +25,6 @@
 			* 4)
 		)
   })
-
-  if (noDark) {
-    gridColors = SITE_COLORS.filter(color => color !== 'var(--ink)')
-  }
 
   const randomColor = () => {
     const color = Math.floor(Math.random() * gridColors.length)
