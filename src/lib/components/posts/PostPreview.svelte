@@ -2,6 +2,7 @@
   import type Post from '$lib/assets/js/interfaces/post'
   import Tag from '../tags/Tag.svelte'
   import TagList from '../tags/TagList.svelte'
+  import ExternalLink from '../icons/ExternalLink.svelte'
   import { isLoading } from '$lib/assets/js/store'
 
   export let external: boolean = false
@@ -29,11 +30,14 @@
       <h3>
         <a on:click={startLoading} href={computedURL} sveltekit:prefetch>
           {post.title}
+          {#if external}
+            <ExternalLink />
+          {/if}
         </a>
       </h3>
       
       {#if post.subtitle}
-      <p class="subtitle">{post.subtitle}</p>
+        <p class="subtitle">{post.subtitle}</p>
       {/if}
       
       <p class="excerpt">

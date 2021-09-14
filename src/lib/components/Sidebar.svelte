@@ -5,6 +5,8 @@
   import { isLoading } from '$lib/assets/js/store'
   
   import { onMount } from 'svelte'
+  import TagList from './tags/TagList.svelte'
+  import Tag from './tags/Tag.svelte'
   
   let posts: Post[] = []
   let allCategories: string[] = []
@@ -66,37 +68,38 @@
   </ul>
 
   <h2>Categories</h2>
-  <ul class="display-flex">
+  <TagList>
     {#each allCategories as category}
-      <li>
-        <a href="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)} sveltekit:prefetch>
-          <span>{ category }</span>
-        </a>
-      </li>
+      <Tag to="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)} sveltekit:prefetch>
+        { category }
+      </Tag>
     {/each}
-  </ul>
+    </TagList>
 </aside>
 
 
 <style lang="scss" global>
   #sidebar {
     font-size: .85rem;
-    display: none;
     align-self: start;
     position: sticky;
     top: 2rem;
-    grid-column: 3 / 4;
-    text-align: right;
-
+    max-width: calc(var(--sidebar-width) * 1.5);
+    
     @media (min-width: $wider) {
-      display: block;
+      text-align: right;
+      grid-column: 3 / 4;
     }
 
     .home-link {
       display: block;
-      margin: 0 0 1rem auto;
+      margin: 0 0 1rem 0;
       width: 1.5rem;
       overflow: hidden;
+
+      @media (min-width: $wider) {
+        margin-left: auto;
+      }
 
       svg {
         width: 500%;
@@ -122,11 +125,14 @@
       margin: 0;
       list-style-type: none;
       padding: 0;
-      justify-content: flex-end;
       line-height: 1.2;
 
-      &.display-flex li {
-        margin-left: .75em;
+      @media (min-width: $wider) {
+        justify-content: flex-end;
+      }
+
+      &.tag-list li {
+        margin: 0;
       }
 
       li {
