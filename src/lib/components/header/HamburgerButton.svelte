@@ -6,11 +6,10 @@
 </script>
 
 
-
 <button
 	id="hamburger"
 	aria-pressed={$isMenuOpen}
-	class:sticky={$isMenuOpen}
+	class:fixed={$isMenuOpen}
 	on:click={() => isMenuOpen.set(!$isMenuOpen)}
 >
 	<span class="sr">{menuOpenReadableOpposite} menu</span>
@@ -18,7 +17,6 @@
 	<div class="line" aria-hidden="true" />
 	<div class="line" aria-hidden="true" />
 </button>
-
 
 
 <style lang="scss">
@@ -35,8 +33,14 @@
 		background: transparent;
 		position: relative;
 		z-index: 11;
+		transition: all .2s ease-in-out;
 
-		&.sticky {
+		&.fixed {
+			position: relative;
+			top: unset;
+			right: unset;
+			animation: none;
+
 			.line {
 				background: var(--white);
 			}

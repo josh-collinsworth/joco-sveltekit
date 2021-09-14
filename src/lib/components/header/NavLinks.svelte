@@ -4,22 +4,18 @@
 
   export let mobile: boolean = false
   export let key: string
-
-
-  const closeMobileMenu = () => {
-    if ($isMenuOpen) {
-      isMenuOpen.set(false)
-    }
-  }
 </script>
 
 
 <ul class:mobile={mobile}>
   <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
-  <NavLink to="/projects" text="Projects" {closeMobileMenu} {key} {mobile} />
-  <NavLink to="/blog" text="Writing" {closeMobileMenu} {key} {mobile} />
-  <NavLink to="/contact" text="Contact" {closeMobileMenu} {key} {mobile} />
-  <NavLink to="/uses" text="Uses" {closeMobileMenu} {key} {mobile} />
+  {#if mobile}
+    <NavLink to="/" text="About Me" {key} {mobile} />
+  {/if}
+  <NavLink to="/projects" text="Projects" {key} {mobile} />
+  <NavLink to="/blog" text="Writing" {key} {mobile} />
+  <NavLink to="/contact" text="Contact" {key} {mobile} />
+  <NavLink to="/uses" text="Uses" {key} {mobile} />
 </ul>  
 
 

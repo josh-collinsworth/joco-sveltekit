@@ -13,7 +13,7 @@
 
 <script lang="ts">
 	import '$lib/assets/scss/global.scss'
-
+	
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'

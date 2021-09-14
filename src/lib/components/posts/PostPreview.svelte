@@ -59,7 +59,7 @@
 
 <style lang="scss">
   li {
-    margin: 0;
+    margin: 0 0 2rem;
   }
   
   .post-preview {

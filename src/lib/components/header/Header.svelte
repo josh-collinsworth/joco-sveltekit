@@ -34,7 +34,6 @@
 		<a
 			href="/"
 			class="logo"
-			class:sticky={$isMenuOpen}
 			on:click={handleClick}
 		>
 			<LogoSVG />
@@ -56,25 +55,21 @@
 		width: auto;
 		height: 2rem;
 		display: block;
-		position: relative;
-		z-index: 4;
 	}
 
 	.icon-container {
 		display: flex;
 		align-items: center;
-		position: relative;
+		position: fixed;
+		right: 1rem;
+		top: calc(2rem + 1px);
 
-		&.sticky {
-			right: 1rem;
-			top: calc(2.5rem - 2px);
+		@media (min-width: $narrow) {
+			position: static;
 		}
 	}
 
 	.sticky {
-		position: fixed;
-		top: 2.5rem;
-
 		--ink: var(--white);
 		--paper: var(--darkBlue);
 	}
@@ -87,7 +82,7 @@
 		width: 100%;
 		position: relative;
 		z-index: 3;
-		min-height: calc(90px + 2rem);
+		min-height: 6.3rem;
 	}
 
 	.skip-to-content-link {

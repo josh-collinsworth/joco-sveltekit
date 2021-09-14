@@ -19,12 +19,13 @@
     padding: 0;
     list-style-type: none;
     margin: 2rem 0 4rem;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-gap: 1rem;
+    max-width: var(--max-width);
 
     @media (min-width: $wide) {
+      max-width: unset;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      display: grid;
       grid-gap: 1.5rem;
     }
   }
