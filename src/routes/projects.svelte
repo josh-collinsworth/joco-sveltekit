@@ -85,9 +85,6 @@
       Connect Four in Vue and CSS</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
       on <a href="https://codepen.io">CodePen</a>.</span>
     </p>
-    <script>
-      { importedCode}
-    </script>
   </div>
 </article>
 
