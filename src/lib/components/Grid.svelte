@@ -51,6 +51,7 @@
   .grid-wrapper {
     height: 2.5rem;
     position: relative;
+    contain: layout size style;
   }
 
   .cell-grid {

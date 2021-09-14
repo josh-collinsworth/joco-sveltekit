@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isLoading, prefersReducedMotion } from '$lib/assets/js/store'
+  import { prefersReducedMotion } from '$lib/assets/js/store'
 
   export let title: string
   export let subtitle: string = ''
@@ -7,67 +7,29 @@
   let computedTitle: string = ''
   let isWorking: boolean = false
 
-  const typeOutPageTitle = () => {
+  $: if (title) {
     if (title === '/') {
-      title = "Hi, I'm Josh"
+      title = `Hi, I'm Josh.`
     } else if (title[0] === '/') {
       title = title.slice(1)
     }
 
-    if ($prefersReducedMotion) {
+    isWorking = false
+
+    setTimeout(() => {
+      isWorking = true
       computedTitle = title
-      return
-    }
-
-    let timer = 200
-
-    computedTitle = ''
-
-    for (let letter of title) {
-      timer += 40
-      setTimeout (() => {
-        computedTitle += letter
-      }, timer)
-    }
-  }
-
-
-  $: if ($isLoading && !$prefersReducedMotion) {
-    isWorking = true
-
-    let timer = 0
-    
-    for (let _ of title) {
-      timer += 30
-      
-      setTimeout (() => {
-        computedTitle = computedTitle.slice(0, computedTitle.length - 1)
-
-        if (!computedTitle.length) {
-          isWorking = false
-        }
-      }, timer)
-    }
-  }
-
-  $: if (!$isLoading && !isWorking) {
-    typeOutPageTitle()
-  }
-
-  const inOrOut = () => {
+    }, 360)
 
   }
 </script>
 
 
 <div class="page-head">
-  <h1 class={inOrOut}>
-    <!-- <span>
-      {computedTitle}
-    </span> -->
-    {#each computedTitle as letter}
-      <span class="letter">{letter}</span>
-    {/each}
+  <h1>
+    <div class="title-wrap" class:in={isWorking} class:no-motion={$prefersReducedMotion}>
+      <span class="letter">{computedTitle}</span>
+    </div>
   </h1>
   <p class="subtitle">
     {subtitle}
@@ -81,12 +43,31 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    contain: layout;
 
     h1 {
       font-size: 1.1rem;
       margin: 0 1rem 0.25rem 0;
       padding: 0;
       width: max-content;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      .title-wrap {
+        position: relative;
+        z-index: 1;
+        transform: translateX(calc(-100% + .2em));
+        transition: transform .36s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+        &.in {
+          transform: translateX(0);
+        }
+
+        &.no-motion {
+          transform: none !important;
+        }
+      }
 
       span {
         background: linear-gradient(90deg, var(--lightGray) 60%, var(--yellow));
@@ -102,17 +83,22 @@
       }
 
       &::before,
-      &::after {
+      .title-wrap::after {
         content: '[';
         font-family: var(--body-font);
         font-weight: bold;
         background: initial;
         color: var(--lightGray);
+        margin: 0 0.1em 0 0;
+        z-index: 2;
+        position: relative;
+        left: -2px;
       }
 
-      &::after {
+      .title-wrap::after {
         content: ']';
         color: var(--yellow);
+        margin: 0 0 0 0.25em;
       }
     }
 
