@@ -29,9 +29,14 @@ ol,
 .callout,
 .highlight {
 	a {
-		color: var(--link-color);
+		color: currentColor;
 		text-decoration: underline;
 		text-decoration-color: var(--yellow);
+		transition: color .15s;
+
+		&:hover {
+			color: var(--link-color);
+		}
 	}
 }
 

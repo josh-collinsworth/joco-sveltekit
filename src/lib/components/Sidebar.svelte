@@ -42,7 +42,7 @@
   </a>
 
   <h2>External Writing</h2>
-  <ul>
+  <ul class="sidebar__posts-list">
     {#each EXTERNAL_POSTS as post}
       <li>
         <a rel="external" href="{post.slug}">
@@ -54,7 +54,7 @@
   </ul>
 
   <h2>Recent blog posts</h2>
-  <ul>
+  <ul class="sidebar__posts-list">
     {#if !posts.length}
       Loading…
     {/if}
@@ -133,9 +133,10 @@
 
       &.tag-list li {
         margin: 0;
+        font-size: inherit;
       }
 
-      li {
+      &.sidebar__posts-list li {
         font-size: inherit;
         margin-bottom: .6em;
 

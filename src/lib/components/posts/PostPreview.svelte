@@ -47,7 +47,7 @@
         </a>
       </p>
       
-      {#if post.categories && !external}
+      {#if post.categories}
         <TagList>
           {#each post.categories as category}
           <Tag to="/blog/category/{category}/" on:click={startLoading}>
@@ -64,6 +64,10 @@
 <style lang="scss">
   li {
     margin: 0 0 2rem;
+
+    @media (min-width: $wide) {
+      margin: 0;
+    }
   }
   
   .post-preview {
