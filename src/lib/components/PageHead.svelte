@@ -19,7 +19,7 @@
     setTimeout(() => {
       isWorking = true
       computedTitle = title
-    }, 360)
+    }, 420)
 
   }
 </script>
@@ -57,8 +57,8 @@
       .title-wrap {
         position: relative;
         z-index: 1;
-        transform: translateX(calc(-100% + .2em));
-        transition: transform .36s cubic-bezier(0.215, 0.610, 0.355, 1);
+        transform: translateX(calc(-100% + .15em));
+        transition: transform .42s cubic-bezier(0.165, 0.84, 0.44, 1);
 
         &.in {
           transform: translateX(0);
