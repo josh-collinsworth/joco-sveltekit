@@ -35,25 +35,35 @@
 
 
 <template>
-  {#key refresh}
-    <div class="cell-grid" class:inverted aria-hidden="true">
-      {#each Array(count) as cell, i}
-        <GridCell color={randomColor()} />
-      {/each}
-    </div>
-  {/key}
+  <div class="grid-wrapper">
+    {#key refresh}
+      <div class="cell-grid" class:inverted aria-hidden="true">
+        {#each Array(count) as cell}
+          <GridCell color={randomColor()} />
+        {/each}
+      </div>
+    {/key}
+  </div>
 </template>
 
 
 <style lang="scss">
+  .grid-wrapper {
+    height: 2.5rem;
+    position: relative;
+  }
+
   .cell-grid {
     display: grid;
     height: 2.5rem;
     grid-template-columns: repeat(auto-fill, minmax(.5rem, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(.5rem, 1fr));
     grid-auto-flow: dense;
-    position: relative;
+    position: absolute;
     z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     &.inverted {
       transform: rotateX(180deg);

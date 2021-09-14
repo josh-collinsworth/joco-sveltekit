@@ -53,11 +53,15 @@
   $: if (!$isLoading && !isWorking) {
     typeOutPageTitle()
   }
+
+  const inOrOut = () => {
+
+  }
 </script>
 
 
 <div class="page-head">
-  <h1>
+  <h1 class={inOrOut}>
     <!-- <span>
       {computedTitle}
     </span> -->
