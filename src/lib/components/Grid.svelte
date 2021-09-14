@@ -79,7 +79,7 @@
     &:before {
       width: 100%;
       content: '';
-      background: linear-gradient(60deg, rgba(0,0,0,0) , rgba(var(--paperRGB), 0.6));
+      background: linear-gradient(60deg, rgba(var(--paperRGB), 0), rgba(var(--paperRGB), 0.6));
       height: 4rem;
       position: absolute;
       top: -1rem;

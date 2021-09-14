@@ -33,7 +33,7 @@
 </svelte:head>
 
 <template>
-  <img src="/images/post_images/{meta.coverImage}" alt="" />
+  <img class="cover-image" src="/images/post_images/{meta.coverImage}" alt="" />
 
   <h1>{ meta.title }</h1>
 
@@ -87,13 +87,16 @@ aside h2 {
   border: 0;
 }
 
-main {
+.cover-image {
+  margin: 0;
+}
 
+main {
   h1 {
-    margin-bottom: 0;
+    margin: 0;
   }
   
-  > p:first-of-type::first-letter,
+  .meta + p:first-of-type::first-letter,
   > hr + p:first-letter {
     font-size: 3.4em;
     font-family: var(--heading-font);
