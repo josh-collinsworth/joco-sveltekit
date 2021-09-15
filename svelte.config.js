@@ -15,6 +15,9 @@ const config = {
 		}),
 		mdsvex({
 			extensions: ['.md'],
+			highlight: {
+				alias: { vue: 'html' }
+			}
 			//Optional: add a layout here
 		}),
 	],

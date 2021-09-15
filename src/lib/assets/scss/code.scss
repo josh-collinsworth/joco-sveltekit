@@ -1,4 +1,4 @@
-$background: #2c292d;
+$background: #1d1e26;
 
 pre {
 	font-family: 'MonoLisa', 'Courier', monospace;
@@ -9,7 +9,6 @@ pre {
 	padding: 1.5em;
 	margin: 2rem auto;
 	color: var(--white);
-	border-radius: 0.5em;
 	font-size: .8rem;
 	overflow: auto;
 	line-height: 1.5;
@@ -49,12 +48,11 @@ pre {
 	}
 }
  
- /* Code blocks */
+/* Code blocks */
 pre[class*="language-"] {
-	padding: 3.5rem 1rem 1.5rem;
+	padding: 3rem 0.75rem 1rem;
 	margin: 2rem 0;
 	overflow: auto;
-	border-radius: 0.3em;
 	position: relative;
  
 	&:before {
@@ -63,7 +61,7 @@ pre[class*="language-"] {
 	  left: 0;
 	  font-size: 1rem;
 	  font-family: var(--body-font), sans-serif;
-	  padding: .5rem 1rem;
+	  padding: 0.25rem 0.75rem;
 	  width: 100%;
 	  position: absolute;
 	  background: var(--darkBlue);
@@ -73,24 +71,36 @@ pre[class*="language-"] {
 }
  
 pre.language-css:before {
-	content: 'CSS:';
+	content: 'CSS';
 }
  
 pre.language-php:before {
-	content: 'PHP:';
+	content: 'PHP';
 }
  
 pre.language-markdown:before {
-	content: 'Markdown:';
+	content: 'Markdown';
 }
  
- pre.language-html:before {
-	content: 'HTML:';
+pre.language-html:before {
+	content: 'HTML';
+}
+
+pre.language-vue:before {
+	content: 'Vue';
+}
+
+pre.language-svelte:before {
+	content: 'Svelte';
+}
+
+pre.language-jsx:before {
+	content: 'React';
 }
  
 pre.language-js:before,
 pre.language-javascript:before {
-	content: 'JavaScript:';
+	content: 'JavaScript';
 }
  
 :not(pre) > code,
@@ -113,15 +123,16 @@ pre {
 	&.prolog,
 	&.doctype,
 	&.cdata {
-	  color: slategray;
+	  color: #f2f2f2;
+		opacity: 0.3;
 	}
  
 	&.punctuation {
-	  color: #f8f8f2;
+	  color: #f2f2f2;
 	}
  
 	&.namespace {
-	  opacity: .7;
+	  opacity: .8;
 	}
  
 	&.property,
@@ -129,12 +140,12 @@ pre {
 	&.constant,
 	&.symbol,
 	&.deleted {
-	  color: #78dce8;
+	  color: #ff80bf;
 	}
  
 	&.boolean,
 	&.number {
-	  color: #ab9df2;
+	  color: #9580ff;
 	}
  
 	&.selector,
@@ -143,21 +154,21 @@ pre {
 	&.char,
 	&.builtin,
 	&.inserted {
-	  color: #ffd866;
+	  color: #50fa7b;
 	}
  
 	&.operator,
 	&.entity,
 	&.url,
 	&.variable {
-	  color: #f8f8f2;
+	  color: #f2f2f2;
 	}
  
 	&.atrule,
 	&.attr-value,
 	&.function,
 	&.class-name {
-	  color: #ffd866;
+	  color: #50fa7b;
 	}
  
 	&.keyword {

@@ -6,7 +6,7 @@ categories:
   - 'javascript'
   - 'svelte'
   - 'web'
-coverImage: 'EQ0-F2nXUAEpgCx.jpeg'
+coverImage: 'converting-to-sveltekit.png'
 excerpt: I've been a fan of Svelte for years, but never had the opportunity to use it on a serious project before. So when I learned SvelteKit could do static rendering, it seemed like the perfect time.
 ---
 
@@ -23,17 +23,23 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 ## What is Svelte?
 
-Svelte could be considered a JavaScript framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), [Ember](https://emberjs.com) or [Angular](https://angular.io). It's the newest of the bunch, however, and it seems as though it's definitely learned from the others in many different ways, both on the dev side and the user side.
+**Svelte is JavaScript framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), or any other component-based frontend framework**. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, both on the dev side and the user side. (More on that in a bit.)
 
-Svelte itself, much like the other frameworks mentioned above, is mostly just for view logic and templating; syncing up some data, events, and outputs on the front end. Front-end frameworks on their own aren't ideal for much except single-page applications, since they have to run entirely in the browser (making it tricky to persist data between page loads and handle server-side tasks).
+As in any of these frameworks, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change, the Svelte component(s) automatically update to reflect the changes in the UI.
+
+Front-end frameworks are amazing for their ability to keep data in sync. Since they run entirely on JavaScript in the browser, however, they aren't ideal for much except single-page applications on their own. Front-end frameworks alone can't do things like persist data between pages or run server-side tasks like fetching files, for example.
+
+**To bridge that gap, Svelte has [SvelteKit](https://kit.svelte.dev/).**
 
 <Callout>Svelte is React, but without the bullshit.</Callout>
 
-To bridge that gap, Svelte has [SvelteKit](https://kit.svelte.dev/). 
+You could think of SvelteKit as the [Next](https://nextjs.org/) (or [Nuxt](https://nuxtjs.org/)) of Svelte. If you're not familiar: all of those are examples of a "meta-framework;" a larger toolbox for building full-fledged apps and sites. They take the underlying front-end framework (Svelte, React, etc.) and add in many of the pieces you'd need for a non-trivial project, like pages and routing, data stores, better control over SEO, and in some cases, image handling and APIs—generally just about everything except the database.
 
-You could think of SvelteKit as the [Next](https://nextjs.org/) (or [Nuxt](https://nuxtjs.org/)) of Svelte. SvelteKit, Next, etc., are what's often called a "meta-framework," which means they're larger toolboxes for building full-fledged apps and sites. They take the underlying framework (Svelte, React, etc.) and add in many of the other pieces you'd need for a non-trivial project, like pages and routing, data stores, better control over SEO, and in some cases, image handling.
+<Highlight>So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about anything.</Highlight>
 
-**One particularly nice thing about SvelteKit is that its output can be whatever you want.** It offers several [adapters](https://kit.svelte.dev/docs#adapters) to process your input into whatever type of output you want: an app with server-side rendering, a full-fledged Node app, or (in my case), a statically generated site.
+**One particularly nice thing about SvelteKit is that its output can be whatever you want.** It can function as a static site generator (as it does in my case), but it's also capable of generating apps with server-side rendering, or a mixture of server-side and static, or even full-fledged Node apps.
+
+This is possible because SvelteKit offers several [adapters](https://kit.svelte.dev/docs#adapters) to process your input differently, depending on what your end goal is. Same input; whatever output you like!
 
 
 ## Why Svelte, specifically?
@@ -44,18 +50,29 @@ I instantly loved how easy Svelte made _everything_ I wanted to do (especially c
 
 <Highlight>Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully straightforward.</Highlight>
 
-It felt—and still feels—like Svelte is _way_ ahead of the game. (Or, maybe more accurately, like it's learned from the mistakes of other frameworks). Reactivity is built-in. There's no virtual DOM. It has (scoped) component CSS built-in. Writing it is simple, and—maybe best of all—the eventual finished product will almost certainly be _far smaller_ than the same thing built with a different framework (often by orders of magnitude.)
+<Callout>Svelte has always felt <em>way</em> ahead of&nbsp;the&nbsp;game.</Callout>
 
-Take the standard counter example, for instance:
+Svelte has always felt _way_ ahead of the game. (Or, maybe more accurately, like it's learned from the mistakes of other frameworks). Reactivity is built-in. There's no virtual DOM. It has (scoped) component CSS built-in. Writing it is simple, and—maybe best of all—the eventual finished product will almost certainly be _far smaller_ than the same thing built with a different framework (often by orders of magnitude.)
+
+
+### Comparing Svelte to React and Vue
+
+The standard example of a "hello world" (beginner) component is a simple button that counts how many times it's been clicked, and updates accordingly, as shown here: 
+
+![Demonstrating a button that increments when clicked](/images/post_images/hello-world-button.gif)
+
+It's not a particularly practical example, but it is an effective one to demonstrate the bread and butter of front-end frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), update the UI (the button) automatically.
+
+Let's start with how to do this simple example in Svelte:
 
 ```svelte
 <!-- Counter.svelte -->
 <script>
-	let count = 0;
+	let count = 0
 
 	const incrementCount = () => {
-		count += 1;
-	};
+		count += 1
+	}
 </script>
 
 <button on:click={incrementCount}>
@@ -63,7 +80,11 @@ Take the standard counter example, for instance:
 </button>
 ```
 
-This tends to be a common example for frameworks (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), so you may have seen this same thing before. But for comparison, here's how you'd do the same thing in React:
+<SideNote>You don't have to use arrow functions; I just like to. You can also use semicolons if you prefer to; that's just not my style (in code).</SideNote>
+
+As mentioned, this tends to be a common example for frameworks (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), so you may have seen this same thing before.
+
+For comparison, here's how you'd do the same thing in React:
 
 ```jsx
 // Button.jsx
@@ -88,7 +109,7 @@ Notice that the actual HTML portion is virtually identical, but there's _so much
 
 Here's the same thing in Vue 2:
 
-```html
+```vue
 <!-- Button.vue -->
 <script>
   export default {
@@ -111,7 +132,26 @@ Here's the same thing in Vue 2:
 </template>
 ```
 
-<SideNote>The Vue version above is Vue 2; the Vue 3 composition API with a setup script would make the Vue example quite a bit shorter, and closer to the Svelte version.</SideNote>
+Or, if you prefer, here's the Vue 3 composition API version (using the new `setup` script syntactic sugar from Vue 3.2+):
+
+```vue
+<!-- Button.vue -->
+<script setup>
+  import { ref } from 'vue'
+
+  const count = ref(0)
+
+  const incrementCount = () => {
+    count.value += 1
+  }
+</script>
+
+<​template>
+  <button @click="incrementCount">
+    Button has been clicked {{ count }} times.
+  </button>
+</template>
+```
 
 So there we have it; three ways to make a button that increments a number by 1 every time it's clicked. And not only is the Svelte version _shorter_ (both in line count and total characters); it's _also_ the closest to plain ol' JavaScript, HTML and CSS, with minimal modification or proprietary things to know.
 
