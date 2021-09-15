@@ -61,33 +61,12 @@ The standard example of a "hello world" (beginner) component is a simple button 
 
 ![Demonstrating a button that increments when clicked](/images/post_images/hello-world-button.gif)
 
-It's not a particularly practical example, but it is an effective one to demonstrate the bread and butter of front-end frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), update the UI (the button) automatically.
+It's not a particularly practical example, but it is a common one (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)) because it's an effective way to demonstrate the bread and butter of front-end frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), update the UI (the button) automatically.
 
-Let's start with how to do this simple example in Svelte:
-
-```svelte
-<!-- Counter.svelte -->
-<script>
-	let count = 0
-
-	const incrementCount = () => {
-		count += 1
-	}
-</script>
-
-<button on:click={incrementCount}>
-  Button has been clicked {count} times.
-</button>
-```
-
-<SideNote>You don't have to use arrow functions; I just like to. You can also use semicolons if you prefer to; that's just not my style (in code).</SideNote>
-
-As mentioned, this tends to be a common example for frameworks (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), so you may have seen this same thing before.
-
-For comparison, here's how you'd do the same thing in React:
+Let's start with how to do this simple example in React, where you'd put the button in its own 
 
 ```jsx
-// Button.jsx
+// CounterButton.jsx
 import React, { useState } from 'react'
 
 export const Button = () => {
@@ -105,12 +84,12 @@ export const Button = () => {
 }
 ```
 
-Notice that the actual HTML portion is virtually identical, but there's _so much less_ framework boilerplate needed! (That's why my favorite cheeky way to describe Svelte is: "Svelte is React, but without the bullshit.")
+<SideNote>You could also do this same thing with React's old class-based syntax, but it's being more or less phased out, so it doesn't seem worth going into here.</SideNote>
 
 Here's the same thing in Vue 2:
 
 ```vue
-<!-- Button.vue -->
+<!-- CounterButton.vue -->
 <script>
   export default {
     data: () => ({
@@ -135,7 +114,7 @@ Here's the same thing in Vue 2:
 Or, if you prefer, here's the Vue 3 composition API version (using the new `setup` script syntactic sugar from Vue 3.2+):
 
 ```vue
-<!-- Button.vue -->
+<!-- CounterButton.vue -->
 <script setup>
   import { ref } from 'vue'
 
@@ -153,7 +132,30 @@ Or, if you prefer, here's the Vue 3 composition API version (using the new `setu
 </template>
 ```
 
-So there we have it; three ways to make a button that increments a number by 1 every time it's clicked. And not only is the Svelte version _shorter_ (both in line count and total characters); it's _also_ the closest to plain ol' JavaScript, HTML and CSS, with minimal modification or proprietary things to know.
+Now that we've gotten a glimpse of how the established players approach this comparatively simple component, let's look at how to do the same thing in Svelte:
+
+```svelte
+<!-- CounterButton.svelte -->
+<script>
+	let count = 0
+
+	const incrementCount = () => {
+		count += 1
+	}
+</script>
+
+<button on:click={incrementCount}>
+  Button has been clicked {count} times.
+</button>
+```
+
+Some key differences to point out between the Svelte version and the others:
+
+* Notice how Svelte doesn't need its HTML wrapped in anything. React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. Svelte can have whatever HTML, wherever.
+* Notice how Svelte doesn't require you to import anything. (Some features of Svelte do, but its basic features are all available out of the box.)
+* Notice that React and Vue (both versions) force you to do something special to a variable to mark it as reactive (either with `useState`, `ref`, or the `data` property). Svelte is reactive by default.
+
+So there we have it; four ways to make a button that increments a number by 1 every time it's clicked. And not only is the Svelte version _shorter_ (both in line count and total characters); it's _also_ the closest to plain ol' JavaScript, HTML and CSS, with minimal modification or proprietary things to know.
 
 As you might have inferred from the Svelte example above, **variables are reactive by default in Svelte.** (That means any time they change, they'll update everywhere they're used.) No need for React's `useState` or Vue's `data` property; just declare a variable like you always would and it'll be reactive automatically.
 
