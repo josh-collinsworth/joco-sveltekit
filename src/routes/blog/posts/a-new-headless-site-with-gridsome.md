@@ -23,11 +23,11 @@ There's a joke (the kind that's made less because it's funny and more because it
 
 In fact, at the time of this writing, the post I wrote about the last redesign—in early 2018—is still in the top 5 most recent posts on the site. (Yikes.)
 
-This one, though, is at least more than a fresh layer of CSS or a new WordPress theme. This one is taking an entirely new approach: going headless with the JAMstack.
+This one, though, is at least more than a fresh layer of CSS or a new WordPress theme. This one is taking an entirely new approach: going headless with the Jamstack.
 
 <SideNote>This is going to be a long post, since I’ll go into depth on what headless means, its advantages and disadvantages, some of the techniques involved, and, finally, the design of this site specifically.</SideNote>
 
-## What do "headless" and "JAMstack" mean?
+## What do "headless" and "Jamstack" mean?
 
 Let's take a moment to break down those terms.
 
@@ -47,9 +47,9 @@ So a headless WordPress site will still use the WP backend as usual for all the 
 
 If you aren't particularly familiar with the world of modern front-end development outside WordPress, you might not immediately see the advantages, but there are several to be had. Not being locked into PHP as your templating language means you're instead able to use powerful, modern frameworks like [Vue](http://vuejs.org), [Svelte](https://svelte.dev/), [Eleventy](https://www.11ty.dev/), or—in the case of this site—[Gridsome](http://gridsome.org), with all the goodies that come along.
 
-This goes hand-in-hand with **JAMstack**, and is actually a decent example of it. The JAM stands for JavaScript, API and Markup—though it's more of a loose description of _typical_ features of a site rather than a literal definition or group of technologies, so don't get too hung up on those three things. JAMstack sites always use JavaScript in some fashion, but they don't all use APIs, necessarily.
+This goes hand-in-hand with **Jamstack**, and is actually a decent example of it. The JAM stands for JavaScript, API and Markup—though it's more of a loose description of _typical_ features of a site rather than a literal definition or group of technologies, so don't get too hung up on those three things. Jamstack sites always use JavaScript in some fashion, but they don't all use APIs, necessarily.
 
-The term "JAMstack" was coined by [Netlify](http://netlify.com) (which, by the way, is where the front-end of this site is deployed). When people say they are launching or deploying a site "on the JAMstack," that usually means they're using a host like Netlify or [Vercel](https://vercel.com/) to compile or "build" their site directly from a git repo, and then host it on a global CDN.
+The term "Jamstack" was coined by [Netlify](http://netlify.com) (which, by the way, is where the front-end of this site is deployed). When people say they are launching or deploying a site "on the Jamstack," that usually means they're using a host like Netlify or [Vercel](https://vercel.com/) to compile or "build" their site directly from a git repo, and then host it on a global CDN.
 
 <Highlight>The advantages provided by a headless approach generally boil down to: speed; security; and developer experience.</Highlight>
 
@@ -63,15 +63,15 @@ Using a static site generator (SSG) also means you can deploy all of your site's
 
 ### Security
 
-The security of adding a layer between your front-end and your database (while, in my opinion, not one of the bigger selling points of the JAMstack) is not to be overlooked. When your front-end doesn't offer any direct access to the database—and instead, is just a collection of immutable files on a CDN server—that means the methods of attacking your site are minimized. No SQL injections, and you offer no immediate benefit if somebody _does_ manage to hack the DB.
+The security of adding a layer between your front-end and your database (while, in my opinion, not one of the bigger selling points of the Jamstack) is not to be overlooked. When your front-end doesn't offer any direct access to the database—and instead, is just a collection of immutable files on a CDN server—that means the methods of attacking your site are minimized. No SQL injections, and you offer no immediate benefit if somebody _does_ manage to hack the DB.
 
 With a headless approach, you also have the option of locking down your original WordPress install in ways you might not have been able to when you relied on WP to serve the front-end of your site.
 
-That said, security probably shouldn't be your biggest reason to move to the JAMstack, since it's a tangential benefit, and since it won't solve bad WordPress security to begin with.
+That said, security probably shouldn't be your biggest reason to move to the Jamstack, since it's a tangential benefit, and since it won't solve bad WordPress security to begin with.
 
 ### Developer Experience
 
-Finally, working with modern frameworks like those mentioned above (though there are many others) is often more enjoyable for developers, as it allows you to introduce more modern tooling into your workflow, both in how the code is built and how it's deployed. (Typically, JAMstack sites are set up to deploy directly from a git repo, so that every time you push to the repo, the site deploys the code automatically, saving you from ever touching something like FTP.)
+Finally, working with modern frameworks like those mentioned above (though there are many others) is often more enjoyable for developers, as it allows you to introduce more modern tooling into your workflow, both in how the code is built and how it's deployed. (Typically, Jamstack sites are set up to deploy directly from a git repo, so that every time you push to the repo, the site deploys the code automatically, saving you from ever touching something like FTP.)
 
 <SideNote>Naturally, developer experience should be the least of our concerns; our users’ experience with the site is more important than ours. But if we’re being responsible with our choices, developer experience should ideally help translate into better user experience, too.</SideNote>
 
@@ -139,13 +139,13 @@ I also mentioned earlier that there are plugins available to rebuild your site o
 
 Another reason, though, is that even though the site is headless, the WordPress REST API can still be live and fully available.
 
-With a typical JAMstack site, dynamic things such as search forms—any type of form, really—can be problematic, as you don't typically have a database to query (though you could). Typically, when using a static site generator, the best you could do would be to pre-generate category or tag pages, or try to filter content client-side. But either of those approaches still fall short of a genuine search experience.
+With a typical Jamstack site, dynamic things such as search forms—any type of form, really—can be problematic, as you don't typically have a database to query (though you could). Typically, when using a static site generator, the best you could do would be to pre-generate category or tag pages, or try to filter content client-side. But either of those approaches still fall short of a genuine search experience.
 
 <Highlight>Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress API.</Highlight>
 
 In addition, I don't need to worry about porting my WordPress site's RSS feed; I can just point the `/feed` URL back to the original WordPress site and keep using the same one I always have.
 
-All of this flexibility is actually what sold me on sticking with a WordPress back-end, rather than going fully static. I knew that if I couldn't get a good form solution going on the JAMstack, I could always just use DNS to point a page back to WordPress and slap a [Ninja Form](https://ninjaforms.com/) on it, the user being none the wiser. (As it turns out, Netlify _does_ have a rather nifty forms solution, but I like knowing that I can fall back to WordPress for anything I'm not finding or not comfortable with on the JAMstack.)
+All of this flexibility is actually what sold me on sticking with a WordPress back-end, rather than going fully static. I knew that if I couldn't get a good form solution going on the Jamstack, I could always just use DNS to point a page back to WordPress and slap a [Ninja Form](https://ninjaforms.com/) on it, the user being none the wiser. (As it turns out, Netlify _does_ have a rather nifty forms solution, but I like knowing that I can fall back to WordPress for anything I'm not finding or not comfortable with on the Jamstack.)
 
 ## The new site
 

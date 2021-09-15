@@ -144,9 +144,9 @@ As a comparison: the old homepage of this site (built with [Gridsome](https://gr
 
 Now, in fairness, there's a good reason the old site was that large to begin with; Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
-<Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which is an interesting study in tradeoffs.</Callout>
+<Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an study in tradeoffs.</Callout>
 
-That brings up some interesting questions about real performance vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which is an interesting study in tradeoffs. Navigating between pages has a noticeable lag now in some cases. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
+That brings up some interesting questions about real performance vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an study in tradeoffs. Navigating between pages has a noticeable lag now in some cases. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
 Ultimately, I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on the circumstance.
 

@@ -10,7 +10,7 @@
 <ul class:mobile={mobile}>
   <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
   {#if mobile}
-    <NavLink to="/" text="About Me" {key} {mobile} />
+    <NavLink to="/" text="About me" {key} {mobile} />
   {/if}
   <NavLink to="/projects" text="Projects" {key} {mobile} />
   <NavLink to="/blog" text="Writing" {key} {mobile} />

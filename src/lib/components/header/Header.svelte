@@ -62,7 +62,7 @@
 		align-items: center;
 		position: fixed;
 		right: 1rem;
-		top: calc(2rem + 1px);
+		top: calc(1rem + 1px);
 
 		@media (min-width: $narrow) {
 			position: static;
@@ -74,7 +74,6 @@
 		--paper: var(--darkBlue);
 	}
 
-
 	.header {
 		display: flex;
 		justify-content: space-between;
@@ -82,7 +81,11 @@
 		width: 100%;
 		position: relative;
 		z-index: 3;
-		min-height: 6.3rem;
+		padding: 1rem var(--margin) 2rem;
+
+		@media (min-width: $narrow) {
+			padding: 2rem var(--margin);
+		}
 	}
 
 	.skip-to-content-link {

@@ -4,18 +4,6 @@ body {
 	margin: 0 var(--margin);
 }
 
-header,
-footer {
-	padding: 2rem var(--margin);
-	width: 100%;
-}
-
-footer {
-	background-color: var(--darkBlue);
-	color: var(--paper);
-	padding-top: 2.5rem;
-}
-
 img {
 	max-width: 100%;
 	height: auto;

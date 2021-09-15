@@ -30,6 +30,7 @@
 
 <style lang="scss">
 	.main-nav {
+		text-align: right;
 
 		&#mobile-nav {
 			display: block;

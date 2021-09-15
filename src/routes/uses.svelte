@@ -134,7 +134,7 @@
     <li>
       <a rel="external" href="www.netlify.com/">Netlify</a>:
       I’m also a fan of
-      <a rel="external" href="https://vercel.com/home">Now</a>, but Netlify has taken over my JAMstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
+      <a rel="external" href="https://vercel.com/home">Now</a>, but Netlify has taken over my Jamstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
     </li>
   </ul>
 

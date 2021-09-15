@@ -1,5 +1,6 @@
 <script lang="ts">
   import Grid from './Grid.svelte'
+import NavLinks from './header/NavLinks.svelte'
 
   const currentYear: number = new Date().getFullYear()
 </script>
@@ -8,6 +9,16 @@
 <div class="footer-wrapper">
   <Grid inverted={true} />
   <footer class="footer">
+    <div>
+      <nav>
+        <ul class="footer__links">
+          <li><a href="/">About me</a></li>
+          <li><a href="/blog">Writing</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div>
       <ul class="footer__links">
         <li><a href="/rss.xml">RSS</a></li>
@@ -40,10 +51,11 @@
     color: var(--white);
     font-size: .75rem;
     line-height: 1.6em;
+    padding: 2.5rem var(--margin) 2rem;
 
     @media(min-width: 768px) {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 1fr 2fr;
       align-items: center;
     }
 
@@ -53,11 +65,15 @@
 
     &__links {
       list-style-type: square;
-      padding-right: 1rem;
-      margin-right: 2rem;
+      padding: 0 1rem 1rem;
+      margin: 2rem 2rem 2rem 1rem;
+      border-bottom: 1px solid var(--lightBlue);
 
-      @media(min-width: 768px) {
-        border-right: 1px solid;
+      @media (min-width: 768px) {
+        border-bottom: 0;
+        border-right: 1px solid var(--lightBlue);
+        padding: 1rem;
+        margin-left: 0;
       }
 
       li {
@@ -67,6 +83,11 @@
 
     .fine-print {
       font-style: italic;
+      margin-left: 1rem;
+
+      @media (min-width: 768px) {
+       margin-left: 0;
+      }
 
       p {
         margin: .5rem 0;

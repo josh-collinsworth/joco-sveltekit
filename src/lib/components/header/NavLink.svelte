@@ -36,53 +36,89 @@
 
 <style lang="scss">
   li {
-    margin: 0;
-    margin-left: 1.5em;
-  }
+    margin: 0 0 0 1.5em;
 
-  a {
-    color: var(--ink);
-    margin: 0;
-
-    &:hover {
-      color: var(--link-color);
+    &.mobile {
+      --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  
+      transform: translateX(-3em);
+      opacity: 0;
+      transition: transform var(--item-transition), opacity var(--item-transition);
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.5em;
+      color: var(--white);
+      width: 100%;
     }
-  }
 
-  li.mobile {
-    --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
-
-    transform: translateX(-3em);
-    opacity: 0;
-    transition: transform var(--item-transition), opacity var(--item-transition);
-    margin-bottom: 1.5rem;
-    font-size: 1.25rem;
-    line-height: 1.5em;
-    color: var(--white);
-    width: 100%;
-  }
-
-  li.open {
-    transform: translateX(0vw);
-    opacity: 1;
-
-    @for $i from 1 through 9 {
-      &:nth-of-type(#{$i}) {
-        transition-delay: $i * 0.10 + s;
+    &.open {
+      transform: translateX(0vw);
+      opacity: 1;
+  
+      @for $i from 1 through 9 {
+        &:nth-of-type(#{$i}) {
+          transition-delay: $i * 0.10 + s;
+        }
+      }
+  
+      a {
+        color: var(--white);
+        width: calc(100% - 4rem);
       }
     }
 
     a {
-      color: var(--white);
-      width: calc(100% - 4rem);
-    }
-  }
-
-  a {
-    display: block;
-
-    span {
+      color: var(--ink);
+      display: block;
       display: inline-block;
+			font-weight: normal;
+			text-decoration: none;
+			margin: 0;
+			position: relative;
+			color: var(--ink);
+
+			&.active {
+				font-weight: bold;
+
+				span:after {
+					transform: scaleX(1);
+				}
+			}
+
+			span {
+				display: inline-block;
+				// border-bottom: .1em solid transparent;
+
+				&:after {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					content: '';
+					transform: scaleX(0);
+					display: block;
+					width: 100%;
+					height: 0.1em;
+					background: var(--yellow);
+					transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1);
+					transform-origin: right;
+
+					.reduce-motion & {
+						transition: opacity 0.2s !important;
+					}
+				}
+			}
+  
+      &:hover {
+        color: var(--link-color);
+      }
+
+			&:hover,
+			&:focus {
+				span:after {
+					transform: scaleX(1);
+					transform-origin: left;
+				}
+			}
     }
   }
 </style>
