@@ -9,7 +9,7 @@
 
   $: if (title) {
     if (title === '/') {
-      title = `Hi, I'm Josh.`
+      title = `Hi, I'm Josh`
     } else if (title[0] === '/') {
       title = title.slice(1)
     }
@@ -71,7 +71,7 @@
           color: var(--yellow);
           margin: 0;
           transition: var(--transition);
-          transform: translateX(calc(-100% + .15em));
+          transform: translateX(calc(-100% + .3em));
           position: absolute;
           left: 100%;
           width: 100%;
@@ -79,11 +79,8 @@
         }
       }
 
-      &.in {
-
-        .closing-brace {
-          transform: translateX(0);
-        }
+      &.in .closing-brace {
+        transform: translateX(0);
       }
     }
 
