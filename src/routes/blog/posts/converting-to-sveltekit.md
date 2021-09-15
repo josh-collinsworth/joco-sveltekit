@@ -33,6 +33,8 @@ To bridge that gap, Svelte has [SvelteKit](https://kit.svelte.dev/).
 
 You could think of SvelteKit as the [Next](https://nextjs.org/) (or [Nuxt](https://nuxtjs.org/)) of Svelte. SvelteKit, Next, etc., are what's often called a "meta-framework," which means they're larger toolboxes for building full-fledged apps and sites. They take the underlying framework (Svelte, React, etc.) and add in many of the other pieces you'd need for a non-trivial project, like pages and routing, data stores, better control over SEO, and in some cases, image handling.
 
+**One particularly nice thing about SvelteKit is that its output can be whatever you want.** It offers several [adapters](https://kit.svelte.dev/docs#adapters) to process your input into whatever type of output you want: an app with server-side rendering, a full-fledged Node app, or (in my case), a statically generated site.
+
 
 ## Why Svelte, specifically?
 
@@ -142,11 +144,19 @@ This is because Svelte does as much as possible _during the build step_, rather 
 
 As a comparison: the old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.6 MB transferred, compared with only _183 KB_ on this site—a reduction of almost ***90%!***
 
-Now, in fairness, there's a good reason the old site was that large to begin with; Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
+#### Tradeoffs
+
+Now, in fairness, **there's a good reason the old site was that large to begin with**; Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
 <Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an study in tradeoffs.</Callout>
 
 That brings up some interesting questions about real performance vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an study in tradeoffs. Navigating between pages has a noticeable lag now in some cases. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
+
+The builds with SvelteKit are also much faster (the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version), but again, this is misleading; SvelteKit is simply doing less with images.
+
+Where Gridsome compressed image files, generated resized images for responsive source sets, and lazy loaded using placeholder images, SvelteKit is doing…nothing.
+
+My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future, but for now, the few I tried didn't work particularly well, and the tradeoff didn't seem to be worthwhile.
 
 Ultimately, I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on the circumstance.
 
