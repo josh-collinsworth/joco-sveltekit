@@ -26,11 +26,12 @@ This leaves you in the unfortunate predicament of choosing between redoing all o
 
 **Neither of those are good choices, obviously.** You need efficiency, and you need to be updating your theme(s) for optimal security and performance. But fortunately, you have a third option: create a WordPress child theme. Then all your problems are solved and the above issues can be safely and easily sidestepped!
 
+
 ### **So what is a WordPress child theme?**
 
 A WordPress child theme is kind of like an add-on extension of the main theme. A child theme borrows everything it can from its parent theme, but exists independently apart from any files you want it to share. A WordPress child theme allows you to add files to supplement those of the parent theme, taking precedent over the parent's files without the risk of being overwritten.
 
-<Callout>A WordPress child theme is kind of like an add-on extension of the main theme. A child theme borrows everything it can from its parent theme, but exists independently apart from any files you want it to share.</Callout>
+<Callout>A WordPress child theme is kind of like an add-on extension of the main theme. A child theme borrows everything it can from its parent theme, but exists independently apart from any files you want it to&nbsp;share.</Callout>
 
 To put it in simpler terms: any time WordPress needs a theme file (say, for example, header.php), it will look inside the child theme folder for the named file. If there _is_ a file by that name in the child theme's folder, it will use that file. But if not, it will look for a file by that name in the _parent theme's_ folder instead, and will borrow that file from its parent theme.
 
@@ -42,6 +43,7 @@ The process of setting up a child theme can seem a little intimidating, particul
 
 <SideNote>There are plugins to create child themes for you, and that’s generally simpler and easier than this process. But if you’d like to do it manually for full control, or if you’d just like to understand what goes into a child theme better, read on!</SideNote>
 
+
 ### Step 1: Create a New Theme Folder
 
 If your site is already up on a live server, you'll need to connect to your site via FTP in order to do this. (If you're not sure how to do that, check with your host, and if you need an FTP client, I consider [Transmit](https://panic.com/transmit/) to be well-worth the price, though there are free options available.) In any case, you'll head to the wp-content/themes/ folder.
@@ -52,6 +54,7 @@ Inside that folder, you'll see a list of themes on your site, probably similar t
 
 Here, you'll simply create a new folder and name it whatever you want your child theme to be named. Usually, this is a hyphenated version of the parent theme name, such as with "enfold" and "enfold-child" in the screenshot above. This naming convention exists so that anybody looking at the list of themes can immediately tell which themes rely on others, but if you'd rather, the name can be whatever you want.
 
+
 ### Step 2: Create a style.css File
 
 Open the child theme folder you just created. Inside it, make a new file and name it "style.css".
@@ -59,6 +62,7 @@ Open the child theme folder you just created. Inside it, make a new file and nam
 **It's important that you give the file this exact name.** If you're not familiar with the inner workings of WordPress: it looks for files based on their name. WordPress expects to find a style.css file in the active theme's root folder; it's programmed to know that's where to find info about a theme. So it won't automatically find and load it if it's not specifically named "style.css" and placed inside the theme folder. (You could load it other ways, but that's just making extra work for yourself.)
 
 As far as the file itself, you can either create it in your FTP client and then open it in a text editor to make changes; or you can use a text editor to create and save a style.css file locally, and then upload it afterward. It's up to you; just as long as the style.css file gets in the child theme folder, you're good.
+
 
 ### Step 3: Add the Following to style.css
 
@@ -86,7 +90,7 @@ It looks scary, but I'll let you in on a little secret: almost none of the above
 
 At this point you might be wondering: isn't this just a comment? Why do I need to include it? Aren't comments supposed to be read by humans and ignored by computers?
 
-<Callout>WordPress finds, reads, and understands what to do with a file based on its specific name and the comments at the top of the file.</Callout>
+<Callout>WordPress finds, reads, and understands what to do with a file based on its specific name and the comments at the top of the&nbsp;file.</Callout>
 
 You'd be mostly right, but actually, browsers and servers _do_ read comments. (Otherwise, how would they know when the comment was over?)
 
@@ -118,11 +122,12 @@ You should know that the CSS won't actually take effect yet, however. Later, in 
 
 **But until we do that, our CSS in this file won't actually work.** WordPress assumes we've put our theme info at the top of our style.css file, but it _won't_ assume we want to actually use it as a file for our actual CSS styling. That will come shortly, when we use functions.php to enqueue our parent theme's stylesheet, and then our child theme's.
 
-<Callout>…any styles that you add to your child theme’s style.css file will load last, and will therefore override the parent theme’s CSS so that you won’t need to delete or alter anything in the parent theme’s stylesheet.</Callout>
+<Callout>…any styles that you add to your child theme’s style.css file will load last, and will therefore override the parent theme’s CSS so that you won’t need to delete or alter anything in the parent theme’s&nbsp;stylesheet.</Callout>
 
 This way, the parent theme is free to update all it wants, but your styles remain intact and unaffected. Your site stays up-to-date and secure, while your styles stay safe from unintended alterations.
 
 (Side note: if you want to create and use other stylesheets, too, you can do that; you don't necessarily need to put _all_ your styles in this style.css file. But since every stylesheet has to load separately, it's generally best to use just the one CSS file unless you have a good reason not to.)
+
 
 ### Optional Step: Add a Screenshot
 
@@ -134,6 +139,7 @@ While this feature exists so that you can show potential theme users what their 
 
 [![Screenshot 2016-01-17 20.11.39](/images/post_images/Screenshot-2016-01-17-20.11.39.png)](/images/post_images/Screenshot-2016-01-17-20.11.39.png)
 
+
 ### Step 3: Create a functions.php File
 
 In the last couple of steps we created the style.css file for our child theme, but we still need to tell WordPress to include (or “enqueue”) the parent theme's stylesheet as well as our new child theme's stylesheet, in that order.
@@ -142,13 +148,15 @@ In just the same way that you created a new style.css file inside your child the
 
 Again, however, it's critical that this file is named "functions.php" _exactly_ (mind the plural); otherwise, WordPress won't know that it's the file containing our child theme's unique functionality and won't find and run it automatically.
 
+
 #### **What is functions.php?**
 
 When any given WordPress theme is active, any code in that theme's functions.php file will run every time a page on that site is loaded (as will its parent theme's). So our child theme's functions.php file (_and_ its parent theme's functions.php file) will load and run every time a new page loads, as long as our child theme is the active theme.
 
-<Callout>You can think of functions.php a little like a custom plugin specially made for your theme.</Callout>
+<Callout>You can think of functions.php a little like a custom plugin specially made for your&nbsp;theme.</Callout>
 
 **This is true in both the WordPress admin area and the front-facing portion of the site.** That's why things like styles, custom post types, navigation menus, theme features, and other "always-on" bits of functionality are generally added to functions.php. You can think of functions.php a little like a custom plugin specially made for your theme.
+
 
 ### Step 4: Copy the Enqueuing Function to functions.php
 
@@ -177,11 +185,13 @@ By the way: you'll want to be sure you have the opening php tag (the first line 
 
 Just make sure your style.css and functions.php files are both saved inside your child theme's main folder, then there's only one more simple step!
 
+
 ### Step 5: Activate the Child Theme
 
 You're done with file editing now. All you need to do is sign into WordPress on your site and head to Appearance > Themes from the admin sidebar. You should now see the child theme you created in the list of available themes for your WordPress site (with the screenshot image showing if you took on the optional step above). Just click the "Activate" button and you're good to go!
 
 If you previously had the parent theme active, you probably won't see any visible changes on your site. You'll notice a difference, though, when you start populating your child theme's style.css file, adding to functions.php, and/or adding custom [page templates](https://codex.wordpress.org/Templates) to your child theme (though that's a topic for another time).
+
 
 ### That's it!
 

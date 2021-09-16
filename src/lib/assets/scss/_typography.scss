@@ -52,8 +52,8 @@ h6 {
 	color: var(--header-color);
 	line-height: 1.1;
 	position: relative;
-	margin: 4rem 0 0;
-	padding: 0 0 0.5rem;
+	margin: 4rem 0 1rem;
+	padding: 0;
 
 	a {
 		text-decoration: none;
@@ -75,7 +75,7 @@ h1,
 h2,
 .h2 {
 	font-size: 2rem;
-	border-bottom: 1px solid;
+	// border-bottom: 1px solid;
 	display: inline-block;
 	margin-right: auto;
 

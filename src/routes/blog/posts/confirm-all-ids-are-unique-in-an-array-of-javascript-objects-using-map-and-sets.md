@@ -41,6 +41,7 @@ In my case, the IDs were hard-coded (rather than generated programmatically). As
 
 This was an issue because the ID numbers were being used for setting the HTML `id`s in a form; that meant some of the `<label>` elements were being associated with the wrong input, which is pretty disastrous in a production app!
 
+
 ## The solution:
 
 **How to find the duplicates though?** In my case there were 100 unique objects in the array, so while combing through them manually certainly wasn't impossible, it was going to be a tedious task. The solution was to use JavaScript's `map` method and `Set` functionality.
@@ -79,6 +80,7 @@ If you prefer, this is a little more explicit and works the same way; I just pre
 // Another way to do the same thing:
 Array.from(IDs).length === items.length
 ```
+
 
 ## Make it reusable
 

@@ -18,15 +18,16 @@ excerpt: Block Lab is a WordPress plugin that simplifies the process of creating
 
 I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in my post on [going headless with Gridsome](https://api.joshcollinsworth.com/a-new-headless-site-with-gridsome/), but I find it to be such a handy plugin that I thought I'd write just a bit more in depth on what it does and how to use it, as well as how I've adapted it specifically to my workflow in writing content for a headless WordPress site.
 
+
 ## What is Block Lab and what does it do?
 
 First things first: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0.
 
+<Callout class="former-highlight">Block Lab is a plugin that helps you create your own custom blocks with minimal code&nbsp;required.</Callout>
+
 Ordinarily, you're restricted to the types of blocks WordPress includes by default—the standard text, headings, dividers, images, quotes, etc.—and if you need something more specialized, you'd either have to install a third-party plugin with the type of block you want, or you'd have to get your hands dirty writing a pretty good deal of custom code. Block Lab is something of a best-of-both hybrid of those two choices.
 
 Block Lab is a plugin that helps you create your own custom blocks with minimal code required.
-
-<Callout class="former-highlight">Block Lab is a plugin that helps you create your own custom blocks with minimal code required.</Callout>
 
 There are three main steps to this process:
 
@@ -35,6 +36,7 @@ There are three main steps to this process:
 3. Optionally, add some CSS to style the block.
 
 While there is technically a tiny bit of PHP involved, it's so little (and in the form of such reusable boilerplate) that I'd say anybody comfortable writing HTML (and maybe a bit of CSS) should be just fine getting started with Block Lab.
+
 
 ## Why custom blocks?
 
@@ -66,6 +68,7 @@ Custom blocks can be easily selected from the normal block menu…
 
 That's a lot better than styling the block manually or adding classes each time you want to use it, so let's dive into how to get that custom block set up.
 
+
 ## Creating your first custom block
 
 Like I said before: this will require a _little_ bit of editing files and writing code, but as long as you're comfortable with basic HTML and navigating your WordPress file system, this should be perfectly well within your grasp. Don't sweat it if you don't know PHP—there's so little required for basic blocks, it wouldn't even help anyway.
@@ -75,6 +78,7 @@ The natural first step is to install the Block Lab plugin, which of course you c
 Either way, once it's installed and activated, you'll find a new "**Block Lab**" item in the WordPress admin sidebar. Head there, and choose "**New block**."
 
 ![The “add new block” options screen in WordPress](/images/post_images/add-new-block-1024x687.png)
+
 
 
 
@@ -92,6 +96,7 @@ At minimum, you'll need to give your block a name (which will also assign it a s
 
 Once you've named your block, click the "**add field**" button to start adding some actual customized functionality to your block.
 
+
 ### Field options
 
 Fields are the things you actually fill in with your content when using the block. You could think of the field(s) as the variable part of the block; the part that the user adds each time the block is used.
@@ -105,7 +110,7 @@ Most of the time, I find just one field per block is what I want, but you can ge
 
 If you're familiar with Advanced Custom Fields (ACF), then this part will be very familiar to you. In fact, as I understand it, Block Lab is actually built on top of Advanced Custom Fields under the hood, so all the power of that excellent plugin comes standard.
 
-<Callout>Block Lab is actually built on top of Advanced Custom Fields under the hood, so all the power of that excellent plugin comes standard.</Callout>
+<Callout>Block Lab is actually built on top of Advanced Custom Fields under the hood, so all the power of that excellent plugin comes&nbsp;standard.</Callout>
 
 In any case, though, working with fields in Block Lab is pretty much identical to working with fields in ACF.
 
@@ -132,11 +137,12 @@ As you can see, Block Lab helpfully lets you know what to do next once you've pu
 
 <SideNote>Technically, your block is available to choose in the block editor at this point, but it won’t work right until you take the next step and add a template file.</SideNote>
 
+
 ### Create a template file for your custom block
 
 In order to display your custom block (either in the block editor or on the front end of the site), you'll need to create a PHP template file for it. Don't panic, though. As I've already mentioned: the beautiful thing about Block Lab is that you don't need to know anything about PHP to create custom blocks. Just a little HTML and CSS is enough. All you'll need to know is where to find your theme's folder, and how to add files to it. (And it may go without saying, but be sure you're using a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) or your own custom theme before you attempt this, or your work will probably be overwritten next time your theme updates.)
 
-<Callout>The beautiful thing about Block Lab is that you don’t need to know anything about PHP to create custom blocks. Just a little HTML and CSS is enough.</Callout>
+<Callout>The beautiful thing about Block Lab is that you don’t need to know anything about PHP to create custom blocks. Just a little HTML and CSS is&nbsp;enough.</Callout>
 
 Again, Block Lab lets you know exactly what you should name your template file and where to place it. There are a few ways to go about this part, depending on your needs (you can [read more in the documentation](https://getblocklab.com/docs/get-started/add-a-block-lab-block-to-your-website-content/) if interested), but we'll stick with the simplest:
 
@@ -159,9 +165,10 @@ Remember how I said you wouldn't need to know any PHP? That's because for basic 
 
 The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s name.
 
-<Callout class="former-highlight">The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s name.</Callout>
+<Callout class="former-highlight">The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s&nbsp;name.</Callout>
 
 What this all means is: every time you use this block, it'll be dynamically rendered wrapped in a `div` with the `side-note` class. And the cool thing is: that applies both in the editor, and on the front end!
+
 
 ### Adding CSS
 
@@ -198,6 +205,7 @@ Here's the actual CSS code I use on this site to create that Side Note component
 }
 ```
 
+
 ## Recap
 
 **That's all it takes!** Creating a custom block to use in the block editor is as simple as:
@@ -205,6 +213,7 @@ Here's the actual CSS code I use on this site to create that Side Note component
 1. Using Block Lab to create a block and pick its options;
 2. Adding a block template file to your theme;
 3. Optionally, adding CSS for the block.
+
 
 ## Notes on Block Lab's future, and unlocking Block Lab Pro
 

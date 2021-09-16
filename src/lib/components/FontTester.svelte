@@ -73,10 +73,12 @@
       <label for="{fontName}-italic">Italic</label>
 		{/if}
 
-		<p v-if="link" class="details">
-			<a rel="external" href={link}>{ fontName } family</a>
-      <i> (click text to edit)</i>
-		</p>
+		{#if link}
+			<p class="details">
+				<a rel="external" href={link}>{ fontName } family</a>
+				<i> (click text to edit)</i>
+			</p>
+		{/if}
 	</form>
 </template>
 

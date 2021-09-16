@@ -25,6 +25,7 @@ Here's a visual example of what I mean:
 
 **Ordinarily, an image would be constrained to the content width** (visualized by the dotted lines in the image above). Being able to allow images to break out of those confines is a powerful layout tool, though, as it allows content authors to add a great deal of visual interest and hierarchy to any page, post, or content supported by the new Gutenberg editor!
 
+
 ## Adding Theme Support
 
 Adding support for wide- and full-width images is up to the theme developer. Fortunately, from the backend, it's dead simple; just add this line to the theme's `functions.php` file (please be sure to use a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) as appropriate):
@@ -44,6 +45,7 @@ When the user chooses either of these options, the `<figure>` element that appea
 **That's it for the PHP/back-end setup.** Other than the snippet above, everything we've covered so far is fully automatic and just handled by WordPress for us.
 
 However, we still need to actually _implement_ these layout techniques on the front-end of the site, using our theme's CSS. Otherwise, nothing will happen visually when a content author chooses the full-width or wide-with image option.
+
 
 ## Front-End CSS for Full-Width Images
 
@@ -93,6 +95,7 @@ Now that our image's left side is directly in the center of the screen, the rest
 ![A left margin of 50% - 50vw gives us the perfectly centered, fullwidth image we're looking for.](/images/post_images/fullwidth-achieved.png)
 
 
+
 ### Some Extra Notes About the Above Full-Width CSS
 
 Once more, here's the CSS from above:
@@ -117,6 +120,7 @@ This way, we've made sure all four sides of our image are accounted for while al
 And if you're wondering (or just wanting to get super technical): yes, this _does_ mean that _both_ sides of the image get brought in by `50%`, then are each pulled back out `50vw`. If you didn't have the `- 50vw` part of the CSS above, the image would effectively be 0% wide (since it would have a margin of `50%` on both sides). Interesting! 🤓
 
 Lastly, as you probably realized: **this post assumes the content container is already centered on the screen**. If your content is _not_ already centered in the viewport, this specific CSS won't work for you, and you'll need to do something a little more creative to get your images full-width.
+
 
 ## Front-End CSS for Wide-Width Images
 

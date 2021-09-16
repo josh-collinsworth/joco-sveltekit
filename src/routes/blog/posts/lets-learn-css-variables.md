@@ -19,6 +19,7 @@ Fortunately for us, browsers are always adapting newer and better ways of doing 
 
 (Pedantic side note: technically, these are called "custom properties." But that's boring, not as clear, and honestly a less common name than CSS variables. So I'm gonna stick with the latter.)
 
+
 ## The Old Way
 
 To demonstrate what CSS variables are good for, let's take a common example: you're managing a robust stylesheet for a client, and their brand color is used all over the place. It's in buttons, borders, backgrounds, text colors, and all kinds of other places, something like this:
@@ -44,7 +45,6 @@ That's obviously a huge pain, because you've got to do a large-scale find-and-re
 
 Fortunately for us, this is the black-and-white part of the infomercial where the poor, hapless CSS author says “there’s got to be a better way,” and the announcer cheerfully replies, “well, now there is!” as the world bursts into color. Enter CSS variables!
 
-<Callout class="former-highlight">Fortunately for us, this is the black-and-white part of the infomercial where the poor, hapless CSS author says “there’s got to be a better way,” and the announcer cheerfully replies, “well, now there is!” as the world bursts into color. Enter CSS variables!</Callout>
 
 ## CSS Variable Basics
 
@@ -76,7 +76,9 @@ input:focus {
 
 **Whoa!** That might look like a lot of new syntax, depending on your current familiarity with CSS. And some of it _is_ brand new, so let's break it down piece by piece, starting at the top.
 
+
 ## Putting Together the Pieces of CSS Variable Syntax
+
 
 ### What is `:root`?
 
@@ -86,9 +88,10 @@ That explains _what_ `:root` is, but not _why_. Why are we putting variables in 
 
 Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as needed.
 
-<Callout class="former-highlight">Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as needed.</Callout>
+<Callout class="former-highlight">Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as&nbsp;needed.</Callout>
 
 In other words: applying a style to the `:root` means it gets "passed down" to every other element in the document. This wouldn't be the case if we applied CSS variables to, say, a random `<div>`. Elements _inside_ that `<div>` would know about the variables and could use them, but no elements outside would. So it makes the most sense to apply CSS variables to the `:root` pseudo-class, since _everything_ is inside of the root tag, which is `<html>`.
+
 
 ### What does `--brand-yellow` mean?
 
@@ -118,6 +121,7 @@ h1 {
 
 And so on. **Anything that can be a CSS value can be a CSS variable!** So if you're repeating it often, it may be worth setting a variable for it. That way, if you decide to change all of those instances—if `16px` needed to change to `18px`, for example—you only need to make the change in one place!
 
+
 ### What's with `var()`?
 
 Those of you who have worked in pretty much any common programming language will recognize that `var()` is a function. (And for those of you who _aren't_ familiar with functions, don't worry: this one's very easy to use.)
@@ -143,7 +147,9 @@ header {
 
 In the above example, we've got a `--base-size` variable set to 18px, and our `<p>` elements will use it as both their font-size and their bottom margin. Plus, it will be the padding measure used by our `<header>` element. And if we ever decide that's too much or too little, all we need to do is update the value of the variable where it's declared in the `:root`, and all changes will be made together quickly and neatly!
 
+
 ## A Couple of Fancy CSS Variable Tricks
+
 
 ### Using CSS Variables with `calc()`
 
@@ -204,6 +210,7 @@ Another example I really like: resizing CSS grid columns individually. Ordinaril
 
 Are you excited? I'm excited.
 
+
 ### Redefining CSS Variables with Media Queries
 
 Let's keep using the example above; 16px might be a suitable unit of measurement for _some_ screens, but we might want it to grow or shrink depending on the screen size. Easy! Just use a media query:
@@ -229,6 +236,7 @@ Let's keep using the example above; 16px might be a suitable unit of measurement
 ![ ](/images/post_images/css-variables-media-queries-3.gif)
 
 You can't tell me that's not cool (and _much_ easier than updating each of those values individually at every breakpoint)!
+
 
 ## Browser Support
 

@@ -67,13 +67,12 @@
 	class:fullwidth={isFullwidthPage}
 	class:sidebar={pageHasSidebar}
 >
-	{#if $isLoading}
-		<Loader />
-	{/if}
+	<Loader loading={$isLoading}/>
+
 	<Header {key} /> 
 
 	<div class="layout"> 
-		<main>
+		<main id="#main" tabindex="-1">
 			<PageTransition refresh={isTopLevelPage}>
 				{#if isTopLevelPage}
 					<PageHead title={key} />

@@ -21,6 +21,7 @@ Let's be honest: lots of things in web development are harder than they should b
 That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh air.
 
 
+
 ## What is Svelte?
 
 **Svelte is JavaScript framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), or any other component-based frontend framework**. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, both on the dev side and the user side. (More on that in a bit.)
@@ -31,7 +32,7 @@ Front-end frameworks are in demand for their ability to keep data in sync. Since
 
 **To bridge that gap, Svelte has [SvelteKit](https://kit.svelte.dev/).**
 
-<Callout>Svelte is React, but without the bullshit.</Callout>
+<Callout>Svelte is React, but without the&nbsp;bullshit.</Callout>
 
 You could think of SvelteKit as the [Next](https://nextjs.org/) (or [Nuxt](https://nuxtjs.org/)) of Svelte. If you're not familiar: those are examples of what are sometimes caled "meta-frameworks." Where React is a framework that helps you build with JavaScript, Next is a framework that helps you build with React.
 
@@ -39,11 +40,12 @@ Meta frameworks are larger toolboxes for building full-fledged apps and sites, a
 
 So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about anything.
 
-<Callout class="former-highlight">So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about anything.</Callout>
-
 **One particularly nice thing about SvelteKit is that its output can be whatever you want.** It can function as a static site generator (as it does in my case), but it's also capable of generating apps with server-side rendering, or a mixture of server-side and static, or even full-fledged Node apps.
 
+<Callout class="former-highlight">So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about&nbsp;anything.</Callout>
+
 This is possible because SvelteKit offers several [adapters](https://kit.svelte.dev/docs#adapters) to process your input differently, depending on what your end goal is. Same input; whatever output you like!
+
 
 
 ## Why Svelte, specifically?
@@ -54,11 +56,10 @@ I instantly loved how easy Svelte made _everything_ I wanted to do (especially c
 
 Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully straightforward.
 
-<Callout class="former-highlight">Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully straightforward.</Callout>
+<Callout class="former-highlight">Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully&nbsp;straightforward.</Callout>
 
-<Callout>Svelte has always felt <em>way</em> ahead of&nbsp;the&nbsp;game.</Callout>
+**Svelte has always felt _way_ ahead of the game.** (Or, maybe more accurately, like it's learned from the mistakes of other frameworks). Reactivity is built-in. There's no virtual DOM. It has (scoped) component CSS built-in. Writing it is simple, and—maybe best of all—the eventual finished product will almost certainly be _far smaller_ than the same thing built with a different framework (often by orders of magnitude.)
 
-Svelte has always felt _way_ ahead of the game. (Or, maybe more accurately, like it's learned from the mistakes of other frameworks). Reactivity is built-in. There's no virtual DOM. It has (scoped) component CSS built-in. Writing it is simple, and—maybe best of all—the eventual finished product will almost certainly be _far smaller_ than the same thing built with a different framework (often by orders of magnitude.)
 
 
 ### Comparing Svelte to React and Vue
@@ -175,6 +176,7 @@ While the above examples don't cover them, some other features of Svelte that I 
 I could go on and on about how easy Svelte makes things, and how advanced yet simple it seems. [Svelte's docs and tutorial](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!
 
 
+
 ### Svelte performance
 
 Svelte is a _ton_ of fun to work in, but developer experience isn't everything (and no, developer experience does _not_ translate directly into user experience). Fortunately, though, Svelte's UX _is_ top-notch because the code it actually ships to the browser is _miniscule_ compared with other frameworks.
@@ -184,11 +186,12 @@ This is because Svelte does as much as possible _during the build step_, rather 
 As a comparison: the old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.6 MB transferred, compared with only _183 KB_ on this site—a reduction of almost ***90%!***
 
 
+
 #### Tradeoffs
 
 In fairness, **there's a good reason the old site was that large to begin with**: Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
-<Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an study in tradeoffs.</Callout>
+<Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an study in&nbsp;tradeoffs.</Callout>
 
 That brings up some interesting questions about real performance vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an study in tradeoffs. Navigating between pages has a noticeable lag now in some cases. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
@@ -201,6 +204,7 @@ My website uses few enough images (which are already generally compressed) that 
 Ultimately, I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on the circumstance.
 
 
+
 ## Why move away from Gridsome?
 
 As you can see from just perusing the posts list on this blog, it wasn't all that long ago that I moved to Gridsome in the first place. I went to a [headless Gridsome frontend](/blog/a-new-headless-site-with-gridsome) just over a year ago, and converted the site to [fully static](/blog/goodbye-wordpress) barely seven months ago.
@@ -209,9 +213,9 @@ This naturally prompts the question: _why move in the first place_?
 
 At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
 
-<Callout class="former-highlight">At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.</Callout>
-
 I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome (0.7), and at this point, it doesn't seem like it's an actively maintained project any longer. I don't know if it will ever reach 1.0 or not. I certainly wouldn't begrudge the creators for at all abandoning it during the pandemic.
+
+<Callout class="former-highlight">At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.</Callout>
 
 Regardless, Gridsome didn't ever really feel _complete_ to me. It was a wonderful way to generate a speedy, static site with Vue (and GraphQL!), but its nascence showed at times.
 
@@ -226,17 +230,21 @@ Granted, SvelteKit is still pre-1.0 as well. But it seems to have a much bigger 
 Also, [TypeScript](https://www.typescriptlang.org) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it.
 
 
+
 ### Other options besides SvelteKit
 
 There were three other options I considered to some degree: [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), and [Gatsby](https://www.gatsbyjs.com/).
 
+
 #### Astro
 I had just used Astro for another WordPress-to-static migration project, and while it worked well, it's also _very_ early days for the framework. I loved how easy Astro made working with Markdown files, and how it defaulted to zero JS builds. But I also ran into some pretty unexpected issues with Astro and wound up filing some bug reports. I think it needs to mature a bit, but I'll definitely keep it on my radar, especially for projects that need to ship absolutely minimal JS and/or that just need Markdown support, as Astro's flexibility is very nice.
+
 
 #### Eleventy
 I tinkered with Eleventy on that same project, and have given it a shot a few times before, but ultimately, Eleventy is just a bit more minimalist than I prefer. I see the benefit; you never have to fight the framework or deal with surprises when you're configuring everything yourself from the get-go. But that's more than I wanted to do in this case, and I'm generally not a fan of, say, bringing my own CSS processing to the party.
 
 I definitely get why some people love Eleventy (and am generally a fan of [Zach Leatherman](https://www.zachleat.com/), Eleventy creator and good human). I may come back to it one day, when the project is right and/or when my project configuration preferences are particular enough to tip the balance in Eleventy's favor. But for right now, it was just a little too much of an uphill climb to start with for me.
+
 
 #### Gatsby
 Gatsby was the last consideration, but also the least serious. The only real reason it even made the list was that I'm working for a React shop for the first time now, and while I do _know_ React, it's been a good two or three years since I used it on any serious projects. 

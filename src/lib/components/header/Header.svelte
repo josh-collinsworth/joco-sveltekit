@@ -8,17 +8,18 @@
 
 	export let key: string
 
-	const toggleMenu = () => {
+	const toggleMenu = (): void => {
 		isMenuOpen.set(!$isMenuOpen)
 	}
 
-	const handleClick = () => {
+	const handleClick = (): void => {
 		if ($isMenuOpen) toggleMenu()
 		if (window?.location?.pathname !== '/') isLoading.set(true)
 	}
 	
 	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
-	const focusMain = () => {
+	const focusMain = (e: Event): void => {
+		e.preventDefault()
 		const main = document.querySelector('main')
 		main.focus()
 	}

@@ -24,7 +24,6 @@
 
 	const randomX = (): string => {
 		const randomLeftValue = Math.floor((Math.random() * gridWidth) - 1) - (size * 2)
-		console.log(gridWidth, randomLeftValue)
 
 		return `${randomLeftValue / 2}rem`
 	}
@@ -71,7 +70,7 @@
 <style lang="scss">
 	.cell {
 		opacity: 0;
-		mix-blend-mode: multiply;
+		mix-blend-mode: overlay;
 		position: absolute;
 		animation: fade_in .36s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 		

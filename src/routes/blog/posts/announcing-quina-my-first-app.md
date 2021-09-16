@@ -33,6 +33,7 @@ Finally, after four months, dozens of nights and weekends, hundreds of git commi
 
 Quina is a classic word game where users attempt to guess a secret five-letter word.
 
+
 ## What is Quina?
 
 **Quina is a classic word game**. I didn't invent it by any stretch, but I had a version in mind that I've never seen anywhere out there on the web before. (The original iteration is a pen-and-paper game called [Bulls and Cows](https://en.wikipedia.org/wiki/Bulls_and_Cows), though it's known by other names, too.)
@@ -41,11 +42,12 @@ The idea is pretty straightforward: you have ten chances to guess a secret five-
 
 If this sounds familiar, it's probably because you've either played the original, or played its most popular variant; [Mastermind](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>) is another version of the same game.
 
-<Callout>Quina is Latin for “five at a time,” since the game is played with five-letter words.</Callout>
+<Callout>Quina is Latin for “five at a time,” since the game is played with five-letter&nbsp;words.</Callout>
 
 By the way, "Quina" was chosen for the name since it's Latin for "five at a time" (according to a Google search, at least; I sure don't speak the language). The original version of the game is played with four letters instead of five, so the name seemed fitting.
 
 I don't know how that word was _meant_ to be pronounced, but I say it, "QUINN-uh." (I'm probably wrong, but hey, it's my game. I can call it whatever I want. Just ask the guy who invented gifs.)
+
 
 ## How to install Quina
 
@@ -61,6 +63,7 @@ When visiting the website, you _should_ see a prompt like this one (though it wi
 You should see the "Add Quina to home screen" prompt when visiting quina.app.
 
 You could also just play the game _on_ the website, in your browser, if you want to. It's designed to work best as a mobile app, however.
+
 
 ## Game features
 
@@ -86,13 +89,12 @@ Beyond the core word game, Quina has a number of features to hopefully keep it e
 
 ![A demo of how light and dark mode look](/images/post_images/02-Google-Pixel-4-Front-1024x923.png)
 
+
 ## The tech behind the app
 
 For those into such nerdery: Quina is a [Progressive Web App](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/) (PWA) built with [Nuxt](https://nuxtjs.org). If you're not familiar with those terms:
 
 Progressive Web Apps are essentially websites, but with some extra features that make them behave like native apps.
-
-<Callout class="former-highlight">Progressive Web Apps are essentially websites, but with some extra features that make them behave like native apps.</Callout>
 
 There's a lot more detail in the link above, but the main features of a PWA include: the ability to actually _install_ the website/web app on your device and launch it fullscreen, just like an ordinary native app; to run offline (thanks to JavaScript service workers); and access to device functionality like push notifications and vibration, via modern browser enhancements.
 
@@ -100,9 +102,12 @@ There's a lot more detail in the link above, but the main features of a PWA incl
 
 You can build a PWA with anything you might use to build a website; plain ol' HTML, CSS and JavaScript will work just fine, and you definitely don't _need_ to use a framework (let alone one as robust as Nuxt). As I considered the options, however, it became clear that Nuxt was my #1 choice, and one I've never regretted.
 
+<Callout class="former-highlight">Progressive Web Apps are essentially websites, but with some extra features that make them behave like native&nbsp;apps.</Callout>
+
 **Nuxt** is a framework for building apps with Vue (Vue being a JavaScript component framework). As the name implies, Nuxt is the Vue equivalent of React's Next.js, if that helps.
 
 In any case: Nuxt helps you create web apps by giving you all the things you might want while building with Vue, such as routing and global state management (you create pages just by plopping files in a `/pages` directory; how novel!), and wraps them all up in one easy-to-use package.
+
 
 ### Why Nuxt?
 
@@ -112,7 +117,7 @@ That said, however: I considered using [Svelte](https://svelte.dev/) (really the
 
 Back to Nuxt, though: appealingly, Nuxt also has a rich library of optional first-party modules available to make integrations and advanced functionality easier.
 
-<Callout>I was repeatedly amazed while using Nuxt how easy it was to do anything I wanted to do. There was always a way, and most of the time, there was already a module built for it, too.</Callout>
+<Callout>I was repeatedly amazed while using Nuxt how easy it was to do anything I wanted to do. There was always a way, and most of the time, there was already a module built for it,&nbsp;too.</Callout>
 
 For example: actually getting all the features of a PWA up and running on your own would be challenging to say the least, but Nuxt has an installable [PWA module](https://pwa.nuxtjs.org/) that handles most of the heavy lifting for you with a few lines of config! There are also plugins for analytics, connecting to third-party services and APIs, and all kinds of other things.
 
@@ -135,6 +140,7 @@ Other than the previously mentioned Nuxt PWA module, the only additional tech/pa
 
 Other than the above, everything in the app is original and coded from scratch (including the brand and all the CSS).
 
+
 ## Building an Android App from a PWA
 
 At the outset, I knew it was _possible_ to list a PWA in the Google Play Store. (Not Apple's, though; Apple is much more restrictive—some might say antagonistic—when it comes to the web these days.) I didn't know how much work it would be to get Quina listed in the Play Store, but I quickly found out.
@@ -145,11 +151,12 @@ TWA is a technical term, but what it means is: you have the ability to create an
 
 That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an app.
 
-<Callout class="former-highlight">That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an app.</Callout>
-
 It's called Trusted Web Activity because in order to make it work right, you need to bundle your app with a secret key that matches a key that lives on your website. (More on that in a bit.)
 
+<Callout class="former-highlight">That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an&nbsp;app.</Callout>
+
 It's also _required_ that the URL you're linking to qualifies as a progressive web app; [web.dev](https://web.dev/) offers tests to certify that. Mostly it's making sure you have the proper PWA manifest, a service worker (to make the app available offline, like a native app), and that your site loads over HTTPS. I won't go into any of those here, since there are better resources already out there on the ins and outs of PWAs.
+
 
 ### Generating an app from web content
 
@@ -163,13 +170,14 @@ Each dead end was deflating, but each one also helped me get a glimpse of the bi
 
 It was when I finally stumbled upon a marvelous little CLI tool called [Bubblewrap](https://developers.google.com/web/android/trusted-web-activity/quick-start) that I knew I could finally stop looking.
 
+
 ### Bubblewrap at a glance
 
 The topic of using Bubblewrap to generate an Android app could easily take up its own 5,000-word blog post, but in short: Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's URL.
 
 I don't want to short-change Bubblewrap, because it's undeniably amazing, and odds are good that my app wouldn't be in the store without it. But again, as with anything related to Google tech: _it's not quite that simple_.
 
-<Callout>Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's URL.</Callout>
+<Callout>Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's&nbsp;URL.</Callout>
 
 The first hurdle is getting all the dependencies installed in the proper location. Bubblewrap is really explicit about where it wants to find its dependencies, and each one is pretty chonky. The documentation I followed was already outdated, but fortunately, I was able to Google for some updated answers (as I recall, I needed to download an older version of one of the dependencies).
 
@@ -188,6 +196,7 @@ The other really tricky part was that both Google and Bubblewrap ask you for an 
 Turns out, there's no real rule that I can find here, other than: make it unique. The format is apparently a Java convention. (Android apps are often built with Java, it would seem.) Typically, it appears most apps are named such as `tld.developerName.appName`, but again, the only real important thing is uniqueness.
 
 <SideNote>By default, Bubblewrap validates that your live web app meets all PWA criteria. Quina was failing the offline test for some reason even though I knew it was valid, but helpfully, there is a flag to skip the check.</SideNote>
+
 
 ### The Google Play Store (is awful to use)
 
@@ -211,6 +220,7 @@ This section is mainly just going to be me griping, but if you're gonna go down 
 
 As a side note, however: I _did_ find some unexpected drawbacks to the "build once, run everywhere" approach—namely, that your interactive elements have to be able to handle clicks, right-clicks, touches, long-presses, swipes, and all types of key presses (pun intended) without those events doubling up or conflicting with each other. Something to keep in mind with this approach to development.
 
+
 ### Monetization
 
 While making money on Quina was never a primary goal, I put a lot of time and effort into the game, and I did hope that by getting it into a major app store, it might generate some revenue (though my expectations were never high; just hoping for some beer money here, maybe).
@@ -227,6 +237,7 @@ What I eventually settled on was:
 You might be wondering how I achieved that, since it's all the same web app under the hood in both situations. Turns out, all Android apps send a unique header with their requests, so it was easy enough to tell which traffic was coming from my Android app, and set up conditional checks for content based on that header. (I even created custom `<WebOnly>` and `<AndroidOnly>` Vue components for content relevant only to one of the two.)
 
 Incidentally, there's also a free option on the web version, just because I wanted the content to be accessible for anyone and everyone.
+
 
 ## Final thoughts
 

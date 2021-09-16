@@ -51,6 +51,7 @@ _Deep breath._
 
 But…that's not often the case, is it?
 
+
 ## Where Brands Fall Apart
 
 Here's where I'm going with this: that company I just described doesn't really seem to exist in reality most of the time, does it? Which begs the question:

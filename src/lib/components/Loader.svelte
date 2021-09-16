@@ -1,4 +1,9 @@
-<div class="loader">
+<script lang="ts">
+  export let loading: boolean
+</script>
+
+
+<div class="loader" class:loading>
   <div class="loading-wrapper">
     <div class="dot outer first"></div>
     <div class="dot outer second"></div>
@@ -21,6 +26,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .15s;
+    
+    &.loading {
+      opacity: 1;
+      pointer-events: unset;
+    }
   }
 
   .loading-wrapper {

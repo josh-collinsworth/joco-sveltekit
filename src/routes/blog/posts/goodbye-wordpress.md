@@ -33,11 +33,10 @@ I got a lot of mileage out of my site while it was on WordPress. At first, it wa
 
 Finally, last year (2020), I converted to a headless site, with WordPress on the back end and Gridsome on the front. (I wrote about that process in <g-link to="/blog/a-new-headless-site-with-gridsome/">this post</g-link>.)
 
-<Callout> I've come to the inevitable conclusion that, in the case of this, my personal website and (occasional) blog, WordPress does not represent value so much as tech debt.</Callout>
-
 At the time, I made the decision to go headless because I wanted to keep a foot in the WordPress world, for reasons laid out in previously mentioned post. But to summarize: I wanted the best of both worlds. I didn't want to go full static, but giving up WordPress entirely wasn't really a thought for me then, either, because having a database and all my content (especially images) still represented value.
 
 Fast-forward several months, and I've come to the inevitable conclusion that, in the case of this, my personal website and (occasional) blog, WordPress does not represent value so much as tech debt.
+
 
 
 ## Why move? Why now?
@@ -48,7 +47,7 @@ Later, as a Flywheel/WP Engine employee and a more seasoned professional develop
 
 But now that I've moved on from that job, I'm forced to consider what it actually costs to host WordPress—not just monetarily (although that is a large factor), but in terms of maintenance, overhead, and everything else that goes along with the stack. Headless isn't simple, after all; it's a little like having two websites to worry about instead of just one, and while there are definitive advantages to that approach, everything is also a little more complicated in that world.
 
-<Callout>The answer for me is: no; WordPress isn't worth it anymore in the case of my specific needs and wants.</Callout>
+<Callout>The answer for me is: no; WordPress isn't worth it anymore in the case of my specific needs and&nbsp;wants.</Callout>
 
 The real question at the end of that mental calculation is: does WordPress's value outweigh its cost? Is it worthwhile, just to have a headless back-end for a website that I don't update with any particular frequency?
 
@@ -58,9 +57,10 @@ I thought about taking the WordPress side of the site to some cheap-o $5/month h
 
 Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not simple.
 
-<Callout class="former-highlight">Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not simple.</Callout>
+<Callout class="former-highlight">Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not&nbsp;simple.</Callout>
 
 Again: that doesn't mean WordPress is bad. It's not. (And while we're near the topic: neither is PHP. That joke can just die, please.) This just means that of the zillion things WordPress is and is capable of, either I'm not doing them, or doing them WordPress's way isn't personally worth the tradeoff to me, and for my unique set of needs and goals.
+
 
 
 ### An aside on WordPress's trajectory and future
@@ -75,25 +75,22 @@ Then, managed WordPress hosting blew up, and companies like WP Engine and Flywhe
 
 Don't get me wrong; that's fair. Managed WordPress hosting exists—and the companies selling it are succeeding despite its price tag—because it's valuable. They take care of some very difficult things for you, and that's worth the price in a lot of cases.
 
-<Callout>I worry that WordPress has begun squeezing the side projects and personal blogs out of the market.</Callout>
-
 But the price tag of WordPress hosting generally assumes that your site is _worth_ that to you. WordPress hosting has become _costly_ because it wants your key, important businesses to run on WordPress, and in that pursuit, I worry that WordPress has begun squeezing the side projects and personal blogs out of the market.
 
 Even GoDaddy starts at $10 per month; most other managed hosts, that would be considered a step above that, aren't selling it for less than about $15–30 per month (even WordPress.com will charge you at least $25 per month if you want SFTP access), and that price tag is _not_ cheap for a simple personal website or side project.
 
-There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
+<Callout class="former-highlight">There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't. …WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal&nbsp;cost.</Callout>
 
-<Callout class="former-highlight">There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.</Callout>
+There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
 
 Granted, the tech hurdle is higher—not just anybody can code up a static site, and that's not to be discounted—but I can have a live Jamstack site on the web for _absolutely free_ any time I want with Netlify, et al. 
 
 WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
 
-<Callout class="former-highlight">WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.</Callout>
-
 <Callout>WordPress just won't continue to be worth it for everyone all&nbsp;the&nbsp;time.</Callout>
 
 As I write this, WP Engine and, no doubt, many other hosts are working on the headless WordPress story, and figuring out how to empower that tech stack and solve its problems in the same way they solved WordPress's. I have no doubt they'll come forward with something very compelling that will meet a great many customers' needs, but I also have no doubt it won't be cheap—certainly not as cheap as what the Jamstack is currently offering. And I think that will make many more people ask the same question I asked, and come to the same conclusion; WordPress just won't continue to be worth it for everyone all the time.
+
 
 
 ## So what's the alternative?
@@ -106,9 +103,9 @@ While it would've certainly been possible to just abandon the headless formula a
 
 Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP templates.
 
-<Callout class="former-highlight">Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP templates.</Callout>
-
 (No knock on PHP. I still enjoy it when I get the chance to dive back into those waters, like playing an old video game I have fond memories of. But it's not my first choice anymore.)
+
+<Callout class="former-highlight">Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP&nbsp;templates.</Callout>
 
 You might ask: **so if you're cutting out WordPress, where does the content come from?**
 
@@ -190,9 +187,10 @@ When I was initially converting this site to headless, I didn't go full static a
 #1 wasn't really enough value to keep WordPress around, even if there weren't other alternatives in the Jamstack world. But #2 proved to be the largest stumbling block, so to speak…
 
 
+
 ## The challenges of exporting WordPress content
 
-<Callout>This miraculous little CLI tool takes your WordPress export XML file, and not only converts each piece of content to Markdown—complete with frontmatter!—but can also scrape your site for all the images in the content and neatly download them.</Callout>
+<Callout>This miraculous little CLI tool takes your WordPress export XML file, and not only converts each piece of content to Markdown—complete with frontmatter!—but can also scrape your site for all the images in the content and neatly download&nbsp;them.</Callout>
 
 It turns out that, while WordPress offers a content export tool by default, it's highly limited in what it can do (i.e., it spits out XML). WordPress, naturally, isn't strongly incentivized to help you move your content to non-WordPress platforms, so their exporter is only designed to work with WordPress (if at all; it's not particularly reliable in my experience).
 
@@ -219,11 +217,12 @@ Fortunately, I only have like 20 posts on this site (over the course of like sev
 Also fortunately: I like my current solution to custom blocks better anyway.
 
 
+
 ## Handling images without WordPress
 
 One of the amazing things that WordPress does for you, for free and out of the box, is generate multiple image sizes and serve your content images with responsive source sets. This means users always load the appropriate image size for their device, which is a big benefit to both user experience and performance. If you're using Jetpack, you also get your images (optionally) loaded from WordPress.com's global CDN servers for faster load times.
 
-<Callout>Gridsome ships with a <code>g-image</code> component that handles loading appropriately sized images, <em>and</em> goes a step further with automatic lazy loading.</Callout>
+<Callout>Gridsome ships with a <code>g-image</code> component that handles loading appropriately sized images, <em>and</em> goes a step further with automatic lazy&nbsp;loading.</Callout>
 
 Moving away from WordPress means those benefits are gone. Fortunately, Gridsome ships with a `<g-image>` component that handles loading appropriately sized images, _and_ goes a step further with automatic lazy loading. And when you're deploying on Netlify, you have a CDN already, so that's all sorted.
 
@@ -236,6 +235,7 @@ A couple of other considerations around images, though:
 * **Build times balloon with lots of images.** Netlify is free to use up to a certain number of build minutes, and the only times I've gotten close were when I was doing regular updates on this site. (Thankfully, there's a [Gridsome Cache Netlify plugin](https://github.com/edm00se/netlify-plugin-gridsome-cache) to prevent unnecessary duplicate image processing.
 
 
+
 ## Building with Vue components in Markdown
 
 Among Gridsome's library of plugins is a particularly delightful one called [Vue Remark](https://gridsome.org/plugins/@gridsome/vue-remark). Vue Remark simply allows you to import Vue components in your Markdown files, and use them right alongside your Markdown content anywhere you want.
@@ -244,11 +244,12 @@ This means I can still have the functionality of all my custom blocks even while
 
 Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're needed.
 
-<Callout class="former-highlight">Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're needed.</Callout>
+<Callout class="former-highlight">Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.</Callout>
 
 Here's an example:
 
 ```markdown
+
 # Some generic Markdown
  
 A paragraph _also_ using _Markdown_.
@@ -257,6 +258,7 @@ A paragraph _also_ using _Markdown_.
   Use components where needed!
 </SomeVueComponent>
  
+
 ## Back to Markdown!
  
 _Neat, huh?_
@@ -267,6 +269,7 @@ All the custom blocks I had on WordPress have now been faithfully recreated in s
 The authoring experience is incredibly nice, too; since Gridsome runs on a local Node dev server with auto-refresh, I can simply start the server, navigate to the post, and go to work. Every time I hit `⌘ + s` I see my updates in the browser, fully styled, in a matter of milliseconds.
 
 <SideNote>Nuxt has a similar feature available via installable module, but even goes so far as to allow you to edit the Markdown file by editing the text in the browser, which is a type of dark witchcraft I'm not even sure I can handle.</SideNote>
+
 
 
 ## Other considerations
@@ -312,15 +315,14 @@ module.exports = function(api) {
 <SideNote>There are more efficient ways to achieve the above; my first try used <code>flatMap</code>. But turns out: Node doesn't have the <code>flatMap</code> array method, so it wouldn't compile on Netlify's servers. So this was my slightly longer workaround.</SideNote>
 
 
+
 ## Final thoughts
 
 I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated HTML.
 
-<Callout class="former-highlight">I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated HTML.</Callout>
-
 This approach certainly isn't right for everyone. It works great for me because I'm the only one working on this site. But if I had co-authors, or users, or collaborators, the whole calculation might be drastically different.
 
-<Callout>I like things being back together, all in&nbsp;one&nbsp;place.</Callout>
+<Callout class="former-highlight">I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated&nbsp;HTML.</Callout>
 
 And of course, what *I* find to be simple may be very different from what *you* find to be simple. I love living in my code editor. You might find a visual interface easier to use. Both are just fine. It's just a matter of personal preference.
 

@@ -57,12 +57,8 @@ $widest: 1960px;
 	--margin: 1rem;
 
 	--callout-font: var(--body-font);
-	--callout-font-style: normal;
-	--callout-font-weight: bold;
-
-	--highlight-font: var(--body-font);
-	--highlight-font-style: normal;
-	--highlight-font-weight: normal;
+	--callout-font-style: italic;
+	--callout-font-weight: normal;
 
 	@media (min-width: $narrow) {
 		--margin: 2rem;

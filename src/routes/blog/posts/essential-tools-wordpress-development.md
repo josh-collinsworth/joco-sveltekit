@@ -25,6 +25,7 @@ This is a list of the things that help me toward that goal. If you handed me a b
 
 ![Dropbox Logo](/images/post_images/Dropbox.svg)
 
+
 ### [Dropbox](https://www.dropbox.com)
 
 **[dropbox.com](http://www.dropbox.com)** | _Up to 2 GB free; 1 TB $9.99 per month._
@@ -32,6 +33,7 @@ This is a list of the things that help me toward that goal. If you handed me a b
 You're going to need somewhere to store your files, and [Dropbox](https://www.dropbox.com) syncs beautifully with all your devices. You can also set up synced folders, so that anything you save in a particular folder on your machine is available on any machine, thus creating both a local and cloud copy. It can also automatically save screenshots, upload pics from your smartphone's camera for safe storage, and send/receive client files easily.
 
 ![LastPass logo](/images/post_images/LastPass-Logo-Color.svg)
+
 
 ### [LastPass/1Password](http://www.lastpass.com)
 
@@ -41,6 +43,7 @@ You're going to need somewhere to store your files, and [Dropbox](https://www.dr
 I don't have a strong preference between the two, but there's no excuse for not using a password manager in this day and age. Odds are good you'll have at least two usernames and passwords to remember for every single site you work on—maybe more—and repeating the same one or making it easy to type and remember is an awful idea when you're using the world's most popular CMS. Saving brain power is making your life better and your workflow more efficient. And besides, these are extremely affordable apps; LastPass is only $12 per year. Make like Nike and just do it.
 
 ![VS Code logo](/images/post_images/32078472-5053adea-baa7-11e7-9034-519002f12ac7.png)
+
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -58,6 +61,7 @@ I highly recommend the following extensions, but you can mix and match your own 
 
 ![GenerateWP logo](/images/post_images/GenerateWP.png)
 
+
 ### [GenerateWP.com](http://generatewp.com/)
 
 **[generatewp.com](http://generatewp.com/)** | _Free unlimited basic generators; premium starts at $7 per month_
@@ -67,6 +71,7 @@ There's a _ton_ of PHP to remember in WordPress, the difficulty of which is comp
 GenerateWP does the work for you in generating blocks of code. You just fill out some fields telling the site what you're after and it will spit out the code for you to copy and paste in the appropriate PHP file. Everything from custom `WP_Query` loops to defining custom post types and much, much more can now be handled by checking some boxes and filling out a few fields instead of peering through the WordPress Codex trying to remember the difference between `get_header()` and `wp_head()`.
 
 ![Local logo](/images/post_images/Local-Logo.svg)
+
 
 ### Local by Flywheel
 
@@ -80,6 +85,7 @@ Quick disclaimer: I do work for Flywheel, but I'd be writing this even if I didn
 
 ![CodeKit logo](/images/post_images/CodeKit.png)
 
+
 ### [CodeKit](http://incident57.com/codekit)
 
 **[incident57.com/codekit](http://incident57.com/codekit)** | _Free limited trial; one-time $32 licensing fee_
@@ -89,6 +95,7 @@ It's very hard to explain what [CodeKit](http://incident57.com/codekit) does in 
 That alone, to me, is well worth the low $32 price tag, but that's really only scratching the surface. It can grab external libraries for you, plus concatenate and minify your files so you're ready to go to production with a lean, efficient set of CSS and JS files, and so much more. I promise you that if you give CodeKit a real shot, it will become an indispensable part of your workflow.
 
 ![Advanced Custom Fields PRO logo](/images/post_images/acf-pro-dev-launch.png)
+
 
 ### [Advanced Custom Fields (PRO)](https://www.advancedcustomfields.com/)
 
@@ -104,6 +111,7 @@ In short, ACF makes the experience of using the WordPress site you've built for 
 
 ![Google Chrome browser logo](/images/post_images/Chrome.png)
 
+
 ### [Google Chrome](https://www.google.com/chrome/browser/desktop/)
 
 **[google.com/chrome/browser](http://www.google.com/chrome/browser)** | _Free_
@@ -118,6 +126,7 @@ Your choice of browser is less and less relevant these days, but Chrome is still
 
 ![GitHub](/images/post_images/github_desktop.png)
 
+
 ### [GitHub Desktop](https://desktop.github.com/)
 
 **[desktop.github.com](https://desktop.github.com/)** | _Free_
@@ -128,6 +137,7 @@ Git and version control can be a bit intimidating, but GitHub Desktop does a nic
 
 ![Transmit FTP client logo](/images/post_images/Transmit.png)
 
+
 ### [Transmit](https://panic.com/transmit/)
 
 **[panic.com/transmit](https://panic.com/transmit/)** | _Limited free trial; $34 one-time licensing fee_
@@ -137,6 +147,7 @@ If I'm being honest here, I couldn't give you much of an elevator speech on why 
 Still, Transmit is the industry gold standard in FTP clients, so there must be some reason for that (and the $34 price tag). I guess I just haven't used other FTP clients enough to really know the difference, so if you're into cutting cost, this might be a good place.
 
 ![Alfred app logo](/images/post_images/Alfred.png)
+
 
 ### [Alfred](https://www.alfredapp.com/)
 
@@ -149,6 +160,7 @@ The "spotlight" feature (see what I did there?) is that Alfred can search for an
 It's one of those tools that you won't realize you ever wanted until you try it and realize you can't live without it anymore. In fact, there's a very good chance it would be the very first thing I installed on a new computer.
 
 ![Spectacle app logo](/images/post_images/Spectacle-Logo.jpg)
+
 
 ### [Spectacle](https://www.spectacleapp.com/)
 
@@ -163,6 +175,7 @@ Sound familiar?
 Gallons of wasted time and effort are accumulated a drip at a time. Spectacle is one of those apps that helps stop the drip.
 
 ![Tiny PNG Logo](/images/post_images/Image-2017-01-24-at-9.45.27-AM-1024x359.png)
+
 
 ### [TinyPNG](https://tinypng.com/)
 
@@ -179,6 +192,7 @@ Of course, if cost and limits are a factor, you can always manually drop your im
 
 ![ClipMenu Mac app logo](/images/post_images/ClipMenu.png)
 
+
 ### [ClipMenu](http://www.clipmenu.com/)
 
 **[clipmenu.com](http://www.clipmenu.com/)** | _Free_
@@ -193,6 +207,7 @@ Or how about this: how many times have you gone through the tedious process of c
 
 ![Wunderlist app logo](/images/post_images/Wunderlist_Logo.png)
 
+
 ### [Wunderlist](https://www.wunderlist.com/)
 
 **[wunderlist.com](https://www.wunderlist.com/)** | _Free for basic use; Pro $4.99 per month_
@@ -206,6 +221,7 @@ It's a desktop app, a smartphone app and a browser extension, so you can make li
 And, of course, there's that whole conserving mental energy thing I'm a big fan of.
 
 ![WordPress.com plus Jetpack logos](/images/post_images/WP-plus-Jetpack.png)
+
 
 ### [Calypso/Jetpack](https://developer.wordpress.com/calypso/)
 
@@ -224,6 +240,7 @@ You'll have access to one app dashboard to manage all your sites. The major key 
 
 ![CodePen.io logo](/images/post_images/codepen.svg)
 
+
 ### [CodePen](http://codepen.io)
 
 **[codepen.io](http://codepen.io)** | _Free; Pro starts at $9 / month_
@@ -231,6 +248,7 @@ You'll have access to one app dashboard to manage all your sites. The major key 
 It may seem completely unrelated, but I can't tell you how handy it is to have an open playground for HTML, CSS and JS available at your fingertips at any time. I've learned lots of tricks, skills and shortcuts from trying things out in [CodePen](http://codepen.io) or looking at other users' code to see how they built their neat-o creation. It's also handy, when in lack of another solution, as a JavaScript linter and a debugging tool, or as a place to save code snippets for work or demo later. But more than anything, it's a sandbox. And you can learn a lot by building things in it.
 
 ![Affinity Photo logo](/images/post_images/affinity-photo-available-on-the-mac-app-store.png)
+
 
 ### [Affinity Photo](https://affinity.serif.com/photo/)
 
@@ -241,6 +259,7 @@ Photoshop also works, if you have access to it. So do the wide range of free or 
 It may not quite have all the features of Photoshop (though it's pretty close) or be quite the photo editing ninja that Lightroom is (though it's no slouch), but to replace the two apps together for a comparably low price tag, I feel the tradeoff is more than worth it.
 
 ![Elegant Themes logo](/images/post_images/elegant-themes-logo.svg)
+
 
 ### A Great Premium Theme
 
@@ -258,11 +277,13 @@ In short: when you need to build quickly and on a budget, you need a framework t
 
 ![Flywheel logo](/images/post_images/Flywheel-Logo.svg)
 
+
 ### [Flywheel](https://getflywheel.com/)
 
 **[getflywheel.com](https://getflywheel.com)** | _Single-site subscriptions start at $15 per month; bulk subscriptions (10+ sites) start at $100 per month._
 
 Full disclosure: I work for Flywheel. But I still wouldn't have another host even if I had the choice. The collaboration and client handoff tools are top-notch, the dashboard features (like a development mode, logs access, staging sites, cloned sites and others) are amazingly handy, and the performance is solid. Plus there are no headaches with things like keeping backups or restoring; it's all handled. The support's not too shabby, either. ;)
+
 
 ### Other plugins:
 

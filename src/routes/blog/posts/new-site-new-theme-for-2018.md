@@ -26,6 +26,7 @@ In 2014, I launched a portfolio site that I coded (mostly) from scratch. Looking
 
 I built a WordPress site on the [Divi](https://www.elegantthemes.com/gallery/divi/) theme roughly three years ago. At first, it was built entirely on Divi's visual page builder, and that was handy for creating new layouts quickly. But the more I learned about WordPress (and child themes in particular), the less necessary it was to have the parent theme around. It was extra bloat for mostly features I didn't use at all. So for a very long time, starting over with my own theme, built from scratch and completely personalized just for this site, has been a goal—and now I finally get to check it off.
 
+
 ## About the theme
 
 Rather than beginning with a parent theme or a starter theme like [Underscores](http://underscores.me), I wanted this theme to be built completely from scratch. No borrowed or pre-written code at all; 100% original.
@@ -46,6 +47,7 @@ I love the way Timber makes template files so much cleaner, abstracting output c
 
 The theme runs mostly off a single index.php file which dynamically pulls in the appropriate Timber .twig files based on context. In fact, aside from the index file, the theme's only PHP template files are the footer and header, the functions file, and a sidebar file.
 
+
 ## Advanced Custom Fields + CSS Grid
 
 I also took this opportunity to use CSS grid on a project for the first time—specifically, on the [design](https://api.joshcollinsworth.com/design/) page. It turns out, CSS grid mixes really well with [Advanced Custom Fields](https://www.advancedcustomfields.com/), particularly the Pro Repeater field. I set up fields for images, height and width, to control the size of images in the grid:
@@ -61,6 +63,7 @@ I've been using the same logo for myself since I was in school. On a whim, I dec
 ![2018 logo](/images/post_images/Full-Logo-2018.svg)
 
 As in the header, the logo's "icon" form simply removes the lettering, leaving only two sets of brackets, implying code (particularly delving into objects or arrays), with the middle two characters highlighted and in the vague shape of a "J" and a "C" (my initials, of course). I like to think it also hints at my own duality of designer/developer.
+
 
 ## The fonts
 

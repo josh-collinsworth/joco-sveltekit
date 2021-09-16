@@ -25,6 +25,7 @@ As amazing as Local is on its own, though, some of the biggest benefits of devel
 ![CodeKit (on a Vue project, and in dark mode)](/images/post_images/codekit-window.png)
 
 
+
 ## What is CodeKit?
 
 **CodeKit** is a Mac app that gives you an easy graphical interface to configure the kind of handy dev features that usually require a lot of technical setup. CodeKit makes it super easy to do all the nice things that you'd normally need to use terminal commands, package managers and config files to get otherwise.
@@ -43,9 +44,11 @@ Unlike Local, CodeKit is a paid app, but it comes with a free trial if you'd lik
 
 If you're not sure about all of those features or only need a few, that's ok too! CodeKit makes it easy to use what you need, and ignore what you don't.
 
+
 ## Local + CodeKit
 
 It's probably pretty easy to imagine the benefits of getting all that cool stuff within Local, available for your WordPress development needs. **So let's get it set up!**
+
 
 ### 1\. Create (or Pick) a Site in Local
 
@@ -63,6 +66,7 @@ You _might_ see a warning about a port conflict in Local. If you do, just go ahe
 
 If you see a port conflict, just click the button to proceed. No big deal.
 
+
 ### 2\. Start Your Local Site and Note its Site Host Setting
 
 Again, the specific setup of the site doesn't really matter. The only things to be sure of are:
@@ -71,6 +75,7 @@ Again, the specific setup of the site doesn't really matter. The only things to 
 2. You note the Site Host (in the case of my screenshot, `localhost:10008`, but yours might be a custom `.local` domain instead)
 
 ![Look for 'Site host' in the Overview tab in Local](/images/post_images/Image-2020-02-20-at-8.47.39-PM-1024x691.png)
+
 
 ### 3\. Add Your Project to CodeKit
 
@@ -87,6 +92,7 @@ The `public` folder is your Local WordPress site's root directory. You'll want t
 Once you've added your project, you'll see CodeKit look something like this:
 
 ![A Local CodeKit project](/images/post_images/codekit-public-folder.png)
+
 
 
 ### 4\. Configure the CodeKit Project's Settings
@@ -107,6 +113,7 @@ Here, you'll take the two steps necessary to connect CodeKit with Local:
 ![Toggle External Server on, and enter your Local site's Site Host URL as the address](/images/post_images/image-1024x557.png)
 
 
+
 ### 5\. Click the CodeKit Preview Link
 
 **That's it! You're connected!** Now all you need to do is preview in CodeKit to see changes live in real time. You can either go to **File > Preview** **in Browser…**, or hit the preview button at the top of the CodeKit window:
@@ -125,6 +132,7 @@ Now as you make changes in your code—for example, changing CSS files or editin
 
 The Preview Server URLs box (shown above) is also where you'll find the URLs you can use to view your Local site on other devices! Want to check out your site on your phone? It's as simple as heading to the Bonjour URL (iPhone) or Non-Bonjour URL (anything else) in your device's browser!
 
+
 ## Bonus: Setting Up Sass in CodeKit
 
 Just to provide an example of how easy CodeKit makes it to get set up with things like Sass, let's explore CodeKit a little now that we have everything set up.
@@ -140,6 +148,7 @@ As a bonus, if you have any errors in your Sass syntax (like here, where I forgo
 ![Errors shown in CodeKit](/images/post_images/image-3-1024x449.png)
 
 A similar set of options (minify, compile, generate source maps, etc.) is available with JavaScript files, plus many other file types.
+
 
 ## Final Step: Enjoy!
 

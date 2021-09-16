@@ -27,6 +27,7 @@ This one, though, is at least more than a fresh layer of CSS or a new WordPress 
 
 <SideNote>This is going to be a long post, since I’ll go into depth on what headless means, its advantages and disadvantages, some of the techniques involved, and, finally, the design of this site specifically.</SideNote>
 
+
 ## What do "headless" and "Jamstack" mean?
 
 Let's take a moment to break down those terms.
@@ -39,15 +40,15 @@ In other words: by default, WordPress just takes care of everything.
 
 If that's, uh, _headful_ WordPress (see what I mean? It's a bad term), then _headless_ separates the admin and the front-end, leaving WordPress to handle the back-end content creation and site administration, while freeing the front-end presentation to be handled elsewhere, independently.
 
-<Callout>Headless separates the admin and the front-end, leaving WordPress to handle the back-end content creation and site administration, while freeing the front-end to be handled elsewhere, independently.</Callout>
+<Callout>Headless separates the admin and the front-end, leaving WordPress to handle the back-end content creation and site administration, while freeing the front-end to be handled elsewhere,&nbsp;independently.</Callout>
 
 So a headless WordPress site will still use the WP backend as usual for all the content management, post creation, data storage, etc. From the admin side of the site, nothing changes, which is probably good news for your clients, as well as anyone who just wants to be able to keep using the admin interface they're already accustomed to.
 
 But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST API.
 
-<Callout class="former-highlight">But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST API.</Callout>
-
 If you aren't particularly familiar with the world of modern front-end development outside WordPress, you might not immediately see the advantages, but there are several to be had. Not being locked into PHP as your templating language means you're instead able to use powerful, modern frameworks like [Vue](http://vuejs.org), [Svelte](https://svelte.dev/), [Eleventy](https://www.11ty.dev/), or—in the case of this site—[Gridsome](http://gridsome.org), with all the goodies that come along.
+
+<Callout class="former-highlight">But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST&nbsp;API.</Callout>
 
 This goes hand-in-hand with **Jamstack**, and is actually a decent example of it. The JAM stands for JavaScript, API and Markup—though it's more of a loose description of _typical_ features of a site rather than a literal definition or group of technologies, so don't get too hung up on those three things. Jamstack sites always use JavaScript in some fashion, but they don't all use APIs, necessarily.
 
@@ -55,7 +56,6 @@ The term "Jamstack" was coined by [Netlify](http://netlify.com) (which, by the w
 
 The advantages provided by a headless approach generally boil down to: speed; security; and developer experience.
 
-<Callout class="former-highlight">The advantages provided by a headless approach generally boil down to: speed; security; and developer experience.</Callout>
 
 ### Speed
 
@@ -65,6 +65,7 @@ Using the WP API is typically faster, because PHP isn't really rendering anythin
 
 Using a static site generator (SSG) also means you can deploy all of your site's content on a global CDN, so it's immediately available and speedy anywhere around the globe.
 
+
 ### Security
 
 The security of adding a layer between your front-end and your database (while, in my opinion, not one of the bigger selling points of the Jamstack) is not to be overlooked. When your front-end doesn't offer any direct access to the database—and instead, is just a collection of immutable files on a CDN server—that means the methods of attacking your site are minimized. No SQL injections, and you offer no immediate benefit if somebody _does_ manage to hack the DB.
@@ -73,15 +74,18 @@ With a headless approach, you also have the option of locking down your original
 
 That said, security probably shouldn't be your biggest reason to move to the Jamstack, since it's a tangential benefit, and since it won't solve bad WordPress security to begin with.
 
+
 ### Developer Experience
 
 Finally, working with modern frameworks like those mentioned above (though there are many others) is often more enjoyable for developers, as it allows you to introduce more modern tooling into your workflow, both in how the code is built and how it's deployed. (Typically, Jamstack sites are set up to deploy directly from a git repo, so that every time you push to the repo, the site deploys the code automatically, saving you from ever touching something like FTP.)
 
 <SideNote>Naturally, developer experience should be the least of our concerns; our users’ experience with the site is more important than ours. But if we’re being responsible with our choices, developer experience should ideally help translate into better user experience, too.</SideNote>
 
+
 ## Headless WordPress drawbacks
 
 You might be wondering at this point if there are disadvantages to going headless. And the answer, in a word, is: yes. There are distinct and often significant tradeoffs for the speed, security and dev ergonomics that come with headless architecture.
+
 
 ### Less control over appearance from WordPress
 
@@ -89,23 +93,27 @@ By far the biggest drawback, in the case of WordPress, is that your site's theme
 
 Actually, the drawback isn't limited to plugins and themes; core WordPress features, like the customizer, widgets, and nav menus (basically, the whole Appearance tab in admin) will be rendered powerless by a headless setup.
 
+
 ### Greater hosting needs
 
 Another drawback is that you're essentially hosting the site twice. Like I mentioned, I have the front-end of this site on Netlify, which has a free tier, so I'm at liberty to continue using whatever WordPress hosting I want without it costing me any more. (At least, not unless this blog really blows up for some reason, which seems very unlikely.) But that might not be the case for you, depending on your site's traffic and needs. And then again, hosting isn't costing me any _less_, either.
 
-<Callout>With headless, since your front-end isn’t rendered by your theme’s PHP template files anymore, plugins that change the appearance or layout of the site will lose their effect.</Callout>
+<Callout>With headless, since your front-end isn’t rendered by your theme’s PHP template files anymore, plugins that change the appearance or layout of the site will lose their&nbsp;effect.</Callout>
 
 And if you _are_ pre-rendering content with an SSG (as opposed to querying data from your WP site's API on the fly), you'll need to redeploy the site each time content changes. (There are [plugins](https://wordpress.org/plugins/search/Netlify/) to solve that particular pain point, though.)
+
 
 ### Tricky DNS setup
 
 Something else to keep in mind: DNS is going to require some careful, likely much more complex setup with headless (more on that later), and unless you do some fancy stuff with your theme and DNS, post previews won't really work anymore.
+
 
 ### Fewer hosting features are relevant
 
 You might also be giving up some luxuries provided by your host, such as staging sites, for example. (You can still use staging, of course, but what you see there won't match what you'll see on the live headless site unless you do a lot of extra config.)
 
 Those tradeoffs probably sound very scary, and for a lot of WordPress users, they make moving to headless a non-starter. That's ok. Every site has different needs, and if sticking with the WordPress you've come to know and love sounds like your best path forward, rest assured you're not alone and you will not be unsupported in that choice.
+
 
 ## Why I chose headless
 
@@ -115,7 +123,7 @@ I really enjoyed this post from Ethan Marcotte, "[Let a website be a worry stone
 
 That's part of what made me go all-in on Gridsome. I'd been messing around with it (and its [WordPress starter](https://gridsome.org/starters/default-word-press-starter/)) for close to a year when I read that post and made the decision to dive in.
 
-<Callout>Gridsome’s blazing speed and powerful, straightforward features sold me. It makes building fast sites both easy and enjoyable.</Callout>
+<Callout>Gridsome’s blazing speed and powerful, straightforward features sold me. It makes building fast sites both easy and&nbsp;enjoyable.</Callout>
 
 I'm a huge fan of Vue, so Gridsome being a Vue-based framework was a big selling point for me, even though Gridsome itself is relatively immature, at only version 0.7 at the time of writing (which I'll admit led to some frustrations in the development process). I've seen enough sites powered by Gridsome, and enough interest in the community, to abandon worry, however, and jump in anyway. But originally, Gridsome's blazing speed and powerful, straightforward features sold me. It makes building fast sites both easy and enjoyable.
 
@@ -123,11 +131,11 @@ Gridsome doesn't _need_ a back-end like WordPress, though, and I toyed with the 
 
 Eventually, however, I decided it was worth keeping WordPress around for a while, for a few reasons.
 
+<Callout class="former-highlight">The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.</Callout>
+
 One is: **I still want to see where Gutenberg goes**. The block editor is still a _long_ way from where it needs to be (and I still tweet out my frustrations with it from time to time), but it's also very exciting.
 
 The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.
-
-<Callout class="former-highlight">The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.</Callout>
 
 I came across a plugin called [Block Lab](https://wordpress.org/plugins/block-lab/), which I highly recommend whether you're using headless or not. Block Lab beautifully simplifies the process of creating basic custom blocks for use in the Gutenberg editor, and the accompanying PHP mini-template files (component files, I suppose you might call them) which render the content of those custom blocks.
 
@@ -135,13 +143,11 @@ I thought this was amazingly handy given the editor's lack of some types of bloc
 
 That is: when custom Block Lab blocks are used in page or post content, all of their custom template code comes with them, even through the WordPress API.
 
-<Callout class="former-highlight">That is: when custom Block Lab blocks are used in page or post content, all of their custom template code comes with them, even through the WordPress API.</Callout>
-
 That's very cool, because it means I can still create custom blocks without really needing to build them twice; all I do is put a class in the PHP template file for the block, and target that class with CSS on my headless front-end.
 
 And as a _really_ cool feature: Block Lab checks your theme for a `blocks.css` file which, if present, loads in the editor, too! So you can style your editing experience as easily as the front-end experience, if you so choose. Realizing that going headless didn't mean giving up the power of a fully customizable block editor was a big persuasion in sticking with WordPress.
 
-<Callout>Realizing that going headless didn’t mean giving up the power of a fully customizable block editor was a big persuasion in sticking with WordPress.</Callout>
+<Callout>Realizing that going headless didn’t mean giving up the power of a fully customizable block editor was a big persuasion in sticking with&nbsp;WordPress.</Callout>
 
 I also mentioned earlier that there are plugins available to rebuild your site on Netlify every time your WordPress content changes (I'm personally using [NetlifyPress](https://wordpress.org/plugins/deploy-netlifypress/) at the moment), which makes the transition easier, too. Knowing that I can keep my editing process fully in WordPress, without the need to open a completely separate dashboard any time I want to publish or update content, makes things a lot easier.
 
@@ -151,11 +157,12 @@ With a typical Jamstack site, dynamic things such as search forms—any type of 
 
 Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress API.
 
-<Callout class="former-highlight">Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress API.</Callout>
-
 In addition, I don't need to worry about porting my WordPress site's RSS feed; I can just point the `/feed` URL back to the original WordPress site and keep using the same one I always have.
 
+<Callout class="former-highlight">Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress&nbsp;API.</Callout>
+
 All of this flexibility is actually what sold me on sticking with a WordPress back-end, rather than going fully static. I knew that if I couldn't get a good form solution going on the Jamstack, I could always just use DNS to point a page back to WordPress and slap a [Ninja Form](https://ninjaforms.com/) on it, the user being none the wiser. (As it turns out, Netlify _does_ have a rather nifty forms solution, but I like knowing that I can fall back to WordPress for anything I'm not finding or not comfortable with on the Jamstack.)
+
 
 ## The new site
 
@@ -165,7 +172,7 @@ Obviously, I liked my old brand (I designed it, after all), but I felt it was ma
 
 It sounds silly, but in late 2017/early 2018 when I was launching the last site, I was in a very, very different place in my life and in my career. (I was neither a dad nor a full-time developer at the time, as the main examples.) The old look was fine, but it didn't feel like it represented who I am as well as it could anymore.
 
-<Callout>The old look was fine, but it didn’t feel like it represented who I am as well as it could anymore.</Callout>
+<Callout>The old look was fine, but it didn’t feel like it represented who I am as well as it could&nbsp;anymore.</Callout>
 
 Naturally, being a designer and a font hoarder, I spent days scouring my library, comparing typefaces and pairings before eventually settling on _Pensum Display Basic_ and _Averta Standard_ as the new typefaces of choice (along with _MonoLisa_ as the font used for code). You can see them all and try them out on the [/uses](/uses) page.
 
@@ -205,6 +212,8 @@ For the projects, I actually _did_ decide to use Markdown files. Each project, o
 
 Speaking of fun things: I tried to put something interesting (interesting for me to build, at least, if not for visitors to look at) throughout the site. There's the aforementioned font tester on the [/uses](/uses) page, the search feature on the [/blog](/blog) page, and also, a very pointless and highly subjective chart of my professional skills on the about page. (There's also a bit of cheekiness to be found in the footer.)
 
+<SideNote>This section mentions Highlight blocks, which aren't present on the site any longer. Existing Highlights have been combined into Callouts.</SideNote>
+
 On the topic of visual interest: the new site generates a bit extra using a couple of custom editor blocks; **Callouts** (which work a lot like pull quotes from a print publication), and **Highlights** (which serve to enlarge key pieces of text). Both make the posts a bit more skimmable (not a word; I'm ok with it), and help convey its main points at a glance.
 
 <Callout>When you’re on a wide enough screen, the callouts appear with the article text conventionally wrapping around them (and hidden using ARIA to prevent screen readers repeating the text).</Callout>
@@ -241,9 +250,11 @@ Incidentally, the 98% is because YSlow wants me to compress _everything_, but Ne
 It may seem like my home page isn’t a good benchmark, since it has virtually no content, and that’s definitely fair. However, note that Gridsome does some front-loading behind the scenes, pre-loading data for all the routes linked on the homepage, so that they can be rendered as quickly as possible once the user clicks one.
 </SideNote>
 
+
 ## What to watch out for when going headless
 
 If you decide to go headless with your own WordPress site, I have a few warnings to consider from my recent experience.
+
 
 ### **DNS is going to be a complex challenge.**
 
@@ -265,11 +276,13 @@ Which reminds me: keep in mind that you'll be changing things, DNS-wise, to go l
 
 And it goes without saying, but: if you have email on your domain, make sure you don't break it with DNS changes. (As long as you don't change name servers or MX records, you should be safe.)
 
+
 ## SEO and redirects
 
 Also: be sure all of your 301 redirects are in place and handled properly, and that you've taken care of any other SEO considerations (like adding meta descriptions, for example) before going live with a headless site. WordPress takes care of a _lot_ of things for you in this area (especially if you're using an SEO plugin), and you'll need to make sure you're not shooting yourself in the foot when you go live.
 
 Also, if you have Google Analytics or similar tracking codes or JavaScript loading in the `<head>` of your site, you'll need to be sure those get moved over to the new front-end as well.
+
 
 ### Deploys are only free to a point
 
@@ -281,8 +294,8 @@ The images step is easily the most time-consuming part of this site's build (Gri
 
 ---
 
+<Callout class="former-highlight">In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough&nbsp;edges.</Callout>
+
 Thanks for taking the time to read about my headless WordPress site. And by the way, [here's a link to the GitHub repo](https://github.com/josh-collinsworth/joco-gridsome), if you're the sort of person who enjoys checking out that sort of thing. (It's still a little bit of a mess.)
 
 In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough edges.
-
-<Callout class="former-highlight">In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough edges.</Callout>
