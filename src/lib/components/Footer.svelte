@@ -1,6 +1,5 @@
 <script lang="ts">
   import Grid from './Grid.svelte'
-import NavLinks from './header/NavLinks.svelte'
 
   const currentYear: number = new Date().getFullYear()
 </script>
@@ -61,6 +60,11 @@ import NavLinks from './header/NavLinks.svelte'
 
     a {
       color: inherit;
+    }
+
+    &-wrapper {
+      overflow: hidden;
+      max-width: 100vw;
     }
 
     &__links {

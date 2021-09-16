@@ -43,7 +43,7 @@
 
 <style lang="scss">
   .page-head {
-    --transition: transform .42s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --transition: transform .36s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     margin-bottom: 4rem;
     display: flex;
@@ -113,10 +113,6 @@
         white-space: nowrap;
         line-height: 1.2;
         animation: fade_in .2s forwards;
-        
-        &.no-motion {
-          transform: none !important;
-        }
       }
     }
 

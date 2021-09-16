@@ -32,7 +32,6 @@
       / parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size'))
       * 2
 
-
     thisPage = refresh
 
     if (squareCount) {
@@ -74,6 +73,8 @@
     height: 2.5rem;
     position: relative;
     contain: layout size style;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .cell-grid {
@@ -83,25 +84,26 @@
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 100vw;
 
     &.inverted {
-      transform: rotateX(180deg);
-      top: 1rem;
+      top: 2.5rem;
 
       &:before {
         --paperRGB: var(--darkBlueRGB);
-        top: -3rem;
+        top: 0;
       }
     }
 
     &:before {
       width: 100%;
       content: '';
-      background: linear-gradient(60deg, rgba(var(--paperRGB), 0), rgba(var(--paperRGB), 0.6));
+      background: linear-gradient(60deg, rgba(var(--paperRGB), 0), rgba(var(--paperRGB), 0.5));
       height: 4rem;
       position: absolute;
       top: -1rem;
       z-index: 2;
+      max-width: 100vw;
     }
   }
 </style>

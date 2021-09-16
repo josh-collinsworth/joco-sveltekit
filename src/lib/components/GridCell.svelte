@@ -23,7 +23,8 @@
   }
 
 	const randomX = (): string => {
-		const randomLeftValue = Math.floor(Math.random() * gridWidth)
+		const randomLeftValue = Math.floor((Math.random() * gridWidth) - 1) - (size * 2)
+		console.log(gridWidth, randomLeftValue)
 
 		return `${randomLeftValue / 2}rem`
 	}
