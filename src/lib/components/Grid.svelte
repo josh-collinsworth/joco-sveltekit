@@ -9,6 +9,7 @@
 
   let count: number = 0
   let gridColors = SITE_COLORS
+  let gridWidth: number
   let out: boolean = false
   let thisPage: string = ''
   let loadedIn = false
@@ -25,6 +26,13 @@
 
   onMount(() => {
 		if (typeof window == 'undefined') return
+
+    gridWidth = 
+      window.innerWidth
+      / parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size'))
+      * 2
+
+
     thisPage = refresh
 
     if (squareCount) {
@@ -36,7 +44,7 @@
 		  Math.floor(
         (window.innerWidth
         / (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
-			* 4)
+			* 3)
 		)
   })
 
@@ -53,7 +61,7 @@
     {#key thisPage}
       <div class="cell-grid" class:inverted aria-hidden="true">
         {#each Array(count) as cell}
-          <GridCell color={randomColor()} {out} />
+          <GridCell color={randomColor()} {out} {gridWidth} />
         {/each}
       </div>
     {/key}
@@ -69,11 +77,7 @@
   }
 
   .cell-grid {
-    display: grid;
     height: 2.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(.5rem, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(.5rem, 1fr));
-    grid-auto-flow: dense;
     position: absolute;
     z-index: 2;
     top: 0;

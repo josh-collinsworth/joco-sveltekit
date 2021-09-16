@@ -1,10 +1,6 @@
 import type Post from './interfaces/post'
 
 const SITE_COLORS: string[] = [
-  'transparent',
-  'transparent',
-  'transparent',
-  'transparent',
   'var(--lightGray)',
   'var(--ink)',
   'var(--lightBlue)',

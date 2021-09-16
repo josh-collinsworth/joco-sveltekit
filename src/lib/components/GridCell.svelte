@@ -5,15 +5,16 @@
 	
   export let color: string = 'transparent'
 	export let out: boolean = false
+  export let gridWidth: number = 0
 
-  let size: number = 1
+	let size = 0.5
 
-  onMount((): void => {
+  onMount(() => {
 		const cellSize = Math.random()
 		if (cellSize > 0.95) {
-			size = 3
+			size = 1.5
 		} else if (cellSize > 0.8) {
-			size = 2
+			size = 1
 		}
   })
 
@@ -21,15 +22,21 @@
     return Math.random() * .5 + "s"
   }
 
+	const randomX = (): string => {
+		const randomLeftValue = Math.floor(Math.random() * gridWidth)
+
+		return `${randomLeftValue / 2}rem`
+	}
+
   const randomDrop = (): string => {
     const drop = Math.random() * 100
 			if (drop > 93) {
 				return '1rem'
-			} else if (drop > 84) {
-				return '.5rem'
-			} else if (drop > 77) {
-				return '-.5rem'
 			} else if (drop > 70) {
+				return '0.5rem'
+			} else if (drop > 45) {
+				return '-0.5rem'
+			} else if (drop > 25) {
 				return '-1rem'
 			}
 		return '0'
@@ -49,9 +56,11 @@
 			class:out
 			style="
 				background: {color};
-				grid-area: span {size} / span {size};
+				width: {size}rem;
+				height: {size}rem;
 				animation-delay: {randomDelay()};
 				top: {randomDrop()};
+				left: {randomX()};
 			"
 		/>
 	{/key}
@@ -62,8 +71,7 @@
 	.cell {
 		opacity: 0;
 		mix-blend-mode: multiply;
-		padding: 50% 0;
-		position: relative;
+		position: absolute;
 		animation: fade_in .36s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 		
 		&.out {
