@@ -7,14 +7,15 @@
 
 <style lang="scss">
   .callout {
-    margin: 3rem 1rem;
+    margin: 2rem 0 2rem 1.5rem;
     font-size: 1rem;
     line-height: 1.5em;
     position: relative;
     background: var(--paper);
     overflow: hidden;
-    padding: 0 1rem 1rem 0;
-    display: none;
+    padding: 0 0 1rem 0;
+    float: right;
+    width: 45%;
 
     font-family: var(--callout-font);
     font-style: var(--callout-font-style);
@@ -35,11 +36,10 @@
     }
 
     @media(min-width: $narrow) {
-      margin: 3rem -2rem 3rem 3rem;
-      padding-right: 0;
       display: block;
       float: right;
       width: 50%;
+      margin: 3rem -2rem 3rem 2rem;
     }
     
     @media(min-width: $wide) {

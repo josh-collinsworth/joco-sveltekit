@@ -27,13 +27,15 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 As in any of these frameworks, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change, the Svelte component(s) automatically update to reflect the changes in the UI.
 
-Front-end frameworks are amazing for their ability to keep data in sync. Since they run entirely on JavaScript in the browser, however, they aren't ideal for much except single-page applications on their own. Front-end frameworks alone can't do things like persist data between pages or run server-side tasks like fetching files, for example.
+Front-end frameworks are in demand for their ability to keep data in sync. Since they run entirely on JavaScript in the browser, however, they aren't ideal for much except single-page applications on their own. Front-end frameworks alone can't do things like persist data between pages or run server-side tasks like fetching files, for example.
 
 **To bridge that gap, Svelte has [SvelteKit](https://kit.svelte.dev/).**
 
 <Callout>Svelte is React, but without the bullshit.</Callout>
 
-You could think of SvelteKit as the [Next](https://nextjs.org/) (or [Nuxt](https://nuxtjs.org/)) of Svelte. If you're not familiar: all of those are examples of a "meta-framework;" a larger toolbox for building full-fledged apps and sites. They take the underlying front-end framework (Svelte, React, etc.) and add in many of the pieces you'd need for a non-trivial project, like pages and routing, data stores, better control over SEO, and in some cases, image handling and APIs—generally just about everything except the database.
+You could think of SvelteKit as the [Next](https://nextjs.org/) (or [Nuxt](https://nuxtjs.org/)) of Svelte. If you're not familiar: those are examples of what are sometimes caled "meta-frameworks." Where React is a framework that helps you build with JavaScript, Next is a framework that helps you build with React.
+
+Meta frameworks are larger toolboxes for building full-fledged apps and sites, and include many of the pieces you'd need for a non-trivial project missing in front-end frameworks, like page routing, data stores, better control over SEO, and in some cases, image handling and APIs—usually just about everything except the database.
 
 <Highlight>So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about anything.</Highlight>
 
@@ -57,13 +59,15 @@ Svelte has always felt _way_ ahead of the game. (Or, maybe more accurately, like
 
 ### Comparing Svelte to React and Vue
 
-The standard example of a "hello world" (beginner) component is a simple button that counts how many times it's been clicked, and updates accordingly, as shown here: 
+At a basic level, Svelte is extremely similar to React, Vue, and other front-end frameworks; they're, component-based, state-driven JavaScript frameworks. (Or libraries, if you want to split that particular hair.) They all allow you to nest components, pass props, and handle events. All three (and more) are fully capable of doing the same jobs.
+
+Maybe the most contrived way to demonstrate a front-end framework's style and capabilities is a button component that counts how many times it's been clicked, and updates accordingly. It's the "hello world" of component examples:
 
 ![Demonstrating a button that increments when clicked](/images/post_images/hello-world-button.gif)
 
-It's not a particularly practical example, but it is a common one (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)) because it's an effective way to demonstrate the bread and butter of front-end frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), update the UI (the button) automatically.
+**It's not a particularly practical example, but it _is_ a common one** (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of front-end frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), update the UI (the button) automatically.
 
-Let's start with how to do this simple example in React, where you'd put the button in its own 
+Let's start with how to do this simple example in React, where you'd put the button in its own `.jsx` file:
 
 ```jsx
 // CounterButton.jsx
@@ -86,7 +90,7 @@ export const Button = () => {
 
 <SideNote>You could also do this same thing with React's old class-based syntax, but it's being more or less phased out, so it doesn't seem worth going into here.</SideNote>
 
-Here's the same thing in Vue 2:
+Here's the same thing in Vue 2, in a `.vue` component file:
 
 ```vue
 <!-- CounterButton.vue -->
@@ -132,7 +136,7 @@ Or, if you prefer, here's the Vue 3 composition API version (using the new `setu
 </template>
 ```
 
-Now that we've gotten a glimpse of how the established players approach this comparatively simple component, let's look at how to do the same thing in Svelte:
+Now that we've gotten a glimpse of how the established players approach this comparatively simple component, let's look at how to do the same thing in a `.svelte` component file:
 
 ```svelte
 <!-- CounterButton.svelte -->
@@ -151,31 +155,20 @@ Now that we've gotten a glimpse of how the established players approach this com
 
 Some key differences to point out between the Svelte version and the others:
 
-* Notice how Svelte doesn't need its HTML wrapped in anything. React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. Svelte can have whatever HTML, wherever.
-* Notice how Svelte doesn't require you to import anything. (Some features of Svelte do, but its basic features are all available out of the box.)
-* Notice that React and Vue (both versions) force you to do something special to a variable to mark it as reactive (either with `useState`, `ref`, or the `data` property). Svelte is reactive by default.
+- **Svelte is reactive by default.** React and Vue both require you to do something special to initialize and update reactive variables.
+- **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone and more readable.
+- **Svelte doesn't require you to import or export anything.** (Some features of Svelte do, but its basic component functionality is all available out of the box.)
+- **There's no framework-specific JavaScript.** While Svelte _does_ have its own syntax in some cases (like the `on:click` in the example above and some others), it stays just about as close as possible to vanilla HTML and CSS.
+- **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. Svelte can have whatever HTML, wherever (and in its original state, unlike in JSX).
 
-So there we have it; four ways to make a button that increments a number by 1 every time it's clicked. And not only is the Svelte version _shorter_ (both in line count and total characters); it's _also_ the closest to plain ol' JavaScript, HTML and CSS, with minimal modification or proprietary things to know.
+While the above examples don't cover them, some other features of Svelte that I love include:
 
-As you might have inferred from the Svelte example above, **variables are reactive by default in Svelte.** (That means any time they change, they'll update everywhere they're used.) No need for React's `useState` or Vue's `data` property; just declare a variable like you always would and it'll be reactive automatically.
+- Scoped CSS by default;
+- Logic and loops available inside of markup (unlike JSX), without requiring an element (unlike Vue);
+- Two-way binding
+- Built-in reusable data stores
 
-```js
-let myReactiveVar = 'Some value'
-// It's reactive by default!
-```
-
-And when we want to change it, we just change it. No need to call a special method or reference `this`; Svelte just handles everything for you.
-
-```js
-myReactiveVar = 'A new value'
-// As simple as that!
-```
-
-<SideNote>There's a small gotcha with Svelte reactivity when the value in question is an array or object, just due to how JavaScript itself tracks changes. Luckily, it's very easy to work around; check out <a href="https://svelte.dev/tutorial/updating-arrays-and-objects">Updating arrays and objects</a> in the Svelte tutorial.</SideNote>
-
-I could go on and on about how easy Svelte makes things, from loops and conditionals, to computed values and sharing component data.
-
-Even [Svelte's docs and tutorial](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!
+I could go on and on about how easy Svelte makes things, and how advanced yet simple it seems. [Svelte's docs and tutorial](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!
 
 
 ### Svelte performance
@@ -186,9 +179,10 @@ This is because Svelte does as much as possible _during the build step_, rather 
 
 As a comparison: the old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.6 MB transferred, compared with only _183 KB_ on this site—a reduction of almost ***90%!***
 
+
 #### Tradeoffs
 
-Now, in fairness, **there's a good reason the old site was that large to begin with**; Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
+In fairness, **there's a good reason the old site was that large to begin with**: Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
 <Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an study in tradeoffs.</Callout>
 

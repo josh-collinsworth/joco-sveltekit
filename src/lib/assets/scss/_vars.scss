@@ -62,7 +62,7 @@ $widest: 1960px;
 
 	--highlight-font: var(--body-font);
 	--highlight-font-style: normal;
-	--highlight-font-weight: bold;
+	--highlight-font-weight: normal;
 
 	@media (min-width: $narrow) {
 		--margin: 2rem;

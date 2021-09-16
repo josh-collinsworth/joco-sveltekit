@@ -51,6 +51,7 @@
     flex-wrap: wrap;
     contain: layout;
     position: relative;
+    overflow: hidden;
 
     .heading-wrapper {
       display: flex;
@@ -75,7 +76,8 @@
           position: absolute;
           left: 100%;
           width: 100%;
-          background: var(--paper);;
+          background: var(--paper);
+          box-shadow: 4rem 0 0 2rem var(--paper);
         }
       }
 

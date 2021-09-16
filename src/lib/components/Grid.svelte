@@ -9,9 +9,20 @@
 
   let count: number = 0
   let gridColors = SITE_COLORS
+  let out: boolean = false
+  let thisPage: string = ''
+
+  $: if (refresh) {
+    out = true
+    setTimeout(() => {
+      thisPage = refresh
+      out = false
+    }, 360)
+  }
 
   onMount(() => {
 		if (typeof window == 'undefined') return
+    thisPage = refresh
 
     if (squareCount) {
       count = squareCount
@@ -36,10 +47,10 @@
 
 <template>
   <div class="grid-wrapper">
-    {#key refresh}
+    {#key thisPage}
       <div class="cell-grid" class:inverted aria-hidden="true">
         {#each Array(count) as cell}
-          <GridCell color={randomColor()} />
+          <GridCell color={randomColor()} {out} />
         {/each}
       </div>
     {/key}

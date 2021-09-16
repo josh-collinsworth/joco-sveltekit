@@ -1,17 +1,10 @@
 <script lang="ts">
 	import { prefersReducedMotion } from '$lib/assets/js/store'
   import { TIMING_DURATION } from '$lib/assets/js/constants'
-  import { cubicIn, cubicOut } from 'svelte/easing'
-  import { fly } from 'svelte/transition'
   import { onMount } from 'svelte'
-
-  let yIn: number
-  let yOut: number
-
-  $: yIn = $prefersReducedMotion ? 0 : 12
-  $: yOut = $prefersReducedMotion ? 0 : -12
 	
   export let color: string = 'transparent'
+	export let out: boolean = false
 
   let size: number = 1
 
@@ -39,7 +32,7 @@
 			} else if (drop > 70) {
 				return '-1rem'
 			}
-			return '0'
+		return '0'
   }
 
 	const randomTiming = (): number => {
@@ -51,14 +44,14 @@
 <template>
 	{#key randomTiming() }
 		<div
-			in:fly={{ y: yIn, duration: TIMING_DURATION, delay: (randomTiming() + TIMING_DURATION), easing: cubicOut }}
-			out:fly={{ y: yOut, duration: TIMING_DURATION, delay: randomTiming(), easing: cubicIn }}
 			class="cell"
+			class:reduce={$prefersReducedMotion}
+			class:out
 			style="
 				background: {color};
 				grid-area: span {size} / span {size};
 				animation-delay: {randomDelay()};
-				transform: translateY({randomDrop()});
+				top: {randomDrop()};
 			"
 		/>
 	{/key}
@@ -67,7 +60,42 @@
 
 <style lang="scss">
 	.cell {
+		opacity: 0;
+		transform: translateY(0);
 		padding: 50% 0;
-		mix-blend-mode: overlay;
+		position: relative;
+		animation: fade_in .36s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+		
+		&.out {
+			opacity: 1;
+			transform: translateY(0);
+			animation: fade_out .36s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+		}
+
+		&.reduce {
+			transform: none !important;
+		}
+	}
+
+	@keyframes fade_in {
+		from {
+			opacity: 0;
+			transform: translateY(12px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes fade_out {
+		from {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		to {
+			opacity: 0;
+			transform: translateY(-12px);
+		}
 	}
 </style>
