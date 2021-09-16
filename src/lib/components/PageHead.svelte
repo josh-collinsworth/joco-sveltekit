@@ -26,10 +26,10 @@
 
 
 <div class="page-head">
-  <div class="heading-wrapper" class:in={isWorking}>
+  <div class="heading-wrapper" class:in={isWorking} class:no-motion={$prefersReducedMotion}>
     <span class="brace" aria-hidden="true">[</span>
     <h1>
-      <div class="title-wrap" class:no-motion={$prefersReducedMotion}>
+      <div class="title-wrap">
         {computedTitle}
       </div>
     </h1>
@@ -82,6 +82,10 @@
       }
 
       &.in .closing-brace {
+        transform: translateX(0);
+      }
+
+      &.no-motion .closing-brace {
         transform: translateX(0);
       }
     }

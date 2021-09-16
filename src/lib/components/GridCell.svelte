@@ -61,19 +61,22 @@
 <style lang="scss">
 	.cell {
 		opacity: 0;
-		transform: translateY(0);
+		mix-blend-mode: multiply;
 		padding: 50% 0;
 		position: relative;
 		animation: fade_in .36s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 		
 		&.out {
 			opacity: 1;
-			transform: translateY(0);
-			animation: fade_out .36s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+			animation: fade_out .36s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;			
 		}
-
+		
 		&.reduce {
-			transform: none !important;
+			animation-name: reduce_motion_fade;
+			
+			&.out {
+				animation-name: reduce_motion_fade_reverse;
+			}
 		}
 	}
 
@@ -96,6 +99,24 @@
 		to {
 			opacity: 0;
 			transform: translateY(-12px);
+		}
+	}
+	
+	@keyframes reduce_motion_fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes reduce_motion_fade_reverse {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
 		}
 	}
 </style>

@@ -11,13 +11,16 @@
   let gridColors = SITE_COLORS
   let out: boolean = false
   let thisPage: string = ''
+  let loadedIn = false
 
-  $: if (refresh) {
+  $: if (refresh && loadedIn) {
     out = true
     setTimeout(() => {
       thisPage = refresh
       out = false
     }, 360)
+  } else {
+    loadedIn = true
   }
 
   onMount(() => {
