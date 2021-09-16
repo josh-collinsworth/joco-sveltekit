@@ -60,7 +60,7 @@ Misinformation is not a two-way street, and it is not to be treated as mere opin
 
 Zuckerberg has also refused to acknowledge that the president threatening violent military action against US citizens—let alone citizens who are exercising their constitutional right to protest—is problematic, or to do almost anything about all but the most blatantly violent, racist, hateful or even outright fake posts from just about any source, let alone those in power.
 
-<Callout class="former-highlight">Misinformation is not a two-way street, and it is not to be treated as mere opinion. To side with the right to spread falsehood unchecked is to side with racism, bigotry, anti-science, and any other cause benefited by a lack of context and&nbsp;truth.</Callout>
+<Callout>Misinformation is not a two-way street, and it is not to be treated as mere opinion. To side with the right to spread falsehood unchecked is to side with racism, bigotry, anti-science, and any other cause benefited by a lack of context and&nbsp;truth.</Callout>
 
 Time and again, Facebook's leadership has failed to demonstrate any substantial interest whatsoever in ensuring their platform is not used for malicious intent.
 
@@ -68,7 +68,7 @@ In short, Facebook has failed us—as users, as citizens, and as humans—to an 
 
 It shouldn't have taken this long, for any and all of the reasons above. Facebook is, quite frankly, an awful company (and again: it was long before 2016, lest I give the impression this is just about recent events or the election).
 
-<Callout class="former-highlight">In short, Facebook has failed us—as users, as citizens, and as humans—to an extent that I feel demands I can no longer be even tangentially complicit in anything the company&nbsp;does.</Callout>
+<Callout>In short, Facebook has failed us—as users, as citizens, and as humans—to an extent that I feel demands I can no longer be even tangentially complicit in anything the company&nbsp;does.</Callout>
 
 But it's become clear in recent years that not only will Facebook move in the opposite direction of positive change, but that the company's role in supporting hate, malice and ignorance is not even a passive one; regardless of the intention or motivation, the outcome is the same. Facebook has positioned itself, actively and deliberately, to be a key player in enabling fascism.
 
@@ -91,7 +91,7 @@ She reasoned that, if stealing something seems harmless, what if you stole a hun
 
 And conversely: if giving what you have seems meaningless, what if you had 100 times that to give?
 
-<Callout class="former-highlight">This isn’t me filling the offering plate, or acting like I can; this is me giving my&nbsp;dollar.</Callout>
+<Callout>This isn’t me filling the offering plate, or acting like I can; this is me giving my&nbsp;dollar.</Callout>
 
 Me removing myself from Facebook's platforms won't mean anything on its own. But for me, it's not really _supposed_ to.
 
@@ -121,7 +121,7 @@ But for me, right now, it's become clear that the ethics of the company behind I
 
 No matter how tiny a grain of sand I might be in that sandcastle, I can’t in good conscience be a part of its walls any more.
 
-<Callout class="former-highlight">No matter how tiny a grain of sand I might be in that sandcastle, I can’t in good conscience be a part of its walls any&nbsp;more.</Callout>
+<Callout>No matter how tiny a grain of sand I might be in that sandcastle, I can’t in good conscience be a part of its walls any&nbsp;more.</Callout>
 
 If you'd like to keep in touch with me, I'll still be around on [Twitter](https://twitter.com/jjcollinsworth), at least until I face the same reckoning there (though my content there is of a decidedly different flavor). And I'll be attempting to add some more personal content both there and here, on my personal site.
 

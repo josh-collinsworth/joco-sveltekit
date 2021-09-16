@@ -42,7 +42,7 @@ So as you'd use a front-end framework like Svelte to build a small user interfac
 
 **One particularly nice thing about SvelteKit is that its output can be whatever you want.** It can function as a static site generator (as it does in my case), but it's also capable of generating apps with server-side rendering, or a mixture of server-side and static, or even full-fledged Node apps.
 
-<Callout class="former-highlight">So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about&nbsp;anything.</Callout>
+<Callout>So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about&nbsp;anything.</Callout>
 
 This is possible because SvelteKit offers several [adapters](https://kit.svelte.dev/docs#adapters) to process your input differently, depending on what your end goal is. Same input; whatever output you like!
 
@@ -56,7 +56,7 @@ I instantly loved how easy Svelte made _everything_ I wanted to do (especially c
 
 Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully straightforward.
 
-<Callout class="former-highlight">Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully&nbsp;straightforward.</Callout>
+<Callout>Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully&nbsp;straightforward.</Callout>
 
 **Svelte has always felt _way_ ahead of the game.** (Or, maybe more accurately, like it's learned from the mistakes of other frameworks). Reactivity is built-in. There's no virtual DOM. It has (scoped) component CSS built-in. Writing it is simple, and—maybe best of all—the eventual finished product will almost certainly be _far smaller_ than the same thing built with a different framework (often by orders of magnitude.)
 
@@ -215,7 +215,7 @@ At this point it almost seems like the only reason this site exists is so that I
 
 I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome (0.7), and at this point, it doesn't seem like it's an actively maintained project any longer. I don't know if it will ever reach 1.0 or not. I certainly wouldn't begrudge the creators for at all abandoning it during the pandemic.
 
-<Callout class="former-highlight">At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.</Callout>
+<Callout>At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.</Callout>
 
 Regardless, Gridsome didn't ever really feel _complete_ to me. It was a wonderful way to generate a speedy, static site with Vue (and GraphQL!), but its nascence showed at times.
 

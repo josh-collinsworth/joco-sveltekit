@@ -60,7 +60,7 @@ I was astounded how many times my thumb would automatically, without so much as 
 
 I actually found myself wondering—and I'm ashamed to admit this—“what did I do while I was in the bathroom before I got a smartphone?” (Don't picture that.)
 
-<Callout class="former-highlight">I was astounded how many times my thumb would automatically, without so much as a conscious thought, move to the space where the Facebook app icon used to be. It would happen dozens of times a&nbsp;day.</Callout>
+<Callout>I was astounded how many times my thumb would automatically, without so much as a conscious thought, move to the space where the Facebook app icon used to be. It would happen dozens of times a&nbsp;day.</Callout>
 
 Once I was off social media, I started noticing how often the people around me—often people close to me, with whom I was having some sort of social interaction (however minor)—whipped out their smartphones to stare at a feed through which they endlessly scrolled.
 
@@ -110,7 +110,7 @@ I'm beginning to believe that becoming more connected with everyone is making me
 
 All that time spent browsing, reading, liking...it has to come from somewhere. Any minute you are or could be in the presence of another human being spent on social media is a minute you're taking from them and splitting up a dozen, a hundred, or a thousand ways. It's significantly weakening one good relationship in the name of very slightly strengthening many others.
 
-<Callout class="former-highlight">I'm beginning to believe that becoming more connected with everyone is making me less connected with&nbsp;anyone.</Callout>
+<Callout>I'm beginning to believe that becoming more connected with everyone is making me less connected with&nbsp;anyone.</Callout>
 
 Maybe this is a negative view of the situation, or maybe it's a bit extreme. Maybe time and relationships aren't a zero-sum game. But let me ask you a question:
 

@@ -102,7 +102,7 @@ There's a lot more detail in the link above, but the main features of a PWA incl
 
 You can build a PWA with anything you might use to build a website; plain ol' HTML, CSS and JavaScript will work just fine, and you definitely don't _need_ to use a framework (let alone one as robust as Nuxt). As I considered the options, however, it became clear that Nuxt was my #1 choice, and one I've never regretted.
 
-<Callout class="former-highlight">Progressive Web Apps are essentially websites, but with some extra features that make them behave like native&nbsp;apps.</Callout>
+<Callout>Progressive Web Apps are essentially websites, but with some extra features that make them behave like native&nbsp;apps.</Callout>
 
 **Nuxt** is a framework for building apps with Vue (Vue being a JavaScript component framework). As the name implies, Nuxt is the Vue equivalent of React's Next.js, if that helps.
 
@@ -153,7 +153,7 @@ That’s what Quina and any other TWA app is; effectively, a browser that auto-l
 
 It's called Trusted Web Activity because in order to make it work right, you need to bundle your app with a secret key that matches a key that lives on your website. (More on that in a bit.)
 
-<Callout class="former-highlight">That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an&nbsp;app.</Callout>
+<Callout>That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an&nbsp;app.</Callout>
 
 It's also _required_ that the URL you're linking to qualifies as a progressive web app; [web.dev](https://web.dev/) offers tests to certify that. Mostly it's making sure you have the proper PWA manifest, a service worker (to make the app available offline, like a native app), and that your site loads over HTTPS. I won't go into any of those here, since there are better resources already out there on the ins and outs of PWAs.
 

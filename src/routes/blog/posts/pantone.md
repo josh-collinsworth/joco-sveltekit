@@ -37,7 +37,7 @@ Pantone inks are special inks that are each created prior to printing.
 
 Inks such as this are called "spot" colors. They aren't combinations of cyan, magenta, yellow and/or black created during printing; they're precisely and individually mixed beforehand, kind of like paint. Spot colors are also like paint in that they are applied by the printer in a flat uniform layer, as opposed to the tiny halftone dots created by more traditional printing methods like CMYK. This makes spot colors much, much more consistent than process color.
 
-<Callout class="former-highlight">Pantone inks are special inks that are each created prior to&nbsp;printing.</Callout>
+<Callout>Pantone inks are special inks that are each created prior to&nbsp;printing.</Callout>
 
 Think about it this way: if you were going to paint a wall in your house green, which would create a more consistent result—buying a bucket of cyan paint and a bucket of yellow paint and mixing them together as you went, or just buying green paint to begin with?
 

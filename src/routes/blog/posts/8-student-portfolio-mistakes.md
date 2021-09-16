@@ -40,7 +40,7 @@ This is such a simple problem that I'm honestly surprised at the frequency with 
 
 Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new one.
 
-<Callout class="former-highlight">Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new&nbsp;one.</Callout>
+<Callout>Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new&nbsp;one.</Callout>
 
 And by the way: one of the most glorious things about being a graphic design student is that your work is not bound by the same rules and laws that govern professional work. You can legally use virtually any image you can find as part of your design, provided you're using it for student work and you aren't taking credit for or profiting directly from it. So get on Google and adjust those image search parameters. Find something great. And _big_. And if you absolutely _must_ use an image that's below 300dpi, figure out how to disguise it. Show some Photoshop skills. (Adding subtle grain can be an effective technique.) Not many things mar a design as noticeably and glaringly as visible pixels do.
 
@@ -102,7 +102,7 @@ I'm not saying Helvetica is a bad typeface. It isn't at all. But I'd consider it
 
 Students (and many professionals) are naturally drawn to Helvetica for its myriad positive attributes: neutrality, versatility, high quality and readability. But somewhat ironically, this just exacerbates Helvetica's one glaring weakness: its ubiquity.
 
-<Callout class="former-highlight">The point of your portfolio is to make you stand out, and it's hard to stand out as a student using the world's most generic&nbsp;typeface.</Callout>
+<Callout>The point of your portfolio is to make you stand out, and it's hard to stand out as a student using the world's most generic&nbsp;typeface.</Callout>
 
 Admittedly, the fact that Helvetica is everywhere is not Helvetica's fault, and could even be used as an argument for its merit. But no matter how good your work is, it still has to be _yours_, and Helvetica looks like the work of generations of other designers who were using it way before you or I ever heard of it.
 
@@ -148,7 +148,7 @@ Don't think of your portfolio as a collection of projects; it's a design project
 
 It should only include what makes you look great. Most interviewers don't want or need to see every single spread or be able to read every paragraph of body copy (though they will read some—see #4). Decorating a spread just to fill up the space is the visual equivalent of commenting on the weather to fill an awkward silence: it's meaningless noise.
 
-<Callout class="former-highlight">Don't think of your portfolio as a collection of projects; it's a design project in&nbsp;itself.</Callout>
+<Callout>Don't think of your portfolio as a collection of projects; it's a design project in&nbsp;itself.</Callout>
 
 Think of every piece in your book like a movie. Your job is to show the preview. Give enough to get somebody caught up in the world, aware of the story and curious to see more—but not so much they need a soda and popcorn. Make it the best, most intriguing preview you can, but not the whole film. Obviously, when you have a wide brandscape with many touchpoints, it can pay to show them. But consider spreading it out, and not cramming them all on the same page or two.
 

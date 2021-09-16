@@ -100,7 +100,7 @@ And I'm willing to bet money that you _hate it_ when somebody does that to your
 
 "This color definitely wasn't my first choice, but according to our audience research…"
 
-<Callout class="former-highlight">Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at&nbsp;worst.</Callout>
+<Callout>Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at&nbsp;worst.</Callout>
 
 These are all sentences you can't hear because you get the luxury of seeing the final product without any knowledge whatsoever of how it came into existence. Remake somebody else's logo design all you want, but know that it's utterly meaningless, because you get to do whatever you want and the original designer didn't. They had deadlines, budgets, parameters, meetings, goals, briefs, revisions, concerns and loads of client feedback. All you have is a starting point that somebody else already created for you and a social platform full of people willing to click the "like" button.
 

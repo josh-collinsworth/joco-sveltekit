@@ -48,7 +48,7 @@ But instead of having the site’s theme display your pages, posts, etc., a head
 
 If you aren't particularly familiar with the world of modern front-end development outside WordPress, you might not immediately see the advantages, but there are several to be had. Not being locked into PHP as your templating language means you're instead able to use powerful, modern frameworks like [Vue](http://vuejs.org), [Svelte](https://svelte.dev/), [Eleventy](https://www.11ty.dev/), or—in the case of this site—[Gridsome](http://gridsome.org), with all the goodies that come along.
 
-<Callout class="former-highlight">But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST&nbsp;API.</Callout>
+<Callout>But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST&nbsp;API.</Callout>
 
 This goes hand-in-hand with **Jamstack**, and is actually a decent example of it. The JAM stands for JavaScript, API and Markup—though it's more of a loose description of _typical_ features of a site rather than a literal definition or group of technologies, so don't get too hung up on those three things. Jamstack sites always use JavaScript in some fashion, but they don't all use APIs, necessarily.
 
@@ -131,7 +131,7 @@ Gridsome doesn't _need_ a back-end like WordPress, though, and I toyed with the 
 
 Eventually, however, I decided it was worth keeping WordPress around for a while, for a few reasons.
 
-<Callout class="former-highlight">The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.</Callout>
+<Callout>The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.</Callout>
 
 One is: **I still want to see where Gutenberg goes**. The block editor is still a _long_ way from where it needs to be (and I still tweet out my frustrations with it from time to time), but it's also very exciting.
 
@@ -159,7 +159,7 @@ Keeping my WordPress site live means that I can have the best of both worlds in 
 
 In addition, I don't need to worry about porting my WordPress site's RSS feed; I can just point the `/feed` URL back to the original WordPress site and keep using the same one I always have.
 
-<Callout class="former-highlight">Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress&nbsp;API.</Callout>
+<Callout>Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress&nbsp;API.</Callout>
 
 All of this flexibility is actually what sold me on sticking with a WordPress back-end, rather than going fully static. I knew that if I couldn't get a good form solution going on the Jamstack, I could always just use DNS to point a page back to WordPress and slap a [Ninja Form](https://ninjaforms.com/) on it, the user being none the wiser. (As it turns out, Netlify _does_ have a rather nifty forms solution, but I like knowing that I can fall back to WordPress for anything I'm not finding or not comfortable with on the Jamstack.)
 
@@ -224,7 +224,7 @@ Highlights, in either case, only appear as larger text (no different to screen r
 
 Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)
 
-<Callout class="former-highlight">Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)</Callout>
+<Callout>Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)</Callout>
 
 The colorful square grid on the header and footer were really the heart of the visual aspect of the design, and they grew out of a [typographic experiment I made on CodePen](https://codepen.io/collinsworth/pen/ZEGrMRQ). I realized early on that the site was pretty stark and needed just a pop of color and interest, so I plagiarized myself and reused that colorful grid, and just for fun, made it re-render itself into a new random shape on every new page load.
 
@@ -294,7 +294,7 @@ The images step is easily the most time-consuming part of this site's build (Gri
 
 ---
 
-<Callout class="former-highlight">In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough&nbsp;edges.</Callout>
+<Callout>In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough&nbsp;edges.</Callout>
 
 Thanks for taking the time to read about my headless WordPress site. And by the way, [here's a link to the GitHub repo](https://github.com/josh-collinsworth/joco-gridsome), if you're the sort of person who enjoys checking out that sort of thing. (It's still a little bit of a mess.)
 

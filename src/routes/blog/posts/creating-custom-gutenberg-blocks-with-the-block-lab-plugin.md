@@ -23,7 +23,7 @@ I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in m
 
 First things first: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0.
 
-<Callout class="former-highlight">Block Lab is a plugin that helps you create your own custom blocks with minimal code&nbsp;required.</Callout>
+<Callout>Block Lab is a plugin that helps you create your own custom blocks with minimal code&nbsp;required.</Callout>
 
 Ordinarily, you're restricted to the types of blocks WordPress includes by default—the standard text, headings, dividers, images, quotes, etc.—and if you need something more specialized, you'd either have to install a third-party plugin with the type of block you want, or you'd have to get your hands dirty writing a pretty good deal of custom code. Block Lab is something of a best-of-both hybrid of those two choices.
 
@@ -165,7 +165,7 @@ Remember how I said you wouldn't need to know any PHP? That's because for basic 
 
 The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s name.
 
-<Callout class="former-highlight">The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s&nbsp;name.</Callout>
+<Callout>The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s&nbsp;name.</Callout>
 
 What this all means is: every time you use this block, it'll be dynamically rendered wrapped in a `div` with the `side-note` class. And the cool thing is: that applies both in the editor, and on the front end!
 

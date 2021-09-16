@@ -88,7 +88,7 @@ That explains _what_ `:root` is, but not _why_. Why are we putting variables in 
 
 Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as needed.
 
-<Callout class="former-highlight">Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as&nbsp;needed.</Callout>
+<Callout>Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as&nbsp;needed.</Callout>
 
 In other words: applying a style to the `:root` means it gets "passed down" to every other element in the document. This wouldn't be the case if we applied CSS variables to, say, a random `<div>`. Elements _inside_ that `<div>` would know about the variables and could use them, but no elements outside would. So it makes the most sense to apply CSS variables to the `:root` pseudo-class, since _everything_ is inside of the root tag, which is `<html>`.
 
