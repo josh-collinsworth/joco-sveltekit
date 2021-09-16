@@ -38,7 +38,7 @@ Resourcefulness is a valuable quality to any employer, especially in design. Sho
 
 This is such a simple problem that I'm honestly surprised at the frequency with which I see it, but it keeps cropping up again and again. For whatever reason, graphic design students often try to push an image beyond its limits. Maybe it's because this practice is more common (and slightly less damaging) on the web. But in print, it never works.
 
-Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new one.
+Printed images should ideally be 300dpi or higher, _especially_ in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new one.
 
 <Callout>Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new&nbsp;one.</Callout>
 

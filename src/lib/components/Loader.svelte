@@ -28,7 +28,7 @@
     align-items: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .15s;
+    transition: opacity 0.1s;
     
     &.loading {
       opacity: 1;

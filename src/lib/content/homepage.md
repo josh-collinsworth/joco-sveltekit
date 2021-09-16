@@ -1,7 +1,7 @@
 ## Professionally:
 
 Senior frontend developer at [Shopify](https://shopify.com);
-maker and designer of <i>Quina</i> ([web](https://quina.app)/[Android](https://play.google.com/store/apps/details?id=app.quina.collinsworth));
+maker and designer of _Quina_ ([web](https://quina.app)/[Android](https://play.google.com/store/apps/details?id=app.quina.collinsworth));
 occasional [tech blog author](/blog) and freelance developer/designer.
 
 ## Previously:

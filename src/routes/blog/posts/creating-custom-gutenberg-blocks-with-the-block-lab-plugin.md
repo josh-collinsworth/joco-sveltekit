@@ -163,7 +163,7 @@ What you actually want inside your template depends on how you'd like it to look
 
 Remember how I said you wouldn't need to know any PHP? That's because for basic blocks, the above is all you need, and you can easily just copy, paste, and adapt that code for whatever fields you have.
 
-The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s name.
+The important thing is just to make sure that the string inside the parentheses (`'note-text'` in the example code block above) matches the field’s name.
 
 <Callout>The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s&nbsp;name.</Callout>
 

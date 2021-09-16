@@ -29,9 +29,9 @@ WordPress empowered me to bring my ideas to life in a way no platform ever had&n
 
 Things like loading and scroll effects, parallax, sliders, contact forms, project galleries, and all kinds of other features that were previously locked doors as a nascent coder suddenly became as easy as configuring some options in a graphical user interface (GUI).
 
-I got a lot of mileage out of my site while it was on WordPress. At first, it was pure Divi, but soon, I expanded into a child theme with custom PHP templates. As time went on and I grew as a developer, I needed to reach for Divi's features less and less, until eventually I abandoned Divi and build my own WordPress theme from scratch. (It's no longer live of course, but there's a <g-link to="/blog/new-site-new-theme-for-2018">post about my theme here</g-link>).
+I got a lot of mileage out of my site while it was on WordPress. At first, it was pure Divi, but soon, I expanded into a child theme with custom PHP templates. As time went on and I grew as a developer, I needed to reach for Divi's features less and less, until eventually I abandoned Divi and build my own WordPress theme from scratch. (It's no longer live of course, but there's a [post about my theme here](/blog/new-site-new-theme-for-2018).)
 
-Finally, last year (2020), I converted to a headless site, with WordPress on the back end and Gridsome on the front. (I wrote about that process in <g-link to="/blog/a-new-headless-site-with-gridsome/">this post</g-link>.)
+Finally, last year (2020), I converted to a headless site, with WordPress on the back end and Gridsome on the front. (I wrote about that process in [this post](/blog/a-new-headless-site-with-gridsome/).)
 
 At the time, I made the decision to go headless because I wanted to keep a foot in the WordPress world, for reasons laid out in previously mentioned post. But to summarize: I wanted the best of both worlds. I didn't want to go full static, but giving up WordPress entirely wasn't really a thought for me then, either, because having a database and all my content (especially images) still represented value.
 
@@ -85,7 +85,7 @@ There's an argument to be made, I think, that the Jamstack—and companies like 
 
 Granted, the tech hurdle is higher—not just anybody can code up a static site, and that's not to be discounted—but I can have a live Jamstack site on the web for _absolutely free_ any time I want with Netlify, et al. 
 
-WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
+WordPress, for all its myriad benefits, is definitely _not_ the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
 
 <Callout>WordPress just won't continue to be worth it for everyone all&nbsp;the&nbsp;time.</Callout>
 
@@ -95,7 +95,7 @@ As I write this, WP Engine and, no doubt, many other hosts are working on the he
 
 ## So what's the alternative?
 
-When this site was headless WordPress, the front-end was already built in <a rel="external" href="gridsome.org">Gridsome</a>, a Vue-based static site generator that could be fairly described as Vue's equivalent of [Gatsby](https://www.gatsbyjs.com/).
+When this site was headless WordPress, the front-end was already built in [Gridsome](https://gridsome.org/), a Vue-based static site generator that could be fairly described as Vue's equivalent of [Gatsby](https://www.gatsbyjs.com/).
 
 <SideNote>A <b>static site generator</b> (or SSG) is a tool that takes input of some kind—maybe Markdown files, maybe JSON from an API, or maybe even a combination of different data sources—and turn it all into a traditional, static HTML website. This allows the site to be hosted cheaply and easily on a CDN-backed host for optimum performance.</SideNote>
 
@@ -126,7 +126,7 @@ summary: This project was awesome
 The project content Markdown would go here. Neato!
 ```
 
-Any Markdown files in the `/projects` directory are processed into content for the <g-link to="/projects">projects page</g-link>, using just a bit of config setup that directs Gridsome to the folder where it can find project files, and what Vue template(s) to render them with:
+Any Markdown files in the `/projects` directory are processed into content for the [projects page](/projects), using just a bit of config setup that directs Gridsome to the folder where it can find project files, and what Vue template(s) to render them with:
 
 ```javascript
 //gridsome.config.js
@@ -170,6 +170,8 @@ Finally, the template file for rendering the data collected from the Markdown fi
 ```
 
 _(Not pictured: there's also a GraphQL query to grab the currently viewed project. I just didn't show that for the sake of simplicity.)_
+
+<SideNote>This site has been updated since that version, and no longer features individual project pages or markdown files.</SideNote>
 
 ---
 
