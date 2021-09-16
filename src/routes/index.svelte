@@ -27,7 +27,7 @@
   <nav>
     <ul class="next">
       <li>
-        <a href="/writing">Read some things I wrote</a>
+        <a href="/blog">Read some things I wrote</a>
       </li>
       <li>
         <a href="/projects">See some of my projects</a>
