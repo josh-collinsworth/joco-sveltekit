@@ -32,11 +32,11 @@
     const drop = Math.random() * 100
 			if (drop > 93) {
 				return '1rem'
-			} else if (drop > 70) {
+			} else if (drop > 80) {
 				return '0.5rem'
-			} else if (drop > 45) {
+			} else if (drop > 60) {
 				return '-0.5rem'
-			} else if (drop > 25) {
+			} else if (drop > 40) {
 				return '-1rem'
 			}
 		return '0'

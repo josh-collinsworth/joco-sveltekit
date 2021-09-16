@@ -44,7 +44,7 @@
 		  Math.floor(
         (window.innerWidth
         / (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
-			* 3)
+			* 2)
 		)
   })
 

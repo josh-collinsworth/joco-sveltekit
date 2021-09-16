@@ -14,7 +14,7 @@ excerpt: 'The story of building Quina, a word game Progressive Web App built wit
 <script>
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import Highlight from '$lib/components/Highlight.svelte'
+  
 </script>
 
 <SideNote>
@@ -90,7 +90,9 @@ Beyond the core word game, Quina has a number of features to hopefully keep it e
 
 For those into such nerdery: Quina is a [Progressive Web App](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/) (PWA) built with [Nuxt](https://nuxtjs.org). If you're not familiar with those terms:
 
-<Highlight>Progressive Web Apps are essentially websites, but with some extra features that make them behave like native apps.</Highlight>
+Progressive Web Apps are essentially websites, but with some extra features that make them behave like native apps.
+
+<Callout class="former-highlight">Progressive Web Apps are essentially websites, but with some extra features that make them behave like native apps.</Callout>
 
 There's a lot more detail in the link above, but the main features of a PWA include: the ability to actually _install_ the website/web app on your device and launch it fullscreen, just like an ordinary native app; to run offline (thanks to JavaScript service workers); and access to device functionality like push notifications and vibration, via modern browser enhancements.
 
@@ -141,7 +143,9 @@ Before going too far, though: I should mention that turning a web app into a pro
 
 TWA is a technical term, but what it means is: you have the ability to create an Android app that doesn't have any real code or content of its own; it's just a shell, built to load one specific web app using your device's browser, and display it like a native app.
 
-<Highlight>That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an app.</Highlight>
+That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an app.
+
+<Callout class="former-highlight">That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an app.</Callout>
 
 It's called Trusted Web Activity because in order to make it work right, you need to bundle your app with a secret key that matches a key that lives on your website. (More on that in a bit.)
 

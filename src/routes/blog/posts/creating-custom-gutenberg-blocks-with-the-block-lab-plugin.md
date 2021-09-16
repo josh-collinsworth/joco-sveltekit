@@ -11,7 +11,7 @@ coverImage: "block-lab-banner.png"
 excerpt: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0. This post explains how to use it, even if you only know basic HTML.
 ---
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -24,7 +24,9 @@ First things first: Block Lab is a WordPress plugin that simplifies the process 
 
 Ordinarily, you're restricted to the types of blocks WordPress includes by default—the standard text, headings, dividers, images, quotes, etc.—and if you need something more specialized, you'd either have to install a third-party plugin with the type of block you want, or you'd have to get your hands dirty writing a pretty good deal of custom code. Block Lab is something of a best-of-both hybrid of those two choices.
 
-<Highlight>Block Lab is a plugin that helps you create your own custom blocks with minimal code required.</Highlight>
+Block Lab is a plugin that helps you create your own custom blocks with minimal code required.
+
+<Callout class="former-highlight">Block Lab is a plugin that helps you create your own custom blocks with minimal code required.</Callout>
 
 There are three main steps to this process:
 
@@ -155,7 +157,9 @@ What you actually want inside your template depends on how you'd like it to look
 
 Remember how I said you wouldn't need to know any PHP? That's because for basic blocks, the above is all you need, and you can easily just copy, paste, and adapt that code for whatever fields you have.
 
-<Highlight>The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s name.</Highlight>
+The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s name.
+
+<Callout class="former-highlight">The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s name.</Callout>
 
 What this all means is: every time you use this block, it'll be dynamically rendered wrapped in a `div` with the `side-note` class. And the cool thing is: that applies both in the editor, and on the front end!
 

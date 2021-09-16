@@ -9,7 +9,7 @@ coverImage: "Negative-Space.png"
 excerpt: If your portfolio cost less than $20, is so large it can’t fit on a small table when open, is jammed full of huge illustrations and uses Helvetica all over the place, this is something you might want to read.
 ---
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -36,7 +36,9 @@ Resourcefulness is a valuable quality to any employer, especially in design. Sho
 
 This is such a simple problem that I'm honestly surprised at the frequency with which I see it, but it keeps cropping up again and again. For whatever reason, graphic design students often try to push an image beyond its limits. Maybe it's because this practice is more common (and slightly less damaging) on the web. But in print, it never works.
 
-<Highlight>Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new one.</Highlight>
+Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new one.
+
+<Callout class="former-highlight">Printed images should ideally be 300dpi or higher, <em>especially</em> in a student design portfolio. If the image you've selected isn't 300dpi at the size you have it, either shrink it or find a new one.</Callout>
 
 And by the way: one of the most glorious things about being a graphic design student is that your work is not bound by the same rules and laws that govern professional work. You can legally use virtually any image you can find as part of your design, provided you're using it for student work and you aren't taking credit for or profiting directly from it. So get on Google and adjust those image search parameters. Find something great. And _big_. And if you absolutely _must_ use an image that's below 300dpi, figure out how to disguise it. Show some Photoshop skills. (Adding subtle grain can be an effective technique.) Not many things mar a design as noticeably and glaringly as visible pixels do.
 
@@ -72,7 +74,9 @@ In short, if you're applying for a graphic design job, showcase your skills as t
 
 ## 4) Not Proofreading
 
-<Highlight>I cannot overemphasize this point: spellcheck is not good enough.</Highlight>
+I cannot overemphasize this point: spellcheck is not good enough.
+
+<Callout class="former-highlight">I cannot overemphasize this point: spellcheck is not good enough.</Callout>
 
 Not by a long shot, and for many, many reasons. Yes, you should still use it. But you shouldn't rely on it to do the whole job for you. Spellcheck is a good friend who will let you down at the worst possible moment.
 
@@ -96,7 +100,9 @@ Students (and many professionals) are naturally drawn to Helvetica for its myria
 
 Admittedly, the fact that Helvetica is everywhere is not Helvetica's fault, and could even be used as an argument for its merit. But no matter how good your work is, it still has to be _yours_, and Helvetica looks like the work of generations of other designers who were using it way before you or I ever heard of it.
 
-<Highlight>The point of your portfolio is to make you stand out, and it's hard to stand out as a student using the world's most generic typeface.</Highlight>
+The point of your portfolio is to make you stand out, and it's hard to stand out as a student using the world's most generic typeface.
+
+<Callout class="former-highlight">The point of your portfolio is to make you stand out, and it's hard to stand out as a student using the world's most generic typeface.</Callout>
 
 However, don't make the mistake of thinking that this advice is strictly tied to one specific family or font. Helvetica is only the most notorious example. Too many projects that might otherwise look fresh and outstanding instead may feel homogenous and ordinary when overworked type families are employed. Just like Helvetica, there's nothing wrong with Futura, Myriad, Bodoni or Gill Sans (ok, maybe there's something wrong with Gill Sans. If you ask me, anyway). But again, the point of your portfolio is to show how you and your work are different than anyone else and their work—how _you personally_ make a project unique with your own individual touch. And that's tough to do when all your typefaces are also in every other student portfolio out there.
 
@@ -132,7 +138,9 @@ It's easy to fall into the trap of believing that your work must be as large as 
 
 I understand; you want people to be able to see the details. How will anybody else know that every point, pixel and period is in its proper place if you don't stretch your available space to its limit?
 
-<Highlight>Don't think of your portfolio as a collection of projects; it's a design project in itself.</Highlight>
+Don't think of your portfolio as a collection of projects; it's a design project in itself.
+
+<Callout class="former-highlight">Don't think of your portfolio as a collection of projects; it's a design project in itself.</Callout>
 
 It should only include what makes you look great. Most interviewers don't want or need to see every single spread or be able to read every paragraph of body copy (though they will read some—see #4). Decorating a spread just to fill up the space is the visual equivalent of commenting on the weather to fill an awkward silence: it's meaningless noise.
 

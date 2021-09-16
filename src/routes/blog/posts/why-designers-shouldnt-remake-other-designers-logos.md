@@ -10,7 +10,7 @@ coverImage: "Screen-Shot-2015-09-03-at-9_14_54-AM.png"
 excerpt: "No matter how simple the end product, design is hard work. To come up with something that looks good, something people like, is at best tangential to the main point. The question is: does it succeed at meeting the project goals? And you don’t know how to answer that question."
 ---
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -100,7 +100,9 @@ And I'm willing to bet money that you _hate it_ when somebody does that to your
 
 These are all sentences you can't hear because you get the luxury of seeing the final product without any knowledge whatsoever of how it came into existence. Remake somebody else's logo design all you want, but know that it's utterly meaningless, because you get to do whatever you want and the original designer didn't. They had deadlines, budgets, parameters, meetings, goals, briefs, revisions, concerns and loads of client feedback. All you have is a starting point that somebody else already created for you and a social platform full of people willing to click the "like" button.
 
-<Highlight>Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at worst.</Highlight>
+Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at worst.
+
+<Callout class="former-highlight">Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at worst.</Callout>
 
 ## Don't Cheapen Design
 

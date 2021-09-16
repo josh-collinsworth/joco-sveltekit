@@ -8,7 +8,7 @@ coverImage: "css-variables-1.png"
 excerpt: CSS variables (otherwise known as CSS custom properties) give previously impossible superpowers to CSS developers. This post covers what they are, how they work, and a couple of nifty ways you can implement them on your own website.
 ---
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -42,7 +42,9 @@ And so on and so on. Eventually, though, your client decides that this is not th
 
 That's obviously a huge pain, because you've got to do a large-scale find-and-replace now. With some text editor know-how, it's not too big a deal, but things can be missed or even changed when they weren't supposed to be if you're not careful, especially when dealing with multiple stylesheets (or, _\*shudder\*_, CSS _outside_ of stylesheets).
 
-<Highlight>Fortunately for us, this is the black-and-white part of the infomercial where the poor, hapless CSS author says “there’s got to be a better way,” and the announcer cheerfully replies, “well, now there is!” as the world bursts into color. Enter CSS variables!</Highlight>
+Fortunately for us, this is the black-and-white part of the infomercial where the poor, hapless CSS author says “there’s got to be a better way,” and the announcer cheerfully replies, “well, now there is!” as the world bursts into color. Enter CSS variables!
+
+<Callout class="former-highlight">Fortunately for us, this is the black-and-white part of the infomercial where the poor, hapless CSS author says “there’s got to be a better way,” and the announcer cheerfully replies, “well, now there is!” as the world bursts into color. Enter CSS variables!</Callout>
 
 ## CSS Variable Basics
 
@@ -82,7 +84,9 @@ You might not have used the `:root` CSS pseudo-class before, but it refers to th
 
 That explains _what_ `:root` is, but not _why_. Why are we putting variables in a rule targeting the `:root`? Turns out, there's a very good reason for this, and it is: the cascade.
 
-<Highlight>Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as needed.</Highlight>
+Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as needed.
+
+<Callout class="former-highlight">Remember, in CSS, everything trickles down the cascade, and elements inherit properties from their parent and ancestor elements. So the reason we define CSS variables inside the :root selector is that we want them to cascade down, and be “known” to every other element in the document to use as needed.</Callout>
 
 In other words: applying a style to the `:root` means it gets "passed down" to every other element in the document. This wouldn't be the case if we applied CSS variables to, say, a random `<div>`. Elements _inside_ that `<div>` would know about the variables and could use them, but no elements outside would. So it makes the most sense to apply CSS variables to the `:root` pseudo-class, since _everything_ is inside of the root tag, which is `<html>`.
 

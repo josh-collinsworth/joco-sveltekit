@@ -13,7 +13,7 @@ coverImage: "Untitled-21.png"
 excerpt: I’m beginning to believe that becoming more connected with everyone is making me less connected with anyone.
 ---
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -52,7 +52,9 @@ This one was the most surprising to me. Just try it. You will disappear off your
 
 As part of this exercise, I uninstalled the Facebook app from my phone. 
 
-<Highlight>I was astounded how many times my thumb would automatically, without so much as a conscious thought, move to the space where the Facebook app icon used to be. It would happen dozens of times a day.</Highlight>
+I was astounded how many times my thumb would automatically, without so much as a conscious thought, move to the space where the Facebook app icon used to be. It would happen dozens of times a day.
+
+<Callout class="former-highlight">I was astounded how many times my thumb would automatically, without so much as a conscious thought, move to the space where the Facebook app icon used to be. It would happen dozens of times a day.</Callout>
 
 I actually found myself wondering—and I'm ashamed to admit this—“what did I do while I was in the bathroom before I got a smartphone?” (Don't picture that.)
 
@@ -94,7 +96,9 @@ Seriously; I never realized how much neck stiffness I had until I stopped checki
 
 Or put another way: 
 
-<Highlight>I'm beginning to believe that becoming more connected with everyone is making me less connected with anyone.</Highlight>
+I'm beginning to believe that becoming more connected with everyone is making me less connected with anyone.
+
+<Callout class="former-highlight">I'm beginning to believe that becoming more connected with everyone is making me less connected with anyone.</Callout>
 
 All that time spent browsing, reading, liking...it has to come from somewhere. Any minute you are or could be in the presence of another human being spent on social media is a minute you're taking from them and splitting up a dozen, a hundred, or a thousand ways. It's significantly weakening one good relationship in the name of very slightly strengthening many others.
 

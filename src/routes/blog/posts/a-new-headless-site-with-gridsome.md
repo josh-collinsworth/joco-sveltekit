@@ -12,7 +12,7 @@ excerpt: A lengthy write-up diving into what headless means, its advantages and 
 ---
 
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -43,7 +43,9 @@ If that's, uh, _headful_ WordPress (see what I mean? It's a bad term), then _hea
 
 So a headless WordPress site will still use the WP backend as usual for all the content management, post creation, data storage, etc. From the admin side of the site, nothing changes, which is probably good news for your clients, as well as anyone who just wants to be able to keep using the admin interface they're already accustomed to.
 
-<Highlight>But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST API.</Highlight>
+But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST API.
+
+<Callout class="former-highlight">But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST API.</Callout>
 
 If you aren't particularly familiar with the world of modern front-end development outside WordPress, you might not immediately see the advantages, but there are several to be had. Not being locked into PHP as your templating language means you're instead able to use powerful, modern frameworks like [Vue](http://vuejs.org), [Svelte](https://svelte.dev/), [Eleventy](https://www.11ty.dev/), or—in the case of this site—[Gridsome](http://gridsome.org), with all the goodies that come along.
 
@@ -51,7 +53,9 @@ This goes hand-in-hand with **Jamstack**, and is actually a decent example of it
 
 The term "Jamstack" was coined by [Netlify](http://netlify.com) (which, by the way, is where the front-end of this site is deployed). When people say they are launching or deploying a site "on the Jamstack," that usually means they're using a host like Netlify or [Vercel](https://vercel.com/) to compile or "build" their site directly from a git repo, and then host it on a global CDN.
 
-<Highlight>The advantages provided by a headless approach generally boil down to: speed; security; and developer experience.</Highlight>
+The advantages provided by a headless approach generally boil down to: speed; security; and developer experience.
+
+<Callout class="former-highlight">The advantages provided by a headless approach generally boil down to: speed; security; and developer experience.</Callout>
 
 ### Speed
 
@@ -121,13 +125,17 @@ Eventually, however, I decided it was worth keeping WordPress around for a while
 
 One is: **I still want to see where Gutenberg goes**. The block editor is still a _long_ way from where it needs to be (and I still tweet out my frustrations with it from time to time), but it's also very exciting.
 
-<Highlight>The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.</Highlight>
+The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.
+
+<Callout class="former-highlight">The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.</Callout>
 
 I came across a plugin called [Block Lab](https://wordpress.org/plugins/block-lab/), which I highly recommend whether you're using headless or not. Block Lab beautifully simplifies the process of creating basic custom blocks for use in the Gutenberg editor, and the accompanying PHP mini-template files (component files, I suppose you might call them) which render the content of those custom blocks.
 
 I thought this was amazingly handy given the editor's lack of some types of blocks that I wanted to create, and it was when I began putting this plugin to use I realized that _custom blocks will be custom on the headless front-end, too_.
 
-<Highlight>That is: when custom Block Lab blocks are used in page or post content, all of their custom template code comes with them, even through the WordPress API.</Highlight>
+That is: when custom Block Lab blocks are used in page or post content, all of their custom template code comes with them, even through the WordPress API.
+
+<Callout class="former-highlight">That is: when custom Block Lab blocks are used in page or post content, all of their custom template code comes with them, even through the WordPress API.</Callout>
 
 That's very cool, because it means I can still create custom blocks without really needing to build them twice; all I do is put a class in the PHP template file for the block, and target that class with CSS on my headless front-end.
 
@@ -141,7 +149,9 @@ Another reason, though, is that even though the site is headless, the WordPress 
 
 With a typical Jamstack site, dynamic things such as search forms—any type of form, really—can be problematic, as you don't typically have a database to query (though you could). Typically, when using a static site generator, the best you could do would be to pre-generate category or tag pages, or try to filter content client-side. But either of those approaches still fall short of a genuine search experience.
 
-<Highlight>Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress API.</Highlight>
+Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress API.
+
+<Callout class="former-highlight">Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress API.</Callout>
 
 In addition, I don't need to worry about porting my WordPress site's RSS feed; I can just point the `/feed` URL back to the original WordPress site and keep using the same one I always have.
 
@@ -203,7 +213,9 @@ You've probably seen both of them in this article already, but not if you're rea
 
 Highlights, in either case, only appear as larger text (no different to screen readers, since it didn't feel like emphasizing entire sentences or paragraphs was probably the right thing to do), though they're styled a bit differently on mobile, just to fit their surroundings better.
 
-<Highlight>Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)</Highlight>
+Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)
+
+<Callout class="former-highlight">Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)</Callout>
 
 The colorful square grid on the header and footer were really the heart of the visual aspect of the design, and they grew out of a [typographic experiment I made on CodePen](https://codepen.io/collinsworth/pen/ZEGrMRQ). I realized early on that the site was pretty stark and needed just a pop of color and interest, so I plagiarized myself and reused that colorful grid, and just for fun, made it re-render itself into a new random shape on every new page load.
 
@@ -271,4 +283,6 @@ The images step is easily the most time-consuming part of this site's build (Gri
 
 Thanks for taking the time to read about my headless WordPress site. And by the way, [here's a link to the GitHub repo](https://github.com/josh-collinsworth/joco-gridsome), if you're the sort of person who enjoys checking out that sort of thing. (It's still a little bit of a mess.)
 
-<Highlight>In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough edges.</Highlight>
+In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough edges.
+
+<Callout class="former-highlight">In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough edges.</Callout>

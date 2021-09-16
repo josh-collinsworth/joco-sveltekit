@@ -9,7 +9,7 @@ coverImage: "ColorPost-4.jpg"
 excerpt: One of the most difficult things for me to learn in my transition from the classroom to a professional branding agency was how to properly handle color output. So I decided to write this post in the hope of saving you some from some of the pitfalls that I failed to avoid.
 ---
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -32,7 +32,9 @@ As you probably know, most color printers create color by mixing cyan, magenta, 
 
 That's where the Pantone Matching System, called just Pantone or PMS for short, comes in.
 
-<Highlight>Pantone inks are special inks that are each created prior to printing.</Highlight>
+Pantone inks are special inks that are each created prior to printing.
+
+<Callout class="former-highlight">Pantone inks are special inks that are each created prior to printing.</Callout>
 
 Inks such as this are called "spot" colors. They aren't combinations of cyan, magenta, yellow and/or black created during printing; they're precisely and individually mixed beforehand, kind of like paint. Spot colors are also like paint in that they are applied by the printer in a flat uniform layer, as opposed to the tiny halftone dots created by more traditional printing methods like CMYK. This makes spot colors much, much more consistent than process color.
 
@@ -52,7 +54,9 @@ In short, spot color printing is the best way to ensure color accuracy and a hig
 
 So you probably can't print actual Pantone _inks_ on your own, but there's good news:
 
-<Highlight>Each Pantone swatch in the book includes CMYK, RGB and HTML values to reproduce that swatch color as accurately as possible in standard print and onscreen applications.</Highlight>
+Each Pantone swatch in the book includes CMYK, RGB and HTML values to reproduce that swatch color as accurately as possible in standard print and onscreen applications.
+
+<Callout class="former-highlight">Each Pantone swatch in the book includes CMYK, RGB and HTML values to reproduce that swatch color as accurately as possible in standard print and onscreen applications.</Callout>
 
 ![Pantone swatches include recommended CMYK, RGB and HTML values](/images/post_images/ColorPost-2.jpg)
 

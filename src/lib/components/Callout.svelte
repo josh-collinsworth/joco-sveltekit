@@ -7,15 +7,13 @@
 
 <style lang="scss">
   .callout {
-    margin: 2rem 0 2rem 1.5rem;
+    margin: 2rem 2rem 2rem;
     font-size: 1rem;
     line-height: 1.5em;
     position: relative;
     background: var(--paper);
     overflow: hidden;
     padding: 0 0 1rem 0;
-    float: right;
-    width: 45%;
 
     font-family: var(--callout-font);
     font-style: var(--callout-font-style);

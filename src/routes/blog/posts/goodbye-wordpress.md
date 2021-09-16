@@ -10,7 +10,7 @@ coverImage: "gw.png"
 excerpt: WordPress was potentially the most impactful and empowering technology I've yet encountered. It transformed my career path and enabled me to do anything I wanted at every point in my journey. So why leave it now?
 ---
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -23,7 +23,9 @@ I was first introduced to WordPress pretty early in my design career. I was a fl
 
 Though I knew the basics of HTML and CSS at the time (which allowed me to implement some customizations beyond what the theme provided), Divi offered to make previously impossible things achievable. The freedom was intoxicating.
 
-<Highlight>WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.</Highlight>
+WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.
+
+<Callout class="former-highlight">WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.</Callout>
 
 Things like loading and scroll effects, parallax, sliders, contact forms, project galleries, and all kinds of other features that were previously locked doors as a nascent coder suddenly became as easy as configuring some options in a graphical user interface (GUI).
 
@@ -54,7 +56,9 @@ The answer for me is: no; WordPress isn't worth it anymore in the case of my spe
 
 I thought about taking the WordPress side of the site to some cheap-o $5/month hosting. I tried out [SpinupWP](https://spinupwp.com/), and liked it a lot, but not enough to justify the cost of one single site. (I'd definitely use it if I had multiple client sites to host, though.)
 
-<Highlight>Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not simple.</Highlight>
+Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not simple.
+
+<Callout class="former-highlight">Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not simple.</Callout>
 
 Again: that doesn't mean WordPress is bad. It's not. (And while we're near the topic: neither is PHP. That joke can just die, please.) This just means that of the zillion things WordPress is and is capable of, either I'm not doing them, or doing them WordPress's way isn't personally worth the tradeoff to me, and for my unique set of needs and goals.
 
@@ -77,11 +81,15 @@ But the price tag of WordPress hosting generally assumes that your site is _wort
 
 Even GoDaddy starts at $10 per month; most other managed hosts, that would be considered a step above that, aren't selling it for less than about $15–30 per month (even WordPress.com will charge you at least $25 per month if you want SFTP access), and that price tag is _not_ cheap for a simple personal website or side project.
 
-<Highlight>There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.</Highlight>
+There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
+
+<Callout class="former-highlight">There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.</Callout>
 
 Granted, the tech hurdle is higher—not just anybody can code up a static site, and that's not to be discounted—but I can have a live Jamstack site on the web for _absolutely free_ any time I want with Netlify, et al. 
 
-<Highlight>WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.</Highlight>
+WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
+
+<Callout class="former-highlight">WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.</Callout>
 
 <Callout>WordPress just won't continue to be worth it for everyone all&nbsp;the&nbsp;time.</Callout>
 
@@ -96,7 +104,9 @@ When this site was headless WordPress, the front-end was already built in <a rel
 
 While it would've certainly been possible to just abandon the headless formula and go back to good ol' solo WordPress, that wasn't really an option to me. I'd lose too much work that had gone into this site already, and honestly, I wasn't interested in abandoning the modern dev experience that a JavaScript-based framework offers. I'm not making any value statements here, but to me:
 
-<Highlight>Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP templates.</Highlight>
+Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP templates.
+
+<Callout class="former-highlight">Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP templates.</Callout>
 
 (No knock on PHP. I still enjoy it when I get the chance to dive back into those waters, like playing an old video game I have fond memories of. But it's not my first choice anymore.)
 
@@ -232,7 +242,9 @@ Among Gridsome's library of plugins is a particularly delightful one called [Vue
 
 This means I can still have the functionality of all my custom blocks even while I'm writing posts in Markdown!
 
-<Highlight>Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're needed.</Highlight>
+Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're needed.
+
+<Callout class="former-highlight">Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're needed.</Callout>
 
 Here's an example:
 
@@ -302,7 +314,9 @@ module.exports = function(api) {
 
 ## Final thoughts
 
-<Highlight>I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated HTML.</Highlight>
+I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated HTML.
+
+<Callout class="former-highlight">I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated HTML.</Callout>
 
 This approach certainly isn't right for everyone. It works great for me because I'm the only one working on this site. But if I had co-authors, or users, or collaborators, the whole calculation might be drastically different.
 

@@ -11,7 +11,7 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
 ---
 
 <script>
-  import Highlight from '$lib/components/Highlight.svelte'
+  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -37,7 +37,9 @@ You could think of SvelteKit as the [Next](https://nextjs.org/) (or [Nuxt](https
 
 Meta frameworks are larger toolboxes for building full-fledged apps and sites, and include many of the pieces you'd need for a non-trivial project missing in front-end frameworks, like page routing, data stores, better control over SEO, and in some cases, image handling and APIs—usually just about everything except the database.
 
-<Highlight>So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about anything.</Highlight>
+So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about anything.
+
+<Callout class="former-highlight">So as you'd use a front-end framework like Svelte to build a small user interface or a single-page application, you can use a meta-framework like SvelteKit to build just about anything.</Callout>
 
 **One particularly nice thing about SvelteKit is that its output can be whatever you want.** It can function as a static site generator (as it does in my case), but it's also capable of generating apps with server-side rendering, or a mixture of server-side and static, or even full-fledged Node apps.
 
@@ -50,7 +52,9 @@ There's been a lot of buzz about Svelte lately, but I'd like to think I was a _l
 
 I instantly loved how easy Svelte made _everything_ I wanted to do (especially compared to React). I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte—and how close it was to the JavaScript, HTML and CSS I already knew. 
 
-<Highlight>Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully straightforward.</Highlight>
+Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully straightforward.
+
+<Callout class="former-highlight">Just about everywhere I'd normally be reaching for a workaround or stumbling into a gotcha when using another framework, Svelte just felt delightfully straightforward.</Callout>
 
 <Callout>Svelte has always felt <em>way</em> ahead of&nbsp;the&nbsp;game.</Callout>
 
@@ -203,7 +207,9 @@ As you can see from just perusing the posts list on this blog, it wasn't all tha
 
 This naturally prompts the question: _why move in the first place_?
 
-<Highlight>At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.</Highlight>
+At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
+
+<Callout class="former-highlight">At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.</Callout>
 
 I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome (0.7), and at this point, it doesn't seem like it's an actively maintained project any longer. I don't know if it will ever reach 1.0 or not. I certainly wouldn't begrudge the creators for at all abandoning it during the pandemic.
 
