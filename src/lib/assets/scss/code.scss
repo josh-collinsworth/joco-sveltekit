@@ -127,6 +127,10 @@ pre {
 	  color: #f2f2f2;
 		opacity: 0.3;
 	}
+
+	&.parameter {
+		color: #FFC97C;
+	}
  
 	&.punctuation {
 	  color: #f2f2f2;
@@ -155,25 +159,25 @@ pre {
 	&.char,
 	&.builtin,
 	&.inserted {
-	  color: #50fa7b;
+	  color: #FFFF80;
 	}
  
 	&.operator,
 	&.entity,
 	&.url,
 	&.variable {
-	  color: #f2f2f2;
+	  color: #ff80bf;
 	}
  
 	&.atrule,
 	&.attr-value,
 	&.function,
 	&.class-name {
-	  color: #50fa7b;
+	  color: #8AFF80;
 	}
  
 	&.keyword {
-	  color: #78dce8;
+	  color: #ff80bf;
 	}
  
 	&.regex,
