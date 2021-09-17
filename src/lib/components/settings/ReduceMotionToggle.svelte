@@ -61,7 +61,8 @@
 			transform: rotate(45deg);
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: var(--yellow);
 		}
 	}

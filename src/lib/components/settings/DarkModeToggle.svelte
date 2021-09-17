@@ -32,9 +32,12 @@
 
 <style lang="scss" global>
   #dark-mode-toggle {
-    &:hover svg {
-      path, circle {
-        stroke: var(--yellow);
+    &:hover,
+    &:focus {
+      svg {
+        path, circle {
+          stroke: var(--yellow);
+        }
       }
     }
 

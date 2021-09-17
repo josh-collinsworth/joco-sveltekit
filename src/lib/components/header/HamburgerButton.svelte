@@ -25,15 +25,27 @@
 		justify-content: space-between;
 		flex-direction: column;
 		align-items: stretch;
-		width: 2.5rem;
-		height: 2rem;
-		padding: .5rem;
-		margin-left: 0.5rem;
-		border: none;
+		width: var(--button-size);
+		height: var(--button-size);
+		padding: .55rem; 
+		margin-left: 2rem;
 		background: transparent;
 		position: relative;
 		z-index: 11;
+		border: 2px solid var(--ink);
 		transition: all .2s ease-in-out;
+		border-radius: var(--button-size);
+
+		&:before {
+			content: '';
+			height: var(--button-size);
+			width: 1px;
+			background: var(--lightGray);
+			display: block;
+			position: absolute;
+			top: -2px;
+			left: -1.1rem;
+		}
 
 		&.fixed {
 			position: relative;
@@ -50,7 +62,15 @@
 			width: 100%;
 			height: 2px;
 			background: var(--ink);
+			transition: background .2s;
 		}
+
+		&:hover,
+		&:focus {
+			.line {
+				background: var(--yellow);
+			}
+		} 
 
 		@media (min-width: 768px) {
 			display: none;

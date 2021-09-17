@@ -242,11 +242,11 @@ A couple of other considerations around images, though:
 
 Among Gridsome's library of plugins is a particularly delightful one called [Vue Remark](https://gridsome.org/plugins/@gridsome/vue-remark). Vue Remark simply allows you to import Vue components in your Markdown files, and use them right alongside your Markdown content anywhere you want.
 
+<Callout>Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.</Callout>
+
 This means I can still have the functionality of all my custom blocks even while I'm writing posts in Markdown!
 
 Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're needed.
-
-<Callout>Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.</Callout>
 
 Here's an example:
 
