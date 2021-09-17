@@ -51,16 +51,11 @@ $widest: 1960px;
 	--link-color: var(--darkBlue);
 	--highlight-color: var(--darkGray);
 
-	--column-width: 12vw;
 	--max-width: 32rem;
 	--sidebar-width: 14rem;
 	--margin: 1rem;
 
 	--button-size: 2.2rem;
-
-	--callout-font: var(--body-font);
-	--callout-font-style: italic;
-	--callout-font-weight: normal;
 
 	@media (min-width: $narrow) {
 		--margin: 2rem;

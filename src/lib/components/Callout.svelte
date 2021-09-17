@@ -1,11 +1,11 @@
 <aside class="callout" aria-hidden="true">
-  <div class="wrapper">
+  <div class="callout-wrapper">
     <slot />
   </div>
 </aside>
 
 
-<style lang="scss">
+<style lang="scss" global>
   .callout {
     margin: 2.5rem 2rem 3rem;
     font-size: 1.2rem;
@@ -14,13 +14,17 @@
     background: var(--paper);
     overflow: hidden;
     padding: 0 0 0.75rem 0;
+    font-family: var(--body-font);
+    font-style: italic;
+    font-weight: normal;
 
-    font-family: var(--callout-font);
-    font-style: var(--callout-font-style);
-    font-weight: var(--callout-font-weight);
+    em, i {
+      font-style: normal;
+      line-height: 1;
+    }
     
-    .wrapper {
-      margin: 0;
+    .callout-wrapper {
+      padding: 0 0 0 .1em;
 
       &:after {
         content: '';

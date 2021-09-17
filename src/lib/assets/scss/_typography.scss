@@ -95,12 +95,15 @@ h4,
 	font-family: var(--body-font);
 	font-size: 1.4rem;
 	font-weight: bold;
-	margin: 2rem 0 0.5rem;
+	margin: 3rem 0 0.5rem;
 	padding: 0;
+}
 
-	+ p {
-		margin-top: 0;
-	}
+h5,
+.h5 {
+	@extend .h4;
+	font-size: 1.1rem;
+	text-transform: uppercase;
 }
 
 h1,
