@@ -74,7 +74,7 @@ button {
 	position: relative;
 	border-radius: 2rem;
 	border: 2px solid var(--ink);
-	background: var(--paper);
+	background: var(--button-background);
 	transition: background var(--item-transition), color var(--item-transition),
 		border-color var(--item-transition);
 	z-index: 11;

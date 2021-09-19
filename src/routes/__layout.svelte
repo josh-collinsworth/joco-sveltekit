@@ -13,6 +13,7 @@
 
 <script lang="ts">
 	import '$lib/assets/scss/global.scss'
+	import throttle from 'lodash/throttle'
 	
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
@@ -21,7 +22,7 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/assets/js/constants'
-	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion } from '$lib/assets/js/store'
+	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown, isMenuOpen } from '$lib/assets/js/store'
 	import { onMount } from 'svelte'
 	
 	export let key: string
@@ -29,6 +30,7 @@
 
 	const blogPageCheck = new RegExp(/^\/blog/)
 	let isFullwidthPage: boolean = false
+	let lastScrollPosition: number = 0
 
 	$: pageHasSidebar = blogPageCheck.test(key)
 	$: isTopLevelPage = key.split('/').length < 3
@@ -57,7 +59,20 @@
 			isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 		}, TIMING_DURATION)
 	}
+
+	const handleScroll = throttle(() => {
+		const currentScrollPosition = window.scrollY
+		if (lastScrollPosition > currentScrollPosition) {
+			isScrollingDown.set(false)
+		} else {
+			isScrollingDown.set(true)
+		}
+		lastScrollPosition = currentScrollPosition
+	}, 200)
 </script>
+
+
+<svelte:window on:scroll={handleScroll} />
 
 <div
 	id="app"
@@ -72,7 +87,7 @@
 	<Header {key} /> 
 
 	<div class="layout"> 
-		<main id="#main" tabindex="-1">
+		<main id="#main" tabindex="-1" class:isMenuOpen={$isMenuOpen}>
 			<PageTransition refresh={isTopLevelPage}>
 				{#if isTopLevelPage}
 					<PageHead title={key} />
@@ -91,3 +106,11 @@
 
 	<Footer />
 </div>
+
+
+
+<style>
+	.isMenuOpen {
+		filter: blur(4px);
+	}
+</style>

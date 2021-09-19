@@ -6,10 +6,43 @@ body {
 ul,
 ol {
 	margin: 2rem 0;
+
+	ul,
+	ol {
+		margin: 1rem 0;
+	}
+}
+
+main ul {
+	list-style-type: none;
+
+	li::before {
+		content: '';
+		position: absolute;
+		left: -1rem;
+		top: 0.65em;
+		font-weight: bold;
+		height: .35em;
+		width: .35em;
+		background: var(--yellow);
+	}
+
+	ul {
+
+		li::before {
+			background: transparent;
+			border: 1px solid var(--yellow);
+
+			ul {
+				list-style-type: square;
+			}
+		}
+	}
 }
 
 li {
 	margin-bottom: 0.5rem;
+	position: relative;
 }
 
 a {

@@ -4,7 +4,7 @@
 	import NavMenus from '$lib/components/header/NavMenus.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
-	import { isLoading, isMenuOpen } from '$lib/assets/js/store'
+	import { isLoading, isMenuOpen, isScrollingDown } from '$lib/assets/js/store'
 
 	export let key: string
 
@@ -41,7 +41,7 @@
 			<span class="sr">Home</span>
 		</a>
 		
-		<div class="icon-container" class:sticky={$isMenuOpen}>
+		<div class="icon-container" class:sticky={$isMenuOpen} class:ghosty={$isScrollingDown && !$isMenuOpen}>
 			<ReduceMotionToggle />
 			<DarkModeToggle />
 			<NavMenus {key} />
@@ -64,6 +64,7 @@
 		position: fixed;
 		right: 1rem;
 		top: calc(1rem + 1px);
+		transition: opacity 0.2s;
 
 		@media (min-width: $narrow) {
 			position: static;
@@ -72,7 +73,6 @@
 
 	.sticky {
 		--ink: var(--white);
-		--paper: var(--darkBlue);
 	}
 
 	.header {
