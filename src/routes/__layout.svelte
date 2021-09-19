@@ -13,7 +13,7 @@
 
 <script lang="ts">
 	import '$lib/assets/scss/global.scss'
-	import throttle from 'lodash/throttle'
+	import throttle from 'lodash/throttle.js'
 	
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
