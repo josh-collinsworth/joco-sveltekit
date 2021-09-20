@@ -76,7 +76,7 @@ button {
 	border: 2px solid var(--ink);
 	background: var(--button-background);
 	transition: background var(--item-transition), color var(--item-transition),
-		border-color var(--item-transition);
+		border-color var(--item-transition), opacity .2s ease-in-out;
 	z-index: 11;
 
 	&:hover {

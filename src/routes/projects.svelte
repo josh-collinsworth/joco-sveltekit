@@ -88,7 +88,7 @@
   </div>
 </article>
 
-<style lang="scss" global>
+<style lang="scss">
   p {
     max-width: var(--max-width);
   }

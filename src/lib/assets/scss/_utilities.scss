@@ -2,6 +2,10 @@
 	margin: 0;
 }
 
+.no-bullets li::before {
+  display: none !important;
+}
+
 .display-block {
 	display: block;
 }

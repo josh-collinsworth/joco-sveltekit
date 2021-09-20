@@ -73,6 +73,7 @@
 
 	.sticky {
 		--ink: var(--white);
+		--button-background: transparent;
 	}
 
 	.header {

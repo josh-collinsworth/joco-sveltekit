@@ -3,36 +3,45 @@
 </div>
 
 
-<style>
+<style lang="scss">
 	.side-note {
-		padding: 1.5rem;
+		padding: 1rem 1rem 1rem 2.5rem;
 		position: relative;
-		margin: 3rem 1rem;
-		max-width: calc(100% - 2rem);
+		margin: 3rem 0;
 		font-size: .9rem;
 		font-style: italic;
-		border: 1px solid var(--lightBlue);
+		background: rgba(var(--lightBlueRGB), 0.1);
 		line-height: var(--body-line-height);
-	}
+		min-height: 4.5rem;
 
-	.side-note:before {
-		content: 'Side Note';
-		position: absolute;
-		top: -.5em;
-		left: .5rem;
-		background: var(--paper);
-		padding: 0 1rem;
-		line-height: 1;
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: .7rem;
-		color: var(--lightBlue);
-	}
+		&:before {
+			content: 'Side Note';
+			position: absolute;
+			bottom: calc(50% - 2.65em);
+			left: 1.25rem;
+			padding: 0;
+			line-height: 1.5rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: .7rem;
+			font-style: normal;
+			color: var(--white);
+			transform: rotate(-90deg);
+			transform-origin: bottom left;
+			z-index: 2;
+			text-align: center;
+			width: max-content;
+		}
 
-	@media (min-width: 1024px) {
-		.side-note {
-				margin: 3rem 2rem;
-				max-width: calc(100% - 4rem);
+		&:after {
+			content: '';
+			width: 1rem;
+			height: 100%;
+			background: var(--lightBlue);
+			left: 0;
+			top: 0;
+			position: absolute;
 		}
 	}
+
 </style>

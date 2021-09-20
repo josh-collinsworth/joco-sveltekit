@@ -7,7 +7,7 @@
 </script>
 
 
-<ul>
+<ul class="no-bullets">
   {#each posts as post}
     <PostPreview {post} {external} />
   {/each}

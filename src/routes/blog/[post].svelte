@@ -32,7 +32,7 @@
   <title>{meta.title}</title>
 </svelte:head>
 
-<template>
+<article>
   <img class="cover-image" src="/images/post_images/{meta.coverImage}" alt="" />
 
   <h1>{ meta.title }</h1>
@@ -70,7 +70,7 @@
       </li>
     </ul>
   </aside>
-</template>
+</article>
 
 
 <style global lang="scss">

@@ -63,7 +63,6 @@
   
       a {
         color: var(--white);
-        width: calc(100% - 4rem);
       }
     }
 
@@ -76,6 +75,7 @@
 			margin: 0;
 			position: relative;
 			color: var(--ink);
+      width: max-content;
 
 			&.active {
 				font-weight: bold;

@@ -22,7 +22,7 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/assets/js/constants'
-	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown, isMenuOpen } from '$lib/assets/js/store'
+	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/assets/js/store'
 	import { onMount } from 'svelte'
 	
 	export let key: string
@@ -88,7 +88,7 @@
 	<Header {key} /> 
 
 	<div class="layout"> 
-		<main id="#main" tabindex="-1" class:isMenuOpen={$isMenuOpen}>
+		<main id="#main" tabindex="-1">
 			<PageTransition refresh={isTopLevelPage}>
 				{#if isTopLevelPage}
 					<PageHead title={key} />
@@ -107,11 +107,3 @@
 
 	<Footer />
 </div>
-
-
-
-<style>
-	.isMenuOpen {
-		filter: blur(4px);
-	}
-</style>

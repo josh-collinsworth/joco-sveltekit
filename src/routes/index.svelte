@@ -17,26 +17,11 @@
 
 <svelte:head>
 	<title>Josh Collinsworth</title>
-	<meta data-key="description" name="description" content="Front-end developer and designer">
+	<meta data-key="description" name="description" content="Front-end developer, designer, teacher and writer">
 </svelte:head>
 
 <div class="intro">
 	<svelte:component this={Homepage} />
-
-  <h3>Up next:</h3>
-  <nav>
-    <ul class="next">
-      <li>
-        <a href="/blog">Read some things I wrote</a>
-      </li>
-      <li>
-        <a href="/projects">See some of my projects</a>
-      </li>
-      <li>
-        <a href="/contact">Reach out</a>
-      </li>
-    </ul>
-  </nav>
 </div>
 
 
@@ -46,27 +31,32 @@
 }
 
 .intro {
-  display: grid;
-  grid-gap: .5rem;
-  grid-template-columns: 1fr;
 
-  p, h1 {
+  h2 {
+    font-size: 3.4rem;
     margin: 0;
   }
 
-  // h2 {
-    // font-family: var(--body-font);
-    // font-weight: bold;
-    // margin-top: 2em;
-    // margin-bottom: 0;
-		// padding: 0;
-    // font-size: 1.2rem;
-    // line-height: 1;
-    // border: 0;
-  // }
+  .subhead {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0.25em 0 4rem;
+    line-height: 1.2;
+  }
 
-  .next {
-    margin-top: 1rem;
+  h3 {
+    font-family: var(--body-font);
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+		padding: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+    border: 0;
+  }
+
+  ul {
+    margin-top: 4rem;
   }
 }	
 </style>

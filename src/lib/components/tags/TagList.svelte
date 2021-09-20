@@ -1,4 +1,4 @@
-<ul class="tag-list">
+<ul class="tag-list no-bullets">
   <slot />
 </ul>
 

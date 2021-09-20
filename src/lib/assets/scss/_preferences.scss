@@ -24,6 +24,7 @@
 		--accent-color: var(--lightBlue);
 		--link-color: var(--ink);
 		--highlight-color: var(--darkerGray);
+		--button-background: var(--paper);
 
 		.post-preview {
       box-shadow: 0.25rem 0.25rem 0 0 rgba(0, 0, 0, 0.2);
@@ -40,5 +41,6 @@
 		--accent-color: var(--darkBlue);
 		--link-color: var(--darkBlue);
 		--highlight-color: var(--darkGray);
+		--button-background: var(--paper);
 	}
 }

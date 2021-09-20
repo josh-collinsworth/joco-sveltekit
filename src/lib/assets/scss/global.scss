@@ -37,26 +37,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-// This is all experimental goofing around, but might be cool??
-// @keyframes fade-in-up {
-// 	0% {
-// 		transform: translateY(1rem);
-// 		opacity: 0;
-// 	}
-// 	100% {
-// 		transform: translateY(0);
-// 		opacity: 1;
-// 	}
-// }
-
-// main * {
-// 	animation: fade-in-up .8s cubic-bezier(.17,.84,.44,1) forwards;
-// 	opacity: 0;
-// }
-
-// @for $i from 6 through 25 {
-// 	main *:nth-child(#{$i - 5}) {
-// 		animation-delay: $i * 0.05 + s;
-// 	}
-// }

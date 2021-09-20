@@ -220,7 +220,7 @@
 
   <h3>Colors</h3>
 
-  <ul id="brand-colors">
+  <ul id="brand-colors" class="no-bullets">
     {#each colors as color}
       <li class="color">
         <div class="swatch" style="background-color: {color}"></div>

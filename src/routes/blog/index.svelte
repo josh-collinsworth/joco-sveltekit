@@ -27,14 +27,14 @@
 <template>
 	<div class="heading-wrapper">
 		<h2>External writing</h2>
-		<p>Works for other publications and websites</p>
+		<p>Things I got paid to write</p>
 	</div>
 	
 	<PostList posts={EXTERNAL_POSTS} external={true} />
 	
 	<div class="heading-wrapper">
 		<h2>My blog</h2>
-		<p>Published on this website only</p>
+		<p>Things I wrote just because</p>
 	</div>
 
 	<PostList {posts} />	

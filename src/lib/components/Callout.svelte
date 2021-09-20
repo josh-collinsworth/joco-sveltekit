@@ -40,13 +40,13 @@
     @media(min-width: $narrow) {
       display: block;
       float: right;
-      width: 50%;
-      margin: 3rem -2rem 3rem 2rem;
+      width: 55%;
+      margin: 3rem -3rem 3rem 2rem;
     }
     
-    @media(min-width: $wide) {
+    @media(min-width: $medium) {
       width: 20em;
-      margin-right: calc(-3rem - 12vw);
+      margin-right: calc(-4rem - 12vw);
     }
     
     @media(min-width: $wider) {

@@ -1,6 +1,5 @@
 <script lang="ts">
   import NavLink from './NavLink.svelte'
-  import { isMenuOpen } from '$lib/assets/js/store'
 
   export let mobile: boolean = false
   export let key: string
@@ -12,8 +11,8 @@
   {#if mobile}
     <NavLink to="/" text="About me" {key} {mobile} />
   {/if}
-  <NavLink to="/projects" text="Projects" {key} {mobile} />
   <NavLink to="/blog" text="Writing" {key} {mobile} />
+  <NavLink to="/projects" text="Projects" {key} {mobile} />
   <NavLink to="/contact" text="Contact" {key} {mobile} />
   <NavLink to="/uses" text="Uses" {key} {mobile} />
 </ul>  

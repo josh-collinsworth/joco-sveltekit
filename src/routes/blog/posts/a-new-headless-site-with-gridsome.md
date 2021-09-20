@@ -12,7 +12,7 @@ excerpt: A lengthy write-up diving into what headless means, its advantages and 
 ---
 
 <script>
-  
+  import Highlight from '$lib/components/Highlight.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -212,19 +212,17 @@ For the projects, I actually _did_ decide to use Markdown files. Each project, o
 
 Speaking of fun things: I tried to put something interesting (interesting for me to build, at least, if not for visitors to look at) throughout the site. There's the aforementioned font tester on the [/uses](/uses) page, the search feature on the [/blog](/blog) page, and also, a very pointless and highly subjective chart of my professional skills on the about page. (There's also a bit of cheekiness to be found in the footer.)
 
-<SideNote>This section mentions Highlight blocks, which aren't present on the site any longer. Existing Highlights have been combined into Callouts.</SideNote>
-
 On the topic of visual interest: the new site generates a bit extra using a couple of custom editor blocks; **Callouts** (which work a lot like pull quotes from a print publication), and **Highlights** (which serve to enlarge key pieces of text). Both make the posts a bit more skimmable (not a word; I'm ok with it), and help convey its main points at a glance.
 
 <Callout>When you’re on a wide enough screen, the callouts appear with the article text conventionally wrapping around them (and hidden using ARIA to prevent screen readers repeating the text).</Callout>
 
 You've probably seen both of them in this article already, but not if you're reading this on mobile. Callouts _repeat_ text, which is confusing when you've only got a single column on a mobile screen, so I hide those at mobile widths. When you're on a wide enough screen, the callouts appear with the article text conventionally wrapping around them (and hidden using ARIA to prevent screen readers repeating the text).
 
+<SideNote>Highlight blocks aren't present on the site any longer (save for this page) since it didn't seem to make sense to have two different ways to call out text, and the styling conflicted a bit with headings. Instead I settled on a different solution to the "repeat reading" problem described above (I stopped caring), and combined both blocks into one.</SideNote>
+
 Highlights, in either case, only appear as larger text (no different to screen readers, since it didn't feel like emphasizing entire sentences or paragraphs was probably the right thing to do), though they're styled a bit differently on mobile, just to fit their surroundings better.
 
-Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)
-
-<Callout>Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)</Callout>
+<Highlight>Highlights take the text of the paragraph and—what else—highlight it, just like so. (How meta!)</Highlight>
 
 The colorful square grid on the header and footer were really the heart of the visual aspect of the design, and they grew out of a [typographic experiment I made on CodePen](https://codepen.io/collinsworth/pen/ZEGrMRQ). I realized early on that the site was pretty stark and needed just a pop of color and interest, so I plagiarized myself and reused that colorful grid, and just for fun, made it re-render itself into a new random shape on every new page load.
 
