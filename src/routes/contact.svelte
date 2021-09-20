@@ -1,6 +1,7 @@
 <script lang="ts">
 	let formData: object = {}
 	let isSubmitted: boolean = false
+	import { onMount } from 'svelte'
 
 	const encode = (data: object): string => {
 		return Object.keys(data)
@@ -20,6 +21,10 @@
 			.then(() => { isSubmitted = true })
 			.catch(error => alert(error))
 	}
+
+	onMount(() => {
+		document.getElementById('contact-form').classList.remove('no-js')
+	})
 </script>
 
 
@@ -32,12 +37,13 @@
 	{#if !isSubmitted}
 
 		<noscript>
-			<h2>Sorry, this form won't work without JavaScript enabled.</h2>
-			<p>You can try me at <code>joshuajcollinsworth</code> on the good ol' Google mail.</p>
+			<h2>Sorry, this contact form won't work without JavaScript enabled.</h2>
+			<p>You can try me at <code>joshuajcollinsworth</code> on the good ol' Google mail instead if you like.</p>
 		</noscript>
 
 		<form
 			id="contact-form"
+			class="no-js"
 			name="contact"
 			method="post"
 			on:submit|preventDefault={handleSubmit}
@@ -81,5 +87,9 @@
 	#contact-form {
 		width: 100%;
 		margin-top: 4rem;
+
+		&.no-js {
+			display: none;
+		}
 	}
 </style>

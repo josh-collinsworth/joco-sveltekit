@@ -107,10 +107,6 @@
 					}
 				}
 			}
-  
-      &:hover {
-        color: var(--link-color);
-      }
 
 			&:hover,
 			&:focus {

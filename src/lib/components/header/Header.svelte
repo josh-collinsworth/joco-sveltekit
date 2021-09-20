@@ -95,9 +95,8 @@
 
 		transition: transform var(--item-transition), opacity var(--item-transition);
 		position: absolute;
-		top: 1rem;
+		top: -6rem;
 		left: 1rem;
-		transform: translateX(-100%);
 		padding: .5em;
 		opacity: 0;
 		display: flex;
@@ -108,7 +107,7 @@
 		color: var(--white);
 
 		&:focus {
-			transform: translateX(0)	;
+			transform: translateY(.7rem);
 			opacity: 1;
 			z-index: 11;
 		}

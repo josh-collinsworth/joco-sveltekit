@@ -13,9 +13,9 @@
 	on:click={() => isMenuOpen.set(!$isMenuOpen)}
 >
 	<span class="sr">{menuOpenReadableOpposite} menu</span>
-	<div class="line" aria-hidden="true" />
-	<div class="line" aria-hidden="true" />
-	<div class="line" aria-hidden="true" />
+	<div class="line line-top" aria-hidden="true" />
+	<div class="line line-middle" aria-hidden="true" />
+	<div class="line line-bottom" aria-hidden="true" />
 </button>
 
 
@@ -55,6 +55,18 @@
 
 			.line {
 				background: var(--white);
+
+				&-top {
+					transform: translate(-.4em, -.1em) rotate(-45deg) scaleX(0.8);
+				}
+
+				&-middle {
+					transform: translateX(0em);
+				}
+				
+				&-bottom {
+					transform: translate(-.4em, .1em) rotate(45deg) scaleX(0.8);
+				}
 			}
 		}
 
@@ -62,7 +74,8 @@
 			width: 100%;
 			height: 2px;
 			background: var(--ink);
-			transition: background .2s;
+			transition: background .2s, transform .4s cubic-bezier(.86,0,.07,1);
+			transform-origin: right;
 		}
 
 		&:hover,

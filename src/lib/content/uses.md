@@ -36,9 +36,9 @@ I've also got working experience with jQuery and Knockout.
 
 - [Visual Studio Code](https://code.visualstudio.com/): my favorite editor ever. I was a reluctant Sublime Text convert, but the switch was more than worth it.
 
-  - Theme: currently on [Monokai](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) theme.
+  - **Theme**: I love [Dracula Pro](https://draculatheme.com/pro); it strikes the perfect balance of contrast and color to my eye. I also appreciate that it comes with identical themes for other apps, like Slack, iTerm, and others. It _is_ espensive, however, so for a free option, I'd go with go with good ol' [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
-  - Font: [MonoLisa](https://www.monolisa.dev/).
+  - **Font**: [MonoLisa](https://www.monolisa.dev/).
   I’m a code nerd and a font nerd, so I don't take this choice lightly, but this is my favorite dev font. I love its combination of legibility and subtle personality, and plus, the code ligatures are great. (If you’re not willing to spend the money, though—and I definitely understand if that’s the case—
   [Fira Code](https://github.com/tonsky/FiraCode) is my runner-up.)
 
@@ -47,26 +47,14 @@ I've also got working experience with jQuery and Knockout.
     - [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html):
     treats HTML inside template literal strings like actual HTML code, for the purposes of highlighting, code completion, Emmett, etc.
 
-    - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer):
-    makes it easier to distinguish where a code block ends by assigning the same color to the opening and closing brackets.
-
     - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode):
     a nifty, pretty way to take code screenshots
-
-    - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare):
-    the best way to collaborate on code remotely that I’ve ever used.
 
     - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens):
     less indispensable now that VS Code has the [Timeline view](https://scotch.io/bar-talk/vs-code-v144-adds-a-git-timeline-view), but still amazingly handy for viewing git status and history in projects.
 
     - [Close HTML/XML Tag](https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag):
     the only keyboard shortcut I miss from Sublime Text is easily replicated with this extension. Gives you a key command to auto-close whatever HTML tag your cursor is inside of.
-
-    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag):
-    does what it says; when you adjust the opening tag of an HTML element, it makes the same change to the closing tag, and vice versa.
-
-    - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens):
-    some understandably find this extension obnoxious, as it outputs errors directly beside your code (rather than keeping them hidden until hover), but I appreciate them always being visible—both to prevent needing to hover or click something, and as a reminder to fix them.
 
 
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/):
@@ -100,8 +88,6 @@ I made it about two months as a full-time work-from-home employee before I went 
 
 - [Uplift V2 C-Frame](https://www.upliftdesk.com/uplift-v2-standing-desk-frame/) standing desk:
 Not a lot of purchases I’ve been happier with than this one. It works incredibly well and is surprisingly sturdy, even without springing for the commercial version. (I have the 27.5" feet for my larger Ikea desktop, and the Advanced Digital Memory Keypad.)
-
-
 
 
 ## Productivity &amp; Utility
@@ -140,7 +126,6 @@ you can have software 90% as good as Photoshop, Illustrator and InDesign <em>for
 I don’t often illustrate these days, but when I do, I’m always glad I have this fantastic pad. Wireless is a big plus.
 
 
-
 ## This site
 
 <p class="fancy details">This is about the fifth iteration of my personal brand. The colors haven't changed, but I rotate fonts and layout once every year or two.</p>
@@ -148,6 +133,7 @@ I don’t often illustrate these days, but when I do, I’m always glad I have t
 ### Colors
 
 <SiteColors />
+
 
 ### Fonts
 

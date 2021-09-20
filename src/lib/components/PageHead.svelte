@@ -1,5 +1,6 @@
 <script lang="ts">
   import { prefersReducedMotion } from '$lib/assets/js/store'
+  import { onMount } from 'svelte'
 
   export let title: string
   export let subtitle: string = ''
@@ -22,15 +23,24 @@
     }, 420)
 
   }
+
+  onMount(() => {
+    document.querySelector('.heading-wrapper').classList.remove('no-js')
+  })
 </script>
 
 
 <div class="page-head">
-  <div class="heading-wrapper" class:in={isWorking} class:no-motion={$prefersReducedMotion}>
+  <div
+    class="heading-wrapper no-js"
+    class:in={isWorking}
+    class:no-motion={$prefersReducedMotion}
+  >
     <span class="brace" aria-hidden="true">[</span>
     <h1>
       <div class="title-wrap">
         {computedTitle}
+        <noscript>{title}</noscript>
       </div>
     </h1>
     <span class="brace closing-brace" aria-hidden="true">]</span>
@@ -85,7 +95,8 @@
         transform: translateX(0);
       }
 
-      &.no-motion .closing-brace {
+      &.no-motion .closing-brace, 
+      &.no-js .closing-brace {
         transform: translateX(0);
       }
     }

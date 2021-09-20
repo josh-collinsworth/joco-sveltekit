@@ -29,7 +29,10 @@
 
   onMount(() => { text = label || font })
 
-  const select = (e: Event) => e.target.select()
+  const select = (e: Event): void => {
+		const target = e.target as HTMLInputElement
+		target && target.select()
+	}
 </script>
 
 

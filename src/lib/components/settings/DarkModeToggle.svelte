@@ -1,6 +1,7 @@
 <script lang="ts">
   import LightDarkIcon from './LightDarkIcon.svelte'
   import { prefersDarkMode, prefersLightMode } from '$lib/assets/js/store';
+  import { onMount } from 'svelte'
 
   let enableOrDisable: string
 
@@ -14,6 +15,10 @@
       window.localStorage.setItem('collinsworth-dark-mode', JSON.stringify($prefersDarkMode))
     }
   }
+
+  onMount(() => {
+    document.getElementById('dark-mode-toggle').classList.remove('no-js')
+  })
 </script>
 
 
@@ -21,7 +26,7 @@
   id="dark-mode-toggle"
   on:click={toggleDarkMode}
   class:dark={$prefersDarkMode}
-  class="settings-toggle"
+  class="settings-toggle no-js"
   title="{enableOrDisable} dark mode"
   aria-pressed={$prefersDarkMode}
 >
@@ -32,6 +37,10 @@
 
 <style lang="scss" global>
   #dark-mode-toggle {
+    &.no-js {
+      display: none;
+    }
+
     &:hover,
     &:focus {
       svg {
