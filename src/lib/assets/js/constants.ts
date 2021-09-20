@@ -1,14 +1,5 @@
 import type Post from './interfaces/post'
 
-const SITE_COLORS: string[] = [
-  'var(--lightGray)',
-  'var(--ink)',
-  'var(--lightBlue)',
-  'var(--darkBlue)',
-  'var(--yellow)',
-  'var(--orange)'
-]
-
 const EXTERNAL_POSTS: Post[] = [
   {
     title: 'What I Learned Building a Word Game App With Nuxt on Google Play',
@@ -38,7 +29,6 @@ const FULLWIDTH_PAGES: string[] = [
 const TIMING_DURATION = 360
 
 export {
-  SITE_COLORS,
   EXTERNAL_POSTS,
   FULLWIDTH_PAGES,
   TIMING_DURATION,

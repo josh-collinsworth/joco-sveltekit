@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
   export async function load({page}) {
     try {
       const Post = await import(`./posts/${page.params.post}.md`)

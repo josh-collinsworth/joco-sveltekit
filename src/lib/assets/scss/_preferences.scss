@@ -44,3 +44,7 @@
 		--button-background: var(--paper);
 	}
 }
+
+.no-js .settings-toggle {
+	display: none;
+}

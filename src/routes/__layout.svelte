@@ -35,7 +35,7 @@
 	$: pageHasSidebar = blogPageCheck.test(key)
 	$: isTopLevelPage = key.split('/').length < 3
 
-	onMount(() => {
+	const handleLoadingUserPreferences = () => {
 		const userPrefersDark = 
       window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
@@ -46,9 +46,7 @@
 
     prefersDarkMode.set(computedUserPreference)
     prefersLightMode.set(!computedUserPreference)
-
-		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
-	})
+	}
 
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
@@ -62,7 +60,6 @@
 
 	const handleScroll = throttle(() => {
 		const currentScrollPosition = window.scrollY
-		console.log(currentScrollPosition)
 		if (lastScrollPosition > currentScrollPosition) {
 			isScrollingDown.set(false)
 		} else if (currentScrollPosition > 100) {
@@ -70,6 +67,12 @@
 		}
 		lastScrollPosition = currentScrollPosition
 	}, 200)
+
+	onMount(() => {
+		handleLoadingUserPreferences()
+
+		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
+	})
 </script>
 
 

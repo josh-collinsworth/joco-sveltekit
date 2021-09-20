@@ -1,5 +1,5 @@
 {
-  "name": "~TODO~",
+  "name": "josh-collinsworth-sveltekit",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",

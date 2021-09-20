@@ -1,6 +1,5 @@
 <script lang="ts">
   import GridCell from './GridCell.svelte'
-  import { SITE_COLORS } from '$lib/assets/js/constants'
   import { onMount } from 'svelte'
 
   export let refresh: string = ''
@@ -8,11 +7,18 @@
   export let squareCount: number = 0
 
   let count: number = 0
-  let gridColors = SITE_COLORS
   let gridWidth: number
   let out: boolean = false
   let thisPage: string = ''
   let loadedIn = false
+  const gridColors: string[] = [
+    'var(--lightGray)',
+    'var(--ink)',
+    'var(--lightBlue)',
+    'var(--darkBlue)',
+    'var(--yellow)',
+    'var(--orange)'
+  ]
 
   $: if (refresh && loadedIn) {
     out = true

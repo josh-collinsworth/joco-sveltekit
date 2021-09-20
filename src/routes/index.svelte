@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
 	export async function load() {
 		const Homepage = await import('$lib/content/homepage.md')
 		
