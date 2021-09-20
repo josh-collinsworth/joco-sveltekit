@@ -57,15 +57,15 @@
 				background: var(--white);
 
 				&-top {
-					transform: translate(-.4em, -.1em) rotate(-45deg) scaleX(0.8);
+					transform: translate(0.025em, -.1em) rotate(-45deg) scaleX(1.5);
 				}
 
 				&-middle {
-					transform: translateX(0em);
+					transform: scaleX(0);
 				}
 				
 				&-bottom {
-					transform: translate(-.4em, .1em) rotate(45deg) scaleX(0.8);
+					transform: translate(0.025em, .1em) rotate(45deg) scaleX(1.5);
 				}
 			}
 		}
@@ -76,6 +76,10 @@
 			background: var(--ink);
 			transition: background .2s, transform .4s cubic-bezier(.86,0,.07,1);
 			transform-origin: right;
+
+			&-middle {
+				transform-origin: center;
+			}
 		}
 
 		&:hover,
