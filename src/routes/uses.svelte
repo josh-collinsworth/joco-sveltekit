@@ -1,5 +1,5 @@
 <script lang="ts">
-  import FontTester from '$lib/components/FontTester.svelte'
+  import FontTester from '$lib/components/demos/FontTester.svelte'
 
   const colors: string[] = [
     '#ffd100',

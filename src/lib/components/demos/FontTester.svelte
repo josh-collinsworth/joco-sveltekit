@@ -127,5 +127,9 @@
 			align-content: flex-end;
 			position: relative;
 		}
+
+		.details {
+			margin-top: 1rem;
+		}
 	}
 </style>

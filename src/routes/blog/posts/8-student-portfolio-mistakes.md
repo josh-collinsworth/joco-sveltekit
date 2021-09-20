@@ -9,7 +9,6 @@ coverImage: "Negative-Space.png"
 excerpt: If your portfolio cost less than $20, is so large it can’t fit on a small table when open, is jammed full of huge illustrations and uses Helvetica all over the place, this is something you might want to read.
 ---
 <script>
-  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>

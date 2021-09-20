@@ -13,7 +13,6 @@ coverImage: "Untitled-21.png"
 excerpt: I’m beginning to believe that becoming more connected with everyone is making me less connected with anyone.
 ---
 <script>
-  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>

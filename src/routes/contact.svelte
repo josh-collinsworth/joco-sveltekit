@@ -31,7 +31,10 @@
 <template>
 	{#if !isSubmitted}
 
-		<noscript><h2>Sorry, this form won't work without JavaScript enabled.</h2></noscript>
+		<noscript>
+			<h2>Sorry, this form won't work without JavaScript enabled.</h2>
+			<p>You can try me at <code>joshuajcollinsworth</code> on the good ol' Google mail.</p>
+		</noscript>
 
 		<form
 			id="contact-form"

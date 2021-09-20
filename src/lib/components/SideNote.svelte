@@ -5,12 +5,12 @@
 
 <style lang="scss">
 	.side-note {
-		padding: 1rem 1rem 1rem 2.5rem;
+		padding: 1rem 1rem 1rem 2rem;
 		position: relative;
 		margin: 3rem 0;
 		font-size: .9rem;
 		font-style: italic;
-		background: rgba(var(--lightBlueRGB), 0.1);
+		background: rgba(var(--lightBlueRGB), 0.2);
 		line-height: var(--body-line-height);
 		min-height: 4.5rem;
 

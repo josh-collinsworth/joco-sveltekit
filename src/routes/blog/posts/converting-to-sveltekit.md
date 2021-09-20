@@ -11,7 +11,7 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
 ---
 
 <script>
-  
+  import CounterButton from '$lib/components/demos/CounterButton.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -64,9 +64,11 @@ Just about everywhere I'd normally be reaching for a workaround or stumbling int
 
 At a basic level, Svelte is extremely similar to React, Vue, and other front-end frameworks; they're, component-based, state-driven JavaScript frameworks. (Or libraries, if you want to split that particular hair.) They all allow you to nest components, pass props, and handle events. All three (and more) are fully capable of doing the same jobs.
 
-Maybe the most contrived way to demonstrate a front-end framework's style and capabilities is a button component that counts how many times it's been clicked, and updates accordingly. It's the "hello world" of component examples:
+Maybe the most contrived way to demonstrate a front-end framework's style and capabilities is a button component that counts how many times it's been clicked, and updates accordingly. It's the "hello world" of component examples. 
 
-![Demonstrating a button that increments when clicked](/images/post_images/hello-world-button.gif)
+**Here's a demo** (_click the button_):
+
+<CounterButton />
 
 **It's not a particularly practical example, but it _is_ a common one** (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of front-end frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), update the UI (the button) automatically.
 
@@ -87,7 +89,7 @@ export const Button = () => {
 
   return (
     <button onClick={incrementCount}>
-      Button has been clicked {count} times.
+      This button's been clicked {count} times.
     </button>
   )
 }
@@ -115,7 +117,7 @@ Here's the same thing in Vue 2, in a `.vue` component file:
 
 <​template>
   <button @click="incrementCount">
-    Button has been clicked {{ count }} times.
+    This button's been clicked {{ count }} times.
   </button>
 </template>
 ```
@@ -136,7 +138,7 @@ Or, if you prefer, here's the Vue 3 composition API version (using the new `setu
 
 <​template>
   <button @click="incrementCount">
-    Button has been clicked {{ count }} times.
+    This button's been clicked {{ count }} times.
   </button>
 </template>
 ```
@@ -154,13 +156,13 @@ Now that we've gotten a glimpse of how the established players approach this com
 </script>
 
 <button on:click={incrementCount}>
-  Button has been clicked {count} times.
+  This button's been clicked {count} times.
 </button>
 ```
 
 Some key differences to point out between the Svelte version and the others:
 
-- **Svelte is reactive by default.** React and Vue both require you to do something special to initialize and update reactive variables.
+- **Svelte is reactive by default.** (_This means when a variable changes, anywhere it's used will automatically update; React and Vue both require you to explicitly initialize reactive variables_.)
 - **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone and more readable.
 - **Svelte doesn't require you to import or export anything.** (Some features of Svelte do, but its basic component functionality is all available out of the box.)
 - **There's no framework-specific JavaScript.** While Svelte _does_ have its own syntax in some cases (like the `on:click` in the example above and some others), it stays just about as close as possible to vanilla HTML and CSS.
@@ -168,9 +170,9 @@ Some key differences to point out between the Svelte version and the others:
 
 While the above examples don't cover them, some other features of Svelte that I love include:
 
-- Scoped CSS by default;
-- Logic and loops available inside of markup (unlike JSX), without requiring an element (unlike Vue);
-- Two-way data binding
+- **Scoped CSS** by default;
+- **Logic and loops inside markup** (unlike JSX), without requiring an element (unlike Vue);
+- **Two-way data binding** (data can flow both up and down the component tree);
 - Built-in reusable data stores (think: a very light, simple version of Redux or Vuex)
 
 I could go on and on about how easy Svelte makes things, and how advanced yet simple it seems. [Svelte's docs and tutorial](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!

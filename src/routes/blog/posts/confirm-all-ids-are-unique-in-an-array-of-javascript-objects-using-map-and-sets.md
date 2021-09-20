@@ -9,7 +9,6 @@ coverImage: "EQ0-F2nXUAEpgCx.jpeg"
 excerpt: Working with arrays of objects in JavaScript can be difficult. This post covers how to ensure all object keys (IDs) are unique, and how to find non-unique values.
 ---
 <script>
-  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>

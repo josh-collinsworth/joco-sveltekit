@@ -10,7 +10,6 @@ coverImage: "Screen-Shot-2015-09-03-at-9_14_54-AM.png"
 excerpt: "No matter how simple the end product, design is hard work. To come up with something that looks good, something people like, is at best tangential to the main point. The question is: does it succeed at meeting the project goals? And you don’t know how to answer that question."
 ---
 <script>
-  
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
