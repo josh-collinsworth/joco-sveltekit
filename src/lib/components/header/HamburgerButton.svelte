@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { isMenuOpen } from '$lib/assets/js/store'
 
-	let menuOpenReadableOpposite: string
-	$: menuOpenReadableOpposite = $isMenuOpen ? 'Close' : 'Open'
+	let readableMenuStateOpposite: string
+	$: readableMenuStateOpposite = $isMenuOpen ? 'Close' : 'Open'
 </script>
 
 
@@ -12,7 +12,7 @@
 	class:fixed={$isMenuOpen}
 	on:click={() => isMenuOpen.set(!$isMenuOpen)}
 >
-	<span class="sr">{menuOpenReadableOpposite} menu</span>
+	<span class="sr">{readableMenuStateOpposite} menu</span>
 	<div class="line line-top" aria-hidden="true" />
 	<div class="line line-middle" aria-hidden="true" />
 	<div class="line line-bottom" aria-hidden="true" />

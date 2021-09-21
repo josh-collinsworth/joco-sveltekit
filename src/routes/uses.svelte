@@ -20,20 +20,24 @@
 	<meta data-key="description" name="description" content="Things I use and like">
 </svelte:head>
 
-<Uses />
+<div class="uses">
+	<Uses />
+</div>
 
 
 <style lang="scss" global>
-@font-face {
-	font-family: 'MonoLisa';
-	src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
-	font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+	@font-face {
+		font-family: 'MonoLisa';
+		src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
 
-li a,
-p a {
-  font-weight: bold;
-}
+	.uses {
+		li a,
+		p a {
+			font-weight: bold;
+		}
+	}
 </style>

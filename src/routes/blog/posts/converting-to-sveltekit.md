@@ -64,6 +64,23 @@ Just about everywhere I'd normally be reaching for a workaround or stumbling int
 
 At a basic level, Svelte is extremely similar to React, Vue, and other front-end frameworks; they're, component-based, state-driven JavaScript frameworks. (Or libraries, if you want to split that particular hair.) They all allow you to nest components, pass props, and handle events. All three (and more) are fully capable of doing the same jobs.
 
+#### Build vs. Browser
+
+The _main_ difference between Svelte and the others is that Svelte moves as much work as it can to the _build_ step, when the code is compiled, rather than running client-side. That's why Svelte has been referred to as "a framework without the framework."
+
+<Callout>To make a site using a framework, you need to load and run that framework in the browser. Not so with Svelte.</Callout>
+
+To elaborate: Vue and React both run _in_ the browser. They're frameworks that you can load like any other external script (e.g., jQuery) and then use to execute whatever code you write. (You'll probably use a build tool to reduce their bundle size to a certain point, but to some extent at least, you're shipping the framework.)
+
+To make a site using a framework, you need to load and run that framework in the browser. Not so with Svelte.
+
+With Svelte, by the time you get to the browser, the framework itself has been removed by the compiler. Svelte ships only the tiniest bit of runtime; all your framework code has been transformed into minimal vanilla JavaScript before a user ever sees it.
+
+<SideNote>This approach means there's a certain size tipping point where building with frameworks is actually <em>more</em> effecient. However, <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">your app is very unlikely to hit that scale</a>.</SideNote>
+
+
+#### Authoring Components
+
 Maybe the most contrived way to demonstrate a front-end framework's style and capabilities is a button component that counts how many times it's been clicked, and updates accordingly. It's the "hello world" of component examples. 
 
 **Here's a demo** (_click the button_):
@@ -95,7 +112,7 @@ export const Button = () => {
 }
 ```
 
-<SideNote>You could also do this same thing with React's old class-based syntax, but it's being more or less phased out, so it doesn't seem worth going into here.</SideNote>
+<SideNote>You could also do this same thing with React's old class-based syntax, but it's not used much anymore, so I won't go into that here.</SideNote>
 
 Here's the same thing in Vue 2, in a `.vue` component file:
 
@@ -162,7 +179,7 @@ Now that we've gotten a glimpse of how the established players approach this com
 
 Some key differences to point out between the Svelte version and the others:
 
-- **Svelte is reactive by default.** (_This means when a variable changes, anywhere it's used will automatically update; React and Vue both require you to explicitly initialize reactive variables_.)
+- **Svelte is reactive by default.** (_This means when a variable changes, anywhere it's used update automatically; React and Vue both require you to explicitly initialize reactive variables_.)
 - **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone and more readable.
 - **Svelte doesn't require you to import or export anything.** (Some features of Svelte do, but its basic component functionality is all available out of the box.)
 - **There's no framework-specific JavaScript.** While Svelte _does_ have its own syntax in some cases (like the `on:click` in the example above and some others), it stays just about as close as possible to vanilla HTML and CSS.
@@ -175,21 +192,22 @@ While the above examples don't cover them, some other features of Svelte that I 
 - **Two-way data binding** (data can flow both up and down the component tree);
 - Built-in reusable data stores (think: a very light, simple version of Redux or Vuex)
 
-I could go on and on about how easy Svelte makes things, and how advanced yet simple it seems. [Svelte's docs and tutorial](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!
+#### Handling CSS
+
+To add styles to a component in Svelte, you simply add a `<style>` tag in the component's `.svelte` file. Any CSS inside that block will be scoped to the component by default. If you like, you can make it SCSS with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations).
+
+I could go on and on about how easy Svelte makes things, and how advanced yet simple it seems. Even [Svelte's docs and tutorial site](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!
 
 
 
-### Svelte performance
+## Svelte vs Gridsome
 
 Svelte is a _ton_ of fun to work in, but developer experience isn't everything (and no, developer experience does _not_ translate directly into user experience). Fortunately, though, Svelte's UX _is_ top-notch because the code it actually ships to the browser is _miniscule_ compared with other frameworks.
-
-This is because Svelte does as much as possible _during the build step_, rather than on the client. Parts of the framework that are not used are stripped out at build time, and only the minimal JS needed to make your site and its components work is bundled. (Compared to other frameworks, which ship an entire library as a runtime, no matter how much of it you're actually using.)
 
 As a comparison: the old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.6 MB transferred, compared with only _183 KB_ on this site—a reduction of almost ***90%!***
 
 
-
-#### Tradeoffs
+### Tradeoffs
 
 In fairness, **there's a good reason the old site was that large to begin with**: Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
@@ -200,7 +218,7 @@ That brings up some interesting questions about real performance vs. perceived p
 Ultimately, I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on the project.
 
 
-##### Images
+#### Images
 
 The builds with SvelteKit are also much faster (the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version), but again, this is misleading; Gridsome was doing a lot of image work at build time that SvelteKit isn't by default.
 
@@ -211,7 +229,7 @@ By contrast, out of the box, SvelteKit doesn't do anything to help with images.
 My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future, but for now, the few I tried didn't work particularly well, and the tradeoff didn't seem to be worthwhile.
 
 
-##### Plugins
+#### Plugins
 
 One other interesting tradeoff at this point in SvelteKit's existence is the confusion between Svelte, [Sapper](https://sapper.svelte.dev/), and SvelteKit.
 
@@ -220,7 +238,7 @@ Sapper was essentially the first iteration of SvelteKit. The team felt they coul
 Sapper never seemed as big as SvelteKit does now, but there's still some confusion that arises when searching for code solutions; SvelteKit doesn't work exactly the same as Svelte _or_ Sapper by default (because Svelte/Sapper have a Rollup config, where SvelteKit wraps that in a kit config file). So a lot of the examples and answers you come across are likely to either need some syntax adjustment, or just not work exactly as expected.
 
 
-## Why move away from Gridsome?
+### Why move away from Gridsome?
 
 As you can see from just perusing the posts list on this blog, it wasn't all that long ago that I moved to Gridsome in the first place. I went to a [headless Gridsome frontend](/blog/a-new-headless-site-with-gridsome) just over a year ago, and converted the site to [fully static](/blog/goodbye-wordpress) barely seven months ago. I've already talked here about how nice its image handling is, and how fast it makes the site (seem, at least).
 
