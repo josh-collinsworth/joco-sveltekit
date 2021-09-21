@@ -76,7 +76,7 @@ To make a site using a framework, you need to load and run that framework in the
 
 With Svelte, by the time you get to the browser, the framework itself has been removed by the compiler. Svelte ships only the tiniest bit of runtime; all your framework code has been transformed into minimal vanilla JavaScript before a user ever sees it.
 
-<SideNote>This approach means there's a certain size tipping point where building with frameworks is actually <em>more</em> effecient. However, <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">your app is very unlikely to hit that scale</a>.</SideNote>
+<SideNote>This approach means there's a certain size tipping point where building with frameworks is actually <em>more</em> efficient. However, most apps are very unlikely to hit that scale; here's <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">a comparison of React and Svelte bundle size scaling</a>.</SideNote>
 
 
 #### Authoring Components
@@ -179,7 +179,7 @@ Now that we've gotten a glimpse of how the established players approach this com
 
 Some key differences to point out between the Svelte version and the others:
 
-- **Svelte is reactive by default.** (_This means when a variable changes, anywhere it's used update automatically; React and Vue both require you to explicitly initialize reactive variables_.)
+- **Svelte is reactive by default.** (_This means when a variable changes, anywhere it's used updates automatically, as in the button text above. React and Vue both require you to explicitly initialize reactive variables_.)
 - **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone and more readable.
 - **Svelte doesn't require you to import or export anything.** (Some features of Svelte do, but its basic component functionality is all available out of the box.)
 - **There's no framework-specific JavaScript.** While Svelte _does_ have its own syntax in some cases (like the `on:click` in the example above and some others), it stays just about as close as possible to vanilla HTML and CSS.
@@ -285,3 +285,25 @@ I thought it might be valuable to get hands-on with React again via Gatsby, but 
 1. The _only_ reason I would be using Gatsby was for React experience;
 2. Gatsby !== React; and
 3. Since this is my personal project, I should enjoy it. And honestly, I don't enjoy React as much as other frameworks (I think largely because of the JSX dependency).
+
+
+## What to Know About SvelteKit
+
+As of this writing, SvelteKit is still in pre-1.0 status. It seems very stable to me, and Svelte itself is definitely solid. But there are definitely portions of the Kit that aren't fleshed out yet. I found the static rendering to be extremely good, but as mentioned, SvelteKit can do a _lot_ more than that. Depending on what you're building and what features you're most interested in, it may be worth spending some time to make sure SvelteKit is in good shape to handle your task.
+
+
+### The Community Argument
+
+When comparing Svelte (or any newer framework) with the larger, more established players, arguments against adoption often point to community size. Where React, Vue, Angular, etc. all have large ecosystems, Svelte can seem comparatively small. So, when you need to reach for additional packages to handle things beyond the main framework's capabilities, the argument goes, you may be left in the lurch.
+
+I'd like to put some context around that argument:
+
+1. **You don't often _need_ packages with Svelte.** When you've been living in framework land long enough, you tend to forget that the reason you need a package in the first place can often be compatibility with (or the need to work around) framework-specific conventions. 
+
+  Svelte is much closer to the plain HTML, CSS and JavaScript of the web, which means it's simpler to adopt _any_ JavaScript package for use in a Svelte app. Plus, many of the features you'd need a package for in other frameworks come backed in;. (Goodbye, Styled Components and Framer Motion.)
+
+2. **Svelte is extremely compatible with vanilla JavaScript packages.** This means that while, yes, Svelte's ecosystem of packages and plugins is comparatively small, it can often benefit from and easily use _any_ framework-agnostic package—which is a pretty massive portion of the packages out there.
+
+3. **Even when you _do_ need to build something yourself, SvelteKit makes it comparatively simple.** One example: previously, I was using an RSS plugin with Gridsome, but no such package exists for SvelteKit.
+
+  A quick web search, however, was all it took to find a very easy way to code my own XML feed endpoint in minutes, with no dependencies, in under 40 lines of code.

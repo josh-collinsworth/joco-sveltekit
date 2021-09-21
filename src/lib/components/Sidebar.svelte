@@ -70,7 +70,7 @@
   <h2>Categories</h2>
   <TagList>
     {#each allCategories as category}
-      <Tag to="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)} sveltekit:prefetch>
+      <Tag to="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)}>
         { category }
       </Tag>
     {/each}

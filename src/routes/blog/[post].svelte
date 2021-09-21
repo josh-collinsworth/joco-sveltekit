@@ -6,7 +6,7 @@
       return {
         props: {
           Post: Post.default,
-          meta: Post.metadata
+          meta: Post.metadata,
         }
       }
     } catch(error) {

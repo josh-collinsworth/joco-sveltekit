@@ -33,12 +33,16 @@
 .intro {
 
   h2 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     margin: 0;
+
+    @media (min-width: $wider) {
+      font-size: 3.8rem;
+    }
   }
 
   .subhead {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
     margin: 0.25em 0 4rem;
     line-height: 1.2;
@@ -50,7 +54,7 @@
     margin-top: 3rem;
     margin-bottom: 0.5rem;
 		padding: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1;
     border: 0;
   }

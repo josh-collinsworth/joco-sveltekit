@@ -5,7 +5,7 @@
 
 <style lang="scss" global>
 	.side-note {
-		padding: 1rem 1rem 1rem 2rem;
+		padding: 1.5rem 1.5rem 1.5rem 2.5rem;
 		position: relative;
 		margin: 2rem 0;
 		font-size: .9rem;
@@ -23,7 +23,7 @@
 			content: 'Side Note';
 			position: absolute;
 			bottom: calc(50% - 2.65em);
-			left: 1.25rem;
+			left: 1.5rem;
 			padding: 0;
 			line-height: 1.5rem;
 			font-weight: bold;
@@ -40,7 +40,7 @@
 
 		&:after {
 			content: '';
-			width: 1rem;
+			width: 1.5rem;
 			height: 100%;
 			background: var(--lightBlue);
 			left: 0;
