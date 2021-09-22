@@ -136,7 +136,7 @@ To give your theme an image that will appear on the theme selection screen, just
 
 While this feature exists so that you can show potential theme users what their site will look like if they activate this theme, if you're working on a child theme, you can add that extra little something special by making screenshot.png your logo or your client's logo.
 
-[![Screenshot 2016-01-17 20.11.39](/images/post_images/Screenshot-2016-01-17-20.11.39.png)](/images/post_images/Screenshot-2016-01-17-20.11.39.png)
+![Demonstration of how a screenshot.png will look in the theme selection screen](/images/post_images/Screenshot-2016-01-17-20.11.39.png)
 
 
 ### Step 3: Create a functions.php File

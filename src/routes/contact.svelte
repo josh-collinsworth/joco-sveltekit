@@ -63,7 +63,10 @@
 					<input type="text" name="name" bind:value={formData.name} />
 				</div>
 				<div>
-					<label for="email">Your email address</label>
+					<label for="email">
+						Your email address
+						<small><i>(used only for responses)</i></small>
+					</label>
 					<input type="email" name="email" bind:value={formData.email} />
 				</div>
 			</div>

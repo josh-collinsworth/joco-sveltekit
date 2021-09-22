@@ -13,9 +13,12 @@
 		background: rgba(var(--lightBlueRGB), 0.2);
 		line-height: var(--body-line-height);
 		min-height: 4.5rem;
+		
+		.prefers-dark & {
+			background: rgba(var(--lightBlueRGB), 0.1);
+		}
 
-		em,
-		i {
+		em, i {
 			font-weight: bold;
 		}
 
@@ -46,7 +49,10 @@
 			left: 0;
 			top: 0;
 			position: absolute;
+
+			.prefers-dark & {
+				background: var(--darkBlue);
+			}
 		}
 	}
-
 </style>

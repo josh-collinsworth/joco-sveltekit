@@ -128,15 +128,20 @@ h4,
 	font-family: var(--body-font);
 	font-size: 1.3rem;
 	font-weight: bold;
-	margin: 3rem 0 0.5rem;
+	margin: 4rem 0 0.5rem;
 	padding: 0;
 }
 
 h5,
 .h5 {
 	@extend .h4;
-	font-size: 1.1rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
+	border-bottom: 2px solid;
+	padding-bottom: 2px;
+	width: max-content;
+	line-height: 1;
+	margin-bottom: 1rem;
 }
 
 h1,
@@ -148,6 +153,7 @@ h6,
 p,
 blockquote,
 input,
+label,
 textarea,
 a,
 button,
@@ -165,10 +171,29 @@ figcaption,
 blockquote,
 figcaption,
 .fancy {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 1.5;
 	font-weight: normal;
 	font-style: italic;
+}
+
+blockquote {
+	margin: 2rem 0 2rem 2rem;
+	padding-left: 1rem;
+	overflow: visible;
+	position: relative;
+
+	&:before {
+		font-family: var(--heading-font);
+		content: "“";
+		position: absolute;
+		left: -0.5em;
+		top: 0;
+		line-height: 1;
+		color: var(--yellow);
+		font-size: 3rem;
+		display: block;
+	}
 }
 
 .fancy + h1 {

@@ -32,7 +32,7 @@
   <title>{meta.title}</title>
 </svelte:head>
 
-<article>
+<article class="post">
   <img class="cover-image" src="/images/post_images/{meta.coverImage}" alt="" />
 
   <h1>{ meta.title }</h1>
@@ -73,49 +73,44 @@
 </article>
 
 
-<style global lang="scss">
-@font-face {
-	font-family: 'MonoLisa';
-	src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
-	font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-aside h2 {
-  margin-top: 1rem;
-  border: 0;
-}
-
-.cover-image {
-  margin: 0;
-}
-
-main {
-  h1 {
-    margin: 0;
-  }
-  
-  .meta + p:first-of-type::first-letter,
-  > hr + p:first-letter {
-    font-size: 3.4em;
-    font-family: var(--heading-font);
-    float: left;
-    line-height: 0.7em;
-    margin: 0.5rem 0.4rem 0 0;
-    color: inherit;
-  }
-}
-
-.meta {
-  font-size: 0.7rem;
-  line-height: 1.4;
-  font-style: italic;
-  margin: 1rem 0 2rem;
-  
-  b {
-    text-transform: uppercase;
+<style lang="scss" global>
+  @font-face {
+    font-family: 'MonoLisa';
+    src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
   }
-}
+
+  .post {
+    .cover-image {
+      margin: 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+    
+    .meta + p:first-of-type::first-letter,
+    > hr + p:first-letter {
+      font-size: 3.4em;
+      font-family: var(--heading-font);
+      float: left;
+      line-height: 0.7em;
+      margin: 0.5rem 0.4rem 0 0;
+      color: inherit;
+    }
+    
+    .meta {
+      font-size: 0.7rem;
+      line-height: 1.4;
+      font-style: italic;
+      margin: 1rem 0 2rem;
+      
+      b {
+        text-transform: uppercase;
+        font-style: normal;
+      }
+    }
+  }
 </style>

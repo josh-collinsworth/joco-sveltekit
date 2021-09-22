@@ -74,7 +74,7 @@
         { category }
       </Tag>
     {/each}
-    </TagList>
+  </TagList>
 </aside>
 
 
@@ -92,12 +92,13 @@
     }
 
     .home-link {
-      display: block;
-      margin: 0 0 1rem 0;
-      width: 1.5rem;
-      overflow: hidden;
-
+      display: none;
+      
       @media (min-width: $wider) {
+        margin: 0 0 1rem 0;
+        width: 1.5rem;
+        overflow: hidden;
+        display: block;
         margin-left: auto;
       }
 

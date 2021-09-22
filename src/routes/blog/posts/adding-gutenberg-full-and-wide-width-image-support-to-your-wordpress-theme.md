@@ -20,7 +20,7 @@ One of the new features of Gutenberg that I particularly enjoy is the ability to
 
 Here's a visual example of what I mean:
 
-![Most of the content is constrained to a fixed-width container, but wide-width and full-width images may expand outside that container's boundaries.](/images/post_images/Untitled-1024x928.png)
+![Most of the content is constrained to a fixed-width container, but wide-width and full-width elements may expand outside that container's boundaries.](/images/post_images/Untitled-1024x928.png)
 
 **Ordinarily, an image would be constrained to the content width** (visualized by the dotted lines in the image above). Being able to allow images to break out of those confines is a powerful layout tool, though, as it allows content authors to add a great deal of visual interest and hierarchy to any page, post, or content supported by the new Gutenberg editor!
 
@@ -65,7 +65,7 @@ The `width` property is pretty straightforward: a value of `100vw` ensures that 
 
 However, making the image `100vw` wide on its own doesn't do us much good on its own, because it would overflow the screen, as shown in this image:
 
-![Setting the image width is only part of the solution, since it will overflow the screen unless it's repositioned.](/images/post_images/fullwidth-overflow-1024x600.png)
+![Setting the width is only part of the solution, since it will overflow the screen unless it's repositioned.](/images/post_images/fullwidth-overflow-1024x600.png)
 
 That brings us to the `margin` property, which is the clever part. This is where the real CSS magic happens:
 
@@ -83,7 +83,7 @@ Back to our fullwidth image: in order to make the image the full width of the sc
 
 Instead, we're going to send our image _halfway to the right._ That's the `50%` portion of our `calc` formula:
 
-![Setting a side margin of 50% on the image puts its left side directly in the center of its parent element.](/images/post_images/fullwidth-left.png)
+![Setting a side margin of 50% on the element puts its left side directly in the center of its parent element.](/images/post_images/fullwidth-left.png)
 
 Now we can begin to see the full picture (no pun intended)!
 
@@ -91,7 +91,7 @@ Since percentage values are calculated based on the parent element's width, a `m
 
 Now that our image's left side is directly in the center of the screen, the rest is just _subtracting_ `50vw` from the left margin—which is the other half of our calculation. Thus, `calc(50% - 50vw)` gives us exactly the full-width image we're looking for!
 
-![A left margin of 50% - 50vw gives us the perfectly centered, fullwidth image we're looking for.](/images/post_images/fullwidth-achieved.png)
+![A left margin of 50% - 50vw gives us the perfectly centered, fullwidth element we're looking for.](/images/post_images/fullwidth-achieved.png)
 
 
 
@@ -135,7 +135,7 @@ How wide the image should be, exactly, as well as how to achieve the effect, is 
 }
 ```
 
-![A wide-width image, breaking outside its content container by an additional 20 VW](/images/post_images/wide-width-only-1024x713.png)
+![A wide-width element, breaking outside its content container by an additional 20 VW](/images/post_images/wide-width-only-1024x713.png)
 
 Our wide width image spans the 100% of its parent container, plus an extra 20 viewport width units.
 

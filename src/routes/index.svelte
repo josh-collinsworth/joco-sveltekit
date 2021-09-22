@@ -26,11 +26,8 @@
 
 
 <style lang="scss" global>
-:root {
-  --max-width: 36rem;
-}
-
 .intro {
+  --max-width: 36rem;
 
   h2 {
     font-size: 3.2rem;
