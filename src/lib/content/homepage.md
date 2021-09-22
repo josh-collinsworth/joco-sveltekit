@@ -35,6 +35,7 @@ curious learner;
 dog person;
 Nintendo fan;
 musician/guitarist/hack pianist;
+Omaha, Nebraska resident;
 liberal abuser of semicolons.
 
 

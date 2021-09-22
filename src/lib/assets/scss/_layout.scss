@@ -13,12 +13,6 @@ img {
 main > img,
 main > p img {
 	max-width: 100%;
-
-	@media (max-width: 626px) {
-		margin-left: calc(var(--margin) * -1);
-		width: calc(100% + calc(var(--margin) * 2));
-		max-width: unset;
-	}
 }
 
 p {
@@ -64,16 +58,16 @@ h2 + .details {
 	width: calc(100vw - 1rem);
 	margin-left: -0.5rem;
 
-	@media (min-width: 768px) {
+	@media (min-width: $narrow) {
 		width: calc(100vw - 4rem);
 		margin-left: calc(var(--margin) / -2);
 	}
 
-	@media (min-width: 1024px) {
+	@media (min-width: $medium) {
 		width: calc(100vw - 8rem);
 	}
 
-	@media (min-width: 1200px) {
+	@media (min-width: $wide) {
 		width: calc(100vw - 12rem);
 	}
 

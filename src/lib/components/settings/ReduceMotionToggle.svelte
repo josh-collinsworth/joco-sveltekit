@@ -3,8 +3,6 @@
   import { onMount } from 'svelte'
 
   onMount(() => {
-		document.getElementById('motion-toggle').classList.remove('no-js')
-
     const userMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 			const storedMotionPreference = JSON.parse(window.localStorage.getItem('collinsworth-reduce-motion'))
 
@@ -31,7 +29,7 @@
 
 <button
   id="motion-toggle"
-  class="settings-toggle no-js"
+  class="settings-toggle"
   on:click={toggleReducedMotion}
   title="{enableOrDisable} reduced motion"
   aria-pressed={$prefersReducedMotion}
@@ -47,10 +45,6 @@
 		font-size: .6rem;
 		text-transform: uppercase;
 		color: var(--ink);
-
-		&.no-js {
-			display: none;
-		}
 
 		&[aria-pressed="true"]::before {
 			content: '';

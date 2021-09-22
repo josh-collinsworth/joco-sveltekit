@@ -304,7 +304,11 @@ Or you prefer, you can make the entire tag global with the `global` attribute:
 </style>
 ```
 
+<Callout>Even when dealing with automatically scoped styles, I've found it's a good idea to use a wrapping parent class selector anyway.</Callout>
+
 **One word of warning there, however:** global styles persist once loaded on the page. So if you have a `global` style tag in a component that only loads on a certain page, its styles will stick around after you've navigated to other pages.
+
+Even when dealing with automatically scoped styles, I've found it's a good idea to use a wrapping parent class selector anyway. At worst it's redundant, and at best you've saved yourself from unintentional style leakage (either now or if you decide to un-scope the styles in the future).
 
 ---
 
@@ -314,7 +318,7 @@ I could go on and on about how easy Svelte makes things, and how advanced yet si
 
 ## Static SvelteKit vs. Gridsome
 
-Svelte(Kit) is a _ton_ of fun to work in, but it isn't perfect. Most of what it lacks comes from its comparative youth, in my opinion, but as with anything, there were advantages and disadvantages to consider when making the switch from Gridsome to SvelteKit.
+Svelte(Kit) is a _ton_ of fun to work in, but it isn't perfect. Most of what it lacks comes from its comparative youth, in my opinion, but as with anything, there were advantages and disadvantages to consider regardless.
 
 
 ### Tradeoffs
@@ -327,29 +331,37 @@ As a comparison: the old homepage of this site (built with [Gridsome](https://gr
 
 <Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an interesting study in&nbsp;tradeoffs.</Callout>
 
-That brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an interesting study in tradeoffs. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
+This brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an interesting study in tradeoffs. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
-Ultimately, I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on the project.
+Which is better? Ultimately, you'll need to evaluate your project's goals to answer that question. Personally: I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on your priorities and definition of success.
 
 
-#### Images
+#### Build Times and Images
 
-The builds with SvelteKit are also much faster (the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version), but again, this is misleading; Gridsome was doing a lot of image work at build time that SvelteKit isn't by default.
+The builds with SvelteKit are also much faster: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version. But again, this is misleading, for two reasons:
 
-One particularly nice thing about Gridsome is how it compressed image files, generated resized images for responsive source sets, used lazy loading, created placeholder images, and adjusted your markup to take advantage of all of those features—all pretty much automatically.
+1. Gridsome was doing a lot of image work at build time that SvelteKit isn't by default; and
 
-By contrast, out of the box, SvelteKit doesn't do anything to help with images.
+2. Gridsome uses Webpack under the hood, where SvelteKit utilizes [Vite](https://vitejs.dev/) (pronounced "veet").
+
+One particularly nice thing about Gridsome was its built-in `<g-image>` component. Just by using it instead of the standard HTML `<img>` tag, Gridsome would compress your image files, generated resized images for responsive source sets, use lazy loading, ***and*** create minimal blurred placeholder images.
+
+By contrast, out of the box, SvelteKit does…nothing to help with images.
 
 My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future, but for now, the few I tried didn't work particularly well, and the tradeoff didn't seem to be worthwhile.
 
+Then there's Webpack. Running Gridsome locally wasn't _slow_ exactly, but it wasn't fast, either. Getting the dev server up and running took about 20–30 seconds. By contrast, SvelteKit's Vite-powered dev server is ready about as fast as I can click over to my browser. Vite's boot-up time is seriously near instantaneous, and its reloads after save are pretty impressively fast as well.
 
-#### Plugins
+
+#### Plugins and Ecosystem
 
 One other interesting tradeoff at this point in SvelteKit's existence is the confusion between Svelte, [Sapper](https://sapper.svelte.dev/), and SvelteKit.
 
-Sapper was essentially the first iteration of SvelteKit. The team felt they could build a better product from scratch, and so they did, and Sapper was deprecated.
+Sapper was essentially the first iteration of SvelteKit; the first try at giving a Next-like meta-framework to Svelte. It was successful enough, but the team came to feel they could build a better product from scratch. So they did, and Sapper was deprecated in favor of the more modular and versatile SvelteKit.
 
-Sapper never seemed as big as SvelteKit does now, but there's still some confusion that arises when searching for code solutions; SvelteKit doesn't work exactly the same as Svelte _or_ Sapper by default (because Svelte/Sapper have a Rollup config, where SvelteKit wraps that in a kit config file). So a lot of the examples and answers you come across are likely to either need some syntax adjustment, or just not work exactly as expected.
+Sapper never seemed as big as SvelteKit does now, but there's still some confusion that arises when searching online for code solutions; SvelteKit doesn't work exactly the same as Svelte _or_ Sapper by default (because Svelte/Sapper have a Rollup config, where SvelteKit wraps that in a kit config file). So a lot of the examples and answers you come across are likely to either need some syntax adjustment, or just not work exactly as expected.
+
+By contrast, Gridsome has several plugins and modules that you could simply plug and play.
 
 
 ### Why move away from Gridsome?
@@ -358,7 +370,8 @@ As you can see from just perusing the posts list on this blog, it wasn't all tha
 
 This naturally prompts the question: _why move in the first place_? At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
 
-**The tl;dr is: Gridsome stopped progressing.**
+
+#### Reason 1: Gridsome Stopped Progressing
 
 I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome ([version 0.7](https://gridsome.org/blog/2019/09/17/gridsome-v07/)), and at this point, it doesn't seem like it's an actively maintained project any longer. I don't know if it will ever reach 1.0 or not. I certainly wouldn't begrudge the creators for at all abandoning it during the pandemic.
 
@@ -366,13 +379,22 @@ I was a very early adopter of Gridsome, and at the time (in 2019), it still seem
 
 Regardless, Gridsome didn't ever really feel _complete_ to me. It was a wonderful way to generate a speedy, static site with Vue (and GraphQL!), but its nascence showed at times. (Granted, SvelteKit is still pre-1.0 as well. But it seems to have a much bigger and more active team behind it.)
 
-[Gridsome's image handling](https://gridsome.org/docs/images/), for example, was absolutely _magical_, but it also only worked in certain cases unless you modified the Webpack config (no, thank you). Page transitions also required enough swimming upstream as to make them not particularly worthwhile. And there was more than once that I spent a day or two fighting with NPM and the node\_modules folder, unable to even _run_ the site on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.)
+I've already mentioned [Gridsome's image handling](https://gridsome.org/docs/images/), for example, which feels absolutely _magical_—but it also only worked in certain cases unless you modified the Webpack config (no, thank you).
 
-Speaking of which: running Gridsome locally wasn't slow exactly, but it wasn't fast, either. Getting the dev server up and running took about 20–30 seconds. By contrast, SvelteKit—which is built on top of the much speedier Vite—is ready about as fast as I can click over to my browser. Vite's boot-up time is seriously near instantaneous.
+Page transitions also required enough swimming upstream as to make them not particularly worthwhile. And there was more than once that I spent a day or two fighting with NPM and the node\_modules folder, unable to even _run_ the site on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.)
 
-Another reason (while probably a silly one): a big part of the reason I maintain side projects is for my own enjoyment. I like tinkering with them. When I was writing this site in Gridsome, my list of Vue side projects was fairly small. Now I have [Quina](https://quina.app/) and a whole bunch of others, and it doesn't feel like I _need_ a site in Vue anymore—especially since my _job_ isn't in Vue anymore. It feels like I've had all the Vue I need right now. I'm ready to play with the next thing. That's probably silly, but it's how my brain works, and I've found there's no use fighting it.
 
-Finally, [TypeScript](https://www.typescriptlang.org) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it.
+#### Reason 2: Because This is Fun
+
+This site, like any side project, is to enjoy. This site in particular is the one little corner of the internet that's truly mine, where I can do whatever I want for whatever reason I want.
+
+When I was writing this site in Gridsome, my list of Vue projects was fairly small, which made the appeal of having a "Vue garden," let's say, more appealing. Now I have [Quina](https://quina.app/) and several others, though, and it doesn't feel like I _need_ a site in Vue anymore—especially since my _job_ isn't in Vue anymore.
+
+Maybe the fact that I've been working professionally with Vue for the last two years is part of it, too. I feel I've scratched that itch, for the most part, at least for right now. I still love Vue dearly and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: I want a different thing to play with. That's just how my brain works (or doesn't, depending on your point of view), and I've found there's no use fighting it.
+
+#### Reason 3: to Learn
+
+Finally, [TypeScript](https://www.typescriptlang.org) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it. At this point, close to 100% of this site's JS is typed, so I've given it a good shot at least.
 
 
 

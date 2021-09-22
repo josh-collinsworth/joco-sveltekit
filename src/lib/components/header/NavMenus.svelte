@@ -50,7 +50,7 @@
 			opacity: 0;
 			z-index: 10;
 
-			@media (min-width: 768px) {
+			@media (min-width: $narrow) {
 				display: none;
 			}
 
@@ -63,7 +63,7 @@
 		&#desktop-nav {
 			display: none;
 
-			@media(min-width: 768px) {
+			@media (min-width: $narrow) {
 				display: flex;
 				justify-content: flex-end;
 			}

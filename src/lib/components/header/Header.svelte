@@ -48,6 +48,21 @@
 		</div>
   </header>
   <Grid refresh={key} />
+
+
+	<noscript>
+		<style>
+			#dark-mode-toggle, 
+			#motion-toggle,
+			#contact-form {
+				display: none;
+			}
+
+			.page-head .heading-wrapper .brace.closing-brace {
+        transform: translateX(0);
+      }
+		</style>
+	</noscript>
 </div>
 
 

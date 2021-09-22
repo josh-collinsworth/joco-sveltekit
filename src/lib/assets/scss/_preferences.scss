@@ -2,15 +2,10 @@
 	background: var(--paper);
 	color: var(--ink);
 	min-height: 100vh;
-	display: flex;
-	align-content: flex-start;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
 	width: 100%;
-
-	> * {
-		flex: 1 1 100%;
-	}
 
 	&.reduce-motion * {
 		transition: opacity 0.2s !important;
@@ -43,8 +38,4 @@
 		--highlight-color: var(--darkGray);
 		--button-background: var(--paper);
 	}
-}
-
-.no-js .settings-toggle {
-	display: none;
 }

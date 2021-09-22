@@ -30,19 +30,23 @@
   --max-width: 36rem;
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     margin: 0;
 
-    @media (min-width: $wider) {
-      font-size: 3.8rem;
+    @media (min-width: $wide) {
+      font-size: 4rem;
     }
   }
 
   .subhead {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-style: italic;
     margin: 0.25em 0 4rem;
     line-height: 1.2;
+
+    @media (min-width: $wide) {
+      font-size: 1.5rem;
+    }
   }
 
   h3 {

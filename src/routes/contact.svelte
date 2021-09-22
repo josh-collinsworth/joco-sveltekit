@@ -1,7 +1,6 @@
 <script lang="ts">
 	let formData: object = {}
 	let isSubmitted: boolean = false
-	import { onMount } from 'svelte'
 
 	const encode = (data: object): string => {
 		return Object.keys(data)
@@ -21,10 +20,6 @@
 			.then(() => { isSubmitted = true })
 			.catch(error => alert(error))
 	}
-
-	onMount(() => {
-		document.getElementById('contact-form').classList.remove('no-js')
-	})
 </script>
 
 
@@ -43,7 +38,6 @@
 
 		<form
 			id="contact-form"
-			class="no-js"
 			name="contact"
 			method="post"
 			on:submit|preventDefault={handleSubmit}
@@ -90,9 +84,5 @@
 	#contact-form {
 		width: 100%;
 		margin-top: 4rem;
-
-		&.no-js {
-			display: none;
-		}
 	}
 </style>

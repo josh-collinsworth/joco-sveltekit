@@ -52,7 +52,7 @@
     line-height: 1.6em;
     padding: 2.5rem var(--margin) 2rem;
 
-    @media(min-width: 768px) {
+    @media (min-width: $narrow) {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
       align-items: center;
@@ -73,7 +73,7 @@
       margin: 2rem 2rem 2rem 1rem;
       border-bottom: 1px solid var(--lightBlue);
 
-      @media (min-width: 768px) {
+      @media (min-width: $narrow) {
         border-bottom: 0;
         border-right: 1px solid var(--lightBlue);
         padding: 1rem;
@@ -89,7 +89,7 @@
       font-style: italic;
       margin-left: 1rem;
 
-      @media (min-width: 768px) {
+      @media (min-width: $narrow) {
        margin-left: 0;
       }
 

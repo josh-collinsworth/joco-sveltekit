@@ -1,6 +1,5 @@
 <script lang="ts">
   import { prefersReducedMotion } from '$lib/assets/js/store'
-  import { onMount } from 'svelte'
 
   export let title: string
   export let subtitle: string = ''
@@ -23,16 +22,12 @@
     }, 420)
 
   }
-
-  onMount(() => {
-    document.querySelector('.heading-wrapper').classList.remove('no-js')
-  })
 </script>
 
 
 <div class="page-head">
   <div
-    class="heading-wrapper no-js"
+    class="heading-wrapper"
     class:in={isWorking}
     class:no-motion={$prefersReducedMotion}
   >
@@ -53,7 +48,7 @@
 
 <style lang="scss">
   .page-head {
-    --transition: transform .36s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --transition: transform .24s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     margin-bottom: 4rem;
     display: flex;
@@ -95,8 +90,7 @@
         transform: translateX(0);
       }
 
-      &.no-motion .closing-brace, 
-      &.no-js .closing-brace {
+      &.no-motion .closing-brace {
         transform: translateX(0);
       }
     }

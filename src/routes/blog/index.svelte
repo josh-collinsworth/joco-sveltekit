@@ -34,7 +34,7 @@
 	
 	<div class="heading-wrapper">
 		<h2>My blog</h2>
-		<p>Things I wrote just because</p>
+		<p>Things I wrote just because I wanted to</p>
 	</div>
 
 	<PostList {posts} />	

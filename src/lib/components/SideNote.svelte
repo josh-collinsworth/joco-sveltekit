@@ -5,9 +5,15 @@
 
 <style lang="scss" global>
 	.side-note {
-		padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+		--note-unit: 1rem;
+
+		@media (min-width: $narrow) {
+			--note-unit: 1.5rem;
+		}
+
+		padding: var(--note-unit) var(--note-unit) var(--note-unit) calc(var(--note-unit) * 2);
 		position: relative;
-		margin: 2rem 0;
+		margin: 2rem 0 2rem calc(var(--note-unit) * -1);
 		font-size: .9rem;
 		font-style: italic;
 		background: rgba(var(--lightBlueRGB), 0.2);
@@ -26,7 +32,7 @@
 			content: 'Side Note';
 			position: absolute;
 			bottom: calc(50% - 2.65em);
-			left: 1.5rem;
+			left: calc(var(--note-unit) * 1.25);
 			padding: 0;
 			line-height: 1.5rem;
 			font-weight: bold;
@@ -39,11 +45,15 @@
 			z-index: 2;
 			text-align: center;
 			width: max-content;
+
+			@media (min-width: $narrow) {
+				left: var(--note-unit);
+			}
 		}
 
 		&:after {
 			content: '';
-			width: 1.5rem;
+			width: var(--note-unit);
 			height: 100%;
 			background: var(--lightBlue);
 			left: 0;
