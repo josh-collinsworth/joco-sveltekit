@@ -193,8 +193,8 @@ Another example I really like: resizing CSS grid columns individually. Ordinaril
 }
  
 /* Make the left column wider at certain breakpoints,
-   without touching the rest of the grid. /*
-@media (min-width: $narrow) {
+   without touching the rest of the grid. /*/
+@media (min-width: 768px) {
   .grid {
     --left-column: 2rem;
   }

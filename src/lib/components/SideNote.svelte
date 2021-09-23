@@ -16,7 +16,11 @@
 		margin: 2rem 0 2rem calc(var(--note-unit) * -1);
 		font-size: .9rem;
 		font-style: italic;
-		background: rgba(var(--lightBlueRGB), 0.2);
+		background: linear-gradient(
+			to right,
+			rgba(var(--lightBlueRGB), 0.3) 1rem,
+			rgba(var(--lightBlueRGB), 0.03)
+		);
 		line-height: var(--body-line-height);
 		min-height: 4.5rem;
 		

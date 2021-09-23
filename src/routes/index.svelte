@@ -27,7 +27,11 @@
 
 <style lang="scss" global>
 .intro {
-  --max-width: 36rem;
+  width: 100%;
+
+  @media (min-width: $narrow) {
+    width: 36rem;
+  }
 
   h2 {
     font-size: 3.5rem;

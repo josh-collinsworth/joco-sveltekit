@@ -7,7 +7,7 @@
 
 <style lang="scss" global>
   .callout {
-    margin: 2.5rem 2rem 3rem;
+    margin: 2.5rem 1rem 3rem;
     font-size: 1.2rem;
     line-height: 1.5em;
     position: relative;
@@ -56,7 +56,7 @@
       margin-right: -12rem;
     }
     
-    @media(min-width: 1960px) {
+    @media(min-width: $widest) {
       margin-right: -14rem;
     }
   }
