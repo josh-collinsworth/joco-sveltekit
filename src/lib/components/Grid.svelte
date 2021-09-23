@@ -1,6 +1,7 @@
 <script lang="ts">
   import GridCell from './GridCell.svelte'
   import { onMount } from 'svelte'
+	import debounce from 'lodash/debounce.js'
 
   export let refresh: string = ''
   export let inverted: boolean = false
@@ -30,7 +31,7 @@
     loadedIn = true
   }
 
-  onMount(() => {
+  const setSquareCount = debounce(() => {
 		if (typeof window == 'undefined') return
 
     gridWidth = 
@@ -38,7 +39,7 @@
       / parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size'))
       * 2
 
-    thisPage = refresh
+    thisPage == refresh ? thisPage = String(Math.random()) :  thisPage = refresh
 
     if (squareCount) {
       count = squareCount
@@ -51,6 +52,11 @@
         / (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
 			* 2)
 		)
+  }, 300)
+
+  onMount(() => {
+    setSquareCount()
+    thisPage = refresh
   })
 
   const randomColor = () => {
@@ -61,17 +67,17 @@
 </script>
 
 
-<template>
-  <div class="grid-wrapper">
-    {#key thisPage}
-      <div class="cell-grid" class:inverted aria-hidden="true">
-        {#each Array(count) as cell}
-          <GridCell color={randomColor()} {out} {gridWidth} />
-        {/each}
-      </div>
-    {/key}
-  </div>
-</template>
+<svelte:window on:resize={setSquareCount} />
+
+<div class="grid-wrapper">
+  {#key thisPage}
+    <div class="cell-grid" class:inverted aria-hidden="true">
+      {#each Array(count) as cell}
+        <GridCell color={randomColor()} {out} {gridWidth} />
+      {/each}
+    </div>
+  {/key}
+</div>
 
 
 <style lang="scss">
