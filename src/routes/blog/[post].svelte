@@ -30,6 +30,7 @@
 
 <svelte:head>
   <title>{meta.title}</title>
+  <meta data-key="description" name="description" content="{meta.excerpt}">
 </svelte:head>
 
 <article class="post">

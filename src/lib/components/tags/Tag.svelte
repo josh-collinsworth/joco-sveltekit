@@ -19,7 +19,7 @@
 
 	.tag {
 		display: block;
-		padding: 0.5em 1em;
+		padding: 0.75em 1em;
 		background: var(--lightBlue);
 		margin: 0;
 		color: var(--white);

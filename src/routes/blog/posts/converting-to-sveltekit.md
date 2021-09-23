@@ -329,11 +329,13 @@ SvelteKit is a lot of fun to work in, but it isn't perfect. Most of what it lack
 
 Here's an interesting example:
 
-The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.6 MB transferred. By contrast, that number is only _183 KB_ on SvelteKit (most of which is font files)—a reduction of almost ***90%!***
+The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.9 MB transferred. By contrast, that number is only _200 KB_ on SvelteKit (most of which is font files)—a reduction of almost ***90%!***
 
 **In fairness, however: there's a good reason the old site was that large to begin with**. Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
 <Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an interesting study in&nbsp;tradeoffs.</Callout>
+
+Also: as nearly as I can tell, even _without_ accounting for the 
 
 This brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an interesting study in tradeoffs. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
