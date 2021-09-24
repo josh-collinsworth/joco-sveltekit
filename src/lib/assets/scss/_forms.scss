@@ -49,6 +49,15 @@ textarea {
 	margin-bottom: 2rem;
 }
 
+input {
+	&[type=radio],
+	&[type=checkbox] {
+		display: initial;
+		width: initial;
+		margin: initial;
+	}
+}
+
 button {
 	border: 1px solid;
 	padding: 0.5rem 1rem;

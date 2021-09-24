@@ -11,9 +11,10 @@
 			--note-unit: 1.5rem;
 		}
 
-		padding: var(--note-unit) var(--note-unit) var(--note-unit) calc(var(--note-unit) * 2);
+		padding: var(--note-unit);
+		padding-left: calc(var(--note-unit) * 2);
 		position: relative;
-		margin: 2rem 0 2rem calc(var(--note-unit) * -1);
+		margin: 2rem 0;
 		font-size: .9rem;
 		font-style: italic;
 		background: linear-gradient(

@@ -117,7 +117,6 @@
         flex: 0 1 auto;
         white-space: nowrap;
         line-height: 1.2;
-        animation: fade_in .2s forwards;
       }
     }
 

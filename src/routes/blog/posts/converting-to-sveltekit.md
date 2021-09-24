@@ -12,6 +12,7 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
 
 <script>
   import CounterButton from '$lib/components/demos/CounterButton.svelte'
+  import CounterButtonComparison from '$lib/components/demos/CounterButtonComparison.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -75,103 +76,17 @@ Maybe the most contrived way to demonstrate a front-end framework's style and ca
 
 **Here's a demo** of what I mean:
 
-<CounterButton />
+<svelte:component this={CounterButton} />
 
 As you click the button, the count increases, and the _display_ of the count updates accordingly.
 
 **It's not a particularly practical example, but it _is_ a common one** (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of front-end frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), automatically update the UI (the button).
 
-Let's start with how to do this simple example in React, where you'd put the button in its own `.jsx` file:
+**Click through the examples below to compare this component in different languages:**
 
-<SideNote>I'll be using arrow functions in the examples below just because I like them, but they aren't required.</SideNote>
+<CounterButtonComparison />
 
-```jsx
-// CounterButton.jsx
-import React, { useState } from 'react'
-
-export const Button = () => {
-  const [count, setCount] = useState(0)
-
-  const incrementCount = () => {
-    setCount(count + 1)
-  }
-
-  return (
-    <button onClick={incrementCount}>
-      This button's been clicked {count} times.
-    </button>
-  )
-}
-```
-
-As you can see even if you aren't familiar with React, it requires you to import its `useState` function and create some new values from it in order to set and update a reactive `count` variable. It's not a _lot_, but it isn't exactly simple, either.
-
-<SideNote>You could also do this same thing with React's old class-based syntax, but it's not used much anymore, so I won't go into that here.</SideNote>
-
-For contrast, here's the same thing in Vue 2, in a `.vue` component file:
-
-```vue
-<!-- CounterButton.vue -->
-<script>
-  export default {
-    data: () => ({
-      count: 0
-    }),
-
-    methods: {
-      incrementCount() {
-        this.count += 1
-      }
-    }
-  }
-</script>
-
-<​template>
-  <button @click="incrementCount">
-    This button's been clicked {{ count }} times.
-  </button>
-</template>
-```
-
-Or, if you prefer, here's the Vue 3 composition API version (using the new `setup` script syntactic sugar from Vue 3.2+):
-
-```vue
-<!-- CounterButton.vue -->
-<script setup>
-  import { ref } from 'vue'
-
-  const count = ref(0)
-
-  const incrementCount = () => {
-    count.value += 1
-  }
-</script>
-
-<​template>
-  <button @click="incrementCount">
-    This button's been clicked {{ count }} times.
-  </button>
-</template>
-```
-
-Which flavor of Vue you like is mainly down to personal preference, but in both cases, similarly to React: there are framework-specific conventions around how you must set and update reactive values.
-
-Now that we've gotten a glimpse of how the established players approach this comparatively simple component, let's look at how to do the same thing in a Svelte component file:
-
-```svelte
-<!-- CounterButton.svelte -->
-<script>
-	let count = 0
-
-	const incrementCount = () => {
-		count += 1
-	}
-</script>
-
-<button on:click={incrementCount}>
-  This button's been clicked {count} times.
-</button>
-```
+<SideNote>I prefer to use arrow functions and omit semicolons, but those are just stylistic preferences, and not required.</SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
 
@@ -329,13 +244,13 @@ SvelteKit is a lot of fun to work in, but it isn't perfect. Most of what it lack
 
 Here's an interesting example:
 
-The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.9 MB transferred. By contrast, that number is only _200 KB_ on SvelteKit (most of which is font files)—a reduction of almost ***90%!***
+The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.9 MB transferred. By contrast, that number is only _200 kB_ on SvelteKit (most of which is font files)—a reduction of almost ***90%!***
 
 **In fairness, however: there's a good reason the old site was that large to begin with**. Gridsome preloads all of your content as JSON data by default to make the site _feel_ faster as you navigate between pages. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
 
 <Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an interesting study in&nbsp;tradeoffs.</Callout>
 
-Also: as nearly as I can tell, even _without_ accounting for the 
+It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell it's somewhere around 400 kB
 
 This brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an interesting study in tradeoffs. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
