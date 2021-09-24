@@ -8,7 +8,7 @@
 
     methods: {
       incrementCount() {
-        this.count += 1
+        this.count++
       }
     }
   }

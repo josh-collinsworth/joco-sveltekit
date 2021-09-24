@@ -19,6 +19,7 @@
 </script>
 
 <script>
+  import TableOfContents from '$lib/components/posts/TableOfContents.svelte'
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
   
@@ -38,11 +39,14 @@
 
   <h1>{ meta.title }</h1>
 
+  
   <div class="meta">
     <b>Published:</b> { meta.date }
     <br>
     <b>Updated:</b> { meta.updated }
   </div>
+  
+  <TableOfContents />
   
   <svelte:component this={Post} />
 

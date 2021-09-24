@@ -4,7 +4,7 @@
 	let count = 0
 
 	const incrementCount = () => {
-		count += 1
+		count++
 	}
 </script>
 

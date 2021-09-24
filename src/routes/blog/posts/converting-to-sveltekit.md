@@ -90,7 +90,7 @@ As you click the button, the count increases, and the _display_ of the count upd
 
 There are some key differences I'd like to point out between the Svelte version and the others:
 
-- **Svelte is reactive by default**. (_This means when a variable changes, every place it's used updates automatically, as in the button text above. Again, React and Vue both require you to explicitly initialize reactive variables_.)
+- **Svelte is reactive by default**. This means when a variable is reassigned, every place it's used or referenced also updates automatically. (_React and Vue both require you to explicitly initialize reactive variables_.)
 
 - **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone and more readable.
 
@@ -300,7 +300,7 @@ Finally, [TypeScript](https://www.typescriptlang.org) has first-class support in
 
 #### What other options were considered?
 
-To some degree, I considered both [Astro](https://astro.build/) and [Eleventy](https://www.11ty.dev/) for this overhaul, and you could make reasonable arguments that either one would've been better suited for the task. If my goal had just been to build the fastest statically generated site possible with absolutely minimal JavaScript, I no doubt would've gravitated towards one of these tools.
+To some degree, I considered both [Astro](https://astro.build/) and [Eleventy](https://www.11ty.dev/) for this overhaul, and you could make reasonable arguments that either one would've been better suited for the task. If my primary goal had been to build the fastest statically generated site possible with absolutely minimal JavaScript, I no doubt would've gravitated towards one of these tools.
 
 But again: this is my personal site, and so the tool I _like_ the most is an important factor. So while SvelteKit might arguably be a little overkill, personally, I think it's the most fun.
 
@@ -312,7 +312,7 @@ But again: this is my personal site, and so the tool I _like_ the most is an imp
 As of this writing, SvelteKit is still in pre-1.0 status. It seems very stable to me, and Svelte itself is definitely solid. But there are still some portions of the Kit that aren't fleshed out yet. I found the static rendering to be extremely good, but as mentioned, SvelteKit can do a _lot_ more than that. Depending on what you're building and what features you're most interested in, it may be worth spending some time to make sure SvelteKit is in good shape to handle your task, and works as expected with your deploy target.
 
 
-### The community argument
+### Debunking the community argument
 
 <Callout>When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework.</Callout>
 
@@ -338,3 +338,56 @@ One other thing to know at this point in SvelteKit's existence is that it's actu
 Sapper never seemed as big as SvelteKit does now, but it's been deprecated in favor of SvelteKit, and there's still some confusion that arises when searching online for code solutions in the space.
 
 SvelteKit doesn't always work exactly the same as Svelte _or_ Sapper by default (That's because Svelte and Sapper both have a Rollup config—Rollup being the bundler that powers Svelte—where SvelteKit has its own config file). So a lot of the examples and answers you come across are likely to either need some syntax adjustment, or just not work exactly as expected.
+
+
+### Svelte's reactivity requires reassignment
+
+There's one small caveat with Svelte's automatic reactivity: it requires you to _reassign_ a variable, rather than just update it.
+
+This actually isn't really even a Svelte-specific thing; it has to do with how JavaScript itself tracks variables in memory.
+
+With simple data types like numbers and strings, this isn't an issue; changing the value automatically reassigns the variable. But it _does_ become a bit of a gotcha when working with arrays and objects, since adding, modifying, or removing the contents of an object or array will _not_ register as a change with JavaScript.
+
+<SideNote>This is also why you can still modify the internals of an object or array initialized with <code>const</code>; JavaScript doesn't consider the variable to have changed until the object or array itself is reassigned.</SideNote>
+
+Here's an example that _won't_ cause an automatic update in Svelte:
+
+```svelte
+<script>
+  let myObject = {
+    firstName: 'Josh'
+  }
+
+  let myArray = [1, 2, 3]
+
+  // Neither of these will trigger an update
+  myObject.lastName = 'Collinsworth'
+  myArray.push(4)
+</script>
+```
+
+Or rather: it works to update the object/array, but _not_ to trigger an update. Any place `myObject` or `myArray` was referenced by the above code would stay as it is, and not show the new item or property.
+
+To trigger an update, you _could_ do this instead:
+
+```svelte
+<script>
+  myObject.lastName = 'Collinsworth'
+  myArray.push(4)
+
+  // Reassignment triggers an update
+  myObject = myObject
+  myArray = myArray
+</script>
+```
+
+That would work, but it's clunky and it's an extra step. The better option in my opinion is to combine the two steps with the ES6 spread operator:
+
+```svelte
+<script>
+  //Combine both steps above into one!
+  myObject = { ...myObject, lastName: 'Collinsworth' }
+
+  myArray = [...myArray, 4]
+</script>
+```

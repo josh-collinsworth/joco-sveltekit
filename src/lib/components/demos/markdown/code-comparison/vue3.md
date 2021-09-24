@@ -6,7 +6,7 @@
   const count = ref(0)
 
   const incrementCount = () => {
-    count.value += 1
+    count.value++
   }
 </script>
 

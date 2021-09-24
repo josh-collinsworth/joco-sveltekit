@@ -15,6 +15,10 @@
     Svelte = (await import('./markdown/code-comparison/svelte.md')).default
 
     languages = {
+      svelte: {
+        title: 'Svelte',
+        component: Svelte,
+      },
       react: {
         title: 'React',
         component: React,
@@ -26,14 +30,10 @@
       vue3: {
         title: 'Vue 3',
         component: Vue3,
-      },
-      svelte: {
-        title: 'Svelte',
-        component: Svelte,
       }
     }
 
-    currentLanguage = React
+    currentLanguage = Svelte
   })
 </script>
 
