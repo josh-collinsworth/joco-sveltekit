@@ -126,6 +126,8 @@ h2 + .details {
 	margin-bottom: 2rem;
 }
 
-.ghosty button {
-	opacity: 0.1;
+.ghosty button,
+.ghosty button::before {
+	transition: transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transform: translateY(-4rem);
 }

@@ -78,7 +78,7 @@
 		align-items: center;
 		position: fixed;
 		right: 1rem;
-		top: calc(1rem + 1px);
+		top: calc(1rem - 2px);
 		transition: opacity 0.2s;
 
 		@media (min-width: $narrow) {

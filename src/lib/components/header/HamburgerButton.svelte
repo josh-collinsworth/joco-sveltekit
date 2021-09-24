@@ -10,6 +10,7 @@
 	id="hamburger"
 	aria-pressed={$isMenuOpen}
 	class:fixed={$isMenuOpen}
+	class="settings-toggle"
 	on:click={() => isMenuOpen.set(!$isMenuOpen)}
 >
 	<span class="sr">{readableMenuStateOpposite} menu</span>
@@ -33,8 +34,9 @@
 		position: relative;
 		z-index: 11;
 		border: 2px solid var(--ink);
-		transition: all .2s ease-in-out;
 		border-radius: var(--button-size);
+		overflow: visible;
+		transition-delay: 0.15s;
 
 		&:before {
 			content: '';
@@ -45,6 +47,8 @@
 			position: absolute;
 			top: -2px;
 			left: -1.1rem;
+			transition: inherit;
+			transition-delay: 0.1s;
 		}
 
 		&.fixed {

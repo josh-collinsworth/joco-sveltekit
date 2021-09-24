@@ -72,7 +72,6 @@
 		handleLoadingUserPreferences()
 
 		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
-		console.log(key)
 	})
 </script>
 

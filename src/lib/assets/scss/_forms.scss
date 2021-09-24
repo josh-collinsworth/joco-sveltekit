@@ -85,8 +85,12 @@ button {
 	border: 2px solid var(--ink);
 	background: var(--button-background);
 	transition: background var(--item-transition), color var(--item-transition),
-		border-color var(--item-transition), opacity .2s ease-in-out;
+		border-color var(--item-transition), transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 	z-index: 11;
+
+	+ .settings-toggle {
+		transition-delay: 0.05s;
+	}
 
 	&:hover {
 		background: var(--button-background);
