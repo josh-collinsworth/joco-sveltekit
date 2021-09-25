@@ -307,13 +307,15 @@ But again: this is my personal site, and so the tool I _like_ the most is an imp
 
 #### How does the code compare?
 
-The natural next question is: how does the old Vue code compare to the newer Svelte code? Is it shorter/better/more readable?
+The natural next question is: how does the old Vue code compare to the newer Svelte code? Is it shorter/better/more readable? Turns out: that's actually a really tricky question to answer.
 
-That's actually a really tricky question to answer, for a few reasons.
+I thought in the beginning that I'd show the two versions of some of the components for comparison, but there's been enough change at this point that most of the differences are either trivial or not really comparable.
 
-At a high level, yes: most of the components that were direct conversions from Vue to Svelte seem to be about 15% shorter than their Vue counterparts. But most of the site isn't directly analogous anymore; it's got TypeScript added, and it's been refactored. (For example, to add the code to make page transitions work.)
+At a high level, yes: most of the components that were direct conversions from Vue to Svelte seem to be about 15–30% shorter than their Vue counterparts. But most of the site's code isn't directly analogous anymore; it's got TypeScript added, and it's been refactored. (For example, to add the code to make page transitions work.) Some of it is longer.
 
-A _lot_ of it is different now: the colorful square grid in the header and footer work completely differently now for better performance; layouts have changed; new pieces have been added and old removed. While the site _looks_ mostly the same as before, it's _very_ different behind the scenes.
+A _lot_ of it is different now: the colorful square grid in the header and footer work completely differently now for better performance; layouts have changed; new pieces have been added and old removed. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
+
+**While the site _looks_ mostly the same as before, it's _very_ different behind the scenes.**
 
 That all makes the question of "is it better?" really hard to answer. But I _like_ it better (even the parts that are more verbose), and I think that's the most important part.
 
