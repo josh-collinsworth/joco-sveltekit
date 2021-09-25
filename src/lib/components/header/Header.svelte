@@ -122,7 +122,7 @@
 		color: var(--white);
 
 		&:focus {
-			transform: translateY(.7rem);
+			transform: translateY(7rem);
 			opacity: 1;
 			z-index: 11;
 		}

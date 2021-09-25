@@ -45,8 +45,8 @@
     <br>
     <b>Updated:</b> { meta.updated }
   </div>
-  
-  <TableOfContents />
+
+  <!-- <TableOfContents /> -->
   
   <svelte:component this={Post} />
 
@@ -97,6 +97,7 @@
     }
     
     .meta + p:first-of-type::first-letter,
+    .toc + p:first-of-type::first-letter,
     > hr + p:first-letter {
       font-size: 3.4em;
       font-family: var(--heading-font);

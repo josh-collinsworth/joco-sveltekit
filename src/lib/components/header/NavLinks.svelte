@@ -1,20 +1,18 @@
 <script lang="ts">
   import NavLink from './NavLink.svelte'
+  import { isMenuOpen } from '$lib/assets/js/store'
 
-  export let mobile: boolean = false
   export let key: string
 </script>
 
 
-<ul class:mobile={mobile}>
+<ul class:open={$isMenuOpen}>
   <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
-  {#if mobile}
-    <NavLink to="/" text="About me" {key} {mobile} />
-  {/if}
-  <NavLink to="/blog" text="Writing" {key} {mobile} />
-  <NavLink to="/projects" text="Projects" {key} {mobile} />
-  <NavLink to="/contact" text="Contact" {key} {mobile} />
-  <NavLink to="/uses" text="Uses" {key} {mobile} />
+  <NavLink to="/" text="About me"{key} mobileOnly={true} />
+  <NavLink to="/blog" text="Writing" {key} />
+  <NavLink to="/projects" text="Projects"{key} />
+  <NavLink to="/contact"text="Contact" {key} />
+  <NavLink to="/uses" text="Uses"{key} />
 </ul>  
 
 
@@ -27,13 +25,17 @@
     font-size: .875rem;
     list-style-type: none;
     padding: 0;
-  }
 
-  ul.mobile {
-    list-style-type: none;
-    text-align: left;
-    width: 100%;
-    display: block;
-    margin: 0;
+    @media (max-width: $narrow) {
+      list-style-type: none;
+      text-align: left;
+      width: 100%;
+      display: none;
+      margin: 0;
+
+      &.open {
+        display: block;
+      }
+    }
   }
 </style>

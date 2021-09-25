@@ -18,11 +18,7 @@
 			role="navigation"
 			aria-hidden={!$isMenuOpen}
 		>
-      <NavLinks mobile={true} {key} />
-		</nav>
-
-		<nav id="desktop-nav" class="main-nav nav" role="navigation">
-			<NavLinks {key} />
+      <NavLinks {key} />
 		</nav>
 	</div>
 </template>
@@ -32,7 +28,7 @@
 	.main-nav {
 		text-align: right;
 
-		&#mobile-nav {
+		@media (max-width: $narrow) {
 			display: block;
 			position: fixed;
 			transition: transform .4s cubic-bezier(1, 0, 0, 1), opacity .4s cubic-bezier(1, 0, 0, 1);
@@ -50,23 +46,16 @@
 			opacity: 0;
 			z-index: 10;
 
-			@media (min-width: $narrow) {
-				display: none;
-			}
-
-			&.open {
+			&.open,
+			&:focus-within {
 				transform: translateX(100vw);
 				opacity: 1;
 			}
 		}
 
-		&#desktop-nav {
-			display: none;
-
-			@media (min-width: $narrow) {
-				display: flex;
-				justify-content: flex-end;
-			}
+		@media (min-width: $narrow) {
+			display: flex;
+			justify-content: flex-end;
 		}
 	}
 </style>

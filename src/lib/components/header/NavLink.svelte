@@ -4,7 +4,7 @@
   export let text: string
   export let to: string
   export let key: string
-  export let mobile: boolean = false
+  export let mobileOnly: string|boolean = false
 
   const handleClick = (): void => {
     isMenuOpen.set(false)
@@ -19,14 +19,13 @@
 </script>
 
 
-<li class:mobile={mobile} class:open={$isMenuOpen} >
+<li class:open={$isMenuOpen} class:mobile-only={mobileOnly} >
   <a
     sveltekit:prefetch
     href={to}
     class="nav__link"
     class:active={isCurrentPage}
     aria-current={isCurrentPage ? 'page' : false}
-    tabindex={mobile && !$isMenuOpen ? -1 : 0}
     on:click={handleClick}
   >  
     <span>{text}</span>
@@ -38,26 +37,41 @@
   li {
     margin: 0 0 0 1.5em;
 
-    &.mobile {
-      --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    @media (max-width: $narrow) {
+      --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   
-      transform: translateX(-3em);
       opacity: 0;
-      transition: transform var(--item-transition), opacity var(--item-transition);
       margin-bottom: 1.5rem;
       font-size: 1.25rem;
       line-height: 1.5em;
       color: var(--white);
       width: 100%;
+
+      @keyframes move_in_left {
+        from {
+          opacity: 0;
+          transform: translateX(-3em);
+        }
+
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: $narrow) {
+      .mobile-only {
+        display: none;
+      }
     }
 
     &.open {
-      transform: translateX(0vw);
-      opacity: 1;
+      animation: move_in_left var(--item-transition);
   
       @for $i from 1 through 9 {
         &:nth-of-type(#{$i}) {
-          transition-delay: $i * 0.10 + s;
+          animation-delay: $i * 0.1 + s;
         }
       }
   
@@ -115,6 +129,12 @@
 					transform-origin: left;
 				}
 			}
+    }
+
+    &.mobile-only {
+      @media (min-width: $narrow) {
+        display: none;
+      }
     }
   }
 </style>

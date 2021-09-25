@@ -7,34 +7,33 @@
     const anchor = e.target as HTMLAnchorElement
     if (anchor.href) {
       const target = anchor.href.split('#').pop()
-      console.log(target)
       document.getElementById(target).scrollIntoView({ behavior: 'smooth' })
     }
   }
 
-  let output: string = ''
+  let output: string = ``
 
   onMount(() => {
     const allHeadings = document.querySelectorAll('article h1 ~ :is(h2, h3, h4, h5, h6)');
     
     Array.from(allHeadings).forEach((heading, i) => {
+      const { innerText, tagName } = heading as HTMLHeadingElement
+      const level = parseInt(tagName[1])
       heading.id = `heading-${i}`
-      const level = parseInt(heading.tagName.slice(1)) - 2
       headings = [...headings, {
-        title: heading.innerText,
-        level,
-        number: i
+        title: innerText,
+        number: i,
+        level
       }]
     })
 
     headings.forEach((h, i) => {
-      const link = `<a href="#heading-${i}">${h.title}</a>`
       if (i === 0) {
-        output += `<li>${link}`
+        output += `<li>`
       } else if (headings[i - 1].level === h.level) {
-        output += `</li><li>${link}`
+        output += `</li><li>`
       } else if (headings[i - 1].level < h.level) {
-        output += `<ul><li>${link}`
+        output += `<ul><li>`
       } else if (headings[i - 1].level > h.level) {
         const subtraction =
           i + 1 === headings.length
@@ -44,8 +43,9 @@
         for (let n = 0; n <= subtraction; n++) {
           output += '</li></ul>'
         }
-        output += `</li><li>${link}`
+        output += `</li><li>`
       }
+      output += `<a href="#heading-${i}">${h.title}</a>`
     }) 
   })
 </script>
