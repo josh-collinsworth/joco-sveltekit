@@ -250,7 +250,7 @@ The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 
 
 <Callout>Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an interesting study in&nbsp;tradeoffs.</Callout>
 
-It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell it's somewhere around 400 kB
+It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell SvelteKit still saves me at least around 100kb. So it still seems like a win, even if it's one that comes with tradeoffs.
 
 This brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an interesting study in tradeoffs. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
@@ -262,11 +262,11 @@ The builds with SvelteKit are also much faster: the production build of my Grids
 
 2. Gridsome uses Webpack under the hood, where SvelteKit utilizes [Vite](https://vitejs.dev/) (pronounced "veet").
 
-One particularly nice thing about Gridsome was its built-in `<g-image>` component. Just by using it in place of the standard HTML `<img>` tag, Gridsome would compress your image, generated a resized, responsive source set, use lazy loading, ***and*** create blurred placeholder images.
+One particularly nice thing about Gridsome was its built-in `<g-image>` component. Just by using it in place of the standard HTML `<img>` tag, Gridsome would compress your images, generate a resized, responsive source set, use lazy loading, ***and*** create blurred placeholder images.
 
 By contrast, out of the box, SvelteKit does…nothing to help with images.
 
-My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future. (And even if not, it's possible to rig that up directly through Vite.) But for now, the few solutions I tried didn't work particularly well, and the tradeoff didn't seem to be worthwhile.
+My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future. (And even if not, it's possible to rig that up directly through Vite, though that's its own rabbit hole.) But for now, the few solutions I tried didn't work particularly well, and the tradeoff didn't seem to be worthwhile.
 
 
 ### Why move away from Gridsome?
@@ -275,11 +275,11 @@ As you can see from just perusing the posts list on this blog, it wasn't all tha
 
 This naturally prompts the question: _why move in the first place_? At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
 
+<Callout>At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.</Callout>
+
 There are a few answers to that question, but they all boil down to one phrase: Gridsome was meeting my needs, but not my wants.
 
 I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome ([version 0.7](https://gridsome.org/blog/2019/09/17/gridsome-v07/)), and at this point, it doesn't seem like it's an actively maintained project any longer. I don't know if it will ever reach 1.0 or not. I certainly wouldn't begrudge the creators for at all abandoning it during the pandemic.
-
-<Callout>At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.</Callout>
 
 Regardless, Gridsome didn't ever really feel _complete_ to me. It was a wonderful way to generate a speedy, static site with Vue (and GraphQL!), but its nascence showed at times. (Granted, SvelteKit is still pre-1.0 as well. But it seems to have a much bigger and more active team behind it.)
 
@@ -289,11 +289,11 @@ I've already mentioned [Gridsome's image handling](https://gridsome.org/docs/ima
 
 Page transitions also required enough swimming upstream as to make them not particularly worthwhile. And there was more than once that I spent a day or two fighting with NPM and the node\_modules folder, unable to even _run_ the site on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.)
 
-Another reason: this site, like any side project, is to enjoy. This site in particular is the one little corner of the internet that's truly mine, where I can do whatever I want for whatever reason I want.
+Another reason: this site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do whatever I want for whatever reason I want.
 
-When I was writing this site in Gridsome, my list of Vue projects was fairly small, which made the appeal of having a "Vue garden," let's say, more appealing. Now I have [Quina](https://quina.app/) and several others, though, and it doesn't feel like I _need_ a site in Vue anymore—especially since my _job_ isn't in Vue anymore.
+When I was writing this site in Gridsome, my list of Vue projects was fairly small, which made the appeal of having a "Vue garden," let's say, more appealing. Now I have [Quina](https://quina.app/) and several others, though, and it doesn't feel like I _need_ a site in Vue anymore—especially since my day job isn't Vue-focused anymore.
 
-Maybe the fact that I've been working professionally with Vue for the last two years is part of it, too. I feel I've scratched that itch, for the most part, at least for right now. I still love Vue dearly and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: I want a different thing to play with. That's just how my brain works (or doesn't, depending on your point of view), and I've found there's no use fighting it.
+Maybe the fact that I've been working professionally with Vue for the last two years is part of it, too. I still love Vue dearly and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: that itch is scratched, and I want a different thing to play with.
 
 Finally, [TypeScript](https://www.typescriptlang.org) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it. At this point, close to 100% of this site's JS is typed, so I've given it a good shot at least.
 
@@ -304,6 +304,18 @@ To some degree, I considered both [Astro](https://astro.build/) and [Eleventy](h
 
 But again: this is my personal site, and so the tool I _like_ the most is an important factor. So while SvelteKit might arguably be a little overkill, personally, I think it's the most fun.
 
+
+#### How does the code compare?
+
+The natural next question is: how does the old Vue code compare to the newer Svelte code? Is it shorter/better/more readable?
+
+That's actually a really tricky question to answer, for a few reasons.
+
+At a high level, yes: most of the components that were direct conversions from Vue to Svelte seem to be about 15% shorter than their Vue counterparts. But most of the site isn't directly analogous anymore; it's got TypeScript added, and it's been refactored. (For example, to add the code to make page transitions work.)
+
+A _lot_ of it is different now: the colorful square grid in the header and footer work completely differently now for better performance; layouts have changed; new pieces have been added and old removed. While the site _looks_ mostly the same as before, it's _very_ different behind the scenes.
+
+That all makes the question of "is it better?" really hard to answer. But I _like_ it better (even the parts that are more verbose), and I think that's the most important part.
 
 
 

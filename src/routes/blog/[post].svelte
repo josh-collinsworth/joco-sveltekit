@@ -46,7 +46,7 @@
     <b>Updated:</b> { meta.updated }
   </div>
 
-  <!-- <TableOfContents /> -->
+  <TableOfContents />
   
   <svelte:component this={Post} />
 

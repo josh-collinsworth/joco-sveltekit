@@ -1,8 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
 
-  let headings = [];
-
   const scrollToHeading = (e: Event) => {
     const anchor = e.target as HTMLAnchorElement
     if (anchor.href) {
@@ -11,46 +9,55 @@
     }
   }
 
+  let showTableOfContents: boolean = false
   let output: string = ``
 
+  /**
+   * This whole approach feels hacky, but I tried several others and kept running into walls
+   * with how list HTML tags need to be nested. 
+   * 
+   * Every other solution I could think of either required a usage of `{each}` that Svelte 
+   * doesn't allow (it requires you to close tags within the block; you can't leave one open), 
+   * or way, way more looping (or both). So I'll just stick with this hacky approach since 
+   * it works and as a bonus, is a progressive enhancement.
+  */
   onMount(() => {
     const allHeadings = document.querySelectorAll('article h1 ~ :is(h2, h3, h4, h5, h6)');
+
+    if (allHeadings.length < 5) return
+
+    showTableOfContents = true
+    let previousHeadingLevel: number
     
     Array.from(allHeadings).forEach((heading, i) => {
       const { innerText, tagName } = heading as HTMLHeadingElement
       const level = parseInt(tagName[1])
       heading.id = `heading-${i}`
-      headings = [...headings, {
-        title: innerText,
-        number: i,
-        level
-      }]
-    })
 
-    headings.forEach((h, i) => {
       if (i === 0) {
         output += `<li>`
-      } else if (headings[i - 1].level === h.level) {
+      } else if (previousHeadingLevel === level) {
         output += `</li><li>`
-      } else if (headings[i - 1].level < h.level) {
+      } else if (previousHeadingLevel < level) {
         output += `<ul><li>`
-      } else if (headings[i - 1].level > h.level) {
+      } else if (previousHeadingLevel > level) {
         const subtraction =
-          i + 1 === headings.length
-            ? h.level + 1
-            : headings[i - 1].level - h.level 
+          i + 1 === allHeadings.length
+            ? level + 1
+            : previousHeadingLevel - level 
         console.log(`going up ${subtraction} levels`)
         for (let n = 0; n <= subtraction; n++) {
           output += '</li></ul>'
         }
         output += `</li><li>`
       }
-      output += `<a href="#heading-${i}">${h.title}</a>`
+      output += `<a href="#heading-${i}">${innerText}</a>`
+      previousHeadingLevel = level
     }) 
   })
 </script>
 
-{#if headings.length > 3}
+{#if showTableOfContents}
   <aside class="toc">
     <h2>Table of contents:</h2>
 
