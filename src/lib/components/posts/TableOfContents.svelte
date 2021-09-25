@@ -1,50 +1,30 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-import { end_hydrating } from 'svelte/internal';
 
   let headings = [];
 
-  const scrollToHeading = (e) => {
-    if (e.target.href) {
-      const target = e.target.href.split('#').pop()
+  const scrollToHeading = (e: Event) => {
+    const anchor = e.target as HTMLAnchorElement
+    if (anchor.href) {
+      const target = anchor.href.split('#').pop()
       console.log(target)
       document.getElementById(target).scrollIntoView({ behavior: 'smooth' })
     }
   }
 
-  const generatePrefix = (level: number): string => {
-    if (level === 0) {
-      return '• '
-    }
-
-    const iterator = new Array(level).fill('')
-    let prefix = '    '
-
-    iterator.forEach((_, i) => {
-      if (i + 1 == iterator.length) {
-        prefix += '•'
-      } else {
-        prefix += '    '
-      }
-    })
-
-    return prefix
-  }
-
-  let output = ''
+  let output: string = ''
 
   onMount(() => {
-    let allHeadings = document.querySelectorAll('article .toc ~ :is(h2, h3, h4, h5, h6)');
-    allHeadings.forEach((heading, i) => heading.id = `heading-${i}`);
-    headings = [...allHeadings].map((h, i) => {
-      const level = parseInt(h.tagName.slice(1)) - 2
-      
-      return {
-        title: h.innerText,
+    const allHeadings = document.querySelectorAll('article h1 ~ :is(h2, h3, h4, h5, h6)');
+    
+    Array.from(allHeadings).forEach((heading, i) => {
+      heading.id = `heading-${i}`
+      const level = parseInt(heading.tagName.slice(1)) - 2
+      headings = [...headings, {
+        title: heading.innerText,
         level,
-        prefix: generatePrefix(level),
         number: i
-      }
+      }]
     })
 
     headings.forEach((h, i) => {
@@ -56,7 +36,6 @@ import { end_hydrating } from 'svelte/internal';
       } else if (headings[i - 1].level < h.level) {
         output += `<ul><li>${link}`
       } else if (headings[i - 1].level > h.level) {
-        console.log(h.title)
         const subtraction =
           i + 1 === headings.length
             ? h.level + 1
@@ -71,38 +50,40 @@ import { end_hydrating } from 'svelte/internal';
   })
 </script>
 
-<aside class="toc">
-  <h2>Table of contents:</h2>
+{#if headings.length > 3}
+  <aside class="toc">
+    <h2>Table of contents:</h2>
 
-  <ul class="toc-list" on:click|preventDefault={scrollToHeading}>
-    {@html output}
-  </ul>
-  <!-- {#each headings as heading}
-  <div>
-    <a href="#heading-{heading.number}" on:click|preventDefault={scrollToHeading(heading.number)}>
-      <span class="h-{heading.level}">
-        {heading.prefix}
-        {heading.title}
-      </span>
-    </a>
-  </div>
-  {/each} -->
-</aside>
+    <ul class="toc-list" on:click|preventDefault={scrollToHeading}>
+      {@html output}
+    </ul>
+  </aside>
+{/if}
+
 
 
 <style lang="scss" global>
   .toc {
+    background: linear-gradient(145deg, rgba(var(--lightBlueRGB), 0.2) 50%, rgba(var(--yellowRGB), 0.2));
     background: rgba(var(--lightBlueRGB), 0.2);
     padding: 1.5rem;
     line-height: 1.6;
-    border: 1px solid;
     margin: 0 0 2rem;
     width: max-content;
+    max-width: 100%;
     
     .toc-list {
       list-style-type: decimal;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       margin: 0;
+
+      > li {
+        font-weight: bold;
+
+        ul {
+          font-weight: normal;
+        }
+      }
       
       ul {
         list-style-type: lower-alpha;
