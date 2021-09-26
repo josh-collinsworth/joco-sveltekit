@@ -61,7 +61,7 @@ Svelte takes a different approach from other frameworks by moving as much work a
 
 By contrast: **Vue and React both run _in_ the browser.** You load them, and _then_ use them to execute whatever code you write (not unlike jQuery and similar libraries).
 
-In fairness, in most cases, you'll probably use a build tool to reduce their bundle size. But to some extent at least, with React and Vue, you're inevitably shipping the whole framework to the browser.
+In fairness, in most cases, you'll probably use a build tool to reduce their bundle size. But to some extent at least, with React and Vue, you're inevitably shipping the framework to the browser.
 
 **With Svelte, the framework itself is removed by the compiler**. Svelte ships only the tiniest bit of runtime; all your Svelte code is compiled down to minimal vanilla JS before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
 
@@ -99,6 +99,7 @@ There are some key differences I'd like to point out between the Svelte version 
 - **There's no framework-specific JavaScript.** While Svelte _does_ have its own syntax in some cases (like the `on:click` in the example above and some others), it stays just about as close as possible to vanilla HTML and CSS.
 
 - **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. Svelte can have whatever HTML, wherever (and in its original state, unlike in JSX).
+
 
 ##### Other reasons to love Svelte
 
@@ -235,14 +236,18 @@ A framework helps you build UIs; a meta-framework helps you build apps with that
 
 One particularly impressive meta-framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as an app that utilizes server-side rendering, as a statically generated site, or as some combination of both.
 
-In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting. SvelteKit adapters make it possible to generate your site for deployment as a traditional Node app, for serverless, or even as fully static files!
+In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting. SvelteKit adapters make it possible to generate your site for deployment as a traditional Node app, for serverless, or even as fully static files (that can then be "hydrated" with JavaScript after page load).
+
+That last example is what this site uses; the SvelteKit pages and components are rendered as static HTML files. They can benefit from JavaScript doing some fancy stuff on the client once they've been loaded, but they don't have to; they can just be plain ol' HTML (that you can even load with JavaScript disabled entirely).
 
 
 ## Static SvelteKit vs. Gridsome
 
-SvelteKit is a lot of fun to work in, but it isn't perfect. Most of what it lacks comes from its comparative youth, in my opinion, but as with anything, there were advantages and disadvantages to consider regardless.
+Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome are _not_ really the same type of thing. SvelteKit is a meta-framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
 
-Here's an interesting example:
+Still, if we're scoping the discussion to _just_ SvelteKit's static adaptor, I think it's a fair, if not exact, comparison.
+
+As always, there were advantages and disadvantages to consider when making the switch. Here's an interesting example:
 
 The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.9 MB transferred. By contrast, that number is only _200 kB_ on SvelteKit (most of which is font files)—a reduction of almost ***90%!***
 
@@ -252,11 +257,11 @@ The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 
 
 It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell SvelteKit still saves me at least around 100kb. So it still seems like a win, even if it's one that comes with tradeoffs.
 
-This brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster, which makes for an interesting study in tradeoffs. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
+This brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
-Which is better? Ultimately, you'll need to evaluate your project's goals to answer that question. Personally: I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on your priorities and definition of success.
+Which is better? Ultimately, that depends on what you're optimizing for. Personally: I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on your project's priorities and definition of success.
 
-The builds with SvelteKit are also much faster: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version (about five times faster). But again, this is misleading, for two reasons:
+**The builds with SvelteKit are also much faster**: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version (about five times faster). But again, this is misleading, for two reasons:
 
 1. Gridsome was doing a lot of image work at build time that SvelteKit isn't by default; and
 
@@ -266,36 +271,32 @@ One particularly nice thing about Gridsome was its built-in `<g-image>` componen
 
 By contrast, out of the box, SvelteKit does…nothing to help with images.
 
-My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future. (And even if not, it's possible to rig that up directly through Vite, though that's its own rabbit hole.) But for now, the few solutions I tried didn't work particularly well, and the tradeoff didn't seem to be worthwhile.
+My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future. (And even if not, it's possible to rig that up directly through Vite, though that's its own rabbit hole. Or, I could even use a service like [Cloudinary](https://cloudinary.com/) if image size became an issue.) But for now, the few Svelte-focused solutions I tried didn't work particularly well for my use case, and the tradeoff didn't seem to be worthwhile.
 
 
 ### Why move away from Gridsome?
 
-As you can see from just perusing the posts list on this blog, it wasn't all that long ago that I moved to Gridsome in the first place. I went to a [headless Gridsome frontend](/blog/a-new-headless-site-with-gridsome) just over a year ago, and converted the site to [fully static](/blog/goodbye-wordpress) barely seven months ago. I've already talked here about how nice its image handling is, and how fast it makes the site feel.
+As you can see from just perusing the posts list on this blog, it wasn't all that long ago that I moved to Gridsome in the first place. I went to a [headless Gridsome frontend](/blog/a-new-headless-site-with-gridsome) just over a year ago, and converted the site to [fully static](/blog/goodbye-wordpress) barely seven months ago. I've already talked here about how nice Gridsome's image handling is, and how fast it makes the site feel.
 
 This naturally prompts the question: _why move in the first place_? At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
 
 <Callout>At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.</Callout>
 
-There are a few answers to that question, but they all boil down to one phrase: Gridsome was meeting my needs, but not my wants.
+I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome ([0.7](https://gridsome.org/blog/2019/09/17/gridsome-v07/)), and at this point, it doesn't seem like it's an actively maintained project any longer.
 
-I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome ([version 0.7](https://gridsome.org/blog/2019/09/17/gridsome-v07/)), and at this point, it doesn't seem like it's an actively maintained project any longer. I don't know if it will ever reach 1.0 or not. I certainly wouldn't begrudge the creators for at all abandoning it during the pandemic.
+Gridsome didn't ever really feel _complete_ to me, and that was fine when updates were still rolling out. I knew what I was in for going with a pre-1.0 technology, but the stagnation was hard to ignore. It was really good at what it did well—generating a speedy, static site with Vue and GraphQL—but the more you wanted to tweak things or leave the happy path, the more you ran into its rough edges.
 
-Regardless, Gridsome didn't ever really feel _complete_ to me. It was a wonderful way to generate a speedy, static site with Vue (and GraphQL!), but its nascence showed at times. (Granted, SvelteKit is still pre-1.0 as well. But it seems to have a much bigger and more active team behind it.)
+<Callout>SvelteKit sparked joy in a way that Gridsome didn't anymore.</Callout>
 
-I've already mentioned [Gridsome's image handling](https://gridsome.org/docs/images/), for example, which feels absolutely _magical_—but it also only worked in certain cases unless you modified the Webpack config (no, thank you).
+More than once, I spent a day or two fighting with NPM, unable to even _run_ Gridsome on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.)
 
-<Callout>Gridsome was meeting my needs, but not my wants.</Callout>
+But moreover: SvelteKit sparked joy in a way that Gridsome didn't anymore. This site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do anything I want for whatever reason.
 
-Page transitions also required enough swimming upstream as to make them not particularly worthwhile. And there was more than once that I spent a day or two fighting with NPM and the node\_modules folder, unable to even _run_ the site on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.)
+When I was writing this site in Gridsome, my list of Vue projects was fairly small, which made the appeal of having a Vue outlet more appealing. Now, though, it doesn't feel like I _need_ a site in Vue anymore—especially since my day job isn't Vue-focused anymore.
 
-Another reason: this site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do whatever I want for whatever reason I want.
+Maybe the fact that I've been working professionally with Vue for the last two years (and released [Quina](https://quina.app) late last year) is part of it, too. I still love Vue dearly, and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: that itch is scratched, and I want a different thing to play with.
 
-When I was writing this site in Gridsome, my list of Vue projects was fairly small, which made the appeal of having a "Vue garden," let's say, more appealing. Now I have [Quina](https://quina.app/) and several others, though, and it doesn't feel like I _need_ a site in Vue anymore—especially since my day job isn't Vue-focused anymore.
-
-Maybe the fact that I've been working professionally with Vue for the last two years is part of it, too. I still love Vue dearly and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: that itch is scratched, and I want a different thing to play with.
-
-Finally, [TypeScript](https://www.typescriptlang.org) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it. At this point, close to 100% of this site's JS is typed, so I've given it a good shot at least.
+Finally, [TypeScript](https://www.typescriptlang.org/) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it. At this point, close to 100% of this site's JS is typed, so I've given it a good shot at least.
 
 
 #### What other options were considered?
@@ -307,18 +308,21 @@ But again: this is my personal site, and so the tool I _like_ the most is an imp
 
 #### How does the code compare?
 
-The natural next question is: how does the old Vue code compare to the newer Svelte code? Is it shorter/better/more readable? Turns out: that's actually a really tricky question to answer.
+You might wonder: how does the old Vue code compare to the newer Svelte code? Is it shorter, better, and/or more readable?
 
-I thought in the beginning that I'd show the two versions of some of the components for comparison, but there's been enough change at this point that most of the differences are either trivial or not really comparable.
+Turns out: that's actually a really tricky question to answer.
 
-At a high level, yes: most of the components that were direct conversions from Vue to Svelte seem to be about 15–30% shorter than their Vue counterparts. But most of the site's code isn't directly analogous anymore; it's got TypeScript added, and it's been refactored. (For example, to add the code to make page transitions work.) Some of it is longer.
+I originally thought I'd show side-by-side comparisons to demonstrate Vue vs. Svelte, but there's been enough change at this point that most of the differences are either trivial or not really comparable.
 
-A _lot_ of it is different now: the colorful square grid in the header and footer work completely differently now for better performance; layouts have changed; new pieces have been added and old removed. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
+Most of the site's code isn't directly analogous anymore; it's got TypeScript added, it works differently, and even what's similar in functionality has largely been refactored.
+
+The one non-trivial component that's mostly the same between the two versions is the font tester (seen on the [`/uses` page](/uses)). But it's actually about the same size, both in terms of line count and disk size. The Svelte version actually is a tiny bit bigger, but by a thoroughly negligible amount (a fraction of a kB), and almost certainly just because of the addition of TypeScript.
+
+Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer work completely differently for better performance now; layouts have changed; new pieces have been added and old removed. Code was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
 
 **While the site _looks_ mostly the same as before, it's _very_ different behind the scenes.**
 
-That all makes the question of "is it better?" really hard to answer. But I _like_ it better (even the parts that are more verbose), and I think that's the most important part.
-
+That all makes the question of "is it better?" really hard to answer (even without getting into the highly subjective topic of what "better" even means). But I _like_ it better (even the parts that are more verbose), and I think that's the most important part. I even enjoyed the relatively rote process of moving Vue components over to Svelte.
 
 
 ## What to know about SvelteKit
@@ -328,15 +332,15 @@ As of this writing, SvelteKit is still in pre-1.0 status. It seems very stable t
 
 ### Debunking the community argument
 
-<Callout>When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework.</Callout>
+When comparing Svelte (or any newer technology, for that matter) with the larger, more established players, arguments against adoption often point to community size. Where React, Vue, Angular, etc. all have large ecosystems full of resources for you to take advantage of, Svelte can seem comparatively small. The fear, then, is that when or if you need to reach for additional packages to handle things beyond the main framework's capabilities, you may be left in the lurch.
 
-When comparing Svelte (or any newer framework) with the larger, more established players, arguments against adoption often point to community size. Where React, Vue, Angular, etc. all have large ecosystems, Svelte can seem comparatively small. So, when you need to reach for additional packages to handle things beyond the main framework's capabilities, the argument goes, you may be left in the lurch.
+<Callout>When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework itself.</Callout>
 
 I'd like to put some context around that argument:
 
-1. **You don't often _need_ packages with Svelte.** When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework. 
+1. **You don't often _need_ packages with Svelte.** When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework itself. 
 
-  Svelte is much closer to the plain HTML, CSS and JavaScript of the web, which means it's simpler to adopt _any_ JavaScript package for use in a Svelte app. Plus, many of the features you'd need a package for in other frameworks come baked in;. (Goodbye, Styled Components and Framer Motion.)
+  Svelte is much closer to the beautifully uncomplicated HTML, CSS and JavaScript of the web, which means you don't often _need_ to go looking for a package that, say, plays nice with your framework's hooks or lifecycle methods. Plus, many of the features you'd need a package for in other frameworks come baked in (motion, scoped CSS, and state management being the biggest examples).
 
 2. **Svelte is extremely compatible with vanilla JavaScript packages.** This means that while, yes, Svelte's ecosystem of packages and plugins is comparatively small, it can often benefit from and easily use _any_ framework-agnostic package—which is a pretty massive portion of the packages out there.
 
@@ -345,63 +349,21 @@ I'd like to put some context around that argument:
   A quick web search, however, was all it took to find a very easy way to code my own XML feed endpoint in minutes, with no dependencies, in under 40 lines of code.
 
 
-### Svelte's ecosystem can be difficult to search
+### Svelte's ecosystem is in a tricky place
 
 One other thing to know at this point in SvelteKit's existence is that it's actually the _second_ stab at a Svelte meta-framework; [Sapper](https://sapper.svelte.dev/) was the first.
 
 Sapper never seemed as big as SvelteKit does now, but it's been deprecated in favor of SvelteKit, and there's still some confusion that arises when searching online for code solutions in the space.
 
-SvelteKit doesn't always work exactly the same as Svelte _or_ Sapper by default (That's because Svelte and Sapper both have a Rollup config—Rollup being the bundler that powers Svelte—where SvelteKit has its own config file). So a lot of the examples and answers you come across are likely to either need some syntax adjustment, or just not work exactly as expected.
+SvelteKit doesn't always work exactly the same as Svelte _or_ Sapper by default (largely because Svelte and Sapper both have a Rollup config—Rollup being the bundler that powers Svelte—where SvelteKit has its own config file). So a lot of the examples and answers you come across related to setting up configuration are likely to either need some syntax adjustment, or just not work exactly as expected. (This doesn't apply to Svelte itself so much as to SvelteKit and its unique configurations.)
 
 
-### Svelte's reactivity requires reassignment
+## Wrapup: would I use SvelteKit again?
 
-There's one small caveat with Svelte's automatic reactivity: it requires you to _reassign_ a variable, rather than just update it.
+For just about any project, **yes**, I would use SvelteKit again in a heartbeat.
 
-This actually isn't really even a Svelte-specific thing; it has to do with how JavaScript itself tracks variables in memory.
+Even though it's still technically pre-1.0, SvelteKit feels very solid—much more so than other pre-1.0 frameworks I've tried—_and_ it's a delight to work with. The adaptors allow you to tailor your input to any output you like, and the scope of things you can build with it is impressively vast. Plus, it's likely to be smaller and faster than whatever else you might have chosen, and with even betted developer experience.
 
-With simple data types like numbers and strings, this isn't an issue; changing the value automatically reassigns the variable. But it _does_ become a bit of a gotcha when working with arrays and objects, since adding, modifying, or removing the contents of an object or array will _not_ register as a change with JavaScript.
+As mentioned, it's still early days for SvelteKit, so there are still some areas where its established solutions may not be as robust as with other frameworks. So I'll say that if I were starting up a new project today and _knew_ for sure right off the bat that I'd need a wide range of third-party plugins or packages, I _might_ lean more towards Nuxt for that at this specific point in time.
 
-<SideNote>This is also why you can still modify the internals of an object or array initialized with <code>const</code>; JavaScript doesn't consider the variable to have changed until the object or array itself is reassigned.</SideNote>
-
-Here's an example that _won't_ cause an automatic update in Svelte:
-
-```svelte
-<script>
-  let myObject = {
-    firstName: 'Josh'
-  }
-
-  let myArray = [1, 2, 3]
-
-  // Neither of these will trigger an update
-  myObject.lastName = 'Collinsworth'
-  myArray.push(4)
-</script>
-```
-
-Or rather: it works to update the object/array, but _not_ to trigger an update. Any place `myObject` or `myArray` was referenced by the above code would stay as it is, and not show the new item or property.
-
-To trigger an update, you _could_ do this instead:
-
-```svelte
-<script>
-  myObject.lastName = 'Collinsworth'
-  myArray.push(4)
-
-  // Reassignment triggers an update
-  myObject = myObject
-  myArray = myArray
-</script>
-```
-
-That would work, but it's clunky and it's an extra step. The better option in my opinion is to combine the two steps with the ES6 spread operator:
-
-```svelte
-<script>
-  //Combine both steps above into one!
-  myObject = { ...myObject, lastName: 'Collinsworth' }
-
-  myArray = [...myArray, 4]
-</script>
-```
+It's hard to imagine SvelteKit _not_ becoming the #1 go-to in all cases in the near future, however—especially knowing it only came out of closed beta a matter of months ago.
