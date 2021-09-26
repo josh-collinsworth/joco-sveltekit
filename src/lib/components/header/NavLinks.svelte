@@ -1,6 +1,6 @@
 <script lang="ts">
   import NavLink from './NavLink.svelte'
-  import { isMenuOpen } from '$lib/assets/js/store'
+  import { isMenuOpen } from '$lib/data/store'
 
   export let key: string
 </script>

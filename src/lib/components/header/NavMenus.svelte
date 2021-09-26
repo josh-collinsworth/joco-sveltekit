@@ -1,7 +1,7 @@
 <script lang="ts">
 	import NavLinks from '$lib/components/header/NavLinks.svelte'
 	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
-	import { isMenuOpen } from '$lib/assets/js/store'
+	import { isMenuOpen } from '$lib/data/store'
 
 	export let key: string
 </script>

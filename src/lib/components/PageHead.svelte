@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { prefersReducedMotion } from '$lib/assets/js/store'
+  import { prefersReducedMotion } from '$lib/data/store'
 
   export let title: string
   export let subtitle: string = ''

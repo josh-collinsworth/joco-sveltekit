@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { prefersReducedMotion } from '$lib/assets/js/store'
-  import { TIMING_DURATION } from '$lib/assets/js/constants'
+  import { prefersReducedMotion } from '$lib/data/store'
+  import { TIMING_DURATION } from '$lib/data/constants'
   import { cubicIn, cubicOut } from 'svelte/easing'
   import { fly } from 'svelte/transition'
 

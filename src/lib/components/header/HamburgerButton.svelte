@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { isMenuOpen } from '$lib/assets/js/store'
+	import { isMenuOpen } from '$lib/data/store'
 
 	let readableMenuStateOpposite: string
 	$: readableMenuStateOpposite = $isMenuOpen ? 'Close' : 'Open'

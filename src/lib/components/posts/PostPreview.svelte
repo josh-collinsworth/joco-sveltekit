@@ -3,7 +3,7 @@
   import Tag from '../tags/Tag.svelte'
   import TagList from '../tags/TagList.svelte'
   import ExternalLink from '../icons/ExternalLink.svelte'
-  import { isLoading } from '$lib/assets/js/store'
+  import { isLoading } from '$lib/data/store'
 
   export let external: boolean = false
   export let post: Post

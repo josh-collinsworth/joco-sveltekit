@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import { EXTERNAL_POSTS } from '$lib/assets/js/constants';
+  import { EXTERNAL_POSTS } from '$lib/data/external_posts';
 
 	export async function load({ fetch, page }) {
     const category = page.params.category

@@ -21,8 +21,8 @@
 	import PageHead from '$lib/components/PageHead.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
-	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/assets/js/constants'
-	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/assets/js/store'
+	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/data/constants'
+	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	
 	export let key: string

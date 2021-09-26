@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isLoading, isMenuOpen } from '$lib/assets/js/store'
+  import { isLoading, isMenuOpen } from '$lib/data/store'
 
   export let text: string
   export let to: string

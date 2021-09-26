@@ -1,6 +1,6 @@
 <script lang="ts">
   import LightDarkIcon from './LightDarkIcon.svelte'
-  import { prefersDarkMode, prefersLightMode } from '$lib/assets/js/store';
+  import { prefersDarkMode, prefersLightMode } from '$lib/data/store';
 
   let enableOrDisable: string
 

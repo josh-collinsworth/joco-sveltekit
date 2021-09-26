@@ -4,7 +4,7 @@
 	import NavMenus from '$lib/components/header/NavMenus.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
-	import { isLoading, isMenuOpen, isScrollingDown } from '$lib/assets/js/store'
+	import { isLoading, isMenuOpen, isScrollingDown } from '$lib/data/store'
 
 	export let key: string
 

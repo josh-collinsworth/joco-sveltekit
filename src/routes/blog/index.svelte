@@ -13,7 +13,7 @@
 <script lang="ts">
 	import type Post from '$lib/assets/js/interfaces/post'
 	import PostList from '$lib/components/posts/PostList.svelte'
-	import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
+	import { EXTERNAL_POSTS } from '$lib/data/external_posts'
 
 	export let posts: Post[] = []
 </script>

@@ -1,8 +1,8 @@
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
   import LogoSVG from './header/LogoSVG.svelte'
-  import { EXTERNAL_POSTS } from '$lib/assets/js/constants'
-  import { isLoading } from '$lib/assets/js/store'
+  import { EXTERNAL_POSTS } from '$lib/data/external_posts'
+  import { isLoading } from '$lib/data/store'
   
   import { onMount } from 'svelte'
   import TagList from './tags/TagList.svelte'
@@ -24,7 +24,7 @@
       allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
     }
     catch(error) {
-      posts = [{ title: 'ERROR'}]
+      posts = []
     }
   })
 
