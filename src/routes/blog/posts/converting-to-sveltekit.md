@@ -218,34 +218,132 @@ If you'd like to read more about styling in Svelte, be sure to read [What I Like
 Personally, I could go on and on about how easy Svelte makes things, and how advanced yet simple it seems. Even [Svelte's docs and tutorial site](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!
 
 
-### Differentiating Svelte from SvelteKit
+### Ok, so that's Svelte; what's SvelteKit?
 
-Since frontend frameworks generally run entirely on JavaScript in the browser, they aren't ideal for much except building out pieces of interactive UIs; by nature, they're limited to the capabilities of JavaScript in the browser.
+Since frontend frameworks run entirely on JavaScript, they aren't ideal for much except building out pieces of interactive UIs on a single page; by nature, they're limited to the capabilities of JavaScript in the browser. (Because of this, sites built with a framework are sometimes called "single-page applications," or SPAs.)
 
-<Callout>A framework helps you build UIs; a meta-framework helps you build apps with that&nbsp;framework.</Callout>
+<Callout>A framework helps you build an interactive UI on a single page; an app framework helps you build full-fledged sites and apps in that&nbsp;framework.</Callout>
 
-Because of this, most popular frameworks have their own meta-framework: a tool that helps you build not just UI components, but entire _pages and apps_ with the framework in question.
+To overcome this limitation, most popular frameworks have their own "app framework," or: a tool that helps you build not just pieces of a UI or a single page, but entire _pages and apps_ with the framework in question.
 
-React has [Next](https://nextjs.org/), Vue has [Nuxt](https://nuxtjs.org/), and Svelte has [SvelteKit](https://kit.svelte.dev/).
+[Next](https://nextjs.org/) is a React framework; [Nuxt](https://nuxtjs.org/) is a Vue framework; [SvelteKit](https://kit.svelte.dev/) is a Svelte framework.
 
-<SideNote>Interestingly enough, SvelteKit is the only meta-framework mentioned here developed by more or less the same maintainers of the core framework; Next and Nuxt are both built by independent enterprises.</SideNote>
+App frameworks are bigger toolboxes with wider capabilities, to help you build just about anything. Most app frameworks include some combination of pages and routing, data stores, layouts, image optimization, better SEO and full-page control, data fetching, and/or plugins—usually just about everything except a database.
 
-Meta-frameworks bundle more tools and capabilities in with the underlying UI framework, so you can build just about anything. Most meta-frameworks include some combination of routing, data stores, layouts, image optimization, better SEO handling, data fetching, plugins—usually just about everything except a database.
+A framework helps you build an interactive UI on a single page; an app framework helps you build full-fledged sites and apps in that framework.
 
-A framework helps you build UIs; a meta-framework helps you build apps with that framework.
 
-One particularly impressive meta-framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as an app that utilizes server-side rendering, as a statically generated site, or as some combination of both.
+#### Routing in SvelteKit
 
-In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting. SvelteKit adapters make it possible to generate your site for deployment as a traditional Node app, for serverless, or even as fully static files (that can then be "hydrated" with JavaScript after page load).
+By default, a new SvelteKit project has a `src/routes` directory. Anything inside of `src/routes` compiles to a page at that relative root.
+
+For example:
+
+- `src/routes/index.svelte` becomes `/`
+- `src/routes/about.svelte` becomes `/about`
+- `src/routes/blog/index.svelte` becomes `/blog`, and so on.
+
+The _really_ magical part, though, is that you can have server-side routes, too.
+
+For example: if you want your app to have a `/posts` endpoint that returns JSON, you just create `src/routes/posts.json.js` (or `.ts`). This will become a `/posts.json` route in the finished application.
+
+From there, you just define a `get()` JavaScript function that retrieves the desired data and returns it in the form of JSON (along with a status code). This is made easier by the fact that SvelteKit has top-level `await` and `fetch` available by default.
+
+Your app can of course query its own internal routes, so you can just have one `/posts` endpoint, for example, that's used by multiple pages and components.
+
+Here's how you might create an endpoint to return all your Markdown posts as JSON:
+
+```js
+// posts.json.js
+
+// The `get` function responts to GET requests
+export const get = async () => {
+  try {
+    const posts = await Promise.all(
+      Object.entries(import.meta.glob('/blog/posts/*.md'))
+      .map(async ([path, page]) => {
+        const { metadata } = await page()
+        const slug = path.split('/').pop().split('.').shift()
+        return { ...metadata, slug }
+      })
+    )
+
+    return {
+      status: 200,
+      body: {
+        posts
+      }
+    }
+  }
+
+  catch {
+    return {
+      status: 500,
+      body: {
+        error: 'Could not fetch posts.'
+      }
+    }
+  }
+}
+```
+
+<SideNote>You <em>do</em> also need an adapter to convert Markdown. That isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).</SideNote>
+
+Once you've retrieved the post data as JSON, you can display it in a Svelte page or component; here's a (somewhat simplified) example:
+
+```svelte
+{#each posts as post}
+  <article>
+    <img src="/images/{post.coverImage}" alt="" />
+
+    <h3>
+      <a href={post.slug}>
+        {post.title}
+      </a>
+    </h3>
+    
+    <p class="excerpt">
+      {post.excerpt}
+
+      <a href={post.slug}>
+        Read more…
+      </a>
+    </p>
+  </article>
+{/each}
+```
+
+
+#### Going static
+
+One particularly impressive app framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as an app that utilizes server-side rendering, as a statically generated site, or as some combination of both.
+
+In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting. From the SvelteKit docs:
+
+<blockquote>
+  <p>A variety of official adapters exist for serverless platforms...</p>
+  <ul style="margin: .5em 0 2em">
+    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-cloudflare-workers" target="_blank" rel="noopener noreferrer"><code>adapter-cloudflare-workers</code></a> — for <a href="https://developers.cloudflare.com/workers/" target="_blank" rel="noopener noreferrer">Cloudflare Workers</a></li>
+    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify" target="_blank" rel="noopener noreferrer"><code>adapter-netlify</code></a> — for <a href="https://netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a></li>
+    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel" target="_blank" rel="noopener noreferrer"><code>adapter-vercel</code></a> — for <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a></li>
+  </ul>
+  <p>...and traditional platforms:</p>
+  <ul style="margin: .5em 0 0">
+    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-node" target="_blank" rel="noopener noreferrer"><code>adapter-node</code></a> — for creating self-contained Node apps</li>
+    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-static" target="_blank" rel="noopener noreferrer"><code>adapter-static</code></a> — for prerendering your entire site as a collection of static files</li>
+  </ul>
+</blockquote>
 
 That last example is what this site uses; the SvelteKit pages and components are rendered as static HTML files. They can benefit from JavaScript doing some fancy stuff on the client once they've been loaded, but they don't have to; they can just be plain ol' HTML (that you can even load with JavaScript disabled entirely).
+
+With the static adapter, any endpoint query like the one above—along with any 
 
 
 ## Static SvelteKit vs. Gridsome
 
-Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome are _not_ really the same type of thing. SvelteKit is a meta-framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
+Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome are _not_ really the same type of thing. SvelteKit is an app framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
 
-Still, if we're scoping the discussion to _just_ SvelteKit's static adaptor, I think it's a fair, if not exact, comparison.
+Still, if we're scoping the discussion to _just_ SvelteKit's static adapter, I think it's a fair, if not exact, comparison.
 
 As always, there were advantages and disadvantages to consider when making the switch. Here's an interesting example:
 
@@ -351,7 +449,7 @@ I'd like to put some context around that argument:
 
 ### Svelte's ecosystem is in a tricky place
 
-One other thing to know at this point in SvelteKit's existence is that it's actually the _second_ stab at a Svelte meta-framework; [Sapper](https://sapper.svelte.dev/) was the first.
+One other thing to know at this point in SvelteKit's existence is that it's actually the _second_ stab at a Svelte app framework; [Sapper](https://sapper.svelte.dev/) was the first.
 
 Sapper never seemed as big as SvelteKit does now, but it's been deprecated in favor of SvelteKit, and there's still some confusion that arises when searching online for code solutions in the space.
 
@@ -362,7 +460,7 @@ SvelteKit doesn't always work exactly the same as Svelte _or_ Sapper by default 
 
 For just about any project, **yes**, I would use SvelteKit again in a heartbeat.
 
-Even though it's still technically pre-1.0, SvelteKit feels very solid—much more so than other pre-1.0 frameworks I've tried—_and_ it's a delight to work with. The adaptors allow you to tailor your input to any output you like, and the scope of things you can build with it is impressively vast. Plus, it's likely to be smaller and faster than whatever else you might have chosen, and with even betted developer experience.
+Even though it's still technically pre-1.0, SvelteKit feels very solid—much more so than other pre-1.0 frameworks I've tried—_and_ it's a delight to work with. The adapters allow you to tailor your input to any output you like, and the scope of things you can build with it is impressively vast. Plus, it's likely to be smaller and faster than whatever else you might have chosen, and with even betted developer experience.
 
 As mentioned, it's still early days for SvelteKit, so there are still some areas where its established solutions may not be as robust as with other frameworks. So I'll say that if I were starting up a new project today and _knew_ for sure right off the bat that I'd need a wide range of third-party plugins or packages, I _might_ lean more towards Nuxt for that at this specific point in time.
 

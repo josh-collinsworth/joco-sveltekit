@@ -11,6 +11,7 @@ export const get = async (): Promise<APIResponse> => {
 			}
 		}
 	}
+	
 	catch {
 		return {
 			status: 500,

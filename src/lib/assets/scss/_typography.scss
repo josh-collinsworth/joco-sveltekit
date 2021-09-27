@@ -14,29 +14,18 @@ ol {
 }
 
 main ul {
-	list-style-type: none;
-
-	li::before {
-		content: '';
-		position: absolute;
-		left: -1rem;
-		top: 0.65em;
-		font-weight: bold;
-		height: .35em;
-		width: .35em;
-		background: var(--yellow);
-	}
+	// list-style-type: none;
+	list-style-type: square;
 
 	ul {
-
-		li::before {
-			background: transparent;
-			border: 1px solid var(--yellow);
-
-			ul {
-				list-style-type: square;
-			}
+		li::marker {
+			content: '– ';
+			font-weight: bold;
 		}
+	}
+
+	li::marker {
+		color: var(--yellow);
 	}
 }
 
@@ -163,7 +152,6 @@ figcaption,
 	-webkit-font-smoothing: antialiased;
 }
 
-blockquote,
 figcaption,
 .fancy {
 	font-size: 1.1rem;
@@ -173,25 +161,22 @@ figcaption,
 }
 
 blockquote {
-	margin: 2rem 0 2rem 2rem;
-	padding-left: 1rem;
+	margin: 2rem 0;
+	padding: 1rem;
+	font-size: 16px;
 	overflow: visible;
+	line-height: 1.4;
 	position: relative;
+	border-left: 4px solid #ffd100;
+	background: rgba(var(--lightBlueRGB), 0.1);
 
-	&:before {
-		font-family: var(--heading-font);
-		font-style: normal;
-		content: "“";
-		position: absolute;
-		left: -1rem;
-		top: 0;
-		line-height: 1;
-		color: var(--yellow);
-		font-size: 3rem;
-		display: block;
+	> *:last-of-type {
+		margin-bottom: 0;
 	}
 }
 
+so8eKLWsyfsk9-sdkj_OWksj
+M9sjwIiwey_skSywOpzcy23-a
 .fancy + h1 {
 	margin-top: 0;
 }
@@ -220,7 +205,7 @@ code {
 code {
 	font-size: 0.8em;
 	background: rgba(var(--lightBlueRGB), 0.2);
-	padding: 0.1em 0.3em 0.1em;
+	padding: 0.2em 0.3em 0.2em;
 	border-radius: 2px;
 	line-height: 1 !important;
 	white-space: nowrap;

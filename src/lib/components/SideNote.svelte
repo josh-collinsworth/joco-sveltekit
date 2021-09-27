@@ -30,7 +30,7 @@
 		}
 
 		em, i {
-			font-weight: bold;
+			font-style: normal;
 		}
 
 		&:before {

@@ -28,7 +28,7 @@
         component: Vue2,
       },
       vue3: {
-        title: 'Vue 3',
+        title: 'Vue 3.2',
         component: Vue3,
       }
     }
@@ -75,9 +75,9 @@
     }
 
     .current {
-      background: var(--black);
+      background: #1d1e26;
       border: 1px solid var(--black);
-      color: var(--lightBlue);
+      color: #9580ff;
       font-weight: bold;
     }
 

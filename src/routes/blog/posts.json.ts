@@ -3,7 +3,6 @@ import fetchPosts from '$lib/assets/js/utils/fetchPosts'
 
 //TODO: this file has a lot of duplication with posts-detail.json.ts. 
 export const get = async (): Promise<APIResponse> => {
-	
 	try {
 		const posts = await fetchPosts({ withContent: true })
 		return {
