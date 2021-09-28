@@ -22,10 +22,29 @@
   import TableOfContents from '$lib/components/posts/TableOfContents.svelte'
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
+  import { onMount } from 'svelte'
   
   import '$lib/assets/scss/code.scss'
 
   export let Post, meta
+
+  const wrapTablesInScrollableDivs = () => {
+    //This is super hacky and I don't like it, but it lets tables scroll horizontally without clobbering accessibility, so here it is.
+    const tables = document.querySelectorAll('.post table')
+
+    tables.forEach(table => {
+      let newHTML = `<div class="table">`
+      newHTML += table.outerHTML
+      newHTML += `</div>`
+
+      table.insertAdjacentHTML('afterend', newHTML)
+      table.remove()
+    })
+  }
+
+  onMount(() => {
+    wrapTablesInScrollableDivs()
+  })
 </script>
 
 

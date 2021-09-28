@@ -134,3 +134,35 @@ h2 + .details {
 	transition: transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 	transform: translateY(-4rem);
 }
+
+.table {
+	width: 100%;
+	overflow-x: scroll;
+	margin: 2rem 0;
+}
+
+table {
+	width: 100%;
+	max-width: 100%;
+	border-collapse: collapse;
+	font-size: initial;
+
+	td, th {
+		padding: 0.5em 1.5em;
+		padding-left: 0;
+	}
+	
+	th {
+		text-align: left;
+		padding-bottom: 0;
+	}
+	
+	thead tr {
+		border-bottom: 2px solid;
+		line-height: 1;
+	}
+
+	tbody tr {
+		border-bottom: 1px solid var(--lightGray);
+	}
+}
