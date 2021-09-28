@@ -29,7 +29,11 @@
   export let Post, meta
 
   const wrapTablesInScrollableDivs = () => {
-    //This is super hacky and I don't like it, but it lets tables scroll horizontally without clobbering accessibility, so here it is.
+    /**
+     * This is super hacky and I don't like it, but it lets 
+     * tables scroll horizontally without clobbering accessibility, 
+     * so here it is.
+     */
     const tables = document.querySelectorAll('.post table')
 
     tables.forEach(table => {
