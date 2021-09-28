@@ -69,6 +69,11 @@
       padding-right: 2vw;
       border-bottom: 0 !important; // Overrides .current block below
 
+      @media (min-width: $wider) {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
       + button {
         border-left: 0;
       }

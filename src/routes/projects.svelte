@@ -109,7 +109,7 @@
     }
 
     @media (min-width: $wider) {
-      grid-template-columns: 22rem var(--max-width) 1fr;
+      grid-template-columns: 2fr 3fr;
     }
 
     + article {

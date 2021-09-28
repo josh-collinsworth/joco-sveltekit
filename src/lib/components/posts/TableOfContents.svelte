@@ -45,7 +45,6 @@
           i + 1 === allHeadings.length
             ? level + 1
             : previousHeadingLevel - level 
-        console.log(`going up ${subtraction} levels`)
         for (let n = 0; n <= subtraction; n++) {
           output += '</li></ul>'
         }
@@ -76,16 +75,25 @@
     padding: 1.5rem;
     line-height: 1.6;
     margin: 0 0 2rem;
-    width: max-content;
-    max-width: 100%;
+    width: 100%;
     
     .toc-list {
       list-style-type: decimal;
       font-size: 0.85rem;
       margin: 0;
+  
+      li::marker {
+        color: var(--ink);
+        content: unset;
+        font-weight: normal;
+      }
 
       > li {
         font-weight: bold;
+
+        &::marker {
+          font-weight: bold;
+        }
 
         ul {
           font-weight: normal;

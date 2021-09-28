@@ -15,6 +15,10 @@
 <style lang="scss">
 	li {
 		margin: 0;
+
+		&::marker {
+			content: none;
+		}
 	}
 
 	.tag {

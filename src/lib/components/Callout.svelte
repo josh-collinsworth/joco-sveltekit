@@ -50,6 +50,7 @@
     
     @media(min-width: $wider) {
       margin-right: calc(2rem - 12vw);
+      margin-left: 3rem;
     }
     
     @media(min-width: $evenWider) {

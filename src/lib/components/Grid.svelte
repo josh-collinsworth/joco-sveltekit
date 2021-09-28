@@ -12,6 +12,7 @@
   let out: boolean = false
   let thisPage: string = ''
   let loadedIn = false
+
   const gridColors: string[] = [
     'var(--lightGray)',
     'var(--ink)',
@@ -34,10 +35,18 @@
   const setSquareCount = debounce(() => {
 		if (typeof window == 'undefined') return
 
-    gridWidth = 
+    let newGridWidth = 
       window.innerWidth
       / parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size'))
       * 2
+
+
+    // Prevents re-renders when only height changes
+    if (gridWidth && gridWidth === newGridWidth) {   
+      return
+    }
+
+    gridWidth = newGridWidth
 
     thisPage == refresh ? thisPage = String(Math.random()) :  thisPage = refresh
 

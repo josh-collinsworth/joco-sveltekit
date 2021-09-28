@@ -25,11 +25,11 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 ## What is Svelte?
 
-My favorite cheeky way to describe Svelte is: it's React, but without the bullshit.
-
 **Svelte is a JavaScript framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), or any other component-based frontend framework**. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and user optimization.
 
-<Callout>My favorite cheeky way to describe Svelte is: it's React, but without the&nbsp;bullshit.</Callout>
+Or, if you prefer, this was my (admittedly cheeky) take on it when I first learned it:
+
+{@html `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My elevator pitch for <a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a> :<br><br>Svelte is React without all the bullshit.</p>&mdash; Josh Collinsworth (@jjcollinsworth) <a href="https://twitter.com/jjcollinsworth/status/1155265498675929088?ref_src=twsrc%5Etfw">July 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`}
 
 As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the Svelte component(s) automatically update to reflect those changes in the UI.
 
