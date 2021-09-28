@@ -240,9 +240,12 @@ By default, a new SvelteKit project has a `src/routes` directory. Anything insid
 
 For example:
 
-- `src/routes/index.svelte` becomes `/`
-- `src/routes/about.svelte` becomes `/about`
-- `src/routes/blog/index.svelte` becomes `/blog`, and so on.
+- `routes/index.svelte` ➡️ `/` (homepage)
+- `routes/about.svelte` ➡️ `/about`
+- `routes/blog/index.svelte` ➡️ `/blog`
+- `routes/blog/some-post.md` ➡️ `/blog/some-post`
+
+And so on. (_Markdown files do require a small bit of extra config, but yes, you can have Markdown files as pages, or just import Markdown to inject into pages or components._)
 
 The _really_ magical part, though, is that you can have server-side routes, too.
 
@@ -252,37 +255,26 @@ From there, you just define a `get()` JavaScript function that retrieves the des
 
 Your app can of course query its own internal routes, so you can just have one `/posts` endpoint, for example, that's used by multiple pages and components.
 
-Here's how you might create an endpoint to return all your Markdown posts as JSON:
+Here's a somewhat simplified example of how you might create an endpoint to return all your Markdown posts as JSON:
 
 ```js
 // posts.json.js
 
 // The `get` function responts to GET requests
 export const get = async () => {
-  try {
-    const posts = await Promise.all(
-      Object.entries(import.meta.glob('/blog/posts/*.md'))
-      .map(async ([path, page]) => {
-        const { metadata } = await page()
-        const slug = path.split('/').pop().split('.').shift()
-        return { ...metadata, slug }
-      })
-    )
+  const posts = await Promise.all(
+    Object.entries(import.meta.glob('/blog/posts/*.md'))
+    .map(async ([path, page]) => {
+      const { metadata } = await page()
+      const slug = path.split('/').pop().split('.').shift()
+      return { ...metadata, slug }
+    })
+  )
 
-    return {
-      status: 200,
-      body: {
-        posts
-      }
-    }
-  }
-
-  catch {
-    return {
-      status: 500,
-      body: {
-        error: 'Could not fetch posts.'
-      }
+  return {
+    status: 200,
+    body: {
+      posts //Automatically converted to JSON ✨
     }
   }
 }
@@ -290,7 +282,7 @@ export const get = async () => {
 
 <SideNote>You <em>do</em> also need an adapter to convert Markdown. That isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).</SideNote>
 
-Once you've retrieved the post data as JSON, you can display it in a Svelte page or component; here's a (somewhat simplified) example:
+Once you've retrieved the post data as JSON, you can display it in a Svelte page or component; here's a short example:
 
 ```svelte
 {#each posts as post}
@@ -317,27 +309,30 @@ Once you've retrieved the post data as JSON, you can display it in a Svelte page
 
 #### Going static
 
-One particularly impressive app framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as an app that utilizes server-side rendering, as a statically generated site, or as some combination of both.
+One particularly impressive app framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
 
-In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting. From the SvelteKit docs:
+In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting.
 
-<blockquote>
-  <p>A variety of official adapters exist for serverless platforms...</p>
-  <ul style="margin: .5em 0 2em">
-    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-cloudflare-workers" target="_blank" rel="noopener noreferrer"><code>adapter-cloudflare-workers</code></a> — for <a href="https://developers.cloudflare.com/workers/" target="_blank" rel="noopener noreferrer">Cloudflare Workers</a></li>
-    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify" target="_blank" rel="noopener noreferrer"><code>adapter-netlify</code></a> — for <a href="https://netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a></li>
-    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel" target="_blank" rel="noopener noreferrer"><code>adapter-vercel</code></a> — for <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a></li>
-  </ul>
-  <p>...and traditional platforms:</p>
-  <ul style="margin: .5em 0 0">
-    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-node" target="_blank" rel="noopener noreferrer"><code>adapter-node</code></a> — for creating self-contained Node apps</li>
-    <li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-static" target="_blank" rel="noopener noreferrer"><code>adapter-static</code></a> — for prerendering your entire site as a collection of static files</li>
-  </ul>
-</blockquote>
+Currently, SvelteKit offers adapters to run your project as serverless functions on the following platforms:
 
-That last example is what this site uses; the SvelteKit pages and components are rendered as static HTML files. They can benefit from JavaScript doing some fancy stuff on the client once they've been loaded, but they don't have to; they can just be plain ol' HTML (that you can even load with JavaScript disabled entirely).
+- Netlify
+- Vercel
+- Cloudflare Workers
 
-With the static adapter, any endpoint query like the one above—along with any 
+…As well as two platform-agnostic adapter options:
+
+- Node (to deploy your code as a standard Node app)
+- Static (to deploy as pre-generated HTML files)
+
+There are several [community-created adapters](https://sveltesociety.dev/components/#category-SvelteKit%20Adapters) available as well, or you can even [write your own](https://kit.svelte.dev/docs#writing-an-adapter).
+
+This site uses the static adapter, which means the SvelteKit pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"—JavaScript running once the page has loaded—but they don't have to. Thanks to the static adapter, most of this site runs just fine even with JavaScript disabled entirely.
+
+With the static adapter, any internal endpoint query or `fetch` call is run at build time, rather than run time, and whatever the result, it will be output as plain static files.
+
+Worth noting, however: by default, after the first page load, SvelteKit's router hydrates and takes over page loading, to make transitions as smooth and fast as possible. You can even designate routes to preload in the background, so that by the time the user clicks, the load is nearly instantaneous.
+
+<SideNote>You don't have to go entirely one way or the other; even if you're deploying your project as a Node app or with serverless functions, you can still mark specific pages to be prerendered as static HTML.</SideNote>
 
 
 ## Static SvelteKit vs. Gridsome

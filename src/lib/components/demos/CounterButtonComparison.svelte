@@ -29,19 +29,19 @@
     frameworks = [
       {
         title: 'Svelte',
-        slug: 'svelte',
+        slug: 'code-svelte',
         component: Svelte,
       }, {
         title: 'React',
-        slug: 'react',
+        slug: 'code-react',
         component: React,
       }, {
         title: 'Vue 2',
-        slug: 'vue2',
+        slug: 'code-vue2',
         component: Vue2,
       }, {
         title: 'Vue 3.2',
-        slug: 'vue3',
+        slug: 'code-vue3',
         component: Vue3,
       }
     ]
