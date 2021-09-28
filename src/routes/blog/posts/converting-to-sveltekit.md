@@ -7,6 +7,7 @@ categories:
   - 'svelte'
   - 'web'
 coverImage: 'converting-to-sveltekit.png'
+coverRatio: '821 / 334'
 excerpt: I've been a fan of Svelte for years, but never had the opportunity to use it on a serious project before. So when I learned SvelteKit could do static rendering, it seemed like the perfect time.
 ---
 

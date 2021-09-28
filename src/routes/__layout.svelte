@@ -13,7 +13,6 @@
 
 <script lang="ts">
 	import '$lib/assets/scss/global.scss'
-	import throttle from 'lodash/throttle.js'
 	
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
@@ -24,6 +23,9 @@
 	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/data/constants'
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
+	import { dev } from '$app/env'
+	import { prefetch } from '$app/navigation';
+	import throttle from 'lodash/throttle.js'
 	
 	export let key: string
 	export let pageHasSidebar: boolean
@@ -70,6 +72,7 @@
 
 	onMount(() => {
 		handleLoadingUserPreferences()
+		prefetch('/blog')
 
 		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 	})
@@ -77,6 +80,14 @@
 
 
 <svelte:window on:scroll={handleScroll} />
+<svelte:head>
+	<!-- This just loads styles faster for dev to avoid FOUC during development. Not ideal for prod, though. -->
+	{#if dev}
+		<style>
+			@import "../../src/lib/assets/scss/global.scss";
+		</style>
+	{/if}
+</svelte:head>
 
 <div
 	id="app"

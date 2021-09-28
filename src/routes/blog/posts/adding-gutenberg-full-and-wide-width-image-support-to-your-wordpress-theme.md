@@ -7,6 +7,7 @@ categories:
   - "web"
   - "wordpress"
 coverImage: "gutenberg-wide-illustration.png"
+coverRatio: "32 / 29"
 excerpt: Gutenberg brings with it the ability to set image blocks as full-width or wide-width. This article talks about how to enable support for that feature in your theme, and one way to write the CSS that makes it work.
 ---
 <script>

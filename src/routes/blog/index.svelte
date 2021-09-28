@@ -11,11 +11,23 @@
 </script>
 
 <script lang="ts">
+import { prefetch } from '$app/navigation';
+
 	import type Post from '$lib/assets/js/interfaces/post'
 	import PostList from '$lib/components/posts/PostList.svelte'
 	import { EXTERNAL_POSTS } from '$lib/data/external_posts'
+	import { onMount } from 'svelte';
 
 	export let posts: Post[] = []
+
+	onMount(() => {
+		posts.forEach((post, i) => {
+			if (i < 4) {
+				console.log(post.slug)
+				prefetch(post.slug)
+			}
+		})
+	})
 </script>
 
 

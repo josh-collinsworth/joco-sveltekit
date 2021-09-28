@@ -8,6 +8,7 @@ categories:
   - "php"
   - "wordpress"
 coverImage: "2018-logo.jpg"
+coverRatio: "16 / 9"
 excerpt: Building a WordPress theme (and a new brand) from scratch.
 ---
 <script>

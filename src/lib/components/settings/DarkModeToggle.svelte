@@ -1,5 +1,6 @@
 <script lang="ts">
   import LightDarkIcon from './LightDarkIcon.svelte'
+  import { browser } from '$app/env'
   import { prefersDarkMode, prefersLightMode } from '$lib/data/store';
 
   let enableOrDisable: string
@@ -10,7 +11,7 @@
     prefersDarkMode.set(!$prefersDarkMode)
     prefersLightMode.set(!$prefersDarkMode)
     
-    if (typeof window !== 'undefined') {
+    if (browser) {
       window.localStorage.setItem('collinsworth-dark-mode', JSON.stringify($prefersDarkMode))
     }
   }

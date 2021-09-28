@@ -35,7 +35,12 @@
 </svelte:head>
 
 <article class="post">
-  <img class="cover-image" src="/images/post_images/{meta.coverImage}" alt="" />
+  <img
+    class="cover-image"
+    src="/images/post_images/{meta.coverImage}"
+    style="aspect-ratio: {meta.coverRatio}"
+    alt=""
+  />
 
   <h1>{ meta.title }</h1>
 

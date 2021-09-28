@@ -7,6 +7,7 @@ categories:
   - "personal"
   - "thoughts-and-advice"
 coverImage: "what-i-wish.png"
+coverRatio: "48 / 29"
 excerpt: Your worst instructor as a design student will lay out clear goals and expectations which will not change; this is not a given with clients.
 ---
 <script>

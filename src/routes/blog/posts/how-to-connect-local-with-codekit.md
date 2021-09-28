@@ -8,6 +8,7 @@ categories:
   - "web"
   - "wordpress"
 coverImage: "Untitled.png"
+coverRatio: "1280 / 567"
 excerpt: Enjoy all the convenience of easy local WordPress development with Local, plus build tools with CodeKit, without any of the tricky command line setup.
 ---
 <script>

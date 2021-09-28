@@ -1,6 +1,7 @@
 <script lang="ts">
   import GridCell from './GridCell.svelte'
   import { onMount } from 'svelte'
+  import { browser } from '$app/env'
 	import debounce from 'lodash/debounce.js'
 
   export let refresh: string = ''
@@ -33,7 +34,7 @@
   }
 
   const setSquareCount = debounce(() => {
-		if (typeof window == 'undefined') return
+		if (!browser) return
 
     let newGridWidth = 
       window.innerWidth

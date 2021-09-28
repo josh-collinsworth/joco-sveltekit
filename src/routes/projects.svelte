@@ -26,13 +26,61 @@
   </div>
   
   <div class="image-gallery">
-    <img src="/images/post_images/01-Google-Pixel-4-Front.jpg" height="250" alt="" loading="lazy" />
-    <img src="/images/quina-mockup1.png" height="250" alt="" loading="lazy" />
-    <img src="/images/post_images/tutorial-1.png" alt="" loading="lazy" height="250"/>
-    <img src="/images/quina-clues.png" height="250" alt="" loading="lazy" />
-    <img src="/images/post_images/tutorial-3.png" alt="" loading="lazy" height="250"/>
-    <img src="/images/post_images/tutorial-4.png" alt="" loading="lazy" height="250"/>
-    <img src="/images/post_images/02-Google-Pixel-4-Front.png" height="250" alt="" loading="lazy" />
+    <img
+      src="/images/post_images/01-Google-Pixel-4-Front.jpg"
+      alt="The main menu of Quina, with options for 'New Game', 'How to Play', 'Preferences,' Stats & Awards', 'About/FAQ', and 'Support Quina.'"
+      loading="lazy"
+      width="1030"
+      height="1200"
+      style="aspect-ratio: 103 / 120"
+    />
+    <img
+      src="/images/quina-mockup1.png"
+      alt=""
+      loading="lazy"
+      width="1200"
+      height="1697"
+      style="aspect-ratio: 1200 / 1697"
+    />
+    <img
+      src="/images/post_images/tutorial-1.png"
+      alt="Guess the secred five-letter code word in ten guesses or fewer."
+      loading="lazy"
+      width="1600"
+      height="900"
+      style="aspect-ratio: 16 / 9"
+    />
+    <img
+      src="/images/quina-clues.png"
+      alt="Use clues to refine your guesses. A clue of '3/2' means three letters in your guess are also in the code word, and two are in the same position in both words."
+      loading="lazy"
+      width="1600"
+      height="900"
+      style="aspect-ratio: 16 / 9"
+    />
+    <img
+      src="/images/post_images/tutorial-3.png"
+      alt="You can tap or long-press letters in your guesses to cross them out or highlight them"
+      loading="lazy"
+      width="1600"
+      height="900"
+      style="aspect-ratio: 16 / 9"
+    />
+    <img
+      src="/images/post_images/tutorial-4.png"
+      alt="Quina tracks your stats, such as how many games you've played on each difficulty, longest win streak, and many more!"
+      loading="lazy"
+      width="1600"
+      height="900"
+      style="aspect-ratio: 16 / 9"
+    />
+    <img
+      src="/images/post_images/02-Google-Pixel-4-Front.png"
+      alt="Quina features both light and dark mode."
+      loading="lazy"
+      width="1600"
+      height="1442"
+    />
   </div>
 </article>
   

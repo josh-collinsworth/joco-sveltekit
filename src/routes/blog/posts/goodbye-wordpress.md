@@ -7,6 +7,7 @@ categories:
   - "javascript"
   - "vue"
 coverImage: "gw.png"
+coverRatio: "128 / 72"
 excerpt: WordPress was potentially the most impactful and empowering technology I've yet encountered. It transformed my career path and enabled me to do anything I wanted at every point in my journey. So why leave it now?
 ---
 <script>

@@ -8,6 +8,7 @@ categories:
   - 'web'
   - 'vue'
 coverImage: 'social-share-image.png'
+coverRatio: '120 / 63'
 excerpt: 'The story of building Quina, a word game Progressive Web App built with Nuxt, and launched on the Google Play Store.'
 ---
 

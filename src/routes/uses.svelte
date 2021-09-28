@@ -21,7 +21,7 @@
 </svelte:head>
 
 <div class="uses">
-	<Uses />
+	<svelte:component this={Uses} />
 </div>
 
 

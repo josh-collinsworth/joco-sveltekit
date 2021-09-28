@@ -1,17 +1,9 @@
-.no-margin {
-	margin: 0;
-}
+.no-bullets {
+  list-style-type: none !important;
 
-.no-bullets li::before {
-  display: none !important;
-}
-
-.display-block {
-	display: block;
-}
-
-.align-center {
-  align-items: center;
+  li::marker {
+    content: none !important;
+  }
 }
 
 .sr,

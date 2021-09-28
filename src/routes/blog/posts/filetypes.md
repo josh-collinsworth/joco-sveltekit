@@ -6,6 +6,7 @@ categories:
   - "design"
   - "web"
 coverImage: "File-Types-Prev.png"
+coverAlt: "135 / 89"
 excerpt: If you’re like me, you’ve probably spent some time wondering (and Googling) about the differences between various popular format types commonly used for graphic design applications. So I decided I’d create a resource that’s hopefully a handy reference on the matter of discerning file type supports and behavior.
 ---
 

@@ -23,8 +23,12 @@
 <li>
   <article class="post-preview">
     <a on:click={startLoading} href={computedURL} sveltekit:prefetch class="image-link">
-      <img src="/images/post_images/{post.coverImage}" alt="" loading="lazy" />
-      <span class="sr">{post.title}</span>
+      <img
+        src="/images/post_images/{post.coverImage}"
+        style="aspect-ratio: {post.coverRatio}"
+        alt="Preview image for {post.title}"
+        loading="lazy"
+      />
     </a>
 
     <div class="article-info">

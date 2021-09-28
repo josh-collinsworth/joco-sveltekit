@@ -5,6 +5,7 @@ updated: "2020-06-11"
 categories: 
   - "personal"
 coverImage: "instagram-over-1.png"
+coverRatio: "1200 / 709"
 excerpt: …Lately, I’ve been wondering whether I can actually continue supporting Instagram and the company behind it, however passively or at whatever seemingly insignificant scale. And while I was zeroing in on this answer anyway, the events of the last couple of weeks have clearly cemented in my mind that the answer—for me, at least—is an unequivocal “no.”
 ---
 <script>

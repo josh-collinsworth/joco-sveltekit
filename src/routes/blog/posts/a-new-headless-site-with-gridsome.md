@@ -8,6 +8,7 @@ categories:
   - 'vue'
   - 'wordpress'
 coverImage: 'wp-plus-gridsome.png'
+coverRatio: '128 / 89'
 excerpt: A lengthy write-up diving into what headless means, its advantages and disadvantages, some of the techniques and gotchas involved, and, finally, the new design of this site specifically.
 ---
 
