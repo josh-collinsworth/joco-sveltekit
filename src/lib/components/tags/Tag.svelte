@@ -24,7 +24,7 @@
 	.tag {
 		display: block;
 		padding: 0.75em 1em;
-		background: var(--lightBlue);
+		background: var(--darkBlue);
 		margin: 0;
 		color: var(--white);
 		text-decoration: none;

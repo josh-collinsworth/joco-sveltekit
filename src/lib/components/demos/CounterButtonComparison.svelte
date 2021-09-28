@@ -1,11 +1,23 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  let React, Vue2, Vue3, Svelte, currentLanguage
+  import type { SvelteComponentTyped } from 'svelte'
 
-  let languages: object = {}
+  interface framework {
+    title: string;
+    slug: string;
+    component: SvelteComponentTyped;
+  }
 
-  const changeLanguage = (language) => {
-    currentLanguage = languages[language].component
+  let React: SvelteComponentTyped,
+      Vue2: SvelteComponentTyped,
+      Vue3: SvelteComponentTyped,
+      Svelte: SvelteComponentTyped,
+      currentFramework: SvelteComponentTyped
+  
+  let frameworks: framework[] = []
+
+  const changeFramework = (component: SvelteComponentTyped): void => {
+    currentFramework = component
   }
 
   onMount(async () => {
@@ -14,44 +26,54 @@
     Vue3 = (await import('./markdown/code-comparison/vue3.md')).default
     Svelte = (await import('./markdown/code-comparison/svelte.md')).default
 
-    languages = {
-      svelte: {
+    frameworks = [
+      {
         title: 'Svelte',
+        slug: 'svelte',
         component: Svelte,
-      },
-      react: {
+      }, {
         title: 'React',
+        slug: 'react',
         component: React,
-      },
-      vue2: {
+      }, {
         title: 'Vue 2',
+        slug: 'vue2',
         component: Vue2,
-      },
-      vue3: {
+      }, {
         title: 'Vue 3.2',
+        slug: 'vue3',
         component: Vue3,
       }
-    }
+    ]
 
-    currentLanguage = Svelte
+    currentFramework = Svelte
   })
 </script>
 
 <div class="svelte-code-comparison">
-  <div class="svelte-code-comparison__button-bar">
-    {#each Object.keys(languages) as language}
+  <div class="svelte-code-comparison__button-bar" role="tablist" aria-label="Framework">
+    {#each frameworks as framework}
       <button 
-      role="button"
-      on:click={() => changeLanguage(language)}
-      aria-selected={currentLanguage == languages[language].component}
-      class:current={currentLanguage == languages[language].component}
+        on:click={() => changeFramework(framework.component)}
+        role="tab"
+        aria-controls={framework.slug}
+        aria-selected={currentFramework == framework.component}
+        class:current={currentFramework == framework.component}
       >
-        {languages[language].title}
+        {framework.title}
       </button>
     {/each}
   </div>
 
-  <svelte:component this={currentLanguage} />
+  {#each frameworks as framework}
+    <div
+      id={framework.slug}
+      tabindex={currentFramework == framework.component ? 0 : -1}
+      hidden={currentFramework != framework.component}
+    >
+      <svelte:component this={framework.component} />
+    </div>
+  {/each}
 </div>
 
 
@@ -67,7 +89,12 @@
     button {
       padding-left: 2vw;
       padding-right: 2vw;
+      border-color: var(--ink);
       border-bottom: 0 !important; // Overrides .current block below
+
+      .prefers-dark & {
+        border-color: var(--paper);
+      }
 
       @media (min-width: $wider) {
         padding-left: 1em;
