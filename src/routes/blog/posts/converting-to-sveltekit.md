@@ -160,16 +160,21 @@ While the above examples don't cover them, some other features of Svelte that I 
 - **Easy shorthands** for class binding, prop passing, and event modifiers (that I miss now when working with other frameworks):
 
   ```svelte
-  <!-- Shorthand for class={current ? 'current' : ''} -->
-  <a href="/contact" class:current>
-    Contact
-  </a>
+  <!-- If `enabled` is a boolean, then this works: -->
+  <input class={enabled ? 'enabled' : ''} />
 
+  <!-- ...but it can be shortened to this... -->
+  <input class:enabled={enabled} />
+
+  <!-- ...which can just be shortened to: -->
+  <input class:enabled />
+
+ 
   <!-- A nice shorthand for myProp={myProp} -->
   <SomeComponent {myProp} />
 
-  <!-- No need for event.preventDefault() -->
-  <!-- There are several other modifiers, too -->
+ 
+  <!-- Define event modifiers inline: -->
   <button on:click|preventDefault={handleClick}>
     Click me!
   </button>
@@ -247,11 +252,13 @@ For example:
 
 And so on. (_Markdown files do require a small bit of extra config, but yes, you can have Markdown files as pages, or just import Markdown to inject into pages or components._)
 
+You can even have _dynamic_ routes. For example, `/blog/[post].svelte` would be a single component that would render _any_ `/blog/*` slug. You can read more about [SvelteKit Pages here](https://kit.svelte.dev/docs#routing-pages).
+
 The _really_ magical part, though, is that you can have server-side routes, too.
 
-For example: if you want your app to have a `/posts` endpoint that returns JSON, you just create `src/routes/posts.json.js` (or `.ts`). This will become a `/posts.json` route in the finished application.
+For example: if you want your app to have a `/posts` endpoint that returns JSON, you just create `src/routes/posts.json.js`. This will become a `/posts.json` route in the finished application.
 
-From there, you just define a `get()` JavaScript function that retrieves the desired data and returns it in the form of JSON (along with a status code). This is made easier by the fact that SvelteKit has top-level `await` and `fetch` available by default.
+From there, you just define a `get()` function that retrieves the desired data and returns it (along with a status code). This is made easier by the fact that SvelteKit has top-level `await` and `fetch` available by default.
 
 Your app can of course query its own internal routes, so you can just have one `/posts` endpoint, for example, that's used by multiple pages and components.
 
@@ -280,8 +287,6 @@ export const get = async () => {
 }
 ```
 
-<SideNote>You <em>do</em> also need an adapter to convert Markdown. That isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).</SideNote>
-
 Once you've retrieved the post data as JSON, you can display it in a Svelte page or component; here's a short example:
 
 ```svelte
@@ -306,6 +311,8 @@ Once you've retrieved the post data as JSON, you can display it in a Svelte page
 {/each}
 ```
 
+<SideNote>You <em>do</em> also need an adapter to convert Markdown. That isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).</SideNote>
+
 
 #### Going static
 
@@ -313,13 +320,7 @@ One particularly impressive app framework feature across the board: Next, Nuxt, 
 
 In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting.
 
-Currently, SvelteKit offers adapters to run your project as serverless functions on the following platforms:
-
-- Netlify
-- Vercel
-- Cloudflare Workers
-
-…As well as two platform-agnostic adapter options:
+Currently, SvelteKit offers adapters to run your project as serverless functions on Netlify, Vercel, and Cloudflare Workers. It also offers two platform-agnostic adapter options:
 
 - Node (to deploy your code as a standard Node app)
 - Static (to deploy as pre-generated HTML files)
