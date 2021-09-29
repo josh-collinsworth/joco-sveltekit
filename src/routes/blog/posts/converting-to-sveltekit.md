@@ -407,15 +407,13 @@ You might wonder: how does the old Vue code compare to the newer Svelte code? Is
 
 Turns out: that's actually a really tricky question to answer.
 
-I originally thought I'd show side-by-side comparisons to demonstrate Vue vs. Svelte, but there's been enough change at this point that most of the differences are either trivial or not really comparable.
+I originally thought I'd show side-by-side comparisons to demonstrate Vue vs. Svelte, but there's been enough change at this point that most of the differences are either trivial, or so far apart they don't even make sense to compare anymore.
 
-Most of the site's code isn't directly analogous anymore; it's got TypeScript added, it works differently, and even what's similar in functionality has largely been refactored.
+The site's changed quite a bit, even if it doesn't necessarily look like it.
 
 The one non-trivial component that's mostly the same between the two versions is the font tester (seen on the [`/uses` page](/uses)). But it's actually about the same size, both in terms of line count and disk size. The Svelte version actually is a tiny bit bigger, but by a thoroughly negligible amount (a fraction of a kB), and almost certainly just because of the addition of TypeScript.
 
-Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer work completely differently for better performance now; layouts have changed; new pieces have been added and old removed. Code was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
-
-**While the site _looks_ mostly the same as before, it's _very_ different behind the scenes.**
+Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer work completely differently for better performance now. TypeScript is everywhere; layouts have changed; new pieces have been added and old removed. MDSvex came with PrismJS built in, which let me delete both the a full component and an external library. Lots was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
 
 That all makes the question of "is it better?" really hard to answer (even without getting into the highly subjective topic of what "better" even means). But I _like_ it better (even the parts that are more verbose), and I think that's the most important part. I even enjoyed the relatively rote process of moving Vue components over to Svelte.
 
