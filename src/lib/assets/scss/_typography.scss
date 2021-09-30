@@ -128,26 +128,7 @@ h5,
 	margin-bottom: 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-input,
-label,
-textarea,
-a,
-button,
-ul,
-li,
-figcaption,
-.callout,
-.highlight,
-.code,
-.side-note {
+* {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }

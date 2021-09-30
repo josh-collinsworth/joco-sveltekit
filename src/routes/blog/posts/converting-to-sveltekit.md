@@ -457,21 +457,22 @@ The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 
 
 **That number comes with a big caveat, however.** In fairness, there's a good reason; Gridsome preloads all of your content in the background so that it's ready by the time the user clicks. All that JavaScript is going directly to making navigation faster.
 
-<Callout>
-Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an interesting study in&nbsp;tradeoffs.
-</Callout>
-
 It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell SvelteKit still saves me around 100kb. So it still seems like a win, even if it's one that comes with tradeoffs.
 
-This brings up some interesting questions about real vs. perceived performance, though. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
+SvelteKit <em>does</em> offer <code>prefetch</code> and <code>prefetchRoutes</code> options to accomplish this same thing, however; preload pages in the background to make loading as fast as possible. So I decided to throw prefetching on _all_ the routes on the site, just to see how it would stack up against the Gridsome version.
 
-Which is better? Ultimately, that depends on what you're optimizing for. Personally: I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on your project's priorities and definition of success.
+**Even when preloading all the site's content, the SvelteKit build is dramatically smaller.**
 
-<SideNote>
-SvelteKit <em>does</em> offer <code>prefetch</code> and <code>prefetchRoutes</code> options to accomplish this same thing; preload pages in the background to make loading as fast as possible.
-</SideNote>
+| Framework     | Size      | Transferred |
+|---------------|-----------|-------------|
+| **Gridsome**  | 3.09 MB   | 1.74 MB     |
+| **SvelteKit** | 1.49 MB   | 490 kB      |
 
-**The builds with SvelteKit are also much faster**: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version (about five times faster). But again, this is misleading, for two reasons:
+As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ the transferred size!
+
+---
+
+Builds with SvelteKit are also much faster: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version (about five times faster). But again, this is misleading, for two reasons:
 
 1. Gridsome was doing a lot of image work at build time that SvelteKit isn't by default; and
 
@@ -586,8 +587,14 @@ SvelteKit doesn't always work exactly the same as Svelte _or_ Sapper by default 
 
 For just about any project, **yes**, I would use SvelteKit again in a heartbeat.
 
-Even though it's still technically pre-1.0, SvelteKit feels very solid--much more so than other pre-1.0 frameworks I've tried--_and_ it's a delight to work with. The adapters allow you to tailor your input to any output you like, and the scope of things you can build with it is impressively vast. Plus, it's likely to be smaller and faster than whatever else you might have chosen, and with even betted developer experience.
+Even though it's still technically pre-1.0, SvelteKit feels very solid--much more so than other pre-1.0 frameworks I've tried--_and_ it's a delight to work with. The adapters allow you to tailor your input to any output you like, and the scope of things you can build with it is impressively vast. Plus, it's likely to be smaller and faster than whatever else you might have chosen, and with even better developer experience.
 
-As mentioned, it's still early days for SvelteKit, so there are still some areas where its established solutions may not be as robust as with other frameworks. So I'll say that if I were starting up a new project today and _knew_ for sure right off the bat that I'd need a wide range of third-party plugins or packages, I _might_ lean more towards Nuxt for that at this specific point in time.
+<Callout>
+The Svelte rocketship is a wonderful place to be. I encourage you to step aboard.
+</Callout>
+
+As mentioned, it's still early days for SvelteKit, so there are still some areas where its established solutions may not be as robust as with other frameworks. So I'll say that if I were starting up a new project today and _knew_ for sure right off the bat that I'd need a wide range of third-party plugins or packages, I _might_ lean more towards Nuxt for that at this specific point in time, personally.
 
 It's hard to imagine SvelteKit _not_ becoming the #1 go-to in all cases in the near future, however--especially knowing it only came out of closed beta a matter of months ago.
+
+The Svelte rocketship is a wonderful place to be. I encourage you to step aboard.

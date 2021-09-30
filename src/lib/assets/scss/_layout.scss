@@ -137,24 +137,24 @@ h2 + .details {
 
 .table {
 	width: 100%;
-	overflow-x: scroll;
+	overflow-x: auto;
 	margin: 2rem 0;
 }
 
 table {
-	width: 100%;
+	width: auto;
 	max-width: 100%;
 	border-collapse: collapse;
 	font-size: initial;
 
 	td, th {
-		padding: 0.5em 1.5em;
+		padding: 0.5em 2em;
 		padding-left: 0;
 	}
 	
 	th {
 		text-align: left;
-		padding-bottom: 0;
+		padding-bottom: 0.25em;
 	}
 	
 	thead tr {
