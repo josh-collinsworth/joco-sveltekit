@@ -20,7 +20,6 @@
       isWorking = true
       computedTitle = title
     }, 420)
-
   }
 </script>
 
@@ -39,6 +38,15 @@
       </div>
     </h1>
     <span class="brace closing-brace" aria-hidden="true">]</span>
+    
+    <noscript>
+      <!-- Just here to allow the heading to show when JS is disabled. -->
+      <style>
+        .closing-brace {
+          transform: none !important;
+        }
+      </style>
+    </noscript>
   </div>
   <p class="subtitle">
     {subtitle}
