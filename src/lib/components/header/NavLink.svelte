@@ -60,12 +60,6 @@
       }
     }
 
-    @media (min-width: $xs) {
-      .mobile-only {
-        display: none;
-      }
-    }
-
     &.open {
       animation: move_in_left var(--item-transition);
   

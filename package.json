@@ -9,7 +9,8 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "sass": "sass static/global.scss static/global.css --style=compressed"
+    "sass": "sass static/global.scss static/global.css --style=compressed",
+    "postbuild": "svelte-sitemap --domain https://mydomain.com"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.13",
@@ -27,6 +28,7 @@
     "svelte": "^3.34.0",
     "svelte-check": "^2.0.0",
     "svelte-preprocess": "^4.0.0",
+    "svelte-sitemap": "^2.1.1",
     "tslib": "^2.0.0",
     "typescript": "^4.0.0"
   },
