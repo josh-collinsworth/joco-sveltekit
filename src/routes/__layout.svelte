@@ -24,7 +24,7 @@
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { dev } from '$app/env'
-	import { prefetch } from '$app/navigation';
+	import { prefetch, prefetchRoutes } from '$app/navigation';
 	import throttle from 'lodash/throttle.js'
 	
 	export let key: string
@@ -72,7 +72,8 @@
 
 	onMount(() => {
 		handleLoadingUserPreferences()
-		prefetch('/blog')
+		// prefetch('/blog')
+		prefetchRoutes()
 
 		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 	})

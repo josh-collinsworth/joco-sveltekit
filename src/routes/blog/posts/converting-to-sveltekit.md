@@ -26,20 +26,30 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 ## What is Svelte?
 
-Svelte is a frontend JavaScript framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), or any other component-based frontend framework. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and user optimization.
-
-Or, if you prefer, this was my (admittedly cheeky) take on it when I first learned it:
-
-{@html `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My elevator pitch for <a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a> :<br><br>Svelte is React without all the bullshit.</p>&mdash; Josh Collinsworth (@jjcollinsworth) <a href="https://twitter.com/jjcollinsworth/status/1155265498675929088?ref_src=twsrc%5Etfw">July 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`}
+At a basic level, Svelte is a frontend framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), etc. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and user optimization.
 
 As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the Svelte component(s) automatically update to reflect those changes in the UI.
 
 So how is Svelte _different_? Glad you asked…
 
 
-### Why Svelte?
+### How is Svelte different?
 
-I instantly loved how easy Svelte made _everything_ I wanted to do (especially compared to React). I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte--and how close it was to the JavaScript, HTML and CSS I already knew.
+Svelte was created by [Rich Harris](https://twitter.com/rich_harris), a developer and graphics editor for the [New York Times](https://www.nytimes.com/).
+
+The news world moves fast, so the interactive UIs and visualizations Harris was creating for the _Times_ needed to be built as quickly as possible. But since it's critical for the news to be accessible to _everyone_, those bits of interactivity had to be as small and performant as possible.
+
+Harris needed a solution that was extremely easy to build with, yet that would be fast and smooth for any reader. In many cases, the bloated JavaScript bundles that are the byproducts of many other frameworks disqualified. So Harris set out to build his own solution, and that's how Svelte was born.
+
+While relatively new and small compared to the other frameworks on the list, Svelte is uniquely battle-tested: the [New York Times Covid map](https://www.nytimes.com/interactive/2021/us/covid-cases.html) is a Svelte app.
+
+---
+
+The attention to developer experience (DX) is obvious in Svelte. I instantly loved how easy it made _everything_ I wanted to do--especially compared to React, as I cheekily tweeted at the time:
+
+{@html `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My elevator pitch for <a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a> :<br><br>Svelte is React without all the bullshit.</p>&mdash; Josh Collinsworth (@jjcollinsworth) <a href="https://twitter.com/jjcollinsworth/status/1155265498675929088?ref_src=twsrc%5Etfw">July 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`}
+
+From the start, I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte--and how close it was to the JavaScript, HTML and CSS I already knew
 
 <Callout>
 Just about everywhere I'd normally be reaching for a workaround or tripping over a gotcha when using another framework, Svelte was delightfully straightforward.
@@ -54,11 +64,12 @@ Svelte has always felt _way_ ahead of the game (probably because it came along l
 
 ### Comparing Svelte to React and Vue
 
-At a basic level, Svelte is similar to other frontend frameworks. Svelte differs mainly in its focus on build-time over run-time, and the simplicity of its syntax.
+As mentioned, at a basic level, Svelte is similar to other frontend frameworks. So let's look a little closer at the details of how Svelte differs: its focus on build-time over run-time, and the simplicity of its syntax.
+
 
 #### Build over browser
 
-Svelte takes a different approach from other frameworks by doing as much as it can at the _build_ step--when the code is initially compiled--rather than client-side, after the user downloads it. That approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance).
+I already mentioned how performant Svelte apps are. That's possible because Svelte takes a different approach from other frameworks by doing as much as it can at the _build_ step--when the code is initially compiled--rather than client-side. That approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user downloads the code.
 
 <Callout>
 All your Svelte code is compiled down to minimal vanilla JS before it ever gets to the&nbsp;browser.
@@ -74,7 +85,7 @@ Svelte ships only the tiniest runtime; all the Svelte code is compiled down to m
 This approach means there's a certain tipping point at which building with other frontend frameworks is actually <em>more</em> efficient, size-wise. However, most apps are very unlikely to hit that scale; here's <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">a comparison of React and Svelte bundle size scaling</a>.
 </SideNote>
 
-React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)--still has performance implications. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
+React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)--still has performance implications. Thanks to the Svelte compiler, we don't have to worry about the performance implications of either one. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
 
 #### Authoring components
@@ -184,8 +195,6 @@ To add styles to a component in Svelte, you simply create a `<style>` tag in the
 A typical `.svelte` component might look like this (though again, you can order the pieces any way you like):
 
 ```svelte
-<!-- A typical .svelte component -->
-
 <script>
   // Component logic goes here
 </script>
@@ -280,11 +289,11 @@ Most app frameworks include some combination of: pages and routing; data stores;
 
 #### Going static
 
+One particularly impressive app framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
+
 <Callout>
 This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML&nbsp;files.
 </Callout>
-
-One particularly impressive app framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
 
 In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting.
 
@@ -381,7 +390,7 @@ Here's a somewhat simplified example of how you might create an endpoint to retu
 ```js
 // posts.json.js
 
-// The `get` function responts to GET requests
+// The `get` function responds to GET requests
 export const get = async () => {
   const posts = await Promise.all(
     Object.entries(import.meta.glob('/blog/posts/*.md'))
@@ -446,7 +455,7 @@ Still, if we're scoping the discussion to _just_ SvelteKit's static adapter, I t
 
 The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.9 MB transferred. By contrast, that number is only _200 kB_ on SvelteKit (most of which is fonts)--a reduction of almost ***90%!***
 
-**That number comes with a big caveat, however.** In fairness: there's a good reason. Gridsome preloads all of your content in the background. And I have to admit: the old version does _seem_ more snappy. Part of that is the preloading, of course, and some is because I decided to add some page transitions this time (something that didn't ever fully work well in Gridsome without a lot of fiddling).
+**That number comes with a big caveat, however.** In fairness, there's a good reason; Gridsome preloads all of your content in the background so that it's ready by the time the user clicks. All that JavaScript is going directly to making navigation faster.
 
 <Callout>
 Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an interesting study in&nbsp;tradeoffs.
@@ -454,9 +463,13 @@ Any measurable metric will tell you the site is faster now, but it doesn't alway
 
 It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell SvelteKit still saves me around 100kb. So it still seems like a win, even if it's one that comes with tradeoffs.
 
-This brings up some interesting questions about real vs. perceived performance. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster. Navigating between pages is noticeably slower now. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
+This brings up some interesting questions about real vs. perceived performance, though. Any measurable metric will tell you the site is faster now, but it doesn't always _feel_ faster. But on the other hand, I'm not sending the user megabytes of JavaScript they might not ever use, which users on slow connections and limited data plans likely appreciate.
 
 Which is better? Ultimately, that depends on what you're optimizing for. Personally: I feel better about shipping less JavaScript than I do reducing wait-after-click by a half second here and there. But it's an interesting question that will have different answers depending on your project's priorities and definition of success.
+
+<SideNote>
+SvelteKit <em>does</em> offer <code>prefetch</code> and <code>prefetchRoutes</code> options to accomplish this same thing; preload pages in the background to make loading as fast as possible.
+</SideNote>
 
 **The builds with SvelteKit are also much faster**: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version (about five times faster). But again, this is misleading, for two reasons:
 
@@ -557,7 +570,7 @@ I'd like to put some context around that argument:
 
 3. **Even when you _do_ need to build something yourself, SvelteKit makes it comparatively simple.** One example: previously, I was using an RSS plugin with Gridsome, but no such package exists for SvelteKit.
 
-  A quick web search, however, was all it took to find a very easy way to code my own XML feed endpoint in minutes, with no dependencies, in under 40 lines of code.
+  A quick web search, however, was all it took to find a very easy way to [Create an RSS feed in SvelteKit](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit), with no dependencies, in under 40 lines of code.
 
 
 ### Svelte's ecosystem is in a tricky place right now

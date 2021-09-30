@@ -59,7 +59,11 @@
 {#if showTableOfContents}
   <div class="toc-wrap">
     <aside class="toc">
-      <h2>Table of contents</h2>
+      <h2>
+        <span class="opening-bracket" aria-hidden="true">[</span>
+        Table of contents
+        <span class="closing-bracket" aria-hidden="true">]</span>
+      </h2>
       
       <ul class="toc-list" on:click|preventDefault={scrollToHeading}>
         {@html output}
@@ -79,8 +83,7 @@
 
   .toc {
     background: var(--paper);
-    // border: 2px solid var(--darkBlue);
-    padding: 0.5rem 1.5rem 1.5rem;
+    padding: 1rem 1.5rem 1.5rem;
     line-height: 1.6;
     width: 100%;
     position: relative;
@@ -93,11 +96,30 @@
       margin: 0;
       background: var(--paper);
       position: relative;
-      padding: 0 1rem;
-      top: -1.4rem;
-      left: -1rem;
+      padding: 0;
+      top: -1.8em;
+      left: 0;
       text-transform: uppercase;
       color: var(--lightGray);
+      display: flex;
+      width: 12em;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 1;
+
+      .opening-bracket,
+      .closing-bracket {
+        display: block;
+        position: relative;
+        z-index: 2;
+        left: -1px;
+        bottom: .075em;
+      }
+
+      .closing-bracket {
+        left: unset;
+        right: -1px;
+      }
     }
     
     .toc-list {
