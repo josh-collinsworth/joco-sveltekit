@@ -20,7 +20,9 @@ Working at a branding agency, you frequently find yourself in preliminary meetin
 
 But that's ok; we as designers, branding agencies, etc. wouldn't have jobs if everybody already knew all about the unique strengths and weaknesses of their own brand and how to ideally leverage those qualities. We're here because clients need an outside, more objective point of view; an expert.
 
-<Callout>Phrases like “we put service first,” or “we have a commitment to excellence” are so similarly generic as to be rendered meaningless by their ubiquity. What organization wouldn’t say those things?</Callout>
+<Callout>
+Phrases like “we put service first,” or “we have a commitment to excellence” are so similarly generic as to be rendered meaningless by their ubiquity. What organization wouldn’t say those things?
+</Callout>
 
 One of the things I love about where I work and the process we employ is that these conversations are not by far the end of our discovery—nor should they be for any agency that takes branding seriously. [David Day | Associates](http://dday.com)’ brand process (at the risk of sounding like too much of a company man) can often take weeks or even months of intensive research, interviews, surveys, workshops, roundtables and market exploration. All of this takes place at every level; stakeholder, consumer, competitor, market peers and those completely outside the brand's hemisphere.
 
@@ -60,7 +62,9 @@ Just as any executive or business owner will _say_ their company values integ
 
 But is that really accurate?
 
-<Callout>If this sort of holistic dedication to brand values is so common in theory, why is it so rare in practice?</Callout>
+<Callout>
+If this sort of holistic dedication to brand values is so common in theory, why is it so rare in practice?
+</Callout>
 
 I've heard of a lot of CEOs being fired for failing to turn a profit, just as I'm sure you have. There are countless examples of the exit door swinging open rapidly for executives who dropped shareholder prices or who initiated plans, programs and products that weren't sufficiently fiscally successful. If you want to lose your job, there's no surer way than to lose your company some money.
 
@@ -70,7 +74,9 @@ To take the example above, if you work at Zappos, hopefully somebody will take n
 
 Sure, the point of business is to make money, but if these brand values are really supposed to inform everything that a company does, shouldn't the question at least be asked occasionally: _does profit ever conflict with our values_? What if the employee or manager who's losing the money is doing so in the name of upholding the brand values?
 
-<Callout>Sure, the point of business is to make money, but if these brand values are really supposed to inform everything that a company does, shouldn’t the question at least be asked occasionally: does profit ever conflict with our values?</Callout>
+<Callout>
+Sure, the point of business is to make money, but if these brand values are really supposed to inform everything that a company does, shouldn’t the question at least be asked occasionally: does profit ever conflict with our values?
+</Callout>
 
 There are many instances where this exact thing does happen; we just don't tend to think of it in this light. For example: a business that says it puts people first will lay off workers in a location that isn't sufficiently profitable even when there were other options available; a company that claims to value family above all else will either pay its employees too little to afford child care or demand too many hours to make raising children viable; a company that says it values innovation will try to guard its own research from other innovators for fear of losing dollars; and a business that supposedly takes pride in its country, state and local community will move offshore to avoid taxes. Hell, I've even heard people in healthcare argue against treating patients in desperate need if they can't pay.
 

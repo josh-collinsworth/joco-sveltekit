@@ -1,10 +1,11 @@
-$tiny: 600px;
-$narrow: 768px;
-$medium: 1024px;
-$wide: 1200px;
-$wider: 1440px;
-$evenWider: 1680px;
-$widest: 1960px;
+$xxs: 600px;
+$xs: 768px;
+$sm: 1024px;
+$md: 1200px;
+$lg: 1440px;
+$xl: 1680px;
+$xxl: 1960px;
+$xxxl: 2200px;
 
 :root {
 	--white: #ffffff;
@@ -19,11 +20,11 @@ $widest: 1960px;
 	--body-line-height: 1.6em;
 	--body-font-size: 1.125rem;
 
-	@media (min-width: $narrow) {
+	@media (min-width: $xs) {
 		--body-font-size: 1.25rem;
 	}
 
-	@media (min-width: $evenWider) {
+	@media (min-width: $xl) {
 		--body-font-size: 1.375rem;
 	}
 
@@ -60,19 +61,19 @@ $widest: 1960px;
 	--button-size: 2.2rem;
 	--button-background: var(--paper);
 
-	@media (min-width: $narrow) {
+	@media (min-width: $xs) {
 		--margin: 2rem;
 	}
 
-	@media (min-width: $medium) {
+	@media (min-width: $sm) {
 		--margin: 4rem;
 	}
 
-	@media (min-width: $wider) {
+	@media (min-width: $lg) {
 		--margin: 6rem;
 	}
 
-	@media (min-width: $widest) {
+	@media (min-width: $xxl) {
 		--margin: 8rem;
 	}
 

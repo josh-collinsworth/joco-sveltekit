@@ -25,7 +25,9 @@ Though I knew the basics of HTML and CSS at the time (which allowed me to implem
 
 WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.
 
-<Callout>WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.</Callout>
+<Callout>
+WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.
+</Callout>
 
 Things like loading and scroll effects, parallax, sliders, contact forms, project galleries, and all kinds of other features that were previously locked doors as a nascent coder suddenly became as easy as configuring some options in a graphical user interface (GUI).
 
@@ -47,7 +49,9 @@ Later, as a Flywheel/WP Engine employee and a more seasoned professional develop
 
 But now that I've moved on from that job, I'm forced to consider what it actually costs to host WordPress—not just monetarily (although that is a large factor), but in terms of maintenance, overhead, and everything else that goes along with the stack. Headless isn't simple, after all; it's a little like having two websites to worry about instead of just one, and while there are definitive advantages to that approach, everything is also a little more complicated in that world.
 
-<Callout>The answer for me is: no; WordPress isn't worth it anymore in the case of my specific needs and&nbsp;wants.</Callout>
+<Callout>
+The answer for me is: no; WordPress isn't worth it anymore in the case of my specific needs and&nbsp;wants.
+</Callout>
 
 The real question at the end of that mental calculation is: does WordPress's value outweigh its cost? Is it worthwhile, just to have a headless back-end for a website that I don't update with any particular frequency?
 
@@ -57,7 +61,9 @@ I thought about taking the WordPress side of the site to some cheap-o $5/month h
 
 Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not simple.
 
-<Callout>Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not&nbsp;simple.</Callout>
+<Callout>
+Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not&nbsp;simple.
+</Callout>
 
 Again: that doesn't mean WordPress is bad. It's not. (And while we're near the topic: neither is PHP. That joke can just die, please.) This just means that of the zillion things WordPress is and is capable of, either I'm not doing them, or doing them WordPress's way isn't personally worth the tradeoff to me, and for my unique set of needs and goals.
 
@@ -79,7 +85,9 @@ But the price tag of WordPress hosting generally assumes that your site is _wort
 
 Even GoDaddy starts at $10 per month; most other managed hosts, that would be considered a step above that, aren't selling it for less than about $15–30 per month (even WordPress.com will charge you at least $25 per month if you want SFTP access), and that price tag is _not_ cheap for a simple personal website or side project.
 
-<Callout>There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't. …WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal&nbsp;cost.</Callout>
+<Callout>
+There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't. …WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal&nbsp;cost.
+</Callout>
 
 There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
 
@@ -87,7 +95,9 @@ Granted, the tech hurdle is higher—not just anybody can code up a static site,
 
 WordPress, for all its myriad benefits, is definitely _not_ the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
 
-<Callout>WordPress just won't continue to be worth it for everyone all&nbsp;the&nbsp;time.</Callout>
+<Callout>
+WordPress just won't continue to be worth it for everyone all&nbsp;the&nbsp;time.
+</Callout>
 
 As I write this, WP Engine and, no doubt, many other hosts are working on the headless WordPress story, and figuring out how to empower that tech stack and solve its problems in the same way they solved WordPress's. I have no doubt they'll come forward with something very compelling that will meet a great many customers' needs, but I also have no doubt it won't be cheap—certainly not as cheap as what the Jamstack is currently offering. And I think that will make many more people ask the same question I asked, and come to the same conclusion; WordPress just won't continue to be worth it for everyone all the time.
 
@@ -107,7 +117,9 @@ Authoring front-end code in Markdown and Vue just feels nicer than working with 
 
 (No knock on PHP. I still enjoy it when I get the chance to dive back into those waters, like playing an old video game I have fond memories of. But it's not my first choice anymore.)
 
-<Callout>Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP&nbsp;templates.</Callout>
+<Callout>
+Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP&nbsp;templates.
+</Callout>
 
 You might ask: **so if you're cutting out WordPress, where does the content come from?**
 
@@ -198,7 +210,9 @@ When I was initially converting this site to headless, I didn't go full static a
 
 ## The challenges of exporting WordPress content
 
-<Callout>This miraculous little CLI tool takes your WordPress export XML file, and not only converts each piece of content to Markdown—complete with frontmatter!—but can also scrape your site for all the images in the content and neatly download&nbsp;them.</Callout>
+<Callout>
+This miraculous little CLI tool takes your WordPress export XML file, and not only converts each piece of content to Markdown—complete with frontmatter!—but can also scrape your site for all the images in the content and neatly download&nbsp;them.
+</Callout>
 
 It turns out that, while WordPress offers a content export tool by default, it's highly limited in what it can do (i.e., it spits out XML). WordPress, naturally, isn't strongly incentivized to help you move your content to non-WordPress platforms, so their exporter is only designed to work with WordPress (if at all; it's not particularly reliable in my experience).
 
@@ -232,7 +246,9 @@ Also fortunately: I like my current solution to custom blocks better anyway.
 
 One of the amazing things that WordPress does for you, for free and out of the box, is generate multiple image sizes and serve your content images with responsive source sets. This means users always load the appropriate image size for their device, which is a big benefit to both user experience and performance. If you're using Jetpack, you also get your images (optionally) loaded from WordPress.com's global CDN servers for faster load times.
 
-<Callout>Gridsome ships with a <code>g-image</code> component that handles loading appropriately sized images, <em>and</em> goes a step further with automatic lazy&nbsp;loading.</Callout>
+<Callout>
+Gridsome ships with a <code>g-image</code> component that handles loading appropriately sized images, <em>and</em> goes a step further with automatic lazy&nbsp;loading.
+</Callout>
 
 Moving away from WordPress means those benefits are gone. Fortunately, Gridsome ships with a `<g-image>` component that handles loading appropriately sized images, _and_ goes a step further with automatic lazy loading. And when you're deploying on Netlify, you have a CDN already, so that's all sorted.
 
@@ -250,7 +266,9 @@ A couple of other considerations around images, though:
 
 Among Gridsome's library of plugins is a particularly delightful one called [Vue Remark](https://gridsome.org/plugins/@gridsome/vue-remark). Vue Remark simply allows you to import Vue components in your Markdown files, and use them right alongside your Markdown content anywhere you want.
 
-<Callout>Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.</Callout>
+<Callout>
+Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.
+</Callout>
 
 This means I can still have the functionality of all my custom blocks even while I'm writing posts in Markdown!
 
@@ -336,7 +354,9 @@ I still love WordPress. But I found myself wanting a site I could tinker with in
 
 This approach certainly isn't right for everyone. It works great for me because I'm the only one working on this site. But if I had co-authors, or users, or collaborators, the whole calculation might be drastically different.
 
-<Callout>I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated&nbsp;HTML.</Callout>
+<Callout>
+I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated&nbsp;HTML.
+</Callout>
 
 And of course, what *I* find to be simple may be very different from what *you* find to be simple. I love living in my code editor. You might find a visual interface easier to use. Both are just fine. It's just a matter of personal preference.
 

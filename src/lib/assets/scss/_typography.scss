@@ -89,7 +89,7 @@ h1,
 	margin-top: 1rem;
 	position: relative;
 
-	@media (min-width: $narrow) {
+	@media (min-width: $xs) {
 		font-size: 3.4rem;
 	}
 }
@@ -101,7 +101,7 @@ h2,
 	display: inline-block;
 	margin-right: auto;
 
-	@media (min-width: $narrow) {
+	@media (min-width: $xs) {
 		font-size: 2.6rem;
 	}
 }
@@ -162,16 +162,18 @@ figcaption,
 
 blockquote {
 	margin: 2rem 0;
-	padding: 1.5rem;
+	padding: 1.5rem 1.5rem;
 	font-size: 0.9rem;
 	font-style: italic;
 	line-height: 1.5;
 	position: relative;
+	border: 0;
 	border: 1px solid var(--lightBlue);
 	
 	&::before {
 		width: 2rem;
 		height: 2rem;
+		text-align: center;
 		content: '“';
 		font-family: var(--heading-font);
 		font-style: normal;
@@ -215,7 +217,7 @@ code {
 }
 
 code {
-	font-size: 0.8em;
+	font-size: 0.75em;
 	background: rgba(var(--lightBlueRGB), 0.1);
 	padding: 0.2em 0.3em 0.2em;
 	border-radius: 2px;

@@ -43,7 +43,9 @@ The idea is pretty straightforward: you have ten chances to guess a secret five-
 
 If this sounds familiar, it's probably because you've either played the original, or played its most popular variant; [Mastermind](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>) is another version of the same game.
 
-<Callout>Quina is Latin for “five at a time,” since the game is played with five-letter&nbsp;words.</Callout>
+<Callout>
+Quina is Latin for “five at a time,” since the game is played with five-letter&nbsp;words.
+</Callout>
 
 By the way, "Quina" was chosen for the name since it's Latin for "five at a time" (according to a Google search, at least; I sure don't speak the language). The original version of the game is played with four letters instead of five, so the name seemed fitting.
 
@@ -107,7 +109,9 @@ If you’ve ever visited a website and been prompted to add it to your home scre
 
 You can build a PWA with anything you might use to build a website; plain ol' HTML, CSS and JavaScript will work just fine, and you definitely don't _need_ to use a framework (let alone one as robust as Nuxt). As I considered the options, however, it became clear that Nuxt was my #1 choice, and one I've never regretted.
 
-<Callout>Progressive Web Apps are essentially websites, but with some extra features that make them behave like native&nbsp;apps.</Callout>
+<Callout>
+Progressive Web Apps are essentially websites, but with some extra features that make them behave like native&nbsp;apps.
+</Callout>
 
 **Nuxt** is a framework for building apps with Vue (Vue being a JavaScript component framework). As the name implies, Nuxt is the Vue equivalent of React's Next.js, if that helps.
 
@@ -122,7 +126,9 @@ That said, however: I considered using [Svelte](https://svelte.dev/) (really the
 
 Back to Nuxt, though: appealingly, Nuxt also has a rich library of optional first-party modules available to make integrations and advanced functionality easier.
 
-<Callout>I was repeatedly amazed while using Nuxt how easy it was to do anything I wanted to do. There was always a way, and most of the time, there was already a module built for it,&nbsp;too.</Callout>
+<Callout>
+I was repeatedly amazed while using Nuxt how easy it was to do anything I wanted to do. There was always a way, and most of the time, there was already a module built for it,&nbsp;too.
+</Callout>
 
 For example: actually getting all the features of a PWA up and running on your own would be challenging to say the least, but Nuxt has an installable [PWA module](https://pwa.nuxtjs.org/) that handles most of the heavy lifting for you with a few lines of config! There are also plugins for analytics, connecting to third-party services and APIs, and all kinds of other things.
 
@@ -160,7 +166,9 @@ That’s what Quina and any other TWA app is; effectively, a browser that auto-l
 
 It's called Trusted Web Activity because in order to make it work right, you need to bundle your app with a secret key that matches a key that lives on your website. (More on that in a bit.)
 
-<Callout>That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an&nbsp;app.</Callout>
+<Callout>
+That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an&nbsp;app.
+</Callout>
 
 It's also _required_ that the URL you're linking to qualifies as a progressive web app; [web.dev](https://web.dev/) offers tests to certify that. Mostly it's making sure you have the proper PWA manifest, a service worker (to make the app available offline, like a native app), and that your site loads over HTTPS. I won't go into any of those here, since there are better resources already out there on the ins and outs of PWAs.
 
@@ -184,7 +192,9 @@ The topic of using Bubblewrap to generate an Android app could easily take up it
 
 I don't want to short-change Bubblewrap, because it's undeniably amazing, and odds are good that my app wouldn't be in the store without it. But again, as with anything related to Google tech: _it's not quite that simple_.
 
-<Callout>Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's&nbsp;URL.</Callout>
+<Callout>
+Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's&nbsp;URL.
+</Callout>
 
 The first hurdle is getting all the dependencies installed in the proper location. Bubblewrap is really explicit about where it wants to find its dependencies, and each one is pretty chonky. The documentation I followed was already outdated, but fortunately, I was able to Google for some updated answers (as I recall, I needed to download an older version of one of the dependencies).
 

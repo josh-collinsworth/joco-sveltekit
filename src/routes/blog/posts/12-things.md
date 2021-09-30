@@ -35,7 +35,9 @@ Below are the realizations I had from approximately January 1 to March 1, 2015.
 
 ## #1. Facebook trains you to not read things
 
-<Callout>It wasn’t until I’d gotten back on Facebook that I realized how much text was flying through my field of vision with less than a second’s thought…or wondered what I was looking&nbsp;for.</Callout>
+<Callout>
+It wasn’t until I’d gotten back on Facebook that I realized how much text was flying through my field of vision with less than a second’s thought…or wondered what I was looking&nbsp;for.
+</Callout>
 
 You're not going to read this whole post. If anything, you're just going to skim the headlines to see if any of it looks interesting. That's ok; that's what I do, too. The internet in general and social media in particular have trained us not so much to read, but to search for what we find interesting. To the human eye, that naturally is not text. But it wasn't until I'd gotten back on Facebook that I realized how much text was flying through my field of vision with less than a second's thought...or wondered what I was looking for.
 
@@ -49,7 +51,9 @@ I don't know, but if you're already bored, or if you're used to being directed t
 
 ## #3. You don't get invited to things when you're not on Facebook
 
-<Callout>Unless it’s too small to actually plan or large enough to sell tickets, Facebook is the only way you’re hearing about&nbsp;it.</Callout>
+<Callout>
+Unless it’s too small to actually plan or large enough to sell tickets, Facebook is the only way you’re hearing about&nbsp;it.
+</Callout>
 
 This one was the most surprising to me. Just try it. You will disappear off your friends' invite radar once you leave Facebook. Somehow, for better or worse, it's become the de facto vehicle for invitations of virtually every type, and nobody except maybe your mom will bother to actually contact you directly if you don't respond. Unless it's too small to actually plan or large enough to sell tickets, Facebook is the only way you're hearing about it.
 
@@ -62,7 +66,9 @@ I was astounded how many times my thumb would automatically, without so much as 
 
 I actually found myself wondering—and I'm ashamed to admit this—“what did I do while I was in the bathroom before I got a smartphone?” (Don't picture that.)
 
-<Callout>I was astounded how many times my thumb would automatically, without so much as a conscious thought, move to the space where the Facebook app icon used to be. It would happen dozens of times a&nbsp;day.</Callout>
+<Callout>
+I was astounded how many times my thumb would automatically, without so much as a conscious thought, move to the space where the Facebook app icon used to be. It would happen dozens of times a&nbsp;day.
+</Callout>
 
 Once I was off social media, I started noticing how often the people around me—often people close to me, with whom I was having some sort of social interaction (however minor)—whipped out their smartphones to stare at a feed through which they endlessly scrolled.
 
@@ -112,7 +118,9 @@ I'm beginning to believe that becoming more connected with everyone is making me
 
 All that time spent browsing, reading, liking...it has to come from somewhere. Any minute you are or could be in the presence of another human being spent on social media is a minute you're taking from them and splitting up a dozen, a hundred, or a thousand ways. It's significantly weakening one good relationship in the name of very slightly strengthening many others.
 
-<Callout>I'm beginning to believe that becoming more connected with everyone is making me less connected with&nbsp;anyone.</Callout>
+<Callout>
+I'm beginning to believe that becoming more connected with everyone is making me less connected with&nbsp;anyone.
+</Callout>
 
 Maybe this is a negative view of the situation, or maybe it's a bit extreme. Maybe time and relationships aren't a zero-sum game. But let me ask you a question:
 

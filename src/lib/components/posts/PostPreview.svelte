@@ -70,7 +70,7 @@
   li {
     margin: 0 0 2rem;
 
-    @media (min-width: $wide) {
+    @media (min-width: $md) {
       margin: 0;
     }
   }

@@ -110,7 +110,7 @@
 			</PageTransition>	
 
 			<PageTransition refresh={key} on:loaded={() => setLoading(false) }>
-				<slot></slot>
+				<slot />
 			</PageTransition>
 		</main>
 		

@@ -86,7 +86,7 @@
     top: 2rem;
     max-width: calc(var(--sidebar-width) * 1.5);
     
-    @media (min-width: $wider) {
+    @media (min-width: $lg) {
       text-align: right;
       grid-column: 3 / 4;
     }
@@ -94,7 +94,7 @@
     .home-link {
       display: none;
       
-      @media (min-width: $wider) {
+      @media (min-width: $lg) {
         margin: 0 0 1rem 0;
         width: 1.5rem;
         overflow: hidden;
@@ -128,7 +128,7 @@
       padding: 0;
       line-height: 1.2;
 
-      @media (min-width: $wider) {
+      @media (min-width: $lg) {
         justify-content: flex-end;
       }
 

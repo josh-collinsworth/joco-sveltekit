@@ -7,7 +7,7 @@
 	.side-note {
 		--note-unit: 1rem;
 
-		@media (min-width: $narrow) {
+		@media (min-width: $xs) {
 			--note-unit: 1.5rem;
 		}
 
@@ -51,7 +51,7 @@
 			text-align: center;
 			width: max-content;
 
-			@media (min-width: $narrow) {
+			@media (min-width: $xs) {
 				left: var(--note-unit);
 			}
 		}

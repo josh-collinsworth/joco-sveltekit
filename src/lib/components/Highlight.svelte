@@ -10,7 +10,7 @@
     font-weight: normal;
     font-style: italic;
 
-    @media(min-width: $narrow) {
+    @media(min-width: $xs) {
       font-weight: bold;
       font-style: normal;
     }

@@ -147,7 +147,7 @@
     gap: 2rem;
     align-items: start;
     
-    @media (min-width: $narrow) {
+    @media (min-width: $xs) {
       grid-template-columns: 2fr 3fr;
 
       .sticky {
@@ -156,7 +156,7 @@
       }
     }
 
-    @media (min-width: $wider) {
+    @media (min-width: $lg) {
       grid-template-columns: 2fr 3fr;
     }
 

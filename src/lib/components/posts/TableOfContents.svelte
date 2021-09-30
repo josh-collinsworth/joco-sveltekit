@@ -57,25 +57,48 @@
 </script>
 
 {#if showTableOfContents}
-  <aside class="toc">
-    <h2>Table of contents:</h2>
-
-    <ul class="toc-list" on:click|preventDefault={scrollToHeading}>
-      {@html output}
-    </ul>
-  </aside>
+  <div class="toc-wrap">
+    <aside class="toc">
+      <h2>Table of contents</h2>
+      
+      <ul class="toc-list" on:click|preventDefault={scrollToHeading}>
+        {@html output}
+      </ul>
+    </aside>
+  </div>
 {/if}
 
 
 
 <style lang="scss" global>
+  .toc-wrap {
+    background: linear-gradient(to bottom right, var(--lightGray), var(--yellow));
+    padding: 2px;
+    margin: 3rem 0;
+  }
+
   .toc {
-    background: linear-gradient(145deg, rgba(var(--lightBlueRGB), 0.2) 50%, rgba(var(--yellowRGB), 0.2));
-    background: rgba(var(--lightBlueRGB), 0.2);
-    padding: 1.5rem;
+    background: var(--paper);
+    // border: 2px solid var(--darkBlue);
+    padding: 0.5rem 1.5rem 1.5rem;
     line-height: 1.6;
-    margin: 0 0 2rem;
     width: 100%;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      font-weight: bold;
+      font-family: var(--body-font);
+      font-size: 0.8rem;  
+      margin: 0;
+      background: var(--paper);
+      position: relative;
+      padding: 0 1rem;
+      top: -1.4rem;
+      left: -1rem;
+      text-transform: uppercase;
+      color: var(--lightGray);
+    }
     
     .toc-list {
       list-style-type: decimal;
@@ -117,14 +140,6 @@
           content: unset;
         }
       }
-    }
-
-
-    h2 {
-      font-weight: bold;
-      font-family: var(--body-font);
-      font-size: 1.3rem;  
-      margin-bottom: 2rem;
     }
   }
 </style>

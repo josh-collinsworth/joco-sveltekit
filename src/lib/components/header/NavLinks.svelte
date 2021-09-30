@@ -26,7 +26,7 @@
     list-style-type: none;
     padding: 0;
 
-    @media (max-width: $narrow) {
+    @media (max-width: $xs) {
       list-style-type: none;
       text-align: left;
       width: 100%;

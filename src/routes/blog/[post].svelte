@@ -94,12 +94,12 @@
       </TagList>
     {/if}
 
-    <ul>
+    <ul class="post-post-list">
       <li>
         <a href="/contact">Send me a note about this post</a>
       </li>
       <li>
-        <a href="/blog">Back to all posts</a>
+        <a href="/blog">Back to blog</a>
       </li>
     </ul>
   </aside>
@@ -113,6 +113,10 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+  }
+
+  .post-post-list {
+    margin: 2rem 0;
   }
 
   .post {

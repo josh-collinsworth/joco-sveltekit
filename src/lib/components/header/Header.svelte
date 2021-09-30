@@ -81,7 +81,7 @@
 		top: calc(1rem - 2px);
 		transition: opacity 0.2s;
 
-		@media (min-width: $narrow) {
+		@media (min-width: $xs) {
 			position: static;
 		}
 	}
@@ -100,7 +100,7 @@
 		z-index: 3;
 		padding: 1rem var(--margin) 2rem;
 
-		@media (min-width: $narrow) {
+		@media (min-width: $xs) {
 			padding: 2rem var(--margin);
 		}
 	}

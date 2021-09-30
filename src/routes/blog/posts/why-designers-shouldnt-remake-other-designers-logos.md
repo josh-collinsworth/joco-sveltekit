@@ -46,7 +46,9 @@ While still others thought it was just plain poor, like [this typographer](http:
 
 In the case of Google, I'd like to go on a small tangent and point out that Google is really playing their own game here. In terms of identity, their needs are radically different than pretty much any other company on ~~Google~~ Earth. They don't really have competitors, at least not like most brands do. Sure, there's Apple and Microsoft, but for the most part, Google has already won every game it's playing. Google is the 800 lb. gorilla; it sits wherever it wants. It doesn't need to worry much about being confused with, or looking worse than, any another company. Short of Google changing their logo to, say, a swastika, people aren't going to stop using Google products. We're still going to use google.com for searching (which everyone will still call "Googling," even if it's not technically accurate), we'll still use our gmail accounts, we'll still look to [Google Maps](https://www.google.com/maps) any time we need directions somewhere, and on and on. Even the least plugged-in among us probably still has their life impacted by Google a dozen times a day.
 
-<Callout>Google's problem wasn't that they needed the greatest logo ever; their problem was that they needed a unifying identity system, and that problem has now been&nbsp;solved.</Callout>
+<Callout>
+Google's problem wasn't that they needed the greatest logo ever; their problem was that they needed a unifying identity system, and that problem has now been&nbsp;solved.
+</Callout>
 
 So in terms of branding, Google doesn't really have to listen to anybody, least of all an upset designer on the internet.
 
@@ -65,7 +67,9 @@ When we present designs (and especially redesigns or entirely new names) to clie
 
 You know why movie sequels are so popular? Because people want things that are new, but they don't like things that are unfamiliar. So it is with design; we _say_ we want things to look fresh and new, but our brains really don't like anything we're unfamiliar or uncomfortable with. It's just part of human nature. That's why we lash out at new logos and new identities; like it or not, no matter how consciously aware we are of it, there's an animal part of our brain that screams out "I don't like it!" like a toddler refusing to try a new food.
 
-<Callout>The human brain is wired to reject things it isn't accustomed to. You know why movie sequels are so popular? Because people want things that are new, but they don't like things that are&nbsp;unfamiliar.</Callout>
+<Callout>
+The human brain is wired to reject things it isn't accustomed to. You know why movie sequels are so popular? Because people want things that are new, but they don't like things that are&nbsp;unfamiliar.
+</Callout>
 
 But fortunately for our primitive brains, time changes perception. We all have things we didn't like at first but grew to love as we came to understand them better. (For me, pretty much every one of my favorite albums is one that I didn't like at all on first listen, while most of the albums I loved right off the bat I now find completely uninteresting.) Every time Pepsi changes their logo it seems like a radical shift for a little while, but before long, it looks weird when you spot the last version in the background of a movie.
 
@@ -86,13 +90,17 @@ Whether the result of real problem-solving design work is something anybody _
 
 And you don't know the answer to that question.
 
-<Callout>Whether the result of real problem-solving design work is something anybody likes is beside the point. The question is, does it succeed at meeting the project goals? Does it solve the problem?</Callout>
+<Callout>
+Whether the result of real problem-solving design work is something anybody likes is beside the point. The question is, does it succeed at meeting the project goals? Does it solve the problem?
+</Callout>
 
 You didn't see the brief. You weren't there for the meetings. Odds are that you have only a casual knowledge of the client in question. You didn't see all the ideas that were pitched and you weren't part of the discussion on why some failed and others succeeded. You didn't weigh the advantages and disadvantages of this color or that font. You didn't present the final iterations, you didn't hear the client's feedback, and you didn't have to find a way to merge each and every last one of those requirements and limitations into a single, cohesive entity.
 
 That gives you absolutely no right to critique anything except the subjective aesthetics of the design you're seeing.
 
-<Callout>Remake somebody else's logo design all you want, but know that it's utterly meaningless, because you get to do whatever you want and the original designer&nbsp;didn't.</Callout>
+<Callout>
+Remake somebody else's logo design all you want, but know that it's utterly meaningless, because you get to do whatever you want and the original designer&nbsp;didn't.
+</Callout>
 
 And I'm willing to bet money that you _hate it_ when somebody does that to your design.
 
@@ -102,7 +110,9 @@ And I'm willing to bet money that you _hate it_ when somebody does that to your
 
 "This color definitely wasn't my first choice, but according to our audience research…"
 
-<Callout>Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at&nbsp;worst.</Callout>
+<Callout>
+Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at&nbsp;worst.
+</Callout>
 
 These are all sentences you can't hear because you get the luxury of seeing the final product without any knowledge whatsoever of how it came into existence. Remake somebody else's logo design all you want, but know that it's utterly meaningless, because you get to do whatever you want and the original designer didn't. They had deadlines, budgets, parameters, meetings, goals, briefs, revisions, concerns and loads of client feedback. All you have is a starting point that somebody else already created for you and a social platform full of people willing to click the "like" button.
 

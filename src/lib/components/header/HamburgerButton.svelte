@@ -93,7 +93,7 @@
 			}
 		} 
 
-		@media (min-width: $narrow) {
+		@media (min-width: $xs) {
 			display: none;
 		}
 	}

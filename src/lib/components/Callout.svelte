@@ -36,29 +36,33 @@
       }
     }
 
-    @media(min-width: $narrow) {
+    @media(min-width: $xs) {
       display: block;
       float: right;
       width: 55%;
       margin: 3rem -3rem 3rem 2rem;
     }
     
-    @media(min-width: $medium) {
+    @media(min-width: $sm) {
       width: 20em;
       margin-right: calc(-4rem - 12vw);
     }
     
-    @media(min-width: $wider) {
-      margin-right: calc(2rem - 12vw);
+    @media(min-width: $md) {
+      margin-right: calc(2rem - 24vw);
       margin-left: 3rem;
     }
     
-    @media(min-width: $evenWider) {
+    @media(min-width: $xl) {
       margin-right: -12rem;
     }
     
-    @media(min-width: $widest) {
-      margin-right: -14rem;
+    @media(min-width: $xxl) {
+      margin-right: -8rem;
+    }
+
+    @media(min-width: $xxxl) {
+      margin-right: -12rem;
     }
   }
 </style>

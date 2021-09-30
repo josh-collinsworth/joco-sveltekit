@@ -37,7 +37,7 @@
   li {
     margin: 0 0 0 1.5em;
 
-    @media (max-width: $narrow) {
+    @media (max-width: $xs) {
       --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   
       opacity: 0;
@@ -60,7 +60,7 @@
       }
     }
 
-    @media (min-width: $narrow) {
+    @media (min-width: $xs) {
       .mobile-only {
         display: none;
       }
@@ -132,7 +132,7 @@
     }
 
     &.mobile-only {
-      @media (min-width: $narrow) {
+      @media (min-width: $xs) {
         display: none;
       }
     }

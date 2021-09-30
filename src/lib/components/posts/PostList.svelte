@@ -21,7 +21,7 @@
     margin: 2rem 0 4rem;
     max-width: var(--max-width);
 
-    @media (min-width: $wide) {
+    @media (min-width: $md) {
       max-width: unset;
       grid-gap: 1rem;
       grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));

@@ -32,7 +32,7 @@ import Accordion from '$lib/components/Accordion.svelte';
 .intro {
   width: 100%;
 
-  @media (min-width: $narrow) {
+  @media (min-width: $xs) {
     width: 36rem;
   }
 
@@ -40,7 +40,7 @@ import Accordion from '$lib/components/Accordion.svelte';
     font-size: 3.5rem;
     margin: 0;
 
-    @media (min-width: $wide) {
+    @media (min-width: $md) {
       font-size: 4rem;
     }
   }
@@ -51,7 +51,7 @@ import Accordion from '$lib/components/Accordion.svelte';
     margin: 0.25em 0 4rem;
     line-height: 1.2;
 
-    @media (min-width: $wide) {
+    @media (min-width: $md) {
       font-size: 1.5rem;
     }
   }

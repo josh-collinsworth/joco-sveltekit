@@ -28,7 +28,7 @@
 	.main-nav {
 		text-align: right;
 
-		@media (max-width: $narrow) {
+		@media (max-width: $xs) {
 			display: block;
 			position: fixed;
 			transition: transform .4s cubic-bezier(1, 0, 0, 1), opacity .4s cubic-bezier(1, 0, 0, 1);
@@ -53,7 +53,7 @@
 			}
 		}
 
-		@media (min-width: $narrow) {
+		@media (min-width: $xs) {
 			display: flex;
 			justify-content: flex-end;
 		}
