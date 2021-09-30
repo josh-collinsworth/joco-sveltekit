@@ -26,7 +26,7 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 ## What is Svelte?
 
-**Svelte is a JavaScript framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), or any other component-based frontend framework**. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and user optimization.
+Svelte is a frontend JavaScript framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), or any other component-based frontend framework. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and user optimization.
 
 Or, if you prefer, this was my (admittedly cheeky) take on it when I first learned it:
 
@@ -39,55 +39,59 @@ So how is Svelte _different_? Glad you asked…
 
 ### Why Svelte?
 
-I started playing with Svelte just after the version 3 release, about two years ago now, and I instantly loved how easy Svelte made _everything_ I wanted to do (especially compared to React). I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte—and how close it was to the JavaScript, HTML and CSS I already knew. 
+I instantly loved how easy Svelte made _everything_ I wanted to do (especially compared to React). I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte—and how close it was to the JavaScript, HTML and CSS I already knew.
 
-<Callout>Just about everywhere I'd normally be reaching for a workaround or tripping over a gotcha when using another framework, Svelte just felt delightfully straightforward.</Callout>
+<Callout>Just about everywhere I'd normally be reaching for a workaround or tripping over a gotcha when using another framework, Svelte was delightfully straightforward.</Callout>
 
-Just about everywhere I'd normally be reaching for a workaround or tripping over a gotcha when using another framework, Svelte just felt delightfully straightforward.
+In fact, I found myself having to _unlearn_ many of the more convoluted solutions common in other frameworks (a common refrain from Svelte adopters).
 
-**Svelte has always felt _way_ ahead of the game.** (Or, maybe more accurately, like it's learned from the mistakes of other frameworks). But instead of me talking about it, let's get to some comparisons.
+Just about everywhere I'd normally be reaching for a workaround or tripping over a gotcha when using another framework, Svelte was delightfully straightforward.
+
+Svelte has always felt _way_ ahead of the game (probably because it came along later, and learned from the others). But instead of me talking about it, let's get to some comparisons.
 
 
 ### Comparing Svelte to React and Vue
 
-At a basic level, Svelte is, like its contemporaries, a component-based, state-driven UI framework. They all allow you to nest components, pass props, handle events, and bring logic into your templates. Any frontend framework fits this criteria generally.
-
-**Svelte differs mainly in its focus on build-time over run-time, and the simplicity of its syntax.**
+At a basic level, Svelte is similar to other frontend frameworks. Svelte differs mainly in its focus on build-time over run-time, and the simplicity of its syntax.
 
 #### Build over browser
 
-Svelte takes a different approach from other frameworks by doing as much as it can at the _build_ step--when the code is initially compiled and built--rather than client-side, when the user requests it. That approach allows for extremely small bundle sizes compared to other frameworks.
+Svelte takes a different approach from other frameworks by doing as much as it can at the _build_ step--when the code is initially compiled--rather than client-side, after the user downloads it. That approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance).
 
-<Callout>All your Svelte code is compiled down to minimal vanilla JS before it ever gets to the browser.</Callout>
+<Callout>All your Svelte code is compiled down to minimal vanilla JS before it ever gets to the&nbsp;browser.</Callout>
 
 By contrast: React and Vue both run _in_ the browser. You load them, and _then_ use them to execute whatever code you write (not unlike jQuery and similar libraries before).
 
 In fairness, in most cases, you'll probably use a build tool to reduce the bundle size. But to some extent at least, with React and Vue, you're inevitably shipping the framework itself to the browser.
 
-**With Svelte, the framework itself is removed by the compiler**. Svelte ships only the tiniest runtime; all your Svelte code is compiled down to minimal vanilla JS before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
+Svelte ships only the tiniest runtime; all the Svelte code is compiled down to minimal vanilla JS before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
 
-<SideNote>This approach means there's a certain tipping point at which building with frameworks is actually <em>more</em> efficient, size-wise. However, most apps are very unlikely to hit that scale; here's <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">a comparison of React and Svelte bundle size scaling</a>.</SideNote>
+<SideNote>
+This approach means there's a certain tipping point at which building with other frontend frameworks is actually <em>more</em> efficient, size-wise. However, most apps are very unlikely to hit that scale; here's <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">a comparison of React and Svelte bundle size scaling</a>.
+</SideNote>
 
 React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which—while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)—still has performance implications. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
 
 #### Authoring components
 
-Maybe the most contrived way to demonstrate a frontend framework's style and capabilities is a button component that counts how many times it's been clicked, and updates accordingly. It's the "hello world" of component examples. 
+Maybe the most contrived way to demonstrate a frontend framework is a button component that counts how many times it's been clicked. It's the "hello world" of component examples. 
 
-**Here's a demo** of what I mean:
+Here's a demo of what I mean (**click the button**):
 
 <svelte:component this={CounterButton} />
 
-As you click the button, the count increases, and the _display_ of the count updates accordingly.
+As you click the button above, the count increases, both behind the scenes and in the UI.
 
-It's not a particularly practical example, but it _is_ a common one (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of frontend frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), automatically update the UI (the button).
+It's not a particularly practical example, but it _is_ a common one (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of frontend frameworks: make a small component to track your state (_the count)), and whenever something causes the state to change (the click), automatically update the UI (the button).
 
 **Click through the examples below to compare this component in different languages:**
 
 <CounterButtonComparison />
 
-<SideNote>I prefer to use arrow functions and omit semicolons, but those are just stylistic preferences, and not required.</SideNote>
+<SideNote>
+I prefer to use arrow functions and omit semicolons, but those are just stylistic preferences, and not required.
+</SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
 
@@ -104,13 +108,13 @@ There are some key differences I'd like to point out between the Svelte version 
 
 While the above examples don't cover them, some other features of Svelte that I love include:
 
-- **Everything lives together in one file.** Similar to `.vue` files, `.svelte` files keep your component's logic, markup _and_ styles all together. (You can even order them however you like.)
+- **Everything lives together in one file.** Similar to single-file `.vue` components, `.svelte` files keep your component's logic, markup _and_ styles all together. (More on that in the next section.)
 
 - **Scoped CSS by default** (_more on Svelte CSS in the next section_).
 
 - **[Transitions and animations baked-in](https://svelte.dev/tutorial/transition)**. A robust built-in API means there's no need to reach for an external library or hand-code visual transformations.
 
-- **You can write logic directly in the markup** (unlike JSX), without tying logic to an HTML element (unlike Vue):
+- **You can write logic directly in the markup**:
 
   ```svelte
   <!-- Svelte logic -->
@@ -156,33 +160,10 @@ While the above examples don't cover them, some other features of Svelte that I 
 
 - **Built-in [reusable data stores](https://svelte.dev/tutorial/writable-stores)** (think: a very light, simple version of Redux or Vuex)
 
-- **Easy shorthands** for class binding, prop passing, and event modifiers (that I miss now when working with other frameworks):
-
-  ```svelte
-  <!-- If `enabled` is a boolean, then this works: -->
-  <input class={enabled ? 'enabled' : ''} />
-
-  <!-- ...but it can be shortened to this... -->
-  <input class:enabled={enabled} />
-
-  <!-- ...which can just be shortened to: -->
-  <input class:enabled />
-  ```
-
-  ```svelte
-  <!-- A nice shorthand for myProp={myProp} -->
-  <SomeComponent {myProp} />
-  ```
-
-  ```svelte
-  <!-- Define event modifiers inline: -->
-  <button on:click|preventDefault={handleClick}>
-    Click me!
-  </button>
-  ```
+- **Easy shorthands** for class binding, prop passing, and event modifiers (that I miss now when working with other frameworks)
 
 
-#### More about CSS in Svelte
+#### CSS in Svelte
 
 Svelte's creator, Rich Harris, has been quoted as saying:
 
@@ -190,33 +171,80 @@ Svelte's creator, Rich Harris, has been quoted as saying:
 
 I'm inclined to agree.
 
-To add styles to a component in Svelte, you simply add a `<style>` tag in the component's `.svelte` file. Any CSS inside it will be scoped to the component by default. If you like, you can make it SCSS with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations).
+To add styles to a component in Svelte, you simply create a `<style>` tag in the component's `.svelte` file. Any CSS inside it will be scoped to the component by default.
+
+A typical `.svelte` component might look like this (though again, you can order the pieces any way you like):
 
 ```svelte
-<style lang="scss">
-  .some-class {
-    /* These styles are scoped to the component */
+<!-- A typical .svelte component -->
 
-    :global(.another-class) {
+<script>
+  // Component logic goes here
+</script>
+
+<!-- HTML goes here -->
+
+<style>
+  /* Scoped CSS goes here! */
+</style>
+```
+
+If you like, you can use SCSS in your components with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations), and by adding `lang="scss"` to the `<style>` tag.
+
+
+##### Conditional styling
+
+Conditional styling is a _breeze_ in Svelte thanks to easy shorthands. For example, here are three ways you could conditionally add a class to an element, based on a boolean prop being passed into the component (the class is automatically added when the prop is `true`, and removed otherwise):
+
+```svelte
+<!-- Toggle CSS class based on a boolean prop -->
+
+<!-- This works… -->
+<input class={enabled ? 'enabled' : ''} />
+
+<!-- ...but it can be shortened to this... -->
+<input class:enabled={enabled} />
+
+<!-- ...which can just become this: -->
+<input class:enabled />
+```
+
+Note that the last example only works if the class name and property name are identical (similar to [ES6 object property value shorthand](https://alligator.io/js/object-property-shorthand-es6/)).
+
+Also: you can have as many `class` attributes as you need (dynamic or otherwise) on a single element.
+
+
+##### Scoped vs. global styling
+
+If you'd like to make a component's CSS global, you can do that on a per-rule basis with the `:global()` function:
+
+```svelte
+<style>
+  ul {
+    /* This CSS applies ONLY to the component */
+
+    :global(li) {
       /* These styles are global */
     }
   }
 </style>
 ```
 
-Or you prefer, you can make the entire tag global with the `global` attribute:
+***Or*** if you prefer, you can make the entire tag global with the `global` attribute:
 
 ```svelte
-<style lang="scss" global>
+<style global>
   /* All CSS here is global */
 </style>
 ```
 
-**One word of warning there, however:** global styles persist once loaded on the page. So if you have a `global` style tag in a component that only loads on a certain page, its styles will stick around after you've navigated to other pages.
+**One word of warning there, however:** global styles persist once loaded on the page. So if you have a `global` style tag in a component that only loads on a certain page, its styles will stick around after you've navigated to other pages, potentially applying to elements there as well.
 
-<Callout>Even when dealing with automatically scoped styles, I've found it's a good idea to use a wrapping parent class selector anyway.</Callout>
+<Callout>I've found it's a good idea to always use a wrapping parent class selector, even when dealing with scoped styles.</Callout>
 
-Even when dealing with automatically scoped styles, I've found it's a good idea to use a wrapping parent class selector anyway. At worst it's redundant, and at best you've saved yourself from unintentional style leakage (either now or if you decide to un-scope the styles in the future).
+This leads to some weirdness, since "global" doesn't _really_ mean global; the component has to be loaded once first before those styles are actually available.
+
+Because of this, I've found it's a good idea to always use a wrapping parent class selector, even when dealing with scoped styles. At worst it's redundant, and at best you've saved yourself from unintentional style leakage (either now or if you decide to un-scope the styles in the future).
 
 ---
 
@@ -237,7 +265,7 @@ To overcome this limitation, most popular frameworks have their own "app framewo
 
 [Next](https://nextjs.org/) is a React app framework; [Nuxt](https://nuxtjs.org/) is a Vue app framework; and [SvelteKit](https://kit.svelte.dev/) is a Svelte app framework.
 
-You could think of app frameworks as a level _above_ frontend frameworks. If a frontend framework is a toolbox, an app framework is a complete workshop.
+You could think of app frameworks as a level _above_ frontend frameworks; if a frontend framework is a toolbox, an app framework is a complete workshop.
 
 Most app frameworks include some combination of pages and routing, data stores, layouts, image optimization, better SEO and full-page control, data fetching, and/or plugins—usually just about everything except a database to help you build a full-fledged site or app.
 
@@ -250,7 +278,7 @@ In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.
 
 Currently, SvelteKit offers adapters to run your project as serverless functions on Netlify, Vercel, and Cloudflare Workers. It also offers two platform-agnostic adapter options:
 
-- Node (to deploy your code as a standard Node app)
+- Node (to deploy your project as a standard Node app)
 - Static (to deploy as pre-generated HTML files)
 
 There are several [community-created adapters](https://sveltesociety.dev/components/#category-SvelteKit%20Adapters) available as well, or you can even [write your own](https://kit.svelte.dev/docs#writing-an-adapter).
@@ -259,7 +287,9 @@ This site uses the static adapter, which means the SvelteKit pages and component
 
 Worth noting, however: by default, after the first page load, SvelteKit's router hydrates and takes over page loading, to make transitions as smooth and fast as possible. You can even designate routes to preload in the background, so that by the time the user clicks, the load is nearly instantaneous.
 
-<SideNote>You don't have to go entirely one way or the other; even if you're deploying your project as a Node app or with serverless functions, you can still mark specific pages to be prerendered as static HTML.</SideNote>
+<SideNote>
+You don't have to go entirely one way or the other; even if you're deploying your project as a Node app or with serverless functions, you can still mark specific pages to be prerendered as static HTML.
+</SideNote>
 
 
 #### Routing in SvelteKit
@@ -279,7 +309,11 @@ SvelteKit can _also_ have _dynamic_ routes. For example, `/blog/[post].svelte` w
 
 The _really_ magical part, though, is that you can have server-side routes, too!
 
-For example: if you want your app to have a `/posts` endpoint that returns JSON, you just create `src/routes/posts.json.js`. This will become a `/posts.json` route in the finished application.
+For example: lots of places in a typical blog need access to posts. You might want to put your most recent posts on your hompage, have some posts in the sidebar, and of course, they should all be listed the `/blog` page itself. You might even want category or tag pages.
+
+That's a lot of fetching posts to redo over and over. So it's a perfect use case for a server-side route!
+
+If you want your app to have a `/posts` endpoint that returns JSON, you just create `src/routes/posts.json.js`. This will become a `/posts.json` route in the finished application.
 
 From there, you just define a `get()` JavaScript function that retrieves the desired data and returns it (along with a status code). This is made easier by the fact that SvelteKit has top-level `await` and `fetch` available by default.
 
@@ -332,10 +366,12 @@ Once you've retrieved the post data as JSON, you can display it in a Svelte page
 {/each}
 ```
 
-Worth noting: with the static adapter, any internal endpoint query or `fetch` call is run at build time, and whatever the result at that point, it will be output as plain static files.
+I won't get too much into it here, but SvelteKit also offers a way to [pre-load data server-side](https://kit.svelte.dev/docs#loading) from routes like this, or from external sources.
+
+**Worth noting:** when using the static adapter, there of course isn't any server to query at run time. So in that case, any internal endpoint query or `fetch` call like this is run at build time, and whatever the result at that point, it will be output as plain static files.
 
 <SideNote>
-You <em>do</em> also need an adapter to convert Markdown. That isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).
+The ability to read Markdown files isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).
 </SideNote>
 
 

@@ -15,7 +15,9 @@ excerpt: "No matter how simple the end product, design is hard work. To come up 
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-<SideNote>I once had a design student read this post, and mistakenly think I was advising them against redesigning logos in an academic context. Far from it; redesign can be an excellent creative exercise for students. This post is about the rather toxic habit some in the design community have of spending a day (or an hour) tweaking a logo or brand and calling it "better."</SideNote>
+<SideNote>
+I once had a design student read this post, and mistakenly think I was advising them against redesigning logos in an academic context. Far from it; redesign can be an excellent creative exercise for students. This post is about the rather toxic habit some in the design community have of spending a day (or an hour) tweaking a logo or brand and calling it "better..
+</SideNote>
 
 Earlier this week, [Google](http://google.com) unveiled their new sans-serif identity, ditching the familiar serifs for which the company has been known since its inception for a cleaner, simpler look:
 

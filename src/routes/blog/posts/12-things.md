@@ -18,7 +18,9 @@ excerpt: I’m beginning to believe that becoming more connected with everyone i
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-<SideNote>I wrote this post back in early 2015, and gave up Facebook permanently later that year. I've since deleted Instagram as well, though you can still find me on Twitter for the time being (despite the fact that some of these things are uncomfortably true there as well).</SideNote>
+<SideNote>
+I wrote this post back in early 2015, and gave up Facebook permanently later that year. I've since deleted Instagram as well, though you can still find me on Twitter for the time being (despite the fact that some of these things are uncomfortably true there as well).
+</SideNote>
 
 As many of you may know, I recently took on the self-appointed challenge of staying off Facebook for 60 days. ...Well, actually, that's only partly true; I initially gave up Facebook for an indefinite amount of time. When I made the decision, part of me hoped that maybe it would result in a permanent termination.
 

@@ -162,31 +162,25 @@ figcaption,
 
 blockquote {
 	margin: 2rem 0;
-	padding: 1rem 1rem 1rem 2rem;
-	overflow: visible;
-	font-size: 0.85rem;
+	padding: 1.5rem;
+	font-size: 0.9rem;
+	font-style: italic;
 	line-height: 1.5;
 	position: relative;
-	// font-weight: bold;
-	// border-left: 2px solid #ffd100;
-	// background: rgba(var(--lightBlueRGB), 0.1);
-
+	border: 1px solid var(--lightBlue);
+	
 	&::before {
 		width: 2rem;
 		height: 2rem;
-		// border: 4px solid var(--yellow);
-		border-radius: 1rem;
-		text-align: center;
-		display: flex;
-		align-items: center;
 		content: '“';
 		font-family: var(--heading-font);
+		font-style: normal;
+		font-size: 2rem;
 		display: block;
 		position: absolute;
-		left: -0.125em;
-		top: 0;
-		font-size: 3rem;
-		color: var(--ink);
+		left: -0.5em;
+		top: -0.5em;
+		color: var(--lightBlue);
 		background: var(--paper);
 	}
 
@@ -222,9 +216,25 @@ code {
 
 code {
 	font-size: 0.8em;
-	background: rgba(var(--lightBlueRGB), 0.2);
+	background: rgba(var(--lightBlueRGB), 0.1);
 	padding: 0.2em 0.3em 0.2em;
 	border-radius: 2px;
+	border: 1px solid rgba(var(--lightBlueRGB), 0.2);
 	line-height: 1 !important;
-	white-space: nowrap;
+	white-space: nowrap;	
+}
+
+.prefers-dark {
+	code {
+		background: rgba(var(--darkBlueRGB), 0.6);
+		border: 0;
+	}
+
+	pre code {
+		background: transparent;
+	}
+}
+
+pre code {
+	border: 0;
 }

@@ -97,7 +97,9 @@ As I write this, WP Engine and, no doubt, many other hosts are working on the he
 
 When this site was headless WordPress, the front-end was already built in [Gridsome](https://gridsome.org/), a Vue-based static site generator that could be fairly described as Vue's equivalent of [Gatsby](https://www.gatsbyjs.com/).
 
-<SideNote>A <b>static site generator</b> (or SSG) is a tool that takes input of some kind—maybe Markdown files, maybe JSON from an API, or maybe even a combination of different data sources—and turn it all into a traditional, static HTML website. This allows the site to be hosted cheaply and easily on a CDN-backed host for optimum performance.</SideNote>
+<SideNote>
+A <b>static site generator</b> (or SSG) is a tool that takes input of some kind—maybe Markdown files, maybe JSON from an API, or maybe even a combination of different data sources—and turn it all into a traditional, static HTML website. This allows the site to be hosted cheaply and easily on a CDN-backed host for optimum performance.
+</SideNote>
 
 While it would've certainly been possible to just abandon the headless formula and go back to good ol' solo WordPress, that wasn't really an option to me. I'd lose too much work that had gone into this site already, and honestly, I wasn't interested in abandoning the modern dev experience that a JavaScript-based framework offers. I'm not making any value statements here, but to me:
 
@@ -111,7 +113,9 @@ You might ask: **so if you're cutting out WordPress, where does the content come
 
 Gridsome, along with many other static site generators, has the ability to generate content from Markdown files. Markdown is a very nice way to write, and while it certainly misses some of the conveniences of authoring posts in WordPress's block editor (AKA Gutenberg), it also comes with a lot of upside.
 
-<SideNote>If you're not familiar with Markdown: it's a simple way of authoring formatted text that's much closer to natural typing than HTML. There's a pretty neat <a rel="external" href="dillinger.io/">Markdown playground here</a> that covers the general syntax.</SideNote>
+<SideNote>
+If you're not familiar with Markdown: it's a simple way of authoring formatted text that's much closer to natural typing than HTML. There's a pretty neat <a rel="external" href="dillinger.io/">Markdown playground here</a> that covers the general syntax.
+</SideNote>
 
 The front end of this site was already using Markdown to create content with its projects; each project is a Markdown file with the project's details. Here's an example project Markdown file, just to get general the idea across on how Gridsome scrapes content from files and converts it into a content type:
 
@@ -171,7 +175,9 @@ Finally, the template file for rendering the data collected from the Markdown fi
 
 _(Not pictured: there's also a GraphQL query to grab the currently viewed project. I just didn't show that for the sake of simplicity.)_
 
-<SideNote>This site has been updated since that version, and no longer features individual project pages or markdown files.</SideNote>
+<SideNote>
+This site has been updated since that version, and no longer features individual project pages or markdown files.
+</SideNote>
 
 ---
 
@@ -200,7 +206,9 @@ I tried a few tools, including a seemingly abandoned Gatsby plugin, and even con
 
 This miraculous little CLI tool takes your WordPress export XML file, and not only converts each piece of content to Markdown—complete with frontmatter!—but can also scrape your site for all the images in the content and neatly download them.
 
-<SideNote>Frontmatter is how metadata is handled in Markdown. You might have noticed it in the project file example above. Information such as publish date, post title, categories and tags is all typed out in a comment-like block (technically YAML) at the top of the file. Frontmatter isn't part of the main post content, but its data is accessible for display or filtering purposes.</SideNote>
+<SideNote>
+Frontmatter is how metadata is handled in Markdown. You might have noticed it in the project file example above. Information such as publish date, post title, categories and tags is all typed out in a comment-like block (technically YAML) at the top of the file. Frontmatter isn't part of the main post content, but its data is accessible for display or filtering purposes.
+</SideNote>
 
 While I had a few small hiccups with it (mostly not really the tool's fault), the biggest was my custom blocks. The info on what a custom block should look like is *not* stored in the database; instead, there's just some text like this:
 
@@ -270,7 +278,9 @@ All the custom blocks I had on WordPress have now been faithfully recreated in s
 
 The authoring experience is incredibly nice, too; since Gridsome runs on a local Node dev server with auto-refresh, I can simply start the server, navigate to the post, and go to work. Every time I hit `⌘ + s` I see my updates in the browser, fully styled, in a matter of milliseconds.
 
-<SideNote>Nuxt has a similar feature available via installable module, but even goes so far as to allow you to edit the Markdown file by editing the text in the browser, which is a type of dark witchcraft I'm not even sure I can handle.</SideNote>
+<SideNote>
+Nuxt has a similar feature available via installable module, but even goes so far as to allow you to edit the Markdown file by editing the text in the browser, which is a type of dark witchcraft I'm not even sure I can handle.
+</SideNote>
 
 
 
@@ -314,7 +324,9 @@ module.exports = function(api) {
 }
 ```
 
-<SideNote>There are more efficient ways to achieve the above; my first try used <code>flatMap</code>. But turns out: Node doesn't have the <code>flatMap</code> array method, so it wouldn't compile on Netlify's servers. So this was my slightly longer workaround.</SideNote>
+<SideNote>
+There are more efficient ways to achieve the above; my first try used <code>flatMap</code>. But turns out: Node doesn't have the <code>flatMap</code> array method, so it wouldn't compile on Netlify's servers. So this was my slightly longer workaround.
+</SideNote>
 
 
 
