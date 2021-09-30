@@ -267,7 +267,6 @@ Since frontend frameworks run entirely on JavaScript, they aren't ideal for much
 
 <Callout>
 If a frontend framework is a toolbox, an app framework is a complete workshop.
-
 </Callout>
 
 To overcome this limitation, most popular frameworks have their own "app framework," or: a tool that helps you build not just pieces of a UI or a single page, but entire _pages and apps_ with the framework in question.
@@ -451,7 +450,6 @@ The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 
 
 <Callout>
 Any measurable metric will tell you the site is faster now, but it doesn't always <em>feel</em> faster, which makes for an interesting study in&nbsp;tradeoffs.
-
 </Callout>
 
 It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell SvelteKit still saves me around 100kb. So it still seems like a win, even if it's one that comes with tradeoffs.
@@ -487,7 +485,7 @@ I was a very early adopter of Gridsome, and at the time (in 2019), it still seem
 
 Gridsome didn't ever really feel _complete_ to me, and that was fine when updates were still rolling out. I knew what I was in for going with a pre-1.0 technology, but the stagnation was hard to ignore. It was really good at what it did well--generating a speedy, static site with Vue and GraphQL--but the more you wanted to tweak things or leave the happy path, the more you ran into its rough edges.
 
-More than once, I spent a day or two fighting with NPM, unable to even _run_ Gridsome on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.)
+More than once, I spent a day or two fighting with NPM, unable to even _run_ Gridsome on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.) The last two times I've set up new machines, I've had to spend significant time trying to get Gridsome running on them. As of right now, I can't even get it to deploy anymore.
 
 But moreover: SvelteKit sparks joy in a way that Gridsome doesn't anymore. This site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do anything I want for whatever reason.
 
@@ -525,12 +523,15 @@ The one non-trivial component that's mostly the same between the two versions is
 
 <Callout>
 “Is it better?” is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I <em>like</em>&nbsp;it&nbsp;better.
-
 </Callout>
 
-Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer work completely differently for better performance now. TypeScript is everywhere; layouts have changed; new pieces have been added and old removed. MDSvex came with PrismJS built in, which let me delete both the a full component and an external library. Lots was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
+Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer work completely differently for better performance now. TypeScript is everywhere; layouts have changed; new pieces have been added and old removed. MDSvex came with PrismJS built in, which let me delete both the a full component and an external library. [Storybook](https://storybook.js.org/) and my tests are both removed for now. Lots was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
 
 "Is it better?" is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I _like_ it better (even the parts that are more verbose), and I think that's the most important part. I even enjoyed the relatively rote process of moving Vue components over to Svelte.
+
+By the way: I kept an [archival copy of the old site](https://joco-gridsome-archive.netlify.app/) live for myself to look back on, just in case you'd like to compare.
+
+And while we're on the topic: here's the link to [my site's new SvelteKit repo](https://github.com/josh-collinsworth/joco-sveltekit), if you'd like to get a firsthand look.
 
 
 ## What to know about SvelteKit

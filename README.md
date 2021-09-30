@@ -1,38 +1,17 @@
-# create-svelte
+# joco-sveltekit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+My affectionate nickname for the SvelteKit build of [joshcollinsworth.com](https://joshcollinsworth.com). It makes use of SvelteKit's `adapter-static` to output the site as static HTML files.
 
-## Creating a project
+This repo is here so you can poke around if you want to, suggest improvements, or use this as a starter for your own SvelteKit blog project.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## Running locally
 
-# create a new project in my-app
-npm init svelte@next my-app
+Assuming you already have Node and NPM installed, clone the repo, then in the directory, run:
+
 ```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
