@@ -19,7 +19,7 @@ excerpt: A lengthy write-up diving into what headless means, its advantages and 
 </script>
 
 <SideNote>
-This post is a bit outdated; this website still looks and works mostly the same, but technically it's no longer headless WordPress; just pure static Gridsome. So a few of the smaller features described here, like the search bar, aren't in place anymore.
+This post is a bit outdated; this website still looks and works mostly the same, but it's no longer headless WordPress <em>or</em> Gridsome; it's <a href="https://joshcollinsworth.com/blog/converting-to-sveltekit">SvelteKit</a>. So a few of the smaller features described here, like the search bar, aren't in place anymore.
 </SideNote>
 
 There's a joke (the kind that's made less because it's funny and more because it's true) about developers and designers spending more time redesigning their website than actually _doing_ something with it. Right off the bat, I'll go ahead and admit I fit that cliché; I've had some version of this blog live since 2014, and the number of redesigns I've done is uncomfortably close to the number of _actual blog posts_ I've written in that same time.

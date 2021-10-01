@@ -41,18 +41,6 @@
     <LogoSVG iconOnly={true} />
   </a>
 
-  <h2>External Writing</h2>
-  <ul class="sidebar__posts-list">
-    {#each EXTERNAL_POSTS as post}
-      <li>
-        <a rel="external" href="{post.slug}">
-          <span>{post.title}</span>
-          <i>({post.subtitle})</i>
-        </a>
-      </li>    
-    {/each}
-  </ul>
-
   <h2>Recent blog posts</h2>
   <ul class="sidebar__posts-list">
     {#if !posts.length}
@@ -64,6 +52,18 @@
           <span>{post.title}</span>
         </a>
       </li>
+    {/each}
+  </ul>
+
+  <h2>External Writing</h2>
+  <ul class="sidebar__posts-list">
+    {#each EXTERNAL_POSTS as post}
+      <li>
+        <a rel="external" href="{post.slug}">
+          <span>{post.title}</span>
+          <i>({post.subtitle})</i>
+        </a>
+      </li>    
     {/each}
   </ul>
 

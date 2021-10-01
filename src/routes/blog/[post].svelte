@@ -46,8 +46,36 @@
     })
   }
 
+
+  const loadEmbeddedTweets = () => {
+    /**
+     * This is necessary because prefetching blog posts prevents
+     * the Twitter widget script from loading. Plus, there isn't
+     * really a good way to embed scripts in Markdown to begin
+     * with. So, this does the job just fine. All I need to do
+     * is paste the Twitter embed code for a tweet, and remove the
+     * script tag from it.
+     */
+    const allTweets = document.getElementsByClassName('twitter-tweet')
+
+    console.log(allTweets)
+
+    if (allTweets.length) {
+      console.log('found tweets')
+      const head = document.getElementsByTagName('head')[0]
+      const script = document.createElement('script')
+      script.src = 'https://platform.twitter.com/widgets.js'
+      script.type = 'text/javascript'
+      script.async = true
+      script.setAttribute('charset', 'utf-8')
+
+      head.appendChild(script)
+    }
+  }
+
   onMount(() => {
     wrapTablesInScrollableDivs()
+    loadEmbeddedTweets()
   })
 </script>
 
@@ -128,8 +156,10 @@
       margin: 0;
     }
     
-    .meta + p:first-of-type::first-letter,
-    .toc + p:first-of-type::first-letter,
+    .meta + p::first-letter,
+    .toc-wrap + p::first-letter,
+    .meta + .side-note + p::first-letter,
+    .toc-wrap + .side-note + p::first-letter,
     > hr + p:first-letter {
       font-size: 3.4em;
       font-family: var(--heading-font);

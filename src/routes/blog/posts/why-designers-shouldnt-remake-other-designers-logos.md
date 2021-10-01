@@ -34,13 +34,10 @@ To say that this behavior was limited to Dribbble would be inaccurate. The annou
 Accusations cropped up. Some said Google had copied their new logo from an old Gymboree mark (_as though two colorful sans-serif capital Gs ought to look unmistakably distinct_):
 
 <blockquote class="twitter-tweet" lang="en"><p dir="ltr" lang="en"><a href="https://twitter.com/Gymboree">@Gymboree</a> 's identity (1993-2000) vs.<a href="https://twitter.com/google">@google</a>'s new identity (Sep 01, 2015) <a href="https://twitter.com/hashtag/gymbore?src=hash">#gymbore</a> <a href="https://twitter.com/hashtag/google?src=hash">#google</a> <a href="https://twitter.com/hashtag/logo?src=hash">#logo</a> <a href="https://twitter.com/hashtag/GoogleLogo?src=hash">#GoogleLogo</a> <a href="http://t.co/uf2ucAxoS1">pic.twitter.com/uf2ucAxoS1</a></p>— Micael Butial (@caelerz) <a href="https://twitter.com/caelerz/status/638926119270400000">September 2, 2015</a></blockquote>
-<!-- <script src="//platform.twitter.com/widgets.js" async charset="utf-8"></script> -->
 
 Others accused Google of simple unoriginality (_as though a few cherry-picked modern sans-serif logotypes_ wouldn't _look similar when they're all shown side-by-side in black_):
 
 <blockquote class="twitter-tweet" lang="en"><a href="https://twitter.com/hashtag/creative?src=hash">#creative</a> <a href="http://t.co/u9ScnzwCbC">pic.twitter.com/u9ScnzwCbC</a> — Ramin Nasibov (@RaminNasibov) <a href="https://twitter.com/RaminNasibov/status/639022680151355392">September 2, 2015</a></blockquote>
-
-<!-- <script src="//platform.twitter.com/widgets.js" async charset="utf-8"></script> -->
 
 While still others thought it was just plain poor, like [this typographer](http://www.businessinsider.com/typography-expert-hates-googles-new-logo-2015-9).
 

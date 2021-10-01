@@ -11,23 +11,31 @@
 </script>
 
 <script lang="ts">
-import { prefetch } from '$app/navigation';
-
 	import type Post from '$lib/assets/js/interfaces/post'
 	import PostList from '$lib/components/posts/PostList.svelte'
+	import { cubicInOut } from 'svelte/easing';
+	import { slide } from 'svelte/transition';
 	import { EXTERNAL_POSTS } from '$lib/data/external_posts'
-	import { onMount } from 'svelte';
 
+	let postTypes: string = 'all'
+	
 	export let posts: Post[] = []
 
-	onMount(() => {
-		posts.forEach((post, i) => {
-			if (i < 4) {
-				console.log(post.slug)
-				prefetch(post.slug)
-			}
-		})
-	})
+	$: combinedPosts = [
+		{
+			type: 'external',
+			heading: 'External Posts',
+			description: 'Things I got paid to write for other sites',
+			posts: EXTERNAL_POSTS
+		}, {
+			type: 'internal',
+			heading: 'Internal Posts',
+			description: 'Things I wrote just because I wanted to',
+			posts
+		}
+	]
+
+	$: filteredPosts = combinedPosts.filter(post => postTypes === 'all' || post.type === postTypes)
 </script>
 
 
@@ -37,26 +45,80 @@ import { prefetch } from '$app/navigation';
 </svelte:head>
 
 <template>
-	<div class="heading-wrapper">
-		<h2>External writing</h2>
-		<p>Things I got paid to write</p>
-	</div>
-	
-	<PostList posts={EXTERNAL_POSTS} external={true} />
-	
-	<div class="heading-wrapper">
-		<h2>My blog</h2>
-		<p>Things I wrote just because I wanted to</p>
-	</div>
+	<fieldset>
+		<legend>Show posts:</legend>
 
-	<PostList {posts} />	
+		<div class="field-wrap">
+			<input id="posts-all" type=radio bind:group={postTypes} name="post-types" value="all" />
+			<label for="posts-all">
+				All
+			</label>
+		</div>	
+		
+		<div class="field-wrap">
+			<input id="posts-internal" type=radio bind:group={postTypes} name="post-types" value="internal" />
+			<label for="posts-internal">
+				My blog <em>(this site only)</em>
+			</label>
+		</div>
+		
+		<div class="field-wrap">
+			<input id="posts-external" type=radio bind:group={postTypes} name="post-types" value="external" />
+			<label for="posts-external">
+				External <em>(posts for other sites only)</em>
+			</label>
+		</div>
+	</fieldset>
+
+	{#each filteredPosts as group (group.type)}
+		<div class="post-group" transition:slide="{{ duration: 250, easing: cubicInOut }}">
+			<div class="heading-wrapper">
+				<h2>{group.heading}</h2>
+				<p>{group.description}</p>
+			</div>
+			
+			<PostList posts={group.posts} external={group.type === 'external'} />
+		</div>
+	{/each}
 </template>
 
 
 <style lang="scss">
+	.field-wrap {
+		display: flex;
+		align-items: center;
+
+		input {
+			margin-right: .5em;
+		}
+	}
+
+	fieldset {
+		width: max-content;
+		padding: 0.5rem 1rem 1rem;
+		margin: 0 0 4rem;
+		border: 1px solid var(--lightBlue);
+		font-size: 0.85rem;
+
+		legend {
+			color: var(--lightBlue);
+			font-size: 0.7rem;
+			padding: 0 0 0 .5em;
+			font-weight: bold;
+			text-transform: uppercase;
+			background: var(--paper);
+			position: relative;
+			left: -0.5em;
+		}
+	}
+
+	.post-group {
+		padding-bottom: 2rem;
+	}
+
 	.heading-wrapper {
 		h2 {
-			margin-bottom: 0;
+			margin: 0;
 			border: 0;
 			padding: 0 0 0.25rem;
 		}

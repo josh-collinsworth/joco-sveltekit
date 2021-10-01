@@ -16,7 +16,7 @@ excerpt: WordPress was potentially the most impactful and empowering technology 
 </script>
 
 <SideNote>
-This piece is not a value statement on WordPress. I'm not bashing it, nor am I suggesting other people ought to abandon it. This is just the story of my personal evaluation of its tradeoffs in my unique use case.
+This post mentions Gridsome frequently, but <a href="https://joshcollinsworth.com/blog/converting-to-sveltekit">this site is actually built with SvelteKit now</a>. It looks and works mostly the same, but the underlying tech is a bit different.
 </SideNote>
 
 I was first introduced to WordPress pretty early in my design career. I was a fledgling professional designer working at a small branding agency when I got my first glimpse of everything WordPress could be via the impressive [Divi theme](https://www.elegantthemes.com/gallery/divi/).

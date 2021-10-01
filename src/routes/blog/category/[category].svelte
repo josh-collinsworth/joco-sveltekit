@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import { EXTERNAL_POSTS } from '$lib/data/external_posts';
+  import { EXTERNAL_POSTS } from '$lib/data/external_posts'
 
 	export async function load({ fetch, page }) {
     const category = page.params.category
@@ -23,6 +23,7 @@
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
   import PostList from '$lib/components/posts/PostList.svelte'
+  import PageHead from '$lib/components/PageHead.svelte'
 
   export let posts: Post[]
   export let externalPosts: Post[]
@@ -35,13 +36,20 @@
 </svelte:head>
 
 <template>
-  <h1 class="h4">[Category: { category }]</h1>
+  <PageHead title="Category: { category }" />
 
   {#if externalPosts.length}
-    <h3>Matches from external posts:</h3>
+    <h2 class="h3">Matches from external posts:</h2>
     <PostList posts={externalPosts} external={true} />
   {/if}
 
   <h2 class="h3">Matches from this blog:</h2>
   <PostList {posts} />  
 </template>
+
+
+<style lang="scss">
+  h2 {
+    margin: 0;
+  }
+</style>

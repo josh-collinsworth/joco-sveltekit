@@ -37,9 +37,9 @@ So how is Svelte _different_? Glad you asked…
 
 Svelte was created by [Rich Harris](https://twitter.com/rich_harris), a developer and graphics editor for the [New York Times](https://www.nytimes.com/).
 
-The news world moves fast, so the interactive UIs and visualizations Harris was creating for the _Times_ needed to be built as quickly as possible. But since it's critical for the news to be accessible to _everyone_, those bits of interactivity had to be as small and performant as possible.
+The news world moves fast, so the interactive UIs and visualizations Harris was creating for the Times needed to be built as quickly as possible. But since it's critical for the news to be accessible to _everyone_, those bits of interactivity _also_ had to be as small and performant as possible, on any device or network.
 
-Harris needed a solution that was extremely easy to build with, yet that would be fast and smooth for any reader. In many cases, the bloated JavaScript bundles that are the byproducts of many other frameworks disqualified. So Harris set out to build his own solution, and that's how Svelte was born.
+Harris needed a solution that was extremely quick and easy to build with, yet that would be fast and smooth for any reader. In many cases, the bloated JavaScript bundles that are the byproducts of many other frameworks disqualified them from consideration. So Harris set out to build his own solution, and that's how Svelte was born.
 
 While relatively new and small compared to the other frameworks on the list, Svelte is uniquely battle-tested: the [New York Times Covid map](https://www.nytimes.com/interactive/2021/us/covid-cases.html) is a Svelte app.
 
@@ -47,7 +47,7 @@ While relatively new and small compared to the other frameworks on the list, Sve
 
 The attention to developer experience (DX) is obvious in Svelte. I instantly loved how easy it made _everything_ I wanted to do--especially compared to React, as I cheekily tweeted at the time:
 
-{@html `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My elevator pitch for <a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a> :<br><br>Svelte is React without all the bullshit.</p>&mdash; Josh Collinsworth (@jjcollinsworth) <a href="https://twitter.com/jjcollinsworth/status/1155265498675929088?ref_src=twsrc%5Etfw">July 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My elevator pitch for <a href="https://twitter.com/sveltejs">@sveltejs</a> :<br><br>Svelte is React without all the bullshit.</p>&mdash; Josh Collinsworth (@jjcollinsworth) <a href="https://twitter.com/jjcollinsworth/status/1155265498675929088">July 27, 2019</a></blockquote>
 
 From the start, I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte--and how close it was to the JavaScript, HTML and CSS I already knew
 
@@ -523,7 +523,7 @@ In the end, however, Eleventy is still too unopinionated for my personal tastes,
 And again: this is my personal site, and so the tool I _like_ the most is an important factor. So while SvelteKit might arguably be a little overkill, personally, I think it's the most fun.
 
 
-#### How does the code compare?
+### How does the code compare?
 
 You might wonder: how does the old Vue code compare to the newer Svelte code? Is it shorter, better, and/or more readable?
 

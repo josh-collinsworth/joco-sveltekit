@@ -19,8 +19,8 @@
 		font-style: italic;
 		background: linear-gradient(
 			to right,
-			rgba(var(--lightBlueRGB), 0.3) 1rem,
-			rgba(var(--lightBlueRGB), 0.03)
+			rgba(var(--lightBlueRGB), 0.2) 1rem,
+			rgba(var(--lightBlueRGB), 0.04)
 		);
 		line-height: var(--body-line-height);
 		min-height: 4.5rem;

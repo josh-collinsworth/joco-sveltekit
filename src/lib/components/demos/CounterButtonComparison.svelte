@@ -113,7 +113,7 @@
       font-weight: bold;
     }
 
-    pre {
+    pre[class*="language-"] {
       margin-top: 0;
       padding-top: 1rem;
 
