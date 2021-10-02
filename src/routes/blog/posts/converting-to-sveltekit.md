@@ -26,7 +26,7 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 ## What is Svelte?
 
-At a basic level, Svelte is a frontend framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), etc. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and user optimization.
+At a basic level, you could think of Svelte as a frontend framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), etc. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and optimization.
 
 As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the Svelte component(s) automatically update to reflect those changes in the UI.
 
@@ -69,17 +69,23 @@ As mentioned, at a basic level, Svelte is similar to other frontend frameworks. 
 
 #### Build over browser
 
-I already mentioned how performant Svelte apps are. That's possible because Svelte takes a different approach from other frameworks by doing as much as it can at the _build_ step--when the code is initially compiled--rather than client-side. That approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user downloads the code.
+I already mentioned how performant Svelte apps are. That's possible because Svelte takes a different approach from other frontend frameworks by doing as much as it can at the _build_ step--when the code is initially compiled--rather than running client-side. In fact, if you want to get technical, Svelte isn't really a JavaScript framework at all, as much as it is a compiler.
 
 <Callout>
-All your Svelte code is compiled down to minimal vanilla JS before it ever gets to the&nbsp;browser.
+If you want to get technical, Svelte isn't really a JavaScript framework at all, as much as it&nbsp;is&nbsp;a&nbsp;compiler.
 </Callout>
 
-By contrast: React and Vue both run _in_ the browser. You load them, and _then_ use them to execute whatever code you write (not unlike jQuery and similar libraries before).
+To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, or a [CodePen](https://codepen.io), then use them however you like. Though there's probably a build tool involved to reduce the bundle size, to some extent at least, with React and Vue, you're inevitably shipping the framework itself to the browser.
 
-In fairness, in most cases, you'll probably use a build tool to reduce the bundle size. But to some extent at least, with React and Vue, you're inevitably shipping the framework itself to the browser.
+Svelte doesn't work like that; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 
-Svelte ships only the tiniest runtime; all the Svelte code is compiled down to minimal vanilla JS before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
+Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code. The Svelte compiler then processes what you write, and all your Svelte code is compiled down to minimal, self-contained HTML, CSS and JavaScript before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
+
+<Callout>
+All your Svelte code is compiled down to minimal, self-contained HTML, CSS and JavaScript before it ever gets to the&nbsp;browser.
+</Callout>
+
+This approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user downloads the code.
 
 <SideNote>
 This approach means there's a certain tipping point at which building with other frontend frameworks is actually <em>more</em> efficient, size-wise. However, most apps are very unlikely to hit that scale; here's <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">a comparison of React and Svelte bundle size scaling</a>.
@@ -100,7 +106,7 @@ As you click the button above, the count increases, both behind the scenes and i
 
 It's not a particularly practical example, but it _is_ a common one (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of frontend frameworks: make a small component to track your state (_the count)), and whenever something causes the state to change (the click), automatically update the UI (the button).
 
-**Click through the examples below to compare this component in different languages:**
+**Click through the examples below to compare this component in different frameworks:**
 
 <CounterButtonComparison />
 
@@ -119,7 +125,7 @@ There are some key differences I'd like to point out between the Svelte version 
 - **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. Svelte can have whatever HTML, wherever (and in its original state, unlike in JSX).
 
 
-##### Other reasons to love Svelte
+#### Other reasons to love Svelte
 
 While the above examples don't cover them, some other features of Svelte that I love include:
 
@@ -459,20 +465,20 @@ The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 
 
 It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell SvelteKit still saves me around 100kb. So it still seems like a win, even if it's one that comes with tradeoffs.
 
-SvelteKit <em>does</em> offer <code>prefetch</code> and <code>prefetchRoutes</code> options to accomplish this same thing, however; preload pages in the background to make loading as fast as possible. So I decided to throw prefetching on _all_ the routes on the site, just to see how it would stack up against the Gridsome version.
+SvelteKit _does_ offer `prefetch` and `prefetchRoutes` options to accomplish this same thing, however; preload pages in the background to make loading as fast as possible. So I decided to throw prefetching on _all_ the routes on the site, just to see how it would stack up against the Gridsome version.
 
 **Even when preloading all the site's content, the SvelteKit build is dramatically smaller.**
 
-| Framework     | Size      | Transferred |
+| Framework     | Full Size | Compressed  |
 |---------------|-----------|-------------|
 | **Gridsome**  | 3.09 MB   | 1.74 MB     |
 | **SvelteKit** | 1.49 MB   | 490 kB      |
 
-As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ the transferred size!
+As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ when compressed. The SvelteKit site _at full size_ is still less than the Gridsome site was when _compressed!_
 
 ---
 
-Builds with SvelteKit are also much faster: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version (about five times faster). But again, this is misleading, for two reasons:
+Builds and dev start times with SvelteKit are also much faster: the production build of my Gridsome site ran about seven minutes, compared to about 90 seconds for the SvelteKit version (about five times faster). The dev startup times have similar gains. But again, this is misleading, for two reasons:
 
 1. Gridsome was doing a lot of image work at build time that SvelteKit isn't by default; and
 

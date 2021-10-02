@@ -45,7 +45,7 @@
           i + 1 === allHeadings.length
             ? level + 1
             : previousHeadingLevel - level 
-        for (let n = 0; n <= subtraction; n++) {
+        for (let n = 0; n < subtraction; n++) {
           output += '</li></ul>'
         }
         output += `</li><li>`
@@ -158,8 +158,8 @@
         list-style-type: inherit;
         margin: 0 0 0.5em;
 
-        &::before {
-          content: unset;
+        ::marker {
+          content: '- ';
         }
       }
     }

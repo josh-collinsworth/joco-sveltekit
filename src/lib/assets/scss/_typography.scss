@@ -14,7 +14,6 @@ p + ol {
 }
 
 main ul:not(.toc) {
-	// list-style-type: none;
 	list-style-type: square;
 
 	ul {
@@ -85,7 +84,6 @@ h6 {
 h1,
 .h1 {
 	font-size: 2.6rem;
-	// border-bottom: 1px solid;
 	margin-top: 1rem;
 	position: relative;
 
@@ -97,7 +95,6 @@ h1,
 h2,
 .h2 {
 	font-size: 2rem;
-	// border-bottom: 1px solid;
 	display: inline-block;
 	margin-right: auto;
 
@@ -149,9 +146,11 @@ blockquote {
 	line-height: 1.5;
 	position: relative;
 	border: 0;
-	border: 1px solid var(--lightBlue);
+	border-top: 1px solid var(--lightBlue);
+	border-bottom: 1px solid var(--lightBlue);
 	
-	&::before {
+	&::before,
+	&::after {
 		width: 2rem;
 		height: 2rem;
 		text-align: center;
@@ -161,10 +160,16 @@ blockquote {
 		font-size: 2rem;
 		display: block;
 		position: absolute;
-		left: -0.5em;
+		left: -0.25em;
 		top: -0.5em;
 		color: var(--lightBlue);
 		background: var(--paper);
+	}
+
+	&::after {
+		content: '”';
+		left: calc(100% - 1.5rem);
+		top: calc(100% - 1rem);
 	}
 
 	> *:last-of-type {

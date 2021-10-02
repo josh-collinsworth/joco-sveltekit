@@ -74,6 +74,12 @@
       <svelte:component this={framework.component} />
     </div>
   {/each}
+
+  <noscript>
+    {#each frameworks as framework}
+      <svelte:component this={framework.component} />
+    {/each}
+  </noscript>
 </div>
 
 
