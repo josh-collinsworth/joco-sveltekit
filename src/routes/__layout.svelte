@@ -62,7 +62,7 @@
 
 	const handleScroll = throttle(() => {
 		const currentScrollPosition = window.scrollY
-		if (lastScrollPosition > currentScrollPosition) {
+		if (lastScrollPosition - currentScrollPosition >= 10) {
 			isScrollingDown.set(false)
 		} else if (currentScrollPosition > 100) {
 			isScrollingDown.set(true)

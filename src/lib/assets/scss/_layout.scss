@@ -148,13 +148,18 @@ table {
 	font-size: initial;
 
 	td, th {
-		padding: 0.5em 3em;
-		padding-left: 0;
+		padding: 0.5em 3em 0.5em 0;
+		
+
+		&:last-of-type {
+			padding-right: 0;
+		}
 	}
 	
 	th {
 		text-align: left;
 		padding-bottom: 0.25em;
+		white-space: pre;
 	}
 	
 	thead tr {
@@ -165,4 +170,8 @@ table {
 	tbody tr {
 		border-bottom: 1px solid var(--lightGray);
 	}
+}
+
+.twitter-tweet {
+	margin: 2rem 0 !important;
 }

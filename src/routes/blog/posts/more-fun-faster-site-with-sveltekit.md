@@ -1,7 +1,7 @@
 ---
-title: 'Converting to SvelteKit'
+title: 'More fun and a faster site with SvelteKit'
 date: '2021-10-01'
-updated: '2021-10-01'
+updated: '2021-10-02'
 categories:
   - 'javascript'
   - 'svelte'
@@ -79,17 +79,13 @@ To elaborate: React and Vue both run _in_ the browser. You load them, and then _
 
 Svelte doesn't work like that; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 
-Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code. The Svelte compiler then processes what you write, and all your Svelte code is compiled down to minimal, self-contained HTML, CSS and JavaScript before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
+Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code. The Svelte compiler then processes what you write, and all your Svelte code is compiled down to minimal, self-contained JavaScript before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
 
 <Callout>
-All your Svelte code is compiled down to minimal, self-contained HTML, CSS and JavaScript before it ever gets to the&nbsp;browser.
+All your Svelte code is compiled down to minimal, self-contained JavaScript before it ever gets to the&nbsp;browser.
 </Callout>
 
-This approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user downloads the code.
-
-<SideNote>
-This approach means there's a certain tipping point at which building with other frontend frameworks is actually <em>more</em> efficient, size-wise. However, most apps are very unlikely to hit that scale; here's <a href="https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md" rel="external">a comparison of React and Svelte bundle size scaling</a>.
-</SideNote>
+This approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user loads the page.
 
 React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)--still has performance implications. Thanks to the Svelte compiler, we don't have to worry about the performance implications of either one. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
@@ -104,7 +100,7 @@ Here's a demo of what I mean (**click the button**):
 
 As you click the button above, the count increases, both behind the scenes and in the UI.
 
-It's not a particularly practical example, but it _is_ a common one (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of frontend frameworks: make a small component to track your state (_the count)), and whenever something causes the state to change (the click), automatically update the UI (the button).
+It's not a particularly practical example, but it _is_ a common one (in fact, it's one of the first examples in [the official Svelte docs](https://svelte.dev/docs)), because it's an effective way to demonstrate the bread and butter of frontend frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), automatically update the UI (the button).
 
 **Click through the examples below to compare this component in different frameworks:**
 
@@ -559,7 +555,7 @@ And while we're on the topic: here's the link to [my site's new SvelteKit repo](
 As of this writing, SvelteKit is still in pre-1.0 status. It seems very stable to me, and Svelte itself is definitely solid. But there are still some portions of the Kit that aren't fleshed out yet. I found the static rendering to be extremely good, but as mentioned, SvelteKit can do a _lot_ more than that. Depending on what you're building and what features you're most interested in, it may be worth spending some time to make sure SvelteKit is in good shape to handle your task, and works as expected with your deploy target.
 
 
-### Debunking the community argument
+### Debunking the small community argument
 
 <Callout>
 When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework itself.
@@ -578,6 +574,33 @@ I'd like to put some context around that argument:
 3. **Even when you _do_ need to build something yourself, SvelteKit makes it comparatively simple.** One example: previously, I was using an RSS plugin with Gridsome, but no such package exists for SvelteKit.
 
   A quick web search, however, was all it took to find a very easy way to [Create an RSS feed in SvelteKit](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit), with no dependencies, in under 40 lines of code.
+
+
+### Yes, Svelte scales
+
+We've talked about how SvelteKit's components compile and ship as minimal, self-contained JavaScript, which means there's no overhead of a framework. This approach leads to smaller bundles, but the downside is: there's also less shared code, so each individual component will inevitably contain repeated code.
+
+<Callout>
+The scale at which Svelte's advantages disappear is actually unrealistically high for just about any&nbsp;application.
+</Callout>
+
+Loading a framework script upfront adds to the _initial_ load, but the more its code is reused, the the more it pays off--which means that above a certain scale, the advantage of Svelte's approach is neutralized, and it's actually _more_ efficient to build with another framework.
+
+This causes some people to claim that Svelte doesn't scale, but that's premature.
+
+The _real_ question that matters is: _where is that point_?
+
+Turns out: the scale at which Svelte's advantages disappear is actually unrealistically high for just about any application. 
+
+If you'd like more detail, you can read this [comparison of React and Svelte bundle scaling](https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md), or [this similar comparison](https://svelte-scaling.acmion.com/). But to summarize both: Svelte's advantage disappears somewhere around 150 kB of components loaded onto the page. That _sounds_ small, but components are tiny; it would actually take a pretty massive number (or extremely high complexity) to get to that point. Many components aren't even 1 kB.
+
+Granted, this is a small personal site and not a production app, but I'm barely 20% of the way to that scale. I can't even fathom how I'd make a page large and complex enough to approach that number.
+
+And let's not forget: that's the scale at which you're on _even ground_ with React. You'd _still_ have to go significantly larger than _that_ before there would be any meaningful difference between the two.
+
+_Plus_, this whole discussion focuses on how things are in this moment, not on future upside. Will React get smaller and faster in the future? Probably; it's supported by a large and talented team. But it's also benefitted from nearly a decade of optimization already; there may not be a lot left to squeeze out of it at this point.
+
+On the other hand, Svelte is comparably young. If I'm betting on which framework will improve more in the future _relative to its current position_, I'm backing Svelte, no question.
 
 
 ### Svelte's ecosystem is in a tricky place right now
@@ -599,8 +622,6 @@ Even though it's still technically pre-1.0, SvelteKit feels very solid--much mor
 The Svelte rocketship is a wonderful place to be. I encourage you to step aboard.
 </Callout>
 
-As mentioned, it's still early days for SvelteKit, so there are still some areas where its established solutions may not be as robust as with other frameworks. So I'll say that if I were starting up a new project today and _knew_ for sure right off the bat that I'd need a wide range of third-party plugins or packages, I _might_ lean more towards Nuxt for that at this specific point in time, personally.
-
-It's hard to imagine SvelteKit _not_ becoming the #1 go-to in all cases in the near future, however--especially knowing it only came out of closed beta a matter of months ago.
+As mentioned, it's still early days for SvelteKit, so there are still some areas where its established solutions may not be as robust as with other frameworks. I can understand hesitance to bet the farm on something a little newer, but I don't think I'd have any real hesitation at this point. An established solution with a rich ecosystem like Nuxt might have more to offer in this moment, but I'm confident both that I could do anything I needed to do in SvelteKit, and that it won't be long before SvelteKit fills the gaps. It's hard to imagine SvelteKit _not_ becoming the #1 go-to in all cases in the near future--especially knowing it only came out of closed beta a matter of months ago.
 
 The Svelte rocketship is a wonderful place to be. I encourage you to step aboard.
