@@ -13,7 +13,7 @@
 
 	&.prefers-dark {
 		--paper: var(--black);
-		--paperRGB: var(--blackRGB);
+		--paperHSL: var(--blackHSL);
 		--ink: var(--white);
 		--header-color: var(--white);
 		--accent-color: var(--lightBlue);
@@ -23,14 +23,14 @@
 
 		.post-preview {
       box-shadow: 0.25rem 0.25rem 0 0 rgba(0, 0, 0, 0.2);
-      background: rgba(var(--lightGrayRGB), 0.05);
+      background: hsla(var(--lightGrayHSL), 0.05);
       border: none;
     }
 	}
 
 	&.prefers-light {
 		--paper: var(--white);
-		--paperRGB: var(--whiteRGB);
+		--paperHSL: var(--whiteHSL);
 		--ink: var(--darkGray);
 		--header-color: var(--darkGray);
 		--accent-color: var(--darkBlue);

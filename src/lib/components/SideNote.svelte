@@ -19,14 +19,14 @@
 		font-style: italic;
 		background: linear-gradient(
 			to right,
-			rgba(var(--lightBlueRGB), 0.2) 1rem,
-			rgba(var(--lightBlueRGB), 0.04)
+			hsla(var(--lightBlueHSL), 0.2) 1rem,
+			hsla(var(--lightBlueHSL), 0.04)
 		);
 		line-height: var(--body-line-height);
 		min-height: 4.5rem;
 		
 		.prefers-dark & {
-			background: rgba(var(--lightBlueRGB), 0.1);
+			background: hsla(var(--lightBlueHSL), 0.1);
 		}
 
 		em, i {

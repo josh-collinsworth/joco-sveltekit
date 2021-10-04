@@ -18,7 +18,7 @@
 
 <style lang="scss">
   .loader {
-    background: rgba(var(--paperRGB), 0.7);
+    background: hsla(var(--paperHSL), 0.7);
     position: fixed;
     z-index: 3;
     width: 100vw;

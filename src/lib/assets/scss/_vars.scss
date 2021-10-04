@@ -8,11 +8,15 @@ $xxl: 1960px;
 $xxxl: 2200px;
 
 :root {
-	--white: #ffffff;
-	--black: #101820;
+	--yellowHSL: 49, 100%, 50%;
+	--lightGrayHSL: 220, 2%, 66%;
+	--lightBlueHSL: 199, 33%, 61%;
+	--darkBlueHSL: 201, 42%, 35%;
+	--whiteHSL: 0, 0%, 100%;
+	--blackHSL: 210, 33%, 9%;
 
-	--whiteRGB: 255, 255, 255;
-	--blackRGB: 16, 24, 32;
+	--white: hsl(var(--whiteHSL));
+	--black: hsl(var(--blackHSL));
 
 	--body-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
@@ -32,23 +36,19 @@ $xxxl: 2200px;
 	--heading-font-weight: normal;
 	--heading-font-style: normal;
 
-	--yellow: #ffd100;
-	--yellowRGB: 255, 209, 0;
-	--orange: #ff6a13;
-	--red: #e4002b;
-	--lightGray: #a7a8aa;
-	--lightGrayRGB: 123, 167, 188;
-	--midGray: #888b8d;
-	--darkGray: #53565a;
-	--darkerGray: #341f23;
-	--lightBlue: #7ba7bc;
-	--lightBlueRGB: 123, 167, 188;
-	--darkBlue: #34657f;
-	--darkBlueRGB: 52, 101, 127;
+	--yellow: hsl(var(--yellowHSL));
+	--orange: hsl(22, 100%, 54%);
+	--red: hsl(349, 100%, 45%);
+	--lightGray: 	hsl(var(--lightGrayHSL));
+	--midGray: hsl(204, 2%, 54%);
+	--darkGray: hsl(214, 4%, 34%);
+	--darkerGray: hsl(349, 25%, 16%);
+	--lightBlue: hsl(var(--lightBlueHSL));
+	--darkBlue: hsl(var(--darkBlueHSL));
 
 	--ink: var(--darkGray);
 	--paper: var(--white);
-	--paperRGB: var(--white);
+	--paperHSL: var(--whiteHSL);
 	--header-color: var(--darkGray);
 	--accent-color: var(--darkBlue);
 	--link-color: var(--darkBlue);
@@ -79,7 +79,7 @@ $xxxl: 2200px;
 
 	@media (prefers-color-scheme: dark) {
 		--paper: var(--black);
-		--paperRGB: var(--blackRGB);
+		--paperHSL: var(--blackHSL);
 		--ink: var(--white);
 		--header-color: var(--white);
 		--accent-color: var(--lightBlue);

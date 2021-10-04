@@ -33,8 +33,8 @@
 			position: fixed;
 			transition: transform .4s cubic-bezier(1, 0, 0, 1), opacity .4s cubic-bezier(1, 0, 0, 1);
 			transform: translateX(0);
-			background: rgba(var(--darkBlueRGB), 0.9);
-			background: rgba(var(--blackRGB), 0.9);
+			background: hsla(var(--darkBlueHSL), 0.9);
+			background: hsla(var(--blackHSL), 0.9);
 			width: 100vw;
 			height: 100vh;
 			top: 0;

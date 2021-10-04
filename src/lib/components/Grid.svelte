@@ -112,7 +112,7 @@
       top: 2.5rem;
 
       &:before {
-        --paperRGB: var(--darkBlueRGB);
+        --paperHSL: var(--darkBlueHSL);
         top: 0;
       }
     }
@@ -120,7 +120,7 @@
     &:before {
       width: 100%;
       content: '';
-      background: linear-gradient(60deg, rgba(var(--paperRGB), 0), rgba(var(--paperRGB), 0.5));
+      background: linear-gradient(60deg, hsla(var(--paperHSL), 0), hsla(var(--paperHSL), 0.5));
       height: 4rem;
       position: absolute;
       top: -1rem;

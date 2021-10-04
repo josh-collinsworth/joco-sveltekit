@@ -204,17 +204,17 @@ code {
 
 code {
 	font-size: 0.75em;
-	background: rgba(var(--lightBlueRGB), 0.1);
+	background: hsla(var(--lightBlueHSL), 0.1);
 	padding: 0.2em 0.3em 0.2em;
 	border-radius: 2px;
-	border: 1px solid rgba(var(--lightBlueRGB), 0.2);
+	border: 1px solid hsla(var(--lightBlueHSL), 0.2);
 	line-height: 1 !important;
 	white-space: nowrap;	
 }
 
 .prefers-dark {
 	code {
-		background: rgba(var(--darkBlueRGB), 0.6);
+		background: hsla(var(--darkBlueHSL), 0.6);
 		border: 0;
 	}
 

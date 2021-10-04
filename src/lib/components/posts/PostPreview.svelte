@@ -81,7 +81,7 @@
   }
   
   .post-preview {
-    box-shadow: 0.25rem 0.25rem 0 0 rgba(var(--lightGrayRGB), 0.2);
+    box-shadow: 0.25rem 0.25rem 0 0 hsla(var(--lightGrayHSL), 0.2);
     border: 1px solid var(--lightGray);
     transition: .2s;
     transform-origin: bottom left;
