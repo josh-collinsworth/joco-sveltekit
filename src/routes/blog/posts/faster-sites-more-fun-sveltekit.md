@@ -1,5 +1,5 @@
 ---
-title: 'More fun and a faster site with SvelteKit'
+title: 'Faster sites and more fun with SvelteKit'
 date: '2021-10-01'
 updated: '2021-10-02'
 categories:
@@ -23,12 +23,11 @@ Let's be honest: lots of things in web development are harder than they should b
 That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh air.
 
 
-
 ## What is Svelte?
 
 At a basic level, you could think of Svelte as a frontend framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), etc. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and optimization.
 
-As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the Svelte component(s) automatically update to reflect those changes in the UI.
+As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the Svelte component(s) automatically update to reflect those changes in the UI. (We'll cover that more in a bit.)
 
 So how is Svelte _different_? Glad you asked…
 
@@ -59,7 +58,7 @@ In fact, I found myself having to _unlearn_ many of the more convoluted solution
 
 Just about everywhere I'd normally be reaching for a workaround or tripping over a gotcha when using another framework, Svelte was delightfully straightforward.
 
-Svelte has always felt _way_ ahead of the game (probably because it came along later, and learned from the others). But instead of me talking about it, let's get to some comparisons.
+But instead of me talking about it, let's get to some comparisons.
 
 
 ### Comparing Svelte to React and Vue
@@ -75,11 +74,11 @@ I already mentioned how performant Svelte apps are. That's possible because Svel
 If you want to get technical, Svelte isn't really a JavaScript framework at all, as much as it&nbsp;is&nbsp;a&nbsp;compiler.
 </Callout>
 
-To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, or a [CodePen](https://codepen.io), then use them however you like. Though there's probably a build tool involved to reduce the bundle size, to some extent at least, with React and Vue, you're inevitably shipping the framework itself to the browser.
+To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, then use them however you like. You can load them in a [CodePen](https://codepen.io), or similar environments. Though there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment, to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
 
 Svelte doesn't work like that; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 
-Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code. The Svelte compiler then processes what you write, and all your Svelte code is compiled down to minimal, self-contained JavaScript before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." 
+Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code. The Svelte compiler then processes what you write, and all that code is compiled down to minimal, self-contained JavaScript before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." (The REPL mentioned above offers a direct peek into the compiled JavaScript, if you're interested.)
 
 <Callout>
 All your Svelte code is compiled down to minimal, self-contained JavaScript before it ever gets to the&nbsp;browser.
@@ -87,7 +86,7 @@ All your Svelte code is compiled down to minimal, self-contained JavaScript befo
 
 This approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user loads the page.
 
-React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)--still has performance implications. Thanks to the Svelte compiler, we don't have to worry about the performance implications of either one. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
+React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about either approach; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
 
 #### Authoring components
@@ -107,7 +106,7 @@ It's not a particularly practical example, but it _is_ a common one (in fact, it
 <CounterButtonComparison />
 
 <SideNote>
-I prefer to use arrow functions and omit semicolons, but those are just stylistic preferences, and not required.
+I prefer to use arrow functions and omit semicolons, but those are just stylistic preferences, and not required by any framework.
 </SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
@@ -116,9 +115,7 @@ There are some key differences I'd like to point out between the Svelte version 
 
 - **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone and more readable.
 
-- **Svelte doesn't require you to import or export anything.** (Some features of Svelte do, but its basic component functionality is all available out of the box.)
-
-- **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. Svelte can have whatever HTML, wherever (and in its original state, unlike in JSX).
+- **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup (and maybe more, depending on version). Svelte can have whatever HTML, wherever (and with all its attributes intact, unlike in JSX).
 
 
 #### Other reasons to love Svelte
@@ -127,7 +124,7 @@ While the above examples don't cover them, some other features of Svelte that I 
 
 - **Everything lives together in one file.** Similar to single-file `.vue` components, `.svelte` files keep your component's logic, markup _and_ styles all together. (More on that in the next section.)
 
-- **Scoped CSS by default** (_more on Svelte CSS in the next section_).
+- **Scoped CSS by default** (More on Svelte CSS in the next section, too).
 
 - **[Transitions and animations baked-in](https://svelte.dev/tutorial/transition)**. A robust built-in API means there's no need to reach for an external library or hand-code visual transformations.
 
@@ -208,17 +205,21 @@ A typical `.svelte` component might look like this (though again, you can order 
 </style>
 ```
 
-If you like, you can use SCSS in your components with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations), and by adding `lang="scss"` to the `<style>` tag.
+If you prefer, you can use SCSS in your components with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations), and by adding `lang="scss"` to the `<style>` tag.
 
 And if you prefer, you can easily just use plain ol' `.css` (or `.scss`) files, too. Adding them to your project in SvelteKit is as easy as importing them in your main layout file (more on that in a bit).
 
 
 ##### Conditional styling
 
-Conditional styling is a _breeze_ in Svelte thanks to easy shorthands. For example, here are three ways you could conditionally add a class to an element, based on a boolean prop being passed into the component (the class is automatically added when the prop is `true`, and removed otherwise):
+Conditional styling is a _breeze_ in Svelte thanks to easy shorthands. For example, here are three ways you could conditionally add a class to an element, based on a boolean value (the class is automatically added when the value is `true`, and removed otherwise):
 
 ```svelte
 <!-- Toggle CSS class based on a boolean prop -->
+<script>
+  let enabled = false
+  // Assume this value will change
+</script> 
 
 <!-- This works… -->
 <input class={enabled ? 'enabled' : ''} />
@@ -232,7 +233,18 @@ Conditional styling is a _breeze_ in Svelte thanks to easy shorthands. For examp
 
 Note that the last example only works if the class name and property name are identical (similar to [ES6 object property value shorthand](https://alligator.io/js/object-property-shorthand-es6/)).
 
-Also: you can have as many `class` attributes as you need (dynamic or otherwise) on a single element.
+Also: you can have as many `class` attributes as you need (dynamic or otherwise) on a single element:
+
+```svelte
+<div
+  class="layout"
+  class:logged-in={isLoggedIn}
+  class:dark-mode
+  class:reduce-motion
+>
+  <!-- ...Content here -->
+</div>
+```
 
 
 ##### Scoped vs. global styling
@@ -265,14 +277,14 @@ If you'd like to make a component's CSS global, you can do that on a per-rule ba
 I've found it's a good idea to always use a wrapping parent class selector, even when dealing with scoped styles.
 </Callout>
 
-This leads to some weirdness, since "global" doesn't _really_ mean global; the component has to be loaded once first before those styles are actually available.
+This leads to some weirdness, since "global" only means global _once loaded_; the component has to be mounted once first before those styles are actually available.
 
 Because of this, I've found it's a good idea to always use a wrapping parent class selector, even when dealing with scoped styles. At worst it's redundant, and at best you've saved yourself from unintentional style leakage (either now or if you decide to un-scope the styles in the future).
 
-If you'd like to read more about styling in Svelte, be sure to read [What I Like About Writing Styles with Svelte](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/) on CSS Tricks.
+If you'd like to read more about styling in Svelte, be sure to read [What I Like About Writing Styles with Svelte](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/) on CSS Tricks. 
 
 
-### Ok, so that's Svelte; what's SvelteKit?
+## Ok, so that's Svelte. What's SvelteKit?
 
 Since frontend frameworks run entirely on JavaScript, they aren't ideal for much except building out pieces of interactive UIs on a single page; by nature, they're limited to the capabilities of the browser page they're loaded on. (Because of this, sites built just with a frontend framework are sometimes called "single-page applications," or SPAs.)
 
@@ -289,22 +301,17 @@ You could think of app frameworks as a level _above_ frontend frameworks; if a f
 Most app frameworks include some combination of: pages and routing; data stores; layouts; image optimization; better SEO and full-page control; data fetching; and/or plugins--usually just about everything except a database to help you build a full-fledged site or app.
 
 
-#### Going static
+### Going static
 
-One particularly impressive app framework feature across the board: Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
+Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
 
 <Callout>
 This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML&nbsp;files.
 </Callout>
 
-In SvelteKit's case, this is accomplished through [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of app and hosting you're targeting.
+SvelteKit is even _more_ adaptable than that, thanks to its aptly named [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of output and hosting you're targeting.
 
-Currently, SvelteKit offers adapters to run your project as serverless functions on Netlify, Vercel, and Cloudflare Workers. It also offers two platform-agnostic adapter options:
-
-- Node (to deploy your project as a standard Node app)
-- Static (to deploy as pre-generated HTML files)
-
-There are several [community-created adapters](https://sveltesociety.dev/components/#category-SvelteKit%20Adapters) available as well, or you can even [write your own](https://kit.svelte.dev/docs#writing-an-adapter).
+Currently, SvelteKit offers adapters to run your project as a Node app; as static, pre-generated HTML files; or as serverless functions (there are adapters specifically targeted for Netlify, Vercel, and Cloudflare Workers). There are several [community-created adapters](https://sveltesociety.dev/components/#category-SvelteKit%20Adapters) available as well, or you can even [write your own](https://kit.svelte.dev/docs#writing-an-adapter).
 
 <Callout>
 Thanks to the static adapter, most of this site runs just fine even with JavaScript disabled&nbsp;entirely.
@@ -315,13 +322,13 @@ This site uses SvelteKit's static adapter, which means the pages and components 
 Worth noting, however: by default, after the first page load, SvelteKit's router hydrates and takes over page loading, to make transitions as smooth and fast as possible. You can even designate routes to preload in the background, so that by the time the user clicks, the load is nearly instantaneous.
 
 <SideNote>
-You don't have to go entirely one way or the other; even if you're deploying your project as a Node app or with serverless functions, you can still mark specific pages to be prerendered as static HTML.
+You don't have to go entirely one way or the other; even if you're deploying your project as a Node app or with serverless functions, you can still mark specific pages to be prerendered as static HTML--handy for things like an "about" page that don't need dynamic content.
 </SideNote>
 
 
-#### SvelteKit layouts
+### SvelteKit layouts
 
-SvelteKit allows you to have [layout files](https://kit.svelte.dev/docs#layouts), which are: files that "wrap" the content of any given page in additional markup, such as a header and footer.
+SvelteKit follows the convention of [layout files](https://kit.svelte.dev/docs#layouts), which are: files that "wrap" the content of any given page in additional markup, such as a header and footer.
 
 Your base layout file renders every route in your site or app, so you'll most commonly use it as a base template that includes everything that would appear on every page of the site. The layout includes a `<slot />` for the page's main content to go inside, whatever that page or content might be, and SvelteKit renders the content in that slot.
 
@@ -329,6 +336,7 @@ Here's what this site's main layout file's markup looks like (slightly simplifie
 
 ```svelte
 <div
+  id="app"
   class:reduce-motion={$prefersReducedMotion}
   class:prefers-dark={$prefersDarkMode}
   class:sidebar={pageHasSidebar}
@@ -355,23 +363,25 @@ Here's what this site's main layout file's markup looks like (slightly simplifie
 </div>
 ```
 
-That's pretty much it! This way, every page includes the header and footer, and sometimes the sidebar. Some states and preferences are passed in from the global store so that conditional classes can be applied as needed. And the `<slot />` where the page content goes is wrapped in a custom `<PageTransition>` component that (predictably) just adds the fancy transitions between pages.
+That's pretty much it! This way, every page includes the header and footer, and sometimes the sidebar. Some states and preferences are passed in from the global store (those prefixed with a `$`) so that conditional classes can be applied as needed. And the `<slot />` where the page content goes is wrapped in a custom `<PageTransition>` component that (predictably) just adds the fancy transitions between pages.
 
-It _is_ possible to have nested layouts, or layouts that apply on a per-route basis.
+It _is_ possible to have nested layouts, or layouts that apply on a per-route basis. You can also reset the layout, if you have a deeply nested route that needs its own setup.
 
 And speaking of routing…
 
 
-#### Routing in SvelteKit
+### Routing in SvelteKit
 
 By default, a new SvelteKit project has a `src/routes` directory. Anything inside `src/routes` compiles to a page at that relative root.
 
 For example:
 
-- `routes/index.svelte` ➡️ `/` (homepage)
-- `routes/about.svelte` ➡️ `/about`
-- `routes/blog/index.svelte` ➡️ `/blog`
-- `routes/blog/some-post.md` ➡️ `/blog/some-post`
+| File:                          | Becomes route:    |
+|--------------------------------|-------------------|
+| `src/routes/index.svelte`      | `/` (_homepage_)  |
+| `src/routes/about.svelte`      | `/about`          |
+| `src/routes/blog/index.svelte` | `/blog`           |
+| `src/routes/blog/some-post.md` | `/blog/some-post` |
 
 And so on. (_Markdown files do require a small bit of extra config, but yes, you can have Markdown files as pages, or just import Markdown to inject into pages or components._)
 
@@ -379,7 +389,7 @@ SvelteKit can _also_ have _dynamic_ routes. For example, `/blog/[post].svelte` w
 
 The _really_ magical part, though, is that you can have server-side routes, too!
 
-For example: lots of places in a typical blog need access to posts. You might want to put your most recent posts on your hompage, have some posts in the sidebar, and of course, they should all be listed the `/blog` page itself. You might even want category or tag pages.
+For example: lots of places in a typical blog need access to the list of your posts. You might want to put your most recent posts on your hompage, have some posts in the sidebar, and of course, they should all be listed the `/blog` page itself. You might even want category or tag pages.
 
 That's a lot of fetching posts to redo over and over. So it's a perfect use case for a server-side route!
 
@@ -448,29 +458,27 @@ The ability to read Markdown files isn't included by default in SvelteKit, but i
 
 ## Static SvelteKit vs. Gridsome
 
-Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome aren't really the same type of thing. SvelteKit is an app framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
+Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome aren't exactly the same type of thing. SvelteKit is an app framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
 
 Still, if we're scoping the discussion to _just_ SvelteKit's static adapter, I think it's a fair, if not exact, comparison.
 
 
 ### Real vs. perceived performance
 
-The old homepage of this site (built with [Gridsome](https://gridsome.org)) was 1.9 MB transferred. By contrast, that number is only _200 kB_ on SvelteKit (most of which is fonts)--a reduction of almost ***90%!***
+To compare Gridsome with SvelteKit, we need to do a bit of configuration. Gridsome pre-loads all of its routes in the background, so that they're already loaded up and ready to go instantly the moment the user clicks. So unless we're doing the same thing with SvelteKit, we're comparing apples to oranges.
 
-**That number comes with a big caveat, however.** In fairness, there's a good reason; Gridsome preloads all of your content in the background so that it's ready by the time the user clicks. All that JavaScript is going directly to making navigation faster.
-
-It's tricky to measure the Gridsome site's weight _without_ preloading, but nearly as I can tell SvelteKit still saves me around 100kb. So it still seems like a win, even if it's one that comes with tradeoffs.
-
-SvelteKit _does_ offer `prefetch` and `prefetchRoutes` options to accomplish this same thing, however; preload pages in the background to make loading as fast as possible. So I decided to throw prefetching on _all_ the routes on the site, just to see how it would stack up against the Gridsome version.
+Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the former to prefetch only specified routes, and the latter to just prefetch _all_ routes). So I threw prefetching on _all_ the routes on the site, just to see how it would stack up against the Gridsome version.
 
 **Even when preloading all the site's content, the SvelteKit build is dramatically smaller.**
 
-| Framework     | Full Size | Compressed  |
-|---------------|-----------|-------------|
-| **Gridsome**  | 3.09 MB   | 1.74 MB     |
-| **SvelteKit** | 1.49 MB   | 490 kB      |
+| Framework     | Full size | Size when compressed  |
+|---------------|-----------|-----------------------|
+| **Gridsome**  | 3.09 MB   | 1.74 MB               |
+| **SvelteKit** | 1.49 MB   | 490 kB                |
 
 As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ when compressed. The SvelteKit site _at full size_ is still less than the Gridsome site was when _compressed!_
+
+If you're curious, by the way: _without_ preloading, the SvelteKit site clocks in at a little over 200 kB.
 
 ---
 
