@@ -1,5 +1,5 @@
 ---
-title: 'Faster sites and more fun with SvelteKit'
+title: 'Faster Sites and More Fun with SvelteKit'
 date: '2021-10-01'
 updated: '2021-10-02'
 categories:
@@ -347,7 +347,7 @@ Here's what this site's main layout file's markup looks like (slightly simplifie
 
   <div class="layout"> 
     <main id="#main" tabindex="-1">
-      <PageHead />
+      <PageHeading />
 
       <PageTransition>
         <slot />
@@ -609,6 +609,15 @@ And let's not forget: that's the scale at which you're on _even ground_ with Rea
 _Plus_, this whole discussion focuses on how things are in this moment, not on future upside. Will React get smaller and faster in the future? Probably; it's supported by a large and talented team. But it's also benefitted from nearly a decade of optimization already; there may not be a lot left to squeeze out of it at this point.
 
 On the other hand, Svelte is comparably young. If I'm betting on which framework will improve more in the future _relative to its current position_, I'm backing Svelte, no question.
+
+
+### Svelte doesn't support Internet Explorer by default
+
+Svelte requires polyfills to run properly in Internet Explorer (and even then, support for any version of IE below 11 is not guaranteed).
+
+If you need to support IE 11, you can read the [Svelte/IE11 GitHub issue](https://github.com/Shopify/payment-service/issues/6667), which lists some possible workarounds and polyfills. Or, this may be one case where a choice of another framework is necessitated.
+
+However, if you're starting a new project today: note that Internet Explorer is not long for this world. [Google search recently dropped support for IE 11](https://www.searchenginejournal.com/google-search-ends-support-for-internet-explorer-11/421726/), citing its tiny and shrinking market share (only around 1% of all browsers). WordPress, which powers about 40% of the web at this point, dropped support for IE 11 in [WordPress version 5.8 earlier this year](https://wordpress.org/news/2021/05/dropping-support-for-internet-explorer-11/). And even [Microsoft itself will be putting the final nail in IE 11's coffin in July 2022](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
 
 
 ### Svelte's ecosystem is in a tricky place right now

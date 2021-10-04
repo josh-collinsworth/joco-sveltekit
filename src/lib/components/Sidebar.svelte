@@ -19,7 +19,7 @@
       posts = resJSON.posts
         .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
         .map(post => ({ slug: post.slug, title: post.title }))
-        .slice(0, 3)
+        .slice(0, 5)
       
       allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
     }
@@ -52,18 +52,6 @@
           <span>{post.title}</span>
         </a>
       </li>
-    {/each}
-  </ul>
-
-  <h2>External Writing</h2>
-  <ul class="sidebar__posts-list">
-    {#each EXTERNAL_POSTS as post}
-      <li>
-        <a rel="external" href="{post.slug}">
-          <span>{post.title}</span>
-          <i>({post.subtitle})</i>
-        </a>
-      </li>    
     {/each}
   </ul>
 

@@ -168,6 +168,10 @@
         ::marker {
           content: '- ';
         }
+
+        a {
+          text-decoration-color: var(--lightGray);
+        }
       }
     }
   }

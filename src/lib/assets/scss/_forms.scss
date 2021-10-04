@@ -77,6 +77,7 @@ button {
 	cursor: pointer;
 	height: var(--button-size);
 	width: var(--button-size);
+	flex: 0 0 var(--button-size);
 	overflow: hidden;
 	margin-left: 0.75rem;
 	padding: 0;

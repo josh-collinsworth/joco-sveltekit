@@ -14,6 +14,8 @@
       title = title.slice(1)
     }
 
+    title = title.replace(/-/g, ' ')
+
     isWorking = false
 
     setTimeout(() => {

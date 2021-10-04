@@ -15,6 +15,7 @@
   svg {
     width: 0.5em;
     height: 0.5em;
+    margin-left: 5px;
   }
 
   path {

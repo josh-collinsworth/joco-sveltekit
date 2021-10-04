@@ -15,27 +15,10 @@
 	import PostList from '$lib/components/posts/PostList.svelte'
 	import { cubicInOut } from 'svelte/easing';
 	import { slide } from 'svelte/transition';
-	import { EXTERNAL_POSTS } from '$lib/data/external_posts'
 
-	let postTypes: string = 'all'
+	let postTypes: string = 'internal'
 	
 	export let posts: Post[] = []
-
-	$: combinedPosts = [
-		{
-			type: 'external',
-			heading: 'External Posts',
-			description: 'Things I got paid to write for other sites',
-			posts: EXTERNAL_POSTS
-		}, {
-			type: 'internal',
-			heading: 'Internal Posts',
-			description: 'Things I wrote just because I wanted to',
-			posts
-		}
-	]
-
-	$: filteredPosts = combinedPosts.filter(post => postTypes === 'all' || post.type === postTypes)
 </script>
 
 
@@ -45,41 +28,10 @@
 </svelte:head>
 
 <template>
-	<fieldset>
-		<legend>Show posts:</legend>
-
-		<div class="field-wrap">
-			<input id="posts-all" type=radio bind:group={postTypes} name="post-types" value="all" />
-			<label for="posts-all">
-				All
-			</label>
-		</div>	
+	<div class="post-group">
 		
-		<div class="field-wrap">
-			<input id="posts-internal" type=radio bind:group={postTypes} name="post-types" value="internal" />
-			<label for="posts-internal">
-				My blog <em>(this site only)</em>
-			</label>
-		</div>
-		
-		<div class="field-wrap">
-			<input id="posts-external" type=radio bind:group={postTypes} name="post-types" value="external" />
-			<label for="posts-external">
-				External <em>(posts for other sites only)</em>
-			</label>
-		</div>
-	</fieldset>
-
-	{#each filteredPosts as group (group.type)}
-		<div class="post-group" transition:slide="{{ duration: 250, easing: cubicInOut }}">
-			<div class="heading-wrapper">
-				<h2>{group.heading}</h2>
-				<p>{group.description}</p>
-			</div>
-			
-			<PostList posts={group.posts} external={group.type === 'external'} />
-		</div>
-	{/each}
+		<PostList posts={posts} />
+	</div>
 </template>
 
 

@@ -59,7 +59,7 @@
 				<div>
 					<label for="email">
 						Your email address
-						<small><i>(used only for responses)</i></small>
+						<small><i>(used only for responses; no spam)</i></small>
 					</label>
 					<input type="email" name="email" bind:value={formData.email} />
 				</div>

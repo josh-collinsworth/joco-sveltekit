@@ -9,7 +9,8 @@
 <ul class:open={$isMenuOpen}>
   <!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
   <NavLink to="/" text="About me"{key} mobileOnly={true} />
-  <NavLink to="/blog" text="Writing" {key} />
+  <NavLink to="/blog" text="Blog" {key} />
+  <NavLink to="/writing-and-speaking" text="Writing & Speaking" {key} />
   <NavLink to="/projects" text="Projects"{key} />
   <NavLink to="/contact"text="Contact" {key} />
   <NavLink to="/uses" text="Uses"{key} />

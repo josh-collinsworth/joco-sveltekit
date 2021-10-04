@@ -48,7 +48,12 @@
       <p class="excerpt">
         {post.excerpt}
         <a on:click={startLoading} href="{computedURL}" sveltekit:prefetch>
-          Read&nbsp;more…
+          {#if external}
+            Read more on {post.subtitle}
+            <ExternalLink />
+          {:else}
+            Read&nbsp;more…
+          {/if}
         </a>
       </p>
       
@@ -105,9 +110,11 @@
       }
     }
     
-    .subtitle {
+    .subtitle,
+    .excerpt a {
       font-weight: bold;
       text-transform: uppercase;
+      font-style: normal;
       font-size: 0.65rem;
       margin: 0.5rem 0 0;
     }
@@ -120,6 +127,11 @@
   
       &:last-child {
         margin-bottom: 0;
+      }
+
+      a {
+        display: block;
+        margin-top: 1rem;
       }
     }
   }

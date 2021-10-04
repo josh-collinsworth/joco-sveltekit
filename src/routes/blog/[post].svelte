@@ -22,6 +22,7 @@
   import TableOfContents from '$lib/components/posts/TableOfContents.svelte'
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
+  import appendScriptToHead from '$lib/assets/js/utils/appendScriptToHead'
   import { onMount } from 'svelte'
   
   import '$lib/assets/scss/code.scss'
@@ -58,18 +59,8 @@
      */
     const allTweets = document.getElementsByClassName('twitter-tweet')
 
-    console.log(allTweets)
-
     if (allTweets.length) {
-      console.log('found tweets')
-      const head = document.getElementsByTagName('head')[0]
-      const script = document.createElement('script')
-      script.src = 'https://platform.twitter.com/widgets.js'
-      script.type = 'text/javascript'
-      script.async = true
-      script.setAttribute('charset', 'utf-8')
-
-      head.appendChild(script)
+      appendScriptToHead('https://platform.twitter.com/widgets.js')
     }
   }
 

@@ -17,7 +17,7 @@
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
-	import PageHead from '$lib/components/PageHead.svelte'
+	import PageHeading from '$lib/components/PageHeading.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/data/constants'
@@ -79,6 +79,8 @@
 		handleLoadingUserPreferences()
 		prefetchRoutes()
 
+		console.log(key)
+
 		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
 	})
 </script>
@@ -110,12 +112,12 @@
 		<main id="#main" tabindex="-1">
 			<PageTransition refresh={isTopLevelPage}>
 				{#if isTopLevelPage}
-					<PageHead title={key} />
+					<PageHeading title={key} />
 				{/if}
 			</PageTransition>	
 
 			<PageTransition refresh={key} on:loaded={() => setLoading(false) }>
-				<slot />
+				<slot/>
 			</PageTransition>
 		</main>
 		
