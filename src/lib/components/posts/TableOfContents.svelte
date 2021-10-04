@@ -1,4 +1,11 @@
 <script lang="ts">
+  /**
+   * This whole approach is kind of a hack, but it's one that works better than any other
+   * approach I could find. I even used the remark/rehype plugins, but they caused a reload
+   * when a link was clicked. So although I would much prefer to have this HTML pre-generated,
+   * this works as a progressive enhancement, so I'm sticking with it for now at least.
+   */
+
   import { onMount } from 'svelte'
 
   const scrollToHeading = (e: Event) => {
@@ -97,7 +104,7 @@
       background: var(--paper);
       position: relative;
       padding: 0;
-      top: -1.8em;
+      top: calc(-1rem - 0.5em);
       left: 0;
       text-transform: uppercase;
       color: var(--lightGray);
@@ -113,7 +120,7 @@
         position: relative;
         z-index: 2;
         left: -1px;
-        bottom: .075em;
+        bottom: .05em;
       }
 
       .closing-bracket {

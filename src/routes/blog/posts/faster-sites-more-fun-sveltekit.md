@@ -478,7 +478,7 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 
 As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ when compressed. The SvelteKit site _at full size_ is still less than the Gridsome site was when _compressed!_
 
-If you're curious, by the way: _without_ preloading, the SvelteKit site clocks in at a little over 200 kB.
+If you're curious, by the way: _without_ preloading or analytics, the SvelteKit homepage clocks in at somewhere around 141 kB transferred, and 240 kB unpacked (nearly half of which is just for the webfonts). You can load it without JavaScript to shave off about 40% of those numbers (but it naturally won't seem as fast if you do, and will be missing some of the niceness).
 
 ---
 
@@ -486,7 +486,7 @@ Builds and dev start times with SvelteKit are also much faster: the production b
 
 1. Gridsome was doing a lot of image work at build time that SvelteKit isn't by default; and
 
-2. Gridsome uses Webpack under the hood, where SvelteKit utilizes [Vite](https://vitejs.dev/) (pronounced "veet").
+2. Gridsome uses Webpack under the hood, where SvelteKit utilizes the much faster and more modern [Vite](https://vitejs.dev/) (pronounced "veet").
 
 One particularly nice thing about Gridsome was its built-in `<g-image>` component. Just by using it in place of the standard HTML `<img>` tag, Gridsome would compress your images, generate a resized, responsive source set, use lazy loading, ***and*** create blurred placeholder images.
 
@@ -509,7 +509,7 @@ I was a very early adopter of Gridsome, and at the time (in 2019), it still seem
 
 Gridsome didn't ever really feel _complete_ to me, and that was fine when updates were still rolling out. I knew what I was in for going with a pre-1.0 technology, but the stagnation was hard to ignore. It was really good at what it did well--generating a speedy, static site with Vue and GraphQL--but the more you wanted to tweak things or leave the happy path, the more you ran into its rough edges.
 
-More than once, I spent a day or two fighting with NPM, unable to even _run_ Gridsome on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.) The last two times I've set up new machines, I've had to spend significant time trying to get Gridsome running on them. As of right now, I can't even get it to deploy anymore.
+More than once, I spent a day or two fighting with NPM, unable to even _run_ Gridsome on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.) The last two times I've set up new machines, I've had to spend significant time trying to get Gridsome running on them. I had to explicitly set Netlify to an older version of Node to even get it to deploy.
 
 But moreover: SvelteKit sparks joy in a way that Gridsome doesn't anymore. This site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do anything I want for whatever reason.
 
@@ -526,7 +526,7 @@ Finally, [TypeScript](https://www.typescriptlang.org/) has first-class support i
 
 #### What other options were considered?
 
-To some degree, I considered both [Astro](https://astro.build/) and [Eleventy](https://www.11ty.dev/) for this overhaul, and you could make reasonable arguments that either one would've been better suited for the task. If my primary goal had been to build the fastest statically generated site possible with absolutely minimal JavaScript, I no doubt would've gravitated towards one of these tools.
+To some degree, I considered both [Astro](https://astro.build/) and [Eleventy](https://www.11ty.dev/) for this overhaul, and you could make reasonable arguments that either one would've been better suited for the task. If my primary goal had been to build the fastest statically generated site possible with absolutely minimal JavaScript client-side, I no doubt would've gravitated towards one of these tools.
 
 In the end, however, Eleventy is still too unopinionated for my personal tastes, and Astro is still a bit too new. (Yes, SvelteKit is new, too, but it seems to have much more of a foundation beneath it.)
 
@@ -543,19 +543,19 @@ I originally thought I'd show side-by-side comparisons to demonstrate Vue vs. Sv
 
 The site's changed quite a bit, even if it doesn't necessarily look like it.
 
-The one non-trivial component that's mostly the same between the two versions is the font tester (seen on the [`/uses` page](/uses)). But it's actually about the same size, both in terms of line count and disk size. The Svelte version actually is a tiny bit bigger, but by a thoroughly negligible amount (a fraction of a kB), and almost certainly just because of the addition of TypeScript.
+The one non-trivial component that's mostly the same between the two versions is the font tester (seen on the [`/uses` page](/uses)). But it's actually about the same size, both in terms of line count and disk size. The Svelte version is negligibly larger (only by a fraction of a kB), and almost certainly just because of the addition of TypeScript.
 
 <Callout>
 “Is it better?” is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I <em>like</em>&nbsp;it&nbsp;better.
 </Callout>
 
-Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer work completely differently for better performance now. TypeScript is everywhere; layouts have changed; new pieces have been added and old removed. MDSvex came with PrismJS built in, which let me delete both the a full component and an external library. [Storybook](https://storybook.js.org/) and my tests are both removed for now. Lots was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
+Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer has been completely refactored for better performance. TypeScript is everywhere; layouts have changed; new pieces have been added and old removed. MDSvex came with PrismJS built in, which let me delete both the a full component and an external library. [Storybook](https://storybook.js.org/) and my tests are both removed for now. Lots was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
 
 "Is it better?" is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I _like_ it better (even the parts that are more verbose), and I think that's the most important part. I even enjoyed the relatively rote process of moving Vue components over to Svelte.
 
-By the way: I kept an [archival copy of the old site](https://joco-gridsome-archive.netlify.app/) live for myself to look back on, just in case you'd like to compare.
+By the way: I kept an [archival copy of the old site](https://joco-gridsome-archive.netlify.app/) live for myself to look back on, just in case you'd like to compare the two for yourself.
 
-And while we're on the topic: here's the link to [my site's new SvelteKit repo](https://github.com/josh-collinsworth/joco-sveltekit), if you'd like to get a firsthand look.
+And while we're on the topic: here's the link to [my site's new SvelteKit repo](https://github.com/josh-collinsworth/joco-sveltekit), if you'd like to take a firsthand look behind the scenes. A lot still needs to be refactored and cleaned up (I keep a list), but you're welcome to poke around, or even clone the repo as a starter for your own blog if you like.
 
 
 ## What to know about SvelteKit
