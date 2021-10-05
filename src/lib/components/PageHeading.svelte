@@ -2,7 +2,6 @@
   import { prefersReducedMotion } from '$lib/data/store'
 
   export let title: string
-  export let subtitle: string = ''
 
   let computedTitle: string = ''
   let isWorking: boolean = false
@@ -50,9 +49,6 @@
       </style>
     </noscript>
   </div>
-  <p class="subtitle">
-    {subtitle}
-  </p>
 </div>
 
 
@@ -128,13 +124,6 @@
         white-space: nowrap;
         line-height: 1.2;
       }
-    }
-
-    p.subtitle {
-      font-size: 0.8em;
-      font-style: italic;
-      line-height: 1.2;
-      flex: 1 1 auto;
     }
   }
 </style>
