@@ -22,8 +22,7 @@
   import TableOfContents from '$lib/components/posts/TableOfContents.svelte'
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
-  import appendScriptToHead from '$lib/assets/js/utils/appendScriptToHead'
-  import readableDate from '$lib/assets/js/utils/readableDate'
+  import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount } from 'svelte'
   
   import '$lib/assets/scss/code.scss'

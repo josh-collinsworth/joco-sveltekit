@@ -31,15 +31,6 @@
   <title>Blog | Category: {category}</title>
 </svelte:head>
 
-<template>
-  <PageHeading title="Category: { category }" />
+<PageHeading title="Category: { category }" />
 
-  <PostList {posts} />  
-</template>
-
-
-<style lang="scss">
-  h2 {
-    margin: 0;
-  }
-</style>
+<PostList {posts} />  

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import appendScriptToHead from '$lib/assets/js/utils/appendScriptToHead'
+  import { appendScriptToHead } from '$lib/assets/js/utils'
   import { onMount } from 'svelte'
 
   onMount(() => {

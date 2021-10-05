@@ -1,5 +1,5 @@
 import type APIResponse from '$lib/assets/js/interfaces/api-response'
-import fetchPosts from '$lib/assets/js/utils/fetchPosts'
+import { fetchPosts } from '$lib/assets/js/utils'
 
 export const get = async (): Promise<APIResponse> => {
 	try {

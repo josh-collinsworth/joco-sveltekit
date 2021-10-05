@@ -207,9 +207,11 @@ A typical `.svelte` component might look like this (though again, you can order 
 </style>
 ```
 
-If you prefer, you can use SCSS in your components with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations), and by adding `lang="scss"` to the `<style>` tag.
+If you prefer, you can use Sass in your components with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations), and by adding `lang="scss"` to the `<style>` tag.
 
 And if you prefer, you can easily just use plain ol' `.css` (or `.scss`) files, too. Adding them to your project in SvelteKit is as easy as importing them in your main layout file (more on that in a bit).
+
+Svelte's preprocessor offers an extremely nice Sass feature: you can [specify content to prepend when loading your component's Sass](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content). This way, if you have all of your Sass variables in an external `_vars.scss` file like me, you can just have the processer auto-import that into every component. This saves you the trouble (_and_ the annoying file system traversal) of manually `@import`ing the SCSS file every time you want to use a variable in a component.
 
 
 ##### Conditional styling
