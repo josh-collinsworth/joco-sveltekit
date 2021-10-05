@@ -51,6 +51,7 @@
 			z-index: 2;
 			text-align: center;
 			width: max-content;
+			font-family: var(--accent-font);
 
 			@media (min-width: $xs) {
 				left: var(--note-unit);

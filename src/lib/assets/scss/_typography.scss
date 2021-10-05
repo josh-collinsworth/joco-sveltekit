@@ -102,7 +102,7 @@ h3,
 h4,
 .h4 {
 	font-family: var(--accent-font);
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 	margin: 4rem 0 0.5rem;
 	padding: 0;
@@ -111,7 +111,7 @@ h4,
 h5,
 .h5 {
 	@extend .h4;
-	font-size: 1.1rem;
+	font-size: 1.25rem;
 	margin-bottom: 1rem;
 }
 

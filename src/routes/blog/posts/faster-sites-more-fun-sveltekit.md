@@ -16,14 +16,10 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
   import CounterButtonComparison from '$lib/components/demos/CounterButtonComparison.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import HighlightNext from '$lib/components/HighlightNext.svelte'
 </script>
 
-<HighlightNext />
 
 Let's be honest: lots of things in web development are harder than they should be. Some days, it can seem as though everything in the frontend world is needlessly over-engineered and convoluted.
-
-<HighlightNext />
 
 That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh air.
 

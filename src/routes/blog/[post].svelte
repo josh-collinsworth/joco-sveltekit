@@ -156,7 +156,7 @@
       font-family: var(--heading-font);
       float: left;
       line-height: 0.7em;
-      margin: 0.5rem 0.4rem 0 0;
+      margin: 0.7rem 0.4rem 0 0;
       color: inherit;
     }
     

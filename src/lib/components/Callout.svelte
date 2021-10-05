@@ -7,8 +7,8 @@
 
 <style lang="scss" global>
   .callout {
-    margin: 2.5rem 1rem 3rem;
-    font-size: 1.2rem;
+    margin: 2.5rem 1rem 3.5rem 0rem;
+    font-size: 1.4rem;
     line-height: 1.5em;
     position: relative;
     background: var(--paper);
@@ -20,6 +20,7 @@
 
     em, i {
       font-weight: bold;
+      font-style: normal;
     }
     
     .callout-wrapper {
@@ -30,39 +31,9 @@
         height: .25rem;
         width: 100%;
         margin-left: -100%;
-        background: var(--yellow);
-        bottom: 0;
+        background: linear-gradient(90deg, #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100);        bottom: 0;
         position: absolute;
       }
-    }
-
-    @media(min-width: $xs) {
-      display: block;
-      float: right;
-      width: 55%;
-      margin: 3rem -3rem 3rem 2rem;
-    }
-    
-    @media(min-width: $sm) {
-      width: 20em;
-      margin-right: calc(-4rem - 12vw);
-    }
-    
-    @media(min-width: $md) {
-      margin-right: calc(2rem - 24vw);
-      margin-left: 3rem;
-    }
-    
-    @media(min-width: $xl) {
-      margin-right: -12rem;
-    }
-    
-    @media(min-width: $xxl) {
-      margin-right: -8rem;
-    }
-
-    @media(min-width: $xxxl) {
-      margin-right: -12rem;
     }
   }
 </style>
