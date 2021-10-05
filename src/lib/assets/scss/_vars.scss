@@ -32,11 +32,11 @@ $xxxl: 2200px;
 	'Helvetica Neue', Arial, sans-serif;
 
 	--body-font-weight: normal;
-	--body-line-height: 1.6em;
+	--body-line-height: 1.7;
 	--body-font-size: 1.125rem;
 
 	@media (min-width: $xs) {
-		--body-font-size: 1.25rem;
+		// --body-font-size: 1.25rem;
 	}
 
 	--heading-font: 'Gazpacho', Georgia, serif;

@@ -96,6 +96,7 @@
     width: 100%;
     position: relative;
     z-index: 2;
+    font-family: var(--accent-font);
 
     h2 {
       font-weight: bold;
@@ -155,7 +156,7 @@
       
       ul {
         list-style-type: lower-alpha;
-        margin: 0.5em 0 0;
+        margin: 0.25em 0 0;
 
         ul {
           list-style-type: decimal;
@@ -164,14 +165,14 @@
       
       li {
         list-style-type: inherit;
-        margin: 0 0 0.5em;
+        margin: 0 0 0.25em;
 
         ::marker {
           content: '- ';
         }
 
         a {
-          text-decoration-color: var(--lightGray);
+          text-decoration: none;
         }
       }
     }

@@ -1,3 +1,5 @@
+<script>null</script>
+
 <ul class="tag-list no-bullets">
   <slot />
 </ul>

@@ -34,8 +34,15 @@ li {
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+	color: currentColor;
+	text-decoration: underline;
+	text-decoration-color: var(--yellow);
+	text-decoration-thickness: from-font;
+	transition: color .15s;
+	
+	&:hover {
+		color: var(--link-color);
+	}
 
 	& + h1,
 	& + h2 {
@@ -43,23 +50,6 @@ a {
 	}
 }
 
-p,
-ul,
-ol,
-.side-note,
-.callout,
-.highlight {
-	a {
-		color: currentColor;
-		text-decoration: underline;
-		text-decoration-color: var(--yellow);
-		transition: color .15s;
-
-		&:hover {
-			color: var(--link-color);
-		}
-	}
-}
 
 h1,
 h2,
@@ -71,7 +61,7 @@ h6 {
 	font-weight: var(--heading-font-weight);
 	font-style: var(--heading-font-style);
 	color: var(--header-color);
-	line-height: 1.1;
+	line-height: 1.2;
 	position: relative;
 	margin: 4rem 0 1rem;
 	padding: 0;

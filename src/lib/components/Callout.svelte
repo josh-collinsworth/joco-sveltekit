@@ -14,8 +14,8 @@
     background: var(--paper);
     overflow: hidden;
     padding: 0 0 0.75rem 0;
-    font-family: var(--body-font);
-    font-style: italic;
+    font-family: var(--accent-font);
+    font-style: normal;
     font-weight: normal;
 
     em, i {

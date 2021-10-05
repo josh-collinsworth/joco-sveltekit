@@ -8,11 +8,7 @@
     line-height: 1.5em;
     margin: 2rem 0;
     font-weight: normal;
-    font-style: italic;
-
-    @media(min-width: $xs) {
-      font-weight: bold;
-      font-style: normal;
-    }
+    font-style: normal;
+    font-family: var(--accent-font);
   }
 </style>

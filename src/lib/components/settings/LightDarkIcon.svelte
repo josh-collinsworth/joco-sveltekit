@@ -1,3 +1,4 @@
+<script>null</script>
 
 <svg width="100%" height="100%" viewBox="0 0 210 419" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g id="Artboard3" transform="matrix(1,0,0,1,374.4,-53.7328)">
