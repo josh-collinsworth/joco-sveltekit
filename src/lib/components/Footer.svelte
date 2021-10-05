@@ -12,7 +12,8 @@
       <nav>
         <ul class="footer__links">
           <li><a href="/">About me</a></li>
-          <li><a href="/blog">Writing</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/writing-and-speaking">Writing & Speaking</a></li>
           <li><a href="/projects">Projects</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>

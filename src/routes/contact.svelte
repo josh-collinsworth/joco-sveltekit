@@ -8,12 +8,13 @@
 			.join('&')
 	}
 
-	const handleSubmit = (e): void => {
+	const handleSubmit = (e: Event): void => {
+		const target = e.target as HTMLFormElement
 		fetch('/', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 				body: encode({
-					'form-name': e.target.getAttribute('name'),
+					'form-name': target.getAttribute('name'),
 					...formData,
 				}),
 			})

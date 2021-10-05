@@ -118,7 +118,7 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
-        background: linear-gradient(90deg, var(--lightGray) 60%, var(--yellow));
+        background: linear-gradient(90deg, #a7a8aa, #92abb2, #5eca78, #b6ec1f, #ffd100);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;

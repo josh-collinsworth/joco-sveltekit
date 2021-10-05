@@ -3,7 +3,7 @@
 	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
 	import { isMenuOpen } from '$lib/data/store'
 
-	export let key: string
+	export let path: string
 </script>
 
 
@@ -18,7 +18,7 @@
 			role="navigation"
 			aria-hidden={!$isMenuOpen}
 		>
-      <NavLinks {key} />
+      <NavLinks {path} />
 		</nav>
 	</div>
 </template>

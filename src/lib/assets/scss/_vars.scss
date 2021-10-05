@@ -8,10 +8,17 @@ $xxl: 1960px;
 $xxxl: 2200px;
 
 :root {
+	--lightBlueHS: 199, 33%;
+
 	--yellowHSL: 49, 100%, 50%;
 	--lightGrayHSL: 220, 2%, 66%;
 	--lightBlueHSL: 199, 33%, 61%;
 	--darkBlueHSL: 201, 42%, 35%;
+	--orangeHSL: 22, 100%, 54%;
+	--redHSL: 349, 100%, 45%;
+	--midGrayHSL: 204, 2%, 54%;
+	--darkGrayHSL: 214, 4%, 34%;
+	--darkerGrayHSL: 349, 25%, 16%;
 	--whiteHSL: 0, 0%, 100%;
 	--blackHSL: 210, 33%, 9%;
 
@@ -37,12 +44,12 @@ $xxxl: 2200px;
 	--heading-font-style: normal;
 
 	--yellow: hsl(var(--yellowHSL));
-	--orange: hsl(22, 100%, 54%);
-	--red: hsl(349, 100%, 45%);
+	--orange: hsl(var(--orangeHSL));
+	--red: hsl(var(--redHSL));
 	--lightGray: 	hsl(var(--lightGrayHSL));
-	--midGray: hsl(204, 2%, 54%);
-	--darkGray: hsl(214, 4%, 34%);
-	--darkerGray: hsl(349, 25%, 16%);
+	--midGray: hsl(var(--midGrayHSL));
+	--darkGray: hsl(var(--darkGrayHSL));
+	--darkerGray: hsl(var(--darkerGrayHSL));
 	--lightBlue: hsl(var(--lightBlueHSL));
 	--darkBlue: hsl(var(--darkBlueHSL));
 

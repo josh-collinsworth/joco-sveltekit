@@ -84,6 +84,7 @@
 <style lang="scss" global>
   .toc-wrap {
     background: linear-gradient(to bottom right, var(--lightGray), var(--yellow));
+    background: linear-gradient(to bottom right, #a7a8aa, #92abb2, #5eca78, #b6ec1f, #ffd100);
     padding: 2px;
     margin: 3rem 0;
   }

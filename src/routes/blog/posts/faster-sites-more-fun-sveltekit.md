@@ -36,11 +36,11 @@ So how is Svelte _different_? Glad you asked…
 
 Svelte was created by [Rich Harris](https://twitter.com/rich_harris), a developer and graphics editor for the [New York Times](https://www.nytimes.com/).
 
-The news world moves fast, so the interactive UIs and visualizations Harris was creating for the Times needed to be built as quickly as possible. But since it's critical for the news to be accessible to _everyone_, those bits of interactivity _also_ had to be as small and performant as possible, on any device or network.
+The news world moves fast, so the interactive UIs and visualizations Harris was creating for the Times needed to be built as quickly as possible. But since it's critical for the news to be accessible to _everyone_, those bits of interactivity _also_ had to be as small and performant as possible.
 
-Harris needed a solution that was extremely quick and easy to build with, yet that would be fast and smooth for any reader. In many cases, the bloated JavaScript bundles that are the byproducts of many other frameworks disqualified them from consideration. So Harris set out to build his own solution, and that's how Svelte was born.
+Harris needed a solution that was extremely quick and easy to build with, yet that would be fast and smooth for any reader on any device or network, no matter how limited. In many cases, the bloated JavaScript bundles that are the byproducts of many other frameworks disqualified them from consideration. So Harris set out to build his own solution, and that's how Svelte was born.
 
-While relatively new and small compared to the other frameworks on the list, Svelte is uniquely battle-tested: the [New York Times Covid map](https://www.nytimes.com/interactive/2021/us/covid-cases.html) is a Svelte app.
+While relatively new and small compared to the other frameworks on the list, Svelte is uniquely battle-tested: the [New York Times Covid map](https://www.nytimes.com/interactive/2021/us/covid-cases.html) is a Svelte app. (Harris's employer is far from the only large company employing the tech, however; IBM, Square, Philips, 1Password, and Spotify number among its growing list of adopters.)
 
 ---
 
@@ -183,9 +183,11 @@ One of my favorite parts about Svelte is how fun and easy it makes styling…
 
 #### CSS in Svelte
 
-Svelte's creator, Rich Harris, has been quoted as saying:
-
-> A UI framework that doesn’t have a built-in way to add styles to your components is unfinished.
+<blockquote>
+<p>A UI framework that doesn’t have a built-in way to add styles to your components is unfinished.</p>
+<br/>
+<cite>—Rich Harris</cite>
+</blockquote>
 
 I'm inclined to agree.
 

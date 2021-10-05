@@ -6,7 +6,7 @@
 	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
 	import { isLoading, isMenuOpen, isScrollingDown } from '$lib/data/store'
 
-	export let key: string
+	export let path: string
 
 	const toggleMenu = (): void => {
 		isMenuOpen.set(!$isMenuOpen)
@@ -44,10 +44,10 @@
 		<div class="icon-container" class:sticky={$isMenuOpen} class:ghosty={$isScrollingDown && !$isMenuOpen}>
 			<ReduceMotionToggle />
 			<DarkModeToggle />
-			<NavMenus {key} />
+			<NavMenus {path} />
 		</div>
   </header>
-  <Grid refresh={key} />
+  <Grid refresh={path} />
 
 
 	<noscript>

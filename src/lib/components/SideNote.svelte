@@ -14,19 +14,20 @@
 		padding: var(--note-unit);
 		padding-left: calc(var(--note-unit) * 2);
 		position: relative;
-		margin: 2rem 0;
+		margin: 2rem 0 2rem calc(var(--note-unit) * -2);
+		width: calc(100% + (var(--note-unit) * 3));
 		font-size: .9rem;
 		font-style: italic;
 		background: linear-gradient(
 			to right,
-			hsla(var(--lightBlueHSL), 0.2) 1rem,
-			hsla(var(--lightBlueHSL), 0.04)
+			hsl(var(--lightBlueHS), 90%),
+			hsl(var(--lightBlueHS), 95%)
 		);
 		line-height: var(--body-line-height);
 		min-height: 4.5rem;
 		
 		.prefers-dark & {
-			background: hsla(var(--lightBlueHSL), 0.1);
+			background: hsl(var(--lightBlueHS), 18%);
 		}
 
 		em, i {

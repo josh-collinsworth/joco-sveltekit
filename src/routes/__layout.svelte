@@ -1,11 +1,11 @@
 <script context="module" lang="ts">
 	export const load = async({ page }) => {
 
-		const key: string = page.path
+		const path: string = page.path
 
 		return {
 			props: {
-				key,
+				path,
 			}
 		}
 	}
@@ -27,15 +27,15 @@
 	import { prefetchRoutes } from '$app/navigation';
 	import throttle from 'lodash/throttle.js'
 	
-	export let key: string
+	export let path: string
 	export let pageHasSidebar: boolean
 
 	const blogPageCheck = new RegExp(/^\/blog/)
 	let isFullwidthPage: boolean = false
 	let lastScrollPosition: number = 0
 
-	$: pageHasSidebar = blogPageCheck.test(key)
-	$: isTopLevelPage = key.split('/').length < 3
+	$: pageHasSidebar = blogPageCheck.test(path)
+	$: isTopLevelPage = path.split('/').length < 3
 
 	const handleLoadingUserPreferences = () => {
 		const userPrefersDark = 
@@ -56,7 +56,7 @@
 		// Janky, but needed to prevent jumps in width while transitioning between pages of different widths.
 		// Tried finding a better way to do this but failed; having the transition wrapper as an element in the grid makes things very complicated.
 		setTimeout(() => {
-			isFullwidthPage = FULLWIDTH_PAGES.includes(key)
+			isFullwidthPage = FULLWIDTH_PAGES.includes(path)
 		}, TIMING_DURATION)
 	}
 
@@ -77,11 +77,16 @@
 
 	onMount(() => {
 		handleLoadingUserPreferences()
-		prefetchRoutes()
 
-		console.log(key)
+		const prefersReducedData = window.matchMedia(
+			`not all and (prefers-reduced-data), (prefers-reduced-data)`
+		).matches;
 
-		isFullwidthPage = FULLWIDTH_PAGES.includes(key)
+		if (!prefersReducedData) {
+			prefetchRoutes()
+		}
+
+		isFullwidthPage = FULLWIDTH_PAGES.includes(path)
 	})
 </script>
 
@@ -106,17 +111,17 @@
 >
 	<Loader loading={$isLoading}/>
 
-	<Header {key} /> 
+	<Header {path} /> 
 
 	<div class="layout"> 
 		<main id="#main" tabindex="-1">
 			<PageTransition refresh={isTopLevelPage}>
 				{#if isTopLevelPage}
-					<PageHeading title={key} />
+					<PageHeading title={path} />
 				{/if}
 			</PageTransition>	
 
-			<PageTransition refresh={key} on:loaded={() => setLoading(false) }>
+			<PageTransition refresh={path} on:loaded={() => setLoading(false) }>
 				<slot/>
 			</PageTransition>
 		</main>

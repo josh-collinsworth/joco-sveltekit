@@ -1,11 +1,15 @@
 <script lang="ts">
   import { isLoading, isMenuOpen } from '$lib/data/store'
+  import { createEventDispatcher } from 'svelte'
 
   export let text: string
   export let to: string
-  export let key: string
+  export let path: string
   export let mobileOnly: string|boolean = false
-
+  
+  const dispatch = createEventDispatcher()
+  let navLink
+  
   const handleClick = (): void => {
     isMenuOpen.set(false)
 
@@ -14,13 +18,26 @@
     }
   }
 
+  const startHoover = (e): void => {
+    dispatch('hoover', navLink)
+  }
+  
+  const stopHoover = (e): void => {
+    dispatch('stop-hoover', navLink)
+  }
+
   let isCurrentPage: boolean
-  $: isCurrentPage = key === to
+  $: isCurrentPage = path === to
 </script>
 
 
 <li class:open={$isMenuOpen} class:mobile-only={mobileOnly} >
   <a
+    on:mouseover={startHoover}
+    on:focus={startHoover}
+    on:mouseout={stopHoover}
+    on:blur={stopHoover}
+    bind:this={navLink}
     sveltekit:prefetch
     href={to}
     class="nav__link"
@@ -88,41 +105,41 @@
 			&.active {
 				font-weight: bold;
 
-				span:after {
-					transform: scaleX(1);
-				}
+				// span:after {
+				// 	transform: scaleX(1);
+				// }
 			}
 
-			span {
-				display: inline-block;
-				// border-bottom: .1em solid transparent;
+			// span {
+			// 	display: inline-block;
+			// 	// border-bottom: .1em solid transparent;
 
-				&:after {
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					content: '';
-					transform: scaleX(0);
-					display: block;
-					width: 100%;
-					height: 0.1em;
-					background: var(--yellow);
-					transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1);
-					transform-origin: right;
+			// 	&:after {
+			// 		position: absolute;
+			// 		bottom: 0;
+			// 		left: 0;
+			// 		content: '';
+			// 		transform: scaleX(0);
+			// 		display: block;
+			// 		width: 100%;
+			// 		height: 0.1em;
+			// 		background: var(--yellow);
+			// 		transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1);
+			// 		transform-origin: right;
 
-					.reduce-motion & {
-						transition: opacity 0.2s !important;
-					}
-				}
-			}
+			// 		.reduce-motion & {
+			// 			transition: opacity 0.2s !important;
+			// 		}
+			// 	}
+			// }
 
-			&:hover,
-			&:focus {
-				span:after {
-					transform: scaleX(1);
-					transform-origin: left;
-				}
-			}
+			// &:hover,
+			// &:focus {
+			// 	span:after {
+			// 		transform: scaleX(1);
+			// 		transform-origin: left;
+			// 	}
+			// }
     }
 
     &.mobile-only {
