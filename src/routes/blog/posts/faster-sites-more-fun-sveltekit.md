@@ -1,7 +1,7 @@
 ---
-title: 'Faster Sites and More Fun with SvelteKit'
+title: 'Converting to SvelteKit for Fun and Speed'
 date: '2021-10-01'
-updated: '2021-10-02'
+updated: '2021-10-05'
 categories:
   - 'javascript'
   - 'svelte'

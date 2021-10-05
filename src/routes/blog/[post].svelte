@@ -23,6 +23,7 @@
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
   import appendScriptToHead from '$lib/assets/js/utils/appendScriptToHead'
+  import readableDate from '$lib/assets/js/utils/readableDate'
   import { onMount } from 'svelte'
   
   import '$lib/assets/scss/code.scss'
@@ -88,9 +89,9 @@
 
   
   <div class="meta">
-    <b>Published:</b> { meta.date }
+    <b>Published:</b> { readableDate(meta.date) }
     <br>
-    <b>Updated:</b> { meta.updated }
+    <b>Updated:</b> { readableDate(meta.updated) }
   </div>
 
   <TableOfContents />
