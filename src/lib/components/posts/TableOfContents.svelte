@@ -99,7 +99,7 @@
 
     h2 {
       font-weight: bold;
-      font-family: var(--body-font);
+      font-family: var(--accent-font);
       font-size: 0.8rem;  
       margin: 0;
       background: var(--paper);

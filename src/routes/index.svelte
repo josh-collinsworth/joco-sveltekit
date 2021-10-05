@@ -57,7 +57,7 @@ import Accordion from '$lib/components/Accordion.svelte';
   }
 
   h3 {
-    font-family: var(--body-font);
+    font-family: var(--accent-font);
     font-weight: bold;
     margin-top: 3rem;
     margin-bottom: 0.5rem;

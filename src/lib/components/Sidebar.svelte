@@ -96,7 +96,7 @@
     }
 
     h2 {
-      font-family: var(--body-font);
+      font-family: var(--accent-font);
       font-size: .8em;
       font-weight: bold;
       text-transform: uppercase;

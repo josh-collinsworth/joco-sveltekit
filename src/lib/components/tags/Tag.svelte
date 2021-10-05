@@ -29,6 +29,7 @@
 		color: var(--white);
 		text-decoration: none;
 		font-weight: bold;
+		font-family: var(--accent-font);
 		font-size: 0.65em;
 		line-height: 1;
 		text-transform: uppercase;

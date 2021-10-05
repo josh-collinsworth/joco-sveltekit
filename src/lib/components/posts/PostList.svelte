@@ -24,7 +24,7 @@
     @media (min-width: $md) {
       max-width: unset;
       grid-gap: 1rem;
-      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
       display: grid;
       grid-gap: 1.5rem;
     }

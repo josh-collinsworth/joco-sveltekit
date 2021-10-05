@@ -61,13 +61,13 @@ pre[class*="language-"] {
 	  top: 0;
 	  left: 0;
 	  font-size: 1rem;
-	  font-family: var(--body-font), sans-serif;
+		font-weight: bold;
+	  font-family: var(--accent-font), sans-serif;
 	  padding: 0.25rem 0.75rem;
 	  width: 100%;
 	  position: absolute;
 	  background: var(--darkBlue);
 	  background: linear-gradient(to right, var(--darkBlue), hsla(var(--darkBlueHSL), 0));
-	  font-style: italic;
 	}
 }
  

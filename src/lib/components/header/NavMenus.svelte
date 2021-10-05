@@ -27,6 +27,7 @@
 <style lang="scss">
 	.main-nav {
 		text-align: right;
+		font-family: var(--accent-font);
 
 		@media (max-width: $xs) {
 			display: block;

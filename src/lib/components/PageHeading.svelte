@@ -70,7 +70,7 @@
       width: auto;
 
       .brace {
-        font-family: var(--body-font);
+        font-family: var(--accent-font);
         font-weight: bold;
         font-size: 1.25em;
         color: var(--lightGray);
@@ -118,7 +118,7 @@
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        font-family: var(--body-font);
+        font-family: var(--accent-font);
         text-transform: lowercase;
         flex: 0 1 auto;
         white-space: nowrap;

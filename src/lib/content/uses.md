@@ -137,7 +137,7 @@ I don’t often illustrate these days, but when I do, I’m always glad I have t
 
 ### Fonts
 
-<FontTester font="Pensum-Display" label="Pensum Display Bold" link="https://www.myfonts.com/fonts/typemates/pensum-display/"/>
+<FontTester font="Gazpacho" label="Gazpacho" link="https://www.myfonts.com/fonts/santi-rey/gazpacho/"/>
 <FontTester font="Averta-Std" label="Averta Standard" link="https://www.myfonts.com/fonts/intelligent-foundry/averta-standard/" italic={true} bold={true} />
 <FontTester font="MonoLisa" label="MonoLisa Regular" link="https://www.monolisa.dev/"/>
 

@@ -25,8 +25,12 @@ $xxxl: 2200px;
 	--white: hsl(var(--whiteHSL));
 	--black: hsl(var(--blackHSL));
 
-	--body-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+	--accent-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
+
+	--body-font: 'Alkes', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+	'Helvetica Neue', Arial, sans-serif;
+
 	--body-font-weight: normal;
 	--body-line-height: 1.6em;
 	--body-font-size: 1.125rem;
@@ -35,11 +39,7 @@ $xxxl: 2200px;
 		--body-font-size: 1.25rem;
 	}
 
-	@media (min-width: $xl) {
-		--body-font-size: 1.375rem;
-	}
-
-	--heading-font: 'Pensum-Display', Georgia, serif;
+	--heading-font: 'Gazpacho', Georgia, serif;
 	--heading-font-weight: normal;
 	--heading-font-style: normal;
 
