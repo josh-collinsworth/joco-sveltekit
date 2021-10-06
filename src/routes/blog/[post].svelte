@@ -19,7 +19,6 @@
 </script>
 
 <script>
-  import TableOfContents from '$lib/components/posts/TableOfContents.svelte'
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
@@ -92,8 +91,6 @@
     <br>
     <b>Updated:</b> { readableDate(meta.updated) }
   </div>
-
-  <!-- <TableOfContents /> -->
   
   <svelte:component this={Post} />
 
@@ -175,19 +172,18 @@
     }
     
     .meta {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       line-height: 1.6;
-      font-style: italic;
       margin: 2rem 0 4rem;
       width: max-content;
-      padding: 0.5rem 0; 
+      padding: 0.5em 0; 
+      font-family: var(--accent-font);
       border-top: 2px solid var(--lightGray);
-      // border-bottom: 2px solid var(--lightGray);
       
       b {
         text-transform: uppercase;
         font-style: normal;
-        font-family: var(--accent-font);
+        font-size: 0.7rem;
       }
     }
 

@@ -73,6 +73,7 @@
     position: sticky;
     top: 2rem;
     max-width: calc(var(--sidebar-width) * 1.5);
+    font-family: var(--accent-font);
     
     @media (min-width: $lg) {
       text-align: right;
@@ -96,7 +97,6 @@
     }
 
     h2 {
-      font-family: var(--accent-font);
       font-size: .8em;
       font-weight: bold;
       text-transform: uppercase;
@@ -132,7 +132,7 @@
         a {
           font-size: inerit;
           color: inherit;
-          text-decoration-color: var(--lightGray);
+          text-decoration: none;
           position: relative;
           display: inline-block;
 

@@ -17,7 +17,7 @@ const months: string[] = [
 const readableDate = (date: string): string => {
   const splitDate = date.split('-')
 
-  const month = months[splitDate[1]]
+  const month = months[parseInt(splitDate[1])]
   const day = parseInt(splitDate[2])
   const year = splitDate[0]
 

@@ -1,5 +1,5 @@
 ---
-title: 'Converting to SvelteKit for Fun and Speed'
+title: 'Converting to SvelteKit for More Fun and Less JavaScript'
 date: '2021-10-01'
 updated: '2021-10-05'
 categories:
@@ -75,7 +75,7 @@ I already mentioned how performant Svelte apps are. That's possible because Svel
 If you want to get technical, Svelte isn't really a JavaScript framework at all, as much as it&nbsp;is&nbsp;a&nbsp;compiler.
 </Callout>
 
-To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, then use them however you like. You can load them in a [CodePen](https://codepen.io), or similar environments. Though there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment, to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
+To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, in a [CodePen](https://codepen.io), or otherwise just drop them into whatever environemtn you want. Though there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment, to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
 
 Svelte doesn't work like that; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 

@@ -1,4 +1,5 @@
 <script type="typescript">
+	import ExternalLink from '$lib/components/icons/ExternalLink.svelte'
   import { onMount } from 'svelte'
 
   export let font: string
@@ -78,8 +79,7 @@
 
 		{#if link}
 			<p class="details">
-				<a rel="external" href={link}>{ fontName } family</a>
-				<i> (click text to edit)</i>
+				<a rel="external" href={link}>{ fontName } family<ExternalLink /></a>
 			</p>
 		{/if}
 	</form>
@@ -91,6 +91,7 @@
 		overflow: visible;
 		margin: 4rem 0 0;
 		position: relative;
+		font-family: var(--accent-font);
 
 		label {
 			font-size: .8rem;
@@ -133,6 +134,7 @@
 
 		.details {
 			margin-top: 1rem;
+			font-style: normal;
 		}
 	}
 </style>

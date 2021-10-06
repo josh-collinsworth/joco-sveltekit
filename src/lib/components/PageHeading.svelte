@@ -71,13 +71,13 @@
 
       .brace {
         font-family: var(--accent-font);
-        font-weight: bold;
+        font-weight: normal;
         font-size: 1.25em;
         color: var(--lightGray);
         margin: 0 0.1em 0 0;
         z-index: 2;
         position: relative;
-        left: -2px;
+        left: -1px;
 
         &.closing-brace {
           color: var(--yellow);

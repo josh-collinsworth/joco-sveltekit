@@ -120,7 +120,7 @@
     }
 
     pre[class*="language-"] {
-      margin-top: 0;
+      margin-top: 0 !important;
       padding-top: 1rem;
 
       &:before {

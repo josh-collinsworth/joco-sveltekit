@@ -58,7 +58,7 @@ h6 {
 	color: var(--header-color);
 	line-height: 1.2;
 	position: relative;
-	margin: 5rem 0 1rem;
+	margin: calc(var(--rhythm) * 4) 0 var(--rhythm);
 	padding: 0;
 
 	a {
@@ -68,7 +68,7 @@ h6 {
 
 h1,
 .h1 {
-	font-size: 2.6rem;
+	font-size: 2.5rem;
 	margin-top: 1rem;
 	position: relative;
 	font-weight: normal;
@@ -85,14 +85,14 @@ h2,
 
 h3,
 .h3 {
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 	font-weight: normal;
 }
 
 h4,
 .h4 {
 	font-family: var(--accent-font);
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 }
 
@@ -107,39 +107,19 @@ h5,
 	-webkit-font-smoothing: antialiased;
 }
 
+p {
+	margin: 0 0 var(--rhythm);
+}
+
 blockquote {
 	margin: 2rem 0;
-	padding: 1.5rem 1.5rem;
-	font-size: 1.2rem;
+	padding: 0rem 1rem;
+	font-size: 1rem;
 	font-style: italic;
 	line-height: 1.5;
 	position: relative;
 	border: 0;
-	border-top: 1px solid var(--lightBlue);
-	border-bottom: 1px solid var(--lightBlue);
-	
-	&::before,
-	&::after {
-		width: 2rem;
-		height: 2rem;
-		text-align: center;
-		content: '“';
-		font-family: var(--heading-font);
-		font-style: normal;
-		font-size: 2rem;
-		display: block;
-		position: absolute;
-		left: -0.25em;
-		top: -0.5em;
-		color: var(--lightBlue);
-		background: var(--paper);
-	}
-
-	&::after {
-		content: '”';
-		left: calc(100% - 1.5rem);
-		top: calc(100% - 1rem);
-	}
+	border-left: 4px solid var(--lightBlue);
 
 	> *:last-of-type {
 		margin-bottom: 0;

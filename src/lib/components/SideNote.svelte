@@ -8,14 +8,13 @@
 		--note-unit: 1rem;
 
 		@media (min-width: $xs) {
-			--note-unit: 1.5rem;
+			--note-unit: 1.25rem;
 		}
 
 		padding: var(--note-unit);
-		padding-left: calc(var(--note-unit) * 2);
 		position: relative;
-		margin: 2rem 0 2rem calc(var(--note-unit) * -2);
-		width: calc(100% + (var(--note-unit) * 3));
+		margin: 2rem 0 2rem calc(var(--note-unit) * -1);
+		width: calc(100% + (var(--note-unit) * 2));
 		font-size: .9rem;
 		font-style: italic;
 		background: linear-gradient(
@@ -34,51 +33,16 @@
 			font-style: normal;
 		}
 
-		&:before,
-		&:after {
-			display: none;
-
-			@media (min-width: $sm) {
-				display: block;
-			}
-		}
-
 		&:before {
-			content: 'Side Note';
-			position: absolute;
-			bottom: calc(50% - 2.65em);
-			left: calc(var(--note-unit) * 1.25);
-			padding: 0;
-			line-height: 1.5rem;
+			content: 'Side note:';
 			font-weight: bold;
-			text-transform: uppercase;
-			font-size: .7rem;
-			font-style: normal;
-			color: var(--white);
-			transform: rotate(-90deg);
-			transform-origin: bottom left;
-			z-index: 2;
-			text-align: center;
-			width: max-content;
 			font-family: var(--accent-font);
-
-			@media (min-width: $xs) {
-				left: var(--note-unit);
-			}
-		}
-
-		&:after {
-			content: '';
-			width: var(--note-unit);
-			height: 100%;
-			background: var(--lightBlue);
-			left: 0;
-			top: 0;
-			position: absolute;
-
-			.prefers-dark & {
-				background: var(--darkBlue);
-			}
+			font-style: normal;
+			text-transform: uppercase;
+			font-size: 0.8em;
+			display: block;
+			line-height: 1;
+			margin: 0 0 1em;
 		}
 	}
 </style>

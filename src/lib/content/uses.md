@@ -137,17 +137,34 @@ I don’t often illustrate these days, but when I do, I’m always glad I have t
 
 ### Fonts
 
-<FontTester font="Gazpacho" label="Gazpacho" link="https://www.myfonts.com/fonts/santi-rey/gazpacho/"/>
-<FontTester font="Averta-Std" label="Averta Standard" link="https://www.myfonts.com/fonts/intelligent-foundry/averta-standard/" italic={true} bold={true} />
-<FontTester font="MonoLisa" label="MonoLisa Regular" link="https://www.monolisa.dev/"/>
+<FontTester
+  font="Alkes"
+  label="Alkes"
+  link="https://www.myfonts.com/fonts/font-fabric/alkes/"
+  italic={true}
+  bold={true}
+/>
+<FontTester
+  font="Averta-Std"
+  label="Averta Std"
+  link="https://www.myfonts.com/fonts/intelligent-foundry/averta-standard/"
+  bold={true}
+/>
+<FontTester
+  font="MonoLisa"
+  label="MonoLisa
+  Regular"
+  link="https://www.monolisa.dev/"
+/>
 
 <p class="details">
   Other fonts I've used previously:
-  <a href="https://www.myfonts.com/fonts/jcfonts/korb/">Korb</a>
-  (both on its own and paired with <a href="https://fonts.google.com/specimen/Bitter/">Bitter</a>);
-  <a href="https://www.myfonts.com/fonts/bitstream/clarendon/">Clarendon BT Pro</a> +
-  <a href="https://www.myfonts.com/fonts/latinotype/texta/">Texta</a>; and
-  <a href="https://www.myfonts.com/fonts/stawix/amsi-pro/">Amsi Pro</a> +
-  <a href="https://www.myfonts.com/search/sagona/">Sagona</a>.
+  <a href="https://www.myfonts.com/fonts/jcfonts/korb/" rel="external">Korb</a>
+  (both on its own and paired with <a href="https://fonts.google.com/specimen/Bitter/" rel="external">Bitter</a>);
+  <a href="https://www.myfonts.com/fonts/bitstream/clarendon/" rel="external">Clarendon BT Pro</a> +
+  <a href="https://www.myfonts.com/fonts/latinotype/texta/" rel="external">Texta</a>; and
+  <a href="https://www.myfonts.com/fonts/stawix/amsi-pro/" rel="external">Amsi Pro</a> +
+  <a href="https://www.myfonts.com/search/sagona/" rel="external">Sagona</a>;
+  <a href="https://www.myfonts.com/fonts/typemates/pensum-display/" rel="external">Pensum Display.</a>
   (I know you do not care, but this is here mostly just for my own memory.)
 </p>

@@ -45,13 +45,14 @@
     font-weight: normal;
     margin-top: 4rem;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1;
     border: 0;
   }
 
   ul {
     margin-top: 4rem;
+    font-family: var(--accent-font);
   }
 }	
 </style>

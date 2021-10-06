@@ -20,10 +20,15 @@ $xxxl: 2200px;
 	--darkGrayHSL: 214, 4%, 34%;
 	--darkerGrayHSL: 349, 25%, 16%;
 	--whiteHSL: 0, 0%, 99%;
+	--trueWhiteHSL: 0, 0%, 100%;
 	--blackHSL: 210, 33%, 9%;
+	--trueBlackHSL: 0, 0%, 0%;
 
 	--white: hsl(var(--whiteHSL));
+	--trueWhite: hsl(var(--trueWhiteHSL));
+
 	--black: hsl(var(--blackHSL));
+	--trueBlack: hsl(var(--trueBlackHSL));
 
 	--heading-font: 'Averta-Std', sans-serif;
 	--heading-font-weight: bold;
@@ -37,10 +42,10 @@ $xxxl: 2200px;
 
 	--body-font-weight: normal;
 	--body-line-height: 1.6;
-	--body-font-size: 1.1875rem;
+	--body-font-size: 1.125rem;
 
 	@media (min-width: $xs) {
-		// --body-font-size: 1.25rem;
+		--body-font-size: 1.25rem;
 	}
 
 	--yellow: hsl(var(--yellowHSL));
@@ -56,7 +61,7 @@ $xxxl: 2200px;
 	--ink: var(--darkGray);
 	--paper: var(--white);
 	--paperHSL: var(--whiteHSL);
-	--header-color: var(--darkGray);
+	--header-color: var(--darkerGray);
 	--accent-color: var(--darkBlue);
 	--link-color: var(--darkBlue);
 	--highlight-color: var(--darkGray);
@@ -64,6 +69,7 @@ $xxxl: 2200px;
 	--max-width: 34rem;
 	--sidebar-width: 14rem;
 	--margin: 1rem;
+	--rhythm: 1.25rem;
 
 	--button-size: 2.2rem;
 	--button-background: var(--paper);

@@ -47,8 +47,8 @@
 			<NavMenus {path} />
 		</div>
   </header>
-  <Grid refresh={path} />
 
+  <Grid refresh={path} />
 
 	<noscript>
 		<style>
@@ -120,6 +120,7 @@
 		height: 3rem;
 		background: var(--darkBlue);
 		color: var(--white);
+		font-family: var(--accent-font);
 
 		&:focus {
 			transform: translateY(7rem);

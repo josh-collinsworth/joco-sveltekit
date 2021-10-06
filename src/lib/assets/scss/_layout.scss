@@ -8,15 +8,16 @@ img {
 	max-width: 100%;
 	height: auto;
 	margin: 2rem 0;
-}
+	mix-blend-mode: multiply;
 
-p {
-	margin: 0 0 1rem;
+	.prefers-dark & {
+		mix-blend-mode: unset;
+	}
 }
 
 hr {
 	width: 100%;
-	margin: 2rem 0;
+	margin: calc(var(--rhythm) * 2) 0;
 	border: none;
 	border-bottom: 1px solid var(--lightGray);
 }
@@ -29,14 +30,6 @@ hr {
 
 .pre-heading {
 	margin-bottom: 0rem;
-}
-
-h1 + .details {
-	font-size: 1rem;
-}
-
-h2 + .details {
-	font-size: 0.9rem;
 }
 
 .categories li a {

@@ -7,8 +7,8 @@
 
 <style lang="scss" global>
   .callout {
-    margin: 2.5rem 4rem 3.5rem 0rem;
-    font-size: 1.4rem;
+    margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 3) 0rem;
+    font-size: 1.3rem;
     line-height: 1.5em;
     position: relative;
     background: var(--paper);
@@ -17,6 +17,11 @@
     font-family: var(--accent-font);
     font-style: normal;
     font-weight: normal;
+    max-width: 20em;
+
+    @media (min-width: $xs) {
+      font-size: 1.4rem;
+    }
 
     em, i {
       font-weight: bold;

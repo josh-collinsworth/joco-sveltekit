@@ -175,6 +175,7 @@
 
   .codepens > h3 {
     margin-bottom: .5rem;
+    font-weight: bold;
 
     &:first-of-type {
       margin-top: 0;
