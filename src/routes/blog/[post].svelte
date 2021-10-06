@@ -93,7 +93,7 @@
     <b>Updated:</b> { readableDate(meta.updated) }
   </div>
 
-  <TableOfContents />
+  <!-- <TableOfContents /> -->
   
   <svelte:component this={Post} />
 

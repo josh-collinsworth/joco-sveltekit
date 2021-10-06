@@ -7,7 +7,7 @@
 
 <style lang="scss" global>
   .callout {
-    margin: 2.5rem 1rem 3.5rem 0rem;
+    margin: 2.5rem 4rem 3.5rem 0rem;
     font-size: 1.4rem;
     line-height: 1.5em;
     position: relative;

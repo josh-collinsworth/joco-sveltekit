@@ -19,11 +19,15 @@ $xxxl: 2200px;
 	--midGrayHSL: 204, 2%, 54%;
 	--darkGrayHSL: 214, 4%, 34%;
 	--darkerGrayHSL: 349, 25%, 16%;
-	--whiteHSL: 0, 0%, 100%;
+	--whiteHSL: 0, 0%, 99%;
 	--blackHSL: 210, 33%, 9%;
 
 	--white: hsl(var(--whiteHSL));
 	--black: hsl(var(--blackHSL));
+
+	--heading-font: 'Averta-Std', sans-serif;
+	--heading-font-weight: bold;
+	--heading-font-style: normal;
 
 	--accent-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
@@ -38,10 +42,6 @@ $xxxl: 2200px;
 	@media (min-width: $xs) {
 		--body-font-size: 1.25rem;
 	}
-
-	--heading-font: 'Averta-Std', sans-serif;
-	--heading-font-weight: bold;
-	--heading-font-style: normal;
 
 	--yellow: hsl(var(--yellowHSL));
 	--orange: hsl(var(--orangeHSL));
@@ -61,7 +61,7 @@ $xxxl: 2200px;
 	--link-color: var(--darkBlue);
 	--highlight-color: var(--darkGray);
 
-	--max-width: 32rem;
+	--max-width: 34rem;
 	--sidebar-width: 14rem;
 	--margin: 1rem;
 

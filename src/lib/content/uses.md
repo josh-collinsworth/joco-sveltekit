@@ -128,7 +128,7 @@ I don’t often illustrate these days, but when I do, I’m always glad I have t
 
 ## This site
 
-<p class="fancy details">This is about the fifth iteration of my personal brand. The colors haven't changed, but I rotate fonts and layout once every year or two.</p>
+<p class="details">This is about the fifth iteration of my personal brand. The colors haven't changed, but I rotate fonts and layout once every year or two.</p>
 
 ### Colors
 
@@ -141,7 +141,7 @@ I don’t often illustrate these days, but when I do, I’m always glad I have t
 <FontTester font="Averta-Std" label="Averta Standard" link="https://www.myfonts.com/fonts/intelligent-foundry/averta-standard/" italic={true} bold={true} />
 <FontTester font="MonoLisa" label="MonoLisa Regular" link="https://www.monolisa.dev/"/>
 
-<p class="fancy details">
+<p class="details">
   Other fonts I've used previously:
   <a href="https://www.myfonts.com/fonts/jcfonts/korb/">Korb</a>
   (both on its own and paired with <a href="https://fonts.google.com/specimen/Bitter/">Bitter</a>);
