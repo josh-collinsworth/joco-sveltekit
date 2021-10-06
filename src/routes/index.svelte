@@ -38,22 +38,18 @@ import Accordion from '$lib/components/Accordion.svelte';
 
   h2 {
     font-size: 3.5rem;
+    font-family: var(--body-font);
     margin: 0;
-
-    @media (min-width: $md) {
-      font-size: 4rem;
-    }
   }
 
   .subhead {
     font-size: 1.5rem;
-    font-family: var(--accent-font);
     margin: 0.25em 0 4rem;
     line-height: 1.2;
-    font-style: normal;
+    font-style: italic;
 
     @media (min-width: $md) {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -62,8 +58,7 @@ import Accordion from '$lib/components/Accordion.svelte';
     font-weight: bold;
     margin-top: 3rem;
     margin-bottom: 0.5rem;
-		padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1;
     border: 0;
   }

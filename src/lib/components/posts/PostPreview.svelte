@@ -91,6 +91,7 @@
       --padding-unit: 1.5rem;
 
       padding: var(--padding-unit) var(--padding-unit) calc(var(--padding-unit) * 1.5);
+      max-width: 32rem;
     }
 
     h3 {
@@ -114,6 +115,7 @@
     .excerpt a {
       font-weight: bold;
       text-transform: uppercase;
+      font-family: var(--accent-font);
       font-style: normal;
       font-size: 0.65rem;
       margin: 0.5rem 0 0;

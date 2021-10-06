@@ -40,7 +40,7 @@
 
 @font-face {
 	font-family: 'Alkes';
-	src: url('/fonts/alkes-bold.woff2') format('woff2');
+	src: url('/fonts/alkes-extrabold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -48,8 +48,32 @@
 
 @font-face {
 	font-family: 'Alkes';
-	src: url('/fonts/alkes-bolditalic.woff2') format('woff2');
+	src: url('/fonts/alkes-extrabolditalic.woff2') format('woff2');
 	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	src: url('/fonts/SourceSerifPro-Black.otf.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	src: url('/fonts/SourceSerifPro-Regular.otf.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	src: url('/fonts/SourceSerifPro-It.otf.woff2') format('woff2');
+	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
 }

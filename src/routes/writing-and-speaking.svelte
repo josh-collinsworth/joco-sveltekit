@@ -9,7 +9,7 @@
 
 <hr />
 
-<p class="subhead">A list of articles I've written for other publications.</p>
+<p class="subhead">Articles I've written for other publications.</p>
 
 <PostList posts={EXTERNAL_POSTS} external={true} />
 

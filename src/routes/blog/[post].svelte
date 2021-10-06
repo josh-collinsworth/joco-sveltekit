@@ -152,12 +152,13 @@
     .meta + .side-note + p::first-letter,
     .toc-wrap + .side-note + p::first-letter,
     > hr + p:first-letter {
-      font-size: 3.4em;
-      font-family: var(--heading-font);
+      font-size: 3.6em;
+      font-family: var(--body-font);
       float: left;
       line-height: 0.7em;
-      margin: 0.7rem 0.4rem 0 0;
+      margin: 0.45rem 0.4rem 0 0;
       color: inherit;
+      font-weight: bold;
     }
     
     .meta {

@@ -49,7 +49,7 @@ The attention to developer experience (DX) is obvious in Svelte. I instantly lov
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">My elevator pitch for <a href="https://twitter.com/sveltejs">@sveltejs</a> :<br><br>Svelte is React without all the bullshit.</p>&mdash; Josh Collinsworth (@jjcollinsworth) <a href="https://twitter.com/jjcollinsworth/status/1155265498675929088">July 27, 2019</a></blockquote>
 
-From the start, I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte--and how close it was to the JavaScript, HTML and CSS I already knew
+From the start, I was consistently and pleasantly surprised how _little_ code I needed to do things in Svelte--and how close it was to the JavaScript, HTML and CSS I already knew.
 
 <Callout>
 Just about everywhere I'd normally be reaching for a workaround or tripping over a gotcha when using another framework, Svelte was delightfully straightforward.
@@ -484,6 +484,8 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ when compressed. The SvelteKit site _at full size_ is still less than the Gridsome site was when _compressed!_
 
 If you're curious, by the way: _without_ preloading or analytics, the SvelteKit homepage clocks in at somewhere around 141 kB transferred, and 240 kB unpacked (nearly half of which is just for the webfonts). You can load it without JavaScript to shave off about 40% of those numbers (but it naturally won't seem as fast if you do, and will be missing some of the niceness).
+
+By the way: although it isn't implemented in any form in most browsers yet, I put a `prefers-reduced-data` media query on the site that will prevent preloading when detected.
 
 ---
 
