@@ -88,7 +88,6 @@
 		
 		label {
 			font-family: var(--accent-font);
-			font-weight: bold;
 	
 			i {
 				font-family: var(--body-font);

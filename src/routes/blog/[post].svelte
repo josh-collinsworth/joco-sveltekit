@@ -178,7 +178,7 @@
       font-size: 0.7rem;
       line-height: 1.6;
       font-style: italic;
-      margin: 2rem 0 3rem;
+      margin: 2rem 0 4rem;
       width: max-content;
       padding: 0.5rem 0; 
       border-top: 2px solid var(--lightGray);

@@ -99,6 +99,7 @@
       line-height: 1.2;
       border: 0;
       padding: 0;
+      font-size: 1.5rem;
     }
 
     .image-link {
@@ -124,7 +125,7 @@
     .excerpt {
       font-style: italic;
       margin: 1rem 0 1.5rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       line-height: 1.5;
   
       &:last-child {
