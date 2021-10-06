@@ -11,9 +11,6 @@
 </script>
 
 <script lang="ts">
-import Accordion from '$lib/components/Accordion.svelte';
-
-
 	export let Homepage
 </script>
 
@@ -32,33 +29,23 @@ import Accordion from '$lib/components/Accordion.svelte';
 .intro {
   width: 100%;
 
-  @media (min-width: $xs) {
-    width: 36rem;
-  }
-
   h2 {
-    font-size: 3.5rem;
-    font-family: var(--body-font);
     margin: 0;
   }
 
   .subhead {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0.25em 0 4rem;
     line-height: 1.2;
-    font-style: italic;
-
-    @media (min-width: $md) {
-      font-size: 1.5rem;
-    }
+    font-family: var(--accent-font);
   }
 
   h3 {
     font-family: var(--accent-font);
-    font-weight: bold;
-    margin-top: 3rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-weight: normal;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
     line-height: 1;
     border: 0;
   }

@@ -32,14 +32,14 @@
     </a>
 
     <div class="article-info">
-      <h3>
+      <h2 class="h3">
         <a on:click={startLoading} href={computedURL} sveltekit:prefetch>
           {post.title}
           {#if external}
             <ExternalLink />
           {/if}
         </a>
-      </h3>
+      </h2>
       
       {#if post.subtitle}
         <p class="subtitle">{post.subtitle}</p>
@@ -94,7 +94,7 @@
       max-width: 32rem;
     }
 
-    h3 {
+    h2 {
       margin: 0;
       line-height: 1.2;
       border: 0;
@@ -123,8 +123,8 @@
   
     .excerpt {
       font-style: italic;
-      margin: 1.5rem 0;
-      font-size: 0.9rem;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.8rem;
       line-height: 1.5;
   
       &:last-child {

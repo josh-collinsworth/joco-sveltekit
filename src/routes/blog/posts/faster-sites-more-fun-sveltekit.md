@@ -8,7 +8,7 @@ categories:
   - 'web'
 coverImage: 'converting-to-sveltekit.png'
 coverRatio: '821 / 334'
-excerpt: I've been a fan of Svelte for years, but never had the opportunity to use it on a serious project before. So when I learned SvelteKit could do static rendering, it seemed like the perfect time.
+excerpt: I've been a fan of Svelte for years, but never had the opportunity to use it on a serious project before. So when I found myself looking for a new platform for this site as SvelteKit entered open beta, it seemed like perfect timing.
 ---
 
 <script>
@@ -572,11 +572,11 @@ As of this writing, SvelteKit is still in pre-1.0 status. It seems very stable t
 
 ### Debunking the small community argument
 
+When comparing Svelte (or any newer technology, for that matter) with the larger, more established players, arguments against adoption often point to community size. Where React, Vue, Angular, etc. all have large ecosystems full of resources for you to take advantage of, Svelte can seem comparatively small. The fear, then, is that when or if you need to reach for additional packages to handle things beyond the main framework's capabilities, you may be left in the lurch.
+
 <Callout>
 When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework itself.
 </Callout>
-
-When comparing Svelte (or any newer technology, for that matter) with the larger, more established players, arguments against adoption often point to community size. Where React, Vue, Angular, etc. all have large ecosystems full of resources for you to take advantage of, Svelte can seem comparatively small. The fear, then, is that when or if you need to reach for additional packages to handle things beyond the main framework's capabilities, you may be left in the lurch.
 
 I'd like to put some context around that argument:
 

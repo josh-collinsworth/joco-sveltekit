@@ -43,11 +43,6 @@ a {
 	&:hover {
 		color: var(--link-color);
 	}
-
-	& + h1,
-	& + h2 {
-		margin-top: 0.25em;
-	}
 }
 
 
@@ -73,16 +68,16 @@ h6 {
 
 h1,
 .h1 {
-	font-size: 2.4rem;
+	font-size: 2.6rem;
 	margin-top: 1rem;
 	position: relative;
-	font-weight: bold;
-	font-family: var(--body-font);
+	font-weight: normal;
+	font-family: var(--accent-font);
 }
 
 h2,
 .h2 {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	display: inline-block;
 	margin-right: auto;
 	font-weight: normal;
@@ -90,20 +85,20 @@ h2,
 
 h3,
 .h3 {
-	font-size: 1.3rem;
-	// font-weight: normal;
+	font-size: 1.8rem;
+	font-weight: normal;
 }
 
 h4,
 .h4 {
 	font-family: var(--accent-font);
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 }
 
 h5,
 .h5 {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-family: var(--accent-font);
 }
 

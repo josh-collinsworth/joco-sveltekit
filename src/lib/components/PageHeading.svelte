@@ -106,6 +106,7 @@
       margin: 0 0.25rem 0 0;
       padding: 0;
       width: max-content;
+      font-weight: normal;
       display: flex;
       align-items: center;
       overflow: hidden;

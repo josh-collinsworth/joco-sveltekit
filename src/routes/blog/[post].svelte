@@ -99,7 +99,14 @@
 
   <hr>
 
-  <aside>
+  <aside class="post-footer">
+    <div class="bio">
+      <img src="http://1.gravatar.com/avatar/b5938a61130749fe0c1ec823c7d3ee98" alt="" class="thumbnail">
+      <p>
+        Josh Collinsworth is a frontend developer, designer, teacher and writer in Omaha, currently working to make commerce better for everyone at Shopify. <a href="/">More about me</a>
+      </p>
+    </div>
+
     {#if meta.categories}
       <h2 class="h4">Posted in: </h2>
       <TagList>
@@ -115,10 +122,16 @@
 
     <ul class="post-post-list">
       <li>
-        <a href="/contact">Send me a note about this post</a>
+        <a href="/contact">
+          <span aria-hidden="true">✉️</span>
+          Send me a note about this post
+        </a>
       </li>
       <li>
-        <a href="/blog">Back to blog</a>
+        <a href="/blog">
+          <span aria-hidden="true">🔙</span>
+          Back to blog
+        </a>
       </li>
     </ul>
   </aside>
@@ -134,10 +147,6 @@
     font-display: swap;
   }
 
-  .post-post-list {
-    margin: 2rem 0;
-  }
-
   .post {
     .cover-image {
       margin: 0;
@@ -145,6 +154,10 @@
 
     h1 {
       margin: 0;
+    }
+
+    h2 {
+      font-weight: bold;
     }
     
     .meta + p::first-letter,
@@ -163,14 +176,43 @@
     
     .meta {
       font-size: 0.7rem;
-      line-height: 1.4;
+      line-height: 1.6;
       font-style: italic;
-      margin: 1rem 0 2rem;
+      margin: 2rem 0 3rem;
+      width: max-content;
+      padding: 0.5rem 0; 
+      border-top: 2px solid var(--lightGray);
+      // border-bottom: 2px solid var(--lightGray);
       
       b {
         text-transform: uppercase;
         font-style: normal;
+        font-family: var(--accent-font);
       }
+    }
+
+    .post-footer {    
+      .bio {
+        font-size: 0.85rem;
+        font-style: italic;
+        overflow: auto;
+
+        .thumbnail {
+          float: left;
+          width: auto;
+          margin: 0 1rem 0 0;
+          border-radius: 2rem;
+        }
+      }
+
+      .h4 {
+        margin: 2rem 0 0.5rem;
+        font-size: 1rem;
+      }
+    }
+
+    .post-post-list {
+      margin: 2rem 0;
     }
   }
 </style>

@@ -85,5 +85,15 @@
 	#contact-form {
 		width: 100%;
 		margin-top: 4rem;
+		
+		label {
+			font-family: var(--accent-font);
+			font-weight: bold;
+	
+			i {
+				font-family: var(--body-font);
+				font-weight: normal;
+			}
+		}
 	}
 </style>

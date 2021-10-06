@@ -7,7 +7,7 @@ categories:
   - "thoughts-and-advice"
 coverImage: "Negative-Space.png"
 coverRatio: "4 / 3"
-excerpt: If your portfolio cost less than $20, is so large it can’t fit on a small table when open, is jammed full of huge illustrations and uses Helvetica all over the place, this is something you might want to read.
+excerpt: Consider this post a guide on how to avoid the most common mistakes young designers make when assembling their portfolios.
 ---
 <script>
   import Callout from '$lib/components/Callout.svelte'

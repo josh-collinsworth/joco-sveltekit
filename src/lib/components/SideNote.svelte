@@ -34,6 +34,15 @@
 			font-style: normal;
 		}
 
+		&:before,
+		&:after {
+			display: none;
+
+			@media (min-width: $sm) {
+				display: block;
+			}
+		}
+
 		&:before {
 			content: 'Side Note';
 			position: absolute;

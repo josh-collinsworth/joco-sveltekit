@@ -41,4 +41,4 @@ liberal abuser of semicolons.
 
 - 📖 [Read some things I wrote](/blog)
 - 💻 [See some of my projects](/projects)
-- ✉️ [Reach out](/contact)
+- ✉️ [Get in touch](/contact)

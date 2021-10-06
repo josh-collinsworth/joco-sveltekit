@@ -19,7 +19,6 @@
 
 <p class="subhead"></p>
 
-
 <ul>
   {#each talks as talk}
     <li>

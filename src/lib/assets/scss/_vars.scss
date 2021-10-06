@@ -36,11 +36,11 @@ $xxxl: 2200px;
 	'Helvetica Neue', Arial, sans-serif;
 
 	--body-font-weight: normal;
-	--body-line-height: 1.7;
-	--body-font-size: 1.125rem;
+	--body-line-height: 1.6;
+	--body-font-size: 1.1875rem;
 
 	@media (min-width: $xs) {
-		--body-font-size: 1.25rem;
+		// --body-font-size: 1.25rem;
 	}
 
 	--yellow: hsl(var(--yellowHSL));
