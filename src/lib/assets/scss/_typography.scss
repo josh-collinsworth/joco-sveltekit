@@ -68,25 +68,37 @@ h6 {
 
 h1,
 .h1 {
-	font-size: 2.5rem;
+	font-size: 1.9rem;
 	margin-top: 1rem;
 	position: relative;
 	font-weight: normal;
 	font-family: var(--accent-font);
+	
+	@media (min-width: $xs) {
+		font-size: 2.5rem;
+	}
 }
 
 h2,
 .h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	display: inline-block;
 	margin-right: auto;
 	font-weight: normal;
+	
+	@media (min-width: $xs) {
+		font-size: 2rem;
+	}
 }
 
 h3,
 .h3 {
-	font-size: 1.9rem;
+	font-size: 1.7rem;
 	font-weight: normal;
+	
+	@media (min-width: $xs) {		
+		font-size: 1.9rem;
+	}
 }
 
 h4,

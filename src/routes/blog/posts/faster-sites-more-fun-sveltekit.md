@@ -81,11 +81,11 @@ Svelte doesn't work like that; you can't "load Svelte" in the browser, or play w
 
 Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code. The Svelte compiler then processes what you write, and all that code is compiled down to minimal, self-contained JavaScript before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." (The REPL mentioned above offers a direct peek into the compiled JavaScript, if you're interested.)
 
+This approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user loads the page.
+
 <Callout>
 All your Svelte code is compiled down to minimal, self-contained JavaScript before it ever gets to the&nbsp;browser.
 </Callout>
-
-This approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user loads the page.
 
 React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about either approach; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 

@@ -99,25 +99,14 @@
   <aside class="post-footer">
     <div class="bio">
       <img src="http://1.gravatar.com/avatar/b5938a61130749fe0c1ec823c7d3ee98" alt="" class="thumbnail">
-      <p>
-        Josh Collinsworth is a frontend developer, designer, teacher and writer in Omaha, currently working to make commerce better for everyone at Shopify. <a href="/">More about me</a>
-      </p>
+      <div>
+        <p>
+          Josh Collinsworth is a frontend developer, designer, teacher and writer in Omaha, currently working to make commerce better for everyone at Shopify. <a href="/">More about me</a>
+        </p>
+      </div>
     </div>
 
-    {#if meta.categories}
-      <h2 class="h4">Posted in: </h2>
-      <TagList>
-        {#each meta.categories as category}
-          <Tag
-            to="/blog/category/{category}/"
-          >
-            { category }
-          </Tag>
-        {/each}
-      </TagList>
-    {/if}
-
-    <ul class="post-post-list">
+    <ul class="post-bio-links">
       <li>
         <a href="/contact">
           <span aria-hidden="true">✉️</span>
@@ -131,6 +120,19 @@
         </a>
       </li>
     </ul>
+
+    {#if meta.categories}
+      <h2 class="h4">Posted in: </h2>
+      <TagList>
+        {#each meta.categories as category}
+          <Tag
+            to="/blog/category/{category}/"
+          >
+            { category }
+          </Tag>
+        {/each}
+      </TagList>
+    {/if}
   </aside>
 </article>
 
@@ -146,10 +148,6 @@
 
   .post {
     .cover-image {
-      margin: 0;
-    }
-
-    h1 {
       margin: 0;
     }
 
@@ -187,28 +185,32 @@
       }
     }
 
-    .post-footer {    
+    .post-footer {   
+      margin: 0 0 2rem;
+      
       .bio {
         font-size: 0.85rem;
         font-style: italic;
         overflow: auto;
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
 
         .thumbnail {
-          float: left;
           width: auto;
           margin: 0 1rem 0 0;
-          border-radius: 2rem;
+          border-radius: 3rem;
         }
       }
 
       .h4 {
-        margin: 2rem 0 0.5rem;
+        margin: 1.5rem 0 0.5rem;
         font-size: 1rem;
       }
     }
 
-    .post-post-list {
-      margin: 2rem 0;
+    .post-bio-links {
+      margin: 1rem 0;
     }
   }
 </style>
