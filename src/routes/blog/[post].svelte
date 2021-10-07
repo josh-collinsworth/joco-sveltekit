@@ -111,13 +111,13 @@
       </TagList>
     {/if}
 
-    <ul class="post-bio">
-      <li class="post-bio__contact">
+    <ul class="post-links">
+      <li class="post-links__contact">
         <a href="/contact">
           Send me a note about this post
         </a>
       </li>
-      <li class="post-bio__blog">
+      <li class="post-links__blog">
         <a href="/blog">
           Back to blog
         </a>
@@ -175,11 +175,15 @@
       margin: 0 0 2rem;
 
       .h4 {
-        margin-top: 0;
+        margin: 0 0 calc(var(--rhythm) / 2);
+
+        &::before {
+          display: none;
+        }
       }
     }
 
-    .post-bio {
+    .post-links {
       margin: calc(var(--rhythm) * 2) 0;
       font-family: var(--heading-font);
 

@@ -90,12 +90,12 @@
         display: block;
         margin-left: auto;
       }
-
+      
       svg {
         width: 500%;
       }
     }
-
+    
     h2 {
       font-size: .8em;
       font-weight: bold;
@@ -104,9 +104,19 @@
       padding: 0 0 .1em 0;
       border: none;
       border-bottom: .15em solid;
+      width: max-content;
+      text-align: inherit;
+
+      @media (min-width: $lg) {
+        margin-left: auto;
+      }
 
       &:first-of-type {
         margin-top: 0;
+      }
+
+      &::before {
+        display: none;
       }
     }
 

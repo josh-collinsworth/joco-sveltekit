@@ -470,7 +470,7 @@ Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridso
 Still, if we're scoping the discussion to _just_ SvelteKit's static adapter, I think it's a fair, if not exact, comparison.
 
 
-### Real vs. perceived performance
+### Comparing performance
 
 To compare Gridsome with SvelteKit, we need to do a bit of configuration. Gridsome pre-loads all of its routes in the background, so that they're already loaded up and ready to go instantly the moment the user clicks. So unless we're doing the same thing with SvelteKit, we're comparing apples to oranges.
 
@@ -478,14 +478,21 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 
 **Even when preloading all the site's content, the SvelteKit build is dramatically smaller.**
 
-| Framework     | Full size | Compressed    |
-|---------------|-----------|---------------|
-| **Gridsome**  | 3.09 MB   | 1.74 MB       |
-| **SvelteKit** | 1.7 MB    | 536 kB        |
+| Framework                            | Full size | Compressed    |
+|--------------------------------------|-----------|---------------|
+| **Gridsome**                         | 3.09 MB   | 1.74 MB       |
+| **SvelteKit**, preload all routes    | 1.7 MB    | 536 kB        |
+| **SvelteKit**, top-level routes only | 322 kB    | 184 kB        |
 
 As you can see from the table above, the SvelteKit version shaves about 45% off the Gridsome build, and _over two thirds_ when compressed. The SvelteKit site _at full size_ is about the size the Gridsome site was _compressed_!
 
-Granted, 1.7 MB is not exactly _tiny_, but bear in mind that's with the weight of _every_ route on the site preloading. For context: _without_ preloading or analytics, the SvelteKit homepage clocks in at somewhere around 162 kB compressed, and 260 kB unpacked (nearly half of which is just for the webfonts). You can load it without JavaScript to shave about 30% off those numbers, but it naturally won't seem as fast if you do, and will be missing some of the niceness.
+Granted, 1.7 MB is not exactly _tiny_, but bear in mind that's with the weight of _every_ route on the site preloading.
+
+The preloading strategy I eventually settled on, however, is the _last_ row in the table: here, I preload only top-level routes unless we're on a blog page, and then I preload all blog routes. This was my biggest savings, but there's a tiny caveat that I also decided to eliminate Google Analytics in this approach as well, so the reduction is _slightly_ exaggerated. Still, though: the overall load is _tiny_ (and honestly, mostly made up of fonts. There's a little over 100 kB of fonts to load on any given page).
+
+Scrapping Google Analytics was an easy decision once I realized it blocked the main thread and prevented me from _ever_ getting an optimal performance score—even, ironically, from [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/). I don't really _need_ analytics on this site, but I can use Cloudflare or even pay for Netlify Analytics for that.
+
+![Perfect 100s across the board from Lighthouse test](/images/post_images/100s.png)
 
 By the way: although it isn't implemented in any form in most browsers yet, I put a `prefers-reduced-data` media query on the site that will prevent preloading when detected.
 

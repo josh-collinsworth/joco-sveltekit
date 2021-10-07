@@ -84,7 +84,7 @@ h2 {
 	z-index: 2;
 
 	@media (min-width: $xs) {
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 	
 	&::before {
@@ -93,13 +93,13 @@ h2 {
 		height: 0.25rem;
 		background: currentColor;
 		display: block;
-		margin: var(--rhythm) 0;
+		margin: 0 0 1rem;
 	}
 }
 
 h3,
 .h3 {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	font-weight: normal;
 	margin-top: calc(var(--rhythm) * 4);
 }
