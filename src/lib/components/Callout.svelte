@@ -9,7 +9,7 @@
   .callout {
     margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 3) 0rem;
     font-size: 1.3rem;
-    line-height: 1.5em;
+    line-height: 1.4;
     position: relative;
     background: var(--paper);
     overflow: hidden;

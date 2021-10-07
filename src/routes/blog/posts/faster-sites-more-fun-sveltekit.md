@@ -23,7 +23,7 @@ Let's be honest: lots of things in web development are harder than they should b
 
 That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh air.
 
-**This is going to be a long post.** I'll go into some detail on what Svelte is and where it came from; differences between Svelte and other frameworks; what SvelteKit is and some of its features; and finally, the conversion from Gridsome to SvelteKit, and the decisions and process behind that choice.
+**Heads-up: this is going to be a long post.** I'll go into some detail on what Svelte is and where it came from; differences between Svelte and other frameworks; what SvelteKit is and some of its features; and finally, the conversion from Gridsome to SvelteKit, and the decisions and process behind that choice.
 
 
 ## What is Svelte?
@@ -478,11 +478,11 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 
 **Even when preloading all the site's content, the SvelteKit build is dramatically smaller.**
 
-| Framework                            | Full size | Compressed    |
-|--------------------------------------|-----------|---------------|
-| **Gridsome**                         | 3.09 MB   | 1.74 MB       |
-| **SvelteKit**, preload all routes    | 1.7 MB    | 536 kB        |
-| **SvelteKit**, top-level routes only | 322 kB    | 184 kB        |
+| Framework                              | Full size | Compressed    |
+|----------------------------------------|-----------|---------------|
+| **Gridsome**                           | 3.09 MB   | 1.74 MB       |
+| **SvelteKit**, _preload all routes_    | 1.7 MB    | 536 kB        |
+| **SvelteKit**, _top-level routes only_ | 322 kB    | 184 kB        |
 
 As you can see from the table above, the SvelteKit version shaves about 45% off the Gridsome build, and _over two thirds_ when compressed. The SvelteKit site _at full size_ is about the size the Gridsome site was _compressed_!
 
@@ -521,13 +521,15 @@ This naturally prompts the question: _why move in the first place_? At this poin
 At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.
 </Callout>
 
-I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome ([0.7](https://gridsome.org/blog/2019/09/17/gridsome-v07/)), and at this point, it doesn't seem like it's an actively maintained project any longer.
+I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome ([0.7](https://gridsome.org/blog/2019/09/17/gridsome-v07/)), and at this point, it doesn't seem like it's an actively maintained project any longer. It's been all but silent since then.
 
-Gridsome didn't ever really feel _complete_ to me, and that was fine when updates were still rolling out. I knew what I was in for going with a pre-1.0 technology, but the stagnation was hard to ignore. It was really good at what it did well--generating a speedy, static site with Vue and GraphQL--but the more you wanted to tweak things or leave the happy path, the more you ran into its rough edges.
+Gridsome didn't ever really feel _complete_ to me, and that was fine when updates were still rolling out. I knew what I was in for going with a pre-1.0 technology, and it was really good at what it did well--namely, generating a speedy static site with Vue and GraphQL--but the more you wanted to tweak things or leave the happy path, the more you ran into its rough edges.
 
 More than once, I spent a day or two fighting with NPM, unable to even _run_ Gridsome on my machine. (That's more to do with the packages Gridsome relies on than Gridsome itself, but still; the frustration is the same.) The last two times I've set up new machines, I've had to spend significant time trying to get Gridsome running on them. I had to explicitly set Netlify to an older version of Node to even get it to deploy.
 
-But moreover: SvelteKit sparks joy in a way that Gridsome doesn't anymore. This site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do anything I want for whatever reason.
+But moreover: SvelteKit sparks joy in a way that Gridsome doesn't anymore. It was exciting to be a part of something new and actively progressing with Gridsome, but now it just feels like being part of something forgotten and stagnant. SvelteKit replaces that feeling; the community is vibrant and the project has an electric momentum to it.
+
+You might ask why, then, I didn't move over to Nuxt, given that it's a larger and energetic community. Plus, it's still in Vue, which would seem less disruptive.
 
 When I was writing this site in Gridsome, my list of Vue projects was fairly small, which made the appeal of having a Vue outlet more appealing. Now, though, it doesn't feel like I _need_ a site in Vue anymore--especially since my day job isn't Vue-focused anymore.
 
@@ -536,6 +538,8 @@ SvelteKit sparks joy in a way that Gridsome doesn't anymore.
 </Callout>
 
 Maybe the fact that I've been working professionally with Vue for the last two years (and released [Quina](https://quina.app) late last year) is part of it, too. I still love Vue dearly, and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: that itch is scratched, and I want a different thing to play with.
+
+This site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do anything I want for whatever reason. And that thing, right now, is SvelteKit.
 
 Finally, [TypeScript](https://www.typescriptlang.org/) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it. At this point, close to 100% of this site's JS is typed, so I've given it a good shot at least.
 
@@ -572,6 +576,13 @@ Most of the rest just isn't comparable anymore. The colorful square grid in the 
 By the way: I kept an [archival copy of the old site](https://joco-gridsome-archive.netlify.app/) live for myself to look back on, just in case you'd like to compare the two for yourself.
 
 And while we're on the topic: here's the link to [my site's new SvelteKit repo](https://github.com/josh-collinsworth/joco-sveltekit), if you'd like to take a firsthand look behind the scenes. A lot still needs to be refactored and cleaned up (I keep a list), but you're welcome to poke around, or even clone the repo as a starter for your own blog if you like.
+
+
+### The redesign
+
+I didn't set out to make any design changes when moving this site over to SvelteKit, but after a while, I got tired of staring at the old design and started the dangerous journey of playing with new fonts.
+
+In the end, the old body font (Averta Std) got promoted to the heading font, and I added a nice serif (Alkes) for the body copy. More of a small refresh than an overhaul, but the pairing and tweaked styles give the site a fresh new look that I very much like.
 
 
 ## What to know about SvelteKit

@@ -110,17 +110,33 @@ hr {
 }
 
 .table {
-	width: 100%;
+	width: auto;
 	overflow-x: auto;
 	margin-bottom: 2rem;
+	position: relative;
+
+	&-outer {
+		position: relative;
+		width: 100%;
+		
+		&::after {
+			content: '';
+			height: 100%;
+			position: absolute;
+			width: 2rem;
+			background: linear-gradient(to right, hsla(var(--whiteHSL), 0), hsla(var(--whiteHSL), 1));
+			top: 0;
+			right: 0;
+		}
+	}
 }
 
 table {
-	width: 100%;
-	max-width: 100%;
+	min-width: 100%;
 	border-collapse: collapse;
 	font-size: 0.9rem;
 	margin: 3rem 0 2rem;
+	border-right: 2rem solid transparent;
 
 	td, th {
 		padding: 1em 2em 1em 0;

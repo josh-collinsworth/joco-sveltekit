@@ -38,9 +38,9 @@
     const tables = document.querySelectorAll('.post table')
 
     tables.forEach(table => {
-      let newHTML = `<div class="table">`
+      let newHTML = `<div class="table-outer"><div class="table">`
       newHTML += table.outerHTML
-      newHTML += `</div>`
+      newHTML += `</div></div>`
 
       table.insertAdjacentHTML('afterend', newHTML)
       table.remove()
