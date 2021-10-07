@@ -17,7 +17,7 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-I'll assume for the sake of this post that you're at least a little familiar with what Svelte is. If not, I've written an [introduction to Svelte](/blog/indroducing-svelte) that you might enjoy reading first before diving in here.
+I'll assume for the sake of this post that you're at least a little familiar with what Svelte is. If not, I've written an [introduction to Svelte](/blog/introducing-svelte) that you might enjoy reading first before diving in here.
 
 If you already know, however (or if you're just short on time): you can think of Svelte as a frontend framework not unlike React, Vue, etc., and I recently decided to take it for a spin by rebuilding this very site (again).
 
