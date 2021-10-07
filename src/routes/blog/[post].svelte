@@ -139,6 +139,7 @@
   .post {
     .cover-image {
       margin: 0;
+      border: 1px solid hsla(var(--darkGrayHSL), 1);
     }
     
     .meta + p::first-letter,

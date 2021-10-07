@@ -123,6 +123,7 @@
         margin: 0;
         width: auto;
         max-width: 100%;
+        border: 1px solid hsla(var(--darkGrayHSL), 1);
       }
     }
     

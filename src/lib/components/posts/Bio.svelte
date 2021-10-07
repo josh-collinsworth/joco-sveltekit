@@ -2,19 +2,19 @@
   null
 </script>
 
-<hr />
-
-<div class="bio">
-  <img src="/images/bio-photo.jpg" alt="" class="thumbnail">
-  <div>
-    <p>
-      Josh Collinsworth is a frontend developer, designer, teacher, and writer. He currently lives in Omaha, Nebraska, and works for Shopify as a senior frontend developer. 
-    </p>
-    <p><a href="/">More about me</a></p>
+<div class="bio-wrapper">
+  <hr />
+  <div class="bio">
+    <img src="/images/bio-photo.jpg" alt="" class="thumbnail">
+    <div>
+      <p>
+        Josh Collinsworth is a frontend developer, designer, teacher, and writer. He currently lives in Omaha, Nebraska, and works for Shopify as a senior frontend developer. 
+      </p>
+      <p><a href="/">More about me</a></p>
+    </div>
   </div>
+  <hr />
 </div>
-
-<hr />
 
 
 <style lang="scss">
@@ -25,6 +25,10 @@
     display: flex;
     align-items: center;
     align-content: center;
+
+    &-wrapper {
+      margin-top: calc(var(--rhythm) * 5);
+    }
 
     .thumbnail {
       width: 6rem;
