@@ -8,7 +8,7 @@
 		--note-unit: 1rem;
 
 		@media (min-width: $xs) {
-			--note-unit: 1.25rem;
+			--note-unit: var(--rhythm);
 		}
 
 		padding: var(--note-unit);

@@ -28,7 +28,7 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 At a basic level, you could think of Svelte as a frontend framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), etc. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and optimization.
 
-As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the Svelte component(s) automatically update to reflect those changes in the UI. (We'll cover that more in a bit.)
+As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the components automatically update to reflect those changes in the UI. (More on that in a bit.)
 
 So how is Svelte _different_? Glad you asked…
 
@@ -75,7 +75,7 @@ I already mentioned how performant Svelte apps are. That's possible because Svel
 If you want to get technical, Svelte isn't really a JavaScript framework at all, as much as it&nbsp;is&nbsp;a&nbsp;compiler.
 </Callout>
 
-To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, in a [CodePen](https://codepen.io), or otherwise just drop them into whatever environemtn you want. Though there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment, to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
+To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, in a [CodePen](https://codepen.io), or otherwise drop them into whatever environment you want. Though there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment, to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
 
 Svelte doesn't work like that; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 
@@ -322,7 +322,7 @@ Currently, SvelteKit offers adapters to run your project as a Node app; as stati
 Thanks to the static adapter, most of this site runs just fine even with JavaScript disabled&nbsp;entirely.
 </Callout>
 
-This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"--JavaScript running once the page has loaded--but they don't have to. Thanks to the static adapter, most of this site runs just fine even with JavaScript disabled entirely.
+This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"--JavaScript running once the page has loaded--but they don't have to. Thanks to the static adapter (and some strategic `<noscript>` tags), most of this site runs just fine even with JavaScript disabled entirely.
 
 Worth noting, however: by default, after the first page load, SvelteKit's router hydrates and takes over page loading, to make transitions as smooth and fast as possible. You can even designate routes to preload in the background, so that by the time the user clicks, the load is nearly instantaneous.
 
@@ -368,7 +368,7 @@ Here's what this site's main layout file's markup looks like (slightly simplifie
 </div>
 ```
 
-That's pretty much it! This way, every page includes the header and footer, and sometimes the sidebar. Some states and preferences are passed in from the global store (those prefixed with a `$`) so that conditional classes can be applied as needed. And the `<slot />` where the page content goes is wrapped in a custom `<PageTransition>` component that (predictably) just adds the fancy transitions between pages.
+That's pretty much it. This way, every page includes the header and footer, and the sidebar where appropriate. Some states and preferences are passed in from the global store (those prefixed with a `$`) so that conditional classes can be applied as needed. And the `<slot />` where the page content goes is wrapped in a custom `<PageTransition>` component that (predictably) just adds the fancy transitions between pages.
 
 It _is_ possible to have nested layouts, or layouts that apply on a per-route basis. You can also reset the layout, if you have a deeply nested route that needs its own setup.
 
@@ -407,7 +407,7 @@ Here's a somewhat simplified example of how you might create an endpoint to retu
 ```js
 // posts.json.js
 
-// The `get` function responds to GET requests
+// The `get` function responds to GET requests; you can have post(), etc. as well
 export const get = async () => {
   const posts = await Promise.all(
     Object.entries(import.meta.glob('/blog/posts/*.md'))
@@ -453,7 +453,7 @@ Once you've retrieved the post data as JSON, you can display it in a Svelte page
 
 I won't get too much into it here, but SvelteKit also offers a way to [pre-load data server-side](https://kit.svelte.dev/docs#loading) from routes like this, or from external sources.
 
-**Worth noting:** when using the static adapter, there of course isn't any server to query at run time. So in that case, any internal endpoint query or `fetch` call like this is run at build time, and whatever the result at that point, it will be output as plain static files.
+**Worth noting:** when using the static adapter, there of course isn't any server to query at run time. So in that case, any server-side queries or `fetch` calls will run at build time, and whatever the result at that point, it will be output as plain static files. Any JSON routes you might have will still be query-able on the live site, but they'll be static. (For example, here's [this site's /blog/posts.json endpoint](/blog/posts.json).)
 
 <SideNote>
 The ability to read Markdown files isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).
@@ -476,10 +476,10 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 
 **Even when preloading all the site's content, the SvelteKit build is dramatically smaller.**
 
-| Framework     | Full size | Size when compressed  |
-|---------------|-----------|-----------------------|
-| **Gridsome**  | 3.09 MB   | 1.74 MB               |
-| **SvelteKit** | 1.49 MB   | 490 kB                |
+| Framework     | Full size | Compressed    |
+|---------------|-----------|---------------|
+| **Gridsome**  | 3.09 MB   | 1.74 MB       |
+| **SvelteKit** | 1.49 MB   | 490 kB        |
 
 As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ when compressed. The SvelteKit site _at full size_ is still less than the Gridsome site was when _compressed!_
 

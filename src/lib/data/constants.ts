@@ -1,7 +1,8 @@
 const FULLWIDTH_PAGES: string[] = [
   '/projects',
   '/blog',
-  '/categories'
+  '/categories',
+  '/writing-and-speaking'
 ]
 
 const TIMING_DURATION = 360

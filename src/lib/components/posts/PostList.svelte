@@ -23,10 +23,9 @@
 
     @media (min-width: $md) {
       max-width: unset;
-      grid-gap: 1rem;
-      grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-      display: grid;
-      grid-gap: 1.5rem;
+      // grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+      // display: grid;
+      // grid-gap: 2rem;
     }
   }
 </style>

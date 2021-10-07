@@ -56,9 +56,9 @@ h6 {
 	font-weight: var(--heading-font-weight);
 	font-style: var(--heading-font-style);
 	color: var(--header-color);
-	line-height: 1.2;
+	line-height: 1.1;
 	position: relative;
-	margin: calc(var(--rhythm) * 4) 0 var(--rhythm);
+	margin-bottom: var(--rhythm);
 	padding: 0;
 
 	a {
@@ -69,8 +69,8 @@ h6 {
 h1,
 .h1 {
 	font-size: 1.9rem;
-	margin-top: 1rem;
 	position: relative;
+	margin-top: var(--rhythm);
 	font-weight: normal;
 	font-family: var(--accent-font);
 	
@@ -83,7 +83,7 @@ h2,
 .h2 {
 	font-size: 1.8rem;
 	display: inline-block;
-	margin-right: auto;
+	margin-top: calc(var(--rhythm) * 3);
 	font-weight: normal;
 	
 	@media (min-width: $xs) {
@@ -95,6 +95,7 @@ h3,
 .h3 {
 	font-size: 1.7rem;
 	font-weight: normal;
+	margin-top: calc(var(--rhythm) * 3);
 	
 	@media (min-width: $xs) {		
 		font-size: 1.9rem;
@@ -106,12 +107,14 @@ h4,
 	font-family: var(--accent-font);
 	font-size: 1rem;
 	text-transform: uppercase;
+	margin-top: calc(var(--rhythm) * 3);
 }
 
 h5,
 .h5 {
 	font-size: 1.1rem;
 	font-family: var(--accent-font);
+	margin-top: calc(var(--rhythm) * 3);
 }
 
 * {

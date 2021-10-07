@@ -119,7 +119,9 @@ table {
 	margin: 3rem 0 2rem;
 
 	td, th {
-		padding: 0.5em 3em 0.5em 0;
+		padding: 1em 2em 1em 0;
+		white-space: pre;
+		line-height: 1;
 
 		&:last-of-type {
 			padding-right: 0;
@@ -129,8 +131,8 @@ table {
 	th {
 		text-align: left;
 		padding-bottom: 0.5em;
-		white-space: pre;
 		font-weight: bold;
+		font-size: 1rem;
 		font-family: var(--accent-font);
 	}
 	

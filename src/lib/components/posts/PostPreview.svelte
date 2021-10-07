@@ -34,9 +34,10 @@
     <div class="article-info">
       <h2 class="h3">
         <a on:click={startLoading} href={computedURL} sveltekit:prefetch>
-          {post.title}
           {#if external}
-            <ExternalLink />
+            {post.title}<ExternalLink />
+          {:else}
+            {post.title}
           {/if}
         </a>
       </h2>
@@ -81,17 +82,24 @@
   }
   
   .post-preview {
-    box-shadow: 0.25rem 0.25rem 0 0 hsla(var(--lightGrayHSL), 0.2);
-    border: 1px solid var(--lightGray);
     transition: .2s;
     transform-origin: bottom left;
     display: block;
 
-    .article-info {
-      --padding-unit: 1.5rem;
+    @media (min-width: $md) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: calc(var(--rhythm) * 2);
+      margin-bottom: calc(var(--rhythm) * 5);
+    }
 
-      padding: var(--padding-unit) var(--padding-unit) calc(var(--padding-unit) * 1.5);
+    .article-info {
+      padding: 1.5rem 0;
       max-width: 32rem;
+
+      @media (min-width: $md) {
+        padding: 0;
+      }
     }
 
     h2 {
@@ -109,6 +117,8 @@
 
       img {
         margin: 0;
+        width: auto;
+        max-width: 100%;
       }
     }
     
@@ -124,7 +134,7 @@
   
     .excerpt {
       font-style: italic;
-      margin: 1rem 0 1.5rem;
+      margin: var(--rhythm) 0 1.5rem;
       font-size: 0.9rem;
       line-height: 1.5;
   
@@ -134,7 +144,7 @@
 
       a {
         display: block;
-        margin-top: 1rem;
+        margin-top: var(--rhythm);
       }
     }
   }
