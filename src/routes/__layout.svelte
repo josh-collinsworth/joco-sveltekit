@@ -23,8 +23,7 @@
 	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/data/constants'
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
-	import { dev } from '$app/env'
-	import { prefetchRoutes } from '$app/navigation';
+	import { prefetch, prefetchRoutes } from '$app/navigation';
 	import throttle from 'lodash/throttle.js'
 	
 	export let path: string
@@ -83,7 +82,14 @@
 		).matches;
 
 		if (!prefersReducedData) {
-			prefetchRoutes()
+			if (path.includes('/blog')) {
+				prefetchRoutes()
+			} else {	
+				prefetch('/')
+				prefetch('/blog')
+				prefetch('/projects')
+				prefetch('/writing-and-speaking')
+			}
 		}
 
 		isFullwidthPage = FULLWIDTH_PAGES.includes(path)
