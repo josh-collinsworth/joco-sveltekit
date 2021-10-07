@@ -61,6 +61,10 @@ hr {
 	}
 
 	@media (min-width: $xl) {
+		grid-template-columns: 0 1fr var(--sidebar-width);
+	}
+
+	@media (min-width: $xxl) {
 		grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
 	}
 	

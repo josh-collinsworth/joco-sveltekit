@@ -479,11 +479,11 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 | Framework     | Full size | Compressed    |
 |---------------|-----------|---------------|
 | **Gridsome**  | 3.09 MB   | 1.74 MB       |
-| **SvelteKit** | 1.49 MB   | 490 kB        |
+| **SvelteKit** | 1.7 MB    | 536 kB        |
 
-As you can see from the table above, the SvelteKit version is _half_ the size of the Gridsome build, and _less than a third_ when compressed. The SvelteKit site _at full size_ is still less than the Gridsome site was when _compressed!_
+As you can see from the table above, the SvelteKit version shaves about 45% off the Gridsome build, and _over two thirds_ when compressed. The SvelteKit site _at full size_ is about the size the Gridsome site was _compressed_!
 
-If you're curious, by the way: _without_ preloading or analytics, the SvelteKit homepage clocks in at somewhere around 141 kB transferred, and 240 kB unpacked (nearly half of which is just for the webfonts). You can load it without JavaScript to shave off about 40% of those numbers (but it naturally won't seem as fast if you do, and will be missing some of the niceness).
+If you're curious, by the way: _without_ preloading or analytics, the SvelteKit homepage clocks in at somewhere around 162 kB transferred, and 260 kB unpacked (nearly half of which is just for the webfonts). You can load it without JavaScript to shave off about 30% of those numbers (but it naturally won't seem as fast if you do, and will be missing some of the niceness).
 
 By the way: although it isn't implemented in any form in most browsers yet, I put a `prefers-reduced-data` media query on the site that will prevent preloading when detected.
 

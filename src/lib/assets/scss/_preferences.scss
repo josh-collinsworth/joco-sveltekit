@@ -20,12 +20,6 @@
 		--link-color: var(--ink);
 		--highlight-color: var(--darkerGray);
 		--button-background: var(--paper);
-
-		.post-preview {
-      box-shadow: 0.25rem 0.25rem 0 0 rgba(0, 0, 0, 0.2);
-      background: hsla(var(--lightGrayHSL), 0.05);
-      border: none;
-    }
 	}
 
 	&.prefers-light {
