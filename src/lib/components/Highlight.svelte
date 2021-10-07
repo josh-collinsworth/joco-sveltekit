@@ -9,6 +9,6 @@
     margin: 0 0 2rem;
     font-weight: normal;
     font-style: normal;
-    font-family: var(--accent-font);
+    font-family: var(--heading-font);
   }
 </style>

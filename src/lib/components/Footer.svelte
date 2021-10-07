@@ -83,7 +83,7 @@
 
       li {
         margin: 0 0 .5rem;
-        font-family: var(--accent-font);
+        font-family: var(--heading-font);
       }
     }
 

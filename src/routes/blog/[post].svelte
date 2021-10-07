@@ -21,6 +21,7 @@
 <script>
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
+  import Bio from '$lib/components/posts/Bio.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount } from 'svelte'
   
@@ -94,32 +95,8 @@
   
   <svelte:component this={Post} />
 
-  <hr>
-
   <aside class="post-footer">
-    <div class="bio">
-      <img src="http://1.gravatar.com/avatar/b5938a61130749fe0c1ec823c7d3ee98" alt="" class="thumbnail">
-      <div>
-        <p>
-          Josh Collinsworth is a frontend developer, designer, teacher and writer in Omaha, currently working to make commerce better for everyone at Shopify. <a href="/">More about me</a>
-        </p>
-      </div>
-    </div>
-
-    <ul class="post-bio-links">
-      <li>
-        <a href="/contact">
-          <span aria-hidden="true">✉️</span>
-          Send me a note about this post
-        </a>
-      </li>
-      <li>
-        <a href="/blog">
-          <span aria-hidden="true">🔙</span>
-          Back to blog
-        </a>
-      </li>
-    </ul>
+    <Bio />
 
     {#if meta.categories}
       <h2 class="h4">Posted in: </h2>
@@ -133,6 +110,19 @@
         {/each}
       </TagList>
     {/if}
+
+    <ul class="post-bio">
+      <li class="post-bio__contact">
+        <a href="/contact">
+          Send me a note about this post
+        </a>
+      </li>
+      <li class="post-bio__blog">
+        <a href="/blog">
+          Back to blog
+        </a>
+      </li>
+    </ul>
   </aside>
 </article>
 
@@ -149,10 +139,6 @@
   .post {
     .cover-image {
       margin: 0;
-    }
-
-    h2 {
-      font-weight: bold;
     }
     
     .meta + p::first-letter,
@@ -175,7 +161,7 @@
       margin: 2rem 0 4rem;
       width: max-content;
       padding: 0.5em 0; 
-      font-family: var(--accent-font);
+      font-family: var(--heading-font);
       border-top: 2px solid var(--lightGray);
       
       b {
@@ -187,30 +173,27 @@
 
     .post-footer {   
       margin: 0 0 2rem;
-      
-      .bio {
-        font-size: 0.85rem;
-        font-style: italic;
-        overflow: auto;
-        display: flex;
-        align-items: flex-start;
-        align-content: flex-start;
-
-        .thumbnail {
-          width: auto;
-          margin: 0 1rem 0 0;
-          border-radius: 3rem;
-        }
-      }
 
       .h4 {
-        margin: 1.5rem 0 0.5rem;
-        font-size: 1rem;
+        margin-top: 0;
       }
     }
 
-    .post-bio-links {
-      margin: 1rem 0;
+    .post-bio {
+      margin: calc(var(--rhythm) * 2) 0;
+      font-family: var(--heading-font);
+
+      a {
+        margin-left: 1ch;
+      }
+
+      &__contact::marker {
+        content: '📩';
+      }
+
+      &__blog::marker {
+        content: '🔙';
+      }
     }
   }
 </style>

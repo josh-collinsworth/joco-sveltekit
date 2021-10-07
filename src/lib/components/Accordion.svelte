@@ -56,7 +56,7 @@
       font-size: 1rem;
       margin: 0 0 .5em;
       font-weight: bold;
-      font-family: var(--accent-font);
+      font-family: var(--heading-font);
       width: 100%;
       max-width: unset;
     }

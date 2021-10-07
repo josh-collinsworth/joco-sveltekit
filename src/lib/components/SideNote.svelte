@@ -36,7 +36,7 @@
 		&:before {
 			content: 'Side note:';
 			font-weight: bold;
-			font-family: var(--accent-font);
+			font-family: var(--heading-font);
 			font-style: normal;
 			text-transform: uppercase;
 			font-size: 0.8em;

@@ -96,11 +96,11 @@
     width: 100%;
     position: relative;
     z-index: 2;
-    font-family: var(--accent-font);
+    font-family: var(--heading-font);
 
     h2 {
       font-weight: bold;
-      font-family: var(--accent-font);
+      font-family: var(--heading-font);
       font-size: 0.8rem;  
       margin: 0;
       background: var(--paper);

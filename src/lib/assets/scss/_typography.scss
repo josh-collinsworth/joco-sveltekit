@@ -53,9 +53,8 @@ h4,
 h5,
 h6 {
 	font-family: var(--heading-font);
-	font-weight: var(--heading-font-weight);
-	font-style: var(--heading-font-style);
-	color: var(--header-color);
+	font-weight: bold;
+	color: var(--heading-color);
 	line-height: 1.1;
 	position: relative;
 	margin-bottom: var(--rhythm);
@@ -68,53 +67,59 @@ h6 {
 
 h1,
 .h1 {
-	font-size: 1.9rem;
+	font-size: 2.2rem;
 	position: relative;
 	margin-top: var(--rhythm);
 	font-weight: normal;
-	font-family: var(--accent-font);
 	
 	@media (min-width: $xs) {
-		font-size: 2.5rem;
+		font-size: 2.6rem;
 	}
 }
 
-h2,
-.h2 {
+h2 {
 	font-size: 1.8rem;
-	display: inline-block;
-	margin-top: calc(var(--rhythm) * 3);
-	font-weight: normal;
-	
+	font-weight: bold;
+	margin: calc(var(--rhythm) * 6) 0 calc(var(--rhythm) * 2);
+	z-index: 2;
+
 	@media (min-width: $xs) {
 		font-size: 2rem;
+	}
+	
+	&::before {
+		content: '';
+		width: calc(var(--rhythm) * 5);
+		height: 0.25rem;
+		background: currentColor;
+		display: block;
+		margin: var(--rhythm) 0;
 	}
 }
 
 h3,
 .h3 {
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	font-weight: normal;
-	margin-top: calc(var(--rhythm) * 3);
-	
-	@media (min-width: $xs) {		
-		font-size: 1.9rem;
-	}
+	margin-top: calc(var(--rhythm) * 4);
 }
 
 h4,
 .h4 {
-	font-family: var(--accent-font);
 	font-size: 1rem;
 	text-transform: uppercase;
-	margin-top: calc(var(--rhythm) * 3);
+	margin-top: calc(var(--rhythm) * 4);
 }
 
 h5,
 .h5 {
 	font-size: 1.1rem;
-	font-family: var(--accent-font);
 	margin-top: calc(var(--rhythm) * 3);
+}
+
+h6,
+.h6 {
+	font-size: 1rem;
 }
 
 * {

@@ -22,10 +22,7 @@
     max-width: var(--max-width);
 
     @media (min-width: $md) {
-      max-width: unset;
-      // grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-      // display: grid;
-      // grid-gap: 2rem;
+      max-width: 60rem;
     }
   }
 </style>

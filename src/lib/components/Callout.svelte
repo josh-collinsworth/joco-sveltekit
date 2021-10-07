@@ -14,7 +14,7 @@
     background: var(--paper);
     overflow: hidden;
     padding: 0 0 0.75rem 0;
-    font-family: var(--accent-font);
+    font-family: var(--heading-font);
     font-style: normal;
     font-weight: normal;
     max-width: 20em;

@@ -108,6 +108,10 @@
       border: 0;
       padding: 0;
       font-size: 1.5rem;
+
+      &::before {
+        display: none;
+      }
     }
 
     .image-link {
@@ -126,7 +130,7 @@
     .excerpt a {
       font-weight: bold;
       text-transform: uppercase;
-      font-family: var(--accent-font);
+      font-family: var(--heading-font);
       font-style: normal;
       font-size: 0.65rem;
       margin: 0.5rem 0 0;

@@ -33,7 +33,7 @@ hr {
 }
 
 .categories li a {
-	background: var(--header-color);
+	background: var(--heading-color);
 	padding: 0.5em;
 	border-radius: 8px;
 	text-align: center;
@@ -137,7 +137,7 @@ table {
 		padding-bottom: 0.5em;
 		font-weight: bold;
 		font-size: 1rem;
-		font-family: var(--accent-font);
+		font-family: var(--heading-font);
 	}
 	
 	thead tr {

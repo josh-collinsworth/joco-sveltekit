@@ -120,7 +120,7 @@
 		height: 3rem;
 		background: var(--darkBlue);
 		color: var(--white);
-		font-family: var(--accent-font);
+		font-family: var(--heading-font);
 
 		&:focus {
 			transform: translateY(7rem);

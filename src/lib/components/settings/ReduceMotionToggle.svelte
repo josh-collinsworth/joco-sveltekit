@@ -45,7 +45,7 @@
 		font-size: .6rem;
 		text-transform: uppercase;
 		color: var(--ink);
-		font-family: var(--accent-font);
+		font-family: var(--heading-font);
 
 		&[aria-pressed="true"]::before {
 			content: '';

@@ -73,7 +73,7 @@
     position: sticky;
     top: 2rem;
     max-width: calc(var(--sidebar-width) * 1.5);
-    font-family: var(--accent-font);
+    font-family: var(--heading-font);
     
     @media (min-width: $lg) {
       text-align: right;

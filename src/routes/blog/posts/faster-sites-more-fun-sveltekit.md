@@ -23,6 +23,8 @@ Let's be honest: lots of things in web development are harder than they should b
 
 That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh air.
 
+**This is going to be a long post.** I'll go into some detail on what Svelte is and where it came from; differences between Svelte and other frameworks; what SvelteKit is and some of its features; and finally, the conversion from Gridsome to SvelteKit, and the decisions and process behind that choice.
+
 
 ## What is Svelte?
 
@@ -483,7 +485,7 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 
 As you can see from the table above, the SvelteKit version shaves about 45% off the Gridsome build, and _over two thirds_ when compressed. The SvelteKit site _at full size_ is about the size the Gridsome site was _compressed_!
 
-If you're curious, by the way: _without_ preloading or analytics, the SvelteKit homepage clocks in at somewhere around 162 kB transferred, and 260 kB unpacked (nearly half of which is just for the webfonts). You can load it without JavaScript to shave off about 30% of those numbers (but it naturally won't seem as fast if you do, and will be missing some of the niceness).
+Granted, 1.7 MB is not exactly _tiny_, but bear in mind that's with the weight of _every_ route on the site preloading. For context: _without_ preloading or analytics, the SvelteKit homepage clocks in at somewhere around 162 kB compressed, and 260 kB unpacked (nearly half of which is just for the webfonts). You can load it without JavaScript to shave about 30% off those numbers, but it naturally won't seem as fast if you do, and will be missing some of the niceness.
 
 By the way: although it isn't implemented in any form in most browsers yet, I put a `prefers-reduced-data` media query on the site that will prevent preloading when detected.
 

@@ -30,21 +30,17 @@ $xxxl: 2200px;
 	--black: hsl(var(--blackHSL));
 	--trueBlack: hsl(var(--trueBlackHSL));
 
-	--heading-font: 'Averta-Std', sans-serif;
-	--heading-font-weight: bold;
-	--heading-font-style: normal;
-
-	--accent-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		'Helvetica Neue', Arial, sans-serif;
-
-	--body-font: 'Alkes', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+	
+	--heading-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 	'Helvetica Neue', Arial, sans-serif;
+
+	--body-font: 'Alkes', Georgia, serif;
 
 	--body-font-weight: normal;
 	--body-line-height: 1.6;
 	--body-font-size: 1.125rem;
 
-	@media (min-width: $xs) {
+	@media (min-width: $sm) {
 		--body-font-size: 1.25rem;
 	}
 
@@ -61,7 +57,7 @@ $xxxl: 2200px;
 	--ink: var(--darkGray);
 	--paper: var(--white);
 	--paperHSL: var(--whiteHSL);
-	--header-color: var(--darkerGray);
+	--heading-color: var(--darkerGray);
 	--accent-color: var(--darkBlue);
 	--link-color: var(--darkBlue);
 	--highlight-color: var(--darkGray);
@@ -94,7 +90,7 @@ $xxxl: 2200px;
 		--paper: var(--black);
 		--paperHSL: var(--blackHSL);
 		--ink: var(--white);
-		--header-color: var(--white);
+		--heading-color: var(--white);
 		--accent-color: var(--lightBlue);
 		--link-color: var(--lightBlue);
 		--highlight-color: var(--darkerGray);

@@ -1,6 +1,6 @@
-<h2 class="h1">Hi, I'm Josh.</h2>
+## Hi, I'm Josh.
 
-<p class="subhead">I'm a front-end developer, designer, teacher, and writer.</p>
+<p class="subhead">I'm a front-end developer, designer, teacher,&nbsp;and&nbsp;writer.</p>
 
 
 ### Professionally:

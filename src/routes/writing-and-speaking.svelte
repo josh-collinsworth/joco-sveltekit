@@ -6,19 +6,13 @@
 
 
 <h2>Writing</h2>
-
-<hr />
-
 <p class="subhead">Articles written for other publications.</p>
-
+<hr>
 <PostList posts={EXTERNAL_POSTS} external={true} />
 
 <h2>Speaking</h2>
-
-<hr />
-
-<p class="subhead"></p>
-
+<p class="subhead">To do: add slide decks where possible.</p>
+<hr>
 <ul>
   {#each talks as talk}
     <li>
@@ -39,16 +33,16 @@
 
 <style lang="scss">
   h2 {
-    margin-bottom: 0;
+    margin-bottom: var(--rhythm);
+  }
+
+  hr {
+    margin: var(--rhythm) 0 calc(var(--rhythm) * 3);
   }
 
   .subhead {
     font-size: 1.1rem;
     font-style: italic;
-    margin: 0 0 calc(var(--rhythm) * 3);
-  }
-
-  hr {
-    margin: 0.5rem 0;
+    margin: 0;
   }
 </style>

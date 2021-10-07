@@ -87,7 +87,7 @@
 		margin-top: 4rem;
 		
 		label {
-			font-family: var(--accent-font);
+			font-family: var(--heading-font);
 	
 			i {
 				font-family: var(--body-font);

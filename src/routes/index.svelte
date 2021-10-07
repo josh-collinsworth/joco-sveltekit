@@ -30,29 +30,25 @@
   width: 100%;
 
   h2 {
-    margin: 0;
-  }
-
-  .subhead {
-    font-size: 1.2rem;
-    margin: 0.25em 0 4rem;
-    line-height: 1.2;
-    font-family: var(--accent-font);
+    margin-bottom: var(--rhythm);
   }
 
   h3 {
-    font-family: var(--accent-font);
-    font-weight: normal;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .subhead {
     font-size: 1.3rem;
-    line-height: 1;
-    border: 0;
+    margin: 0 0 4rem;
+    max-width: 20em;
+    line-height: 1.2;
+    font-family: var(--heading-font);
   }
 
   ul {
     margin-top: 4rem;
-    font-family: var(--accent-font);
+    font-family: var(--heading-font);
   }
 }	
 </style>
