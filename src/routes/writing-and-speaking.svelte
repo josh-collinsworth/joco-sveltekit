@@ -9,7 +9,7 @@
 
 <hr />
 
-<p class="subhead">Articles I've written for other publications.</p>
+<p class="subhead">Articles written for other publications.</p>
 
 <PostList posts={EXTERNAL_POSTS} external={true} />
 
@@ -45,7 +45,7 @@
   .subhead {
     font-size: 1.1rem;
     font-style: italic;
-    margin: 0;
+    margin: 0 0 calc(var(--rhythm) * 3);
   }
 
   hr {

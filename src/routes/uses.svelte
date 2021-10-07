@@ -39,5 +39,9 @@
 		p a {
 			font-weight: bold;
 		}
+	
+		h2 {
+			font-weight: bold;
+		}
 	}
 </style>
