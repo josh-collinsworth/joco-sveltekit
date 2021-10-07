@@ -4,6 +4,8 @@
    * approach I could find. I even used the remark/rehype plugins, but they caused a reload
    * when a link was clicked. So although I would much prefer to have this HTML pre-generated,
    * this works as a progressive enhancement, so I'm sticking with it for now at least.
+   * 
+   * EDIT: ended up removing this component entirely. Left here just in case I decide to reuse it one day.
    */
 
   import { onMount } from 'svelte'
@@ -29,7 +31,7 @@
    * it works and as a bonus, is a progressive enhancement.
   */
   onMount(() => {
-    const allHeadings = document.querySelectorAll('article h1 ~ :is(h2, h3, h4, h5, h6)');
+    const allHeadings = document.querySelectorAll('article h1 ~ :is(h2, h3, h4, h5, h6)')
 
     if (allHeadings.length < 5) return
 

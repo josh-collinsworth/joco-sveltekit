@@ -11,7 +11,9 @@
 </script>
 
 <script lang="ts">
-  export let Uses
+	import type { SvelteComponent } from 'svelte'
+
+  export let Uses: SvelteComponent
 </script>
 
 

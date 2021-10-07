@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount } from 'svelte'
   import { sluggify } from '$lib/assets/js/utils'
 
   export let title: string = ''

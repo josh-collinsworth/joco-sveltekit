@@ -1,17 +1,20 @@
 <script context="module" lang="ts">
-	export async function load() {
-		const Homepage = await import('$lib/content/homepage.md')
+  export async function load() {
+    const Homepage = await import('$lib/content/homepage.md')
 		
 		return {
-			props: {
-				Homepage: Homepage.default
+      props: {
+        Homepage: Homepage.default
 			}
 		}
 	}
 </script>
 
+
 <script lang="ts">
-	export let Homepage
+  import type { SvelteComponent } from 'svelte'
+
+  export let Homepage: SvelteComponent
 </script>
 
 

@@ -23,7 +23,7 @@
 	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/data/constants'
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
-	import { prefetch, prefetchRoutes } from '$app/navigation';
+	import { prefetch, prefetchRoutes } from '$app/navigation'
 	import throttle from 'lodash/throttle.js'
 	
 	export let path: string

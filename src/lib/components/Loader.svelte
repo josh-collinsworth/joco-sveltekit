@@ -67,7 +67,6 @@
       }
       
       &.inner {
-        background: rgba(255, 255, 0, 0.7);
         background: var(--paper);
         animation: inner_pop 1000ms infinite var(--easing);
         

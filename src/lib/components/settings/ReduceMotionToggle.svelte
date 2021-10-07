@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { prefersReducedMotion } from '$lib/data/store';
+	import { prefersReducedMotion } from '$lib/data/store'
   import { onMount } from 'svelte'
 
   onMount(() => {

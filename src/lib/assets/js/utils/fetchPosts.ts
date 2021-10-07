@@ -1,9 +1,9 @@
 import type Post from '../interfaces/post'
 
 interface fetchPostsOptions {
-  withContent?: boolean;
-  offset?: number;
-  limit?: number;
+  withContent?: boolean
+  offset?: number
+  limit?: number
 }
 
 const fetchPosts = async (options: fetchPostsOptions): Promise<Post[]> => {

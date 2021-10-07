@@ -27,7 +27,7 @@ I've also got working experience with jQuery and Knockout.
 
 - I'm a strong proponent of well-architected, accessible, and semantic <b>HTML</b>. (I create and use SVG often.)
 
-- I’m a [wordpress](https://wordpress.org/) expert and generally prefer to build themes from scratch. I'm capable with PHP and MySQL.
+- I’m a [WordPress](https://wordpress.org/) expert and generally prefer to build themes from scratch. I'm capable with PHP and MySQL.
 
 - I wouldn't call myself a full-stack developer, but I know my way around Ruby on Rails and have dabbled in some Node and Laravel.
 

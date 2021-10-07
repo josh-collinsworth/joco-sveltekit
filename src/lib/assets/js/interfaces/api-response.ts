@@ -1,9 +1,9 @@
 import type Post from './post'
 
 export default interface APIResponse {
-  status: number;
+  status: number
   body: {
-    posts?: Post[];
-    error?: string;
+    posts?: Post[]
+    error?: string
   }
 }

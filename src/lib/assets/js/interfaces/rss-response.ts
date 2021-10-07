@@ -1,7 +1,7 @@
 export default interface RSSResponse {
-  body: string;
+  body: string
   headers: {
-    'Cache-Control': string;
-    'Content-Type': string;
-  };
+    'Cache-Control': string
+    'Content-Type': string
+  }
 }

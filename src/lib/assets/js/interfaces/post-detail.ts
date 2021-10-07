@@ -1,4 +1,4 @@
 export default interface PostDetail {
-  slug: string;
-  title: string;
+  slug: string
+  title: string
 }
