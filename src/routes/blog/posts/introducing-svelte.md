@@ -1,5 +1,5 @@
 ---
-title: 'Introducing Svelte'
+title: 'Getting to know Svelte'
 date: '2021-10-1'
 updated: '2021-10-07'
 categories:
@@ -208,11 +208,11 @@ A typical `.svelte` component might look like this (though again, you can order 
 </style>
 ```
 
-If you prefer, you can use Sass in your components with [minimal modification](https://kit.svelte.dev/docs#additional-resources-integrations), and by adding `lang="scss"` to the `<style>` tag.
+If you prefer, you can use Sass in your components with [minimal modification](https://github.com/sveltejs/svelte-preprocess), and by adding `lang="scss"` to the `<style>` tag. This is possible thanks to `svelte-preprocess`, which is (to quote the [docs](https://github.com/sveltejs/svelte-preprocess)):
 
-And if you prefer, you can easily just use plain ol' `.css` (or `.scss`) files, too. Adding them to your project in SvelteKit is as easy as importing them in your main layout file (more on that in a bit).
+> A Svelte preprocessor with sensible defaults and support for: PostCSS, SCSS, Less, Stylus, CoffeeScript, TypeScript, Pug and much more.
 
-Svelte's preprocessor offers an extremely nice Sass feature: you can [specify content to prepend when loading your component's Sass](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content). This way, if you have all of your Sass variables in an external `_vars.scss` file like me, you can just have the processer auto-import that into every component. This saves you the trouble (_and_ the annoying file system traversal) of manually `@import`ing the SCSS file every time you want to use a variable in a component.
+On top of all that, `svelte-preprocess` adds an extremely nice Sass feature: you can [specify content to prepend when loading your component's Sass](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content). This way, if you have all of your Sass variables in an external `_vars.scss` file like me, you can just have the processer auto-import that into every component. This saves you the trouble (_and_ the annoying file system traversal) of manually `@import`ing the SCSS file every time you want to use a variable in a component.
 
 
 ##### Conditional styling
@@ -276,13 +276,13 @@ If you'd like to make a component's CSS global, you can do that on a per-rule ba
 </style>
 ```
 
-**One word of warning there, however:** global styles persist once loaded on the page. So if you have a `global` style tag in a component that only loads on a certain page, its styles will stick around after you've navigated to other pages, potentially applying to elements there as well.
+**One word of warning there, however:** global styles can persist once loaded on the page, since Svelte outputs your component's styles as a standalone CSS file. So if you have a `global` style tag in a component that only loads conditionally, its styles can stick around even after that component is removed from that page, potentially applying to elements there as well.
 
 <Callout>
 I've found it's a good idea to always use a wrapping parent class selector, even when dealing with scoped styles.
 </Callout>
 
-This leads to some weirdness, since "global" only means global _once loaded_; the component has to be mounted once first before those styles are actually available.
+This could lead to some confusion, since "global" only means global _once loaded_; the component has to be mounted once first before those styles are actually available.
 
 Because of this, I've found it's a good idea to always use a wrapping parent class selector, even when dealing with scoped styles. At worst it's redundant, and at best you've saved yourself from unintentional style leakage (either now or if you decide to un-scope the styles in the future).
 
@@ -291,7 +291,7 @@ If you'd like to read more about styling in Svelte, be sure to read [What I Like
 
 ## When wouldn't you choose Svelte?
 
-I'll be honest: to me, the arguments against Svelte grow fewer and thinner all the time. But I'll mention the biggest ones here for perspective.
+I'll be honest: to me, the arguments against Svelte grow fewer and thinner all the time. But I'll mention the biggest ones here for the sake of perspective.
 
 
 ### Debunking the "small community" argument
@@ -333,13 +333,13 @@ The _real_ question that matters is: _where is that point_?
 
 Turns out: the scale at which Svelte's advantages disappear is actually unrealistically high for just about any application. 
 
-If you'd like more detail, you can read this [comparison of React and Svelte bundle scaling](https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md), or [this similar comparison](https://svelte-scaling.acmion.com/). But to summarize both: Svelte's advantage disappears somewhere around 150 kB of components loaded onto the page. That _sounds_ small, but components are tiny; it would actually take a pretty massive number (or extremely high complexity) to get to that point. Many components aren't even 1 kB.
+If you'd like more detail, you can read this [comparison of React and Svelte bundle scaling](https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md), or [this similar comparison](https://svelte-scaling.acmion.com/). But to summarize both: Svelte's advantage disappears somewhere around 150 kB of components loaded onto the page. That doesn't _sound_ like a lot, but components are tiny; it would actually take a pretty massive number (or extremely high complexity) to get to that point. Many components aren't even 1 kB. (In fact, speed tests have dinged me for not g-zipping components, since Netlify doesn't automatically gzip any components that are less than 1 kB in size, as the gains are too tiny to bother with.)
 
-Granted, this is a small personal site and not a production app, but I'm barely 20% of the way to that scale. I can't even fathom how I'd make a page large and complex enough to approach that number.
+For comparison's sake: [I recently rewrote this site in SvelteKit](/blog/faster-sites-more-fun-sveltekit/). Granted, it's still a small personal site and not a production app, but I'm _barely_ 20% of the way to that scale. My largest and most complex component--the `__layout.svelte` file, which has 17 imports--is only 12 kB. None of my other components are even 3 kB. So it's tough to fathom how I'd make a page large and complex enough to approach the ~150 kB vertex, given I'm orders of magnitude below that right now.
 
 And let's not forget: that's the scale at which you're on _even ground_ with React. You'd _still_ have to go significantly larger than _that_ before there would be any meaningful difference between the two.
 
-_Plus_, this whole discussion focuses on how things are in this moment, not on future upside. Will React get smaller and faster in the future? Probably; it's supported by a large and talented team. But it's also benefitted from nearly a decade of optimization already; there may not be a lot left to squeeze out of it at this point.
+_Plus_, this whole discussion focuses on how things are right now, in this moment, and not on future upside. Will React get smaller and faster in the future? Probably; it's supported by a large and talented team. But it's also benefitted from nearly a decade of optimization already; there may not be a lot left to squeeze out of it at this point.
 
 On the other hand, Svelte is comparably young. If I'm betting on which framework will improve more in the future _relative to its current position_, I'm backing Svelte, no question.
 
@@ -357,42 +357,42 @@ However, if you're starting a new project today: note that Internet Explorer is 
 
 The answer to the question of whether you should use Svelte _right now_ is a classic: "it depends."
 
-Are you choosing a technology for a relatively new startup or product? Svelte will likely enable you to move more quickly and build a product that's more performant, but hiring for it may be a challenge. You may need to be prepared to train your team on it (though, in fairness, knowing one JS framework tends to make learning a new one easier, and Svelte is in my opinion the easiest to start with).
+Are you learning your _first_ framework? If so, what's your goal? If you're looking for an easy tool to learn, for something that will empower you to build interactive UIs, or just for some additional knowledge and experience, I'd recommend Svelte wholeheartedly. There's no wrong choice when it comes to developing your own skills--particularly because having one framework down makes it much easier to learn a new one, like moving from instrument to instrument.
 
 <Callout>
 There's no wrong choice when it comes to developing your own skills and knowledge.
 </Callout>
 
-Are you learning your _first_ framework? If so, what's your goal? If you'd just like to be able to build some neat apps and do some learning, I'd recommend Svelte wholeheartedly. There's no wrong choice when it comes to developing your own skills and knowledge--particularly because having one framework down makes it much easier to learn a new one, like moving from instrument to instrument.
+On the other hand, if you're learning in the hopes of getting a job with your newfound skills, it would be hard to recommend anything other than React for that pursuit--simply because it's the _largest_ framework by far in terms of market share and jobs available. I wish that weren't the case, but tech as a whole (in the U.S., at least), went in heavily on React and I don't see that changing any time soon. Still, though: if you already know React, I think it's still worth learning Svelte just for the perspective, if nothing else.
 
-On the other hand, if you're learning in the hopes of getting a job with your newfound skills, it would be hard to recommend anything other than React for that pursuit—simply because it's the _largest_ framework by far in terms of market share and jobs available. I wish that weren't the case, but tech as a whole (in the U.S., at least), went in heavily on React and I don't see that changing any time soon.
+Alternately: are you choosing a technology for a relatively new startup or project? Svelte will likely enable you to move more quickly and build something that's more performant, but hiring or collaborating may be a challenge, given the relatively small pool of Svelte devs. That said, though: knowing one JS framework tends to make learning a new one easier, and Svelte is in my opinion the easiest to start with. I think any developer who's already familiar with another frontend framework should be able to pick up Svelte pretty quickly (and vice versa).
 
 
 ## How to get started with Svelte
 
-Clearly I'm a big fan of Svelte, so I might be biased, but I honestly think it might have the best tutorial and documentation of any framework.
-
-There are two real ways forward at this point:
+If you'd like to dive in and get some hands-on experience with Svelte (and I recommend you do!), there are two main ways forward at this point.
 
 
 ### The Svelte REPL
 
-There's a wonderfun introduction in the [Svelte Tutorial](https://svelte.dev/tutorial/basics), which functions as a live coding environment where you're taught Svelte bit by bit, and try to finish incomplete Svelte code challenges along the way. It's fun and engaging, and covers all of Svelte's concepts from simple to complex extremely well. In fact, I find myself going back to it over and over. I highly recommend it both for learning and for reference.
+Clearly I'm a big fan, so I could be biased, but I honestly think Svelte might have the best tutorial and documentation of any framework out there.
+
+There's a wonderful introduction in the [Svelte Tutorial](https://svelte.dev/tutorial/basics), which functions as a live coding environment where you're taught Svelte bit by bit, and try to finish incomplete Svelte code challenges along the way. (Or, if you like, you can just click "show me" to see the complete lesson.) It's fun and engaging, and covers all of Svelte's concepts from simple to complex extremely well. In fact, I find myself going back to it over and over. I highly recommend it both for learning and for reference.
 
 
-### Installing Svelte
+### Starting your own Svelte project
 
 Alternatively, there's a [Svelte quickstart guide](https://svelte.dev/blog/the-easiest-way-to-get-started) that walks you through installing Svelte on your machine. I'll post the directions here, too; it's suprisingly quick, assuming you already have NPM installed:
 
-```bash
-npx degit sveltejs/template my-svelte-project
-cd my-svelte-project
-# to use TypeScript run:
-# node scripts/setupTypeScript.js
-
-npm install
-npm run dev
-```
+> ```bash
+> npx degit sveltejs/template my-svelte-project
+> cd my-svelte-project
+> # to use TypeScript run:
+> # node scripts/setupTypeScript.js
+> 
+> npm install
+> npm run dev
+> ```
 
 If you're not familiar with those commands:
 
@@ -400,7 +400,7 @@ If you're not familiar with those commands:
 
 - `degit` clones a repo (in this case, the `template` project from `sveltejs`), but _without_ its git history; it'll be as though you're starting up a fresh new project.
 
-Naturally, you can replace `my-svelte-project` with whatever name you'd like.
+Naturally, you can replace `my-svelte-project` with whatever name you'd like for your local project. Once you `npm install`, `npm run dev` will start a dev server that will show you your project and automatically refresh as you save your changes.
 
 
 ## Conclusion
