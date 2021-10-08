@@ -12,11 +12,9 @@
 		<HamburgerButton />
 
 		<nav
-			id="mobile-nav"
 			class="main-nav nav"
 			class:open={$isMenuOpen}
 			role="navigation"
-			aria-hidden={!$isMenuOpen}
 		>
       <NavLinks {path} />
 		</nav>
