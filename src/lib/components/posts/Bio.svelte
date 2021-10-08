@@ -5,7 +5,7 @@
 <div class="bio-wrapper">
   <hr />
   <div class="bio">
-    <img src="/images/bio-photo.jpg" alt="" class="thumbnail">
+    <img src="/images/bio-photo.jpg" alt="" class="thumbnail" width="1" height="1">
     <div>
       <p>
         Josh Collinsworth is a frontend developer, designer, teacher, and writer. He currently lives in Omaha, Nebraska, and works for Shopify as a senior frontend developer. 
