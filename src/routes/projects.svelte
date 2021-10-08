@@ -127,9 +127,6 @@
         <CodePenLink hash="ZEGrMRQ">Generative typographic art grid</CodePenLink> in Vue
       </li>
       <li>
-        <CodePenLink hash="ZEGrMRQ">Generative typographic art grid</CodePenLink> in Vue
-      </li>
-      <li>
         A <CodePenLink hash="mdJmBQz">Hex/RGB(a)</CodePenLink> color converter in Vue
       </li>
     </ul>
