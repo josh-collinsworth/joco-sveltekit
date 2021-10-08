@@ -160,6 +160,12 @@
       <li>
         Website for <a href="https://rise.getflywheel.com" rel="external">Rise</a>, Flywheel's BIPOC employee resource group.
       </li>
+      <li>
+        A <a href="https://github.com/josh-collinsworth/flywheel-cloud-wp-load-fix">WordPress plugin</a> to help make various other plugins and theme compatible with <a href="https://getflywheel.com/cloud-platform/">Flywheel's cloud platform</a>
+      </li>
+      <li>
+        A Chrome extension, an internal knowledge base, various WordPress themes, a couple of Node CLI tools, and a handful of trainings and presentations (none of which I can show here because employer privacy and such)
+      </li>
     </ul>
   </article>
 </div>
