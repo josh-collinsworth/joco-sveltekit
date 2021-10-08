@@ -20,7 +20,7 @@
 	import PageHeading from '$lib/components/PageHeading.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
-	import { FULLWIDTH_PAGES, TIMING_DURATION } from '$lib/data/constants'
+	import { FULLWIDTH_PAGE_REGEXP, TIMING_DURATION } from '$lib/data/constants'
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { prefetch, prefetchRoutes } from '$app/navigation'
@@ -55,8 +55,12 @@
 		// Janky, but needed to prevent jumps in width while transitioning between pages of different widths.
 		// Tried finding a better way to do this but failed; having the transition wrapper as an element in the grid makes things very complicated.
 		setTimeout(() => {
-			isFullwidthPage = FULLWIDTH_PAGES.includes(path)
+			setIsFullwidthPage()
 		}, TIMING_DURATION)
+	}
+
+	const setIsFullwidthPage = () => {
+		isFullwidthPage = FULLWIDTH_PAGE_REGEXP.test(path)
 	}
 
 	const handleScroll = throttle(() => {
@@ -92,7 +96,7 @@
 			}
 		}
 
-		isFullwidthPage = FULLWIDTH_PAGES.includes(path)
+		setIsFullwidthPage()
 	})
 </script>
 
@@ -124,9 +128,13 @@
 			</PageTransition>
 		</main>
 		
-		{#if pageHasSidebar}
-			<Sidebar />
-		{/if}
+		<div id="sidebar">
+			<PageTransition refresh={pageHasSidebar}>
+				{#if pageHasSidebar}
+				<Sidebar />
+				{/if}
+			</PageTransition>
+		</div>
 	</div>
 
 	<Footer />

@@ -68,10 +68,12 @@
 
 			<div class="message-wrapper">
 				<label for="message">What's on your mind?</label>
-				<textarea name="message" bind:value={formData.message}></textarea>
+				<textarea name="message" bind:value={formData.message} rows="6"></textarea>
 			</div>
 
-			<button type="submit">Send</button>
+			<button type="submit">
+				Send
+			</button>
 		</form>
 	{:else}
 		<h1>Thanks for your message!</h1>
@@ -88,6 +90,7 @@
 		
 		label {
 			font-family: var(--heading-font);
+			font-weight: bold;
 	
 			i {
 				font-family: var(--body-font);

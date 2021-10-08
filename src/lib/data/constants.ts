@@ -1,13 +1,8 @@
-const FULLWIDTH_PAGES: string[] = [
-  '/projects',
-  '/blog',
-  '/categories',
-  '/writing-and-speaking'
-]
+const FULLWIDTH_PAGE_REGEXP = /^\/(blog\/?$|projects|writing-and-speaking|blog\/category)/
 
 const TIMING_DURATION = 360
 
 export {
-  FULLWIDTH_PAGES,
+  FULLWIDTH_PAGE_REGEXP,
   TIMING_DURATION,
 }

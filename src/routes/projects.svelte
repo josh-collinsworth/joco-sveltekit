@@ -167,6 +167,8 @@
 
 <style lang="scss">
   .projects {
+    max-width: 64rem;
+
     p {
       max-width: var(--max-width);
     }

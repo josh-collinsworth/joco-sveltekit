@@ -7,6 +7,7 @@
   import { onMount } from 'svelte'
   import TagList from './tags/TagList.svelte'
   import Tag from './tags/Tag.svelte'
+import PageTransition from './transitions/PageTransition.svelte'
   
   let posts: Post[] = []
   let allCategories: string[] = []
@@ -36,7 +37,7 @@
 </script>
 
 
-<aside id="sidebar">
+<aside>
   <a href="/" class="home-link">
     <LogoSVG iconOnly={true} />
   </a>
