@@ -65,6 +65,7 @@ button {
 	font-family: var(--heading-font);
 	background: hsla(var(--lightBlueHSL), 0.2);
 	color: var(--ink);
+	margin: 0;
 
 	&:hover {
 		background: var(--yellow);
