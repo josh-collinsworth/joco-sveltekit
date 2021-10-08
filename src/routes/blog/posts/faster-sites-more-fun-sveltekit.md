@@ -34,16 +34,16 @@ Let's start with Svelte, and frontend frameworks in general.
 Since frontend frameworks run entirely on JavaScript, they aren't ideal for much except building out pieces of interactive UIs on a single page; by nature, they're limited to the capabilities of the browser page they're loaded on. (Because of this, sites built just with a frontend framework are sometimes called "single-page applications," or SPAs.)
 
 <Callout>
-If a frontend framework is a toolbox, an app framework is a complete workshop.
+If a frontend framework is a toolbox, an meta-framework is a complete workshop.
 </Callout>
 
-To overcome this limitation, most popular frameworks have their own "app framework," or: a tool that helps you build not just pieces of a UI or a single page, but entire _pages and apps_ with the framework in question.
+To overcome this limitation, most popular frameworks have their own "meta-framework," or: a tool that helps you build not just pieces of a UI or a single page, but entire _pages and apps_ with the framework in question. (Meta-frameworks are also sometimes called "app frameworks.")
 
-[Next](https://nextjs.org/) is a React app framework; [Nuxt](https://nuxtjs.org/) is a Vue app framework; and [SvelteKit](https://kit.svelte.dev/) is a Svelte app framework.
+[Next](https://nextjs.org/) is a React meta-framework; [Nuxt](https://nuxtjs.org/) is a Vue meta-framework; and [SvelteKit](https://kit.svelte.dev/) is a Svelte meta-framework.
 
-You could think of app frameworks as a level _above_ frontend frameworks; if a frontend framework is a toolbox, an app framework is a complete workshop.
+You could think of meta-frameworks as a level _above_ frontend frameworks; if a frontend framework is a toolbox, an meta-framework is a complete workshop. Each one is generally the best way to build complete apps and multi-page sites ("[transitional apps](https://www.youtube.com/watch?v=860d8usGC0o)," as Rich Harris coined them) with its respective corresponding frontend framework.
 
-Most app frameworks include some combination of: pages and routing; data stores; layouts; image optimization; better SEO and full-page control; data fetching; and/or plugins--usually just about everything except a database to help you build a full-fledged site or app.
+Most meta-frameworks include some combination of: pages and routing; data stores; layouts; image optimization; better SEO and full-page control; data fetching; and/or plugins--usually just about everything except a database to help you build a full-fledged site or app.
 
 
 ### Going static
@@ -203,7 +203,7 @@ The ability to read Markdown files isn't included by default in SvelteKit, but i
 
 ## Static SvelteKit vs. Gridsome
 
-Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome aren't exactly the same type of thing. SvelteKit is an app framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
+Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome aren't exactly the same type of thing. SvelteKit is an meta-framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
 
 Still, if we're scoping the discussion to _just_ SvelteKit's static adapter, I think it's a fair, if not exact, comparison.
 
@@ -341,7 +341,7 @@ I won't go into either of those here, but I _do_ address them both in detail in 
 
 ### Don't get confused by Sapper
 
-One other thing to know at this point in SvelteKit's existence is that it's actually the _second_ stab at a Svelte app framework; [Sapper](https://sapper.svelte.dev/) was the first.
+One other thing to know at this point in SvelteKit's existence is that it's actually the _second_ stab at a Svelte meta-framework; [Sapper](https://sapper.svelte.dev/) was the first.
 
 Sapper never seemed as big as SvelteKit does now, but it's been deprecated in favor of SvelteKit, and there's still some confusion that arises when searching online for code solutions in the space.
 
