@@ -1,12 +1,5 @@
 <script lang="ts">
-  import { appendScriptToHead } from '$lib/assets/js/utils'
-  import { onMount } from 'svelte'
   import CodePenLink from '$lib/components/CodePenLink.svelte'
-
-  onMount(() => {
-    const codePenEmbedURL = 'https://static.codepen.io/assets/embed/ei.js'
-    appendScriptToHead(codePenEmbedURL)
-  })
 </script>
 
 
