@@ -10,7 +10,8 @@ tags:
   - "personal"
   - "social-media"
 coverImage: "Untitled-21.png"
-coverRatio: "9 / 5"
+coverWidth: 9
+coverHeight: 5
 excerpt: I’m beginning to believe that becoming more connected with everyone is making me less connected with anyone.
 ---
 <script>

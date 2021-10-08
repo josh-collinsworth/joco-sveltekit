@@ -25,7 +25,11 @@
     <a on:click={startLoading} href={computedURL} sveltekit:prefetch class="image-link">
       <img
         src="/images/post_images/{post.coverImage}"
-        style="aspect-ratio: {post.coverRatio}"
+        style="
+          aspect-ratio: {post.coverWidth} / {post.coverHeight};
+          width: {post.coverWidth};
+          height: {post.coverHeight}
+        "
         alt="Preview image for {post.title}"
         loading="lazy"
       />

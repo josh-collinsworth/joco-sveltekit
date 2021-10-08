@@ -5,7 +5,8 @@ updated: "2020-05-19"
 categories: 
   - "css"
 coverImage: "css-variables-1.png"
-coverRatio: "1096 / 734"
+coverWidth: 1096
+coverHeight: 734
 excerpt: CSS variables (otherwise known as CSS custom properties) give previously impossible superpowers to CSS developers. This post covers what they are, how they work, and a couple of nifty ways you can implement them on your own website.
 ---
 <script>

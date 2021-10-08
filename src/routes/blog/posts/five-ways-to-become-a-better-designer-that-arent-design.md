@@ -6,7 +6,8 @@ categories:
   - "design"
   - "thoughts-and-advice"
 coverImage: "toa-heftiba-195458-1-1.jpg"
-coverRatio: "80 / 51"
+coverWidth: 80
+coverHeight: 51
 excerpt: There’s vast world of design learning and opportunity right in front of us constantly. All we need to do is take the time to notice it and learn from it.
 ---
 <script>

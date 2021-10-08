@@ -6,7 +6,8 @@ categories:
   - "design"
   - "thoughts-and-advice"
 coverImage: "Negative-Space.png"
-coverRatio: "4 / 3"
+coverWidth: 4
+coverHeight: 3
 excerpt: Consider this post a guide on how to avoid the most common mistakes young designers make when assembling their portfolios.
 ---
 <script>

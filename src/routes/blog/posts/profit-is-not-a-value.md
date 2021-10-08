@@ -6,7 +6,8 @@ categories:
   - "thoughts-and-advice"
   - "personal"
 coverImage: "money.png"
-coverRatio: "8 / 5"
+coverWidth: 8
+coverHeight: 5
 excerpt: Any executive or business owner will say their company values integrity, and virtually every company claims that they reward and value their employees exhibiting their brand values. But is that really accurate?
 ---
 <script>

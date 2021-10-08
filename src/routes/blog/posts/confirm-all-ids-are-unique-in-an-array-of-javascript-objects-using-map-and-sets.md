@@ -6,7 +6,8 @@ categories:
   - "javascript"
   - "web"
 coverImage: "EQ0-F2nXUAEpgCx.jpeg"
-coverRatio: "5 / 3"
+coverWidth: 5
+coverHeight: 3
 excerpt: Working with arrays of objects in JavaScript can be difficult. This post covers how to ensure all object keys (IDs) are unique, and how to find non-unique values.
 ---
 <script>

@@ -7,7 +7,8 @@ categories:
   - 'svelte'
   - 'web'
 coverImage: 'converting-to-sveltekit.png'
-coverRatio: '821 / 334'
+coverWidth: 821
+coverHeight: 334
 excerpt: I've been a fan of Svelte for years, but never had the opportunity to use it on a serious project before. So when I found myself looking for a new platform for this site as SvelteKit entered open beta, it seemed like perfect timing.
 ---
 

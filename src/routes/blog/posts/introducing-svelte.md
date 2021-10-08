@@ -7,7 +7,8 @@ categories:
   - 'svelte'
   - 'web'
 coverImage: 'introducing_svelte.png'
-coverRatio: '16 / 9'
+coverWidth: 16
+coverHeight: 9
 excerpt: Svelte is a new style of framework for building sites and apps. Let's dive into what makes it different, why it's so enjoyable, and how it's able to ship such tiny, fast apps.
 ---
 

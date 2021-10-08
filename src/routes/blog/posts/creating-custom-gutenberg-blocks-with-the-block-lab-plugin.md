@@ -8,7 +8,8 @@ categories:
   - "php"
   - "wordpress"
 coverImage: "block-lab-banner.png"
-coverRatio: "386 / 125"
+coverWidth: 386
+coverHeight: 125
 excerpt: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0. This post explains how to use it, even if you only know basic HTML.
 ---
 <script>

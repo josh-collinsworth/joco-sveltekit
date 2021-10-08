@@ -80,8 +80,12 @@
   <img
     class="cover-image"
     src="/images/post_images/{meta.coverImage}"
-    style="aspect-ratio: {meta.coverRatio}"
     alt=""
+    style="
+      aspect-ratio: {meta.coverWidth} / {meta.coverHeight};
+      width: {meta.coverWidth};
+      height: {meta.coverHeight}
+    "
   />
 
   <h1>{ meta.title }</h1>
