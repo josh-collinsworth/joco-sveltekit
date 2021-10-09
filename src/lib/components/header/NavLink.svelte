@@ -19,7 +19,11 @@
 </script>
 
 
-<li class:open={$isMenuOpen} class:mobile-only={mobileOnly} >
+<li
+  class="nav__item"
+  class:open={$isMenuOpen}
+  class:mobile-only={mobileOnly}
+>
   <a
     sveltekit:prefetch
     href={to}
@@ -33,8 +37,8 @@
 </li>  
 
 
-<style lang="scss">
-  li {
+<style lang="scss" global>
+  .nav__item {
     margin: 0 0 0 1.5em;
 
     @media (max-width: $xs) {
@@ -62,6 +66,11 @@
 
     &.open {
       animation: move_in_left var(--item-transition);
+
+      .reduce-motion & {
+        animation: none;
+        opacity: 1;
+      }
   
       @for $i from 1 through 9 {
         &:nth-of-type(#{$i}) {

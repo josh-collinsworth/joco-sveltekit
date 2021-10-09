@@ -2,15 +2,15 @@
 // CounterButton.jsx
 import React, { useState } from 'react'
 
-export const Button = () => {
+export const CounterButton = () => {
   const [count, setCount] = useState(0)
 
-  const incrementCount = () => {
+  const handleClick = () => {
     setCount(count + 1)
   }
 
   return (
-    <button onClick={incrementCount}>
+    <button onClick={handleClick}>
       This button's been clicked {count} times.
     </button>
   )

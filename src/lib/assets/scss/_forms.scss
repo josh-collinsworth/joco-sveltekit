@@ -63,13 +63,15 @@ button {
 	padding: 0.5rem 1rem;
 	font-size: 1rem;
 	font-family: var(--heading-font);
-	background: hsla(var(--lightBlueHSL), 0.2);
 	color: var(--ink);
 	margin: 0;
+	transition: background 0.15s;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
 
-	&:hover {
-		background: var(--yellow);
-		color: var(--darkGray);
+	&:hover,
+	&:focus {
+		background: hsla(var(--lightBlueHSL), 0.2);
 	}
 }
 

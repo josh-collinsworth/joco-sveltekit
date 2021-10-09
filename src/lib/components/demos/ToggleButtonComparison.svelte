@@ -21,10 +21,10 @@
   }
 
   onMount(async () => {
-    React = (await import('./markdown/counter-button/react.md')).default
-    Vue2 = (await import('./markdown/counter-button/vue2.md')).default
-    Vue3 = (await import('./markdown/counter-button/vue3.md')).default
-    Svelte = (await import('./markdown/counter-button/svelte.md')).default
+    React = (await import('./markdown/toggle-button/react.md')).default
+    Vue2 = (await import('./markdown/toggle-button/vue2.md')).default
+    Vue3 = (await import('./markdown/toggle-button/vue3.md')).default
+    Svelte = (await import('./markdown/toggle-button/svelte.md')).default
 
     frameworks = [
       {
@@ -93,7 +93,6 @@
     }
 
     button {
-      border: 1px solid;
       padding-left: 2vw;
       padding-right: 2vw;
       border-color: var(--ink);

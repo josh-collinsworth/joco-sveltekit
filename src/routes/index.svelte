@@ -12,9 +12,9 @@
 
 
 <script lang="ts">
-  import type { SvelteComponent } from 'svelte'
+  import type { SvelteComponentTyped } from 'svelte'
 
-  export let Homepage: SvelteComponent
+  export let Homepage: SvelteComponentTyped
 </script>
 
 

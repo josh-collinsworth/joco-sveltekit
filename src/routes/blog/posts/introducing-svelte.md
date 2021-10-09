@@ -17,8 +17,8 @@ excerpt: Svelte is a new style of framework for building sites and apps. Let's d
   import CounterButtonComparison from '$lib/components/demos/CounterButtonComparison.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
+  // import ToggleButtonComparison from '$lib/components/demos/ToggleButtonComparison.svelte';
 </script>
-
 
 Let's be honest: lots of things in web development are harder than they should be. Some days, it can seem as though everything in the frontend world is needlessly over-engineered and convoluted.
 
@@ -406,7 +406,7 @@ Naturally, you can replace `my-svelte-project` with whatever name you'd like for
 
 ## Conclusion
 
-I hope I've successfully conveyed how great and how much fun Svelte is to work with! I encourage you to try it out on your own, even if it's just playing around in the [Svelte tutorial](https://svelte.dev/tutorial/basics). If you haven't tried it before, I think you'll be pleasantly surprised how comparatively simple it is.
+I hope you're now as excited about Svelte as I am! I encourage you to try it out on your own, even if it's just playing around in the [Svelte tutorial](https://svelte.dev/tutorial/basics). If you haven't tried it before, I think you'll be pleasantly surprised how comparatively straightforward it is.
 
 And if you're looking to dive deeper, there's also SvelteKit, a Svelte app framework for larger/more complex projects. I've written a post on [converting this site to SvelteKit from Gridsome](/blog/faster-sites-more-fun-sveltekit), if you'd like to check it out as well.
 
