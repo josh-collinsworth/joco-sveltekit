@@ -58,17 +58,19 @@ input {
 	}
 }
 
-button {
+button,
+input[type=submit] {
 	border: 1px solid;
 	padding: 0.5rem 1rem;
+	background: var(--lighterBlue);
 	font-size: 1rem;
 	font-family: var(--heading-font);
 	color: var(--ink);
 	margin: 0;
 	transition: background 0.15s;
-	border-right: 2px solid;
-	border-bottom: 2px solid;
-
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	
 	&:hover,
 	&:focus {
 		background: hsla(var(--lightBlueHSL), 0.2);
@@ -99,5 +101,9 @@ button {
 
 	&:hover {
 		background: var(--button-background);
+	}
+
+	.prefers-dark & {
+		border-width: 2px; //Prevents overrides from above button styles
 	}
 }

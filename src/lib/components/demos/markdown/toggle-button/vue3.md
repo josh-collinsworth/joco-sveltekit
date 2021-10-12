@@ -1,5 +1,5 @@
 ```vue
-<!-- CounterButton.vue -->
+<!-- ToggleButton.vue -->
 <script setup>
   import { ref } from 'vue'
 
@@ -11,24 +11,23 @@
 </script>
 
 <​template>
-  <div>
-    <button 
-      @click="toggleShowText"
-      :aria-pressed="showText"
-      :class="{on: showText}"
-    >
-      Toggle text
-    </button>
+  <button 
+    @click="toggleShowText"
+    :aria-pressed="showText"
+    :class="{'enabled': showText}"
+  >
+    Toggle text
+  </button>
 
-    <p v-if="showText">
-      👻 Boo! I am some hidden text!
-    </p>
-  </div>
+  <p v-if="showText">
+    👻 Boo! I am some hidden text!
+  </p>
 </template>
 
 <style>
-  .on {
-    background: #ffd100;
+  .enabled {
+    background: #34657f;
+    color: #fff;
   }
 </style>
 ```

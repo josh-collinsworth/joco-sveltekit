@@ -15,7 +15,7 @@ export const ToggleButton = () => {
       <button 
         onClick={handleClick}
         aria-pressed={showText}
-        className={showText && 'on'}
+        className={showText && 'enabled'}
       >
         Toggle text
       </button>

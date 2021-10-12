@@ -58,6 +58,7 @@ h6 {
 	line-height: 1.1;
 	position: relative;
 	margin-bottom: var(--rhythm);
+	margin-top: calc(var(--rhythm) * 4);
 	padding: 0;
 
 	a {
@@ -101,20 +102,18 @@ h3,
 .h3 {
 	font-size: 1.6rem;
 	font-weight: normal;
-	margin-top: calc(var(--rhythm) * 4);
+	margin-top: calc(var(--rhythm) * 5);
 }
 
 h4,
 .h4 {
 	font-size: 1rem;
 	text-transform: uppercase;
-	margin-top: calc(var(--rhythm) * 4);
 }
 
 h5,
 .h5 {
 	font-size: 1.1rem;
-	margin-top: calc(var(--rhythm) * 3);
 }
 
 h6,
@@ -148,6 +147,10 @@ blockquote {
 
 ul {
 	padding-left: 1em;
+
+	ul {
+		margin: var(--rhythm) 0;
+	}
 }
 
 figure {

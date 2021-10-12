@@ -1,7 +1,7 @@
 ---
 title: 'Getting to know Svelte'
 date: '2021-10-1'
-updated: '2021-10-07'
+updated: '2021-10-12'
 categories:
   - 'javascript'
   - 'svelte'
@@ -15,9 +15,13 @@ excerpt: Svelte is a new style of framework for building sites and apps. Let's d
 <script>
   import CounterButton from '$lib/components/demos/CounterButton.svelte'
   import CounterButtonComparison from '$lib/components/demos/CounterButtonComparison.svelte'
+  import ConditionalsComparison from '$lib/components/demos/ConditionalsComparison.svelte'
+  import ComplexConditionalsComparison from '$lib/components/demos/ComplexConditionalsComparison.svelte'
+  import LoopsComparison from '$lib/components/demos/LoopsComparison.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  // import ToggleButtonComparison from '$lib/components/demos/ToggleButtonComparison.svelte';
+  import ToggleButtonComparison from '$lib/components/demos/ToggleButtonComparison.svelte';
+  import ToggleButton from '$lib/components/demos/ToggleButton.svelte';
 </script>
 
 Let's be honest: lots of things in web development are harder than they should be. Some days, it can seem as though everything in the frontend world is needlessly over-engineered and convoluted.
@@ -76,22 +80,28 @@ I already mentioned how performant Svelte apps are. That's possible because Svel
 If you want to get technical, Svelte isn't really a JavaScript framework at all, as much as it&nbsp;is&nbsp;a&nbsp;compiler.
 </Callout>
 
-To elaborate: React and Vue both run _in_ the browser. You load them, and then _use_ them to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, in a [CodePen](https://codepen.io), or otherwise drop them into whatever environment you want. Though there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment, to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
+To elaborate: React, Vue, and most other frameworks run _in_ the browser. You load them first, and then _use_ them by calling their methods to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, in a [CodePen](https://codepen.io), or otherwise drop them into whatever environment you want. Granted, there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment. But to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
 
 Svelte doesn't work like that; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 
-Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code. The Svelte compiler then processes what you write, and all that code is compiled down to minimal, self-contained JavaScript before it ever gets to the browser. That's why Svelte has been referred to as "a framework without the framework." (The REPL mentioned above offers a direct peek into the compiled JavaScript, if you're interested.)
+Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write your Svelte code--which, it's worth noting, is essentially a small superset of HTML.
 
-This approach allows for extremely small bundle sizes compared to other frameworks (which in turn often translates to better loading speed and performance), since the bulk of the work is already done by the time the user loads the page.
+Once you've written your Svelte code, the Svelte compiler then processes what you've written, and all that code is compiled down to minimal, self-contained JavaScript before it ever gets to the browser--not unlike how [Sass](https://sass-lang.com/) is compiled to plain CSS. That's why Svelte has been referred to as "a framework without the framework." (The [REPL](https://svelte.dev/repl/hello-world) offers a direct peek into the compiled JavaScript, if you're interested.)
+
+This approach allows for extremely small bundle sizes, which in turn translates to better loading speed and performance, since the bulk of the work is already done by the time the user loads the page, _and_ because the browser then has less to parse.
 
 <Callout>
 All your Svelte code is compiled down to minimal, self-contained JavaScript before it ever gets to the&nbsp;browser.
 </Callout>
 
-React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes (a common pitfall with jQuery)--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about either approach; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
+React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about that; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
 
-#### Authoring components
+#### Authoring Svelte components
+
+One of the things I like most about Svelte is its HTML-first philosophy. With few exceptions--and mostly just including the necessary bits to add variables, logic, and loops to HTML--Svelte code is entirely browser-readable, native HTML and JavaScript. In fact, it would be fair (if perhaps unnecessarily technical) to call Svelte code a small superset of HTML.
+
+But enough telling; let's show.
 
 Maybe the most contrived way to demonstrate a frontend framework is a button component that counts how many times it's been clicked. It's the "hello world" of component examples. 
 
@@ -108,57 +118,83 @@ It's not a particularly practical example, but it _is_ a common one (in fact, it
 <CounterButtonComparison />
 
 <SideNote>
-I prefer to use arrow functions and omit semicolons, but those are just stylistic preferences, and not required by any framework.
+  <p>I use arrow functions and omit semicolon in these examples, but those are just personal stylistic preferences.</p>
 </SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
 
 - **Svelte is reactive by default**. This means when a variable is reassigned, every place it's used or referenced also updates automatically. (_React and Vue both require you to explicitly initialize reactive variables_.)
 
-- **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone and more readable.
+  - React in particular does this because of an insistence on "immutability." Its philosophy dictates that you _shouldn't_ be able to change a variable's value without calling a function that's "authorized" to do so.
+  
+    In theory this prevents unwanted mutations (changes), but in practice, 99% of the time it's unnecessary boilerplate.
 
-- **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup (and maybe more, depending on version). Svelte can have whatever HTML, wherever (and with all its attributes intact, unlike in JSX).
+- **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone, as long as it's readable (which I would argue it definitely is).
+
+- **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. (Vue 2 _also_ requires a single element inside _that_.) Svelte can have whatever HTML, wherever--and with all its attributes intact, unlike in JSX, React's de facto templating language.
 
 
-#### Other reasons to love Svelte
+##### A slightly more practical example
+
+Since showing the user how many times they've clicked on a button isn't a particularly practical example, let's look at something _slightly_ more realistic; a button that the user can click to reveal some content:
+
+<ToggleButton />
+
+Granted, this exact version isn't super practical either, but it's at least _close_ to real-world functionality; it's hopefully not too hard to imagine how something similar to this would be useful in a production scenario. (Maybe in a settings toggle, or perhaps in a "tabs" or "accordion" component.)
+
+I like this example because it introduces two key framework concepts:
+
+1. **Conditional classes** – in this case, a class to change the button's background color when it's toggled on; and
+2. **Conditional rendering** – `if` statements directly inside of the HTML
+
+Here's how Svelte, React, and Vue handle these concepts:
+
+<ToggleButtonComparison />
+
+And again, the Svelte version is the shortest, but without sacrificing any readability (in my opinion, at least).
+
+<SideNote>
+  You might have noticed the <code>aria-pressed</code> attribute on the button above. That's to indicate to assistive technologies that the button is a toggle (i.e., has two states), and whether it's currently on or off—key context that might not otherwise be clear to non-sighted users.
+</SideNote>
+
+
+##### Comparing logic
+
+Svelte has simple `if` statements for injecting logic into templates. While they're slightly more verbose than Vue's `v-if` attribute, I appreciate that they're pure logic, and don't need to be tied to an element. (They're also more readable than JSX inline statements, in my opinion.)
+
+Here's how you'd show a `<Hello />` component conditionally:
+
+<ConditionalsComparison />
+
+<SideNote>
+I'm not distinguishing between Vue 2 and 3 here because their templating syntax is identical.
+</SideNote>
+
+You can of course do `else` as well (and `else if` for that matter, though I won't demo that just because writing the React expression would be a little bit of a nightmare).
+
+Here's an example where we show a `<WelcomeBanner />` component if the user is logged in, and a login form component otherwise:
+
+<ComplexConditionalsComparison />
+
+
+##### Loops
+
+I appreciate how Svelte allows loops inside of markup, without requiring you to tie the loop to any elements or map over an array (and in most cases, without requiring you to `key` each item, either):
+
+<LoopsComparison />
+
+It's also nice that you can put any markup you like inside the `each` block; it doesn't need to be a single element.
+
+
+### Other reasons to love Svelte
 
 While the above examples don't cover them, some other features of Svelte that I love include:
 
-- **Everything lives together in one file.** Similar to single-file `.vue` components, `.svelte` files keep your component's logic, markup _and_ styles all together. (More on that in the next section.)
+- **Everything lives together in one file**. Similar to single-file `.vue` components, `.svelte` files keep your component's logic, markup _and_ styles all together. (More on that in the next section.)
 
-- **Scoped CSS by default** (More on Svelte CSS in the next section, too).
+- **Scoped CSS by default**. (More on Svelte CSS in the next section, too).
 
 - **[Transitions and animations baked-in](https://svelte.dev/tutorial/transition)**. A robust built-in API means there's no need to reach for an external library or hand-code visual transformations.
-
-- **You can write logic directly in the markup**:
-
-  ```svelte
-  <!-- Svelte logic -->
-  {#if isUserLoggedIn}
-    <button on:click={logOut}>
-      Log out
-    </button>
-  {:else}
-    <a href="/login">
-      Log in
-    </a>
-  {/if}
-  ```
-
-- **Loops can be used inside markup**, without requiring any elements or maps (and without requiring you to key each item):
-
-  ```svelte
-  <!-- Svelte loops -- no keys! -->
-  <ul>
-    {#each posts as post}
-      <li>
-        <a href={post.url}>
-          {post.title}
-        </a>
-      </li>
-    {/each}
-  </ul>
-  ```
 
 - **Two-way data binding** (both the data and the template can update each other; data can flow both up and down the component tree):
 
@@ -330,7 +366,7 @@ Loading a framework script upfront adds to the _initial_ load, but the more its 
 
 This causes some people to claim that Svelte doesn't scale, but that's premature.
 
-The _real_ question that matters is: _where is that point_?
+The _real_ question that matters is: _where is that point_? Clearly, nobody's worried about whether React scales, so when does Svelte lose its advantage over React?
 
 Turns out: the scale at which Svelte's advantages disappear is actually unrealistically high for just about any application. 
 
@@ -343,6 +379,10 @@ And let's not forget: that's the scale at which you're on _even ground_ with Rea
 _Plus_, this whole discussion focuses on how things are right now, in this moment, and not on future upside. Will React get smaller and faster in the future? Probably; it's supported by a large and talented team. But it's also benefitted from nearly a decade of optimization already; there may not be a lot left to squeeze out of it at this point.
 
 On the other hand, Svelte is comparably young. If I'm betting on which framework will improve more in the future _relative to its current position_, I'm backing Svelte, no question.
+
+<SideNote>
+It's worth mentioning that since Svelte started becoming popular, other frameworks have learned from it and closed the performance gap a bit. React is still generally significantly heavier, but Vue 3 is fairly comparable to Svelte performance-wise.
+</SideNote>
 
 
 ### Svelte doesn't support Internet Explorer by default

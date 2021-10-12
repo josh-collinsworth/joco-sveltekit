@@ -11,7 +11,7 @@
 <button 
   on:click={toggleShowText}
   aria-pressed={showText}
-  class:on={showText}
+  class:enabled={showText}
 >
   Toggle text
 </button>
@@ -21,8 +21,9 @@
 {/if}
   
 <style>
-  .on {
-    background: #ffd100;
+  .enabled {
+    background: #34657f;
+    color: #fff;
   }
 </style>
 ```

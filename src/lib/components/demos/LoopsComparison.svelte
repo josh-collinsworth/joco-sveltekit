@@ -2,4 +2,4 @@
   import ComparisonTemplate from './ComparisonTemplate.svelte'
 </script>
 
-<ComparisonTemplate dir="counter-button" includeBothVues={true} />
+<ComparisonTemplate dir="loops" />

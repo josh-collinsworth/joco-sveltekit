@@ -19,15 +19,11 @@
 		font-style: italic;
 		background: linear-gradient(
 			to right,
-			hsl(var(--lightBlueHS), 90%),
-			hsl(var(--lightBlueHS), 95%)
+			var(--lighterBlue),
+			var(--lightestBlue)
 		);
 		line-height: var(--body-line-height);
 		min-height: 4.5rem;
-		
-		.prefers-dark & {
-			background: hsl(var(--lightBlueHS), 18%);
-		}
 
 		em, i {
 			font-style: normal;

@@ -52,6 +52,8 @@ $xxxl: 2200px;
 	--darkGray: hsl(var(--darkGrayHSL));
 	--darkerGray: hsl(var(--darkerGrayHSL));
 	--lightBlue: hsl(var(--lightBlueHSL));
+	--lighterBlue: hsl(var(--lightBlueHS), 90%);
+	--lightestBlue: hsl(var(--lightBlueHS), 95%);
 	--darkBlue: hsl(var(--darkBlueHSL));
 
 	--ink: var(--darkGray);

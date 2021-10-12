@@ -20,6 +20,8 @@
 		--link-color: var(--ink);
 		--highlight-color: var(--darkerGray);
 		--button-background: var(--paper);
+		--lightestBlue: hsl(var(--lightBlueHS), 15%);
+		--lighterBlue: hsl(var(--lightBlueHS), 20%);
 	}
 
 	&.prefers-light {

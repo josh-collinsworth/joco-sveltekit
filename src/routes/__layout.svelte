@@ -25,6 +25,7 @@
 	import { onMount } from 'svelte'
 	import { prefetch, prefetchRoutes } from '$app/navigation'
 	import throttle from 'lodash/throttle.js'
+import { dev } from '$app/env';
 	
 	export let path: string
 	export let pageHasSidebar: boolean
@@ -102,6 +103,14 @@
 
 
 <svelte:window on:scroll={handleScroll} />
+<svelte:head>
+	<!-- This just loads styles faster for dev to avoid FOUC during development. Not ideal for prod, though. -->
+	{#if dev}
+		<style>
+			@import "../../src/lib/assets/scss/global.scss";
+		</style>
+	{/if}
+</svelte:head>
 
 <div
 	id="app"
