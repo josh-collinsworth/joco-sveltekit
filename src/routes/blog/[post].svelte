@@ -204,5 +204,13 @@
         content: '🔙';
       }
     }
+
+    .section-heading-image {
+      margin-top: calc(var(--rhythm) * 4);
+
+      & + * {
+        margin-top: var(--rhythm);
+      }
+    }
   }
 </style>

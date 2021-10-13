@@ -2,4 +2,4 @@
   import ComparisonTemplate from './ComparisonTemplate.svelte'
 </script>
 
-<ComparisonTemplate dir="toggle-button" />
+<ComparisonTemplate dir="volume-control" includeBothVues={true} />

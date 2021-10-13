@@ -1,7 +1,7 @@
 ```jsx
 // ToggleButton.jsx
 import React, { useState } from 'react'
-import './toggleButtonCSS' // Assume the `.on` class CSS is in this file
+import './toggleButtonCSS' // Assume the `.enabled` class CSS is in this file
 
 export const ToggleButton = () => {
   const [showText, setShowText] = useState(false)

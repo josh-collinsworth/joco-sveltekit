@@ -22,7 +22,10 @@ excerpt: Svelte is a new style of framework for building sites and apps. Let's d
   import SideNote from '$lib/components/SideNote.svelte'
   import ToggleButtonComparison from '$lib/components/demos/ToggleButtonComparison.svelte';
   import ToggleButton from '$lib/components/demos/ToggleButton.svelte';
+  import VolumeControl from '$lib/components/demos/VolumeControl.svelte';
+  import VolumeControlComparison from '$lib/components/demos/VolumeControlComparison.svelte';
 </script>
+
 
 Let's be honest: lots of things in web development are harder than they should be. Some days, it can seem as though everything in the frontend world is needlessly over-engineered and convoluted.
 
@@ -67,12 +70,15 @@ Just about everywhere I'd normally be reaching for a workaround or tripping over
 But instead of me talking about it, let's get to some comparisons. (Since this isn't intended to be a code-along, we'll cover actually _installing_ Svelte at the end.)
 
 
-### Comparing Svelte to React and Vue
+<img src="/images/post_images/svelte-react-vue.png" alt="" class="section-heading-image" />
+
+
+## Comparing Svelte to React and Vue
 
 As mentioned, at a basic level, Svelte is similar to other frontend frameworks. So let's look a little closer at the details of how Svelte differs: its focus on build-time over run-time, and the simplicity of its syntax.
 
 
-#### Build over browser
+### Build over browser
 
 I already mentioned how performant Svelte apps are. That's possible because Svelte takes a different approach from other frontend frameworks by doing as much as it can at the _build_ step--when the code is initially compiled--rather than running client-side. In fact, if you want to get technical, Svelte isn't really a JavaScript framework at all, as much as it is a compiler.
 
@@ -97,7 +103,7 @@ All your Svelte code is compiled down to minimal, self-contained JavaScript befo
 React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about that; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
 
-#### Authoring Svelte components
+### Authoring Svelte components
 
 One of the things I like most about Svelte is its HTML-first philosophy. With few exceptions--and mostly just including the necessary bits to add variables, logic, and loops to HTML--Svelte code is entirely browser-readable, native HTML and JavaScript. In fact, it would be fair (if perhaps unnecessarily technical) to call Svelte code a small superset of HTML.
 
@@ -118,7 +124,7 @@ It's not a particularly practical example, but it _is_ a common one (in fact, it
 <CounterButtonComparison />
 
 <SideNote>
-  <p>I use arrow functions and omit semicolon in these examples, but those are just personal stylistic preferences.</p>
+  I use arrow functions and omit semicolon in these examples, but those are just personal stylistic preferences.
 </SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
@@ -134,7 +140,7 @@ There are some key differences I'd like to point out between the Svelte version 
 - **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. (Vue 2 _also_ requires a single element inside _that_.) Svelte can have whatever HTML, wherever--and with all its attributes intact, unlike in JSX, React's de facto templating language.
 
 
-##### A slightly more practical example
+#### A slightly more practical example
 
 Since showing the user how many times they've clicked on a button isn't a particularly practical example, let's look at something _slightly_ more realistic; a button that the user can click to reveal some content:
 
@@ -158,7 +164,27 @@ And again, the Svelte version is the shortest, but without sacrificing any reada
 </SideNote>
 
 
-##### Comparing logic
+#### Comparing form bindings
+
+Here's an quick _and_ practical way to compare form bindings between frameworks: a volume slider. Try it out:
+
+<VolumeControl />
+
+<VolumeControlComparison />
+
+Notice especially how React's data flow is one-way; it needs you to explicitly update the `volume` variable any time its corresponding input changes. In other words: you need to make the input both _read_ the volume setting _and update_ the volume setting, as two different steps.
+
+By contrast, both Svelte and Vue offer two-way data binding; you just tell the framework that whenever either the input _or_ the value changes, the other should update to reflect that.
+
+It should also be noted that you can add two-way data binding to component props in Svelte as well:
+
+```svelte
+<ChildComponent bind:someProp={someValue} />
+```
+
+This would allow the `ChildComponent` to pass changes to the parent component and vice versa. React is firmly against this idea because, again, it highly values immutability and one-way data flow. In practice, I personally find that dogma more inhibiting than helpful.
+
+#### Comparing logic
 
 Svelte has simple `if` statements for injecting logic into templates. While they're slightly more verbose than Vue's `v-if` attribute, I appreciate that they're pure logic, and don't need to be tied to an element. (They're also more readable than JSX inline statements, in my opinion.)
 
@@ -167,7 +193,7 @@ Here's how you'd show a `<Hello />` component conditionally:
 <ConditionalsComparison />
 
 <SideNote>
-I'm not distinguishing between Vue 2 and 3 here because their templating syntax is identical.
+I'm not distinguishing between Vue 2 and 3 from here on out, because they share templating syntax.
 </SideNote>
 
 You can of course do `else` as well (and `else if` for that matter, though I won't demo that just because writing the React expression would be a little bit of a nightmare).
@@ -177,13 +203,15 @@ Here's an example where we show a `<WelcomeBanner />` component if the user is l
 <ComplexConditionalsComparison />
 
 
-##### Loops
+#### Loops
 
-I appreciate how Svelte allows loops inside of markup, without requiring you to tie the loop to any elements or map over an array (and in most cases, without requiring you to `key` each item, either):
+I appreciate how Svelte allows loops inside of markup, without requiring you to tie the loop to any elements or map over an array (and in most cases, without requiring you to `key` each item, either).
+
+Here, assume we have an array called `posts`, full of objects containing post info:
 
 <LoopsComparison />
 
-It's also nice that you can put any markup you like inside the `each` block; it doesn't need to be a single element.
+It's also nice that you can put any markup you like inside Svelte's `each` block; it doesn't need to be a single element.
 
 
 ### Other reasons to love Svelte
@@ -195,20 +223,6 @@ While the above examples don't cover them, some other features of Svelte that I 
 - **Scoped CSS by default**. (More on Svelte CSS in the next section, too).
 
 - **[Transitions and animations baked-in](https://svelte.dev/tutorial/transition)**. A robust built-in API means there's no need to reach for an external library or hand-code visual transformations.
-
-- **Two-way data binding** (both the data and the template can update each other; data can flow both up and down the component tree):
-
-  ```svelte
-  <!-- Whenever this input updates,
-       firstName will change and vice versa. -->
-  <input type="text" bind:value={firstName} />
-
-  <!-- You can bind various attributes -->
-  <input type="checkbox" bind:checked={agreesToTerms} />
-
-  <!-- This ALSO works when passing component props! -->
-  <MyComponent bind:someProp={someValue} />
-  ```
 
 - **Built-in [reusable data stores](https://svelte.dev/tutorial/writable-stores)** (think: a very light, simple version of Redux or Vuex)
 
@@ -254,28 +268,55 @@ On top of all that, `svelte-preprocess` adds an extremely nice Sass feature: you
 
 ##### Conditional styling
 
-Conditional styling is a _breeze_ in Svelte thanks to easy shorthands. For example, here are three ways you could conditionally add a class to an element, based on a boolean value (the class is automatically added when the value is `true`, and removed otherwise):
+Conditional styling is a _breeze_ in Svelte thanks to its simple shorthands. We saw this already in the toggle button example above, but let's look a little closer at the options available:
 
 ```svelte
-<!-- Toggle CSS class based on a boolean prop -->
 <script>
   let enabled = false
-  // Assume this value will change
 </script> 
 
-<!-- This works… -->
 <input class={enabled ? 'enabled' : ''} />
+```
 
-<!-- ...but it can be shortened to this... -->
+That works, and if you've used conditional styling in other frameworks, you might have resorted to something similar. But ternaries can be a little wordy and tough to read, especially when one side isn't even doing anything.
+
+Like in React, you _could_ shorten this to a "short-circuit" conditional:
+
+```svelte
+<script>
+  let enabled = false
+</script> 
+
+<input class={enabled && 'enabled'} />
+```
+
+This also works, but isn't quite as idiomatic as I'd like, personally; unless you're already familiar with React, you might not realize what the `&&` operator is doing in this situation.
+
+As an alternative, in Svelte, we can just do this instead:
+
+```svelte
+<script>
+  let enabled = false
+</script> 
+
 <input class:enabled={enabled} />
+```
 
-<!-- ...which can just become this: -->
+That's pretty cool! It's easier to read, too; you can simply see what class will apply, based on what JS value.
+
+**We can go one step further, though**: if the class name and property name are identical, you can just do this:
+
+```svelte
+<script>
+  let enabled = false
+</script> 
+
 <input class:enabled />
 ```
 
-Note that the last example only works if the class name and property name are identical (similar to [ES6 object property value shorthand](https://alligator.io/js/object-property-shorthand-es6/)).
+**Whoa!** That's cool. It's basically [ES6 object property value shorthand](https://alligator.io/js/object-property-shorthand-es6/) for conditional classes.
 
-Also: you can have as many `class` attributes as you need (dynamic or otherwise) on a single element:
+Also worth mentioning: you can have as many `class` attributes as you want (dynamic or otherwise) on a single element:
 
 ```svelte
 <div
