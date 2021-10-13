@@ -1,28 +1,29 @@
 ```jsx
 // ToggleButton.jsx
 import React, { useState } from 'react'
-import './toggleButtonCSS' // Assume the `.enabled` class CSS is in this file
 
 export const ToggleButton = () => {
-  const [showText, setShowText] = useState(false)
+  const [isTextShown, setIsTextShown] = useState(false)
 
   const handleClick = () => {
-    setShowText(!showText)
+    setIsTextShown(!isTextShown)
   }
+
+  const buttonText = isTextShown ? 'Show less' : 'Show more'
 
   return (
     <div>
-      <button 
-        onClick={handleClick}
-        aria-pressed={showText}
-        className={showText && 'enabled'}
-      >
-        Toggle text
-      </button>
+      <p>
+        Svelte is a JavaScript framework.
+        
+        {isTextShown && 
+          `Though actually, if you want to get technical...`
+        }
+      </p>
 
-      { showText &&
-        <p>👻 Boo! I am some hidden text!</p>
-      }
+      <button onClick={handleClick}>
+        {buttonText}
+      </button>
     </div>
   )
 }

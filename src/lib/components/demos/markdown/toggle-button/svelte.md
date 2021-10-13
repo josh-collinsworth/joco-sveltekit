@@ -1,29 +1,24 @@
 ```svelte
 <!-- ToggleButton.svelte -->
 <script>
-  let showText = false
+  let isTextShown = false
   
-  const toggleShowText = () => {
-    showText = !showText
+  const toggleIsTextShown = () => {
+    isTextShown = !isTextShown
   }
-</script>
-  
-<button 
-  on:click={toggleShowText}
-  aria-pressed={showText}
-  class:enabled={showText}
->
-  Toggle text
-</button>
 
-{#if showText}
-  <p>👻 Boo! I am some hidden text!</p>
-{/if}
+  $: buttonText = isTextShown ? 'Show less' : 'Show more'
+</script>
+
+<p>
+  Svelte is a JavaScript framework.
   
-<style>
-  .enabled {
-    background: #34657f;
-    color: #fff;
-  }
-</style>
+  {#if isTextShown}
+    Though actually, if you want to get technical...
+  {/if}
+</p>
+
+<button on:click={toggleIsTextShown}>
+  {buttonText}
+</button>
 ```

@@ -1,45 +1,23 @@
 <script>
-  let showText = false
+  let isTextShown = false
   
-  const toggleShowText = () => {
-    showText = !showText
+  const toggleIsTextShown = () => {
+    isTextShown = !isTextShown
   }
+
+  $: buttonText = isTextShown ? 'Show less' : 'Show more'
 </script>
 
-<div class="wrapper">
-  <button 
-    on:click={toggleShowText}
-    aria-pressed={showText}
-    class:on={showText}
-    >
-    Toggle text
+<div class="example-component-wrapper">
+  <p>
+    Svelte is a JavaScript framework.
+    
+    {#if isTextShown}
+      Though actually, if you want to get technical, Svelte is really more of a compiled superset of HTML. But for the sake of simplicity, we can call it a framework. Also, it's really neat.
+    {/if}
+  </p>
+
+  <button on:click={toggleIsTextShown}>
+    {buttonText}
   </button>
-
-  {#if showText}
-    <p>👻 Boo! I am some hidden text!</p>
-  {/if}
 </div>
-
-<style lang="scss">
-  .wrapper {
-    margin: 2rem 0;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    min-height: 4rem;
-
-    p {
-      margin: 0;
-      flex: 0 1 auto;
-    }
-
-    button {
-      white-space: pre;
-    }
-
-    .on {
-      background: var(--darkBlue);
-      color: var(--white);
-    }
-  }
-</style>

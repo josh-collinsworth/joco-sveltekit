@@ -2,18 +2,20 @@
   let volume = 0
 </script>
 
+<div class="example-component-wrapper">
 
-<label for="volume">
-  Volume: {volume}%
-</label>
-
-<input 
-  id="volume"
-  type="range"
-  min="0"
-  max="100"
-  bind:value={volume}
-/>
+  <label for="volume">
+    Volume: {volume}%
+  </label>
+  
+  <input 
+    id="volume"
+    type="range"
+    min="0"
+    max="100"
+    bind:value={volume}
+  />
+</div>
 
 
 <style lang="scss">
@@ -21,13 +23,12 @@
     padding: 0;
     width: 100%;
     max-width: 12rem;
-    margin-bottom: calc(var(--rhythm) * 3);
     display: block;
+    margin: 0;
   }
 
   label {
     font-family: var(--heading-font);
     font-weight: bold;
-    margin-top: calc(var(--rhythm) * 2);
   }
 </style>

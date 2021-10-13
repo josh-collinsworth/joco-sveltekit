@@ -1,14 +1,14 @@
 ---
-title: 'Converting to SvelteKit for More Fun and Less JavaScript'
+title: 'Converting from Gridsome to SvelteKit'
 date: '2021-10-04'
 updated: '2021-10-07'
 categories:
   - 'javascript'
   - 'svelte'
   - 'web'
-coverImage: 'converting-to-sveltekit.png'
-coverWidth: 821
-coverHeight: 334
+coverImage: 'gridsome-to-sveltekit.png'
+coverWidth: 16
+coverHeight: 9
 excerpt: I've been a fan of Svelte for years, but never had the opportunity to use it on a serious project before. So when I found myself looking for a new platform for this site as SvelteKit entered open beta, it seemed like perfect timing.
 ---
 

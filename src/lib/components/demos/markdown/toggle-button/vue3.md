@@ -1,33 +1,30 @@
 ```vue
 <!-- ToggleButton.vue -->
 <script setup>
-  import { ref } from 'vue'
+  import { ref, computed } from 'vue'
 
-  const showText = ref(false)
+  const isTextShown = ref(0)
 
-  const toggleShowText = () => {
-    showText.value = !showText.value
+  const toggleIsTextShown = () => {
+    isTextShown.value = !isTextShown.value
   }
+
+  const buttonText = computed(() => (
+    isTextShown.value ? 'Show less' : 'Show more'
+  ))
 </script>
 
 <​template>
-  <button 
-    @click="toggleShowText"
-    :aria-pressed="showText"
-    :class="{'enabled': showText}"
-  >
-    Toggle text
-  </button>
-
-  <p v-if="showText">
-    👻 Boo! I am some hidden text!
+  <p>
+    Svelte is a JavaScript framework.
+  
+    <​template v-if="isTextShown">
+      Though actually, if you want to get technical...
+    </template>
   </p>
-</template>
 
-<style>
-  .enabled {
-    background: #34657f;
-    color: #fff;
-  }
-</style>
+  <button @click="toggleIsTextShown">
+    {{ buttonText }}
+  </button>
+</template>
 ```

@@ -11,7 +11,7 @@ export const CounterButton = () => {
 
   return (
     <button onClick={handleClick}>
-      This button's been clicked {count} times.
+      Number of clicks: {count}
     </button>
   )
 }

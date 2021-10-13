@@ -206,7 +206,7 @@
     }
 
     .section-heading-image {
-      margin-top: calc(var(--rhythm) * 4);
+      margin-top: calc(var(--rhythm) * 6);
 
       & + * {
         margin-top: var(--rhythm);

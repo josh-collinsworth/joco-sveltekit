@@ -6,12 +6,8 @@
 	}
 </script>
 
-<button on:click={incrementCount}>
-  This button's been clicked {count} times.
-</button>
-
-<style>
-  button {
-    margin: 2rem 0 3rem;
-  }
-</style>
+<div class="example-component-wrapper">
+  <button on:click={incrementCount}>
+    Number of clicks: {count}
+  </button>
+</div>

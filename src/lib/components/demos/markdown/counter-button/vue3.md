@@ -12,7 +12,7 @@
 
 <​template>
   <button @click="incrementCount">
-    This button's been clicked {{ count }} times.
+    Number of clicks: {{ count }}
   </button>
 </template>
 ```
