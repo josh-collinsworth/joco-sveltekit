@@ -18,7 +18,7 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-I'll assume for the sake of this post that you're at least a little familiar with what Svelte is. If not, I've written an [introduction to Svelte](/blog/introducing-svelte) that you might enjoy reading first before diving in here.
+I'll assume for the sake of this post that you're at least a little familiar with what Svelte is. If not, I've written an [introduction to Svelte](/blog/introducing-svelte-comparing-with-react-vue) that you might enjoy reading first before diving in here.
 
 If you already know, however (or if you're just short on time): you can think of Svelte as a frontend framework not unlike React, Vue, etc., and I recently decided to take it for a spin by rebuilding this very site (again).
 
@@ -336,7 +336,7 @@ Also worth knowing: Svelte itself doesn't support IE11 by default. There _are_ s
 
 Arguments against Svelte(Kit) tend to focus on how it theoretically scales (emphasis on _theoretically_), and the relative size of its community and ecosystem compared to other frameworks.
 
-I won't go into either of those here, but I _do_ address them both in detail in my [introduction to Svelte post](/blog/introducing-svelte).
+I won't go into either of those here, but I _do_ address them both in detail in my [introduction to Svelte post](/blog/introducing-svelte-comparing-with-react-vue).
 
 
 ### Don't get confused by Sapper
