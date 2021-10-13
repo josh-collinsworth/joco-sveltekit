@@ -39,6 +39,7 @@
   h3 {
     font-size: 1.2rem;
     margin-bottom: 0.25rem;
+    margin-top: calc(var(--rhythm) * 4);
   }
 
   .subhead {
