@@ -1,7 +1,7 @@
 ---
 title: 'Introducing Svelte, and Comparing Svelte with React and Vue'
 date: '2021-10-1'
-updated: '2021-10-12'
+updated: '2021-10-14'
 categories:
   - 'javascript'
   - 'svelte'

@@ -23,7 +23,6 @@ pre code {
 
 code,
 pre {
- 
 	&[class*="language-"] {
 	  color: #f8f8f2;
 	  background: none;
@@ -51,7 +50,7 @@ pre {
  
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 3rem 0.75rem 1rem;
+	padding: 2.5rem 0.75rem 1rem;
 	margin: calc(var(--rhythm) * 2) 0;
 	overflow: auto;
 	position: relative;
@@ -60,7 +59,7 @@ pre[class*="language-"] {
 	  content: 'Code';
 	  top: 0;
 	  left: 0;
-	  font-size: 1rem;
+	  font-size: 0.8rem;
 		font-weight: normal;
 	  font-family: var(--heading-font), sans-serif;
 	  padding: 0.25rem 0.75rem;
