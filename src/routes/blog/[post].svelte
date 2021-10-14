@@ -152,7 +152,6 @@
     .toc-wrap + .side-note + p::first-letter,
     > hr + p:first-letter {
       font-size: 3.6em;
-      font-family: var(--body-font);
       float: left;
       line-height: 0.7em;
       margin: 0.45rem 0.4rem 0 0;
@@ -163,7 +162,7 @@
     .meta {
       font-size: 0.8rem;
       line-height: 1.6;
-      margin: 2rem 0 4rem;
+      margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 4);
       width: max-content;
       padding: 0.5em 0; 
       font-family: var(--heading-font);
@@ -177,7 +176,7 @@
     }
 
     .post-footer {   
-      margin: 0 0 2rem;
+      margin: 0 0 calc(var(--rhythm) * 2);
 
       .h4 {
         margin: 0 0 calc(var(--rhythm) / 2);

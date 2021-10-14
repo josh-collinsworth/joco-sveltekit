@@ -94,7 +94,7 @@
 
 <style lang="scss" global>
   .svelte-code-comparison {
-    margin: 2rem 0;
+    margin: calc(var(--rhythm) * 2) 0;
 
     &__button-bar {
       display: flex;

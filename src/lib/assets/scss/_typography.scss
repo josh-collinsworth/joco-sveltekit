@@ -10,7 +10,7 @@ ol {
 
 p + ul,
 p + ol {
-	margin: 2rem 0;
+	margin: calc(var(--rhythm) * 2) 0;
 }
 
 main ul:not(.toc) {
@@ -131,7 +131,7 @@ p {
 }
 
 blockquote {
-	margin: 2rem 0;
+	margin: calc(var(--rhythm) * 2) 0;
 	padding: 0rem 1rem;
 	font-size: 1rem;
 	font-style: italic;

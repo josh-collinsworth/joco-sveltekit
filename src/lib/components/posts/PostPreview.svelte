@@ -78,7 +78,7 @@
 
 <style lang="scss">
   li {
-    margin: 0 0 2rem;
+    margin: 0 0 calc(var(--rhythm) * 2);
 
     @media (min-width: $md) {
       margin: 0;

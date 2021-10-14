@@ -103,14 +103,6 @@ import { dev } from '$app/env';
 
 
 <svelte:window on:scroll={handleScroll} />
-<svelte:head>
-	<!-- This just loads styles faster for dev to avoid FOUC during development. Not ideal for prod, though. -->
-	{#if dev}
-		<style>
-			@import "../../src/lib/assets/scss/global.scss";
-		</style>
-	{/if}
-</svelte:head>
 
 <div
 	id="app"

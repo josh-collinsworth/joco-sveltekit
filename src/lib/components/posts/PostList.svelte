@@ -18,7 +18,7 @@
   ul {
     padding: 0;
     list-style-type: none;
-    margin: 2rem 0 4rem;
+    margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 4);
     max-width: var(--max-width);
 
     @media (min-width: $md) {

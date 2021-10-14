@@ -182,7 +182,7 @@
     article {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: calc(var(--rhythm) * 2);
       align-items: start;
       
       @media (min-width: $xs) {
@@ -190,7 +190,7 @@
         
         .sticky {
           position: sticky;
-          top: 2rem;
+          top: calc(var(--rhythm) * 2);
         }
       }
       
@@ -203,7 +203,7 @@
       }
       
       img {
-        margin: 0 auto 2rem;
+        margin: 0 auto calc(var(--rhythm) * 2);
         display: block;
         max-width: 100%;
       }

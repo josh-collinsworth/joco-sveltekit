@@ -81,7 +81,7 @@
 
     .accordion__content {
       overflow: hidden;
-      padding: 0.5rem 1rem 2rem;
+      padding: calc(var(--rhythm) / 2) 1rem calc(var(--rhythm) * 2);
       display: grid;
       grid-gap: 1rem;
 

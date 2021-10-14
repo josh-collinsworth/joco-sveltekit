@@ -98,10 +98,10 @@
 		width: 100%;
 		position: relative;
 		z-index: 3;
-		padding: 1rem var(--margin) 2rem;
+		padding: var(--rhythm) var(--margin) calc(var(--rhythm) * 2);
 
 		@media (min-width: $xs) {
-			padding: 2rem var(--margin);
+			padding: calc(var(--rhythm) * 2) var(--margin);
 		}
 	}
 

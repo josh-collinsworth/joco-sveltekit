@@ -103,7 +103,7 @@
     height: 2.5rem;
     position: absolute;
     z-index: 2;
-    top: 0;
+    top: 0.5rem;
     left: 0;
     width: 100%;
     max-width: 100vw;

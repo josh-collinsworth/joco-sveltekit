@@ -13,18 +13,12 @@ excerpt: Svelte is a new style of framework for building sites and apps. Let's d
 ---
 
 <script>
-  import CounterButton from '$lib/components/demos/CounterButton.svelte'
-  import CounterButtonComparison from '$lib/components/demos/CounterButtonComparison.svelte'
-  import ConditionalsComparison from '$lib/components/demos/ConditionalsComparison.svelte'
-  import ComplexConditionalsComparison from '$lib/components/demos/ComplexConditionalsComparison.svelte'
-  import LoopsComparison from '$lib/components/demos/LoopsComparison.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  import ToggleButtonComparison from '$lib/components/demos/ToggleButtonComparison.svelte';
-  import ToggleButton from '$lib/components/demos/ToggleButton.svelte';
-  import VolumeControl from '$lib/components/demos/VolumeControl.svelte';
-  import VolumeControlComparison from '$lib/components/demos/VolumeControlComparison.svelte';
-  import PropsComparison from '$lib/components/demos/PropsComparison.svelte';
+  import CounterButton from '$lib/components/demos/CounterButton.svelte'
+  import ToggleButton from '$lib/components/demos/ToggleButton.svelte'
+  import VolumeControl from '$lib/components/demos/VolumeControl.svelte'
+  import CodeComparison from '$lib/components/demos/CodeComParison.svelte'
 </script>
 
 
@@ -136,7 +130,7 @@ It's not a particularly practical example, but it _is_ a common one because it's
 
 Click through the examples below to compare this component in different frameworks:
 
-<CounterButtonComparison />
+<CodeComparison dir="counter-button" includeBothVues={true} />
 
 <SideNote>
 I use arrow functions and omit semicolons in these examples, but that's just personal stylistic preference.
@@ -170,7 +164,7 @@ I like this example because it introduces two key framework concepts:
 
 Let's compare how Svelte, React, and Vue each handle these concepts:
 
-<ToggleButtonComparison />
+<CodeComparison dir="toggle-button" includeBothVues={true} />
 
 Svelte's way of handling computed values is that `$:` operator you see above; prepend any variable name with that, and it will be reevaluated every time anything it depends on changes. (In this case, `buttonText` is reevaluated each time `isTextShown` changes.)
 
@@ -193,7 +187,7 @@ Here's one last quick _and_ practical example, to compare form bindings between 
 
 <VolumeControl />
 
-<VolumeControlComparison />
+<CodeComparison dir="volume-control" includeBothVues={true} />
 
 Notice especially how React's data flow is one-way; it needs you to explicitly update the `volume` variable any time its corresponding input changes. In other words: you need to make the input both _read_ the volume setting _and update_ the volume setting, as two different steps.
 
@@ -211,7 +205,7 @@ This would allow the `ChildComponent` to pass changes to the parent component an
 
 Though we've seen it already, I think it's worth glancing once more at how each of the three frameworks handles conditional rendering. Here's how you'd show a `<Hello />` component conditionally:
 
-<ConditionalsComparison />
+<CodeComparison dir="conditionals" />
 
 <SideNote>
 I'm not distinguishing between Vue 2 and 3 from here on out, because they share templating syntax.
@@ -221,7 +215,7 @@ You can of course do `else` as well (and `else if` for that matter, though I won
 
 Here's an example where we show a `<WelcomeBanner />` component if the user is logged in, and a login form component otherwise:
 
-<ComplexConditionalsComparison />
+<CodeComparison dir="complex-conditionals" />
 
 
 #### Loops
@@ -230,7 +224,7 @@ I appreciate how Svelte allows loops inside of markup, without requiring you to 
 
 Here, assume we have an array called `posts`, full of objects containing post info:
 
-<LoopsComparison />
+<CodeComparison dir="loops" />
 
 It's also nice that you can put any markup you like inside Svelte's `each` block; it doesn't need to be a single element.
 
@@ -372,17 +366,17 @@ If you'd like to read more about styling in Svelte, be sure to read [What I Like
 
 ### Props and component communication
 
-I won't go much into this here, but I appreciate the flexibility that's baked into Svelte. This is evident in the way it allows you to pass data and props between components.
+I appreciate the flexibility that's baked into Svelte. This is evident in the way it allows you to pass data and events between components.
 
 If you like the way React handles things, you can pass methods to your child components, and keep the one-way flow intact.
 
-If you like the way Vue does it, you can [emit ("dispatch") events from child components](https://svelte.dev/tutorial/component-events) and listen for them on the parent.
+If you like Vue's `$emit`, you can [dispatch custom events](https://svelte.dev/tutorial/component-events) from child components and listen for them on the parent.
 
-As mentioned above, you can also `bind` props, to enable two-way data flow, or just have both components subscribed to the same Svelte store--or even mix and match.
+As mentioned above, you can also `bind` props to enable two-way data flow, or just have both components subscribed to the same Svelte store--or even mix and match. The choice is yours.
 
-The choice is yours.
+---
 
-In any of the above cases, however, you'll let Svelte know that a component expects a prop just by declaring one with `export`:
+To create a prop in a Svelte component, you simply create a variable using the `export` keyword:
 
 ```svelte
 <script>
@@ -402,7 +396,7 @@ This syntax may seem a little odd at first, since we're generally used to export
 
 Let's have one last comparison, just to look at how it's done in other frameworks:
 
-<PropsComparison />
+<CodeComparison dir="props" includeBothVues={true} />
 
 In any of the above cases (since both props are just strings), you'd use the component just like so:
 
@@ -415,9 +409,9 @@ In any of the above cases (since both props are just strings), you'd use the com
 
 A couple of things to point out:
 
-* Note that React does _not_ have any built-in way to specify exactly _what_ incoming props a component might be expecting. You'd need to import a library for that (probably [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)).
+* Note that React does _not_ have any prop typing, or any way to require a prop. You'd need to import a library for that, probably [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html). (You could of course hand-write the logic in the component, but that doesn't scale well.)
 
-* While Svelte _does_ allow you to set explicit props and required props, it doesn't have prop typing built-in, as Vue does. (That's largely because Svelte is fully TypeScript compatible, however. The expectation seems to be: if you want prop typing, you can just go with TypeScript for that.)
+* While Svelte _does_ allow you to set required props, it doesn't have prop typing built-in, as Vue does. That's largely because Svelte is fully TypeScript compatible, however. The expectation seems to be: if you want prop typing, you can just go with TypeScript for that.
 
 
 ## When wouldn't you choose Svelte?

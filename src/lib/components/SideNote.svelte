@@ -13,7 +13,7 @@
 
 		padding: var(--note-unit);
 		position: relative;
-		margin: 2rem 0 2rem calc(var(--note-unit) * -1);
+		margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 2) calc(var(--note-unit) * -1);
 		width: calc(100% + (var(--note-unit) * 2));
 		font-size: .9rem;
 		font-style: italic;

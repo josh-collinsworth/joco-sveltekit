@@ -7,7 +7,7 @@ pre {
 	background: var(--darkerGray);
 	background: $background; /*the Monokai background color */
 	padding: 1.5em;
-	margin: 2rem auto;
+	margin: calc(var(--rhythm) * 2) auto;
 	color: var(--white);
 	font-size: .8rem;
 	overflow: auto;
@@ -52,7 +52,7 @@ pre {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 3rem 0.75rem 1rem;
-	margin: 2rem 0;
+	margin: calc(var(--rhythm) * 2) 0;
 	overflow: auto;
 	position: relative;
  
@@ -61,7 +61,7 @@ pre[class*="language-"] {
 	  top: 0;
 	  left: 0;
 	  font-size: 1rem;
-		font-weight: bold;
+		font-weight: normal;
 	  font-family: var(--heading-font), sans-serif;
 	  padding: 0.25rem 0.75rem;
 	  width: 100%;

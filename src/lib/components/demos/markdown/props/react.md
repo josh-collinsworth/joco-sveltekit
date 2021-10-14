@@ -1,11 +1,11 @@
 ```jsx
 // PageHeading.jsx
-const PostPreview = (props) => {
+const PostPreview = ({ pageTitle, pageSubtitle }) => {
   return (
     <h1>
-      {props.pageTitle}
-      {props.pageSubtitle &&
-        <small>{props.pageSubtitle}</small>
+      {pageTitle}
+      {pageSubtitle &&
+        <small>{pageSubtitle}</small>
       }
     </h1>
   )

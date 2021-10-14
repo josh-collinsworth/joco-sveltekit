@@ -72,7 +72,7 @@ import PageTransition from './transitions/PageTransition.svelte'
     font-size: .85rem;
     align-self: start;
     position: sticky;
-    top: 2rem;
+    top: calc(var(--rhythm) * 2);
     max-width: calc(var(--sidebar-width) * 1.5);
     font-family: var(--heading-font);
     
