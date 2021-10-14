@@ -18,7 +18,7 @@ excerpt: Svelte is a new style of framework for building sites and apps. Let's d
   import CounterButton from '$lib/components/demos/CounterButton.svelte'
   import ToggleButton from '$lib/components/demos/ToggleButton.svelte'
   import VolumeControl from '$lib/components/demos/VolumeControl.svelte'
-  import CodeComparison from '$lib/components/demos/CodeComParison.svelte'
+  import CodeComparison from '$lib/components/demos/CodeComparison.svelte'
 </script>
 
 
