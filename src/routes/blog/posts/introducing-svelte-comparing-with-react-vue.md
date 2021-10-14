@@ -88,7 +88,7 @@ If you want to get technical, Svelte isn't really a JavaScript framework at all,
 
 To elaborate: React, Vue, and most other frameworks run _in_ the browser. You load them first, and then _use_ them by calling their methods to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, in a [CodePen](https://codepen.io), or otherwise drop them into whatever environment you want. Granted, there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment. But to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
 
-Svelte doesn't work like that; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
+**Svelte doesn't work like that**; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 
 Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine. You write your code, then the compiler processes what you've written down to minimal, self-contained JavaScript before it ever gets to the browser--not unlike how [Sass](https://sass-lang.com/) is compiled to plain CSS. That's why Svelte has been referred to as "a framework without the framework." (The [REPL](https://svelte.dev/repl/hello-world) offers a direct peek into the compiled JavaScript, if you're interested.)
 
@@ -119,12 +119,12 @@ Here it is for you to try out:
 
 It's not a particularly practical example, but it _is_ a common one because it's an effective way to demonstrate the bread and butter of frontend frameworks: make a small component to track your state (the count), and whenever something causes the state to change (the click), automatically update the UI (the button).
 
-**Click through the examples below to compare this component in different frameworks:**
+Click through the examples below to compare this component in different frameworks:
 
 <CounterButtonComparison />
 
 <SideNote>
-  I use arrow functions and omit semicolon in these examples, but those are just personal stylistic preferences.
+  I use arrow functions and omit semicolons in these examples, but those are just personal stylistic preferences.
 </SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
@@ -266,7 +266,7 @@ This way, if you have all of your Sass variables in an external `_vars.scss` fil
 
 ##### Conditional styling
 
-Conditional styling is a _breeze_ in Svelte thanks to its simple shorthands. We saw this already in the toggle button example above, but let's look a little closer at the options available:
+Conditional styling is a _breeze_ in Svelte thanks to its simple shorthands. Let's look a little closer at how you might apply a `.enabled` class to a component, based on a boolean value:
 
 ```svelte
 <script>
@@ -320,8 +320,8 @@ Also worth mentioning: you can have as many `class` attributes as you want (dyna
 <div
   class="layout"
   class:logged-in={isLoggedIn}
-  class:dark-mode
-  class:reduce-motion
+  class:darkMode
+  class:reduceMotion
 >
   <!-- ...Content here -->
 </div>
