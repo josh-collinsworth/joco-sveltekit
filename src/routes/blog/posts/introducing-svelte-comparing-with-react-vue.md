@@ -24,6 +24,7 @@ excerpt: Svelte is a new style of framework for building sites and apps. Let's d
   import ToggleButton from '$lib/components/demos/ToggleButton.svelte';
   import VolumeControl from '$lib/components/demos/VolumeControl.svelte';
   import VolumeControlComparison from '$lib/components/demos/VolumeControlComparison.svelte';
+  import PropsComparison from '$lib/components/demos/PropsComparison.svelte';
 </script>
 
 
@@ -34,7 +35,7 @@ That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh
 
 ## What is Svelte?
 
-At a basic level, you could think of Svelte as a frontend framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), etc. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and optimization.
+At a basic level, you could think of Svelte as a frontend user interface (UI) framework akin to [React](https://reactjs.org), [Vue](https://vuejs.org), etc. Svelte is the newest of the big names in the space, however, and it definitely seems as though it's learned from the others, in terms of both developer experience and optimization.
 
 As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the components automatically update to reflect those changes in the UI. (More on that in a bit.)
 
@@ -111,9 +112,23 @@ One of the things I like most about Svelte is its HTML-first philosophy. With fe
 
 But enough telling; let's show.
 
-Maybe the most contrived way to demonstrate a frontend framework is a button component that counts how many times it's been clicked. It's the "hello world" of component examples. 
+Just as you write `.jsx` component files in React and `.vue` files in Vue, Svelte has `.svelte` component files. A Svelte component might look like this (though you can order the pieces any way you like):
 
-Here it is for you to try out:
+```svelte
+<script>
+  // Component logic goes here
+</script>
+
+<!-- HTML goes here -->
+
+<style>
+  /* CSS goes here (scoped by default!) */
+</style>
+```
+
+Let's see a real example.
+
+Maybe the most contrived way to demonstrate a frontend framework is a button component that counts how many times it's been clicked. It's the "hello world" of component examples:
 
 <svelte:component this={CounterButton} />
 
@@ -124,7 +139,7 @@ Click through the examples below to compare this component in different framewor
 <CounterButtonComparison />
 
 <SideNote>
-  I use arrow functions and omit semicolons in these examples, but those are just personal stylistic preferences.
+I use arrow functions and omit semicolons in these examples, but that's just personal stylistic preference.
 </SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
@@ -166,6 +181,10 @@ Other differences worth noting:
 - Svelte and Vue 3 do not require you to "wrap" your markup in a single element. React and Vue 2 do. (I wouldn't be surprised if React figures out a way to do away with this requirement soon, however.)
 
 - In React and Vue, you need to wrap conditional elements in HTML and/or stringify them. Svelte lets you put whatever otherwise valid markup you want inside of `#if` blocks, and doesn't require you to tie them to an element, either.
+
+<SideNote>
+The accessibility of this toggle button example is questionable, for the sake of brevity. I recommend Heydon Pickering's <a href="https://inclusive-components.design/toggle-button/" rel="external">Building Inclusive Toggle Buttons</a> for more info.
+</SideNote>
 
 
 #### Comparing form bindings
@@ -238,20 +257,6 @@ I could go on and on about how easy Svelte makes things, and how advanced yet si
 One of my favorite parts about Svelte is how fun and easy it makes styling.
 
 To add styles to a component in Svelte, you simply create a `<style>` tag in the component's `.svelte` file. Any CSS inside it will be scoped to the component by default.
-
-A typical `.svelte` component might look like this (though again, you can order the pieces any way you like):
-
-```svelte
-<script>
-  // Component logic goes here
-</script>
-
-<!-- HTML goes here -->
-
-<style>
-  /* Scoped CSS goes here! */
-</style>
-```
 
 If you prefer, you can use Sass in your components with [minimal modification](https://github.com/sveltejs/svelte-preprocess), and by adding `lang="scss"` to the `<style>` tag. This is possible thanks to `svelte-preprocess`
 
@@ -371,12 +376,48 @@ I won't go much into this here, but I appreciate the flexibility that's baked in
 
 If you like the way React handles things, you can pass methods to your child components, and keep the one-way flow intact.
 
-If you like the way Vue does it, you can emit ("dispatch") events from child components and listen for them on the parent.
+If you like the way Vue does it, you can [emit ("dispatch") events from child components](https://svelte.dev/tutorial/component-events) and listen for them on the parent.
 
-As mentioned above, you can also `bind` props, to enable two-way data flow, or even just have both components subscribed to the same Svelte store.
+As mentioned above, you can also `bind` props, to enable two-way data flow, or just have both components subscribed to the same Svelte store--or even mix and match.
 
 The choice is yours.
 
+In any of the above cases, however, you'll let Svelte know that a component expects a prop just by declaring one with `export`:
+
+```svelte
+<script>
+  export let propToBePassedIn
+</script>
+```
+
+The above indicates a _required_ prop; if you want to create an optional prop, just give it a default:
+
+```svelte
+<script>
+  export let propToBePassedIn = false
+</script>
+```
+
+This syntax may seem a little odd at first, since we're generally used to exports as a way to pass things _out_. It's admittedly one of Svelte's quirks, but it becomes familiar fairly quickly. Think of it as a component _exporting_ the responsibility for a value to a parent component.
+
+Let's have one last comparison, just to look at how it's done in other frameworks:
+
+<PropsComparison />
+
+In any of the above cases (since both props are just strings), you'd use the component just like so:
+
+```html
+<PageHeading
+  pageTitle="The big page title text…"
+  pageSubtitle="…and a little subheading"
+/>
+```
+
+A couple of things to point out:
+
+* Note that React does _not_ have any built-in way to specify exactly _what_ incoming props a component might be expecting. You'd need to import a library for that (probably [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)).
+
+* While Svelte _does_ allow you to set explicit props and required props, it doesn't have prop typing built-in, as Vue does. (That's largely because Svelte is fully TypeScript compatible, however. The expectation seems to be: if you want prop typing, you can just go with TypeScript for that.)
 
 
 ## When wouldn't you choose Svelte?
