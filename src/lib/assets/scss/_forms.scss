@@ -71,8 +71,7 @@ input[type=submit] {
 	border-right-width: 2px;
 	border-bottom-width: 2px;
 	
-	&:hover,
-	&:focus {
+	&:hover {
 		background: hsla(var(--lightBlueHSL), 0.2);
 	}
 }

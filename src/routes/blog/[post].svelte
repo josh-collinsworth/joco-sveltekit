@@ -115,18 +115,6 @@
       </TagList>
     {/if}
 
-    <ul class="post-links">
-      <li class="post-links__contact">
-        <a href="/contact">
-          Send me a note about this post
-        </a>
-      </li>
-      <li class="post-links__blog">
-        <a href="/blog">
-          Back to blog
-        </a>
-      </li>
-    </ul>
   </aside>
 </article>
 

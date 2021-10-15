@@ -78,7 +78,8 @@ h1,
 	}
 }
 
-h2 {
+h2,
+.h2 {
 	font-size: 1.8rem;
 	font-weight: bold;
 	margin: calc(var(--rhythm) * 6) 0 calc(var(--rhythm) * 2);
@@ -119,6 +120,15 @@ h5,
 h6,
 .h6 {
 	font-size: 1rem;
+}
+
+.h3,
+.h4,
+.h5,
+.h6 {
+	&::before {
+		display: none;
+	}
 }
 
 * {

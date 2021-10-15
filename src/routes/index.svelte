@@ -53,6 +53,8 @@
   ul {
     margin-top: 4rem;
     font-family: var(--heading-font);
+    list-style-type: none!important;
+    padding: 0;
   }
 }	
 </style>
