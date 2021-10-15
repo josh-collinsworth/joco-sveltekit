@@ -1,7 +1,7 @@
 ---
 title: 'Converting from Gridsome to SvelteKit'
 date: '2021-10-04'
-updated: '2021-10-07'
+updated: '2021-10-14'
 categories:
   - 'javascript'
   - 'svelte'
@@ -20,30 +20,24 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
 
 I'll assume for the sake of this post that you're at least a little familiar with what Svelte is. If not, I've written an [introduction to Svelte](/blog/introducing-svelte-comparing-with-react-vue) that you might enjoy reading first before diving in here.
 
-If you already know, however (or if you're just short on time): you can think of Svelte as a frontend framework not unlike React, Vue, etc., and I recently decided to take it for a spin by rebuilding this very site (again).
-
-That's Svelte itself; now let's dive into what SvelteKit is, how it works, why I made the choice to switch (other than the obvious fact that I just can't resist rebuilding my site about once a year), how it's paid off, and whether I'd make the same decisions again.
+Otherwise: let's dive into what [SvelteKit](https://kit.svelte.dev/) is, how it works, why I made the choice to switch (other than the obvious fact that I just can't resist rebuilding my site about once a year), how it's paid off, and whether I'd make the same decisions again.
 
 
 ## What is SvelteKit?
 
-To explain what SvelteKit is, it might be helpful to start from the problems it solves, and compare it to some similar tech.
+If you're familiar with [Next](https://nextjs.org/) or [Nuxt](https://nuxtjs.org/), it would be fair to think of SvelteKit as the Svelte equivalent.
 
-Let's start with Svelte, and frontend frameworks in general.
+If not: all three are "meta-frameworks," sometimes also called app frameworks. You could think of meta-frameworks as a large set of add-ons for frontend UI frameworks like React, Vue, and Svelte (in the cases of Next, Nuxt, and SvelteKit, respectively). If a frontend framework is a toolbox, a meta-framework is a complete workshop.
 
-Since frontend frameworks run entirely on JavaScript, they aren't ideal for much except building out pieces of interactive UIs on a single page; by nature, they're limited to the capabilities of the browser page they're loaded on. (Because of this, sites built just with a frontend framework are sometimes called "single-page applications," or SPAs.)
+**Why?** Frontend UI frameworks are ideal for…well, frontend UIs. They're built to handle pieces of an interactive user interface. By nature, being JavaScript-based, they're limited to the capabilities of the browser page they're loaded on. (Because of this, sites built just with a frontend framework are sometimes called "single-page applications," or SPAs.)
 
 <Callout>
-If a frontend framework is a toolbox, an meta-framework is a complete workshop.
+If a frontend framework is a toolbox, a meta-framework is a complete workshop.
 </Callout>
 
-To overcome this limitation, most popular frameworks have their own "meta-framework," or: a tool that helps you build not just pieces of a UI or a single page, but entire _pages and apps_ with the framework in question. (Meta-frameworks are also sometimes called "app frameworks.")
+A meta-framework is an enhanced toolset for building full-fledged sites and apps with a specific frontend framework (hence the "meta" part of the name; a framework for a framework).
 
-[Next](https://nextjs.org/) is a React meta-framework; [Nuxt](https://nuxtjs.org/) is a Vue meta-framework; and [SvelteKit](https://kit.svelte.dev/) is a Svelte meta-framework.
-
-You could think of meta-frameworks as a level _above_ frontend frameworks; if a frontend framework is a toolbox, an meta-framework is a complete workshop. Each one is generally the best way to build complete apps and multi-page sites ("[transitional apps](https://www.youtube.com/watch?v=860d8usGC0o)," as Rich Harris coined them) with its respective corresponding frontend framework.
-
-Most meta-frameworks include some combination of: pages and routing; data stores; layouts; image optimization; better SEO and full-page control; data fetching; and/or plugins--usually just about everything except a database to help you build a full-fledged site or app.
+Most meta-frameworks come with all your build tools and routing pre-configured. They also generally include data stores; layouts; image optimization; better SEO and full-page control; data fetching; and/or plugins--usually just about everything except a database to help you build anything you might want.
 
 
 ### Going static

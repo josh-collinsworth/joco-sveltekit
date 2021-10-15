@@ -201,6 +201,7 @@ It should also be noted that you can add two-way data binding to component props
 
 This would allow the `ChildComponent` to pass changes to the parent component and vice versa. React is firmly against this idea because, again, it highly values immutability and one-way data flow. In practice, I personally find that dogma more inhibiting than helpful.
 
+
 #### Comparing logic
 
 Though we've seen it already, I think it's worth glancing once more at how each of the three frameworks handles conditional rendering. Here's how you'd show a `<Hello />` component conditionally:
@@ -208,7 +209,7 @@ Though we've seen it already, I think it's worth glancing once more at how each 
 <CodeComparison dir="conditionals" />
 
 <SideNote>
-I'm not distinguishing between Vue 2 and 3 from here on out, because they share templating syntax.
+I'm not distinguishing between Vue 2 and 3 in these examples because their templating syntax is identical.
 </SideNote>
 
 You can of course do `else` as well (and `else if` for that matter, though I won't demo that just because writing the React expression would be a little bit of a nightmare).
@@ -414,9 +415,9 @@ A couple of things to point out:
 * While Svelte _does_ allow you to set required props, it doesn't have prop typing built-in, as Vue does. That's largely because Svelte is fully TypeScript compatible, however. The expectation seems to be: if you want prop typing, you can just go with TypeScript for that.
 
 
-## When wouldn't you choose Svelte?
+## What to know about Svelte
 
-I'll be honest: to me, the arguments against Svelte grow fewer and thinner all the time. But I'll mention the biggest ones here for the sake of perspective.
+I'll be honest: to me, any arguments against adopting Svelte grow fewer and thinner all the time. But I'll mention some things you should know and some of the arguments for and against Svelte here, just for perspective if nothing else.
 
 
 ### Debunking the "small community" argument
@@ -460,7 +461,7 @@ Turns out: the scale at which Svelte's advantages disappear is actually unrealis
 
 If you'd like more detail, you can read this [comparison of React and Svelte bundle scaling](https://github.com/halfnelson/svelte-it-will-scale/blob/master/README.md), or [this similar comparison](https://svelte-scaling.acmion.com/). But to summarize both: Svelte's advantage disappears somewhere around 150 kB of components loaded onto the page. That doesn't _sound_ like a lot, but components are tiny; it would actually take a pretty massive number (or extremely high complexity) to get to that point. Many components aren't even 1 kB. (In fact, speed tests have dinged me for not g-zipping components, since Netlify doesn't automatically gzip any components that are less than 1 kB in size, as the gains are too tiny to bother with.)
 
-For comparison's sake: [I recently rewrote this site in SvelteKit](/blog/faster-sites-more-fun-sveltekit/). Granted, it's still a small personal site and not a production app, but I'm _barely_ 20% of the way to that scale. My largest and most complex component--the `__layout.svelte` file, which has 17 imports--is only 12 kB. None of my other components are even 3 kB. So it's tough to fathom how I'd make a page large and complex enough to approach the ~150 kB vertex, given I'm orders of magnitude below that right now.
+For comparison's sake: [I recently rewrote this site in SvelteKit](/blog/converting-from-gridsome-to-sveltekit/). Granted, it's still a small personal site and not a production app, but I'm _barely_ 20% of the way to that scale. My largest and most complex component--the `__layout.svelte` file, which has 17 imports--is only 12 kB. None of my other components are even 3 kB. So it's tough to fathom how I'd make a page large and complex enough to approach the ~150 kB vertex, given I'm orders of magnitude below that right now.
 
 And let's not forget: that's the scale at which you're on _even ground_ with React. You'd _still_ have to go significantly larger than _that_ before there would be any meaningful difference between the two.
 
@@ -495,6 +496,59 @@ There's no wrong choice when it comes to developing your own skills and knowledg
 On the other hand, if you're learning in the hopes of getting a job with your newfound skills, it would be hard to recommend anything other than React for that pursuit--simply because it's the _largest_ framework by far in terms of market share and jobs available. I wish that weren't the case, but tech as a whole (in the U.S., at least), went in heavily on React and I don't see that changing any time soon. Still, though: if you already know React, I think it's still worth learning Svelte just for the perspective, if nothing else.
 
 Alternately: are you choosing a technology for a relatively new startup or project? Svelte will likely enable you to move more quickly and build something that's more performant, but hiring or collaborating may be a challenge, given the relatively small pool of Svelte devs. That said, though: knowing one JS framework tends to make learning a new one easier, and Svelte is in my opinion the easiest to start with. I think any developer who's already familiar with another frontend framework should be able to pick up Svelte pretty quickly (and vice versa).
+
+
+### Svelte shines in limited environments
+
+I touched on this in the intro, but one of Svelte's biggest strengths is its minimal JavaScript bundle sizes. This makes it ideal for any code that will be executed by low-power devices that can't parse JavaScript quickly (smart TVs, watches, and other IoT devices for example, or older smartphones that might be more common in less economically advantaged markets). It _also_ means Svelte shines where bandwidth is limited, which again makes it a perfect fit for older devices and users who might be on poor internet connections.
+
+
+### Reactivity with arrays and objects
+
+Svelte's one notable "gotcha" is in how it handles automatic reactivity with arrays and objects. You can read more about it in the [Svelte tutorial on arrays and objects](https://svelte.dev/tutorial/updating-arrays-and-objects), but to summarize: _modifying_ an array or object won't register with Svelte as an update, and therefore, won't cause a re-render. You need to _re-assign_ the variable to force Svelte to recognize the change.
+
+```svelte
+<script>
+let colors = ['red', 'orange', 'yellow']
+
+colors.push('green')
+// ❌ Updates the array, but doesn't cause a re-render
+
+colors = [...colors, 'blue']
+// ✅ Reassigning causes a re-render
+</script>
+```
+
+The same principle works with objects, as well:
+
+```svelte
+<script>
+let me = {
+  firstName: 'Josh'
+}
+
+me.lastName = 'Collinsworth'
+// ❌ Updates the object, but doesn't cause a re-render
+
+me = {...me, lastName: 'Collinsworth' }
+// ✅ Reassigning causes a re-render
+</script>
+```
+
+If for some reason you _had_ to use `.push()`, you could just assign the array to itself afterwards. This would work:
+
+```js
+myArray.push(newThing)
+myArray = myArray
+```
+
+But I think this is a little nicer (and works the exact same way):
+
+```js
+myArray = [...myArray, newThing]
+```
+
+If you want to get nerdy for a second: **this is actually a quirk of JavaScript itself**, rather than of Svelte. JavaScript still considers the array or object as the same unique thing until and unless it's reassigned. (This is why you can use `const` to declare an array or object and still modify its properties; the variable itself hasn't been mutated, even though its contents have.)
 
 
 ## How to get started with Svelte
@@ -536,6 +590,6 @@ Naturally, you can replace `my-svelte-project` with whatever name you'd like for
 
 I hope you're now as excited about Svelte as I am! I encourage you to try it out on your own, even if it's just playing around in the [Svelte tutorial](https://svelte.dev/tutorial/basics). If you haven't tried it before, I think you'll be pleasantly surprised how comparatively straightforward it is.
 
-And if you're looking to dive deeper, there's also SvelteKit, a Svelte app framework for larger/more complex projects. I've written a post on [converting this site to SvelteKit from Gridsome](/blog/faster-sites-more-fun-sveltekit), if you'd like to check it out as well.
+And if you're looking to dive deeper, there's also SvelteKit, a Svelte app framework for larger/more complex projects. I've written a post on [converting this site to SvelteKit from Gridsome](/blog/converting-from-gridsome-to-sveltekit), if you'd like to check it out as well.
 
 In any case, thanks for reading, and if you have any questions or thoughts, [I'd love to hear 'em](/contact)!
