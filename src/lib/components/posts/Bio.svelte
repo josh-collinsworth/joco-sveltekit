@@ -38,6 +38,11 @@
     display: flex;
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
+
+    @media (min-width: $xxs) {
+      flex-wrap: nowrap;
+    }
     
     .about {
       font-style: italic;
@@ -75,8 +80,12 @@
 
     .thumbnail {
       width: 6rem;
-      margin: 0 var(--rhythm) 0 0;
       border-radius: 3rem;
+      margin: 0 auto var(--rhythm);
+
+      @media (min-width: $xxs) {
+        margin: 0 var(--rhythm) 0 0;
+      }
     }
 
     p {
