@@ -74,6 +74,9 @@
 <svelte:head>
   <title>{meta.title}</title>
   <meta data-key="description" name="description" content="{meta.excerpt}">
+  <meta property="og:title" content={meta.title} />
+  <meta property="og:description" content={meta.excerpt} />
+  <meta property="og:image" content={meta.coverImage} />
 </svelte:head>
 
 <article class="post">
