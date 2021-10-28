@@ -29,6 +29,8 @@
 
   export let Post, meta
 
+  $: imagePath = `/images/post_images/${meta.coverImage}`
+
   const wrapTablesInScrollableDivs = () => {
     /**
      * This is super hacky and I don't like it, but it lets 
@@ -76,13 +78,13 @@
   <meta data-key="description" name="description" content="{meta.excerpt}">
   <meta property="og:title" content={meta.title} />
   <meta property="og:description" content={meta.excerpt} />
-  <meta property="og:image" content={meta.coverImage} />
+  <meta property="og:image" content={imagePath} />
 </svelte:head>
 
 <article class="post">
   <img
     class="cover-image"
-    src="/images/post_images/{meta.coverImage}"
+    src="{imagePath}"
     alt=""
     style="
       aspect-ratio: {meta.coverWidth} / {meta.coverHeight};
