@@ -78,7 +78,9 @@
   <meta data-key="description" name="description" content="{meta.excerpt}">
   <meta property="og:title" content={meta.title} />
   <meta property="og:description" content={meta.excerpt} />
-  <meta property="og:image" content={imagePath} />
+  <meta property="og:image" content="https://joshcollinsworth.com{imagePath}" />
+  <meta property="og:image:width" content={meta.coverWidth} />
+  <meta property="og:image:height" content={meta.coverHeight} />
 </svelte:head>
 
 <article class="post">
