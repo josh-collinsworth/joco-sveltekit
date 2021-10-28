@@ -20,7 +20,8 @@
 
 <svelte:head>
 	<title>Josh Collinsworth</title>
-	<meta data-key="description" name="description" content="Front-end developer, designer, teacher and writer">
+	<meta property="og:title" content="Josh Collinsworth" />
+	<meta data-key="description" property="og:description" name="description" content="Front-end developer, designer, teacher and writer">
   <meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
