@@ -27,6 +27,8 @@
 <svelte:head>
 	<title>Josh Collinsworth | Contact</title>
 	<meta data-key="description" name="description" content="If you fill out this form, I'll probably send you an email. What a bargain!">
+	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
 <template>

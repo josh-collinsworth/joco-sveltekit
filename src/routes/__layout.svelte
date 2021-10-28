@@ -108,11 +108,9 @@ import { dev } from '$app/env';
 	<meta property="og:url" content="https://joshcollinsworth.com" />
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
 	<meta name="twitter:creator" content="@jjcollinsworth" />
 	<meta name="twitter:site" content="@jjcollinsworth"/>
   <meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
 <div

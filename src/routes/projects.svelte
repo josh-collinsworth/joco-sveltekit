@@ -6,6 +6,8 @@
 <svelte:head>
   <title>Josh Collinsworth | Projects</title>
 	<meta data-key="description" name="description" content="A sampling of apps and code projects.">
+  <meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
 <div class="projects">

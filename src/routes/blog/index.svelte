@@ -21,6 +21,8 @@
 <svelte:head>
 	<title>Josh Collinsworth | Writing</title>
 	<meta data-key="description" name="description" content="Writings on development, design, and random thoughts.">
+	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
 
