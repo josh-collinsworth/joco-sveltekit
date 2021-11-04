@@ -105,7 +105,6 @@ import { dev } from '$app/env';
 <svelte:window on:scroll={handleScroll} />
 
 <svelte:head>
-	<meta property="og:url" content="https://joshcollinsworth.com" />
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
 	<meta name="twitter:creator" content="@jjcollinsworth" />

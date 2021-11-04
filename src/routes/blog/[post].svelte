@@ -6,7 +6,7 @@
       return {
         props: {
           Post: Post.default,
-          meta: Post.metadata,
+          meta: { ...Post.metadata, slug: page.params.post } 
         }
       }
     } catch(error) {
@@ -85,6 +85,7 @@
   <meta property="og:image:width" content={meta.coverWidth} />
   <meta property="og:image:height" content={meta.coverHeight} />
   <meta name="twitter:image" content="https://joshcollinsworth.com{imagePath}" />
+  <meta property="og:url" content="https://joshcollinsworth.com.com/blog/{meta.slug}/" />
 </svelte:head>
 
 <article class="post">
@@ -92,11 +93,9 @@
     class="cover-image"
     src="{imagePath}"
     alt=""
-    style="
-      aspect-ratio: {meta.coverWidth} / {meta.coverHeight};
-      width: {meta.coverWidth};
-      height: {meta.coverHeight}
-    "
+    style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight}"
+    width={meta.coverWidth}
+    height={meta.coverHeight}
   />
 
   <h1>{ meta.title }</h1>
