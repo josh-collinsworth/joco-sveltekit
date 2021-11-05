@@ -22,6 +22,7 @@
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
   import Bio from '$lib/components/posts/Bio.svelte'
+  import Comments from '$lib/components/Comments.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount } from 'svelte'
   
@@ -74,7 +75,7 @@
 
 
 <svelte:head>
-  <title>{meta.title}</title>
+  <title>{meta.title} - Josh Collinsworth blog</title>
   <meta data-key="description" name="description" content="{meta.excerpt}">
   <meta property="og:type" content="article" />
   <meta property="og:title" content={meta.title} />
@@ -126,6 +127,8 @@
     {/if}
 
   </aside>
+
+  <Comments />
 </article>
 
 
