@@ -86,7 +86,7 @@
   <meta property="og:image:width" content={meta.coverWidth} />
   <meta property="og:image:height" content={meta.coverHeight} />
   <meta name="twitter:image" content="https://joshcollinsworth.com{imagePath}" />
-  <meta property="og:url" content="https://joshcollinsworth.com.com/blog/{meta.slug}/" />
+  <meta property="og:url" content="https://joshcollinsworth.com/blog/{meta.slug}/" />
 </svelte:head>
 
 <article class="post">
