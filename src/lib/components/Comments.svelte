@@ -19,13 +19,13 @@
     // setTimeout is used because if this runs too soon it will "miss" and fail to load due to page transitions
     setTimeout(() => {
       const utteranceScript = document.createElement('script')
-      const tag = document.getElementById('utterances-comments')
+      const targetTag = document.getElementById('utterances-comments')
     
       for (const prop in options) {
         utteranceScript.setAttribute(prop, options[prop])
       }
 
-      tag.appendChild(utteranceScript)
+      targetTag.appendChild(utteranceScript)
     }, TIMING_DURATION)
   })
 </script>
