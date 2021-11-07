@@ -1,15 +1,13 @@
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
   import LogoSVG from './header/LogoSVG.svelte'
-  import { EXTERNAL_POSTS } from '$lib/data/external_posts'
   import { isLoading } from '$lib/data/store'
   
   import { onMount } from 'svelte'
   import TagList from './tags/TagList.svelte'
   import Tag from './tags/Tag.svelte'
-import PageTransition from './transitions/PageTransition.svelte'
   
-  let posts: Post[] = []
+  let recentPosts: Post[] = []
   let allCategories: string[] = []
   
   onMount(async () => {
@@ -17,7 +15,7 @@ import PageTransition from './transitions/PageTransition.svelte'
       const res = await fetch('/blog/posts-detail.json')
       const resJSON = await res.json()
       
-      posts = resJSON.posts
+      recentPosts = resJSON.posts
         .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
         .map(post => ({ slug: post.slug, title: post.title }))
         .slice(0, 5)
@@ -25,7 +23,7 @@ import PageTransition from './transitions/PageTransition.svelte'
       allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
     }
     catch(error) {
-      posts = []
+      recentPosts = []
     }
   })
 
@@ -44,10 +42,10 @@ import PageTransition from './transitions/PageTransition.svelte'
 
   <h2>Recent blog posts</h2>
   <ul class="sidebar__posts-list">
-    {#if !posts.length}
+    {#if !recentPosts.length}
       Loading…
     {/if}
-    {#each posts as post}
+    {#each recentPosts as post}
       <li>
         <a href="/blog/{post.slug}" on:click={() => handleClick('/blog/' + post.slug)} sveltekit:prefetch>
           <span>{post.title}</span>
@@ -59,11 +57,21 @@ import PageTransition from './transitions/PageTransition.svelte'
   <h2>Categories</h2>
   <TagList>
     {#each allCategories as category}
-      <Tag to="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)}>
-        { category }
-      </Tag>
+    <Tag to="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)}>
+      { category }
+    </Tag>
     {/each}
   </TagList>
+  
+  <h2>More</h2>
+  <ul>
+    <li>
+      <a href="/blog" on:click={() => handleClick('/blog')}>All blog posts</a>
+    </li>
+    <li>
+      <a href="/writing-and-speaking" on:click={() => handleClick('/writing-and-speaking')}>Other writing & speaking</a>
+    </li>
+  </ul>
 </aside>
 
 

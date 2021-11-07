@@ -96,8 +96,10 @@ I followed the spirit of his example closely, but changed it in a few ways. Here
   import { onMount } from 'svelte'
   import { prefersDarkMode } from '$lib/data/store'
 
+  // Translate the user's dark mode preference to a theme
   const siteTheme = $prefersDarkMode ? 'github-dark' : 'github-light'
 
+  // An object with all the utterances options I want
   const options = {
     src: 'https://utteranc.es/client.js',
     repo: 'josh-collinsworth/joco-sveltekit',
@@ -112,6 +114,7 @@ I followed the spirit of his example closely, but changed it in a few ways. Here
     const utteranceScript = document.createElement('script')
     const targetTag = document.getElementById('utterances-comments')
   
+    // Loop over the options & apply each property as an attribute
     for (const prop in options) {
       utteranceScript.setAttribute(prop, options[prop])
     }
