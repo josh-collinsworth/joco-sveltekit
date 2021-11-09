@@ -32,11 +32,7 @@
       Skip to main content
     </a>
 
-		<a
-			href="/"
-			class="logo"
-			on:click={handleClick}
-		>
+		<a href="/" class="logo" on:click={handleClick}>
 			<LogoSVG />
 			<span class="sr">Home</span>
 		</a>

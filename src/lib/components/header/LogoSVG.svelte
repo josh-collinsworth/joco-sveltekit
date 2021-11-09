@@ -4,7 +4,7 @@
 
 
 <template>
-	<svg width="100%" height="100%" viewBox="0 0 763 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+	<svg id="logo-svg" width="100%" height="100%" viewBox="0 0 763 178" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 		<g id="artboard">
       {#if !iconOnly}
 				<g id="logo-text">
@@ -19,30 +19,31 @@
 </template>	
 
 
-<style lang="scss">
-	svg {
+<style lang="scss" global>
+	#logo-svg {
 		width: auto;
-	}
 
-	svg:hover {
-		#bracket-left {
-			transform: translateX(11%);
+		a:hover &,
+		a:focus & {
+			#bracket-left {
+				transform: translateX(11%);
+			}
+	
+			#bracket-right {
+				transform: translateX(-11%);
+			}
 		}
-
+	
+		#bracket-left,
 		#bracket-right {
-			transform: translateX(-11%);
+			transform: translateX(0);
+			transition: transform .3s cubic-bezier(1, 0, 0, 1);
 		}
-	}
-
-	#bracket-left,
-	#bracket-right {
-		transform: translateX(0);
-		transition: transform .3s cubic-bezier(1, 0, 0, 1);
-	}
-
-	@media (max-width: 23rem) {
-		#logo-text {
-			display: none;
+	
+		@media (max-width: 23rem) {
+			#logo-text {
+				display: none;
+			}
 		}
 	}
 </style>
