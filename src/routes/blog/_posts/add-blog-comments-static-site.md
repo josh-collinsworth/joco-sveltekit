@@ -41,7 +41,7 @@ Utterances adds GitHub-powered comments to your site, simply and easily.
 
 You don't really need to know anything about GitHub issues, or even that GitHub issues is the engine under the hood. (After all, these comments aren't really issues at all; they're just a convenient way to store data associated with your repo and in the same place as your code.)
 
-All you need to know is: utterances adds GitHub-powered comments to your site, simply and easily. Oh, and it's also free, open-source, and ad-free.
+All you need to know is: utterances adds GitHub-powered comments to your site, simply and easily.
 
 
 ## How to set up utterances
@@ -137,17 +137,35 @@ The main differences are:
 To restate/emphasize, since I'm talking about somebody else's code here: this is all just personal preference. Both versions have advantages, and either is perfectly fine.
 
 
-## Utterances drawbacks
+## Pros and cons
+
+I found utterances to be a good fit for me and my site personally, but there are reasons you may or may not come to the same conclusion.
+
+
+### Utterances benefits
+
+I've already mentioned how simple utterances is, and how easy it is to set up. Beyond that, utterances is also free, open-source, and ad-free--all of which are great.
+
+<Callout>
+Utterances is a perfect fit for static sites, because it doesn't require a rebuild to display new content.
+</Callout>
+
+Also, because it uses GitHub as the comments engine under the hood, you can do all the same things you can with GitHub comments, like use Markdown; preview your comment before posting; and add reactions to other people's comments.
+
+Finally: utterances is a perfect fit for static sites, because it doesn't require a rebuild to display new content; adding and retrieving comments is all handled client-side.
+
+
+### Utterances tradeoffs
 
 It's hard to complain about such a simple and effective solution, but as with all things, this approach comes with tradeoffs.
 
-Most obviously, this approach comes with some vendor lock-in. I don't mind this too much personally, but if you feel this might not be your ideal long-term comments solution, it's something to keep in mind.
+Most obviously, there _is_ some vendor lock-in. I don't mind this too much personally, but if you feel this might not be your ideal long-term comments solution, it's something to keep in mind.
 
-Another item worth mentioning: since this is all powered by GitHub comments under the hood, a user needs a GitHub login in order to comment. I decided that's fine in my case (at least for now), since this blog is increasingly development-focused, but your needs and audience may vary. This probably wouldn't be a good approach for a non-technical audience.
+Another item worth mentioning: since this is all powered by GitHub comments under the hood, a user needs a GitHub login in order to comment. I decided that's fine in my case, since this blog is increasingly development-focused, but your needs and audience may vary. This probably wouldn't be a good approach for a non-technical audience.
 
-Also, unfortunately, there's no commenting on other comments or threading comments (at least, not for now).
+Also, there's no commenting on other comments or threading comments, at least not for now--though as mentioned before, there are at least reaction emoji available. But again, this _is_ open-source, so it's possible we could see that change.
 
-Finally, I suppose you could consider it a drawback that your comments management moves to GitHub. Personally, I like that my comments are now hosted with the code itself, but I can see where going into GitHub to manage them could be undesirable in some cases. At the very least, it means you have less control over approving and moderating comments that you might with, say, WordPress. (That said, however: GitHub almost certainly has much better control over spam issues and comments than I'd ever be able to devise.) Also, while I haven't spent much time looking, I'd bet there are VS Code extensions to help you manage issues right in your editor.
+Finally, I suppose you could consider it a drawback that your comments management moves to GitHub. Personally, I like that my comments are now hosted in the same place as the code itself, but I can see where going into GitHub to manage content could be undesirable in some cases. At the very least, it means you have less control over approving and moderating comments that you might with, say, WordPress. (That said, however: GitHub almost certainly has much better control over spam issues and comments than I'd ever be able to devise.) Also, while I haven't spent much time looking, I'd bet there are VS Code extensions to help you manage issues right in your editor.
 
 
 ## Conclusion
