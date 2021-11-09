@@ -1,7 +1,7 @@
 ---
 title: "Adding blog comments to your static site with utterances"
 date: "2021-11-06"
-updated: "2021-11-07"
+updated: "2021-11-09"
 categories:
   - "web"
   - "javascript"
