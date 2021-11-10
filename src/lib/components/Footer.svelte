@@ -62,10 +62,9 @@
 
     h2 {
       color: inherit;
-      font-size: 0.8rem;
-      margin: 0 0 1rem;
+      font-size: 0.7rem;
+      margin: 0 0 var(--rhythm);
       width: max-content;
-      color: var(--lightBlue);
     }
 
     a {
@@ -99,7 +98,7 @@
       }
 
       li {
-        margin: 0 0 .5rem;
+        margin: 0.5rem 0 0;
         font-family: var(--heading-font);
       }
     }
