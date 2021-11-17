@@ -10,7 +10,7 @@
 <hr>
 <PostList posts={EXTERNAL_POSTS} external={true} />
 
-<h2>Speaking</h2>
+<h2>Speaking, etc.</h2>
 <p class="subhead">To do: add slide decks where possible.</p>
 <hr>
 <ul>

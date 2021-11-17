@@ -38,6 +38,12 @@ const talks: Talk[] = [
     year: 2019
   },
   {
+    title: 'What is Managed WordPress Hosting?',
+    link: 'https://www.youtube.com/watch?v=eBS6UBcDI9k',
+    event: 'Video voiceover',
+    year: 2019
+  },
+  {
     title: 'Intro to Accessibility',
     link: '',
     event: 'aware3 internal training',
