@@ -68,20 +68,11 @@
   width: 100%;
   position: relative;
   margin-top: calc(var(--rhythm) * 4);
+  max-width: var(--max-width);
 
-  /**
-    This is what makes the landing page all fancy. It uses explicit
-    width combined with negative left margin to avoid needing to resize
-    the <main> element, which would result in layout jumping around during
-    page transitions. It's a little icky, but it's best for animation, and
-    it also lets me keep the unordered list at the end where I want it
-    visually without moving its place in the DOM.
-  */
-  @media (min-width: $xxl) {
-    // width: calc(100vw - (var(--margin) * 2) - (var(--rhythm) / 2));
+  @media (min-width: $xl) {
     width: 100%;
     max-width: unset;
-    // margin-left: calc(50% - 50vw + var(--margin) + (var(--rhythm) / 4));
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 0 calc(var(--rhythm) * 8);
@@ -103,10 +94,10 @@
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: var(--rhythm);
 
-    @media (min-width: $sm) {
+    @media (min-width: $xs) {
       font-size: 3rem;
     }
 
@@ -120,10 +111,6 @@
     
     @media (min-width: $xxl) {
       font-size: 6rem;
-    }
-    
-    @media (min-width: $xxxl) {
-      font-size: 6.9rem;
     }
   }
 
@@ -139,7 +126,7 @@
   }
 
   .subhead {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0 0 4rem;
     max-width: 20em;
     line-height: 1.2;
@@ -150,8 +137,8 @@
       margin-bottom: calc(var(--rhythm) * 6);
     }
 
-    @media (min-width: $xxl) {
-      font-size: 1.9rem;
+    @media (min-width: $xl) {
+      font-size: 1.8rem;
     }
   }
 }	

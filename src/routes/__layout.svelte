@@ -30,10 +30,10 @@
 
 	const blogPageCheck = new RegExp(/^\/blog/)
 	let pageHasSidebar = false
+	let isBlogListingPage = false
 	let lastScrollPosition: number = 0
 
 	$: isTopLevelPage = path.split('/').length < 3
-	$: pageClass = path.split('/')[1] || 'home'
 
 	const handleLoadingUserPreferences = () => {
 		const userPrefersDark = 
@@ -54,13 +54,15 @@
 		// Janky, but needed to prevent jumps in width while transitioning between pages of different widths.
 		// Tried finding a better way to do this but failed; having the transition wrapper as an element in the grid makes things very complicated.
 		setTimeout(() => {
-			setPageHasSidebar()
+			setPageProperties()
 		}, TIMING_DURATION)
 	}
 
-	const setPageHasSidebar = () => {
+	const setPageProperties = () => {
 		pageHasSidebar = blogPageCheck.test(path)
+		isBlogListingPage = (path === '/blog' || path.startsWith('/blog/category/'))
 	}
+
 
 	const handleScroll = throttle(() => {
 		const currentScrollPosition = window.scrollY
@@ -95,7 +97,7 @@
 			}
 		}
 
-		setPageHasSidebar()
+		setPageProperties()
 	})
 </script>
 
@@ -126,7 +128,7 @@
 			<PageHeading title={path} {isTopLevelPage} />
 		{/if}
 
-		<main id="main" class={pageClass} tabindex="-1">
+		<main id="main" class:archive={isBlogListingPage} tabindex="-1">
 			<PageTransition refresh={path} on:loaded={() => setLoading(false) }>
 				<slot/>
 			</PageTransition>

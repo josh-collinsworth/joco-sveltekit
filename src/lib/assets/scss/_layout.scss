@@ -79,7 +79,7 @@ hr {
 		grid-template-columns: 1fr var(--sidebar-width);
 		gap: 0 calc(var(--rhythm) * 2);
 
-		main {
+		main:not(.archive) {
 			margin-left: calc(var(--sidebar-width) + (var(--rhythm) * 2));
 			width: auto;
 		}

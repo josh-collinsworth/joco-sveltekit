@@ -3,7 +3,7 @@
   import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 
   export let title: string
-  export let isTopLevelPage: boolean
+  export let isTopLevelPage: boolean = false
 
   let computedTitle: string = ''
   let isWorking: boolean = false

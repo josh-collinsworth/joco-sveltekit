@@ -43,10 +43,5 @@
 		p a {
 			font-weight: bold;
 		}
-
-		.h1 {
-			margin-top: calc(var(--rhythm) * 4);
-			
-		}
 	}
 </style>
