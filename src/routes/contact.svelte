@@ -31,7 +31,7 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<template>
+<div class="compressed-content">
 	{#if !isSubmitted}
 
 		<noscript>
@@ -82,7 +82,7 @@
 
 		<p>I'll follow up by email if this wasn't spam. :)</p>
 	{/if}
-</template>
+</div>
 
 
 <style lang="scss">

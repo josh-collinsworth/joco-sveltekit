@@ -20,22 +20,20 @@
 	import PageHeading from '$lib/components/PageHeading.svelte'
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
-	import { FULLWIDTH_PAGE_REGEXP, TIMING_DURATION } from '$lib/data/constants'
+	import { TIMING_DURATION } from '$lib/data/constants'
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { prefetch, prefetchRoutes } from '$app/navigation'
 	import throttle from 'lodash/throttle.js'
-import { dev } from '$app/env';
 	
 	export let path: string
-	export let pageHasSidebar: boolean
 
 	const blogPageCheck = new RegExp(/^\/blog/)
-	let isFullwidthPage: boolean = false
+	let pageHasSidebar = false
 	let lastScrollPosition: number = 0
 
-	$: pageHasSidebar = blogPageCheck.test(path)
 	$: isTopLevelPage = path.split('/').length < 3
+	$: pageClass = path.split('/')[1] || 'home'
 
 	const handleLoadingUserPreferences = () => {
 		const userPrefersDark = 
@@ -56,12 +54,12 @@ import { dev } from '$app/env';
 		// Janky, but needed to prevent jumps in width while transitioning between pages of different widths.
 		// Tried finding a better way to do this but failed; having the transition wrapper as an element in the grid makes things very complicated.
 		setTimeout(() => {
-			setIsFullwidthPage()
+			setPageHasSidebar()
 		}, TIMING_DURATION)
 	}
 
-	const setIsFullwidthPage = () => {
-		isFullwidthPage = FULLWIDTH_PAGE_REGEXP.test(path)
+	const setPageHasSidebar = () => {
+		pageHasSidebar = blogPageCheck.test(path)
 	}
 
 	const handleScroll = throttle(() => {
@@ -97,7 +95,7 @@ import { dev } from '$app/env';
 			}
 		}
 
-		setIsFullwidthPage()
+		setPageHasSidebar()
 	})
 </script>
 
@@ -117,21 +115,18 @@ import { dev } from '$app/env';
 	class:reduce-motion={$prefersReducedMotion}
 	class:prefers-dark={$prefersDarkMode}
 	class:prefers-light={$prefersLightMode}
-	class:fullwidth={isFullwidthPage}
 	class:sidebar={pageHasSidebar}
 >
 	<Loader loading={$isLoading}/>
 
 	<Header {path} /> 
 
-	<div class="layout"> 
-		<main id="#main" tabindex="-1">
-			<PageTransition refresh={isTopLevelPage}>
-				{#if isTopLevelPage}
-					<PageHeading title={path} />
-				{/if}
-			</PageTransition>	
+	<div class="layout" class:subpage={!isTopLevelPage}> 
+		{#if isTopLevelPage}
+			<PageHeading title={path} {isTopLevelPage} />
+		{/if}
 
+		<main id="main" class={pageClass} tabindex="-1">
 			<PageTransition refresh={path} on:loaded={() => setLoading(false) }>
 				<slot/>
 			</PageTransition>

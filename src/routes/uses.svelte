@@ -24,7 +24,7 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<div class="uses">
+<div class="uses compressed-content">
 	<svelte:component this={Uses} />
 </div>
 
@@ -43,9 +43,10 @@
 		p a {
 			font-weight: bold;
 		}
-	
-		h2 {
-			font-weight: bold;
+
+		.h1 {
+			margin-top: calc(var(--rhythm) * 4);
+			
 		}
 	}
 </style>

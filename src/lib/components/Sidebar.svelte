@@ -86,7 +86,6 @@
     
     @media (min-width: $lg) {
       text-align: right;
-      grid-column: 3 / 4;
     }
 
     .home-link {

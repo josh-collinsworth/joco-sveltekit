@@ -106,12 +106,13 @@
       }
     }
 
-    h2 {
+    h2.h3 {
       margin: 0;
       line-height: 1.2;
       border: 0;
       padding: 0;
       font-size: 1.5rem;
+      font-weight: normal;
 
       &::before {
         display: none;

@@ -89,7 +89,7 @@
   <meta property="og:url" content="https://joshcollinsworth.com/blog/{meta.slug}/" />
 </svelte:head>
 
-<article class="post">
+<article class="post compressed-content">
   <img
     class="cover-image"
     src="{imagePath}"

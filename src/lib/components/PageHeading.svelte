@@ -1,7 +1,9 @@
 <script lang="ts">
   import { prefersReducedMotion } from '$lib/data/store'
+  import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 
   export let title: string
+  export let isTopLevelPage: boolean
 
   let computedTitle: string = ''
   let isWorking: boolean = false
@@ -25,44 +27,47 @@
 </script>
 
 
-<div class="page-head">
-  <div
-    class="heading-wrapper"
-    class:in={isWorking}
-    class:no-motion={$prefersReducedMotion}
-  >
-    <span class="brace" aria-hidden="true">[</span>
-    <h1>
-      <div class="title-wrap">
-        {computedTitle}
-        <noscript>{title}</noscript>
-      </div>
-    </h1>
-    <span class="brace closing-brace" aria-hidden="true">]</span>
-    
-    <noscript>
-      <!-- Just here to allow the heading to show when JS is disabled. -->
-      <style>
-        .closing-brace {
-          transform: none !important;
-        }
-      </style>
-    </noscript>
+<PageTransition refresh={isTopLevelPage} span={true}>
+  <div class="page-head">
+    <div
+      class="heading-wrapper"
+      class:in={isWorking}
+      class:no-motion={$prefersReducedMotion}
+    >
+      <span class="brace" aria-hidden="true">[</span>
+      <h1>
+        <div class="title-wrap">
+          {computedTitle}
+          <noscript>{title}</noscript>
+        </div>
+      </h1>
+      <span class="brace closing-brace" aria-hidden="true">]</span>
+      
+      <noscript>
+        <!-- Just here to allow the heading to show when JS is disabled. -->
+        <style>
+          .closing-brace {
+            transform: none !important;
+          }
+        </style>
+      </noscript>
+    </div>
   </div>
-</div>
+</PageTransition>
 
 
 <style lang="scss">
   .page-head {
     --transition: transform .24s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-    margin-bottom: 4rem;
+    margin-bottom: calc(var(--rhythm) * 2);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     contain: layout;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 
     .heading-wrapper {
       display: flex;
@@ -88,7 +93,8 @@
           left: 100%;
           width: 100%;
           background: var(--paper);
-          box-shadow: 4rem 0 0 2rem var(--paper);
+          box-shadow: 3rem 0 0 1rem var(--paper);
+          overflow: visible;
         }
       }
 
@@ -109,12 +115,10 @@
       font-weight: normal;
       display: flex;
       align-items: center;
-      overflow: hidden;
 
       .title-wrap {
         position: relative;
         z-index: 1;
-        overflow: hidden;
         background: linear-gradient(90deg, #a7a8aa, #92abb2, #5eca78, #b6ec1f, #ffd100);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;

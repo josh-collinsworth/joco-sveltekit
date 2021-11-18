@@ -19,3 +19,17 @@ input[type=checkbox] {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
 }
+
+.compressed-content {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  &.wider {
+    max-width: calc(var(--max-width) * 1.5);
+  }
+
+  &.double-wide {
+    max-width: calc(var(--max-width) * 2);
+  }
+}

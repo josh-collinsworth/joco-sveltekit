@@ -10,7 +10,7 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<div class="projects">
+<div class="projects compressed-content double-wide">
   <article>
     <div class="sticky">
       <h2>Featured project: Quina</h2>
@@ -175,7 +175,6 @@
 
 <style lang="scss">
   .projects {
-    max-width: 64rem;
 
     p {
       max-width: var(--max-width);

@@ -12,6 +12,7 @@
   $: yOut = $prefersReducedMotion ? 0 : -12
 
   export let refresh: string|boolean = ''
+  export let span: boolean = false
 
   const dispatch = createEventDispatcher()
   
@@ -29,6 +30,7 @@
 {#key refresh}
   <div
     class="transition-wrapper"
+    class:span
     in:fly={{ 
       y: yIn,
       duration: TIMING_DURATION,
@@ -49,16 +51,8 @@
 <style lang="scss" global>
   .transition-wrapper {
 
-    .fullwidth & {
-      grid-column: 1 / 4;
-    }
-
-    .sidebar & {
-      grid-column: 1 / 2;
-    }
-
-    .fullwidth.sidebar & {
-      grid-column: 1 / 3;
+    &.span {
+      grid-column: 1 / -1;
     }
   }
 </style>

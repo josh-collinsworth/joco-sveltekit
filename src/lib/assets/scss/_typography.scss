@@ -28,9 +28,13 @@ main ul:not(.toc) {
 	}
 }
 
-li {
-	margin-bottom: 0.5rem;
+li:not(:last-of-type) {
+	margin-bottom: 0.75rem;
 	position: relative;
+
+	@media (min-width: $md) {
+		margin-bottom: 0;
+	}
 }
 
 a {
@@ -92,7 +96,7 @@ h2,
 	&::before {
 		content: '';
 		width: calc(var(--rhythm) * 5);
-		height: 0.25rem;
+		height: 0.125em;
 		background: currentColor;
 		display: block;
 		margin: 0 0 1rem;
