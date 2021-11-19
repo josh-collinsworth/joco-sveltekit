@@ -68,6 +68,7 @@
     overflow: hidden;
     position: relative;
     z-index: 0;
+    font-size: 1.1rem;
 
     .heading-wrapper {
       display: flex;
@@ -108,7 +109,7 @@
     }
 
     h1 {
-      font-size: 1.1rem;
+      font-size: inherit;
       margin: 0 0.25rem 0 0;
       padding: 0;
       width: max-content;
