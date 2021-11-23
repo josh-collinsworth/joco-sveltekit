@@ -145,7 +145,6 @@
 
       &.sidebar__posts-list li {
         font-size: inherit;
-        margin-bottom: .6em;
 
         a {
           font-size: inerit;
