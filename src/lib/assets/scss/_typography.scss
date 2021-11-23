@@ -62,7 +62,7 @@ h6 {
 	line-height: 1.1;
 	position: relative;
 	margin-bottom: var(--rhythm);
-	margin-top: calc(var(--rhythm) * 4);
+	margin-top: calc(var(--rhythm) * 3);
 	padding: 0;
 
 	a {
@@ -86,7 +86,7 @@ h2,
 .h2 {
 	font-size: 1.8rem;
 	font-weight: bold;
-	margin: calc(var(--rhythm) * 6) 0 calc(var(--rhythm) * 2);
+	margin: calc(var(--rhythm) * 5) 0 calc(var(--rhythm) * 2);
 	z-index: 2;
 
 	@media (min-width: $xs) {
@@ -95,7 +95,7 @@ h2,
 	
 	&::before {
 		content: '';
-		width: calc(var(--rhythm) * 5);
+		width: calc(var(--rhythm) * 4);
 		height: 0.125em;
 		background: currentColor;
 		display: block;
@@ -107,7 +107,7 @@ h3,
 .h3 {
 	font-size: 1.6rem;
 	font-weight: normal;
-	margin-top: calc(var(--rhythm) * 5);
+	margin-top: calc(var(--rhythm) * 4);
 }
 
 h4,

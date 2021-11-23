@@ -83,7 +83,6 @@
       grid-column: 2 / 3;
 
       p {
-        font-size: .875rem;
         margin: 0;
       }
     }
@@ -108,10 +107,6 @@
     @media (min-width: $lg) {
       font-size: 5rem;
     }
-    
-    @media (min-width: $xxl) {
-      font-size: 6rem;
-    }
   }
 
   h3 {
@@ -121,7 +116,7 @@
     z-index: 1;
 
     ~ h3 {
-      margin-top: calc(var(--rhythm) * 4);
+      margin-top: calc(var(--rhythm) * 3);
     }
   }
 
