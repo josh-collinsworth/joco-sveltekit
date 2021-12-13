@@ -137,7 +137,7 @@
 		<div id="sidebar">
 			<PageTransition refresh={pageHasSidebar}>
 				{#if pageHasSidebar}
-				<Sidebar />
+					<Sidebar />
 				{/if}
 			</PageTransition>
 		</div>
