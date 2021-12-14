@@ -1,3 +1,5 @@
+<script>null</script>
+
 <aside class="callout" aria-hidden="true">
   <div class="callout-wrapper">
     <slot />

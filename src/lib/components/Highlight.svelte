@@ -1,3 +1,5 @@
+<script>null</script>
+
 <div class="highlight">
   <slot />
 </div>
