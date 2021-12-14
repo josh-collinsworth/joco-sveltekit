@@ -70,6 +70,10 @@ pre[class*="language-"] {
 	}
 }
  
+pre.language-bash:before {
+	content: 'Command line';
+}
+ 
 pre.language-css:before {
 	content: 'CSS';
 }
