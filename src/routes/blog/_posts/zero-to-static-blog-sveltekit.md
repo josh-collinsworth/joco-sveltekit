@@ -513,13 +513,30 @@ You can even import and use Markdown files _inside of_ other files if you want t
 Instead, I think we should talk a little more about how to set up our blog.
 
 
-## Setting up the blog
+## Setting up the blog routes
 
-By now you may be able to predict the next step. If we want our blog posts available at the `/blog` route, then we'll want to create a `blog` folder inside of `src/routes`.
+At this point, one viable route forward would be to create a `src/routes/blog` folder, and toss all our markdown posts inside of it. That would work. They'd each have their own route that way; it's a simple solution.
 
-From there, let's create a couple of dummy posts inside of `src/routes/blog`. No need for anything particularly fancy; just a couple of `.md` files (ideally with names that are easy to type), and a bit of Markdown content inside them.
+But I'm actually going to advocate for a _different_ route forward (pun fully intended).
 
-I've decided to just create `1.md` and `2.md` inside my `src/routes/blog` folder, and place a littel content like this inside of them:
+If we were to drop all our markdown files directly into the `src/routes/blog` folder, we'll need a nested layout file in order to pull frontmatter from the posts into our templates. And if we did _that_, we'd be getting in our own way when setting up the `/blog` index route, since our layout would be trying to do two very different things at once.
+
+Rather than go into that, I think we'll be much better off utilizing two very handy features of SvelteKit: [dynamic pages](https://kit.svelte.dev/docs#routing-pages), and [private modules](https://kit.svelte.dev/docs#routing-private-modules).
+
+
+### Private routes, and adding posts
+
+Before we get too much further, it will be handy to have at least a couple of Markdown post files to work with. So let's create a couple of dummy posts.
+
+To start, if we don't already have a `src/routes/blog` folder, make one now.
+
+Inside that folder, create _another_ folder, named `_posts`.
+
+Note the underscore; **any route that starts with a single underscore is private.** That means content inside the `_posts` folder can be loaded by _other_ pages and components, but it won't automatically be assigned its own route. No matter what we put inside of the `_posts` folder, we won't be able to actually visit it. `/blog/_posts/` won't be a route.
+
+Now let's create a couple of dummy posts inside our new folder. No need for anything lengthy or fancy; just a couple of `.md` files (ideally with names that are easy to type), and a bit of Markdown content inside them.
+
+I've decided to just create `1.md` and `2.md` inside my `src/routes/blog/_posts` folder, and place a little content like this inside of them:
 
 ```markdown
 ---
@@ -531,6 +548,25 @@ Hello, I am _Post One._
 
 **Nice to meet you!**
 ```
+
+If you want, you can visit `/blog/_posts/1` (or whatever your markdown post is named, if not `1`), just to confirm that nothing is showing yet.
+
+For that, now that we have some post files to work with, we'll want to make a dynamic page.
+
+
+### Dynamic pages
+
+Our next step is to create a file inside of `src/routes/blog` named `[slug].svelte`.
+
+The word `slug` isn't important; it's just a variable, really, and could be anything. The important part is the brackets. Brackets indicate the page is dynamic, and handles multiple routes or pages in the app.
+
+As an example: you could have `src/blog/category/[term].svelte`, and the `[term].svelte` file would handle rendering _any_ given category page.
+
+For the case of our new `[slug].svelte`: this file will be responsible for loading the current blog post. It will _work_ basically like a nested layout file, but since it only matches specific post slugs, 
+
+
+
+---
 
 You can now visit `/blog/1` in your browser, and see the content of that post--although not the frontmatter (the bit at the top with the post metadata).
 
