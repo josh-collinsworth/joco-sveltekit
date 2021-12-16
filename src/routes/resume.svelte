@@ -1,0 +1,50 @@
+<script context="module" lang="ts">
+  export async function load() {
+		const Resume = await import('$lib/content/resume.md')
+		
+		return {
+			props: {
+				Resume: Resume.default
+			}
+		}
+	}
+</script>
+
+<script lang="ts">
+	import type { SvelteComponent } from 'svelte'
+
+  export let Resume: SvelteComponent
+</script>
+
+
+<svelte:head>
+  <title>Josh Collinsworth | Résumé</title>
+	<meta data-key="description" name="description" content="My professional resume">
+	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
+  <meta name="robots" content="noindex,nofollow">
+</svelte:head>
+
+<div class="resume compressed-content">
+	<svelte:component this={Resume} />
+</div>
+
+
+<style lang="scss" global>
+  .resume {
+
+    h3 {
+      margin-bottom: calc(var(--rhythm) / 2);
+
+      ~ p {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: var(--yellow);
+      }
+    }
+  }
+</style>
