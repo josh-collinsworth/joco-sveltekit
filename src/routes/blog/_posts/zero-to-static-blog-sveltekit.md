@@ -224,6 +224,9 @@ Inside our new Header component, let's place some proper (albeit basic) navigati
   <nav>
     <ul>
       <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
         <a href="/about">About</a>
       </li>
       <li>
@@ -234,7 +237,9 @@ Inside our new Header component, let's place some proper (albeit basic) navigati
 </header>
 ```
 
-Once our new component is saved, let's go back to `__layout.svelte`, and replace our dummy `<header>` with this component.
+
+Once our new component is saved, let's go back to `__layout.svelte`, and replace our dummy `<header>` with this component. (**Note:** the Blog link 404s currently, but we'll fix that later.)
+
 
 Like most frameworks, in order to use a component, you'll need to `import` it first. So, let's create a `<script>` tag in our `__layout.svelte` file. (I personally like to put the `script` tag at the top of the file, but you don't have to; Svelte gives you the freedom to arrange your files however you prefer.)
 
@@ -524,19 +529,19 @@ If we were to drop all our markdown files directly into the `src/routes/blog` fo
 Rather than go into that, I think we'll be much better off utilizing two very handy features of SvelteKit: [dynamic pages](https://kit.svelte.dev/docs#routing-pages), and [private modules](https://kit.svelte.dev/docs#routing-private-modules).
 
 
-### Private routes, and adding posts
+### Adding posts, and private routes
 
-Before we get too much further, it will be handy to have at least a couple of Markdown post files to work with. So let's create a couple of dummy posts.
+To start, if you don't already have a `src/routes/blog` folder, make one now.
 
-To start, if we don't already have a `src/routes/blog` folder, make one now.
+Next, it will be handy to have at least a couple of Markdown post files to work with, so let's create some dummy posts.
 
-Inside that folder, create _another_ folder, named `_posts`.
+Inside of `src/routes/blog`, create _another_ folder, named `_posts`.
 
-Note the underscore; **any route that starts with a single underscore is private.** That means content inside the `_posts` folder can be loaded by _other_ pages and components, but it won't automatically be assigned its own route. No matter what we put inside of the `_posts` folder, we won't be able to actually visit it. `/blog/_posts/` won't be a route.
+Note the underscore; **any route that begins with a single underscore is private.** That means it (and its contents) can be loaded by _other_ pages and components, but it won't have its own route. No matter what we put inside of the `_posts` folder, we won't be able to actually visit it directly in the browser. (This may seem like more work than just plopping the posts right into our `blog` folder, and it is. But it's with good reason. Bear with me.)
 
 Now let's create a couple of dummy posts inside our new folder. No need for anything lengthy or fancy; just a couple of `.md` files (ideally with names that are easy to type), and a bit of Markdown content inside them.
 
-I've decided to just create `1.md` and `2.md` inside my `src/routes/blog/_posts` folder, and place a little content like this inside of them:
+I've decided to just create `1.md` and `2.md` inside my `_posts` folder for simplicity's sake, and to place a little content like this inside of them:
 
 ```markdown
 ---
@@ -549,46 +554,40 @@ Hello, I am _Post One._
 **Nice to meet you!**
 ```
 
-If you want, you can visit `/blog/_posts/1` (or whatever your markdown post is named, if not `1`), just to confirm that nothing is showing yet.
+You don't need to copy that directly; you're welcome to put whatever content you like in your Markdown posts, and to name them however you prefer. But I _will_ be using those two frontmatter properties in the examples, so if you don't have them, just be prepared.
 
-For that, now that we have some post files to work with, we'll want to make a dynamic page.
+Anyway, if you want, you can visit `/blog/_posts/1` (or whatever your markdown post is named, if not `1`), just to confirm that nothing is showing yet. Private routes, doing their thing.
+
+So how do we load our posts? Well, now that we have some files to work with, we'll want to make a dynamic page.
 
 
 ### Dynamic pages
 
-Our next step is to create a file inside of `src/routes/blog` named `[slug].svelte`.
+Because we might want to have have one template file to handle any number of potential routes or pages--for example, category listings, or in our case, one template file to render all blog posts--SvelteKit offers us _dynamic pages_.
 
-The word `slug` isn't important; it's just a variable, really, and could be anything. The important part is the brackets. Brackets indicate the page is dynamic, and handles multiple routes or pages in the app.
+**A dynamic page handles _any_ unmatched route in the given directory.**
 
-As an example: you could have `src/blog/category/[term].svelte`, and the `[term].svelte` file would handle rendering _any_ given category page.
+To make a page dynamic, all we have to do is wrap its title in brackets (`[]`). So, our next step is to create a file inside `src/routes/blog` named `[slug].svelte`. 
 
-For the case of our new `[slug].svelte`: this file will be responsible for loading the current blog post. It will _work_ basically like a nested layout file, but since it only matches specific post slugs, 
+<SideNote>
+The word <code>slug</code> isn't important; it's just a variable, and could be anything. But as with any variable, it's good to name it semantically.
+</SideNote>
 
+Once you've created that file, you can actually visit `/blog` or `/blog/anything-here`, and you won't get a 404. Our dynamic page is handling _all_ unmatched the routes inside of the `/blog` folder for us. (And since we don't have an index file or any other sub-pages, _all_ `/blog` routes are currently unmatched.)
 
-
----
-
-You can now visit `/blog/1` in your browser, and see the content of that post--although not the frontmatter (the bit at the top with the post metadata).
-
-For _that_, we'll need a **nested layout**.
+This file will be responsible for loading the current blog post. It will _work_ basically like a nested layout file, but since it only matches specific post slugs, it won't interfere with the index route we'll create in a bit.
 
 
-### Nested layouts
 
-We already saw that a `__layout.svelte` component would be a global layout file, when placed inside of `src/routes`. But you can also _nest_ layouts!
-
-In our case, we'll add a _second_ `__layout.svelte` file inside `src/routes/blog`. This will wrap our blog posts in the inner blog layout, which in turn will be wrapped by the outer, global layout file.
-
-Create a new `__layout.svelte` file inside of `src/routes/blog` if you haven't already, and this is where things start to get really interesting.
 
 
 ### Server-side loading
 
-All right, this is where things are going to start getting a little complicated, and where we begin diving into some of the more complex features of SvelteKit. We'll take our time, so we cover the concepts well.
+All right, this is where things are going to start getting a little complex, as we begin diving into some of the more advanced features of SvelteKit. We'll take our time, so we cover the concepts well.
 
-Right now, we have a new, nested layout file for the `/blog` route. It will render any and all blog pages we visit. But currently, it's not showing any frontmatter.
+Right now, we have a new `[slug].svelte` file for the `/blog` route. It will be responsible for rendering any and all blog pages we visit, by looking at the current page slug, and grabbing the matching Markdown file from the `_posts` folder.
 
-In order to pull in the current post's frontmatter data, we'll need to import the current posts's Markdown file inside of our layout file. And _that's_ something we'll need to do server side.
+As you may have already realized, this isn't something we can handle at run time; we can't load Markdown files in a browser. This needs to be done server-side.
 
 <SideNote>
 When using the static adapter, as we are in this case, anything that would happen server-side on our deployed site actually happens at build time instead.
@@ -596,36 +595,63 @@ When using the static adapter, as we are in this case, anything that would happe
 
 We already know that by default, Svelte has you put all your dynamic JavaScript inside a `<script>` tag; any state, props, methods, etc. that the component may have or rely on.
 
-SvelteKit goes one step further than this; Svelte files in SvelteKit can also have a _second_ `<script>` tag for anything that needs to run server side. The second is differentiated using a `context="module"` attribute, and--importantly--can pass props to the "normal" client side.
+SvelteKit goes one step further; Svelte files in SvelteKit can also have a _second_ `<script>` tag for anything that needs to run server side.
 
-(Note that this is only true for routes, however, not for component files.)
+This server `script` is differentiated using a `context="module"` attribute. It handles anything that might need to be done server-side (during pre-rendering, server-side rendering, and/or loading), and--importantly--can also pass props to the "normal" `script` tag to use.
 
-You could think of the `<script context="module">` element as a sort of mini companion component, that runs server-side (or at build time, in our case), and passes props to our component.
+<SideNote>
+Only components that are routes or layouts can have server scripts; regular, reusable Svelte components cannot.
+</SideNote>
 
-So, knowing this, in our nested `src/routes/blog/__layout.svelte` file, we'll add a module script to the top.
+For us, the first step is to add a server script to our `[slug].svelte` file:
 
 ```svelte
-<!-- src/routes/blog/__layout.svelte -->
+<!-- [slug].svelte -->
 <script context="module">
   // Code here will be executed server side,
   // to generate props used by the component
 </script>
 ```
 
-There's a particular convention that SvelteKit expects and uses here:
+**Ok, so now how do we do stuff on the server?**
 
-- Our module script have a function export named `load`;
-- The exported `load` function should return an object with a `props` property, which gets passed to the component on the client side;
-- This function has access to a few special arguments, including `{page}`, which contains info about the current route.
+There's a convention to follow in SvelteKit for server-side loading:
 
-Let's start comparatively simple by just grabbing the content of the Markdown page that matches the current path, then passing it back to the client side. The client side can then render it as a component.
+- This module script should export a function named `load`;
+- The `load` function has access to a few special arguments, including `page`, which contains info about the current route;
+- The function can pass data to the main `script` to use as props.
+
+Just to get an idea of what we're working with, let's start with any front-end developer's best friend: `console.log`.
 
 ```svelte
-<!-- src/routes/blog/__layout.svelte -->
+<!-- [slug].svelte -->
+<script context="module">
+  export function load({ page }) {
+    console.log(page)
+  }
+</script>
+```
+
+If you load a `/blog/something` route at this point, you won't see anything in the browser. You _also_ won't find anything in the browser console.
+
+Instead, look in your terminal, where your local dev server is running:
+
+![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug.png)
+
+Whatever your current route is, it will be identified as `slug` in the `params` object (because our file is named `[slug].svelte`; if you renamed the file, the property would be whatever the new name is). Whatever `/blog` route you're currently visiting will be the value of that property. (You can try loading some `/blog/*` routes in your browser right now, if you want to see.)
+
+<SideNote>
+There are other properties available to the <code>load</code> function besides <code>page</code>, but we won't use them here; see the <a href="https://kit.svelte.dev/docs#loading">loading section in the docs</a> if you'd like to learn more.
+</SideNote>
+
+Knowing that the current `/blog` slug will be available using `page.params.slug`, we can get to work. We'll use that to grab the content of matching Markdown file, then pass it back to the client side. The client side can then render it as a component, like so:
+
+```svelte
+<!-- [slug].svelte -->
 <script context="module">
   export async function load({ page }) {
-    // Import the markdown file that matches the current route
-    const file = await import(`..${page.path}.md`)
+    // Import the Markdown file that matches the current route
+    const file = await import(`./_posts/${page.params.slug}.md`)
 
     // .default is the actual content of the file
     const Content = await file.default
@@ -633,7 +659,7 @@ Let's start comparatively simple by just grabbing the content of the Markdown pa
     // Props to be exported to our "normal" script and template
     return {
       props: {
-        Content,
+        Content // Shorthand for `Content: Content`
       }
     }
   }
@@ -652,24 +678,19 @@ Let's start comparatively simple by just grabbing the content of the Markdown pa
 </article>
 ```
 
-<SideNote>
-The <code>page.path</code> variable used in the snippet above starts with <code>/blog</code>. Since this file is already inside the <code>/blog</code> folder, we don't want that; <code>/blog/blog</code> isn't a valid path. 
-<br /><br />
-We <em>could</em> add some string manipulation to remove that first bit, but I prefer to just add <code>..</code> to the beginning. This simple fix causes the import function to go up out of the folder, and then right back down in harmlessly, with no string management required.
-</SideNote>
-
-If you visit one of your blog post routes at this point, you'll see the result isn't exactly pretty, but it _does_ work! You should be able to toggle between your post URLs to see the page content update at this point.
+If you save that and visit one of your blog post routes, you'll see the result isn't exactly pretty, but it _does_ work! You should be able to toggle between your post URLs to see the page content update at this point:
 
 ![The content of the markdown file rendered inside the blog layout](/images/post_images/sveltekit-min-blog-post-render.png)
 
-That's not really any better than what we had before, though, so let's add just a bit more to get to the interesting part.
+That's the content taken care of, but we _also_ want to use the post's frontmatter properties. Fortunately, that's just as easy at this point as fetching another prop!
 
-Just as `file.default` is the imported Markdown file's contents in the module above, `file.metadata` will be its frontmatter contents. So we can add a second prop to pass back to our script and template pretty easily at this point:
+Just as `file.default` is the imported Markdown file's contents in the module above, `file.metadata` will be its frontmatter contents. So we can add a second prop to pass back to our script and template pretty easily, and then add the properties to our HTML template like so:
 
 ```svelte
+<!-- [slug].svelte -->
 <script context="module">
   export async function load({ page }) {
-    const file = await import(`..${page.path}.md`)
+    const file = await import(`./_posts/${page.params.slug}.md`)
 
     const Content = await file.default
     const meta = await file.metadata
@@ -700,38 +721,266 @@ Now _that's_ a bit better!
 
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
-Note that you may want to include a `try`/`catch` block inside of your module script. We didn't do that in the example above just for simplicity's sake, but in the event of an error, you may want to return a specific status code and/or message.
+<SideNote>
+We could <em>also</em> just return the whole file from the server as one prop, and extract <code>default</code> and <code>metadata</code> from it on the client side. Both would work. I just prefer to give the template only what it needs.
+</SideNote>
+
+This looks great, but there _is_ one small problem: when we visit a URL that doesn't match one of our Markdown files, we get a 500 error.
+
+That's because our `[slug].svelte` file is trying to load a file that doesn't exist on the server-side. When the server can't complete its task, that's a 500 error.
+
+However, this is an error we created and should avoid; really, the result of trying to access a route that doesn't exist should be a 404.
+
+To solve this, we'll wrap our `import` in `try`/`catch` block:
 
 ```svelte
+<!-- [slug].svelte -->
 <script context="module">
   export async function load({ page }) {
     try {
       // Successful code here
     } catch(error) {
       return {
-        status: 500,
-        error: 'NOT GONNA WORK, BUDDY! ' + error.message
+        status: 404,
+        error: 'Sorry, no post found with that slug. ' + error.message
       }
     }
   }
 </script>
 ```
 
-Hit an error now, and we'll see something like this:
+Visit a non-existent `/blog` route now, and you should see a 404.
 
-![The custom error message defined above](/images/post_images/sveltekit-custom-500.png)
+<SideNote>
+What you're looking at when you hit an error is SvelteKit's built-in error component. But just like we can provide our own <code>__layout.svelte</code> file, we can <em>also</em> provide an <code>__error.svelte</code> file to template and format any errors in our app. I won't go into that here, but you can check the official <a href="https://kit.svelte.dev/docs#layouts-error-pages">Svelte docs error pages entry</a> for full info.
+</SideNote>
 
-Worth knowing: what we're looking at is SvelteKit's built-in error component. But just like we can provide our own `__layout.svelte` file, we can _also_ provide an `__error.svelte` file to process any errors in our application. I won't go into that here, but you can check the official [Svelte docs error pages](https://kit.svelte.dev/docs#layouts-error-pages) entry for full info.
-
----
-
-All right, now that we've got our server-side module script working, everything's looking pretty good for individual posts at this point…but how do we handle the `/blog` path itself? We'll probably want an index page that lists out _all_ of our posts, so let's talk about how to achieve that--and the trap that we just created for ourselves.
+All right, now that we've got our server-side module script working, everything's looking pretty good for individual posts at this point…but how do we handle the `/blog` path itself? We'll probably want an index page that lists out _all_ of our posts, so let's talk about how to achieve that.
 
 
 ### Adding a blog index
 
-You might have already thought ahead at this point, and realized we'll need an `index.svelte` file inside of `src/routes/blog`, to become the `/blog` page.
+You might have already thought ahead at this point, and realized we'll need an `index.svelte` file inside of `src/routes/blog`, to become the `/blog` page. If so, you're right! Go ahead and create that now.
 
-If you try that out right now, though, you're going to run into a problem…
+We'll add a server-side module script to this file as well, to handle loading _all_ the Markdown files we have.
 
-![A 500 error greets us at our new index route](/images/post_images/sveltekit-500.png)
+However, I want to advocate for _not_ doing that all right here, inside our blog index page.
+
+**Why?** Because odds are, we'll eventually want to retrieve lists of our posts in other places, too. Just a few possibilities:
+
+* You might want a list of posts in a sidebar
+
+* You may want to list all your posts in an XML feed
+
+* You might decide to put a list of (recent) posts on your homepage
+
+* You could choose to have category pages, where just posts fitting particular categories are shown.
+
+You might not do _all_ of those, but even if you just do one, you'll be repeating the same code to go fetch your Markdown posts over and over in each place--and while that's not _too_ difficult, as we'll see, it's verbose enough that you'll definitely feel it.
+
+Plus, the more places you rewrite the fetcher, the more you might stray and use syntax not used elsewhere, which could make maintainability a chore.
+
+Wouldn't it be nice if, instead, you could just hit an API endpoint and get a list of your posts to use however and wherever you wanted?
+
+Ok, you probably saw this coming, but good news: **you can!**
+
+
+## SvelteKit Endpoints
+
+Up until now, every route we've created has been a page. But SvelteKit offers _another_ type of route, too: [endpoints](https://kit.svelte.dev/docs#routing-endpoints).
+
+Endpoints work the same way, as far a routing goes; drop a file into `src/routes/`, and it becomes an endpoint automatically. The only difference is: where pages return components and HTML by default, an endpoint returns _data_. If you've ever worked with a site that had an API (like WordPress's REST API, for example), it's the same idea.
+
+Endpoint data is _usually_ JSON, but it doesn't have to be. It could be XML, or something else if you want.
+
+Aside from dropping a file into `src/routes`, there are just three important conventions to follow when creating an endpoint:
+
+1. **An endpoint's filetype should include the type of data it returns.** You _can_ add multiple filetypes, however. For example, `src/routes/posts.json.js` would be a JavaScript file that returns JSON, available on the site at the path `/posts.json`.
+
+2. **An endpoint must export method(s) named for the HTTP verb(s) they accept.** If you just want to return data from an endpoint, you'll do so inside of a `get()` method. Post requests should be handled with a `post()` method, and so on. (The one exception is `del()`, since `delete` is a reserved keyword in JavaScript.)
+
+3. **Endpoint functions should return a `status` and `body`.** (Status is 200 by default, and returning nothing is a 404 by default.)
+
+
+### Creating an endpoint for our posts
+
+Enough talking; let's build!
+
+If you anticipated building out several different API routes, you might create a dedicated `/src/routes/api` folder, but I don't think we need to get that wild here.
+
+I think it makes sense for our blog post API to be available at `/blog/posts.json`, so we'll drop a `posts.json.js` file into our `src/routes/blog` folder.
+
+<SideNote>
+You <em>can</em> have private API routes, if you like, by prefixing the file with an underscore. I think we'll find there are many advantages to a public posts API, however, and there isn't really any need to protect content that's already public.
+</SideNote>
+
+Inside our new `posts.json.js` file, we need to `export` a `get` method. We'll make the function `async`, since it will eventually be `await`ing data from the file system. But before that, let's just do a quick test to see it in action:
+
+```js
+// posts.json.js
+export async function get() {
+
+  return {
+    status: 200,
+    body: JSON.stringify("We got here!")
+  }
+}
+```
+
+With that in place, we should be able to visit `/blog/posts.json` and see the following (unimpressive, but neat!) JSON loaded in the browser:
+
+!['We got here!'](/images/post_images/sveltekit-dummy-json.png)
+
+I just want to call out how _cool_ it is that we've got an actual API route on our site now! It doesn't return anything useful just yet, but knowing it's _that easy_ to set up an API that can be used both internally and externally is exciting!
+
+
+### Returning Markdown posts from our endpoint
+
+Things are going to get a little bit tricky here, just because we'll be leaning directly into [Vite](https://vitejs.dev/) and its functionality in order to grab data from our Markdown posts. So this will be a little lower-level than the Svelte and SvelteKit stuff we've used so far, but that's ok. Just another reason to be glad we'll only need it once.
+
+<SideNote>
+If you didn't know, Vite is the speedy build tool that powers SvelteKit.
+</SideNote>
+
+Inside our `posts.json.js` file, we'll put the following code:
+
+```js
+// posts.json.js
+export async function get() {
+  const allPostFiles = import.meta.glob('./_posts/*.md');
+  const iterablePostFiles = Object.entries(allPostFiles)
+
+  const allPosts = await Promise.all(
+    iterablePostFiles.map(async ([path, resolver]) => {
+      const { metadata } = await resolver()
+      const postSlug = path.split('/').pop().split('.').shift()
+      const postPath = `/blog/${postSlug}`
+
+      return {
+        meta: metadata,
+        path: postPath
+      }
+    })
+  ).sort((a, b) => new Date(b.date) - new Date(a.date))
+
+  return {
+    body: JSON.stringify(allPosts)
+  }
+}
+```
+
+**Whoa!** That's a lot. I just plopped that all in from the get-go here because I felt it probably wasn't worth going into _everything_ happening there step by step. But let's hit some highlights to get a bit of context:
+
+* `import.meta.glob` is not Svelte or SvelteKit; it's a Vite function. It imports any files that matches the string we give it (in this case, all `.md` files inside of the `_posts` folder).
+
+* `import.meta.glob` returns an object where each file's relative path as the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. So the next step is to `await` for _all_ of those resolver promises to, uh, resolve.
+
+* Since `Promise.all` requires an iterable, we convert the original object given to us by `import.meta.glob` to an array, using `Object.entries`. (We could do this inline, but I like each step to be its own line, generally.)
+
+* Inside the `map` method, we wait for the promise to retrieve the file's contents to resolve. We then grab its metadata, and reshape the full file path into a useable URL path.
+
+* Once that's all done, we just sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
+
+* Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here.)
+
+<SideNote>
+Ideally, we should probably have a try/catch block here, too.
+</SideNote>
+
+**Let's try it out!** Refresh your `/blog/posts.json` path now, and you should see some _real_ data!
+
+![The data from our posts is now coming through as JSON!](/images/post_images/sveltekit-posts-json.png)
+
+Plus, it should feel good to know that now, this route will update automatically with each Markdown post we add to the `_posts` folder! 
+
+#### Other considerations
+
+We'll probably want to add some other extra features to this API route eventually. For example, we might not want the server to return _every_ post on the site. Depending on the number of posts, that might get prohibitively time-intensive. We may also want to add pagination, which would require having controls for how many posts are returned, and offsetting the returned posts. (Easily enough accomplished with JavaScript array methods like `slice`, but not worth going into in depth here.)
+
+Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render.html` method for that, if you so choose. We don't need it for our current example, though.
+
+You could also build in some filtering, but remember that this site won't have a live server. The API route is going to be statically pre-generated, so it might be better to either have the dynamic parts client-side, _or_ build out some dynamic API routes.
+
+Anyway, we'll worry about all that later (if at all). For now, it's working great, and we can use our new API route in our blog index page!
+
+
+
+## Finishing our blog index page
+
+Now that we have an API route to fetch all our posts, building out our blog index page will be a piece of cake!
+
+We _could_ do the loading client-side, with a `fetch` call in an `onMount` function. That would work. But it would _also_ result in a loading state after the page itself has loaded, which isn't a great user experience. So instead, let's fetch the posts server side. We'll use the `load` function just like before.
+
+Remember earlier when I mentioned the `load` function has access to multiple special arguments? Well, one of those is `fetch`, which allows us to use the browser's `fetch` function on the server, just like in a browser. (Ordinarily, `fetch` is not available in server-side Node JavaScript.)
+
+```svelte
+<!-- src/routes/blog/index.svelte -->
+<script context="module">
+export async function load({ fetch }) {
+  const posts = await fetch('/blog/posts.json')
+  const allPosts = await posts.json()
+
+  return {
+    props: {
+      posts: allPosts
+    }
+  }
+}
+</script>
+```
+
+That bit of server-side loading handles everything we need! Now we've got a `posts` prop being passed to the component, and we can use it to loop over posts.
+
+```svelte
+<!-- src/routes/blog/index.svelte -->
+<script context="module">
+  // Our `load` function here
+</script>
+
+
+<script>
+  export let posts
+</script>
+
+
+<ul>
+  {#each posts as post}
+    <li>
+      <h2>
+        <a href={post.path}>
+          {post.meta.title}
+        </a>
+      </h2>
+      Published {post.meta.date}
+    </li>
+  {/each}
+</ul>
+```
+
+The HTML in that above example is a bit simple, but hopefully you get the gist. You may want to add other code, based on the frontmatter in your own blog posts. (One thing definitely missing is post images, but you could also have excerpts or other content as well.)
+
+![A list of our posts, each linked, on our /blog route.](/images/post_images/sveltekit-posts-list.png)
+
+---
+---
+---
+
+
+---
+
+You can now visit `/blog/1` in your browser, and see the content of that post--although not the frontmatter (the bit at the top with the post metadata).
+
+For _that_, we'll need a **nested layout**.
+
+
+### Nested layouts
+
+We already saw that a `__layout.svelte` component would be a global layout file, when placed inside of `src/routes`. But you can also _nest_ layouts!
+
+In our case, we'll add a _second_ `__layout.svelte` file inside `src/routes/blog`. This will wrap our blog posts in the inner blog layout, which in turn will be wrapped by the outer, global layout file.
+
+Create a new `__layout.svelte` file inside of `src/routes/blog` if you haven't already, and this is where things start to get really interesting.
+
+
+
+
