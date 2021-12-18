@@ -6,6 +6,7 @@ categories:
   - "svelte"
   - "javascript"
   - "web"
+  - "sass"
 coverImage: "sveltekit-learn.png"
 coverWidth: 16
 coverHeight: 9
@@ -17,17 +18,19 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 </script>
 
 
-I have been gushing about SvelteKit ever since I rebuilt my site with it earlier this year. So when I found out a respected web dev colleague of mine had tried out the framework, I was delighted--for a moment. Then I saw this message:
+After hearing me gush about how much I enjoyed SvelteKit and [rewriting this blog with it](/blog/converting-from-gridsome-to-sveltekit), I managed to talk a colleague into trying it out. I was excited, until I saw this message from him:
 
 > man I just tried to hello world SvelteKit and it is NOT for me
 
-I've had _so_ much fun with SvelteKit, my first reaction was to type "wait, no! Let me help!" in a mild frenzy.
+Obviously, I was disappointed. Why were our experiences so different?
 
-I paused, though, because I know it can be annoying to over-sell something, no matter how good that thing might actually be. (I'm sure we can all think of something ruined for us by its audience.)
+And I realized: I wasn't just trying to "hello world" SvelteKit when I tried it out. I was working on a real project, building an actual site, and generally (happily) putting in much more time and effort than a quick weekend project. And _that_ made me overlook the initial learning curve.
 
-But also: because once I thought about it, I realized getting started with SvelteKit _is_ actually a bit more involved than some other frameworks--_especially_ if all you're trying to do is make a simple static blog, which is _not_ the default behavior of SvelteKit. (Its default is server-side rendering, not prerendered HTML files.)
+SvelteKit _is_ awesome, and while I'd argue it's simpler than many comparable app frameworks, it's so flexible and powerful that it _can_ be intimidating at first--_especially_ if all you're trying to do is make a simple static blog, which is not the default behavior. (SvelteKit's default is server-side rendering, not prerendered HTML files.)
 
 In an effort to prevent others from being stopped by this initial barrier, I'd like to walk you through how to set up SvelteKit as a static, markdown-powered blog with Sass--just like this site.
+
+Along the way, we'll learn all the fundamentals of SvelteKit, and get some opportunities to try out its features.
 
 ---
 
@@ -394,22 +397,22 @@ Either way, you'll just `import` it to use it:
 
 Inside that main `.scss` file, you're free to `@import` any other SCSS files you like, as you might when using Sass. Since our layout "wraps" every page on the site, any Sass that passes through it will be compiled as a global style.
 
-Ok, we've gotten a pretty good idea of project structure and styling at this point. Let's move on to the last big missing piece: support for Markdown, via a Svelte package called MDSvex.
+Ok, we've gotten a pretty good idea of project structure and styling at this point. Let's move on to the last big missing piece: support for Markdown, via a Svelte package called mdsvex.
 
 
-## Adding Markdown support with MDSvex
+## Adding Markdown support with mdsvex
 
-If you've heard of MDX (generally used in React-based projects), you could think of the curiously named MDSvex as the Svelte equivalent. Otherwise, just know that MDSvex not only processes Markdown into static HTML for us, but it _also_ allows us to inject Svelte into Markdown--handy for adding functional components to our content where needed!
+If you've heard of MDX (generally used in React-based projects), you could think of the curiously named mdsvex as the Svelte equivalent. Otherwise, just know that mdsvex not only processes Markdown into static HTML for us, but it _also_ allows us to inject Svelte into Markdown--handy for adding functional components to our content where needed!
 
-Here's the terminal command to install MDSvex:
+Here's the terminal command to install mdsvex:
 
 ```bash
 npm i -D mdsvex
 ```
 
-Just like `svelte-preprocess`, once we've installed MDSvex, we'll need to let SvelteKit know how to use it, in our `svelte.config.js` file.
+Just like `svelte-preprocess`, once we've installed mdsvex, we'll need to let SvelteKit know how to use it, in our `svelte.config.js` file.
 
-First, add MDSvex to the list of imports at the top of the file (notice the named import `{}` syntax):
+First, add mdsvex to the list of imports at the top of the file (notice the named import `{}` syntax):
 
 ```js
 // svelte.config.js
@@ -418,7 +421,7 @@ import { mdsvex } from 'mdsvex';
 
 Then, inside of the `config` object, we'll need to add two things:
 
-1. Add a `config.extensions` property, to tell SvelteKit what kind of files will be preprocessed with MDSvex;
+1. Add a `config.extensions` property, to tell SvelteKit what kind of files will be preprocessed with mdsvex;
 
 2. Add the `mdsvex()` function to the `config.preprocess` array.
 
@@ -442,7 +445,7 @@ Note that we have `extensions` properties in two places; **both of these are nec
 
 `config.extensions` tells SvelteKit what types of files may have transformations _in_ them, and since most things in SvelteKit go through a Svelte component in some way or another, we'll need to include both `.svelte` and `.md` file types.
 
-The preprocessor option tells MDSvex what file types to _apply_ the transformation to. (The default is `.svx`, which is why this option is necessary.)
+The preprocessor option tells mdsvex what file types to _apply_ the transformation to. (The default is `.svx`, which is why this option is necessary.)
 
 Be sure to restart your dev server after making this config change.
 
@@ -460,12 +463,12 @@ Markdown is a handy option if you've got pages on your website that are mainly t
 
 You can even import and use Markdown files _inside of_ other files if you want to, although I won't get into that here. (It's a handy option if you want some per-page styling for Markdown content, though.)
 
-Let's cover a couple other nice features of MDSvex before moving on.
+Let's cover a couple other nice features of mdsvex before moving on.
 
 
 ### Code blocks in markdown
 
-One extremely handy feature of MDSvex is that it comes with prism.js pre-installed and ready to use. All you need to do is note in your Markdown code what language a code block is, and MDSvex will highlight it accordingly, like so:
+One extremely handy feature of mdsvex is that it comes with prism.js pre-installed and ready to use. All you need to do is note in your Markdown code what language a code block is, and mdsvex will highlight it accordingly, like so:
 
 ```markdown
 \```js
@@ -473,7 +476,7 @@ One extremely handy feature of MDSvex is that it comes with prism.js pre-install
 \```
 ```
 
-All the code blocks on this website are made just like that. And as a bonus: MDSvex even has `svelte` available as a highlighting option!
+All the code blocks on this website are made just like that. And as a bonus: mdsvex even has `svelte` available as a highlighting option!
 
 
 ### Using Svelte components in Markdown
@@ -529,6 +532,95 @@ Markdown is rad!
 This example is arguably a little bit contrived. Some possibly more useful examples: you could have a `<RelatedPosts>` component that loads previews of other posts similar to the current one. Or, maybe you'd like to let the user compare two images by swiping between the two; that would be a great component use case.
 
 Hopefully, it's easy to imagine the power of being able to drop arbitrary Svelte components into post content.
+
+
+### Adding heading links with rehype
+
+It's nice to let users link directly to a section on a post (a particular heading, that is). Adding links to all our headings by hand would be tedious, and against the point of writing in Markdown, so an automatic solution would be ideal.
+
+Luckily, mdsvex allows us to use [rehype](https://github.com/rehypejs/rehype) plugins to add extra features to its markdown processing, and so we can make this all happen automatically with just a bit of config adjustment.
+
+<SideNote>
+Rehype is an HTML parser, and not specific to Svelte or mdsvex; it's commonly used in a wide range of projects.
+</SideNote>
+
+There are two rehype plugins we'll want specifically (in this order):
+
+- `rehype-slug`, which automatically adds IDs to headings;
+- `rehype-autolink-headings`, which (as the name clearly implies), automatically adds links to our headings.
+
+Install them like so:
+
+```bash
+npm i rehype-slug rehype-autolink-headings
+```
+
+Then we'll pop open our `svelte.config.js` file, import our two new rehype plugins, and add them to the `mdsvex` config options object, like so:
+
+```js
+// svelte.config.js
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+// ...other imports here
+
+const config = {
+  // ...other config properties here
+
+  preprocess: [
+    preprocess(),
+    mdsvex({
+      extensions: ['.md'],
+      rehypePlugins: [
+        rehypeSlug,
+        rehypeAutolinkHeadings,
+      ]
+    }),
+  ],
+};
+
+export default config;
+```
+
+**Important note: the plugins _must_ go in that order!** `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only adds links to headings with IDs. So, again: make sure they're in the proper order in the `rehypePlugins` array.
+
+With that in place, we'll need to restart our dev server.
+
+When we do, we won't notice anything different in our blog pages, even if we _do_ add some additional headings. Pop open the inspector, however, and we'll see our processed Markdown has some added new features!
+
+![The headings in our blog posts now have links to them, with icon elements inside.](/images/post_images/sveltekit-rehype.png)
+
+That's nifty! However, we'll need to add a bit of styling to make the links show up properly. (The `.icon.icon-link` class is a [Font Awesome](https://fontawesome.com/) convention, so it doesn't automatically mean or do anything in our project.)
+
+How you prefer to handle this is personal preference, but I personally added this block of Sass to my global styles:
+
+```scss
+:where(h2, h3, h4, h5, h6) {
+  .icon-link {
+    position: relative;
+    
+    &::before {
+      content: '🔗';
+      position: absolute;
+      left: -2ch;
+      top: 0;
+      line-height: 1;
+      opacity: 0;
+    }
+  }
+
+  &:hover .icon-link::before {
+    opacity: 1;
+  }
+}
+```
+
+That bit of CSS will make a little link emoji appear whenever the user hovers on a heading with a link in it:
+
+![A chain link emoji appears to the left of a hovered heading.](/images/post_images/sveltekit-rehype-css.png)
+
+Thanks to how CSS treats pseudo elements, that icon is fully clickable as part of the link, to navigate directly to the heading in question.
+
+You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (potentially using the Svelte `onMount` function), but I'll leave that detail up to you. For now, our links are working without any further effort necessary on our part.
 
 
 ## Setting up the blog routes
