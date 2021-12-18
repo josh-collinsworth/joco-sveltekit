@@ -21,8 +21,8 @@ const config = {
 				alias: { vue: 'html' }
 			},
 			rehypePlugins: [
+				rehypeSlug,
 				rehypeAutolinkHeadings,
-				rehypeSlug
 			]
 			//Optional: add a layout here
 		}),
