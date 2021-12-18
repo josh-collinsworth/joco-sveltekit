@@ -1,15 +1,15 @@
 ---
-title: "Learn SvelteKit by building a statically generated blog from scratch"
+title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-11-24"
 updated: "2021-11-24"
 categories: 
   - "svelte"
   - "javascript"
   - "web"
-coverImage: "seesaw.png"
+coverImage: "sveltekit-learn.png"
 coverWidth: 16
 coverHeight: 9
-excerpt: TODO fill this in later
+excerpt: Learn the fundamentals of SvelteKit by building a statically generated blog from scratch, with Markdown support, Sass, an API, and an RSS feed.
 ---
 <script>
   import Callout from '$lib/components/Callout.svelte'
@@ -54,7 +54,7 @@ When you run that first `init` command, SvelteKit will ask you some questions ab
 
 ![SvelteKit's setup prompt for which type of project you want to create; boilerplate, or demo](/images/post_images/sveltekit-init.png)
 
-For this example, we'll select Skeleton project. If this is your very first time using SvelteKit, feel free to choose the SvelteKit demo app option instead, and poke around a bit to get a feel for how things work. However, while the demo app is nice to get a feel for things, it comes with several files and styles that would be a lot to undo as a starter. Hence, we'll stick with the skeleton project, since it's more of a blank slate.
+For this example, we'll select Skeleton project. If this is your very first time using SvelteKit, feel free to choose the SvelteKit demo app option instead, and poke around a bit to get a sense of how things work. However, while the demo app is nice to get a feel for things, it comes with several files and styles that would be a lot to undo as a starter. Hence, we'll stick with the skeleton project, since it's more of a blank slate.
 
 The setup tool will also ask for the following preferences. Here's what I chose, though they won't matter for our purposes, and you're welcome to go with personal preference:
 
@@ -83,49 +83,13 @@ It's a bit unexciting, since we only installed the bare-bones skeleton project. 
 You won't find much in the project folder, either, but that's ok; this is our blank canvas, and we'll get some paint on it soon enough.
 
 
-## Adding the static adapter
+## Creating a global layout file
 
-**SvelteKit is server-rendered by default.** That's great, because server-side rendering is generally better for performance, accessibility, and SEO. However, that also means static prerendering (which is what we want) is opt-in.
-
-You _can_ mark any page for static pre-generation--handy for things like an "about" or "faq" page that won't have any dynamic content. However, we want our _entire_ site to be statically pre-rendered, and marking each and every page manually would be an error-prone chore. So instead, we'll reach for SvelteKit's [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static).
-
-SvelteKit has a number of available [adapters](https://kit.svelte.dev/docs#adapters), which shape our project's build output based on how we want to deploy. SvelteKit comes pre-installed with an adapter that will automatically detect and build properly for Netlify, Vercel, or Cloudflare Pages, which is both handy and impressive! There are other adapters for other environments, too, like generic Node. But the one we're concerned with is called `adapter-static`.
-
-So, while we _could_ wait for later for this step, our first move in our new project will be to install the adapter:
-
-```bash
-npm i -D @sveltejs/adapter-static@next
-```
-
-Once installed, we have to make a very small change to our `svelte.config.js` file to use the static adapter.
-
-`svelte.config.js` is the home of our app's configuration details. When we add packages or want to change how SvelteKit works, this is the file we'll use to make sure SvelteKit knows about it.
-
-Go ahead and open up your `svelte.config.js` file, which is located in the project's root folder. At this point, the only thing we actually have to do is change `adapter-auto` to `adapter-static` on line 1.
-
-```js
-// Replace the original `adapter-auto` line with this.
-import adapter from '@sveltejs/adapter-static';
-```
-
-You _can_ supply further customization options if you want to (as an object passed to the `adapter()` function), but the defaults are great for us, so there's no need to. You can check out the [adapter-static readme](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) for info on that if you want to.
-
----
-
-With our adapter installed and in use in our config file, we're ready to move on, knowing that now every page on our site will be pre-rendered as static HTML at build time! You can even view source in the browser to confirm that the site is now served as pre-rendered HTML.
-
-**One important note:** be sure to restart your server after making changes to `svelte.config.js`. You'll likely see a warning to do so in your terminal already at this point.
-
-<SideNote>
-One of the great things about SvelteKit's static mode is that it pre-renders all your pages as static HTML, but <em>also</em> loads some client-side JavaScript to help with navigation and preloading in the background. This way, the site works just fine without JavaScript, but is progressively enhanced.
-</SideNote>
-
-
-## Adding a global layout file
+The first thing we'll do in our new app is make a layout that wraps all our pages.
 
 Most sites and apps have some elements that are reused on every page (a `<header>` and `<footer>` being the most common and obvious examples). SvelteKit, like many other frameworks, conveniently lets us define one global layout file for all such repeated content.
 
-To create a global layout file, inside of `src/routes`, make a new file named `__layout.svelte`. **Note the _two_ underscores to begin the file name**; this is a SvelteKit convention. SvelteKit checks for a `__layout.svelte` file inside every `src/routes` directory, and uses it to "wrap" the page content if found. 
+Inside of `src/routes`, make a new file named `__layout.svelte`. Note the _two_ underscores to begin the file name; this is a SvelteKit convention. SvelteKit checks for a `__layout.svelte` file inside every `src/routes` directory, and uses it to "wrap" any content in that directory. Since our new `__layout` file will be at the top level of the `routes` folder, it will apply globally, at every route in our app. 
 
 Open up our new `src/routes/__layout.svelte` file, and let's add a placeholder header and footer to our site, just so we can get a look at the layout file in action:
 
@@ -144,12 +108,6 @@ Save that, and you should now see that header text above our main index page's c
 
 ![The header text appears above the contents of the index.svelte file, and the footer text below.](/images/post_images/sveltekit-layout-shown.png)
 
-This main `__layout.svelte` file is in effect the parent component to our entire app, and the current page or route is rendered in the `<slot />` as its child component.
-
-<SideNote>
-Notice that we don't need a single element or <code>&lt;template&gt;</code> tag around our HTML in Svelte, unlike other frameworks.
-</SideNote>
-
 
 ## Routing in SvelteKit
 
@@ -161,9 +119,9 @@ Like many frameworks, SvelteKit has a directory-based layout approach. You might
 
 * A file named `about.svelte` would become the `/about` page
 
-* `blog/some-post.svelte` would become a page at `/blog/some-post`
+* `blog/index.svelte` would be be the `/blog` page
 
-* `blog/index.svelte` would simply be the `/blog` page
+* `blog/some-post.svelte` becomes `/blog/some-post`
 
 
 ### Creating new pages
@@ -214,7 +172,7 @@ And finally, we'll create a new component inside of `src/lib/components` named `
 You don't have to capitalize component names, but doing so to distinguish components from HTML elements is generally accepted convention.
 </SideNote>
 
-Inside our new Header component, let's place some proper (albeit basic) navigation:
+Inside our new `Header` component, let's place some proper (albeit basic) navigation:
 
 ```svelte
 <!-- Header.svelte -->
@@ -237,11 +195,12 @@ Inside our new Header component, let's place some proper (albeit basic) navigati
 </header>
 ```
 
+(**Note:** the Blog link will currently 404 because we don't have a `blog` page or directory inside of our `routes` folder, but we'll fix that later.)
 
-Once our new component is saved, let's go back to `__layout.svelte`, and replace our dummy `<header>` with this component. (**Note:** the Blog link 404s currently, but we'll fix that later.)
+Once our new component is saved, let's go back to `__layout.svelte`, and replace our dummy `<header>` with this component.
 
 
-Like most frameworks, in order to use a component, you'll need to `import` it first. So, let's create a `<script>` tag in our `__layout.svelte` file. (I personally like to put the `script` tag at the top of the file, but you don't have to; Svelte gives you the freedom to arrange your files however you prefer.)
+Like most frameworks, in order to use a component, you'll need to `import` it first. So, let's create a `<script>` tag in our `__layout.svelte` file to handle that. (I personally like to put the `script` tag at the top of the file, but you don't have to; Svelte gives you the freedom to arrange your files however you prefer.)
 
 ```svelte
 <!-- __layout.svelte -->
@@ -256,7 +215,7 @@ Anyway, with the `import` in place, we can now replace our dummy `<header>` elem
 
 ![Our new header shows up now in the site](/images/post_images/sveltekit-header-component.png)
 
-The styling isn't great, of course, but it _is_ useable. You can click between pages now, if you're so inclined, which will make testing things out a bit easier.
+The styling isn't great, of course, but it _is_ useable. You can click between pages now, if you're so inclined, which will make testing things out a bit easier. (Again, just remember the blog page is _supposed_ to 404 for the moment.)
 
 
 ### Component styling
@@ -303,18 +262,16 @@ If you want to, you could repeat this process with a `<Footer />` component at t
 
 It might be a little confusing that we're jumping in and out of several `.svelte` files now, each with different roles. So just to be sure to clarify before moving on:
 
-* Any `.svelte` file inside of `src/routes` becomes its own page
+* Any `.svelte` file inside of `src/routes` becomes its own page.
 
-  * The exception is `__layout.svelte` files, which "wrap" any pages in their directory or subdirectories
+  * The exception is `__layout.svelte` files, which "wrap" any pages in their directory or subdirectories.
 
-* Any _piece_ of a page or element that you might pull in and use on its own is a component, and we'll place those inside of `src/lib/components`; they don't get routes
+* Any _piece_ of a page or element that you might pull in and use on its own is a component, and we'll place those inside of `src/lib/components`; they don't get routes of their own.
 
 
 ## Global styling
 
-There are a few ways you can add global CSS files in Svelte. You _could_ open up `app.html` and add the link inside the `<head>` element there. You could _also_ use the `<svelte:head>` tag inside a component to do the same thing, or even use `@import` inside a component's `<style>` tag.
-
-All of those would work, but I find the _best_ method is to simply `import` the CSS inside a Svelte component's `<script>` tag. It's easy, for one thing, but more importantly, this _also_ puts the styles through SvelteKit's preprocessor, which we'll want when we add Sass.
+There are a few ways you can add global CSS files in SvelteKit, but I find the _best_ method is to simply `import` the CSS inside a Svelte component's `<script>` tag. It's easy, for one thing, but more importantly, this _also_ puts the styles through SvelteKit's preprocessor, which we'll want when we add Sass in just a moment.
 
 Create a new folder inside of `src/lib` for your styles (the name is not important in this case; it's just for organizational purposes), and add a `style.css` file inside it. You can add whatever CSS you like, if you need a suggestion, here's a little bit of boilerplate that should get things looking slightly nicer:
 
@@ -346,7 +303,9 @@ Once we've got a CSS file with some styles in it, adding it to our global `__lay
 <!-- HTML here -->
 ```
 
-That's it! Save that, and you should see your styles loading on the main page, and globally applying to _all_ elements. Thanks to the static adapter, if you view the page source, you'll even see our style has been added to the HTML, rather than being client-rendered. Neat!
+That's it! Save that, and you should see your styles loading on the main page, and globally applying to _all_ elements. Since SvelteKit is server-rendered, if you view the page source, you'll even see our style has been added to the HTML, rather than being client-rendered. Neat!
+
+![Our CSS is now showing on the site and making it look (slightly) less ugly.](/images/post_images/sveltekit-css.png)
 
 We're not limited to vanilla CSS, however. Let's see how to add Sass to our project!
 
@@ -363,12 +322,12 @@ npm i -D svelte-preprocess sass
 ```
 
 <SideNote>
-This command installs the most modern version of Sass, which isn't compatible with all versions of Node. You may need to adjust your Node version with a tool like NVM if you hit errors with this Sass package.
+This command installs the most modern version of Sass, which isn't compatible with all versions of Node. You may need to adjust your Node version with a tool like <a href="https://github.com/nvm-sh/nvm">NVM</a> if you hit errors with this Sass package.
 </SideNote>
 
-Next, still in our `svelte.config.js` file, we just need to add a little bit to tell SvelteKit how to preprocess any Sass code we throw its way.
+Next, open the `svelte.config.js` file in the project root. As the name implies, this is where we can make changes to SvelteKit's options and compiler.
 
-First, import `svelte-preprocess` by adding this line at the top of the file:
+The change is minimal; we just need to add a little bit to tell SvelteKit how to preprocess any Sass code we throw its way. First, import `svelte-preprocess` by adding this line at the top of the file:
 
 ```js
 // svelte.config.js
@@ -392,23 +351,9 @@ const config = {
 
 The `preprocess` option passes any number of preprocessors to SvelteKit, to use when building the site. We'll add Markdown support here later, too (which is why we're using an array).
 
-Note that you _can_ pass additional configuration options into the `preprocess()` function here. One of the most useful is the `scss.prependData` option, which allows you to automatically inject code at the start of any Sass processing.
+Note that you _can_ pass additional configuration options into the `preprocess()` function here, but we won't do that now. It's worth mentioning the `scss.prependData` option, however, which allows you to automatically inject code at the start of any Sass processing (such as Sass variables or an entire `@import`). You can read more about that in the [`svelte-preprocess` docs](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content); I just wanted you to know it's an option. 
 
-I personally take advantage of this option to make sure I always have access to my Sass variables. It even works in component `<style lang="scss">` tags!
-
-```js
-// svelte.config.js
-preprocess({
-  scss: {
-    // Adds this line anywhere Sass is processed
-    prependData: `@import 'src/lib/assets/scss/_vars.scss';`
-  },
-}),
-```
-
-That's jumping ahead a bit, though; don't add that now. I just wanted you to know that option exists because it's very nice.
-
-Anyway: we can test out Sass by opening up our `src/routes/index.svelte` file, and adding a block of Sass styles. You can use Sass inside any component's `<style>` block by adding a `lang="scss"` attribute, like so:
+We can test out Sass by opening up our `src/routes/index.svelte` file, and adding a block of Sass styles. You can use Sass inside any component's `<style>` block by adding a `lang="scss"` attribute, like so:
 
 ```svelte
 <style lang="scss">
@@ -423,6 +368,8 @@ Anyway: we can test out Sass by opening up our `src/routes/index.svelte` file, a
 ```
 
 Make sure both files are saved, and you should see some…well, questionable styling. But it works!
+
+![Our new Sass is loading to make the main header on the index page large and orange.](/images/post_images/sveltekit-questionable-sass.png)
 
 Feel free to delete those styles if you like; that was just an example to demonstrate how we can use Sass in components. Next, let's look at using global `.scss` files.
  
@@ -446,8 +393,6 @@ Either way, you'll just `import` it to use it:
 ```
 
 Inside that main `.scss` file, you're free to `@import` any other SCSS files you like, as you might when using Sass. Since our layout "wraps" every page on the site, any Sass that passes through it will be compiled as a global style.
-
----
 
 Ok, we've gotten a pretty good idea of project structure and styling at this point. Let's move on to the last big missing piece: support for Markdown, via a Svelte package called MDSvex.
 
@@ -513,18 +458,88 @@ If you like, you can even use Markdown for page contents; create `src/routes/mar
 
 Markdown is a handy option if you've got pages on your website that are mainly text-based, and that you don't want to hand-code the HTML for. (My [`/uses`](/uses) page is a Markdown file.)
 
-You can even import and use Markdown files _inside of_ other files if you want to, although I won't get into that here.
+You can even import and use Markdown files _inside of_ other files if you want to, although I won't get into that here. (It's a handy option if you want some per-page styling for Markdown content, though.)
 
-Instead, I think we should talk a little more about how to set up our blog.
+Let's cover a couple other nice features of MDSvex before moving on.
+
+
+### Code blocks in markdown
+
+One extremely handy feature of MDSvex is that it comes with prism.js pre-installed and ready to use. All you need to do is note in your Markdown code what language a code block is, and MDSvex will highlight it accordingly, like so:
+
+```markdown
+\```js
+// JavaScript goes here
+\```
+```
+
+All the code blocks on this website are made just like that. And as a bonus: MDSvex even has `svelte` available as a highlighting option!
+
+
+### Using Svelte components in Markdown
+
+Let's create a new component in our `src/lib/components` folder. It doesn't need to be anything fancy; just something you might want to use in a blog post.
+
+You might have noticed my little side notes throughout this post; they make a perfect example!
+
+```svelte
+<!-- SideNote.svelte -->
+<div class="side-note">
+  <slot />
+</div>
+
+
+<style global lang="scss">
+  .side-note {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    padding: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+
+    &::before {
+      content: 'Side note:';
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+</style>
+```
+
+To import a component in a Markdown file, you just drop in a `script` tag and import the component there. You can then add it to your Markdown just like you would add it in a Svelte file:
+
+```markdown
+<script>
+  import SideNote from '$lib/components/SideNote.svelte'
+</script>
+
+# Hey there
+
+**I'm a markdown page!**
+
+<SideNote>
+Markdown is rad!
+</SideNote>
+```
+
+This example is arguably a little bit contrived. Some possibly more useful examples: you could have a `<RelatedPosts>` component that loads previews of other posts similar to the current one. Or, maybe you'd like to let the user compare two images by swiping between the two; that would be a great component use case.
+
+Hopefully, it's easy to imagine the power of being able to drop arbitrary Svelte components into post content.
 
 
 ## Setting up the blog routes
 
-At this point, one viable route forward would be to create a `src/routes/blog` folder, and toss all our markdown posts inside of it. That would work. They'd each have their own route that way; it's a simple solution.
+Now it's time to get into the real meat of this tutorial: setting up our actual blog.
+
+At this point, one viable route forward would be to create a `src/routes/blog` folder, and simply toss all our Markdown posts inside of it. That would work. They'd each have their own route that way; it's a simple solution.
 
 But I'm actually going to advocate for a _different_ route forward (pun fully intended).
 
-If we were to drop all our markdown files directly into the `src/routes/blog` folder, we'll need a nested layout file in order to pull frontmatter from the posts into our templates. And if we did _that_, we'd be getting in our own way when setting up the `/blog` index route, since our layout would be trying to do two very different things at once.
+If we were to drop all our markdown files directly into the `src/routes/blog` folder, we would need a nested layout file in order to pull frontmatter from the posts into our templates. And if we did _that_, we'd be getting in our own way when setting up the `/blog` index route, since our layout would be trying to do two very different things at once. It would be in charge of rendering both a single post, _and_ rendering the list of _all_ our posts. And having one layout in charge of two different things probably isn't ideal.
 
 Rather than go into that, I think we'll be much better off utilizing two very handy features of SvelteKit: [dynamic pages](https://kit.svelte.dev/docs#routing-pages), and [private modules](https://kit.svelte.dev/docs#routing-private-modules).
 
@@ -539,14 +554,14 @@ Inside of `src/routes/blog`, create _another_ folder, named `_posts`.
 
 Note the underscore; **any route that begins with a single underscore is private.** That means it (and its contents) can be loaded by _other_ pages and components, but it won't have its own route. No matter what we put inside of the `_posts` folder, we won't be able to actually visit it directly in the browser. (This may seem like more work than just plopping the posts right into our `blog` folder, and it is. But it's with good reason. Bear with me.)
 
-Now let's create a couple of dummy posts inside our new folder. No need for anything lengthy or fancy; just a couple of `.md` files (ideally with names that are easy to type), and a bit of Markdown content inside them.
+Now let's create a couple of dummy posts inside our new folder. No need for anything lengthy or fancy; just a couple of `.md` files (ideally with names that are easy to type), and a bit of Markdown content inside them. (Alternatively, if you already have some `.md` files, you're welcome to just grab those.)
 
 I've decided to just create `1.md` and `2.md` inside my `_posts` folder for simplicity's sake, and to place a little content like this inside of them:
 
 ```markdown
 ---
 title: Post One
-date: 12/14/2021
+date: 2021-12-14
 ---
 
 Hello, I am _Post One._
@@ -554,18 +569,18 @@ Hello, I am _Post One._
 **Nice to meet you!**
 ```
 
-You don't need to copy that directly; you're welcome to put whatever content you like in your Markdown posts, and to name them however you prefer. But I _will_ be using those two frontmatter properties in the examples, so if you don't have them, just be prepared.
+You don't need to copy that directly; you're welcome to put whatever content you like in your Markdown posts, and to name them however you prefer. But I _will_ be using those two frontmatter properties in the examples (especially `date`), so if you don't have them, just be prepared.
 
-Anyway, if you want, you can visit `/blog/_posts/1` (or whatever your markdown post is named, if not `1`), just to confirm that nothing is showing yet. Private routes, doing their thing.
+Anyway, if you want, you can visit `/blog/_posts/1` (or whatever your markdown post is named, if not `1`), just to confirm that nothing is showing. Private routes, doing their thing. (Good, because we don't want duplicate content on our site.)
 
-So how do we load our posts? Well, now that we have some files to work with, we'll want to make a dynamic page.
+So how _do_ we load our posts? Well, now that we have some files to work with, we'll want to make a **dynamic page**.
 
 
 ### Dynamic pages
 
 Because we might want to have have one template file to handle any number of potential routes or pages--for example, category listings, or in our case, one template file to render all blog posts--SvelteKit offers us _dynamic pages_.
 
-**A dynamic page handles _any_ unmatched route in the given directory.**
+**A dynamic page handles _any_ unmatched route in the given directory.** Think of it as a wildcard page.
 
 To make a page dynamic, all we have to do is wrap its title in brackets (`[]`). So, our next step is to create a file inside `src/routes/blog` named `[slug].svelte`. 
 
@@ -575,10 +590,7 @@ The word <code>slug</code> isn't important; it's just a variable, and could be a
 
 Once you've created that file, you can actually visit `/blog` or `/blog/anything-here`, and you won't get a 404. Our dynamic page is handling _all_ unmatched the routes inside of the `/blog` folder for us. (And since we don't have an index file or any other sub-pages, _all_ `/blog` routes are currently unmatched.)
 
-This file will be responsible for loading the current blog post. It will _work_ basically like a nested layout file, but since it only matches specific post slugs, it won't interfere with the index route we'll create in a bit.
-
-
-
+We'll load our actual post content in this file. It will _work_ basically like a nested layout file, but since it only matches specific post slugs, it won't interfere with the index route we'll create in a bit.
 
 
 ### Server-side loading
@@ -590,14 +602,14 @@ Right now, we have a new `[slug].svelte` file for the `/blog` route. It will be 
 As you may have already realized, this isn't something we can handle at run time; we can't load Markdown files in a browser. This needs to be done server-side.
 
 <SideNote>
-When using the static adapter, as we are in this case, anything that would happen server-side on our deployed site actually happens at build time instead.
+When pre-generating static files, as we will be, anything that would happen server-side on our deployed site actually happens at build time instead.
 </SideNote>
 
 We already know that by default, Svelte has you put all your dynamic JavaScript inside a `<script>` tag; any state, props, methods, etc. that the component may have or rely on.
 
-SvelteKit goes one step further; Svelte files in SvelteKit can also have a _second_ `<script>` tag for anything that needs to run server side.
+SvelteKit goes one step further; Svelte files in SvelteKit can also have a _second_ `<script>` tag for anything that needs to run server-side.
 
-This server `script` is differentiated using a `context="module"` attribute. It handles anything that might need to be done server-side (during pre-rendering, server-side rendering, and/or loading), and--importantly--can also pass props to the "normal" `script` tag to use.
+This server `script` is differentiated using a `context="module"` attribute. It handles anything that might need to be done on the server (during pre-rendering and/or loading), and--importantly--can also pass props to the "normal" component `script` tag to use.
 
 <SideNote>
 Only components that are routes or layouts can have server scripts; regular, reusable Svelte components cannot.
@@ -638,10 +650,10 @@ Instead, look in your terminal, where your local dev server is running:
 
 ![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug.png)
 
-Whatever your current route is, it will be identified as `slug` in the `params` object (because our file is named `[slug].svelte`; if you renamed the file, the property would be whatever the new name is). Whatever `/blog` route you're currently visiting will be the value of that property. (You can try loading some `/blog/*` routes in your browser right now, if you want to see.)
+Whatever your current route is, it will be identified as `slug` in the `params` object, because our file is named `[slug].svelte`. If you renamed the file, the property would be whatever the new name is. And when you're visiting a `/blog/*` route, the `*` will be the value. (You can try loading some `/blog/*` routes in your browser right now, if you want to see.)
 
 <SideNote>
-There are other properties available to the <code>load</code> function besides <code>page</code>, but we won't use them here; see the <a href="https://kit.svelte.dev/docs#loading">loading section in the docs</a> if you'd like to learn more.
+There are other properties available to the <code>load</code> function besides <code>page</code>, but we won't use them just yet. You can peek at the <a href="https://kit.svelte.dev/docs#loading">loading section in the docs</a> if you'd like to learn more, though.
 </SideNote>
 
 Knowing that the current `/blog` slug will be available using `page.params.slug`, we can get to work. We'll use that to grab the content of matching Markdown file, then pass it back to the client side. The client side can then render it as a component, like so:
@@ -755,7 +767,30 @@ Visit a non-existent `/blog` route now, and you should see a 404.
 What you're looking at when you hit an error is SvelteKit's built-in error component. But just like we can provide our own <code>__layout.svelte</code> file, we can <em>also</em> provide an <code>__error.svelte</code> file to template and format any errors in our app. I won't go into that here, but you can check the official <a href="https://kit.svelte.dev/docs#layouts-error-pages">Svelte docs error pages entry</a> for full info.
 </SideNote>
 
-All right, now that we've got our server-side module script working, everything's looking pretty good for individual posts at this point…but how do we handle the `/blog` path itself? We'll probably want an index page that lists out _all_ of our posts, so let's talk about how to achieve that.
+
+### Handling stuff for head
+
+Ideally, we'll probably want to set up some stuff for the `<head>` on our various pages. For blog posts specifically, it's important to have the right `title` attributes, Open Graph info, share images, etc.
+
+SvelteKit makes this trivial, with the `<svelte:head>` component.
+
+Add one to your `[slug].svelte` file (it can go wherever, but I like to put it just before the HTML, personally), and let's put a title there.
+
+```svelte
+<!-- [slug].svelte -->
+<svelte:head>
+  <title>My blog - {meta.title}</title>
+  <meta property="og:title" content={meta.title} />
+</svelte:head>
+```
+
+You should now see the title showing up properly in the browser bar.
+
+**There are many other properties you might want to add here**, _especially_ if you're trying to optimize your posts for share-ability. I won't go into any more detail here, but it's worth verifying all your pages and posts look good when shared with Open Graph checker tools (many are available online).
+
+---
+
+All right, now everything's looking pretty good for individual posts at this point…but how do we handle the `/blog` path itself? We'll probably want an index page that lists out _all_ of our posts, so let's talk about how to achieve that.
 
 
 ### Adding a blog index
@@ -768,50 +803,45 @@ However, I want to advocate for _not_ doing that all right here, inside our blog
 
 **Why?** Because odds are, we'll eventually want to retrieve lists of our posts in other places, too. Just a few possibilities:
 
-* You might want a list of posts in a sidebar
-
-* You may want to list all your posts in an XML feed
-
-* You might decide to put a list of (recent) posts on your homepage
-
-* You could choose to have category pages, where just posts fitting particular categories are shown.
+-You might want a list of posts in a sidebar
+-You may want to list all your posts in an XML feed
+-You might decide to put a list of (recent) posts on your homepage
+-You could choose to have category pages, where just posts fitting particular categories are shown
 
 You might not do _all_ of those, but even if you just do one, you'll be repeating the same code to go fetch your Markdown posts over and over in each place--and while that's not _too_ difficult, as we'll see, it's verbose enough that you'll definitely feel it.
 
-Plus, the more places you rewrite the fetcher, the more you might stray and use syntax not used elsewhere, which could make maintainability a chore.
+Plus, the more places you rewrite the fetcher, the more you might introduce unique variations on the code, which could make maintainability a chore.
 
 Wouldn't it be nice if, instead, you could just hit an API endpoint and get a list of your posts to use however and wherever you wanted?
 
 Ok, you probably saw this coming, but good news: **you can!**
 
 
-## SvelteKit Endpoints
+## SvelteKit endpoints
 
 Up until now, every route we've created has been a page. But SvelteKit offers _another_ type of route, too: [endpoints](https://kit.svelte.dev/docs#routing-endpoints).
 
 Endpoints work the same way, as far a routing goes; drop a file into `src/routes/`, and it becomes an endpoint automatically. The only difference is: where pages return components and HTML by default, an endpoint returns _data_. If you've ever worked with a site that had an API (like WordPress's REST API, for example), it's the same idea.
 
-Endpoint data is _usually_ JSON, but it doesn't have to be. It could be XML, or something else if you want.
+Endpoint data is _usually_ JSON, but it doesn't have to be. It could be XML, or anything else you can send and retrieve in a browser.
 
 Aside from dropping a file into `src/routes`, there are just three important conventions to follow when creating an endpoint:
 
-1. **An endpoint's filetype should include the type of data it returns.** You _can_ add multiple filetypes, however. For example, `src/routes/posts.json.js` would be a JavaScript file that returns JSON, available on the site at the path `/posts.json`.
+1. **An endpoint's file name should include the type of data it returns.** The file itself doesn't have to be that type, however. For example, `src/routes/stuff.json.js` would be a JavaScript file that returns JSON. The route would just become `/stuff.json`.
 
-2. **An endpoint must export method(s) named for the HTTP verb(s) they accept.** If you just want to return data from an endpoint, you'll do so inside of a `get()` method. Post requests should be handled with a `post()` method, and so on. (The one exception is `del()`, since `delete` is a reserved keyword in JavaScript.)
+2. **An endpoint must export a function named for each HTTP verb it accepts.** If you just want to return data from an endpoint, you'll do so inside of a `get()` function. If supported, post requests should be handled with a `post()` function, and so on. (The one exception is `del()`, since `delete` is a reserved keyword in JavaScript.)
 
 3. **Endpoint functions should return a `status` and `body`.** (Status is 200 by default, and returning nothing is a 404 by default.)
 
 
 ### Creating an endpoint for our posts
 
-Enough talking; let's build!
+**Enough talk; let's build!**
 
-If you anticipated building out several different API routes, you might create a dedicated `/src/routes/api` folder, but I don't think we need to get that wild here.
-
-I think it makes sense for our blog post API to be available at `/blog/posts.json`, so we'll drop a `posts.json.js` file into our `src/routes/blog` folder.
+If you anticipated building out several different API routes for your project, you might create a dedicated `/src/routes/api` folder. I think this is a good pattern to follow, even if we only have this one API route. So create that new `api` folder, and inside it, create a new file named `posts.json.js`.
 
 <SideNote>
-You <em>can</em> have private API routes, if you like, by prefixing the file with an underscore. I think we'll find there are many advantages to a public posts API, however, and there isn't really any need to protect content that's already public.
+You <em>can</em> have private API routes, if you like, by prefixing the file or directory with an underscore. I think we'll find there are many advantages to a public posts API, however, and there isn't really any need to protect content that's already public anyway.
 </SideNote>
 
 Inside our new `posts.json.js` file, we need to `export` a `get` method. We'll make the function `async`, since it will eventually be `await`ing data from the file system. But before that, let's just do a quick test to see it in action:
@@ -827,11 +857,15 @@ export async function get() {
 }
 ```
 
-With that in place, we should be able to visit `/blog/posts.json` and see the following (unimpressive, but neat!) JSON loaded in the browser:
+With that in place, we should be able to visit `/api/posts.json` and see the following (unimpressive, but neat!) JSON loaded in the browser:
 
 !['We got here!'](/images/post_images/sveltekit-dummy-json.png)
 
 I just want to call out how _cool_ it is that we've got an actual API route on our site now! It doesn't return anything useful just yet, but knowing it's _that easy_ to set up an API that can be used both internally and externally is exciting!
+
+<SideNote>
+While we won't do it here, you can pass an argument to your <code>get</code> function, which will give you all the headers of the request, along with query parameters, and lots of other info about the request.
+</SideNote>
 
 
 ### Returning Markdown posts from our endpoint
@@ -847,7 +881,7 @@ Inside our `posts.json.js` file, we'll put the following code:
 ```js
 // posts.json.js
 export async function get() {
-  const allPostFiles = import.meta.glob('./_posts/*.md');
+  const allPostFiles = import.meta.glob('../blog/_posts/*.md');
   const iterablePostFiles = Object.entries(allPostFiles)
 
   const allPosts = await Promise.all(
@@ -861,45 +895,50 @@ export async function get() {
         path: postPath
       }
     })
-  ).sort((a, b) => new Date(b.date) - new Date(a.date))
+  )
+
+  const sortedPosts = allPosts.sort((a, b) => {
+    return new Date(b.meta.date) - new Date(a.meta.date)
+  })
 
   return {
-    body: JSON.stringify(allPosts)
+    body: JSON.stringify(sortedPosts)
   }
 }
 ```
 
-**Whoa!** That's a lot. I just plopped that all in from the get-go here because I felt it probably wasn't worth going into _everything_ happening there step by step. But let's hit some highlights to get a bit of context:
+**Whoa!** That might look like a lot, but when you consider it's actually _everything_ we need for our API route, it's kind of impressive how few lines that is!
 
-* `import.meta.glob` is not Svelte or SvelteKit; it's a Vite function. It imports any files that matches the string we give it (in this case, all `.md` files inside of the `_posts` folder).
+Let's go over what's happening in that above snippet.
 
-* `import.meta.glob` returns an object where each file's relative path as the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. So the next step is to `await` for _all_ of those resolver promises to, uh, resolve.
+- `import.meta.glob` is not Svelte or SvelteKit; it's a Vite function. It imports any files that match the string we give it (in this case, all `.md` files inside of the `_posts` folder).
+- `import.meta.glob` returns an object where each file's relative path is the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. So the next step is to call all of those resolvers, and wait for the promises to, uh, resolve.
 
-* Since `Promise.all` requires an iterable, we convert the original object given to us by `import.meta.glob` to an array, using `Object.entries`. (We could do this inline, but I like each step to be its own line, generally.)
-
-* Inside the `map` method, we wait for the promise to retrieve the file's contents to resolve. We then grab its metadata, and reshape the full file path into a useable URL path.
-
-* Once that's all done, we just sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
-
-* Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here.)
+  (_Since `Promise.all` requires an iterable, we convert the original object to an array, using `Object.entries`. We could do this inline, but I like each step to be its own line, generally._)
+- The `map` method is there to get the data we want from each file, and reshape it how we want, so it's easier to work with on the front end.
+- Once that's all done, we sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
+- Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here.)
 
 <SideNote>
 Ideally, we should probably have a try/catch block here, too.
 </SideNote>
 
-**Let's try it out!** Refresh your `/blog/posts.json` path now, and you should see some _real_ data!
+**Let's try it out!** Refresh your `/api/posts.json` path now, and you should see some _real_ data!
 
 ![The data from our posts is now coming through as JSON!](/images/post_images/sveltekit-posts-json.png)
 
-Plus, it should feel good to know that now, this route will update automatically with each Markdown post we add to the `_posts` folder! 
+Plus, it should feel good to know that now, this route will update automatically with each Markdown post we add to the `_posts` folder!
 
-#### Other considerations
 
-We'll probably want to add some other extra features to this API route eventually. For example, we might not want the server to return _every_ post on the site. Depending on the number of posts, that might get prohibitively time-intensive. We may also want to add pagination, which would require having controls for how many posts are returned, and offsetting the returned posts. (Easily enough accomplished with JavaScript array methods like `slice`, but not worth going into in depth here.)
+#### Other considerations and improvements
 
-Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render.html` method for that, if you so choose. We don't need it for our current example, though.
+There's plenty to improve here. For starters, this function does a lot, and coule be a bit refactored. (Sorting the dates, for example, could probably be extracted to its own utility function.)
 
-You could also build in some filtering, but remember that this site won't have a live server. The API route is going to be statically pre-generated, so it might be better to either have the dynamic parts client-side, _or_ build out some dynamic API routes.
+Functionally, we'll probably want to add some other extra features to this API route eventually. For example, we might not want the server to return _every_ post on the site. Depending on the number of posts, that might get prohibitively time-intensive. We may also want to add pagination, which would require having controls for how many posts are returned, and offsetting the returned posts. (Easily enough accomplished with JavaScript array methods like `slice`, but not worth going into in depth here.)
+
+Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render.html` method for that, if you so choose.
+
+You could also build in some filtering, but remember that this site won't actually have a live server. The API route is going to be statically pre-generated, so it might be better to either have the dynamic parts client-side, _or_ build out some dynamic API routes to handle parameters. The [SvelteKit docs section on Rest parameters](https://kit.svelte.dev/docs#routing-advanced-rest-parameters) is worth a look.
 
 Anyway, we'll worry about all that later (if at all). For now, it's working great, and we can use our new API route in our blog index page!
 
@@ -917,7 +956,7 @@ Remember earlier when I mentioned the `load` function has access to multiple spe
 <!-- src/routes/blog/index.svelte -->
 <script context="module">
 export async function load({ fetch }) {
-  const posts = await fetch('/blog/posts.json')
+  const posts = await fetch('/api/posts.json')
   const allPosts = await posts.json()
 
   return {
@@ -961,11 +1000,102 @@ The HTML in that above example is a bit simple, but hopefully you get the gist. 
 
 ![A list of our posts, each linked, on our /blog route.](/images/post_images/sveltekit-posts-list.png)
 
----
----
+
+## Adding the static adapter
+
+**SvelteKit is server-rendered by default.** That's great, because server-side rendering is generally better for performance, accessibility, and SEO. However, that also means static prerendering (which is what we want) is opt-in.
+
+You _can_ [manually make any page pre-rendered](https://kit.svelte.dev/docs#ssr-and-javascript-prerender)--handy for things like an "about" or "faq" page that won't have any dynamic content. However, we want our _entire_ site to be statically pre-rendered, and marking each and every page by hand would be an error-prone chore. So instead, we'll reach for SvelteKit's [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static).
+
+SvelteKit has a number of available [adapters](https://kit.svelte.dev/docs#adapters), which shape our project's build output based on how we want to deploy. SvelteKit comes pre-installed with an adapter that will automatically detect and build properly for Netlify, Vercel, or Cloudflare Pages, which is both handy and impressive! There are other adapters for other environments, too, like generic Node. But the one we're concerned with is called `adapter-static`.
+
+So, while we _could_ wait for later for this step, our first move in our new project will be to install the adapter:
+
+```bash
+npm i -D @sveltejs/adapter-static@next
+```
+
+Once installed, we have to make a very small change to our `svelte.config.js` file to use the static adapter.
+
+`svelte.config.js` is the home of our app's configuration details. When we add packages or want to change how SvelteKit works, this is the file we'll use to make sure SvelteKit knows about it.
+
+Go ahead and open up your `svelte.config.js` file, which is located in the project's root folder. At this point, the only thing we actually have to do is change `adapter-auto` to `adapter-static` on line 1.
+
+```js
+// Replace the original `adapter-auto` line with this.
+import adapter from '@sveltejs/adapter-static';
+```
+
+You _can_ supply further customization options if you want to (as an object passed to the `adapter()` function), but the defaults are great for us, so there's no need to. You can check out the [adapter-static readme](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) for info on that if you want to.
+
 ---
 
+With our adapter installed and in use in our config file, every page on our site will be pre-rendered as static HTML at build time! You can even view source in the browser to confirm that the site is now served as pre-rendered HTML.
 
+<SideNote>
+One of the great things about SvelteKit's static mode is that it pre-renders all your pages as static HTML, but <em>also</em> loads some client-side JavaScript to help with navigation and preloading in the background. This way, the site works just fine without JavaScript, but is progressively enhanced.
+</SideNote>
+
+## Final features worth covering
+
+**At this point, our blog is pretty much done!** We talked about a lot of things we _could_ do next, but let's take a bit before closing to talk about a few features we _didn't_ cover.
+
+### Preloading routes
+
+SvelteKit is already fast, and when we pre-render our HTML like we are via the static adapter, it's going to be blazing. But we can actually push the performance _even further_ with SvelteKit's built-in preloading.
+
+SvelteKit ships with _two_ functions for preloading data in the background: `prefetch`, and `prefetchRoutes`.
+
+To use them, just import them in a page or layout (our global layout file might be a good choice):
+
+```svelte
+<script>
+  import { prefetch, prefetchRoutes } from '$app/navigation'
+</script>
+```
+
+<SideNote>
+<code>$app</code> contains several modules available in SvelteKit for things you might need in an app, like <code>env</code> and <code>paths</code>, along with <code>navigation</code>. <a href="https://kit.svelte.dev/docs#modules">See the docs for full details</a>.
+</SideNote>
+
+The difference between the two is:
+
+- `prefetch` is for a single route. 
+- `prefetchRoutes` preloads _all_ routes.
+
+```svelte
+<script>
+  import { prefetch, prefetchRoutes } from '$app/navigation'
+
+  prefetch('/blog') // Loads the blog page in the background
+
+  prefetchRoutes() // Loads ALL routes in the background
+</script>
+```
+
+Because `prefetchRoutes` grabs _all_ the site's data behind the scenes, we should use it cautiously and judiciously. We don't want to force users to download megabytes of data presumptively. That could very well cost them real money, for pages they might not even look at.
+
+
+### Anchor options
+
+Speaking of preloading: SvelteKit offers a slightly less greedy version of it, as one of its [anchor options](https://kit.svelte.dev/docs#anchor-options).
+
+Anchor options are special, SvelteKit-specific attributes you can add to `<a>` anchor tags. There are three:
+
+- `<a sveltekit:prefetch>` causes the link to begin preloading as soon as the user _hovers_, rather than waiting for a click, saving some milliseconds.
+- `<a rel="external">` signals to SvelteKit that the link in question is _not_ part of our SvelteKit app, and the router shouldn't try to handle it.
+- `<a sveltekit:noscroll`> prevents SvelteKit from resetting the scroll position to the top of the new page. This is usually undesirable on websites, but may be more intuitive in some app situations.
+
+---
+---
+---
+---
+## TODO: 
+
+- Talk about RSS feed
+- Talk about next steps with blog sidebar, maybe?
+- Talk about svelte:head
+- Page transitions?
 ---
 
 You can now visit `/blog/1` in your browser, and see the content of that post--although not the frontmatter (the bit at the top with the post metadata).

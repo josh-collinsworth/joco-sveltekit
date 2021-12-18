@@ -1,3 +1,5 @@
+<script>null</script>
+
 <svg width="100%" height="100%" viewBox="0 0 107 107" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g transform="matrix(0.392013,0,0,0.392013,-80.5623,-37.5192)">
         <path d="M305.124,108.464L218.264,108.464L218.264,355.115L464.915,355.115L464.915,268.254" style="fill:none;stroke-width:25.51px;"/>
