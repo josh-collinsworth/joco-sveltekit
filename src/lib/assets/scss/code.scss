@@ -73,6 +73,10 @@ pre[class*="language-"] {
 pre.language-bash:before {
 	content: 'Command line';
 }
+
+pre.language-fs:before {
+	content: 'Project files'
+}
  
 pre.language-css:before {
 	content: 'CSS';
