@@ -18,52 +18,44 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 </script>
 
 
-After hearing me gush about how much I enjoyed SvelteKit and [rewriting this blog with it](/blog/converting-from-gridsome-to-sveltekit), I managed to talk a colleague into trying it out. I was excited, until I saw this message from him:
+I make no secret of my love for [Svelte](https://svelte.dev), and how much I've enjoyed [rewriting this site with SvelteKit](/blog/converting-from-gridsome-to-sveltekit). However, I _do_ have to admit that for as relatively simple as Svelte itself is, there _is_ a bit of a learning curve when working with [SvelteKit](https://kit.svelte.dev) (Svelte's app framework, or "meta framework"). 
 
-> man I just tried to hello world SvelteKit and it is NOT for me
+SvelteKit is both flexible and powerful, but that comes with a tradeoff. When there are many possible paths, there are fewer easy defaults that might apply to everyone. So, while I personally had a blast remaking this site in SvelteKit, I also acknowledge that it _isn't_ the simplest thing to use as a static site generator (SSG). Other tools that focus solely on that one purpose ([Eleventy](https://www.11ty.dev/), [Gatsby](https://www.gatsbyjs.com/), [Gridsome](https://gridsome.org/), etc.) will likely make getting a static site up and running a bit easier.
 
-Obviously, I was disappointed. Why were our experiences so different?
-
-And I realized: I wasn't just trying to "hello world" SvelteKit when I tried it out. I was working on a real project, building an actual site, and generally (happily) putting in much more time and effort than a quick weekend project. And _that_ made me overlook the initial learning curve.
-
-SvelteKit _is_ awesome, and while I'd argue it's simpler than many comparable app frameworks, it's so flexible and powerful that it _can_ be intimidating at first--_especially_ if all you're trying to do is make a simple static blog, which is not the default behavior. (SvelteKit's default is server-side rendering, not prerendered HTML files.)
-
-In an effort to prevent others from being stopped by this initial barrier, I'd like to walk you through how to set up SvelteKit as a static, markdown-powered blog with Sass--just like this site.
+In an effort to help others over that initial barrier, I'd like to walk you through how to set up SvelteKit as a static, Markdown-powered blog with Sass--just like this site--and share what I've learned.
 
 Along the way, we'll learn all the fundamentals of SvelteKit, and get some opportunities to try out its features.
 
----
 
-**This guide is intended to be both an intro to SvelteKit itself, and a guide to creating a static blog on SvelteKit.** I aim to cover all the high-level concepts of SvelteKit on the way to setting up a statically prerendered blog, complete with Sass and Markdown.
+## What we'll cover, and (and won't)
 
-**However, this will _not_ be an intro to Svelte itself.** While you can probably still follow along and complete this even if you don't know anything about Svelte, I'd recommend learning the basics first. The [Svelte tutorial](https://svelte.dev/tutorial/basics) is an excellent place to start. (It's maybe the best tutorial site in front-end, honestly.)
+* **This is both an intro to SvelteKit, and a guide to creating a static blog with it.** I aim to cover all the high-level concepts of SvelteKit on the way to setting up a statically prerendered blog, complete with Sass and Markdown.
+
+* **This is _not_ an intro to Svelte itself.** While you can probably still follow along and complete this even if you don't know anything about Svelte, I'd recommend learning the basics first. The [Svelte tutorial](https://svelte.dev/tutorial/basics) is an excellent place to start. (It's maybe the best tutorial site in front-end, honestly.)
+
+* **This is _not_ for everyone.** I try not to make too many assumptions about my audience, but I _will_ assume for his post that you at least know the basics of front-end development, JavaScript, and installing packages using [NPM](https://www.npmjs.com/).
 
 All that said, let's get started!
 
 ## Creating a new SvelteKit app
 
-You could check out the [SvelteKit docs](https://kit.svelte.dev/docs) for directions on getting up and running, but I'll save you a click. If you have NPM installed already (and I'll assume you do), these are the commands to generate a new SvelteKit project and get it up and running:
+To generate a new SvelteKit project, run this command in your terminal (naturally, you can change `my-app` to whatever other title you prefer.):
 
 ```bash
 npm init svelte@next my-app
-cd my-app
-npm install
-npm run dev
 ```
 
-(Naturally, you can change `my-app` to whatever other title you prefer.)
-
-When you run that first `init` command, SvelteKit will ask you some questions about your project and how you want it set up: 
+When you run that `init` command, SvelteKit will ask you some questions about your project and how you want it set up: 
 
 ![SvelteKit's setup prompt for which type of project you want to create; boilerplate, or demo](/images/post_images/sveltekit-init.png)
 
-For this example, we'll select Skeleton project. If this is your very first time using SvelteKit, feel free to choose the SvelteKit demo app option instead, and poke around a bit to get a sense of how things work. However, while the demo app is nice to get a feel for things, it comes with several files and styles that would be a lot to undo as a starter. Hence, we'll stick with the skeleton project, since it's more of a blank slate.
+For this example, we'll select Skeleton project. 
 
-The setup tool will also ask for the following preferences. Here's what I chose, though they won't matter for our purposes, and you're welcome to go with personal preference:
+<SideNote>
+If this is your very first time using SvelteKit, feel free to choose the SvelteKit demo app option instead, and poke around a bit to get a sense of how things work. However, while the demo app is nice to get a feel for things, it comes with several files and styles that would be a lot to undo as a starter.
+</SideNote>
 
-* No to TypeScript (just to keep things simpler)
-* Yes to ESlint
-* Yes to Prettier
+The setup tool will also ask for your preferences on TypeScript, ESlint, and Prettier. For simplicity's sake, I said no to TypeScript and yes to the others, but you're welcome to go with whatever you prefer.
 
 Once you've made your choices, after a moment of installation, you should see “**Your project is ready!**” appear in your terminal, along with next steps and helpful links:
 
@@ -77,13 +69,13 @@ npm install
 npm run dev -- --open
 ```
 
-Complete those commands, and our new site will be running in a browser window! Yay, I can't wait to set it--oh. 
+Complete those commands, and our new site will be running in a browser window!
 
 ![The default welcome page for a new SvelteKit project](/images/post_images/welcome-to-sveltekit.png)
 
-It's a bit unexciting, since we only installed the bare-bones skeleton project. There isn't even any CSS yet. But again, that gives us the freedom to style our app however we like, without the need to remove and work around old code.
+It's definitely a bit unexciting, since we only installed the bare-bones skeleton project. There isn't even any CSS yet. But that's ok; it gives us the freedom to style our app however we like, without the need to remove or work around any existing code.
 
-You won't find much in the project folder, either, but that's ok; this is our blank canvas, and we'll get some paint on it soon enough.
+This is our blank canvas, and we'll get some paint on it soon enough.
 
 
 ## Creating a global layout file
@@ -92,9 +84,20 @@ The first thing we'll do in our new app is make a layout that wraps all our page
 
 Most sites and apps have some elements that are reused on every page (a `<header>` and `<footer>` being the most common and obvious examples). SvelteKit, like many other frameworks, conveniently lets us define one global layout file for all such repeated content.
 
-Inside of `src/routes`, make a new file named `__layout.svelte`. Note the _two_ underscores to begin the file name; this is a SvelteKit convention. SvelteKit checks for a `__layout.svelte` file inside every `src/routes` directory, and uses it to "wrap" any content in that directory. Since our new `__layout` file will be at the top level of the `routes` folder, it will apply globally, at every route in our app. 
+Inside of `src/routes`, make a new file named `__layout.svelte`. 
 
-Open up our new `src/routes/__layout.svelte` file, and let's add a placeholder header and footer to our site, just so we can get a look at the layout file in action:
+```fs
+📂 src
+┗ 📂 routes
+  ┣ 📜 index.svelte
+  ┗ 📜 __layout.svelte
+```
+
+Note the _two_ underscores; this is a SvelteKit convention. SvelteKit checks for a `__layout.svelte` file inside `routes` (and every one of its subdirectories), and if found, uses it to "wrap" any content in that directory. 
+
+Since our new `__layout` file will be at the top level of the `routes` folder, it will apply globally, for every route in our app. 
+
+Open up our new `__layout.svelte` file, and let's add a placeholder header and footer to our site, just so we can get a look at the layout file in action:
 
 ```svelte
 <!-- __layout.svelte -->
@@ -129,14 +132,13 @@ Like many frameworks, SvelteKit has a directory-based layout approach. You might
 
 ### Creating new pages
 
-Just to get the hang of it, let's create a couple of pages inside of `src/routes` at this point. (We can always delete them later.)
+Next, just to get some pages on our site, let's create `about.svelte` and `contact.svelte` files inside of `src/routes`. (We can always delete or modify  them later.)
 
-I'm going to create two files:
+Inside each of those files, we can just toss a quick heading, and maybe some text, just to make things a little more interesting.
 
-* `src/routes/about.svelte`
-* `src/routes/contact.svelte`
-
-Inside each of those files, we can just toss a quick heading, and maybe some text, just to make things a little more interesting:
+<SideNote>
+Svelte files can be just plain HTML; they don't need to have JavaScript.
+</SideNote>
 
 ```svelte
 <!-- about.svelte -->
@@ -152,13 +154,23 @@ Inside each of those files, we can just toss a quick heading, and maybe some tex
 <p><a href="mailto:someone@yoursite.com">Email me!</a></p>
 ```
 
-Now we should have three pages; our `index.svelte` file, plus the two we created (as well as our global layout file) inside of `src/routes`:
 
-![The src/routes folder now contains Svelte files for __layout, about, contact, and index.](/images/post_images/sveltekit-about-page-created.png)
+Our `routes` folder should now look like this:
 
-At this point, we can visit `/contact` and/or `/about` to see the pages we just created. There isn't much to see, of course, but it's nice to see the routing in action, and how these new pages are automatically placed inside the global layout file.
+```fs
+📂 src
+┗ 📂 routes
+  ┣ 📜 about.svelte
+  ┣ 📜 contact.svelte
+  ┣ 📜 index.svelte
+  ┗ 📜 __layout.svelte
+```
+
+At this point, we can visit `/contact` and/or `/about` to see the pages we just created:
 
 ![Our bare-bones contact page rendered in the browser](/images/post_images/sveltekit-contact-example.png)
+
+There's not much there, of course, but it's nice to see the routing and layout in action.
 
 
 ## Adding navigation and creating our first component
@@ -167,9 +179,17 @@ Manually typing routes in the browser isn't great, so let's modify our global la
 
 Let's create a new folder called `lib` inside of `src`. (`lib` is a SvelteKit convention; more on that in a moment.)
 
-Inside of `src/lib`, we'll create a folder named `components`, just for organizational purposes.
+Inside that, we'll create a folder named `components`, just for organizational purposes, and inside of _that_, we'll create a new component named `Header.svelte`.
 
-And finally, we'll create a new component inside of `src/lib/components` named `Header.svelte`.
+
+```fs
+📂 src
+┣ 📁 routes
+┗ 📂 lib
+  ┗ 📂 components
+    ┗ 📜 Header.svelte
+```
+
 
 <SideNote>
 You don't have to capitalize component names, but doing so to distinguish components from HTML elements is generally accepted convention.
@@ -200,21 +220,23 @@ Inside our new `Header` component, let's place some proper (albeit basic) naviga
 
 (**Note:** the Blog link will currently 404 because we don't have a `blog` page or directory inside of our `routes` folder, but we'll fix that later.)
 
-Once our new component is saved, let's go back to `__layout.svelte`, and replace our dummy `<header>` with this component.
+Once our new component is saved, let's go back to `__layout.svelte` and use it!
 
-
-Like most frameworks, in order to use a component, you'll need to `import` it first. So, let's create a `<script>` tag in our `__layout.svelte` file to handle that. (I personally like to put the `script` tag at the top of the file, but you don't have to; Svelte gives you the freedom to arrange your files however you prefer.)
+As with most frameworks, you'll need to `import` a component first before you can use it. So, let's create a `<script>` tag in our `__layout.svelte` file to handle that. (I personally prefer it at the top of the file, but you don't have to; Svelte gives you the freedom to arrange your files however you like.)
 
 ```svelte
 <!-- __layout.svelte -->
 <script>
   import Header from '$lib/components/Header.svelte'
 </script>
+
+<Header />
+<!-- The rest of the HTML here -->
 ```
 
-Notice that `$lib` part of the path? `$lib` is a handy shortcut for `src/lib`. This is the only alias SvelteKit ships with, but you can add your own (or replace it) if you like, in `jsconfig.json`.
+Notice that `$lib` part of the import path? `$lib` is a handy alias that goes directly to `src/lib`, saving you from typing tedious relative paths. `$lib` is the only alias SvelteKit ships with, but you can add your own (or replace it) if you like, from `jsconfig.json`.
 
-Anyway, with the `import` in place, we can now replace our dummy `<header>` element with a new `<Header />` component. That done and saved, we should see something _slightly_ more user-friendly in our browser:
+Anyway, now we should see something _slightly_ more user-friendly in our browser:
 
 ![Our new header shows up now in the site](/images/post_images/sveltekit-header-component.png)
 
@@ -255,19 +277,17 @@ To get an idea, let's open `Header.svelte` and add a `<style>` tag. (It could go
 </style>
 ```
 
-If you save and take a look at the site now, you should see your header looking a little more header-like. You might _also_ notice that the `a` rule doesn't affect any of the links in our main page content. That's the power of scoping!
+If you save and take a look at the site now, you should see your header looking a little more header-like. You might _also_ notice that the link doesn't affect any of the links in our main page content. That's the power of scoping!
 
 ![The links in our Header component are not underlined or blue, but links outside the component remain with the default styling.](/images/post_images/sveltekit-scoped.png)
 
-If you want to, you could repeat this process with a `<Footer />` component at this point, too. That's probably a good idea to do at some point, but I won't go into it here.
+If you want to, you could repeat this process with a `<Footer />` component now, too. That's probably a good idea, but I'll skip it, since it's just the same thing over again.
 
 #### When is it a component and when is it a page?
 
 It might be a little confusing that we're jumping in and out of several `.svelte` files now, each with different roles. So just to be sure to clarify before moving on:
 
-* Any `.svelte` file inside of `src/routes` becomes its own page.
-
-  * The exception is `__layout.svelte` files, which "wrap" any pages in their directory or subdirectories.
+* Any `.svelte` file inside of `src/routes` becomes its own page (unless its name starts with an underscore);
 
 * Any _piece_ of a page or element that you might pull in and use on its own is a component, and we'll place those inside of `src/lib/components`; they don't get routes of their own.
 
@@ -276,7 +296,18 @@ It might be a little confusing that we're jumping in and out of several `.svelte
 
 There are a few ways you can add global CSS files in SvelteKit, but I find the _best_ method is to simply `import` the CSS inside a Svelte component's `<script>` tag. It's easy, for one thing, but more importantly, this _also_ puts the styles through SvelteKit's preprocessor, which we'll want when we add Sass in just a moment.
 
-Create a new folder inside of `src/lib` for your styles (the name is not important in this case; it's just for organizational purposes), and add a `style.css` file inside it. You can add whatever CSS you like, if you need a suggestion, here's a little bit of boilerplate that should get things looking slightly nicer:
+Create a new folder inside of `src/lib` for your styles (again, just for organizational purposes), and add a `style.css` file inside it. 
+
+```fs
+📂 src
+┣ 📁 routes
+┗ 📂 lib
+  ┣ 📁 components
+  ┗ 📂 styles
+    ┗ 📜 style.css 
+```
+
+You can add whatever CSS you like, but if you need a suggestion, here's a little bit of boilerplate that should begin to get things looking slightly nicer:
 
 ```css
 /* style.css */
@@ -294,7 +325,7 @@ main {
 }
 ```
 
-Once we've got a CSS file with some styles in it, adding it to our global `__layout.svelte` component is as easy as adding an `import` to the `<script>` tag:
+Once we've got a CSS file with some styles in it, adding it globally is as easy as importing the file in our layout:
 
 ```svelte
 <!-- __layout.svelte -->
@@ -306,9 +337,13 @@ Once we've got a CSS file with some styles in it, adding it to our global `__lay
 <!-- HTML here -->
 ```
 
-That's it! Save that, and you should see your styles loading on the main page, and globally applying to _all_ elements. Since SvelteKit is server-rendered, if you view the page source, you'll even see our style has been added to the HTML, rather than being client-rendered. Neat!
+**That's it!** Save that, and you should see your styles loading on the main page, and globally applying to _all_ elements. Since SvelteKit is server-rendered, if you view the page source, you'll even see our style has been added to the HTML, rather than being client-rendered. Neat!
 
 ![Our CSS is now showing on the site and making it look (slightly) less ugly.](/images/post_images/sveltekit-css.png)
+
+<SideNote>
+Importing CSS files into JavaScript files is not a web standard; it's just supported by some bundlers and frameworks, including Svelte.
+</SideNote>
 
 We're not limited to vanilla CSS, however. Let's see how to add Sass to our project!
 
@@ -325,36 +360,45 @@ npm i -D svelte-preprocess sass
 ```
 
 <SideNote>
-This command installs the most modern version of Sass, which isn't compatible with all versions of Node. You may need to adjust your Node version with a tool like <a href="https://github.com/nvm-sh/nvm">NVM</a> if you hit errors with this Sass package.
+This command installs the most modern version of Sass, which isn't compatible with all versions of Node. You may need to adjust your Node version with a tool like <a href="https://github.com/nvm-sh/nvm">NVM</a> if you hit errors.
 </SideNote>
 
-Next, open the `svelte.config.js` file in the project root. As the name implies, this is where we can make changes to SvelteKit's options and compiler.
+Next, open the `svelte.config.js` file, found in the project root. 
 
-The change is minimal; we just need to add a little bit to tell SvelteKit how to preprocess any Sass code we throw its way. First, import `svelte-preprocess` by adding this line at the top of the file:
+As the name implies, `svelte.config.js` is the home for, well, configuration. It's where we will make any needed changes to SvelteKit's options and compiler.
 
-```js
-// svelte.config.js
-import preprocess from 'svelte-preprocess';
-```
-
-Then, add a `preprocess` property to the `config` object.
+This change is minimal; we just need to import `svelte-preprocess`, and then add it to SvelteKit's list of preprocessors:
 
 ```js
 // svelte.config.js
+import sveltePreprocess from 'svelte-preprocess';
+
 const config = {
   kit: { 
     //...other config options here already
   },
 
   preprocess: [
-    preprocess(),
+    sveltePreprocess(),
   ],
 }
 ```
 
-The `preprocess` option passes any number of preprocessors to SvelteKit, to use when building the site. We'll add Markdown support here later, too (which is why we're using an array).
+A couple quick notes:
 
-Note that you _can_ pass additional configuration options into the `preprocess()` function here, but we won't do that now. It's worth mentioning the `scss.prependData` option, however, which allows you to automatically inject code at the start of any Sass processing (such as Sass variables or an entire `@import`). You can read more about that in the [`svelte-preprocess` docs](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content); I just wanted you to know it's an option. 
+- The `preprocess` option doesn't exist by default, so you'll need to create it.
+- We'll add Markdown processing here later, too (which is why we're using an array).
+
+Note that you _can_ pass an object with configuration options into the `sveltePreprocess()` function here, but we won't do that for now. 
+
+<SideNote>
+It's worth mentioning the <code>scss.prependData</code> option, which allows you to automatically inject code at the start of any Sass processing (such as Sass variables or an <code>@import</code>). You can read more in the <a href="https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content"><code>svelte-preprocess</code> docs</a>; I just wanted you to know it's an option. 
+</SideNote>
+
+One more quick, important thing to know: you'll want to restart your dev server any time you make a config change.
+
+
+### Adding Sass to component styles
 
 We can test out Sass by opening up our `src/routes/index.svelte` file, and adding a block of Sass styles. You can use Sass inside any component's `<style>` block by adding a `lang="scss"` attribute, like so:
 
@@ -377,113 +421,113 @@ Make sure both files are saved, and you should see some…well, questionable sty
 Feel free to delete those styles if you like; that was just an example to demonstrate how we can use Sass in components. Next, let's look at using global `.scss` files.
  
 
-### Linking to Sass files
+### Adding global Sass files
 
 Linking to Sass files is actually exactly the same as linking to CSS files, like we've already covered. So this will be short!
 
-In fact, at this point, we can just rename our existing `style.css` file to `style.scss`. (We'll need to update the `import` in our layout file, too.)
+In fact, at this point, you can just rename the existing `style.css` file to `style.scss`, if you want. (We'll need to update the `import` in our layout file, too, but that's it.)
 
-Or, if you prefer, you can create a new `.scss` file.
-
-Either way, you'll just `import` it to use it:
+Or, if you prefer, you can create a new `.scss` file. Either way, you'll just `import` it in a Svelte file wherever you want to use it:
 
 ```svelte
-<!-- __layout.svelte -->
 <script>
-  import '$lib/styles/style.scss';
-  // Other imports, etc.
+  import '$lib/styles/style.scss'
 </script>
 ```
 
-Inside that main `.scss` file, you're free to `@import` any other SCSS files you like, as you might when using Sass. Since our layout "wraps" every page on the site, any Sass that passes through it will be compiled as a global style.
-
-Ok, we've gotten a pretty good idea of project structure and styling at this point. Let's move on to the last big missing piece: support for Markdown, via a Svelte package called mdsvex.
+Ok, we've gotten a pretty good idea of project structure and styling at this point. Let's move on to the last big missing piece: support for Markdown, via a Svelte package called [mdsvex](https://mdsvex.pngwn.io/).
 
 
 ## Adding Markdown support with mdsvex
 
-If you've heard of MDX (generally used in React-based projects), you could think of the curiously named mdsvex as the Svelte equivalent. Otherwise, just know that mdsvex not only processes Markdown into static HTML for us, but it _also_ allows us to inject Svelte into Markdown--handy for adding functional components to our content where needed!
+If you've heard of MDX (generally used in React-based projects), you could think of the curiously named mdsvex as the Svelte equivalent. Otherwise, just know that mdsvex not only processes Markdown, but it lets us import and use it like a Svelte component. 
 
-Here's the terminal command to install mdsvex:
+mdsvex _also_ allows us to inject Svelte components into Markdown content--handy for adding interactive components to our content where needed!
+
+First, install mdsvex:
 
 ```bash
 npm i -D mdsvex
 ```
 
-Just like `svelte-preprocess`, once we've installed mdsvex, we'll need to let SvelteKit know how to use it, in our `svelte.config.js` file.
+Next, we'll need to add mdsvex to our config. Open `svelte.config.js`, where we'll do three things:
 
-First, add mdsvex to the list of imports at the top of the file (notice the named import `{}` syntax):
+1. import mdsvex;
 
-```js
-// svelte.config.js
-import { mdsvex } from 'mdsvex';
-```
+2. Add `.md` to the app's list of extensions (so we can import Markdown like Svelte components);
 
-Then, inside of the `config` object, we'll need to add two things:
-
-1. Add a `config.extensions` property, to tell SvelteKit what kind of files will be preprocessed with mdsvex;
-
-2. Add the `mdsvex()` function to the `config.preprocess` array.
+3. Add the `mdsvex()` function to the list of `preprocess`ers (so the Markdown is actually compiled to HTML).
 
 ```js
 // svelte.config.js
+// ... other imports here
+import { mdsvex } from 'mdsvex'
+
 const config = {
   kit: { /* Config options here */ },
 
-  extensions: ['.svelte', '.md'],
-
   preprocess: [
-    preprocess(),
+    sveltePreprocess(),
     mdsvex({
       extensions: ['.md']
     })
-  ]
+  ],
+  
+  extensions: ['.svelte', '.md'],
 }
 ```
 
-Note that we have `extensions` properties in two places; **both of these are necessary!**
+<SideNote>
+Both of the <code>extensions</code> properties above are just there to modify the defaults. SvelteKit only treats <code>.svelte</code> files as importable components by default, and mdsvex only processes <code>.svx</code> files by default.
+</SideNote>
 
-`config.extensions` tells SvelteKit what types of files may have transformations _in_ them, and since most things in SvelteKit go through a Svelte component in some way or another, we'll need to include both `.svelte` and `.md` file types.
-
-The preprocessor option tells mdsvex what file types to _apply_ the transformation to. (The default is `.svx`, which is why this option is necessary.)
-
-Be sure to restart your dev server after making this config change.
+Reminder: be sure to restart your dev server after making config changes.
 
 ---
 
-At this point, if we've saved our config file and restarted our server successfully, we're ready to start adding Markdown files to our project! (If you're running into errors, double-check to be sure that everything installed properly, that all the necessary imports are present in your config file, and that there are no syntax errors in the config file.)
+At this point, we're ready to start adding Markdown files to our project! (If you're running into errors, double-check to be sure that everything installed properly, that all the necessary imports are present in your config file, and that there are no syntax errors in the config file.)
 
-If you like, you can even use Markdown for page contents; create `src/routes/markdown-page.md` and throw some Markdown into it, and you'll be able to see your content by visiting `/markdown-page`!
+Now that we're treating `.md` files as components, you can use a Markdown file as a route, if you like!
 
-![Adding a bit of markdown inside of src/routes/markdown-page.md](/images/post_images/sveltekit-markdown-page.png)
+Create `src/routes/markdown-page.md` and throw some Markdown into it, and you'll be able to see your content by visiting `/markdown-page`!
+
+```fs
+📂 src
+┣ 📁 lib
+┗ 📂 routes
+  ┗  📜 markdown-page.md
+```
 
 ![Our markdown file rendered out as a page on our website](/images/post_images/sveltekit-markdown-page-rendered.png)
 
 Markdown is a handy option if you've got pages on your website that are mainly text-based, and that you don't want to hand-code the HTML for. (My [`/uses`](/uses) page is a Markdown file.)
 
-You can even import and use Markdown files _inside of_ other files if you want to, although I won't get into that here. (It's a handy option if you want some per-page styling for Markdown content, though.)
+And since mdsvex now treats `.md` files like `.svelte` files, you can even import and use Markdown files just like components, _inside of_ other files, if you want to!
 
 Let's cover a couple other nice features of mdsvex before moving on.
 
 
 ### Code blocks in markdown
 
-One extremely handy feature of mdsvex is that it comes with prism.js pre-installed and ready to use. All you need to do is note in your Markdown code what language a code block is, and mdsvex will highlight it accordingly, like so:
+One extremely handy feature of mdsvex is that it comes with [prism.js](https://prismjs.com/) pre-installed and ready to use. All you need to do is note in your Markdown code what language a code block is, and mdsvex will process it appropriately.
 
 ```markdown
 \```js
-// JavaScript goes here
+// JavaScript goes here,
+// And will be syntax-highlighted!
 \```
 ```
 
 All the code blocks on this website are made just like that. And as a bonus: mdsvex even has `svelte` available as a highlighting option!
 
+Just note that you'll need some CSS to handle the coloring, but [many themes are available](https://github.com/PrismJS/prism-themes).
+
 
 ### Using Svelte components in Markdown
 
-Let's create a new component in our `src/lib/components` folder. It doesn't need to be anything fancy; just something you might want to use in a blog post.
+We can create a new component in our `src/lib/components` folder, just to use as an example. It doesn't need to be anything fancy; just something you might want to use in a blog post.
 
-You might have noticed my little side notes throughout this post; they make a perfect example!
+You might have noticed my little side notes throughout this post; they make a perfect example.
 
 ```svelte
 <!-- SideNote.svelte -->
@@ -513,7 +557,7 @@ You might have noticed my little side notes throughout this post; they make a pe
 </style>
 ```
 
-To import a component in a Markdown file, you just drop in a `script` tag and import the component there. You can then add it to your Markdown just like you would add it in a Svelte file:
+To import a component in a Markdown file, you just drop in a `script` tag at the top. You can then add the component to your Markdown just like you would anywhere else:
 
 ```markdown
 <script>
@@ -524,32 +568,28 @@ To import a component in a Markdown file, you just drop in a `script` tag and im
 
 **I'm a markdown page!**
 
-<SideNote>
-Markdown is rad!
-</SideNote>
+<SideNote>Markdown is rad!</SideNote>
 ```
 
-This example is arguably a little bit contrived. Some possibly more useful examples: you could have a `<RelatedPosts>` component that loads previews of other posts similar to the current one. Or, maybe you'd like to let the user compare two images by swiping between the two; that would be a great component use case.
-
-Hopefully, it's easy to imagine the power of being able to drop arbitrary Svelte components into post content.
+This example is a little bit contrived, but hopefully, it's easy to imagine the power of being able to drop arbitrary interactive Svelte components into post content anywhere you like!
 
 
 ### Adding heading links with rehype
 
-It's nice to let users link directly to a section on a post (a particular heading, that is). Adding links to all our headings by hand would be tedious, and against the point of writing in Markdown, so an automatic solution would be ideal.
+It's nice to let users link directly to a section of a post. Manually adding links to all our headings would be tedious, however, and goes against the point of writing in Markdown.
 
-Luckily, mdsvex allows us to use [rehype](https://github.com/rehypejs/rehype) plugins to add extra features to its markdown processing, and so we can make this all happen automatically with just a bit of config adjustment.
+Luckily, mdsvex allows us to use [rehype](https://github.com/rehypejs/rehype) plugins to add extra features to markdown processing, and so we can make this all happen automatically with just a bit of config adjustment.
 
 <SideNote>
 Rehype is an HTML parser, and not specific to Svelte or mdsvex; it's commonly used in a wide range of projects.
 </SideNote>
 
-There are two rehype plugins we'll want specifically (in this order):
+There are two rehype plugins we'll want specifically:
 
 - `rehype-slug`, which automatically adds IDs to headings;
-- `rehype-autolink-headings`, which (as the name clearly implies), automatically adds links to our headings.
+- `rehype-autolink-headings`, which (as you can guess from the name), automatically adds links to our headings.
 
-Install them like so:
+Install them both like so:
 
 ```bash
 npm i rehype-slug rehype-autolink-headings
@@ -559,15 +599,15 @@ Then we'll pop open our `svelte.config.js` file, import our two new rehype plugi
 
 ```js
 // svelte.config.js
+// ...other imports here
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-// ...other imports here
 
 const config = {
-  // ...other config properties here
+  // ...other config properties
 
   preprocess: [
-    preprocess(),
+    sveltePreprocess(),
     mdsvex({
       extensions: ['.md'],
       rehypePlugins: [
@@ -576,22 +616,28 @@ const config = {
       ]
     }),
   ],
+
+  // ...other config properties
 };
 
 export default config;
 ```
 
-**Important note: the plugins _must_ go in that order!** `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only adds links to headings with IDs. So, again: make sure they're in the proper order in the `rehypePlugins` array.
+**Important note: the plugins _must_ go in that order!** `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only works on headings that have IDs. So, again: make sure they're in the proper order in the `rehypePlugins` array.
 
-With that in place, we'll need to restart our dev server.
+With that in place, once again, we'll need to restart our dev server.
 
-When we do, we won't notice anything different in our blog pages, even if we _do_ add some additional headings. Pop open the inspector, however, and we'll see our processed Markdown has some added new features!
+When we do, we won't notice anything different in our blog pages, even if we _do_ add some additional headings. Pop open the inspector, however, and we'll see our processed Markdown has some added new features:
 
 ![The headings in our blog posts now have links to them, with icon elements inside.](/images/post_images/sveltekit-rehype.png)
 
-That's nifty! However, we'll need to add a bit of styling to make the links show up properly. (The `.icon.icon-link` class is a [Font Awesome](https://fontawesome.com/) convention, so it doesn't automatically mean or do anything in our project.)
+However, we'll need to add a bit of styling to make the links show up properly.
 
-How you prefer to handle this is personal preference, but I personally added this block of Sass to my global styles:
+<SideNote>
+The <code>.icon.icon-link</code> class is a <a href="https://fontawesome.com/">Font Awesome</a> convention, so it doesn't mean or do anything in our project by default.
+</SideNote>
+
+How you choose to handle this is personal preference, but I personally added this block of Sass to my global styles:
 
 ```scss
 :where(h2, h3, h4, h5, h6) {
@@ -599,12 +645,13 @@ How you prefer to handle this is personal preference, but I personally added thi
     position: relative;
     
     &::before {
-      content: '🔗';
+      content: '#';
       position: absolute;
-      left: -2ch;
+      left: -1ch;
       top: 0;
       line-height: 1;
       opacity: 0;
+      text-decoration: underline;
     }
   }
 
@@ -614,24 +661,24 @@ How you prefer to handle this is personal preference, but I personally added thi
 }
 ```
 
-That bit of CSS will make a little link emoji appear whenever the user hovers on a heading with a link in it:
+That bit of Sass will make a pound sign (or hash, or "octothorpe," if you're fancy) appear whenever the user hovers on a heading with a link in it:
 
-![A chain link emoji appears to the left of a hovered heading.](/images/post_images/sveltekit-rehype-css.png)
+![A pound symbol appears to the left of a hovered heading.](/images/post_images/sveltekit-rehype-css.png)
 
 Thanks to how CSS treats pseudo elements, that icon is fully clickable as part of the link, to navigate directly to the heading in question.
 
-You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (potentially using the Svelte `onMount` function), but I'll leave that detail up to you. For now, our links are working without any further effort necessary on our part.
+You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (potentially using the Svelte `onMount` function), but I'll leave that detail up to you. For now, our links are at least present and working, even if they're not quite ideal yet.
 
 
-## Setting up the blog routes
+## Setting up the blog
 
-Now it's time to get into the real meat of this tutorial: setting up our actual blog.
+Now it's time to get into the real meat of this tutorial: setting up our actual blog!
 
 At this point, one viable route forward would be to create a `src/routes/blog` folder, and simply toss all our Markdown posts inside of it. That would work. They'd each have their own route that way; it's a simple solution.
 
 But I'm actually going to advocate for a _different_ route forward (pun fully intended).
 
-If we were to drop all our markdown files directly into the `src/routes/blog` folder, we would need a nested layout file in order to pull frontmatter from the posts into our templates. And if we did _that_, we'd be getting in our own way when setting up the `/blog` index route, since our layout would be trying to do two very different things at once. It would be in charge of rendering both a single post, _and_ rendering the list of _all_ our posts. And having one layout in charge of two different things probably isn't ideal.
+Why? Well, if we were to do that, as we'll soon see, we'd need a nested layout file in order to access a post's frontmatter metadata. And a nested layout would get pretty severely in our way when setting up the `/blog` index route, since the layout file would be trying to do two very different things at once. It would be in charge of rendering both any single post, _and_ rendering the list of _all_ our posts, which is a headache. (Plus, if we had other blog sub-routes, we'd be even further complicating things.)
 
 Rather than go into that, I think we'll be much better off utilizing two very handy features of SvelteKit: [dynamic pages](https://kit.svelte.dev/docs#routing-pages), and [private modules](https://kit.svelte.dev/docs#routing-private-modules).
 
@@ -1108,8 +1155,6 @@ npm i -D @sveltejs/adapter-static@next
 ```
 
 Once installed, we have to make a very small change to our `svelte.config.js` file to use the static adapter.
-
-`svelte.config.js` is the home of our app's configuration details. When we add packages or want to change how SvelteKit works, this is the file we'll use to make sure SvelteKit knows about it.
 
 Go ahead and open up your `svelte.config.js` file, which is located in the project's root folder. At this point, the only thing we actually have to do is change `adapter-auto` to `adapter-static` on line 1.
 
