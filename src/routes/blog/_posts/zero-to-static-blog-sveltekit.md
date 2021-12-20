@@ -18,28 +18,31 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 </script>
 
 
-I make no secret of my love for [Svelte](https://svelte.dev), and how much I've enjoyed [rewriting this site with SvelteKit](/blog/converting-from-gridsome-to-sveltekit). However, I _do_ have to admit that for as relatively simple as Svelte itself is, there _is_ a bit of a learning curve when working with [SvelteKit](https://kit.svelte.dev) (Svelte's app framework, or "meta framework"). 
+I make no secret of my love for [Svelte](https://svelte.dev), and how much I've enjoyed [rewriting this site with SvelteKit](/blog/converting-from-gridsome-to-sveltekit). However, I _do_ have to admit that, as relatively simple as Svelte itself is, there _is_ a bit of a learning curve when working with [SvelteKit](https://kit.svelte.dev) (Svelte's app framework, or "meta framework"). 
 
-SvelteKit is both flexible and powerful, but that comes with a tradeoff. When there are many possible paths, there are fewer easy defaults that might apply to everyone. So, while I personally had a blast remaking this site in SvelteKit, I also acknowledge that it _isn't_ the simplest thing to use as a static site generator (SSG). Other tools that focus solely on that one purpose ([Eleventy](https://www.11ty.dev/), [Gatsby](https://www.gatsbyjs.com/), [Gridsome](https://gridsome.org/), etc.) will likely make getting a static site up and running a bit easier.
+That's ok; it's just the tradeoff for SvelteKit's power and flexibility. So, while I love SvelteKit, I also acknowledge it _isn't_ the simplest thing to use as a static site generator (SSG). Other, more focused tools ([Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), [Gatsby](https://www.gatsbyjs.com/), etc.) will likely get you up and running faster and easier for that purpose.
 
-In an effort to help others over that initial barrier, I'd like to walk you through how to set up SvelteKit as a static, Markdown-powered blog with Sass--just like this site--and share what I've learned.
+However, they may _also_ trade that initial acceleration for less flexibility later on. And, of course, there are plenty of things to love about Svelte itself that other SSGs just don't have.
+
+So, in an effort to lower that barrier to entry, I'd like to walk you through how to set up SvelteKit as a static, Markdown-powered blog with Sass--just like this site--and share what I've learned, so that you can enjoy it like I do.
 
 Along the way, we'll learn all the fundamentals of SvelteKit, and get some opportunities to try out its features.
 
 
-## What we'll cover, and (and won't)
+## What we'll cover, and what to know first
 
-* **This is both an intro to SvelteKit, and a guide to creating a static blog with it.** I aim to cover all the high-level concepts of SvelteKit on the way to setting up a statically prerendered blog, complete with Sass and Markdown.
+**This is both an intro to SvelteKit, and a guide to creating a static blog with it.** We'll cover all the high-level concepts of SvelteKit on the way to setting up a statically prerendered blog, complete with Sass and Markdown.
 
-* **This is _not_ an intro to Svelte itself.** While you can probably still follow along and complete this even if you don't know anything about Svelte, I'd recommend learning the basics first. The [Svelte tutorial](https://svelte.dev/tutorial/basics) is an excellent place to start. (It's maybe the best tutorial site in front-end, honestly.)
+**This is _not_ an intro to Svelte itself.** While you can probably still follow along even if you don't know anything about Svelte, I'd recommend learning the basics first. The [Svelte tutorial](https://svelte.dev/tutorial/basics) is an excellent place to start.
 
-* **This is _not_ for everyone.** I try not to make too many assumptions about my audience, but I _will_ assume for his post that you at least know the basics of front-end development, JavaScript, and installing packages using [NPM](https://www.npmjs.com/).
+This won't be super advanced, but you should still know at least know the basics of front-end development, JavaScript, and installing packages using [NPM](https://www.npmjs.com/).
 
 All that said, let's get started!
 
+
 ## Creating a new SvelteKit app
 
-To generate a new SvelteKit project, run this command in your terminal (naturally, you can change `my-app` to whatever other title you prefer.):
+To generate a new SvelteKit project, run this command in your terminal (naturally, you can change `my-app` to whatever other title you prefer):
 
 ```bash
 npm init svelte@next my-app
@@ -52,10 +55,10 @@ When you run that `init` command, SvelteKit will ask you some questions about yo
 For this example, we'll select Skeleton project. 
 
 <SideNote>
-If this is your very first time using SvelteKit, feel free to choose the SvelteKit demo app option instead, and poke around a bit to get a sense of how things work. However, while the demo app is nice to get a feel for things, it comes with several files and styles that would be a lot to undo as a starter.
+If this is your very first time using SvelteKit, feel free to choose the SvelteKit demo app option instead, and poke around a bit to get a sense of how things work. It's a good intro, but it comes with several files and styles that would be a lot to undo as a starter.
 </SideNote>
 
-The setup tool will also ask for your preferences on TypeScript, ESlint, and Prettier. For simplicity's sake, I said no to TypeScript and yes to the others, but you're welcome to go with whatever you prefer.
+The setup tool will also ask for your preferences on TypeScript, ESlint, and Prettier. For simplicity's sake, I won't be using TypeScript, but you're welcome to if you prefer.
 
 Once you've made your choices, after a moment of installation, you should see “**Your project is ready!**” appear in your terminal, along with next steps and helpful links:
 
@@ -89,8 +92,8 @@ Inside of `src/routes`, make a new file named `__layout.svelte`.
 ```fs
 📂 src
 ┗ 📂 routes
-  ┣ 📜 index.svelte
-  ┗ 📜 __layout.svelte
+  ┣ 📜 __layout.svelte
+  ┗ 📜 index.svelte
 ```
 
 Note the _two_ underscores; this is a SvelteKit convention. SvelteKit checks for a `__layout.svelte` file inside `routes` (and every one of its subdirectories), and if found, uses it to "wrap" any content in that directory. 
@@ -160,10 +163,10 @@ Our `routes` folder should now look like this:
 ```fs
 📂 src
 ┗ 📂 routes
+  ┣ 📜 __layout.svelte
   ┣ 📜 about.svelte
   ┣ 📜 contact.svelte
-  ┣ 📜 index.svelte
-  ┗ 📜 __layout.svelte
+  ┗ 📜 index.svelte
 ```
 
 At this point, we can visit `/contact` and/or `/about` to see the pages we just created:
@@ -557,9 +560,12 @@ You might have noticed my little side notes throughout this post; they make a pe
 </style>
 ```
 
-To import a component in a Markdown file, you just drop in a `script` tag at the top. You can then add the component to your Markdown just like you would anywhere else:
+To import a component in a Markdown file, you just drop in a `script` tag in the content (after the frontmatter). You can then add the component to your Markdown just like you would anywhere else:
 
 ```markdown
+---
+# frontmatter goes here
+---
 <script>
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -623,7 +629,9 @@ const config = {
 export default config;
 ```
 
-**Important note: the plugins _must_ go in that order!** `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only works on headings that have IDs. So, again: make sure they're in the proper order in the `rehypePlugins` array.
+**Important note: the plugins _must_ go in that order!** `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only works on headings that have IDs.
+
+(Fun fact: I discovered these two were in the wrong order on _this_ site while writing this, when I suddenly realized it was only half working.)
 
 With that in place, once again, we'll need to restart our dev server.
 
@@ -637,7 +645,7 @@ However, we'll need to add a bit of styling to make the links show up properly.
 The <code>.icon.icon-link</code> class is a <a href="https://fontawesome.com/">Font Awesome</a> convention, so it doesn't mean or do anything in our project by default.
 </SideNote>
 
-How you choose to handle this is personal preference, but I personally added this block of Sass to my global styles:
+How you choose to handle this is personal preference, but this block of Sass should basically do the trick:
 
 ```scss
 :where(h2, h3, h4, h5, h6) {
@@ -661,7 +669,7 @@ How you choose to handle this is personal preference, but I personally added thi
 }
 ```
 
-That bit of Sass will make a pound sign (or hash, or "octothorpe," if you're fancy) appear whenever the user hovers on a heading with a link in it:
+That CSS will make a pound sign (or hash, or "octothorpe," if you're fancy) appear whenever the user hovers on a heading with a link in it:
 
 ![A pound symbol appears to the left of a hovered heading.](/images/post_images/sveltekit-rehype-css.png)
 
@@ -674,28 +682,62 @@ You could _also_ add some JavaScript to handle automatically copying the link to
 
 Now it's time to get into the real meat of this tutorial: setting up our actual blog!
 
-At this point, one viable route forward would be to create a `src/routes/blog` folder, and simply toss all our Markdown posts inside of it. That would work. They'd each have their own route that way; it's a simple solution.
 
-But I'm actually going to advocate for a _different_ route forward (pun fully intended).
+### Choosing the best route forward
 
-Why? Well, if we were to do that, as we'll soon see, we'd need a nested layout file in order to access a post's frontmatter metadata. And a nested layout would get pretty severely in our way when setting up the `/blog` index route, since the layout file would be trying to do two very different things at once. It would be in charge of rendering both any single post, _and_ rendering the list of _all_ our posts, which is a headache. (Plus, if we had other blog sub-routes, we'd be even further complicating things.)
+At this point, as you might have already figured out that we _could_ create a `src/routes/blog` folder, and simply toss all our Markdown posts inside of it, like so:
+
+```fs
+One option:
+
+📂 src
+┗ 📂 routes
+  ┗ 📂 blog
+    ┣ 📜 a-post.md
+    ┣ 📜 another-post.md
+    ┗ 📜 etc.md
+```
+
+That would work. Each post would have its own route that way; it's a simple solution. But I'm actually going to advocate for a _different_ route forward (pun fully intended).
+
+Why? Well, the main reason is: you can't actually access the frontmatter of a Markdown post when it's being its own route; you can only get the content.
+
+There are ways around that, but it would require a nested layout file--and _that_ would get in our way as much as it would help, since it would apply to more routes than just individual post pages. We'd be working against ourselves, and having one file do too many things.
 
 Rather than go into that, I think we'll be much better off utilizing two very handy features of SvelteKit: [dynamic pages](https://kit.svelte.dev/docs#routing-pages), and [private modules](https://kit.svelte.dev/docs#routing-private-modules).
 
 
 ### Adding posts, and private routes
 
-To start, if you don't already have a `src/routes/blog` folder, make one now.
-
 Next, it will be handy to have at least a couple of Markdown post files to work with, so let's create some dummy posts.
 
-Inside of `src/routes/blog`, create _another_ folder, named `_posts`.
+To start, if you don't already have a `src/routes/blog` folder, make one now. And inside it, create _another_ folder, named `_posts`.
 
-Note the underscore; **any route that begins with a single underscore is private.** That means it (and its contents) can be loaded by _other_ pages and components, but it won't have its own route. No matter what we put inside of the `_posts` folder, we won't be able to actually visit it directly in the browser. (This may seem like more work than just plopping the posts right into our `blog` folder, and it is. But it's with good reason. Bear with me.)
+```fs
+📂 src
+┗ 📂 routes
+  ┗ 📂 blog
+    ┗ 📂 _posts
+```
 
-Now let's create a couple of dummy posts inside our new folder. No need for anything lengthy or fancy; just a couple of `.md` files (ideally with names that are easy to type), and a bit of Markdown content inside them. (Alternatively, if you already have some `.md` files, you're welcome to just grab those.)
+Note the underscore; **any file that begins with an underscore is private.** That means it (and its contents) can be loaded by _other_ pages and components, but it won't get its own route. No matter what we put inside of the `_posts` folder, we won't be able to actually visit it directly in the browser.
 
-I've decided to just create `1.md` and `2.md` inside my `_posts` folder for simplicity's sake, and to place a little content like this inside of them:
+<SideNote>
+We could achieve the same thing by just putting our folder full of posts <em>outside</em> of <code>routes</code>, too. I like it there for easier linking from routes, however.
+</SideNote>
+
+Now let's create a couple of dummy posts inside our new folder. No need for anything lengthy or fancy; just a couple of `.md` files, and a bit of Markdown content inside them. (Or, if you already have some `.md` posts, you're welcome to just grab those.)
+
+```fs
+📂 src
+┗ 📂 routes
+  ┗ 📂 blog
+    ┗ 📂 _posts
+      ┣ 📜 1.md
+      ┗ 📜 2.md
+```
+
+I've decided to just name my post files `1` and `2` for simplicity's sake, and to place a little content like this inside of them:
 
 ```markdown
 ---
@@ -708,7 +750,7 @@ Hello, I am _Post One._
 **Nice to meet you!**
 ```
 
-You don't need to copy that directly; you're welcome to put whatever content you like in your Markdown posts, and to name them however you prefer. But I _will_ be using those two frontmatter properties in the examples (especially `date`), so if you don't have them, just be prepared.
+You're welcome to put whatever content you like in your Markdown posts, and to name them however you prefer. But I _will_ be using those two frontmatter properties in the examples (especially `date`), so if you don't have them, just be prepared.
 
 Anyway, if you want, you can visit `/blog/_posts/1` (or whatever your markdown post is named, if not `1`), just to confirm that nothing is showing. Private routes, doing their thing. (Good, because we don't want duplicate content on our site.)
 
@@ -717,11 +759,19 @@ So how _do_ we load our posts? Well, now that we have some files to work with, w
 
 ### Dynamic pages
 
-Because we might want to have have one template file to handle any number of potential routes or pages--for example, category listings, or in our case, one template file to render all blog posts--SvelteKit offers us _dynamic pages_.
+Because we might want to have have one template file to handle any number of potential routes or pages--for example, category listings, or in our case, one file to render all blog posts--SvelteKit offers us _dynamic pages_.
 
 **A dynamic page handles _any_ unmatched route in the given directory.** Think of it as a wildcard page.
 
 To make a page dynamic, all we have to do is wrap its title in brackets (`[]`). So, our next step is to create a file inside `src/routes/blog` named `[slug].svelte`. 
+
+```fs
+📂 src
+┗ 📂 routes
+  ┗ 📂 blog
+    ┣ 📁 _posts
+    ┗ 📜 [slug].svelte
+```
 
 <SideNote>
 The word <code>slug</code> isn't important; it's just a variable, and could be anything. But as with any variable, it's good to name it semantically.
@@ -736,22 +786,16 @@ We'll load our actual post content in this file. It will _work_ basically like a
 
 All right, this is where things are going to start getting a little complex, as we begin diving into some of the more advanced features of SvelteKit. We'll take our time, so we cover the concepts well.
 
+---
+
 Right now, we have a new `[slug].svelte` file for the `/blog` route. It will be responsible for rendering any and all blog pages we visit, by looking at the current page slug, and grabbing the matching Markdown file from the `_posts` folder.
 
 As you may have already realized, this isn't something we can handle at run time; we can't load Markdown files in a browser. This needs to be done server-side.
 
-<SideNote>
-When pre-generating static files, as we will be, anything that would happen server-side on our deployed site actually happens at build time instead.
-</SideNote>
-
-We already know that by default, Svelte has you put all your dynamic JavaScript inside a `<script>` tag; any state, props, methods, etc. that the component may have or rely on.
-
-SvelteKit goes one step further; Svelte files in SvelteKit can also have a _second_ `<script>` tag for anything that needs to run server-side.
-
-This server `script` is differentiated using a `context="module"` attribute. It handles anything that might need to be done on the server (during pre-rendering and/or loading), and--importantly--can also pass props to the "normal" component `script` tag to use.
+**How?** Svelte files in SvelteKit can have a _second_ `<script>` tag for anything that needs to run server-side. This server `script` is differentiated using a `context="module"` attribute. It handles anything that might need to be done on the server (during pre-rendering and/or loading), and--importantly--can also pass props to the "normal" component `script` tag to use.
 
 <SideNote>
-Only components that are routes or layouts can have server scripts; regular, reusable Svelte components cannot.
+Only components that are routes or layouts can have server scripts; regular, reusable Svelte components cannot. Also note that when pre-generating static files, anything that would happen server-side on our deployed site actually happens at build time instead.
 </SideNote>
 
 For us, the first step is to add a server script to our `[slug].svelte` file:
@@ -759,8 +803,7 @@ For us, the first step is to add a server script to our `[slug].svelte` file:
 ```svelte
 <!-- [slug].svelte -->
 <script context="module">
-  // Code here will be executed server side,
-  // to generate props used by the component
+  // Code here will be executed server side
 </script>
 ```
 
