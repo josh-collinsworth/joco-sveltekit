@@ -150,8 +150,7 @@
     .meta + p::first-letter,
     .toc-wrap + p::first-letter,
     .meta + .side-note + p::first-letter,
-    .toc-wrap + .side-note + p::first-letter,
-    > hr + p:first-letter {
+    .toc-wrap + .side-note + p::first-letter {
       font-size: 3.6em;
       float: left;
       line-height: 0.7em;
