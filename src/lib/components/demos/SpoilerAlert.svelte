@@ -21,7 +21,7 @@
 
 <style lang="scss">
   .spoiler {
-    border: 1px solid var(--red);
+    border: 2px solid var(--red);
     padding: 1rem;
     margin: 2rem 0;
 

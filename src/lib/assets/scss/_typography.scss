@@ -10,7 +10,7 @@ ol {
 
 p + ul,
 p + ol {
-	margin: calc(var(--rhythm) * 2) 0;
+	margin: calc(var(--rhythm) * 1) 0 calc(var(--rhythm) * 2);
 }
 
 main ul:not(.toc) {
