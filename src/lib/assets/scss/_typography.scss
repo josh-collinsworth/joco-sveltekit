@@ -159,10 +159,12 @@ blockquote {
 	}
 }
 
-ul {
+ul,
+ol {
 	padding-left: 1em;
 
-	ul {
+	ul,
+	ol {
 		margin: var(--rhythm) 0;
 	}
 
