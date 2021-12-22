@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
-date: "2021-11-24"
-updated: "2021-11-24"
+date: "2021-12-24"
+updated: "2021-12-24"
 categories: 
   - "svelte"
   - "javascript"
@@ -100,10 +100,10 @@ Inside of `src/routes`, make a new file named `__layout.svelte`. (If you haven't
   ┗ 📜 index.svelte
 ```
 
-Note the _two_ underscores in the file name; this is a SvelteKit convention. SvelteKit checks for a `__layout.svelte` file inside `routes` (and in all of its subdirectories), and if found, uses it to "wrap" content anywhere inside that directory (even subdirectories). A layout at the top level of the `routes` folder will apply globally, for every route in our app. Layouts in subfolders will only be applied from that folder on down.
+Note the _two_ underscores in the file name; this is a SvelteKit convention. SvelteKit checks for a `__layout.svelte` file inside `routes` (and in all of its subdirectories), and if found, uses it to "wrap" content anywhere inside that directory (even subdirectories). A layout at the top level of the `routes` folder will apply globally, on every page in the app. Layouts in subfolders will only be applied from that route on down.
 
 <Callout>
-A layout at the top level of the <code>routes</code> folder will apply globally, for every route in the&nbsp;app. Layouts in subfolders will only be applied from that folder on down.
+A layout at the top level of the <code>routes</code> folder will apply globally, on every page in the&nbsp;app. Layouts in subfolders will only be applied from that route on down.
 </Callout>
 
 Open up our new `__layout.svelte` file, and let's add a placeholder header and footer to our site, just so we can get a look at the layout in action:
@@ -311,11 +311,11 @@ It might be a little confusing that we're jumping in and out of several `.svelte
 
 ## Global styling
 
-There are a few ways you can add global CSS files in SvelteKit, but I find the _best_ method is to simply `import` it; Svelte allows you to simply import CSS (or Sass) files directly into components. It's easy, for one thing, but more importantly, it _also_ handles preprocessing automatically, which we'll want when we add Sass here in a moment.
-
 <Callout>
-Svelte allows you to simply import CSS or Sass files directly into components.
+Svelte allows you to simply import CSS or Sass files directly into components—including pages or layouts.
 </Callout>
+
+There are a few ways you can add global CSS files in SvelteKit, but I find the _best_ method is to simply `import` it; Svelte allows you to simply import CSS (or Sass) files directly into components--including pages or layouts. It's easy, for one thing, but more importantly, it _also_ handles preprocessing automatically, which we'll want when we add Sass here in a moment.
 
 Create a new folder inside of `src/lib` for your styles, and add a `style.css` file inside it. 
 
@@ -410,18 +410,15 @@ const config = {
 }
 ```
 
-A couple quick notes:
+Note that you'll need to create the `preprocess` option; it's not there by default. We'll add Markdown processing here later, too.
 
-- The `preprocess` option doesn't exist by default, so you'll need to create it.
-- We'll add Markdown processing here later, too (which is why we're using an array).
-
-Note that you _can_ pass an object with more granular options into the `sveltePreprocess()` function, but we won't for now. Since Sass is one of the things `svelte-preprocess` handles by default, no further directions are necessary.
+Also note that you _can_ pass an object with more granular options into the `sveltePreprocess()` function, but we won't for now. Since it knows what to do with Sass by default, no further customization is necessary.
 
 <SideNote>
 It's worth mentioning the <code>scss.prependData</code> option, which allows you to automatically inject code at the start of any Sass processing (such as Sass variables or an <code>@import</code>). You can read more in the <a href="https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content"><code>svelte-preprocess</code> docs</a>; I just wanted you to know about it. 
 </SideNote>
 
-**One more quick, important thing to know:** you'll want to restart your dev server any time you make a config change.
+**One more quick, important thing to know:** you'll want to stop and restart your dev server any time you make a config change.
 
 
 ### Adding Sass to component styles
@@ -453,7 +450,7 @@ Linking to Sass files is actually exactly the same as linking to CSS files, like
 
 ---
 
-Ok, we've gotten a pretty good idea of project structure and styling at this point. Let's move on to the last big missing piece: support for Markdown, via a Svelte package called [mdsvex](https://mdsvex.pngwn.io/).
+Ok, we've gotten a pretty good idea of project structure and styling at this point. Let's move on to the last big missing piece: support for Markdown.
 
 
 ## Adding Markdown support with mdsvex
@@ -462,9 +459,9 @@ Ok, we've gotten a pretty good idea of project structure and styling at this poi
 mdsvex converts Markdown to HTML, lets you import and use Markdown files as components, and even allows you to use Svelte components inside of&nbsp;Markdown.
 </Callout>
 
-If you've heard of MDX (generally used in React-based projects), you could think of the curiously named mdsvex as the Svelte equivalent. 
+If you've heard of MDX (generally used in React-based projects), you could think of the curiously named [mdsvex](https://mdsvex.pngwn.io/) as the Svelte equivalent. 
 
-Otherwise, just know that it does everything we might want to do with Markdown; mdsvex converts Markdown to HTML, lets you import and use Markdown files as components, and even allows you to use Svelte components inside of Markdown--handy for adding interactive components wherever needed!
+Otherwise, just know that it powers everything we might want to do with Markdown; mdsvex converts Markdown to HTML, lets you import and use Markdown files as components, and even allows you to use Svelte components inside of Markdown--handy for adding interactive components wherever needed!
 
 First, install mdsvex:
 
@@ -495,39 +492,45 @@ const config = {
 
 We're doing three crucial things here:
 
-1. importing `mdsvex`, naturally;
-2. Adding `.md` to the app's list of component extensions (so we can import and use Markdown files like components); and
+1. Importing `mdsvex`, naturally;
+2. Adding an `extensions` property, which tells Svelte what types of files to treat as components that can be imported and used; and
 3. Calling `mdsvex()` during preprocessing, so `.md` files are actually compiled to HTML. 
 
 <SideNote>
-The default extension for mdsvex is <code>.svx</code>, which is why we need to specify <code>.md</code> as an argument.
+The default extension for mdsvex is <code>.svx</code>, which is why we need to specify <code>.md</code> as an argument. If your Markdown was in <code>.svx</code> files, you could run <code>mdsvex()</code> without any arguments.
 </SideNote>
 
 **Reminder:** be sure to restart your dev server after making config changes. And if you're running into errors, double-check to be sure that everything installed properly, that all the necessary imports are present in your config file, and that there are no syntax errors in the config file.)
-
----
-
-At this point, we're ready to start adding Markdown files to our project! 
-
-Now that we're treating `.md` files like components, thanks to mdsvex, you can use a Markdown file as a page if you like!
 
 <Callout>
 Thanks to mdsvex, you can use a Markdown file as a page if you like!
 </Callout>
 
-Create `src/routes/markdown-page.md` and throw some Markdown into it, and you'll be able to see your content by visiting `/markdown-page`!
+At this point, we're ready to start adding Markdown files to our project. And now that our config treats `.md` files as components, thanks to mdsvex, you can use a Markdown file as a page if you like!
+
+Just to try it out, create `src/routes/uses.md` and throw some Markdown into it. You'll be able to see your content by visiting `/uses`!
 
 ```fs
 📂 src
 ┗ 📂 routes
-  ┗  📜 markdown-page.md
+  ┗  📜 uses.md
 ```
 
-![Our markdown file rendered out as a page on our website](/images/post_images/sveltekit-markdown-page-rendered.png)
+```markdown
+# Uses
 
-Markdown pages are a handy option if you've got page content that's mainly text-based, and that you don't want to hand-code the HTML for. (My [`/uses`](/uses) page is a Markdown file, for example.)
+**Here's some stuff I use**
 
-And since our app now treats `.md` files like components, you can even import and use Markdown content _inside of_ other files, if you want to!
+- SvelteKit
+- VS Code
+- Emojis 😎
+```
+
+![Our markdown file rendered out as a page on our website](/images/post_images/sveltekit-uses-rendered.png)
+
+Markdown pages are a handy option for text-based pages, since Markdown is generally easier to author than HTML. (My [`/uses`](/uses) page is a Markdown file, for example.)
+
+And since our app now treats `.md` files like components, you can even import and use Markdown content _inside of_ other files, if you want to--for example, to import as _part_ of the page's content.
 
 Let's cover a couple other nice features of mdsvex before moving on.
 
@@ -591,7 +594,7 @@ And here's the code I used to generate that component:
 
 <style lang="scss">
   .spoiler {
-    border: 1px solid var(--red);
+    border: 2px solid red;
     padding: 1rem;
     margin: 2rem 0;
 
@@ -606,7 +609,7 @@ And here's the code I used to generate that component:
 ```
 
 <SideNote>
-This component works ok, but could be better. Always do your usability and accessibility research when it comes to interactive components. See <a href="https://inclusive-components.design/toggle-button/">inclusive toggle buttons</a> for more.
+This component works ok, but could be better. Always do your usability and accessibility research when it comes to interactive components. I recommend <a href="https://inclusive-components.design/toggle-button/">inclusive toggle buttons</a> for more on this type of component.
 </SideNote>
 
 To import a component in a Markdown file, you just drop in a `script` tag in the content (after the frontmatter). You can then add the component to your Markdown just like you would anywhere else:
@@ -631,7 +634,7 @@ This example might be a little contrived, but hopefully it's easy to imagine the
 
 ## Setting up the blog
 
-Now it's time to get into the real meat of this tutorial: setting up our actual blog!
+Now it's time to get into the real meat of this tutorial: setting up our actual blog to automatically handle Markdown posts!
 
 
 ### Choosing the best route forward
@@ -649,21 +652,21 @@ One option:
     ┗ 📜 etc.md
 ```
 
-That would work. Each post would have its own route that way; it's a simple solution. But I'll actually advocate for a _different_ route forward (pun fully intended).
+That would work. Each post would have its own route that way; it's a simple solution. But we'll actually take a _different_ route forward (pun fully intended).
 
-Why? Well, the main reason is: you can't actually access the frontmatter of a Markdown post when it's being its own page component; you can only get the content.
+Why? Well, the main reason is: you can't actually access the frontmatter of a Markdown post when it's being its own page component; you can only get the content. That's a problem because we can't show the title, date, cover image, etc.
 
-There are ways around that, but they require a nested layout file--and _that_ would get in our way as much as it would help, since it would apply to more routes than just individual post pages. We'd be working against ourselves, and having one file do too many things.
+There are ways around that, but they involve a nested layout--and _that_ would get in our way as much as it would help, since it would apply to more routes than just our individual post pages. We'd be working against ourselves, and having one file try to do too many things.
 
-Rather than go into that, I think we'll be much better off utilizing two very handy features of SvelteKit: [dynamic pages](https://kit.svelte.dev/docs#routing-pages), and [private modules](https://kit.svelte.dev/docs#routing-private-modules).
+Instead, I think we'll be much better off utilizing two very handy features of SvelteKit: [dynamic pages](https://kit.svelte.dev/docs#routing-pages), and [private modules](https://kit.svelte.dev/docs#routing-private-modules).
 
 
 ### Private routes
 
-Next, it will be handy to have at least a couple of Markdown post files to work with, so let's create some dummy posts. Inside of `src/routes/blog`, create _another_ folder, named `_posts`.
+Going forward, it will be handy to have at least a couple of posts to work with, so let's create some. Inside `src/routes/blog`, create a folder named `_posts`.
 
 <Callout>
-Any route that begins with an underscore is private. It can be loaded by other pages and components, but it won't get a public&nbsp;route.
+Any route that begins with an underscore is private; it can be loaded by other pages and components, but it won't get a public&nbsp;route.
 </Callout>
 
 ```fs
@@ -673,13 +676,13 @@ Any route that begins with an underscore is private. It can be loaded by other p
     ┗ 📂 _posts
 ```
 
-Note the underscore; any route that begins with an underscore is private. That means it (and its contents) can be loaded by _other_ pages and components, but it won't get a public route. No matter what we put inside of the `_posts` folder, it can't be visited in the browser.
+Note the underscore; any route that begins with an underscore is private. That means it (and its contents) can be loaded by _other_ pages and components, but it won't get a public route. No matter what we put inside the `_posts` folder, we can't visit or load it in the browser.
 
 <SideNote>
 We could achieve the same thing by just putting our folder full of posts <em>outside</em> of <code>routes</code>, too. That would also be fine, if you prefer. I just like it here for tighter coupling with blog routes.
 </SideNote>
 
-Now let's create a couple of dummy posts inside our new folder. No need for anything fancy; just a couple of `.md` files, and a bit of Markdown content inside them. (Or, if you already have some blog posts in Markdown files, you're welcome to just grab those.)
+Next let's create a couple of dummy posts inside our new folder. (Or, if you already have some Markdown files, you're welcome to just copy those into `_posts`.) No need for anything fancy; just at least two `.md` files, with a tiny bit of Markdown in them; something like this:
 
 ```fs
 📂 src
@@ -689,8 +692,6 @@ Now let's create a couple of dummy posts inside our new folder. No need for anyt
       ┣ 📜 1.md
       ┗ 📜 2.md
 ```
-
-I've decided to just name my post files `1` and `2` for simplicity's sake, and to place a little content like this inside of them:
 
 ```markdown
 ---
@@ -705,20 +706,20 @@ Hello, I am _Post One._
 
 The names and content aren't important, but I _will_ be using the `title` and `date` frontmatter properties, so if you don't have them, just be prepared.
 
-Anyway, if you want, you can visit `/blog/_posts/1` (or whatever your markdown post is named, if not `1`), just to confirm that nothing is showing. Private routes, doing their thing. (Good, because we don't want duplicate content on our site.)
+If you want, you can try to load `/blog/_posts/whatever`, just to confirm that nothing is showing. Private routes, doing their thing. (Good, because we don't want duplicate content on our site.)
 
-So how _do_ we load our posts? Well, now that we have some files to work with, we'll want to make a **dynamic page**.
+So how _do_ we load our posts? Well, now that we have some files to work with, we'll want to make a dynamic page.
 
 
 ### Dynamic pages
 
-Because we might want to have have one template file to handle any number of potential routes or pages--for example, category listings, or in our case, one file to render all blog posts--SvelteKit offers _dynamic pages_. A dynamic page handles _any_ unmatched route in its directory. Think of it as a wildcard page.
+A dynamic page handles _any_ unmatched route in its directory. Think of it as a wildcard page. They're useful because we might want one template file to handle any number of potential pages--for example, one template for each category listing, or in our case, one file to render all blog posts.
 
 <Callout>
 A dynamic page handles any unmatched route in its directory. Think of it as a wildcard&nbsp;page.
 </Callout>
 
-To make a page dynamic, all we have to do is wrap its title in brackets (`[]`). So, our next step is to create a file inside `src/routes/blog` named `[slug].svelte`. 
+**To make a page dynamic, all we have to do is wrap its title in brackets**. So, our next step is to create a file inside `src/routes/blog` named `[slug].svelte`. 
 
 ```fs
 📂 src
@@ -741,7 +742,9 @@ The trick now is just to get this dynamic page to recognize the route being visi
 
 All right, this is where things start getting a _little_ more complex, as we begin diving into some of the more advanced features of SvelteKit. We'll take our time, so we cover the concepts well.
 
-As you may have already realized, we need to load Markdown files at this point, but we can't do that in a browser. So this needs to be handled server-side. Luckily, pages and layouts in SvelteKit can export a `load` function, which runs server-side (or during prerendering), before the component is created. 
+As you may have already realized, we need to load Markdown files at this point, but we can't do that in a browser; this needs to be handled server-side.
+
+Luckily, pages and layouts in SvelteKit can export a `load` function, which runs server-side (or during prerendering), before the component is created, as well as client-side. 
 
 <Callout>
 Pages and layouts in SvelteKit can export a <code>load</code> function, which runs server-side (or during prerendering), before the component is created.
@@ -768,25 +771,28 @@ A couple other key points to know:
 - **`load` should `return` an object**. You can use it to pass props to the "main" component `<script>`, among other things.
 
 <SideNote>
-Technically, <code>load</code> runs both server- and client-side, but the distinction seems mostly meaningless when prerendering static files, as we will be. Still, be sure not to reference anything specific to one environment or the other. See the <a href="https://kit.svelte.dev/docs#loading">loading docs</a> for more details.
+Technically, <code>load</code> runs both server- and client-side, but that's mostly meaningless when prerendering static files, as we are. Still, be sure not to reference anything specific to one environment or the other. See the <a href="https://kit.svelte.dev/docs#loading">loading docs</a> for more details.
 </SideNote>
 
-Just to get an idea of what we're working with, let's start with any front-end developer's best friend: `console.log`.
+Just to get an idea of what we're working with, let's start with any JavaScript developer's best friend: `console.log`.
 
 ```svelte
 <!-- [slug].svelte -->
 <script context="module">
   export function load({ page }) {
     console.log(page)
+    return {
+      status: 200
+    }
   }
 </script>
 ```
 
-If you load a `/blog/something` route at this point, you won't see anything in the browser. You _also_ won't find anything in the browser console.
-
-Instead, look in your terminal, where your local dev server is running:
+Notice if you load a blog route now, you can see `page` in the terminal where your local dev server is running, as well as in the browser console:
 
 ![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug.png)
+
+<SideNote>You won't see what you logged in the browser console if you hit an error; that's why we added the explicit 200 status, just for the sake of the demo.</SideNote>
 
 The route you just loaded will be `params.slug`, because our file is named `[slug].svelte`. If you changed `[slug]`, the property would be whatever the new name is. And when you're visiting a `/blog/*` route, the `*` will be the value. (You can try loading some `/blog/*` routes in your browser right now, if you want to see.)
 
