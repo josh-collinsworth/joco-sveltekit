@@ -214,3 +214,32 @@ code {
 pre code {
 	border: 0;
 }
+
+:where(h2, h3, h4, h5, h6) {
+	position: relative;
+
+	a[aria-hidden] {
+		position: absolute;
+		display: block;
+		left: -1em;
+		width: 1em;
+		height: 1em;
+		line-height: 1;
+		text-align: center;
+	}
+
+  .icon-link {
+    position: relative;
+    
+    &::before {
+      content: '#';
+			color: var(--lightGray);
+			font-weight: normal;
+      opacity: 0;
+    }
+  }
+
+  &:hover .icon-link::before {
+    opacity: 1;
+  }
+}
