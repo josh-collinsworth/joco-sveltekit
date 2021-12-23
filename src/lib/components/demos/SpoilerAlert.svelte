@@ -6,6 +6,7 @@
   }
 </script>
 
+
 <div class="spoiler">
   <div class="spoiler__controls">
     ⚠️ SPOILER ALERT

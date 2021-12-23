@@ -24,7 +24,6 @@ const config = {
 				rehypeSlug,
 				rehypeAutolinkHeadings,
 			]
-			//Optional: add a layout here
 		}),
 	],
 
@@ -33,12 +32,7 @@ const config = {
 		target: '#svelte',
 
 		//Added for static adapter
-		adapter: adapter({
-			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: null
-		})
+		adapter: adapter()
 	}
 }
 
