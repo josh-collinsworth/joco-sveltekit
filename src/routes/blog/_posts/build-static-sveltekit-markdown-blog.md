@@ -713,10 +713,12 @@ So how _do_ we load our posts? Well, now that we have some files to work with, w
 
 ### Dynamic pages
 
-A dynamic page handles _any_ unmatched route in its directory. Think of it as a wildcard page. They're useful because we might want one template file to handle any number of potential pages--for example, one template for each category listing, or in our case, one file to render all blog posts.
+A dynamic page handles _multiple_ routes. You could think of it as a wildcard page. 
+
+Dynamic pages are useful because we might want one template file to handle any number of potential routes. In our case, we'll have one file to handle _any_ `/blog/*` route, no matter what the `*` might be.
 
 <Callout>
-A dynamic page handles any unmatched route in its directory. Think of it as a wildcard&nbsp;page.
+A dynamic page handles <strong>multiple</strong> routes. You could think of it as a wildcard&nbsp;page.
 </Callout>
 
 **To make a page dynamic, all we have to do is wrap its title in brackets**. So, our next step is to create a file inside `src/routes/blog` named `[slug].svelte`. 
@@ -733,21 +735,21 @@ A dynamic page handles any unmatched route in its directory. Think of it as a wi
 The word <code>slug</code> isn't important; it's just a variable, and could be anything. But as with any variable, it's good to name it semantically.
 </SideNote>
 
-Once you've created that file, you can actually visit `/blog/anything-here`, and you won't get a 404. Our dynamic page is handling _all_ unmatched the routes inside of the `/blog` folder for us.
+Once you've created that file, you can actually visit `/blog/anything-here`, and you won't get a 404. Our dynamic page is handling _all_ unmatched `/blog/` routes for us.
 
-The trick now is just to get this dynamic page to recognize the route being visited, and then load the appropriate post.
+The trick now is just to get this dynamic page to take the route being visited, and load the appropriate post based on that.
 
 
 ### Server-side loading
 
 All right, this is where things start getting a _little_ more complex, as we begin diving into some of the more advanced features of SvelteKit. We'll take our time, so we cover the concepts well.
 
-As you may have already realized, we need to load Markdown files at this point, but we can't do that in a browser; this needs to be handled server-side.
+We need to load Markdown files at this point, but we can't do that in a browser; this part needs to be handled server-side.
 
-Luckily, pages and layouts in SvelteKit can export a `load` function, which runs server-side (or during prerendering), before the component is created, as well as client-side. 
+Luckily, pages and layouts in SvelteKit can have a [`load` function](https://kit.svelte.dev/docs#loading), which runs _before_ the component is created--both server-side _and_ client-side. So we can use `load` to handle server-side tasks.
 
 <Callout>
-Pages and layouts in SvelteKit can export a <code>load</code> function, which runs server-side (or during prerendering), before the component is created.
+Pages and layouts in SvelteKit can export a <code>load</code> function, which runs <em>before</em> the component is created—both server-side <em>and</em> client-side.
 </Callout>
 
 This `load` function must go inside a _second_ `<script>` tag, differentiated using a `context="module"` attribute:
@@ -765,14 +767,11 @@ This `load` function must go inside a _second_ `<script>` tag, differentiated us
 </script>
 ```
 
-A couple other key points to know:
+Aside from the separate module script, there are a few things to know about the `load` function:
 
-- **`load` has access to a few special arguments**, including `page`, which contains info about the current route;
-- **`load` should `return` an object**. You can use it to pass props to the "main" component `<script>`, among other things.
-
-<SideNote>
-Technically, <code>load</code> runs both server- and client-side, but that's mostly meaningless when prerendering static files, as we are. Still, be sure not to reference anything specific to one environment or the other. See the <a href="https://kit.svelte.dev/docs#loading">loading docs</a> for more details.
-</SideNote>
+- **It has access to a few special arguments**, including `page`, which contains contextual info about the current route.
+- **It should return an object**. Among other things, this can include a status code, and props for the component to use.
+- **It runs both server- and client-side.** That's mostly unimportant when prerendering to static files, as we are. Still, `load` shouldn't reference environment-specific code, like `window` or `process`.
 
 Just to get an idea of what we're working with, let's start with any JavaScript developer's best friend: `console.log`.
 
@@ -792,12 +791,14 @@ Notice if you load a blog route now, you can see `page` in the terminal where yo
 
 ![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug.png)
 
-<SideNote>You won't see what you logged in the browser console if you hit an error; that's why we added the explicit 200 status, just for the sake of the demo.</SideNote>
+This confirms our `load` function is running both server- and client-side.
 
-The route you just loaded will be `params.slug`, because our file is named `[slug].svelte`. If you changed `[slug]`, the property would be whatever the new name is. And when you're visiting a `/blog/*` route, the `*` will be the value. (You can try loading some `/blog/*` routes in your browser right now, if you want to see.)
+<SideNote>You won't see what you logged in the browser console if you hit an error; that's why we added the explicit 200 status, just for demo purposes.</SideNote>
+
+Whatever route you just loaded will be shown as `params.slug`, because `slug` is what we named our dynamic page. If you changed `[slug]`, the property would be whatever the new name is. And when you're visiting a `/blog/*` route, the `*` will be the value. (You can try loading some `/blog/*` routes in your browser right now, if you want to see.)
 
 <SideNote>
-There are other properties available to the <code>load</code> function besides <code>page</code>, but we won't use them just yet. You can peek at the <a href="https://kit.svelte.dev/docs#loading">loading section in the docs</a> if you'd like to learn more, though.
+There are other properties available to the <code>load</code> function besides <code>page</code>, but we won't use them just yet. You can peek at the <a href="https://kit.svelte.dev/docs#loading">loading docs</a> if you'd like to learn more, though.
 </SideNote>
 
 Knowing that the current `/blog` slug will be available as `page.params.slug`, we can get to work. We'll use that to grab the content of matching Markdown file, then pass it back to the client side. The client side can then render it as a component, like so:
@@ -806,13 +807,10 @@ Knowing that the current `/blog` slug will be available as `page.params.slug`, w
 <!-- [slug].svelte -->
 <script context="module">
   export async function load({ page }) {
-    // Import the Markdown file that matches the current route
     const file = await import(`./_posts/${page.params.slug}.md`)
 
-    // .default is the actual content of the file
-    const Content = await file.default
-    
-    // Props to be exported to our "normal" script and template
+    const Content = await file.default // .default is the actual content of the file
+
     return {
       props: {
         Content // Shorthand for `Content: Content`
@@ -822,13 +820,11 @@ Knowing that the current `/blog` slug will be available as `page.params.slug`, w
 </script>
 
 <script>
-  // Expects and accepts a `Content` prop from the server
-  export let Content
+  export let Content // Expects and accepts a `Content` prop from the server
 </script>
 
 <article>
-  <!-- Render the content (note: must be uppercase) -->
-  <Content />
+  <Content /> <!-- Render the content (note: must be uppercase) -->
 </article>
 ```
 
@@ -857,16 +853,13 @@ Just as `file.default` is the imported Markdown file's contents in the module ab
   }
 </script>
 
-
 <script>
   export let Content, meta
 </script>
 
-
 <article>
   <h1>{meta.title}</h1>
   <p>Published: {meta.date}</p>
-
   <Content />
 </article>
 ```
@@ -876,7 +869,7 @@ Now _that's_ a bit better!
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
 <SideNote>
-We could <em>also</em> just return the whole file from the server as one prop, and extract <code>default</code> and <code>metadata</code> from it on the client side. Both would work. I just prefer to give the template only what it needs.
+We could <em>also</em> just return the whole import as one prop, and extract <code>default</code> and <code>metadata</code> from it on the client side. Both would work. I just prefer to pass only what's needed as a prop.
 </SideNote>
 
 This looks great, but there _is_ one small problem: when we visit a URL that doesn't match one of our Markdown files, we get a 500 error.
@@ -909,84 +902,61 @@ Visit a non-existent `/blog` route now, and you should see a 404.
 What you're looking at when you hit an error is SvelteKit's built-in error component. But just like we can provide our own <code>__layout.svelte</code> file, we can <em>also</em> provide an <code>__error.svelte</code> file to template and format any errors in our app. I won't go into that here, but you can check the official <a href="https://kit.svelte.dev/docs#layouts-error-pages">Svelte docs error pages entry</a> for full info.
 </SideNote>
 
-
-### Handling stuff for head
-
-Ideally, we'll probably want to set up some stuff for the `<head>` on our various pages. For blog posts specifically, it's important to have the right `title` attributes, Open Graph info, share images, etc.
-
-SvelteKit makes this trivial, with the `<svelte:head>` component.
-
-Add one to your `[slug].svelte` file (it can go wherever, but I like to put it just before the HTML, personally), and let's put a title there.
-
-```svelte
-<!-- [slug].svelte -->
-<svelte:head>
-  <title>My blog - {meta.title}</title>
-  <meta property="og:title" content={meta.title} />
-</svelte:head>
-```
-
-You should now see the title showing up properly in the browser bar.
-
-**There are many other properties you might want to add here**, _especially_ if you're trying to optimize your posts for share-ability. I won't go into any more detail here, but it's worth verifying all your pages and posts look good when shared with Open Graph checker tools (many are available online).
-
----
-
-All right, now everything's looking pretty good for individual posts at this point…but how do we handle the `/blog` path itself? We'll probably want an index page that lists out _all_ of our posts, so let's talk about how to achieve that.
+All right, now everything's looking pretty good for individual posts at this point. Next, let's cover the index page, which will handle displaying a list of _all_ blog posts.
 
 
 ### Adding a blog index
 
-You might have already thought ahead at this point, and realized we'll need an `index.svelte` file inside of `src/routes/blog`, to become the `/blog` page. If so, you're right! Go ahead and create that now.
+At this point, we _could_ use the blog index page's `load` function to create a list of all the posts on the site. However, I don't think this page is the right place to do that.
 
-We'll add a server-side module script to this file as well, to handle loading _all_ the Markdown files we have.
+**Why?** Because odds are, we'll eventually want to retrieve lists of posts in other places, too. Just a few examples:
 
-However, I want to advocate for _not_ doing that all right here, inside our blog index page.
+- A list of posts in a sidebar;
+- An XML feed;
+- A list of recent posts;
+- Category pages, where only posts fitting particular categories are shown.
 
-**Why?** Because odds are, we'll eventually want to retrieve lists of our posts in other places, too. Just a few possibilities:
+You might not have _all_ of those, but even if you just had one, you'd be repeating the same code to go fetch Markdown posts over and over in each place--and while that's not _too_ difficult, it's worth avoiding.
 
--You might want a list of posts in a sidebar
--You may want to list all your posts in an XML feed
--You might decide to put a list of (recent) posts on your homepage
--You could choose to have category pages, where just posts fitting particular categories are shown
+Plus, the more places we repeat the code, the more opportunities we have for slight deviations, which could make maintainability a chore.
 
-You might not do _all_ of those, but even if you just do one, you'll be repeating the same code to go fetch your Markdown posts over and over in each place--and while that's not _too_ difficult, as we'll see, it's verbose enough that you'll definitely feel it.
-
-Plus, the more places you rewrite the fetcher, the more you might introduce unique variations on the code, which could make maintainability a chore.
-
-Wouldn't it be nice if, instead, you could just hit an API endpoint and get a list of your posts to use however and wherever you wanted?
-
-Ok, you probably saw this coming, but good news: **you can!**
+There's a much better way: [SvelteKit endpoints](https://kit.svelte.dev/docs#routing-endpoints).
 
 
 ## SvelteKit endpoints
 
 Up until now, every route we've created has been a page. But SvelteKit offers _another_ type of route, too: [endpoints](https://kit.svelte.dev/docs#routing-endpoints).
 
-Endpoints work the same way, as far a routing goes; drop a file into `src/routes/`, and it becomes an endpoint automatically. The only difference is: where pages return components and HTML by default, an endpoint returns _data_. If you've ever worked with a site that had an API (like WordPress's REST API, for example), it's the same idea.
+Endpoints work the same way as pages, as far as routing goes; just drop a file into `src/routes`, and a route is created automatically. The main difference is: where pages return components and/or HTML by default, an endpoint returns _data_. If you've ever worked with a site that had an API (like WordPress's REST API, for example), it's the same idea.
 
 Endpoint data is _usually_ JSON, but it doesn't have to be. It could be XML, or anything else you can send and retrieve in a browser.
 
-Aside from dropping a file into `src/routes`, there are just three important conventions to follow when creating an endpoint:
+There are just three important conventions to follow when creating an endpoint:
 
-1. **An endpoint's file name should include the type of data it returns.** The file itself doesn't have to be that type, however. For example, `src/routes/stuff.json.js` would be a JavaScript file that returns JSON. The route would just become `/stuff.json`.
-
-2. **An endpoint must export a function named for each HTTP verb it accepts.** If you just want to return data from an endpoint, you'll do so inside of a `get()` function. If supported, post requests should be handled with a `post()` function, and so on. (The one exception is `del()`, since `delete` is a reserved keyword in JavaScript.)
-
-3. **Endpoint functions should return a `status` and `body`.** (Status is 200 by default, and returning nothing is a 404 by default.)
+1. **An endpoint's route should include the data type it returns.** For example, `src/routes/stuff.json.js` would be a route at `/stuff.json`.
+2. **Endpoint functions should return a `status` and `body`.** (Status is 200 by default, and returning nothing is a 404 by default.)
+3. **An endpoint should export a function matching each HTTP verb it accepts.** If you just want to return data from an endpoint, you'll do so with a `get()` function. If supported, post requests should be handled with a `post()` function, and so on. (The one exception is `del()`, since `delete` is a reserved keyword in JavaScript.)
 
 
 ### Creating an endpoint for our posts
 
 **Enough talk; let's build!**
 
-If you anticipated building out several different API routes for your project, you might create a dedicated `/src/routes/api` folder. I think this is a good pattern to follow, even if we only have this one API route. So create that new `api` folder, and inside it, create a new file named `posts.json.js`.
+Since we might decide to add more endpoints later, let's create a `src/routes/api` folder, and inside it, a new file named `posts.json.js`.
+
+
+```fs
+📂 src
+┗ 📂 routes
+  ┗ 📂 routes
+    ┗ 📜 posts.json.js
+```
 
 <SideNote>
 You <em>can</em> have private API routes, if you like, by prefixing the file or directory with an underscore. I think we'll find there are many advantages to a public posts API, however, and there isn't really any need to protect content that's already public anyway.
 </SideNote>
 
-Inside our new `posts.json.js` file, we need to `export` a `get` method. We'll make the function `async`, since it will eventually be `await`ing data from the file system. But before that, let's just do a quick test to see it in action:
+Inside our new `posts.json.js` file, we'll need to export a `get` method. We'll make the function `async`, since it will `await` files. But before that, let's just do a quick test to see it in action:
 
 ```js
 // posts.json.js
@@ -994,7 +964,7 @@ export async function get() {
 
   return {
     status: 200,
-    body: JSON.stringify("We got here!")
+    body: JSON.stringify('We got here!')
   }
 }
 ```
@@ -1003,10 +973,10 @@ With that in place, we should be able to visit `/api/posts.json` and see the fol
 
 !['We got here!'](/images/post_images/sveltekit-dummy-json.png)
 
-I just want to call out how _cool_ it is that we've got an actual API route on our site now! It doesn't return anything useful just yet, but knowing it's _that easy_ to set up an API that can be used both internally and externally is exciting!
+I just want to call out how _cool_ it is that we've got an actual API route on our site now! It doesn't return anything useful just yet, but knowing it's _that easy_ to set up an API that can be used both internally and externally is pretty awesome.
 
 <SideNote>
-While we won't do it here, you can pass an argument to your <code>get</code> function, which will give you all the headers of the request, along with query parameters, and lots of other info about the request.
+While we won't do it here, you can pass an argument to your <code>get</code> function, which will give you all the headers, query parameters, and lots of other info about the request.
 </SideNote>
 
 
@@ -1053,10 +1023,8 @@ export async function get() {
 
 Let's go over what's happening in that above snippet.
 
-- `import.meta.glob` is not Svelte or SvelteKit; it's a Vite function. It imports any files that match the string we give it (in this case, all `.md` files inside of the `_posts` folder).
-- `import.meta.glob` returns an object where each file's relative path is the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. So the next step is to call all of those resolvers, and wait for the promises to, uh, resolve.
-
-  (_Since `Promise.all` requires an iterable, we convert the original object to an array, using `Object.entries`. We could do this inline, but I like each step to be its own line, generally._)
+- `import.meta.glob` is a Vite function. It imports any files that match the glob (wildcard string) we give it--in this case, all `.md` files inside of the `_posts` folder.
+- `import.meta.glob` returns an object where each file's relative path is the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. 
 - The `map` method is there to get the data we want from each file, and reshape it how we want, so it's easier to work with on the front end.
 - Once that's all done, we sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
 - Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here.)
@@ -1069,14 +1037,14 @@ Ideally, we should probably have a try/catch block here, too.
 
 ![The data from our posts is now coming through as JSON!](/images/post_images/sveltekit-posts-json.png)
 
-Plus, it should feel good to know that now, this route will update automatically with each Markdown post we add to the `_posts` folder!
+Even cooler: this route will update automatically with each Markdown post we add to the `_posts` folder!
 
 
 #### Other considerations and improvements
 
 There's plenty to improve here. For starters, this function does a lot, and coule be a bit refactored. (Sorting the dates, for example, could probably be extracted to its own utility function.)
 
-Functionally, we'll probably want to add some other extra features to this API route eventually. For example, we might not want the server to return _every_ post on the site. Depending on the number of posts, that might get prohibitively time-intensive. We may also want to add pagination, which would require having controls for how many posts are returned, and offsetting the returned posts. (Easily enough accomplished with JavaScript array methods like `slice`, but not worth going into in depth here.)
+Functionally, we'll probably want to add some other extra features to this API route eventually. We'll probably want pagination features, since depending on the number of posts, returning _all_ of them might get prohibitively time-intensive.
 
 Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render.html` method for that, if you so choose.
 
@@ -1246,8 +1214,6 @@ That will make the RSS feed available at the route `/rss.xml`.
 I pulled my example from [this guide](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit) and [this one](https://scottspence.com/posts/make-an-rss-feed-with-sveltekit), if some more info would help. And if you want to make sure you've done it correctly, here's an [online XML validator](https://codebeautify.org/xmlviewer).
 
 
-
-
 ### Adding heading links with rehype
 
 It's nice to let users link directly to a section of a post. Manually adding links to all our headings would be tedious, however, and goes against the point of writing in Markdown.
@@ -1344,6 +1310,28 @@ That CSS will make a pound sign (or hash, or "octothorpe," if you're fancy) appe
 Thanks to how CSS treats pseudo elements, that icon is fully clickable as part of the link, to navigate directly to the heading in question.
 
 You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (potentially using the Svelte `onMount` function), but I'll leave that detail up to you. For now, our links are at least present and working, even if they're not quite ideal yet.
+
+
+### Handling page head meta tags
+
+Ideally, we'll probably want to set up some stuff for the `<head>` on our various pages. For blog posts specifically, it's important to have the right `title` attributes, Open Graph info, share images, etc.
+
+SvelteKit makes this trivial, with the `<svelte:head>` component.
+
+Add one to your `[slug].svelte` file (it can go wherever, but I like to put it just before the HTML, personally), and let's put a title there.
+
+```svelte
+<!-- [slug].svelte -->
+<svelte:head>
+  <title>My blog - {meta.title}</title>
+  <meta property="og:title" content={meta.title} />
+</svelte:head>
+```
+
+You should now see the title showing up properly in the browser bar.
+
+**There are many other properties you might want to add here**, _especially_ if you're trying to optimize your posts for share-ability. I won't go into any more detail here, but it's worth verifying all your pages and posts look good when shared with Open Graph checker tools (many are available online).
+
 
 ## Final features worth covering
 
