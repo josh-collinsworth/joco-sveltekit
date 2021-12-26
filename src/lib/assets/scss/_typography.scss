@@ -5,12 +5,7 @@ body {
 
 ul,
 ol {
-	margin: 0;
-}
-
-p + ul,
-p + ol {
-	margin: calc(var(--rhythm) * 1) 0 calc(var(--rhythm) * 2);
+	margin: var(--rhythm) 0 calc(var(--rhythm) * 2)
 }
 
 main ul:not(.toc) {

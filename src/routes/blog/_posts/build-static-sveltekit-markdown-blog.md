@@ -480,10 +480,6 @@ If you'd like to get into the details of that config:
 - The `extensions` config property tells Svelte what types of files to treat as components (allowing them to be imported and used in the same way Svelte components are);
 - The `mdsvex()` function preprocesses Markdown to HTML--but it only targets `.svx` files by default, so we modify that as an argument.
 
-<SideNote>
-The default mdsvex extension is <code>.svx</code>, which is why we need to specify <code>.md</code>.
-</SideNote>
-
 **Reminder:** be sure to restart your dev server after making config changes. 
 
 _If you're running into errors, double-check that everything installed properly, all the necessary imports are present in your config file, and there are no syntax errors in the config file._
@@ -619,11 +615,9 @@ However, what we're seeing above is only the content. We _also_ want to display 
 
 mdsvex lets us designate a layout--that is, a Svelte component--to render Markdown files, much the same way that SvelteKit layouts render pages.
 
-<SideNote>
-SvelteKit layouts and mdsvex layouts are very similar, but serve slightly different purposes. SvelteKit layouts render <em>all</em> types of pages, live in <code>src/routes</code>, and automatically apply by naming convention.<br /><br />By contrast, mdsvex layouts only render Markdown content, could be named anything or live anywhere, and are designated explicitly.
-</SideNote>
+The two are similar, but not to be confused. Unlike SvelteKit layouts, there's no convention to follow with the naming or placement of mdsvex layouts; it's all explicit config.
 
-Unlike SvelteKit layouts, there's no convention to follow with the naming or placement of mdsvex layouts (it's all config). But we'll name ours `_post.svelte`, and put it in `src/routes/blog`, just to keep related things close together.
+We'll name our layout `_post.svelte`, and put it in `src/routes/blog`, just to keep related things close together.
 
 ```fs
 📂 src
@@ -632,7 +626,7 @@ Unlike SvelteKit layouts, there's no convention to follow with the naming or pla
     ┗ 📜 _post.svelte
 ```
 
-**Why the underscore?** Anything in `src/routes` that begins with an underscore is [private](https://kit.svelte.dev/docs#routing-private-modules), i.e., hidden from the router. Since this layout file will just serve as a template and won't have content of its own, we don't want it to have its own route or be directly visited.
+**Why the underscore?** Anything in `src/routes` that begins with an underscore is a [private module](https://kit.svelte.dev/docs#routing-private-modules), i.e., excluded from the router. Since this layout file will just serve as a template and won't have content of its own, we don't want it to have its own route or be directly visited.
 
 Once the file is created, head back to `svelte.config.js` and add a `layout` property to the `mdsvex` function options. (_Note that the path must be relative_.) And as always, be sure to restart the dev server after making the change.
 
@@ -717,11 +711,11 @@ Endpoints work the same way as pages, as far as routing. But where pages return 
 
 There are just three important conventions to follow when creating an endpoint with SvelteKit:
 
-1. **An endpoint's route should include the data type it returns.** For example, `src/routes/stuff.json.js` would be a route at `/stuff.json`. (Endpoint data is usually JSON, but it doesn't have to be.)
-2. **An endpoint should export a function for each HTTP verb it accepts.** (`get()`, `post()`, etc. The one exception is `del()`, since `delete` is a reserved keyword in JavaScript.)
-3. **Endpoint functions should return an object with `status` and `body`.** (Returning nothing is a 404 by default; status is 200 by default when returning a `body`.)
+1. **An endpoint's route should include the data type it returns.** For example, `/api/posts.json`. (Endpoint data is usually JSON, but it doesn't have to be.)
+2. **An endpoint should export a function for each [HTTP verb](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) it accepts.** This will often just be a `get` function, but you can also use `post`, etc.
+3. **Endpoint functions should return an object with `status` and `body`.** (Returning nothing is a 404 by default.)
 
-It's less complicated than it sounds, though, so let's dive in.
+There's more detail in the [endpoint docs](https://kit.svelte.dev/docs#routing-endpoints), but it's less complicated than it sounds, so let's dive in.
 
 
 ### Creating an endpoint for our posts
@@ -735,9 +729,13 @@ Since we might decide to add more endpoints later, let's create a `src/routes/ap
     ┗ 📜 posts.json.js
 ```
 
-Inside our new `posts.json.js` file, we'll need to export a `get` method (since "get" is the HTTP verb we'll accept; this endpoint will only return data, not accept it).
+<SideNote>
+The file extension is removed from the end of all routes, so this endpoint will just be <code>/api/posts.json</code>.
+</SideNote>
 
-Before we get to specifics, let's just do a quick test to see it in action:
+Inside this new file, we'll need to export a `get` method (since "get" is the HTTP verb we'll accept; this endpoint will only return data, not accept it).
+
+Let's do a quick test, just to see it in action:
 
 ```js
 // posts.json.js
@@ -753,10 +751,10 @@ With that in place, we should be able to visit `/api/posts.json` and see the fol
 
 !['We got here!'](/images/post_images/sveltekit-dummy-json.png)
 
-How _cool_ is it that!? Our API route doesn't return anything useful just yet, obviously, but it's still pretty awesome to have it up and running that easily.
+How _cool_ is it that!? Our API route doesn't return anything useful just yet, obviously, but it's still pretty awesome to have it up and running that easily!
 
 <SideNote>
-While we won't do it here, you can pass an argument to the <code>get</code> function, which will contain all the headers, query parameters, and lots of other info about the request.
+While we won't add it here, you can add an argument to <code>get</code>, which will pass in all the headers, query parameters, and lots of other info about the request.
 </SideNote>
 
 
@@ -796,37 +794,27 @@ export const get = async () => {
 }
 ```
 
-**Whoa!** Again, that might look like a lot, but when you consider it's actually _everything_ we need to create an API endpoint to return _all_ our site's posts, it's kind of remarkable how few lines that is!
+**Whoa!** Again, that might look like a lot, but when you consider it's actually _everything_ we need to create an API endpoint to return _all_ our site's posts, it's kind of remarkable how few lines that is.
 
 **Let's go over what's happening in that code:**
 
 - `import.meta.glob` is a Vite function. It imports any files that match the glob (wildcard string) provided--in this case, all `.md` files inside `src/routes/blog`.
   - That function returns an object where each file's relative path is the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. 
 - The `map` method is there to shape the file data, so it's easier to work with on the front end. (And since each item waits for a promise, we wrap it in an `await Promise.all`.)
-  - Extracting the route based on the file path is kind of an ugly hassle because it involves a bunch of string manipulation, but since we know the file structure and glob beforehand, this gets the job done pretty safely.
+  - Extracting the route from the file path is ugly, but since we know the file structure and glob beforehand, this gets the job works fairly safely.
 - Next, we sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
-- Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here.)
+  - Note that your posts will need a validly formatted `date` frontmatter property for this to work.
+- Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here, since we're successfully returning a `body`.)
 
 **Let's try it out!** Refresh your `/api/posts.json` path now, and you should see some _real_ data!
 
 ![The data from our posts is now coming through as JSON!](/images/post_images/sveltekit-posts-json.png)
 
+<SideNote>
+Notice the <code>layout</code> property is being automatically injected into file's metadata, because of our mdsvex config.
+</SideNote>
+
 Even cooler: this route will update automatically with each Markdown post we add!
-
-
-#### Other considerations and improvements
-
-There's plenty to improve here. For starters, we'll definitely want to put the code we just wrote into a `try`/`catch` block that returns the proper status code when things go wrong.
-
-This function also does a lot, and could be refactored a bit. (Sorting the dates, for example, could probably be extracted to its own utility function. So could the string manipulation.)
-
-We'll also probably want to add some other extra features to this API route eventually. We might want pagination features, for example, since depending on the number of posts, returning _all_ of them might get prohibitively time-intensive.
-
-Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render.html` method for that, if you so choose.
-
-Finally, you could build in some post filtering, but it might be better to build out a dynamic endpoint for that. The [SvelteKit docs section on Rest parameters](https://kit.svelte.dev/docs#routing-advanced-rest-parameters) is worth a look as far as that goes.
-
-Anyway, we'll worry about all that later (if at all). For now, it's working great, and we can use our new endpoint to finish our blog index page!
 
 
 ## Finishing the blog index page
@@ -1025,7 +1013,7 @@ I pulled my example from [this guide](https://www.davidwparker.com/posts/how-to-
 
 It's nice to let users link directly to a section of a post. Manually adding links to all our headings would be tedious, however, and goes against the point of writing in Markdown.
 
-Luckily, mdsvex allows us to use [rehype](https://github.com/rehypejs/rehype) plugins to add extra features to markdown processing, and so we can make this all happen automatically with just a bit of config adjustment.
+Luckily, mdsvex allows us to use many [rehype](https://github.com/rehypejs/rehype) plugins to add extra features to markdown processing, and so we can make this all happen automatically with just a bit of config adjustment.
 
 <SideNote>
 Rehype is an HTML parser, and not specific to Svelte or mdsvex; it's commonly used in a wide range of projects.
@@ -1070,9 +1058,7 @@ export default config;
 
 **Important note: the plugins _must_ go in that order!** `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only works on headings that have IDs. (Fun fact: I discovered these two were in the wrong order on _this_ site while writing this, when I suddenly realized it was only half working.)
 
-With that in place, once again, we'll need to restart our dev server.
-
-Now pop open the inspector and check out an `h2` through `h6` generated from Markdown, and we'll see some additions:
+With that in place, restart the dev server. Now pop open the inspector and check out an `h2` through `h6` generated from Markdown, and we'll see some additions:
 
 ![The headings in our blog posts now have links to them, with icon elements inside.](/images/post_images/sveltekit-rehype.png)
 
@@ -1106,28 +1092,28 @@ How you choose to handle this is personal preference, but this block of Sass sho
 }
 ```
 
-That CSS will make a pound sign (or hash, or "octothorpe," if you're fancy) appear whenever the user hovers on a heading with a link in it:
+That CSS will make a pound sign (or hash, or "octothorpe," if you're fancy) appear whenever the user hovers on a heading with a `.icon-link` in it:
 
 ![A pound symbol appears to the left of a hovered heading.](/images/post_images/sveltekit-rehype-css.png)
 
 Thanks to how CSS treats pseudo elements, that icon is fully clickable as part of the link, to navigate directly to the heading in question.
 
-You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (probably with some JavaScript inside a Svelte component's `onMount` function), but I'll leave that detail up to you. For now, our links are at least present and working, even if they're not quite ideal yet.
+You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (probably with some JavaScript inside a Svelte component's `onMount` function), but I'll leave that detail up to you. For now, our links are at least present and working, even if they might not be ideal yet.
 
 
-### Handling page head meta tags
+### Add page head meta tags
 
-Ideally, we'll probably want to set up some stuff for the `<head>` on our various pages. For blog posts specifically, it's important to have the right `title` attributes, Open Graph info, share images, etc.
+Ideally, we'll probably want to set up some stuff for the `<head>` on our various pages. For pages in general, but posts especially, it's important to have the right `title` attributes, Open Graph info, share images, etc.
 
 SvelteKit makes this trivial, with the `<svelte:head>` component.
 
-Add one to your `[slug].svelte` file (it can go wherever, but I like to put it just before the HTML, personally), and let's put a title there.
+Add one somewhere in `_post.svelte` (I like to put it just before the HTML, personally), and let's add a title inside.
 
 ```svelte
-<!-- [slug].svelte -->
+<!-- _post.svelte -->
 <svelte:head>
-  <title>My blog - {meta.title}</title>
-  <meta property="og:title" content={meta.title} />
+  <title>My blog - {title}</title>
+  <meta property="og:title" content={title} />
 </svelte:head>
 ```
 
@@ -1135,10 +1121,38 @@ You should now see the title showing up properly in the browser bar.
 
 **There are many other properties you might want to add here**, _especially_ if you're trying to optimize your posts for share-ability. I won't go into any more detail here, but it's worth verifying all your pages and posts look good when shared with Open Graph checker tools (many are available online).
 
+At this point, we should probably go through our pages and add `<title>` tags, etc. to them as well. For example:
+
+```svelte
+<!-- about.svelte -->
+<svelte:head>
+  <title>About - Josh Collinsworth</title>
+</svelte:head>
+
+<!-- ...HTML here -->
+```
+
 Note also that SvelteKit offers several other similar elements, like `<svelte:window>` and `<svelte:body>`, where we need to tap into parts of our site or app normally outside the boundaries of our components.
 
 
-### Customizing the error page
+#### Improve the posts API endpoint
+
+The posts API is functional, but it can be improved in several ways.
+
+For starters, we'll definitely want to put the code we just wrote into a `try`/`catch` block that returns the proper status code when things go wrong.
+
+This function also does a lot, and could be refactored a bit. (Sorting the dates, for example, could probably be extracted to its own utility function. So could the string manipulation.)
+
+We'll also probably want to add some other extra features to this API route eventually. We might want pagination features, for example, since depending on the number of posts, returning _all_ of them might get prohibitively time-intensive.
+
+Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render.html` method for that, if you so choose.
+
+Finally, you could build in some post filtering, but it might be better to build out a dynamic endpoint for that. The [SvelteKit docs section on Rest parameters](https://kit.svelte.dev/docs#routing-advanced-rest-parameters) is worth a look as far as that goes.
+
+Anyway, we'll worry about all that later (if at all). For now, it's working great, and we can use our new endpoint to finish our blog index page!
+
+
+### Customize the error page
 
 What you're looking at when you hit an error is SvelteKit's built-in error component. 
 
@@ -1147,7 +1161,7 @@ However, just like we can provide our own `__layout.svelte` file, we can _also_ 
 I won't go into detail here, but you can check the official [Svelte docs error pages entry](https://kit.svelte.dev/docs#layouts-error-pages) for more info.
 
 
-### Preloading routes
+### Preload routes
 
 SvelteKit is already fast, and when we pre-render our HTML like we are via the static adapter, it's going to be blazing. But we can actually push the performance _even further_ with SvelteKit's built-in preloading.
 
@@ -1183,7 +1197,7 @@ The difference between the two is:
 Because `prefetchRoutes` grabs _all_ the site's data behind the scenes, we should use it cautiously and judiciously. We don't want to force users to download megabytes of data presumptively. That could very well cost them real money, for pages they might not even look at.
 
 
-### Anchor options
+### Add anchor options
 
 Speaking of preloading: SvelteKit offers a slightly less greedy version of it, as one of its [anchor options](https://kit.svelte.dev/docs#anchor-options).
 
@@ -1194,13 +1208,9 @@ Anchor options are special, SvelteKit-specific attributes you can add to `<a>` a
 - `<a sveltekit:noscroll`> prevents SvelteKit from resetting the scroll position to the top of the new page. This is usually undesirable on websites, but may be more intuitive in some app situations.
 
 
-### Page transitions
+### Implement page transitions
 
-If you want to get fancy, adding a page transition in SvelteKit is pretty simple!
-
-To start, inside our layout, we'll need to tap into `load` to grab the current route, so we can react to it.
-
-We'll pass that route as a prop to the main script, and import `fade` from the [Svelte transition](https://svelte.dev/tutorial/transition) library.
+If you want to get fancy, adding a page transition in SvelteKit is pretty simple! Let's look at the code, then we'll go over each part of it.
 
 ```svelte
 <!-- __layout.svelte -->
@@ -1222,14 +1232,9 @@ We'll pass that route as a prop to the main script, and import `fade` from the [
 
   export let currentRoute
 </script>
-```
 
-That handled, we can use another key feature of Svelte: [the `#key` block](https://svelte.dev/tutorial/key-blocks). (See what I did there?)
+<!-- Other HTML here -->
 
-A `#key` block takes an expression, and automatically re-renders its contents whenever that expression changes. In this case, we'll use our `currentRoute`, so that the contents re-renders for every page change.
-
-```svelte
-<!-- __layout.svelte -->
 {#key currentRoute}
   <main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
     <slot />
@@ -1237,7 +1242,17 @@ A `#key` block takes an expression, and automatically re-renders its contents wh
 {/key}
 ```
 
-**That's all it takes!** Transitions are an incredibly powerful part of Svelte, and the `svelte/transition` library offers several options besides `fade`. Feel free to play around with all of them.
+- To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.
+- We'll use `fade` from the [Svelte transition](https://svelte.dev/tutorial/transition) library as our transition, though you could choose another if you like. The main thing is just to add `delay` to the `in` transition, so it doesn't start before the old page is done transitioning out.
+- Finally, we'll wrap the page contents in a [`#key` block](https://svelte.dev/tutorial/key-blocks).
+
+A `#key` block takes an expression, and automatically re-renders its contents whenever that expression changes. In this case, that will be the current page route, so that we can re-render the page itself every time the route changes.
+
+<Callout>
+A <code>#key</code> block takes an expression, and automatically re-renders its contents whenever that expression changes.
+</Callout>
+
+**That's all it takes!** Transitions are an incredibly powerful part of Svelte, and the `svelte/transition` library offers several options besides `fade`. Feel free to play around with them.
 
 
 
