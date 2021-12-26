@@ -1,17 +1,13 @@
 <script lang="ts">
-  import { isLoading, isMenuOpen } from '$lib/data/store'
+  import { isMenuOpen } from '$lib/data/store'
 
   export let text: string
   export let to: string
   export let path: string
   export let mobileOnly: string|boolean = false
   
-  const handleClick = (): void => {
+  const closeMenu = (): void => {
     isMenuOpen.set(false)
-
-    if (!isCurrentPage) {
-      isLoading.set(true)
-    }
   }
 
   let isCurrentPage: boolean
@@ -30,7 +26,7 @@
     class="nav__link"
     class:active={isCurrentPage}
     aria-current={isCurrentPage ? 'page' : false}
-    on:click={handleClick}
+    on:click={closeMenu}
   >  
     <span>{text}</span>
   </a>  

@@ -17,28 +17,32 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt after recommending [SvelteKit](https://kit.svelte.dev) to a colleague. After listening to me talk about it for weeks, I finally got this message:
+If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt after a I saw this message from a buddy:
 
 > man I just tried to hello world SvelteKit and it is NOT for me
 
-I love [Svelte](https://svelte.dev), and I've talked plenty about how much I've enjoyed [rewriting this site with SvelteKit](/blog/converting-from-gridsome-to-sveltekit). So my first reaction, of course, was disappointment. What went wrong?
+I love [Svelte](https://svelte.dev), and I've talked plenty about how much I've enjoyed [rewriting this site](/blog/converting-from-gridsome-to-sveltekit) using [SvelteKit](https://kit.svelte.dev). So my first reaction, of course, was disappointment. What went wrong?
 
-But as I considered my their reaction, I realized: it was valid. I overlooked SvelteKit's learning curve.
+But as I considered their reaction, I realized: it was valid. I overlooked SvelteKit's learning curve.
 
-SvelteKit is not the simplest thing you could use as a static site generator (SSG); other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster if that's your main focus. Even the [SvelteKit docs make this point](https://kit.svelte.dev/docs#appendix-ssg). However, SvelteKit's capabilities are much broader and more flexible. There's also lots to love about writing in Svelte itself.
+Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site generator (SSG); other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster if that's your main focus. [Even the SvelteKit docs make this point](https://kit.svelte.dev/docs#appendix-ssg). However, SvelteKit's capabilities are much broader and more flexible--and there's lots to love about the developer experience of Svelte itself.
 
-So, in an effort to help overcome that initial hurdle, I'd like to walk through how to set it up as a static, Markdown-powered blog with Sass and an API--just like this site--and share what I've learned, so that you can enjoy it like I do.
+<Callout>
+Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site&nbsp;generator.
+</Callout>
 
-Along the way, we'll learn all the fundamentals of SvelteKit, and get some opportunities to try out many of its features.
+So, in an effort to help smooth out that learning curve, I'd like to walk through how to set up SvelteKit as a static, Markdown blog with Sass and an API--just like this site--and share what I've learned, so that you can (hopefully) enjoy it like I do.
+
+Along the way, we'll learn the fundamentals of SvelteKit, and get some opportunities to try out many of its features.
 
 
 ## What we'll cover, and what to know first
 
-**This is both an intro to SvelteKit, and a guide to setting up a blog with it.** We'll cover all the high-level concepts of SvelteKit as we build our project. When we're done, even though we're building a static blog, you should have a good understanding of SvelteKit itself, and how to build _any_ project with it.
+**This is both an intro to SvelteKit, and a guide to setting up a blog with it.** We'll cover all the high-level concepts of SvelteKit as we build our project. When we're done, you should have a good understanding of SvelteKit itself, and how to build _any_ project with it.
 
 **This is _not_ an intro to Svelte itself.** We'll naturally cover some Svelte concepts here and there, and you can probably still follow along even if you don't know much about Svelte. But I'd recommend learning the basics first. The [Svelte tutorial](https://svelte.dev/tutorial/basics) is an excellent place for that.
 
-Finally, this won't be super advanced, but you should still know at least the basics of front-end development, JavaScript, and installing packages using [npm](https://www.npmjs.com/). You should also have npm installed already.
+Finally, while you won't need deep knowledge of any of the following topics, you should have at least a basic familiarity with front-end development itself (including JavaScript), [Markdown](https://www.markdowntutorial.com/), [Sass](https://sass-lang.com/), and installing packages using [npm](https://www.npmjs.com/). You should also have npm installed already.
 
 All that said, let's get started!
 
@@ -769,13 +773,13 @@ Inside our `posts.json.js` file, we'll put the following code:
 ```js
 // posts.json.js
 export const get = async () => {
-  const allPostFiles = import.meta.glob('../blog/*.md');
+  const allPostFiles = import.meta.glob('../blog/*.md')
   const iterablePostFiles = Object.entries(allPostFiles)
 
   const allPosts = await Promise.all(
     iterablePostFiles.map(async ([path, resolver]) => {
       const { metadata } = await resolver()
-      const postPath = path.replace('..', '').replace('.md', '')
+      const postPath = path.slice(2, -3)
 
       return {
         meta: metadata,
@@ -801,7 +805,7 @@ export const get = async () => {
 - `import.meta.glob` is a Vite function. It imports any files that match the glob (wildcard string) provided--in this case, all `.md` files inside `src/routes/blog`.
   - That function returns an object where each file's relative path is the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. 
 - The `map` method is there to shape the file data, so it's easier to work with on the front end. (And since each item waits for a promise, we wrap it in an `await Promise.all`.)
-  - Extracting the route from the file path is ugly, but since we know the file structure and glob beforehand, this gets the job works fairly safely.
+  - Since we know the path will begin with `..` and end with `.md`, we can safely use `.slice(2, -3)` to remove those characters and end up with the route.
 - Next, we sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
   - Note that your posts will need a validly formatted `date` frontmatter property for this to work.
 - Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here, since we're successfully returning a `body`.)

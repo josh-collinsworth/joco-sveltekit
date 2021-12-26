@@ -63,7 +63,6 @@
 		isBlogListingPage = (path === '/blog' || path.startsWith('/blog/category/'))
 	}
 
-
 	const handleScroll = throttle(() => {
 		const currentScrollPosition = window.scrollY
 		const delta = lastScrollPosition - currentScrollPosition
@@ -102,7 +101,15 @@
 </script>
 
 
-<svelte:window on:scroll={handleScroll} />
+<svelte:window 
+	on:scroll={handleScroll} 
+	on:sveltekit:navigation-start={() => {
+		setLoading(true)
+	}}
+	on:sveltekit:navigation-end={() => {
+		setLoading(false)
+	}}
+/>
 
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
@@ -129,7 +136,7 @@
 		{/if}
 
 		<main id="main" class:archive={isBlogListingPage} tabindex="-1">
-			<PageTransition refresh={path} on:loaded={() => setLoading(false) }>
+			<PageTransition refresh={path} }>
 				<slot/>
 			</PageTransition>
 		</main>

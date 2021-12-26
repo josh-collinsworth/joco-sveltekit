@@ -3,14 +3,9 @@
   import Tag from '../tags/Tag.svelte'
   import TagList from '../tags/TagList.svelte'
   import ExternalLink from '../icons/ExternalLink.svelte'
-  import { isLoading } from '$lib/data/store'
 
   export let external: boolean = false
   export let post: Post
-
-  const startLoading = (): void => {
-    isLoading.set(true)
-  }
 
   let slugPath: string
   $: slugPath = external ? '' : '/blog/'
@@ -22,7 +17,7 @@
 
 <li>
   <article class="post-preview">
-    <a on:click={startLoading} href={computedURL} sveltekit:prefetch class="image-link">
+    <a href={computedURL} sveltekit:prefetch class="image-link">
       <img
         src="/images/post_images/{post.coverImage}"
         style="
@@ -37,7 +32,7 @@
 
     <div class="article-info">
       <h2 class="h3">
-        <a on:click={startLoading} href={computedURL} sveltekit:prefetch>
+        <a href={computedURL} sveltekit:prefetch>
           {#if external}
             {post.title}<ExternalLink />
           {:else}
@@ -52,7 +47,7 @@
       
       <p class="excerpt">
         {post.excerpt}
-        <a on:click={startLoading} href="{computedURL}" sveltekit:prefetch>
+        <a href="{computedURL}" sveltekit:prefetch>
           {#if external}
             Read more on {post.subtitle}
             <ExternalLink />
@@ -65,7 +60,7 @@
       {#if post.categories}
         <TagList>
           {#each post.categories as category}
-          <Tag to="/blog/category/{category}/" on:click={startLoading}>
+          <Tag to="/blog/category/{category}/">
             { category }
           </Tag>
           {/each}
