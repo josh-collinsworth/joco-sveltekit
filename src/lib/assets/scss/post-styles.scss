@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'MonoLisa';
+  src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.post {
+  .cover-image {
+    margin: 0;
+    border: 1px solid hsla(var(--darkGrayHSL), 1);
+  }
+  
+  .meta + p::first-letter,
+  .toc-wrap + p::first-letter,
+  .meta + .side-note + p::first-letter,
+  .toc-wrap + .side-note + p::first-letter {
+    font-size: 3.6em;
+    float: left;
+    line-height: 0.7em;
+    margin: 0.45rem 0.4rem 0 0;
+    color: inherit;
+    font-weight: bold;
+  }
+  
+  .meta {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 4);
+    width: max-content;
+    padding: 0.5em 0; 
+    font-family: var(--heading-font);
+    border-top: 2px solid var(--lightGray);
+    
+    b {
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 0.7rem;
+    }
+  }
+
+  .post-footer {   
+    margin: 0 0 calc(var(--rhythm) * 2);
+
+    .h4 {
+      margin: 0 0 calc(var(--rhythm) / 2);
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .post-links {
+    margin: calc(var(--rhythm) * 2) 0;
+    font-family: var(--heading-font);
+
+    a {
+      margin-left: 1ch;
+    }
+
+    &__contact::marker {
+      content: '📩';
+    }
+
+    &__blog::marker {
+      content: '🔙';
+    }
+  }
+
+  .section-heading-image {
+    margin-top: calc(var(--rhythm) * 6);
+
+    & + * {
+      margin-top: var(--rhythm);
+    }
+  }
+}
