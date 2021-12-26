@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ## Hi, I'm Josh.
 
 <p class="subhead">I'm a front-end developer, designer, teacher,&nbsp;and&nbsp;writer.</p>
