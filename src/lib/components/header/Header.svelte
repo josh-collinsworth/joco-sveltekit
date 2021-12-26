@@ -14,7 +14,6 @@
 
 	const handleClick = (): void => {
 		if ($isMenuOpen) toggleMenu()
-		if (window?.location?.pathname !== '/') isLoading.set(true)
 	}
 	
 	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.

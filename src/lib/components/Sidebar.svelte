@@ -26,12 +26,6 @@
       recentPosts = []
     }
   })
-
-  const handleClick = (to: string): void => {
-    if (to == window.location.pathname) return
-    
-    isLoading.set(true)
-  }
 </script>
 
 
@@ -47,7 +41,7 @@
     {/if}
     {#each recentPosts as post}
       <li>
-        <a href="/blog/{post.slug}" on:click={() => handleClick('/blog/' + post.slug)} sveltekit:prefetch>
+        <a href="/blog/{post.slug}" sveltekit:prefetch>
           <span>{post.title}</span>
         </a>
       </li>
@@ -57,7 +51,7 @@
   <h2>Categories</h2>
   <TagList>
     {#each allCategories as category}
-    <Tag to="/blog/category/{category}" on:click={() => handleClick('/blog/category/' + category)}>
+    <Tag to="/blog/category/{category}">
       { category }
     </Tag>
     {/each}
@@ -66,10 +60,10 @@
   <h2>More</h2>
   <ul>
     <li>
-      <a href="/blog" on:click={() => handleClick('/blog')}>All blog posts</a>
+      <a href="/blog">All blog posts</a>
     </li>
     <li>
-      <a href="/writing-and-speaking" on:click={() => handleClick('/writing-and-speaking')}>Other writing & speaking</a>
+      <a href="/writing-and-speaking">Other writing & speaking</a>
     </li>
   </ul>
 </aside>
