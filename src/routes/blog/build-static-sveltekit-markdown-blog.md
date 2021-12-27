@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
-date: "2021-12-24"
-updated: "2021-12-24"
+date: "2021-12-27"
+updated: "2021-12-27"
 categories: 
   - "svelte"
   - "javascript"
@@ -17,34 +17,43 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt after a I saw this message from a buddy:
+If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:
 
 > man I just tried to hello world SvelteKit and it is NOT for me
 
 I love [Svelte](https://svelte.dev), and I've talked plenty about how much I've enjoyed [rewriting this site](/blog/converting-from-gridsome-to-sveltekit) using [SvelteKit](https://kit.svelte.dev). So my first reaction, of course, was disappointment. What went wrong?
 
-But as I considered their reaction, I realized: it was valid. I overlooked SvelteKit's learning curve.
-
-Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site generator (SSG); other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster if that's your main focus. [Even the SvelteKit docs make this point](https://kit.svelte.dev/docs#appendix-ssg). However, SvelteKit's capabilities are much broader and more flexible--and there's lots to love about the developer experience of Svelte itself.
+But as I considered their reaction, I realized: it was valid.
 
 <Callout>
 Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site&nbsp;generator.
 </Callout>
 
-So, in an effort to help smooth out that learning curve, I'd like to walk through how to set up SvelteKit as a static, Markdown blog with Sass and an API--just like this site--and share what I've learned, so that you can (hopefully) enjoy it like I do.
+Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site generator (SSG); other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster, since that's their sole focus. ([Even the SvelteKit docs make this point](https://kit.svelte.dev/docs#appendix-ssg).)
 
-Along the way, we'll learn the fundamentals of SvelteKit, and get some opportunities to try out many of its features.
+However, I still feel SvelteKit is worthy of serious consideration. Its capabilities are much more broad and flexible than SSGs, and there's plenty unique to love about its both developer and user experiences. So this post will be aimed at smoothing out that initial learning curve, to help you understand and take advantage of SvelteKit's wide range of possibilities.
 
 
 ## What we'll cover, and what to know first
 
-**This is both an intro to SvelteKit, and a guide to setting up a blog with it.** We'll cover all the high-level concepts of SvelteKit as we build our project. When we're done, you should have a good understanding of SvelteKit itself, and how to build _any_ project with it.
+**This is a walkthrough of using SvelteKit to set up a prerendered static blog with Markdown, Sass and an API.** (That's how this site is built, by the way.)
 
-**This is _not_ an intro to Svelte itself.** We'll naturally cover some Svelte concepts here and there, and you can probably still follow along even if you don't know much about Svelte. But I'd recommend learning the basics first. The [Svelte tutorial](https://svelte.dev/tutorial/basics) is an excellent place for that.
+This is _also_ an intro to SvelteKit itself, with a good overview of SvelteKit fundamentals that should be transferable to _any_ project.
 
-Finally, while you won't need deep knowledge of any of the following topics, you should have at least a basic familiarity with front-end development itself (including JavaScript), [Markdown](https://www.markdowntutorial.com/), [Sass](https://sass-lang.com/), and installing packages using [npm](https://www.npmjs.com/). You should also have npm installed already.
+Finally, this is _fun_!* 
 
-All that said, let's get started!
+_*My opinion; citation needed_
+
+
+### You'll get the most out of this if you:
+
+- Know the fundamentals of front-end development and JavaScript;
+- Have at least a basic understanding of Svelte already. (You can probably follow along regardless, but I'd recommend the [Svelte tutorial](https://svelte.dev/tutorial/basics) first if you're brand-new);
+- Know the basics of both [Markdown](https://www.markdowntutorial.com/) and [Sass](https://sass-lang.com/);
+- Understand the basics of fetching JSON from an API; and finally
+- Know how to install packages with [npm](https://www.npmjs.com/), and have npm installed already.
+
+**Let's get started!**
 
 
 ## Creating a new SvelteKit app
@@ -122,7 +131,7 @@ Svelte files can just contain plain HTML.
 <!-- contact.svelte -->
 <h1>Get in touch</h1>
 
-<p><a href="mailto:someone@yoursite.com">Email me!</a></p>
+<p><a href="mailto:me@my.tld">Email me!</a></p>
 ```
 
 ```svelte
@@ -1168,7 +1177,7 @@ ${posts
 `
 ```
 
-**Please note that the above code block will need some modification!** The example above is more or less straigh from this site, and may not be the right shape for your needs. At the very least, you'll need to replace the URL and text placeholders, but you may also need to update the routes and the post frontmatter properties being referenced.
+**Please note that the above code block will need some modification!** The example above is more or less straight from this site, and may not be the right shape for your needs. At the very least, you'll need to replace the URL and text placeholders, but you may also need to update the routes and the post frontmatter properties being referenced.
 
 I pulled my example from [this guide](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit) and [this one](https://scottspence.com/posts/make-an-rss-feed-with-sveltekit), for reference. And if you want to make sure you've done it correctly, here's an [online XML validator](https://codebeautify.org/xmlviewer).
 
