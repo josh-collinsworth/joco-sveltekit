@@ -828,7 +828,7 @@ Now that we have an endpoint for all our posts, building out our blog index page
 We _could_ do the loading client-side, with a `fetch` call in an `onMount` function. That would work. But it would _also_ result in a loading state with no visible content, which isn't a great user experience. So instead, let's use SvelteKit's built-in server-side rendering.
 
 
-### Using SvelteKit's `load` function for server-side rendering
+### Server-side rendering with `load`
 
 Page and layout components can have a [`load` function](https://kit.svelte.dev/docs#loading), which runs _before_ the component is created--making it perfect for fetching API data, such as our blog posts.
 
@@ -900,7 +900,7 @@ That bit of server-side loading handles everything we need! Now we've got a `pos
 </ul>
 ```
 
-The HTML in the above example is a bit simple, but hopefully you get the gist. You may want to add other code, based on the frontmatter in your own blog posts. (One thing definitely missing is a featured image/image URL, but you could also have excerpts or other content as well.)
+The HTML in the above example is a bit simple (and doesn't properly account for a scenario in which there are no posts to display), but hopefully you get the gist. You may want to add other code, based on the frontmatter in your own blog posts. (One thing definitely missing is a featured image/image URL, but you could also have excerpts or other content as well.)
 
 ![A list of our posts, each linked, on our /blog route.](/images/post_images/sveltekit-posts-list.png)
 
@@ -909,7 +909,7 @@ The HTML in the above example is a bit simple, but hopefully you get the gist. Y
 
 **SvelteKit is server-rendered by default.** That's great, because server-side rendering is generally better for performance, accessibility, and SEO. However, that also means static prerendering (which is what we want) is opt-in.
 
-You _can_ [manually make any page pre-rendered](https://kit.svelte.dev/docs#ssr-and-javascript-prerender)--handy for things like an "about" or "faq" page that won't have any dynamic content. However, if we want our _entire_ site to be statically pre-rendered, marking each and every page by hand would be an error-prone chore. So instead, we'll reach for SvelteKit's [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static).
+You _can_ [manually make any page prerendered](https://kit.svelte.dev/docs#ssr-and-javascript-prerender)--handy for things like an "about" or "faq" page that won't have any dynamic content. However, if we want our _entire_ site to be statically pre-rendered, marking each and every page by hand would be an error-prone chore. So instead, we'll reach for SvelteKit's [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static).
 
 <Callout>
 It's awesome that SvelteKit can completely transform from one thing to another simply by swapping out the adapter.
@@ -945,12 +945,172 @@ One final note: **you wouldn't _have_ to use the static adapter at this point.**
 Both would work great, and which to go with depends mainly on your site and its needs. I just bring it up because it's awesome that SvelteKit can completely transform from one thing to another simply by swapping out the adapter.
 
 
-## Finishing touches
+## Optional finishing touches and extra features
 
-While the site is in a fairly servicable shape at this point, there some extra things we may want to do to take it to the next level.
+At this point, our blog is up and running. You could take it and run with it in its current shape, and begin adding your own styling and customizations.
+
+<Callout>
+The rest of this post will focus on possible enhancements and diving a little deeper into some aspects of SvelteKit.
+</Callout>
+
+However, what we have is basic and there some extra enhancements we may want to make.
+
+The rest of this post will focus on possible enhancements and diving a little deeper into some aspects of SvelteKit.
 
 
-### Adding an RSS feed
+### Add dynamic post category pages
+
+Many blogs use taxonomies like categories and tags to sort posts, with the option to view posts by those terms (e.g., only posts in the "JavaScript" category). SvelteKit lets us accomplish this with dynamic pages.
+
+You could think of a dynamic page as a wildcard route. Essentially, it's a page that processes a route as an argument.
+
+Dynamic pages are useful because we might want one template file to handle any number of potential routes. In our case, we'll have one file to handle _any_ `/blog/category/*` route, no matter what the `*` might be.
+
+<Callout>
+You could think of a dynamic page as a wildcard route.
+</Callout>
+
+**To make a page dynamic, all we have to do is wrap its title in brackets**. So, for categories, we'll add a `categories/[category].svelte` route in `src/routes/blog`.
+
+```fs
+📂 src
+┗ 📂 routes
+  ┗ 📂 blog
+    ┗ 📂 categories
+      ┗ 📜 [category].svelte
+```
+
+<SideNote>
+The word <code>category</code> isn't special; it's just a variable. But as with any variable, it's good to name it semantically.
+</SideNote>
+
+Once you've created that file, you can actually visit `/blog/category/` followed by anything, and you won't get a 404. The dynamic page handles _all_ unmatched `/blog/category` routes.
+
+The trick now is just to load the right content based on the route.
+
+If you don't already have some categories in your posts' frontmatter, it's a good idea to add some now. I did this, just for the sake of example:
+
+```markdown
+# 1.md
+---
+categories: 
+  - "numbers"
+  - "odd"
+---
+```
+
+```markdown
+# 2.md
+---
+categories: 
+  - "numbers"
+  - "even"
+---
+```
+
+Just to get an idea of what we're working with, let's start with any JavaScript developer's best friend: `console.log`.
+
+```svelte
+<!-- [category].svelte -->
+<script context="module">
+  export const load = ({ page }) => {
+    console.log(page)
+    return {
+      status: 200
+    }
+  }
+</script>
+```
+
+Notice if you load a blog page now, you can see `page` in the browser console, as well as in the terminal where your local dev server is running:
+
+![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug-2.png)
+
+![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug.png)
+
+This confirms our `load` function is running both server- and client-side.
+
+The current route is called `params.category`, because `category` is what we named our dynamic page. And whatever route we're visiting will be its value.
+
+<SideNote>You won't see what you logged in the browser console if you hit an error; that's why we added the explicit 200 status, just for demo purposes.</SideNote>
+
+Knowing that the current `/blog/categories/*` route will be available as `page.params.category`, we can get to work. We'll use that, and our existing API endpoint, to filter posts:
+
+```svelte
+<!-- [category].svelte -->
+<script context="module">
+  export const load = async ({ page, fetch }) => {
+    const currentCategory = page.params.category
+    const response = await fetch('/api/posts.json')
+    const posts = await response.json()
+
+    const matchingPosts = posts
+      .filter(post => post.meta.categories.includes(currentCategory))
+
+    return {
+      props: {
+        posts: matchingPosts
+      }
+    }
+  }
+</script>
+```
+
+I won't go into how to render the matching content, but it's pretty much the same as our blog index page. (In fact, you could easily create a component to handle listing posts, and reuse it in both places!)
+
+It's probably a good idea to wrap that code in a `try`/`catch` block--and for that matter, to anticipate situations where no posts will match the given category, and handle that properly in the UI. (An `{#if posts.length}` block with an `{:else}` should do the trick.)
+
+Finally, if you _really_ wanted to go the extra mile, you could add an `index.svelte` file to `src/routes/blog/categories/`, to display _all_ categories. I won't go into that here, since it's an additional feature that won't benefit all blogs, however.
+
+
+### Implement page transitions
+
+If you want to get fancy, adding a page transition in SvelteKit is pretty simple! Let's look at the code, then we'll go over each part of it.
+
+```svelte
+<!-- __layout.svelte -->
+<script context="module">
+  export const load = ({ page }) => {
+    const currentRoute = page.path
+
+    return {
+      props: {
+        currentRoute
+      }
+    }
+  }
+</script>
+
+<script>
+  // ...Other imports here
+  import { fade } from 'svelte/transition'
+
+  export let currentRoute
+</script>
+
+<!-- Other HTML here -->
+
+{#key currentRoute}
+  <main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+    <slot />
+  </main>
+{/key}
+```
+
+- To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.
+- We'll use `fade` from the [Svelte transition](https://svelte.dev/tutorial/transition) library as our transition, though you could choose another if you like. The main thing is just to add `delay` to the `in` transition, so it doesn't start before the old page is done transitioning out.
+- Finally, we'll wrap the page contents in a [`#key` block](https://svelte.dev/tutorial/key-blocks).
+
+A `#key` block takes an expression, and automatically re-renders its contents whenever that expression changes. In this case, that will be the current page route, so that we can re-render the page itself every time the route changes.
+
+<Callout>
+A <code>#key</code> block takes an expression, and automatically re-renders its contents whenever that expression changes.
+</Callout>
+
+**That's all it takes!** Transitions are an incredibly powerful part of Svelte, and the `svelte/transition` library offers several options besides `fade`. Feel free to play around with them.
+
+
+### Add an RSS feed
 
 Remember, endpoints don't have to return JSON; they can return XML, too. This handy fact makes it dead simple to implement an RSS feed on our blog!
 
@@ -1013,7 +1173,7 @@ ${posts
 I pulled my example from [this guide](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit) and [this one](https://scottspence.com/posts/make-an-rss-feed-with-sveltekit), for reference. And if you want to make sure you've done it correctly, here's an [online XML validator](https://codebeautify.org/xmlviewer).
 
 
-### Adding heading links with rehype
+### Add heading links with rehype
 
 It's nice to let users link directly to a section of a post. Manually adding links to all our headings would be tedious, however, and goes against the point of writing in Markdown.
 
@@ -1212,232 +1372,6 @@ Anchor options are special, SvelteKit-specific attributes you can add to `<a>` a
 - `<a sveltekit:noscroll`> prevents SvelteKit from resetting the scroll position to the top of the new page. This is usually undesirable on websites, but may be more intuitive in some app situations.
 
 
-### Implement page transitions
+## Conclusion
 
-If you want to get fancy, adding a page transition in SvelteKit is pretty simple! Let's look at the code, then we'll go over each part of it.
-
-```svelte
-<!-- __layout.svelte -->
-<script context="module">
-  export const load = ({ page }) => {
-    const currentRoute = page.path
-
-    return {
-      props: {
-        currentRoute
-      }
-    }
-  }
-</script>
-
-<script>
-  // ...Other imports here
-  import { fade } from 'svelte/transition'
-
-  export let currentRoute
-</script>
-
-<!-- Other HTML here -->
-
-{#key currentRoute}
-  <main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
-    <slot />
-  </main>
-{/key}
-```
-
-- To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.
-- We'll use `fade` from the [Svelte transition](https://svelte.dev/tutorial/transition) library as our transition, though you could choose another if you like. The main thing is just to add `delay` to the `in` transition, so it doesn't start before the old page is done transitioning out.
-- Finally, we'll wrap the page contents in a [`#key` block](https://svelte.dev/tutorial/key-blocks).
-
-A `#key` block takes an expression, and automatically re-renders its contents whenever that expression changes. In this case, that will be the current page route, so that we can re-render the page itself every time the route changes.
-
-<Callout>
-A <code>#key</code> block takes an expression, and automatically re-renders its contents whenever that expression changes.
-</Callout>
-
-**That's all it takes!** Transitions are an incredibly powerful part of Svelte, and the `svelte/transition` library offers several options besides `fade`. Feel free to play around with them.
-
-
-
----
----
----
-
-TODO: re-add dynamic pages and private modules stuff...maybe as category handling??
-
-
-
-
-
-### Dynamic pages
-
-A dynamic page handles _multiple_ routes. You could think of it as a wildcard page. 
-
-Dynamic pages are useful because we might want one template file to handle any number of potential routes. In our case, we'll have one file to handle _any_ `/blog/*` route, no matter what the `*` might be.
-
-<Callout>
-A dynamic page handles multiple routes. You could think of it as a wildcard&nbsp;page.
-</Callout>
-
-**To make a page dynamic, all we have to do is wrap its title in brackets**. So, our next step is to create a file inside `src/routes/blog` named `[slug].svelte`. 
-
-```fs
-📂 src
-┗ 📂 routes
-  ┗ 📂 blog
-    ┣ 📁 _posts
-    ┗ 📜 [slug].svelte
-```
-
-<SideNote>
-The word <code>slug</code> isn't important; it's just a variable, and could be anything. But as with any variable, it's good to name it semantically.
-</SideNote>
-
-Once you've created that file, you can actually visit `/blog/anything-here`, and you won't get a 404. Our dynamic page is handling _all_ unmatched `/blog/` routes for us.
-
-The trick now is just to load the right Markdown content based on the current route.
-
-
-
----
-
-Just to get an idea of what we're working with, let's start with any JavaScript developer's best friend: `console.log`.
-
-```svelte
-<!-- [slug].svelte -->
-<script context="module">
-  export const load({ page }) {
-    console.log(page)
-    return {
-      status: 200
-    }
-  }
-</script>
-```
-
-Notice if you load a blog page now, you can see `page` in the browser console, as well as in the terminal where your local dev server is running:
-
-![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug.png)
-
-This confirms our `load` function is running both server- and client-side.
-
-The route is called `params.slug`, because `slug` is what we named our dynamic page, and whatever route we're visiting will be its value.
-
-<SideNote>You won't see what you logged in the browser console if you hit an error; that's why we added the explicit 200 status, just for demo purposes.</SideNote>
-
-Knowing that the current `/blog/*` route will be available as `page.params.slug`, we can get to work. We'll use that to import the matching Markdown file, then pass it as a prop. The client side can then render it as a component, like so:
-
-```svelte
-<!-- [slug].svelte -->
-<script context="module">
-  export const load = ({ page }) => {
-    const file = await import(`./_posts/${page.params.slug}.md`)
-
-    const Content = await file.default // .default is the actual content of the file
-
-    return {
-      props: {
-        Content // Shorthand for `Content: Content`
-      }
-    }
-  }
-</script>
-
-<script>
-  export let Content // Expects and accepts a `Content` prop from the server
-</script>
-
-<article>
-  <Content /> <!-- Place the content as a component (note: must be uppercase) -->
-</article>
-```
-
-If you save that and visit one of your blog post routes, you'll now see the page content!
-
-![The content of the markdown file rendered inside the blog layout](/images/post_images/sveltekit-min-blog-post-render.png)
-
-Content is good, but we _also_ want to use the post's frontmatter properties. Fortunately, that's just as easy at this point as fetching another prop!
-
-Just as `file.default` is the imported file's contents, `file.metadata` will be its frontmatter. So we can add a second prop pretty easily, and then use it in our HTML:
-
-```svelte
-<!-- [slug].svelte -->
-<script context="module">
-  export const load = ({ page }) => {
-    const file = await import(`./_posts/${page.params.slug}.md`)
-
-    const Content = await file.default
-    const meta = await file.metadata
-    
-    return {
-      props: {
-        Content, meta
-      }
-    }
-  }
-</script>
-
-<script>
-  export let Content, meta
-</script>
-
-<article>
-  <h1>{meta.title}</h1>
-  <p>Published: {meta.date}</p>
-  <Content />
-</article>
-```
-
-Now _that's_ a bit better!
-
-![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
-
-This looks great, but there _is_ one small problem: when we visit a URL that doesn't match one of our Markdown files, we get a 500 error.
-
-That's technically accurate, because our `[slug].svelte` file is trying to load a file that doesn't exist. However, this is an error we created and should avoid; really, the result of trying to access a route that doesn't exist should be a 404.
-
-To solve this, we'll wrap our `import` in `try`/`catch` block:
-
-```svelte
-<!-- [slug].svelte -->
-<script context="module">
-  export const load = ({ page }) => {
-    try {
-      // Successful code here
-    } catch(error) {
-      return {
-        status: 404,
-        error: 'Sorry, no post found with that slug. ' + error.message
-      }
-    }
-  }
-</script>
-```
-
-Visit a non-existent `/blog` route now, and you should see a 404.
-
-All right, now everything's looking pretty good for individual posts at this point. Next, let's cover the blog index page, which and displaying a list of _all_ our posts.
-
-
----
-
-### Listing posts
-
-At this point, we _could_ use the blog index page's `load` function to import all our posts. However, I don't think that's the right approach.
-
-**Why?** Because odds are, we'll eventually want to retrieve lists of posts in other places, too. Just a few examples:
-
-- A list of posts in a sidebar;
-- An XML feed;
-- A list of recent posts;
-- Category pages, where only posts fitting particular categories are shown.
-
-You might not want _all_ of those, but even if you just used one, you'd be repeating the same code to go fetch Markdown posts over and over each time, which is enough hassle to avoid.
-
-Plus, the more we repeat the code, the more we might have slight deviations, which could make maintainability a chore.
-
-There's a much better way: [SvelteKit endpoints](https://kit.svelte.dev/docs#routing-endpoints).
-
-
----
+This has been a long post, and we've covered a lot. I hope this has been a valuable resource. Even if you _still_ aren't sold on SvelteKit (or at least, not as a static site generator), hopefully this post has given you an idea of the broad capabilities of SvelteKit, and maybe even given you some ideas of how you might use it yourself.
