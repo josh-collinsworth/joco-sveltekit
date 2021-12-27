@@ -126,5 +126,5 @@ _Certification: Codecademy Pro Intensive React web app builder course_
 ## More
 
 - [Get in contact](/contact)
-- [LinkedIn](linkedin.com/in/joshcollinsworth)
+- [LinkedIn](https://linkedin.com/in/joshcollinsworth)
 - [GitHub](https://github.com/josh-collinsworth)
