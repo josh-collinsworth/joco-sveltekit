@@ -1308,7 +1308,7 @@ At this point, we should probably go through our pages and add `<title>` tags, e
 Note also that SvelteKit offers several other similar elements, like `<svelte:window>` and `<svelte:body>`, where we need to tap into parts of our site or app normally outside the boundaries of our components.
 
 
-#### Improve the posts API endpoint
+### Improve the posts API endpoint
 
 The posts API is functional, but it can be improved in several ways.
 
