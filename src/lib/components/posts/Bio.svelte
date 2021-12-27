@@ -52,6 +52,7 @@
     .link-list {
       font-family: var(--heading-font);
       margin: var(--rhythm) 0 0;
+      padding-left: 1rem;
 
       li {
         margin: 0 0 0.25rem;
