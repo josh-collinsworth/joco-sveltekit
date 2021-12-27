@@ -1,18 +1,17 @@
 <script context="module" lang="ts">
+  import type { SvelteComponent } from 'svelte'
   export async function load() {
-		const Resume = await import('$lib/content/resume.md')
+		const resume: SvelteComponent = await import('$lib/content/resume.md')
 		
 		return {
 			props: {
-				Resume: Resume.default
+				Resume: resume.default
 			}
 		}
 	}
 </script>
 
 <script lang="ts">
-	import type { SvelteComponent } from 'svelte'
-
   export let Resume: SvelteComponent
 </script>
 
