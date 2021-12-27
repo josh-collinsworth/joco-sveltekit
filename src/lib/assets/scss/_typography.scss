@@ -216,11 +216,15 @@ pre code {
 	a[aria-hidden] {
 		position: absolute;
 		display: block;
-		left: -1em;
+		left: -0.75em;
 		width: 1em;
 		height: 1em;
 		line-height: 1;
 		text-align: center;
+		
+		@media(min-width: $xxs) {
+			left: -1em;	
+		}
 	}
 
   .icon-link {

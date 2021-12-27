@@ -1,31 +1,12 @@
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
+
   import LogoSVG from './header/LogoSVG.svelte'
-  import { isLoading } from '$lib/data/store'
-  
-  import { onMount } from 'svelte'
   import TagList from './tags/TagList.svelte'
   import Tag from './tags/Tag.svelte'
   
-  let recentPosts: Post[] = []
-  let allCategories: string[] = []
-  
-  onMount(async () => {
-    try {
-      const res = await fetch('/blog/posts-detail.json')
-      const resJSON = await res.json()
-      
-      recentPosts = resJSON.posts
-        .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
-        .map(post => ({ slug: post.slug, title: post.title }))
-        .slice(0, 5)
-      
-      allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
-    }
-    catch(error) {
-      recentPosts = []
-    }
-  })
+  export let recentPosts: Post[]
+  export let allCategories: string[]
 </script>
 
 

@@ -1,11 +1,21 @@
 <script context="module" lang="ts">
-	export const load = async({ page }) => {
+	export const load = async ({ page, fetch }) => {
+		const res = await fetch('/blog/posts-detail.json')
+		const resJSON = await res.json()
+		
+		const recentPosts = resJSON.posts
+			.map(post => ({ slug: post.slug, title: post.title }))
+			.slice(0, 5)
+		
+		const allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
 
 		const path: string = page.path
 
 		return {
 			props: {
 				path,
+				recentPosts,
+				allCategories
 			}
 		}
 	}
@@ -27,6 +37,8 @@
 	import throttle from 'lodash/throttle.js'
 	
 	export let path: string
+	export let recentPosts: Post[]
+	export let allCategories: string[]
 
 	const blogPageCheck = new RegExp(/^\/blog/)
 	let pageHasSidebar = false
@@ -136,7 +148,7 @@
 		{/if}
 
 		<main id="main" class:archive={isBlogListingPage} tabindex="-1">
-			<PageTransition refresh={path} }>
+			<PageTransition refresh={path}>
 				<slot/>
 			</PageTransition>
 		</main>
@@ -144,7 +156,7 @@
 		<div id="sidebar">
 			<PageTransition refresh={pageHasSidebar}>
 				{#if pageHasSidebar}
-					<Sidebar />
+					<Sidebar {recentPosts} {allCategories} />
 				{/if}
 			</PageTransition>
 		</div>
