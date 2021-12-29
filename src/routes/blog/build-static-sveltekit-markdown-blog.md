@@ -53,6 +53,8 @@ _*My opinion; citation needed_
 - Understand the basics of fetching JSON from an API; and finally
 - Know how to install packages with [npm](https://www.npmjs.com/), and have npm installed already.
 
+Finally, if you just want to skip ahead and see the finished product, you can [check out this repo](https://github.com/josh-collinsworth/sveltekit-blog-guide-steps) or copy it--though I have a proper, more fleshed-out [SvelteKit starter here](https://github.com/josh-collinsworth/sveltekit-blog-starter).
+
 **Let's get started!**
 
 
@@ -969,15 +971,35 @@ The rest of this post will focus on possible enhancements and diving a little de
 
 ### Add dynamic post category pages
 
-Many blogs use taxonomies like categories and tags to sort posts, with the option to view posts by those terms (e.g., only posts in the "JavaScript" category). SvelteKit lets us accomplish this with dynamic pages.
+Many blogs use taxonomies like categories and tags to let the user sort and view posts. SvelteKit lets us accomplish this with dynamic pages.
 
-You could think of a dynamic page as a wildcard route. Essentially, it's a page that processes a route as an argument.
+You could think of a dynamic page as a wildcard route. Essentially, it's a template that processes a route as an argument.
 
 Dynamic pages are useful because we might want one template file to handle any number of potential routes. In our case, we'll have one file to handle _any_ `/blog/category/*` route, no matter what the `*` might be.
 
 <Callout>
-You could think of a dynamic page as a wildcard route.
+You could think of a dynamic page as a wildcard route. Essentially, it's a template that processes a route as an argument.
 </Callout>
+
+To start, if you don't already have some categories in your posts' frontmatter, it's a good idea to add some now. I did this, just for the sake of example:
+
+```markdown
+<!--- 1.md -->
+---
+categories: 
+  - "numbers"
+  - "odd"
+---
+```
+
+```markdown
+<!--- 2.md -->
+---
+categories: 
+  - "numbers"
+  - "even"
+---
+```
 
 **To make a page dynamic, all we have to do is wrap its title in brackets**. So, for categories, we'll add a `categories/[category].svelte` route in `src/routes/blog`.
 
@@ -993,29 +1015,7 @@ You could think of a dynamic page as a wildcard route.
 The word <code>category</code> isn't special; it's just a variable. But as with any variable, it's good to name it semantically.
 </SideNote>
 
-Once you've created that file, you can actually visit `/blog/category/` followed by anything, and you won't get a 404. The dynamic page handles _all_ unmatched `/blog/category` routes.
-
-The trick now is just to load the right content based on the route.
-
-If you don't already have some categories in your posts' frontmatter, it's a good idea to add some now. I did this, just for the sake of example:
-
-```markdown
-# 1.md
----
-categories: 
-  - "numbers"
-  - "odd"
----
-```
-
-```markdown
-# 2.md
----
-categories: 
-  - "numbers"
-  - "even"
----
-```
+Once you've created that file, you may notice you can actually visit `/blog/category/` followed by anything, and you won't get a 404. The dynamic page handles _all_ unmatched `/blog/category/` routes. The trick now is just to load the right content based on the route.
 
 Just to get an idea of what we're working with, let's start with any JavaScript developer's best friend: `console.log`.
 
@@ -1131,19 +1131,32 @@ To start, create an `rss.xml.js` file in your `routes` folder, to make the RSS f
   ┗ 📜 rss.xml.js
 ```
 
-Inside that file, we'll query our existing API endpoint, and convert the result to XML:
+Inside that file, we'll use `import.meta.glob` again, and convert the result to XML.
+
+<SideNote>
+Sadly, we can't use <code>fetch</code> in an endpoint, but now that we're using <code>import.meta.glob</code> in two places, we <em>could</em> abstract it to a helper function to cut down on repeated code.
+</SideNote>
 
 ```js
 const siteURL = 'https://your-domain.tld'
 const siteTitle = 'Your site title here'
 const siteDescription = 'Your site description here'
   
-export const get = async ({ fetch }) => {
-  const posts = await fetch('/api/posts.json')
+export const get = async () => {
+  const posts = await Promise.all(
+    Object.entries(import.meta.glob('./blog/*.md')).map(async ([path, resolver]) => {
+      const { metadata } = await resolver()
+      const slug = path.slice(2, -3)
+      return { ...metadata, slug }
+    })
+  )
+  .then(posts => {
+    return posts.sort((a, b) => new Date(b.date) - new Date(a.date))
+  })
 
   const body = render(posts)
   const headers = {
-    'Cache-Control': `max-age=0, s-maxage=3600`,
+    'Cache-Control': 'max-age=0, s-maxage=3600',
     'Content-Type': 'application/xml',
   };
 
@@ -1312,17 +1325,13 @@ Note also that SvelteKit offers several other similar elements, like `<svelte:wi
 
 The posts API is functional, but it can be improved in several ways.
 
-For starters, we'll definitely want to put the code we just wrote into a `try`/`catch` block that returns the proper status code when things go wrong.
-
-This function also does a lot, and could be refactored a bit. (Sorting the dates, for example, could probably be extracted to its own utility function. So could the string manipulation.)
+For starters, we'll definitely want to put the code we just wrote into a `try`/`catch` block that returns the proper status code when things go wrong. Some refactoring might also be in order.
 
 We'll also probably want to add some other extra features to this API route eventually. We might want pagination features, for example, since depending on the number of posts, returning _all_ of them might get prohibitively time-intensive.
 
-Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render.html` method for that, if you so choose.
+Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render` method for that, if you so choose.
 
 Finally, you could build in some post filtering, but it might be better to build out a dynamic endpoint for that. The [SvelteKit docs section on Rest parameters](https://kit.svelte.dev/docs#routing-advanced-rest-parameters) is worth a look as far as that goes.
-
-Anyway, we'll worry about all that later (if at all). For now, it's working great, and we can use our new endpoint to finish our blog index page!
 
 
 ### Customize the error page
