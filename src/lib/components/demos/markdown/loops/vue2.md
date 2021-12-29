@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```vue
 <div v-for="post in posts">
   <h2>

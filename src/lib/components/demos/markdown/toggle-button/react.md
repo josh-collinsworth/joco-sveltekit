@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```jsx
 // ToggleButton.jsx
 import React, { useState } from 'react'

@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```jsx
 // PageHeading.jsx
 const PostPreview = ({ pageTitle, pageSubtitle }) => {

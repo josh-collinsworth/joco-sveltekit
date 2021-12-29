@@ -15,6 +15,8 @@ const months: string[] = [
 ]
 
 const readableDate = (date: string): string => {
+  if (!date) return date
+
   const splitDate = date.split('-')
 
   const month: string = months[parseInt(splitDate[1])]

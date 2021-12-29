@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```vue
 <!-- VolumeControl.vue -->
 <script setup>

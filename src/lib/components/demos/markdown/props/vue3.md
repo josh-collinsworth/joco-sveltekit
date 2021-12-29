@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```vue
 <!-- PageHeading.vue -->
 <script setup>

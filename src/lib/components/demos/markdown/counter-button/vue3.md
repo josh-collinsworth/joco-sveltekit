@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```vue
 <!-- CounterButton.vue -->
 <script setup>

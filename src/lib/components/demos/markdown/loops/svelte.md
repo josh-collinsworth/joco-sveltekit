@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```svelte
 {#each posts as post}
   <h2>

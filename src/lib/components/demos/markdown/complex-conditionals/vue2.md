@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 ```vue
   <WelcomeBanner v-if="isUserLoggedIn" />
   <LoginForm v-else />
