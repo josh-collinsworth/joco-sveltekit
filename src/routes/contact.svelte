@@ -1,6 +1,13 @@
 <script lang="ts">
-	let formData: object = {}
+	import type contactFormSubmission from '$lib/assets/js/interfaces/contact-form-submission';
+
+	let formData: contactFormSubmission = {
+		name: '',
+		email: '',
+		message: ''
+	}
 	let isSubmitted: boolean = false
+	let showError = false
 
 	const encode = (data: object): string => {
 		return Object.keys(data)
@@ -9,6 +16,13 @@
 	}
 
 	const handleSubmit = (e: Event): void => {
+		const { name, email, message } = formData
+
+		if (!name || !email || !message) {
+			showError = true
+			return
+		}
+		
 		const target = e.target as HTMLFormElement
 		fetch('/', {
 				method: 'POST',
@@ -31,9 +45,9 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
+
 <div class="compressed-content">
 	{#if !isSubmitted}
-
 		<noscript>
 			<h2>Sorry, this contact form won't work without JavaScript enabled.</h2>
 			<p>You can try me at <code>joshuajcollinsworth</code> on the good ol' Google mail instead if you like.</p>
@@ -62,7 +76,7 @@
 				<div>
 					<label for="email">
 						Your email address
-						<small><i>(used only for responses; no spam)</i></small>
+						<small><i>(used only for responses)</i></small>
 					</label>
 					<input type="email" name="email" bind:value={formData.email} />
 				</div>
@@ -72,6 +86,12 @@
 				<label for="message">What's on your mind?</label>
 				<textarea name="message" bind:value={formData.message} rows="6"></textarea>
 			</div>
+
+			{#if showError}
+				<div class="error">
+					Please be sure all above fields are filled out. Thanks!
+				</div>
+			{/if}
 
 			<button type="submit">
 				Send
@@ -98,6 +118,14 @@
 				font-family: var(--body-font);
 				font-weight: normal;
 			}
+		}
+
+		.error {
+			background-color: var(--red);
+			color: var(--white);
+			padding: calc(var(--rhythm) * 0.5) var(--rhythm);
+			margin: var(--rhythm) 0;
+			font-style: italic;
 		}
 	}
 </style>

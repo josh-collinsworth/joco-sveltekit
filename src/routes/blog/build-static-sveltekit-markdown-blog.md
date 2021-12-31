@@ -1213,6 +1213,8 @@ ${posts
 
 I pulled my example from [this guide](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit) and [this one](https://scottspence.com/posts/make-an-rss-feed-with-sveltekit), for reference. And if you want to make sure you've done it correctly, here's an [online XML validator](https://codebeautify.org/xmlviewer).
 
+Lastly, you may want to add `rel="external"` to your RSS link, wherever you decide to put it. (That lets SvelteKit know it shouldn't try to handle the routing; more on that in a bit in the "add anchor options" section.)
+
 
 ### Add heading links with rehype
 
