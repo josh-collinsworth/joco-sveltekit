@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2021-12-27"
+updated: "2021-12-30"
 categories: 
   - "svelte"
   - "javascript"
@@ -50,7 +50,7 @@ _*My opinion; citation needed_
 - Know the fundamentals of front-end development and JavaScript;
 - Have at least a basic understanding of Svelte already. (You can probably follow along regardless, but I'd recommend the [Svelte tutorial](https://svelte.dev/tutorial/basics) first if you're brand-new);
 - Know the basics of both [Markdown](https://www.markdowntutorial.com/) and [Sass](https://sass-lang.com/);
-- Understand the basics of fetching JSON from an API; and finally
+- Understand the basics of fetching JSON from an API; and
 - Know how to install packages with [npm](https://www.npmjs.com/), and have npm installed already.
 
 Finally, if you just want to skip ahead and see the finished product, you can [check out this repo](https://github.com/josh-collinsworth/sveltekit-blog-guide-steps) or copy it--though I have a proper, more fleshed-out [SvelteKit starter here](https://github.com/josh-collinsworth/sveltekit-blog-starter).
@@ -305,11 +305,11 @@ If you want to, you could repeat this process with a `<Footer />` component now,
 
 ### The difference between components and pages
 
-It might be a little confusing that we're jumping in and out of several `.svelte` files now, each with different roles. So just to clarify before moving on:
+It might be a little confusing that we're jumping in and out of several `.svelte` files now, each with a different role. So just to clarify before moving on:
 
 * Any component inside of `src/routes` becomes its own page (unless its name starts with an underscore);
 
-* Any component that _isn't_ its own page or layout goes inside of `src/lib/components`. They can be used independently, and don't get routes of their own.
+* Otherwise, we're putting them in  `src/lib/components`. They can be used independently, and don't get routes of their own.
 
 
 ## Stylesheets in SvelteKit
@@ -607,7 +607,7 @@ No need for anything fancy; just at least a couple of `.md` files, with a tiny b
 ```markdown
 ---
 title: Post One
-date: 2021-12-14
+date: "2021-12-14"
 ---
 
 Hello, I am _Post One._
@@ -632,7 +632,7 @@ mdsvex lets us designate a layout--that is, a Svelte component--to render Markdo
 
 The two are similar, but not to be confused. Unlike SvelteKit layouts, there's no convention to follow with the naming or placement of mdsvex layouts; it's all explicit config.
 
-We'll name our layout `_post.svelte`, and put it in `src/routes/blog`, just to keep related things close together.
+So since it's our choice, we'll name our layout `_post.svelte`, and put it in `src/routes/blog` (just to keep related things close together).
 
 ```fs
 📂 src
@@ -643,7 +643,13 @@ We'll name our layout `_post.svelte`, and put it in `src/routes/blog`, just to k
 
 **Why the underscore?** Anything in `src/routes` that begins with an underscore is a [private module](https://kit.svelte.dev/docs#routing-private-modules), i.e., excluded from the router. Since this layout file will just serve as a template and won't have content of its own, we don't want it to have its own route or be directly visited.
 
-Once the file is created, head back to `svelte.config.js` and add a `layout` property to the `mdsvex` function options. (_Note that the path must be relative_.) And as always, be sure to restart the dev server after making the change.
+Once the file is created, head back to `svelte.config.js` and add a `layout` property to the `mdsvex` function options. 
+
+<Callout>
+If a named layout shares the name of the current directory, mdsvex will use it automatically.
+</Callout>
+
+There are a few ways to designate mdsvex layouts, but I find [named layouts](https://mdsvex.pngwn.io/docs#named-layouts) handiest. If a named layout shares the name of the current directory, mdsvex will use it automatically.
 
 ```js
 // svelte.config.js
@@ -657,11 +663,15 @@ const config = {
     sveltePreprocess(),
     mdsvex({
       extensions: ['.md'],
-      layout: 'src/routes/blog/_post.svelte'
+      layout: {
+        blog: 'src/routes/blog/_post.svelte'
+      }
     })
   ]
 }
 ```
+
+(_Note that the path must be relative_.) And as always, be sure to restart the dev server after making the change.
 
 Now, inside the file we designated as our mdsvex layout, all frontmatter properties are available as component props. We just need to name and call them, like so:
 
@@ -680,34 +690,16 @@ Now, inside the file we designated as our mdsvex layout, all frontmatter propert
 ```
 
 <SideNote>
-It might be a good idea to set defaults for each prop, in case it's missing from the frontmatter. Also, be sure the layout has a <code>&lt;slot /&gt;</code>, or the file's contents won't be shown.
+It might be a good idea to set defaults for each prop, in case it's missing from the frontmatter. Also, be sure the layout has a <code>&lt;slot /&gt;</code>, or the file's contents won't be shown. And finally, dates are tricky. If your dates aren't strings in the Markdown, you might need to add some formatting and manipulation.
 </SideNote>
 
 That in place, now when we load a blog post, we should see the layout pulling the frontmatter properties in:
 
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
-That's perfect for our `/blog` routes, but remember, this layout will apply to ***all*** Markdown files!
+However, thanks to our named layout matching _only_ `blog` routes, if we load the `/uses` page, we'll see the same layout does _not_ apply there. Pretty awesome! (_Yes, that's all I wanted us to save it for. You can delete it now if you want_.)
 
-Remember how we created a `uses.md` page? Let's load that again…
-
-![The mdsvex template file applies to all markdown files, even including unrelated pages](/images/post_images/sveltekit-md-oops.png)
-
-***Oops***! Fortunately, mdsvex gives us a couple options on how to handle this.
-
-1. **Opt out of the layout per-page.** To do this, add a `layout: false` frontmatter property to any Markdown file that _shouldn't_ use the default:
-
-  ```markdown
-  ---
-  layout: false
-  ---
-  ```
-
-2. **Opt in to a different layout per-page.** You can have [multiple different mdsvex layouts](https://mdsvex.pngwn.io/docs#named-layouts) available, with only a minor config adjustment.
-
-3. **Don't set a default layout**, and instead, specify a layout for each file. (_Still requires the config setup in #2._)
-
-Which you should choose depends on your site and its needs. In this specific case, opting one page out is easy enough, and that's what I'll recommend. But if you've got dozens or hundreds of markdown files, specifying a template in each of them could become too much. (It _is_ nice that we have so much granular control over the layout of our Markdown pages and posts, however.)
+Worth knowing: you can opt a Markdown file out of any mdsvex layout by adding `layout: false` to the frontmatter. You can _also_ set up a fallback, in case no route matches; [see the mdsvex layout docs](https://mdsvex.pngwn.io/docs/#named-layouts) for details.
 
 ---
 
@@ -818,7 +810,7 @@ export const get = async () => {
 - The `map` method is there to shape the file data, so it's easier to work with on the front end. (And since each item waits for a promise, we wrap it in an `await Promise.all`.)
   - Since we know the path will begin with `..` and end with `.md`, we can safely use `.slice(2, -3)` to remove those characters and end up with the route.
 - Next, we sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
-  - Note that your posts will need a validly formatted `date` frontmatter property for this to work.
+  - Note that your posts will need a validly formatted `date` frontmatter property for the sorting to work--i.e., something  `new Date()` can understand.
 - Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here, since we're successfully returning a `body`.)
 
 **Let's try it out!** Refresh your `/api/posts.json` path now, and you should see some _real_ data!
@@ -1283,6 +1275,10 @@ That CSS will make a pound sign (or hash, or "octothorpe," if you're fancy) appe
 ![A pound symbol appears to the left of a hovered heading.](/images/post_images/sveltekit-rehype-css.png)
 
 Thanks to how CSS treats pseudo elements, that icon is fully clickable as part of the link, to navigate directly to the heading in question.
+
+<SideNote>
+Please be aware that while this example is ok, hovering is not an intuitive gesture on touchscreen devices. It may be better to <em>always</em> show some indication of the link.
+</SideNote>
 
 You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (probably with some JavaScript inside a Svelte component's `onMount` function), but I'll leave that detail up to you. For now, our links are at least present and working, even if they might not be ideal yet.
 

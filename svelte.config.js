@@ -24,7 +24,9 @@ const config = {
 				rehypeSlug,
 				rehypeAutolinkHeadings,
 			],
-			layout: 'src/routes/blog/_post.svelte',
+			layout: {
+				blog: 'src/routes/blog/_post.svelte',
+			}
 		}),
 	],
 
