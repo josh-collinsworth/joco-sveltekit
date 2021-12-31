@@ -1061,6 +1061,33 @@ I won't go into how to render the matching content, but it's pretty much the sam
 
 It's probably a good idea to wrap that code in a `try`/`catch` block--and for that matter, to anticipate situations where no posts will match the given category, and handle that properly in the UI. (An `{#if posts.length}` block with an `{:else}` should do the trick.)
 
+Inside the `_post` template, listing a post's categories just requires grabbing the prop and looping over it:
+
+```svelte
+<!-- _post.svelte -->
+<script>
+  // ... Other props here
+  export let categories;
+</script>
+
+<!-- ...Post HTML here -->
+
+{#if categories.length}
+  <aside>
+    <h2>Posted in:</h2>
+    <ul>
+      {#each categories as category}
+        <li>
+          <a href="/blog/categories/{category}">
+            {category}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </aside>
+{/if}
+```
+
 Finally, if you _really_ wanted to go the extra mile, you could add an `index.svelte` file to `src/routes/blog/categories/`, to display _all_ categories. I won't go into that here, since it's an additional feature that won't benefit all blogs, however.
 
 
