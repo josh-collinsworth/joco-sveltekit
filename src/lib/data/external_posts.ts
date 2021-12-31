@@ -2,6 +2,16 @@ import type Post from '../assets/js/interfaces/post'
 
 const EXTERNAL_POSTS: Post[] = [
   {
+    title: 'Building a PWA with Vue.js',
+    subtitle: 'LogRocket Blog',
+    slug: 'https://blog.logrocket.com/building-pwa-vue/',
+    coverImage: 'building-pwa-vue-js.webp',
+    coverWidth: 730,
+    coverHeight: 487,
+    date: '2021-12-30',
+    excerpt: `When it comes to PWAs, there’s nothing special about Vue specifically, or even frameworks in general. To put it simply: if it loads in a browser, it can be a progressive web app. That groundwork laid, let’s talk specifically about how to build a PWA with Vue, one of my personal favorite tools for web development.`,
+  },
+  {
     title: 'Using SVG and Vue.js: A complete guide',
     subtitle: 'LogRocket Blog',
     slug: 'https://blog.logrocket.com/using-svg-and-vue-js-a-complete-guide/',
