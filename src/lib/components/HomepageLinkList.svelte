@@ -4,19 +4,19 @@
   <li>
     <span role="img" alt="" aria-hidden="true">📖</span>
     <a href="/blog">
-      Read some things I wrote
+      Things I wrote
     </a>
   </li>
   <li>
     <span role="img" alt="" aria-hidden="true">💻</span>
     <a href="/projects">
-      See some of my projects
+      Things I made
     </a>
   </li>
   <li>
     <span role="img" alt="" aria-hidden="true">✉️</span>
     <a href="/contact">
-      Get in touch
+      A thing I made so you can write me
     </a>
   </li>
 </ul>
