@@ -1,7 +1,7 @@
 <script lang="ts">
 	import LogoSVG from '$lib/components/header/LogoSVG.svelte'
 	import Grid from '$lib/components/Grid.svelte'
-	import NavMenus from '$lib/components/header/NavMenus.svelte'
+	import NavMenu from '$lib/components/header/NavMenu.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import ReduceMotionToggle from '../settings/ReduceMotionToggle.svelte'
 	import { isLoading, isMenuOpen, isScrollingDown } from '$lib/data/store'
@@ -39,7 +39,7 @@
 		<div class="icon-container" class:sticky={$isMenuOpen} class:ghosty={$isScrollingDown && !$isMenuOpen}>
 			<ReduceMotionToggle />
 			<DarkModeToggle />
-			<NavMenus {path} />
+			<NavMenu {path} />
 		</div>
   </header>
 
