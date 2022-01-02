@@ -13,7 +13,7 @@
     position: relative;
     background: var(--paper);
     overflow: hidden;
-    padding: 0 0 0.75rem 0;
+    padding: 0;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: normal;
