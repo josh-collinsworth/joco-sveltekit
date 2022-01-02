@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2021-12-30"
+updated: "2022-01-02"
 categories: 
   - "svelte"
   - "javascript"
