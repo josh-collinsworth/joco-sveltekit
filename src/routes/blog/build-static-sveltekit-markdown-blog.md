@@ -785,7 +785,7 @@ export const get = async () => {
   })
 
   return {
-    body: JSON.stringify(sortedPosts)
+    body: sortedPosts
   }
 }
 ```
@@ -800,7 +800,7 @@ export const get = async () => {
   - Since we know the path will begin with `..` and end with `.md`, we can safely use `.slice(2, -3)` to remove those characters and end up with the route.
 - Next, we sort the posts by descending date (since this is a blog, of course, and we'll want our newest posts showing first).
   - Note that your posts will need a validly formatted `date` frontmatter property for the sorting to work--i.e., something  `new Date()` can understand.
-- Finally, we convert the finished product to JSON and `return` it as the `body` of our API response. (The 200 status code is implicit here, since we're successfully returning a `body`.)
+- Finally, we `return` the finished product as the `body` of our API response. (The 200 status code is implicit here, since we're successfully returning a `body`.) SvelteKit handles the conversion to JSON.
 
 **Let's try it out!** Refresh your `/api/posts.json` path now, and you should see some _real_ data!
 
