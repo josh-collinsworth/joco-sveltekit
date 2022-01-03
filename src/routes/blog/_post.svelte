@@ -1,23 +1,23 @@
-<script lang="ts">
+<script>
+  import '$lib/assets/scss/post-styles.scss'
+  import '$lib/assets/scss/code.scss'
+
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
   import Bio from '$lib/components/posts/Bio.svelte'
   import Comments from '$lib/components/Comments.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount } from 'svelte'
-  
-  import '$lib/assets/scss/post-styles.scss'
-  import '$lib/assets/scss/code.scss'
 
-  export let categories: string[] = []
-  export let coverImage: string = ''
-  export let coverWidth: number = 16
-  export let coverHeight: number = 9
-  export let date: string = ''
-  export let excerpt: string = ''
-  export let slug: string = ''
-  export let title: string = ''
-  export let updated: string = ''
+  export let categories = []
+  export let coverImage = ''
+  export let coverWidth = 16
+  export let coverHeight = 9
+  export let date = ''
+  export let excerpt = ''
+  export let slug = ''
+  export let title = ''
+  export let updated = ''
 
   $: imagePath = `/images/post_images/${coverImage}`
 
