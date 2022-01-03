@@ -162,7 +162,7 @@
     .meta {
       font-size: 0.8rem;
       line-height: 1.6;
-      margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 4);
+      margin: var(--halfNote) 0 var(--wholeNote);
       width: max-content;
       padding: 0.5em 0; 
       font-family: var(--heading-font);
@@ -176,10 +176,10 @@
     }
 
     .post-footer {   
-      margin: 0 0 calc(var(--rhythm) * 2);
+      margin: 0 0 var(--halfNote);
 
       .h4 {
-        margin: 0 0 calc(var(--rhythm) / 2);
+        margin: 0 0 calc(var(--quarterNote) / 2);
 
         &::before {
           display: none;
@@ -188,7 +188,7 @@
     }
 
     .post-links {
-      margin: calc(var(--rhythm) * 2) 0;
+      margin: var(--halfNote) 0;
       font-family: var(--heading-font);
 
       a {
@@ -205,10 +205,10 @@
     }
 
     .section-heading-image {
-      margin-top: calc(var(--rhythm) * 6);
+      margin-top: var(--dottedWholeNote) ;
 
       & + * {
-        margin-top: var(--rhythm);
+        margin-top: var(--quarterNote);
       }
     }
   }

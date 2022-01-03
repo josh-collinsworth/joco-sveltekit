@@ -65,7 +65,7 @@
   .page-head {
     --transition: transform .24s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-    margin-bottom: calc(var(--rhythm) * 2);
+    margin-bottom: var(--halfNote);
     display: flex;
     align-items: center;
     flex-wrap: wrap;

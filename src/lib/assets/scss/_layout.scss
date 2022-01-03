@@ -7,7 +7,7 @@ img {
 	width: 100%;
 	max-width: 100%;
 	height: auto;
-	margin: calc(var(--rhythm) * 1) 0;
+	margin: var(--quarterNote)  0;
 	mix-blend-mode: multiply;
 
 	.prefers-dark & {
@@ -17,7 +17,7 @@ img {
 
 hr {
 	width: 100%;
-	margin: calc(var(--rhythm) * 2) 0;
+	margin: var(--halfNote) 0;
 	border: none;
 	border-bottom: 1px solid var(--lightGray);
 }
@@ -43,7 +43,7 @@ hr {
 }
 
 .layout {
-	margin: var(--rhythm) var(--margin) calc(var(--rhythm) * 4) var(--margin);
+	margin: var(--quarterNote) var(--margin) var(--wholeNote) var(--margin);
 	width: calc(100% - (var(--margin) * 2));
 	position: relative;
 	grid-template-columns: 1fr;
@@ -74,7 +74,7 @@ hr {
 
 	@media (min-width: $lg) {
 		grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
-		grid-gap: 0 calc(var(--rhythm) * 3);
+		grid-gap: 0 var(--dottedHalfNote) ;
 		width: calc(100% - (var(--margin) * 2));
 
 		main {
@@ -94,7 +94,7 @@ hr {
 }
 
 .cp_embed_wrapper {
-	margin-bottom: calc(var(--rhythm) * 2);
+	margin-bottom: var(--halfNote);
 }
 
 .ghosty button,
@@ -106,7 +106,7 @@ hr {
 .table {
 	width: auto;
 	overflow-x: auto;
-	margin-bottom: calc(var(--rhythm) * 2);
+	margin-bottom: var(--halfNote);
 	position: relative;
 
 	&-outer {
@@ -129,7 +129,7 @@ table {
 	min-width: 100%;
 	border-collapse: collapse;
 	font-size: 0.9rem;
-	margin: calc(var(--rhythm) * 3) 0 calc(var(--rhythm) * 2);
+	margin: var(--dottedHalfNote)  0 var(--halfNote);
 	border-right: 2rem solid transparent;
 
 	td, th {
@@ -161,11 +161,11 @@ table {
 }
 
 .twitter-tweet {
-	margin: calc(var(--rhythm) * 2) 0 !important;
+	margin: var(--halfNote) 0 !important;
 }
 
 .example-component-wrapper {
 	border: 1px solid;
-	padding: calc(var(--rhythm) + var(--rhythm));
-	margin: calc(var(--rhythm) * 2) 0;
+	padding: calc(var(--quarterNote) + var(--quarterNote));
+	margin: var(--halfNote) 0;
 }

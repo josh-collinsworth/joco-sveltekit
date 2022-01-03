@@ -34,11 +34,11 @@
   
 <style lang="scss">
   h2 {
-    margin-bottom: var(--rhythm);
+    margin-bottom: var(--quarterNote);
   }
   
   hr {
-    margin: var(--rhythm) 0 calc(var(--rhythm) * 3);
+    margin: var(--quarterNote) 0 var(--dottedHalfNote) ;
   }
     
   .subhead {

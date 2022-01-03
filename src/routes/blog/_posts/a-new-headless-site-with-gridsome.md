@@ -207,7 +207,7 @@ Want to get super meta? Here's what a code block looks like on this new site, al
 ```css
 pre[class*='language-'] {
 	padding: 4rem 1rem 1.5rem;
-	margin: calc(var(--rhythm) * 2) 0;
+	margin: var(--halfNote) 0;
 	overflow: auto;
 	border-radius: 0.3em;
 	position: relative;

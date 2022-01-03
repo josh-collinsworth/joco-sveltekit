@@ -8,7 +8,7 @@
   .highlight {
     font-size: 1.3em;
     line-height: 1.5;
-    margin: 0 0 calc(var(--rhythm) * 2);
+    margin: 0 0 var(--halfNote);
     font-weight: normal;
     font-style: normal;
     font-family: var(--heading-font);

@@ -2,7 +2,7 @@
 	export async function load({ fetch, page }) {
     const category = page.params.category
     //TODO: maybe add a way to fetch with query parameter to avoid filtering?
-		const res = await fetch(`/api/posts-detail.json`)
+		const res = await fetch(`/api/posts.json`)
 		let { posts } = await res.json()
 
     const matchingPosts = posts
@@ -20,7 +20,6 @@
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
   import PostList from '$lib/components/posts/PostList.svelte'
-  import PageHeading from '$lib/components/PageHeading.svelte'
 
   export let posts: Post[]
   export let category: string
@@ -34,6 +33,13 @@
 </svelte:head>
 
 
-<h1 style="margin: 0 0 calc(var(--rhythm) * 4); line-height: 1">Blog category: <b>{ category }</b></h1>
+<h1 class="h2">Category: <b>{ category }</b></h1>
 
 <PostList {posts} />  
+
+
+<style lang="scss">
+  h1.h2 {
+    margin: 0 0 var(--wholeNote);
+  }
+</style>

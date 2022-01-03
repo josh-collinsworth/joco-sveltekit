@@ -5,7 +5,7 @@ body {
 
 ul,
 ol {
-	margin: var(--rhythm) 0 calc(var(--rhythm) * 2)
+	margin: var(--quarterNote) 0 var(--halfNote)
 }
 
 main ul:not(.toc) {
@@ -56,8 +56,8 @@ h6 {
 	color: var(--heading-color);
 	line-height: 1.1;
 	position: relative;
-	margin-bottom: var(--rhythm);
-	margin-top: calc(var(--rhythm) * 3);
+	margin-bottom: var(--quarterNote);
+	margin-top: var(--dottedHalfNote) ;
 	padding: 0;
 
 	a {
@@ -69,7 +69,7 @@ h1,
 .h1 {
 	font-size: 2rem;
 	position: relative;
-	margin-top: var(--rhythm);
+	margin-top: var(--quarterNote);
 	font-weight: normal;
 	
 	@media (min-width: $xs) {
@@ -81,7 +81,7 @@ h2,
 .h2 {
 	font-size: 1.8rem;
 	font-weight: bold;
-	margin: calc(var(--rhythm) * 5) 0 calc(var(--rhythm) * 2);
+	margin: var(--wholeNote) 0 var(--halfNote);
 	z-index: 2;
 
 	@media (min-width: $xs) {
@@ -90,7 +90,7 @@ h2,
 	
 	&::before {
 		content: '';
-		width: calc(var(--rhythm) * 4);
+		width: var(--wholeNote);
 		height: 0.125em;
 		background: currentColor;
 		display: block;
@@ -102,7 +102,7 @@ h3,
 .h3 {
 	font-size: 1.7rem;
 	font-weight: normal;
-	margin-top: calc(var(--rhythm) * 4);
+	margin-top: var(--wholeNote);
 }
 
 h4,
@@ -136,11 +136,11 @@ h6,
 }
 
 p {
-	margin: 0 0 var(--rhythm);
+	margin: 0 0 var(--quarterNote);
 }
 
 blockquote {
-	margin: calc(var(--rhythm) * 2) 0;
+	margin: var(--halfNote) 0;
 	padding: 0rem 1rem;
 	font-size: 1rem;
 	font-style: italic;
@@ -160,11 +160,11 @@ ol {
 
 	ul,
 	ol {
-		margin: var(--rhythm) 0;
+		margin: var(--quarterNote) 0;
 	}
 
 	li + li {
-		margin-top: calc(var(--rhythm) / 2);
+		margin-top: calc(var(--quarterNote) / 2);
 	}
 }
 

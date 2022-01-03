@@ -63,7 +63,7 @@
     h2 {
       color: inherit;
       font-size: 0.7rem;
-      margin: 0 0 var(--rhythm);
+      margin: 0 0 var(--quarterNote);
       width: max-content;
     }
 

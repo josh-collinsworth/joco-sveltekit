@@ -53,11 +53,11 @@
     font-size: .85rem;
     align-self: start;
     position: sticky;
-    top: calc(var(--rhythm) * 2);
+    top: var(--halfNote);
     max-width: var(--max-width);
     font-family: var(--heading-font);
     grid-row: 3 / 4;
-	  margin: calc(var(--rhythm) * 3) auto 0;
+	  margin: var(--dottedHalfNote)  auto 0;
     
     @media (min-width: $lg) {
       grid-column: auto;

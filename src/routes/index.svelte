@@ -67,7 +67,7 @@
 .intro {
   width: 100%;
   position: relative;
-  margin-top: calc(var(--rhythm) * 4);
+  margin-top: var(--wholeNote);
   max-width: var(--max-width);
 
   @media (min-width: $xl) {
@@ -75,7 +75,7 @@
     max-width: unset;
     display: grid;
     grid-template-columns: max-content 1fr;
-    gap: 0 calc(var(--rhythm) * 8);
+    gap: 0 calc(var(--wholeNote) * 2);
 
     &__body {
       max-width: 30rem;
@@ -94,7 +94,7 @@
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: var(--rhythm);
+    margin-bottom: var(--quarterNote);
 
     @media (min-width: $xs) {
       font-size: 3rem;
@@ -111,12 +111,12 @@
 
   h3 {
     font-size: 1.3rem;
-    margin: 0 0 calc(var(--rhythm) / 2);
+    margin: 0 0 calc(var(--quarterNote) / 2);
     position: relative;
     z-index: 1;
 
     ~ h3 {
-      margin-top: calc(var(--rhythm) * 3);
+      margin-top: var(--dottedHalfNote) ;
     }
   }
 
@@ -129,7 +129,7 @@
 
     @media (min-width: $md) {
       font-size: 1.7rem;
-      margin-bottom: calc(var(--rhythm) * 6);
+      margin-bottom: var(--dottedWholeNote) ;
     }
 
     @media (min-width: $xl) {

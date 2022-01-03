@@ -7,7 +7,7 @@
 
 <style lang="scss" global>
   .callout {
-    margin: calc(var(--rhythm) * 2) 0;
+    margin: var(--halfNote) 0;
     font-size: 1.3rem;
     line-height: 1.4;
     position: relative;

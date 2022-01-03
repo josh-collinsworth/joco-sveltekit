@@ -183,7 +183,7 @@
     article {
       display: grid;
       grid-template-columns: 1fr;
-      gap: calc(var(--rhythm) * 2);
+      gap: var(--halfNote);
       align-items: start;
       
       @media (min-width: $xs) {
@@ -191,7 +191,7 @@
         
         .sticky {
           position: sticky;
-          top: calc(var(--rhythm) * 2);
+          top: var(--halfNote);
         }
       }
       
@@ -204,7 +204,7 @@
       }
       
       img {
-        margin: 0 auto calc(var(--rhythm) * 2);
+        margin: 0 auto var(--halfNote);
         display: block;
         max-width: 100%;
       }

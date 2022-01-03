@@ -123,8 +123,8 @@
 		.error {
 			background-color: var(--red);
 			color: var(--white);
-			padding: calc(var(--rhythm) * 0.5) var(--rhythm);
-			margin: var(--rhythm) 0;
+			padding: calc(var(--quarterNote) * 0.5) var(--quarterNote);
+			margin: var(--quarterNote) 0;
 			font-style: italic;
 		}
 	}

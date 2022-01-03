@@ -67,22 +67,26 @@ $xxxl: 2200px;
 
 	--max-width: 34rem;
 	--sidebar-width: 14rem;
-	--margin: var(--rhythm);
-	--rhythm: 1.25rem;
+	--margin: var(--quarterNote);
+	--quarterNote: 1.25rem;
+	--halfNote: calc(var(--quarterNote) * 2);
+	--dottedHalfNote: calc(var(--quarterNote) * 3);
+	--wholeNote: calc(var(--quarterNote) * 4);
+	--dottedWholeNote: calc(var(--quarterNote) * 6 );
 
 	--button-size: 2.2rem;
 	--button-background: var(--paper);
 
 	@media (min-width: $xs) {
-		--margin: calc(var(--rhythm) * 2);
+		--margin: var(--halfNote);
 	}
 	
 	@media (min-width: $sm) {
-		--margin: calc(var(--rhythm) * 3);
+		--margin: var(--dottedHalfNote) ;
 	}
 	
 	@media (min-width: $xxl) {
-		--margin: calc(var(--rhythm) * 4);
+		--margin: var(--wholeNote);
 	}
 
 	@media (prefers-color-scheme: dark) {

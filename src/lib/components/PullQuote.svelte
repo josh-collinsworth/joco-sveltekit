@@ -10,7 +10,7 @@
 <style lang="scss" global>
   .pull-quote {
     float: right;
-    margin: calc(var(--rhythm) * 2) -12rem calc(var(--rhythm) * 3) calc(var(--rhythm) * 3);
+    margin: var(--halfNote) -12rem var(--dottedHalfNote)  var(--dottedHalfNote) ;
     font-size: 1.2rem;
     line-height: 1.4;
     position: relative;

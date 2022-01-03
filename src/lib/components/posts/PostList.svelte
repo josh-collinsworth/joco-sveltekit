@@ -18,7 +18,7 @@
   .post-list {
     padding: 0;
     list-style-type: none;
-    margin: 0 0 calc(var(--rhythm) * 4);
+    margin: 0 0 var(--wholeNote);
     max-width: var(--max-width);
 
     @media (min-width: $md) {

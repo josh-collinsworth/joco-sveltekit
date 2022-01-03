@@ -73,7 +73,7 @@
 
 <style lang="scss">
   li {
-    margin: 0 0 calc(var(--rhythm) * 2);
+    margin: 0 0 var(--halfNote);
 
     @media (min-width: $md) {
       margin: 0;
@@ -88,8 +88,8 @@
     @media (min-width: $md) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: calc(var(--rhythm) * 2);
-      margin-bottom: calc(var(--rhythm) * 5);
+      grid-gap: var(--halfNote);
+      margin-bottom: var(--wholeNote);
     }
 
     .article-info {
@@ -139,7 +139,7 @@
   
     .excerpt {
       font-style: italic;
-      margin: var(--rhythm) 0 1.5rem;
+      margin: var(--quarterNote) 0 1.5rem;
       font-size: 0.9rem;
       line-height: 1.5;
   
@@ -149,7 +149,7 @@
 
       a {
         display: block;
-        margin-top: var(--rhythm);
+        margin-top: var(--quarterNote);
       }
     }
   }

@@ -46,7 +46,7 @@ textarea {
 	color: inherit;
 	font-size: 1rem;
 	font-style: italic;
-	margin-bottom: calc(var(--rhythm) * 2);
+	margin-bottom: var(--halfNote);
 }
 
 input {

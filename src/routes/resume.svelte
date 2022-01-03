@@ -33,7 +33,7 @@
   .resume {
 
     h3 {
-      margin-bottom: calc(var(--rhythm) / 2);
+      margin-bottom: calc(var(--quarterNote) / 2);
 
       ~ p {
         margin: 0;

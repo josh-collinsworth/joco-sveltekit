@@ -51,7 +51,7 @@
 
     .link-list {
       font-family: var(--heading-font);
-      margin: var(--rhythm) 0 0;
+      margin: var(--quarterNote) 0 0;
       padding-left: 1rem;
 
       li {
@@ -78,10 +78,10 @@
     .thumbnail {
       width: 6rem;
       border-radius: 3rem;
-      margin: 0 auto var(--rhythm);
+      margin: 0 auto var(--quarterNote);
 
       @media (min-width: $xxs) {
-        margin: 0 var(--rhythm) 0 0;
+        margin: 0 var(--quarterNote) 0 0;
       }
     }
 

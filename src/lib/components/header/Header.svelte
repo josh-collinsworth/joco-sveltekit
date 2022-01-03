@@ -93,10 +93,10 @@
 		width: 100%;
 		position: relative;
 		z-index: 3;
-		padding: var(--rhythm) var(--margin) calc(var(--rhythm) * 2);
+		padding: var(--quarterNote) var(--margin) var(--halfNote);
 
 		@media (min-width: $xs) {
-			padding: calc(var(--rhythm) * 2) var(--margin);
+			padding: var(--halfNote) var(--margin);
 		}
 	}
 

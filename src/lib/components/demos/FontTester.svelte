@@ -125,7 +125,7 @@
 		}
 
 		.flex-container {
-			padding-top: calc(var(--rhythm) * 2);
+			padding-top: var(--halfNote);
 			display: flex;
 			align-items: flex-end;
 			align-content: flex-end;

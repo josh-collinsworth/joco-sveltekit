@@ -7,19 +7,17 @@
 
 <style lang="scss">
   .warning {
-    width: calc(100% + (var(--rhythm) * 2));
-    margin: calc(var(--rhythm) * 2) 0;
-    margin-left: calc(var(--rhythm) * -1);
-    // margin: 2.5rem 0;
+    width: calc(100% + (var(--quarterNote) * 2));
+    margin: var(--halfNote) 0;
+    margin-left: calc(var(--quarterNote) * -1);
     background: linear-gradient(to bottom right, var(--yellow), var(--orange));
-    // background: var(--yellow);
     position: relative;
     padding: 2px;
     font-size: 0.85rem;
     font-style: italic;
     
     .inner {
-      padding: calc(var(--rhythm) * 1);
+      padding: var(--quarterNote) ;
       background: var(--paper);
     }
 
