@@ -22,7 +22,8 @@
 </script>
 
 <script lang="ts">
-	import type Post from '$lib/assets/js/interfaces/post';
+	import type Post from '$lib/assets/js/interfaces/post'
+
 	import '$lib/assets/scss/global.scss'
 	
 	import Header from '$lib/components/header/Header.svelte'
@@ -116,8 +117,8 @@
 
 <svelte:window 
 	on:scroll={handleScroll} 
-	on:sveltekit:navigation-start={() => setLoading(true)}
-	on:sveltekit:navigation-end={() => setLoading(false)}
+	on:sveltekit:navigation-start={() => { setLoading(true) }}
+	on:sveltekit:navigation-end={() => { setLoading(false) }}
 />
 
 <svelte:head>
