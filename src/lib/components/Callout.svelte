@@ -10,22 +10,27 @@
     margin: var(--halfNote) 0;
     font-size: 1.3rem;
     line-height: 1.4;
-    position: relative;
-    background: var(--paper);
-    overflow: hidden;
-    padding: 0;
     font-family: var(--heading-font);
-    font-style: normal;
-    font-weight: normal;
-    max-width: 20em;
+
+    em, i {
+      font-weight: bold;
+      font-style: normal;
+    }
 
     @media (min-width: $xs) {
       font-size: 1.4rem;
     }
 
-    em, i {
-      font-weight: bold;
-      font-style: normal;
+    @media (min-width: $lg) {
+      margin: 0 0 1rem;
+      font-size: inherit;
+      line-height: inherit;
+      font-family: inherit;
+
+      em, i {
+        font-weight: initial;
+        font-style: initial;
+      }
     }
   }
 </style>

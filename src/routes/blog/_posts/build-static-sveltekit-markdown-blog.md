@@ -15,6 +15,7 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 <script>
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
 </script>
 
 If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:
@@ -28,6 +29,10 @@ But as I considered their reaction, I realized: it was valid.
 <Callout>
 Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site&nbsp;generator.
 </Callout>
+
+<PullQuote>
+Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site&nbsp;generator.
+</PullQuote>
 
 Other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster, since that's their sole focus. ([Even the SvelteKit docs make this point](https://kit.svelte.dev/docs#appendix-ssg).)
 
@@ -73,7 +78,7 @@ When you run that `init` command, SvelteKit will ask you some questions about yo
 We'll select the "Skeleton project" option.
 
 <SideNote>
-If this is your very first time using SvelteKit, feel free to choose the "SvelteKit demo app" option instead, poke around a bit to get a sense of how things work, then come back. It's a good intro, but it comes with several files and styles that would be a lot to undo as a starter.
+If this is your very first time using SvelteKit, feel free to choose "SvelteKit demo app," poke around a bit to get a sense of how things work, then come back. It's a good intro, but it comes with several files and styles that would be a lot to undo as a starter.
 </SideNote>
 
 The setup tool will also ask for your preferences on TypeScript, ESlint, and Prettier. For simplicity's sake, I won't use TypeScript, but you're welcome to if you like. (Svelte works quite well with it.)
@@ -101,6 +106,10 @@ This is our blank canvas, and we'll get some paint on it soon enough.
 ## Routing in SvelteKit
 
 Like many frameworks (and for that matter, PHP), SvelteKit has a directory-based approach to routing and pages.
+
+<PullQuote>
+Any component inside <code>src/routes</code> becomes a page at that same relative&nbsp;route.
+</PullQuote>
 
 <Callout>
 Any component inside <code>src/routes</code> becomes a page at that same relative&nbsp;route.
@@ -171,6 +180,10 @@ Inside of `src/routes`, make a new file named `__layout.svelte`.
 ```
 
 **This name is a SvelteKit convention.** SvelteKit automatically checks `routes` (and all its subdirectories) for a `__layout.svelte` file. That layout will "wrap" all the content loaded from that route and its sub-routes. 
+
+<PullQuote>
+A layout becomes a parent component, and the current page will be slotted in as its child component.
+</PullQuote>
 
 <Callout>
 A layout becomes a parent component, and the current page will be slotted in as its child component.
@@ -446,6 +459,10 @@ Ok, we've gotten a pretty good idea of project structure and styling at this poi
 
 ## Adding Markdown to SvelteKit with mdsvex
 
+<PullQuote>
+The word "svelte" does not make for smooth portmanteaus, but that doesn't slow the Svelte community down much.
+</PullQuote>
+
 If you've heard of MDX (generally used in React-based projects), you could think of the curiously named [mdsvex](https://mdsvex.pngwn.io/) as the Svelte equivalent. 
 
 <Callout>
@@ -497,6 +514,10 @@ _If you're running into errors, double-check that everything installed properly,
 
 ### Markdown pages
 
+<PullQuote>
+Thanks to mdsvex, we can now use Markdown files as pages.
+</PullQuote>
+
 Because of the config changes we just made, Markdown files can now be imported and used just like Svelte components.
 
 <Callout>
@@ -522,6 +543,10 @@ Just to try it out, create `src/routes/uses.md` and throw some Markdown into it.
 ```
 
 ![Our markdown file rendered out as a page on our website](/images/post_images/sveltekit-uses-rendered.png)
+
+<PullQuote>
+Markdown pages are a handy option for text-based content, since Markdown is generally easier to author than HTML.
+</PullQuote>
 
 You can even import and use Markdown content _inside of_ other files, if you want to--for example, if part of the page needed state or interactivity, but part could just be Markdown text.
 
@@ -617,6 +642,10 @@ However, what we're seeing above is only the content. We _also_ want to display 
 
 ### Adding a mdsvex layout
 
+<PullQuote>
+If a named layout shares the name of the current directory, mdsvex will use it automatically.
+</PullQuote>
+
 mdsvex lets us designate a layout--that is, a Svelte component--to render Markdown files, much the same way that SvelteKit layouts render pages.
 
 The two are similar, but not to be confused. Unlike SvelteKit layouts, there's no convention to follow with the naming or placement of mdsvex layouts; it's all explicit config.
@@ -630,7 +659,11 @@ So since it's our choice, we'll name our layout `_post.svelte`, and put it in `s
     ┗ 📜 _post.svelte
 ```
 
-**Why the underscore?** Anything in `src/routes` that begins with an underscore is a [private module](https://kit.svelte.dev/docs#routing-private-modules), i.e., excluded from the router. Since this layout file will just serve as a template and won't have content of its own, we don't want it to have its own route or be directly visited.
+**Why the underscore?** Any route that begins with an underscore is private, i.e., excluded from the site's routes. Since this layout file will just serve as a template and won't have content of its own, we don't want it to have its own route or be directly visited.
+
+<PullQuote>
+Any route that begins with an underscore is private, i.e., excluded from the site's routes.
+</PullQuote>
 
 Once the file is created, head back to `svelte.config.js` and add a `layout` property to the `mdsvex` function options. 
 
@@ -709,6 +742,10 @@ All right, at this point, we've got a good handle on individual posts. Now, it's
 
 
 ## SvelteKit endpoints
+
+<PullQuote>
+Endpoints work the same way as pages, as far as routing. But where pages return HTML, an endpoint returns data.
+</PullQuote>
 
 Up until now, every route we've created has been a page. But SvelteKit offers _another_ type of route, too: [endpoints](https://kit.svelte.dev/docs#routing-endpoints).
 
@@ -804,6 +841,10 @@ export const get = async () => {
 **Whoa!** Again, that might look like a lot, but when you consider it's actually _everything_ we need to create an API endpoint to return _all_ our site's posts, it's kind of remarkable how few lines that is.
 
 **Let's go over what's happening in that code:**
+
+<PullQuote>
+SvelteKit handles converting the response to JSON and setting the proper headers automatically.
+</PullQuote>
 
 - `import.meta.glob` is a Vite function. It imports any files that match the glob (wildcard string) provided--in this case, all `.md` files inside `src/routes/blog`.
   - That function returns an object where each file's relative path is the key, and the value is a "resolver" function (my term; not official) that loads the file contents as a JavaScript promise. 
@@ -908,6 +949,10 @@ The HTML in the above example is a bit simple (and doesn't properly account for 
 
 **SvelteKit is server-rendered by default.** That's great, because server-side rendering is generally better for performance, accessibility, and SEO. However, that also means static file prerendering (which is what we want) is opt-in.
 
+<PullQuote>
+SvelteKit has a number of available adapters, which shape our project's build output based on how we'd like to&nbsp;deploy. 
+</PullQuote>
+
 You _can_ [manually make any page prerendered](https://kit.svelte.dev/docs#ssr-and-javascript-prerender)--handy for things like an "about" or "faq" page that won't have any dynamic content. However, if we want our _entire_ site to be statically pre-rendered, marking each and every page by hand would be an error-prone chore. So instead, we'll reach for SvelteKit's [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static).
 
 <Callout>
@@ -954,6 +999,10 @@ However, what we have is basic and there some extra enhancements we may want to 
 
 
 ### Add dynamic post category pages
+
+<PullQuote>
+You could think of a dynamic page as a wildcard route. Essentially, it's a template that processes a route as an&nbsp;argument.
+</PullQuote>
 
 Many blogs use taxonomies like categories and tags to let the user sort and view posts. SvelteKit lets us accomplish this with dynamic pages.
 
@@ -1118,6 +1167,10 @@ If you want to get fancy, adding a page transition in SvelteKit is pretty simple
 - To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.
 - We'll use `fade` from the [Svelte transition](https://svelte.dev/tutorial/transition) library as our transition, though you could choose another if you like. The main thing is just to add `delay` to the `in` transition, so it doesn't start before the old page is done transitioning out.
 - Finally, we'll wrap the page contents in a [`#key` block](https://svelte.dev/tutorial/key-blocks).
+
+<PullQuote>
+A <code>#key</code> block takes an expression, and automatically re-renders its contents whenever that expression changes.
+</PullQuote>
 
 <Callout>
 A <code>#key</code> block takes an expression, and automatically re-renders its contents whenever that expression changes.
@@ -1302,6 +1355,10 @@ You could _also_ add some JavaScript to handle automatically copying the link to
 
 ### Add page head meta tags
 
+<PullQuote>
+Svelte has a <code>&lt;svelte:head&gt;</code> component for adding HTML to the page head from anywhere.
+</PullQuote>
+
 Ideally, we'll probably want to set up some stuff for the `<head>` on our various pages. For pages in general, but posts especially, it's important to have the right `title` attributes, Open Graph info, share images, etc.
 
 <Callout>
@@ -1342,6 +1399,10 @@ The posts API is functional, but it can be improved in several ways.
 
 For starters, we'll definitely want to put the code we just wrote into a `try`/`catch` block that returns the proper status code when things go wrong. Some refactoring might also be in order. We'll also probably want to add some other extra features to this API route eventually. 
 
+<PullQuote>
+Our API is currently missing pagination options, which could be very needed depending on the number of&nbsp;posts.
+</PullQuote>
+
 <Callout>
 Our API is currently missing pagination options, which could be very needed depending on the number of&nbsp;posts.
 </Callout>
@@ -1361,6 +1422,10 @@ I won't go into detail here, but you can check the official [Svelte docs error p
 
 
 ### Preload routes
+
+<PullQuote>
+SvelteKit ships with two functions for preloading data in the background: <code>prefetch</code>, and <code>prefetchRoutes</code>.
+</PullQuote>
 
 SvelteKit is already fast, and when we pre-render our HTML like we are via the static adapter, it's going to be blazing. But we can actually push the performance _even further_ with SvelteKit's built-in preloading.
 

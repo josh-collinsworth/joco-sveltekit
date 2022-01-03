@@ -12,6 +12,7 @@ coverHeight: 72
 excerpt: WordPress was potentially the most impactful and empowering technology I've yet encountered. It transformed my career path and enabled me to do anything I wanted at every point in my journey. So why leave it now?
 ---
 <script>
+  import Callout from '$lib/components/Callout.svelte'
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -24,11 +25,13 @@ I was first introduced to WordPress pretty early in my design career. I was a fl
 
 Though I knew the basics of HTML and CSS at the time (which allowed me to implement some customizations beyond what the theme provided), Divi offered to make previously impossible things achievable. The freedom was intoxicating.
 
-WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.
-
 <PullQuote>
 WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.
 </PullQuote>
+
+<Callout>
+WordPress empowered me to bring my ideas to life in a way no platform ever had&nbsp;before.
+</Callout>
 
 Things like loading and scroll effects, parallax, sliders, contact forms, project galleries, and all kinds of other features that were previously locked doors as a nascent coder suddenly became as easy as configuring some options in a graphical user interface (GUI).
 
@@ -38,7 +41,9 @@ Finally, last year (2020), I converted to a headless site, with WordPress on the
 
 At the time, I made the decision to go headless because I wanted to keep a foot in the WordPress world, for reasons laid out in previously mentioned post. But to summarize: I wanted the best of both worlds. I didn't want to go full static, but giving up WordPress entirely wasn't really a thought for me then, either, because having a database and all my content (especially images) still represented value.
 
+<Callout>
 Fast-forward several months, and I've come to the inevitable conclusion that, in the case of this, my personal website and (occasional) blog, WordPress does not represent value so much as tech debt.
+</Callout>
 
 
 
@@ -56,11 +61,15 @@ The answer for me is: no; WordPress isn't worth it anymore in the case of my spe
 
 The real question at the end of that mental calculation is: does WordPress's value outweigh its cost? Is it worthwhile, just to have a headless back-end for a website that I don't update with any particular frequency?
 
+<Callout>
 The answer for me is: no; WordPress isn't worth it anymore in the case of my specific needs and wants.
+</Callout>
 
 I thought about taking the WordPress side of the site to some cheap-o $5/month hosting. I tried out [SpinupWP](https://spinupwp.com/), and liked it a lot, but not enough to justify the cost of one single site. (I'd definitely use it if I had multiple client sites to host, though.)
 
+<Callout>
 Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not simple.
+</Callout>
 
 <PullQuote>
 Eventually, I came to the conclusion that I just want things simple, and headless WordPress is not&nbsp;simple.
@@ -90,11 +99,15 @@ Even GoDaddy starts at $10 per month; most other managed hosts, that would be co
 There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't. …WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal&nbsp;cost.
 </PullQuote>
 
+<Callout>
 There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
+</Callout>
 
 Granted, the tech hurdle is higher—not just anybody can code up a static site, and that's not to be discounted—but I can have a live Jamstack site on the web for _absolutely free_ any time I want with Netlify, et al. 
 
-WordPress, for all its myriad benefits, is definitely _not_ the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
+<Callout>
+WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
+</Callout>
 
 <PullQuote>
 WordPress just won't continue to be worth it for everyone all&nbsp;the&nbsp;time.
@@ -114,7 +127,9 @@ A <b>static site generator</b> (or SSG) is a tool that takes input of some kind�
 
 While it would've certainly been possible to just abandon the headless formula and go back to good ol' solo WordPress, that wasn't really an option to me. I'd lose too much work that had gone into this site already, and honestly, I wasn't interested in abandoning the modern dev experience that a JavaScript-based framework offers. I'm not making any value statements here, but to me:
 
+<Callout>
 Authoring front-end code in Markdown and Vue just feels nicer than working with the block editor and PHP templates.
+</Callout>
 
 (No knock on PHP. I still enjoy it when I get the chance to dive back into those waters, like playing an old video game I have fond memories of. But it's not my first choice anymore.)
 
@@ -265,11 +280,15 @@ A couple of other considerations around images, though:
 
 ## Building with Vue components in Markdown
 
-Among Gridsome's library of plugins is a particularly delightful one called [Vue Remark](https://gridsome.org/plugins/@gridsome/vue-remark). Vue Remark simply allows you to import Vue components in your Markdown files, and use them right alongside your Markdown content anywhere you want.
+Among Gridsome's library of plugins is a particularly delightful one called [Vue Remark](https://gridsome.org/plugins/@gridsome/vue-remark). 
 
 <PullQuote>
 Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.
 </PullQuote>
+
+<Callout>
+Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.
+</Callout>
 
 This means I can still have the functionality of all my custom blocks even while I'm writing posts in Markdown!
 
@@ -351,7 +370,9 @@ There are more efficient ways to achieve the above; my first try used <code>flat
 
 ## Final thoughts
 
+<Callout>
 I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated HTML.
+</Callout>
 
 This approach certainly isn't right for everyone. It works great for me because I'm the only one working on this site. But if I had co-authors, or users, or collaborators, the whole calculation might be drastically different.
 

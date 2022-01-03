@@ -68,11 +68,12 @@ $xxxl: 2200px;
 	--max-width: 34rem;
 	--sidebar-width: 14rem;
 	--margin: var(--quarterNote);
+
 	--quarterNote: 1.25rem;
 	--halfNote: calc(var(--quarterNote) * 2);
 	--dottedHalfNote: calc(var(--quarterNote) * 3);
 	--wholeNote: calc(var(--quarterNote) * 4);
-	--dottedWholeNote: calc(var(--quarterNote) * 6 );
+	--dottedWholeNote: calc(var(--quarterNote) * 6);
 
 	--button-size: 2.2rem;
 	--button-background: var(--paper);
@@ -82,7 +83,7 @@ $xxxl: 2200px;
 	}
 	
 	@media (min-width: $sm) {
-		--margin: var(--dottedHalfNote) ;
+		--margin: var(--dottedHalfNote);
 	}
 	
 	@media (min-width: $xxl) {

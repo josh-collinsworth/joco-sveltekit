@@ -13,6 +13,7 @@ excerpt: The web world is full of tradeoffs. Going from a CMS to a static site k
 ---
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
+  import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -34,6 +35,10 @@ The [utterances documentation and demo](https://utteranc.es/) covers the topic p
 When a user creates a new comment (which, it should be noted, they must be logged into GitHub to do), if there are no comments yet, utterances will create a new GitHub issue for the current page, and the user's comment becomes the first comment on that issue. Any new comments will appear as further comments on the same issue--so that you (eventually/ideally) have one "issue" per route.
 
 Whenever your page loads, utterance will go fetch the issue matching the current route, and plop all the comments from that issue onto the page, in sequential order.
+
+<Callout>
+Utterances adds GitHub-powered comments to your site, simply and easily.
+</Callout>
 
 <PullQuote>
 Utterances adds GitHub-powered comments to your site, simply and easily.
@@ -145,6 +150,10 @@ I found utterances to be a good fit for me and my site personally, but there are
 ### Utterances benefits
 
 I've already mentioned how simple utterances is, and how easy it is to set up. Beyond that, utterances is also free, open-source, and ad-free--all of which are great.
+
+<Callout>
+Utterances is a perfect fit for static sites, because it doesn't require a rebuild to display new content.
+</Callout>
 
 <PullQuote>
 Utterances is a perfect fit for static sites, because it doesn't require a rebuild to display new content.

@@ -13,7 +13,7 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
 ---
 
 <script>
-  import CounterButton from '$lib/components/demos/CounterButton.svelte'
+  import Callout from '$lib/components/Callout.svelte'
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
@@ -27,7 +27,11 @@ Otherwise: let's dive into what [SvelteKit](https://kit.svelte.dev/) is, how it 
 
 If you're familiar with [Next](https://nextjs.org/) or [Nuxt](https://nuxtjs.org/), it would be fair to think of SvelteKit as the Svelte equivalent.
 
-If not: all three are "meta-frameworks," sometimes also called app frameworks. You could think of meta-frameworks as a large set of add-ons for frontend UI frameworks like React, Vue, and Svelte (in the cases of Next, Nuxt, and SvelteKit, respectively). If a frontend framework is a toolbox, a meta-framework is a complete workshop.
+If not: all three are "meta-frameworks," sometimes also called app frameworks. You could think of meta-frameworks as a large set of add-ons for frontend UI frameworks like React, Vue, and Svelte (in the cases of Next, Nuxt, and SvelteKit, respectively). 
+
+<Callout>
+If a frontend framework is a toolbox, a meta-framework is a complete workshop.
+</Callout>
 
 **Why?** Frontend UI frameworks are ideal for…well, frontend UIs. They're built to handle pieces of an interactive user interface. By nature, being JavaScript-based, they're limited to the capabilities of the browser page they're loaded on. (Because of this, sites built just with a frontend framework are sometimes called "single-page applications," or SPAs.)
 
@@ -42,21 +46,25 @@ Most meta-frameworks come with all your build tools and routing pre-configured. 
 
 ### Going static
 
-Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
-
 <PullQuote>
 This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML&nbsp;files.
 </PullQuote>
+
+Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
 
 SvelteKit is even _more_ adaptable than that, thanks to its aptly named [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of output and hosting you're targeting.
 
 Currently, SvelteKit offers adapters to run your project as a Node app; as static, pre-generated HTML files; or as serverless functions (there are adapters specifically targeted for Netlify, Vercel, and Cloudflare Workers). There are several [community-created adapters](https://sveltesociety.dev/components/#category-SvelteKit%20Adapters) available as well, or you can even [write your own](https://kit.svelte.dev/docs#writing-an-adapter).
 
 <PullQuote>
-Thanks to the static adapter, most of this site runs just fine even with JavaScript disabled&nbsp;entirely.
+Thanks to the static adapter, most of this site works just fine even with JavaScript disabled&nbsp;entirely.
 </PullQuote>
 
-This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"--JavaScript running once the page has loaded--but they don't have to. Thanks to the static adapter (and some strategic `<noscript>` tags), most of this site runs just fine even with JavaScript disabled entirely.
+This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"--JavaScript running once the page has loaded--but they don't have to. 
+
+<Callout>
+Thanks to the static adapter (and some strategic <code>&lt;noscript&gt;</code> tags), most of this site works just fine even with JavaScript disabled entirely.
+</Callout>
 
 Worth noting, however: by default, after the first page load, SvelteKit's router hydrates and takes over page loading, to make transitions as smooth and fast as possible. You can even designate routes to preload in the background, so that by the time the user clicks, the load is nearly instantaneous.
 
@@ -247,7 +255,9 @@ My website uses few enough images (which are already generally compressed) that 
 
 As you can see from just perusing the posts list on this blog, it wasn't all that long ago that I moved to Gridsome in the first place. I went to a [headless Gridsome frontend](/blog/a-new-headless-site-with-gridsome) just over a year ago, and converted the site to [fully static](/blog/goodbye-wordpress) barely seven months ago. I've already talked here about how nice Gridsome's image handling is, and how fast it makes the site feel.
 
-This naturally prompts the question: _why move in the first place_? At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
+<Callout>
+This naturally prompts the question: why move in the first place? At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
+</Callout>
 
 <PullQuote>
 At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.
@@ -271,7 +281,9 @@ SvelteKit sparks joy in a way that Gridsome doesn't anymore.
 
 Maybe the fact that I've been working professionally with Vue for the last two years (and released [Quina](https://quina.app) late last year) is part of it, too. I still love Vue dearly, and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: that itch is scratched, and I want a different thing to play with.
 
+<Callout>
 This site, like any side project, is at least partially for me to enjoy. This is the one little corner of the internet that's 100% mine, where I can do anything I want for whatever reason. And that thing, right now, is SvelteKit.
+</Callout>
 
 Finally, [TypeScript](https://www.typescriptlang.org/) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it. At this point, close to 100% of this site's JS is typed, so I've given it a good shot at least.
 
@@ -298,12 +310,14 @@ The site's changed quite a bit, even if it doesn't necessarily look like it.
 The one non-trivial component that's mostly the same between the two versions is the font tester (seen on the [`/uses` page](/uses)). But it's actually about the same size, both in terms of line count and disk size. The Svelte version is negligibly larger (only by a fraction of a kB), and almost certainly just because of the addition of TypeScript.
 
 <PullQuote>
-“Is it better?” is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I <em>like</em>&nbsp;it&nbsp;better.
+“Is it better?” is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I like&nbsp;it&nbsp;better.
 </PullQuote>
 
 Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer has been completely refactored for better performance. TypeScript is everywhere; layouts have changed; new pieces have been added and old removed. MDSvex came with PrismJS built in, which let me delete both the a full component and an external library. [Storybook](https://storybook.js.org/) and my tests are both removed for now. Lots was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
 
-"Is it better?" is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I _like_ it better (even the parts that are more verbose), and I think that's the most important part. I even enjoyed the relatively rote process of moving Vue components over to Svelte.
+<Callout>
+"Is it better?" is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I like it better (even the parts that are more verbose), and I think that's the most important part. I even enjoyed the relatively rote process of moving Vue components over to Svelte.
+</Callout>
 
 By the way: I kept an [archival copy of the old site](https://joco-gridsome-archive.netlify.app/) live for myself to look back on, just in case you'd like to compare the two for yourself.
 
