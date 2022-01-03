@@ -67,26 +67,22 @@ $xxxl: 2200px;
 
 	--max-width: 34rem;
 	--sidebar-width: 14rem;
-	--margin: 1rem;
+	--margin: var(--rhythm);
 	--rhythm: 1.25rem;
 
 	--button-size: 2.2rem;
 	--button-background: var(--paper);
 
 	@media (min-width: $xs) {
-		--margin: 2rem;
+		--margin: calc(var(--rhythm) * 2);
 	}
-
+	
 	@media (min-width: $sm) {
-		--margin: 4rem;
+		--margin: calc(var(--rhythm) * 3);
 	}
-
-	@media (min-width: $lg) {
-		--margin: 6rem;
-	}
-
+	
 	@media (min-width: $xxl) {
-		--margin: 8rem;
+		--margin: calc(var(--rhythm) * 4);
 	}
 
 	@media (prefers-color-scheme: dark) {

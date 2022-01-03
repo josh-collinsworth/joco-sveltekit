@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	export const load = async ({ page, fetch }) => {
-		const res = await fetch('/blog/posts-detail.json')
+		const res = await fetch('/api/posts-detail.json')
 		const resJSON = await res.json()
 		
 		const recentPosts = resJSON.posts
@@ -22,6 +22,8 @@
 </script>
 
 <script lang="ts">
+	import type Post from '$lib/assets/js/interfaces/post'
+
 	import '$lib/assets/scss/global.scss'
 	
 	import Header from '$lib/components/header/Header.svelte'
@@ -115,12 +117,8 @@
 
 <svelte:window 
 	on:scroll={handleScroll} 
-	on:sveltekit:navigation-start={() => {
-		setLoading(true)
-	}}
-	on:sveltekit:navigation-end={() => {
-		setLoading(false)
-	}}
+	on:sveltekit:navigation-start={() => { setLoading(true) }}
+	on:sveltekit:navigation-end={() => { setLoading(false) }}
 />
 
 <svelte:head>
@@ -143,23 +141,21 @@
 	<Header {path} /> 
 
 	<div class="layout" class:subpage={!isTopLevelPage}> 
-		{#if isTopLevelPage}
-			<PageHeading title={path} {isTopLevelPage} />
-		{/if}
+		<PageHeading title={path} {isTopLevelPage} />
+		
+		<div id="sidebar">
+			<PageTransition refresh={pageHasSidebar} transitionOut={false}>
+				{#if pageHasSidebar}
+					<Sidebar {recentPosts} {allCategories} />
+				{/if}
+			</PageTransition>
+		</div>
 
 		<main id="main" class:archive={isBlogListingPage} tabindex="-1">
 			<PageTransition refresh={path}>
 				<slot/>
 			</PageTransition>
 		</main>
-		
-		<div id="sidebar">
-			<PageTransition refresh={pageHasSidebar}>
-				{#if pageHasSidebar}
-					<Sidebar {recentPosts} {allCategories} />
-				{/if}
-			</PageTransition>
-		</div>
 	</div>
 
 	<Footer />

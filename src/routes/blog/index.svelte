@@ -1,7 +1,7 @@
 <!-- TODO: this currently returns all posts. At some point, it will probably be worth adding pagination. -->
 <script context="module" lang="ts">
 	export async function load({ fetch }) {
-		const res = await fetch(`/blog/posts-detail.json`)
+		const res = await fetch(`/api/posts-detail.json`)
 		const { posts } = await res.json()
 
 		return {

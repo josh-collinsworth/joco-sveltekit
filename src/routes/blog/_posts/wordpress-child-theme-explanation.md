@@ -11,7 +11,7 @@ coverHeight: 21
 excerpt: When you’re just starting out with WordPress, it’s easy to think that you can just open up the style.css file included with your theme and begin making alterations. And that will work—at least for a while—but it won’t be a good idea…
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -32,9 +32,9 @@ This leaves you in the unfortunate predicament of choosing between redoing all o
 
 A WordPress child theme is kind of like an add-on extension of the main theme. A child theme borrows everything it can from its parent theme, but exists independently apart from any files you want it to share. A WordPress child theme allows you to add files to supplement those of the parent theme, taking precedent over the parent's files without the risk of being overwritten.
 
-<Callout>
+<PullQuote>
 A WordPress child theme is kind of like an add-on extension of the main theme. A child theme borrows everything it can from its parent theme, but exists independently apart from any files you want it to&nbsp;share.
-</Callout>
+</PullQuote>
 
 To put it in simpler terms: any time WordPress needs a theme file (say, for example, header.php), it will look inside the child theme folder for the named file. If there _is_ a file by that name in the child theme's folder, it will use that file. But if not, it will look for a file by that name in the _parent theme's_ folder instead, and will borrow that file from its parent theme.
 
@@ -95,9 +95,9 @@ It looks scary, but I'll let you in on a little secret: almost none of the above
 
 At this point you might be wondering: isn't this just a comment? Why do I need to include it? Aren't comments supposed to be read by humans and ignored by computers?
 
-<Callout>
+<PullQuote>
 WordPress finds, reads, and understands what to do with a file based on its specific name and the comments at the top of the&nbsp;file.
-</Callout>
+</PullQuote>
 
 You'd be mostly right, but actually, browsers and servers _do_ read comments. (Otherwise, how would they know when the comment was over?)
 
@@ -129,9 +129,9 @@ You should know that the CSS won't actually take effect yet, however. Later, in 
 
 **But until we do that, our CSS in this file won't actually work.** WordPress assumes we've put our theme info at the top of our style.css file, but it _won't_ assume we want to actually use it as a file for our actual CSS styling. That will come shortly, when we use functions.php to enqueue our parent theme's stylesheet, and then our child theme's.
 
-<Callout>
+<PullQuote>
 …any styles that you add to your child theme’s style.css file will load last, and will therefore override the parent theme’s CSS so that you won’t need to delete or alter anything in the parent theme’s&nbsp;stylesheet.
-</Callout>
+</PullQuote>
 
 This way, the parent theme is free to update all it wants, but your styles remain intact and unaffected. Your site stays up-to-date and secure, while your styles stay safe from unintended alterations.
 
@@ -162,9 +162,9 @@ Again, however, it's critical that this file is named "functions.php" _exactly_ 
 
 When any given WordPress theme is active, any code in that theme's functions.php file will run every time a page on that site is loaded (as will its parent theme's). So our child theme's functions.php file (_and_ its parent theme's functions.php file) will load and run every time a new page loads, as long as our child theme is the active theme.
 
-<Callout>
+<PullQuote>
 You can think of functions.php a little like a custom plugin specially made for your&nbsp;theme.
-</Callout>
+</PullQuote>
 
 **This is true in both the WordPress admin area and the front-facing portion of the site.** That's why things like styles, custom post types, navigation menus, theme features, and other "always-on" bits of functionality are generally added to functions.php. You can think of functions.php a little like a custom plugin specially made for your theme.
 

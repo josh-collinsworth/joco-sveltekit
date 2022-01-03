@@ -75,10 +75,6 @@
       }
     }
 
-    &-wrapper {
-      margin-top: calc(var(--rhythm) * 5);
-    }
-
     .thumbnail {
       width: 6rem;
       border-radius: 3rem;

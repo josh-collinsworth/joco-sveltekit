@@ -4,14 +4,14 @@ date: "2015-04-01"
 updated: "2021-01-19"
 categories:
   - "design"
-  - "thoughts-and-advice"
+  - "opinion"
 coverImage: "ColorPost-4.jpg"
 coverWidth: 35
 coverHeight: 22
 excerpt: One of the most difficult things for me to learn in my transition from the classroom to a professional branding agency was how to properly handle color output. So I decided to write this post in the hope of saving you some from some of the pitfalls that I failed to avoid.
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -26,9 +26,9 @@ Trust me: it's no fun having to redo 300 logos because you didn't get the colors
 
 Let's refresh ourselves on the printing process.
 
-<Callout>
+<PullQuote>
 Even the best process printers are mixing inks on the fly to create a limited range of color, and that can often result in&nbsp;inconsistency.
-</Callout>
+</PullQuote>
 
 As you probably know, most color printers create color by mixing cyan, magenta, yellow and black inks. This is called CMYK, 4-color, or "process" printing (and by the way, the K in CMYK stands for "key," as the black color plate was once referred to as the key plate, in case you were wondering). Cyan plus magenta equals blue, magenta plus yellow equals red, and on and on. CMYK is very popular because it's cheap, and most colors can be recreated decently within the process printing color range, also known as a "gamut."
 
@@ -41,9 +41,9 @@ Pantone inks are special inks that are each created prior to printing.
 
 Inks such as this are called "spot" colors. They aren't combinations of cyan, magenta, yellow and/or black created during printing; they're precisely and individually mixed beforehand, kind of like paint. Spot colors are also like paint in that they are applied by the printer in a flat uniform layer, as opposed to the tiny halftone dots created by more traditional printing methods like CMYK. This makes spot colors much, much more consistent than process color.
 
-<Callout>
+<PullQuote>
 Pantone inks are special inks that are each created prior to&nbsp;printing.
-</Callout>
+</PullQuote>
 
 Think about it this way: if you were going to paint a wall in your house green, which would create a more consistent result—buying a bucket of cyan paint and a bucket of yellow paint and mixing them together as you went, or just buying green paint to begin with?
 
@@ -51,9 +51,9 @@ The latter, obviously. That's why spot colors are so great.
 
 **There are drawbacks to spot color printing, however.**
 
-<Callout>
+<PullQuote>
 In short, spot color printing is the best way to ensure color accuracy and a high-quality print, but because of its nature, it’s difficult and often&nbsp;expensive.
-</Callout>
+</PullQuote>
 
 Most pertinently, spot colors each require their own ink well during printing. Let's say you have a project that you want to print in standard CMYK, except that your client wants their two-color logo printed with the two appropriate spot colors. That would make this a six-color job; cyan, magenta, yellow and black plus the two specified spot colors equals six. So unless your printer has two extra spots for ink (and it almost certainly doesn't), this unfortunately means that the job will need to be handled by a professional print shop—and for that matter, will probably not be cheap.
 
@@ -87,9 +87,9 @@ As shown in the image above, standard color swatches (such as the "Dark Red" swa
 
 If you send a document with spot colors to a process printer, the machine will check to see if it has spot color inks loaded up. When that check comes back negative, rather than just ignoring those colors in your document, it will automatically attempt to translate your spot colors into some combination of cyan, magenta, yellow and black ink.
 
-<Callout>
+<PullQuote>
 Color conversion is not like converting celsius to fahrenheit or liters to gallons; it’s not mathematical, and there is no perfect formula for converting any given color into a new color&nbsp;space.
-</Callout>
+</PullQuote>
 
 This is where problems arise, as whatever method seems right to the computer will often not be correct to the eye. Color conversion is not like converting celsius to fahrenheit or liters to gallons; it's not mathematical, and there is no perfect formula for converting any given color into a new color space.
 
@@ -156,9 +156,9 @@ So if, for example, your brand color is Pantone 109 (bonus factoid: that's the y
 
 Have a look through a Pantone swatch book and you'll notice each individual swatch has two side-by-side samples. The left sample is printed with true Pantone ink (which, by the way, is why Pantone books are so expensive; printing hundreds of spot colors is no cheap or simple task). The right sample, meanwhile, is appended with a "P," indicating it's printed with process color.
 
-<Callout>
+<PullQuote>
 CMYK has a limited gamut (color range) and simply cannot reproduce all colors with 100%&nbsp;accuracy
-</Callout>
+</PullQuote>
 
 You'll see that these side-by-side samples of spot color and process color are not always an exact match, with the degree of discrepancy varying from swatch to swatch. This is mostly because CMYK has a limited gamut (color range) and simply cannot reproduce all colors with 100% accuracy, so this is not a foolproof system. Also, as mentioned earlier, spot colors print a solid layer of ink, while process printing creates color with halftone dots. Still, the values listed on these Pantone swatches are generally your best bet for at least getting as close as possible.
 
@@ -181,9 +181,9 @@ RGB is the color mode of virtually every electronic display, from your phone to 
 
 HTML (also called HEX) is exactly the same as RGB. They're the same thing; HTML/HEX just uses a different method of entering the color values. (Hex is short for hexadecimal, a digital numbering system that includes 16 basic single-digit numbers rather than 10.)
 
-<Callout>
+<PullQuote>
 …deep, dark colors can be an issue in RGB since by default there’s always at least a little bit of light creating and illuminating the colors your eye perceives on a backlit screen. Conversely, bright whites and neons tend to be problematic in the world of paper and ink, where adding color necessarily means darkening to a certain&nbsp;degree.
-</Callout>
+</PullQuote>
 
 RGB/HTML/HEX has a different gamut from CMYK/4-color/process, and while the two mostly overlap, there is still a narrow range of specific colors that can be printed but which cannot displayed accurately onscreen and vice versa. For example, very deep, dark colors can be an issue in RGB since by default there's always at least a little bit of light creating and illuminating the colors your eye perceives on a backlit screen. Conversely, bright whites and neons tend to be problematic in the world of paper and ink, where adding color necessarily means darkening to a certain degree. Also, this is a good point to mention that you cannot actually print white using a standard printer, since there's no way to mix colored inks together and create white. Anything you designate as white in your document will just be the plain paper color.
 
@@ -231,9 +231,9 @@ The fact is, every printer is different. You could send the same file to ten dif
 
 All paper is different, too, and paper and ink are both sensitive; conditions like temperature, humidity, light, and even the mere weight of the paper can affect printing results. But even a perfect process printer in perfect conditions couldn't replicate every single color the eye can perceive with 100% accuracy; that's impossible. And even if it weren't and all your print materials _were_ perfectly matched, every screen in the world would still be different, capable of being modified to display color differently and to be brighter or dimmer than the one you're looking at.
 
-<Callout>
+<PullQuote>
 Color isn’t a precise studio recording you can play back at will; it’s an ongoing live&nbsp;concert.
-</Callout>
+</PullQuote>
 
 Put bluntly, there is no true perfection in color reproduction. You won't achieve it. Color isn't a precise studio recording you can play back at will; it's an ongoing live concert. The same notes may be played on the same instruments night after night, but the production is always unique to some varying degree.
 

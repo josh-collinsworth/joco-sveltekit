@@ -4,6 +4,7 @@
 
   export let title: string
   export let isTopLevelPage: boolean = false
+  export let isArchive: boolean = false
 
   let computedTitle: string = ''
   let isWorking: boolean = false
@@ -28,31 +29,35 @@
 
 
 <PageTransition refresh={isTopLevelPage} span={true}>
-  <div class="page-head">
-    <div
-      class="heading-wrapper"
-      class:in={isWorking}
-      class:no-motion={$prefersReducedMotion}
-    >
-      <span class="brace" aria-hidden="true">[</span>
-      <h1>
-        <div class="title-wrap">
-          {computedTitle}
-          <noscript>{title}</noscript>
-        </div>
-      </h1>
-      <span class="brace closing-brace" aria-hidden="true">]</span>
-      
-      <noscript>
-        <!-- Just here to allow the heading to show when JS is disabled. -->
-        <style>
-          .closing-brace {
-            transform: none !important;
-          }
-        </style>
-      </noscript>
+  {#if isTopLevelPage || isArchive}
+    <div class="page-head">
+      <div
+        class="heading-wrapper"
+        class:in={isWorking}
+        class:no-motion={$prefersReducedMotion}
+      >
+        <span class="brace" aria-hidden="true">[</span>
+        <h1>
+          <div class="title-wrap">
+            {computedTitle}
+            <noscript>{title}</noscript>
+          </div>
+        </h1>
+        <span class="brace closing-brace" aria-hidden="true">]</span>
+        
+        <noscript>
+          <!-- Just here to allow the heading to show when JS is disabled. -->
+          <style>
+            .closing-brace {
+              transform: none !important;
+            }
+          </style>
+        </noscript>
+      </div>
     </div>
-  </div>
+  {:else}
+    <div class="page-head"></div>
+  {/if}
 </PageTransition>
 
 
@@ -69,6 +74,7 @@
     position: relative;
     z-index: 0;
     font-size: 1.1rem;
+    min-height: 2.2rem;
 
     .heading-wrapper {
       display: flex;

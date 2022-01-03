@@ -3,7 +3,7 @@ title: "My Essential Tools for WordPress Development"
 date: "2016-06-25"
 updated: "2020-06-14"
 categories:
-  - "thoughts-and-advice"
+  - "opinion"
   - "web"
   - "wordpress"
 coverImage: "Screenshot-2016-06-24-20_45_21.png"
@@ -12,7 +12,7 @@ coverHeight: 609
 excerpt: Some of these apps, resources and tools aren’t directly WordPress-related, or even necessarily development-related; some have to do with productivity or just make life a little easier. That’s by design. Part of being a developer is learning to work and use your tools as efficiently and with as little wasted time and mental energy as possible.
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 

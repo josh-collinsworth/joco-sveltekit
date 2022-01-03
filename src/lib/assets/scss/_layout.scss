@@ -43,19 +43,14 @@ hr {
 }
 
 .layout {
-	margin: 0 var(--margin) 4rem var(--margin);
+	margin: var(--rhythm) var(--margin) calc(var(--rhythm) * 4) var(--margin);
 	width: calc(100% - (var(--margin) * 2));
 	position: relative;
 	grid-template-columns: 1fr;
 	align-items: start;
 	justify-content: start;
-	margin-top: var(--rhythm);
 	background: transparent;
 	color: var(--ink);
-
-	&.subpage {
-		margin-top: calc(var(--rhythm) * 4);
-	}
 	
 	main {
 		width: 100%;
@@ -74,17 +69,26 @@ hr {
 }
 
 .sidebar .layout {
+	display: grid;
+	grid-template-columns: 100%;
+
 	@media (min-width: $lg) {
-		display: grid;
-		grid-template-columns: 1fr var(--sidebar-width);
-		gap: 0 calc(var(--rhythm) * 2);
+		grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
+		grid-gap: 0 calc(var(--rhythm) * 3);
 		width: calc(100% - (var(--margin) * 2));
+
+		main {
+			grid-column: 2 / 3;
+		}
 	}
 	
 	@media (min-width: $xl) {
 		main:not(.archive) {
-			margin-left: calc(var(--sidebar-width) + (var(--rhythm) * 2));
 			width: auto;
+		}
+
+		main.archive {
+			grid-column: span 2;
 		}
 	}
 }

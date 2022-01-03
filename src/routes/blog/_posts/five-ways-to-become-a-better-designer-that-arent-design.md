@@ -4,14 +4,14 @@ date: "2017-02-04"
 updated: "2020-05-18"
 categories:
   - "design"
-  - "thoughts-and-advice"
+  - "opinion"
 coverImage: "toa-heftiba-195458-1-1.jpg"
 coverWidth: 80
 coverHeight: 51
 excerpt: There’s vast world of design learning and opportunity right in front of us constantly. All we need to do is take the time to notice it and learn from it.
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -34,9 +34,9 @@ Knowing how to present your work is an art in and of itself, and there are entir
 
 In particular, talk about the _why_ of your work: what decisions were made and for what purpose? What had to be left out or sacrificed? And how do all of these decisions reinforce the project goal—i.e., the reason you're doing the work in the first place?
 
-<Callout>
+<PullQuote>
 [Speaking] may not ever be completely comfortable for you, and that’s ok. But you do need to be able to address people at least somewhat fearlessly in order to do your work justice (and to defend it from overzealous clients with uninformed opinions).
-</Callout>
+</PullQuote>
 
 If this is a big hurdle for you, again: don't panic. Start small. Talk to a couple of friends at first and build from there. You don't need to be a motivational speaker, and you don't ever need to get on a stage. It may not ever be completely comfortable for you, and that's ok. But you _do_ need to be able to address people at least somewhat fearlessly in order to do your work justice (and to defend it from overzealous clients with uninformed opinions).
 
@@ -55,9 +55,9 @@ But there's vast world of design learning and opportunity right in front of us c
 
 When you're waiting for your order in a restaurant, for example, rather than seek out distraction, look around you. Read the menu. How is it designed? Does it communicate clearly, or do you find that you have questions after reading it? Is there adequate spacing? Is it readable? How are the items categorized? How are things grouped and indicated?
 
-<Callout>
+<PullQuote>
 There’s vast world of design learning and opportunity right in front of us constantly. All we need to do is take the time to notice it and learn from&nbsp;it.
-</Callout>
+</PullQuote>
 
 Is the menu laminated? In a menu holder? Is it made to last or does it seem like it will be soon discarded?
 
@@ -69,9 +69,9 @@ Speaking of people: take the time to notice those around you. How are they react
 
 Deconstructing design—trying to understand the decisions somebody else made and _why_—is some of the best practice you can get in becoming a better designer yourself. This is especially true where a little empathy can be mixed in, and empathy comes from understanding.
 
-<Callout>
+<PullQuote>
 It’s all too easy to forget that everybody is working within their own set of specific limitations…and just because the end result of their struggle won’t win any design awards doesn’t mean they didn’t come up with an excellent solution to the original&nbsp;problem.
-</Callout>
+</PullQuote>
 
 A design that you think is ugly may actually be highly functional, perfect for its target audience, or the best possible result of working within the provided constraints. (This is why [I hate projects to redesign somebody else's logo](https://api.joshcollinsworth.com/why-designers-shouldnt-remake-other-designers-logos/)). It's all too easy to forget that everybody is working within their own set of specific limitations—budgets, timelines, tools, client feedback, etc.—and just because the end result of their struggle won't win any design awards doesn't mean they didn't come up with an excellent solution to the original problem.
 
@@ -92,9 +92,9 @@ Separate yourself from this misconception as early as possible.
 
 Sure, nobody likes ugliness, and it's generally apparent when design is out-of-date or cumbersome. That much is inarguable. But there's often a wide gap between what the designer _thinks_ their target audience is like, and what that audience is _actually like as humans_.
 
-<Callout>
+<PullQuote>
 The heart of design is empathy. Whatever kind of design work you’re doing, at its core, you’re trying to solve a problem for somebody. Their problem is now your problem. So understanding that person, on a deep and personal level, is parallel to understanding the problem&nbsp;itself.
-</Callout>
+</PullQuote>
 
 Much has already been written on how designers tend to design for other designers. The approval of our clients and happiness of our users tends to mean less to us than the admiration of other professionals. [Dribbble](https://dribbble.com/) and the homogeny it creates is often brought up in this discussion.
 
@@ -106,9 +106,9 @@ Make it a habit of reading books (or at the very least, [Medium](https://medium.
 
 Listen to [NPR](http://www.npr.org/) on your commute. I can't tell you how many times I've sat in my car long after arriving at my destination to finish a story on [The Moth Radio Hour](https://themoth.org/radio-hour) or an interview on [Fresh Air](http://www.npr.org/programs/fresh-air/), and come away from that experience with a fresh perspective on life that I never would have considered before.
 
-<Callout>
+<PullQuote>
 To design is to understand. So get out of your bubble. …The wider your horizon, the more effectively you can solve problems for real people in the real&nbsp;world.
-</Callout>
+</PullQuote>
 
 Get some legitimate news in your life (the key word here being "legitimate;" real news, not partisan or sensationalized). Watch documentaries, or at the very least, movies and TV shows where the characters don't look like you or live a life similar to yours (or the one you want). It's better than nothing.
 
@@ -136,9 +136,9 @@ This might sounds like #3, but for this one, I'm opening it up to _everyone_.
 
 Even people who have lots in common with you can open your mind to new ways of thinking and show you things you didn't know before. Your colleagues can introduce you to new tools, skills, shortcuts and other important things you may not have known about.
 
-<Callout>
+<PullQuote>
 Sooner or later, it’s not about the book anymore; it’s about the person doing the actual&nbsp;work.
-</Callout>
+</PullQuote>
 
 Soft skills are often underrated in design, and that's why I'm throwing this seemingly redundant item in at the end of the list.
 

@@ -1,7 +1,6 @@
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
 
-  import LogoSVG from './header/LogoSVG.svelte'
   import TagList from './tags/TagList.svelte'
   import Tag from './tags/Tag.svelte'
   
@@ -11,15 +10,9 @@
 
 
 <aside>
-  <a href="/" class="home-link">
-    <LogoSVG iconOnly={true} />
-  </a>
-
   <h2>Recent blog posts</h2>
+
   <ul class="sidebar__posts-list">
-    {#if !recentPosts.length}
-      Loading…
-    {/if}
     {#each recentPosts as post}
       <li>
         <a href="/blog/{post.slug}" sveltekit:prefetch>
@@ -30,6 +23,7 @@
   </ul>
 
   <h2>Categories</h2>
+
   <TagList>
     {#each allCategories as category}
     <Tag to="/blog/category/{category}">
@@ -38,13 +32,17 @@
     {/each}
   </TagList>
   
-  <h2>More</h2>
+  <h2>More links</h2>
+
   <ul>
     <li>
       <a href="/blog">All blog posts</a>
     </li>
     <li>
       <a href="/writing-and-speaking">Other writing & speaking</a>
+    </li>
+    <li>
+      <a href="/">Home</a>
     </li>
   </ul>
 </aside>
@@ -56,27 +54,15 @@
     align-self: start;
     position: sticky;
     top: calc(var(--rhythm) * 2);
-    max-width: calc(var(--sidebar-width) * 1.5);
+    max-width: var(--max-width);
     font-family: var(--heading-font);
+    grid-row: 3 / 4;
+	  margin: calc(var(--rhythm) * 3) auto 0;
     
     @media (min-width: $lg) {
-      text-align: right;
-    }
-
-    .home-link {
-      display: none;
-      
-      @media (min-width: $lg) {
-        margin: 0 0 1rem 0;
-        width: 1.5rem;
-        overflow: hidden;
-        display: block;
-        margin-left: auto;
-      }
-      
-      svg {
-        width: 500%;
-      }
+      grid-column: auto;
+      grid-row: auto;
+      margin: 0;
     }
     
     h2 {
@@ -89,10 +75,6 @@
       border-bottom: .15em solid;
       width: max-content;
       text-align: inherit;
-
-      @media (min-width: $lg) {
-        margin-left: auto;
-      }
 
       &:first-of-type {
         margin-top: 0;
@@ -108,10 +90,6 @@
       list-style-type: none;
       padding: 0;
       line-height: 1.2;
-
-      @media (min-width: $lg) {
-        justify-content: flex-end;
-      }
 
       &.tag-list li {
         margin: 0;
@@ -136,7 +114,7 @@
             &:before {
               position: absolute;
               content: '[';
-              left: -.5em;
+              left: -.35em;
             }
           }
 
@@ -147,7 +125,6 @@
             &:after {
               position: absolute;
               content: ']';
-              right: -.5em;
             }
           }
         }

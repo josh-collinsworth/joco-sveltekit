@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { createEventDispatcher, onMount } from 'svelte'
   import { prefersReducedMotion } from '$lib/data/store'
   import { TIMING_DURATION } from '$lib/data/constants'
   import { cubicIn, cubicOut } from 'svelte/easing'
@@ -13,17 +12,8 @@
 
   export let refresh: string|boolean = ''
   export let span: boolean = false
-
-  const dispatch = createEventDispatcher()
-  
-  //For some reason these are both needed; otherwise the first click won't trigger the loaded event.
-  onMount(() => {
-    dispatch('loaded', { refresh })
-  })
-
-  $: {
-    dispatch('loaded', { refresh })
-  }
+  export let transitionIn: boolean = true
+  export let transitionOut: boolean = true
 </script>
 
 
@@ -31,15 +21,15 @@
   <div
     class="transition-wrapper"
     class:span
-    in:fly={{ 
+    in:fly={ { 
       y: yIn,
-      duration: TIMING_DURATION,
-      delay: TIMING_DURATION,
+      duration: transitionIn ? TIMING_DURATION : 0,
+      delay: transitionIn ? TIMING_DURATION : 0,
       easing: cubicOut 
     }}
     out:fly={{
       y: yOut,
-      duration: TIMING_DURATION,
+      duration: transitionOut ? TIMING_DURATION : 0,
       easing: cubicIn
     }}
   >
@@ -53,6 +43,7 @@
 
     &.span {
       grid-column: 1 / -1;
+      grid-row: 1 / 2;
     }
   }
 </style>
