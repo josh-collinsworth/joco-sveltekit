@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-01-02"
+updated: "2022-01-03"
 categories: 
   - "svelte"
   - "javascript"
@@ -12,6 +12,7 @@ coverWidth: 16
 coverHeight: 9
 excerpt: Learn the fundamentals of SvelteKit by building a statically generated blog from scratch, with Markdown support, Sass, an API, and an RSS feed.
 ---
+
 <script>
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
