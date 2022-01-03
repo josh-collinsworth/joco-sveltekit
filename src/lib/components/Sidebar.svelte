@@ -64,21 +64,6 @@
       grid-row: auto;
       margin: 0;
     }
-
-    .home-link {
-      display: none;
-      
-      @media (min-width: $lg) {
-        margin: 0 0 1rem 0;
-        width: 1.5rem;
-        overflow: hidden;
-        display: block;
-      }
-      
-      svg {
-        width: 500%;
-      }
-    }
     
     h2 {
       font-size: .8em;

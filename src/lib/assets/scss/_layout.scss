@@ -70,9 +70,9 @@ hr {
 
 .sidebar .layout {
 	display: grid;
+	grid-template-columns: 100%;
 
 	@media (min-width: $lg) {
-		display: grid;
 		grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
 		grid-gap: 0 calc(var(--rhythm) * 3);
 		width: calc(100% - (var(--margin) * 2));
