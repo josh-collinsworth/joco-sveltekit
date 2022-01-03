@@ -14,7 +14,7 @@ excerpt: I've been a fan of Svelte for years, but never had the opportunity to u
 
 <script>
   import CounterButton from '$lib/components/demos/CounterButton.svelte'
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -31,9 +31,9 @@ If not: all three are "meta-frameworks," sometimes also called app frameworks. Y
 
 **Why?** Frontend UI frameworks are ideal for…well, frontend UIs. They're built to handle pieces of an interactive user interface. By nature, being JavaScript-based, they're limited to the capabilities of the browser page they're loaded on. (Because of this, sites built just with a frontend framework are sometimes called "single-page applications," or SPAs.)
 
-<Callout>
+<PullQuote>
 If a frontend framework is a toolbox, a meta-framework is a complete workshop.
-</Callout>
+</PullQuote>
 
 A meta-framework is an enhanced toolset for building full-fledged sites and apps with a specific frontend framework (hence the "meta" part of the name; a framework for a framework).
 
@@ -44,17 +44,17 @@ Most meta-frameworks come with all your build tools and routing pre-configured. 
 
 Next, Nuxt, and SvelteKit are _all_ capable of building your finished project as a server-side rendered app, as a static site, or as some combination of both.
 
-<Callout>
+<PullQuote>
 This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML&nbsp;files.
-</Callout>
+</PullQuote>
 
 SvelteKit is even _more_ adaptable than that, thanks to its aptly named [adapters](https://kit.svelte.dev/docs#adapters), which process your code differently for whatever type of output and hosting you're targeting.
 
 Currently, SvelteKit offers adapters to run your project as a Node app; as static, pre-generated HTML files; or as serverless functions (there are adapters specifically targeted for Netlify, Vercel, and Cloudflare Workers). There are several [community-created adapters](https://sveltesociety.dev/components/#category-SvelteKit%20Adapters) available as well, or you can even [write your own](https://kit.svelte.dev/docs#writing-an-adapter).
 
-<Callout>
+<PullQuote>
 Thanks to the static adapter, most of this site runs just fine even with JavaScript disabled&nbsp;entirely.
-</Callout>
+</PullQuote>
 
 This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"--JavaScript running once the page has loaded--but they don't have to. Thanks to the static adapter (and some strategic `<noscript>` tags), most of this site runs just fine even with JavaScript disabled entirely.
 
@@ -249,9 +249,9 @@ As you can see from just perusing the posts list on this blog, it wasn't all tha
 
 This naturally prompts the question: _why move in the first place_? At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about it.
 
-<Callout>
+<PullQuote>
 At this point it almost seems like the only reason this site exists is so that I can rebuild it, then write a post about&nbsp;it.
-</Callout>
+</PullQuote>
 
 I was a very early adopter of Gridsome, and at the time (in 2019), it still seemed to be regularly updated and headed towards a 1.0 release. But it's been almost exactly two years since the last minor version update of Gridsome ([0.7](https://gridsome.org/blog/2019/09/17/gridsome-v07/)), and at this point, it doesn't seem like it's an actively maintained project any longer. It's been all but silent since then.
 
@@ -265,9 +265,9 @@ You might ask why, then, I didn't move over to Nuxt, given that it's a larger an
 
 When I was writing this site in Gridsome, my list of Vue projects was fairly small, which made the appeal of having a Vue outlet more appealing. Now, though, it doesn't feel like I _need_ a site in Vue anymore--especially since my day job isn't Vue-focused anymore.
 
-<Callout>
+<PullQuote>
 SvelteKit sparks joy in a way that Gridsome doesn't anymore.
-</Callout>
+</PullQuote>
 
 Maybe the fact that I've been working professionally with Vue for the last two years (and released [Quina](https://quina.app) late last year) is part of it, too. I still love Vue dearly, and will almost certainly pick it back up to write a project in Vue 3 one day in the near future. But silly as it sounds, for right now: that itch is scratched, and I want a different thing to play with.
 
@@ -297,9 +297,9 @@ The site's changed quite a bit, even if it doesn't necessarily look like it.
 
 The one non-trivial component that's mostly the same between the two versions is the font tester (seen on the [`/uses` page](/uses)). But it's actually about the same size, both in terms of line count and disk size. The Svelte version is negligibly larger (only by a fraction of a kB), and almost certainly just because of the addition of TypeScript.
 
-<Callout>
+<PullQuote>
 “Is it better?” is a really hard question to answer, even without getting into the highly subjective topic of what "better" even means. But I <em>like</em>&nbsp;it&nbsp;better.
-</Callout>
+</PullQuote>
 
 Most of the rest just isn't comparable anymore. The colorful square grid in the header and footer has been completely refactored for better performance. TypeScript is everywhere; layouts have changed; new pieces have been added and old removed. MDSvex came with PrismJS built in, which let me delete both the a full component and an external library. [Storybook](https://storybook.js.org/) and my tests are both removed for now. Lots was refactored. I relied more on global CSS previously, and have moved more towards component-based CSS this time around.
 
@@ -348,9 +348,9 @@ For just about any project, **yes**, I would use SvelteKit again in a heartbeat.
 
 Even though it's still technically pre-1.0, SvelteKit feels very solid--much more so than other pre-1.0 frameworks I've tried--_and_ it's a delight to work with. The adapters allow you to tailor your input to any output you like, and the scope of things you can build with it is impressively vast. Plus, it's likely to be smaller and faster than whatever else you might have chosen, and with even better developer experience.
 
-<Callout>
+<PullQuote>
 The Svelte rocketship is a wonderful place to be. I encourage you to step aboard.
-</Callout>
+</PullQuote>
 
 As mentioned, it's still early days for SvelteKit, so there are still some areas where its established solutions may not be as robust as with other frameworks. I can understand hesitance to bet the farm on something a little newer, but I don't think I'd have any real hesitation at this point. An established solution with a rich ecosystem like Nuxt might have more to offer in this moment, but I'm confident both that I could do anything I needed to do in SvelteKit, and that it won't be long before SvelteKit fills the gaps. It's hard to imagine SvelteKit _not_ becoming the #1 go-to in all cases in the near future--especially knowing it only came out of closed beta a matter of months ago.
 

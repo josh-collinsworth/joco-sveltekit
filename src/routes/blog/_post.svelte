@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
   import Bio from '$lib/components/posts/Bio.svelte'
@@ -9,15 +9,15 @@
   import '$lib/assets/scss/post-styles.scss'
   import '$lib/assets/scss/code.scss'
 
-  export let coverImage
-  export let title
-  export let excerpt
-  export let coverWidth
-  export let coverHeight
-  export let slug
-  export let date
-  export let updated
-  export let categories
+  export let categories: string|string[] = []
+  export let coverImage: string = ''
+  export let coverWidth: number = 16
+  export let coverHeight: number = 9
+  export let date: string = ''
+  export let excerpt: string = ''
+  export let slug: string = ''
+  export let title: string = ''
+  export let updated: string = ''
 
   $: imagePath = `/images/post_images/${coverImage}`
 

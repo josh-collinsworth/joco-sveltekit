@@ -13,7 +13,7 @@ coverHeight: 567
 excerpt: Enjoy all the convenience of easy local WordPress development with Local, plus build tools with CodeKit, without any of the tricky command line setup.
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 

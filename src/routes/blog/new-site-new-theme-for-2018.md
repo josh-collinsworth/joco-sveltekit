@@ -13,7 +13,7 @@ coverHeight: 9
 excerpt: Building a WordPress theme (and a new brand) from scratch.
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 

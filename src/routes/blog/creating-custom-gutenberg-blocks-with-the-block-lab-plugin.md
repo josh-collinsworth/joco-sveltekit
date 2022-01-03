@@ -13,7 +13,7 @@ coverHeight: 125
 excerpt: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0. This post explains how to use it, even if you only know basic HTML.
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -24,9 +24,9 @@ I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in m
 
 First things first: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0.
 
-<Callout>
+<PullQuote>
 Block Lab is a plugin that helps you create your own custom blocks with minimal code&nbsp;required.
-</Callout>
+</PullQuote>
 
 Ordinarily, you're restricted to the types of blocks WordPress includes by default—the standard text, headings, dividers, images, quotes, etc.—and if you need something more specialized, you'd either have to install a third-party plugin with the type of block you want, or you'd have to get your hands dirty writing a pretty good deal of custom code. Block Lab is something of a best-of-both hybrid of those two choices.
 
@@ -55,9 +55,9 @@ This is just an example of the Side Note block! Nifty, eh.
 
 I find that block handy for expressing tangential thoughts and info in the middle of some content; it helps tell the reader that they can skip that part if they're not interested in extra details, while also adding some visual interest.
 
-<Callout>
+<PullQuote>
 If you’re familiar with WordPress shortcodes, think of custom blocks as the next evolution of that idea. Custom blocks are the same concept, but much easier to use (since the author just picks a block type, rather than typing a specific key combination).
-</Callout>
+</PullQuote>
 
 It would certainly be possible to achieve this result without a custom block, but it would be tedious extra work. At minimum, you (or the author) would need to add a class to whatever block you were using each time you wanted to invoke the component. Or, you could use a shortcode, or even use the block editor's styling controls to change the block's appearance.
 
@@ -119,9 +119,9 @@ Most of the time, I find just one field per block is what I want, but you can ge
 
 If you're familiar with Advanced Custom Fields (ACF), then this part will be very familiar to you. In fact, as I understand it, Block Lab is actually built on top of Advanced Custom Fields under the hood, so all the power of that excellent plugin comes standard.
 
-<Callout>
+<PullQuote>
 Block Lab is actually built on top of Advanced Custom Fields under the hood, so all the power of that excellent plugin comes&nbsp;standard.
-</Callout>
+</PullQuote>
 
 In any case, though, working with fields in Block Lab is pretty much identical to working with fields in ACF.
 
@@ -155,9 +155,9 @@ Technically, your block is available to choose in the block editor at this point
 
 In order to display your custom block (either in the block editor or on the front end of the site), you'll need to create a PHP template file for it. Don't panic, though. As I've already mentioned: the beautiful thing about Block Lab is that you don't need to know anything about PHP to create custom blocks. Just a little HTML and CSS is enough. All you'll need to know is where to find your theme's folder, and how to add files to it. (And it may go without saying, but be sure you're using a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) or your own custom theme before you attempt this, or your work will probably be overwritten next time your theme updates.)
 
-<Callout>
+<PullQuote>
 The beautiful thing about Block Lab is that you don’t need to know anything about PHP to create custom blocks. Just a little HTML and CSS is&nbsp;enough.
-</Callout>
+</PullQuote>
 
 Again, Block Lab lets you know exactly what you should name your template file and where to place it. There are a few ways to go about this part, depending on your needs (you can [read more in the documentation](https://getblocklab.com/docs/get-started/add-a-block-lab-block-to-your-website-content/) if interested), but we'll stick with the simplest:
 
@@ -182,9 +182,9 @@ Remember how I said you wouldn't need to know any PHP? That's because for basic 
 
 The important thing is just to make sure that the string inside the parentheses (`'note-text'` in the example code block above) matches the field’s name.
 
-<Callout>
+<PullQuote>
 The important thing is just to make sure that the string inside the parentheses (<code>'note-text'</code> in the example code block above) matches the field’s&nbsp;name.
-</Callout>
+</PullQuote>
 
 What this all means is: every time you use this block, it'll be dynamically rendered wrapped in a `div` with the `side-note` class. And the cool thing is: that applies both in the editor, and on the front end!
 

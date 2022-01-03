@@ -23,7 +23,7 @@
 
 	.tag {
 		display: block;
-		padding: 0.75em 1em;
+		padding: 0.6em 0.75em;
 		background: var(--darkBlue);
 		margin: 0;
 		color: var(--white);

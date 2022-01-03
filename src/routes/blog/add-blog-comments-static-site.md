@@ -12,7 +12,7 @@ coverHeight: 9
 excerpt: The web world is full of tradeoffs. Going from a CMS to a static site keeps things simple—but that simplicity comes with costs. Luckily, giving up comments on your blog doesn't have to be one of them.
 ---
 <script>
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -35,9 +35,9 @@ When a user creates a new comment (which, it should be noted, they must be logge
 
 Whenever your page loads, utterance will go fetch the issue matching the current route, and plop all the comments from that issue onto the page, in sequential order.
 
-<Callout>
+<PullQuote>
 Utterances adds GitHub-powered comments to your site, simply and easily.
-</Callout>
+</PullQuote>
 
 You don't really need to know anything about GitHub issues, or even that GitHub issues is the engine under the hood. (After all, these comments aren't really issues at all; they're just a convenient way to store data associated with your repo and in the same place as your code.)
 
@@ -146,9 +146,9 @@ I found utterances to be a good fit for me and my site personally, but there are
 
 I've already mentioned how simple utterances is, and how easy it is to set up. Beyond that, utterances is also free, open-source, and ad-free--all of which are great.
 
-<Callout>
+<PullQuote>
 Utterances is a perfect fit for static sites, because it doesn't require a rebuild to display new content.
-</Callout>
+</PullQuote>
 
 Also, because it uses GitHub as the comments engine under the hood, you can do all the same things you can with GitHub comments, like use Markdown; preview your comment before posting; and add reactions to other people's comments.
 

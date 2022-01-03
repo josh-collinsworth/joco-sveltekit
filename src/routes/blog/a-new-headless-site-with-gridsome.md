@@ -15,7 +15,7 @@ excerpt: A lengthy write-up diving into what headless means, its advantages and 
 
 <script>
   import Highlight from '$lib/components/Highlight.svelte'
-  import Callout from '$lib/components/Callout.svelte'
+  import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -46,9 +46,9 @@ In other words: by default, WordPress just takes care of everything.
 
 If that's, uh, _headful_ WordPress (see what I mean? It's a bad term), then _headless_ separates the admin and the front-end, leaving WordPress to handle the back-end content creation and site administration, while freeing the front-end presentation to be handled elsewhere, independently.
 
-<Callout>
+<PullQuote>
 Headless separates the admin and the front-end, leaving WordPress to handle the back-end content creation and site administration, while freeing the front-end to be handled elsewhere,&nbsp;independently.
-</Callout>
+</PullQuote>
 
 So a headless WordPress site will still use the WP backend as usual for all the content management, post creation, data storage, etc. From the admin side of the site, nothing changes, which is probably good news for your clients, as well as anyone who just wants to be able to keep using the admin interface they're already accustomed to.
 
@@ -56,9 +56,9 @@ But instead of having the site’s theme display your pages, posts, etc., a head
 
 If you aren't particularly familiar with the world of modern front-end development outside WordPress, you might not immediately see the advantages, but there are several to be had. Not being locked into PHP as your templating language means you're instead able to use powerful, modern frameworks like [Vue](http://vuejs.org), [Svelte](https://svelte.dev/), [Eleventy](https://www.11ty.dev/), or—in the case of this site—[Gridsome](http://gridsome.org), with all the goodies that come along.
 
-<Callout>
+<PullQuote>
 But instead of having the site’s theme display your pages, posts, etc., a headless site can use virtually anything, thanks to the WordPress REST&nbsp;API.
-</Callout>
+</PullQuote>
 
 This goes hand-in-hand with **Jamstack**, and is actually a decent example of it. The JAM stands for JavaScript, API and Markup—though it's more of a loose description of _typical_ features of a site rather than a literal definition or group of technologies, so don't get too hung up on those three things. Jamstack sites always use JavaScript in some fashion, but they don't all use APIs, necessarily.
 
@@ -110,9 +110,9 @@ Actually, the drawback isn't limited to plugins and themes; core WordPress featu
 
 Another drawback is that you're essentially hosting the site twice. Like I mentioned, I have the front-end of this site on Netlify, which has a free tier, so I'm at liberty to continue using whatever WordPress hosting I want without it costing me any more. (At least, not unless this blog really blows up for some reason, which seems very unlikely.) But that might not be the case for you, depending on your site's traffic and needs. And then again, hosting isn't costing me any _less_, either.
 
-<Callout>
+<PullQuote>
 With headless, since your front-end isn’t rendered by your theme’s PHP template files anymore, plugins that change the appearance or layout of the site will lose their&nbsp;effect.
-</Callout>
+</PullQuote>
 
 And if you _are_ pre-rendering content with an SSG (as opposed to querying data from your WP site's API on the fly), you'll need to redeploy the site each time content changes. (There are [plugins](https://wordpress.org/plugins/search/Netlify/) to solve that particular pain point, though.)
 
@@ -137,9 +137,9 @@ I really enjoyed this post from Ethan Marcotte, "[Let a website be a worry stone
 
 That's part of what made me go all-in on Gridsome. I'd been messing around with it (and its [WordPress starter](https://gridsome.org/starters/default-word-press-starter/)) for close to a year when I read that post and made the decision to dive in.
 
-<Callout>
+<PullQuote>
 Gridsome’s blazing speed and powerful, straightforward features sold me. It makes building fast sites both easy and&nbsp;enjoyable.
-</Callout>
+</PullQuote>
 
 I'm a huge fan of Vue, so Gridsome being a Vue-based framework was a big selling point for me, even though Gridsome itself is relatively immature, at only version 0.7 at the time of writing (which I'll admit led to some frustrations in the development process). I've seen enough sites powered by Gridsome, and enough interest in the community, to abandon worry, however, and jump in anyway. But originally, Gridsome's blazing speed and powerful, straightforward features sold me. It makes building fast sites both easy and enjoyable.
 
@@ -147,9 +147,9 @@ Gridsome doesn't _need_ a back-end like WordPress, though, and I toyed with the 
 
 Eventually, however, I decided it was worth keeping WordPress around for a while, for a few reasons.
 
-<Callout>
+<PullQuote>
 The block editor, it turns out, is also the best link between a headless back-end and its decoupled front-end.
-</Callout>
+</PullQuote>
 
 One is: **I still want to see where Gutenberg goes**. The block editor is still a _long_ way from where it needs to be (and I still tweet out my frustrations with it from time to time), but it's also very exciting.
 
@@ -165,9 +165,9 @@ That's very cool, because it means I can still create custom blocks without real
 
 And as a _really_ cool feature: Block Lab checks your theme for a `blocks.css` file which, if present, loads in the editor, too! So you can style your editing experience as easily as the front-end experience, if you so choose. Realizing that going headless didn't mean giving up the power of a fully customizable block editor was a big persuasion in sticking with WordPress.
 
-<Callout>
+<PullQuote>
 Realizing that going headless didn’t mean giving up the power of a fully customizable block editor was a big persuasion in sticking with&nbsp;WordPress.
-</Callout>
+</PullQuote>
 
 I also mentioned earlier that there are plugins available to rebuild your site on Netlify every time your WordPress content changes (I'm personally using [NetlifyPress](https://wordpress.org/plugins/deploy-netlifypress/) at the moment), which makes the transition easier, too. Knowing that I can keep my editing process fully in WordPress, without the need to open a completely separate dashboard any time I want to publish or update content, makes things a lot easier.
 
@@ -179,9 +179,9 @@ Keeping my WordPress site live means that I can have the best of both worlds in 
 
 In addition, I don't need to worry about porting my WordPress site's RSS feed; I can just point the `/feed` URL back to the original WordPress site and keep using the same one I always have.
 
-<Callout>
+<PullQuote>
 Keeping my WordPress site live means that I can have the best of both worlds in this regard; I can pre-generate all my content, and I can also allow custom on-the-fly searches that’ll be backed by the WordPress&nbsp;API.
-</Callout>
+</PullQuote>
 
 All of this flexibility is actually what sold me on sticking with a WordPress back-end, rather than going fully static. I knew that if I couldn't get a good form solution going on the Jamstack, I could always just use DNS to point a page back to WordPress and slap a [Ninja Form](https://ninjaforms.com/) on it, the user being none the wiser. (As it turns out, Netlify _does_ have a rather nifty forms solution, but I like knowing that I can fall back to WordPress for anything I'm not finding or not comfortable with on the Jamstack.)
 
@@ -194,9 +194,9 @@ Obviously, I liked my old brand (I designed it, after all), but I felt it was ma
 
 It sounds silly, but in late 2017/early 2018 when I was launching the last site, I was in a very, very different place in my life and in my career. (I was neither a dad nor a full-time developer at the time, as the main examples.) The old look was fine, but it didn't feel like it represented who I am as well as it could anymore.
 
-<Callout>
+<PullQuote>
 The old look was fine, but it didn’t feel like it represented who I am as well as it could&nbsp;anymore.
-</Callout>
+</PullQuote>
 
 Naturally, being a designer and a font hoarder, I spent days scouring my library, comparing typefaces and pairings before eventually settling on _Pensum Display Basic_ and _Averta Standard_ as the new typefaces of choice (along with _MonoLisa_ as the font used for code). You can see them all and try them out on the [/uses](/uses) page.
 
@@ -240,9 +240,9 @@ Speaking of fun things: I tried to put something interesting (interesting for me
 
 On the topic of visual interest: the new site generates a bit extra using a couple of custom editor blocks; **Callouts** (which work a lot like pull quotes from a print publication), and **Highlights** (which serve to enlarge key pieces of text). Both make the posts a bit more skimmable (not a word; I'm ok with it), and help convey its main points at a glance.
 
-<Callout>
+<PullQuote>
 When you’re on a wide enough screen, the callouts appear with the article text conventionally wrapping around them (and hidden using ARIA to prevent screen readers repeating the text).
-</Callout>
+</PullQuote>
 
 You've probably seen both of them in this article already, but not if you're reading this on mobile. Callouts _repeat_ text, which is confusing when you've only got a single column on a mobile screen, so I hide those at mobile widths. When you're on a wide enough screen, the callouts appear with the article text conventionally wrapping around them (and hidden using ARIA to prevent screen readers repeating the text).
 
@@ -324,9 +324,9 @@ The images step is easily the most time-consuming part of this site's build (Gri
 
 ---
 
-<Callout>
+<PullQuote>
 In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough&nbsp;edges.
-</Callout>
+</PullQuote>
 
 Thanks for taking the time to read about my headless WordPress site. And by the way, [here's a link to the GitHub repo](https://github.com/josh-collinsworth/joco-gridsome), if you're the sort of person who enjoys checking out that sort of thing. (It's still a little bit of a mess.)
 
