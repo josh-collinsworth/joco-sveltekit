@@ -902,7 +902,7 @@ I already mentioned `page`, but one other argument the `load` function has acces
 ```svelte
 <!-- src/routes/blog/index.svelte -->
 <script context="module">
-export const load = ({ fetch }) => {
+export const load = async ({ fetch }) => {
   const posts = await fetch('/api/posts.json')
   const allPosts = await posts.json()
 
