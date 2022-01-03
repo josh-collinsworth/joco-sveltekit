@@ -2,7 +2,7 @@
 	export async function load({ fetch, page }) {
     const category = page.params.category
     //TODO: maybe add a way to fetch with query parameter to avoid filtering?
-		const res = await fetch(`/blog/posts-detail.json`)
+		const res = await fetch(`/api/posts-detail.json`)
 		let { posts } = await res.json()
 
     const matchingPosts = posts
@@ -33,6 +33,7 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<PageHeading title="Category: { category }" />
+
+<h1 style="margin: 0 0 calc(var(--rhythm) * 4); line-height: 1">Blog category: <b>{ category }</b></h1>
 
 <PostList {posts} />  

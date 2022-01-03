@@ -692,6 +692,17 @@ However, thanks to our named layout matching _only_ `blog` routes, if we load th
 
 Worth knowing: you can opt a Markdown file out of any mdsvex layout by adding `layout: false` to the frontmatter. You can _also_ set up a fallback, in case no route matches; [see the mdsvex layout docs](https://mdsvex.pngwn.io/docs/#named-layouts) for details.
 
+
+#### Tradeoffs and other options
+
+Using mdsvex layouts and dropping Markdown files directly into `src/routes/blog` is the simplest way to render individual posts. The main _drawback_ is: unfortunately, as of this writing, mdsvex layouts can't use Sass or TypeScript (as nearly as I can tell, at least). The compiler seems to break when I try.
+
+That might just be my config setup, but even aside from that, you're still a little more bought in to mdsvex with this approach. (Not that you wouldn't be otherwise, but it's one more feature you're relying on.) Neither of those tradeoffs may be deal-breakers for you, but they're still tradeoffs.
+
+The other possible good approach would be to use a dynamic `[post].svelte` route, and tuck all your posts away in a hidden folder. That's a little more complex, but also perhaps a bit more flexible. We'll cover dynamic routes more later, and the same approach can easily be adapted for all blog posts, if you want. For now, I just wanted to mention the tradeoffs.
+
+You could also use a nested SvelteKit layout, but I don't like that option because it will try to work on both our individual post pages _and_ our blog index page, and we don't want that.
+
 ---
 
 All right, at this point, we've got a good handle on individual posts. Now, it's time to build out the blog index page, where we'll list _all_ our posts. To do that--because we'll likely want to list posts in multiple ways in various places--we'll build out an API endpoint for posts.

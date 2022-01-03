@@ -187,7 +187,7 @@ Once you've retrieved the post data as JSON, you can display it in a Svelte page
 
 I won't get too much into it here, but SvelteKit also offers a way to [pre-load data server-side](https://kit.svelte.dev/docs#loading) from routes like this, or from external sources.
 
-**Worth noting:** when using the static adapter, there of course isn't any server to query at run time. So in that case, any server-side queries or `fetch` calls will run at build time, and whatever the result at that point, it will be output as plain static files. Any JSON routes you might have will still be query-able on the live site, but they'll be static. (For example, here's [this site's /blog/posts.json endpoint](/blog/posts.json).)
+**Worth noting:** when using the static adapter, there of course isn't any server to query at run time. So in that case, any server-side queries or `fetch` calls will run at build time, and whatever the result at that point, it will be output as plain static files. Any JSON routes you might have will still be query-able on the live site, but they'll be static. (For example, here's [this site's /api/posts.json endpoint](/api/posts.json).)
 
 <SideNote>
 The ability to read Markdown files isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).
