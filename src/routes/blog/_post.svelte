@@ -9,7 +9,7 @@
   import '$lib/assets/scss/post-styles.scss'
   import '$lib/assets/scss/code.scss'
 
-  export let categories: string|string[] = []
+  export let categories: string[] = []
   export let coverImage: string = ''
   export let coverWidth: number = 16
   export let coverHeight: number = 9
