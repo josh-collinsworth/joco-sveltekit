@@ -14,6 +14,7 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 ---
 
 <script>
+  import Warning from '$lib/components/Warning.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import PullQuote from '$lib/components/PullQuote.svelte'
@@ -760,7 +761,11 @@ There are just three important conventions to follow when creating an endpoint w
 2. **An endpoint should export a function for each [HTTP verb](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) it accepts.** This will often just be a `get` function, but you can also use `post`, etc.
 3. **Endpoint functions should return an object with `status` and `body`.** (Returning nothing is a 404 by default.)
 
-There's more detail in the [endpoint docs](https://kit.svelte.dev/docs#routing-endpoints), but it's less complicated than it sounds, so let's dive in.
+**Why an endpoint?** Because we might have other places in our app we want to access these posts, too.
+
+We _could_ just put the necessary code straight in where we need it instead of going to the trouble of making an API endpoint. But unless your blog is extremely simple, odds are, you'll want to grab posts in more than one place. Having an endpoint reduces the overhead of rewriting that code to go grab our posts all over the place.
+
+Anyway, there's more detail in the [endpoint docs](https://kit.svelte.dev/docs#routing-endpoints), but it's less complicated than it sounds, so let's dive in.
 
 
 ### Creating an endpoint for our posts
@@ -893,11 +898,11 @@ Because it runs on the server, the `load` function is called from its own distin
 
 Other important things to know about the `load` function:
 
-- **It has access to a few special arguments** (including `page`, which contains contextual info about the current route).
+- **It has access to a few special arguments** (including `url` and `params`, which contain contextual info about the request).
 - **It should return an object**. Among other things, this can include a status code, and props for the  component to use.
 - **It runs both server- and client-side.** That's mostly unimportant when prerendering to static files, as we are. Still, `load` shouldn't reference environment-specific things, like `window` or `process`.
 
-I already mentioned `page`, but one other argument the `load` function has access to is `fetch`, which allows the browser's `fetch` function to be used on the server. (Ordinarily, `fetch` is browser-only.)
+I already mentioned `url` and `params`, but one other argument the `load` function has access to is `fetch`, which allows the browser's `fetch` function to be used on the server. (Ordinarily, `fetch` is browser-only.)
 
 ```svelte
 <!-- src/routes/blog/index.svelte -->
@@ -1054,8 +1059,8 @@ Just to get an idea of what we're working with, let's start with any JavaScript 
 ```svelte
 <!-- [category].svelte -->
 <script context="module">
-  export const load = ({ page }) => {
-    console.log(page)
+  export const load = ({ params }) => {
+    console.log(params)
     return {
       status: 200
     }
@@ -1063,25 +1068,29 @@ Just to get an idea of what we're working with, let's start with any JavaScript 
 </script>
 ```
 
-Notice if you load a blog page now, you can see `page` in the browser console, as well as in the terminal where your local dev server is running:
+<Warning>
+The <code>params</code> and <code>url</code> arguments are brand-new to SvelteKit. In previous versions, both were consolidated under a single argument called <code>page</code>. If you're using one or the other and get an error, try switching or updating SvelteKit.
+</Warning>
 
-![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug-2.png)
+Notice if you load a blog category page now, you can see `params` in the browser console, as well as in the terminal where your local dev server is running:
 
-![The 'page' object, containing the host, path, query, and params. The params object contains the current slug.](/images/post_images/sveltekit-console-slug.png)
+```bash
+{ category: 'numbers' }
+```
 
-This confirms our `load` function is running both server- and client-side.
+This confirms our `load` function is running both server- and client-side. The current route is called `params.category`, because `category` is what we named our dynamic page, and whatever category route we're visiting will be its value.
 
-The current route is called `params.category`, because `category` is what we named our dynamic page. And whatever route we're visiting will be its value.
+<SideNote>
+Also note that you won't see what you logged in the browser console if you hit an error; that's why we added the explicit 200 status, just for demo purposes.
+</SideNote>
 
-<SideNote>You won't see what you logged in the browser console if you hit an error; that's why we added the explicit 200 status, just for demo purposes.</SideNote>
-
-Knowing that the current `/blog/categories/*` route will be available as `page.params.category`, we can get to work. We'll use that, and our existing API endpoint, to filter posts:
+Knowing that the current `/blog/categories/*` route will be available as `params.category`, we can get to work. We'll use that, and our existing API endpoint, to filter posts:
 
 ```svelte
 <!-- [category].svelte -->
 <script context="module">
-  export const load = async ({ page, fetch }) => {
-    const currentCategory = page.params.category
+  export const load = async ({ params, fetch }) => {
+    const currentCategory = params.category
     const response = await fetch('/api/posts.json')
     const posts = await response.json()
 
@@ -1138,8 +1147,8 @@ If you want to get fancy, adding a page transition in SvelteKit is pretty simple
 ```svelte
 <!-- __layout.svelte -->
 <script context="module">
-  export const load = ({ page }) => {
-    const currentRoute = page.path
+  export const load = ({ url }) => {
+    const currentRoute = url.pathname
 
     return {
       props: {
@@ -1164,6 +1173,10 @@ If you want to get fancy, adding a page transition in SvelteKit is pretty simple
   </main>
 {/key}
 ```
+
+<Warning>
+Again, the <code>url</code> argument is new, and was <code>page</code> in earlier versions of SvelteKit. If you see errors, you may need to either switch the argument, or update your version of SvelteKit. You can do the latter by deleting your <code>package-lock.json</code> file and re-running <code>npm install</code>.
+</Warning>
 
 - To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.
 - We'll use `fade` from the [Svelte transition](https://svelte.dev/tutorial/transition) library as our transition, though you could choose another if you like. The main thing is just to add `delay` to the `in` transition, so it doesn't start before the old page is done transitioning out.
@@ -1305,7 +1318,11 @@ const config = {
 export default config;
 ```
 
-**Important note: the plugins _must_ go in that order!** `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only works on headings that have IDs. (Fun fact: I discovered these two were in the wrong order on _this_ site while writing this, when I suddenly realized it was only half working.)
+<Warning>
+The plugins <strong>must</strong> go in that order! <code>rehypeSlug</code> adds IDs to our headings, and <code>rehypeAutolinkHeadings</code> only works on headings that have IDs.
+<br/><br/>
+(Fun fact: I discovered these two were in the wrong order on <em>this</em> site while writing this, when I suddenly realized it was only half working.)
+</Warning>
 
 With that in place, restart the dev server. Now pop open the inspector and check out an `h2` through `h6` generated from Markdown, and we'll see some additions:
 
