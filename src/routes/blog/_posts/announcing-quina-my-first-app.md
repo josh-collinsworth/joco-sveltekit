@@ -16,7 +16,7 @@ excerpt: 'The story of building Quina, a word game Progressive Web App built wit
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
-  
+  import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
 <SideNote>
@@ -44,9 +44,9 @@ The idea is pretty straightforward: you have ten chances to guess a secret five-
 
 If this sounds familiar, it's probably because you've either played the original, or played its most popular variant; [Mastermind](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>) is another version of the same game.
 
-<PullQuote>
+<CalloutPlusQuote>
 Quina is Latin for “five at a time,” since the game is played with five-letter&nbsp;words.
-</PullQuote>
+</CalloutPlusQuote>
 
 By the way, "Quina" was chosen for the name since it's Latin for "five at a time" (according to a Google search, at least; I sure don't speak the language). The original version of the game is played with four letters instead of five, so the name seemed fitting.
 
@@ -110,9 +110,9 @@ If you’ve ever visited a website and been prompted to add it to your home scre
 
 You can build a PWA with anything you might use to build a website; plain ol' HTML, CSS and JavaScript will work just fine, and you definitely don't _need_ to use a framework (let alone one as robust as Nuxt). As I considered the options, however, it became clear that Nuxt was my #1 choice, and one I've never regretted.
 
-<PullQuote>
+<CalloutPlusQuote>
 Progressive Web Apps are essentially websites, but with some extra features that make them behave like native&nbsp;apps.
-</PullQuote>
+</CalloutPlusQuote>
 
 **Nuxt** is a framework for building apps with Vue (Vue being a JavaScript component framework). As the name implies, Nuxt is the Vue equivalent of React's Next.js, if that helps.
 
@@ -127,13 +127,11 @@ That said, however: I considered using [Svelte](https://svelte.dev/) (really the
 
 Back to Nuxt, though: appealingly, Nuxt also has a rich library of optional first-party modules available to make integrations and advanced functionality easier.
 
-<PullQuote>
-I was repeatedly amazed while using Nuxt how easy it was to do anything I wanted to do. There was always a way, and most of the time, there was already a module built for it,&nbsp;too.
-</PullQuote>
+<CalloutPlusQuote>
+I was repeatedly amazed while using Nuxt how easy it was to do anything I wanted to do. There was always a way, and most of the time, there was already a module built for&nbsp;it,&nbsp;too.
+</CalloutPlusQuote>
 
 For example: actually getting all the features of a PWA up and running on your own would be challenging to say the least, but Nuxt has an installable [PWA module](https://pwa.nuxtjs.org/) that handles most of the heavy lifting for you with a few lines of config! There are also plugins for analytics, connecting to third-party services and APIs, and all kinds of other things.
-
-I was repeatedly amazed while using Nuxt how easy it was to do anything I wanted to do. There was always a way, and most of the time, there was already a module built for it, too.
 
 The game actually runs as a static site, however (albeit with a healthy dose of JavaScript); Nuxt can either build out your finished product to run on a Node server, or as a statically generated site. I chose the latter, since there isn't really anything I need done server-side (thanks mainly to the fact that all of Quina's data is saved in local storage, rather than in a database).
 
@@ -142,6 +140,10 @@ I did have a version of Quina working with Firebase authentication and Firestore
 </SideNote>
 
 ![The Quina home screen](/images/post_images/01-Google-Pixel-4-Front-879x1024.jpg)
+
+<PullQuote>
+Other than what's listed here, everything in the app is original and coded from scratch (including the brand and all the&nbsp;CSS).
+</PullQuote>
 
 The app is deployed on [Netlify](https://www.netlify.com/), by the way, in case you were curious. (That part was never a question; Netlify is amazing.)
 
@@ -152,7 +154,7 @@ Other than the previously mentioned Nuxt PWA module, the only additional tech/pa
 - The [vue-observe-visibility](https://github.com/Akryum/vue-observe-visibility) library for some nice scroll effects; and
 - Some free third-party sound effects, mentioned more specifically in the app's [FAQ](https://quina.app/faq/) page.
 
-Other than the above, everything in the app is original and coded from scratch (including the brand and all the CSS).
+Other than what's listed here, everything in the app is original and coded from scratch (including the brand and all the CSS).
 
 
 ## Building an Android App from a PWA
@@ -167,9 +169,9 @@ That’s what Quina and any other TWA app is; effectively, a browser that auto-l
 
 It's called Trusted Web Activity because in order to make it work right, you need to bundle your app with a secret key that matches a key that lives on your website. (More on that in a bit.)
 
-<PullQuote>
+<CalloutPlusQuote>
 That’s what Quina and any other TWA app is; effectively, a browser that auto-loads a specific web URL, disguised as an&nbsp;app.
-</PullQuote>
+</CalloutPlusQuote>
 
 It's also _required_ that the URL you're linking to qualifies as a progressive web app; [web.dev](https://web.dev/) offers tests to certify that. Mostly it's making sure you have the proper PWA manifest, a service worker (to make the app available offline, like a native app), and that your site loads over HTTPS. I won't go into any of those here, since there are better resources already out there on the ins and outs of PWAs.
 
@@ -189,13 +191,13 @@ It was when I finally stumbled upon a marvelous little CLI tool called [Bubblewr
 
 ### Bubblewrap at a glance
 
-The topic of using Bubblewrap to generate an Android app could easily take up its own 5,000-word blog post, but in short: Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's URL.
+The topic of using Bubblewrap to generate an Android app could easily take up its own 5,000-word blog post, but in short: 
+
+<CalloutPlusQuote>
+Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's URL.
+</CalloutPlusQuote>
 
 I don't want to short-change Bubblewrap, because it's undeniably amazing, and odds are good that my app wouldn't be in the store without it. But again, as with anything related to Google tech: _it's not quite that simple_.
-
-<PullQuote>
-Bubblewrap is a command line interface (CLI) tool that asks you to install some dependencies, then simply generates an Android app for you based on your progressive web app's&nbsp;URL.
-</PullQuote>
 
 The first hurdle is getting all the dependencies installed in the proper location. Bubblewrap is really explicit about where it wants to find its dependencies, and each one is pretty chonky. The documentation I followed was already outdated, but fortunately, I was able to Google for some updated answers (as I recall, I needed to download an older version of one of the dependencies).
 
@@ -247,9 +249,11 @@ As a side note, however: I _did_ find some unexpected drawbacks to the "build on
 
 While making money on Quina was never a primary goal, I put a lot of time and effort into the game, and I did hope that by getting it into a major app store, it might generate some revenue (though my expectations were never high; just hoping for some beer money here, maybe).
 
-Initially, I wanted to do a free app, with occasional (not-too-frequent) requests to support the app with a donation, and an incentive to do so in order to unlock new features.
+<CalloutPlusQuote>
+Initially, I wanted to do a free app, with occasional (not-too-frequent) requests to support the app with a donation, and an incentive to do so in order to unlock new features. However, the previously mentioned Google payment restriction made this complicated.
+</CalloutPlusQuote>
 
-However, the previously mentioned Google payment restriction made this complicated; I would be locked into Google Pay (and its extortive fees) for support donations, which I wasn't even sure I could implement in a web app in the first place. Certainly not as easily as, say, Stripe.
+If I went down that road, I would be locked into Google Pay (and its extortive fees) for support donations, which I wasn't even sure I could implement in a web app in the first place. Certainly not as easily as, say, Stripe.
 
 What I eventually settled on was:
 

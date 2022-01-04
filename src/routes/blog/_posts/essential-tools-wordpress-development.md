@@ -250,6 +250,7 @@ You'll have access to one app dashboard to manage all your sites. The major key 
 
 It may seem completely unrelated, but I can't tell you how handy it is to have an open playground for HTML, CSS and JS available at your fingertips at any time. I've learned lots of tricks, skills and shortcuts from trying things out in [CodePen](http://codepen.io) or looking at other users' code to see how they built their neat-o creation. It's also handy, when in lack of another solution, as a JavaScript linter and a debugging tool, or as a place to save code snippets for work or demo later. But more than anything, it's a sandbox. And you can learn a lot by building things in it.
 
+<!-- svelte-ignore a11y-img-redundant-alt -->
 ![Affinity Photo logo](/images/post_images/affinity-photo-available-on-the-mac-app-store.png)
 
 

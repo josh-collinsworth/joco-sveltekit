@@ -55,6 +55,7 @@ The theme runs mostly off a single index.php file which dynamically pulls in the
 
 I also took this opportunity to use CSS grid on a project for the first time—specifically, on the [design](https://api.joshcollinsworth.com/design/) page. It turns out, CSS grid mixes really well with [Advanced Custom Fields](https://www.advancedcustomfields.com/), particularly the Pro Repeater field. I set up fields for images, height and width, to control the size of images in the grid:
 
+<!-- svelte-ignore a11y-img-redundant-alt -->
 [![Custom fields that allow for a width and height property to use in the image grid](/images/post_images/acf-fields-1-1024x797.png)](/images/post_images/acf-fields-1.png)
 
 The width and height have max values, and a Sass loop (and a media query) sets CSS for those values with classes:

@@ -7,7 +7,7 @@ interface fetchPostsOptions {
 }
 
 const fetchPosts = async (options: fetchPostsOptions): Promise<Post[]> => {
-  const { withContent, offset, limit } = options
+  const { offset, limit } = options
 
   const posts = await Promise.all(
     Object.entries(import.meta.glob('../../../../routes/blog/_posts/*.md')).map(async ([path, page]) => {
@@ -32,9 +32,6 @@ const fetchPosts = async (options: fetchPostsOptions): Promise<Post[]> => {
     return posts
   })
   .then(posts => {
-    if (withContent) {
-      return posts
-    }
     return posts.map(post => ({
       title: post.title,
       slug: post.slug,
@@ -44,7 +41,6 @@ const fetchPosts = async (options: fetchPostsOptions): Promise<Post[]> => {
       categories: post.categories,
     }))
   })
-  
   return posts
 }
 

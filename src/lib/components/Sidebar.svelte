@@ -3,6 +3,7 @@
 
   import TagList from './tags/TagList.svelte'
   import Tag from './tags/Tag.svelte'
+  // import PostSearch from './PostSearch.svelte'
   
   export let recentPosts: Post[]
   export let allCategories: string[]
@@ -10,6 +11,8 @@
 
 
 <aside>
+  <!-- <PostSearch /> -->
+
   <h2>Recent blog posts</h2>
 
   <ul class="sidebar__posts-list">
@@ -49,7 +52,7 @@
 
 
 <style lang="scss" global>
-  #sidebar {
+  .sidebar {
     font-size: .85rem;
     align-self: start;
     position: sticky;
@@ -65,7 +68,8 @@
       margin: 0;
     }
     
-    h2 {
+    h2,
+    label {
       font-size: .8em;
       font-weight: bold;
       text-transform: uppercase;
@@ -75,14 +79,15 @@
       border-bottom: .15em solid;
       width: max-content;
       text-align: inherit;
-
-      &:first-of-type {
-        margin-top: 0;
-      }
+      color: var(--black);
 
       &::before {
         display: none;
       }
+    }
+
+    h2:first-child {
+      margin-top: 0;
     }
 
     ul {

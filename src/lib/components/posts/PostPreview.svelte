@@ -34,7 +34,7 @@
       <h2 class="h3">
         <a href={computedURL} sveltekit:prefetch>
           {#if external}
-            {post.title}<ExternalLink />
+            {post.title} <ExternalLink />
           {:else}
             {post.title}
           {/if}

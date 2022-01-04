@@ -14,6 +14,8 @@ excerpt: Block Lab is a WordPress plugin that simplifies the process of creating
 ---
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+  import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -24,13 +26,11 @@ I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in m
 
 First things first: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0.
 
-<PullQuote>
-Block Lab is a plugin that helps you create your own custom blocks with minimal code&nbsp;required.
-</PullQuote>
-
 Ordinarily, you're restricted to the types of blocks WordPress includes by default—the standard text, headings, dividers, images, quotes, etc.—and if you need something more specialized, you'd either have to install a third-party plugin with the type of block you want, or you'd have to get your hands dirty writing a pretty good deal of custom code. Block Lab is something of a best-of-both hybrid of those two choices.
 
+<CalloutPlusQuote>
 Block Lab is a plugin that helps you create your own custom blocks with minimal code required.
+</CalloutPlusQuote>
 
 There are three main steps to this process:
 
@@ -45,7 +45,9 @@ While there is technically a tiny bit of PHP involved, it's so little (and in th
 
 I always find it's helpful to start with the _why_ before diving into the _how_, so let's take a second to talk about what custom blocks might be used for.
 
+<Callout>
 If you're familiar with WordPress shortcodes, think of custom blocks as the next evolution of that idea. Custom blocks are the same concept, but much easier to use (since the author just picks a block type, rather than typing a specific key combination).
+</Callout>
 
 Personally, I have a few custom blocks. One I really like—that I'll use for this example—is my "side note" block. It renders content like this on the front end of the site:
 

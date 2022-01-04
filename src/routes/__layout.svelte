@@ -26,6 +26,7 @@
 
 	import '$lib/assets/scss/global.scss'
 	
+	import throttle from 'just-throttle'
 	import Header from '$lib/components/header/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
@@ -36,7 +37,6 @@
 	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { prefetch, prefetchRoutes } from '$app/navigation'
-	import throttle from 'lodash/throttle.js'
 	
 	export let path: string
 	export let recentPosts: Post[]
@@ -134,7 +134,7 @@
 	class:reduce-motion={$prefersReducedMotion}
 	class:prefers-dark={$prefersDarkMode}
 	class:prefers-light={$prefersLightMode}
-	class:sidebar={pageHasSidebar}
+	class:has-sidebar={pageHasSidebar}
 >
 	<Loader loading={$isLoading}/>
 
@@ -143,7 +143,7 @@
 	<div class="layout" class:subpage={!isTopLevelPage}> 
 		<PageHeading title={path} {isTopLevelPage} />
 		
-		<div id="sidebar">
+		<div class="sidebar">
 			<PageTransition refresh={pageHasSidebar} transitionOut={false}>
 				{#if pageHasSidebar}
 					<Sidebar {recentPosts} {allCategories} />

@@ -2,7 +2,7 @@
   import GridCell from './GridCell.svelte'
   import { onMount } from 'svelte'
   import { browser } from '$app/env'
-	import debounce from 'lodash/debounce.js'
+	import debounce from 'just-debounce'
 
   export let refresh: string = ''
   export let inverted: boolean = false

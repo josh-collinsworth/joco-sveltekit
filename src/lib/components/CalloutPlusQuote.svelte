@@ -5,3 +5,7 @@
     <slot />
   </div>
 </aside>
+
+<p class="callout">
+  <slot />
+</p>

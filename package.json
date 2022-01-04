@@ -34,7 +34,8 @@
   },
   "type": "module",
   "dependencies": {
-    "lodash": "^4.17.21",
+    "just-debounce": "^1.1.0",
+    "just-throttle": "^4.0.1",
     "rehype-autolink-headings": "^6.1.0",
     "rehype-slug": "^5.0.0"
   }

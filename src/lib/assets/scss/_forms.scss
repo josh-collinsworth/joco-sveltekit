@@ -56,6 +56,11 @@ input {
 		width: initial;
 		margin: initial;
 	}
+
+	&[type=search] {
+		color: inherit;
+		font-style: inherit;
+	}
 }
 
 button,
