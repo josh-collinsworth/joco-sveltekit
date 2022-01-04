@@ -79,7 +79,7 @@
       border-bottom: .15em solid;
       width: max-content;
       text-align: inherit;
-      color: var(--black);
+      color: var(--heading-color);
 
       &::before {
         display: none;

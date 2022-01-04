@@ -90,7 +90,7 @@
 			isScrollingDown.set(true)
 		}
 		lastScrollPosition = currentScrollPosition
-	}, 200)
+	}, 100)
 
 	onMount(() => {
 		handleLoadingUserPreferences()
