@@ -1069,7 +1069,7 @@ Just to get an idea of what we're working with, let's start with any JavaScript 
 ```
 
 <Warning>
-The <code>params</code> and <code>url</code> arguments are brand-new to SvelteKit. In previous versions, both were consolidated under a single argument called <code>page</code>. If you're using one or the other and get an error, try switching or updating SvelteKit.
+The <code>params</code> and <code>url</code> arguments are brand-new to SvelteKit (they replace <code>page</code>). If you hit errors with them, run <code>npm update</code> to update SvelteKit.
 </Warning>
 
 Notice if you load a blog category page now, you can see `params` in the browser console, as well as in the terminal where your local dev server is running:
@@ -1175,7 +1175,7 @@ If you want to get fancy, adding a page transition in SvelteKit is pretty simple
 ```
 
 <Warning>
-Again, the <code>url</code> argument is new, and was <code>page</code> in earlier versions of SvelteKit. If you see errors, you may need to either switch the argument, or update your version of SvelteKit. You can do the latter by running <code>npm update</code>.
+Again, the <code>url</code> argument is new to SvelteKit. Run <code>npm update</code> if you hit errors with it.
 </Warning>
 
 - To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.

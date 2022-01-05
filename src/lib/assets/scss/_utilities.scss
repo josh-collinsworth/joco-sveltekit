@@ -21,9 +21,12 @@ input[type=checkbox] {
 }
 
 .compressed-content {
-  max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $xs) {
+    max-width: var(--max-width);
+  }
 
   &.wider {
     max-width: calc(var(--max-width) * 1.5);

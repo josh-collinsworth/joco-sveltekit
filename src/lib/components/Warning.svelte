@@ -12,12 +12,12 @@
     margin: var(--halfNote) 0;
     position: relative;
     padding: 2px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-style: italic;
     background: linear-gradient(to bottom right, var(--orange), var(--red));
     
     .inner {
-      padding: var(--halfNote) var(--halfNote) var(--dottedHalfNote);
+      padding: calc(var(--quarterNote) * 1.5) calc(var(--quarterNote) * 1.5) calc(var(--quarterNote) * 2.5);
       background: var(--paper);
 
       &::before {

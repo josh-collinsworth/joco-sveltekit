@@ -27,8 +27,6 @@
   import Comments from '$lib/components/Comments.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount } from 'svelte'
-  
-  import '$lib/assets/scss/code.scss'
 
   export let Post, meta
 
