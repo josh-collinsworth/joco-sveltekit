@@ -3,7 +3,6 @@
 
   export const load = async ({ params }): Promise<LoadOutput> => {
     try {
-      console.log(params)
       const Post = await import(`./_posts/${params.post}.md`)
       
       return {

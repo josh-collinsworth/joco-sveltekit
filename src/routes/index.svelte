@@ -116,7 +116,7 @@
     z-index: 1;
 
     ~ h3 {
-      margin-top: var(--dottedHalfNote) ;
+      margin-top: var(--halfNote) ;
     }
   }
 
@@ -129,7 +129,7 @@
 
     @media (min-width: $md) {
       font-size: 1.7rem;
-      margin-bottom: var(--dottedWholeNote) ;
+      margin-bottom: var(--wholeNote) ;
     }
 
     @media (min-width: $xl) {
