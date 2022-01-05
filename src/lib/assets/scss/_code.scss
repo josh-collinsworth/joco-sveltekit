@@ -1,0 +1,231 @@
+$background: #1d1e26;
+
+pre {
+	font-family: 'MonoLisa', 'Courier', monospace;
+	font-style: normal;
+	font-weight: normal;
+	background: var(--darkerGray);
+	background: $background;
+	padding: 1.5em;
+	margin: var(--halfNote) auto;
+	color: var(--white);
+	font-size: .8rem;
+	overflow: auto;
+	line-height: 1.5;
+	width: 100%;
+}
+
+pre code {
+	background: transparent;
+	font-size: inherit;
+	padding: 0;
+}
+
+code,
+pre {
+	&[class*="language-"] {
+	  color: #f8f8f2;
+	  background: none;
+	  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	  font-family: MonoLisa, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	  font-display: swap;
+	  font-size: .75rem;
+	  text-align: left;
+	  white-space: pre;
+	  word-spacing: normal;
+	  word-break: normal;
+	  word-wrap: normal;
+	  line-height: 1.5;
+ 
+	  -moz-tab-size: 4;
+	  -o-tab-size: 4;
+	  tab-size: 4;
+ 
+	  -webkit-hyphens: none;
+	  -moz-hyphens: none;
+	  -ms-hyphens: none;
+	  hyphens: none;
+	}
+}
+ 
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 2.5rem var(--margin) var(--quarterNote) ;
+	margin: var(--halfNote) 0;
+	overflow: auto;
+	position: relative;
+	width: calc(100% + calc(var(--margin) * 2));
+	margin-left: calc(var(--margin) * -1);
+ 
+	&::before {
+		content: 'Code';
+		top: 0;
+		left: 0;
+		font-size: 0.8rem;
+		font-weight: normal;
+		font-family: var(--heading-font), sans-serif;
+		padding: 0.25rem var(--quarterNote);
+		width: 100%;
+		position: absolute;
+		background: var(--darkBlue);
+		background: linear-gradient(to right, var(--darkBlue), hsla(var(--darkBlueHSL), 0));
+	}
+
+	@media (min-width: $xs) {
+		width: 100%;
+		margin-left: 0;
+		padding-inline: 0.75rem;
+		
+		&::before {
+			padding-inline: 0.75rem;
+		}
+	}
+}
+
+pre.language-undefined {
+	padding-top: var(--quarterNote);
+
+	&::before {
+		display: none;
+	}
+}
+ 
+pre.language-bash:before {
+	content: 'Terminal';
+}
+
+pre.language-fs:before {
+	content: 'Project files'
+}
+ 
+pre.language-css:before {
+	content: 'CSS';
+}
+ 
+pre.language-php:before {
+	content: 'PHP';
+}
+ 
+pre.language-markdown:before {
+	content: 'Markdown';
+}
+ 
+pre.language-html:before {
+	content: 'HTML';
+}
+
+pre.language-vue:before {
+	content: 'Vue';
+}
+
+pre.language-svelte:before {
+	content: 'Svelte';
+}
+
+pre.language-jsx:before {
+	content: 'React';
+}
+ 
+pre.language-js:before,
+pre.language-javascript:before {
+	content: 'JavaScript';
+}
+ 
+:not(pre) > code,
+pre {
+	&[class*="language-"] {
+	  background: $background;
+	}
+}
+ 
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+ 
+.token {
+ 
+	&.comment,
+	&.prolog,
+	&.doctype,
+	&.cdata {
+	  color: #7970A9;
+	}
+
+	&.parameter {
+		color: #FFC97C;
+	}
+ 
+	&.punctuation {
+	  color: #f2f2f2;
+	}
+ 
+	&.namespace {
+	  opacity: .8;
+	}
+ 
+	&.property,
+	&.tag,
+	&.constant,
+	&.symbol,
+	&.deleted {
+	  color: #ff80bf;
+	}
+ 
+	&.boolean,
+	&.number {
+	  color: #9580ff;
+	}
+ 
+	&.selector,
+	&.attr-name,
+	&.string,
+	&.char,
+	&.builtin,
+	&.inserted {
+	  color: #FFFF80;
+	}
+ 
+	&.operator,
+	&.entity,
+	&.url,
+	&.variable {
+	  color: #ff80bf;
+	}
+ 
+	&.atrule,
+	&.attr-value,
+	&.function,
+	&.class-name {
+	  color: #8AFF80;
+	}
+ 
+	&.keyword {
+	  color: #ff80bf;
+	}
+ 
+	&.regex,
+	&.important {
+	  color: #fc9867;
+	}
+ 
+	&.important,
+	&.bold {
+	  font-weight: bold;
+	}
+	&.italic {
+	  font-style: italic;
+	}
+ 
+	&.entity {
+	  cursor: help;
+	}
+}
+ 
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
