@@ -27,7 +27,7 @@
       Senior frontend developer at <a href="https://shopify.com">Shopify</a>;
       maker and designer of <i>Quina</i>
       (<a href="https://quina.app">web </a>/<a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a>);
-      occasional <a href="/blog">tech blog author</a> and freelance developer/designer.
+      tech blog author (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>); occasional freelance developer/designer.
     </p>
 
     <h3>Previously:</h3>
@@ -55,13 +55,18 @@
       dog person;
       Nintendo fan;
       musician/guitarist/hack pianist;
+      ok songwriter;
       Omaha, Nebraska resident;
       liberal abuser of semicolons.
     </p>
+  
   </div>
   <HomepageLinkList />
 </div>
 
+<div class="big-boi">
+  Wow, your screen is really wide.
+</div>
 
 <style lang="scss" global>
 .intro {
@@ -137,4 +142,15 @@
     }
   }
 }	
+
+.big-boi {
+  display: none;
+  float: right;
+  font-size: 0.7rem;
+  font-family: var(--heading-font);
+
+  @media (min-width: $xxxl) {
+    display: block;
+  }
+}
 </style>
