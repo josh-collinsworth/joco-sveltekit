@@ -83,12 +83,8 @@ hr {
 	}
 	
 	@media (min-width: $xl) {
-		main:not(.archive) {
+		main {
 			width: auto;
-		}
-
-		main.archive {
-			grid-column: span 2;
 		}
 	}
 }

@@ -55,7 +55,6 @@
       dog person;
       Nintendo fan;
       musician/guitarist/hack pianist;
-      ok songwriter;
       Omaha, Nebraska resident;
       liberal abuser of semicolons.
     </p>

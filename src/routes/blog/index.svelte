@@ -28,4 +28,7 @@
 </svelte:head>
 
 
-<PostList posts={posts} />
+<div class="compressed-content double-wide">
+
+	<PostList posts={posts} />
+</div>

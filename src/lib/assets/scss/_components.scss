@@ -42,23 +42,20 @@
   
   @media (min-width: $lg) {
     display: block;
+    fong-size: 1.4rem;
   }
 
   em, i {
     font-weight: bold;
     font-style: normal;
   }
-  
-  &__wrapper {
-    padding: 0 0 0 .1em;
 
-    &:after {
-      content: '';
-      height: .25rem;
-      width: 100%;
-      margin-left: -100%;
-      background: linear-gradient(90deg, #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100);        bottom: 0;
-      position: absolute;
-    }
+  &:after {
+    content: '';
+    height: .25rem;
+    width: 100%;
+    margin-left: -100%;
+    background: linear-gradient(90deg, #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100);        bottom: 0;
+    position: absolute;
   }
 }

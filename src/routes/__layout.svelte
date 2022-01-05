@@ -46,7 +46,6 @@
 
 	const blogPageCheck = new RegExp(/^\/blog/)
 	let pageHasSidebar = false
-	let isBlogListingPage = false
 	let lastScrollPosition: number = 0
 
 	$: isTopLevelPage = path.split('/').length < 3
@@ -76,7 +75,6 @@
 
 	const setPageProperties = () => {
 		pageHasSidebar = blogPageCheck.test(path)
-		isBlogListingPage = (path === '/blog' || path.startsWith('/blog/category/'))
 	}
 
 	const handleScroll = throttle(() => {
@@ -153,7 +151,7 @@
 			</PageTransition>
 		</div>
 
-		<main id="main" class:archive={isBlogListingPage} tabindex="-1">
+		<main id="main" tabindex="-1">
 			<PageTransition refresh={path}>
 				<slot/>
 			</PageTransition>

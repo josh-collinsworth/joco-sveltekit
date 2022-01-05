@@ -34,10 +34,11 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-
-<h1 class="h2">Category: <b>{ category }</b></h1>
-
-<PostList {posts} />  
+<div class="compressed-content double-wide">
+  <h1 class="h2">Category: <b>{ category }</b></h1>
+  
+  <PostList {posts} />  
+</div>
 
 
 <style lang="scss">
