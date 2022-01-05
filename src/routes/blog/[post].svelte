@@ -1,12 +1,15 @@
 <script context="module" lang="ts">
-  export async function load({page}) {
+  import type { LoadOutput } from '@sveltejs/kit'
+
+  export const load = async ({ params }): Promise<LoadOutput> => {
     try {
-      const Post = await import(`./_posts/${page.params.post}.md`)
+      console.log(params)
+      const Post = await import(`./_posts/${params.post}.md`)
       
       return {
         props: {
           Post: Post.default,
-          meta: { ...Post.metadata, slug: page.params.post } 
+          meta: { ...Post.metadata, slug: params.post } 
         }
       }
     } catch(error) {

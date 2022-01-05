@@ -1,6 +1,8 @@
 <script context="module" lang="ts">
-	export async function load({ fetch, page }) {
-    const category = page.params.category
+  import type { LoadOutput } from '@sveltejs/kit'
+
+	export const load = async ({ fetch, params }): Promise<LoadOutput> => {
+    const { category } = params
     //TODO: maybe add a way to fetch with query parameter to avoid filtering?
 		const res = await fetch(`/api/posts.json`)
 		let { posts } = await res.json()

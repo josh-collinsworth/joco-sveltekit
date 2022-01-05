@@ -1,6 +1,8 @@
 <script context="module" lang="ts">
   import type { SvelteComponent } from 'svelte'
-  export async function load() {
+  import type { LoadOutput } from '@sveltejs/kit'
+
+  export const load = async (): Promise<LoadOutput> => {
 		const resume: SvelteComponent = await import('$lib/content/resume.md')
 		
 		return {

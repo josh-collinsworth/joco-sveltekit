@@ -2,7 +2,7 @@ import type RSSResponse from '$lib/assets/js/interfaces/rss-response'
 import { fetchPosts } from '$lib/assets/js/utils'
 
 export const get = async (): Promise<RSSResponse> => {
-  const data = await fetchPosts({ withContent: false })
+  const data = await fetchPosts()
 
   const body = render(data)
   const headers = {

@@ -6,7 +6,7 @@ interface fetchPostsOptions {
   limit?: number
 }
 
-const fetchPosts = async (options: fetchPostsOptions): Promise<Post[]> => {
+const fetchPosts = async (options: fetchPostsOptions = { offset: null, limit: null }): Promise<Post[]> => {
   const { offset, limit } = options
 
   const posts = await Promise.all(
@@ -16,32 +16,28 @@ const fetchPosts = async (options: fetchPostsOptions): Promise<Post[]> => {
       return { ...metadata, slug }
     })
   )
-  .then(posts => {
-    return posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
-  })
-  .then(posts => {
-    if (offset) {
-      return posts.slice(offset)
-    }
-    return posts
-  })
-  .then(posts => {
-    if (limit && limit < posts.length) {
-      return posts.slice(0, limit)
-    }
-    return posts
-  })
-  .then(posts => {
-    return posts.map(post => ({
-      title: post.title,
-      slug: post.slug,
-      excerpt: post.excerpt,
-      coverImage: post.coverImage,
-      date: post.date,
-      categories: post.categories,
-    }))
-  })
-  return posts
+
+  const sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+  
+  
+  if (offset) {
+    sortedPosts.slice(offset)
+  }
+  
+  if (limit && limit < posts.length) {
+    sortedPosts.slice(0, limit)
+  }
+  
+  const finalPosts = sortedPosts.map(post => ({
+    title: post.title,
+    slug: post.slug,
+    excerpt: post.excerpt,
+    coverImage: post.coverImage,
+    date: post.date,
+    categories: post.categories,
+  }))
+  
+  return finalPosts
 }
 
 export default fetchPosts

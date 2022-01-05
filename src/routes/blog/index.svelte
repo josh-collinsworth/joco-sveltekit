@@ -1,6 +1,8 @@
 <!-- TODO: this currently returns all posts. At some point, it will probably be worth adding pagination. -->
 <script context="module" lang="ts">
-	export async function load({ fetch }) {
+	import type { LoadOutput } from '@sveltejs/kit'
+
+	export const load = async ({ fetch }): Promise<LoadOutput> => {
 		const res = await fetch(`/api/posts.json`)
 		const { posts } = await res.json()
 

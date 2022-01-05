@@ -1,5 +1,7 @@
 <script context="module" lang="ts">
-  export async function load() {
+	import type { LoadOutput } from '@sveltejs/kit'
+
+  export const load = async (): Promise<LoadOutput> => {
 		const Uses = await import('$lib/content/uses.md')
 		
 		return {
@@ -12,7 +14,6 @@
 
 <script lang="ts">
 	import type { SvelteComponent } from 'svelte'
-
   export let Uses: SvelteComponent
 </script>
 

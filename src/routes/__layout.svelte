@@ -1,5 +1,7 @@
 <script context="module" lang="ts">
-	export const load = async ({ page, fetch }) => {
+	import type { LoadOutput } from '@sveltejs/kit'
+
+	export const load = async ({ url, fetch }): Promise<LoadOutput> => {
 		const res = await fetch('/api/posts.json')
 		const resJSON = await res.json()
 		
@@ -9,7 +11,7 @@
 		
 		const allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
 
-		const path: string = page.path
+		const path: string = url.pathname
 
 		return {
 			props: {

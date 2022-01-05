@@ -1,3 +1,5 @@
+<script>null</script>
+
 <div class="warning">
   <div class="inner">
     <slot />

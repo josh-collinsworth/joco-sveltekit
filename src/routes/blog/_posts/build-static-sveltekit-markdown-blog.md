@@ -1175,7 +1175,7 @@ If you want to get fancy, adding a page transition in SvelteKit is pretty simple
 ```
 
 <Warning>
-Again, the <code>url</code> argument is new, and was <code>page</code> in earlier versions of SvelteKit. If you see errors, you may need to either switch the argument, or update your version of SvelteKit. You can do the latter by deleting your <code>package-lock.json</code> file and re-running <code>npm install</code>.
+Again, the <code>url</code> argument is new, and was <code>page</code> in earlier versions of SvelteKit. If you see errors, you may need to either switch the argument, or update your version of SvelteKit. You can do the latter by running <code>npm update</code>.
 </Warning>
 
 - To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.
