@@ -50,16 +50,6 @@
 
 	$: isTopLevelPage = path.split('/').length < 3
 
-	// const handleLoadingUserPreferences = () => {
-	// 	const userPrefersDark = 
-  //     window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-
-  //   let storedDarkModePreference = JSON.parse(localStorage.getItem('theme'))
-
-  //   const computedUserPreference = 
-	// 		(storedDarkModePreference || (userPrefersDark && storedDarkModePreference !== false))
-	// }
-
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
 

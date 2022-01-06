@@ -32,7 +32,7 @@
   }
 
   onMount(() => {
-    if (JSON.parse(localStorage.theme) === Themes.Dark) {
+    if ('theme' in localStorage && JSON.parse(localStorage.theme) === Themes.Dark) {
       theme.set(Themes.Dark)
     }
   })
