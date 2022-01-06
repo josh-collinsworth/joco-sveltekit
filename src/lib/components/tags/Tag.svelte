@@ -24,9 +24,9 @@
 	.tag {
 		display: block;
 		padding: 0.6em 0.75em;
-		background: var(--darkBlue);
+		background: var(--lighterBlue);
 		margin: 0;
-		color: var(--white);
+		color: var(--darkGray);
 		text-decoration: none;
 		font-weight: bold;
 		font-family: var(--heading-font);

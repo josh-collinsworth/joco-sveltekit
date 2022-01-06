@@ -592,6 +592,8 @@ To do so, just drop in a `script` tag at the start of the content (after the fro
 # Markdown content here
 
 <SomeComponent />
+
+More markdown _here_!
 ```
 
 <SideNote>

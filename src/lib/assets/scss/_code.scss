@@ -50,12 +50,11 @@ pre {
  
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 2.5rem var(--margin) var(--quarterNote) ;
+	padding: var(--halfNote) var(--eighthNote) var(--eighthNote) ;
 	margin: var(--halfNote) 0;
 	overflow: auto;
 	position: relative;
-	width: calc(100% + calc(var(--margin) * 2));
-	margin-left: calc(var(--margin) * -1);
+	width: 100%;
  
 	&::before {
 		content: 'Code';
@@ -63,22 +62,12 @@ pre[class*="language-"] {
 		left: 0;
 		font-size: 0.8rem;
 		font-weight: normal;
-		font-family: var(--heading-font), sans-serif;
-		padding: 0.25rem var(--quarterNote);
+		font-family: var(--heading-font);
+		padding: 0.3rem var(--eighthNote);
 		width: 100%;
 		position: absolute;
 		background: var(--darkBlue);
 		background: linear-gradient(to right, var(--darkBlue), hsla(var(--darkBlueHSL), 0));
-	}
-
-	@media (min-width: $xs) {
-		width: 100%;
-		margin-left: 0;
-		padding-inline: 0.75rem;
-		
-		&::before {
-			padding-inline: 0.75rem;
-		}
 	}
 }
 

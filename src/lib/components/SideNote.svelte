@@ -7,25 +7,20 @@
 
 <style lang="scss" global>
 	.side-note {
-		--note-unit: 1rem;
-
-		@media (min-width: $xs) {
-			--note-unit: var(--quarterNote);
-		}
-
-		padding: var(--note-unit);
 		position: relative;
-		margin: var(--halfNote) 0 var(--halfNote) calc(var(--note-unit) * -1);
-		width: calc(100% + (var(--note-unit) * 2));
-		font-size: .9rem;
+		margin: var(--halfNote) 0;
+		font-size: .8rem;
 		font-style: italic;
 		background: linear-gradient(
 			to right,
 			var(--lighterBlue),
 			var(--lightestBlue)
-		);
-		line-height: var(--body-line-height);
-		min-height: 4.5rem;
+			);
+			line-height: var(--body-line-height);
+			min-height: 4.5rem;
+			width: calc(100% + var(--margin) + var(--margin));
+			margin-left: calc(var(--margin) * -1);
+			padding: calc(var(--quarterNote) * 1.5) var(--quarterNote);
 
 		em, i {
 			font-style: normal;
@@ -40,7 +35,13 @@
 			font-size: 0.8em;
 			display: block;
 			line-height: 1;
-			margin: 0 0 1em;
+			margin: 0 0 var(--eighthNote);
+		}
+
+		@media (min-width: $xxs) {
+			width: 100%;
+			margin-left: 0;
+			padding: calc(var(--quarterNote) * 1.5);
 		}
 	}
 </style>

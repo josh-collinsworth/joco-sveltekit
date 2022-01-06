@@ -69,6 +69,7 @@ $xxxl: 2200px;
 	--sidebar-width: 14rem;
 	--margin: var(--quarterNote);
 
+	--eighthNote: calc(var(--quarterNote) / 2);
 	--quarterNote: 1.25rem;
 	--halfNote: calc(var(--quarterNote) * 2);
 	--dottedHalfNote: calc(var(--quarterNote) * 3);
