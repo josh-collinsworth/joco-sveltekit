@@ -108,7 +108,7 @@
       border-bottom: 0 !important; // Overrides .current block below
       border-width: 1px;
 
-      .prefers-dark & {
+      .dark & {
         border-color: var(--paper);
       }
 

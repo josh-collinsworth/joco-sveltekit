@@ -50,13 +50,15 @@ main:focus {
   background: var(--yellow);
 }
 
-
-
-
 body {
   font-family: var(--body-font);
   color: var(--ink);
   margin: 0;
   padding: 0;
   overflow: overlay;
+}
+
+html, body {
+  scrollbar-color: var(--yellow) transparent;
+  scrollbar-width: thin;
 }

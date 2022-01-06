@@ -29,6 +29,5 @@
 
 
 <div class="compressed-content double-wide">
-
 	<PostList posts={posts} />
 </div>

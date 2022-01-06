@@ -11,7 +11,7 @@
 		transition: opacity 0.2s !important;
 	}
 
-	&.prefers-dark {
+	&.dark {
 		--paper: var(--black);
 		--paperHSL: var(--blackHSL);
 		--ink: var(--white);

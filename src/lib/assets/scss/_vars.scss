@@ -91,14 +91,26 @@ $xxxl: 2200px;
 		--margin: var(--wholeNote);
 	}
 
-	@media (prefers-color-scheme: dark) {
+	&.dark {
 		--paper: var(--black);
 		--paperHSL: var(--blackHSL);
 		--ink: var(--white);
 		--heading-color: var(--white);
 		--accent-color: var(--lightBlue);
 		--link-color: var(--lightBlue);
-		--highlight-color: var(--darkerGray);
+		--highlight-color: var(--darkerGray);	
+	}
+
+	&:not(.light) {
+		@media (prefers-color-scheme: dark) {
+			--paper: var(--black);
+			--paperHSL: var(--blackHSL);
+			--ink: var(--white);
+			--heading-color: var(--white);
+			--accent-color: var(--lightBlue);
+			--link-color: var(--lightBlue);
+			--highlight-color: var(--darkerGray);
+		}
 	}
 
 	font-size: var(--body-font-size);

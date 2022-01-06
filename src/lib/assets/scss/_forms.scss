@@ -107,7 +107,7 @@ input[type=submit] {
 		background: var(--button-background);
 	}
 
-	.prefers-dark & {
+	.dark & {
 		border-width: 2px; //Prevents overrides from above button styles
 	}
 }

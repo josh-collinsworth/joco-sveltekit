@@ -10,7 +10,7 @@ img {
 	margin: var(--quarterNote)  0;
 	mix-blend-mode: multiply;
 
-	.prefers-dark & {
+	.dark & {
 		mix-blend-mode: unset;
 	}
 }

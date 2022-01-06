@@ -1,9 +1,10 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { TIMING_DURATION } from '$lib/data/constants'
-  import { prefersDarkMode } from '$lib/data/store'
+  import { Themes } from '$lib/data/constants'
+  import { theme } from '$lib/data/store'
 
-  const siteTheme = $prefersDarkMode ? 'github-dark' : 'github-light'
+  const siteTheme = $theme === Themes.Dark ? 'github-dark' : 'github-light'
 
   const options = {
     src: 'https://utteranc.es/client.js',

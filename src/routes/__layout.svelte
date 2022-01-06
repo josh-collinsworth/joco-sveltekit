@@ -36,7 +36,7 @@
 	import Sidebar from '$lib/components/Sidebar.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { TIMING_DURATION } from '$lib/data/constants'
-	import { isLoading, prefersDarkMode, prefersLightMode, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
+	import { isLoading, theme, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { prefetch, prefetchRoutes } from '$app/navigation'
 	
@@ -50,18 +50,15 @@
 
 	$: isTopLevelPage = path.split('/').length < 3
 
-	const handleLoadingUserPreferences = () => {
-		const userPrefersDark = 
-      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+	// const handleLoadingUserPreferences = () => {
+	// 	const userPrefersDark = 
+  //     window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
-    let storedDarkModePreference = JSON.parse(localStorage.getItem('collinsworth-dark-mode'))
+  //   let storedDarkModePreference = JSON.parse(localStorage.getItem('theme'))
 
-    const computedUserPreference = 
-			(storedDarkModePreference || (userPrefersDark && storedDarkModePreference !== false))
-
-    prefersDarkMode.set(computedUserPreference)
-    prefersLightMode.set(!computedUserPreference)
-	}
+  //   const computedUserPreference = 
+	// 		(storedDarkModePreference || (userPrefersDark && storedDarkModePreference !== false))
+	// }
 
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
@@ -93,7 +90,7 @@
 	}, 100)
 
 	onMount(() => {
-		handleLoadingUserPreferences()
+		// handleLoadingUserPreferences()
 
 		const prefersReducedData = window.matchMedia(
 			`not all and (prefers-reduced-data), (prefers-reduced-data)`
@@ -132,8 +129,6 @@
 <div
 	id="app"
 	class:reduce-motion={$prefersReducedMotion}
-	class:prefers-dark={$prefersDarkMode}
-	class:prefers-light={$prefersLightMode}
 	class:has-sidebar={pageHasSidebar}
 >
 	<Loader loading={$isLoading}/>
