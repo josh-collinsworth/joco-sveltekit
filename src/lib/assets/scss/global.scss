@@ -23,6 +23,7 @@ main:focus {
 	outline: none;
 }
 
+
 ::selection {
   background: var(--yellow);
   color: var(--highlight-color); /* WebKit/Blink Browsers */
@@ -33,9 +34,29 @@ main:focus {
   color: var(--highlight-color); /* Gecko Browsers */
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+  
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  /* the "track" of the bar - great for customizing "background" colors */
+  background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+  /* the actual draggable element, the star of the show! */
+  background: var(--yellow);
+}
+
+
+
+
 body {
   font-family: var(--body-font);
   color: var(--ink);
   margin: 0;
   padding: 0;
+  overflow: overlay;
 }
