@@ -2,16 +2,16 @@
 	import type contactFormSubmission from '$lib/assets/js/interfaces/contact-form-submission'
 	import { onMount } from 'svelte'
 
+	let isSubmitted = false
+	let showError = false
+	let fromPage: string = ''
+
 	let formData: contactFormSubmission = {
-		from_page: '',
+		from_page: fromPage,
 		name: '',
 		email: '',
 		message: ''
 	}
-
-	let isSubmitted = false
-	let showError = false
-	let fromPage: string = ''
 
 	onMount((): void => {
 		const params = new URLSearchParams(window.location.search)
