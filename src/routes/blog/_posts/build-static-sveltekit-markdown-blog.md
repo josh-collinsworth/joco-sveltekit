@@ -1320,11 +1320,9 @@ const config = {
 export default config;
 ```
 
-<Warning>
-The plugins <strong>must</strong> go in that order! <code>rehypeSlug</code> adds IDs to our headings, and <code>rehypeAutolinkHeadings</code> only works on headings that have IDs.
-<br/><br/>
-(Fun fact: I discovered these two were in the wrong order on <em>this</em> site while writing this, when I suddenly realized it was only half working.)
-</Warning>
+Note that the plugins **must** go in that order! `rehypeSlug` adds IDs to our headings, and `rehypeAutolinkHeadings` only works on headings that have IDs.
+
+(_Fun fact: I discovered these two were in the wrong order on <em>this</em> site while writing this, when I suddenly realized it was only half working. Writing technical posts is a great way to find out how much you missed._)
 
 With that in place, restart the dev server. Now pop open the inspector and check out an `h2` through `h6` generated from Markdown, and we'll see some additions:
 
@@ -1371,6 +1369,43 @@ Please be aware that while this example is ok, hovering is not an intuitive gest
 </SideNote>
 
 You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (probably with some JavaScript inside a Svelte component's `onMount` function), but I'll leave that detail up to you. For now, our links are at least present and working, even if they might not be ideal yet.
+
+
+### Add autoprefixer with PostCSS
+
+Since we're already using `svelte-preprocess`, adding [autoprefixer](https://www.npmjs.com/package/autoprefixer) to our toolchain is as simple as installing it, and adding it in our config file:
+
+```bash
+npm i -D autoprefixer
+```
+
+Then add it in the `sveltePreprocess()` function arguments:
+
+```js
+// svelte.config.js
+
+/* Other imports here */
+import autoprefixer from 'autoprefixer'
+
+const config = {
+  /* Other config options here */
+  preprocess: [
+    sveltePreprocess({
+      postcss: {
+        plugins: [autoprefixer]
+      },
+      /* Other sveltePreprocess options here, like SCSS */
+    }),
+    /* Other preprocessors here, like mdsvex */
+  ],
+}
+```
+
+That's all we need to do! Autoprefixer is now working automatically to prefix any CSS properties that might need it for maximum backwards compatibility with other browsers.
+
+As an added bonus, if you want to add any _other_ PostCSS plugins, you can now do so in just the same way.
+
+
 
 
 ### Add page head meta tags

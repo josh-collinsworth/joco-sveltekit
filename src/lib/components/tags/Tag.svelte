@@ -12,7 +12,7 @@
 </template>
 
 
-<style lang="scss" global>
+<style lang="scss">
 	.tag {
 		margin: 0;
 
@@ -23,7 +23,7 @@
 
 	.tag__link {
 		display: block;
-		padding: 0.6em 0.75em;
+		padding: 1.1em 0.75em;
 		background: var(--lighterBlue);
 		margin: 0;
 		color: var(--darkGray);
@@ -31,19 +31,19 @@
 		font-weight: bold;
 		font-family: var(--headingFont);
 		font-size: 0.65em;
-		line-height: 1;
+		line-height: 0;
 		text-transform: uppercase;
 		transition: background .15s, color .15s;
-
-		.dark & {
-			color: var(--ink);
-			background: var(--darkBlue);
-		}
 
 		&:hover,
 		&:focus {
 			background: var(--yellow);
 			color: var(--black);
 		}
+	}
+
+	:global(.dark .tag .tag__link) {
+		color: var(--ink);
+		background: var(--darkBlue);
 	}
 </style>

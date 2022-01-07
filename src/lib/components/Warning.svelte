@@ -1,9 +1,7 @@
 <script>null</script>
 
 <div class="warning">
-  <div class="inner">
-    <slot />
-  </div>
+  <slot />
 </div>
 
 
@@ -11,36 +9,35 @@
   .warning {
     margin: var(--halfNote) 0;
     position: relative;
-    padding: 2px;
+    padding: calc(var(--quarterNote) * 1.5);
+    padding-left: var(--dottedHalfNote);
     font-size: 0.8rem;
     font-style: italic;
-    background: linear-gradient(to bottom right, var(--orange), var(--red));
-    
-    .inner {
-      padding: calc(var(--quarterNote) * 1.5) calc(var(--quarterNote) * 1.5) calc(var(--quarterNote) * 2.5);
-      background: var(--paper);
+    background: linear-gradient(to right, hsla(var(--redHS), 33%), var(--red));
+    color: var(--white);
 
-      &::before {
-        content: '⚠️ ';
-        font-style: normal;
-      }
-      
-      &::after {
-        content: '!important;';
-        font-family: 'MonoLisa', monospace;
-        font-style: normal;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        color: var(--white);
-        line-height: 1;
-        display: inline-block;
-        background: linear-gradient(to right, var(--orange), var(--red));
-        width: 100%;
-        padding: .5em 1rem;
-        font-size: 0.75rem;
-        text-align: right;
-      }
+    :global(code) {
+      background: transparent;
+      font-size: .9em;
     }
+    
+    &::before {
+      content: '⚠️important';
+      content: '⚠️ ';
+      font-family: 'MonoLisa', monospace;
+      font-style: normal;
+      line-height: 1;
+      position: absolute;
+      left: var(--quarterNote);
+      top: calc(50% - 0.5em);
+      font-size: 1.2rem;
+      height: 1em;
+      line-height: 1;
+      margin-bottom: var(--quarterNote);
+    }
+  }
+
+  :global(.dark .warning) {
+    background: linear-gradient(to right, hsla(var(--redHS), 22%), hsla(var(--redHS), 28%));
   }
 </style>

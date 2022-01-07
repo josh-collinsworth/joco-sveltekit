@@ -1,4 +1,5 @@
   import preprocess from 'svelte-preprocess'
+	import autoprefixer from 'autoprefixer'
   import adapter from '@sveltejs/adapter-static'
   import { mdsvex } from 'mdsvex'
 	import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -14,6 +15,9 @@ const config = {
 			scss: {
 				prependData: `@import 'src/lib/assets/scss/_vars.scss';`
 			},
+			postcss: {
+				plugins: [autoprefixer]
+			}
 		}),
 		mdsvex({
 			extensions: ['.md'],

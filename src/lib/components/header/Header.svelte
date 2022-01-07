@@ -66,6 +66,10 @@
 		width: auto;
 		height: 2rem;
 		display: block;
+
+		@media (min-width: $xxl) and (min-height: $md) {
+			height: 3rem;
+		}
 	}
 
 	.icon-container {

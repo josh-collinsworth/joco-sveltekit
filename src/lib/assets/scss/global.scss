@@ -35,7 +35,7 @@ main:focus {
 }
 
 ::-webkit-scrollbar {
-  width: var(--eighthNote);
+  width: 0.5rem;
   height: calc(var(--eighthNote) * 0.25);
 }
   
