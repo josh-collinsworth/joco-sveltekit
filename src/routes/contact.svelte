@@ -25,7 +25,7 @@
 	}
 
 	const handleSubmit = (e: Event): void => {
-		const { name, email, message } = formData
+		const { name, email, message, from_page } = formData
 
 		if (!name || !email || !message) {
 			showError = true
@@ -134,11 +134,6 @@
 		label {
 			font-family: var(--headingFont);
 			font-weight: bold;
-	
-			i {
-				font-family: var(--bodyFont);
-				font-weight: normal;
-			}
 		}
 
 		.error {

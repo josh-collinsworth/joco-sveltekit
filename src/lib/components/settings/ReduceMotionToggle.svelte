@@ -46,6 +46,7 @@
 		text-transform: uppercase;
 		color: var(--ink);
 		font-family: var(--headingFont);
+		background: transparent;
 
 		&[aria-pressed="true"]::before {
 			content: '';

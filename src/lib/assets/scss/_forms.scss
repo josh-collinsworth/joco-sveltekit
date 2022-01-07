@@ -75,6 +75,10 @@ input[type=submit] {
 	transition: background 0.15s;
 	border-right-width: 2px;
 	border-bottom-width: 2px;
+
+	.dark & {
+		background: var(--darkBlue);
+	}
 	
 	&:hover {
 		background: hsla(var(--lightBlueHSL), 0.2);
