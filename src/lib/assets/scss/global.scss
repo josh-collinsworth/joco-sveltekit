@@ -26,17 +26,17 @@ main:focus {
 
 ::selection {
   background: var(--yellow);
-  color: var(--highlight-color); /* WebKit/Blink Browsers */
+  color: var(--highlightColor); /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
   background: var(--yellow);
-  color: var(--highlight-color); /* Gecko Browsers */
+  color: var(--highlightColor); /* Gecko Browsers */
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: var(--eighthNote);
+  height: calc(var(--eighthNote) * 0.25);
 }
   
 ::-webkit-scrollbar,
@@ -51,7 +51,7 @@ main:focus {
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--bodyFont);
   color: var(--ink);
   margin: 0;
   padding: 0;

@@ -32,17 +32,17 @@ $xxxl: 2200px;
 	--trueBlack: hsl(var(--trueBlackHSL));
 
 	
-	--heading-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+	--headingFont: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 	'Helvetica Neue', Arial, sans-serif;
 
-	--body-font: 'Alkes', Georgia, serif;
+	--bodyFont: 'Alkes', Georgia, serif;
 
-	--body-font-weight: normal;
-	--body-line-height: 1.6;
-	--body-font-size: 1.125rem;
+	--bodyFontWeight: normal;
+	--bodyLineHeight: 1.6;
+	--bodyFontSize: 1.125rem;
 
 	@media (min-width: $sm) {
-		--body-font-size: 1.1875rem;
+		--bodyFontSize: 1.1875rem;
 	}
 
 	--yellow: hsl(var(--yellowHSL));
@@ -56,17 +56,20 @@ $xxxl: 2200px;
 	--lighterBlue: hsl(var(--lightBlueHS), 90%);
 	--lightestBlue: hsl(var(--lightBlueHS), 95%);
 	--darkBlue: hsl(var(--darkBlueHSL));
+	--darkerBlue: hsl(var(--darkBlueHSL), 20%);
+
+	--blueToYellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
 
 	--ink: var(--darkGray);
 	--paper: var(--white);
 	--paperHSL: var(--whiteHSL);
-	--heading-color: var(--darkerGray);
-	--accent-color: var(--darkBlue);
-	--link-color: var(--darkBlue);
-	--highlight-color: var(--darkGray);
+	--headingColor: var(--darkerGray);
+	--accentColor: var(--darkBlue);
+	--linkColor: var(--darkBlue);
+	--highlightColor: var(--darkGray);
 
-	--max-width: 34rem;
-	--sidebar-width: 14rem;
+	--maxWidth: 34rem;
+	--sidebarWidth: 14rem;
 	--margin: var(--quarterNote);
 
 	--eighthNote: calc(var(--quarterNote) / 2);
@@ -76,8 +79,8 @@ $xxxl: 2200px;
 	--wholeNote: calc(var(--quarterNote) * 4);
 	--dottedWholeNote: calc(var(--quarterNote) * 6);
 
-	--button-size: 2.2rem;
-	--button-background: var(--paper);
+	--buttonSize: 2.2rem;
+	--buttonBackground: var(--paper);
 
 	@media (min-width: $xs) {
 		--margin: var(--halfNote);
@@ -95,10 +98,10 @@ $xxxl: 2200px;
 		--paper: var(--black);
 		--paperHSL: var(--blackHSL);
 		--ink: var(--white);
-		--heading-color: var(--white);
-		--accent-color: var(--lightBlue);
-		--link-color: var(--lightBlue);
-		--highlight-color: var(--darkerGray);	
+		--headingColor: var(--white);
+		--accentColor: var(--lightBlue);
+		--linkColor: var(--lightBlue);
+		--highlightColor: var(--darkerGray);	
 	}
 
 	&:not(.light) {
@@ -106,12 +109,12 @@ $xxxl: 2200px;
 			--paper: var(--black);
 			--paperHSL: var(--blackHSL);
 			--ink: var(--white);
-			--heading-color: var(--white);
-			--accent-color: var(--lightBlue);
-			--link-color: var(--lightBlue);
-			--highlight-color: var(--darkerGray);
+			--headingColor: var(--white);
+			--accentColor: var(--lightBlue);
+			--linkColor: var(--lightBlue);
+			--highlightColor: var(--darkerGray);
 		}
 	}
 
-	font-size: var(--body-font-size);
+	font-size: var(--bodyFontSize);
 }

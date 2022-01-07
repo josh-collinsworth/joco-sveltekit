@@ -15,7 +15,7 @@
   </li>
   <li>
     <span role="img" alt="" aria-hidden="true">✉️</span>
-    <a href="/contact">
+    <a href="/contact?from_page=home">
       A thing I made so you can write me
     </a>
   </li>
@@ -25,7 +25,7 @@
 <style lang="scss">
   ul {
     margin: 4rem 0 0;
-    font-family: var(--heading-font);
+    font-family: var(--headingFont);
     list-style-type: none!important;
     padding: 0;
   }

@@ -26,21 +26,21 @@
 		justify-content: space-between;
 		flex-direction: column;
 		align-items: stretch;
-		width: var(--button-size);
-		height: var(--button-size);
+		width: var(--buttonSize);
+		height: var(--buttonSize);
 		padding: .55rem; 
 		margin-left: 2rem;
-		background: var(--button-background);
+		background: var(--buttonBackground);
 		position: relative;
 		z-index: 11;
 		border: 2px solid var(--ink);
-		border-radius: var(--button-size);
+		border-radius: var(--buttonSize);
 		overflow: visible;
 		transition-delay: 0.15s;
 
 		&:before {
 			content: '';
-			height: var(--button-size);
+			height: var(--buttonSize);
 			width: 1px;
 			background: var(--lightGray);
 			display: block;

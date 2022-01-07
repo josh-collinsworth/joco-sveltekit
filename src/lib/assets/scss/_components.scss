@@ -2,7 +2,7 @@
   margin: var(--halfNote) 0;
   font-size: 1.3rem;
   line-height: 1.4;
-  font-family: var(--heading-font);
+  font-family: var(--headingFont);
 
   em, i {
     font-weight: bold;
@@ -35,7 +35,7 @@
   background: var(--paper);
   overflow: hidden;
   padding: 0 0 0.75rem 0;
-  font-family: var(--heading-font);
+  font-family: var(--headingFont);
   font-style: normal;
   font-weight: normal;
   max-width: 15em;
@@ -55,7 +55,8 @@
     height: .25rem;
     width: 100%;
     margin-left: -100%;
-    background: linear-gradient(90deg, #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100);        bottom: 0;
+    background: linear-gradient(to right, var(--blueToYellow));
+    bottom: 0;
     position: absolute;
   }
 }

@@ -25,14 +25,14 @@ input[type=checkbox] {
   margin-right: auto;
 
   @media (min-width: $xs) {
-    max-width: var(--max-width);
+    max-width: var(--maxWidth);
   }
 
   &.wider {
-    max-width: calc(var(--max-width) * 1.5);
+    max-width: calc(var(--maxWidth) * 1.5);
   }
 
   &.double-wide {
-    max-width: calc(var(--max-width) * 2);
+    max-width: calc(var(--maxWidth) * 2);
   }
 }

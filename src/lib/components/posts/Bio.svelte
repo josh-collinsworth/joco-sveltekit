@@ -1,5 +1,5 @@
 <script lang="ts">
-  null
+  export let currentPage
 </script>
 
 <div class="bio-wrapper">
@@ -17,7 +17,7 @@
           </a>
         </li>
         <li class="link-list__contact">
-          <a href="/contact">
+          <a href="/contact?from_page={currentPage}">
             Send me a note about this post
           </a>
         </li>
@@ -27,11 +27,15 @@
       </ul>
     </div>
   </div>
-  <hr />
+  <hr class="post-bio-hr" />
 </div>
 
 
 <style lang="scss">
+  .post-bio-hr {
+    background: linear-gradient(to left, var(--blueToYellow));
+  }
+
   .bio {
     font-size: 0.85rem;
     overflow: auto;
@@ -46,11 +50,11 @@
     
     .about {
       font-style: italic;
-      font-family: var(--body-font);
+      font-family: var(--bodyFont);
     }
 
     .link-list {
-      font-family: var(--heading-font);
+      font-family: var(--headingFont);
       margin: var(--quarterNote) 0 0;
       padding-left: 1rem;
 

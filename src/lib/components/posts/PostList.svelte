@@ -19,7 +19,7 @@
     padding: 0;
     list-style-type: none;
     margin: 0 0 var(--wholeNote);
-    max-width: var(--max-width);
+    max-width: var(--maxWidth);
 
     @media (min-width: $md) {
       max-width: 60rem;

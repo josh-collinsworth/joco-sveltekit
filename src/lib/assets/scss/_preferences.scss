@@ -15,11 +15,11 @@
 		--paper: var(--black);
 		--paperHSL: var(--blackHSL);
 		--ink: var(--white);
-		--heading-color: var(--trueWhite);
-		--accent-color: var(--lightBlue);
-		--link-color: var(--ink);
-		--highlight-color: var(--darkerGray);
-		--button-background: var(--paper);
+		--headingColor: var(--trueWhite);
+		--accentColor: var(--lightBlue);
+		--linkColor: var(--ink);
+		--highlightColor: var(--darkerGray);
+		--buttonBackground: var(--paper);
 		--lightestBlue: hsl(var(--lightBlueHS), 15%);
 		--lighterBlue: hsl(var(--lightBlueHS), 20%);
 	}
@@ -28,10 +28,10 @@
 		--paper: var(--white);
 		--paperHSL: var(--whiteHSL);
 		--ink: var(--darkGray);
-		--heading-color: var(--darkerGray);
-		--accent-color: var(--darkBlue);
-		--link-color: var(--darkBlue);
-		--highlight-color: var(--darkGray);
-		--button-background: var(--paper);
+		--headingColor: var(--darkerGray);
+		--accentColor: var(--darkBlue);
+		--linkColor: var(--darkBlue);
+		--highlightColor: var(--darkGray);
+		--buttonBackground: var(--paper);
 	}
 }

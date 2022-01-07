@@ -1,5 +1,19 @@
+<script context="module">
+	export const load = ({ url }) => {
+		const { search } = url
+		return {
+			status: 200,
+			props: {
+				query: search
+			}
+		}
+	}
+</script>
+
 <script lang="ts">
 	import type contactFormSubmission from '$lib/assets/js/interfaces/contact-form-submission';
+
+	export let query: string = 'none'
 
 	let formData: contactFormSubmission = {
 		name: '',
@@ -47,11 +61,19 @@
 
 
 <div class="compressed-content">
+	<h2>Contact form</h2>
+
 	{#if !isSubmitted}
 		<noscript>
-			<h2>Sorry, this contact form won't work without JavaScript enabled.</h2>
-			<p>You can try me at <code>joshuajcollinsworth</code> on the good ol' Google mail instead if you like.</p>
+			<h3>Sorry, this contact form won't work without JavaScript enabled.</h3>
+			<p>I don't do any tracking or anything like that though (except some <a href="https://plausible.io">privacy-respecting analytics</a>), if that's your concern.</p>
 		</noscript>
+
+		<p>
+			<i>
+				Happy to chat! I try to respond to everything that isn't a solicitation.
+			</i>
+		</p>
 
 		<form
 			id="contact-form"
@@ -68,23 +90,23 @@
 					Don’t fill this out: <input name="bot-field" />
 				</label>
 			</p>
+			<input type="hidden" name="from_page" value={query} />
 			<div class="sender-info">
 				<div>
 					<label for="name" class="label" >Your name</label>
-					<input type="text" name="name" bind:value={formData.name} />
+					<input type="text" name="name" bind:value={formData.name} placeholder="What should I call you?" />
 				</div>
 				<div>
 					<label for="email">
 						Your email address
-						<small><i>(used only for responses)</i></small>
 					</label>
-					<input type="email" name="email" bind:value={formData.email} />
+					<input type="email" name="email" bind:value={formData.email} placeholder="Where can I send my response?" />
 				</div>
 			</div>
 
 			<div class="message-wrapper">
 				<label for="message">What's on your mind?</label>
-				<textarea name="message" bind:value={formData.message} rows="6"></textarea>
+				<textarea name="message" bind:value={formData.message} rows="6" placeholder="What would you like to talk about?"></textarea>
 			</div>
 
 			{#if showError}
@@ -98,7 +120,7 @@
 			</button>
 		</form>
 	{:else}
-		<h1>Thanks for your message!</h1>
+		<h3>Thanks for your message!</h3>
 
 		<p>I'll follow up by email if this wasn't spam. :)</p>
 	{/if}
@@ -106,16 +128,20 @@
 
 
 <style lang="scss">
+	h2 {
+		margin-bottom: var(--eighthNote);
+	}
+
 	#contact-form {
 		width: 100%;
 		margin-top: 4rem;
 		
 		label {
-			font-family: var(--heading-font);
+			font-family: var(--headingFont);
 			font-weight: bold;
 	
 			i {
-				font-family: var(--body-font);
+				font-family: var(--bodyFont);
 				font-weight: normal;
 			}
 		}

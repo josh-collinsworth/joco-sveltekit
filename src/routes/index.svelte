@@ -72,7 +72,7 @@
   width: 100%;
   position: relative;
   margin-top: var(--wholeNote);
-  max-width: var(--max-width);
+  max-width: var(--maxWidth);
 
   @media (min-width: $xl) {
     width: 100%;
@@ -129,7 +129,7 @@
     margin: 0 0 4rem;
     max-width: 20em;
     line-height: 1.2;
-    font-family: var(--heading-font);
+    font-family: var(--headingFont);
 
     @media (min-width: $md) {
       font-size: 1.7rem;
@@ -146,7 +146,7 @@
   display: none;
   float: right;
   font-size: 0.7rem;
-  font-family: var(--heading-font);
+  font-family: var(--headingFont);
 
   @media (min-width: $xxxl) {
     display: block;

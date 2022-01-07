@@ -91,7 +91,7 @@
 		overflow: visible;
 		margin: 4rem 0 0;
 		position: relative;
-		font-family: var(--heading-font);
+		font-family: var(--headingFont);
 
 		label {
 			font-size: .8rem;

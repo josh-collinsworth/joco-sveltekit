@@ -25,7 +25,7 @@
 <style lang="scss">
 	.main-nav {
 		text-align: right;
-		font-family: var(--heading-font);
+		font-family: var(--headingFont);
 
 		@media (max-width: $xs) {
 			display: block;

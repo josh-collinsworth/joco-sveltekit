@@ -38,7 +38,7 @@
     margin: 0 0 0 1.5em;
 
     @media (max-width: $xs) {
-      --item-transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      --itemTransition: .4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   
       opacity: 0;
       margin-bottom: 1.5rem;
@@ -61,7 +61,7 @@
     }
 
     &.open {
-      animation: move_in_left var(--item-transition);
+      animation: move_in_left var(--itemTransition);
 
       .reduce-motion & {
         animation: none;

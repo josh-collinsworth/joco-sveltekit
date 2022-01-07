@@ -177,7 +177,7 @@
   .projects {
 
     p {
-      max-width: var(--max-width);
+      max-width: var(--maxWidth);
     }
     
     article {

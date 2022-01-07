@@ -618,4 +618,4 @@ I hope you're now as excited about Svelte as I am! I encourage you to try it out
 
 And if you're looking to dive deeper, there's also SvelteKit, a Svelte app framework for larger/more complex projects. I've written a post on [converting this site to SvelteKit from Gridsome](/blog/converting-from-gridsome-to-sveltekit), if you'd like to check it out as well.
 
-In any case, thanks for reading, and if you have any questions or thoughts, [reach out](/contact) or leave a comment below!
+In any case, thanks for reading, and if you have any questions or thoughts, [reach out](/contact?from_page=svelte_comparison) or leave a comment below!

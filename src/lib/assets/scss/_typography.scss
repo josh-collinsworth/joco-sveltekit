@@ -1,6 +1,6 @@
 body {
-	line-height: var(--body-line-height);
-	font-weight: var(--body-font-weight);
+	line-height: var(--bodyLineHeight);
+	font-weight: var(--bodyFontWeight);
 }
 
 ul,
@@ -40,7 +40,7 @@ a {
 	transition: color .15s;
 	
 	&:hover {
-		color: var(--link-color);
+		color: var(--linkColor);
 	}
 }
 
@@ -51,9 +51,9 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--heading-font);
+	font-family: var(--headingFont);
 	font-weight: bold;
-	color: var(--heading-color);
+	color: var(--headingColor);
 	line-height: 1.1;
 	position: relative;
 	margin-bottom: var(--quarterNote);

@@ -98,11 +98,11 @@
     width: 100%;
     position: relative;
     z-index: 2;
-    font-family: var(--heading-font);
+    font-family: var(--headingFont);
 
     h2 {
       font-weight: bold;
-      font-family: var(--heading-font);
+      font-family: var(--headingFont);
       font-size: 0.8rem;  
       margin: 0;
       background: var(--paper);

@@ -21,7 +21,7 @@
 <ul>
   <li><a href="/">Home</a></li>
   <li><a href="/blog">Blog</a></li>
-  <li><a href="/contact">Contact</a></li>
+  <li><a href="/contact?from_page=error">Contact</a></li>
 </ul>
 
 
@@ -31,6 +31,6 @@
     margin: 0 0 4rem;
     max-width: 20em;
     line-height: 1.2;
-    font-family: var(--heading-font);
+    font-family: var(--headingFont);
   }
 </style>

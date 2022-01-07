@@ -30,7 +30,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-family: var(--heading-font);
+      font-family: var(--headingFont);
       font-weight: bold;
     }
   }

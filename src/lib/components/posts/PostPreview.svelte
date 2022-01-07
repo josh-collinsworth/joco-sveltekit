@@ -131,7 +131,7 @@
     .excerpt a {
       font-weight: bold;
       text-transform: uppercase;
-      font-family: var(--heading-font);
+      font-family: var(--headingFont);
       font-style: normal;
       font-size: 0.65rem;
       margin: 0.5rem 0 0;
@@ -140,7 +140,7 @@
     .excerpt {
       font-style: italic;
       margin: var(--quarterNote) 0 1.5rem;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       line-height: 1.5;
   
       &:last-child {

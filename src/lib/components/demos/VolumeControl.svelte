@@ -28,7 +28,7 @@
   }
 
   label {
-    font-family: var(--heading-font);
+    font-family: var(--headingFont);
     font-weight: bold;
   }
 </style>

@@ -69,7 +69,7 @@ input[type=submit] {
 	padding: 0.5rem 1rem;
 	background: var(--lighterBlue);
 	font-size: 1rem;
-	font-family: var(--heading-font);
+	font-family: var(--headingFont);
 	color: var(--ink);
 	margin: 0;
 	transition: background 0.15s;
@@ -82,21 +82,21 @@ input[type=submit] {
 }
 
 .settings-toggle {
-	--item-transition: 0.25s cubic-bezier(1, 0, 0, 1);
+	--itemTransition: 0.25s cubic-bezier(1, 0, 0, 1);
 
 	cursor: pointer;
-	height: var(--button-size);
-	width: var(--button-size);
-	flex: 0 0 var(--button-size);
+	height: var(--buttonSize);
+	width: var(--buttonSize);
+	flex: 0 0 var(--buttonSize);
 	overflow: hidden;
 	margin-left: 0.75rem;
 	padding: 0;
 	position: relative;
 	border-radius: 2rem;
 	border: 2px solid var(--ink);
-	background: var(--button-background);
-	transition: background var(--item-transition), color var(--item-transition),
-		border-color var(--item-transition), transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+	background: var(--buttonBackground);
+	transition: background var(--itemTransition), color var(--itemTransition),
+		border-color var(--itemTransition), transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 	z-index: 11;
 
 	+ .settings-toggle {
@@ -104,7 +104,7 @@ input[type=submit] {
 	}
 
 	&:hover {
-		background: var(--button-background);
+		background: var(--buttonBackground);
 	}
 
 	.dark & {

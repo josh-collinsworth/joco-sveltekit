@@ -271,4 +271,4 @@ I would consider Quina my biggest achievement as a developer so far. Though I've
 
 I'm proud of the work I've done here, even if nobody plays it. But I hope you'll give it a shot, and that you enjoy it if you do. (And if so, I'd love it if you'd [leave a review on the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth).)
 
-Thanks for reading! Feel free to [reach out](https://joshcollinsworth.com/contact/) if you have any questions or comments.
+Thanks for reading! Feel free to [reach out](https://joshcollinsworth.com/contact?from_page=announcing_quina) if you have any questions or comments.

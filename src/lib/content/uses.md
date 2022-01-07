@@ -124,7 +124,7 @@ my current favorite notes app. Can grow and get as complex as you need it to be,
 ## Design and Illustration
 
 - [Affinity Photo, Designer and Publisher](https://xaffinity.serif.com):
-you can have software 90% as good as Photoshop, Illustrator and InDesign <em>forever</em> for the cost of three months of Creative Cloud.
+you can have software mostly as good as Photoshop, Illustrator and InDesign <em>forever</em> for the cost of three months of Creative Cloud.
 
 - [Wacom Intuos Pro PTH-451](https://www.wacom.com/en-us/products/pen-tablets/intuos-pro-small) (small):
 I don’t often illustrate these days, but when I do, I’m always glad I have this fantastic pad. Wireless is a big plus.

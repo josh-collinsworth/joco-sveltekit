@@ -83,7 +83,7 @@
 
 	.sticky {
 		--ink: var(--white);
-		--button-background: transparent;
+		--buttonBackground: transparent;
 	}
 
 	.header {
@@ -101,9 +101,9 @@
 	}
 
 	.skip-to-content-link {
-		--item-transition: .15s cubic-bezier(0.86, 0, 0.07, 1);
+		--itemTransition: .15s cubic-bezier(0.86, 0, 0.07, 1);
 
-		transition: transform var(--item-transition), opacity var(--item-transition);
+		transition: transform var(--itemTransition), opacity var(--itemTransition);
 		position: absolute;
 		top: -6rem;
 		left: 1rem;
@@ -115,7 +115,7 @@
 		height: 3rem;
 		background: var(--darkBlue);
 		color: var(--white);
-		font-family: var(--heading-font);
+		font-family: var(--headingFont);
 
 		&:focus {
 			transform: translateY(7rem);

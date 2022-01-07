@@ -16,7 +16,7 @@
 			var(--lighterBlue),
 			var(--lightestBlue)
 		);
-		line-height: var(--body-line-height);
+		line-height: var(--bodyLineHeight);
 		min-height: 4.5rem;
 		width: calc(100% + var(--margin) + var(--margin));
 		margin-left: calc(var(--margin) * -1);
@@ -24,7 +24,7 @@
 		color: var(--ink);
 
 		.dark & {
-			background: linear-gradient(to right, hsla(var(--darkBlueHSL), 35%), hsla(var(--darkBlueHSL), 10%));
+			background: var(--darkerBlue);
 		}
 
 		em, i {
@@ -34,7 +34,7 @@
 		&:before {
 			content: 'Side note:';
 			font-weight: bold;
-			font-family: var(--heading-font);
+			font-family: var(--headingFont);
 			font-style: normal;
 			text-transform: uppercase;
 			font-size: 0.8em;

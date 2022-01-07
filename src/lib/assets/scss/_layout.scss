@@ -18,8 +18,9 @@ img {
 hr {
 	width: 100%;
 	margin: var(--halfNote) 0;
-	border: none;
-	border-bottom: 1px solid var(--lightGray);
+	border: 0;
+	height: 1px;
+	background: linear-gradient(to right, var(--blueToYellow));
 }
 
 .details {
@@ -33,7 +34,7 @@ hr {
 }
 
 .categories li a {
-	background: var(--heading-color);
+	background: var(--headingColor);
 	padding: 0.5em;
 	border-radius: 8px;
 	text-align: center;
@@ -73,7 +74,7 @@ hr {
 	grid-template-columns: 100%;
 
 	@media (min-width: $lg) {
-		grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
+		grid-template-columns: var(--sidebarWidth) 1fr var(--sidebarWidth);
 		grid-gap: 0 var(--dottedHalfNote) ;
 		width: calc(100% - (var(--margin) * 2));
 
@@ -143,7 +144,7 @@ table {
 		padding-bottom: 0.5em;
 		font-weight: bold;
 		font-size: 1rem;
-		font-family: var(--heading-font);
+		font-family: var(--headingFont);
 	}
 	
 	thead tr {

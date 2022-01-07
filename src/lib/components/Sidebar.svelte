@@ -57,8 +57,8 @@
     align-self: start;
     position: sticky;
     top: var(--halfNote);
-    max-width: var(--max-width);
-    font-family: var(--heading-font);
+    max-width: var(--maxWidth);
+    font-family: var(--headingFont);
     grid-row: 3 / 4;
 	  margin: var(--dottedHalfNote)  auto 0;
     
@@ -79,7 +79,7 @@
       border-bottom: .15em solid;
       width: max-content;
       text-align: inherit;
-      color: var(--heading-color);
+      color: var(--headingColor);
 
       &::before {
         display: none;

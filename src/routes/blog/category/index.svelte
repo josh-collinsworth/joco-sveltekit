@@ -75,7 +75,7 @@
     font-style: italic;
     
     a {
-      font-family: var(--heading-font);
+      font-family: var(--headingFont);
       font-weight: bold;
       font-size: 0.85em;
       font-style: normal;

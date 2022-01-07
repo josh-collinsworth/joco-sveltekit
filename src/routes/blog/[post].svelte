@@ -111,7 +111,7 @@
   <svelte:component this={Post} />
 
   <aside class="post-footer">
-    <Bio />
+    <Bio currentPage={meta.slug} />
 
     {#if meta.categories}
       <h2 class="h4">Posted in: </h2>
@@ -165,7 +165,7 @@
       margin: var(--halfNote) 0 var(--wholeNote);
       width: max-content;
       padding: 0.5em 0; 
-      font-family: var(--heading-font);
+      font-family: var(--headingFont);
       border-top: 2px solid var(--lightGray);
       
       b {
@@ -189,7 +189,7 @@
 
     .post-links {
       margin: var(--halfNote) 0;
-      font-family: var(--heading-font);
+      font-family: var(--headingFont);
 
       a {
         margin-left: 1ch;

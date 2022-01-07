@@ -32,6 +32,7 @@
   }
 
   onMount(() => {
+    // This same logic is in app.html also, but I didn't want to import it there, so it's just duplicated in both places.
     if (
       ('theme' in localStorage && JSON.parse(localStorage.theme) === Themes.Dark)
       ||
@@ -73,15 +74,15 @@
     }
 
     svg {
-      --item-transition: .4s cubic-bezier(.7,-0.01,0,1.01);
+      --itemTransition: .4s cubic-bezier(.7,-0.01,0,1.01);
       width: 2rem;
       height: 4rem;
       transform: translateY(-1.975rem);
-      transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
+      transition: transform var(--itemTransition), fill var(--itemTransition), stroke var(--itemTransition), background var(--itemTransition);
 
       path,
       circle {
-        transition: transform var(--item-transition), fill var(--item-transition), stroke var(--item-transition), background var(--item-transition);
+        transition: transform var(--itemTransition), fill var(--itemTransition), stroke var(--itemTransition), background var(--itemTransition);
         stroke: var(--ink);
       }
     }

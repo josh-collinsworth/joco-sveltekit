@@ -29,7 +29,7 @@
 		color: var(--darkGray);
 		text-decoration: none;
 		font-weight: bold;
-		font-family: var(--heading-font);
+		font-family: var(--headingFont);
 		font-size: 0.65em;
 		line-height: 1;
 		text-transform: uppercase;
