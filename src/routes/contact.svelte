@@ -4,10 +4,9 @@
 
 	let isSubmitted = false
 	let showError = false
-	let fromPage: string = ''
 
 	let formData: contactFormSubmission = {
-		from_page: fromPage,
+		from_page: '',
 		name: '',
 		email: '',
 		message: ''
@@ -15,7 +14,7 @@
 
 	onMount((): void => {
 		const params = new URLSearchParams(window.location.search)
-		fromPage = params.get('from_page')
+		formData = { ...formData, from_page: params.get('from_page') }
 	})
 
 	const encode = (data: object): string => {
@@ -85,7 +84,7 @@
 					Don’t fill this out: <input name="bot-field" />
 				</label>
 			</p>
-			<input type="hidden" name="from_page" value={fromPage} />
+			<input type="hidden" name="from_page" bind:value={fromPage} />
 			<div class="sender-info">
 				<div>
 					<label for="name" class="label" >Your name</label>
