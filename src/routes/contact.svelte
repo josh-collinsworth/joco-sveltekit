@@ -1,27 +1,22 @@
-<script context="module">
-	export const load = ({ url }) => {
-		const { search } = url
-		return {
-			status: 200,
-			props: {
-				query: search
-			}
-		}
-	}
-</script>
-
 <script lang="ts">
-	import type contactFormSubmission from '$lib/assets/js/interfaces/contact-form-submission';
-
-	export let query: string = 'none'
+	import type contactFormSubmission from '$lib/assets/js/interfaces/contact-form-submission'
+	import { onMount } from 'svelte'
 
 	let formData: contactFormSubmission = {
+		from_page: '',
 		name: '',
 		email: '',
 		message: ''
 	}
-	let isSubmitted: boolean = false
+
+	let isSubmitted = false
 	let showError = false
+	let fromPage: string = ''
+
+	onMount((): void => {
+		const params = new URLSearchParams(window.location.search)
+		fromPage = params.get('from_page')
+	})
 
 	const encode = (data: object): string => {
 		return Object.keys(data)
@@ -90,7 +85,7 @@
 					Don’t fill this out: <input name="bot-field" />
 				</label>
 			</p>
-			<input type="hidden" name="from_page" value={query} />
+			<input type="hidden" name="from_page" value={fromPage} />
 			<div class="sender-info">
 				<div>
 					<label for="name" class="label" >Your name</label>
