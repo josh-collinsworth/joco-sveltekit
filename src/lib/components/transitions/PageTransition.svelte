@@ -38,7 +38,7 @@
 {/key}
 
 
-<style lang="scss" global>
+<style lang="scss">
   .transition-wrapper {
 
     &.span {

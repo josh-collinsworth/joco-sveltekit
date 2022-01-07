@@ -92,7 +92,7 @@
 </div>
 
 
-<style lang="scss" global>
+<style lang="scss">
   .svelte-code-comparison {
     margin: var(--halfNote) 0;
 
@@ -129,7 +129,7 @@
       font-weight: bold;
     }
 
-    pre[class*="language-"] {
+    :global(pre[class*="language-"]) {
       margin-top: 0 !important;
       padding-top: 1rem;
 

@@ -1,9 +1,13 @@
-<script>null</script>
+<script>
+  import PullQuote from '$lib/components/PullQuote.svelte'
+  import Callout from '$lib/components/Callout.svelte'
+</script>
 
-<aside class="pull-quote" aria-hidden="true" hidden>
-  <slot />
-</aside>
 
-<p class="callout">
+<PullQuote>
   <slot />
-</p>
+</PullQuote>
+
+<Callout>
+  <slot />
+</Callout>

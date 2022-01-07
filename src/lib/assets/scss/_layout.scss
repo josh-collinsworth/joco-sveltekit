@@ -90,6 +90,18 @@ hr {
 	}
 }
 
+.sidebar-wrapper {
+	grid-row: 3 / 4;
+	align-self: start;
+	position: sticky;
+	top: var(--halfNote);
+
+	@media (min-width: $lg) {
+		grid-column: auto;
+		grid-row: auto;
+	}
+}
+
 .cp_embed_wrapper {
 	margin-bottom: var(--halfNote);
 }

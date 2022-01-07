@@ -128,7 +128,7 @@
 	<div class="layout" class:subpage={!isTopLevelPage}> 
 		<PageHeading title={path} {isTopLevelPage} />
 		
-		<div class="sidebar">
+		<div class="sidebar-wrapper">
 			<PageTransition refresh={pageHasSidebar} transitionOut={false}>
 				{#if pageHasSidebar}
 					<Sidebar {recentPosts} {allCategories} />

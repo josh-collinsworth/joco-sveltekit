@@ -15,7 +15,6 @@
 	onMount((): void => {
 		const params = new URLSearchParams(window.location.search)
 		formData = { ...formData, from_page: params.get('from_page') }
-		console.log(formData)
 	})
 
 	const encode = (data: object): string => {

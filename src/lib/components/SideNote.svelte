@@ -5,7 +5,7 @@
 </div>
 
 
-<style lang="scss" global>
+<style lang="scss">
 	.side-note {
 		position: relative;
 		margin: var(--halfNote) 0;
@@ -22,14 +22,6 @@
 		margin-left: calc(var(--margin) * -1);
 		padding: calc(var(--quarterNote) * 1.5) var(--quarterNote);
 		color: var(--ink);
-
-		.dark & {
-			background: var(--darkerBlue);
-		}
-
-		em, i {
-			font-style: normal;
-		}
 
 		&:before {
 			content: 'Side note:';
@@ -48,5 +40,14 @@
 			margin-left: 0;
 			padding: calc(var(--quarterNote) * 1.5);
 		}
+		
+		:global(em),
+		:global(i) {
+			font-style: normal;
+		}
+	}
+
+	:global(.dark .side-note) {
+		background: var(--darkerBlue);
 	}
 </style>

@@ -67,7 +67,7 @@
   Wow, your screen is really wide.
 </div>
 
-<style lang="scss" global>
+<style lang="scss">
 .intro {
   width: 100%;
   position: relative;
@@ -89,10 +89,6 @@
       p {
         margin: 0;
       }
-    }
-
-    .homepage-link-list {
-      margin: 0;
     }
   }
 

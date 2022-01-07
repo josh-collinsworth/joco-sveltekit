@@ -33,7 +33,7 @@
 </li>  
 
 
-<style lang="scss" global>
+<style lang="scss">
   .nav__item {
     margin: 0 0 0 1.5em;
 
@@ -62,11 +62,6 @@
 
     &.open {
       animation: move_in_left var(--itemTransition);
-
-      .reduce-motion & {
-        animation: none;
-        opacity: 1;
-      }
   
       @for $i from 1 through 9 {
         &:nth-of-type(#{$i}) {
@@ -100,7 +95,6 @@
 
 			span {
 				display: inline-block;
-				// border-bottom: .1em solid transparent;
 
 				&:after {
 					position: absolute;
@@ -114,10 +108,6 @@
 					background: var(--yellow);
 					transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1);
 					transform-origin: right;
-
-					.reduce-motion & {
-						transition: opacity 0.2s !important;
-					}
 				}
 			}
 
@@ -135,5 +125,14 @@
         display: none;
       }
     }
+  }
+
+  :global(.reduce-motion .nav__item.open) {
+    animation: none;
+    opacity: 1;
+  }
+
+  :global(.reduce-motion .nav__item a span::after) {
+    transition: none !important;
   }
 </style>

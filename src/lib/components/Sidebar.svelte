@@ -3,15 +3,15 @@
 
   import TagList from './tags/TagList.svelte'
   import Tag from './tags/Tag.svelte'
-  // import PostSearch from './PostSearch.svelte'
+  import PostSearch from './PostSearch.svelte'
   
   export let recentPosts: Post[]
   export let allCategories: string[]
 </script>
 
 
-<aside>
-  <!-- <PostSearch /> -->
+<aside class="sidebar">
+  <PostSearch />
 
   <h2>Recent blog posts</h2>
 
@@ -29,9 +29,9 @@
 
   <TagList>
     {#each allCategories as category}
-    <Tag to="/blog/category/{category}">
-      { category }
-    </Tag>
+      <Tag to="/blog/category/{category}">
+        { category }
+      </Tag>
     {/each}
   </TagList>
   
@@ -51,25 +51,18 @@
 </aside>
 
 
-<style lang="scss" global>
+<style lang="scss">
   .sidebar {
     font-size: .85rem;
-    align-self: start;
-    position: sticky;
-    top: var(--halfNote);
     max-width: var(--maxWidth);
     font-family: var(--headingFont);
-    grid-row: 3 / 4;
-	  margin: var(--dottedHalfNote)  auto 0;
-    
+	  margin: var(--dottedHalfNote) auto 0;
+
     @media (min-width: $lg) {
-      grid-column: auto;
-      grid-row: auto;
       margin: 0;
     }
     
-    h2,
-    label {
+    :global(h2) {
       font-size: .8em;
       font-weight: bold;
       text-transform: uppercase;

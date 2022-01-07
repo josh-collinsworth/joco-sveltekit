@@ -1,4 +1,5 @@
 import type Post from '../interfaces/post'
+import { dev } from '$app/env'
 
 interface fetchPostsOptions {
   withContent?: boolean
@@ -9,13 +10,25 @@ interface fetchPostsOptions {
 const fetchPosts = async (options: fetchPostsOptions = { offset: null, limit: null }): Promise<Post[]> => {
   const { offset, limit } = options
 
-  const posts = await Promise.all(
-    Object.entries(import.meta.glob('../../../../routes/blog/_posts/*.md')).map(async ([path, page]) => {
-      const { metadata } = await page()
-      const slug = path.split('/').pop().split('.').shift()
-      return { ...metadata, slug }
-    })
-  )
+  let posts: Post[]
+
+  if (dev) {
+    posts = await Promise.all(
+      Object.entries(import.meta.glob(`../../../../routes/blog/_posts/**/*.md`)).map(async ([path, page]) => {
+        const { metadata } = await page()
+        const slug = path.split('/').pop().split('.').shift()
+        return { ...metadata, slug }
+      })
+    )
+  } else {
+    posts = await Promise.all(
+      Object.entries(import.meta.glob(`../../../../routes/blog/_posts/*.md`)).map(async ([path, page]) => {
+        const { metadata } = await page()
+        const slug = path.split('/').pop().split('.').shift()
+        return { ...metadata, slug }
+      })
+    )
+  }
 
   const sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
   

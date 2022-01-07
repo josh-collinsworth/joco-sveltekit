@@ -19,7 +19,7 @@
 </template>	
 
 
-<style lang="scss" global>
+<style lang="scss">
 	#logo-svg {
 		width: auto;
 
