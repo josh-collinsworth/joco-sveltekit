@@ -15,12 +15,17 @@
 			to right,
 			var(--lighterBlue),
 			var(--lightestBlue)
-			);
-			line-height: var(--body-line-height);
-			min-height: 4.5rem;
-			width: calc(100% + var(--margin) + var(--margin));
-			margin-left: calc(var(--margin) * -1);
-			padding: calc(var(--quarterNote) * 1.5) var(--quarterNote);
+		);
+		line-height: var(--body-line-height);
+		min-height: 4.5rem;
+		width: calc(100% + var(--margin) + var(--margin));
+		margin-left: calc(var(--margin) * -1);
+		padding: calc(var(--quarterNote) * 1.5) var(--quarterNote);
+		color: var(--ink);
+
+		.dark & {
+			background: linear-gradient(to right, hsla(var(--darkBlueHSL), 35%), hsla(var(--darkBlueHSL), 10%));
+		}
 
 		em, i {
 			font-style: normal;

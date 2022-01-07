@@ -4,16 +4,16 @@
 
 
 <template>
-	<li>
-		<a href={to} class="tag">
+	<li class="tag">
+		<a href={to} class="tag__link">
 			<slot />
 		</a>
 	</li>
 </template>
 
 
-<style lang="scss">
-	li {
+<style lang="scss" global>
+	.tag {
 		margin: 0;
 
 		&::marker {
@@ -21,7 +21,7 @@
 		}
 	}
 
-	.tag {
+	.tag__link {
 		display: block;
 		padding: 0.6em 0.75em;
 		background: var(--lighterBlue);
@@ -34,6 +34,11 @@
 		line-height: 1;
 		text-transform: uppercase;
 		transition: background .15s, color .15s;
+
+		.dark & {
+			color: var(--ink);
+			background: var(--darkBlue);
+		}
 
 		&:hover,
 		&:focus {
