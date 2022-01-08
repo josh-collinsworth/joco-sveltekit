@@ -7,22 +7,26 @@
 </script>
 
 
-<script>
-  export let status
-  export let error
+<script lang="ts">
+  import Main from '$lib/components/Main.svelte'
+
+  export let status: number
+  export let error: Error
 </script>
 
 
-<h2>{status}</h2>
-
-<p class="subhead">{error.message}</p>
-
-<p><strong>Ope!</strong> Maybe try these links?</p>
-<ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/blog">Blog</a></li>
-  <li><a href="/contact?from_page=error">Contact</a></li>
-</ul>
+<Main>
+  <h2>{status}</h2>
+  
+  <p class="subhead">{error.message}</p>
+  
+  <p><strong>Ope!</strong> Maybe try these links?</p>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/contact?from_page=error">Contact</a></li>
+  </ul>
+</Main>
 
 
 <style lang="scss">

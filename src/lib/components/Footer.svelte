@@ -23,7 +23,7 @@
     <div class="footer__links">
       <h2 class="h4" id="footer-links">Links</h2>
       <ul aria-labelledby="footer-links">
-        <li><a href="/api/rss.xml">RSS</a></li>
+        <li><a href="/api/rss.xml" rel="external">RSS</a></li>
         <li><a href="https://ko-fi.com/collinsworth">Ko-Fi</a></li>
         <li><a href="https://github.com/josh-collinsworth">GitHub</a></li>
         <li><a href="https://codepen.io/collinsworth">CodePen</a></li>
