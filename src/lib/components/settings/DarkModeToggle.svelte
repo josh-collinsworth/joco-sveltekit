@@ -59,7 +59,7 @@
 
 <style lang="scss" global>
   #dark-mode-toggle {
-    background: transparent;
+    background: var(--paper);
 
     &:hover,
     &:focus {
