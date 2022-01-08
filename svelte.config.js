@@ -37,11 +37,6 @@ const config = {
 
 		//Added for static adapter
 		adapter: adapter(),
-		prerender: {
-			entries: [
-				'/api/rss.xml'
-			]
-		}
 	}
 }
 

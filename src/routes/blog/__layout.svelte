@@ -2,6 +2,7 @@
 	import type { LoadOutput } from '@sveltejs/kit'
 
 	export const load = async ({ fetch }): Promise<LoadOutput> => {
+    const rss = await fetch('/api/rss.xml')
 		const res = await fetch('/api/posts.json')
 		const resJSON = await res.json()
 		
