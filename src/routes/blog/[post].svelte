@@ -12,8 +12,6 @@
       error = err
       post = await import(`./_posts/drafts/${params.post}.md`)
     } finally {
-      console.log(post)
-      console.log(error)
       if (post) {
         return {
           props: {

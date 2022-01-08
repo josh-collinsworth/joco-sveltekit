@@ -10,12 +10,13 @@ export const get = async (): Promise<RSSResponse> => {
   const headers = {
     'Cache-Control': `max-age=0, s-maxage=3600`,
     'Content-Type': 'application/xml',
-  };
+  }
   return {
+    status: 200,
     body,
     headers,
-  };
-};
+  }
+}
 
 const render = (posts: Post[]): string => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -37,4 +38,4 @@ ${posts
   .join('')}
 </channel>
 </rss>
-`;
+`

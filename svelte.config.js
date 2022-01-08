@@ -36,7 +36,12 @@ const config = {
 		target: '#svelte',
 
 		//Added for static adapter
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			entries: [
+				'/api/rss.xml'
+			]
+		}
 	}
 }
 
