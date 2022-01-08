@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type contactFormSubmission from '$lib/assets/js/interfaces/contact-form-submission'
 	import { onMount } from 'svelte'
+	import Main from '$lib/components/Main.svelte'
 
 	let isSubmitted = false
 	let showError = false
@@ -54,71 +55,73 @@
 </svelte:head>
 
 
-<div class="compressed-content">
-	<h2>Contact form</h2>
+<Main>
+	<div class="compressed-content">
+		<h2>Contact form</h2>
 
-	{#if !isSubmitted}
-		<noscript>
-			<h3>Sorry, this contact form won't work without JavaScript enabled.</h3>
-			<p>I don't do any tracking or anything like that though (except some <a href="https://plausible.io">privacy-respecting analytics</a>), if that's your concern.</p>
-		</noscript>
+		{#if !isSubmitted}
+			<noscript>
+				<h3>Sorry, this contact form won't work without JavaScript enabled.</h3>
+				<p>I don't do any tracking or anything like that though (except some <a href="https://plausible.io">privacy-respecting analytics</a>), if that's your concern.</p>
+			</noscript>
 
-		<p>
-			<i>
-				Happy to chat! I try to respond to everything that isn't a solicitation.
-			</i>
-		</p>
-
-		<form
-			id="contact-form"
-			name="contact"
-			method="post"
-			on:submit|preventDefault={handleSubmit}
-			action="/success/"
-			data-netlify="true"
-			data-netlify-honeypot="bot-field"
-		>
-			<input type="hidden" name="form-name" value="contact" />
-			<p hidden>
-				<label>
-					Don’t fill this out: <input name="bot-field" />
-				</label>
+			<p>
+				<i>
+					Happy to chat! I try to respond to everything that isn't a solicitation.
+				</i>
 			</p>
-			<input type="hidden" name="from_page" bind:value={formData.from_page} />
-			<div class="sender-info">
-				<div>
-					<label for="name" class="label" >Your name</label>
-					<input type="text" name="name" bind:value={formData.name} placeholder="What should I call you?" />
-				</div>
-				<div>
-					<label for="email">
-						Your email address
+
+			<form
+				id="contact-form"
+				name="contact"
+				method="post"
+				on:submit|preventDefault={handleSubmit}
+				action="/success/"
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+			>
+				<input type="hidden" name="form-name" value="contact" />
+				<p hidden>
+					<label>
+						Don’t fill this out: <input name="bot-field" />
 					</label>
-					<input type="email" name="email" bind:value={formData.email} placeholder="Where can I send my response?" />
+				</p>
+				<input type="hidden" name="from_page" bind:value={formData.from_page} />
+				<div class="sender-info">
+					<div>
+						<label for="name" class="label" >Your name</label>
+						<input type="text" name="name" bind:value={formData.name} placeholder="What should I call you?" />
+					</div>
+					<div>
+						<label for="email">
+							Your email address
+						</label>
+						<input type="email" name="email" bind:value={formData.email} placeholder="Where can I send my response?" />
+					</div>
 				</div>
-			</div>
 
-			<div class="message-wrapper">
-				<label for="message">What's on your mind?</label>
-				<textarea name="message" bind:value={formData.message} rows="6" placeholder="What would you like to talk about?"></textarea>
-			</div>
-
-			{#if showError}
-				<div class="error">
-					Please be sure all above fields are filled out. Thanks!
+				<div class="message-wrapper">
+					<label for="message">What's on your mind?</label>
+					<textarea name="message" bind:value={formData.message} rows="6" placeholder="What would you like to talk about?"></textarea>
 				</div>
-			{/if}
 
-			<button type="submit">
-				Send
-			</button>
-		</form>
-	{:else}
-		<h3>Thanks for your message!</h3>
+				{#if showError}
+					<div class="error">
+						Please be sure all above fields are filled out. Thanks!
+					</div>
+				{/if}
 
-		<p>I'll follow up by email if this wasn't spam. :)</p>
-	{/if}
-</div>
+				<button type="submit">
+					Send
+				</button>
+			</form>
+		{:else}
+			<h3>Thanks for your message!</h3>
+
+			<p>I'll follow up by email if this wasn't spam. :)</p>
+		{/if}
+	</div>
+</Main>
 
 
 <style lang="scss">

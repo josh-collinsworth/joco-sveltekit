@@ -21,6 +21,8 @@
 
 <script lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
+
+  import Main from '$lib/components/Main.svelte'
   import PostList from '$lib/components/posts/PostList.svelte'
 
   export let posts: Post[]
@@ -34,11 +36,14 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<div class="compressed-content double-wide">
-  <h1 class="h2">Category: <b>{ category }</b></h1>
-  
-  <PostList {posts} />  
-</div>
+
+<Main>
+  <div class="compressed-content double-wide">
+    <h1 class="h2">Category: <b>{ category }</b></h1>
+    
+    <PostList {posts} />  
+  </div>
+</Main>
 
 
 <style lang="scss">

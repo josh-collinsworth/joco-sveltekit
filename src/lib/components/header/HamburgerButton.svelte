@@ -30,7 +30,7 @@
 		height: var(--buttonSize);
 		padding: .55rem; 
 		margin-left: 2rem;
-		background: var(--buttonBackground);
+		background: var(--button-background);
 		position: relative;
 		z-index: 11;
 		border: 2px solid var(--ink);

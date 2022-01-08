@@ -1,10 +1,12 @@
 import type RSSResponse from '$lib/assets/js/interfaces/rss-response'
+import type Post from '$lib/assets/js/interfaces/post'
+
 import { fetchPosts } from '$lib/assets/js/utils'
 
 export const get = async (): Promise<RSSResponse> => {
   const data = await fetchPosts()
 
-  const body = render(data)
+  const body: string = render(data)
   const headers = {
     'Cache-Control': `max-age=0, s-maxage=3600`,
     'Content-Type': 'application/xml',
@@ -15,7 +17,7 @@ export const get = async (): Promise<RSSResponse> => {
   };
 };
 
-const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
+const render = (posts: Post[]): string => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Josh Collinsworth</title>

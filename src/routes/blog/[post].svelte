@@ -1,17 +1,27 @@
 <script context="module" lang="ts">
   import type { LoadOutput } from '@sveltejs/kit'
+  import type { SvelteComponent } from 'svelte';
 
   export const load = async ({ params }): Promise<LoadOutput> => {
+    let post: SvelteComponent = null
+    let error: Error = null
+
     try {
-      const Post = await import(`./_posts/${params.post}.md`)
-      
-      return {
-        props: {
-          Post: Post.default,
-          meta: { ...Post.metadata, slug: params.post } 
+      post = await import(`./_posts/${params.post}.md`)
+    } catch(err) { // Handles draft posts in the dev env
+      error = err
+      post = await import(`./_posts/drafts/${params.post}.md`)
+    } finally {
+      console.log(post)
+      console.log(error)
+      if (post) {
+        return {
+          props: {
+            PostContent: post.default,
+            meta: { ...post.metadata, slug: params.post } 
+          }
         }
       }
-    } catch(error) {
       return {
         status: 404,
         error: error.message
@@ -20,19 +30,25 @@
   }
 </script>
 
-<script>
+
+<script lang="ts">
+  import type Post from '$lib/assets/js/interfaces/post'
+
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'
   import Bio from '$lib/components/posts/Bio.svelte'
   import Comments from '$lib/components/Comments.svelte'
+  import Main from '$lib/components/Main.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount } from 'svelte'
 
-  export let Post, meta
+  export let PostContent: SvelteComponent 
+  export let meta: Post
 
+  let imagePath: string
   $: imagePath = `/images/post_images/${meta.coverImage}`
 
-  const wrapTablesInScrollableDivs = () => {
+  const wrapTablesInScrollableDivs = (): void => {
     /**
      * This is super hacky and I don't like it, but it lets 
      * tables scroll horizontally without clobbering accessibility, 
@@ -50,8 +66,7 @@
     })
   }
 
-
-  const loadEmbeddedTweets = () => {
+  const loadEmbeddedTweets = (): void => {
     /**
      * This is necessary because prefetching blog posts prevents
      * the Twitter widget script from loading. Plus, there isn't
@@ -67,7 +82,7 @@
     }
   }
 
-  onMount(() => {
+  onMount((): void => {
     wrapTablesInScrollableDivs()
     loadEmbeddedTweets()
   })
@@ -89,47 +104,49 @@
   <meta property="og:url" content="https://joshcollinsworth.com/blog/{meta.slug}/" />
 </svelte:head>
 
-<article class="post compressed-content">
-  <img
-    class="cover-image"
-    src="{imagePath}"
-    alt=""
-    style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight}"
-    width={meta.coverWidth}
-    height={meta.coverHeight}
-  />
 
-  <h1>{ meta.title }</h1>
+<Main>
+  <article class="post compressed-content">
+    <img
+      class="cover-image"
+      src="{imagePath}"
+      alt=""
+      style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight}"
+      width={meta.coverWidth}
+      height={meta.coverHeight}
+    />
 
-  
-  <div class="meta">
-    <b>Published:</b> { readableDate(meta.date) }
-    <br>
-    <b>Updated:</b> { readableDate(meta.updated) }
-  </div>
-  
-  <svelte:component this={Post} />
+    <h1>{ meta.title }</h1>
 
-  <aside class="post-footer">
-    <Bio currentPage={meta.slug} />
+    
+    <div class="meta">
+      <b>Published:</b> { readableDate(meta.date) }
+      <br>
+      <b>Updated:</b> { readableDate(meta.updated) }
+    </div>
+    
+    <svelte:component this={PostContent} />
 
-    {#if meta.categories}
-      <h2 class="h4">Posted in: </h2>
-      <TagList>
-        {#each meta.categories as category}
-          <Tag
-            to="/blog/category/{category}/"
-          >
-            { category }
-          </Tag>
-        {/each}
-      </TagList>
-    {/if}
+    <aside class="post-footer">
+      <Bio currentPage={meta.slug} />
 
-  </aside>
+      {#if meta.categories}
+        <h2 class="h4">Posted in: </h2>
+        <TagList>
+          {#each meta.categories as category}
+            <Tag
+              to="/blog/category/{category}/"
+            >
+              { category }
+            </Tag>
+          {/each}
+        </TagList>
+      {/if}
+    </aside>
 
-  <Comments />
-</article>
+    <Comments />
+  </article>
+</Main>
 
 
 <style lang="scss" global>
@@ -211,5 +228,9 @@
         margin-top: var(--quarterNote);
       }
     }
+  }
+
+  :global(.sidebar) {
+    margin-inline: auto !important;
   }
 </style>

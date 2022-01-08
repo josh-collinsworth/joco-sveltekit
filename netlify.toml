@@ -7,6 +7,16 @@
 # ---
 
 [[redirects]]
+  from = "/rss.xml"
+  to = "/api/rss.xml"
+  status = 301
+
+[[redirects]]
+  from = "/rss"
+  to = "/api/rss.xml"
+  status = 301
+
+[[redirects]]
   from = "/essential"
   to = "/blog/essential-tools-wordpress-development/"
   status = 301

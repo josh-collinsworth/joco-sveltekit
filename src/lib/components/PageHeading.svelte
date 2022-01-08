@@ -4,7 +4,6 @@
 
   export let title: string
   export let isTopLevelPage: boolean = false
-  export let isArchive: boolean = false
 
   let computedTitle: string = ''
   let isWorking: boolean = false
@@ -29,7 +28,7 @@
 
 
 <PageTransition refresh={isTopLevelPage} span={true}>
-  {#if isTopLevelPage || isArchive}
+  {#if isTopLevelPage}
     <div class="page-head">
       <div
         class="heading-wrapper"

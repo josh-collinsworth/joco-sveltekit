@@ -37,7 +37,10 @@
 	}
 </script>
 
+
 <script lang="ts">
+  import Main from '$lib/components/Main.svelte'
+
   export let uniqueCategories: category[]
 </script>
 
@@ -48,20 +51,23 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<div class="compressed-content">
-  <h1 class="h2">All blog categories</h1>
-  
-  <ul>
-    {#each uniqueCategories as category}
+
+<Main>
+  <div class="compressed-content">
+    <h1 class="h2">All blog categories</h1>
+    
+    <ul>
+      {#each uniqueCategories as category}
       <li>
         <a href="/blog/category/{category.title}">
           { category.title }
         </a>
         ({category.count})
       </li>
-    {/each}
-  </ul>
-</div>
+      {/each}
+    </ul>
+  </div>
+</Main>
 
 
 <style lang="scss">

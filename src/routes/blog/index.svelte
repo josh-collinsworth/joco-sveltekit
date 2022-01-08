@@ -14,6 +14,8 @@
 
 <script lang="ts">
 	import type Post from '$lib/assets/js/interfaces/post'
+	
+	import Main from '$lib/components/Main.svelte'
 	import PostList from '$lib/components/posts/PostList.svelte'
 	
 	export let posts: Post[] = []
@@ -28,6 +30,8 @@
 </svelte:head>
 
 
-<div class="compressed-content double-wide">
-	<PostList posts={posts} />
-</div>
+<Main>	
+	<div class="compressed-content double-wide">
+		<PostList posts={posts} />
+	</div>
+</Main>

@@ -13,7 +13,10 @@
 	}
 </script>
 
+
 <script lang="ts">
+  import Main from '$lib/components/Main.svelte'
+
   export let Resume: SvelteComponent
 </script>
 
@@ -26,9 +29,12 @@
   <meta name="robots" content="noindex,nofollow">
 </svelte:head>
 
-<div class="resume compressed-content">
-	<svelte:component this={Resume} />
-</div>
+
+<Main>
+  <div class="resume compressed-content">
+    <svelte:component this={Resume} />
+  </div>
+</Main>
 
 
 <style lang="scss" global>

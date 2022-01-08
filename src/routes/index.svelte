@@ -1,5 +1,6 @@
 <script lang="ts">
-  import HomepageLinkList from "$lib/components/HomepageLinkList.svelte"
+  import HomepageLinkList from '$lib/components/HomepageLinkList.svelte'
+  import Main from '$lib/components/Main.svelte'
 </script>
 
 
@@ -11,57 +12,60 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<div class="intro">
-  <div class="intro__headline">
-    <h2>Hi, I’m Josh.</h2>
+
+<Main>
+  <div class="intro">
+    <div class="intro__headline">
+      <h2>Hi, I’m Josh.</h2>
+      
+      <p class="subhead">
+        I'm a front-end developer, designer, teacher,&nbsp;and&nbsp;writer.
+      </p>
+    </div>
+
+    <div class="intro__body"> 
+      <h3>Professionally:</h3>
+
+      <p>
+        Senior frontend developer at <a href="https://shopify.com">Shopify</a>;
+        maker and designer of <i>Quina</i>
+        (<a href="https://quina.app">web </a>/<a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a>);
+        tech blog author (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>); occasional freelance developer/designer.
+      </p>
+
+      <h3>Previously:</h3>
+      <p>
+        Senior JavaScript developer at <a href="https://aware3.com">Aware3</a>;
+        front-end engineer at <a href="https://wpengine.com">WP Engine</a>;
+        senior support lead at <a href="https://getflywheel.com">Flywheel</a>;
+        course instructor for <a href="https://interfaceschool.com">AIM Code School</a>;
+        graphic designer;
+        seasoned bartender who makes a pretty good old fashioned.
+      </p>
+
+      <h3>Personally:</h3>
+      <p>
+        Hobby coder;
+        font hoarder;
+        husband;
+        dad (jokes/bod);
+        accessibility advocate;
+        cold brew consumer;
+        DEI accomplice;
+        occasional public speaker;
+        pun enthusiast;
+        curious learner;
+        dog person;
+        Nintendo fan;
+        musician/guitarist/hack pianist;
+        Omaha, Nebraska resident;
+        liberal abuser of semicolons.
+      </p>
     
-    <p class="subhead">
-      I'm a front-end developer, designer, teacher,&nbsp;and&nbsp;writer.
-    </p>
+    </div>
+    <HomepageLinkList />
   </div>
-
-  <div class="intro__body"> 
-    <h3>Professionally:</h3>
-
-    <p>
-      Senior frontend developer at <a href="https://shopify.com">Shopify</a>;
-      maker and designer of <i>Quina</i>
-      (<a href="https://quina.app">web </a>/<a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a>);
-      tech blog author (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>); occasional freelance developer/designer.
-    </p>
-
-    <h3>Previously:</h3>
-    <p>
-      Senior JavaScript developer at <a href="https://aware3.com">Aware3</a>;
-      front-end engineer at <a href="https://wpengine.com">WP Engine</a>;
-      senior support lead at <a href="https://getflywheel.com">Flywheel</a>;
-      course instructor for <a href="https://interfaceschool.com">AIM Code School</a>;
-      graphic designer;
-      seasoned bartender who makes a pretty good old fashioned.
-    </p>
-
-    <h3>Personally:</h3>
-    <p>
-      Hobby coder;
-      font hoarder;
-      husband;
-      dad (jokes/bod);
-      accessibility advocate;
-      cold brew consumer;
-      DEI accomplice;
-      occasional public speaker;
-      pun enthusiast;
-      curious learner;
-      dog person;
-      Nintendo fan;
-      musician/guitarist/hack pianist;
-      Omaha, Nebraska resident;
-      liberal abuser of semicolons.
-    </p>
-  
-  </div>
-  <HomepageLinkList />
-</div>
+</Main>
 
 <div class="big-boi">
   Wow, your screen is really wide.

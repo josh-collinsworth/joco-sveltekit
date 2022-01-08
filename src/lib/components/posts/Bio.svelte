@@ -56,7 +56,7 @@
     .link-list {
       font-family: var(--headingFont);
       margin: var(--quarterNote) 0 0;
-      padding-left: 1rem;
+      padding-left: 1.1rem;
 
       li {
         margin: 0 0 0.25rem;

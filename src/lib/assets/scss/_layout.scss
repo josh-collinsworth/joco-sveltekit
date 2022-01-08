@@ -47,9 +47,6 @@ hr {
 	margin: var(--quarterNote) var(--margin) var(--wholeNote) var(--margin);
 	width: calc(100% - (var(--margin) * 2));
 	position: relative;
-	grid-template-columns: 1fr;
-	align-items: start;
-	justify-content: start;
 	background: transparent;
 	color: var(--ink);
 	
@@ -62,43 +59,6 @@ hr {
 				margin-top: 0;
 			}
 		}
-
-		h1.sr + h2 {
-			margin-top: 0;
-		}
-	}
-}
-
-.has-sidebar .layout {
-	display: grid;
-	grid-template-columns: 100%;
-
-	@media (min-width: $lg) {
-		grid-template-columns: var(--sidebarWidth) 1fr var(--sidebarWidth);
-		grid-gap: 0 var(--dottedHalfNote) ;
-		width: calc(100% - (var(--margin) * 2));
-
-		main {
-			grid-column: 2 / 3;
-		}
-	}
-	
-	@media (min-width: $xl) {
-		main {
-			width: auto;
-		}
-	}
-}
-
-.sidebar-wrapper {
-	grid-row: 3 / 4;
-	align-self: start;
-	position: sticky;
-	top: var(--halfNote);
-
-	@media (min-width: $lg) {
-		grid-column: auto;
-		grid-row: auto;
 	}
 }
 

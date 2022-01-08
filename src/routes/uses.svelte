@@ -14,7 +14,9 @@
 
 <script lang="ts">
 	import type { SvelteComponent } from 'svelte'
-  export let Uses: SvelteComponent
+	import Main from '$lib/components/Main.svelte'
+  
+	export let Uses: SvelteComponent
 </script>
 
 
@@ -25,9 +27,12 @@
 	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
 </svelte:head>
 
-<div class="uses compressed-content">
-	<svelte:component this={Uses} />
-</div>
+
+<Main>
+	<div class="uses compressed-content">
+		<svelte:component this={Uses} />
+	</div>
+</Main>
 
 
 <style lang="scss" global>
