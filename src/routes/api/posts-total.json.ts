@@ -2,13 +2,9 @@ import type APIResponse from '$lib/assets/js/interfaces/api-response'
 import type PostsEndpointOptions from '$lib/assets/js/interfaces/posts-endpoint-options'
 import { fetchPosts } from '$lib/assets/js/utils'
 
-//TODO: this file has a lot of duplication with posts.json.ts. 
-export const get = async ({ url }): Promise<APIResponse> => {
-	const params = new URLSearchParams(url.search)
-
+export const get = async (): Promise<APIResponse> => {
 	const options: PostsEndpointOptions = {
-		offset: parseInt(params.get('offset')) || null,
-		limit: parseInt(params.get('limit')) || 10
+		limit: null
 	}
 
 	try {
@@ -16,7 +12,7 @@ export const get = async ({ url }): Promise<APIResponse> => {
 		return {
 			status: 200,
 			body: {
-				posts
+				total: posts.length
 			}
 		}
 	}
@@ -25,7 +21,7 @@ export const get = async ({ url }): Promise<APIResponse> => {
 		return {
 			status: 500,
 			body: {
-				error: 'Could not fetch posts.'
+				error: 'Could not retrieve total number of posts.'
 			}
 		}
 	}

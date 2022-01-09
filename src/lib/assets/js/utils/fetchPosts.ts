@@ -1,13 +1,8 @@
 import type Post from '../interfaces/post'
+import type PostsEndpointOptions from '../interfaces/posts-endpoint-options'
 import { dev } from '$app/env'
 
-interface fetchPostsOptions {
-  withContent?: boolean
-  offset?: number
-  limit?: number
-}
-
-const fetchPosts = async (options: fetchPostsOptions = { offset: null, limit: null }): Promise<Post[]> => {
+const fetchPosts = async (options: PostsEndpointOptions = { offset: null, limit: 10 }): Promise<Post[]> => {
   const { offset, limit } = options
 
   let posts: Post[]
@@ -30,15 +25,14 @@ const fetchPosts = async (options: fetchPostsOptions = { offset: null, limit: nu
     )
   }
 
-  const sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
-  
+  let sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
   
   if (offset) {
-    sortedPosts.slice(offset)
+    sortedPosts = sortedPosts.slice(offset)
   }
   
-  if (limit && limit < posts.length) {
-    sortedPosts.slice(0, limit)
+  if (limit && limit < sortedPosts.length) {
+    sortedPosts = sortedPosts.slice(0, limit)
   }
   
   const finalPosts = sortedPosts.map(post => ({
