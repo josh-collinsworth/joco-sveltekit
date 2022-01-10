@@ -2,7 +2,7 @@
   import type { LoadOutput } from '@sveltejs/kit';
 
   export const load = async ({ fetch, params }): Promise<LoadOutput> => {
-    const page = params.page
+    const page = params.page ? params.page : 1
     let offset = 0
 
     for (let i = 1; i < page; i++) {
@@ -34,7 +34,7 @@
   import Pagination from '$lib/components/Pagination.svelte'
 
   export let posts: Post[]
-  export let page: number
+  export let page: number = 1
   export let totalPosts: number
 
   $: lowerBound = page * 10 - 10 || 1
