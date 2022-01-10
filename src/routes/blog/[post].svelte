@@ -4,7 +4,14 @@
   import type { SvelteComponent } from 'svelte';
 
   export const load = async ({ params }): Promise<LoadOutput> => {
-    try {
+    // Ensures we don't let the route be handled by this file and kick it over to the `/page` directory instead
+    if (params.post == 'page') {
+      return {
+        status: 301,
+        redirect: '/blog/page/1'
+      }
+    }
+    try {  
       const post: SvelteComponent = await import(`./_posts/${params.post}.md`)
 
       return {
