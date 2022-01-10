@@ -87,8 +87,4 @@
       }
     }
   }
-
-  :global(.sticky #dark-mode-toggle) {
-    // background: transparent !important;
-  }
 </style>
