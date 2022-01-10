@@ -8,6 +8,7 @@
   const isCurrentPage = (page: number): boolean => page == currentPage
 </script>
 
+
 <nav role="navigation" aria-label="Pagination navigation" class="pagination">
   <h2>Go to page:</h2>
   <ul>
