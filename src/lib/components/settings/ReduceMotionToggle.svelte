@@ -41,6 +41,7 @@
 
 <style lang="scss">
 	#motion-toggle {
+		background: var(--buttonBackground);
 		font-weight: bold;
 		font-size: .6rem;
 		text-transform: uppercase;
