@@ -7,6 +7,11 @@
 # ---
 
 [[redirects]]
+  from = "/blog/page/"
+  to = "/blog/page/1"
+  status = 301
+
+[[redirects]]
   from = "/rss.xml"
   to = "/api/rss.xml"
   status = 301
