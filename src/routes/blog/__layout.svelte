@@ -2,7 +2,12 @@
 	import type { LoadOutput } from '@sveltejs/kit'
 
 	export const load = async ({ fetch }): Promise<LoadOutput> => {
+    //All these here just for rendering routes properly with the router
     const rss = await fetch('/api/rss.xml')
+    const page1 = await fetch('/blog/page/1')
+    const page2 = await fetch('/blog/page/2')
+    const page3 = await fetch('/blog/page/3')
+
 		const res = await fetch('/api/posts.json')
 		const resJSON = await res.json()
 		
