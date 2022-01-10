@@ -67,10 +67,16 @@
         height: 2em;
         font-family: var(--headingFont);
         font-weight: bold;
+        transition: background .1s;
+
+        &:hover {
+          background: var(--yellow);
+        }
 
         &[aria-current="true"] {
           background: var(--yellow);
           color: var(--black);
+          border: 1px solid currentColor;
         }
       }
 

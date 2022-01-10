@@ -1,11 +1,20 @@
 <script context="module" lang="ts">
   import type Post from '$lib/assets/js/interfaces/post'
-  import type { LoadOutput } from '@sveltejs/kit'
-  import type { SvelteComponent } from 'svelte';
+  import type { SvelteComponent } from 'svelte'
 
-  export const load = async ({ params }): Promise<LoadOutput> => {
+  import { dev } from '$app/env'
+
+  export const load = async ({ params }) => {
     try {
-      const post: SvelteComponent = await import(`./_posts/${params.post}.md`)
+      if (!dev) {
+        return {
+          status: 404,
+          error: "No posts to preview."
+        }
+      }
+
+      const { slug } = params
+      const post: SvelteComponent = await import(`../_posts/drafts/${slug}.md`)
 
       return {
         props: {

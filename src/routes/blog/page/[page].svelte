@@ -42,8 +42,16 @@
 </script>
 
 
+<svelte:head>
+	<title>Josh Collinsworth | Blog page {page}</title>
+	<meta data-key="description" name="description" content="Past posts on the web, development, and design.">
+	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/>
+</svelte:head>
+
+
 <Main>
-  <h1 class="h2">Blog, Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
+  <h1 class="h2">Blog, posts {lowerBound}–{upperBound} of {totalPosts}</h1>
   <PostList {posts} />
   <Pagination currentPage={page} {totalPosts} />
 </Main>
