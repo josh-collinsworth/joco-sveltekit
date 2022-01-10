@@ -51,12 +51,6 @@
       grid-template-columns: var(--sidebarWidth) 1fr var(--sidebarWidth);
     }
   }
-  
-  @media (min-width: $lg) {
-    :global(main) {
-      grid-column: span 2;
-    }
-  }
 
   .sidebar-wrapper {
     display: none;

@@ -1,18 +1,21 @@
 import type APIResponse from '$lib/assets/js/interfaces/api-response'
-import type PostsEndpointOptions from '$lib/assets/js/interfaces/posts-endpoint-options'
-import { fetchPosts } from '$lib/assets/js/utils'
+import { dev } from '$app/env'
 
 export const get = async (): Promise<APIResponse> => {
-	const options: PostsEndpointOptions = {
-		limit: null
-	}
+
+	let posts
+
+  if (dev) {
+		posts = import.meta.glob(`../../blog/_posts/**/*.md`)
+  } else {
+		posts = import.meta.glob(`../../blog/_posts/*.md`)
+  }
 
 	try {
-		const posts = await fetchPosts( options )
 		return {
 			status: 200,
 			body: {
-				total: posts.length
+				total: Object.keys(posts).length
 			}
 		}
 	}

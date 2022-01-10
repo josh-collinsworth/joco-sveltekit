@@ -5,9 +5,15 @@
 	export const load = async ({ fetch }): Promise<LoadOutput> => {
 		const res = await fetch(`/api/posts.json`)
 		const { posts } = await res.json()
+		
+		const count = await fetch(`/api/posts/count.json`)
+		const { total } = await count.json()
 
 		return {
-			props: { posts }
+			props: { 
+				posts, 
+				totalPosts: total 
+			}
 		}
 	}
 </script>
@@ -16,9 +22,11 @@
 	import type Post from '$lib/assets/js/interfaces/post'
 	
 	import Main from '$lib/components/Main.svelte'
+	import Pagination from '$lib/components/Pagination.svelte'
 	import PostList from '$lib/components/posts/PostList.svelte'
 	
 	export let posts: Post[] = []
+	export let totalPosts: number
 </script>
 
 
@@ -33,5 +41,7 @@
 <Main>	
 	<div class="compressed-content double-wide">
 		<PostList posts={posts} />
+
+		<Pagination currentPage={1} {totalPosts} />
 	</div>
 </Main>
