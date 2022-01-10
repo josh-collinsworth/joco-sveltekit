@@ -59,7 +59,6 @@
 
 <style lang="scss" global>
   #dark-mode-toggle {
-    background: var(--paper);
 
     &:hover,
     &:focus {
@@ -87,5 +86,9 @@
         stroke: var(--ink);
       }
     }
+  }
+
+  :global(.sticky #dark-mode-toggle) {
+    // background: transparent !important;
   }
 </style>
