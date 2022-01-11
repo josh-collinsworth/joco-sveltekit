@@ -42,11 +42,6 @@
       </p>
     </div>
   </footer>
-  <div class="sr" aria-hidden="true">
-    <a href="/blog/page/1">1</a>
-    <a href="/blog/page/2">2</a>
-    <a href="/blog/page/3">3</a>
-  </div>
 </div>
 
 

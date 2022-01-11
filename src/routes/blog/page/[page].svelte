@@ -1,4 +1,6 @@
 <script context="module" lang="ts">
+  export const router = false
+
   import type { LoadOutput } from '@sveltejs/kit';
 
   export const load = async ({ fetch, params }): Promise<LoadOutput> => {
@@ -14,8 +16,6 @@
 
     const count = await fetch(`/api/posts/count.json`)
     const { total } = await count.json()
-
-
 
     return {
       status: 200,
