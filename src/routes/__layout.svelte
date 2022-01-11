@@ -28,8 +28,10 @@
 	export let path: string
 
 	let lastScrollPosition: number = 0
+	const isSinglePostCheck: RegExp = new RegExp(/\/blog\/[A-z0-9\-_]+\/?$/)
 
-	$: isTopLevelPage = path.split('/').length < 3
+	let isSinglePost: boolean
+	$: isSinglePost = isSinglePostCheck.test(path)
 
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
@@ -93,8 +95,8 @@
 
 	<Header {path} /> 
 
-	<div class="layout" class:subpage={!isTopLevelPage}> 
-		<PageHeading title={path} {isTopLevelPage} />
+	<div class="layout" class:subpage={!isSinglePost}> 
+		<PageHeading title={path} {isSinglePost} />
 
 		<PageTransition refresh={path}>
 			<slot/>

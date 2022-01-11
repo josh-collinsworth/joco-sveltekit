@@ -3,7 +3,7 @@
   import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 
   export let title: string
-  export let isTopLevelPage: boolean = false
+  export let isSinglePost: boolean = false
 
   let computedTitle: string = ''
   let isWorking: boolean = false
@@ -15,10 +15,10 @@
       title = title.slice(1)
     }
 
-    title = title.replace(/-/g, ' ')
+    title = title.split('/').join(' / ').replace(/-/g, ' ')
 
     isWorking = false
-
+    
     setTimeout(() => {
       isWorking = true
       computedTitle = title
@@ -27,8 +27,8 @@
 </script>
 
 
-<PageTransition refresh={isTopLevelPage} span={true}>
-  {#if isTopLevelPage}
+<PageTransition refresh={isSinglePost} span={true}>
+  {#if !isSinglePost}
     <div class="page-head">
       <div
         class="heading-wrapper"

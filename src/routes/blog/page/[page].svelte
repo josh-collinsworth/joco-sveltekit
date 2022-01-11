@@ -59,6 +59,7 @@
 
 <Main>
   <h1 class="h2">Blog, posts {lowerBound}–{upperBound} of {totalPosts}</h1>
+  <Pagination currentPage={page} {totalPosts} />
   <PostList {posts} />
   <Pagination currentPage={page} {totalPosts} />
 </Main>
