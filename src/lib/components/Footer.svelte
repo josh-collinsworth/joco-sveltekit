@@ -42,13 +42,6 @@
       </p>
     </div>
   </footer>
-
-  <!-- These are here to make sure the routes are generated. It's janky as hell and I'd like to replace it. -->
-  <div class="sr" aria-hidden="true">
-    <a href="/blog/page/1">1</a>
-    <a href="/blog/page/2">2</a>
-    <a href="/blog/page/3">3</a>
-  </div>
 </div>
 
 
@@ -57,14 +50,17 @@
     width: 100%;
     background: var(--darkBlue);
     color: var(--white);
-    font-size: .75rem;
     line-height: 1.6em;
     padding: 2.5rem var(--margin) 2rem;
-
-    @media (min-width: $xs) {
+    
+    @media (min-width: $sm) {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
       align-items: stretch;
+    }
+    
+    @media (min-width: $sm) {
+      font-size: 0.8rem;
     }
 
     h2 {
@@ -85,7 +81,7 @@
     }
 
     &__links {
-      padding: 0 1rem 1rem;
+      padding: 0 var(--quarterNote) var(--quarterNote);
       margin: 2rem 2rem 2rem 1rem;
       border-bottom: 1px solid var(--lightBlue);
 
@@ -93,7 +89,7 @@
         color: var(--lightBlue);
       }
 
-      @media (min-width: $xs) {
+      @media (min-width: $sm) {
         border-bottom: 0;
         border-right: 1px solid var(--lightBlue);
         padding: 1rem;
@@ -102,6 +98,7 @@
 
       ul {
         list-style-type: square;
+        margin: var(--quarterNote) 0;
       }
 
       li {
@@ -115,7 +112,7 @@
       margin-left: 1rem;
       align-self: center;
 
-      @media (min-width: $xs) {
+      @media (min-width: $sm) {
        margin-left: 0;
       }
 
