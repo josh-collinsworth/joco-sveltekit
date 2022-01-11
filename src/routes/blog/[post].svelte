@@ -8,7 +8,7 @@
     if (params.post == 'page') {
       return {
         status: 301,
-        redirect: '/blog/page/1'
+        redirect: '/blog'
       }
     }
     try {  

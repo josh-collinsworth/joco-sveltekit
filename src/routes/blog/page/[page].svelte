@@ -5,6 +5,14 @@
   export const load = async ({ fetch, params }): Promise<LoadOutput> => {
     try {
       const page = params.page ? params.page : 1
+
+      if (page <= 1) {
+        return {
+          status: 301,
+          redirect: '/blog'
+        }
+      }
+      
       let offset = 0
       
       for (let i = 1; i < page; i++) {
