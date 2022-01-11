@@ -1,26 +1,33 @@
 <script context="module" lang="ts">
-  import type { LoadOutput } from '@sveltejs/kit';
+  import type { LoadOutput } from '@sveltejs/kit'
+  import { fetchPosts } from '$lib/assets/js/utils'
 
   export const load = async ({ fetch, params }): Promise<LoadOutput> => {
-    const page = params.page ? params.page : 1
-    let offset = 0
-
-    for (let i = 1; i < page; i++) {
-      offset += 10
-    }
-
-    const res = await fetch(`/api/posts.json?offset=${offset}`);
-    const { posts } = await res.json()
-
-    const count = await fetch(`/api/posts/count.json`)
-    const { total } = await count.json()
-
-    return {
-      status: 200,
-      props: {
-        posts,
-        page,
-        totalPosts: total
+    try {
+      const page = params.page ? params.page : 1
+      let offset = 0
+      
+      for (let i = 1; i < page; i++) {
+        offset += 10
+      }
+      
+      const posts = await fetchPosts({ offset })
+      
+      const count = await fetch(`/api/posts/count.json`)
+      const { total } = await count.json()
+      
+      return {
+        status: 200,
+        props: {
+          posts,
+          page,
+          totalPosts: total
+        }
+      }
+    } catch(error) {
+      return {
+        status: 404,
+        error: error.message
       }
     }
   }

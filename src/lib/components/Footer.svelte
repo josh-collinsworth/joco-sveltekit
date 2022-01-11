@@ -42,6 +42,8 @@
       </p>
     </div>
   </footer>
+
+  <!-- These are here to make sure the routes are generated. It's janky as hell and I'd like to replace it. -->
   <div class="sr" aria-hidden="true">
     <a href="/blog/page/1">1</a>
     <a href="/blog/page/2">2</a>

@@ -14,7 +14,7 @@
   <ul>
     {#each Array.from({length: pagesAvailable}, (_, i) => i + 1) as page}
       <li>
-        <a href="/blog/page/{page}" rel="external" aria-current="{isCurrentPage(page)}">
+        <a href="/blog/page/{page}" aria-current="{isCurrentPage(page)}">
           {#if isCurrentPage(page)}
             <span class="sr">
               Current page
