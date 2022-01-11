@@ -1,6 +1,4 @@
 <script context="module" lang="ts">
-  export const router = false
-
   import type { LoadOutput } from '@sveltejs/kit';
 
   export const load = async ({ fetch, params }): Promise<LoadOutput> => {

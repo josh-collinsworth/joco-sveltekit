@@ -2,7 +2,6 @@ import type APIResponse from '$lib/assets/js/interfaces/api-response'
 import type PostsEndpointOptions from '$lib/assets/js/interfaces/posts-endpoint-options'
 import { fetchPosts } from '$lib/assets/js/utils'
 
-//TODO: this file has a lot of duplication with posts.json.ts. 
 export const get = async ({ url }): Promise<APIResponse> => {
 	const params = new URLSearchParams(url.search)
 

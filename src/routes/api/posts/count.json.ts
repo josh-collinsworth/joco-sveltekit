@@ -2,7 +2,6 @@ import type APIResponse from '$lib/assets/js/interfaces/api-response'
 import { dev } from '$app/env'
 
 export const get = async (): Promise<APIResponse> => {
-
 	let posts
 
   if (dev) {
