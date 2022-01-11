@@ -11,7 +11,7 @@
         offset += 10
       }
       
-      const posts = await fetchPosts({ offset })
+      const posts = await fetchPosts({ offset, limit: 10 })
       
       const count = await fetch(`/api/posts/count.json`)
       const { total } = await count.json()
