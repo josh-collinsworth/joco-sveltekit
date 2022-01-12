@@ -23,7 +23,7 @@
 	import Loader from '$lib/components/Loader.svelte'
 	import { isLoading, theme, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
-	import { prefetch, prefetchRoutes } from '$app/navigation'
+	import { prefetch } from '$app/navigation'
 	
 	export let path: string
 
@@ -53,21 +53,15 @@
 	}, 100)
 
 	onMount(() => {
-		// handleLoadingUserPreferences()
-
 		const prefersReducedData = window.matchMedia(
 			`not all and (prefers-reduced-data), (prefers-reduced-data)`
 		).matches;
 
 		if (!prefersReducedData) {
-			if (path.includes('/blog')) {
-				prefetchRoutes()
-			} else {	
-				prefetch('/')
-				prefetch('/blog')
-				prefetch('/projects')
-				prefetch('/writing-and-speaking')
-			}
+			prefetch('/')
+			prefetch('/blog')
+			prefetch('/projects')
+			prefetch('/writing-and-speaking')
 		}
 	})
 </script>
