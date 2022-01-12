@@ -57,7 +57,7 @@
 
 <Main>
 	<div class="compressed-content">
-		<h2>Contact form</h2>
+		<h2>Get in touch</h2>
 
 		{#if !isSubmitted}
 			<noscript>
