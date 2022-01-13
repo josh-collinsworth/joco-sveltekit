@@ -23,9 +23,10 @@
 
 
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post'
+  import type Post from '$lib/types/post'
   
   import Sidebar from '$lib/components/Sidebar.svelte'
+  import { prefersReducedData } from '$lib/assets/js/utils'
   import { prefetch } from '$app/navigation'
   import { onMount } from 'svelte'
 
@@ -33,11 +34,8 @@
   export let allCategories: string[]
 
   onMount(() => {
-    const prefersReducedData = window.matchMedia(
-      `not all and (prefers-reduced-data), (prefers-reduced-data)`
-    ).matches;
-
-    if (!prefersReducedData) {
+    if (!prefersReducedData()) {
+      // TODO: should maybe make this the posts on each page, and not just the most recent five.
       recentPosts.forEach(post => {
         prefetch(`/blog/${post.slug}`)
       })

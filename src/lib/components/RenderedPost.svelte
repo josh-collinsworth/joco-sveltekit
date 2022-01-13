@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post'
+  import type Post from '$lib/types/post'
 
   import TagList from '$lib/components/tags/TagList.svelte'
   import Tag from '$lib/components/tags/Tag.svelte'

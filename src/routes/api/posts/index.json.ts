@@ -1,5 +1,5 @@
-import type APIResponse from '$lib/assets/js/interfaces/api-response'
-import type PostsEndpointOptions from '$lib/assets/js/interfaces/posts-endpoint-options'
+import type APIResponse from '$lib/types/api-response'
+import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
 import { fetchPosts } from '$lib/assets/js/utils'
 
 export const get = async ({ url }): Promise<APIResponse> => {

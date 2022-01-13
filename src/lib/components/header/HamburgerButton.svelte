@@ -22,7 +22,7 @@
 
 <style lang="scss">
 	#hamburger {
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		flex-direction: column;
 		align-items: stretch;
@@ -93,8 +93,8 @@
 			}
 		} 
 
-		@media (min-width: $xs) {
-			display: none;
+		@media (max-width: $xs) {
+			display: flex;
 		}
 	}
 </style>

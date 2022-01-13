@@ -21,6 +21,7 @@
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 	import PageHeading from '$lib/components/PageHeading.svelte'
 	import Loader from '$lib/components/Loader.svelte'
+	import { prefersReducedData } from '$lib/assets/js/utils'
 	import { isLoading, theme, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { prefetch } from '$app/navigation'
@@ -38,6 +39,12 @@
 	}
 
 	const handleScroll = throttle(() => {
+		// Early return if we're above mobile width
+		if (window.outerWidth >= 768) {
+			if ($isScrollingDown) isScrollingDown.set(false)
+			return
+		}
+
 		const currentScrollPosition = window.scrollY
 		const delta = lastScrollPosition - currentScrollPosition
 		if (delta > 0 && delta < 10) {
@@ -46,18 +53,14 @@
 
 		if (lastScrollPosition > currentScrollPosition) {
 			isScrollingDown.set(false)
-		} else if (currentScrollPosition > 100) {
+		} else if (currentScrollPosition > 240) {
 			isScrollingDown.set(true)
 		}
 		lastScrollPosition = currentScrollPosition
 	}, 100)
 
 	onMount(() => {
-		const prefersReducedData = window.matchMedia(
-			`not all and (prefers-reduced-data), (prefers-reduced-data)`
-		).matches;
-
-		if (!prefersReducedData) {
+		if (!prefersReducedData()) {
 			prefetch('/')
 			prefetch('/blog')
 			prefetch('/projects')

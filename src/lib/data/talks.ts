@@ -1,4 +1,4 @@
-import type Talk from '../assets/js/interfaces/talk'
+import type Talk from '../types/talk'
 
 const talks: Talk[] = [
   {

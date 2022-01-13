@@ -80,11 +80,8 @@
 		}
 		
 		&.reduce {
-			animation-name: reduce_motion_fade;
-			
-			&.out {
-				animation-name: reduce_motion_fade_reverse;
-			}
+			animation: none;
+			opacity: 1;
 		}
 	}
 

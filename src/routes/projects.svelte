@@ -182,6 +182,7 @@
 
     p {
       max-width: var(--maxWidth);
+      // min-width: 12em;
     }
     
     article {
@@ -190,7 +191,7 @@
       gap: var(--halfNote);
       align-items: start;
       
-      @media (min-width: $xs) {
+      @media (min-width: $sm) {
         grid-template-columns: 2fr 3fr;
         
         .sticky {
@@ -207,10 +208,23 @@
         margin-top: 6rem;
       }
       
+    }
+
+    .image-gallery {
+
       img {
         margin: 0 auto var(--halfNote);
         display: block;
-        max-width: 100%;
+        max-width: unset;
+        mix-blend-mode: unset;
+        width: calc(100% + (var(--margin) * 2));
+        margin-left: calc(var(--margin) * -1);
+        
+        @media (min-width: $sm) {
+          max-width: calc(100% + var(--margin));
+          width: auto;
+          margin-left: 0;
+        }
       }
     }
   }

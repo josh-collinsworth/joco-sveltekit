@@ -1,5 +1,5 @@
-import type RSSResponse from '$lib/assets/js/interfaces/rss-response'
-import type Post from '$lib/assets/js/interfaces/post'
+import type RSSResponse from '$lib/types/rss-response'
+import type Post from '$lib/types/post'
 
 import { fetchPosts } from '$lib/assets/js/utils'
 

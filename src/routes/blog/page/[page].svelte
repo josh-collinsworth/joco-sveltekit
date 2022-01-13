@@ -43,7 +43,7 @@
 
 
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post'
+  import type Post from '$lib/types/post'
   import PostList from '$lib/components/posts/PostList.svelte'
   import Main from '$lib/components/Main.svelte'
   import Pagination from '$lib/components/Pagination.svelte'
@@ -66,7 +66,7 @@
 
 
 <Main>
-  <h1 class="h2">Blog, posts {lowerBound}–{upperBound} of {totalPosts}</h1>
+  <h1 class="h2">Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
   <Pagination currentPage={page} {totalPosts} />
   <PostList {posts} />
   <Pagination currentPage={page} {totalPosts} />

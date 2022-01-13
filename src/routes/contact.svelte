@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type contactFormSubmission from '$lib/assets/js/interfaces/contact-form-submission'
+	import type contactFormSubmission from '$lib/types/contact-form-submission'
 	import { onMount } from 'svelte'
 	import Main from '$lib/components/Main.svelte'
 
@@ -67,7 +67,7 @@
 
 			<p>
 				<i>
-					Happy to chat! I try to respond to everything that isn't a solicitation.
+					Happy to chat! I try to respond to everything that isn't spam.
 				</i>
 			</p>
 

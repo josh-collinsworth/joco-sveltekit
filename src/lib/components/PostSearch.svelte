@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post'
+  import type Post from '$lib/types/post'
   import debounce from 'just-debounce'
 
   let searchString: string = ''

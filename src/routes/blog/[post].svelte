@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post'
+  import type Post from '$lib/types/post'
   import type { LoadOutput } from '@sveltejs/kit'
   import type { SvelteComponent } from 'svelte';
 

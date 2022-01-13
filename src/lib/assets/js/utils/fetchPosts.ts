@@ -1,5 +1,5 @@
-import type Post from '../interfaces/post'
-import type PostsEndpointOptions from '../interfaces/posts-endpoint-options'
+import type Post from '../../../types/post'
+import type PostsEndpointOptions from '../../../types/posts-endpoint-options'
 import { dev } from '$app/env'
 
 const fetchPosts = async (options: PostsEndpointOptions = { offset: null, limit: 10 }): Promise<Post[]> => {

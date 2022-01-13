@@ -20,7 +20,7 @@
 </script>
 
 <script lang="ts">
-  import type Post from '$lib/assets/js/interfaces/post'
+  import type Post from '$lib/types/post'
 
   import Main from '$lib/components/Main.svelte'
   import PostList from '$lib/components/posts/PostList.svelte'
