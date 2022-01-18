@@ -24,7 +24,7 @@
     &::before {
       content: '⚠️important';
       content: '⚠️ ';
-      font-family: 'MonoLisa', monospace;
+      font-family: var(--codeFont);
       font-style: normal;
       line-height: 1;
       position: absolute;

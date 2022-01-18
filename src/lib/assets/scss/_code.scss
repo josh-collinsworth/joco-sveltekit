@@ -1,7 +1,6 @@
 $background: #1d1e26;
 
 pre {
-	font-family: 'MonoLisa', 'Courier', monospace;
 	font-style: normal;
 	font-weight: normal;
 	background: var(--darkerGray);
@@ -13,21 +12,45 @@ pre {
 	overflow: auto;
 	line-height: 1.5;
 	width: 100%;
+
+	code {
+		background: transparent;
+		font-size: inherit;
+		padding: 0;
+		border: 0;
+	}
 }
 
-pre code {
-	background: transparent;
-	font-size: inherit;
-	padding: 0;
+.dark {
+	code {
+		background: hsla(var(--darkBlueHSL), 0.6);
+		border: 0;
+	}
+
+	pre code {
+		background: transparent;
+	}
+}
+
+code {
+	font-size: 0.8em;
+	background: hsla(var(--lightBlueHSL), 0.1);
+	padding: 0.2em 0.3em 0.2em;
+	border-radius: 2px;
+	border: 1px solid hsla(var(--lightBlueHSL), 0.2);
+	line-height: 1 !important;
+	white-space: nowrap;	
 }
 
 code,
 pre {
+	font-family: var(--codeFont);
+
 	&[class*="language-"] {
 	  color: #f8f8f2;
 	  background: none;
 	  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	  font-family: MonoLisa, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	  font-family: var(--codeFont);
 	  font-display: swap;
 	  font-size: .75rem;
 	  text-align: left;

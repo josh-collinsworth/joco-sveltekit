@@ -178,38 +178,6 @@ figcaption {
 	margin: 0.5rem 0 3rem;
 }
 
-pre,
-code {
-	font-family: 'MonoLisa', 'Courier', monospace;
-	font-style: normal;
-	font-weight: normal;
-}
-
-code {
-	font-size: 0.8em;
-	background: hsla(var(--lightBlueHSL), 0.1);
-	padding: 0.2em 0.3em 0.2em;
-	border-radius: 2px;
-	border: 1px solid hsla(var(--lightBlueHSL), 0.2);
-	line-height: 1 !important;
-	white-space: nowrap;	
-}
-
-.dark {
-	code {
-		background: hsla(var(--darkBlueHSL), 0.6);
-		border: 0;
-	}
-
-	pre code {
-		background: transparent;
-	}
-}
-
-pre code {
-	border: 0;
-}
-
 :where(h2, h3, h4, h5, h6) {
 	position: relative;
 

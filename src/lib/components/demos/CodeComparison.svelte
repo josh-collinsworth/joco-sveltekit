@@ -123,6 +123,7 @@
     }
 
     .current {
+      // These colors taken from _code.scss
       background: #1d1e26;
       border: 1px solid var(--black);
       color: #9580ff;

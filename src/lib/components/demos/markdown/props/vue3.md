@@ -18,7 +18,6 @@ layout: false
 <​template>
   <h1>
     {{ pageTitle }}
-    
     <small v-if="pageSubtitle">
       {{ pageSubtitle }}
     </small>

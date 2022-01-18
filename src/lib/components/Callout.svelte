@@ -29,8 +29,8 @@
     font-style: normal;
 
     @media (min-width: $lg) {
-      font-weight: initial;
-      font-style: initial;
+      font-weight: normal;
+      font-style: italic;
     }
   }
 </style>

@@ -36,14 +36,6 @@
 
 
 <style lang="scss" global>
-	@font-face {
-		font-family: 'MonoLisa';
-		src: url('/fonts/monolisa-regular-webfont.woff2') format('woff2');
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-
 	.uses {
 		li a,
 		p a {

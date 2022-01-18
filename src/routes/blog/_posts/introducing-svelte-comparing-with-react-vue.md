@@ -1,7 +1,7 @@
 ---
 title: 'Introducing Svelte, and Comparing Svelte with React and Vue'
 date: '2021-10-1'
-updated: '2021-11-4'
+updated: '2022-01-18'
 categories:
   - 'javascript'
   - 'svelte'
@@ -40,13 +40,13 @@ So how is Svelte _different_? Glad you asked…
 
 ### How is Svelte different?
 
-Svelte was created by [Rich Harris](https://twitter.com/rich_harris), a developer and graphics editor for the [New York Times](https://www.nytimes.com/).
+Svelte was created by [Rich Harris](https://twitter.com/rich_harris), a developer and graphics editor for the [New York Times](https://www.nytimes.com/). (**Edit:** Harris has since been [hired by Vercel](https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte) to work on Svelte full-time!)
 
-The news world moves fast, so the interactive UIs and visualizations Harris was creating for the Times needed to be built as quickly as possible. But since it's critical for the news to be accessible to _everyone_, those bits of interactivity _also_ had to be as small and performant as possible.
+The news world moves fast, so the interactive UIs and visualizations Harris was creating for the _Times_ needed to be built as quickly as possible. But since it's critical for the news to be accessible to _everyone_, those bits of interactivity _also_ had to be as small and performant as possible.
 
 Harris needed a solution that was extremely quick and easy to build with, yet that would be fast and smooth for any reader on any device or network, no matter how limited. In many cases, the bloated JavaScript bundles that are the byproducts of many other frameworks disqualified them from consideration. So Harris set out to build his own solution, and that's how Svelte was born.
 
-While relatively new and small compared to the other frameworks on the list, Svelte is uniquely battle-tested: the [New York Times Covid map](https://www.nytimes.com/interactive/2021/us/covid-cases.html) is a Svelte app. (Harris's employer is far from the only large company employing the tech, however; IBM, Square, Philips, 1Password, and Spotify number among its growing list of adopters.)
+While relatively new and small compared to the other frameworks on the list, Svelte is uniquely battle-tested: the [New York Times Covid map](https://www.nytimes.com/interactive/2021/us/covid-cases.html) is a Svelte app. (Harris's former employer is far from the only large company utilizing the tech, however; IBM, Square, Philips, 1Password, and Spotify number among its growing list of adopters.)
 
 ---
 
@@ -91,7 +91,7 @@ If you want to get technical, Svelte isn't really a JavaScript framework at all,
 
 To elaborate: React, Vue, and most other frameworks run _in_ the browser. You load them first, and then _use_ them by calling their methods to execute whatever code you write (not unlike jQuery and countless similar libraries). You can load React, Vue, etc. in a script tag, in a [CodePen](https://codepen.io), or otherwise drop them into whatever environment you want. Granted, there's probably a build tool involved to reduce the bundle size when you work with these frameworks in a production environment. But to some extent at least, you're inevitably shipping the framework itself to the browser, and loading it there.
 
-**Svelte doesn't work like that**; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script. The
+**Svelte doesn't work like that**; you can't "load Svelte" in the browser, or play with it on CodePen (though the [Svelte REPL](https://svelte.dev/repl/hello-world) works well instead). Svelte isn't a script.
 
 Instead, to create a Svelte app, you [install the Svelte repo](https://svelte.dev/blog/the-easiest-way-to-get-started) on your machine, and write Svelte code--which, technically speaking, is a small superset of HTML. The compiler does the rest:
 
@@ -107,7 +107,7 @@ This approach allows for extremely small bundle sizes, which in turn translates 
 All your Svelte code is compiled down to minimal, self-contained JavaScript before it ever gets to the&nbsp;browser.
 </PullQuote>
 
-React and Vue also both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about that; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
+React and Vue both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about that; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
 <SideNote>
 There's a little more nuance than this when discussing Svelte's performance relative to the field, but we'll get into that in the last section.
@@ -116,7 +116,7 @@ There's a little more nuance than this when discussing Svelte's performance rela
 
 ### Authoring Svelte components
 
-One of the things I like most about Svelte is its HTML-first philosophy. With few exceptions, Svelte code is entirely browser-readable HTML and JavaScript. In fact, technically, you could call Svelte code as a small superset of HTML.
+One of the things I like most about Svelte is its HTML-first philosophy. With few exceptions, Svelte code is entirely browser-readable HTML and JavaScript. In fact, technically, you could call Svelte a small superset of HTML.
 
 But enough telling; let's show.
 
@@ -273,9 +273,9 @@ To add styles to a component in Svelte, you simply create a `<style>` tag in the
 One of my favorite parts about Svelte is how fun and easy it makes styling.
 </PullQuote>
 
-If you prefer, you can use Sass in your components with [minimal modification](https://github.com/sveltejs/svelte-preprocess), and by adding `lang="scss"` to the `<style>` tag. This is possible thanks to `svelte-preprocess`
+If you prefer, you can use Sass in your components with minimal modification, and by adding `lang="scss"` to the `<style>` tag. This is possible thanks to [Svelte Preprocess](https://github.com/sveltejs/svelte-preprocess).
 
-Svelte Preprocess has support for several "languages" (incluing Sass, PostCSS and TypeScript) built-in. On top of that, `svelte-preprocess` adds an extremely nice Sass feature: you can [specify content to prepend when loading your component's Sass](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content).
+Svelte Preprocess is an Svelte add-on, with support for several "languages" (incluing Sass, PostCSS and TypeScript) built-in. On top of that, Svelte Preprocess adds an extremely nice Sass feature: you can [specify content to prepend when loading your component's Sass](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content).
 
 This way, if you have all of your Sass variables in an external `_vars.scss` file like me, you can just have the processer auto-import that into every component. This saves you the trouble of manually `@import`ing the SCSS file with a bunch of `../../../` file system traversal every time you want to use a variable in a component.
 
@@ -328,7 +328,7 @@ That's pretty cool! It's easier to read, too; you can simply see what class will
 <input class:enabled />
 ```
 
-**Whoa!** That's cool. It's basically [ES6 object property value shorthand](https://alligator.io/js/object-property-shorthand-es6/) for conditional classes.
+**Whoa!** That's rad. It's basically [ES6 object property value shorthand](https://alligator.io/js/object-property-shorthand-es6/) for conditional classes.
 
 Also worth mentioning: you can have as many `class` attributes as you want (dynamic or otherwise) on a single element:
 
@@ -368,7 +368,7 @@ If you'd like to make a component's CSS global, you can do that on a per-rule ba
 </style>
 ```
 
-**One word of warning there, however:** global styles can persist once loaded on the page, since Svelte outputs your component's styles as a standalone CSS file. So if you have a `global` style tag in a component that only loads conditionally, its styles can stick around even after that component is removed from that page, potentially applying to elements there as well.
+**One word of warning there, however:** global styles can persist once loaded on the page, since Svelte outputs your component's styles as a standalone CSS file. So if you have a `global` style tag in a component that only loads conditionally, its styles can stick around even after that component is removed from that page, potentially applying to elements on new pages as well.
 
 <PullQuote>
 I've found it's a good idea to always use a wrapping parent class selector, even when dealing with scoped styles.

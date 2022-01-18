@@ -1,3 +1,4 @@
+// The naming feels a little wrong here (1024px isn't really "small") but ¯\_(ツ)_/¯
 $xxs: 600px;
 $xs: 768px;
 $sm: 1024px;
@@ -8,6 +9,8 @@ $xxl: 1960px;
 $xxxl: 2200px;
 
 :root {
+	// Looks kinda messy but allows for colors to be lightened or darkened.
+	// Maybe could just use Sass color functions instead? Oh well.
 	--lightBlueHS: 199, 33%;
 	--yellowHS: 49, 100%;
 	--redHS: 349, 100%;
@@ -31,19 +34,26 @@ $xxxl: 2200px;
 
 	--black: hsl(var(--blackHSL));
 	--trueBlack: hsl(var(--trueBlackHSL));
-
 	
 	--headingFont: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 	'Helvetica Neue', Arial, sans-serif;
-
 	--bodyFont: 'Alkes', Georgia, serif;
+	--codeFont: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 	--bodyFontWeight: normal;
 	--bodyLineHeight: 1.6;
 	--bodyFontSize: 1.0625rem;
 
-	@media (min-width: $sm) {
+	@media (min-width: $xxs) {
+		--bodyFontSize: 1.125rem;
+	}
+
+	@media (min-width: $xs) {
 		--bodyFontSize: 1.1875rem;
+	}
+
+	@media (min-width: $lg) {
+		--bodyFontSize: 1.25rem;
 	}
 
 	--yellow: hsl(var(--yellowHSL));
@@ -94,6 +104,10 @@ $xxxl: 2200px;
 	@media (min-width: $xxl) {
 		--margin: var(--wholeNote);
 	}
+	
+	@media (min-width: $xxxl) {
+		--margin: var(--dottedWholeNote);
+	}
 
 	&.dark {
 		--paper: var(--black);
@@ -105,6 +119,7 @@ $xxxl: 2200px;
 		--highlightColor: var(--darkerGray);	
 	}
 
+	// Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes
 	&:not(.light) {
 		@media (prefers-color-scheme: dark) {
 			--paper: var(--black);

@@ -35,8 +35,8 @@
       display: flex;
       align-items: center;
       font-size: .9rem;
-      font-family: 'MonoLisa', monospace;
-      text-shadow: 0 0 1px #fff;
+      font-family: var(--codeFont);
+      text-shadow: 0 0 1px var(--trueWhite);
       
       .swatch {
         width: 3.5em;
