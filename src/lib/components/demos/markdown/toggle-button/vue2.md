@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```vue
 <!-- ToggleButton.vue -->
 <script>

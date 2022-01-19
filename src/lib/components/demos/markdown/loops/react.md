@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```jsx
 posts.map(post => (
   <div>

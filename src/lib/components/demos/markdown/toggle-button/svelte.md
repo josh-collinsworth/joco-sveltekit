@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```svelte
 <!-- ToggleButton.svelte -->
 <script>

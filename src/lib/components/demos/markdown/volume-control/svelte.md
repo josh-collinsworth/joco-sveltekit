@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```svelte
 <!-- VolumeControl.svelte -->
 <script>

@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```jsx
 // VolumeControl.jsx
 import React, { useState } from 'react'

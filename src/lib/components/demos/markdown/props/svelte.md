@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```svelte
 <!-- PageHeading.svelte -->
 <script>

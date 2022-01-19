@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```jsx
 // CounterButton.jsx
 import React, { useState } from 'react'

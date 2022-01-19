@@ -1,7 +1,3 @@
----
-layout: false
----
-
 <script>
   import FontTester from '$lib/components/demos/FontTester.svelte'
   import SiteColors from '$lib/components/demos/SiteColors.svelte'
