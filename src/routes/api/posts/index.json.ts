@@ -11,7 +11,7 @@ export const get = async ({ url }): Promise<APIResponse> => {
 	}
 
 	try {
-		const posts = await fetchPosts( options )
+		const posts = await fetchPosts({ ...options })
 		return {
 			status: 200,
 			body: {

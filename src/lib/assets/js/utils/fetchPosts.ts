@@ -1,10 +1,8 @@
-import type Post from '../../../types/post'
-import type PostsEndpointOptions from '../../../types/posts-endpoint-options'
+import type Post from '$lib/types/post'
+import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
 import { dev } from '$app/env'
 
-const fetchPosts = async (options: PostsEndpointOptions = { offset: null, limit: 10 }): Promise<Post[]> => {
-  const { offset, limit } = options
-
+const fetchPosts = async ({ offset = 0, limit = 10, category = '' }: PostsEndpointOptions = {}): Promise<Post[]> => {
   let posts: Post[]
 
   if (dev) {
@@ -30,6 +28,10 @@ const fetchPosts = async (options: PostsEndpointOptions = { offset: null, limit:
   }
 
   let sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+
+  if (category) {
+    sortedPosts = posts.filter(post => post.categories.includes(category))
+  }
   
   if (offset) {
     sortedPosts = sortedPosts.slice(offset)

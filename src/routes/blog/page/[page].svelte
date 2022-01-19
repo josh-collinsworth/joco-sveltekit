@@ -13,11 +13,7 @@
         }
       }
       
-      let offset = 0
-      
-      for (let i = 1; i < page; i++) {
-        offset += 10
-      }
+      let offset = page * 10 - 10
       
       const posts = await fetchPosts({ offset, limit: 10 })
       
@@ -52,7 +48,7 @@
   export let page: number = 1
   export let totalPosts: number
 
-  $: lowerBound = page * 10 - 10 || 1
+  $: lowerBound = page * 10 - 9 || 1
   $: upperBound = Math.min(page * 10, totalPosts)
 </script>
 

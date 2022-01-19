@@ -1,18 +1,15 @@
 <script context="module" lang="ts">
   import type { LoadOutput } from '@sveltejs/kit'
+  import fetchPosts from '$lib/assets/js/utils/fetchPosts'
 
-	export const load = async ({ fetch, params }): Promise<LoadOutput> => {
+	export const load = async ({ params }): Promise<LoadOutput> => {
     const { category } = params
-    //TODO: maybe add a way to fetch with query parameter to avoid filtering?
-		const res = await fetch(`/api/posts.json`)
-		let { posts } = await res.json()
 
-    const matchingPosts = posts
-      .filter(post => post.categories.includes(category))
+		const posts  = await fetchPosts({ category })
 
 		return {
 			props: { 
-        posts: matchingPosts,
+        posts,
         category
       }
 		}

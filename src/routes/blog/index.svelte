@@ -1,4 +1,3 @@
-<!-- TODO: this currently returns all posts. At some point, it will probably be worth adding pagination. -->
 <script context="module" lang="ts">
 	import type { LoadOutput } from '@sveltejs/kit'
 

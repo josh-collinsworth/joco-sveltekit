@@ -25,6 +25,7 @@
 	import { isLoading, theme, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { prefetch } from '$app/navigation'
+	import { dev } from '$app/env'
 	
 	export let path: string
 
@@ -82,6 +83,9 @@
 	<meta name="twitter:creator" content="@jjcollinsworth" />
 	<meta name="twitter:site" content="@jjcollinsworth"/>
   <meta name="twitter:card" content="summary_large_image" />
+	{#if !dev}
+		<script defer data-domain="joshcollinsworth.com" src="https://plausible.io/js/plausible.js"></script>
+	{/if}
 </svelte:head>
 
 <div
