@@ -1,5 +1,5 @@
 ```vue
-<div v-for="post in posts">
+<div v-for="post in posts" :key="post.link">
   <h2>
     <a :href="post.link">
       {{ post.title }}
