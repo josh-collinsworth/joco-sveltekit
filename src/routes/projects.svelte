@@ -99,7 +99,7 @@
           A fun <CodePenLink hash="OYgGNK">Emoji Slider</CodePenLink> made with Vue
         </li>
         <li>
-          A silly "<CodePenLink hash="vYOPKqx">Pick Two</CodePenLink> of three" checklist
+          An <CodePenLink hash="MLjVrQ">interactive Vue tutorial</CodePenLink> blog post
         </li>
         <li>
           The game of <CodePenLink hash="oNbavJN">Hangman</CodePenLink> in Vue, using a quotes API
@@ -114,7 +114,7 @@
           The game of <CodePenLink hash="MWwXpLd">Connect Four</CodePenLink> in Vue
         </li>
         <li>
-          An interactive <CodePenLink hash="MLjVrQ">Vue tutorial</CodePenLink> blog post
+          A silly "<CodePenLink hash="vYOPKqx">Pick Two</CodePenLink> of three" checklist
         </li>
         <li>
           Some pure CSS illustrations, like this <CodePenLink hash="vdGYpo">Raccoon Mario sprite</CodePenLink> and this <CodePenLink hash="LVMRwQ">Pure CSS Game Boy Advance SP</CodePenLink>
@@ -144,6 +144,9 @@
         <p>You can also find my work on <a href="https://github.com/josh-collinsworth">GitHub</a> (although truth be told I don't really bother curating it there at all.)</p>
       </div>
       <ul class="">
+        <li>
+          An open-source static blog starter with SvelteKit (<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">GitHub</a> / <a href="https://sveltekit-static-starter.netlify.app">live demo</a>)
+        </li>
         <li>
           <a href="https://passthepigs.vercel.app/" rel="external">Pass the Pigs scorekeeper app</a> built in React
         </li>
