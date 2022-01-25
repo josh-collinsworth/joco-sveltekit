@@ -37,7 +37,7 @@
   .nav__item {
     margin: 0 0 0 1.5em;
 
-    @media (max-width: $xs) {
+    @media (max-width: vars.$xs) {
       --itemTransition: .4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   
       opacity: 0;
@@ -121,7 +121,7 @@
     }
 
     &.mobile-only {
-      @media (min-width: $xs) {
+      @media (min-width: vars.$xs) {
         display: none;
       }
     }

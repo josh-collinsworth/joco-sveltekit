@@ -58,7 +58,7 @@
     display: grid;
     grid-template-columns: 100%;
     
-    @media (min-width: $lg) {
+    @media (min-width: vars.$lg) {
       grid-gap: 0 var(--halfNote);
       grid-template-columns: var(--sidebarWidth) 1fr var(--sidebarWidth);
     }
@@ -67,7 +67,7 @@
   .sidebar-wrapper {
     display: none;
     
-    @media (min-width: $lg) {
+    @media (min-width: vars.$lg) {
       display: block;
       align-self: start;
       position: sticky;

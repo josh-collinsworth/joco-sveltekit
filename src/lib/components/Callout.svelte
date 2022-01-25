@@ -12,11 +12,11 @@
     line-height: 1.4;
     font-family: var(--headingFont);
 
-    @media (min-width: $xs) {
+    @media (min-width: vars.$xs) {
       font-size: 1.4rem;
     }
 
-    @media (min-width: $lg) {
+    @media (min-width: vars.$lg) {
       margin: 0 0 var(--quarterNote);
       font-size: inherit;
       line-height: inherit;
@@ -28,7 +28,7 @@
     font-weight: bold;
     font-style: normal;
 
-    @media (min-width: $lg) {
+    @media (min-width: vars.$lg) {
       font-weight: normal;
       font-style: italic;
     }

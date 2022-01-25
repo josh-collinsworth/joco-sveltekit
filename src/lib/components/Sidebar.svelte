@@ -58,7 +58,7 @@
     font-family: var(--headingFont);
 	  margin: var(--dottedHalfNote) 0 0;
 
-    @media (min-width: $lg) {
+    @media (min-width: vars.$lg) {
       margin: 0;
     }
     

@@ -1,11 +1,10 @@
-@import '../src/lib/assets/scss/_vars.scss';
-@import '../src/lib/assets/scss/_preferences.scss';
-@import '../src/lib/assets/scss/_fonts.scss';
-@import '../src/lib/assets/scss/_typography.scss';
-@import '../src/lib/assets/scss/_utilities.scss';
-@import '../src/lib/assets/scss/_layout.scss';
-@import '../src/lib/assets/scss/_forms.scss';
-@import '../src/lib/assets/scss/_code.scss';
+@use './preferences';
+@use './fonts';
+@use './typography';
+@use './utilities';
+@use './layout';
+@use './forms';
+@use './code';
 
 *, *:before, *:after {
   box-sizing: border-box;

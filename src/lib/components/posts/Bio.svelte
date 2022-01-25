@@ -44,7 +44,7 @@
     align-content: center;
     flex-wrap: wrap;
 
-    @media (min-width: $xxs) {
+    @media (min-width: vars.$xxs) {
       flex-wrap: nowrap;
     }
     
@@ -84,7 +84,7 @@
       border-radius: 3rem;
       margin: 0 auto var(--quarterNote);
 
-      @media (min-width: $xxs) {
+      @media (min-width: vars.$xxs) {
         margin: 0 var(--quarterNote) 0 0;
       }
     }

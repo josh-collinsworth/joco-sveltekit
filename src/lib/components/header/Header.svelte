@@ -67,7 +67,7 @@
 		height: 2rem;
 		display: block;
 
-		@media (min-width: $xxl) and (min-height: $md) {
+		@media (min-width: vars.$xxl) and (min-height:vars.$md) {
 			height: 3rem;
 		}
 	}
@@ -80,7 +80,7 @@
 		top: calc(1rem - 2px);
 		transition: opacity 0.2s;
 
-		@media (min-width: $xs) {
+		@media (min-width: vars.$xs) {
 			position: static;
 		}
 	}
@@ -99,7 +99,7 @@
 		z-index: 3;
 		padding: var(--quarterNote) var(--margin) var(--halfNote);
 
-		@media (min-width: $xs) {
+		@media (min-width: vars.$xs) {
 			padding: var(--halfNote) var(--margin);
 		}
 	}

@@ -53,13 +53,13 @@
     line-height: 1.6em;
     padding: 2.5rem var(--margin) 2rem;
     
-    @media (min-width: $sm) {
+    @media (min-width: vars.$sm) {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
       align-items: stretch;
     }
     
-    @media (min-width: $sm) {
+    @media (min-width: vars.$sm) {
       font-size: 0.8rem;
     }
 
@@ -89,7 +89,7 @@
         color: var(--lightBlue);
       }
 
-      @media (min-width: $sm) {
+      @media (min-width: vars.$sm) {
         border-bottom: 0;
         border-right: 1px solid var(--lightBlue);
         padding: 1rem;
@@ -112,7 +112,7 @@
       margin-left: 1rem;
       align-self: center;
 
-      @media (min-width: $sm) {
+      @media (min-width: vars.$sm) {
        margin-left: 0;
       }
 

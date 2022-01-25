@@ -27,7 +27,7 @@
     list-style-type: none;
     padding: 0;
 
-    @media (max-width: $xs) {
+    @media (max-width: vars.$xs) {
       list-style-type: none;
       text-align: left;
       width: 100%;

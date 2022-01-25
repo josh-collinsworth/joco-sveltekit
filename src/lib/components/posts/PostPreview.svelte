@@ -75,7 +75,7 @@
   li {
     margin: 0 0 var(--halfNote);
 
-    @media (min-width: $md) {
+    @media (min-width: vars.$md) {
       margin: 0;
     }
   }
@@ -85,7 +85,7 @@
     transform-origin: bottom left;
     display: block;
 
-    @media (min-width: $md) {
+    @media (min-width: vars.$md) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: var(--halfNote);
@@ -96,7 +96,7 @@
       padding: 1.5rem 0;
       max-width: 32rem;
 
-      @media (min-width: $md) {
+      @media (min-width: vars.$md) {
         padding: 0;
       }
     }

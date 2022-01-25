@@ -1,3 +1,5 @@
+@use './vars';
+
 body {
 	line-height: var(--bodyLineHeight);
 	font-weight: var(--bodyFontWeight);
@@ -27,7 +29,7 @@ li:not(:last-of-type) {
 	margin-bottom: 0.75rem;
 	position: relative;
 
-	@media (min-width: $md) {
+	@media (min-width: vars.$md) {
 		margin-bottom: 0;
 	}
 }
@@ -72,7 +74,7 @@ h1,
 	margin-top: var(--quarterNote);
 	font-weight: normal;
 	
-	@media (min-width: $xs) {
+	@media (min-width: vars.$xs) {
 		font-size: 2.6rem;
 	}
 }
@@ -84,7 +86,7 @@ h2,
 	margin: var(--wholeNote) 0 var(--halfNote);
 	z-index: 2;
 
-	@media (min-width: $xs) {
+	@media (min-width: vars.$xs) {
 		font-size: 2.2rem;
 	}
 	
@@ -190,7 +192,7 @@ figcaption {
 		line-height: 1;
 		text-align: center;
 		
-		@media(min-width: $xxs) {
+		@media(min-width: vars.$xxs) {
 			left: -1em;
 		}
 	}

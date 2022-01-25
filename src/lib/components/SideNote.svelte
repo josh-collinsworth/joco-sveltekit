@@ -35,7 +35,7 @@
 			margin: 0 0 var(--eighthNote);
 		}
 
-		@media (min-width: $xxs) {
+		@media (min-width: vars.$xxs) {
 			width: 100%;
 			margin-left: 0;
 			padding: calc(var(--quarterNote) * 1.5);

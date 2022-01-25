@@ -1,3 +1,5 @@
+@use './vars';
+
 .no-bullets {
   list-style-type: none !important;
 
@@ -24,7 +26,7 @@ input[type=checkbox] {
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: $xs) {
+  @media (min-width: vars.$xs) {
     max-width: var(--maxWidth);
   }
 

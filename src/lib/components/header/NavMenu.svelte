@@ -27,7 +27,7 @@
 		text-align: right;
 		font-family: var(--headingFont);
 
-		@media (max-width: $xs) {
+		@media (max-width: vars.$xs) {
 			display: block;
 			position: fixed;
 			transition: transform .4s cubic-bezier(1, 0, 0, 1), opacity .4s cubic-bezier(1, 0, 0, 1);
@@ -51,7 +51,7 @@
 			}
 		}
 
-		@media (min-width: $xs) {
+		@media (min-width: vars.$xs) {
 			display: flex;
 			justify-content: flex-end;
 		}

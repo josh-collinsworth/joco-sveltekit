@@ -78,7 +78,7 @@
   margin-top: var(--wholeNote);
   max-width: var(--maxWidth);
 
-  @media (min-width: $xl) {
+  @media (min-width: vars.$xl) {
     width: 100%;
     max-width: unset;
     display: grid;
@@ -100,15 +100,15 @@
     font-size: 2.5rem;
     margin-bottom: var(--quarterNote);
 
-    @media (min-width: $xs) {
+    @media (min-width: vars.$xs) {
       font-size: 3rem;
     }
 
-    @media (min-width: $md) {
+    @media (min-width: vars.$md) {
       font-size: 4rem;
     }
 
-    @media (min-width: $lg) {
+    @media (min-width: vars.$lg) {
       font-size: 5rem;
     }
   }
@@ -131,12 +131,12 @@
     line-height: 1.2;
     font-family: var(--headingFont);
 
-    @media (min-width: $md) {
+    @media (min-width: vars.$md) {
       font-size: 1.7rem;
       margin-bottom: var(--wholeNote) ;
     }
 
-    @media (min-width: $xl) {
+    @media (min-width: vars.$xl) {
       font-size: 1.8rem;
     }
   }
@@ -148,7 +148,7 @@
   font-size: 0.7rem;
   font-family: var(--headingFont);
 
-  @media (min-width: $xxxl) {
+  @media (min-width: vars.$xxxl) {
     display: block;
   }
 }

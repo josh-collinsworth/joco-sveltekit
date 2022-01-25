@@ -112,7 +112,7 @@
         border-color: var(--paper);
       }
 
-      @media (min-width: $lg) {
+      @media (min-width: vars.$lg) {
         padding-left: 1em;
         padding-right: 1em;
       }

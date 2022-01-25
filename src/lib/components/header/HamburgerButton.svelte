@@ -93,7 +93,7 @@
 			}
 		} 
 
-		@media (max-width: $xs) {
+		@media (max-width: vars.$xs) {
 			display: flex;
 		}
 	}

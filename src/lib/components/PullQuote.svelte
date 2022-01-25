@@ -21,7 +21,7 @@
     font-weight: normal;
     max-width: 15em;
     
-    @media (min-width: $lg) {
+    @media (min-width: vars.$lg) {
       display: block;
       fong-size: 1.4rem;
     }
