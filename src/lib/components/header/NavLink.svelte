@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isMenuOpen } from '$lib/data/store'
+  import { isMenuOpen, prefersReducedMotion } from '$lib/data/store'
 
   export let text: string
   export let to: string
@@ -18,6 +18,7 @@
 <li
   class="nav__item"
   class:open={$isMenuOpen}
+  class:no-motion={$prefersReducedMotion}
   class:mobile-only={mobileOnly}
 >
   <a
@@ -62,6 +63,11 @@
 
     &.open {
       animation: move_in_left var(--itemTransition);
+
+      &.no-motion {
+        animation: none;
+        opacity: 1;
+      }
   
       @for $i from 1 through 9 {
         &:nth-of-type(#{$i}) {
