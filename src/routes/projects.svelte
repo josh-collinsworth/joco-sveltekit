@@ -85,6 +85,29 @@
         />
       </div>
     </article>
+
+    <article>
+      <div class="sticky">
+        <h2>SvelteKit static blog starter</h2>
+        
+        <p>A fully open-source, pre-configured starter for a SvelteKit blog. Includes Markdown and Sass preprocessing; has mdsvex with rehype plugins pre-installed; and includes automatic prefetching of top-level routes, an RSS feed, and a JSON API.</p>
+        <ul>
+          <li>
+            <a href="https://sveltekit-static-starter.netlify.app">Live demo</a>
+          </li>
+          <li> 
+            <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">GitHub repo</a>
+          </li>
+        </ul>  
+      </div>
+      
+      <div class="image-gallery">
+        <figure>
+          <iframe src="https://sveltekit-static-starter.netlify.app" frameborder="0" title="Live demo of the starter, from sveltekit-static-starter.netlify.app" width="100%" height="800"></iframe>
+          <figcaption><a href="https://sveltekit-static-starter.netlify.app">sveltekit-static-starter.netlify.app</a></figcaption>
+        </figure>
+      </div>
+    </article>
       
     <article>
       <div class="sticky">
@@ -143,9 +166,9 @@
         <h2>Other projects and&nbsp;apps</h2>
         <p>You can also find my work on <a href="https://github.com/josh-collinsworth">GitHub</a> (although truth be told I don't really bother curating it there at all.)</p>
       </div>
-      <ul class="">
+      <ul>
         <li>
-          An open-source static blog starter with SvelteKit (<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">GitHub</a> / <a href="https://sveltekit-static-starter.netlify.app">live demo</a>)
+          Website for <a href="https://rise.getflywheel.com" rel="external">Rise</a>, Flywheel/WP Engine's BIPOC employee resource group
         </li>
         <li>
           <a href="https://passthepigs.vercel.app/" rel="external">Pass the Pigs scorekeeper app</a> built in React
@@ -160,13 +183,10 @@
           <a href="https://wpmultisitedomainreplace.com" rel="external">WPMultisiteDomainReplace.com</a>, a Nuxt app to update your WordPress multisite's database when switching main domains
         </li>
         <li>
-          <a href="https://qvicklist.vercel.app/" rel="external">Qvick List</a>, an on-demand Vue to-do list app that saves to local storage.
+          <a href="https://qvicklist.vercel.app/" rel="external">Qvick List</a>, an on-demand Vue to-do list app that saves to local storage. (Needs some updating.)
         </li>
         <li>
           Flywheel retreat websites for <a href="https://fest2019.getflywheel.com/" rel="external">2019</a> and <a href="https://fest.getflywheel.com/" rel="external">2020</a>.
-        </li>
-        <li>
-          Website for <a href="https://rise.getflywheel.com" rel="external">Rise</a>, Flywheel's BIPOC employee resource group.
         </li>
         <li>
           A <a href="https://github.com/josh-collinsworth/flywheel-cloud-wp-load-fix">WordPress plugin</a> to help make various other plugins and theme compatible with <a href="https://getflywheel.com/cloud-platform/">Flywheel's cloud platform</a>
