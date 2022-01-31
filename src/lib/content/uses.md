@@ -36,7 +36,7 @@ I've also got working experience with jQuery and Knockout.
 
 - [Visual Studio Code](https://code.visualstudio.com/): my favorite editor ever. I was a reluctant Sublime Text convert, but the switch was more than worth it.
 
-  - **Theme**: I love [Dracula Pro](https://draculatheme.com/pro); it strikes the perfect balance of contrast and color to my eye. I also appreciate that it comes with identical themes for other apps, like Slack, iTerm, and others. It _is_ espensive, however, so for a free option, I'd go with go with good ol' [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
+  - **Theme**: I love [Dracula Pro](https://draculatheme.com/pro); it strikes the perfect balance of contrast and color to my eye. I also appreciate that it comes with identical themes for other apps, like Slack, iTerm, and others. It _is_ expensive, however, so for a free option, I'd go with go with good ol' [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
   - **Font**: [MonoLisa](https://www.monolisa.dev/).
   I’m a code nerd and a font nerd, so I don't take this choice lightly, but this is my favorite dev font. I love its combination of legibility and subtle personality, and plus, the code ligatures are great. (If you’re not willing to spend the money, though—and I definitely understand if that’s the case—
