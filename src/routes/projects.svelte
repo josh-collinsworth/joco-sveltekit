@@ -239,7 +239,6 @@
         margin: 0 auto var(--halfNote);
         display: block;
         max-width: unset;
-        mix-blend-mode: unset;
         width: calc(100% + (var(--margin) * 2));
         margin-left: calc(var(--margin) * -1);
         
