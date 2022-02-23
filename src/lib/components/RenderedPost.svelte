@@ -8,7 +8,6 @@
   import Main from '$lib/components/Main.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount, SvelteComponent } from 'svelte'
-import { append } from 'svelte/internal'
 
   export let PostContent: SvelteComponent 
   export let meta: Post
