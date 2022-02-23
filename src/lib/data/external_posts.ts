@@ -1,6 +1,15 @@
 import type Post from '../types/post'
 
 const EXTERNAL_POSTS: Post[] = [{
+    title: `Create better CSS forms with these design principles`,
+    subtitle: `LogRocket Blog`,
+    slug: `https://blog.logrocket.com/create-better-css-forms-design-principles/`,
+    coverImage: `build-better-css-forms-design-principles.png`,
+    coverWidth: 730,
+    coverHeight: 487,
+    date: `2022-02-23`,
+    excerpt: `Many developers, even among the most seasoned senior engineers, balk at the idea of laying out and styling pages on their own. I don’t believe developers need to be designers. But I believe developers can learn to build functional, quality layouts with knowledge of design principles. And, just as a little primer, when I say “design,” I mean both visual and structural.`,
+  }, {
     title: `A Complete Beginner's guide to NPM`,
     subtitle: `CSS Tricks`,
     slug: `https://css-tricks.com/a-complete-beginners-guide-to-npm/`,

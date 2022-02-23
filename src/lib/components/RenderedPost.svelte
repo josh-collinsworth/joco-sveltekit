@@ -8,6 +8,7 @@
   import Main from '$lib/components/Main.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
   import { onMount, SvelteComponent } from 'svelte'
+import { append } from 'svelte/internal'
 
   export let PostContent: SvelteComponent 
   export let meta: Post
@@ -33,25 +34,28 @@
     })
   }
 
-  const loadEmbeddedTweets = (): void => {
+  const loadEmbeds= (): void => {
     /**
-     * This is necessary because prefetching blog posts prevents
-     * the Twitter widget script from loading. Plus, there isn't
+     * This is necessary because prefetching blog posts prevents the 
+     * Twitter/CodePen widget script from loading. Plus, there isn't
      * really a good way to embed scripts in Markdown to begin
      * with. So, this does the job just fine. All I need to do
-     * is paste the Twitter embed code for a tweet, and remove the
-     * script tag from it.
+     * is paste the embed code, and remove the script tag from it.
      */
-    const allTweets = document.getElementsByClassName('twitter-tweet')
-
-    if (allTweets.length) {
+    const tweets = document.getElementsByClassName('twitter-tweet')
+    const codePens = document.getElementsByClassName('codepen')
+    
+    if (tweets.length) {
       appendScriptToHead('https://platform.twitter.com/widgets.js')
+    }
+    if (codePens.length) {
+      appendScriptToHead('https://cpwebassets.codepen.io/assets/embed/ei.js')
     }
   }
 
   onMount((): void => {
     wrapTablesInScrollableDivs()
-    loadEmbeddedTweets()
+    loadEmbeds()
   })
 </script>
 
@@ -185,6 +189,16 @@
 
       & + * {
         margin-top: var(--quarterNote);
+      }
+    }
+
+    .cp_embed_wrapper {
+      width: calc(100% + var(--margin) + var(--margin));
+      max-width: unset;
+      margin-left: calc(var(--margin) * -1);
+
+      @media (max-width: vars.$xl) and (min-width: vars.$lg) {
+        margin-left: 0;
       }
     }
   

@@ -9,7 +9,7 @@
 <style lang="scss">
   .pull-quote {
     float: right;
-    margin: var(--halfNote) -14rem var(--dottedHalfNote)  var(--halfNote) ;
+    margin: var(--halfNote) -14em var(--dottedHalfNote)  var(--halfNote) ;
     font-size: 1.3rem;
     line-height: 1.4;
     position: relative;
@@ -19,11 +19,11 @@
     font-family: var(--headingFont);
     font-style: normal;
     font-weight: normal;
-    max-width: 15em;
+    max-width: 18em;
     
     @media (min-width: vars.$lg) {
       display: block;
-      fong-size: 1.4rem;
+      font-size: 1.4rem;
     }
 
     &:after {

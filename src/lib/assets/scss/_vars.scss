@@ -22,7 +22,8 @@ $xxxl: 2200px;
 	--orangeHSL: 22, 100%, 54%;
 	--redHSL: 349, 100%, 45%;
 	--midGrayHSL: 204, 2%, 54%;
-	--darkGrayHSL: 214, 4%, 34%;
+	// --darkGrayHSL: 214, 4%, 34%; // Older darkGray based on #53565a
+	--darkGrayHSL: 210, 4%, 27%; // Newer, darker darkGray based on #424548
 	--darkerGrayHSL: 349, 25%, 16%;
 	--whiteHSL: 0, 0%, 99%;
 	--trueWhiteHSL: 0, 0%, 100%;

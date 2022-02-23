@@ -96,11 +96,11 @@ But the price tag of WordPress hosting generally assumes that your site is _wort
 Even GoDaddy starts at $10 per month; most other managed hosts, that would be considered a step above that, aren't selling it for less than about $15–30 per month (even WordPress.com will charge you at least $25 per month if you want SFTP access), and that price tag is _not_ cheap for a simple personal website or side project.
 
 <PullQuote>
-There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't. …WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal&nbsp;cost.
+There's an argument to be made that Jamstack companies like Netlify and Vercel are succeeding because they're filling a gap that WordPress just&nbsp;isn't. …WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal&nbsp;cost.
 </PullQuote>
 
 <Callout>
-There's an argument to be made, I think, that the Jamstack—and companies like Netlify and Vercel—are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
+There's an argument to be made that Jamstack companies like Netlify and Vercel are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
 </Callout>
 
 Granted, the tech hurdle is higher—not just anybody can code up a static site, and that's not to be discounted—but I can have a live Jamstack site on the web for _absolutely free_ any time I want with Netlify, et al. 
@@ -108,10 +108,6 @@ Granted, the tech hurdle is higher—not just anybody can code up a static site,
 <Callout>
 WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
 </Callout>
-
-<PullQuote>
-WordPress just won't continue to be worth it for everyone all&nbsp;the&nbsp;time.
-</PullQuote>
 
 As I write this, WP Engine and, no doubt, many other hosts are working on the headless WordPress story, and figuring out how to empower that tech stack and solve its problems in the same way they solved WordPress's. I have no doubt they'll come forward with something very compelling that will meet a great many customers' needs, but I also have no doubt it won't be cheap—certainly not as cheap as what the Jamstack is currently offering. And I think that will make many more people ask the same question I asked, and come to the same conclusion; WordPress just won't continue to be worth it for everyone all the time.
 

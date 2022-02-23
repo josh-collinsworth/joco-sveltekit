@@ -10,27 +10,12 @@
     margin: var(--halfNote) 0;
     font-size: 1.3rem;
     line-height: 1.4;
-    font-family: var(--headingFont);
-
-    @media (min-width: vars.$xs) {
-      font-size: 1.4rem;
-    }
 
     @media (min-width: vars.$lg) {
       margin: 0 0 var(--quarterNote);
       font-size: inherit;
       line-height: inherit;
       font-family: inherit;
-    }
-  }
-
-  :global(.callout em, .callout i) {
-    font-weight: bold;
-    font-style: normal;
-
-    @media (min-width: vars.$lg) {
-      font-weight: normal;
-      font-style: italic;
     }
   }
 </style>
