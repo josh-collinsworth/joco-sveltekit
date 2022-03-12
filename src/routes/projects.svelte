@@ -174,10 +174,13 @@
           <a href="https://passthepigs.vercel.app/" rel="external">Pass the Pigs scorekeeper app</a> built in React
         </li>
         <li>
+          A handy <a href="https://vlmc.netlify.app/" rel="external">liquid measurement converter</a> progressive web app, built with Vue
+        </li>
+        <li>
           A Svelte <a href="https://dadjokefinder.netlify.app/" rel="external">Dad Joke randomizer and searcher app</a>
         </li>
         <li>
-          <a href="smitty.netlify.app" rel="external">"Smitty"</a>, the Super Metroid Item Tracker app built in Svelte
+          <a href="https://smitty.netlify.app" rel="external">"Smitty"</a>, the Super Metroid Item Tracker app built in Svelte
         </li>
         <li>
           <a href="https://wpmultisitedomainreplace.com" rel="external">WPMultisiteDomainReplace.com</a>, a Nuxt app to update your WordPress multisite's database when switching main domains
