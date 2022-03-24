@@ -14,7 +14,6 @@ excerpt: How to use CSS grid to make a responsive, adaptable bar chart with no m
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
-  import Barchart from '$lib/components/_not-in-use/barchart.svelte'
 </script>
 
 Inspired by Wordle, I recently added a bar chart element to [Quina](https://quina.app/), to show players how many guesses they tend to need to finish their game. Here's a screenshot from my phone:
