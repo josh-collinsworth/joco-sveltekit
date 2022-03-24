@@ -56,10 +56,10 @@ h6 {
 	font-family: var(--headingFont);
 	font-weight: bold;
 	color: var(--headingColor);
-	line-height: 1.1;
+	line-height: 1.2;
 	position: relative;
 	margin-bottom: var(--quarterNote);
-	margin-top: var(--dottedHalfNote) ;
+	margin-top: var(--wholeNote) ;
 	padding: 0;
 
 	a {
@@ -81,13 +81,14 @@ h1,
 
 h2,
 .h2 {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: bold;
-	margin: var(--wholeNote) 0 var(--halfNote);
+	margin: var(--wholeNote) 0 var(--quarterNote);
 	z-index: 2;
 
 	@media (min-width: vars.$xs) {
-		font-size: 2.2rem;
+		font-size: 1.8rem;
+		margin-top: var(--tiedWholeNote);
 	}
 	
 	&::before {
@@ -96,15 +97,19 @@ h2,
 		height: 0.125em;
 		background: currentColor;
 		display: block;
-		margin: 0 0 1rem;
+		margin: 0 0 var(--eighthNote);
 	}
 }
 
 h3,
 .h3 {
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	font-weight: normal;
-	margin-top: var(--dottedHalfNote);
+	margin-top: var(--wholeNote);
+	
+	@media (min-width: vars.$xs) {
+		font-size: 1.6rem;
+	}
 }
 
 h4,

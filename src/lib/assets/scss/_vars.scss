@@ -42,7 +42,7 @@ $xxxl: 2200px;
 	--codeFont: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 	--bodyFontWeight: normal;
-	--bodyLineHeight: 1.6;
+	--bodyLineHeight: calc(var(--quarterNote) * 1.25);
 	--bodyFontSize: 1.125rem;
 
 	@media (min-width: $xs) {
@@ -85,6 +85,7 @@ $xxxl: 2200px;
 	--halfNote: calc(var(--quarterNote) * 2);
 	--dottedHalfNote: calc(var(--quarterNote) * 3);
 	--wholeNote: calc(var(--quarterNote) * 4);
+	--tiedWholeNote: calc(var(--quarterNote) * 5);
 	--dottedWholeNote: calc(var(--quarterNote) * 6);
 
 	--buttonSize: 2.2rem;

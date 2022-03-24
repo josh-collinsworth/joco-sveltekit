@@ -16,7 +16,7 @@
 			var(--lighterBlue),
 			var(--lightestBlue)
 		);
-		line-height: var(--bodyLineHeight);
+		line-height: var(--quarterNote);
 		min-height: 4.5rem;
 		width: calc(100% + var(--margin) + var(--margin));
 		margin-left: calc(var(--margin) * -1);
@@ -42,7 +42,8 @@
 		}
 		
 		:global(em),
-		:global(i) {
+		:global(i),
+		:global(code) {
 			font-style: normal;
 		}
 	}

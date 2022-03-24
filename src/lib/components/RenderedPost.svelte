@@ -205,7 +205,7 @@
       h1 {
         width: calc(100% + 15vw);
         max-width: unset;
-        font-size: calc(1.8rem + 1.5vw);
+        font-size: calc(1.8rem + 1.5vw);  
       }
     }
   }
