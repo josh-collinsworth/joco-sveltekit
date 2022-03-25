@@ -18,7 +18,7 @@ excerpt: How to use CSS grid to make a responsive, adaptable bar chart with no m
 
 Inspired by Wordle, I recently added a bar chart element to [Quina](https://quina.app/), to show players how many guesses they tend to need to finish their game. Here's a screenshot from my phone:
 
-![A bar chart of guesses per game in Quina, shown on a mobile device](/images/post_images/quina-bar-chart.png)
+<img style="max-width: 320px" alt="A bar chart of guesses per game in Quina, shown on a mobile device" src="/images/post_images/quina-bar-chart.png" />
 
 At first, when I set out to build that chart, I was concerned at the daunting complexity. How do I make sure the bars are the right scale, both in relation to each other and to the chart itself? Reaching for an external library looked like the easy option.
 
@@ -33,6 +33,8 @@ The trick is actually a fairly simple one, as far as putting charts into website
 - Set `grid-auto-columns: 1fr` on the container;
 - Set `grid-column: span x` on each one (where `x` is its value); and
 - Color in each bar.
+
+<CalloutPlusQuote>The nifty thing about this approach is: the chart will automatically be as wide as the widest bar; no math or percentages needed!</CalloutPlusQuote>
 
 Let's start with a simple, albeit contrived example: a bar chart that shows how many players are on the field at a time in a sport. (Not an especially useful chart, admittedly, but it's easily understandable data to work with.)
 
@@ -51,8 +53,6 @@ It may seem like a <code>&lt;dl&gt;</code> element would be a good fit here, but
 Each individual bar has a colored background to make it visible, and places the value (number) inside a `<span>`. That's just so we can use `display: flex` and `justify-content: space-between` to space out the two.
 
 Each individual bar _also_ has `grid-column: span x` set on it as well, where `x` is the bar's value, making each bar a column width equal to its value.
-
-The nifty thing about this approach is: the chart will _automatically_ be as wide as the widest bar. Neat!
 
 
 ## Working with dynamic data
@@ -135,7 +135,7 @@ Most simply: if you're using Sass, and have a reasonable and predictable number 
 }
 ```
 
-That's a quick little loop to ensure each bar starts on its own row (as long as you have 10 bars or fewer). That works, but gets less and less viable the more bars there are in the chart. Eventually, that little Sass snippet gets compiled into an unreasonable amount of CSS.
+That's a quick little loop to ensure each bar starts on its own row (as long as you have 10 bars or fewer). That works, but gets less and less viable the more bars there are in the chart. Eventually, if the second number is big enough, that little Sass snippet gets compiled into an unreasonable amount of CSS.
 
 Alternatively, as we loop over each item, we could get its index value, and explicitly set the bar's `grid-row-start` to `i + 1`:
 
@@ -152,7 +152,7 @@ Alternatively, as we loop over each item, we could get its index value, and expl
 
 This approach is definitely more friendly to unknown chart sizes. It may be more performant as well, but that will depend on a few factors, including the total number of bars in the chart, and whether the chart is pre-rendered or rendered on demand.
 
-There are other options, too (adding spacer elements, for example, or maybe experimenting with changing the grid's flow direction), but since we're already looping over the data anyway, I find these two to be the most straightforward solutions.
+There may be other options, too (adding spacer elements, for example, or maybe experimenting with changing the grid's flow direction), but since we're already looping over the data anyway, I find these two to be the most straightforward solutions.
 
 
 ### CSS
@@ -164,16 +164,17 @@ There are a few important styles needed to make this work. First off, make sure 
   display: grid;
   grid-template-columns: auto; /* The default, but best to be explicit */
   grid-auto-columns: 1fr;
+  gap: 0.5rem 0;
 }
 ```
 
-The `grid-auto-columns: 1fr` bit is important. Without it, each column may not be sized the same, which would skew the appearance of our chart—and since the whole point of a chart is to show the exact relationship between items, we should definitely be sure the columns are accurately sized.
+**That last declaration is important**! Without explicitly setting `grid-auto-columns` to `1fr`, each column may not be sized the same, which would skew the appearance of our chart—and since the whole point of a chart is to show the exact relationship between items, we definitely want equal columns.
 
 ![The same grid shown twice, but different. The first has 'grid-auto-columns' set to the default ('auto'), resulting in some columns being significantly wider than others. In the second, 'grid-auto-columns' is set to '1fr', ensuring each column is the same width.](/images/post_images/grid-auto-columns.png)
 
-Aside from that, the rest is pretty straightforward, and you can add or adjust depending on your design. You'll probably want to set `list-style-type` to `none`, just to get rid of the bullets that come with a list element by default. You might want to adjust the browser's default `padding` on unordered lists, as well.
+I also want to call attention to the `gap` property. A value of `0.5rem 0` means we have some space between rows, but crucially, _not_ between columns. You definitely want to be sure you don't have any column gap; otherwise, the gap will be _added_ to the width of the bars, and they could easily end up overflowing the chart. My first Quina implementation made this mistake; shout-out to [Andrew Walpole](https://andrewwalpole.com/) (quite possibly the world's most proficient Quina player) for finding that bug. Andrew also took this idea and ran with it in [a bar chart CodePen of his own](https://codepen.io/walpolea/pen/wvPGrwK).
 
-Finally, on the bars themselves, you'll want something like this:
+Next, on the bars themselves, you'll want something like this:
 
 ```css
 .chart > li {
@@ -183,6 +184,8 @@ Finally, on the bars themselves, you'll want something like this:
   background: #ffd100; /* Or your color */
 }
 ```
+
+Aside from that, the rest is pretty straightforward, and you can add or adjust depending on your design. You'll probably want to set `list-style-type` to `none`, just to get rid of the bullets that come with a list element by default. You might want to adjust the browser's default `padding` on unordered lists, as well.
 
 
 ## Other options
@@ -195,10 +198,14 @@ Here I've shown a horizontal bar chart, but it wouldn't take much to change the 
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
+<SideNote>
+The above pen uses Vue instead of Svelte, if you'd like to take a peek at another framework implementation.
+</SideNote>
+
 The main things to keep in mind if you want the bars to go vertical are:
 
 - The sizing of the bars will need to be switched from `grid-column` to `grid-row`.
-- When placing the bars, you'll need to know the largest value of all the data points, in order to offset each one appropriately (because CSS grid places the item's _top_ at the named column). In the pen above, this is accomplished with a `computed` property. (Alternatively, you could just choose a value you know to be higher than any bar would be and compute with that.)
+- When placing the bars, you'll need to know the largest value of all the data points, in order to offset each one appropriately (because CSS grid places the item's _top_ at the named column then spans downward, and there's no way to reverse that flow like you can with flexbox). In the pen above, this is accomplished with a `computed` property. (Alternatively, you could just choose a value you know to be higher than any bar would be and compute with that.)
   - The placement formula to make all the bars align on the bottom is: [tallest bar's value] - [bar's value] + 1. The extra 1 is needed because the outer edge of the chart is technically row 1.
 - You'll still need to explicitly place each bar, but by column instead of row.
 - You might want to set a `min-height` on the chart, since CSS grid will only make each row as minimally tall as it needs to be in order to distribute them evenly.
@@ -208,8 +215,6 @@ The main things to keep in mind if you want the bars to go vertical are:
 - Finally, you'll need to adjust the flexbox properties on the bars themselves, so that the bar label and value are pushed apart vertically rather than horizontally. (Setting `flex-direction: column-reverse` worked well in my case.)
 
 The good news is: as long as you _only_ edit the CSS and don't touch the HTML, the chart will still be accessible!
-
----
 
 All of this is only one possible implementation of a CSS grid bar chart. There are many other ways to do it. In fact, you could take these same principles and build other kinds of charts, as well.
 
