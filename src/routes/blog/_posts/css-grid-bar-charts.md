@@ -163,8 +163,8 @@ There are a few important styles needed to make this work. First off, make sure 
 .chart {
   display: grid;
   grid-template-columns: auto; /* The default, but best to be explicit */
-  grid-auto-columns: 1fr;
   gap: 0.5rem 0;
+  grid-auto-columns: 1fr;
 }
 ```
 
