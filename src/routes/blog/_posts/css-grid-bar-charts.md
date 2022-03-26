@@ -1,7 +1,7 @@
 ---
 title: "Creating dynamic bar charts with CSS grid"
 date: "2022-03-24"
-updated: "2022-03-25"
+updated: "2022-03-26"
 categories:
   - "css"
   - "web"
@@ -110,7 +110,7 @@ Again, that's the heart of this particular CSS trick; making each bar span X col
 This approach assumes you want the widest bar to be the width of the chart, which you might not, depending on use case. If your bar chart shows percentages, for example, it might be more intuitive to make the chart exactly 100 columns wide, so the bars are corresponding width.
 </SideNote>
 
-In our loop, we also populate the bar's actual visible text content with the `point.name` and `point.value` props. Again, the value is contained in a `<span>` element, so we can push the two apart from one another—though depending on your implementation and design, this might be unneeded.
+In our loop, we also populate the bar's actual visible text content with the `point.name` and `point.value` props. Again, the value is contained in a `<span>` element, so we can push the name and value apart from one another—though depending on your implementation and design, this might be unneeded.
 
 
 ### Setting bar rows
@@ -152,6 +152,13 @@ Alternatively, as we loop over each item, we could get its index value, and expl
 
 This approach is definitely more friendly to unknown chart sizes. It may be more performant as well, but that will depend on a few factors, including the total number of bars in the chart, and whether the chart is pre-rendered or rendered on demand.
 
+[**EDIT:** here's a third viable option--arguably even better--as [shown in this CodePen demo](https://codepen.io/potch/pen/MWrppXa) that was emailed to me:
+
+- Set `grid-column-start: 1` on each grid item in your CSS;
+- Use `grid-column-end` instead of `grid-column` on each bar's inline styles (optionally omitting the `span` keyword).
+
+When you set both `-start` and `-end` on a grid item, the grid will place it as directed, without overlapping items.]
+
 There may be other options, too (adding spacer elements, for example, or maybe experimenting with changing the grid's flow direction), but since we're already looping over the data anyway, I find these two to be the most straightforward solutions.
 
 
@@ -186,6 +193,8 @@ Next, on the bars themselves, you'll want something like this:
 ```
 
 Aside from that, the rest is pretty straightforward, and you can add or adjust depending on your design. You'll probably want to set `list-style-type` to `none`, just to get rid of the bullets that come with a list element by default. You might want to adjust the browser's default `padding` on unordered lists, as well.
+
+One final warning: CSS wants to make elements wide enough to hold their text contents by default. So when dealing with very small bars, be sure they don't get wider than they should in the chart, just because the name of the bar is wide.
 
 
 ## Other options
