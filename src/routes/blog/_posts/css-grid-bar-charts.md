@@ -155,7 +155,7 @@ This approach is definitely more friendly to unknown chart sizes. It may be more
 [**EDIT:** here's a third viable option--arguably even better--as [shown in this CodePen demo](https://codepen.io/potch/pen/MWrppXa) that was emailed to me:
 
 - Set `grid-column-start: 1` on each grid item in your CSS;
-- Use `grid-column-end` instead of `grid-column` on each bar's inline styles (optionally omitting the `span` keyword).
+- Use `grid-column-end` instead of `grid-column` on each bar's inline styles. (Either `span x` or `x + 1` would work as the CSS, where `x` is the data point's value.)
 
 When you set both `-start` and `-end` on a grid item, the grid will place it as directed, without overlapping items.]
 
