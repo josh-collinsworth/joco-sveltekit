@@ -5,8 +5,8 @@ updated: "2022-05-10"
 categories: 
   - "web"
 coverImage: "debugging_ios/debugging-ios.png"
-coverWidth: 9
-coverHeight: 5
+coverWidth: 16
+coverHeight: 9
 excerpt: Debugging iOS Safari is a challenge (and possibly expensive) when you don't have access to an iPhone. Here are a few options to get around that problem.
 ---
 
