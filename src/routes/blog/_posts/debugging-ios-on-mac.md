@@ -1,7 +1,7 @@
 ---
 title: "Debugging iOS Safari (when all you have is a Mac)"
 date: "2022-05-10"
-updated: "2022-05-10"
+updated: "2022-05-11"
 categories: 
   - "web"
 coverImage: "debugging_ios/debugging-ios.png"
@@ -71,7 +71,7 @@ So, if you want to cover all your bases, we need to go to our next option…
 
 Don’t panic. This option might *seem* extremely complex, but it’s not difficult, and it gives you a free, unlimited way to essentially use an iPhone on your Mac.
 
-The downside, however: this approach requires you to commit a _lot_ of time and disk space up front. You'll need several gigabytes of free disk space, both for Xcode and its simulator(s), so be sure you have that kind of space (I'd recommend 10–15 gigs at mimimum) before you start.
+The downside, however: this approach requires you to commit a ***lot*** of time and disk space up front. You'll need several gigabytes of free disk space, both for Xcode and its simulator(s), and the time do download all of it, so be sure you have those resources before you start. (It will take at least 15–20 gigs to install both Xcode and one simulator. You can get by with just one simulator, but you may want more.)
 
 <SideNote>Xcode is an app primarily for developing Mac and iOS apps. We aren’t going to use it for that, though; we’re just going to use its very handy device simulator.</SideNote>
 
@@ -114,11 +114,11 @@ This is a sad state of affairs, because it locks out people who can't afford pre
 
 Any user can get Chrome, Edge, Firefox, and a slew of other browsers on virtually any device, for free. These browsers are not restricted to running on any particular operating system (and to the extent they _are_ restricted, it is _by Apple_, and specifically on iOS).
 
-These browsers offer level playing fields—at least, as much as possible for an activity that requires a computer and an internet connection. I can test on Firefox on my high-end MacBook Pro just as easily as a kid on her school Chromebook or a working mom on her low-powered Windows laptop. We're all able to see what our users see when those users open Chrome, or Edge. Sure, my machine is beefier, but none of us has _browser-level_ advantage.
+These browsers offer level playing fields—at least, as much as possible for an activity that requires a computer and an internet connection. I can test on Firefox on my high-end MacBook Pro just as easily as a kid on her school Chromebook or a working mom on her low-powered Windows laptop. We're all able to see what our users see when those users open Firefox, Chrome, or Edge. Sure, my machine is beefier, but none of us has _browser-level_ advantage.
 
 But when it comes to Safari, that kid and that mom are out of luck. I get something they don't, just because I can afford to buy it.
 
-Yes, you could make the same argument about Android (and we should!), but as far as I'm aware, the differences between the desktop and Android versions of Chrome are far more minimal than those between MacOS Safari and iOS Safari. Plus, again, you can _get_ Chrome (Android's default browser) on _any_ device, and be fairly certain it will reproduce fairly faithfully across devices and operating systems.
+Yes, you could make the same argument about Android (and we should!), but as far as I'm aware, the differences between the desktop and Android versions of Chrome are far more minimal than those between MacOS Safari and iOS Safari. Plus, again, you can _get_ Chrome (Android's default browser) on _any_ device, and be pretty certain it will reproduce fairly faithfully across devices and operating systems.
 
 By contrast, you can't use Safari anywhere but on an Apple operating system. Plus: it seems Android emulators are much more plentifully available than options to emulate iOS—probably because Android is open-source, and iOS is closed-source.
 
