@@ -52,7 +52,7 @@
   title="{enableOrDisable} dark mode"
   aria-pressed={isDarkMode}
 >
-  <span class="sr">{ enableOrDisable } dark mode</span>
+  <span class="sr">Toggle dark mode</span>
   <LightDarkIcon />
 </button>
 

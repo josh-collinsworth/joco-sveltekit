@@ -1,12 +1,12 @@
 // The naming feels a little wrong here (1024px isn't really "small") but ¯\_(ツ)_/¯
-$xxs: 600px;
-$xs: 768px;
-$sm: 1024px;
-$md: 1200px;
-$lg: 1440px;
-$xl: 1680px;
-$xxl: 1960px;
-$xxxl: 2200px;
+$xxs: 34rem;
+$xs: 42rem;
+$sm: 56rem;
+$md: 66rem;
+$lg: 82rem;
+$xl: 92rem;
+$xxl: 108rem;
+$xxxl: 122rem;
 
 :root {
 	// Looks kinda messy but allows for colors to be lightened or darkened.

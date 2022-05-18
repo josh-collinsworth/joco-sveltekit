@@ -3,6 +3,7 @@
   import Tag from '../tags/Tag.svelte'
   import TagList from '../tags/TagList.svelte'
   import ExternalLink from '../icons/ExternalLink.svelte'
+  import { readableDate } from '$lib/assets/js/utils';
 
   export let external: boolean = false
   export let post: Post
@@ -43,6 +44,8 @@
       
       {#if post.subtitle}
         <p class="subtitle">{post.subtitle}</p>
+      {:else}
+        <p class="subtitle">{readableDate(post.date)}</p>
       {/if}
       
       <p class="excerpt">
@@ -134,7 +137,8 @@
       font-family: var(--headingFont);
       font-style: normal;
       font-size: 0.65rem;
-      margin: 0.5rem 0 0;
+      color: var(--midGray);
+      margin: 0;
     }
   
     .excerpt {

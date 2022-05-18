@@ -34,8 +34,8 @@
   title="{enableOrDisable} reduced motion"
   aria-pressed={$prefersReducedMotion}
 >
-  <span class="sr">{ enableOrDisable } reduced motion</span>
-  Move
+  <span class="sr">Toggle reduced motion</span>
+  <span aria-hidden="true">Move</span>
 </button>
 
 
