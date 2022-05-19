@@ -51,6 +51,7 @@
     .about {
       font-style: italic;
       font-family: var(--bodyFont);
+      line-height: 1.6;
     }
 
     .link-list {

@@ -176,7 +176,9 @@ To elaborate on that third point: VoiceOver announces “_toggle text, down-poin
 As a general rule of thumb: wherever you find yourself adding visual elements to buttons—icons, arrows, colors, nubs that slide back and forth, or whatever else—those should probably be hidden from assistive technologies with `aria-hidden`.
 
 <SideNote>
-If your button <em>only</em> contains an icon, be sure to include either a <code>title</code> attibute, or even better, some screen reader-only text inside the button. (Better because attributes can't always be internationalized, where text nodes such as the text inside a button can.)
+<p>If your button <em>only</em> contains an icon or other non-text visuals, be sure to include either an <code>aria-label</code> attibute on the button, or some visually hidden but still screen reader-friendly text inside of it.</p>
+
+<p>(The <code>title</code> attribute is sometimes recommended here (including in a previous version of this post), but according to accessibility engineer <a href="https://melanie.codes/">Melanie Sumner</a>, <code>aria-label</code> is a bit better implemented, and therefore generally preferred.)</p>
 </SideNote>
 
 As a final note: I use showing and hiding text _only_ as a convenient example to show that the button is doing _something_. If revealing text is the actual purpose of your toggle button in production, there may be accessibility concerns I'm not covering here (for example: alerting the user that the page content has changed, and/or properly directing focus to the text).
