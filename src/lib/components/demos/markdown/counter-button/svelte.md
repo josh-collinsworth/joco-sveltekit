@@ -1,11 +1,11 @@
 ```svelte
 <!-- CounterButton.svelte -->
 <script>
-	let count = 0
+  let count = 0
 
-	const incrementCount = () => {
-		count++
-	}
+  const incrementCount = () => {
+    count++
+  }
 </script>
 
 <button on:click={incrementCount}>

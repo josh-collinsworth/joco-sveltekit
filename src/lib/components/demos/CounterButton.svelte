@@ -1,9 +1,9 @@
 <script>
-	let count = 0
+  let count = 0
 
-	const incrementCount = () => {
-		count++
-	}
+  const incrementCount = () => {
+    count++
+  }
 </script>
 
 <div class="example-component-wrapper">
