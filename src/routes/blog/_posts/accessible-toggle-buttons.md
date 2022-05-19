@@ -17,7 +17,7 @@ excerpt: Toggle buttons might be the biggest missing native HTML element. This p
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-If you ask me (and I know you didn't, but be a good sport), HTML’s biggest missing piece is a native toggle switch: a button that has two possible states—on/off, enabled/disabled, etc.)—and which when pressed, switches from one state to the other.
+If you ask me (and I know you didn't, but be a good sport), HTML’s biggest missing piece is a native toggle switch: a button that has two possible states—on/off, enabled/disabled, etc.—and which when pressed, switches from one state to the other.
 
 HTML has buttons, of course—and for that matter, native binary elements, like checkboxes and details/summary—but it doesn’t *really* have a native toggle button.
 
