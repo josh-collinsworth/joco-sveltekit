@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-01-04"
+updated: "2022-05-20"
 categories: 
   - "svelte"
   - "javascript"
@@ -973,14 +973,36 @@ SvelteKit has many [adapters](https://kit.svelte.dev/docs#adapters), and comes p
 npm i -D @sveltejs/adapter-static@next
 ```
 
-Once installed, we have to make a very small change to our `svelte.config.js` file to use the static adapter. In fact, the only thing we actually have to do is change `adapter-auto` to `adapter-static`.
+Once installed, we have to make a couple small changes to our `svelte.config.js` file to use the static adapter.
+
+First, change `adapter-auto` to `adapter-static` (in the import near the top of the file):
 
 ```js
-// Replace the original `adapter-auto` line with this.
+// Replace the original `adapter-auto` line with this in svelte.config.js
 import adapter from '@sveltejs/adapter-static'
 ```
 
-You _can_ supply further customization options if you want to (as an object passed to the `adapter()` function further down in the file), but the defaults are great for us, so there's no need. You can check out the [adapter-static readme](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) for more if you like.
+And second, set `config.kit.prerender.default` to `true`, to make prerendering the default. `config.kit` should already exist, but you'll need to add the rest. It should look like this when you're done:
+
+```js
+// svelte.config.js 
+const config = {
+  // ... Other properties here
+  
+  kit: {
+    // ... Other properties here, too
+    prerender: {
+      default: true
+    },
+  }
+}
+```
+
+<SideNote>
+The <code>prerender</code> prop requirement seems to be relatively new to SvelteKit, and I was able to get some builds to work without it, but others, not. I included it just to be safe.
+</SideNote>
+
+You _can_ supply further customization options if you want to (as an object passed to the `adapter()` function), but the defaults are great for us, so there's no need. You can check out the [adapter-static readme](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) for more if you like.
 
 ---
 
@@ -1069,10 +1091,6 @@ Just to get an idea of what we're working with, let's start with any JavaScript 
   }
 </script>
 ```
-
-<Warning>
-The <code>params</code> and <code>url</code> arguments are brand-new to SvelteKit (they replace <code>page</code>). If you hit errors with them, run <code>npm update</code> to update SvelteKit.
-</Warning>
 
 Notice if you load a blog category page now, you can see `params` in the browser console, as well as in the terminal where your local dev server is running:
 
@@ -1175,10 +1193,6 @@ If you want to get fancy, adding a page transition in SvelteKit is pretty simple
   </main>
 {/key}
 ```
-
-<Warning>
-Again, the <code>url</code> argument is new to SvelteKit. Run <code>npm update</code> if you hit errors with it.
-</Warning>
 
 - To start, in our layout, we'll need  `load` to grab the current route. We'll pass that as a prop named `currentRoute`, to be used by the component.
 - We'll use `fade` from the [Svelte transition](https://svelte.dev/tutorial/transition) library as our transition, though you could choose another if you like. The main thing is just to add `delay` to the `in` transition, so it doesn't start before the old page is done transitioning out.
