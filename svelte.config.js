@@ -33,6 +33,9 @@ const config = {
 
 	kit: {
 		//Added for static adapter
+    prerender: {
+      default: true
+    },
 		adapter: adapter(),
 	}
 }
