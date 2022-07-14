@@ -1,6 +1,6 @@
 [build]
   publish = "build"
-  command = "svelte-kit build"
+  command = "vite build"
 
 # ---
 # Redirects
