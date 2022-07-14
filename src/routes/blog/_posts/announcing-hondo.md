@@ -10,7 +10,7 @@ categories:
 coverImage: "announcing_hondo/share-image.png"
 coverWidth: 16
 coverHeight: 9
-excerpt: "Oops, I did it again (where “it” is: release a word game as a side project)."
+excerpt: Updating Quina to version 2.0 filled my head with new ideas that I just couldn't walk away from. Eventually, those ideas took the shape of a whole new word game, named Hondo.
 ---
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
