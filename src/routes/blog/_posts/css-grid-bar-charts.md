@@ -1,7 +1,7 @@
 ---
 title: "Creating dynamic bar charts with CSS grid"
 date: "2022-03-24"
-updated: "2022-03-26"
+updated: "2022-07-14"
 categories:
   - "css"
   - "web"
@@ -98,11 +98,11 @@ In Svelte, that might look something like this:
 </ul>
 ```
 
-I've omitted the styling for now. Let's pick that code sample apart a little bit first.
+**NOTE:** the code above is not optimized yet! I want to explore some options, and the quirks of CSS grid just a little before we get to the final version. I've also omitted the styling for now.
 
-First, the component will expect a `dataPoints` prop. That's our array of (what else?) data points as in the JavaScript example above. Each item in the array will become a bar in the chart. We could add some defaults or type checking here to be safe, if we wanted. That would probably be a good idea in production.
+Ok, first, this component will expect a `dataPoints` prop. That's our array of (what else?) data points, as in the JavaScript example above. Each item in the array will become a bar in the chart. (We could add some defaults or type checking here to be safe, if we wanted. That would probably be a good idea in production.)
 
-Next, we iterate over each `point`, outputting a list item for each one, which spans as many columns as its `value`. (For example: if `point.value` is `8`, then the list item will have `grid-column: span 8` applied as a style, to be exactly eight columns wide on the chart.)
+Next, we iterate over each `point`, using an `<li>` for each one, which spans as many columns as its `value`. (For example: if `point.value` is `8`, then the list item will have `grid-column: span 8` applied as a style, to be exactly eight columns wide on the chart.)
 
 Again, that's the heart of this particular CSS trick; making each bar span X columns, which ensures the chart is always exactly as wide as the widest item(s), saving us from doing any math to figure out how chart items should be sized!
 
@@ -111,6 +111,8 @@ This approach assumes you want the widest bar to be the width of the chart, whic
 </SideNote>
 
 In our loop, we also populate the bar's actual visible text content with the `point.name` and `point.value` props. Again, the value is contained in a `<span>` element, so we can push the name and value apart from one another—though depending on your implementation and design, this might be unneeded.
+
+I mentioned, however, that there were still some issues to solve here. Let's get to that now.
 
 
 ### Setting bar rows
@@ -123,43 +125,35 @@ CSS grid tries to fit each new item onto the current row if there's space before
 
 That's no good. [Morbo voice]: _Charts do not work that way!_
 
-Fortunately, there are at least a couple of good solutions to this problem.
+Fortunately, there's an easy solution.
 
-Most simply: if you're using Sass, and have a reasonable and predictable number of bars in your chart, you _could_ do something like this:
+- First, set `grid-column-start: 1` on each grid item in your CSS;
+- Then, simply use `grid-column-end` instead of `grid-column` on each bar's inline styles. (Either `grid-column-end: span x;`, or `grid-column-end: x + 1;` would work, where `x` is the data point's value.)
 
-```scss
-@for $i from 1 through 10 {
-  .chart > li:nth-child(#{$i}) {
-    grid-row-start: $i;
-  }
-}
-```
+The problem shown above happens because the only explicit direction we gave to the grid container was to make the bars span a certain number of columns—and by default, CSS grid will try to fit multiple items onto the same row where it can. But when we set both `-start` and `-end` on a grid item, the grid will place it as directed, without overlaps.
 
-That's a quick little loop to ensure each bar starts on its own row (as long as you have 10 bars or fewer). That works, but gets less and less viable the more bars there are in the chart. Eventually, if the second number is big enough, that little Sass snippet gets compiled into an unreasonable amount of CSS.
-
-Alternatively, as we loop over each item, we could get its index value, and explicitly set the bar's `grid-row-start` to `i + 1`:
+Our final Svelte version, then, might look like this:
 
 ```svelte
+<script>
+  export let dataPoints 
+</script>
+
 <ul class="chart">
-  {#each dataPoints as bar, i}
-    <li style="grid-column: span {bar.value}; grid-row-start: {i + 1}">
-      {bar.name}
-      <span>{bar.value}</span>
+  {#each dataPoints as point}
+    <li style="grid-column-end: span {point.value}">
+      {point.name}
+      <span>{point.value}</span>
     </li>
   {/each}
 </ul>
+
+<style>
+  .chart li {
+    grid-column-start: 1;
+  }
+</style>
 ```
-
-This approach is definitely more friendly to unknown chart sizes. It may be more performant as well, but that will depend on a few factors, including the total number of bars in the chart, and whether the chart is pre-rendered or rendered on demand.
-
-[**EDIT:** here's a third viable option--arguably even better--as [shown in this CodePen demo](https://codepen.io/potch/pen/MWrppXa) that was emailed to me:
-
-- Set `grid-column-start: 1` on each grid item in your CSS;
-- Use `grid-column-end` instead of `grid-column` on each bar's inline styles. (Either `span x` or `x + 1` would work as the CSS, where `x` is the data point's value.)
-
-When you set both `-start` and `-end` on a grid item, the grid will place it as directed, without overlapping items.]
-
-There may be other options, too (adding spacer elements, for example, or maybe experimenting with changing the grid's flow direction), but since we're already looping over the data anyway, I find these two to be the most straightforward solutions.
 
 
 ### CSS
@@ -175,7 +169,7 @@ There are a few important styles needed to make this work. First off, make sure 
 }
 ```
 
-**That last declaration is important**! Without explicitly setting `grid-auto-columns` to `1fr`, each column may not be sized the same, which would skew the appearance of our chart—and since the whole point of a chart is to show the exact relationship between items, we definitely want equal columns.
+All of these properties are important. Without explicitly setting `grid-auto-columns` to `1fr`, each column may not be sized the same, which would skew the appearance of our chart—and since the whole point of a chart is to show the exact relationship between items, we definitely want equal columns.
 
 ![The same grid shown twice, but different. The first has 'grid-auto-columns' set to the default ('auto'), resulting in some columns being significantly wider than others. In the second, 'grid-auto-columns' is set to '1fr', ensuring each column is the same width.](/images/post_images/grid-auto-columns.png)
 
@@ -189,6 +183,7 @@ Next, on the bars themselves, you'll want something like this:
   justify-content: space-between;
   padding: 0.25rem 0.5rem;
   background: #ffd100; /* Or your color */
+  grid-column-start: 1;
 }
 ```
 
