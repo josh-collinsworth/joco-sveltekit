@@ -85,6 +85,7 @@ Other than SvelteKit, a few SvelteKit plugins (just the static adapter, and svel
 There are a few other ways I decided to keep Hondo more simple than Quina:
 
 - No achievements (at least for now)
+- No sound, and minimal vibration
 - No main menu; the game itself _is_ the homepage
 - No gated content or monetization
 

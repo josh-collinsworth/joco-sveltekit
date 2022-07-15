@@ -28,8 +28,8 @@
 
       <p>
         Senior frontend developer at <a href="https://shopify.com">Shopify</a>;
-        maker and designer of the word game <i>Quina</i>
-        (<a href="https://quina.app">web </a>/<a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a>);
+        maker and designer of the word games <i>Quina</i>
+        (<a href="https://quina.app">web</a>/<a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a>) and <a href="https://playhondo.com"><i>Hondo</i></a>;
         tech blog author (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>);
         author of an open-source SvelteKit static blog starter
         (<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">repo</a>/<a href="https://sveltekit-static-starter.netlify.app">demo</a>);

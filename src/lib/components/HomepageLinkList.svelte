@@ -2,15 +2,15 @@
 
 <ul class="homepage-link-list">
   <li>
-    <span role="img" alt="" aria-hidden="true">📖</span>
-    <a href="/blog">
-      Things I wrote
-    </a>
-  </li>
-  <li>
     <span role="img" alt="" aria-hidden="true">💻</span>
     <a href="/projects">
       Things I made
+    </a>
+  </li>
+  <li>
+    <span role="img" alt="" aria-hidden="true">📖</span>
+    <a href="/blog">
+      Things I wrote
     </a>
   </li>
   <li>

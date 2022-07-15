@@ -108,6 +108,26 @@
         </figure>
       </div>
     </article>
+
+    <article>
+      <div class="sticky">
+        <h2>Hondo</h2>
+        
+        <p>Another word game, this one built with SvelteKit, and a bit more akin to Wordle (but with some twists and more complex mechanics).</p>
+        <ul>
+          <li>
+            <a href="https://playhondo.com">Play Hondo</a>
+          </li>
+          <li>
+            <a href="/blog/announcing-hondo">Read about the making of Hondo</a>
+          </li>
+        </ul>  
+      </div>
+      
+      <div class="image-gallery">
+        <img src="/images/post_images/announcing_hondo/share-image.png" alt="" style="border: 1px solid;">
+      </div>
+    </article>
       
     <article>
       <div class="sticky">
@@ -137,13 +157,16 @@
           The game of <CodePenLink hash="MWwXpLd">Connect Four</CodePenLink> in Vue
         </li>
         <li>
+          A (mostly) pure CSS exploration of making a completely different view at several breakpoints called <CodePenLink hash="jOYPjMB">Retro Breakpoints of Infinity</CodePenLink>
+        </li>
+        <li>
           A silly "<CodePenLink hash="vYOPKqx">Pick Two</CodePenLink> of three" checklist
         </li>
         <li>
           Some pure CSS illustrations, like this <CodePenLink hash="vdGYpo">Raccoon Mario sprite</CodePenLink> and this <CodePenLink hash="LVMRwQ">Pure CSS Game Boy Advance SP</CodePenLink>
         </li>
         <li>
-          A silly <CodePenLink hash="ExjZexY">game of cat and mouse</CodePenLink>
+          A mouse-tracking <CodePenLink hash="ExjZexY">game of cat and mouse</CodePenLink>
         </li>
         <li>
           A small but handy <CodePenLink hash="bGdmmrY">liquid measurement converter</CodePenLink> app
