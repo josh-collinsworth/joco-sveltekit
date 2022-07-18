@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-05-20"
+updated: "2022-07-18"
 categories: 
   - "svelte"
   - "javascript"
@@ -70,7 +70,7 @@ Finally, if you just want to skip ahead and see the finished product, you can [c
 To generate a new SvelteKit project, run this in your terminal (naturally, you can change `my-app` to whatever other title you prefer):
 
 ```bash
-npm init svelte@next my-app
+npm create svelte@latest my-app
 ```
 
 When you run that `init` command, SvelteKit will ask you some questions about your project and how you want it set up: 
@@ -261,7 +261,7 @@ To use a component, we first need to `import` it, which means we'll need to add 
 ```svelte
 <!-- __layout.svelte -->
 <script>
-  import Header from '$lib/components/Header.svelte'
+import Header from '$lib/components/Header.svelte'
 </script>
 
 <Header />
@@ -289,25 +289,25 @@ To try it out, in `Header.svelte`, add a `<style>` tag. (It could go anywhere, b
 <!-- ... The rest of the file's contents here -->
 
 <style>
-  header {
-    padding: 1rem;
-    background: lightskyblue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+header {
+  padding: 1rem;
+  background: lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  ul {
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-  }
+ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 </style>
 ```
 
@@ -369,8 +369,8 @@ Once we've got a stylesheet with some CSS in it, loading it globally is as easy 
 ```svelte
 <!-- __layout.svelte -->
 <script>
-  import Header from '$lib/components/Header.svelte'
-  import '$lib/styles/style.css'
+import Header from '$lib/components/Header.svelte'
+import '$lib/styles/style.css'
 </script>
 
 <!-- ...HTML here -->
@@ -440,7 +440,7 @@ Now that we've got both Sass and our preprocessor installed, you can use Sass in
 
 ```svelte
 <style lang="scss">
-  // We can write SCSS here!
+// We can write SCSS here!
 </style>
 ```
  
@@ -452,7 +452,7 @@ Linking to Sass files is actually exactly the same as linking to CSS files, like
 ```svelte
 <!-- __layout.svelte -->
 <script>
-  import '$lib/styles/style.scss'
+import '$lib/styles/style.scss'
 </script>
 ```
 
@@ -586,7 +586,7 @@ To do so, just drop in a `script` tag at the start of the content (after the fro
 # frontmatter goes here
 ---
 <script>
-  import SomeComponent from '$lib/components/SomeComponent.svelte'
+import SomeComponent from '$lib/components/SomeComponent.svelte'
 </script>
 
 # Markdown content here
@@ -706,8 +706,8 @@ Now, inside the file we designated as our mdsvex layout, all frontmatter propert
 ```svelte
 <!-- _post.svelte -->
 <script>
-  export let title
-  export let date
+export let title
+export let date
 </script>
 
 <h1>{title}</h1>
@@ -888,13 +888,13 @@ Because it runs on the server, the `load` function is called from its own distin
 
 ```svelte
 <script context="module">
-  export const load = () => {
-    // Runs before the component is created
-  }
+export const load = () => {
+  // Runs before the component is created
+}
 </script>
 
 <script>
-  // This is the "normal" client-side script
+// This is the "normal" client-side script
 </script>
 ```
 
@@ -927,11 +927,11 @@ That bit of server-side loading handles everything we need! Now we've got a `pos
 ```svelte
 <!-- src/routes/blog/index.svelte -->
 <script context="module">
-  // Our `load` function here
+// Our `load` function here
 </script>
 
 <script>
-  export let posts
+export let posts
 </script>
 
 <ul>
@@ -1083,12 +1083,12 @@ Just to get an idea of what we're working with, let's start with any JavaScript 
 ```svelte
 <!-- [category].svelte -->
 <script context="module">
-  export const load = ({ params }) => {
-    console.log(params)
-    return {
-      status: 200
-    }
+export const load = ({ params }) => {
+  console.log(params)
+  return {
+    status: 200
   }
+}
 </script>
 ```
 
@@ -1109,20 +1109,20 @@ Knowing that the current `/blog/categories/*` route will be available as `params
 ```svelte
 <!-- [category].svelte -->
 <script context="module">
-  export const load = async ({ params, fetch }) => {
-    const currentCategory = params.category
-    const response = await fetch('/api/posts.json')
-    const posts = await response.json()
+export const load = async ({ params, fetch }) => {
+  const currentCategory = params.category
+  const response = await fetch('/api/posts.json')
+  const posts = await response.json()
 
-    const matchingPosts = posts
-      .filter(post => post.meta.categories.includes(currentCategory))
+  const matchingPosts = posts
+    .filter(post => post.meta.categories.includes(currentCategory))
 
-    return {
-      props: {
-        posts: matchingPosts
-      }
+  return {
+    props: {
+      posts: matchingPosts
     }
   }
+}
 </script>
 ```
 
@@ -1135,8 +1135,8 @@ Inside the `_post` template, listing a post's categories just requires grabbing 
 ```svelte
 <!-- _post.svelte -->
 <script>
-  // ... Other props here
-  export let categories;
+// ... Other props here
+export let categories;
 </script>
 
 <!-- ...Post HTML here -->
@@ -1167,22 +1167,22 @@ If you want to get fancy, adding a page transition in SvelteKit is pretty simple
 ```svelte
 <!-- __layout.svelte -->
 <script context="module">
-  export const load = ({ url }) => {
-    const currentRoute = url.pathname
+export const load = ({ url }) => {
+  const currentRoute = url.pathname
 
-    return {
-      props: {
-        currentRoute
-      }
+  return {
+    props: {
+      currentRoute
     }
   }
+}
 </script>
 
 <script>
-  // ...Other imports here
-  import { fade } from 'svelte/transition'
+// ...Other imports here
+import { fade } from 'svelte/transition'
 
-  export let currentRoute
+export let currentRoute
 </script>
 
 <!-- Other HTML here -->
@@ -1506,7 +1506,7 @@ To use them, just import them in a page or layout (our global layout file might 
 
 ```svelte
 <script>
-  import { prefetch, prefetchRoutes } from '$app/navigation'
+import { prefetch, prefetchRoutes } from '$app/navigation'
 </script>
 ```
 
@@ -1521,11 +1521,11 @@ The difference between the two is:
 
 ```svelte
 <script>
-  import { prefetch, prefetchRoutes } from '$app/navigation'
+import { prefetch, prefetchRoutes } from '$app/navigation'
 
-  prefetch('/blog') // Loads the blog page in the background
+prefetch('/blog') // Loads the blog page in the background
 
-  prefetchRoutes() // Loads ALL routes in the background
+prefetchRoutes() // Loads ALL routes in the background
 </script>
 ```
 

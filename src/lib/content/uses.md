@@ -10,13 +10,9 @@
 ### Languages and frameworks
 
 - ES6+ JavaScript is my main language these days. I've spent the last few years building in
-[Vue](https://vuejs.org/) (I’m unsurprisingly, therefore, a huge fan of
-[Nuxt](https://nuxtjs.org) and
-[Gridsome](https://gridsome.org/)).
-
-- Recently, however, I’ve been moving most new projects over to
+[Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org). Recently, however, I’ve been moving most new projects over to
 [SvelteKit](https://kit.svelte.dev/)
-(including this website!), and loving both the dev experience and reduced bundle size.
+(including this website), and loving both the dev experience and reduced bundle size.
 I've also been working on implmenting [TypeScript](https://www.typescriptlang.org/) in all new projects.
 Professionally, I work in [React](https://reactjs.org/),
 and have built several personal projects with it as well.
@@ -29,7 +25,7 @@ I've also got working experience with jQuery and Knockout.
 
 - I’m a [WordPress](https://wordpress.org/) expert and generally prefer to build themes from scratch. I'm capable with PHP and MySQL.
 
-- I wouldn't call myself a full-stack developer, but I know my way around Ruby on Rails and have dabbled in some Node and Laravel.
+- I wouldn't call myself a full-stack developer, but I know my way around Ruby on Rails (I've worked in a Rails stack for most of my professional career), and have dabbled in some Node.
 
 
 ### Code tools
@@ -54,14 +50,14 @@ I've also got working experience with jQuery and Knockout.
     less indispensable now that VS Code has the [Timeline view](https://scotch.io/bar-talk/vs-code-v144-adds-a-git-timeline-view), but still amazingly handy for viewing git status and history in projects.
 
     - [Close HTML/XML Tag](https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag):
-    the only keyboard shortcut I miss from Sublime Text is easily replicated with this extension. Gives you a key command to auto-close whatever HTML tag your cursor is inside of.
+    the only keyboard shortcut I miss from Sublime Text is easily replicated with this extension. Gives you a key command to auto-close whatever HTML tag your cursor is currently inside of.
 
 
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/):
-took some getting used to, but it’s a great browser with some awesome tools. It may not be as performant as Chromium browsers in some regards, but I personally view that as feature, not a bug; if I can make a transition or animation smooth in Firefox, I know it's buttery everywhere else, too.
+Firefox is a great browser with some awesome tools, plus strong privacy. I use Edge when I need to test on Chromium; I don't even install Chrome on my machine.
 
 - [Local](https://localwp.com/):
-hands-down the best way to develop WordPress sites. Fast and easy (especially if you host with Flywheel or WP Engine; you can push and pull sites directly).
+hands-down the best way to develop WordPress sites.
 
 - [CodeKit](https://codekitapp.com/):
 there’s nothing CodeKit does that I couldn’t accomplish by fiddling with NPM scripts, but why bother? It’s smooth and easy to use, and as a bonus, it works great with Local.
@@ -71,7 +67,9 @@ I’ve tried other terminals, but none seem to run as well, and with the recent 
 
 - [Netlify](https://www.netlify.com/):
 I’m also a fan of
-[Now](https://vercel.com/home), but Netlify has taken over my Jamstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
+[Vercel](https://vercel.com/home) but Netlify has taken over my Jamstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
+
+- [Plausible Analytics](https://plausible.io/): I've done away with Google Analytics. Plausible is privacy-respecting, GDPR compliant, and very affordable. Happy to support them.
 
 
 
@@ -88,6 +86,8 @@ I made it about two months as a full-time work-from-home employee before I went 
 
 - [Uplift V2 C-Frame](https://www.upliftdesk.com/uplift-v2-standing-desk-frame/) standing desk:
 Not a lot of purchases I’ve been happier with than this one. It works incredibly well and is surprisingly sturdy, even without springing for the commercial version. (I have the 27.5" feet for my larger Ikea desktop, and the Advanced Digital Memory Keypad.)
+
+- [CalDigit TS4 dock](https://www.caldigit.com/thunderbolt-station-4/): I am a simple man. All I want is to have just one, single cable I plug into my laptop to make everything work. Only one. This dock makes that possible.
 
 
 ## Productivity &amp; Utility
