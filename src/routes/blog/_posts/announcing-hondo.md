@@ -1,7 +1,7 @@
 ---
 title: "Announcing Hondo"
 date: "2022-07-14"
-updated: "2022-07-14"
+updated: "2022-07-20"
 categories:
   - "javascript"
   - "design"
@@ -94,6 +94,8 @@ Granted, Quina's monetization was always optional (you could unlock everything f
 Almost two years later, I don't feel monetizing a game is either valuable or necessary. I've realized that building things with code is, for me, the point in itself. I love to make things, and I love when people get some benefit out of those projects.
 
 I kept my [Ko-Fi link](https://ko-fi.com/collinsworth) in the game, but it's really more about having a way for folks to say thanks than it is the money itself. I don't need the $3 (though I appreciate it); the meaningful part to me is that people took a moment out of their day to let me know the project meant something to them.
+
+By the way, [here's the GitHub repo](https://github.com/josh-collinsworth/hondo) if you'd like to take a look for yourself.
 
 
 ## Gameplay explorations

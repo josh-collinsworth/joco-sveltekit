@@ -119,6 +119,9 @@
             <a href="https://playhondo.com">Play Hondo</a>
           </li>
           <li>
+            <a href="https://github.com/josh-collinsworth/hondo">GitHub repo</a>
+          </li>
+          <li>
             <a href="/blog/announcing-hondo">Read about the making of Hondo</a>
           </li>
         </ul>  
