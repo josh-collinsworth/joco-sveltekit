@@ -1,7 +1,7 @@
 ---
 title: "Announcing Hondo"
 date: "2022-07-14"
-updated: "2022-07-20"
+updated: "2022-07-25"
 categories:
   - "javascript"
   - "design"
@@ -38,6 +38,13 @@ Earlier this year, I launched [Quina v2.0](https://quina.app), an update to my a
 
 So, I began tinkering on a *new* project…an exploration that eventually led to the launch of a new (and slightly less ambitious) word game named [Hondo](https://playhondo.com).
 
+Here are the links, if you'd just like to skip ahead:
+
+- [Hondo on Google Play](https://play.google.com/store/apps/details?id=com.playhondo.www.twa)
+- [Hondo on the iOS App Store](https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone)
+- [Hondo PWA on the web](https://playhondo.com)
+- [GitHub repo](https://github.com/josh-collinsworth/hondo)
+
 
 ## What is Hondo?
 
@@ -72,13 +79,13 @@ When you first start playing Hondo, 100 points may seem well out of reach. But e
 
 ## The architecture
 
-Hondo is markedly less ambitious than Quina in a few ways. Most importantly, I don't plan to add it to any of the major app stores. (This automatically cuts the complexity in at least half, and my frustration by a solid 80%, since dealing with the Google Play Store is one of the least pleasant things I've ever attempted as a developer.)
+Hondo is markedly less ambitious than Quina in a few ways. Most importantly, I don't initially plan to add it to any of the major app stores. (I _did_ end up releasing Hondo on both [Google Play](https://play.google.com/store/apps/details?id=com.playhondo.www.twa) _and_ on the [iOS App store](https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone), but that's mostly thanks to [pwabuilder.com](https://pwabuilder.com) making it relatively straightforward, and not due to my own ambitions. Highly recommended.)
 
 Knowing that the project's only home would be the web, I was somewhat freed with the architecture decision. That made going with [SvelteKit](https://kit.svelte.dev) an automaic choice. I've [written plenty about Svelte](/blog/category/svelte) already, so it's no surprise I'd pick it for a new project. It's a simple and joyous framework to use, and I never for a second regretted the choice. Its built-in transitions and animation—plus its dead-simple global state management—made SvelteKit a perfect fit.
 
 The _only_ thing SvelteKit seems to be missing that other frameworks I might have chosen has: an easy PWA (Progressive Web App) integration. Seems [Vite](https://vitejs.dev/) itself has a [PWA plugin](https://vite-plugin-pwa.netlify.app/), so I could've gone that route (since SvelteKit is partially built on top of Vite).
 
-But instead, I used Microsoft's [PWA Builder](https://www.pwabuilder.com/) to generate the needed service worker, manifest, and other assets. (There's also a [PWA Studio extension for VS Code](https://marketplace.visualstudio.com/items?itemName=PWABuilder.pwa-studio) that's quite handy.) PWA Builder is a great resource for adding PWA functionality to an existing web app—and it even offers help getting your app listed on the major app stores, if you're up for that challenge. (I can't vouch for that aspect of PWA Builder personally, as, again, listing apps in the app stores is a pain I don't care to experience again. But it's still worth mentioning.)
+But instead, I used Microsoft's [PWA Builder](https://www.pwabuilder.com/) to generate the needed service worker, manifest, and other assets. (There's also a [PWA Studio extension for VS Code](https://marketplace.visualstudio.com/items?itemName=PWABuilder.pwa-studio) that's quite handy.) PWA Builder is a great resource for adding PWA functionality to an existing web app—and it even offers help getting your app listed on the major app stores, if you're up for that challenge. The docs give step-by-step walkthroughs, so while it's still a daunting task that involves a _lot_ of moving parts, PWA Builder makes getting your app listed much more attainable that it might otherwise be.
 
 Other than SvelteKit, a few SvelteKit plugins (just the static adapter, and svelte-preprocess), plus the assets that PWA Builder helped to generate, everything in Hondo is hand-rolled, down to the code, game mechanics, and design.
 
@@ -163,6 +170,13 @@ I felt with skips that I'd added everything the game needed and could reasonably
 
 ## Wrapup
 
-If you're into word games, I hope you'll give [Hondo](https://playhondo.com) a try. If you like it, or have any feedback, feel free to reach out or leave me a comment.
+If you're into word games, I hope you'll give Hondo a try. If you like it, or have any feedback, feel free to reach out or leave me a comment.
+
+Here are the links one more time:
+
+- [Hondo on Google Play](https://play.google.com/store/apps/details?id=com.playhondo.www.twa)
+- [Hondo on the iOS App Store](https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone)
+- [Hondo PWA on the web](https://playhondo.com)
+- [GitHub repo](https://github.com/josh-collinsworth/hondo)
 
 Ultimately, I had a blast working on the project, and I hope you enjoy playing it as much as I enjoyed building it.

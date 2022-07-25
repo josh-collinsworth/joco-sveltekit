@@ -2,7 +2,7 @@
   "name": "josh-collinsworth-sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite dev --port 1027",
     "host": "vite dev --host",
     "build": "vite build",
     "preview": "vite preview",
