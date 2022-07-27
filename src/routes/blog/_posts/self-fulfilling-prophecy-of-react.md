@@ -39,7 +39,9 @@ Ok, I concede that analogy was a bit of an overreach. There's admittedly much le
 React has aged. And I don't think most people—particularly those using it regularly—realize how much or how&nbsp;poorly.
 </CalloutPlusQuote>
 
-So let's talk about that.
+React does what it does well, but it doesn't do _anything_ better than other frameworks.
+
+Let's talk more about that.
 
 
 ## The best choice for the job
