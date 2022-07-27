@@ -227,6 +227,10 @@ That won't be true for most companies, though. It doesn't make sense to migrate 
 
 So it could also be that the winner has been crowned, and there will be no successor. In this scenario, either React will continue to evolve as needed to stay on top of the heap; or by the time React is dethroned, we will have moved _past_ front-end frameworks entirely (perhaps because browsers in general or JavaScript in particular have expanded to the point that we don't need them). Or, at least, into some new post-framework era.
 
+One other thought here: it's possible we're _already_ moving past React, but we just can't see it at a high level yet. Companies hiring now are most likely to be the companies that made their choice on framework already, a long time ago. Just as Covid testing tends to lag behind actual, current levels by a few weeks, so current hiring trends could be lagging behind adoption benchmarks.
+
+---
+
 I don't know what the future of front-end looks like. Nobody really does. But it's a very safe bet that React will continue to be _the thing_ for a very long time.
 
 If you're learning front-end development in the hopes of getting a job, or trying to level up your career, and React is a knowledge gap for you, it seems like the safest bet you could make. React isn't going anywhere anytime soon.
