@@ -77,17 +77,17 @@ React's performance relative to the field is pretty well-documented, so I don't 
 
 ### Learning curve
 
-Assuming you know nothing about any front-end framework, React is definitely not the easiest to learn or to use. JSX is a gotcha-riddled kludge designed to shoehorn HTML into a JavaScript function `return`. The only thing worse than using JSX with React is _not_ using JSX with React.
+Assuming you know nothing about any front-end framework, React is definitely not the easiest to learn or to use.
 
-Besides JSX, React itself has its own bevy of unique conventions and trip-ups (not to mention two completely different syntaxes that are _not_ fully interoperable).
+<CalloutPlusQuote>
+JSX is a gotcha-riddled kludge to clumsily shoehorn HTML into a JavaScript function return. The only thing worse than using JSX with React is <em>not</em> using JSX with React.
+</CalloutPlusQuote>
+
+Besides [JSX](https://reactjs.org/docs/introducing-jsx.html), React itself has its own bevy of unique conventions and trip-ups (not to mention two completely different syntaxes that are _not_ fully interoperable).
 
 In React, many things other front-end frameworks handle for you or make trivially easy require manual intervention or significant boilerplate (or both).
 
-<CalloutPlusQuote>
-Just about every framework was originally built for the general population—except React, which was originally built for Facebook engineers.
-</CalloutPlusQuote>
-
-(_In fairness, React has evolved to a general market product since then, but its origins still have a strong effect on it even today; many of the early decisions are still unavoidably in place._)
+Just about every framework was originally built for the general population—except React, which was originally built for Facebook engineers. (_In fairness, React has evolved to a general market product since then, but its origins still have a strong effect on it even today; many of its early decisions and optimizations are still unavoidably in place._)
 
 I'm sure I don't need to bring up `useEffect` here. Or how you can't use some standard HTML attributes in JSX. Or memoization. Or how there aren't _real_ conditionals or loops…you know what, let's just move on.
 
@@ -172,6 +172,8 @@ Choosing React just for the sake of getting new devs up and running faster is sh
 Given that your app will have larger bundles, lower speed, and higher complexity, as we've discussed—all for little to no benefit in other areas—choosing React just for the sake of getting new devs up and running faster is short-term gain for long-term loss. (Tech debt, in other words.)
 
 Those gambles _can_ pay off, but they might not. They often give you a few weeks now at the cost of months down the road. So while this is indeed a real benefit, and an area where React inarguably comes out ahead, it's not necessarily a good thing to prioritize.
+
+Plus, if you know React already, learning another front-end framework shouldn't be hard for you. They all have their own nuances and quirks, but they all use roughly the same mental model. Any good developer who knows React can and will be productive with _any_ framework.
 
 ---
 
