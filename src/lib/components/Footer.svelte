@@ -25,9 +25,9 @@
       <ul aria-labelledby="footer-links">
         <li><a href="/api/rss.xml" rel="external">RSS</a></li>
         <li><a href="https://ko-fi.com/collinsworth">Ko-Fi</a></li>
-        <li><a href="https://github.com/josh-collinsworth">GitHub</a></li>
+        <li><a href="https://github.com/josh-collinsworth" rel="me">GitHub</a></li>
         <li><a href="https://codepen.io/collinsworth">CodePen</a></li>
-        <li><a href="https://twitter.com/jjcollinsworth">Twitter</a></li>
+        <li><a href="https://twitter.com/jjcollinsworth" rel="me">Twitter</a></li>
       </ul>
     </div>
 
