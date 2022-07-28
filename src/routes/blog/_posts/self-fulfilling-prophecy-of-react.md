@@ -1,7 +1,7 @@
 ---
 title: "The self-fulfilling prophecy of React"
 date: "2022-07-27"
-updated: "2022-07-27"
+updated: "2022-07-28"
 categories:
   - "web"
   - "opinion"
@@ -29,19 +29,19 @@ Don't get me wrong: React _is_ good. Even I, a noted and unapologetic React non-
 
 React laid the groundwork for so much of what other frameworks are doing and have done. [Vue 3](https://vuejs.org/guide/introduction.html) and its composition API are clearly inspired by React hooks. Many of the conventions of [Svelte](https://svelte.dev/) come from React. [Nuxt](https://nuxtjs.org/), a Vue framework I've used and love, takes many of its ideas (and 75% of its name) from [Next](https://nextjs.org/), a React meta-framework. For that matter, the entire component-based model of frontend design and development owes much of its current state (ha) to React—though it should be noted others also helped pave the way.
 
-But that's all kind of my point: much like an genre-defining movie, album, or video game from a previous era, React's greatness is more in what it meant at the time—and in what it _inspired_—than what it currently is _today_, absent that context (no pun intended).
+But that's all kind of my point: much like a genre-defining movie, album, or video game from a previous era, React's greatness is more in what it meant at the time—and in what it _inspired_—than what it currently is _today_, absent that context (no pun intended).
 
 ---
 
-Ok, I concede that analogy was a bit of an overreach. There's admittedly much less of a difference between React and its contemporaries than there is between, say, [_Citizen Kane_](https://en.wikipedia.org/wiki/Citizen_Kane) and any given Best Picture winner from modern times, or between the original [_Legend of Zelda_ on the NES](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)) and [_Breath of the Wild_ on the Switch](https://www.nintendo.com/store/products/the-legend-of-zelda-breath-of-the-wild-switch). That said:
+Ok, I concede that analogy was a bit of an overreach. There's admittedly much less of a difference between React and its contemporaries than there is between, say, [_Citizen Kane_](https://en.wikipedia.org/wiki/Citizen_Kane) and a great movie from modern times, or between the original [_Legend of Zelda_ on the NES](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)) and [_Breath of the Wild_ on the Switch](https://www.nintendo.com/store/products/the-legend-of-zelda-breath-of-the-wild-switch). That said:
 
 <CalloutPlusQuote>
 React has aged. And I don't think most people—particularly those using it regularly—realize how much or how&nbsp;poorly.
 </CalloutPlusQuote>
 
-React does what it does well, but it doesn't do _anything_ better than other frameworks.
+When you live only in the world of React, you likely only see the improvements. It seems like React is getting better and better all the time. In many ways, it is. But that perspective shields you from realizing React's velocity, and its ceiling, have long lagged behind that of its comparable colleagues.
 
-Let's talk more about that.
+React does what it does well, but it doesn't do _anything_ better than other frameworks.
 
 
 ## The best choice for the job
