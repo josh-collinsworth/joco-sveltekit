@@ -19,7 +19,7 @@
         <h2>Featured project: Quina</h2>
         
         <p>Quina is a strategic, logical word game available on 
-          <a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth&hl=en_US&gl=US" rel="external">Google Play</a>
+          <a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth&hl=en_US&gl=US" rel="external">Google Play</a>, the <a href="https://apps.apple.com/us/app/quina/id1636895462">iOS App Store</a>,
           and as a <a href="https://quina.app" rel="external">Progressive Web App</a>. 
           I wrote about the process of building the app and the tech behind it both 
           <a href="/blog/announcing-quina-my-first-app">on this blog</a> and 
@@ -116,7 +116,13 @@
         <p>Another word game, this one built with SvelteKit, and a bit more akin to Wordle (but with some twists and more complex mechanics).</p>
         <ul>
           <li>
-            <a href="https://playhondo.com">Play Hondo</a>
+            <a href="https://apps.apple.com/us/app/hondo/id1636016699">Hondo on iOS</a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa">Hondo on Android</a>
+          </li>
+          <li>
+            <a href="https://playhondo.com">Hondo on the web</a>
           </li>
           <li>
             <a href="https://github.com/josh-collinsworth/hondo">GitHub repo</a>
