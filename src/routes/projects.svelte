@@ -88,29 +88,6 @@
 
     <article>
       <div class="sticky">
-        <h2>SvelteKit static blog starter</h2>
-        
-        <p>A fully open-source, pre-configured starter for a SvelteKit blog. Includes Markdown and Sass preprocessing; has mdsvex with rehype plugins pre-installed; and includes automatic prefetching of top-level routes, an RSS feed, and a JSON API.</p>
-        <ul>
-          <li>
-            <a href="https://sveltekit-static-starter.netlify.app">Live demo</a>
-          </li>
-          <li> 
-            <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">GitHub repo</a>
-          </li>
-        </ul>  
-      </div>
-      
-      <div class="image-gallery">
-        <figure>
-          <iframe src="https://sveltekit-static-starter.netlify.app" frameborder="0" title="Live demo of the starter, from sveltekit-static-starter.netlify.app" width="100%" height="800"></iframe>
-          <figcaption><a href="https://sveltekit-static-starter.netlify.app">sveltekit-static-starter.netlify.app</a></figcaption>
-        </figure>
-      </div>
-    </article>
-
-    <article>
-      <div class="sticky">
         <h2>Hondo</h2>
         
         <p>Another word game, this one built with SvelteKit, and a bit more akin to Wordle (but with some twists and more complex mechanics).</p>
@@ -137,6 +114,30 @@
         <img src="/images/post_images/announcing_hondo/share-image.png" alt="" style="border: 1px solid;">
       </div>
     </article>
+
+    <article>
+      <div class="sticky">
+        <h2>SvelteKit static blog starter</h2>
+        
+        <p>A fully open-source, pre-configured starter for a SvelteKit blog. Includes Markdown and Sass preprocessing; has mdsvex with rehype plugins pre-installed; and includes automatic prefetching of top-level routes, an RSS feed, and a JSON API.</p>
+        <ul>
+          <li>
+            <a href="https://sveltekit-static-starter.netlify.app">Live demo</a>
+          </li>
+          <li> 
+            <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">GitHub repo</a>
+          </li>
+        </ul>  
+      </div>
+      
+      <div class="image-gallery">
+        <figure>
+          <iframe src="https://sveltekit-static-starter.netlify.app" frameborder="0" title="Live demo of the starter, from sveltekit-static-starter.netlify.app" width="100%" height="800"></iframe>
+          <figcaption><a href="https://sveltekit-static-starter.netlify.app">sveltekit-static-starter.netlify.app</a></figcaption>
+        </figure>
+      </div>
+    </article>
+
       
     <article>
       <div class="sticky">

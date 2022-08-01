@@ -1,7 +1,7 @@
 ---
 title: "The self-fulfilling prophecy of React"
 date: "2022-07-27"
-updated: "2022-07-28"
+updated: "2022-08-01"
 categories:
   - "web"
   - "opinion"
@@ -74,7 +74,9 @@ There are [many different metrics by which you can measure performance](https://
 
 React's performance relative to the field is pretty well-documented, so I don't feel we need to go into it here. But suffice to say: if your goal is to build the most performant thing you can, React isn't what you're considering.
 
-(Yes, [Preact](https://preactjs.com/), a minimal version of React, is worthy of consideration in this case, but it's different enough from React that it is its own framework, in many ways. Plus, Preact doesn't put up notably superior metrics compared with some of the other contenders in the field mentioned above.)
+<SideNote>
+<a href="https://preactjs.com/">Preact,</a> a minimal version of React, is worthy of consideration in this case, but it's <a href="https://preactjs.com/guide/v8/differences-to-react/">different enough from React</a> that it may or may not be a 1:1 drop-in replacement, so I don't count it as the same thing. Also: while Preact's performance is significantly better than React's, it's not necessarily better than some of the other contenders in the field mentioned above.
+</SideNote>
 
 
 ### Learning curve
@@ -91,7 +93,7 @@ In React, many things other front-end frameworks handle for you or make triviall
 
 Just about every framework was originally built for the general population—except React, which was originally built for Facebook engineers. (_In fairness, React has evolved to a general market product since then, but its origins still have a strong effect on it even today; many of its early decisions and optimizations are still unavoidably in place._)
 
-I'm sure I don't need to bring up `useEffect` here. Or how you can't use some standard HTML attributes in JSX. Or memoization. Or how there aren't _real_ conditionals or loops…you know what, let's just move on.
+I'm sure I don't need to bring up `useEffect` here. Or how you can't use some standard HTML attributes in JSX (because JSX doesn't know the difference between a React prop and an HTML attribute). Or memoization. Or how there aren't _real_ conditionals, so you have to rely on short-circuit operators. Or how preventing infinite loops is _your_ responsibility—even though there aren't really loops, so you have to use array methods…you know what, let's just move on.
 
 
 ### Bundle size
@@ -103,7 +105,7 @@ React definitely won't lead the pack when it comes to small bundles. Again, much
 I _will_ mention, however: some used to argue React would load from the cache most of the time, so its bundle size was irrelevant. That was always a spurious claim to begin with, but to whatever extent it _was_ true, it is no longer the case in modern browsers, due to security upgrades that prevent cache sharing between domains.
 
 <SideNote>
-Here it also bears mentioning that Preact is a possibility, but again: Preact is different enough that it's almost like opting into a whole other framework, and also not dramatically different, size-wise, from other options.
+Here it also bears mentioning that Preact is a possibility, but again: Preact is different enough that it's not guaranteed to be a seamless drop-in, and also not dramatically different, size-wise, from other options.
 </SideNote>
 
 
@@ -173,7 +175,7 @@ Choosing React just for the sake of getting new devs up and running faster is sh
 
 Given that your app will have larger bundles, lower speed, and higher complexity, as we've discussed—all for little to no benefit in other areas—choosing React just for the sake of getting new devs up and running faster is short-term gain for long-term loss. (Tech debt, in other words.)
 
-Those gambles _can_ pay off, but they might not. They often give you a few weeks now at the cost of months down the road. So while this is indeed a real benefit, and an area where React inarguably comes out ahead, it's not necessarily a good thing to prioritize.
+Those gambles _can_ pay off, but they might not. They often give you a few weeks now at the cost of many months down the road. So while this is indeed a real benefit, and an area where React inarguably comes out ahead, it's not necessarily a good thing to prioritize.
 
 Plus, if you know React already, learning another front-end framework shouldn't be hard for you. They all have their own nuances and quirks, but they all use roughly the same mental model. Any good developer who knows React can and will be productive with _any_ framework.
 
@@ -237,4 +239,4 @@ If you're learning front-end development in the hopes of getting a job, or tryin
 
 That said, however: I _hope_ more and more developers will explore other options. I hope companies consider other candidates for new greenfield projects. Much of the joy I've discovered in front-end in recent years has been thanks to Vue and Svelte. In my personal opinion and experience, React gets the job done, but it doesn't make the work fun.
 
-I _do_ see some of this happening, as more developers begin to wonder what all the hype is with other frameworks, and realize exactly how obtuse React has actually been this entire time. I hope more will continue to explore the other options out there, if for no other reason than better diversity of options for front-end developers in the future.
+I _do_ see some of this happening, as more developers begin to wonder what all the hype is with other frameworks, and realize exactly how obtuse React has actually been this entire time. I hope more will continue to explore the other options out there, if for no other reason than better diversity of possibilities for front-end developers in the future.
