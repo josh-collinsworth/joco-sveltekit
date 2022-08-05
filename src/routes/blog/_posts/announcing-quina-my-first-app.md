@@ -1,7 +1,7 @@
 ---
 title: 'Announcing Quina (My First App)!'
 date: '2020-12-10'
-updated: '2021-02-11'
+updated: '2022-08-05'
 categories:
   - 'javascript'
   - 'design'
@@ -21,6 +21,10 @@ excerpt: 'The story of building Quina, a word game Progressive Web App built wit
 
 <SideNote>
 About six months after I wrote this post, I published <a href="https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/">a longer, more technically in-depth version of this article on CSS Tricks</a>.
+</SideNote>
+
+<SideNote>
+…And about a year and a half later, I released Quina v2. Lots of the things in both this post and the CSS Tricks article are outdated now (especially the screenshots) but the underlying technical information is still accurate.
 </SideNote>
 
 One of my favorite code hobbies is making games on [CodePen](https://codepen.io). I've got a handful I've created in the online sandbox code editor over the years—[Connect Four](https://codepen.io/collinsworth/pen/MWwXpLd), [Color Flood](https://codepen.io/collinsworth/pen/Pymdxo), [Hangman](https://codepen.io/collinsworth/pen/oNbavJN) and [sliding puzzles](https://codepen.io/collinsworth/pen/XwPXrM), to name a few—but I've wanted to build a legit, standalone app for a long time now.
