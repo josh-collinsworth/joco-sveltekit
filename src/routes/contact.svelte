@@ -67,7 +67,7 @@
 
 			<p>
 				<i>
-					Happy to chat! I try to respond to everything that isn't spam.
+					Happy to chat! I try to respond to everything that isn't spam. (Note: spam includes requests to submit articles, and job opportunities that don't include full details.)
 				</i>
 			</p>
 
