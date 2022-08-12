@@ -1,7 +1,15 @@
-<script>null</script>
+<script>
+import WarningIcon from "./icons/warning-icon.svelte";
+
+null</script>
 
 <div class="warning">
-  <slot />
+  <div class="warning-icon">
+    <WarningIcon />
+  </div>
+  <div>
+    <slot />
+  </div>
 </div>
 
 
@@ -10,30 +18,23 @@
     margin: var(--halfNote) 0;
     position: relative;
     padding: calc(var(--quarterNote) * 1.5);
-    padding-left: var(--dottedHalfNote);
     font-size: 0.8rem;
     font-style: italic;
     background: linear-gradient(to right, hsla(var(--redHS), 33%), var(--red));
     color: var(--white);
+    line-height: 1.4;
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    gap: 0 var(--quarterNote);
+
+    .warning-icon {
+      grid-row: 1 / -1;
+      grid-column: 1 / 2;
+    }
 
     :global(code) {
       background: transparent;
       font-size: .9em;
-    }
-    
-    &::before {
-      content: '⚠️important';
-      content: '⚠️ ';
-      font-family: var(--codeFont);
-      font-style: normal;
-      line-height: 1;
-      position: absolute;
-      left: var(--quarterNote);
-      top: calc(50% - 0.5em);
-      font-size: 1.2rem;
-      height: 1em;
-      line-height: 1;
-      margin-bottom: var(--quarterNote);
     }
   }
 
