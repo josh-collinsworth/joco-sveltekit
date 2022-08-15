@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-08-12"
+updated: "2022-08-15"
 categories: 
   - "svelte"
   - "javascript"
@@ -22,7 +22,7 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 
 
 <Warning>
-SvelteKit's routing syntax will be changing soon. When it does, I'll update this post as quickly as possible to correct the obsolete info. If you happen to find this post during that awkward overlap, my apologies.
+SvelteKit's routing syntax will be changing in an upcoming version. When it does, I'll update this post as quickly as possible to correct the obsolete info. Check <a href="https://kit.svelte.dev/docs/routing#pages">the SvelteKit routing docs</a> to be sure.
 </Warning>
 
 If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:

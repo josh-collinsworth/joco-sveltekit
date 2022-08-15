@@ -127,8 +127,8 @@
     }
     
     .meta + p::first-letter,
-    .meta + .side-note + p::first-letter,
-    .meta + .side-note + .side-note + p::first-letter{
+    .meta + *:not(p) + p::first-letter,
+    .meta + *:not(p) + *:not(p) + p::first-letter{
       font-size: 3.6em;
       float: left;
       line-height: 0.7em;
