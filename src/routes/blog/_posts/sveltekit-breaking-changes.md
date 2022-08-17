@@ -87,10 +87,10 @@ In fact, you actually <em>can't</em> prefix a file or folder inside of <code>src
 
 ### Converting to the new routing syntax
 
-How difficult this conversion will be depends mainly on how many pages you have on your site, but the steps are at least fairly simple:
+Again, [the migration guide](https://github.com/sveltejs/kit/discussions/5774) and migration tool in it can do much of the work of converting for you. This is just to help understand the changes (in case you have to do anything manually).
 
-- Convert any `index.*` file to `+page.*` instead
-- If you have named pages, tuck them inside a folder, named for the page slug, and rename the file to `+page`.
+- Any `index.*` file becomes `+page.*` instead
+- Any named page goes inside a folder named for the page slug, and the file gets renamed to `+page.svelte`.
 
 **Example:**
 
@@ -375,6 +375,6 @@ And rather than `return` a JavaScript object with a `status` and `body`, you'll 
 
 That's it for the major changes. Best of luck converting your SvelteKit sites!
 
-Once more, be sure to check out [the official migration guide](https://github.com/sveltejs/kit/discussions/5774) for more details on converting your existing site. It goes into much more detail than I have here on many things (especially including TypeScript and typing your code).
+Once more, be sure to check out [the official migration guide](https://github.com/sveltejs/kit/discussions/5774) for more details on converting your existing site. It's got an excellent migration tool that will help do much of the hard work for you. It goes into much more detail than I have here on many things (especially including TypeScript and typing your code).
 
 If I've left anything out, or made any mistakes, feel free to let me know in the comments.

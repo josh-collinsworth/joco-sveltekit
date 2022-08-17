@@ -22,7 +22,7 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 </script>
 
 <Warning>
-This post was recently updated to reflect new breaking changes in SvelteKit. I've tried to make sure it's current and relevant, but if I've missed something, please leave a comment below or <a href="https://github.com/josh-collinsworth/joco-sveltekit/blob/main/src/routes/blog/_posts/build-static-sveltekit-markdown-blog.md">submit a pull request on this post</a>.
+This post was recently updated to reflect <a href="/blog/sveltekit-breaking-changes">new breaking changes in SvelteKit</a>. I've tried to make sure it's current and relevant, but if I've missed something, please leave a comment below or <a href="https://github.com/josh-collinsworth/joco-sveltekit/blob/main/src/routes/blog/_posts/build-static-sveltekit-markdown-blog.md">submit a pull request on this post</a>.
 </Warning>
 
 If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:
