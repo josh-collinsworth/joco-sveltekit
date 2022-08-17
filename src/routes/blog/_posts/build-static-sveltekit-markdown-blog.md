@@ -21,9 +21,8 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-
 <Warning>
-SvelteKit's routing syntax changed as of August 16, 2020. I'm in the process of updating this guide to reflect the changes. Check <a href="https://kit.svelte.dev/docs/routing#pages">the SvelteKit routing docs</a> for more info.
+This post was recently updated to reflect new breaking changes in SvelteKit. I've tried to make sure it's current and relevant, but if I've missed something, please leave a comment below or <a href="https://github.com/josh-collinsworth/joco-sveltekit/blob/main/src/routes/blog/_posts/build-static-sveltekit-markdown-blog.md">submit a pull request on this post</a>.
 </Warning>
 
 If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:
@@ -38,14 +37,14 @@ But as I considered their reaction, I realized: it was valid.
 Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site&nbsp;generator.
 </CalloutPlusQuote>
 
-Other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster, since that's their sole focus. ([Even the SvelteKit docs make this point](https://kit.svelte.dev/docs#appendix-ssg).)
+Other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster, since that's their sole focus. (_At one point, at least, even the SvelteKit docs admitted its focus was not making the fastest static site generator._)
 
-However, I still feel SvelteKit is worthy of serious consideration. Its capabilities are much more broad and flexible than SSGs, and there's plenty unique to love about its both developer and user experiences. So this post will be aimed at smoothing out that initial learning curve, to help you understand and take advantage of SvelteKit's wide range of possibilities.
+However, I still feel SvelteKit is worthy of serious consideration in that regard. Its capabilities are much more broad and flexible than traditional SSGs, and there's plenty unique to love about both its developer and user experiences. So this post will be aimed at smoothing out that initial learning curve, to help you understand and take advantage of SvelteKit's wide range of possibilities.
 
 
 ## What we'll cover, and what to know first
 
-**This is a walkthrough of using SvelteKit to set up a prerendered static blog with Markdown, Sass and an API.** (That's how this site is built, by the way.)
+**This is a walkthrough of using SvelteKit to set up a prerendered static blog with Markdown, Sass and an API.** (_That's how this site is built, by the way._)
 
 This is _also_ an intro to SvelteKit itself, with a good overview of SvelteKit fundamentals that should be transferable to _any_ project.
 
@@ -62,7 +61,7 @@ _*My opinion; citation needed_
 - Understand the basics of fetching JSON from an API; and
 - Know how to install packages with [npm](https://www.npmjs.com/), and have npm installed already.
 
-Finally, if you just want to skip ahead and see the finished product, you can [check out this repo](https://github.com/josh-collinsworth/sveltekit-blog-guide-steps) or copy it--though I have a proper, more fleshed-out [SvelteKit starter here](https://github.com/josh-collinsworth/sveltekit-blog-starter).
+<!-- Finally, if you just want to skip ahead and see the finished product, you can [check out this repo](https://github.com/josh-collinsworth/sveltekit-blog-guide-steps) or copy it--though I have a proper, more fleshed-out [SvelteKit starter here](https://github.com/josh-collinsworth/sveltekit-blog-starter). -->
 
 **Let's get started!**
 
@@ -117,7 +116,7 @@ Any folder inside <code>src/routes</code> becomes the name of a page. A <code>+p
 
 So, from inside `src/routes`:
 
-- `index/+page.svelte` is the homepage (`/`)
+- `+page.svelte` is the homepage (`/`)
 - `about/+page.svelte` would become the `/about` page
 - `blog/+page.svelte` would be be the `/blog` page
 - `blog/some-post/+page.svelte` becomes `/blog/some-post`
@@ -713,23 +712,18 @@ In order to do that handling, however, we'll need to lean on the `load` function
 
 #### Preloading page data server-side
 
-In addition to `+page.svelte`—which, as we've seen, renders a given route's content—SvelteKit offers us two additional `+` files, which load and run _on the server_, before the page is rendered.
-
-Those two files are:
-
-- `+page.js` (_which runs both server-side and client-side before every page load_)
-- `+page.server.js` (_which runs_ only _on the server side_)
+In addition to `+page.svelte`—which, as we've seen, renders a given route's content—SvelteKit offers us an additional `+page.server.js` file, which _preloads_ before the page renders.
 
 Let's back up and explain that a little more:
 
-Every time you load a route in SvelteKit, the router looks for a `+page.js` and/or `+page.server.js` file.
+Every time you load a route in SvelteKit (`/blog`, for example), the router looks for a `+page.server.js` file at that route.
 
-If either exists (and exports a `load` function), SvelteKit will run that function on the server before rendering the `+page.svelte` route, ***and*** will _pass_ any data returned from the `load` function to the `+page.server.svelte` file.
+If that file exists (and exports a `load` function, as it should), SvelteKit will run that function on the server before rendering the `+page.svelte` route, ***and*** will _pass_ any data returned along to the `+page.svelte` file.
 
-In other words: `+page(.server).js` runs first, then passes anything it needs to on to the `+page.svelte` template file to render.
+In other words: `+page.server.js` runs first, then passes anything it needs to on to the `+page.svelte` template file to render.
 
 <SideNote>
-The difference between <code>+page.js</code> and <code>+page.server.js</code> may or may not matter for your purposes. Some things work the same in both locations. But I found loading post data, specifically, did not work well unless I used <code>+page.server.js</code> specifically.<br><br>When in doubt, it probably wouldn't hurt to default to <code>+page.server.js</code>
+If you prefer TypeScript, you can use a <code>.ts</code> file instead.
 </SideNote>
 
 Since we're doing some dynamic things, we'll need to lean on the preloading capabilities of `+page.server.js`. So let's create that file now:
@@ -753,26 +747,28 @@ import { error } from '@sveltejs/kit'
 export async function load({ params }) {
   try {
     const post = await import(`../posts/${params.slug}.md`)
+    const { title, date } = post.metadata
+    const content = post.default.render().html
     
     return {
-      title: post.metadata.title,
-      date: post.metadata.date,
-      content: post.default.render().html
-    };
+      title,
+      date,
+      content
+    }
   }
   catch(err) {
-    throw error(404, `Post ${params.slug} could not be found.`)
+    throw error(404, err)
   }
 }
 ```
 
 **Let's go through that code quickly, to understand what it's doing:**
 
-- Most importantly: `+page.server.js` exports a `load` function that attempts to load a Markdown file, corresponding to the current route.
+- Most importantly: `+page.server.js` exports a `load` function that attempts to load the Markdown file corresponding to the current route.
   - By the way, `params.slug` is called that because we named our route `[slug]`. If we had named our dynamic route, for example, `[pizza]`, we would reach for `params.pizza` instead.
-- Once we've got that file loaded asynchronously, we `return` what we plan to use. (This will be available to us in our template, which we'll see in a moment.)
-  - The actual HTML of the post requires a little bit of drilling, down to `post.default.render().html`. But that'll give us what we want.
-- Finally, if something goes wrong in our `try` block, we `catch` the error (using the imported SvelteKit `error` helper), throw a `404`, and let the user know we couldn't find their post. (You could also use the `err` parameter here to show more info, if you wanted.)
+- Once we've got that file loaded (asynchronously), we `return` what we plan to use. (This will be available to us in our template, which we'll see in a moment.) We wouldn't _have_ to return individual props like this; we _could_ just return `post` and be done with it. But I like to destructure a bit on the server, to keep the template file lighter.
+  - The actual HTML of the post requires a little bit of drilling, down to `post.default.render().html`. That's a bit inconvenient, but it'll give us what we want.
+- Finally, if something goes wrong in our `try` block, we `catch` the error (using the imported SvelteKit `error` helper), throw a `404`, and pass along the actual `err` error.)
 
 That in place, we can create a `+page.svelte` file alongside our `+page.server.js` file. We've loaded our data; now we're ready to use it.
 
@@ -1129,7 +1125,7 @@ From here, we'll do much the same as we did with the dynamic `[slug]` path earli
 ```
 
 <SideNote>
-A reminder: the word <code>category</code> isn't special; it's just a variable. But as with any variable, it's good to name it semantically. We'll access <code>params.category</code> inside <code>+page.svelte</code>.
+A reminder: the word <code>category</code> isn't special; it's just a variable. But as with any variable, it's good to name it semantically. We'll access <code>params.category</code> inside <code>+page.server.js</code>.
 </SideNote>
 
 Once you've created those, you may notice you can actually visit `/blog/category/` followed by any text, and you won't get a 404. The dynamic route handles _all_ unmatched `/blog/category/*` routes. The trick now is just to load the right content based on the route.
@@ -1153,7 +1149,7 @@ Notice if you load a blog category page now, you can see `params` in the browser
 Knowing that the current `/blog/category/*` route will be available as `params.category`, we can get to work. We'll use that, and our existing API endpoint, to filter posts. Let's modify our `+page.js` file:
 
 ```js
-// src/routes/blog/category/[category]/+page.js
+// src/routes/blog/category/[category]/+page.server.js
 export const load = async ({ params, fetch }) => {
   const { category } = params
   const response = await fetch('/api/posts')
@@ -1173,7 +1169,7 @@ I won't go into how to render the matching content, but it's almost identical to
 
 Also: it's probably a good idea to wrap that code in a `try`/`catch` block--and for that matter, to anticipate situations where no posts will match the given category, and handle that properly in the UI. (An `{#if posts.length}` block with an `{:else}` should do the trick.)
 
-Inside the `[slug]/+page.svelte` template, listing a post's categories just requires grabbing the prop and looping over it. (Just be sure to add `categories` to the returned object from the corresponding `[slug]/+page.js` file.)
+Inside the `[slug]/+page.svelte` template, listing a post's categories just requires grabbing the prop and looping over it. (Just be sure to add `categories` to the returned object from the corresponding `[slug]/+page.server.js` file.)
 
 ```svelte
 <!-- src/routes/blog/[slug]/+page.svelte -->
@@ -1513,26 +1509,20 @@ The posts API is functional, but it can be improved in several ways.
 
 For starters, we'll definitely want to put the code we just wrote into a `try`/`catch` block that returns the proper status code when things go wrong. Some refactoring might also be in order. We'll also probably want to add some other extra features to this API route eventually. 
 
-<PullQuote>
+<CalloutPlusQuote>
 Our API is currently missing pagination options, which could be very needed depending on the number of&nbsp;posts.
-</PullQuote>
+</CalloutPlusQuote>
 
-<Callout>
-Our API is currently missing pagination options, which could be very needed depending on the number of&nbsp;posts.
-</Callout>
-
-Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render` method for that, if you so choose.
-
-Finally, you could build in some post filtering, but it might be better to build out a dynamic endpoint for that. The [SvelteKit docs section on Rest parameters](https://kit.svelte.dev/docs#routing-advanced-rest-parameters) is worth a look as far as that goes.
+Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render` method for that, if you so choose. (We saw it previously, in the `src/routes/[slug]/+page.server.js` file.)
 
 
 ### Customize the error page
 
 What you're looking at when you hit an error is SvelteKit's built-in error component. 
 
-However, just like we can provide our own `+layout.svelte` file, we can _also_ provide an `__error.svelte` file, to template and format any errors our users might run into. 
+However, just like we can provide our own `+layout.svelte` file, we can _also_ provide a `+error.svelte` file, to template and format any errors our users might run into. 
 
-I won't go into detail here, but you can check the official [Svelte docs error pages entry](https://kit.svelte.dev/docs#layouts-error-pages) for more info.
+I won't go into detail here, but you can check the official [Svelte docs error pages entry](https://kit.svelte.dev/docs/routing#error) for more info.
 
 
 ### Preload routes
