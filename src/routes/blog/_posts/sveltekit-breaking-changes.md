@@ -225,6 +225,8 @@ Beyond that, everything is the same as before with the `load` function:
 - `load` has access to parameters like `url` and `params`; and
 - `load` must `return` an object (which, again, is passed to the page as a prop, to be used in the template). (_It does **not** need to pass the data using a `prop` property anymore, however_.)
 
+**One other thing:** to execute a `load` function on _all_ pages, you'll do so in a `+layout.js` file, which lives alongside the `+layout.svelte` file.
+
 
 ### Converting from the old `load` function to the new
 
