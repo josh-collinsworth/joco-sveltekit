@@ -324,7 +324,11 @@ export const GET = () => {
 }
 ```
 
-The new way is definitely a little more verbose. However, it _also_ gives us more fine-grained control over our API responses; we can return _any_ kind of data in [the spec](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response#parameters).
+The new way is definitely a little more verbose. I also want to emphasize: **the new way takes a lot of updates.** Even if you use the conversion script mentioned above, you'll still need to adjust your endpoints' responses; adjust relative file paths (since SvelteKit's new routing syntax often requires nesting files a level deeper); and handle both the data conversion _and_ the response headers yourself.
+
+That's a lot to do.
+
+However, all that said: the new approach _also_ gives us more fine-grained control over our API responses; we can return _any_ kind of data in [the spec](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response#parameters). So while converting from the old syntax to the new is a big pain, at the end of the conversion, we at least have much more full control.
 
 The only other big difference to be aware of--which you may have noticed already--is that the HTTP verb functions accepted by a server route (endpoint) now must be capitalized.
 
