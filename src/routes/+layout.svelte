@@ -1,8 +1,5 @@
 <script lang="ts">
-	// throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-	// Suggestion (check code before using, and possibly convert to data.X access later):
-	// import type { LayoutData } from './$types';
-  
+	import type { LayoutData } from './$types';
 	import '$lib/assets/scss/global.scss'
 	
 	import throttle from 'just-throttle'
@@ -12,16 +9,17 @@
 	import PageHeading from '$lib/components/PageHeading.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { prefersReducedData } from '$lib/assets/js/utils'
-	import { isLoading, theme, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
+	import { isLoading, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
-	import { prefetch } from '$app/navigation'
+  import { afterNavigate, beforeNavigate, prefetch } from '$app/navigation';
 	import { dev } from '$app/env'
+
+
 	
-	export let data
+	export let data: LayoutData
   
   let path: string
 	$: ({ path } = data)
-	// export let path: string
 
 	let lastScrollPosition: number = 0
 	const isSinglePostCheck: RegExp = new RegExp(/\/blog\/[A-z0-9\-_]+\/?$/)
@@ -54,6 +52,10 @@
 		lastScrollPosition = currentScrollPosition
 	}, 100)
 
+  beforeNavigate(() => { setLoading(true) })
+
+  afterNavigate(() => { setLoading(false) })
+
 	onMount(() => {
 		if (!prefersReducedData()) {
 			prefetch('/')
@@ -65,11 +67,7 @@
 </script>
 
 
-<svelte:window 
-	on:scroll={handleScroll} 
-	on:sveltekit:navigation-start={() => { setLoading(true) }}
-	on:sveltekit:navigation-end={() => { setLoading(false) }}
-/>
+<svelte:window on:scroll={handleScroll} />
 
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />

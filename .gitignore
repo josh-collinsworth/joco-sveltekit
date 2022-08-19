@@ -3,4 +3,4 @@ node_modules
 /.svelte-kit
 /package
 /build
-/src/routes/blog/_posts/drafts
+/src/routes/blog/posts/drafts

@@ -14,7 +14,6 @@
 		<nav
 			class="main-nav nav"
 			class:open={$isMenuOpen}
-			role="navigation"
 		>
       <NavLinks {path} />
 		</nav>

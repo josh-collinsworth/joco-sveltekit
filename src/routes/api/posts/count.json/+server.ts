@@ -2,14 +2,13 @@
 import { dev } from '$app/env'
 import { error } from '@sveltejs/kit'
 
-
 export const GET = async () => {
 	let posts
 
   if (dev) {
-		posts = import.meta.glob(`/src/routes/blog/_posts/**/*.md`)
+		posts = import.meta.glob(`/src/routes/blog/posts/**/*.md`)
   } else {
-		posts = import.meta.glob(`/src/routes/blog/_posts/*.md`)
+		posts = import.meta.glob(`/src/routes/blog/posts/*.md`)
   }
 
 	try {
@@ -28,7 +27,7 @@ export const GET = async () => {
     )
 	}
 
-	catch(err) {
-    throw error(500, err)
+	catch({ message }) {
+    throw error(500, message)
 	}
 }

@@ -1,14 +1,11 @@
 <script lang="ts">
-	// throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-	// Suggestion (check code before using, and possibly convert to data.X access later):
 	import type { PageData } from './$types';
-	export let data: PageData;
-	$: ({ Uses } = data);
+	
+  export let data: PageData;
+  let Uses: SvelteComponent = data.Uses
 
 	import type { SvelteComponent } from 'svelte'
 	import Main from '$lib/components/Main.svelte'
-  
-	export let Uses: SvelteComponent
 </script>
 
 

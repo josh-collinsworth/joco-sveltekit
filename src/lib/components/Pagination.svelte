@@ -9,7 +9,7 @@
 </script>
 
 
-<nav role="navigation" aria-label="Pagination navigation" class="pagination">
+<nav aria-label="Pagination navigation" class="pagination">
   <h2>Go to page:</h2>
   <ul>
     {#each Array.from({length: pagesAvailable}, (_, i) => i + 1) as page}

@@ -8,13 +8,13 @@ export const load = async ({ params }) => {
     throw redirect(301, '/blog');
   }
   try { 
-    const post: SvelteComponent = await import(`../_posts/${params.post}.md`)
+    const post: SvelteComponent = await import(`../posts/${params.post}.md`)
 
     return {
       PostContent: post.default,
       meta: { ...post.metadata, slug: params.post } 
     }
-  } catch(err) {
-    throw error(404, err)
+  } catch({ message }) {
+    throw error(404, message)
   }
 }

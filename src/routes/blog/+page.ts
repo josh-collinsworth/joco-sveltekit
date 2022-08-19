@@ -1,10 +1,10 @@
-import type { LoadOutput } from '@sveltejs/kit'
+// TODO: types
 
-export const load = async ({ url }): Promise<LoadOutput> => {
-	const res = await fetch(`${url.origin}/api/posts.json`)
+export const load = async ({ fetch }) => {
+	const res = await fetch(`/api/posts.json`)
 	const posts = await res.json()
 	
-	const count = await fetch(`${url.origin}/api/posts/count.json`)
+	const count = await fetch(`/api/posts/count.json`)
 	const total = await count.json()
 
 	return { 

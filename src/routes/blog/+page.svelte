@@ -1,18 +1,15 @@
 <script lang="ts">
-	// throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-	// Suggestion (check code before using, and possibly convert to data.X access later):
 	import type { PageData } from './$types';
-	export let data: PageData;
-	$: ({ posts, totalPosts } = data);
-
 	import type Post from '$lib/types/post'
 	
 	import Main from '$lib/components/Main.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
 	import PostList from '$lib/components/posts/PostList.svelte'
 	
-	// export let posts: Post[] = []
-	// export let totalPosts: number
+  export let data: PageData;
+
+	let posts: Post[] = data.posts || []
+	let totalPosts: number = data.totalPosts.total
 </script>
 
 

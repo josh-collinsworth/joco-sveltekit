@@ -1,8 +1,7 @@
-import type { LoadOutput } from '@sveltejs/kit'
-
-export const load = async ({ url }): Promise<LoadOutput> => {
-  const rss = await fetch(`${url.origin}/api/rss.xml`) // This isn't used; it's just here to make sure the route gets prerendered
-	const res = await fetch(`${url.origin}/api/posts.json`)
+// TODO: types
+export const load = async ({ url, fetch }) => {
+  // const rss = await fetch(`${url.origin}/api/rss.xml`) // This isn't used; it's just here to make sure the route gets prerendered
+	const res = await fetch(`/api/posts.json?limit=-1`)
 	const resJSON = await res.json()
 	
 	const recentPosts = resJSON
