@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-08-17"
+updated: "2022-08-18"
 categories: 
   - "svelte"
   - "javascript"
@@ -832,9 +832,9 @@ Since we're doing some dynamic things, we'll need to lean on the preloading capa
 Inside `+page.server.js`, we'll just need to export a `load` function that returns data for the template to use. Minimally, here's what that should look like:
 
 ```js
-// src/routes/[slug]/+page.server.js
+// src/routes/blog/[slug]/+page.server.js
 export async function load({ params }) {
-  const post = await import(`../posts/${params.slug}.md`)
+  const post = await import(`../${params.slug}.md`)
   const { title, date } = post.metadata
   const content = post.default.render().html
   
