@@ -61,7 +61,7 @@ _*My opinion; citation needed_
 - Understand the basics of fetching JSON from an API; and
 - Know how to install packages with [npm](https://www.npmjs.com/), and have npm installed already.
 
-<!-- Finally, if you just want to skip ahead and see the finished product, you can [check out this repo](https://github.com/josh-collinsworth/sveltekit-blog-guide-steps) or copy it--though I have a proper, more fleshed-out [SvelteKit starter here](https://github.com/josh-collinsworth/sveltekit-blog-starter). -->
+Finally, if you don't _really_ want to go through the whole tutorial and would rather just have a nice blog starter all ready to go, check out my [SvelteKit blog starter here](https://github.com/josh-collinsworth/sveltekit-blog-starter). (It's much more fleshed-out than what we'll build here, but the underlying concepts are the same.)
 
 **Let's get started!**
 
