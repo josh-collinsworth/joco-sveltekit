@@ -1,6 +1,6 @@
 import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
 import { fetchPosts } from '$lib/assets/js/utils'
-import { error } from '@sveltejs/kit'
+import { json, error } from '@sveltejs/kit'
 
 // TODO: types
 export const GET = async ({ url }) => {
@@ -11,20 +11,9 @@ export const GET = async ({ url }) => {
 		limit: parseInt(params.get('limit')) || 10
 	}
 
-  const responseOptions = {
-    status: 200,
-    headers: {
-      'content-type': 'application/json'
-    }
-  }
-
 	try {
 		const posts = await fetchPosts({ ...options })
-
-		return new Response(
-			JSON.stringify(posts),
-      responseOptions
-    )
+		return json(posts)
 	}
 
 	catch {

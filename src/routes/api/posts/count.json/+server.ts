@@ -1,33 +1,22 @@
 //TODO: types
 import { dev } from '$app/env'
-import { error } from '@sveltejs/kit'
+import { error, json } from '@sveltejs/kit'
 
 export const GET = async () => {
-	let posts
+  let posts
 
   if (dev) {
-		posts = import.meta.glob(`/src/routes/blog/posts/**/*.md`)
+    posts = import.meta.glob(`/src/routes/blog/posts/**/*.md`)
   } else {
-		posts = import.meta.glob(`/src/routes/blog/posts/*.md`)
+    posts = import.meta.glob(`/src/routes/blog/posts/*.md`)
   }
 
-	try {
-    const responseMeta = {
-      status: 200,
-      headers: {
-        'content-type': 'application/json'
-      }
-    }
-
+  try {
     const total = Object.keys(posts).length
+    return json({ total })
+  }
 
-    return new Response(
-      JSON.stringify({ total }),
-      responseMeta
-    )
-	}
-
-	catch({ message }) {
+  catch({ message }) {
     throw error(500, message)
-	}
+  }
 }

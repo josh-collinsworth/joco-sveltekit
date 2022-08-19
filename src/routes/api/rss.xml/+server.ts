@@ -1,6 +1,5 @@
 // TODO: types
 import type Post from '$lib/types/post'
-
 import { fetchPosts } from '$lib/assets/js/utils'
 
 export const GET = async () => {

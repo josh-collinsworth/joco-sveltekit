@@ -1,7 +1,7 @@
 ---
 title: "Breaking changes in SvelteKit, August 2022"
 date: "2022-08-17"
-updated: "2022-08-17"
+updated: "2022-08-19"
 categories: 
   - "svelte"
   - "javascript"
@@ -196,12 +196,7 @@ export const load = () => {
 </script>
 ```
 
-**In the new system**, there's no more `<script context="module">`. In fact, the `load` function now lives in a file all its own, named either `+page.js` or `+page.server.js`.
-
-The only difference between the two is:
-
-- `+page.js` runs on both the server and the client (_as the load function did previously_);
-- `+page.server.js` runs on the _server only_. It can also respond to HTTP verbs.
+**In the new system**, there's no more `<script context="module">`. In fact, the `load` function now lives in a file all its own, named either `+page.js` or `+page.server.js`. We'll cover the difference between the two in a moment.
 
 Either way, the file is colocated with a corresponding `+page.svelte` file, like so:
 
@@ -234,10 +229,6 @@ Depending on what your `load` function is doing, this may be a simple conversion
 
 1. Anywhere you have a `<script context="module">` tag in a Svelte page component, copy its contents into a `+page.js` (or `+page.server.js`) file, and place that file alongside the one you copied the function out of.
 
-  <SideNote>Whether to use <code>+page.js</code> or <code>+page.server.js</code> will depend on your use case.
-  <br/><br/>
-  If you're prerendering anyway—or if there's no need to hydrate on the client side—I'd say just go with <code>+page.server.js</code>. Otherwise, start with <code>+page.js</code> and go from there.</SideNote>
-
 2. Be sure your `load` function `return`s data. Previously, you needed to do so inside a `props` object; now you no longer need to. Whatever _was_ inside of `props` can now just _be_ the returned object.
 
 3. Modify your template files accordingly. Wherever the `load` function's data was being consumed, you'll probably need to update the variable names.
@@ -255,6 +246,43 @@ export let data
 
   <p>{data.date}</p>
 </article>
+```
+
+
+### Differences between `+page.js` and `+page.server.js`
+
+The main differences between the two are:
+- `+page.js` **runs on both the server and the client** (_as the load function did previously_).
+- `+page.server.js` **runs on the _server only_**. It can also respond to HTTP verbs.
+
+Which to use will depend mainly on your use case. There's one key thing to remember though, which is: **fetch works differently in the two files!**
+
+- In `+page.js`, you'll pass `fetch` as a parameter, like this:
+
+  ```js
+  // +page.js only
+  import { json } from '@sveltejs/kit'
+
+  export const load = ({ fetch }) => {
+    const myData = fetch('/relative/path/here')
+    return json(myData)
+  }
+  ```
+
+That's because **the client and server have different versions of fetch**; the Node version and the browser `fetch` API are _not_ identical. So when you pass `fetch` as a parameter to a `load` function, SvelteKit does a bit of magic (and adds some niceties) to make sure your fetch call works, and works well, on both the server and client.
+
+This is unnecessary when using `+page.server.js`, however, for obvious reasons; code that only runs on the server only needs the server version of `fetch`. (In fact, if you _try_ to pass `fetch` as a parameter inside `+page.server.js`, you'll get an error.)
+
+This also means when using `fetch` on the server only, you'll need to be explicit about the domain of the request; no relative paths. (Easy enough, with `url.origin`.) But you can use relative routes with the `fetch` helper in `+page.js`.
+
+```js
+// +page.server only
+import { json } from '@sveltejs/kit'
+
+export const load = ({ url }) => {
+  const myData = fetch(`${url.origin}/my/api/path`)
+  return json(myData)
+}
 ```
 
 
@@ -287,7 +315,7 @@ The new structure is similar. By now, you've probably guessed the file we need b
 
 Again, the `posts` folder _could_ be named `posts.json`, if you wanted to keep the path the same. It really just depends what you want the route to look like when visited in the browser; there's no practical difference. (_In the new example above, the route would be `/api/posts`, with no filetype suffix; renaming the folder to `posts.json` would make the route `/api/posts.json`._)
 
-Another change to be aware of: **previously, SvelteKit handled setting the proper headers for our endpoint responses, as well as converting the data to the proper format**. (_It could do all this easily, since we were required to put the data type in the file name._)
+Another change to be aware of: previously, SvelteKit handled setting the proper headers for our endpoint responses, as well as converting the data to the proper format. (_It could do all this easily, since we were required to put the data type in the file name._)
 
 ```js
 // Previously:
@@ -303,32 +331,21 @@ export const get = () => {
 }
 ```
 
-_Now_, however, **server routes _must_ return a proper [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response)** (not just any arbitrary JavaScript object), and any conversion of the data and setting of headers is up to us (since SvelteKit can no longer predict what we'll be returning):
+_Now_, however, **server routes _must_ return a proper [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response)**.
+
+That would be a pain to do on our own, but fortunately, SvelteKit ships with a `json` function available to do all the conversion and everything for us. We just need to import it, then wrap whatever data we return in that function call.
 
 ```js
 // The new way:
+import { json } from '@sveltejs/kit'
+
 export const GET = () => {
   const message = 'Hello!'
-
-  const options = {
-    status: 200,
-    headers: {
-      'content-type': 'application/json'
-    }
-  }
-
-  return new Response(
-    JSON.stringify(message),
-    options
-  )
+  return json(message)
 }
 ```
 
-The new way is definitely a little more verbose. I also want to emphasize: **the new way takes a lot of updates.** Even if you use the conversion script mentioned above, you'll still need to adjust your endpoints' responses; adjust relative file paths (since SvelteKit's new routing syntax often requires nesting files a level deeper); and handle both the data conversion _and_ the response headers yourself.
-
-That's a lot to do.
-
-However, all that said: the new approach _also_ gives us more fine-grained control over our API responses; we can return _any_ kind of data in [the spec](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response#parameters). So while converting from the old syntax to the new is a big pain, at the end of the conversion, we at least have much more full control.
+Even if you use the conversion script mentioned above, you'll still need to adjust your endpoints' responses; adjust relative file paths (since SvelteKit's new routing syntax often requires nesting files a level deeper); and handle implementing the `json()` responses.
 
 The only other big difference to be aware of--which you may have noticed already--is that the HTTP verb functions accepted by a server route (endpoint) now must be capitalized.
 
@@ -356,7 +373,12 @@ return {
 // New:
 import { error } from '@sveltejs/kit'
 
-throw error(400, 'not found')
+try {
+  //return something here
+}
+catch({ message }) {
+  throw error(400, message)
+}
 ```
 
 
@@ -374,7 +396,7 @@ As with pages, you may need to create new named folders for any server routes (A
 
 You'll also need to convert any HTTP verb function names to all-uppercase (`get` becomes `GET`, `post` becomes `POST`, etc.)
 
-And rather than `return` a JavaScript object with a `status` and `body`, you'll need to return a `new Response()` constructor, which takes two arguments: body, and options.
+And rather than `return` a JavaScript object with a `status` and `body`, you'll need to either use SvelteKit's `json` helper (if returning JSON); or, return a `new Response()` constructor, which takes two arguments: body, and options.
 
 
 ## Wrapup

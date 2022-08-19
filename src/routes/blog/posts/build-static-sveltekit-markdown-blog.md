@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-08-18"
+updated: "2022-08-19"
 categories: 
   - "svelte"
   - "javascript"
@@ -78,7 +78,7 @@ When you run that `init` command, SvelteKit will ask you some questions about yo
 
 ![SvelteKit's setup prompt for which type of project you want to create; boilerplate, or demo](/images/post_images/sveltekit-init.png)
 
-We'll select the "Skeleton project" option.
+We'll select the "Skeleton project" option. (_Note: **not** "Library skeleton project;" we're just building a site, not a library._)
 
 <SideNote>
 If this is your very first time using SvelteKit, feel free to choose "SvelteKit demo app," poke around a bit to get a sense of how things work, then come back. It's a good intro, but it comes with several files and styles that would be a lot to undo as a starter.
@@ -805,71 +805,70 @@ In order to do that handling, however, we'll need to lean on the `load` function
 
 #### Preloading page data server-side
 
-In addition to `+page.svelte`—which, as we've seen, renders a given route's content—SvelteKit offers us an additional `+page.server.js` file, which _preloads_ on the server before the page renders.
+In addition to `+page.svelte`—which, as we've seen, renders a given route's content—SvelteKit offers us an additional `+page.js` file, which _preloads_ on the server before the page renders. It _also_ runs on the client, for hydration purposes (if needed)!
 
 Let's back up and explain that a little more:
 
-Every time you load a route in SvelteKit (`/blog`, for example), the router looks for a `+page.server.js` file at that route.
+Every time you load a route in SvelteKit (`/blog`, for example), the router looks for a `+page.js` file at that route.
 
 If that file exists (and exports a `load` function, as it should), SvelteKit will run that function on the server _before_ rendering the `+page.svelte` route, ***and*** will _pass_ any data returned along to the `+page.svelte` file.
 
-In other words: `+page.server.js` runs first, then passes anything it needs to on to the `+page.svelte` template file to render.
+In other words: `+page.js` runs first, then passes anything it needs to on to the `+page.svelte` template file to render.
 
 <SideNote>
 If you prefer TypeScript, you can use a <code>.ts</code> file instead of <code>.js</code>.
 </SideNote>
 
-Since we're doing some dynamic things, we'll need to lean on the preloading capabilities of `+page.server.js`. So let's create that file now:
+Since we're doing some dynamic things, we'll need to lean on the preloading capabilities of `+page.js`. So let's create that file now:
 
 ```fs
 📂 src
 ┗ 📂 routes
   ┗ 📂 blog
     ┗ 📂 [slug]
-      ┗ +page.server.js
+      ┗ +page.js
 ```
 
-Inside `+page.server.js`, we'll just need to export a `load` function that returns data for the template to use. Minimally, here's what that should look like:
+Inside `+page.js`, we'll just need to export a `load` function that returns data for the template to use. Minimally, here's what that should look like:
 
 ```js
-// src/routes/blog/[slug]/+page.server.js
+// src/routes/blog/[slug]/+page.js
 export async function load({ params }) {
   const post = await import(`../${params.slug}.md`)
   const { title, date } = post.metadata
-  const content = post.default.render().html
+  const Content = post
   
   return {
     title,
     date,
-    content
+    Content
   }
 }
 ```
 
 Let's go through that code quickly, to understand what it's doing:
 
-- Most importantly: `+page.server.js` exports a `load` function that attempts to load the Markdown file corresponding to the current route.
+- Most importantly: `+page.js` exports a `load` function that attempts to load the Markdown file corresponding to the current route.
   - By the way, `params.slug` is called that because we named our route `[slug]`. If we had named our dynamic route, for example, `[pizza]`, we would reach for `params.pizza` instead.
 - Once we've got that file loaded asynchronously, we destructure and `return` what we plan to use. (This will be available to us in our template, which we'll see in a moment.)
 
   We wouldn't _have_ to return individual props like this; we _could_ just return the whole `post`. But I like to destructure a bit on the server, to keep the template file lighter.
-  - The actual HTML of the post requires a little bit of drilling, down to `post.default.render().html`. That's a bit inconvenient, but it'll give us what we want.
 - Ideally, we'd wrap this all in a `try`/`catch` block in case something went wrong, but this is the minimal working model.
 
-That in place, we can create a `+page.svelte` file alongside our `+page.server.js` file. We've loaded our data; now we're ready to use it.
+That in place, we can create a `+page.svelte` file alongside our `+page.js` file. We've loaded our data; now we're ready to use it.
 
 ```fs
 📂 src
 ┗ 📂 routes
   ┗ 📂 blog
     ┗ 📂 [slug]
-      ┣ +page.server.js
+      ┣ +page.js
       ┗ +page.svelte
 ```
 
 Inside `+page.svelte`, we need very little code to finish the job!
 
-The data from the `load` function in `+page.server.js` is automatically available to use as the `data` prop. So all we need to do is export that prop (so it gets passed in), and then use it!
+The data from the `load` function in `+page.js` is automatically available to use as the `data` prop. So all we need to do is export that prop (so it gets passed in), and then use it!
 
 ```svelte
 <!-- src/routes/[slug]/+page.svelte -->
@@ -882,15 +881,19 @@ export let data
 
   <p>Published: {data.date}</p>
 
-  {@html data.content}
+  <data.Content />
 </article>
 ```
-
 
 That in place, now when we load a blog post, we should see everything!
 
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
+<SideNote>
+This works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file. So, <code>data.Content</code> is the actual Markdown component! (That's why the name <code>Content</code> needed to be capitalized.)
+<br /><br />
+Alternatively, you could return <code>post.default.render().html</code> from the Markdown, and render it in the template using Svelte's <a href="https://svelte.dev/tutorial/html-tags"><code>@html</code> tag</a>.
+</SideNote>
 
 ---
 
@@ -916,12 +919,6 @@ There are just three important conventions to follow when creating a server rout
 3. Server routes must return a new `Response`. (_Here's the [Response web spec](https://developer.mozilla.org/en-US/docs/Web/API/Response)_.)
 
 As an example: if you made `src/routes/api/+server.js` and put a `GET` function inside it, any `GET` request to `/api` would invoke that function.
-
-<SideNote>
-I know the naming is confusing, but don't get <code>+server.js</code> confused with <code>+page.server.js</code>. 
-<br/><br/>
-If a file has "<code>page</code>" in its name, it's meant for pages visited in the browser. Otherwise, it's meant just for API usage.
-</SideNote>
 
 **Why a server route?** Because we might have other places in our app we want to access these posts, too. Odds are, we'll have more than one place where accessing all our posts is handy, and having an endpoint reduces the overhead of rewriting that code.
 
@@ -1028,6 +1025,7 @@ Inside our `+server.js` file from above, we'll put the following code:
 ```js
 // src/routes/api/posts/+server.js
 import { fetchMarkdownPosts } from '$lib/utils'
+import { json } from '@sveltejs/kit'
 
 export const GET = async () => {
   const allPosts = await fetchMarkdownPosts()
@@ -1036,17 +1034,7 @@ export const GET = async () => {
     return new Date(b.meta.date) - new Date(a.meta.date)
   })
 
-  const responseOptions = {
-    status: 200,
-    headers: {
-      'content-type': 'application/json'
-    }
-  }
-
-  return new Response(
-    JSON.stringify(sortedPosts),
-    responseOptions
-  )
+  return json(sortedPosts)
 }
 ```
 
@@ -1055,10 +1043,10 @@ That might look like a lot, but when you consider it's actually _everything_ we 
 
 **Let's go over what's happening in that code:**
 
-- First, we import and use the `fetchMarkdownPosts` helper function we created above, to return all the Markdown post data.
+- First, we import and use the `fetchMarkdownPosts` helper function we created above, to return all the Markdown post data. 
+- We _also_ import the handy `json` helper from SvelteKit. It handles converting the data to JSON and setting the proper headers for us automatically!
 - Next, we sort the posts by descending date, since we'll want our newest posts showing first. (You _could_ sort the posts in the helper, but in my opinion, logic belongs in the endpoint.) 
-- Next we set the response code and content type in a new `responseOptions` object.
-- Finally, we `return` the finished product as a `new Response`, stringified into JSON, along with the response options.
+- Finally, we `return` the finished product inside the `json()` function.
 
 **Let's try it out!** Refresh your `/api/posts` path now, and you should see some _real_ data!
 
@@ -1080,16 +1068,18 @@ We _could_ do the loading client-side, with a `fetch` call in an `onMount` funct
 
 ### Server-side post fetching
 
-Remember, we can add a `+page.server.js` file alongside our `+page.svelte` files. `+page.server.js` contains a `load` function that runs _before_ the route is loaded--making it perfect for fetching API data, such as our blog posts.
+Remember how we can add a `+page.js` file alongside our `+page.svelte` files, which pre-runs a `load` funcion? Well, that makes it perfect for fetching API data, such as our blog posts!
 
 Other important things to know about the `load` function:
 
-- **It has contextual access to a few special arguments** (including `url` and `params`, which contain info about the request).
-- **It should return an object**. It doesn't matter what's in the object, but the whole thing will be available for you to use in the page route.
-- **`+page.server.js` runs _only_ server-side.** That's mostly unimportant when prerendering to static files, as we are. Still, `load` shouldn't reference client-specific things, like `window`. (If you _want_ to run `load` both on the client _and_ on the server, use `+page.js` instead.)
+- **It has contextual access to a few special arguments**. These include:
+  - `url` and `params`, which contain info about the request; and 
+  - `fetch`, which is a helper to normalize the `fetch` implementation (since it differs between the browser and Node)
+- **`load` should return an object**. It doesn't matter what's in the object, but the whole thing will be available for you to use as `data`.
+- **`+page.js` runs _both_ server-side and client-side.** That's mostly unimportant when prerendering to static files, as we are. Still, `load` shouldn't reference environment-specific things, like `window` or `process`. (If you _want_ to run `load` _only_ on the server, use `+page.server.js` instead. Just note that it has `fetch` available natively.)
 
 ```js
-// src/routes/blog/+page.server.js
+// src/routes/blog/+page.js
 export const load = async ({ fetch }) => {
   const response = await fetch(`/api/posts`)
   const posts = await response.json()
@@ -1100,9 +1090,7 @@ export const load = async ({ fetch }) => {
 }
 ```
 
-Notice how we use the `url` parameter and interpolate `url.origin` into our `fetch` request. That's because without a domain, `fetch` won't work server-side.
-
-Anyhow, that tiny bit of pre-loading handles everything we need! Now we've got a `posts` prop being passed to the component (again, as `data`), and we can use it to loop over and render posts in the corresponding `+page.svelte` file:
+That tiny bit of pre-loading handles everything we need! Now we've got a `posts` being passed to the component (again, as `data`), and we can use it to loop over and render posts in the corresponding `+page.svelte` file:
 
 ```svelte
 <!-- src/routes/blog/+page.svelte -->
@@ -1245,20 +1233,21 @@ From here, we'll do much the same as we did with the dynamic `[slug]` path earli
     ┗ 📂 category
       ┗ 📂 [category]
         ┣ +page.svelte
-        ┗ +page.server.js
+        ┗ +page.js
 ```
 
 <SideNote>
-A reminder: the word <code>category</code> isn't special; it's just a variable. But as with any variable, it's good to name it semantically. We'll access <code>params.category</code> inside <code>+page.server.js</code>.
+A reminder: the word <code>category</code> isn't special; it's just a variable. But as with any variable, it's good to name it semantically. We'll access <code>params.category</code> inside <code>+page.js</code>.
 </SideNote>
 
 Once you've created those, you may notice you can actually visit `/blog/category/` followed by any text, and you won't get a 404. The dynamic route handles _all_ unmatched `/blog/category/*` routes. The trick now is just to load the right content based on the route.
 
-Just to get an idea of what we're working with, let's start with any JavaScript developer's best friend: `console.log`, inside of `+page.server.js` and its `load` function.
+Just to get an idea of what we're working with, let's start with any JavaScript developer's best friend: `console.log`, inside of `+page.js` and its `load` function.
 
 ```js
 // src/routes/blog/category/[category]/+page.js
 export const load = ({ params }) => {
+  console.log(params)
   return {}
 }
 ```
@@ -1272,7 +1261,7 @@ Notice if you load a blog category page now, you can see `params` in the browser
 Knowing that the current `/blog/category/*` route will be available as `params.category`, we can get to work. We'll use that, and our existing API endpoint, to filter posts. Let's modify our `+page.js` file:
 
 ```js
-// src/routes/blog/category/[category]/+page.server.js
+// src/routes/blog/category/[category]/+page.js
 export const load = async ({ fetch, params }) => {
   const { category } = params
   const response = await fetch(`/api/posts`)
@@ -1294,7 +1283,7 @@ I won't go into how to render the matching content, but it's almost identical to
 
 Also: it's probably a good idea to wrap that code in a `try`/`catch` block--and for that matter, to anticipate situations where no posts will match the given category, and handle that properly in the UI. (An `{#if posts.length}` block with an `{:else}` should do the trick.)
 
-Elsewhere, inside the `[slug]/+page.svelte` template, listing a post's categories just requires grabbing the prop and looping over it. (Just be sure to add `categories` to the returned object from the corresponding `[slug]/+page.server.js` file--or, if using an mdsvex layout, to the layout's exported props.)
+Elsewhere, inside the `[slug]/+page.svelte` template, listing a post's categories just requires grabbing the prop and looping over it. (Just be sure to add `categories` to the returned object from the corresponding `[slug]/+page.js` file--or, if using an mdsvex layout, to the layout's exported props.)
 
 ```svelte
 <!-- src/routes/blog/[slug]/+page.svelte -->
