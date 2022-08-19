@@ -1,29 +1,14 @@
-<script context="module" lang="ts">
-  import type { LoadOutput } from '@sveltejs/kit'
-  import fetchPosts from '$lib/assets/js/utils/fetchPosts'
-
-	export const load = async ({ params }): Promise<LoadOutput> => {
-    const { category } = params
-
-		const posts  = await fetchPosts({ category })
-
-		return {
-			props: { 
-        posts,
-        category
-      }
-		}
-	}
-</script>
-
 <script lang="ts">
+  import type { PageData } from './$types'
   import type Post from '$lib/types/post'
-
+  
   import Main from '$lib/components/Main.svelte'
   import PostList from '$lib/components/posts/PostList.svelte'
+  
+  export let data: PageData
 
-  export let posts: Post[]
-  export let category: string
+  let posts: Post[] = data.posts
+  let category: string = data.category
 </script>
 
 

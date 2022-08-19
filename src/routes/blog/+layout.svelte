@@ -1,37 +1,16 @@
-<script context="module" lang="ts">
-	import type { LoadOutput } from '@sveltejs/kit'
-
-	export const load = async ({ fetch }): Promise<LoadOutput> => {
-    const rss = await fetch('/api/rss.xml') // This isn't used; it's just here to make sure the route gets prerendered
-		const res = await fetch('/api/posts.json')
-		const resJSON = await res.json()
-		
-		const recentPosts = resJSON.posts
-			.map(post => ({ slug: post.slug, title: post.title }))
-			.slice(0, 5)
-		
-		const allCategories = Array.from(new Set(resJSON.posts.flatMap(p => p.categories)))
-
-		return {
-			props: {
-				recentPosts,
-				allCategories
-			}
-		}
-	}
-</script>
-
-
 <script lang="ts">
+  import type { LayoutData } from './$types'
   import type Post from '$lib/types/post'
-  
   import Sidebar from '$lib/components/Sidebar.svelte'
   import { prefersReducedData } from '$lib/assets/js/utils'
   import { prefetch } from '$app/navigation'
   import { onMount } from 'svelte'
+  
+  export let data: LayoutData
 
-  export let recentPosts: Post[]
-  export let allCategories: string[]
+  let recentPosts: Post[]
+  let allCategories: string[]
+  $: ({ recentPosts, allCategories } = data)
 
   onMount(() => {
     if (!prefersReducedData()) {

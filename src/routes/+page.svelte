@@ -150,7 +150,7 @@
 .big-boi {
   display: none;
   float: right;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-family: var(--headingFont);
 
   @media (min-width: vars.$xxxl) {

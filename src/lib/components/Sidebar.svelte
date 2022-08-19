@@ -3,7 +3,7 @@
 
   import TagList from './tags/TagList.svelte'
   import Tag from './tags/Tag.svelte'
-  // import PostSearch from './PostSearch.svelte'
+  import PostSearch from './PostSearch.svelte'
   
   export let recentPosts: Post[]
   export let allCategories: string[]
@@ -11,7 +11,7 @@
 
 
 <aside class="sidebar">
-  <!-- <PostSearch /> -->
+  <PostSearch />
 
   <h2>Recent blog posts</h2>
 

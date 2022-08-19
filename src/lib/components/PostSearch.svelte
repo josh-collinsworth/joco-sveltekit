@@ -8,6 +8,7 @@
 
   const handleSearchInput = () => {
     isWorking = true
+    results = []
     sendSearchRequest()
   }
 
@@ -18,8 +19,8 @@
       return
     }
 
-    const response = await fetch('/api/posts.json')
-    const { posts } = await response.json()
+    const response = await fetch('/api/posts.json?limit=-1')
+    const posts = await response.json()
 
     const filteredPosts = await posts.filter(post => {
       return post.title.toLowerCase().includes(searchString.toLowerCase())
@@ -31,9 +32,11 @@
 </script>
 
 <div class="search-wrap">
+  <label for="post-search" class="sr">Search post titles</label>
   <input
     bind:value={searchString}
     on:input={handleSearchInput}
+    id="post-search"
     class="search"
     type="search"
     placeholder="Search post titles"
@@ -61,13 +64,22 @@
     </ul>
   {:else if searchString && !isWorking}
     <ul class="results">
-      <li>Sorry, no matching posts.</li>
+      <li>
+        Sorry, no matching post titles. 
+        {#if searchString.includes(' ')}
+          Try fewer words and/or removing spaces.
+        {/if}
+      </li>
     </ul>
   {/if}
 </div>
 
 
 <style lang="scss">
+  .search {
+    font-size: 0.8em;
+  }
+
   .search-wrap {
     position: relative;
 

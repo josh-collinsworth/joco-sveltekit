@@ -40,7 +40,7 @@ const fetchPosts = async ({ offset = 0, limit = 10, category = '' }: PostsEndpoi
   if (limit && limit < sortedPosts.length) {
     sortedPosts = sortedPosts.slice(0, limit)
   }
-  
+
   const finalPosts = sortedPosts.map(post => ({
     title: post.title,
     slug: post.slug,

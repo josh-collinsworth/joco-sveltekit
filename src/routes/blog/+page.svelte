@@ -1,31 +1,18 @@
-<script context="module" lang="ts">
-	import type { LoadOutput } from '@sveltejs/kit'
-
-	export const load = async ({ fetch }): Promise<LoadOutput> => {
-		const res = await fetch(`/api/posts.json`)
-		const { posts } = await res.json()
-		
-		const count = await fetch(`/api/posts/count.json`)
-		const { total } = await count.json()
-
-		return {
-			props: { 
-				posts, 
-				totalPosts: total 
-			}
-		}
-	}
-</script>
-
 <script lang="ts">
+	// throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+	// Suggestion (check code before using, and possibly convert to data.X access later):
+	import type { PageData } from './$types';
+	export let data: PageData;
+	$: ({ posts, totalPosts } = data);
+
 	import type Post from '$lib/types/post'
 	
 	import Main from '$lib/components/Main.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
 	import PostList from '$lib/components/posts/PostList.svelte'
 	
-	export let posts: Post[] = []
-	export let totalPosts: number
+	// export let posts: Post[] = []
+	// export let totalPosts: number
 </script>
 
 

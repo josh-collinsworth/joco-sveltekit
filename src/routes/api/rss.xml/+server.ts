@@ -1,9 +1,9 @@
-import type RSSResponse from '$lib/types/rss-response'
+// TODO: types
 import type Post from '$lib/types/post'
 
 import { fetchPosts } from '$lib/assets/js/utils'
 
-export const get = async (): Promise<RSSResponse> => {
+export const GET = async () => {
   const data = await fetchPosts()
 
   const body: string = render(data)
@@ -11,11 +11,13 @@ export const get = async (): Promise<RSSResponse> => {
     'Cache-Control': `max-age=0, s-maxage=3600`,
     'Content-Type': 'application/xml',
   }
-  return {
-    status: 200,
+  return new Response(
     body,
-    headers,
-  }
+    {
+      status: 200,
+      headers,
+    }
+  )
 }
 
 const render = (posts: Post[]): string => `<?xml version="1.0" encoding="UTF-8" ?>

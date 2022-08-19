@@ -1,18 +1,10 @@
-<script context="module" lang="ts">
-	import type { LoadOutput } from '@sveltejs/kit'
-
-  export const load = async (): Promise<LoadOutput> => {
-		const Uses = await import('$lib/content/uses.md')
-		
-		return {
-			props: {
-				Uses: Uses.default
-			}
-		}
-	}
-</script>
-
 <script lang="ts">
+	// throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+	// Suggestion (check code before using, and possibly convert to data.X access later):
+	import type { PageData } from './$types';
+	export let data: PageData;
+	$: ({ Uses } = data);
+
 	import type { SvelteComponent } from 'svelte'
 	import Main from '$lib/components/Main.svelte'
   

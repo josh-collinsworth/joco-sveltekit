@@ -1,5 +1,3 @@
-<script>null</script>
-
 <ul class="homepage-link-list">
   <li>
     <span role="img" alt="" aria-hidden="true">💻</span>

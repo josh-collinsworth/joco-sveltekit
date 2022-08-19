@@ -1,47 +1,11 @@
-<script context="module" lang="ts">
-  import type { LoadOutput } from '@sveltejs/kit'
-
-  interface category {
-    title: string;
-    count: number;
-  }
-
-	export const load = async ({ fetch }): Promise<LoadOutput> => {
-		const res = await fetch(`/api/posts.json`)
-		let { posts } = await res.json()
-
-    let uniqueCategories = {}
-
-    posts.forEach(post => {
-      post.categories.forEach(category => {
-        if (uniqueCategories.hasOwnProperty(category)) {
-          uniqueCategories[category].count += 1
-        } else {
-          uniqueCategories[category] = {
-            title: category,
-            count: 1
-          }
-        }
-      })
-    })
-
-    const sortedUniqueCategories = 
-      Object.values(uniqueCategories)
-        .sort((a, b) => a.title > b.title)
-
-		return {
-			props: { 
-        uniqueCategories: sortedUniqueCategories
-      }
-		}
-	}
-</script>
-
-
 <script lang="ts">
+  import type { PageData } from './$types'
+  import type category from '$lib/types/category'
   import Main from '$lib/components/Main.svelte'
 
-  export let uniqueCategories: category[]
+  export let data: PageData;
+
+  let uniqueCategories: category[] = data.uniqueCategories
 </script>
 
 

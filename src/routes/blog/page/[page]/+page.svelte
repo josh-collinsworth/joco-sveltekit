@@ -1,44 +1,52 @@
 <script context="module" lang="ts">
-  import type { LoadOutput } from '@sveltejs/kit'
-  import { fetchPosts } from '$lib/assets/js/utils'
+  throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
 
-  export const load = async ({ fetch, params }): Promise<LoadOutput> => {
-    try {
-      const page = params.page ? params.page : 1
+  // import type { LoadOutput } from '@sveltejs/kit'
+  // import { fetchPosts } from '$lib/assets/js/utils'
 
-      if (page <= 1) {
-        return {
-          status: 301,
-          redirect: '/blog'
-        }
-      }
-      
-      let offset = page * 10 - 10
-      
-      const posts = await fetchPosts({ offset, limit: 10 })
-      
-      const count = await fetch(`/api/posts/count.json`)
-      const { total } = await count.json()
-      
-      return {
-        status: 200,
-        props: {
-          posts,
-          page,
-          totalPosts: total
-        }
-      }
-    } catch(error) {
-      return {
-        status: 404,
-        error: error.message
-      }
-    }
-  }
+  // export const load = async ({ fetch, params }): Promise<LoadOutput> => {
+  //   try {
+  //     const page = params.page ? params.page : 1
+
+  //     if (page <= 1) {
+  //       return {
+  //         status: 301,
+  //         redirect: '/blog'
+  //       }
+  //     }
+  //     
+  //     let offset = page * 10 - 10
+  //     
+  //     const posts = await fetchPosts({ offset, limit: 10 })
+  //     
+  //     const count = await fetch(`/api/posts/count.json`)
+  //     const { total } = await count.json()
+  //     
+  //     return {
+  //       status: 200,
+  //       props: {
+  //         posts,
+  //         page,
+  //         totalPosts: total
+  //       }
+  //     }
+  //   } catch(error) {
+  //     return {
+  //       status: 404,
+  //       error: error.message
+  //     }
+  //   }
+  // }
 </script>
 
 
 <script lang="ts">
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+  // Suggestion (check code before using, and possibly convert to data.X access later):
+  // import type { PageData } from './$types';
+  // export let data: PageData;
+  // $: ({ posts, page, totalPosts } = data);
+
   import type Post from '$lib/types/post'
   import PostList from '$lib/components/posts/PostList.svelte'
   import Main from '$lib/components/Main.svelte'

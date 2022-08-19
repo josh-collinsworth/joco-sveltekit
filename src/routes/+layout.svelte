@@ -1,18 +1,8 @@
-<script context="module" lang="ts">
-	import type { LoadOutput } from '@sveltejs/kit'
-
-	export const load = async ({ url }): Promise<LoadOutput> => {
-		const path: string = url.pathname
-
-		return {
-			props: {
-				path
-			}
-		}
-	}
-</script>
-
 <script lang="ts">
+	// throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+	// Suggestion (check code before using, and possibly convert to data.X access later):
+	// import type { LayoutData } from './$types';
+  
 	import '$lib/assets/scss/global.scss'
 	
 	import throttle from 'just-throttle'
@@ -27,7 +17,11 @@
 	import { prefetch } from '$app/navigation'
 	import { dev } from '$app/env'
 	
-	export let path: string
+	export let data
+  
+  let path: string
+	$: ({ path } = data)
+	// export let path: string
 
 	let lastScrollPosition: number = 0
 	const isSinglePostCheck: RegExp = new RegExp(/\/blog\/[A-z0-9\-_]+\/?$/)

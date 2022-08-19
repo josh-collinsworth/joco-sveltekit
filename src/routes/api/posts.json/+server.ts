@@ -1,8 +1,9 @@
-import type APIResponse from '$lib/types/api-response'
 import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
 import { fetchPosts } from '$lib/assets/js/utils'
+import { error } from '@sveltejs/kit'
 
-export const get = async ({ url }): Promise<APIResponse> => {
+// TODO: types
+export const GET = async ({ url }) => {
 	const params = new URLSearchParams(url.search)
 
 	const options: PostsEndpointOptions = {
@@ -10,22 +11,26 @@ export const get = async ({ url }): Promise<APIResponse> => {
 		limit: parseInt(params.get('limit')) || 10
 	}
 
+  const responseOptions = {
+    status: 200,
+    headers: {
+      'content-type': 'application/json'
+    }
+  }
+
 	try {
 		const posts = await fetchPosts({ ...options })
-		return {
-			status: 200,
-			body: {
-				posts
-			}
-		}
+
+		return new Response(
+			JSON.stringify(posts),
+      responseOptions
+    )
 	}
 
 	catch {
-		return {
-			status: 500,
-			body: {
-				error: 'Could not fetch posts.'
-			}
-		}
+		throw error(
+			500,
+			'could not fetch posts'
+    )
 	}
 }

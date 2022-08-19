@@ -1,23 +1,11 @@
-<script context="module" lang="ts">
-  import type { SvelteComponent } from 'svelte'
-  import type { LoadOutput } from '@sveltejs/kit'
-
-  export const load = async (): Promise<LoadOutput> => {
-		const resume: SvelteComponent = await import('$lib/content/resume.md')
-		
-		return {
-			props: {
-				Resume: resume.default
-			}
-		}
-	}
-</script>
-
-
 <script lang="ts">
+  import type { PageData } from './$types'
+  export let data: PageData
+  $: ({ Resume } = data)
+
   import Main from '$lib/components/Main.svelte'
 
-  export let Resume: SvelteComponent
+  // export let Resume: SvelteComponent
 </script>
 
 

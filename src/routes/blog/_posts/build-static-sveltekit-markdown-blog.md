@@ -1259,7 +1259,6 @@ Just to get an idea of what we're working with, let's start with any JavaScript 
 ```js
 // src/routes/blog/category/[category]/+page.js
 export const load = ({ params }) => {
-  console.log(params)
   return {}
 }
 ```
@@ -1402,7 +1401,6 @@ const siteDescription = 'Your site description here'
 export const GET = async () => {
   const allPosts = await fetchMarkdownPosts()
   const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
-  console.log(sortedPosts)
 
   const body = render(sortedPosts)
   const options = {
