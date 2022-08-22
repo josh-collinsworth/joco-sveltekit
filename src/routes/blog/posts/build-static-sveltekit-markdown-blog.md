@@ -1619,7 +1619,7 @@ For starters, we'll definitely want to put the code we just wrote into a `try`/`
 Our API is currently missing pagination options, which could be very needed depending on the number of&nbsp;posts.
 </CalloutPlusQuote>
 
-Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render` method for that, if you so choose. (We saw it previously, in the `src/routes/[slug]/+page.server.js` file.)
+Another possible future enhancement would be adding the post's content to the returned JSON, which we don't do currently. The "resolver" function offers a `default.render` method for that, if you so choose. (We saw it previously, in the `src/routes/[slug]/+page.js` file.)
 
 
 ### Customize the error page
