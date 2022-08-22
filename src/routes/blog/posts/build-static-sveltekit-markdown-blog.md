@@ -188,7 +188,7 @@ Inside of `src/routes`, make a new file named `+layout.svelte`.
   ┗ 📜 +layout.svelte
 ```
 
-**This name is a SvelteKit convention.** SvelteKit automatically checks `routes` (and all its subdirectories) for a `+layout.svelte` file. That layout will "wrap" all the content loaded from that route and its sub-routes. 
+**This file has a special role**: SvelteKit automatically checks `routes` (and all its subdirectories) for a `+layout.svelte` file. That layout will "wrap" all the content loaded from that route and its sub-routes. 
 
 <CalloutPlusQuote>
 A layout becomes a parent component, and the current page will be slotted in as its child component.
@@ -271,7 +271,7 @@ import Header from '$lib/components/Header.svelte'
 <!-- The rest of the HTML here -->
 ```
 
-**Notice the import path.** `$lib` is a handy alias that goes directly to `src/lib`, saving you from typing tedious relative paths. (`$lib` is the only alias SvelteKit ships with, but you can add your own, from `jsconfig.json`.)
+**Notice the import path.** `$lib` is a handy alias that goes directly to `src/lib`, saving you from typing tedious relative paths. (You can customize this alias or add your own in `jsconfig.json`, but I won't cover that here.)
 
 Anyway, now we should see something _slightly_ more user-friendly in our browser:
 
@@ -339,7 +339,7 @@ Create a new folder inside of `src/lib` for your styles, and add a `style.css` f
 ```
 
 <SideNote>
-There are no rules about how you structure things inside of <code>src/lib</code>. Feel free to organize your folders however you like.
+There are no rules about how you structure things inside of <code>src/lib</code>. You aren't even required to use <code>lib</code> at all. Feel free to organize your folders however you like.
 </SideNote>
 
 You can add whatever CSS you prefer, but if you need a suggestion, here's a little bit of boilerplate that should begin to get things looking _slightly_ better:
@@ -377,7 +377,7 @@ import '$lib/styles/style.css'
 Since SvelteKit is server-rendered, if you view the page source, you'll even see our style has been added to the HTML, rather than being client-rendered. Neat!
 
 <SideNote>
-Importing stylesheets in JavaScript files is not a web standard; it's just supported by some bundlers and build tools, popularized by React and Webpack.
+Importing stylesheets in JavaScript files is not a web standard; it's just supported by some bundlers and build tools.
 </SideNote>
 
 
@@ -392,10 +392,6 @@ Our next step is to install both `svelte-preprocess` and `sass`, which we may as
 ```bash
 npm i -D svelte-preprocess sass
 ```
-
-<SideNote>
-This command installs the most modern version of Sass, which isn't compatible with all versions of Node. If you hit errors, you may need to upgrade your Node version, or install the older <code>node-sass</code> instead.
-</SideNote>
 
 
 #### Modifying the Svelte config
@@ -782,6 +778,10 @@ To start, let's dump all our Markdown posts into the `blog` folder:
 
 Notice at this point, `/blog/1` and `/blog/2` won't load. That's because every route on our site needs a `+page.svelte` (or other valid `+` file) to render.
 
+<SideNote>
+You could also create a subfolder for your Markdown posts, or even put them somewhere else entirely, if you like. Anywhere is fine; I just chose the simplest path. If you change their location, just be sure to adjust the file paths in the code.
+</SideNote>
+
 So how _do_ we load a given post's content? Well, that's where we (finally) get around to dynamic routes!
 
 Create a `[slug]` folder inside `src/routes/blog` (including the brackets in the name of the folder).
@@ -815,6 +815,16 @@ If that file exists (and exports a `load` function, as it should), SvelteKit wil
 
 In other words: `+page.js` runs first, then passes anything it needs to on to the `+page.svelte` template file to render.
 
+Here's an illustration:
+
+```fs
+📂 src
+┗ 📂 routes
+  ┗ 📂 any-route
+    ┣ 📜 +page.js -- Preloads data
+    ┗ 📜 +page.svelte -- Renders the page
+```
+
 <SideNote>
 If you prefer TypeScript, you can use a <code>.ts</code> file instead of <code>.js</code>.
 </SideNote>
@@ -834,14 +844,13 @@ Inside `+page.js`, we'll just need to export a `load` function that returns data
 ```js
 // src/routes/blog/[slug]/+page.js
 export async function load({ params }) {
-  const post = await import(`../${params.slug}.md`)
-  const { title, date } = post.metadata
-  const Content = post
+  const Post = await import(`../${params.slug}.md`)
+  const { title, date } = Post.metadata
   
   return {
+    Post,
     title,
-    date,
-    Content
+    date
   }
 }
 ```
@@ -850,9 +859,9 @@ Let's go through that code quickly, to understand what it's doing:
 
 - Most importantly: `+page.js` exports a `load` function that attempts to load the Markdown file corresponding to the current route.
   - By the way, `params.slug` is called that because we named our route `[slug]`. If we had named our dynamic route, for example, `[pizza]`, we would reach for `params.pizza` instead.
-- Once we've got that file loaded asynchronously, we destructure and `return` what we plan to use. (This will be available to us in our template, which we'll see in a moment.)
+- Once we've got that file loaded asynchronously, we destructure and `return` what we plan to use. (This will be available to us in our template, which we'll see in a moment.) `metadata` contains all the post's frontmatter properties.
 
-  We wouldn't _have_ to return individual props like this; we _could_ just return the whole `post`. But I like to destructure a bit on the server, to keep the template file lighter.
+  We wouldn't _have_ to return individual frontmatter fields like this; we _could_ just return the whole post. But I like to destructure a bit on the server, to keep the template file cleaner.
 - Ideally, we'd wrap this all in a `try`/`catch` block in case something went wrong, but this is the minimal working model.
 
 That in place, we can create a `+page.svelte` file alongside our `+page.js` file. We've loaded our data; now we're ready to use it.
@@ -881,7 +890,7 @@ export let data
 
   <p>Published: {data.date}</p>
 
-  <data.Content />
+  <data.Post />
 </article>
 ```
 
@@ -890,9 +899,9 @@ That in place, now when we load a blog post, we should see everything!
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
 <SideNote>
-This works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file. So, <code>data.Content</code> is the actual Markdown component! (That's why the name <code>Content</code> needed to be capitalized.)
+This works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file. So, <code>data.Post</code> is the actual Markdown component! (That's why the name <code>Content</code> needed to be capitalized.)
 <br /><br />
-Alternatively, you could return <code>post.default.render().html</code> from the Markdown, and render it in the template using Svelte's <a href="https://svelte.dev/tutorial/html-tags"><code>@html</code> tag</a>.
+Alternatively, you could return <code>Post.default.render().html</code> from the Markdown, and render it in the template using Svelte's <a href="https://svelte.dev/tutorial/html-tags"><code>@html</code> tag</a>.
 </SideNote>
 
 ---
