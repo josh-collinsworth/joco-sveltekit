@@ -846,10 +846,10 @@ Inside `+page.js`, we'll just need to export a `load` function that returns data
 export async function load({ params }){
   const post = await import(`../${params.slug}.md`)
   const { title, date } = post.metadata
-  const Content = post.default
+  const content = post.default
 
   return {
-    Content,
+    content,
     title,
     date,
   }
@@ -860,7 +860,7 @@ Let's go through that code quickly, to understand what it's doing:
 
 - Most importantly: `+page.js` exports a `load` function that attempts to load the Markdown file corresponding to the current route.
   - By the way, `params.slug` is called that because we named our route `[slug]`. If we had named our dynamic route, for example, `[pizza]`, we would reach for `params.pizza` instead.
-- Once we've got that file loaded asynchronously, we destructure and `return` what we plan to use. (This will be available to us in our template, which we'll see in a moment.) `metadata` contains all the post's frontmatter properties.
+- Once we've got that file loaded asynchronously, we destructure and `return` what we plan to use. (This will be available to us in our template, which we'll see in a moment.) `.metadata` contains all the post's frontmatter properties, and `.default` contains the content itself.
 
   We wouldn't _have_ to return individual frontmatter fields like this; we _could_ just return the whole post. But I like to destructure a bit on the server, to keep the template file cleaner.
 - Ideally, we'd wrap this all in a `try`/`catch` block in case something went wrong, but this is the minimal working model.
@@ -889,7 +889,7 @@ The data from the `load` function in `+page.js` is automatically available to us
 <article>
   <h1>{ data.title }</h1>
   <p>Published: {data.date}</p>
-  <svelte:component this={data.Content} />
+  <svelte:component this={data.content} />
 </article>
 ```
 
@@ -898,7 +898,9 @@ That in place, now when we load a blog post, we should see everything!
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
 <SideNote>
-This works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file. So, <code>data.Content</code> is the actual Markdown component! (That's why the name <code>Content</code> needed to be capitalized; to distinguish it as a component, and not an HTML element.)
+In case you're not familiar, <code>&lt;svelte:component /&gt;</code> is what's called a dynamic component; it renders an arbitrary Svelte component (provided as the <code>this</code> prop value), when the exact component isn't known beforehand. Perfect in this situation, because we aren't sure <em>which</em> post's content will need to be rendered.
+<br /><br />
+Also: this works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file.
 </SideNote>
 
 **As an alternative syntax**: we could destructure all the `data` props, and use them individually. That's a little more setup, but it has the advantage of allowing you to use `Content` as its own component.
@@ -920,6 +922,10 @@ This is equivalent to the above:
 ```
 
 Which to use is up to you. I like the convenience of destructuring, personally, but it is also a little more boilerplate. They both work the same way.
+
+<SideNote>
+If you go with the second option, note that the content/component name (<code>Content</code>, in this case) <strong>must</strong> be capitalized, to distinguish it as a component.
+</SideNote>
 
 ---
 
