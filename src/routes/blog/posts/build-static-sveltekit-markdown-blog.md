@@ -843,14 +843,15 @@ Inside `+page.js`, we'll just need to export a `load` function that returns data
 
 ```js
 // src/routes/blog/[slug]/+page.js
-export async function load({ params }) {
-  const Post = await import(`../${params.slug}.md`)
-  const { title, date } = Post.metadata
-  
+export async function load({ params }){
+  const post = await import(`../${params.slug}.md`)
+  const { title, date } = post.metadata
+  const Content = post.default
+
   return {
-    Post,
+    Content,
     title,
-    date
+    date,
   }
 }
 ```
@@ -882,15 +883,13 @@ The data from the `load` function in `+page.js` is automatically available to us
 ```svelte
 <!-- src/routes/[slug]/+page.svelte -->
 <script>
-export let data
+  export let data;
 </script>
 
 <article>
-  <h1>{data.title}</h1>
-
+  <h1>{ data.title }</h1>
   <p>Published: {data.date}</p>
-
-  <data.Post />
+  <svelte:component this={data.Content} />
 </article>
 ```
 
@@ -899,10 +898,28 @@ That in place, now when we load a blog post, we should see everything!
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
 <SideNote>
-This works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file. So, <code>data.Post</code> is the actual Markdown component! (That's why the name <code>Content</code> needed to be capitalized.)
-<br /><br />
-Alternatively, you could return <code>Post.default.render().html</code> from the Markdown, and render it in the template using Svelte's <a href="https://svelte.dev/tutorial/html-tags"><code>@html</code> tag</a>.
+This works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file. So, <code>data.Content</code> is the actual Markdown component! (That's why the name <code>Content</code> needed to be capitalized; to distinguish it as a component, and not an HTML element.)
 </SideNote>
+
+**As an alternative syntax**: we could destructure all the `data` props, and use them individually. That's a little more setup, but it has the advantage of allowing you to use `Content` as its own component.
+
+This is equivalent to the above:
+
+```svelte
+<!-- Alternate approach! 👀 -->
+<script>
+  export let data
+  const { title, date, Content } = data
+</script>
+
+<article>
+  <h1>{title}</h1>
+  <p>Published: {date}</p>
+  <Content />
+</article>
+```
+
+Which to use is up to you. I like the convenience of destructuring, personally, but it is also a little more boilerplate. They both work the same way.
 
 ---
 
