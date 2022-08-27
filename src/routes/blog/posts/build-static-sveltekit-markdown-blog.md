@@ -924,7 +924,7 @@ This is equivalent to the above:
 Which to use is up to you. I like the convenience of destructuring, personally, but it is also a little more boilerplate. They both work the same way.
 
 <SideNote>
-If you go with the second option, note that the content/component name (<code>Content</code>, in this case) <strong>must</strong> be capitalized, to distinguish it as a component.
+If you go with the second option, note that the content/component name (<code>Content</code>, in this case) <strong>must</strong> be capitalized, to distinguish it as a component—both in the template and in the data returned from the <code>load</code> function.
 </SideNote>
 
 ---
