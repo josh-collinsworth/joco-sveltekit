@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-08-19"
+updated: "2022-09-06"
 categories: 
   - "svelte"
   - "javascript"
@@ -1171,32 +1171,28 @@ SvelteKit has many [adapters](https://kit.svelte.dev/docs#adapters), and comes p
 npm i -D @sveltejs/adapter-static@next
 ```
 
-Once installed, we have to make a couple small changes to our `svelte.config.js` file to use the static adapter.
+Once installed, we have to make a couple small changes to prerender all of our pages.
 
-First, change `adapter-auto` to `adapter-static` (in the import near the top of the file):
+First, inside of `svelte.config.js`, change `adapter-auto` to `adapter-static` (in the import near the top of the file):
 
 ```js
 // Replace the original `adapter-auto` line with this in svelte.config.js
 import adapter from '@sveltejs/adapter-static'
 ```
 
-And second, set `config.kit.prerender.default` to `true`, to make prerendering the default. `config.kit` should already exist, but you'll need to add the rest. It should look like this when you're done:
+And second, we'll need to tell all of our routes to prerender, by exporting a `prerender` prop and setting it to `true`.
+
+You _could_ do this manually for every page, but that would be tedious. The much easier way to do it is to create a `+layout.js` file in `src/routes`, and add the prop there. (**Note:** this is a `.js` file, ***not*** our existing `+layout.svelte` file.)
 
 ```js
-// svelte.config.js 
-const config = {
-  // ... Other properties here
-  
-  kit: {
-    // ... Other properties here, too
-    prerender: {
-      default: true
-    },
-  }
-}
+// src/routes/+layout.js
+  export const prerender = true
 ```
 
-You _can_ supply further customization options if you want to (as an object passed to the `adapter()` function), but the defaults are great for us, so there's no need. You can check out the [adapter-static readme](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) for more if you like.
+
+Just as the `+layout.svelte` file handles layout on every page, the `+layout.js` file handles server-side scripting for every page. By setting our exported `prerender` prop inside of the layout JS file, it will "trickle down" to every page, saving us the trouble of manually setting it on any child route.
+
+You can check out the [adapter-static readme](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) for more if you like.
 
 ---
 
@@ -1418,6 +1414,8 @@ import { fetchMarkdownPosts } from '$lib/utils'
 const siteURL = 'https://your-domain.tld'
 const siteTitle = 'Your site title here'
 const siteDescription = 'Your site description here'
+
+export const prerender = true
   
 export const GET = async () => {
   const allPosts = await fetchMarkdownPosts()
@@ -1464,6 +1462,10 @@ ${posts
 **Please note that the above code block will need some modification!** The example above is more or less straight from this site, and may not be the right shape for your needs. At the very least, you'll need to replace the URL and text placeholders, but you may also need to update the routes and the post frontmatter properties being referenced.
 
 I pulled my example from [this guide](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit) and [this one](https://scottspence.com/posts/make-an-rss-feed-with-sveltekit), for reference. And if you want to make sure you've done it correctly, here's an [online XML validator](https://codebeautify.org/xmlviewer).
+
+<SideNote>
+Notice the <code>export const prerender = true</code> line. The feed will work when developing regardless, but that prop is necessary to get the RSS feed to prerender when building the site.
+</SideNote>
 
 
 ### Add heading links with rehype

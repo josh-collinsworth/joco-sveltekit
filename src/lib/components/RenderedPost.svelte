@@ -76,7 +76,7 @@
 
 
 <Main>
-  <article class="post compressed-content">
+  <article class="post compressed-content post-{meta.slug}">
     <img
       class="cover-image"
       src="{imagePath}"
