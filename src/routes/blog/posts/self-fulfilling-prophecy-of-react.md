@@ -10,11 +10,12 @@ coverWidth: 16
 coverHeight: 9
 excerpt: The only thing React is better at than other front-end frameworks is being popular. So how long will that self-perpetuating cycle continue?
 ---
+
 <script>
-  import PullQuote from '$lib/components/PullQuote.svelte'
-  import Callout from '$lib/components/Callout.svelte'
-  import SideNote from '$lib/components/SideNote.svelte'
-  import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
+import PullQuote from '$lib/components/PullQuote.svelte'
+import Callout from '$lib/components/Callout.svelte'
+import SideNote from '$lib/components/SideNote.svelte'
+import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
 Scan a variety of front-end job postings on just about any dev job board these days, and you'll most likely find one qualification mentioned ubiquitously: [React](https://reactjs.org). (_"Or similar front-end framework," the more open-minded employers might add. They might even list a few examples. But React will definitely be there._)
@@ -22,7 +23,9 @@ Scan a variety of front-end job postings on just about any dev job board these d
 However, in the year 2022, I have to wonder _why_. Because (and if you just came here for the quotable hot take, here it is, right up front):
 
 <CalloutPlusQuote>
+
 React isn't great at anything except being popular.
+
 </CalloutPlusQuote>
 
 Don't get me wrong: React _is_ good. Even I, a noted and unapologetic React non-fan, readily admit that. Give me a choice between React and no frontend framework at all, and given any project of sufficient size or complexity, I will happily take React, thank you very much.
@@ -36,7 +39,9 @@ But that's all kind of my point: much like a genre-defining movie, album, or vid
 Ok, I concede that analogy was a bit of an overreach. There's admittedly much less of a difference between React and its contemporaries than there is between, say, [_Citizen Kane_](https://en.wikipedia.org/wiki/Citizen_Kane) and a great movie from modern times, or between the original [_Legend of Zelda_ on the NES](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)) and [_Breath of the Wild_ on the Switch](https://www.nintendo.com/store/products/the-legend-of-zelda-breath-of-the-wild-switch). That said:
 
 <CalloutPlusQuote>
+
 React has aged. And I don't think most people—particularly those using it regularly—realize how much or how&nbsp;poorly.
+
 </CalloutPlusQuote>
 
 When you live only in the world of React, you likely only see the improvements. It seems like React is getting better and better all the time. In many ways, it is. But that perspective shields you from realizing React's velocity, and its ceiling, have long lagged behind that of its comparable colleagues.
@@ -75,7 +80,9 @@ There are [many different metrics by which you can measure performance](https://
 React's performance relative to the field is pretty well-documented, so I don't feel we need to go into it here. But suffice to say: if your goal is to build the most performant thing you can, React isn't what you're considering.
 
 <SideNote>
-<a href="https://preactjs.com/">Preact,</a> a minimal version of React, is worthy of consideration in this case, but it's <a href="https://preactjs.com/guide/v8/differences-to-react/">different enough from React</a> that it may or may not be a 1:1 drop-in replacement, so I don't count it as the same thing. Also: while Preact's performance is significantly better than React's, it's not necessarily better than some of the other contenders in the field mentioned above.
+
+[Preact](https://preactjs.com/), a minimal version of React, is worthy of consideration in this case, but it's [different enough from React](https://preactjs.com/guide/v8/differences-to-react/) that it may or may not be a 1:1 drop-in replacement, so I don't count it as the same thing. Also: while Preact's performance is significantly better than React's, it's not necessarily better than some of the other contenders in the field mentioned above.
+
 </SideNote>
 
 
@@ -84,7 +91,9 @@ React's performance relative to the field is pretty well-documented, so I don't 
 Assuming you know nothing about any front-end framework, React is definitely not the easiest to learn or to use.
 
 <CalloutPlusQuote>
-JSX is a gotcha-riddled kludge to clumsily shoehorn HTML into a JavaScript function return. The only thing worse than using JSX with React is <em>not</em> using JSX with React.
+
+JSX is a gotcha-riddled kludge to clumsily shoehorn HTML into a JavaScript function return. The only thing worse than using JSX with React is _not_ using JSX with React.
+
 </CalloutPlusQuote>
 
 Besides [JSX](https://reactjs.org/docs/introducing-jsx.html), React itself has its own bevy of unique conventions and trip-ups (not to mention two completely different syntaxes that are _not_ fully interoperable).
@@ -105,7 +114,9 @@ React definitely won't lead the pack when it comes to small bundles. Again, much
 I _will_ mention, however: some used to argue React would load from the cache most of the time, so its bundle size was irrelevant. That was always a spurious claim to begin with, but to whatever extent it _was_ true, it is no longer the case in modern browsers, due to security upgrades that prevent cache sharing between domains.
 
 <SideNote>
+
 Here it also bears mentioning that Preact is a possibility, but again: Preact is different enough that it's not guaranteed to be a seamless drop-in, and also not dramatically different, size-wise, from other options.
+
 </SideNote>
 
 
@@ -123,7 +134,9 @@ If that's your idea of safety, so be it. But it's not fair to say that React _re
 ### Community and support
 
 <PullQuote>
+
 Every major front-end framework has demonstrated ability to perform at large scale. React doesn't have anything special here; it just has the most examples.
+
 </PullQuote>
 
 I touch on this (albeit specifically to Svelte) in [another post](/blog/introducing-svelte-comparing-with-react-vue#debunking-the-small-community-argument), but to summarize: the idea that React has the largest community—while technically true—doesn't necessarily make it a better choice. 
@@ -154,7 +167,11 @@ Clearly, backing is not an issue among major front-end frameworks. So this isn't
 
 While being easily the most-used front-end framework, and the one with the most awareness, React placed behind both Solid and Svelte in terms of satisfaction in this year's [State of JS Survey results](https://2021.stateofjs.com/en-US/libraries/front-end-frameworks/). React also placed behind Svelte, Solid and Vue in terms of interest (which, for React, was _below 50%_).
 
-<CalloutPlusQuote>React's satisfaction and interest have been declining steadily for years, while its usage has flatlined.</CalloutPlusQuote>
+<CalloutPlusQuote>
+
+React's satisfaction and interest have been declining steadily for years, while its usage has flatlined.
+
+</CalloutPlusQuote>
 
 State of JS is just one survey, of course, and you get different answers depending on how you word the questions. But other, comparable surveys tell a similar story. React came in far behind Svelte and only slightly ahead of Vue in the <a href="https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies">StackOverflow survey</a> as well, for example.
 
@@ -170,7 +187,9 @@ This is the _one_ area where React definitively comes out ahead. If you need to 
 I argue, however, this is not a great reason to choose a framework.
 
 <PullQuote>
+
 Choosing React just for the sake of getting new devs up and running faster is short-term gain for long-term loss. (Tech debt, in other words.)
+
 </PullQuote>
 
 Given that your app will have larger bundles, lower speed, and higher complexity, as we've discussed—all for little to no benefit in other areas—choosing React just for the sake of getting new devs up and running faster is short-term gain for long-term loss. (Tech debt, in other words.)

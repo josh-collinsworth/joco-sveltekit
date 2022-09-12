@@ -28,7 +28,9 @@ If you were on an older version of SvelteKit prior to the new release (August 16
 [This guide](https://github.com/sveltejs/kit/discussions/5774) will walk you through the technical steps you need to go through in order to make the changes. It contains a handy `npx` script you can run that will make many of the necessary changes for you, and will highlight _in your code_ where you need to make further updates manually.
 
 <CalloutPlusQuote>
+
 The migration tool is very nice. However, it likely can't fix everything for you automatically; you'll probably be left with a list of to-dos after running&nbsp;it.
+
 </CalloutPlusQuote>
 
 This post will help cover what's changed, and how to convert the syntax and structure from the old to the new.
@@ -53,7 +55,9 @@ Previously, SvelteKit routes could be either files or folders. For example, this
 ```
 
 <SideNote>
-<code>.md</code> files won't work in SvelteKit out of the box; it requires some setup. This is just to show an example of how you might structure a blog.
+
+`.md` files won't work in SvelteKit out of the box; it requires some setup. This is just to show an example of how you might structure a blog.
+
 </SideNote>
 
 In the latest update, **every route must be inside a folder**; no more `index` files or files named for the page they represent.
@@ -81,7 +85,9 @@ However, give it a chance; there's good reason for the changes. `+page` isn't th
 Plus, this makes page creation much more explicit. No route or page will exist unless there's a corresponding `+` file. There are advantages to this we'll cover later.
 
 <SideNote>
-In fact, you actually <em>can't</em> prefix a file or folder inside of <code>src/routes</code> with a <code>+</code>, as it's now a special, reserved symbol.
+
+In fact, you actually _can't_ prefix a file or folder inside of `src/routes` with a `+`, as it's now a special, reserved symbol.
+
 </SideNote>
 
 
@@ -160,7 +166,9 @@ Previously, any file or folder inside of `src/routes` could be "hidden" from the
 One big benefit of the new `+` file system is that **we no longer need to explicitly hide files and folders from the router**. This lets us colocate files related to a specific route within that route's folder, without worrying about inadvertently creating new routes.
 
 <CalloutPlusQuote>
-In the new routing system, we <em>opt in</em> to routes, rather than selectively opting files and folders&nbsp;out.
+
+In the new routing system, we _opt in_ to routes, rather than selectively opting files and folders&nbsp;out.
+
 </CalloutPlusQuote>
 
 Want a page there? Put a `+page.svelte` component in.
@@ -211,7 +219,9 @@ Either way, the file is colocated with a corresponding `+page.svelte` file, like
 **Before rendering the page**, SvelteKit will run the `load` function found in `+page.js` (or `+page.server.js`) automatically, and pass whatever that function returns to the page component as a `data` prop.
 
 <SideNote>
-Any <code>.js</code> files mentioned could also be <code>.ts</code> files instead, if using TypeScript.
+
+Any `.js` files mentioned could also be `.ts` files instead, if using TypeScript.
+
 </SideNote>
 
 Beyond that, everything is the same as before with the `load` function:

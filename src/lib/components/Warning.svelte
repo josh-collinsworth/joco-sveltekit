@@ -1,7 +1,6 @@
 <script>
-import WarningIcon from "./icons/warning-icon.svelte";
-
-null</script>
+import WarningIcon from './icons/warning-icon.svelte'
+</script>
 
 <div class="warning">
   <div class="warning-icon">
