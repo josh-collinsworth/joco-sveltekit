@@ -32,7 +32,8 @@
         (<a href="https://apps.apple.com/us/app/quina/id1636895462">iOS</a>/<a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a>/<a href="https://quina.app">web</a>) 
         and <i>Hondo</i> 
         (<a href="https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone">iOS</a>/<a href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa">Android</a>/<a href="https://playhondo.com">web</a>);
-        tech blog author (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>);
+        writer of the CSS Tricks series <a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/">A Complete Beginner's Guide to NPM</a>;
+	tech blog author (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>);
         author of an open-source SvelteKit static blog starter
         (<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">repo</a>/<a href="https://sveltekit-static-starter.netlify.app">demo</a>);
         occasional freelance developer/designer.
