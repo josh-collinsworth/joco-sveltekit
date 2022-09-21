@@ -18,24 +18,31 @@
       <div class="sticky">
         <h2>Featured project: Quina</h2>
         
-        <p>Quina is a strategic, logical word game available on 
-          <a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth&hl=en_US&gl=US" rel="external">Google Play</a>, the <a href="https://apps.apple.com/us/app/quina/id1636895462">iOS App Store</a>,
-          and as a <a href="https://quina.app" rel="external">Progressive Web App</a>. 
-          I wrote about the process of building the app and the tech behind it both 
-          <a href="/blog/announcing-quina-my-first-app">on this blog</a> and 
-          <a rel="external" href="https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/">CSS Tricks</a>.
+        <p>Quina is a strategic, logical word game, built from scratch with Nuxt. The gameplay is based on classic pen-and-paper word games (think: Mastermind, but with words), but the app and design are 100% original.</p>
+        <p>Quina was released December 2020 as a progressive web app and on the Google Play store. Version 2.0 was released in spring 2022 (with an overhauled game board, a daily puzzle mode, and new achievements). Version 2.0 was also released on the iOS App Store.
         </p>
+
+        <ul>
+          <li>
+            <a href="https://apps.apple.com/us/app/quina/id1636895462">Quina on iOS</a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth&hl=en_US&gl=US" rel="external">Quina on Android</a>
+          </li>
+          <li>
+            <a href="https://quina.app">Quina on the web</a>
+          </li>
+          <li>
+            <a href="https://github.com/josh-collinsworth/hondo">GitHub repo</a>
+          </li>
+          <li>
+            Read about the making of Quina <a href="/blog/announcing-quina-my-first-app">on this blog</a> and 
+            <a rel="external" href="https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/"> on CSS Tricks</a>
+          </li>
+        </ul>  
       </div>
       
       <div class="image-gallery">
-        <img
-          src="/images/post_images/01-Google-Pixel-4-Front.jpg"
-          alt="The main menu of Quina, with options for 'New Game', 'How to Play', 'Preferences,' Stats & Awards', 'About/FAQ', and 'Support Quina.'"
-          loading="lazy"
-          width="1030"
-          height="1200"
-          style="aspect-ratio: 103 / 120"
-        />
         <img
           src="/images/quina-mockup1.png"
           alt=""
@@ -43,45 +50,6 @@
           width="1200"
           height="1697"
           style="aspect-ratio: 1200 / 1697"
-        />
-        <img
-          src="/images/post_images/tutorial-1.png"
-          alt="Guess the secred five-letter code word in ten guesses or fewer."
-          loading="lazy"
-          width="1600"
-          height="900"
-          style="aspect-ratio: 16 / 9"
-        />
-        <img
-          src="/images/quina-clues.png"
-          alt="Use clues to refine your guesses. A clue of '3/2' means three letters in your guess are also in the code word, and two are in the same position in both words."
-          loading="lazy"
-          width="1600"
-          height="900"
-          style="aspect-ratio: 16 / 9"
-        />
-        <img
-          src="/images/post_images/tutorial-3.png"
-          alt="You can tap or long-press letters in your guesses to cross them out or highlight them"
-          loading="lazy"
-          width="1600"
-          height="900"
-          style="aspect-ratio: 16 / 9"
-        />
-        <img
-          src="/images/post_images/tutorial-4.png"
-          alt="Quina tracks your stats, such as how many games you've played on each difficulty, longest win streak, and many more!"
-          loading="lazy"
-          width="1600"
-          height="900"
-          style="aspect-ratio: 16 / 9"
-        />
-        <img
-          src="/images/post_images/02-Google-Pixel-4-Front.png"
-          alt="Quina features both light and dark mode."
-          loading="lazy"
-          width="1600"
-          height="1442"
         />
       </div>
     </article>
@@ -91,6 +59,7 @@
         <h2>Hondo</h2>
         
         <p>Another word game, this one built with SvelteKit, and a bit more akin to Wordle (but with some twists and more complex mechanics).</p>
+        <p>The goal is to guess as many words as possible in a row, earning bonus points for streaks, to get to 100 points as quickly as possible.</p>
         <ul>
           <li>
             <a href="https://apps.apple.com/us/app/hondo/id1636016699">Hondo on iOS</a>

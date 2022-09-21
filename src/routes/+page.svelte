@@ -16,11 +16,8 @@
 <Main>
   <div class="intro">
     <div class="intro__headline">
-      <h2>Hi, I’m Josh.</h2>
-      
-      <p class="subhead">
-        I'm a front-end developer, designer, teacher,&nbsp;and&nbsp;writer.
-      </p>
+      <h2><strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer, writer, and&nbsp;teacher.
+      </h2>
     </div>
 
     <div class="intro__body"> 
@@ -33,7 +30,7 @@
         and <i>Hondo</i> 
         (<a href="https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone">iOS</a>/<a href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa">Android</a>/<a href="https://playhondo.com">web</a>);
         writer of the CSS Tricks series <a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/">A Complete Beginner's Guide to NPM</a>;
-	tech blog author (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>);
+	tech blogger (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>);
         author of an open-source SvelteKit static blog starter
         (<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">repo</a>/<a href="https://sveltekit-static-starter.netlify.app">demo</a>);
         occasional freelance developer/designer.
@@ -73,9 +70,6 @@
   </div>
 </Main>
 
-<div class="big-boi">
-  Wow, your screen is really wide.
-</div>
 
 <style lang="scss">
 .intro {
@@ -88,7 +82,7 @@
     width: 100%;
     max-width: unset;
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 3fr minmax(22rem, 2fr);
     gap: 0 calc(var(--wholeNote) * 2);
 
     &__body {
@@ -104,18 +98,16 @@
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: var(--quarterNote);
+    font-size: clamp(2.5rem, calc(1rem + 3vw), 4rem);
+    margin-bottom: var(--wholeNote);
+    font-weight: normal;
 
-    @media (min-width: vars.$xs) {
-      font-size: 3rem;
+    strong {
+      background: var(--yellow);
     }
 
-    @media (min-width: vars.$md) {
-      font-size: 4rem;
-    }
-
-    @media (min-width: vars.$lg) {
-      font-size: 5rem;
+    &::before {
+      display: none;
     }
   }
 
@@ -128,34 +120,6 @@
     ~ h3 {
       margin-top: var(--halfNote) ;
     }
-  }
-
-  .subhead {
-    font-size: 1.4rem;
-    margin: 0 0 4rem;
-    max-width: 20em;
-    line-height: 1.2;
-    font-family: var(--headingFont);
-
-    @media (min-width: vars.$md) {
-      font-size: 1.7rem;
-      margin-bottom: var(--wholeNote) ;
-    }
-
-    @media (min-width: vars.$xl) {
-      font-size: 1.8rem;
-    }
-  }
-}	
-
-.big-boi {
-  display: none;
-  float: right;
-  font-size: 0.6rem;
-  font-family: var(--headingFont);
-
-  @media (min-width: vars.$xxxl) {
-    display: block;
   }
 }
 </style>
