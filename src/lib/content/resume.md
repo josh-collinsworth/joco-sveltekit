@@ -1,6 +1,6 @@
 ## Summary
 
-Front-end developer with 6+ years of experience designing, engineering, managing and supporting web applications. Specializing in UI design and user experience, working with JavaScript (especially Vue, Svelte and React), CSS, and responsive, accessible, semantic HTML.
+Front-end developer with 7+ years of experience designing, engineering, managing and supporting web applications. Specializing in UI design and user experience, working with JavaScript (especially Vue, Svelte and React), CSS, and responsive, accessible, semantic HTML.
 
 
 ## Professional experience
@@ -12,6 +12,8 @@ Front-end developer with 6+ years of experience designing, engineering, managing
 
 _August 2021 – present_
 
+- Executed the conversion of several marketing pages from ERB templates to Hydrogen, Shopify's internal server-rendered React framework.
+- Collaborated with designers and UX leaders on customization options for React design components, enabling bespoke designs for individual marketing landing pages within the design system and framework 
 - Operated as the lead developer on several web page internationalization projects, launching Shopify's point of sale marketing pages and offerings in Spain, Italy, and Singapore
 - Built out numerous marketing landing pages, including [omnichannel selling](https://www.shopify.com/pos/sell-everywhere), showcasing Shopify's integrated sales channels with video and animation
 - Worked with internal stakeholders to improve SEO and conversions, including implementing A/B testing
