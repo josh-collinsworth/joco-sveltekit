@@ -42,7 +42,11 @@
     }
   }
 
-  :global(.pull-quote em, .pull-quote i) {    
+  :global(.pull-quote p) {
+    display: inline;
+  }
+
+  :global(.pull-quote em, .pull-quote i) {
     font-weight: bold;
     font-style: normal;
   }
