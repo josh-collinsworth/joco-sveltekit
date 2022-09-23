@@ -98,7 +98,7 @@
 
   h2 {
     font-size: 2.5rem;
-    font-size: clamp(2.5rem, calc(1rem + 3vw), 4rem);
+    font-size: clamp(1.8rem, calc(1rem + 3vw), 4rem);
     margin-bottom: var(--wholeNote);
     font-weight: normal;
 
