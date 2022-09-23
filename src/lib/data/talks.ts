@@ -43,7 +43,7 @@ const talks: Talk[] = [
     year: 2021
   }, {
     title: 'Views on Svelte With Josh Collinsworth',
-    link: 'https://viewsonvue.com/views-on-svelte-with-josh-collinsworth-vue-177',
+    link: 'https://topenddevs.com/podcasts/views-on-vue/episodes/views-on-svelte-with-josh-collinsworth-vue-177',
     event: 'Views on Vue podcast',
     year: 2022
   },
