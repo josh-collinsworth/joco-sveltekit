@@ -17,6 +17,9 @@
     <p class="subhead">To do: add slide decks where possible.</p>
     <hr>
     <ul>
+      <li>
+        <b><a href="https://changelog.com/jsparty/244">JS Party 244: The spicy React debate show 🌶️🌶️</a></b><br> Listen on <a href="https://changelog.com/">Changelog.com</a>
+        <audio data-theme="night" data-src="https://changelog.com/jsparty/244/embed" src="https://cdn.changelog.com/uploads/jsparty/244/js-party-244.mp3" preload="none" class="changelog-episode" controls></audio><script async src="//cdn.changelog.com/embed.js"></script></li>
       {#each talks as talk}
       <li>
         <b>
