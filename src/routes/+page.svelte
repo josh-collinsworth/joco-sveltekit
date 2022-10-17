@@ -61,7 +61,8 @@
         dog person;
         Nintendo fan;
         musician/guitarist/hack pianist;
-        Omaha, Nebraska resident;
+        <del>Omaha, Nebraska resident;</del>
+	recent immigrant to Kansas City;
         liberal abuser of semicolons.
       </p>
     
