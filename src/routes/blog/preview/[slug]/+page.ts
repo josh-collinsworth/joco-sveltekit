@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit'
 import type Post from '$lib/types/post'
 import type { SvelteComponent } from 'svelte'
 
-import { dev } from '$app/env'
+import { dev } from '$app/environment'
 
 export const load = async ({ params }) => {
   try {

@@ -18,7 +18,7 @@
   <ul class="sidebar__posts-list">
     {#each recentPosts as post}
       <li>
-        <a href="/blog/{post.slug}" sveltekit:prefetch>
+        <a href="/blog/{post.slug}" data-sveltekit:prefetch>
           <span>{post.title}</span>
         </a>
       </li>

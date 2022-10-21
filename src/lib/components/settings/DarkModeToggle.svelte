@@ -1,6 +1,6 @@
 <script lang="ts">
   import LightDarkIcon from '../icons/LightDarkIcon.svelte'
-  import { browser } from '$app/env'
+  import { browser } from '$app/environment'
   import { Themes } from '$lib/data/constants'
   import { theme } from '$lib/data/store'
   import { onMount, tick } from 'svelte'

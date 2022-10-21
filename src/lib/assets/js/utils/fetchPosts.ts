@@ -1,6 +1,6 @@
 import type Post from '$lib/types/post'
 import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
-import { dev } from '$app/env'
+import { dev } from '$app/environment'
 
 const fetchPosts = async ({ offset = 0, limit = 10, category = '' }: PostsEndpointOptions = {}): Promise<Post[]> => {
   let posts: Post[]

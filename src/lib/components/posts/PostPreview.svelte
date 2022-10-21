@@ -18,7 +18,7 @@
 
 <li>
   <article class="post-preview">
-    <a href={computedURL} sveltekit:prefetch class="image-link">
+    <a href={computedURL} data-sveltekit:prefetch class="image-link">
       <img
         src="/images/post_images/{post.coverImage}"
         style="
@@ -33,7 +33,7 @@
 
     <div class="article-info">
       <h2 class="h3">
-        <a href={computedURL} sveltekit:prefetch>
+        <a href={computedURL} data-sveltekit:prefetch>
           {#if external}
             {post.title} <ExternalLink />
           {:else}
@@ -50,7 +50,7 @@
       
       <p class="excerpt">
         {post.excerpt}
-        <a href="{computedURL}" sveltekit:prefetch>
+        <a href="{computedURL}" data-sveltekit:prefetch>
           {#if external}
             Read more on {post.subtitle}
             <ExternalLink />

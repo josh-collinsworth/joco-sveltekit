@@ -1186,7 +1186,7 @@ You _could_ do this manually for every page, but that would be tedious. The much
 
 ```js
 // src/routes/+layout.js
-  export const prerender = true
+export const prerender = true
 ```
 
 
@@ -1199,7 +1199,11 @@ You can check out the [adapter-static readme](https://github.com/sveltejs/kit/tr
 With our adapter installed and in use in our config file, every page on our site will be pre-rendered as static HTML at build time! You can even view source in the browser to confirm that the site is now served as pre-rendered HTML.
 
 <SideNote>
+
 One of the great things about SvelteKit's static mode is that it pre-renders all your pages as static HTML, but <em>also</em> loads some client-side JavaScript to help with navigation and preloading in the background. This way, the site works just fine without JavaScript, but is progressively enhanced.
+
+If you'd like to disable this behavior—to ship less JS, at the potential cost of a slightly less smooth navigating experience—you can add `export const csr = false` to your `+layout.js` file.
+
 </SideNote>
 
 One final note: **you wouldn't _have_ to use the static adapter at this point.** You could just skip that part and go with the default adapter. That would allow you to deploy the site to Netlify, Vercel, or Cloudflare Pages, and the site would be server-rendered using serverless functions, instead of statically pre-generated.
@@ -1713,7 +1717,7 @@ Speaking of preloading: SvelteKit offers a slightly less greedy version of it, a
 
 Anchor options are special, SvelteKit-specific attributes you can add to `<a>` anchor tags. There are three:
 
-- `<a sveltekit:prefetch>` causes the link to begin preloading as soon as the user _hovers_, rather than waiting for a click, saving some milliseconds.
+- `<a data-sveltekit:prefetch>` causes the link to begin preloading as soon as the user _hovers_, rather than waiting for a click, saving some milliseconds.
 - `<a rel="external">` signals to SvelteKit that the link in question is _not_ part of our SvelteKit app, and the router shouldn't try to handle it.
 - `<a sveltekit:noscroll`> prevents SvelteKit from resetting the scroll position to the top of the new page. This is usually undesirable on websites, but may be more intuitive in some app situations.
 

@@ -12,7 +12,7 @@
 	import { isLoading, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
   import { afterNavigate, beforeNavigate, prefetch } from '$app/navigation';
-	import { dev } from '$app/env'
+	import { dev } from '$app/environment'
 
 
 	

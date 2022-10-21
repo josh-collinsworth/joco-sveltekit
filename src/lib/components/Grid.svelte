@@ -1,7 +1,7 @@
 <script lang="ts">
   import GridCell from './GridCell.svelte'
   import { onMount } from 'svelte'
-  import { browser } from '$app/env'
+  import { browser } from '$app/environment'
 	import debounce from 'just-debounce'
 
   export let refresh: string = ''
