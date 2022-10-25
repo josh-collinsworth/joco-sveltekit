@@ -105,6 +105,7 @@
 
     strong {
       background: var(--yellow);
+      color: var(--darkerGray);
     }
 
     &::before {

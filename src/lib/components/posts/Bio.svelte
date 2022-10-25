@@ -8,7 +8,7 @@
     <img src="/images/bio-photo.jpg" alt="" class="thumbnail" width="1" height="1">
     <div>
       <p class="about">
-        I'm Josh Collinsworth, a frontend developer, designer, teacher, and writer. I currently live in Omaha, Nebraska, and work for Shopify as a senior frontend developer. 
+        I'm Josh Collinsworth, a frontend developer, designer, teacher, and writer. I currently live in Kansas City, and work for Shopify as a senior frontend developer. 
       </p>
       <ul class="link-list">
         <li class="link-list__kofi">
