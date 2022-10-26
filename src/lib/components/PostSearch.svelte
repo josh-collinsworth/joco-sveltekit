@@ -19,13 +19,13 @@
       return
     }
 
-    const response = await fetch('/api/posts.json?limit=-1')
+    const response = await fetch('/api/posts/all.json')
     const posts = await response.json()
 
     const filteredPosts = await posts.filter(post => {
       return post.title.toLowerCase().includes(searchString.toLowerCase())
     })
-    
+
     isWorking = false
     results = filteredPosts.slice(0, 5)
   }, 500)

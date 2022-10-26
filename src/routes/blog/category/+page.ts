@@ -1,6 +1,6 @@
 // TODO: types
 export const load = async ({ fetch }) => {
-  const res = await fetch(`/api/posts.json?limit=-1`)
+  const res = await fetch(`/api/posts/all.json`)
   const posts = await res.json()
 
   let uniqueCategories = {}

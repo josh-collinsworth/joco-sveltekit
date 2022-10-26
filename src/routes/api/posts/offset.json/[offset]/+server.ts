@@ -3,13 +3,16 @@ import { fetchPosts } from '$lib/assets/js/utils'
 import { json, error } from '@sveltejs/kit'
 
 // TODO: types
-export const GET = async ({ url }) => {
-	const params = new URLSearchParams(url.search)
+export const GET = async ({ params }) => {
 
-	const options: PostsEndpointOptions = {
-		offset: parseInt(params.get('offset')) || null,
-		limit: parseInt(params.get('limit')) || 10
-	}
+  console.log(params.offset)
+  const options: PostsEndpointOptions = {
+    offset: 10
+  }
+
+  if (params.offset) {
+    options.offset = params.offset
+  }
 
 	try {
 		const posts = await fetchPosts({ ...options })
@@ -20,6 +23,6 @@ export const GET = async ({ url }) => {
 		throw error(
 			500,
 			'could not fetch posts'
-    )
+		)
 	}
 }

@@ -26,7 +26,11 @@
 
 
 <Main>
-  <h1 class="h2">Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
+  {#if lowerBound === totalPosts}
+    <h1 class="h2">Post {totalPosts} of {totalPosts}</h1>
+  {:else}
+    <h1 class="h2">Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
+  {/if}
   <Pagination currentPage={page} {totalPosts} />
   <PostList {posts} />
   <Pagination currentPage={page} {totalPosts} />

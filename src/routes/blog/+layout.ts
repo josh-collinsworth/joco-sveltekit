@@ -1,7 +1,7 @@
 // TODO: types
 export const load = async ({ url, fetch }) => {
   const rss = await fetch(`${url.origin}/api/rss.xml`) // This isn't used; it's just here to make sure the route gets prerendered
-	const res = await fetch(`/api/posts.json?limit=-1`)
+	const res = await fetch(`/api/posts/all.json`)
 	const resJSON = await res.json()
 	
 	const recentPosts = resJSON

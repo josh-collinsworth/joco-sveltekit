@@ -1,7 +1,7 @@
 // TODO: types
 
 export const load = async ({ fetch }) => {
-	const res = await fetch(`/api/posts.json?limit=10`)
+	const res = await fetch(`/api/posts/offset.json/0`)
 	const posts = await res.json()
 	
 	const count = await fetch(`/api/posts/count.json`)
