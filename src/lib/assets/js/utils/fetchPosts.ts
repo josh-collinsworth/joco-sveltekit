@@ -9,11 +9,7 @@ const fetchPosts = async ({ offset = 0, limit = 10, category = '' }: PostsEndpoi
     posts = await Promise.all(
       Object.entries(import.meta.glob(`/src/routes/blog/posts/**/*.md`)).map(async ([path, page]) => {
         const { metadata } = await page()
-        let slug = path.split('/').pop().split('.').shift()
-        // Sends the page to the proper preview URL when in dev
-        if (path.includes('_posts/drafts/')) {
-          slug = 'preview/' + slug
-        }
+        const slug = path.split('/').pop().split('.').shift()
         return { ...metadata, slug }
       })
     )

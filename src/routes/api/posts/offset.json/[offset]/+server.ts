@@ -4,8 +4,6 @@ import { json, error } from '@sveltejs/kit'
 
 // TODO: types
 export const GET = async ({ params }) => {
-
-  console.log(params.offset)
   const options: PostsEndpointOptions = {
     offset: 10
   }
