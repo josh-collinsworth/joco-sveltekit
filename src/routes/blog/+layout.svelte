@@ -8,14 +8,13 @@
   
   export let data: LayoutData
 
-  let recentPosts: Post[]
+  let popularPosts: Post[]
   let allCategories: string[]
-  $: ({ recentPosts, allCategories } = data)
+  $: ({ popularPosts, allCategories } = data)
 
   onMount(() => {
     if (!prefersReducedData()) {
-      // TODO: should maybe make this the posts on each page, and not just the most recent five.
-      recentPosts.forEach(post => {
+      popularPosts.forEach(post => {
         prefetch(`/blog/${post.slug}`)
       })
     }
@@ -25,7 +24,7 @@
 
 <div class="layout-grid">
   <div class="sidebar-wrapper">
-    <Sidebar {recentPosts} {allCategories} />
+    <Sidebar {popularPosts} {allCategories} />
   </div>
   
   <slot />

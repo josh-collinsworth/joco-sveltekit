@@ -7,6 +7,7 @@ categories:
   - "javascript"
   - "web"
   - "sass"
+  - "popular"
 coverImage: "sveltekit-learn.png"
 coverWidth: 16
 coverHeight: 9

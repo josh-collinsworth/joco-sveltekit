@@ -1,8 +1,7 @@
-//TODO: types
 import { dev } from '$app/environment'
-import { error, json } from '@sveltejs/kit'
+import { json } from '@sveltejs/kit'
 
-export const GET = async () => {
+export const GET = async (): Promise<Response> => {
   let posts
 
   if (dev) {
@@ -11,12 +10,6 @@ export const GET = async () => {
     posts = import.meta.glob(`/src/routes/blog/posts/*.md`)
   }
 
-  try {
-    const total = Object.keys(posts).length
-    return json({ total })
-  }
-
-  catch({ message }) {
-    throw error(500, message)
-  }
+  const total = Object.keys(posts).length
+  return json({ total })
 }

@@ -2,8 +2,7 @@ import type { PageData } from './$types'
 
 export const prerender = true
 
-// TODO: type this somehow?
-export const load = async ({ url }): PageData => {
+export const load = async ({ url }: {url: URL}): Promise<PageData> => {
 	const path: string = url.pathname
 
 	return {

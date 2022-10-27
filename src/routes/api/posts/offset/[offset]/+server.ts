@@ -1,9 +1,8 @@
 import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
 import { fetchPosts } from '$lib/assets/js/utils'
-import { json, error } from '@sveltejs/kit'
+import { json } from '@sveltejs/kit'
 
-// TODO: types
-export const GET = async ({ params }) => {
+export const GET = async ({ params }): Promise<Response> => {
   const options: PostsEndpointOptions = {
     offset: 10
   }
@@ -12,15 +11,6 @@ export const GET = async ({ params }) => {
     options.offset = params.offset
   }
 
-	try {
-		const posts = await fetchPosts({ ...options })
-		return json(posts)
-	}
-
-	catch {
-		throw error(
-			500,
-			'could not fetch posts'
-		)
-	}
+  const posts = await fetchPosts({ ...options })
+  return json(posts)
 }

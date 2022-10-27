@@ -8,6 +8,7 @@ categories:
   - "javascript"
   - "vue"
   - "svelte"
+  - "popular"
 coverImage: "toggle_switches/accessible-toggle-buttons.png"
 coverWidth: 16
 coverHeight: 9

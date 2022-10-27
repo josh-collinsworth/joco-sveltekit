@@ -5,6 +5,7 @@ updated: "2022-08-01"
 categories:
   - "web"
   - "opinion"
+  - "popular"
 coverImage: "self-fulfilling-react.png"
 coverWidth: 16
 coverHeight: 9

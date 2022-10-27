@@ -6,6 +6,7 @@ categories:
   - 'javascript'
   - 'svelte'
   - 'web'
+  - 'popular'
 coverImage: 'introducing_svelte.png'
 coverWidth: 16
 coverHeight: 9

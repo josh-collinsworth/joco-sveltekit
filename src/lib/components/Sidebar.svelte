@@ -5,7 +5,7 @@
   import Tag from './tags/Tag.svelte'
   import PostSearch from './PostSearch.svelte'
   
-  export let recentPosts: Post[]
+  export let popularPosts: Post[]
   export let allCategories: string[]
 </script>
 
@@ -13,10 +13,10 @@
 <aside class="sidebar">
   <PostSearch />
 
-  <h2>Recent blog posts</h2>
+  <h2>Most popular posts</h2>
 
   <ul class="sidebar__posts-list">
-    {#each recentPosts as post}
+    {#each popularPosts as post}
       <li>
         <a href="/blog/{post.slug}" data-sveltekit:prefetch>
           <span>{post.title}</span>
