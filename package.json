@@ -32,7 +32,8 @@
     "svelte-preprocess": "^4.0.0",
     "svelte-sitemap": "^2.1.1",
     "tslib": "^2.0.0",
-    "typescript": "^4.0.0"
+    "typescript": "^4.0.0",
+    "vite": "^3.2.0"
   },
   "type": "module",
   "dependencies": {

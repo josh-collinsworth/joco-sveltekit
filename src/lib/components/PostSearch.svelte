@@ -19,7 +19,7 @@
       return
     }
 
-    const response = await fetch('/api/posts/all.json')
+    const response = await fetch('/api/posts/all')
     const posts = await response.json()
 
     const filteredPosts = await posts.filter(post => {
