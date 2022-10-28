@@ -42,7 +42,7 @@ $xxxl: 122rem;
 	--codeFont: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 	--bodyFontWeight: normal;
-	--bodyLineHeight: calc(var(--quarterNote) * 1.25);
+	--bodyLineHeight: 1.55;
 	--bodyFontSize: 1.125rem;
 
 	@media (min-width: $xs) {
