@@ -21,7 +21,7 @@ Forgive the clickbait title; "never" is a strong word, but this is an important,
 
 There are quite a few misconceptions that float around in the sphere of web development, and persist no matter how often they're debunked. "External links should always open in new tabs" is one good example. [CSS Tricks covered this one pretty thoroughly here](https://css-tricks.com/use-target_blank/) nearly a decade ago (tl;dr: mostly false), but it still seems to persist in some corners.
 
-My current case in point, however, is: the idea that there's no functional difference between `px`, and `em` or `rem` units in CSS. “`1rem` is equal to `16px`, so use whatever” seems to be the reasoning behind it. But it's a misconception I keep hearing again and again, so I figured it was long past time to address it in a post.
+The current case in point, however, is: the idea that there's no functional difference between `px`, and `em` or `rem` units in CSS. It's a misconception I keep hearing again and again, so I figured I'd address it here, in a post.
 
 <CalloutPlusQuote>
 
@@ -29,7 +29,7 @@ Let's be very clear: it absolutely _does_ matter what unit you use in your CSS. 
 
 </CalloutPlusQuote>
 
-Again: "always" is a strong word, and a bit dogmatic. But the truth is: if you pick the wrong unit, you risk overriding your users' preferences, making it harder (maybe even impossible) for them to use your website, _and_ potentially harming the design with unintended visual side effects. (And `px` will likely be the wrong choice more often than not.)
+Again: "always" is a strong word, and a bit dogmatic. But the truth is: if you pick the wrong unit, you risk overriding your users' preferences, making it harder (maybe even impossible) for them to use your website, _and_ potentially harming the design with unintended visual side effects.
 
 
 ## What units are we talking about, and what do they do?
@@ -43,7 +43,7 @@ Before we get into _why_ we should avoid `px` for `font-size`, let's make sure w
 
 <SideNote>
 
-In case you didn't know: screens display things with a grid of colored lights called pixels. One pixel is one colored light on the display; the smallest possible "dot" it's capable of showing.
+Screens display images using a grid of colored lights called pixels. One pixel is one colored light on the display; the smallest possible "dot" the hardware is capable of rendering. This is what I mean by "literal," "actual" or "device" pixels in this section; a pixel in the physical world.
 
 </SideNote>
 
@@ -55,19 +55,20 @@ So these days, `1px` generally corresponds with the size of a scaled-up, "zoomed
 
 Most of that isn't really important in the context of this discussion, but I think it's nice to know anyway. The important part is: `1px` is equal to whatever the browser is treating as a single pixel (even if it's not literally a pixel on the hardware screen).
 
+
 ### `em` and `rem`
 
 That brings us to `em` and `rem`, which are similar to one another. To keep on with _the not-strictly-relevant-but-still-interesting_ trivia: "em" is a typographic term that actually predates computers by many decades. Typographically, one em is equal to the current font size.
 
 If you have your font size set to 32pt ("pt" is _point_, another old typographic term still sometimes used), then `1em` is 32pt. If the current font size is `20px`, then `1em` = `20px` (_though again: you shouldn't set font sizes in pixels—this is just for the sake of example_).
 
+On the web, the default font size is `16px`. Some users never change that default, but many do. But by default, at least, `1em` and `1rem` will both be equal to `16px`.
+
 <SideNote>
 
 Em originally referred to the width of an "M" character, which is where the name came from. But it now refers to the current font size, rather than to the dimensions of a specific glyph.
 
 </SideNote>
-
-On the web, the default font size is `16px`. Some users never change that default, but many do. But by default, at least, `1em` and `1rem` will both be equal to `16px`.
 
 
 #### The difference between `em` and `rem`
@@ -88,7 +89,7 @@ p {
 
 Given the above CSS, paragraphs _inside_ the `.container` element would be twice as big. That's because `1em` means "the current font size," and inside the `.container`, that's 200%. `1em` × `200%` = `2em` (`32px` by default).
 
-Paragraphs _outside_ the `.container` element, however, would still be the normal font size of `1em` (again: `16px` by default).
+Paragraphs _outside_ the `.container` element, however, would still be the normal font size of `1em` (`16px` by default).
 
 If we changed `1em` to `1rem` in the CSS above, then _all_ paragraph tags would _always_ be the browser's default font size, no matter where they were.
 
@@ -110,9 +111,9 @@ Remember, `em` and `rem` are _relative_; by default, they're both (ultimately) b
 
 `2rem` is double the browser's font size; `0.5rem` is half of it, and so on. So when or if the user changes their preferred font size, if you're using `em` and `rem`, all the text on your website will change accordingly, like it should.
 
-By contrast, `px` values are **static**. `20px` is just `20px`, regardless of the container's, browser's, or user's font size.
+By contrast, `px` values are **static**. `20px` is just `20px`, regardless of the container's, browser's, or user's font size. No matter how large or small the user's font preference may be, when you set a value in static pixels, it clobbers that choice and overrides it with the exact value you specified.
 
-And critically, that means if your stylesheet uses `px` to set `font-size` anywhere in it, **any and all text based on that value will be impossible for the user to change**.
+Critically, that means if your stylesheet uses `px` to set `font-size` anywhere in it, **any and all text based on that value will be impossible for the user to change**.
 
 <CalloutPlusQuote>
 
@@ -129,7 +130,7 @@ So while there _may_ be some valid use cases for that behavior, it's definitely 
 
 Ok, now let's talk about how `px` and `em`/`rem` vary even when we're _not_ dealing specifically with the `font-size` property.
 
-Developers commonly test by zooming the page in or out. When you zoom, everything gets scaled up (or down), and in that scenario, the choice of `px` or `em`/`rem` as your CSS unit doesn't generally matter. Both behave the same way, as far as zooming is concerned. And most developers priveleged with good eyesight probably won't realize there's more to it than that. However, the tricky thing is:
+Developers commonly test by zooming the page in or out, and I think that's where the misconception at the heart of this post comes from. When you zoom, everything gets scaled up (or down), and in that scenario, the choice of `px` or `em`/`rem` as your CSS unit doesn't generally matter. Both behave the same way, as far as zooming is concerned. And most developers priveleged with good eyesight probably won't realize there's more to it than that. However, the tricky thing is:
 
 <CalloutPlusQuote>
 

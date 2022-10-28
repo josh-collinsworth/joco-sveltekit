@@ -13,7 +13,7 @@
 <aside class="sidebar">
   <PostSearch />
 
-  <h2>Most popular posts</h2>
+  <h2>Popular posts</h2>
 
   <ul class="sidebar__posts-list">
     {#each popularPosts as post}
