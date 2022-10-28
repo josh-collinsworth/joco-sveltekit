@@ -170,12 +170,6 @@ In the screenshot below, I've set Firefox's default font size to `64px`. Have a 
 
 Compare the text that screenshot with the text in the one above it. Notice how this time, the lines are _not_ thicker, and the margins between paragraphs have _not_ grown proportionally. **Only the text itself is larger.** Because the border width and margin were both set in `px`, they stay as they were, and do not scale.
 
-<SideNote>
-
-You cannot accurately achieve this effect by changing the `font-size` of the `html` element using CSS. The behavior of user-altered defaults at the browser level is different.
-
-</SideNote>
-
 You'll notice, however, that if you change the `px` in the CSS to the equivalent `rem` values, _the lines and spacing **do** get bigger!_
 
 ![When using em or rem units instead of px, borders and margins scale up proportionally with the text.](/images/post_images/px_em_rem/64px-ems.png)
