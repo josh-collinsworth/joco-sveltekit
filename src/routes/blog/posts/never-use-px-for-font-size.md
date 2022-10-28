@@ -191,6 +191,13 @@ So to summarize here:
 - `px` values do ***not*** scale up or down when the user changes their font size
 - `em` and `rem` values _do_ adjust in proportion to font size
 
+If you'd like an interactive demo that ties all this together, check out this final CodePen; adjust the slider at the top to see the effect modifying the document font size has on various elements, based on the CSS unit they're using.
+
+<p class="codepen" data-height="560" data-default-tab="result" data-slug-hash="KKepeMQ" data-user="collinsworth" style="height: 560px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/collinsworth/pen/KKepeMQ">
+  The difference between px and rem in font scaling</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
 ## Which to choose
 
