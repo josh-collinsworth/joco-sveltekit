@@ -7,8 +7,8 @@ categories:
   - "web"
   - "css"
 coverImage: "px_em_rem/never-px.png"
-coverWidth: 4
-coverHeight: 3
+coverWidth: 16
+coverHeight: 9
 excerpt: Many developers seem to believe there's no difference between px and other CSS units. Let's dispel that myth, for the sake of better accessibility.
 ---
 <script>
@@ -105,7 +105,7 @@ All right; that's what the units mean and where they come from. So now let's ans
 
 Again, the common misconception is: since `1em` is equal to `16px` anyway, it doesn't matter which unit you pick. And that _seems logical_; if `16px` = `1rem`, then why would it matter which way you choose to type it?
 
-Remember, `em` and `rem` are _relative_; by default, they're both (ultimately) based on the browser's font size. 
+Remember, `em` and `rem` are _relative_; by default, they're both (ultimately) based on the browser's font size.
 
 `px`, however, is not; it's just a static value that isn't based on or affected by anything else.
 
