@@ -1,7 +1,7 @@
 ---
 title: "Why you should never use px to set font-size in CSS"
 date: "2022-10-28"
-updated: "2022-10-28"
+updated: "2022-10-31"
 categories:
   - "a11y"
   - "web"
@@ -91,7 +91,15 @@ Given the above CSS, paragraphs _inside_ the `.container` element would be twice
 
 Paragraphs _outside_ the `.container` element, however, would still be the normal font size of `1em` (`16px` by default).
 
-If we changed `1em` to `1rem` in the CSS above, then _all_ paragraph tags would _always_ be the browser's default font size, no matter where they were.
+If we changed `em` to `rem` in the CSS above, then _all_ paragraph tags would _always_ be the browser's default font size, no matter where they were.
+
+<SideNote>
+
+`font-size: 1em` is equivalent to `font-size: 100%`.
+
+`em` and `%` units are _not_ always equivalent in other contexts; for example, `width: 1em` and `width: 100%` would most likely be very different, since in that case, the percentage is based on the parent container's width, and not its font size. But `%` and `em` are the same as far as the `font-size` property is concerned.
+
+</SideNote>
 
 So to summarize:
 
@@ -109,7 +117,7 @@ Remember, `em` and `rem` are _relative_; by default, they're both (ultimately) b
 
 `px`, however, is not; it's just a static value that isn't based on or affected by anything else.
 
-`2rem` is double the browser's font size; `0.5rem` is half of it, and so on. So when or if the user changes their preferred font size, if you're using `em` and `rem`, all the text on your website will change accordingly, like it should.
+`2rem` is double the browser's font size; `0.5rem` is half of it, and so on. So when or if the user changes their preferred font size, if you're using `em` and `rem`, all the text on your website will change accordingly, like it should. `2rem` is still double that font size; `0.5rem` is still half of it.
 
 By contrast, `px` values are **static**. `20px` is just `20px`, regardless of the container's, browser's, or user's font size. No matter how large or small the user's font preference may be, when you set a value in static pixels, it clobbers that choice and overrides it with the exact value you specified.
 
@@ -124,6 +132,14 @@ Critically, that means if your stylesheet uses `px` to set `font-size` anywhere 
 That's a very bad thing. It's inaccessible, and may even prevent somebody from using the site at all.
 
 So while there _may_ be some valid use cases for that behavior, it's definitely not what you want as a default.
+
+<SideNote>
+
+This is also a very good reason to avoid viewport units, like `vw` or `vh`, when setting font size. Those are also static, and impossible to override by the user.
+
+At _most_, a value like `calc(1rem + 1vw)` might be acceptable, since that still contains `rem` as a base. Even then, however, I'd recommend using `clamp()` or media queries to set minimum and maximum values, as screen sizes often go far beyond what we might expect or test. 
+
+</SideNote>
 
 
 ### Differences beyond font size
