@@ -7,9 +7,10 @@
   import Comments from '$lib/components/Comments.svelte'
   import Main from '$lib/components/Main.svelte'
   import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
-  import { onMount, SvelteComponent } from 'svelte'
+  import { onMount } from 'svelte'
+  import type { SvelteComponentTyped } from 'svelte'
 
-  export let PostContent: SvelteComponent 
+  export let PostContent: SvelteComponentTyped
   export let meta: Post
 
   let imagePath: string
@@ -91,10 +92,13 @@
     
     <div class="meta">
       <b>Published:</b> { readableDate(meta.date) }
-      <br>
-      <b>Updated:</b> { readableDate(meta.updated) }
+      {#if meta.date != meta.updated}
+        <br />
+        <b>Updated:</b> { readableDate(meta.updated) }
+      {/if}
     </div>
     
+    <!-- TODO: TypeScript doesn't like this, but I can't find a good answer what to do about it. :/ -->
     <svelte:component this={PostContent} />
 
     <aside class="post-footer">

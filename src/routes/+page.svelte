@@ -30,7 +30,7 @@
         and <i>Hondo</i> 
         (<a href="https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone">iOS</a>/<a href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa">Android</a>/<a href="https://playhondo.com">web</a>);
         writer of the CSS Tricks series <a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/">A Complete Beginner's Guide to NPM</a>;
-	tech blogger (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">hobbyist</a>);
+	tech blogger (both <a href="/writing-and-speaking">freelance</a> and <a href="blog">here on this site</a>);
         author of an open-source SvelteKit static blog starter
         (<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">repo</a>/<a href="https://sveltekit-static-starter.netlify.app">demo</a>);
         occasional freelance developer/designer.
@@ -43,6 +43,7 @@
         senior support lead at <a href="https://getflywheel.com">Flywheel</a>;
         course instructor for <a href="https://interfaceschool.com">AIM Code School</a>;
         graphic designer;
+        Omaha, Nebraska resident;
         seasoned bartender who makes a pretty good old fashioned.
       </p>
 
@@ -61,8 +62,8 @@
         dog person;
         Nintendo fan;
         musician/guitarist/hack pianist;
-        <del>Omaha, Nebraska resident;</del>
-	recent immigrant to Kansas City;
+        he/him/his;
+        recent immigrant to Kansas City;
         liberal abuser of semicolons.
       </p>
     
