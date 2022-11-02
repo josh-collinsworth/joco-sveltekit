@@ -49,15 +49,15 @@ Screens display images using a grid of colored lights called pixels. One pixel i
 
 However, when high-resolution (sometimes called "retina") screens came along, and devices started to pack more pixels into less space, those physical device pixels became _super tiny_. Browsing the web on a high-res screen, it would've been extremely difficult to even read anything if `1px` in CSS still corresponded to one literal device pixel, as pixels themselves were rapidly shrinking. Modern smartphones have resolutions even higher than HD TVs, after all.
 
-<SideNote>
- 
-To illustrate: pixels on the iPhone 14 Pro are so microscopic that 16px, in literal device pixels, would be about the size of printed type at 2pt font size. Good thing browsers scale those up for us!
-  
-</SideNote>
-
 So instead, browsers on high-resolution displays _scale up_ what they show (zoom in, more or less), so that webpages aren't illegibly small. Images and such can still be displayed in all their high-res glory, but text and other elements are upsized to maintain legibility.
 
 So these days, `1px` generally corresponds with the size of a scaled-up, "zoomed-in" pixel, rather than a literal pixel on the actual hardware. Something that is `1px` in our CSS will likely take up multiple physical hardware pixels, and we don't really have any way in pure CSS to specify a literal device pixel. But that's fine, because they'd generally be too small for us to want to mess with anyway.
+
+<SideNote>
+ 
+An example: pixels on the iPhone 14 Pro are so microscopic that 16px, in literal device pixels, would be about the size of printed type at 2pt font size. Good thing browsers scale those up for us!
+  
+</SideNote>
 
 Most of that isn't really important in the context of this discussion, but I think it's nice to know anyway. The important part is: `1px` is equal to whatever the browser is treating as a single pixel (even if it's not literally a pixel on the hardware screen).
 
