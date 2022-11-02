@@ -27,7 +27,7 @@ const render = (posts: Post[]): string => `<?xml version="1.0" encoding="UTF-8" 
 <title>Josh Collinsworth</title>
 <description>Josh Collinsworth</description>
 <link>https://joshcollinsworth.com</link>
-<atom:link href="https://joshcollinsworth.com/rss.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://joshcollinsworth.com/api/rss.xml" rel="self" type="application/rss+xml"/>
 ${posts
   .map(
     (post) => `<item>
