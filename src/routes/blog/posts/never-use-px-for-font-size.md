@@ -21,7 +21,7 @@ Forgive the clickbait title; "never" is a strong word, but this is an important,
 
 There are quite a few misconceptions that float around in the sphere of web development, and persist no matter how often they're debunked. "External links should always open in new tabs" is one good example. [CSS Tricks covered this one pretty thoroughly here](https://css-tricks.com/use-target_blank/) nearly a decade ago (tl;dr: mostly false), but it still seems to persist in some corners.
 
-The current case in point, however, is: the idea that there's no functional difference between `px`, and `em` or `rem` units in CSS. It's a misconception I keep hearing again and again, so I figured I'd address it here, in a post.
+Case in point: the idea that there's no functional difference between `px`, and `em` or `rem` units in CSS. It's a misconception I keep hearing again and again, so I figured I'd address it here, in a post.
 
 <CalloutPlusQuote>
 
@@ -48,6 +48,12 @@ Screens display images using a grid of colored lights called pixels. One pixel i
 </SideNote>
 
 However, when high-resolution (sometimes called "retina") screens came along, and devices started to pack more pixels into less space, those physical device pixels became _super tiny_. Browsing the web on a high-res screen, it would've been extremely difficult to even read anything if `1px` in CSS still corresponded to one literal device pixel, as pixels themselves were rapidly shrinking. Modern smartphones have resolutions even higher than HD TVs, after all.
+
+<SideNote>
+ 
+To illustrate: pixels on the iPhone 14 Pro are so microscopic that 16px, in literal device pixels, would be about the size of printed type at 2pt font size. Good thing browsers scale those up for us!
+  
+</SideNote>
 
 So instead, browsers on high-resolution displays _scale up_ what they show (zoom in, more or less), so that webpages aren't illegibly small. Images and such can still be displayed in all their high-res glory, but text and other elements are upsized to maintain legibility.
 
