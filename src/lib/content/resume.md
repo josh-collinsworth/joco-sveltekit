@@ -12,7 +12,8 @@ Front-end developer with 7+ years of experience designing, engineering, managing
 
 _August 2021 – present_
 
-- Executed the conversion of several marketing pages from ERB templates to Hydrogen, Shopify's internal server-rendered React framework.
+- Implemented targeted "home cards," alerting logged-in users of new features and options based eligibility, determined by locale, language, subscription and/or installed apps
+- Executed the conversion of several marketing pages from ERB templates to Hydrogen, Shopify's internal server-rendered React and GraphQL framework
 - Collaborated with designers and UX leaders on customization options for React design components, enabling bespoke designs for individual marketing landing pages within the design system and framework 
 - Operated as the lead developer on several web page internationalization projects, launching Shopify's point of sale marketing pages and offerings in Spain, Italy, and Singapore
 - Built out numerous marketing landing pages, including [omnichannel selling](https://www.shopify.com/pos/sell-everywhere), showcasing Shopify's integrated sales channels with video and animation
