@@ -18,112 +18,112 @@
 
 [[redirects]]
   from = "/essential"
-  to = "/blog/essential-tools-wordpress-development/"
+  to = "/blog/essential-tools-wordpress-development"
   status = 301
 
 [[redirects]]
   from = "/quina"
-  to = "/announcing-quina-my-first-app/"
+  to = "/announcing-quina-my-first-app"
   status = 301
 
 [[redirects]]
   from = "/announcing-quina-my-first-app"
-  to = "/blog/announcing-quina-my-first-app/"
+  to = "/blog/announcing-quina-my-first-app"
   status = 301
 
 [[redirects]]
   from = "/creating-custom-gutenberg-blocks-with-the-block-lab-plugin"
-  to = "/blog/creating-custom-gutenberg-blocks-with-the-block-lab-plugin/"
+  to = "/blog/creating-custom-gutenberg-blocks-with-the-block-lab-plugin"
   status = 301
 
 [[redirects]]
   from = "/a-new-headless-site-with-gridsome"
-  to = "/blog/a-new-headless-site-with-gridsome/"
+  to = "/blog/a-new-headless-site-with-gridsome"
   status = 301
 
 [[redirects]]
   from = "/goodbye-instagram"
-  to = "/blog/goodbye-instagram/"
+  to = "/blog/goodbye-instagram"
   status = 301
 
 [[redirects]]
   from = "/goodbye-wordpress"
-  to = "/blog/goodbye-wordpress/"
+  to = "/blog/goodbye-wordpress"
   status = 301
 
 [[redirects]]
   from = "/how-to-connect-local-with-codekit"
-  to = "/blog/how-to-connect-local-with-codekit/"
+  to = "/blog/how-to-connect-local-with-codekit"
   status = 301
 
 [[redirects]]
   from = "/confirm-all-ids-are-unique-in-an-array-of-javascript-objects-using-map-and-sets"
-  to = "/blog/confirm-all-ids-are-unique-in-an-array-of-javascript-objects-using-map-and-sets/"
+  to = "/blog/confirm-all-ids-are-unique-in-an-array-of-javascript-objects-using-map-and-sets"
   status = 301
 
 [[redirects]]
   from = "/adding-gutenberg-full-and-wide-width-image-support-to-your-wordpress-theme"
-  to = "/blog/adding-gutenberg-full-and-wide-width-image-support-to-your-wordpress-theme/"
+  to = "/blog/adding-gutenberg-full-and-wide-width-image-support-to-your-wordpress-theme"
   status = 301
 
 [[redirects]]
   from = "/lets-learn-css-variables"
-  to = "/blog/lets-learn-css-variables/"
+  to = "/blog/lets-learn-css-variables"
   status = 301
 
 [[redirects]]
   from = "/new-site-new-theme-for-2018"
-  to = "/blog/new-site-new-theme-for-2018/"
+  to = "/blog/new-site-new-theme-for-2018"
   status = 301
 
 [[redirects]]
   from = "/five-ways-to-become-a-better-designer-that-arent-design"
-  to = "/blog/five-ways-to-become-a-better-designer-that-arent-design/"
+  to = "/blog/five-ways-to-become-a-better-designer-that-arent-design"
   status = 301
 
 [[redirects]]
   from = "/essential-tools-wordpress-development"
-  to = "/blog/essential-tools-wordpress-development/"
+  to = "/blog/essential-tools-wordpress-development"
   status = 301
 
 [[redirects]]
   from = "/the-five-things-i-wish-somebody-had-told-me-as-a-design-student"
-  to = "/blog/the-five-things-i-wish-somebody-had-told-me-as-a-design-student/"
+  to = "/blog/the-five-things-i-wish-somebody-had-told-me-as-a-design-student"
   status = 301
 
 [[redirects]]
   from = "/wordpress-child-theme-explanation"
-  to = "/blog/wordpress-child-theme-explanation/"
+  to = "/blog/wordpress-child-theme-explanation"
   status = 301
 
 [[redirects]]
   from = "/why-designers-shouldnt-remake-other-designers-logos"
-  to = "/blog/why-designers-shouldnt-remake-other-designers-logos/"
+  to = "/blog/why-designers-shouldnt-remake-other-designers-logos"
   status = 301
 
 [[redirects]]
   from = "/8-student-portfolio-mistakes"
-  to = "/blog/8-student-portfolio-mistakes/"
+  to = "/blog/8-student-portfolio-mistakes"
   status = 301
 
 [[redirects]]
   from = "/profit-is-not-a-value"
-  to = "/blog/profit-is-not-a-value/"
+  to = "/blog/profit-is-not-a-value"
   status = 301
 
 [[redirects]]
   from = "/filetypes"
-  to = "/blog/filetypes/"
+  to = "/blog/filetypes"
   status = 301
 
 [[redirects]]
   from = "/pantone"
-  to = "/blog/pantone/"
+  to = "/blog/pantone"
   status = 301
 
 [[redirects]]
   from = "/12-things"
-  to = "/blog/12-things/"
+  to = "/blog/12-things"
   status = 301
 
 # ---
