@@ -235,19 +235,25 @@ But once more, if you take anything away from this post:
 
 ### An important note about media queries
 
-This is a late addendum to this post, but: it's important to never use `px` in `@media` queries for all the same reasons above; it will work when using zoom, but a media query that uses `px` will fail users miserably when they set a larger font size on their own.
+This is a late addendum to this post, but: it's important to avoid `px` in `@media` queries for all the same reasons above; it will work fine when the user zooms, but a media query that uses `px` will fail users when they set a larger font size on their own.
 
 ```css
 @media (min-width: 800px) {
-  /* Will NOT trigger with large font size */
+  /* Changing font size does NOT affect this breakpoint */
 }
 
 @media (min-width: 50rem) {
-  /* WILL hit this breakpoint with larger font sizes */
+  /* Changing font size DOES affect this breakpoint */
 }
 ```
 
-That's because as the font size scales up, `50rem` becomes a different value based on that preference, while `800px` does not. So be sure to avoid using `px` in media queries, too, unless you're sure you know what you're doing and what effect it will have on users who set their own font size in the browser.
+That's because as the font size scales up, `50rem` becomes a different value based on that preference, while `800px` does not.
+
+Most likely, when we're writing CSS for larger breakpoints, we're taking for granted that there's plenty of screen real estate for elements to spread into. This may not be the case if the user has set a very large font size, and setting our media queries in `rem` instead of `px` helps us avoid that assumption and respond to user preference.
+
+I ran into that issue on this very site; I was setting all of my breakpoints in `px`. When I set the default font size larger, however, my media queries didn't respond, as they were still only looking at the pixel width of the screen. So I still had a tiny sidebar, with huge text illegibly smashed inside it, since I didn't account for user preference. I changed to `rem` immediately after that, and it solved the issue.
+
+So in short: be sure to avoid using `px` in media queries, too, unless you're sure you know what you're doing and what effect it will have on users who set their own font size in the browser.
 
 
 ## A final word on accessibility
