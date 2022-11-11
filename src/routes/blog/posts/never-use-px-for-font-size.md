@@ -1,7 +1,7 @@
 ---
 title: "Why you should never use px to set font-size in CSS"
 date: "2022-10-28"
-updated: "2022-10-31"
+updated: "2022-11-11"
 categories:
   - "a11y"
   - "web"
@@ -215,6 +215,7 @@ If you'd like an interactive demo that ties all this together, check out this fi
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
+
 ## Which to choose
 
 So, knowing that `em` and `rem` will scale in relation with font size, but `px` values will _not_, where does that leave us? Should we just _never_ use `px` for _anything_!?
@@ -225,9 +226,28 @@ Since we know that `px` values _won't_ change when and if the user adjusts their
 
 Maybe there are border sizes we wouldn't want to change, or maybe there are decorative elements on the page, created with CSS, that wouldn't seem to work well at a larger size, just because the font is larger. Maybe we don't want padding to balloon as font size does. `px` is still a good choice in all of these cases.
 
+Me, personally: I would recommend setting all sizes using `rem`. I sprinkle in `em` only where I want something to be proportional to the current font size (e.g., an icon next to some text that should be exactly the same height as the characters, and half a character to the side). I would not use `px` anywhere, except for design elements I explicitly did not want to scale with font size.
+
 But once more, if you take anything away from this post:
 
 **Never set `font-size` in `px` units**—at least, not unless you're incredibly sure of what you're doing, how it will behave, and whether it will still be accessible when you do.
+
+
+### An important note about media queries
+
+This is a late addendum to this post, but: it's important to never use `px` in `@media` queries for all the same reasons above; it will work when using zoom, but a media query that uses `px` will fail users miserably when they set a larger font size on their own.
+
+```css
+@media (min-width: 800px) {
+  /* Will NOT trigger with large font size */
+}
+
+@media (min-width: 50rem) {
+  /* WILL hit this breakpoint with larger font sizes */
+}
+```
+
+That's because as the font size scales up, `50rem` becomes a different value based on that preference, while `800px` does not. So be sure to avoid using `px` in media queries, too, unless you're sure you know what you're doing and what effect it will have on users who set their own font size in the browser.
 
 
 ## A final word on accessibility
