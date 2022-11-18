@@ -28,6 +28,7 @@
         <li><a href="https://github.com/josh-collinsworth" rel="me">GitHub</a></li>
         <li><a href="https://codepen.io/collinsworth">CodePen</a></li>
         <li><a href="https://twitter.com/jjcollinsworth" rel="me">Twitter</a></li>
+        <li><a rel="me" href="https://mastodon.sandwich.net/@collinsworth">Mastodon</a></li>
       </ul>
     </div>
 
