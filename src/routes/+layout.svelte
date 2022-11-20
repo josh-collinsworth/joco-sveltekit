@@ -72,8 +72,8 @@
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
-	<meta name="twitter:creator" content="@jjcollinsworth" />
-	<meta name="twitter:site" content="@jjcollinsworth"/>
+	<!-- <meta name="twitter:creator" content="@jjcollinsworth" />
+	<meta name="twitter:site" content="@jjcollinsworth"/> -->
   <meta name="twitter:card" content="summary_large_image" />
 	{#if !dev}
 		<script defer data-domain="joshcollinsworth.com" src="https://plausible.io/js/plausible.js"></script>

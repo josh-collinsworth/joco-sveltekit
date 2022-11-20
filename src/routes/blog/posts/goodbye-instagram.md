@@ -138,6 +138,8 @@ No matter how tiny a grain of sand I might be in that sandcastle, I can’t in g
 No matter how tiny a grain of sand I might be in that sandcastle, I can’t in good conscience be a part of its walls any&nbsp;more.
 </PullQuote>
 
-If you'd like to keep in touch with me, I'll still be around on [Twitter](https://twitter.com/jjcollinsworth), at least until I face the same reckoning there (though my content there is of a decidedly different flavor). And I'll be attempting to add some more personal content both there and here, on my personal site.
+If you'd like to keep in touch with me, I'll still be around on Twitter, at least until I face the same reckoning there (though my content there is of a decidedly different flavor). And I'll be attempting to add some more personal content both there and here, on my personal site.
+
+[Edit, November 20, 2022: that reckoning happened and I am no longer on Twitter, either.]
 
 Meanwhile, I wish you all well, and hope—regardless of the answer—that you'll at least spend some time considering our role in supporting social media platforms, Facebook and Instagram in particular. Thank you for taking the time to read my thoughts on the topic.
