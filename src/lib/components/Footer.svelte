@@ -27,7 +27,7 @@
         <li><a href="https://ko-fi.com/collinsworth">Ko-Fi</a></li>
         <li><a href="https://github.com/josh-collinsworth" rel="me">GitHub</a></li>
         <li><a href="https://codepen.io/collinsworth">CodePen</a></li>
-        <li><a href="https://mastodon.sandwich.net/@collinsworth" rel="me">Mastodon</a></li>
+        <li><a rel="me" href="https://hachyderm.io/@collinsworth">Mastodon</a></li>
       </ul>
     </div>
 
