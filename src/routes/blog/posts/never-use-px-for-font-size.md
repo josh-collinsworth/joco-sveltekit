@@ -6,6 +6,7 @@ categories:
   - "a11y"
   - "web"
   - "css"
+  - "popular"
 coverImage: "px_em_rem/never-px.png"
 coverWidth: 16
 coverHeight: 9
