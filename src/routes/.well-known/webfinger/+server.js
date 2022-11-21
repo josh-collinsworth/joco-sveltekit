@@ -2,25 +2,25 @@ import { json } from '@sveltejs/kit'
 export const prerender = true
 
 const mastodonData = {
-  "subject": "acct:collinsworth@mastodon.sandwich.net",
+  "subject": "acct:collinsworth@hachyderm.io",
   "aliases": [
-    "https://mastodon.sandwich.net/@collinsworth",
-    "https://mastodon.sandwich.net/users/collinsworth"
+    "https://hachyderm.io/@collinsworth",
+    "https://hachyderm.io/users/collinsworth"
   ],
   "links": [
     {
       "rel": "http://webfinger.net/rel/profile-page",
       "type": "text/html",
-      "href": "https://mastodon.sandwich.net/@collinsworth"
+      "href": "https://hachyderm.io/@collinsworth"
     },
     {
       "rel": "self",
       "type": "application/activity+json",
-      "href": "https://mastodon.sandwich.net/users/collinsworth"
+      "href": "https://hachyderm.io/users/collinsworth"
     },
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
-      "template": "https://mastodon.sandwich.net/authorize_interaction?uri={uri}"
+      "template": "https://hachyderm.io/authorize_interaction?uri={uri}"
     }
   ]
 }
