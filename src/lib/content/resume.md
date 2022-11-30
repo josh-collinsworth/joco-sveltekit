@@ -2,8 +2,9 @@
 
 Front-end developer with 7+ years of experience designing, engineering, managing and supporting web applications. Specializing in UI design and user experience, working with JavaScript (especially Vue, Svelte and React), CSS, and responsive, accessible, semantic HTML.
 
+---
 
-## Professional experience
+## Experience
 
 
 ### [Shopify](https://shopify.com/)
@@ -12,14 +13,26 @@ Front-end developer with 7+ years of experience designing, engineering, managing
 
 _August 2021 – present_
 
-- Implemented targeted "home cards," alerting logged-in users of new features and options based eligibility, determined by locale, language, subscription and/or installed apps
+- Actively participated in discussions of best approaches and practices to optimize scalability of Shopify's online marketing pages and funnels
 - Executed the conversion of several marketing pages from ERB templates to Hydrogen, Shopify's internal server-rendered React and GraphQL framework
 - Collaborated with designers and UX leaders on customization options for React design components, enabling bespoke designs for individual marketing landing pages within the design system and framework 
+- Implemented targeted "home cards," alerting logged-in users of new features and options based eligibility, determined by locale, language, subscription and/or installed apps
 - Operated as the lead developer on several web page internationalization projects, launching Shopify's point of sale marketing pages and offerings in Spain, Italy, and Singapore
 - Built out numerous marketing landing pages, including [omnichannel selling](https://www.shopify.com/pos/sell-everywhere), showcasing Shopify's integrated sales channels with video and animation
 - Worked with internal stakeholders to improve SEO and conversions, including implementing A/B testing
 - Collaborated with third-party product owners and API developers to improve Shopify's Installments product offering
 - Create internal diagnostics tools for troubleshooting third-party API interactions
+
+
+### Various publications
+
+**Freelance technical writer**
+
+_Including articles published for:_
+
+- [CSS Tricks](https://css-tricks.com/author/joshcollinsworth/)
+- [LogRocket blog](https://blog.logrocket.com/author/joshcollinsworth/)
+- [The Layout](https://getflywheel.com/layout/leveling-up-flywheels-retreat-website/) (_misattributed_)
 
 
 ### [Aware3](https://aware3.com)
@@ -36,17 +49,6 @@ _February 2021 – August 2021_
 - Initiated a streamlining of the ticketing and pull request processes to improve efficiency and team communication by reducing redundancy by consolidating to a single universal workflow
 - Spearheaded accessibility audits and updates to markup semantics, focus styles, and accessible text
 - Actively participated in GitHub code reviews and applicant code sample reviews
-
-
-### Various publications
-
-**Freelance technical writer**
-
-_Including articles published for:_
-
-- [CSS Tricks](https://css-tricks.com/author/joshcollinsworth/)
-- [LogRocket blog](https://blog.logrocket.com/author/joshcollinsworth/)
-- [The Layout](https://getflywheel.com/layout/leveling-up-flywheels-retreat-website/) (_misattributed_)
 
 
 ### [WP Engine](https://wpengine.com)
@@ -105,32 +107,36 @@ _August 2014 – September 2015_
 - Participated in discovery sessions, critiques and reviews of concepts and designs
 - Presented finalized design concepts to clients and maintained client communication as needed
 
+---
 
 ## Skills
 
-- Proficient with semantic HTML, responsive CSS/Sass, and ES6+ JavaScript; specialized in Vue (Vue Router, Vuex, Nuxt, Gridsome), Svelte and SvelteKit, WordPress, SVG, web animation, performance and optimization.
+- Proficient with semantic, accessible HTML; strong with responsive CSS/Sass, and ES6+ JavaScript; specialized in Vue, Svelte and SvelteKit, WordPress, SVG, web animation, performance, and optimization.
 - Experienced with React, TypeScript, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, git/GitHub, NPM, Jira, CLIs, DNS, SemVer.
 
+---
 
-## Education, etc.
-
-### Metropolitan Community College
-**August 2012 – November 2014**
-
-_Associate’s of Graphic Communication Art and Design_
-
-### Interface Web School
-**Spring 2015**
-
-_WordPress Developer Certification_
+## Education
 
 ### Codecademy
 **January 2018**
 
 _Certification: Codecademy Pro Intensive React web app builder course_
 
-## More
+### Interface Web School
+**Spring 2015**
 
-- [Get in contact](/contact?from_page=resume)
+_WordPress Developer Certification_
+
+### Metropolitan Community College
+**August 2012 – November 2014**
+
+_Associate’s of Graphic Communication Art and Design_
+
+---
+
+## Links
+
+- [Email](/contact?from_page=resume)
 - [LinkedIn](https://linkedin.com/in/joshcollinsworth)
 - [GitHub](https://github.com/josh-collinsworth)
