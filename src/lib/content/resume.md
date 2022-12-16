@@ -15,6 +15,7 @@ _August 2021 – present_
 
 - Actively participated in discussions of best approaches and practices to optimize scalability of Shopify's online marketing pages and funnels
 - Executed the conversion of several marketing pages from ERB templates to Hydrogen, Shopify's internal server-rendered React and GraphQL framework
+- Built out new pages and components using React, TypeScript, and Tailwind, collaborating with designers and stakeholders on implementation and futureproofing
 - Collaborated with designers and UX leaders on customization options for React design components, enabling bespoke designs for individual marketing landing pages within the design system and framework 
 - Implemented targeted "home cards," alerting logged-in users of new features and options based eligibility, determined by locale, language, subscription and/or installed apps
 - Operated as the lead developer on several web page internationalization projects, launching Shopify's point of sale marketing pages and offerings in Spain, Italy, and Singapore
@@ -112,7 +113,7 @@ _August 2014 – September 2015_
 ## Skills
 
 - Proficient with semantic, accessible HTML; strong with responsive CSS/Sass, and ES6+ JavaScript; specialized in Vue, Svelte and SvelteKit, WordPress, SVG, web animation, performance, and optimization.
-- Experienced with React, TypeScript, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, git/GitHub, NPM, Jira, CLIs, DNS, SemVer.
+- Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, git/GitHub, NPM, Jira, CLIs, DNS, SemVer.
 
 ---
 
