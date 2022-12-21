@@ -1,0 +1,45 @@
+@media print {
+	.header,
+	.grid-wrapper,
+	.footer,
+	.loader,
+	script,
+	head,
+	style {
+		display: none !important;
+	}
+
+	h1 .title-wrap {
+		background: none !important;
+		background-clip: none !important;
+		color: inherit !important;
+		-webkit-text-fill-color: inherit !important;
+	}
+
+	body {
+		font-size: 11pt !important;
+	}
+
+	html,
+	body,
+	.layout,
+	#app { 
+		height: auto !important; 
+		min-height: unset !important;
+	}
+
+	.layout {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 5in;
+		break-inside: avoid;
+	}
+
+	.loader + div {
+		display: none!important;
+	}
+
+	* {
+		break-inside: avoid !important;
+	}
+}

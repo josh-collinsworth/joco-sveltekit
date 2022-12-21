@@ -5,6 +5,7 @@
 @use './layout';
 @use './forms';
 @use './code';
+@use './print';
 
 *, *:before, *:after {
   box-sizing: border-box;

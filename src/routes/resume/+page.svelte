@@ -27,6 +27,10 @@
 
 <style lang="scss" global>
 .resume {
+	.resume-logo {
+		display: none;
+	}
+
   h3 {
     margin-bottom: calc(var(--quarterNote) / 2);
 
@@ -94,5 +98,62 @@
       margin-top: var(--quarterNote);
     }
   }
+}
+
+@media print {
+	.page-head {
+		display: none !important;
+	}
+
+	li {
+		break-inside: avoid;
+	}
+
+	.resume {
+		break-inside: avoid;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 6in;
+
+		.resume-logo {
+			display: block;
+			margin: 0;
+			max-width: 2in;
+		}
+
+		h2 {
+			font-size: 23pt;
+			position: static;
+			margin: 0.5in 0 0.125in;
+			border-bottom: 1px solid;
+			padding-bottom: 0.05in;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		h3 {
+			font-size: 17pt;
+			margin: 0.5in 0 0.125in;
+		}
+
+		h2 + h3 {
+			margin-top: 0.25in;
+		}
+
+		ul li {
+			margin: 0 0 0.1in;
+		}
+
+		hr {
+			display: none;
+		}
+
+		h2:before {
+			display: none;
+		}
+	}
 }
 </style>

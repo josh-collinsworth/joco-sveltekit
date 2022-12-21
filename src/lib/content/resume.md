@@ -1,3 +1,5 @@
+<img src="/images/post_images/2020-logo-final.svg" alt="Josh Collinsworth" class="resume-logo" />
+
 ## Summary
 
 Front-end developer with 7+ years of experience designing, engineering, managing and supporting web applications. Specializing in UI design and user experience, working with JavaScript (especially Vue, Svelte and React), CSS, and responsive, accessible, semantic HTML.
