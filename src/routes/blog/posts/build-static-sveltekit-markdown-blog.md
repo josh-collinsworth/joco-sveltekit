@@ -1628,10 +1628,10 @@ Ideally, we'll probably want to set up some stuff for the `<head>` on our variou
 Svelte has a <code>&lt;svelte:head&gt;</code> component for adding HTML to the page head from anywhere.
 </Callout>
 
-Add one somewhere in `_post.svelte` (I like to put it just before the HTML, personally), and let's add a title inside.
+Add one somewhere in `[slug]/+page.svelte` (I like to put it just before the HTML, personally), and let's add a title inside.
 
 ```svelte
-<!-- _post.svelte -->
+<!-- src/routes/blog/[slug]/+page.svelte -->
 <svelte:head>
   <title>My blog - {title}</title>
   <meta property="og:title" content={title} />
