@@ -389,6 +389,14 @@ Our next step is to install both `svelte-preprocess` and `sass`, which we may as
 npm i -D svelte-preprocess sass
 ```
 
+<SideNote>
+
+As of version 1.0, SvelteKit features `vitePreprocess` as an included alternative to `svelte-preprocess`.
+
+While `vitePreprocess` ships with SvelteKit and is therefore bit simpler to use, as of this update, it's unfortunately not as capable as `svelte-preprocess`, and lacks a few features I consider indispensable, such as the `global` modifier for component styles. For that reason, I've left `svelte-preprocess` as the preferred option in this tutorial. You can [read more about both preprocessers in the docs](https://kit.svelte.dev/docs/integrations#preprocessors-vitepreprocess).
+
+</SideNote>
+
 
 #### Modifying the Svelte config
 
