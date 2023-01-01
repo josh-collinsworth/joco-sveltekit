@@ -21,10 +21,19 @@
 </svelte:head>
 
 
-<Main>	
+<Main className="blog-roll">	
 	<div class="compressed-content double-wide">
 		<PostList posts={posts} />
 
 		<Pagination currentPage={1} {totalPosts} />
 	</div>
 </Main>
+
+
+<style lang="scss" global>
+	.blog-roll {
+		@media (min-width: vars.$lg) {
+			grid-column: span 2;
+		}
+	}
+</style>

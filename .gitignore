@@ -4,3 +4,7 @@ node_modules
 /package
 /build
 /src/routes/blog/posts/drafts
+src/lib/content/most-retweeted.js
+src/lib/content/tweets.js
+src/routes/tweets/
+static/images/tweet_images/

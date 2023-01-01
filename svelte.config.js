@@ -33,7 +33,6 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-    trailingSlash: 'never'
 	}
 }
 

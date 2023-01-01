@@ -1,7 +1,7 @@
 ---
 title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: "2021-12-27"
-updated: "2022-09-06"
+updated: "2023-01-01"
 categories: 
   - "svelte"
   - "javascript"
@@ -15,16 +15,11 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 ---
 
 <script>
-  import Warning from '$lib/components/Warning.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import PullQuote from '$lib/components/PullQuote.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
-
-<Warning>
-This post was recently updated to reflect <a href="/blog/sveltekit-breaking-changes">new breaking changes in SvelteKit</a>. I've tried to make sure it's current and relevant, but if I've missed something, please leave a comment below or <a href="https://github.com/josh-collinsworth/joco-sveltekit/blob/main/src/routes/blog/posts/build-static-sveltekit-markdown-blog.md">submit a pull request on this post</a>.
-</Warning>
 
 If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:
 
@@ -1673,20 +1668,20 @@ I won't go into detail here, but you can check the official [Svelte docs error p
 ### Preload routes
 
 <PullQuote>
-SvelteKit ships with two functions for preloading data in the background: <code>prefetch</code>, and <code>prefetchRoutes</code>.
+SvelteKit ships with two functions for preloading data in the background: <code>preloadCode</code>, and <code>preloadData</code>.
 </PullQuote>
 
 SvelteKit is already fast, and when we pre-render our HTML like we are via the static adapter, it's going to be blazing. But we can actually push the performance _even further_ with SvelteKit's built-in preloading.
 
 <Callout>
-SvelteKit ships with two functions for preloading data in the background: <code>prefetch</code>, and <code>prefetchRoutes</code>.
+SvelteKit ships with two functions for preloading data in the background: <code>preloadCode</code>, and <code>preloadData</code>.
 </Callout>
 
 To use them, just import them in a page or layout (our global layout file might be a good choice):
 
 ```svelte
 <script>
-import { prefetch, prefetchRoutes } from '$app/navigation'
+import { preloadCode, preloadData } from '$app/navigation'
 </script>
 ```
 
@@ -1696,20 +1691,22 @@ import { prefetch, prefetchRoutes } from '$app/navigation'
 
 The difference between the two is:
 
-- `prefetch` preloads a single route;
-- `prefetchRoutes` preloads _all_ routes.
+- `preloadCode` fetches a single route's actual page content, it's ready to load quickly when the user navigates;
+- `preloadData` preloads the page _and also_ calls its `load` function ahead of time.
+
+If you don't use a `load` function (or if it doesn't do anything dynamic), then the two will be effectively the same.
 
 ```svelte
 <script>
-import { prefetch, prefetchRoutes } from '$app/navigation'
+import { preloadCode, preloadData } from '$app/navigation'
 
-prefetch('/blog') // Loads the blog page in the background
-
-prefetchRoutes() // Loads ALL routes in the background
+preloadCode('/blog', '/about', '/blog/*')
+// OR:
+preloadData('/blog', '/about', '/blog/*')
 </script>
 ```
 
-Because `prefetchRoutes` grabs _all_ the site's data behind the scenes, we should use it cautiously and judiciously. We don't want to force users to download megabytes of data presumptively. That could very well cost them real money, for pages they might not even look at.
+Just a note that we should be cautious and judicious with our use of preloading. We don't want to force users to download megabytes of data presumptively. That could very well cost them real money, for pages they might not even look at.
 
 
 ### Add anchor options
@@ -1718,8 +1715,9 @@ Speaking of preloading: SvelteKit offers a slightly less greedy version of it, a
 
 Anchor options are special, SvelteKit-specific attributes you can add to `<a>` anchor tags. There are three:
 
-- `<a data-sveltekit:prefetch>` causes the link to begin preloading as soon as the user _hovers_, rather than waiting for a click, saving some milliseconds.
-- `<a rel="external">` signals to SvelteKit that the link in question is _not_ part of our SvelteKit app, and the router shouldn't try to handle it.
+- `<a data-sveltekit-preload-code>` causes the link to begin preloading as soon as the user _hovers_, rather than waiting for a click, saving some milliseconds. (There's also `data-sveltekit-preload-data`, which also calls the page's `load` function.)
+- `<a data-sveltekit-reload>` will prevent SvelteKit's router from handling a page navigation, and will fall back to the browser's native loading instead.
+- `<a rel="external">` is the same as `data-sveltekit-reload`, but the link is _also_ ignored during prerendering.
 - `<a sveltekit:noscroll`> prevents SvelteKit from resetting the scroll position to the top of the new page. This is usually undesirable on websites, but may be more intuitive in some app situations.
 
 

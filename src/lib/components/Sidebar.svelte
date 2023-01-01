@@ -18,7 +18,7 @@
   <ul class="sidebar__posts-list">
     {#each popularPosts as post}
       <li>
-        <a href="/blog/{post.slug}" data-sveltekit:prefetch>
+        <a href="/blog/{post.slug}" data-sveltekit-preload-code>
           <span>{post.title}</span>
         </a>
       </li>

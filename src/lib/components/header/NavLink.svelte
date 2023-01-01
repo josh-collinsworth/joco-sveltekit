@@ -22,7 +22,7 @@
   class:mobile-only={mobileOnly}
 >
   <a
-    data-sveltekit:prefetch
+    data-sveltekit-preload-code
     href={to}
     class="nav__link"
     class:active={isCurrentPage}

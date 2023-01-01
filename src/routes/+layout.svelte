@@ -11,14 +11,14 @@
 	import { prefersReducedData } from '$lib/assets/js/utils'
 	import { isLoading, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
-  import { afterNavigate, beforeNavigate, prefetch } from '$app/navigation';
+	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation';
 	import { dev } from '$app/environment'
 
 
 	
 	export let data: LayoutData
-  
-  let path: string
+		
+	let path: string
 	$: ({ path } = data)
 
 	let lastScrollPosition: number = 0
@@ -52,16 +52,12 @@
 		lastScrollPosition = currentScrollPosition
 	}, 100)
 
-  beforeNavigate(() => { setLoading(true) })
-
-  afterNavigate(() => { setLoading(false) })
+	beforeNavigate(() => { setLoading(true) })
+	afterNavigate(() => { setLoading(false) })
 
 	onMount(() => {
 		if (!prefersReducedData()) {
-			prefetch('/')
-			prefetch('/blog')
-			prefetch('/projects')
-			prefetch('/writing-and-speaking')
+			preloadCode('/', '/blog', '/projects', '/writing-and-speaking')
 		}
 	})
 </script>
@@ -74,7 +70,7 @@
 	<meta property="og:locale" content="en_US" />
 	<!-- <meta name="twitter:creator" content="@jjcollinsworth" />
 	<meta name="twitter:site" content="@jjcollinsworth"/> -->
-  <meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="summary_large_image" />
 	{#if !dev}
 		<script defer data-domain="joshcollinsworth.com" src="https://plausible.io/js/plausible.js"></script>
 	{/if}
