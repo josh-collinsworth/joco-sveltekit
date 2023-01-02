@@ -14,10 +14,8 @@
 	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation';
 	import { dev } from '$app/environment'
 
-
-	
 	export let data: LayoutData
-		
+
 	let path: string
 	$: ({ path } = data)
 

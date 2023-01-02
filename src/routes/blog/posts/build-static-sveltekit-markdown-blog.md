@@ -398,7 +398,7 @@ npm i -D svelte-preprocess sass
 
 As of version 1.0, SvelteKit features `vitePreprocess` as an included alternative to `svelte-preprocess`.
 
-While `vitePreprocess` ships with SvelteKit and is therefore bit simpler to use, as of this update, it's unfortunately not as capable as `svelte-preprocess`, and lacks a few features I consider indispensable, such as the `global` modifier for component styles. For that reason, I've left `svelte-preprocess` as the preferred option in this tutorial. You can [read more about both preprocessers in the docs](https://kit.svelte.dev/docs/integrations#preprocessors-vitepreprocess).
+While `vitePreprocess` ships with SvelteKit and is therefore a bit simpler to use, as of this update, it's unfortunately not as capable as `svelte-preprocess`, and lacks a few features I consider indispensable, such as the `global` modifier for component styles. For that reason, I've left `svelte-preprocess` as the preferred option in this tutorial. You can [read more about both preprocessers in the docs](https://kit.svelte.dev/docs/integrations#preprocessors-vitepreprocess).
 
 </SideNote>
 
@@ -637,14 +637,16 @@ Unfortunately, you can't just drop Markdown files straight into the `blog` folde
   📂 src
   ┗ 📂 routes
     ┗ 📂 blog
-      ┣ 📜 +1.md
-      ┣ 📜 +2.md
-      ┣ 📜 +3.md
+      ┣ 📜 1.md
+      ┣ 📜 2.md
+      ┣ 📜 3.md
       ┗ 📂 [slug]
         ┗ 📜 +page.svelte
   ```
 
-Note that in both of the above cases, the posts will load at the path `/blog/1`, `/blog/2`, etc.
+Note that in option 2, the posts could be anywhere; they wouldn't need to be inside the `blog` folder, or even in `src/routes/`, because in option 2, the route that loads the posts is dynamic (one route file can load any number of Markdown posts).
+
+Also note that in either of the above cases, the posts will load at the path `/blog/1`, `/blog/2`, etc.
 
 **I'll cover both options here.** If this is a _new_ blog, or you have very few posts (and don't mind an individual folder for each post) option #1 will be the simplest for you to get started with.
 
@@ -1093,7 +1095,7 @@ That might look like a lot, but when you consider it's actually _everything_ we 
 
 ![The data from our posts is now coming through as JSON!](/images/post_images/sveltekit-posts-json.png)
 
-Even cooler: this endpoint will update automatically with each Markdown post we add! Drop a new `.md` folder in, and it's part of the endpoint.
+Even cooler: this endpoint will update automatically with each Markdown post we add! Drop a new `.md` file in, and it's part of the endpoint.
 
 <SideNote>
 Ideally, you'll probably want to add try/catch blocks to that code, in case anything goes wrong while loading the endpoint.
@@ -1162,22 +1164,20 @@ The HTML in the above example is a bit simple (and doesn't properly account for 
 
 ## Prerendering with the static adapter
 
-**SvelteKit is server-rendered by default.** That's great, because server-side rendering is generally better for performance, accessibility, and SEO. However, that also means static file prerendering (which is what we want) is opt-in.
-
 <PullQuote>
 SvelteKit has a number of available adapters, which shape our project's build output based on how we'd like to&nbsp;deploy. 
 </PullQuote>
 
-You _can_ [manually make any page prerendered](https://kit.svelte.dev/docs/page-options#prerender)--handy for things like an "about" or "faq" page that won't have any dynamic content. However, if we want our _entire_ site to be statically pre-rendered, marking each and every page by hand would be an error-prone chore. So instead, we'll reach for SvelteKit's [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static).
+**SvelteKit is server-rendered by default.** That's great, because server-side rendering is generally better for performance, accessibility, and SEO. However, that also means static file prerendering (which is what we want) is opt-in.
 
-<Callout>
-SvelteKit has a number of available adapters, which shape our project's build output based on how we'd like to deploy. 
-</Callout>
+You _can_ [manually make any page prerendered](https://kit.svelte.dev/docs/page-options#prerender)--handy for things like an "about" or "faq" page that won't have any dynamic content. You can _also_ prerender at the layout level, to handle whole directiries once. Either way, this is done by exporting a constant named `prerender` and setting it to `true` ([see the docs](https://kit.svelte.dev/docs/page-options#prerender)).
+
+However, if we want our _entire_ site to be statically pre-rendered, it's probably best to reach for SvelteKit's [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static). (That way, we don't have to keep track of which routes are and aren't set to pre-render based on code; they just will be, no matter what.)
 
 SvelteKit has many [adapters](https://kit.svelte.dev/docs#adapters), and comes pre-installed with one that will automatically detect and build properly for Netlify, Vercel, or Cloudflare Pages--which is both handy and impressive! But for static pre-rendering, we want `adapter-static`.
 
 ```bash
-npm i -D @sveltejs/adapter-static@next
+npm i -D @sveltejs/adapter-static
 ```
 
 Once installed, we have to make a couple small changes to prerender all of our pages.
@@ -1191,7 +1191,7 @@ import adapter from '@sveltejs/adapter-static'
 
 And second, we'll need to tell all of our routes to prerender, by exporting a `prerender` prop and setting it to `true`.
 
-You _could_ do this manually for every page, but that would be tedious. The much easier way to do it is to create a `+layout.js` file in `src/routes`, and add the prop there. (**Note:** this is a `.js` file, ***not*** our existing `+layout.svelte` file.)
+You _could_ do this manually for every page, but that would be tedious. The much easier way to do it is to create a `+layout.js` file in `src/routes`, and add the prop there. (**Note:** this is a `.js` file, ***not*** our existing `+layout.svelte` file; it handles pre-loading, not rendering.)
 
 ```js
 // src/routes/+layout.js

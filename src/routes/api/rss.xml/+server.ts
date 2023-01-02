@@ -2,7 +2,7 @@
 import type Post from '$lib/types/post'
 import { fetchPosts } from '$lib/assets/js/utils'
 
-export const prerender = true
+// export const prerender = true
 
 export const GET = async () => {
   const data = await fetchPosts({ limit: -1 })
