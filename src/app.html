@@ -32,5 +32,16 @@
     <link rel="pingback" href="https://webmention.io/joshcollinsworth.com/xmlrpc" />
 	</head>
 		<div id="svelte">%sveltekit.body%</div>
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on('init', user => {
+					if (!user) {
+						window.netlifyIdentity.on('login', () => {
+							document.location.href = '/admin/';
+						});
+					}
+				});
+			}
+		</script>
 	</body>
 </html>
