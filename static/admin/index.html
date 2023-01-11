@@ -9,6 +9,17 @@
   <body>
     <!-- Include the script that builds the page and powers Static CMS -->
     <script src="https://cdn.jsdelivr.net/npm/@staticcms/app/dist/static-cms-app.js"></script>
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on('init', user => {
+					if (!user) {
+						window.netlifyIdentity.on('login', () => {
+							document.location.href = '/admin/';
+						});
+					}
+				});
+			}
+		</script>
     <script>
       window.CMS.init();
     </script>
