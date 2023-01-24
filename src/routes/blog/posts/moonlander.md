@@ -13,7 +13,7 @@ excerpt: My thoughts, experience, and advice after using the Moonlander as my ma
 ---
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
-  import Callout from '$lib/components/Callout.svelte'
+  import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
@@ -70,11 +70,11 @@ It's worth noting that you can both customize what any key does when you press i
 
 But just because you might not see a key on the keyboard does _not_ mean its function is inaccessible. To the contrary, the Moonlander can actually do much _more_ than a standard keyboard can--even a fullsize one. You just need to know where to look.
 
-<Callout>
+<CalloutPlusQuote>
 
-In fact, the the Moonlander has 72 keys total, compared with the 77 on a Macbook Pro containing all 12 function keys. So while some keys are in unfamiliar places, you're not actually giving up much (if anything). Remember, you're _gaining_ six keys along the middle edges of the keyboard, and eight more on the thumb clusters (four on each side).
+The Moonlander has 72 keys total, compared with 77 on a Macbook Pro with all 12 function keys. So while some keys are in unfamiliar places, you're not actually losing much. Remember, you're _gaining_ six keys along the middle edges of the keyboard, and eight more on the thumb clusters (four on each side).
 
-</Callout>
+</CalloutPlusQuote>
 
 The general expectation is that you'll use the thumb keys for extremely common tasks, like pressing shift, delete, command, enter, etc., thus moving the repetitive work from your weaker pinky fingers to your stronger thumbs. That, and/or to trigger macros for repeated tasks. (I haven't yet found any tasks both that common and that keystroke-intensive in my day-to-day, but your mileage may very well vary.)
 
@@ -111,11 +111,11 @@ I can't say for sure whether this makes a major difference, ergonomically. I don
 
 What I _can_ say, however, is that I never developed a "proper" typing technique (which, in fairness, could be at least part of what caused my RSI issues in the first place). My fingers didn't tend to rest in the proper positions, and I rarely used my outer fingers to hit the "correct" keys at all. (I don't think I ever used my right pinky for anything, actually.)
 
-<Callout>
+<CalloutPlusQuote>
 
 It didn't take long to realize that, while I could get away with my poor typing form easily enough on a standard keyboard, an ortholinear layout would not be so forgiving.
 
-</Callout>
+</CalloutPlusQuote>
 
 I had to literally relearn how to type to use the Moonlander. _Some_ of that, I'm sure, was just getting used to the ortholinear layout. After all, that muscle memory had been built over nearly a lifetime of using conventional keyboards. But to use the Moonlander well, I had to learn how to type the right way.
 
@@ -142,11 +142,11 @@ Yes, the leg on each half of the keyboard means you can tent it, up to a point. 
 
 </SideNote>
 
-<Callout>
-	
+<CalloutPlusQuote>
+
 In other words: the legs alone aren't enough to balance the Moonlander. If you try, the keyboard will teeter-totter as you type. The further you tent the keyboard, the more you _also_ have to bend the thumb key clusters downward, to provide support and balance.
 
-</Callout>
+</CalloutPlusQuote>
 
 This may not seem like a big deal, but the more the thumb clusters are bent downward, the harder the thumb keys are to reach. (The clusters also bend upward, as the Moonlander's marketing points out, if you have smaller hands and/or just want the thumb keys closer. You'd need to leave the keyboard 100% flat on the desk to allow this, however.)
 
@@ -154,7 +154,10 @@ So out of the box, the more you want to tent your keyboard, the bigger your hand
 
 Fortunately, the Moonlander offers an add-on accessory called [The Platform](https://www.zsa.io/moonlander/platform/), which is a two-piece tenting kit. The platform bolts on, and allows each half of the keyboard to be independently tented to whatever angle you like, no legs necessary.
 
-![The Platform, which holds the Moonlander in place and allows a much wider, freer range of tenting.](/images/post_images/moonlander/platform.png)
+<figure>
+	<img src="/images/post_images/moonlander/platform.png" alt="" />
+	<figcaption>The Platform, which holds the Moonlander in place and allows a much wider, freer range of tenting. (Photo from Moonlander website.)</figcaption>
+</figure>
 
 Unfortunately, while the Platform is certainly a marked improvement, there's still no tilting available, negative or otherwise. It _also_ goes for $112 USD, which is a pretty hefty price tag for a simple add-on.
 
@@ -180,11 +183,11 @@ Overall, I think the wrist rests are a miss, and would love to see ZSA's next ke
 
 All in all, while the Moonlander offers a bit more than standard keyboards in terms of ergonomics (especially with the Platform add-on), I'm disappointed that a keyboard marketed as "ergonomic" doesn't go further. 
 
-<Callout>
+<CalloutPlusQuote>
 
 The Moonlander seems to me like a keyboard trying to be cool first, and ergonomic second.
 
-</Callout>
+</CalloutPlusQuote>
 
 A premium add-on like the Platform really shouldn't be required in the first place, in my opinion. But if a $112 (literal) bolt-on _is_ required, then I feel it should at _least_ do tilting. As-is, the Platform feels like it mostly just fixes a problem, rather than adds much of anything new--which is disappointing, since you'll be in for nearly $500 USD by the time you purchase both.
 
