@@ -9,7 +9,7 @@ categories:
 coverImage: "moonlander/thumb.jpg"
 coverWidth: 16
 coverHeight: 9
-excerpt: My experience using the Moonlander as my main keyboard after a full month
+excerpt: My thoughts, experience, and advice after using the Moonlander as my main keyboard for both personal and work projects for a full month
 ---
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
@@ -18,21 +18,21 @@ excerpt: My experience using the Moonlander as my main keyboard after a full mon
 </script>
 
 
-A bit of background to start this post: I've never really been into mechanical keyboards. I wasn't always into ergonomic keyboards, either. For most of my design and tech career, I was perfectly happy with the default Apple keyboard, and it served me well.
+A bit of background to start this post: I've never really been into mechanical keyboards. I wasn't always into ergonomic keyboards, either. For most of my design and tech career, I was perfectly happy with the default Apple keyboard, or the built-in keyboard on the laptop.
 
-Then, in 2020, constantly using my computer from home (usually on my lap, but sometimes at sub-optimal makeshift home workstations), I developed a repetitive stress injury, or RSI; chronic pain from, basically, doing things the wrong way too much.
+Then, in 2020, constantly using my computer from home (usually on my lap, but sometimes at sub-optimal makeshift home workstations), I developed a repetitive stress injury, or RSI; chronic pain from, basically, doing things the wrong way too much. (Laptops are made for portability, not comfort.)
 
-Eventually, I invested in a range of office ergonomics, including a standing desk, and my first split keyboard: the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/). The split took a little while to get used to, but it served me well for a year or two, allowing me to type with my hands in a more natural, straight position.
+Eventually, I invested in a range of office ergonomics, including a standing desk, and my first split keyboard: the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/). The split took a little while to get used to, but it served me well for a year or two, allowing me to type with my wrists in a more natural, straight position.
 
 However, while one problem was solved, a new one emerged: I began to develop pain in my thumb from constantly curling it under my hand to hold the command key (⌘) for shortcuts (especially cmd + tab, which I use constantly to switch apps).
 
-Unfortunately, the Freestyle2 has no real key remapping ability. Plus, while it had served me well for a time, I felt ready for a change anyway. So, knowing that I'll likely be typing on a keyboard every day for as long as my career lasts, I set out to find a new solution.
+Unfortunately, the Freestyle2 has no real key remapping ability. Plus, I felt ready for a change anyway. So, knowing that I'll likely be typing on a keyboard every day for as long as my career lasts, I set out to find a new solution.
 
 I read several articles on ergonomic keyboards, and asked about them in the [ShopTalk show D-D-D-Discord](https://www.patreon.com/shoptalkshow), where I can often find good advice and opinions on office gear.
 
-One of the candidates I mentioned being interested in was [the ZSA Moonlander](https://www.zsa.io/moonlander), which seems to be a very popular keyboard among both developers and keyboard enthusiasts. It boasts a wide range of impressive features and cool touches, but was on my list mainly because of the thumb keys.
+One of the candidates I mentioned being interested in was [the ZSA Moonlander](https://www.zsa.io/moonlander), which seems to be a very popular keyboard among both developers and keyboard enthusiasts. It boasts a wide range of impressive features and cool touches, but was on my list mainly because of the thumb keys, which seemed like they would solve my problems nicely.
 
-When I mentioned the Moonlander in the `#gear` channel, Chris Coyier responded with this:
+When I mentioned the Moonlander in the `#gear` channel, [Chris Coyier](https://chriscoyier.net) responded with this:
 
 ![Chris Coyier posting in Discord: I will literally mail you a Moonlander if you want. I have one and I can now guarantee you I'll never make time to actually learn how to use it](/images/post_images/moonlander/offer.png)
 
@@ -41,7 +41,7 @@ Turns out, Chris was actually serious, and after a few DMs to work out the detai
 As of this writing, I've been using the Moonlander full-time--at work and on personal projects--for the last four weeks.
 
 
-## Moonlander first impressions
+## Adjusting to the keys and layout
 
 The first thing that took getting used to with the Moonlander was its lack of some familiar keys in familiar places.
 
@@ -72,13 +72,13 @@ But just because you might not see a key on the keyboard does _not_ mean its fun
 
 <Callout>
 
-In fact, the the Moonlander has 72 keys total, compared with the 77 on a Macbook Pro with all 12 function keys. So while some keys are in unfamiliar places, you're not actually giving up a lot. Remember, you're _gaining_ six keys along the middle edges of the keyboard, and eight more on the thumb clusters (four on each side).
+In fact, the the Moonlander has 72 keys total, compared with the 77 on a Macbook Pro containing all 12 function keys. So while some keys are in unfamiliar places, you're not actually giving up much (if anything). Remember, you're _gaining_ six keys along the middle edges of the keyboard, and eight more on the thumb clusters (four on each side).
 
 </Callout>
 
 The general expectation is that you'll use the thumb keys for extremely common tasks, like pressing shift, delete, command, enter, etc., thus moving the repetitive work from your weaker pinky fingers to your stronger thumbs. That, and/or to trigger macros for repeated tasks. (I haven't yet found any tasks both that common and that keystroke-intensive in my day-to-day, but your mileage may very well vary.)
 
-Even beyond that, you can set up keys to have different functions when long-pressed or double-tapped, effectively making every key capable of acting as multiple keys, depending on how it's pressed. 
+Even beyond that, you can set up keys to have different functions when long-pressed or double-tapped, effectively making every key capable of acting as multiple keys, depending on how it's pressed.
 
 If that's still not enough, the Moonlander _also_ offers several different layers of layouts.
 
@@ -105,7 +105,7 @@ Ortholinear just means the keys are stacked in a direct vertical column, rather 
 	<figcaption>Columnar layout. Photo from the <a href="https://www.zsa.io/moonlander">Moonlander website</a>.</figcaption>
 </figure>
 
-The rationale given is: your fingers don't move side to side when you extend or retract them, so your keyboard shouldn't place keys offset from their neutral position.
+The rationale given is: your fingers don't move side to side when you extend or retract them, so your keyboard shouldn't place keys offset from your fingers' natural position.
 
 I can't say for sure whether this makes a major difference, ergonomically. I don't think the offset of the keys was ever a problem for me, so that's hard to speak to.
 
@@ -117,17 +117,15 @@ It didn't take long to realize that, while I could get away with my poor typing 
 
 </Callout>
 
-I had to literally relearn how to type to use the Moonlander. _Some_ of that, I'm sure, was just getting used to the ortholinear layout. After all, if your fingers are used to finding C halfway between D and F, you're going to need some training to remember it's actually straight down from D now.
+I had to literally relearn how to type to use the Moonlander. _Some_ of that, I'm sure, was just getting used to the ortholinear layout. After all, that muscle memory had been built over nearly a lifetime of using conventional keyboards. But to use the Moonlander well, I had to learn how to type the right way.
 
 When I first started typing on the Moonlander, muscles in my arms that I never felt before suddenly felt exerted. At first, I took this as a lack of ergonomics on part of the keyboard. But with a little time, I realized this wasn't strain; this was the healthy ache of muscles that don't typically see use suddenly being called upon.
-
-If nothing else, the Moonlander has at least forced me into a much healthier typing form, where I use _all_ of my fingers (and their corresponding muscles), and not just a few.
 
 Fellow ShopTalk show Discord member and Moonlander user [Alan Smith](https://www.alanwsmith.com/) advised me: 
 
 > [It takes] 2 days to not feel like you're typing with mittens, 2 weeks to have the basics pretty well in your hands and 2 months to get to where you don't think about 99% of the time.
 
-I'd say that's about right. After a few weeks of using this keyboard full-time, I'm still in a little bit of an awkward middle ground, where I'm not quite as good at typing in this layout as I was on a standard keyboard before--but I'm _also_ not as fast on a standard keyboard as I used to be. Still, though: I can tell I'm improving day by day. I have to think about things I don't to much, and I still hit keys I don't mean to, but the muscle memory is there for the common stuff.
+I'd say that's about right. After a few weeks of using this keyboard full-time, I'm still in a little bit of an awkward transitional phase, where I'm not quite as good at typing in this layout as I was on a standard keyboard before--but I'm _also_ not as fast on a standard keyboard as I used to be. Still, though: I can tell I'm improving day by day. I have to think about things I don't do much, and I still hit keys I don't mean to, but the muscle memory is there for the common stuff.
 
 I _almost_ gave up. More than once, I put the Moonlander back in the box, resolute that I would never use it. But I'm glad I gave it more of a chance. It takes a long time to get used to, but there are benefits on top of that initial steep slope.
 
@@ -144,17 +142,21 @@ Yes, the leg on each half of the keyboard means you can tent it, up to a point. 
 
 </SideNote>
 
-In other words: just adjusting the legs alone won't work; the keyboard will be off-balance if that's the only adjustment you make, and will teeter-totter as you type. The further you tent the keyboard, the more you _also_ have to bend the thumb key clusters downward, to provide support and balance.
+<Callout>
+	
+In other words: the legs alone aren't enough to balance the Moonlander. If you try, the keyboard will teeter-totter as you type. The further you tent the keyboard, the more you _also_ have to bend the thumb key clusters downward, to provide support and balance.
+
+</Callout>
 
 This may not seem like a big deal, but the more the thumb clusters are bent downward, the harder the thumb keys are to reach. (The clusters also bend upward, as the Moonlander's marketing points out, if you have smaller hands and/or just want the thumb keys closer. You'd need to leave the keyboard 100% flat on the desk to allow this, however.)
 
-So out of the box, the more you want to tent your keyboard, the bigger your hands (or reach) have to be. That's far from ideal, and while I don't think the marketing misrepresented this, necessarily, I certainly missed it.
+So out of the box, the more you want to tent your keyboard, the bigger your hands (or reach) have to be. That's far from ideal, and while I don't think the marketing misrepresented this, necessarily, I certainly missed it. (As a less serious drawback: it also means you need to make four adjustments with a hex key to change the tenting, rather than just two.)
 
-Fortunately, the Moonlander offers an add-on accessory called [The Platform](https://www.zsa.io/moonlander/platform/), which is a two-piece tenting kit. The platform screws on, and allows each half of the keyboard to be independently tented to whatever angle you like.
+Fortunately, the Moonlander offers an add-on accessory called [The Platform](https://www.zsa.io/moonlander/platform/), which is a two-piece tenting kit. The platform bolts on, and allows each half of the keyboard to be independently tented to whatever angle you like, no legs necessary.
 
 ![The Platform, which holds the Moonlander in place and allows a much wider, freer range of tenting.](/images/post_images/moonlander/platform.png)
 
-Unfortunately, while the Platform is a marked improvement, there's still no tilting available, negative or otherwise. It _also_ goes for $112 USD, which is a pretty hefty price tag for a simple add-on.
+Unfortunately, while the Platform is certainly a marked improvement, there's still no tilting available, negative or otherwise. It _also_ goes for $112 USD, which is a pretty hefty price tag for a simple add-on.
 
 <SideNote>
 
@@ -172,7 +174,7 @@ Some folks like to add padding or elevation on top of the wrist rests. That migh
 
 Personally, I've gotten to the point now where I adjust my armrests high enough that my hands can float in air above the keyboard, rather than relying on the wrist rests (which, some would say, is better for you ergonomically anyway). So I could safely take mine off without missing them, but they look better than the obvious gap that would leave on the front. (There are accessories available to cover the hole, but you need to either buy them or 3D print them yourself.)
 
-Personally, I think the wrist rests are a miss, and would love to see ZSA's next keyboard ship with padded wrist rests that are both attached _and_ adjustable, much like the thumb clusters. My feelings would likely be very different if I could raise the wrist rests higher.
+Overall, I think the wrist rests are a miss, and would love to see ZSA's next keyboard ship with padded wrist rests that are both attached _and_ adjustable, much like the thumb clusters. My feelings would likely be very different if I could raise the wrist rests higher.
 
 ---
 
@@ -184,11 +186,11 @@ The Moonlander seems to me like a keyboard trying to be cool first, and ergonomi
 
 </Callout>
 
-A premium add-on like the Platform really shouldn't be required in the first place, in my opinion. But if a $112 (literal) bolt-on _is_ required, then I feel it should at _least_ do tilting. As-is, the Platform feels like it mostly just fixes a problem, rather than adds much of anything new--which is disappointing, since you'll be in for about $500 USD by the time you purchase both.
+A premium add-on like the Platform really shouldn't be required in the first place, in my opinion. But if a $112 (literal) bolt-on _is_ required, then I feel it should at _least_ do tilting. As-is, the Platform feels like it mostly just fixes a problem, rather than adds much of anything new--which is disappointing, since you'll be in for nearly $500 USD by the time you purchase both.
 
-If all you need is a split and some tenting, the Moonlander has you covered. But if you're looking for a keyboard with a full range of ergonomics options, even _with_ the Platform, the Moonlander may not get you all the way there.
+If all you need is a split and some tenting, the Moonlander has you covered. But if you're looking for a keyboard with a fuller range of ergonomics options, even _with_ the Platform, the Moonlander may not get you all the way there.
 
-In the latter case, you might be better off going with ZSA's other major keyboard, [the Ergodox EZ](https://ergodox-ez.com/) (just be sure you opt or the tilt kit and wrist rest--they're both add-ons), or with a [Kinesis](https://kinesis-ergo.com/) model such as the newly released [Advantage360](https://kinesis-ergo.com/keyboards/advantage360/)--both of which, it's worth noting, also have extra thumb keys. There are other companies making similar split keyboards, too, like [Dygma](https://dygma.com/).
+In the latter case, you might be better off going with ZSA's other major keyboard, [the Ergodox EZ](https://ergodox-ez.com/) (just be sure you opt for the tilt kit and wrist rest--they're both add-ons), or with a [Kinesis](https://kinesis-ergo.com/) model such as the newly released [Advantage360](https://kinesis-ergo.com/keyboards/advantage360/)--both of which, it's worth noting, also have extra thumb keys. There are other companies making similar split keyboards, too, like [Dygma](https://dygma.com/).
 
 
 ## My Moonlander
@@ -209,11 +211,11 @@ By the way, here's what my current keyboard looks like. (I set the colors to Dra
 
 (Did I mention you can customize the lights? You can customize the lights.)
 
-(Also: that thing in the middle is a smartphone holder, in case you were wondering. I would've left my phone in it for the shot but, well, I thought through that.)
+(Also: that thing in the middle is a smartphone holder, in case you were wondering. I wanted to leave my phone in it for the shot, but…well, see if you can spot the problem with that idea faster than I did.)
 
-Incidentally, because it came secondhand, I didn't get to choose the type of switches that were installed on my Moonlander by default. Chris's choice was Cherry MX silent red switches, which were nice and quiet (I'm probably using a microphone too much to enjoy loud, clicky switches, which I assume was also Chris's thinking), but they're also a little too easy to trigger accidentally just with the pressure of resting fingers, I thought. I currently have a shipment of Cherry MX Brown switches on the way (more tactile, still not very noisy), and I'm looking forward to replacing the switches and seeing how the keyboard feel changes.
+Incidentally, because it came secondhand, I didn't get to choose the type of switches that were installed on my Moonlander by default. Chris's choice was Cherry MX silent red switches, which are indeed nice and quiet (I'm probably using a microphone too much to enjoy loud, clicky switches, which I assume was also Chris's thinking), but they're also a little too easy to trigger accidentally just with the pressure of resting fingers, I thought. I currently have a shipment of Cherry MX Brown switches on the way (more tactile, still not very noisy), and I'm looking forward to replacing the switches and seeing how the feel of the keyboard changes.
 
-By the way: if you, like me, don't have any idea what switches are (and that last paragraph didn't really make any sense to you), this handy little [switch tester](https://www.wasdkeyboards.com/wasd-9-key-cherry-mx-switch-tester.html) (_also_ recommended by the ShopTalk Discord) is a nice investment, and as a bonus, makes a nice fidget toy to have sitting on your desk for long, boring meetings. (Not that I would know.) ;)
+By the way: if you don't have any idea what switches are, like me not so long ago (and that last paragraph didn't really make any sense to you), this handy little [switch tester](https://www.wasdkeyboards.com/wasd-9-key-cherry-mx-switch-tester.html) (_also_ recommended by the ShopTalk Discord) is a nice investment, and as a bonus, makes a nice fidget toy to have sitting on your desk for long, boring meetings. (Not that I would know.) ;)
 
 
 ## Final thoughts and advice
@@ -234,7 +236,7 @@ If you're considering a similar move, here's my advice:
 
 	("Hyper" is a single key that simultaneousy triggers `cmd` + `ctrl` + `shift` + `option`. "Meh" triggers all of those, minus `cmd`--that's all assuming Mac keys, that is; swap as appropriate for Windows.)
 
-	Hyper and Meh are amazingly useful because no app tends to create shortcuts that require you to hit _all_ of those keys at once. That means you can map basically anything you want to hyper and meh shortcuts, and as a bonus, they're only actually two-key shortcuts to use.
+	Hyper and Meh are amazingly useful because no app tends to create shortcuts that require you to hit _all_ of those keys at once. That means you can freely map basically anything you want to hyper and meh shortcuts, and as a bonus, they're only actually two-key shortcuts to use.
 
 	For example: in my current setup, meh + an arrow key sends my currently open app to that half of the screen. Hyper + `=` sets the current window to full screen size, and hyper + left/right moves the current window over to the next display.
 
@@ -242,10 +244,10 @@ If you're considering a similar move, here's my advice:
 
 	Any time you find yourself doing something regularly that _doesn't_ already have an easy shortcut, consider creating one using meh or hyper. It's amazingly powerful to have simple, two-key shortcuts for common tasks. So if you're gonna use a keyboard like the Moonlander, lean all the way in and get the full benefit.
 
-* **Make sure it's plugged in well**. I found the sockets and cable that connect the two halves of the keyboard a little finicky. If the cable isn't fully connected, the Moonlander may not work at all. (I actually thought mine had been damaged in shipping for about the first hour I had it, because it won't even seem to turn on if things aren't connected properly.)
+* **Make sure it's plugged in well**. I found the sockets and cable that connect the two halves of the keyboard a little finicky. If the cable isn't fully connected, the Moonlander may not work at all. I actually thought mine had been damaged in shipping for about the first hour I had it, because it won't even seem to turn on if things aren't connected properly.
 
-* **If you're thinking about it, do it**. I probably won't stick with the Moonlander forever, but I'm glad I took this leap because I feel like so many doors have been opened now. I'm a better typist, for one. For another, I know that any way I might need to customize this keyboard in the future, I can.
+* **If you're thinking about it, do it**. I may not stick with the Moonlander forever, but I'm glad I took this leap because I feel like so many doors have been opened now. I'm a better typist, for one. For another, I know that any way I might need to customize this keyboard in the future, I can. For now, though, it's a great tool that will only improve with time, as I unlock more of its potential, and mine with it.
 
-	But also, I feel confident that if and when I _do_ decide to try another keyboard, the leap will be much smaller. I've already put in the time and effort to "git gud", and that's gonna carry over. That feels good.
+	Also, I feel confident that if and when I _do_ decide to try another keyboard, the leap will be much smaller. I've already put in the time and effort to "git gud", and that's gonna carry over. That feels nice to know.
 
-I hope this post has been helpful, if you're considering making the leap! Some quibbles aside, I've been increasingly happy with this keyboard as I've grown accustomed to it, and began to learn to work with the grain of its nuances.
+I hope this post has been helpful, if you're considering a new keyboard of your own. Some quibbles aside, I've been increasingly happy with the Moonlander as I've grown accustomed to it, and began to learn to work with the grain of its nuances.
