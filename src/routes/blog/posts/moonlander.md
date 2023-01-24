@@ -184,9 +184,11 @@ The Moonlander seems to me like a keyboard trying to be cool first, and ergonomi
 
 </Callout>
 
-A premium add-on like the Platform really shouldn't be required in the first place, in my opinion. But if a $112 (literal) bolt-on _is_ required, then it should at _least_ do tilting, in my opinion. As-is, the Platform feels like it mostly just fixes a problem, rather than adds much new--which is disappointing, since you'll be in for about $500 USD by the time you buy both.
+A premium add-on like the Platform really shouldn't be required in the first place, in my opinion. But if a $112 (literal) bolt-on _is_ required, then I feel it should at _least_ do tilting. As-is, the Platform feels like it mostly just fixes a problem, rather than adds much of anything new--which is disappointing, since you'll be in for about $500 USD by the time you purchase both.
 
-So if you're looking for a keyboard with a full range of ergonomics options, even with the Platform, the Moonlander doesn't get you all the way there. If that's the case, you might be better off going with ZSA's other major keyboard, [the Ergodox EZ](https://ergodox-ez.com/) (just be sure you opt or the tilt kit and wrist rest--they're both add-ons), or with a [Kinesis](https://kinesis-ergo.com/) model such as the newly released [Advantage36](https://kinesis-ergo.com/keyboards/advantage360/) (both of which, it's worth noting, also have extra thumb keys). There are other companies making similar split keyboards, too, like [Dygma](https://dygma.com/).
+If all you need is a split and some tenting, the Moonlander has you covered. But if you're looking for a keyboard with a full range of ergonomics options, even _with_ the Platform, the Moonlander may not get you all the way there.
+
+In the latter case, you might be better off going with ZSA's other major keyboard, [the Ergodox EZ](https://ergodox-ez.com/) (just be sure you opt or the tilt kit and wrist rest--they're both add-ons), or with a [Kinesis](https://kinesis-ergo.com/) model such as the newly released [Advantage360](https://kinesis-ergo.com/keyboards/advantage360/)--both of which, it's worth noting, also have extra thumb keys. There are other companies making similar split keyboards, too, like [Dygma](https://dygma.com/).
 
 
 ## My Moonlander
