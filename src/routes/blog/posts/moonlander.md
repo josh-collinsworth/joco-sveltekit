@@ -209,6 +209,8 @@ By the way, here's what my current keyboard looks like. (I set the colors to Dra
 
 (Did I mention you can customize the lights? You can customize the lights.)
 
+(Also: that thing in the middle is a smartphone holder, in case you were wondering. I would've left my phone in it for the shot but, well, I thought through that.)
+
 Incidentally, because it came secondhand, I didn't get to choose the type of switches that were installed on my Moonlander by default. Chris's choice was Cherry MX silent red switches, which were nice and quiet (I'm probably using a microphone too much to enjoy loud, clicky switches, which I assume was also Chris's thinking), but they're also a little too easy to trigger accidentally just with the pressure of resting fingers, I thought. I currently have a shipment of Cherry MX Brown switches on the way (more tactile, still not very noisy), and I'm looking forward to replacing the switches and seeing how the keyboard feel changes.
 
 By the way: if you, like me, don't have any idea what switches are (and that last paragraph didn't really make any sense to you), this handy little [switch tester](https://www.wasdkeyboards.com/wasd-9-key-cherry-mx-switch-tester.html) (_also_ recommended by the ShopTalk Discord) is a nice investment, and as a bonus, makes a nice fidget toy to have sitting on your desk for long, boring meetings. (Not that I would know.) ;)
