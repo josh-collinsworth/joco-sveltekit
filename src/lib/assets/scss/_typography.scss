@@ -176,13 +176,17 @@ ol {
 }
 
 figure {
-	margin: 0;
+	margin: 0 0 3rem;
+
+	img {
+		margin-bottom: 0;
+	}
 }
 
 figcaption {
 	font-size: 0.8rem;
 	text-align: center;
-	margin: 0.5rem 0 3rem;
+	margin: 0.5rem 0 0;
 }
 
 :where(h2, h3, h4, h5, h6) {

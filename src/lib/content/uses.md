@@ -18,8 +18,8 @@ Professionally, I work in [React](https://reactjs.org/),
 and have built several personal projects with it as well.
 I've also got working experience with jQuery and Knockout.
 
-- I love CSS passionately, but I don’t use any libraries or frameworks; all my CSS is from-scratch, responsive, and custom (usually written in
-[SCSS](https://sass-lang.com/)). I love authoring smooth, fluid transitions and animations.
+- I love CSS passionately, but I don’t use any libraries or frameworks, if I have the choice; all my CSS is from-scratch, responsive, and custom (usually written in
+[SCSS](https://sass-lang.com/)). I love authoring smooth, fluid transitions and animations. (I've used Tailwind. It's nice in some ways, but I'm not personally a fan.)
 
 - I'm a strong proponent of well-architected, accessible, and semantic <b>HTML</b>. (I create and use SVG often.)
 
@@ -75,11 +75,10 @@ I’m also a fan of
 
 ## Hardware
 
-- [Anker 2.4G Wireless Vertical Ergonomic Optical Mouse](https://www.anker.com/products/variant/xanker-24g-wireless-vertical-ergonomic-optical-mouse/xa7852011):
-I could feel my wrist straining using both a magic mouse and a touchpad. I switched to this mouse years ago. It took some adjustment, but I don’t ever want to use another mouse again, and I don’t even use the extra buttons.
+- [Logitech MX Ergo Plus trackball mouse](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html): I was previously using an [Anker Vertical Mouse](https://www.anker.com/products/variant/xanker-24g-wireless-vertical-ergonomic-optical-mouse/xa7852011), but switched to a trackball when some wrist issues flared up. The trackball saves the arm movement. I tend to switch up what I use frequently these days, to keep any one thing from getting too repetitive (I also currently have a trackpad on my desk), but the trackball mouse has been my mainstay since summer 2022, and surprisingly easy to adjust to.
 
-- [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/) keyboard:
-I paid for months of sitting-on-the-couch laptop time with a repetitive stress injury on my right wrist. This keyboard is a bit of an adjustment, but it has helped a lot with the wrist pain by keeping my wrists from going to outward angles.
+- [ZSA Moonlander](https://www.zsa.io/moonlander) keyboard:
+I was previously using the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/), and still like that one, but the thumb keys on the Moonlander became key (ha) for reducing finger strain. Plus, the wide range of customization options is excellent. I wrote about [switching to the Moonlander in this post](/blog/moonlander).
 
 - [Herman Miller Sayl Chair](https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/):
 I made it about two months as a full-time work-from-home employee before I went and bought one of these chairs. It’s the most comfortable and easily adjustable office chair I’ve ever sat in (and it looks really nice, too).
@@ -95,23 +94,17 @@ Not a lot of purchases I’ve been happier with than this one. It works incredib
 - [1Password](https://1password.com):
 The first thing I instal on every new device. I’ve tried and liked other password software, but 1Password is just the most reliable cross-platform and -device in my experience.
 
-- [Alfred](https://http://xalfredapp.com):
-the <em>second</em> thing I install on every new Mac. (I use the [powerpack](https://www.alfredapp.com/powerpack/) for added features, which is worth every penny.) The main features I love are clipboard history, snippet expansion, global search (never touch Finder again!), and workflows to automate repetitive or tedious tasks. Wouldn’t ever want to work without it.
+- [Raycast](https://www.raycast.com/):
+the <em>second</em> thing I install on every new Mac. (I previously used [Alfred](https://www.alfredapp.com/), which I still love and support. But Raycast has more built in, and has seemed to capture the developer zeitgeist for the time being.) The main features I love are clipboard history, snippet expansion, global search (never touch Finder again!), and workflows to automate repetitive or tedious tasks. Wouldn’t ever want to work without it. As an added bonus, Raycast includes window management and emoji picking, which means you can forego some of the other apps previously on this list like [Rectangle](https://rectangleapp.com/) and [Rocket](https://matthewpalmer.net/rocket/) (though admittedly, Rocket's emoji picking is much nicer).
 
-- [CloudApp](https://www.getcloudapp.com/):
-taking screenshots and videos is a many-times-daily activity for me, and CloudApp makes it as seamless as possible.
+- [CleanShot X](https://cleanshot.com/):
+taking screenshots and videos is a many-times-daily activity for me, and CleanShot X makes it as seamless as possible for an easy, one-time payment.
 
 - [RightFont](https://rightfontapp.com/):
 a simple, minimalist app for managing your computer’s fonts that looks and works better than Mac’s built-in FontBook.
 
-- [Rectangle](https://rectangleapp.com/):
-never drag or resize another window again. Keyboard shortcuts to put everything right where you need it.
-
 - [Bartender](https://www.macbartender.com/):
 helps wrangle all those app icons in your taskbar if you’re a minimalist like me.
-
-- [Rocket](https://matthewpalmer.net/rocket/):
-lends you Slack-like ability to use emoji anywhere. Way better than the OSX default emoji picker.
 
 - [Notion](https://notion.so):
 my current favorite notes app. Can grow and get as complex as you need it to be, but for simple notes, the markdown and code highlight support is fantastic.
