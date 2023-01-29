@@ -70,6 +70,10 @@
 		margin-bottom: var(--wholeNote);
 		color: var(--darkGray);
 		line-height: 1.4;
+
+		a {
+			text-decoration: underline;
+		}
 	}
 
 	h3 {
