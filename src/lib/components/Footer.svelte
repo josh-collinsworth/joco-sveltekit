@@ -12,10 +12,11 @@
       <h2 class="h4" id="footer-pages">Pages</h2>
       <nav>
         <ul aria-labelledby="footer-pages">
-          <li><a href="/">Home/About</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-me">About</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/projects">Projects</a></li>
-          <li><a href="/writing-and-speaking">Writing & Speaking</a></li>
+          <li><a href="/appearances">Writing & Speaking</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>

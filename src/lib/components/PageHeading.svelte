@@ -10,7 +10,7 @@
 
   $: if (title) {
     if (title === '/') {
-      title = `about me`
+      title = `welcome`
     } else if (title[0] === '/') {
       title = title.slice(1)
     }

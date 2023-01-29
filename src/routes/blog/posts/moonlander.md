@@ -1,7 +1,7 @@
 ---
 title: "Impressions of the ZSA Moonlander at one month"
 date: "2023-01-24"
-updated: "2023-01-24"
+updated: "2023-01-29"
 categories:
   - "personal"
   - "tech"
@@ -217,6 +217,8 @@ By the way, here's what my current keyboard looks like. (I set the colors to Dra
 (Also: that thing in the middle is a smartphone holder, in case you were wondering. I wanted to leave my phone in it for the shot, but…well, see if you can spot the problem with that idea faster than I did.)
 
 Incidentally, because it came secondhand, I didn't get to choose the type of switches that were installed on my Moonlander by default. Chris's choice was Cherry MX silent red switches, which are indeed nice and quiet (I'm probably using a microphone too much to enjoy loud, clicky switches, which I assume was also Chris's thinking), but they're also a little too easy to trigger accidentally just with the pressure of resting fingers, I thought. I currently have a shipment of Cherry MX Brown switches on the way (more tactile, still not very noisy), and I'm looking forward to replacing the switches and seeing how the feel of the keyboard changes.
+
+[Edit: the switches have arrived and been installed, and I'm surprised how much better the keyboard feels. Typing on it is…a joy, somehow? I get the appeal of this stuff now. There's genuine delight in letting your fingertips feel the way they want to feel when typing. The Cherry MX Brown switches feel nice, but now I almost want to try greens or blues for an even clickier experience.]
 
 By the way: if you don't have any idea what switches are, like me not so long ago (and that last paragraph didn't really make any sense to you), this handy little [switch tester](https://www.wasdkeyboards.com/wasd-9-key-cherry-mx-switch-tester.html) (_also_ recommended by the ShopTalk Discord) is a nice investment, and as a bonus, makes a nice fidget toy to have sitting on your desk for long, boring meetings. (Not that I would know.) ;)
 

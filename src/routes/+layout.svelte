@@ -55,7 +55,7 @@
 
 	onMount(() => {
 		if (!prefersReducedData()) {
-			preloadCode('/', '/blog', '/projects', '/writing-and-speaking')
+			preloadCode('/', '/blog', '/projects', '/appearances')
 		}
 	})
 </script>

@@ -126,6 +126,11 @@
   to = "/blog/12-things"
   status = 301
 
+[[redirects]]
+  from = "/writing-and-speaking"
+  to = "/appearances"
+  status = 301
+
 # ---
 # Headers
 # ---
