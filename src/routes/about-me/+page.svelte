@@ -38,8 +38,9 @@ I enjoy blogging about dev, design and tech (both <a href="/appearances">freelan
 			accessibility advocate;
 			cold brew consumer;
 			DEI accomplice;
-			Facebook, Instagram and Twitter abandoner;
+			Facebook, Instagram, and Twitter abandoner;
 			Mastodon appreciator;
+			semi-notorious React critic;
 			occasional public speaker;
 			pun enthusiast;
 			curious learner;

@@ -17,14 +17,14 @@
 		<div class="intro__headline">
 			<h2><strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer, writer, and&nbsp;teacher.
 			</h2>
-			<p class="subhead h2">I currently live in the Kansas City area, and work for Shopify as a senior frontend developer.</p>
+			<p class="subhead h2">I currently live in the Kansas City area, and work for <a href="https://shopify.com">Shopify</a> as a senior frontend developer.</p>
 			<section>
 				<ul>
 					<li><a href="/blog">My blog</a></li>
-					<li><a href="/blog">Some of my projects</a></li>
-					<li><a href="/blog">Other writing, talks, and appearances</a></li>
-					<li><a href="/blog">More about me</a></li>
-					<li><a href="/blog">Get in touch</a></li>
+					<li><a href="/projects">Some of my projects</a></li>
+					<li><a href="/appearances">Other writing, talks, and appearances</a></li>
+					<li><a href="/about-me">More about me</a></li>
+					<li><a href="/contact">Get in touch</a></li>
 				</ul>
 			</section>
 		</div>
