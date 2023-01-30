@@ -11,7 +11,7 @@
 		<img class="profile-pic" src="/images/bio-photo.jpg" alt="Me, Josh Collinsworth, an average white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat.">
 		<h2>Who I am</h2>
 
-		<p>As a developer, I'm currently a senior frontend developer at <a href="https://shopify.com">Shopify</a>. In my spare time, I love hobby coding; I'm the
+		<p>Professionally, I'm currently a senior frontend developer at <a href="https://shopify.com">Shopify</a>. In my spare time, I love hobby coding; I'm the
 		maker and designer of the word games <i>Quina</i>
 		(<a href="https://apps.apple.com/us/app/quina/id1636895462">iOS</a>/<a href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a>/<a href="https://quina.app">web</a>) 
 		and <i>Hondo</i> 
