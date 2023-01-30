@@ -128,7 +128,17 @@
 
 [[redirects]]
   from = "/writing-and-speaking"
-  to = "/appearances"
+  to = "/about-me"
+  status = 301
+
+[[redirects]]
+  from = "/appearances"
+  to = "/about-me"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about-me"
   status = 301
 
 # ---

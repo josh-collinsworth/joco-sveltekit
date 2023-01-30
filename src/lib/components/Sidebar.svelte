@@ -42,7 +42,7 @@
       <a href="/blog">All blog posts</a>
     </li>
     <li>
-      <a href="/appearances">Other writing & speaking</a>
+      <a href="/about-me">More about me</a>
     </li>
     <li>
       <a href="/">Home</a>

@@ -4,7 +4,7 @@ date: "2023-01-24"
 updated: "2023-01-29"
 categories:
   - "personal"
-  - "tech"
+  - "gear"
   - "opinion"
 coverImage: "moonlander/thumb.jpg"
 coverWidth: 16

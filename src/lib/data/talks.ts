@@ -7,6 +7,10 @@ const talks: Talk[] = [
 		event: 'WordCamp Omaha 2015',
 		year: 2015
 	}, {
+		title: 'WordPress Developer Course',
+		event: 'AIM Code School course curriculum, 2015–2019',
+		year: 2016
+	}, {
 		title: 'Easy WordPress Security for Everyone',
 		link: 'https://wordpress.tv/2017/03/05/josh-collinsworth-easy-wordpress-security-for-everyone/',
 		event: 'WordCamp Omaha 2016',

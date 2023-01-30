@@ -8,14 +8,14 @@
 @use './print';
 
 *, *:before, *:after {
-  box-sizing: border-box;
-  font-family: inherit;
+	box-sizing: border-box;
+	font-family: inherit;
 }
 
 *:focus,
 input[type="checkbox"]:focus + label {
-  outline: 2px solid var(--lightBlue);
-  outline-offset: 1px;
+	outline: 2px solid var(--lightBlue);
+	outline-offset: 1px;
 }
 
 main:focus {
@@ -23,40 +23,40 @@ main:focus {
 }
 
 ::selection {
-  background: var(--yellow);
-  color: var(--highlightColor); /* WebKit/Blink Browsers */
+	background: var(--yellow);
+	color: var(--highlightColor); /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: var(--yellow);
-  color: var(--highlightColor); /* Gecko Browsers */
+	background: var(--yellow);
+	color: var(--highlightColor); /* Gecko Browsers */
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
-  height: calc(var(--eighthNote) * 0.25);
+	width: 0.5rem;
+	height: calc(var(--eighthNote) * 0.25);
 }
-  
+
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track {
-  /* the "track" of the bar - great for customizing "background" colors */
-  background: transparent;
+	/* the "track" of the bar - great for customizing "background" colors */
+	background: var(--paper);
 }
-  
+
 ::-webkit-scrollbar-thumb {
-  /* the actual draggable element, the star of the show! */
-  background: var(--yellow);
+	/* the actual draggable element, the star of the show! */
+	background: var(--yellow);
 }
 
 body {
-  font-family: var(--bodyFont);
-  color: var(--ink);
-  margin: 0;
-  padding: 0;
-  overflow: overlay;
+	font-family: var(--bodyFont);
+	color: var(--ink);
+	margin: 0;
+	padding: 0;
 }
 
 html, body {
-  scrollbar-color: var(--yellow) transparent;
-  scrollbar-width: thin;
+	scrollbar-color: var(--yellow) var(--paper);
+	scrollbar-width: thin;
+	overflow: overlay;
 }

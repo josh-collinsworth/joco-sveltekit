@@ -140,6 +140,6 @@ _Associate’s of Graphic Communication Art and Design_
 
 ## Links
 
-- [Email](/contact?from_page=resume)
+- [Contact](/contact?from_page=resume)
 - [LinkedIn](https://linkedin.com/in/joshcollinsworth)
 - [GitHub](https://github.com/josh-collinsworth)
