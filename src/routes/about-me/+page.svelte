@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { EXTERNAL_POSTS } from '$lib/data/external_posts'
 	import { talks } from '$lib/data/talks'
-	import PostList from '$lib/components/posts/PostList.svelte'
 	import Main from '$lib/components/Main.svelte'
 </script>
 
@@ -82,7 +81,7 @@
 		</ul>
 
 		<h2 id="appearances">Talks and appearances</h2>
-		<p class="subhead">Conference talks and podcasts</p>
+		<p class="subhead">Conference presentations, trainings, and podcasts</p>
 		<hr>
 		<ul>
 			{#each talks as talk}
@@ -105,7 +104,6 @@
 		<h2 id="writing">Writing</h2>
 		<p class="subhead">Articles written for other publications</p>
 		<hr>
-		<!-- <PostList posts={EXTERNAL_POSTS} external={true} /> -->
 
 		<ul>
 			{#each EXTERNAL_POSTS as post}
