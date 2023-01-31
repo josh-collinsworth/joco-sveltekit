@@ -4,8 +4,6 @@
   $: ({ Resume } = data)
 
   import Main from '$lib/components/Main.svelte'
-
-  // export let Resume: SvelteComponent
 </script>
 
 
@@ -75,6 +73,7 @@
       position: sticky;
       top: var(--halfNote);
       background: var(--paper);
+			text-align: right;
 
       + h3 {
         margin-top: 0;

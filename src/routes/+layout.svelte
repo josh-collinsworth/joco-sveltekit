@@ -11,13 +11,15 @@
 	import { prefersReducedData } from '$lib/assets/js/utils'
 	import { isLoading, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
 	import { onMount } from 'svelte'
-	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation';
+	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation'
 	import { dev } from '$app/environment'
 
 	export let data: LayoutData
 
 	let path: string
 	$: ({ path } = data)
+
+	let root: HTMLElement
 
 	let lastScrollPosition: number = 0
 	const isSinglePostCheck: RegExp = new RegExp(/\/blog\/[A-z0-9\-_]+\/?$/)
@@ -49,11 +51,23 @@
 		}
 		lastScrollPosition = currentScrollPosition
 	}, 100)
+	
+	const startPageTransition = () => {
+		setLoading(true)
+		root.classList.remove('smooth-scroll')
+	}
+	
+	const endPageTransition = async () => {
+		setLoading(false)
+		root.classList.add('smooth-scroll')
+	}
 
-	beforeNavigate(() => { setLoading(true) })
-	afterNavigate(() => { setLoading(false) })
+	beforeNavigate(() => startPageTransition() )
+	afterNavigate(() => endPageTransition() )
 
 	onMount(() => {
+		root = document.documentElement
+		root.classList.add('smooth-scroll')
 		if (!prefersReducedData()) {
 			preloadCode('/', '/blog', '/projects', '/about-me')
 		}
@@ -66,8 +80,6 @@
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
-	<!-- <meta name="twitter:creator" content="@jjcollinsworth" />
-	<meta name="twitter:site" content="@jjcollinsworth"/> -->
 	<meta name="twitter:card" content="summary_large_image" />
 	{#if !dev}
 		<script defer data-domain="joshcollinsworth.com" src="https://plausible.io/js/plausible.js"></script>
