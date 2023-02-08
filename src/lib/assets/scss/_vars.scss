@@ -14,6 +14,7 @@ $xxxl: 122rem;
 	--lightBlueHS: 199, 33%;
 	--yellowHS: 49, 100%;
 	--redHS: 349, 100%;
+	--lightGrayHS: 220, 2%;
 
 	--yellowHSL: 49, 100%, 50%;
 	--lightGrayHSL: 220, 2%, 66%;
@@ -56,6 +57,8 @@ $xxxl: 122rem;
 	--yellow: hsl(var(--yellowHSL));
 	--orange: hsl(var(--orangeHSL));
 	--red: hsl(var(--redHSL));
+	--lightestGray: hsl(var(--lightGrayHS), 94%);
+	--lighterGray: hsl(var(--lightGrayHS), 86%);
 	--lightGray: 	hsl(var(--lightGrayHSL));
 	--midGray: hsl(var(--midGrayHSL));
 	--darkGray: hsl(var(--darkGrayHSL));
@@ -117,6 +120,8 @@ $xxxl: 122rem;
 		--accentColor: var(--lightBlue);
 		--linkColor: var(--lightBlue);
 		--highlightColor: var(--darkerGray);	
+		--lighterGray: hsl(var(--lightGrayHS), 26%);
+		--lightestGray: hsl(var(--lightGrayHS), 13%);
 	}
 
 	// Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes
