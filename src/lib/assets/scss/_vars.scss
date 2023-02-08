@@ -80,8 +80,10 @@ $xxxl: 122rem;
 	--sidebarWidth: 15rem;
 	--margin: var(--quarterNote);
 
+	--sixteenthNote: calc(var(--quarterNote) / 4);
 	--eighthNote: calc(var(--quarterNote) / 2);
 	--quarterNote: 1.25rem;
+	--dottedQuarterNote: calc(var(--quarterNote) * 1.5);
 	--halfNote: calc(var(--quarterNote) * 2);
 	--dottedHalfNote: calc(var(--quarterNote) * 3);
 	--wholeNote: calc(var(--quarterNote) * 4);

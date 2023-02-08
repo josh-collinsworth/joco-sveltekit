@@ -63,6 +63,14 @@ input {
 	}
 }
 
+select {
+	font-size: 1rem;
+	font-family: var(--headingFont);
+	border: 1px solid var(--ink);
+	padding: var(--sixteenthNote) var(--eighthNote);
+	width: max-content;
+}
+
 button,
 input[type=submit] {
 	border: 1px solid;

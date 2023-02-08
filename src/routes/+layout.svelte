@@ -98,7 +98,7 @@
 		<PageHeading title={path} {isSinglePost} />
 
 		<PageTransition refresh={path}>
-			<slot/>
+			<slot />
 		</PageTransition>
 	</div>
 

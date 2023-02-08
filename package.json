@@ -38,7 +38,7 @@
   "type": "module",
   "dependencies": {
     "just-debounce": "^1.1.0",
-    "just-throttle": "^4.0.1",
+    "just-throttle": "^4.2.0",
     "rehype-autolink-headings": "^6.1.0",
     "rehype-slug": "^5.0.0"
   }

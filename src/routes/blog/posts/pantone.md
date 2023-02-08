@@ -4,7 +4,6 @@ date: "2015-04-01"
 updated: "2021-01-19"
 categories:
   - "design"
-  - "opinion"
 coverImage: "ColorPost-4.jpg"
 coverWidth: 35
 coverHeight: 22

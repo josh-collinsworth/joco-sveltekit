@@ -3,12 +3,8 @@ title: "Social Media, Compulsion, and the 12 Things I Learned on My Break from F
 date: "2015-03-27"
 updated: "2021-01-19"
 categories: 
+  - "opinion"
   - "personal"
-tags: 
-  - "facebook"
-  - "internet"
-  - "personal"
-  - "social-media"
 coverImage: "Untitled-21.png"
 coverWidth: 9
 coverHeight: 5

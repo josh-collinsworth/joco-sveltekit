@@ -9,4 +9,5 @@ export default interface Post {
   subtitle?: string
   title: string
   updated?: string
+	draft?: boolean
 }

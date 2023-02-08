@@ -5,23 +5,15 @@ import { dev } from '$app/environment'
 const fetchPosts = async ({ offset = 0, limit = 10, category = '' }: PostsEndpointOptions = {}): Promise<Post[]> => {
   let posts: Post[]
 
-  if (dev) {
-    posts = await Promise.all(
-      Object.entries(import.meta.glob(`/src/routes/blog/posts/**/*.md`)).map(async ([path, page]) => {
-        const { metadata } = await page()
-        const slug = path.split('/').pop().split('.').shift()
-        return { ...metadata, slug }
-      })
-    )
-  } else {
-    posts = await Promise.all(
-      Object.entries(import.meta.glob(`/src/routes/blog/posts/*.md`)).map(async ([path, page]) => {
-        const { metadata } = await page()
-        const slug = path.split('/').pop().split('.').shift()
-        return { ...metadata, slug }
-      })
-    )
-  }
+	posts = await Promise.all(
+		Object.entries(import.meta.glob(`/src/routes/blog/posts/*.md`)).map(async ([path, page]) => {
+			const { metadata } = await page()
+			const slug = path.split('/').pop().split('.').shift()
+			return { ...metadata, slug }
+		})
+	)
+
+	if (!dev) posts = posts.filter(post => post.draft !== true)
 
   let sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
 

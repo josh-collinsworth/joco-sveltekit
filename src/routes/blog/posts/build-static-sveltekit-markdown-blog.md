@@ -6,7 +6,6 @@ categories:
   - "svelte"
   - "javascript"
   - "web"
-  - "sass"
   - "popular"
 coverImage: "sveltekit-learn.png"
 coverWidth: 16
