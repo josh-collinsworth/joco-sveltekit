@@ -96,7 +96,7 @@
 		align-items: center;
 		width: 100%;
 		position: relative;
-		z-index: 3;
+		z-index: 4;
 		padding: var(--quarterNote) var(--margin) var(--halfNote);
 
 		@media (min-width: vars.$xs) {

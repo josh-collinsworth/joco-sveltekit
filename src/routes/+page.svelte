@@ -18,11 +18,14 @@
 			<h2><strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer, writer, and&nbsp;teacher.
 			</h2>
 			<p class="subhead h2">I currently live in the Kansas City area, and work for <a href="https://shopify.com">Shopify</a> as a senior frontend developer.</p>
+
+			<p>I specialize in performant, accessible, user-focused interfaces. I wrote <a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"><i>a Complete Beginner's Guide to npm</i></a> on <a href="https://css-tricks.com">CSS Tricks</a>. I <a href="/projects">designed and built</a> the word games <a href="https://quina.app">Quina</a> and <a href="https://playhondo.com">Hondo</a>. Sometimes I do <a href="/about-me#appearances">podcast appearances</a>, but mainly I just <a href="/blog">blog here</a>.</p>
+
 			<section>
 				<ul>
+					<li><a href="/about-me">More about me and what I do</a></li>
 					<li><a href="/blog">My blog</a></li>
 					<li><a href="/projects">Some of my projects</a></li>
-					<li><a href="/about-me">More about me and what I do</a></li>
 					<li><a href="/contact">Get in touch</a></li>
 				</ul>
 			</section>
@@ -64,7 +67,7 @@
 	.subhead {
 		font-size: clamp(1.2rem, calc(0.6rem + 2vw), 1.8rem);
 		margin-top: 0;
-		margin-bottom: var(--wholeNote);
+		margin-bottom: var(--halfNote);
 		color: var(--darkGray);
 		line-height: 1.4;
 		max-width: 23em;
@@ -76,6 +79,14 @@
 		a {
 			text-decoration: underline;
 		}
+	}
+
+	p {
+		max-width: 38em;
+	}
+	
+	ul {
+		margin-top: var(--halfNote);
 	}
 }
 </style>

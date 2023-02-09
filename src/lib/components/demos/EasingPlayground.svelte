@@ -2,26 +2,26 @@
 import throttle from 'just-throttle'
 
 // The SVG exists from 0 to 140 on the X axis, and 0 to 300 on the Y axis. The inner square is from 20/100 to 120/200
-let startX = 30
-let startY = 140
-let endX = 90
-let endY = 100
+let startHandleX = 30
+let startHandleY = 140
+let endHandleX = 90
+let endHandleY = 100
 let dragging = null
-let currentPremadeEasing = null
+let currentEasingType = null
 
 let startHandle
 let endHandle
 let outerFrame
 
-$: startXToBinary = formatPct((startX - 20) / 100)
-$: startYToBinary = formatPct(((300 - startY) / 100) - 1)
-$: endXToBinary = formatPct((endX - 20) / 100)
-$: endYToBinary = formatPct(((300 - endY) / 100) - 1)
-$: bezierCoordinates = `${startXToBinary}, ${startYToBinary}, ${endXToBinary}, ${endYToBinary}`
+$: startHandleXToBinary = formatPct((startHandleX - 20) / 100)
+$: startHandleYToBinary = formatPct(((300 - startHandleY) / 100) - 1)
+$: endHandleXToBinary = formatPct((endHandleX - 20) / 100)
+$: endHandleYToBinary = formatPct(((300 - endHandleY) / 100) - 1)
+$: bezierCoordinates = `${startHandleXToBinary}, ${startHandleYToBinary}, ${endHandleXToBinary}, ${endHandleYToBinary}`
 
 const formatPct = (num) => parseFloat(num.toFixed(3))
 
-const trackMouseMove = (e) => {
+const trackMovement = (e) => {
 	if (!dragging) return
 
 	const rect = outerFrame.getBoundingClientRect();
@@ -34,25 +34,25 @@ const trackMouseMove = (e) => {
 	const percentTop = Math.round(300 / rect.height * (top - rect.top))
 
 	if (dragging === 'start') {
-		startX = percentLeft
-		startY = percentTop
+		startHandleX = percentLeft
+		startHandleY = percentTop
 	} else if (dragging === 'end') {
-		endX = percentLeft
-		endY = percentTop
+		endHandleX = percentLeft
+		endHandleY = percentTop
 	}
-	currentPremadeEasing = null
+	currentEasingType = null
 }
 
-const handleKeyDown = (e) => {
+const handleDragStart = (e) => {
 	if (startHandle === e.target) {
 		dragging = 'start'
 	} else if (endHandle === e.target) {
 		dragging = 'end'
 	}
-	trackMouseMove(e)
+	trackMovement(e)
 }
 
-const handleKeyUp = () => dragging = null
+const handleDragEnd = () => dragging = null
 
 const premadeEasings = {
 	browser: {
@@ -90,72 +90,78 @@ const premadeEasings = {
 	},
 }
 
-$: if (currentPremadeEasing) {
-	const thisEasing = premadeEasings[currentPremadeEasing.group][currentPremadeEasing.title]
-	startX = (thisEasing[0] * 100) + 20
-	startY = 300 - ((thisEasing[1] * 100) + 100)
-	endX = (thisEasing[2] * 100) + 20
-	endY = 300 - ((thisEasing[3] * 100) + 100)
+$: if (currentEasingType) {
+	const thisEasing = premadeEasings[currentEasingType.group][currentEasingType.title]
+	startHandleX = (thisEasing[0] * 100) + 20
+	startHandleY = 300 - ((thisEasing[1] * 100) + 100)
+	endHandleX = (thisEasing[2] * 100) + 20
+	endHandleY = 300 - ((thisEasing[3] * 100) + 100)
 }	
 </script>
 
 
-<form>
+<form class="easing-demo">
 	<div
-		class="demo"
-		on:mousemove={throttle((e) => trackMouseMove(e), 10, { leading: true })}
-		on:mousedown={handleKeyDown}
-		on:mouseup={handleKeyUp}
-		on:mouseleave={handleKeyUp}
-		on:touchstart={handleKeyDown}
-		on:touchend={handleKeyUp}
-		on:touchmove={throttle((e) => trackMouseMove(e), 10, { leading: true })}
+		class="current-curve"
+		on:mousemove={throttle((e) => trackMovement(e), 10, { leading: true })}
+		on:mousedown={handleDragStart}
+		on:mouseup={handleDragEnd}
+		on:mouseleave={handleDragEnd}
+		on:touchstart={handleDragStart}
+		on:touchend={handleDragEnd}
+		on:touchmove={throttle((e) => trackMovement(e), 10, { leading: true })}
+		on:touchcancel={handleDragEnd}
 	>
-		<svg
-			bind:this={outerFrame}
-			width="100%"
-			height="300%"
-			viewBox="0 0 140 300"
-			version="1.1"
-			style="border:3px solid var(--lightestGray);margin-bottom: 0;background:repeating-linear-gradient(to bottom, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 3.33%), repeating-linear-gradient(to right, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 7.14%);"
-		>
-			<text x="70" y="287.5" width="100" text-anchor="middle" class="curve-title">
-				{ currentPremadeEasing?.title || 'custom' }
+		<svg bind:this={outerFrame} class="current-curve__svg" width="100%" height="300%" viewBox="0 0 140 300" version="1.1">
+			<text x="70" y="287.5" width="100" text-anchor="middle" class="current-curve__title">
+				{ currentEasingType?.title || 'custom' }
 			</text>
 
-			<rect class="curve-frame" x="20" y="100" width="100" height="100" />
-			<path class="curve" d="M20,200 C{startX},{startY} {endX},{endY} 120,100" />
+			<rect class="current-curve__frame" x="20" y="100" width="100" height="100" />
+			<path class="current-curve__curve" d="M20,200 C{startHandleX},{startHandleY} {endHandleX},{endHandleY} 120,100" />
 			
-			<line class="track" x1="20" y1="270" x2="120" y2="270" />
-			<line class="track" x1="20" y1="266" x2="20" y2="274" />
-			<line class="track" x1="120" y1="266" x2="120" y2="274" />
-			<circle class="moving-circle" cx="20" cy="270" r="6" fill="#ffd100" style="--bezierCoordinates: {bezierCoordinates}"/>
+			<line class="current-curve__track" x1="20" y1="270" x2="120" y2="270" />
+			<line class="current-curve__track" x1="20" y1="266" x2="20" y2="274" />
+			<line class="current-curve__track" x1="120" y1="266" x2="120" y2="274" />
+			<circle class="current-curve__moving-circle" cx="20" cy="270" r="6" fill="#ffd100" style="--bezierCoordinates: {bezierCoordinates}"/>
 			
-			<line class="handle-tether" x1="20" y1="200" x2={startX} y2={startY} stroke="#34657f" />
-			<line class="handle-tether" x1="120" y1="100" x2={endX} y2={endY} stroke="#34657f" />
-			<circle class="handle" bind:this={startHandle} cx={startX} cy={startY} r="5" />
-			<circle class="handle" bind:this={endHandle} cx={endX} cy={endY} r="5" />
+			<line class="current-curve__handle-tether" x1="20" y1="200" x2={startHandleX} y2={startHandleY} stroke="#34657f" />
+			<line class="current-curve__handle-tether" x1="120" y1="100" x2={endHandleX} y2={endHandleY} stroke="#34657f" />
+			<circle class="current-curve__handle" bind:this={startHandle} cx={startHandleX} cy={startHandleY} r="5" />
+			<circle class="current-curve__handle" bind:this={endHandle} cx={endHandleX} cy={endHandleY} r="5" />
 		</svg>
-		<code>cubic-bezier({bezierCoordinates});</code>
+
+		<code class="current-curve__coordinates">
+			cubic-bezier({bezierCoordinates});
+		</code>
 	</div>
 
-	<div class="curve-options">
+	<div class="curve-selection">
 		{#each Object.entries(premadeEasings) as [group, _]}
-			<h2 class="h4">{group === 'browser' ? 'Browser defaults' : 'VS Code presets'}</h2>
+			<h2 class="h4">
+				{group === 'browser' ? 'Browser defaults' : 'VS Code presets'}
+			</h2>
 			{#each Object.entries(premadeEasings[group]) as [title, curve]}
-				<input type="radio" class="sr" id={title} bind:group={currentPremadeEasing} value={{group, title}} name="currentPremadeEasing" />
-				<label for={title} class={title.slice(0, 4)}>
-					<svg
-						width="100%"
-						viewBox="0 0 1.4 1.4"
-						version="1.1"
-						style="border: 1px solid var(--lighterGray);border-bottom:0;background:repeating-linear-gradient(to bottom, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 7.142%), repeating-linear-gradient(to right, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 7.142%); background-position:-1px -1px"
-					>
-						<rect x="0.2" y="0.2" width="1" height="1" style="fill:none;stroke:var(--lightGray);stroke-width:0.025px;pointer-events:none;"/>
-						<path d="M0.2,1.2 C{curve[0] + 0.2},{1.4 - (curve[1] + 0.2)} {curve[2] + 0.2},{1.4 - (curve[3] + 0.2)} 1.2,0.2" style="fill:none;stroke:#ffd100;stroke-width:0.05px;pointer-events:none;"/>
-					</svg>
-					<code>{title}</code>
-				</label>
+				<div class="curve-selection__option-group">
+					<input
+						bind:group={currentEasingType}
+						id={title}
+						class="sr"
+						value={{group, title}}
+						type="radio"
+						name="currentEasingType"
+					/>
+					<label for={title} class={title.slice(0, 4)}>
+						<svg class="curve-selection__illustration" width="100%" viewBox="0 0 1.4 1.4" version="1.1">
+							<rect class="curve-selection__frame" x="0.2" y="0.2" width="1" height="1" />
+							<path
+								class="curve-selection__curve"
+								d="M0.2,1.2 C{curve[0] + 0.2},{1.4 - (curve[1] + 0.2)} {curve[2] + 0.2},{1.4 - (curve[3] + 0.2)} 1.2,0.2"
+							/>
+						</svg>
+						<code class="curve-selection__title">{title}</code>
+					</label>
+				</div>
 			{/each}
 		{/each}
 	</div>
@@ -163,32 +169,170 @@ $: if (currentPremadeEasing) {
 
 
 <style lang="scss">
-.curve-options {
+.easing-demo {
+	display: grid;
+	align-items: start;
+	align-content: start;
+	justify-content: center;
+	justify-items: center;
+	gap: var(--quarterNote);
+	grid-template-columns: 3fr 1fr;
+
+	@media (min-width: vars.$xs) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.current-curve {
+	width: 100%;
+	margin: 0 auto var(--quarterNote) auto;
+	position: sticky;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto;
+	gap: var(--quarterNote);
+	top: var(--quarterNote);
+	justify-content: center;
+	align-content: start;
+	z-index: 3;
+
+	svg,
+	path,
+	circle,
+	rect,
+	line {
+		touch-action: none;
+		user-select: none;
+	}
+
+	.current-curve__svg {
+		border: 3px solid var(--lightestGray);
+		margin: 0 auto;
+		max-width: 40vh;
+		max-height: 100%;
+		display: block;
+		background:
+			repeating-linear-gradient(to bottom, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 3.33%),
+			repeating-linear-gradient(to right, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 7.14%);
+
+		@media (min-width: vars.$sm) {
+			max-width: 18rem;
+		}
+	}
+
+	.current-curve__moving-circle {
+		animation-name: move;
+		animation-duration: 1.5s;
+		animation-fill-mode: forwards;
+		animation-timing-function: cubic-bezier(var(--bezierCoordinates));
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+
+	.current-curve__handle {
+		fill: #7ba7bc;
+		stroke: #34657f;
+		stroke-width: 1px;
+	}
+
+	.current-curve__handle-tether {
+		pointer-events:none;
+		stroke-width:1px
+	}
+
+	.current-curve__track {
+		pointer-events: none;
+		stroke: var(--lightGray);
+		stroke-width: 0.5px;
+	}
+
+	.current-curve__frame {
+		fill: none;
+		stroke: var(--lightGray);
+		stroke-width: 1px;
+		pointer-events: none;
+	}
+
+	.current-curve__curve {
+		fill: none;
+		stroke: #ffd100;
+		stroke-width: 3px;
+		pointer-events: none;
+	}
+
+	.current-curve__title {
+		text-align: center;
+		width: 100%;
+		font-size: 0.4rem;
+		font-family: var(--codeFont);
+		fill: var(--ink);
+	}
+	
+	.current-curve__coordinates {
+		white-space: normal;
+		font-size: 0.5rem;
+		display: inline-block;
+		margin: 0 auto;
+		
+		@media (min-width: vars.$xxs) {
+			font-size: 0.7rem;
+		}
+		
+		@media (min-width: vars.$md) {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+code {
+	padding: 0.5em;
+	display: block;
+	margin-top: 1rem;
+
+	@media (max-width: vars.$xxs) {
+		font-size: 0.625rem;
+	}
+}
+
+
+svg {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	stroke-linecap: round;
+	stroke-miterlimit: 1.5;
+}
+
+.curve-selection {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
+	justify-content: center;
+	justify-items: center;
+	
+	@media (min-width: vars.$xs) {
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: start;
+	}
+	
+	@media (min-width: vars.$lg) {
+		grid-template-columns: repeat(6, 1fr);
+	}
 
 	h2 {
+		font-size: 0.8rem;
 		grid-column: 1 / -1;
+		text-align: center;
 		margin-bottom: 0;
 		margin-top: var(--quarterNote);
-		
+		display: block;
+
+		@media (min-width: vars.$sm) {
+			font-size: 1rem;
+		}
+
 		&:first-child {
 			margin-top: 0;
 		}
-	}
-	
-	@media (min-width: vars.$sm) {
-		grid-template-columns: repeat(6, 1fr);
-	}
-	
-	@media (min-width: vars.$md) {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	@media (min-width: vars.$xl) {
-		grid-template-columns: repeat(6, 1fr);
 	}
 
 	input:checked + label,
@@ -205,7 +349,7 @@ $: if (currentPremadeEasing) {
 			border-top-right-radius: 0;
 			border-top-left-radius: 0;
 
-		code {
+		.curve-selection__title {
 			width: 100%;
 			text-align: center;
 			line-height: 1;
@@ -215,7 +359,6 @@ $: if (currentPremadeEasing) {
 			border-top-right-radius: 0;
 			border-top-left-radius: 0;
 			display: block;
-			min-width: 8em;
 		}
 	}
 
@@ -256,97 +399,38 @@ $: if (currentPremadeEasing) {
 	}
 }
 
-.demo {
+.curve-selection__option-group {
+	position: relative;
+	max-width: 6.5rem;
 	width: 100%;
-	max-width: 16rem;
-	margin: var(--quarterNote) auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: start;
-
-	svg,
-	path,
-	circle,
-	rect,
-	line {
-		touch-action: none;
-		user-select: none;
-	}
-}
-
-form {
-	display: grid;
-	align-items: center;
-	align-content: center;
-	gap: var(--quarterNote);
+	min-width: 5.5rem;
 
 	@media (min-width: vars.$md) {
-		grid-template-columns: repeat(2, 1fr);
+		max-width: unset;
 	}
 }
 
-
-code {
-	padding: 0.5em;
-	display: block;
-	margin-top: 1rem;
-	@media (max-width: vars.$xxs) {
-		font-size: 0.625rem;
-	}
+.curve-selection__illustration {
+	border: 1px solid var(--lighterGray);
+	border-bottom:0;
+	background: 
+		repeating-linear-gradient(to bottom, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 7.142%),
+		repeating-linear-gradient(to right, var(--lightestGray), var(--lightestGray) 1px, transparent 1px, transparent 7.142%);
+	 background-position:-1px -1px;
 }
 
-.moving-circle {
-	animation-name: move;
-	animation-duration: 1.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(var(--bezierCoordinates));
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-}
-
-svg {
-	fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:1.5;
-}
-
-.handle {
-	fill: #7ba7bc;
-	stroke: #34657f;
-	stroke-width: 1px;
-
-}
-
-.handle-tether {
-	pointer-events:none;
-	stroke-width:1px
-}
-
-.track {
-	pointer-events: none;
-	stroke: var(--lightGray);
-	stroke-width: 0.5px;
-}
-
-.curve-frame {
+.curve-selection__frame {
 	fill: none;
 	stroke: var(--lightGray);
-	stroke-width: 1px;
+	stroke-width: 0.025px;
 	pointer-events: none;
 }
 
-.curve {
+.curve-selection__curve {
 	fill: none;
 	stroke: #ffd100;
-	stroke-width: 3px;
+	stroke-width: 0.05px;
 	pointer-events: none;
-}
-
-.curve-title {
-	text-align: center;
-	width: 100%;
-	font-size: 0.4rem;
-	font-family: var(--codeFont);
-	fill: var(--ink);
 }
 
 @keyframes move {
