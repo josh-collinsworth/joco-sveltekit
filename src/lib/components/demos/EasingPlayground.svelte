@@ -31,7 +31,14 @@ const trackMovement = (e) => {
 
 	// An inline clamp function that keeps the x value in bounds: Math.min(Math.max(val, min), max)
 	let percentLeft = Math.min(Math.max(Math.round(140 / rect.width * (left - rect.left)), 20), 120)
-	const percentTop = Math.round(300 / rect.height * (top - rect.top))
+	let percentTop = Math.round(300 / rect.height * (top - rect.top))
+
+	// TODO: should just make a proper clamp function for both values. And also, rename them to something more accurate.
+	if (percentTop < 0) {
+		percentTop = 0
+	} else if (percentTop > 300) {
+		percentTop = 300
+	}
 
 	if (dragging === 'start') {
 		startHandleX = percentLeft
