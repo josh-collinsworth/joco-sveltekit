@@ -58,7 +58,6 @@ body {
 html, body {
 	scrollbar-color: var(--yellow) var(--paper);
 	scrollbar-width: thin;
-	overflow: overlay;
 
 	&.smooth-scroll {
 		scroll-behavior: smooth;

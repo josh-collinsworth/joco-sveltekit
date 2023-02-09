@@ -22,12 +22,14 @@
 			<p>I specialize in performant, accessible, user-focused interfaces. I wrote <a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"><i>a Complete Beginner's Guide to npm</i></a> on <a href="https://css-tricks.com">CSS Tricks</a>. I <a href="/projects">designed and built</a> the word games <a href="https://quina.app">Quina</a> and <a href="https://playhondo.com">Hondo</a>. Sometimes I do <a href="/about-me#appearances">podcast appearances</a>, but mainly I just <a href="/blog">blog here</a>.</p>
 
 			<section>
-				<ul>
-					<li><a href="/about-me">More about me and what I do</a></li>
-					<li><a href="/blog">My blog</a></li>
-					<li><a href="/projects">Some of my projects</a></li>
-					<li><a href="/contact">Get in touch</a></li>
-				</ul>
+				<nav>
+					<ul>
+						<li><a href="/about-me">More about me and what I do</a></li>
+						<li><a href="/blog">My blog</a></li>
+						<li><a href="/projects">Some of my projects</a></li>
+						<li><a href="/contact">Get in touch</a></li>
+					</ul>
+			</nav>
 			</section>
 		</div>
 	</div>
@@ -73,7 +75,7 @@
 		max-width: 23em;
 
 		.dark & {
-			color: var(--lighterGray);
+			color: var(--ink);
 		}
 
 		a {
