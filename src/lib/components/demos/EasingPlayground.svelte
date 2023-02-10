@@ -121,6 +121,11 @@ $: if (currentEasingType) {
 
 
 <form class="easing-demo" on:submit|preventDefault>
+	<div class="intro intro-mobile">
+		<h2>CSS easing playground</h2>
+		<p style="margin-bottom: var(--halfNote)">A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+	</div>
+
 	<div
 		class="current-curve"
 		on:mousemove={throttle((e) => trackMovement(e), 10, { leading: true })}
@@ -165,8 +170,10 @@ $: if (currentEasingType) {
 	</div>
 
 	<div>
-		<h2>CSS easing playground</h2>
-		<p style="margin-bottom: var(--halfNote)">A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+		<div class="intro intro-desktop">
+			<h2>CSS easing playground</h2>
+			<p style="margin-bottom: var(--halfNote)">A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+		</div>
 		<div class="curve-selection">
 			{#each Object.entries(premadeEasings) as [group, _]}
 				<h3 class="h4">
@@ -339,6 +346,28 @@ code {
 	}
 }
 
+.intro {
+	justify-self: start;
+	p {
+		max-width: 28em;
+	}
+
+	&.intro-desktop {
+		display: none;
+
+		@media(min-width: vars.$md) {
+			display: block;
+		}
+	}
+
+	&.intro-mobile {
+		grid-column: span 2;
+
+		@media(min-width: vars.$md) {
+			display: none;
+		}
+	}
+}
 
 svg {
 	fill-rule: evenodd;
