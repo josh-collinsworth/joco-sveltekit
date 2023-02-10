@@ -1,25 +1,26 @@
 <script>
 import throttle from 'just-throttle'
+import { clamp, formatDecimal } from '$lib/assets/js/utils'
 
-// The SVG exists from 0 to 140 on the X axis, and 0 to 300 on the Y axis. The inner square is from 20/100 to 120/200
+// The SVG exists from 0 to 140 on the X axis, and 0 to 300 on the Y axis. The inner square is from 20/100 to 120/200.
 let startHandleX = 30
 let startHandleY = 140
 let endHandleX = 90
 let endHandleY = 100
 let dragging = null
 let currentEasingType = null
+let copyButtonIcon = `📋`
 
 let startHandle
 let endHandle
 let outerFrame
 
-$: startHandleXToBinary = formatPct((startHandleX - 20) / 100)
-$: startHandleYToBinary = formatPct(((300 - startHandleY) / 100) - 1)
-$: endHandleXToBinary = formatPct((endHandleX - 20) / 100)
-$: endHandleYToBinary = formatPct(((300 - endHandleY) / 100) - 1)
+$: startHandleXToBinary = formatDecimal((startHandleX - 20) / 100)
+$: startHandleYToBinary = formatDecimal(((300 - startHandleY) / 100) - 1)
+$: endHandleXToBinary = formatDecimal((endHandleX - 20) / 100)
+$: endHandleYToBinary = formatDecimal(((300 - endHandleY) / 100) - 1)
 $: bezierCoordinates = `${startHandleXToBinary}, ${startHandleYToBinary}, ${endHandleXToBinary}, ${endHandleYToBinary}`
-
-const formatPct = (num) => parseFloat(num.toFixed(3))
+$: curveCSS = `cubic-bezier(${bezierCoordinates})`
 
 const trackMovement = (e) => {
 	if (!dragging) return
@@ -29,23 +30,18 @@ const trackMovement = (e) => {
 	const left = e.type.includes('mouse') ? e.clientX : e.changedTouches[0].clientX
 	const top = e.type.includes('mouse') ? e.clientY : e.changedTouches[0].clientY
 
-	// An inline clamp function that keeps the x value in bounds: Math.min(Math.max(val, min), max)
-	let percentLeft = Math.min(Math.max(Math.round(140 / rect.width * (left - rect.left)), 20), 120)
-	let percentTop = Math.round(300 / rect.height * (top - rect.top))
+	let xPosition = Math.round(140 / rect.width * (left - rect.left))
+	let yPosition = Math.round(300 / rect.height * (top - rect.top))
 
-	// TODO: should just make a proper clamp function for both values. And also, rename them to something more accurate.
-	if (percentTop < 0) {
-		percentTop = 0
-	} else if (percentTop > 300) {
-		percentTop = 300
-	}
+	xPosition = clamp(20, xPosition, 140)
+	yPosition = clamp(0, yPosition, 300)
 
 	if (dragging === 'start') {
-		startHandleX = percentLeft
-		startHandleY = percentTop
+		startHandleX = xPosition
+		startHandleY = yPosition
 	} else if (dragging === 'end') {
-		endHandleX = percentLeft
-		endHandleY = percentTop
+		endHandleX = xPosition
+		endHandleY = yPosition
 	}
 	currentEasingType = null
 }
@@ -60,6 +56,12 @@ const handleDragStart = (e) => {
 }
 
 const handleDragEnd = () => dragging = null
+
+const copyToClipboard = () => {
+	navigator.clipboard.writeText(curveCSS)
+	copyButtonIcon = '✅'
+	setTimeout(() => { copyButtonIcon = '📋'}, 1200)
+}
 
 const premadeEasings = {
 	browser: {
@@ -107,7 +109,18 @@ $: if (currentEasingType) {
 </script>
 
 
-<form class="easing-demo">
+<svelte:head>
+  <title>CSS easing playground - Josh Collinsworth</title>
+  <meta data-key="description" name="description" content="An interactive demo showcasing common easing curve presets and a playground where you can create and copy your own cubic-bezier CSS transitions.">
+  <meta property="og:title" content="CSS easing playground - Josh Collinsworth" />
+  <meta name="twitter:title" content="CSS easing playground - Josh Collinsworth" />
+  <meta property="og:description" content="An interactive demo showcasing common easing curve presets and a playground where you can create and copy your own cubic-bezier CSS transitions." />
+  <meta name="twitter:description" content="An interactive demo showcasing common easing curve presets and a playground where you can create and copy your own cubic-bezier CSS transitions." />
+  <meta property="og:url" content="https://joshcollinsworth.com/demos/easing" />
+</svelte:head>
+
+
+<form class="easing-demo" on:submit|preventDefault>
 	<div
 		class="current-curve"
 		on:mousemove={throttle((e) => trackMovement(e), 10, { leading: true })}
@@ -126,51 +139,63 @@ $: if (currentEasingType) {
 
 			<rect class="current-curve__frame" x="20" y="100" width="100" height="100" />
 			<path class="current-curve__curve" d="M20,200 C{startHandleX},{startHandleY} {endHandleX},{endHandleY} 120,100" />
-			
+
 			<line class="current-curve__track" x1="20" y1="270" x2="120" y2="270" />
 			<line class="current-curve__track" x1="20" y1="266" x2="20" y2="274" />
 			<line class="current-curve__track" x1="120" y1="266" x2="120" y2="274" />
+
+			<g class:transparent={dragging}>
+				<line class="current-curve__handle-tether" x1="20" y1="200" x2={startHandleX} y2={startHandleY} stroke="#34657f" />
+				<line class="current-curve__handle-tether" x1="120" y1="100" x2={endHandleX} y2={endHandleY} stroke="#34657f" />
+				<circle class="current-curve__handle" bind:this={startHandle} cx={startHandleX} cy={startHandleY} r="9" />
+				<circle class="current-curve__handle" bind:this={endHandle} cx={endHandleX} cy={endHandleY} r="9" />
+			</g>
+
 			<circle class="current-curve__moving-circle" cx="20" cy="270" r="6" fill="#ffd100" style="--bezierCoordinates: {bezierCoordinates}"/>
-			
-			<line class="current-curve__handle-tether" x1="20" y1="200" x2={startHandleX} y2={startHandleY} stroke="#34657f" />
-			<line class="current-curve__handle-tether" x1="120" y1="100" x2={endHandleX} y2={endHandleY} stroke="#34657f" />
-			<circle class="current-curve__handle" bind:this={startHandle} cx={startHandleX} cy={startHandleY} r="5" />
-			<circle class="current-curve__handle" bind:this={endHandle} cx={endHandleX} cy={endHandleY} r="5" />
 		</svg>
 
 		<code class="current-curve__coordinates">
-			cubic-bezier({bezierCoordinates});
+			{curveCSS};
 		</code>
+
+		<button class="current-curve__copy-btn" on:click={copyToClipboard} type="button">
+			<div class="sr">Copy CSS to clipboard</div>
+			<span aria-hidden="true">{copyButtonIcon}</span>
+		</button>
 	</div>
 
-	<div class="curve-selection">
-		{#each Object.entries(premadeEasings) as [group, _]}
-			<h2 class="h4">
-				{group === 'browser' ? 'Browser defaults' : 'VS Code presets'}
-			</h2>
-			{#each Object.entries(premadeEasings[group]) as [title, curve]}
-				<div class="curve-selection__option-group">
-					<input
-						bind:group={currentEasingType}
-						id={title}
-						class="sr"
-						value={{group, title}}
-						type="radio"
-						name="currentEasingType"
-					/>
-					<label for={title} class={title.slice(0, 4)}>
-						<svg class="curve-selection__illustration" width="100%" viewBox="0 0 1.4 1.4" version="1.1">
-							<rect class="curve-selection__frame" x="0.2" y="0.2" width="1" height="1" />
-							<path
-								class="curve-selection__curve"
-								d="M0.2,1.2 C{curve[0] + 0.2},{1.4 - (curve[1] + 0.2)} {curve[2] + 0.2},{1.4 - (curve[3] + 0.2)} 1.2,0.2"
-							/>
-						</svg>
-						<code class="curve-selection__title">{title}</code>
-					</label>
-				</div>
+	<div>
+		<h2>CSS easing playground</h2>
+		<p style="margin-bottom: var(--halfNote)">A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+		<div class="curve-selection">
+			{#each Object.entries(premadeEasings) as [group, _]}
+				<h3 class="h4">
+					{group === 'browser' ? 'Browser defaults' : 'VS Code presets'}
+				</h3>
+				{#each Object.entries(premadeEasings[group]) as [title, curve]}
+					<div class="curve-selection__option-group">
+						<input
+							bind:group={currentEasingType}
+							id={title}
+							class="sr"
+							value={{group, title}}
+							type="radio"
+							name="currentEasingType"
+						/>
+						<label for={title} class={title.slice(0, 4)}>
+							<svg class="curve-selection__illustration" width="100%" viewBox="0 0 1.4 1.4" version="1.1">
+								<rect class="curve-selection__frame" x="0.2" y="0.2" width="1" height="1" />
+								<path
+									class="curve-selection__curve"
+									d="M0.2,1.2 C{curve[0] + 0.2},{1.4 - (curve[1] + 0.2)} {curve[2] + 0.2},{1.4 - (curve[3] + 0.2)} 1.2,0.2"
+								/>
+							</svg>
+							<code class="curve-selection__title">{title}</code>
+						</label>
+					</div>
+				{/each}
 			{/each}
-		{/each}
+		</div>
 	</div>
 </form>
 
@@ -184,6 +209,7 @@ $: if (currentEasingType) {
 	justify-items: center;
 	gap: var(--quarterNote);
 	grid-template-columns: 3fr 1fr;
+	margin-top: var(--wholeNote);
 
 	@media (min-width: vars.$xs) {
 		grid-template-columns: repeat(2, 1fr);
@@ -234,6 +260,7 @@ $: if (currentEasingType) {
 		animation-timing-function: cubic-bezier(var(--bezierCoordinates));
 		animation-iteration-count: infinite;
 		animation-direction: alternate-reverse;
+		pointer-events: none;
 	}
 
 	.current-curve__handle {
@@ -289,6 +316,17 @@ $: if (currentEasingType) {
 			font-size: 0.8rem;
 		}
 	}
+
+	.current-curve__copy-btn {
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: 0 auto;
+		border: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+	}
 }
 
 code {
@@ -325,7 +363,7 @@ svg {
 		grid-template-columns: repeat(6, 1fr);
 	}
 
-	h2 {
+	h3 {
 		font-size: 0.8rem;
 		grid-column: 1 / -1;
 		text-align: center;
@@ -335,10 +373,6 @@ svg {
 
 		@media (min-width: vars.$sm) {
 			font-size: 1rem;
-		}
-
-		&:first-child {
-			margin-top: 0;
 		}
 	}
 
@@ -438,6 +472,10 @@ svg {
 	stroke: #ffd100;
 	stroke-width: 0.05px;
 	pointer-events: none;
+}
+
+.transparent {
+	opacity: 0.4;
 }
 
 @keyframes move {
