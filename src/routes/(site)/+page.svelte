@@ -1,7 +1,5 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
-	import {fly} from 'svelte/transition'
-	import {quintOut} from 'svelte/easing'
 </script>
 
 
@@ -51,7 +49,10 @@
 <style lang="scss">
 @for $i from 1 through 4 {
 	.intro .intro__headline > *:nth-child(#{$i}) {
-		animation-delay: 0.2 + ($i * 0.2s);
+		animation-delay: 0.2 + ($i * 0.14s);
+	}
+	.intro .intro__headline ul li:nth-child(#{$i}) {
+		animation-delay: 0.8 + ($i * 0.10s);
 	}
 }
 
@@ -60,10 +61,11 @@
 	position: relative;
 	margin-top: var(--wholeNote);
 
-	.intro__headline > * {
+	.intro__headline > *,
+	.intro__headline ul li {
 		opacity: 0;
-		transform: translateY(var(--quarterNote));
-		animation: fade_in_intro 1.5s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+		transform: translateY(16px);
+		animation: fade_in_intro 1.2s cubic-bezier(0.23, 1, 0.320, 1) forwards;
 
 		.reduce-motion & {
 			transform: translateY(0);

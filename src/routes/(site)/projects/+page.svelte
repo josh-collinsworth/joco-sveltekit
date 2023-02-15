@@ -39,7 +39,7 @@
 						Read about the making of Quina <a href="/blog/announcing-quina-my-first-app">on this blog</a> and 
 						<a rel="external" href="https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/"> on CSS Tricks</a>
 					</li>
-				</ul>	
+				</ul>
 			</div>
 			
 			<div class="image-gallery">

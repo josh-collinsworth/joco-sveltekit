@@ -6,7 +6,7 @@ const fetchPosts = async ({ offset = 0, limit = 10, category = '' }: PostsEndpoi
 	let posts: Post[]
 
 	posts = await Promise.all(
-		Object.entries(import.meta.glob(`/src/lib/content/posts/*.md`)).map(async ([path, page]) => {
+		Object.entries(import.meta.glob(`../../../content/posts/*.md`)).map(async ([path, page]) => {
 			const { metadata } = await page()
 			const slug = path.split('/').pop().split('.').shift()
 			return { ...metadata, slug }
