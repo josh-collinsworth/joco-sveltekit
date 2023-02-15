@@ -1,40 +1,40 @@
 @use './vars';
 
 .no-bullets {
-  list-style-type: none !important;
+	list-style-type: none !important;
 
-  li::marker {
-    content: none !important;
-  }
+	li::marker {
+		content: none !important;
+	}
 }
 
 .sr,
 input[type=checkbox] {
-  position: absolute;
-  left: -100vw;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: none;
-  word-wrap: normal;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
+	position: absolute;
+	left: -100vw;
+	opacity: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: none;
+	word-wrap: normal;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
 }
 
 .compressed-content {
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 
-  @media (min-width: vars.$xs) {
-    max-width: var(--maxWidth);
-  }
+	@media (min-width: vars.$xs) {
+		max-width: var(--maxWidth);
+	}
 
-  &.wider {
-    max-width: calc(var(--maxWidth) * 1.5);
-  }
+	&.wider {
+		max-width: calc(var(--maxWidth) * 1.5);
+	}
 
-  &.double-wide {
-    max-width: calc(var(--maxWidth) * 2);
-  }
+	&.double-wide {
+		max-width: calc(var(--maxWidth) * 2);
+	}
 }

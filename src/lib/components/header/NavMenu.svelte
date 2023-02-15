@@ -15,7 +15,7 @@
 			class="main-nav nav"
 			class:open={$isMenuOpen}
 		>
-      <NavLinks {path} />
+			<NavLinks {path} />
 		</nav>
 	</div>
 </template>

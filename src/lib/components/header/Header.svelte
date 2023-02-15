@@ -26,10 +26,10 @@
 
 
 <div>
-  <header class="header">
-    <a on:click={focusMain} class="skip-to-content-link" href="#main">
-      Skip to main content
-    </a>
+	<header class="header">
+		<a on:click={focusMain} class="skip-to-content-link" href="#main">
+			Skip to main content
+		</a>
 
 		<a href="/" class="logo" on:click={handleClick}>
 			<LogoSVG />
@@ -41,9 +41,9 @@
 			<DarkModeToggle />
 			<NavMenu {path} />
 		</div>
-  </header>
+	</header>
 
-  <Grid refresh={path} />
+	<Grid refresh={path} />
 
 	<noscript>
 		<style>
@@ -54,8 +54,8 @@
 			}
 
 			.page-head .heading-wrapper .brace.closing-brace {
-        transform: translateX(0);
-      }
+				transform: translateX(0);
+			}
 		</style>
 	</noscript>
 </div>

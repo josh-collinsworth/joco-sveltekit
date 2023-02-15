@@ -1,13 +1,13 @@
 <script>
-  let count = 0
+	let count = 0
 
-  const incrementCount = () => {
-    count++
-  }
+	const incrementCount = () => {
+		count++
+	}
 </script>
 
 <div class="example-component-wrapper">
-  <button on:click={incrementCount}>
-    Number of clicks: {count}
-  </button>
+	<button on:click={incrementCount}>
+		Number of clicks: {count}
+	</button>
 </div>

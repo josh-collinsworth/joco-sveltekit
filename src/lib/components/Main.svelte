@@ -3,5 +3,5 @@
 </script>
 
 <main id="main" tabindex="-1" class={className}>
-  <slot />
+	<slot />
 </main>

@@ -212,18 +212,18 @@ figcaption {
 		}
 	}
 
-  .icon-link {
-    position: relative;
-    
-    &::before {
-      content: '#';
+	.icon-link {
+		position: relative;
+		
+		&::before {
+			content: '#';
 			color: var(--lightGray);
 			font-weight: normal;
-      opacity: 0;
-    }
-  }
+			opacity: 0;
+		}
+	}
 
-  &:hover .icon-link::before {
-    opacity: 1;
-  }
+	&:hover .icon-link::before {
+		opacity: 1;
+	}
 }

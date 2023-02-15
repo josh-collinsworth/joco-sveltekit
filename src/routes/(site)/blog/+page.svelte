@@ -6,7 +6,7 @@
 	import Pagination from '$lib/components/Pagination.svelte'
 	import PostList from '$lib/components/posts/PostList.svelte'
 	
-  export let data: PageData;
+	export let data: PageData;
 
 	let posts: Post[] = data.posts || []
 	let totalPosts: number = data.totalPosts.total

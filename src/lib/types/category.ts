@@ -1,4 +1,4 @@
 export default interface category {
-  title: string;
-  count: number;
+	title: string;
+	count: number;
 }

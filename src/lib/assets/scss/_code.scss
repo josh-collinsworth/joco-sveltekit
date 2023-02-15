@@ -40,7 +40,7 @@ code {
 	border: 1px solid hsla(var(--lightBlueHSL), 0.2);
 	line-height: 1 !important;
 	white-space: nowrap;
-  font-style: normal;
+	font-style: normal;
 }
 
 code,
@@ -48,27 +48,27 @@ pre {
 	font-family: var(--codeFont);
 
 	&[class*="language-"] {
-	  color: #f8f8f2;
-	  background: none;
-	  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	  font-family: var(--codeFont);
-	  font-display: swap;
-	  font-size: .75rem;
-	  text-align: left;
-	  white-space: pre;
-	  word-spacing: normal;
-	  word-break: normal;
-	  word-wrap: normal;
-	  line-height: 1.5;
+		color: #f8f8f2;
+		background: none;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+		font-family: var(--codeFont);
+		font-display: swap;
+		font-size: .75rem;
+		text-align: left;
+		white-space: pre;
+		word-spacing: normal;
+		word-break: normal;
+		word-wrap: normal;
+		line-height: 1.5;
  
-	  -moz-tab-size: 4;
-	  -o-tab-size: 4;
-	  tab-size: 4;
+		-moz-tab-size: 4;
+		-o-tab-size: 4;
+		tab-size: 4;
  
-	  -webkit-hyphens: none;
-	  -moz-hyphens: none;
-	  -ms-hyphens: none;
-	  hyphens: none;
+		-webkit-hyphens: none;
+		-moz-hyphens: none;
+		-ms-hyphens: none;
+		hyphens: none;
 	}
 }
  
@@ -147,7 +147,7 @@ pre.language-javascript:before {
 :not(pre) > code,
 pre {
 	&[class*="language-"] {
-	  background: $background;
+		background: $background;
 	}
 }
  
@@ -164,7 +164,7 @@ pre {
 	&.prolog,
 	&.doctype,
 	&.cdata {
-	  color: #7970A9;
+		color: #7970A9;
 	}
 
 	&.parameter {
@@ -172,11 +172,11 @@ pre {
 	}
  
 	&.punctuation {
-	  color: #f2f2f2;
+		color: #f2f2f2;
 	}
  
 	&.namespace {
-	  opacity: .8;
+		opacity: .8;
 	}
  
 	&.property,
@@ -184,12 +184,12 @@ pre {
 	&.constant,
 	&.symbol,
 	&.deleted {
-	  color: #ff80bf;
+		color: #ff80bf;
 	}
  
 	&.boolean,
 	&.number {
-	  color: #9580ff;
+		color: #9580ff;
 	}
  
 	&.selector,
@@ -198,42 +198,42 @@ pre {
 	&.char,
 	&.builtin,
 	&.inserted {
-	  color: #FFFF80;
+		color: #FFFF80;
 	}
  
 	&.operator,
 	&.entity,
 	&.url,
 	&.variable {
-	  color: #ff80bf;
+		color: #ff80bf;
 	}
  
 	&.atrule,
 	&.attr-value,
 	&.function,
 	&.class-name {
-	  color: #8AFF80;
+		color: #8AFF80;
 	}
  
 	&.keyword {
-	  color: #ff80bf;
+		color: #ff80bf;
 	}
  
 	&.regex,
 	&.important {
-	  color: #fc9867;
+		color: #fc9867;
 	}
  
 	&.important,
 	&.bold {
-	  font-weight: bold;
+		font-weight: bold;
 	}
 	&.italic {
-	  font-style: italic;
+		font-style: italic;
 	}
  
 	&.entity {
-	  cursor: help;
+		cursor: help;
 	}
 }
  

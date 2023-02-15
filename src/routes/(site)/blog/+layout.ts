@@ -5,7 +5,7 @@ export const load = async ({ fetch }) => {
 	const resJSON = await res.json()
 	
 	const popularPosts = resJSON
-    .filter(post => post.categories.includes('popular'))
+		.filter(post => post.categories.includes('popular'))
 		.map(post => ({ slug: post.slug, title: post.title }))
 	
 	const allCategories = Array.from(new Set(resJSON.flatMap(p => p.categories)))

@@ -7,11 +7,11 @@ import formatDecimal from './formatDecimal'
 import clamp from './clamp'
 
 export {
-  appendScriptToHead,
-  fetchPosts,
-  prefersReducedData,
-  readableDate,
-  sluggify,
+	appendScriptToHead,
+	fetchPosts,
+	prefersReducedData,
+	readableDate,
+	sluggify,
 	formatDecimal,
 	clamp
 }

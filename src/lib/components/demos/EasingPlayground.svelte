@@ -109,25 +109,15 @@ $: if (currentEasingType) {
 </script>
 
 
-<svelte:head>
-  <title>CSS easing playground - Josh Collinsworth</title>
-  <meta data-key="description" name="description" content="An interactive demo showcasing common easing curve presets and a playground where you can create and copy your own cubic-bezier CSS transitions.">
-  <meta property="og:title" content="CSS easing playground - Josh Collinsworth" />
-  <meta name="twitter:title" content="CSS easing playground - Josh Collinsworth" />
-  <meta property="og:description" content="An interactive demo showcasing common easing curve presets and a playground where you can create and copy your own cubic-bezier CSS transitions." />
-  <meta name="twitter:description" content="An interactive demo showcasing common easing curve presets and a playground where you can create and copy your own cubic-bezier CSS transitions." />
-  <meta property="og:url" content="https://joshcollinsworth.com/demos/easing" />
-</svelte:head>
-
-
 <form class="easing-demo" on:submit|preventDefault>
 	<div class="intro intro-mobile">
 		<h2>CSS easing playground</h2>
-		<p style="margin-bottom: var(--halfNote)">A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+		<p>A place to try out various easing types/cubic bézier curves, and to create your own.</p>
 	</div>
 
 	<div
 		class="current-curve"
+		id="demo-curve"
 		on:mousemove={throttle((e) => trackMovement(e), 10, { leading: true })}
 		on:mousedown={handleDragStart}
 		on:mouseup={handleDragEnd}
@@ -172,7 +162,7 @@ $: if (currentEasingType) {
 	<div>
 		<div class="intro intro-desktop">
 			<h2>CSS easing playground</h2>
-			<p style="margin-bottom: var(--halfNote)">A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+			<p>A place to try out various easing types/cubic bézier curves, and to create your own.</p>
 		</div>
 		<div class="curve-selection">
 			{#each Object.entries(premadeEasings) as [group, _]}
@@ -214,9 +204,9 @@ $: if (currentEasingType) {
 	align-content: start;
 	justify-content: center;
 	justify-items: center;
-	gap: var(--quarterNote);
+	gap: 0 var(--quarterNote);
 	grid-template-columns: 3fr 1fr;
-	margin-top: var(--wholeNote);
+	margin-top: var(--dottedQuarterNote);
 
 	@media (min-width: vars.$xs) {
 		grid-template-columns: repeat(2, 1fr);
@@ -348,6 +338,8 @@ code {
 
 .intro {
 	justify-self: start;
+	margin-bottom: var(--dottedHalfNote);
+
 	p {
 		max-width: 28em;
 	}
@@ -399,6 +391,10 @@ svg {
 		margin-bottom: 0;
 		margin-top: var(--quarterNote);
 		display: block;
+
+		&:first-child {
+			margin-top: 0;
+		}
 
 		@media (min-width: vars.$sm) {
 			font-size: 1rem;

@@ -6,7 +6,7 @@ img {
 	width: auto;
 	max-width: 100%;
 	height: auto;
-	margin: var(--quarterNote)  0;
+	margin: var(--quarterNote)	0;
 }
 
 hr {
@@ -93,7 +93,7 @@ table {
 	min-width: 100%;
 	border-collapse: collapse;
 	font-size: 0.9rem;
-	margin: var(--dottedHalfNote)  0 var(--halfNote);
+	margin: var(--dottedHalfNote)	0 var(--halfNote);
 	border-right: 2rem solid transparent;
 
 	td, th {

@@ -52,7 +52,7 @@
 		background: var(--darkerBlue);
 	}
 
-  :global(.side-note > *:last-child) {
-    margin-bottom: 0;
-  }
+	:global(.side-note > *:last-child) {
+		margin-bottom: 0;
+	}
 </style>

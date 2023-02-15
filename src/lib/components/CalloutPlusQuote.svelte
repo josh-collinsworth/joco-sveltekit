@@ -1,13 +1,13 @@
 <script>
-  import PullQuote from '$lib/components/PullQuote.svelte'
-  import Callout from '$lib/components/Callout.svelte'
+	import PullQuote from '$lib/components/PullQuote.svelte'
+	import Callout from '$lib/components/Callout.svelte'
 </script>
 
 
 <PullQuote>
-  <slot />
+	<slot />
 </PullQuote>
 
 <Callout>
-  <slot />
+	<slot />
 </Callout>

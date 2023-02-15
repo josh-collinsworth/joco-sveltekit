@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
+	import {fly} from 'svelte/transition'
+	import {quintOut} from 'svelte/easing'
 </script>
 
 
@@ -15,11 +17,21 @@
 <Main>
 	<div class="intro">
 		<div class="intro__headline">
-			<h2><strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer, writer, and&nbsp;teacher.
+			<h2>
+				<strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer, writer, and&nbsp;teacher.
 			</h2>
-			<p class="subhead h2">I currently live in the Kansas City area, and work for <a href="https://shopify.com">Shopify</a> as a senior frontend developer.</p>
 
-			<p>I specialize in performant, accessible, user-focused interfaces. I wrote <a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"><i>a Complete Beginner's Guide to npm</i></a> on <a href="https://css-tricks.com">CSS Tricks</a>. I <a href="/projects">designed and built</a> the word games <a href="https://quina.app">Quina</a> and <a href="https://playhondo.com">Hondo</a>. Sometimes I do <a href="/about-me#appearances">podcast appearances</a>, but mainly I just <a href="/blog">blog here</a>.</p>
+			<p class="subhead h2">
+				I currently live in the Kansas City area, and work for <a href="https://shopify.com">Shopify</a> as a senior frontend developer.
+			</p>
+
+			<p>
+				I specialize in performant, accessible, user-focused interfaces. I wrote
+				<a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"><i>a Complete Beginner's Guide to npm</i></a>
+				on <a href="https://css-tricks.com">CSS Tricks</a>. I <a href="/projects">designed and built</a> the word games
+				<a href="https://quina.app">Quina</a> and <a href="https://playhondo.com">Hondo</a>. Sometimes I do
+				<a href="/about-me#appearances">podcast appearances</a>, but mainly I just <a href="/blog">blog here</a>.
+			</p>
 
 			<section>
 				<nav>
@@ -37,10 +49,26 @@
 
 
 <style lang="scss">
+@for $i from 1 through 4 {
+	.intro .intro__headline > *:nth-child(#{$i}) {
+		animation-delay: 0.2 + ($i * 0.2s);
+	}
+}
+
 .intro {
 	width: 100%;
 	position: relative;
 	margin-top: var(--wholeNote);
+
+	.intro__headline > * {
+		opacity: 0;
+		transform: translateY(var(--quarterNote));
+		animation: fade_in_intro 1.5s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+
+		.reduce-motion & {
+			transform: translateY(0);
+		}
+	}
 
 	@media (min-width: vars.$xl) {
 		display: grid; //TODO: leftover from old design. Probably not needed unless I decide to put stuff in that narrow right column again.
@@ -91,4 +119,12 @@
 		margin-top: var(--halfNote);
 	}
 }
+
+@keyframes fade_in_intro {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 </style>

@@ -1,26 +1,26 @@
 <script lang="ts">
 	import { prefersReducedMotion } from '$lib/data/store'
-  import { TIMING_DURATION } from '$lib/data/constants'
-  import { onMount } from 'svelte'
+	import { TIMING_DURATION } from '$lib/data/constants'
+	import { onMount } from 'svelte'
 	
-  export let color: string = 'transparent'
+	export let color: string = 'transparent'
 	export let out: boolean = false
-  export let gridWidth: number = 0
+	export let gridWidth: number = 0
 
 	let size = 0.5
 
-  onMount(() => {
+	onMount(() => {
 		const cellSize = Math.random()
 		if (cellSize > 0.95) {
 			size = 1.5
 		} else if (cellSize > 0.8) {
 			size = 1
 		}
-  })
+	})
 
-  const randomDelay = (): string => {
-    return Math.random() * .5 + "s"
-  }
+	const randomDelay = (): string => {
+		return Math.random() * .5 + "s"
+	}
 
 	const randomX = (): string => {
 		const randomLeftValue = Math.floor((Math.random() * gridWidth) - 1) - (size * 2)
@@ -28,8 +28,8 @@
 		return `${randomLeftValue / 2}rem`
 	}
 
-  const randomDrop = (): string => {
-    const drop = Math.random() * 100
+	const randomDrop = (): string => {
+		const drop = Math.random() * 100
 			if (drop > 93) {
 				return '1rem'
 			} else if (drop > 80) {
@@ -40,7 +40,7 @@
 				return '-1rem'
 			}
 		return '0'
-  }
+	}
 
 	const randomTiming = (): number => {
 		return Math.floor(Math.random() * TIMING_DURATION * 1.2)

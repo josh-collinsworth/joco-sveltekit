@@ -94,7 +94,7 @@
 
 	<Header {path} /> 
 
-	<div class="layout" class:subpage={!isSinglePost}> 
+	<div class="layout"> 
 		<PageHeading title={path} {isSinglePost} />
 
 		<PageTransition refresh={path}>

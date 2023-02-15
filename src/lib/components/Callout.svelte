@@ -1,21 +1,21 @@
 <script>null</script>
 
 <p class="callout">
-  <slot />
+	<slot />
 </p>
 
 
 <style lang="scss">
-  .callout {
-    margin: var(--halfNote) 0;
-    font-size: 1.3rem;
-    line-height: 1.4;
+	.callout {
+		margin: var(--halfNote) 0;
+		font-size: 1.3rem;
+		line-height: 1.4;
 
-    @media (min-width: vars.$lg) {
-      margin: 0 0 var(--quarterNote);
-      font-size: inherit;
-      line-height: inherit;
-      font-family: inherit;
-    }
-  }
+		@media (min-width: vars.$lg) {
+			margin: 0 0 var(--quarterNote);
+			font-size: inherit;
+			line-height: inherit;
+			font-family: inherit;
+		}
+	}
 </style>
