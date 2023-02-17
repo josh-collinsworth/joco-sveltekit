@@ -33,8 +33,10 @@ const trackMovement = (e) => {
 	let xPosition = Math.round(140 / rect.width * (left - rect.left))
 	let yPosition = Math.round(300 / rect.height * (top - rect.top))
 
-	xPosition = clamp(20, xPosition, 140)
+	xPosition = clamp(20, xPosition, 120)
 	yPosition = clamp(0, yPosition, 300)
+
+	console.log(xPosition)
 
 	if (dragging === 'start') {
 		startHandleX = xPosition

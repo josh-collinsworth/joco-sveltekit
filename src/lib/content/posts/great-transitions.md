@@ -21,21 +21,25 @@ draft: true
 </script>
 
 
-Part of my son's evening routine is picking up the various toys he's gotten out and played with that day (or gotten out, at least), and putting them all back in the toy basket.
+Part of my son's evening routine is picking up the various toys he's gotten out and played with that day (or gotten out, at least—if you're a parent, you know), and putting those items all back into the toy basket.
 
-Usually, he casually places the toys into the basket at a steady pace, so we can get on with the more fun parts of bedtime, like reading books. But sometimes, if his mood is affected by tiredness or frustration, the toys might make their way into the basket with a little extra velocity.
+Usually, my four-year-old casually places the toys into the basket at a steady pace, so we can get on with the more fun parts of bedtime, like reading books.
 
-Other times, when he feels like stalling, the toys casually float along as slowly as possible; still others, they arc playfully in the air, as an ad hoc game forms around the process.
+Other times, when he feels like stalling, the toys casually float along as slowly as possible; others, they arc playfully in the air, as an ad hoc game forms around the process.
 
-Sometimes, it's a race, and the toys fly rapidly into the basket. And, of course, sometimes there are slow, melancholy theatrics to go along with the mournful premise of a day of fun coming to an end. (It's hard being a kid.)
+Sometimes, it's a race, and the toys fly rapidly into the basket. Sometimes they zing by in frustration. And, of course, sometimes there are slow, melancholy theatrics to go along with the mournful premise of a day of fun coming to an end. (I get it; I hate when play time is over, too.)
 
-In all of the above cases, the toys do exactly the same thing; they travel along a more-or-less predefined route to a set destination. But yet, even though it's the same action every time, the _way_ the toys travel is meaningful. Even if my son were invisible and silent, I could still tell his mood by watching the speed and arc of the toys.
+---
+
+In all of the above cases, the toys do exactly the same thing; they travel along a more-or-less predefined route to a set destination.
+
+But yet, even though it's the same action every time, the _way_ the toys travel is meaningful. Their movement tells a story. I don't need to even see or hear my son to know what his mood is—and in fact, it would be perplexing to see a mismatch. (I would wonder what on Earth was going on if, for example, he seemed totally fine, but was still flinging his toys at high velocity.)
 
 This is a perfect way to illustrate the importance of easings in transitions and animations.
 
-Carefully crafted, smooth transitions and animations are one of the biggest things that help set an excellent user interface apart from the rest. Well-designed movement, where called for, makes a UI both more fun and more intuitive to use. And, just as with my child's toy routine, they can _also_ help to communicate a specific vibe.
+Artfully crafted, smooth transitions and animations are one of the most important details that help set an excellent user interface apart from the rest. Well-designed movement, where called for, makes a UI both more fun _and_ more intuitive to use. And, just as with my child's toy routine, they can _also_ help to communicate a specific vibe.
 
-Poor movement, however, can make the same UI feel mediocre, cheap, or even confusing or broken--and can even be worse than having no movement at all.
+Bad transitions and animations, however, can make the same UI feel mediocre, cheap, confusing or even broken. They could even be worse than having no movement at all.
 
 At the center of any movement on the web is what's called an easing curve. This curve is the "rhythm" of the transition, and understanding it well--towards the goal of improving our own UIs--is the aim of this post.
 
