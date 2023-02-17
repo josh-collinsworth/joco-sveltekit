@@ -67,7 +67,7 @@
 
 			<p>
 				<i>
-					Happy to chat! I try to respond to everything that isn't spam. (Note: spam includes requests to submit articles, and job opportunities that don't include full details.)
+					Happy to chat! Email addresses submitted here are used only for replies. I try to respond to everything that isn't spam. No solicitations, please.
 				</i>
 			</p>
 
@@ -88,20 +88,20 @@
 				</p>
 				<input type="hidden" name="from_page" bind:value={formData.from_page} />
 				<div class="sender-info">
-					<div>
-						<label for="name" class="label" >Your name</label>
+					<div class="field">
+						<label for="name" class="label" >Your name:</label>
 						<input type="text" name="name" bind:value={formData.name} placeholder="What should I call you?" />
 					</div>
-					<div>
+					<div class="field">
 						<label for="email">
-							Your email address
+							Your email:
 						</label>
 						<input type="email" name="email" bind:value={formData.email} placeholder="Where can I send my response?" />
 					</div>
 				</div>
 
-				<div class="message-wrapper">
-					<label for="message">What's on your mind?</label>
+				<div class="message-wrapper field">
+					<label for="message">Message:</label>
 					<textarea name="message" bind:value={formData.message} rows="6" placeholder="What would you like to talk about?"></textarea>
 				</div>
 
@@ -126,7 +126,7 @@
 
 <style lang="scss">
 	h2 {
-		margin-bottom: var(--eighthNote);
+		margin-bottom: var(--quarterNote);
 	}
 
 	#contact-form {
@@ -136,6 +136,7 @@
 		label {
 			font-family: var(--headingFont);
 			font-weight: bold;
+			margin-bottom: var(--sixteenthNote);
 		}
 
 		.error {
@@ -145,5 +146,10 @@
 			margin: var(--quarterNote) 0;
 			font-style: italic;
 		}
+	}
+
+	.field,
+	button {
+		margin-top: var(--halfNote);
 	}
 </style>
