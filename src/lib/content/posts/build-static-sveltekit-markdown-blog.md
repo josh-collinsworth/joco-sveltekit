@@ -786,6 +786,12 @@ To start, let's dump all our Markdown posts into the `blog` folder:
     ┗ 📜 2.md
 ```
 
+<SideNote>
+
+We created the Markdown files at the beginning of approach #1. If you skipped that, either go back to that section, or just create them now, and make sure they have `title` and `date` frontmatter properties.
+
+</SideNote>
+
 Notice at this point, `/blog/1` and `/blog/2` won't load. That's because every route on our site needs a `+page.svelte` (or other valid `+` file) to render.
 
 <SideNote>
@@ -1097,7 +1103,11 @@ That might look like a lot, but when you consider it's actually _everything_ we 
 Even cooler: this endpoint will update automatically with each Markdown post we add! Drop a new `.md` file in, and it's part of the endpoint.
 
 <SideNote>
+
 Ideally, you'll probably want to add try/catch blocks to that code, in case anything goes wrong while loading the endpoint.
+
+Also: you might notice my screenshot has categories, too. Don't sweat that for now.
+
 </SideNote>
 
 
