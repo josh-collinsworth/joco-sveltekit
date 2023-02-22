@@ -1,27 +1,27 @@
 ---
-title: Understanding easing curves for better transitions and animations
-date: 2023-02-02
-updated: 2023-02-02
+title: Learning easing curves, and making better CSS transitions and animations
+date: 2023-02-22
+updated: 2023-02-22
 categories:
   - javascript
   - css
   - design
   - web
-coverImage: cubic-bezier.png
+coverImage: easing/cubic-bezier.png
 coverWidth: 16
 coverHeight: 9
-excerpt: The difference between a ho-hum animation and one that feels smooth and sleek is often just in the easing curve. Let's look at what easing curves are and how to use them take transitions to the next level.
-draft: true
+excerpt: The difference between a smooth, sleek animation and one that feels bland and generic is often just in the easing curve. Let's look at what easing curves are, and how the cubic-bezier function works in CSS.
 ---
 
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
+  import ExampleCurve from '$lib/components/demos/ExampleCurve.svelte'
 </script>
 
 
-Part of my son's evening routine is picking up the various toys he's gotten out and played with that day (or gotten out, at least—if you're a parent, you know), and putting those items all back into the toy basket.
+Part of my son's evening routine is picking up the various toys he's gotten out and played with that day (or gotten out, at least), and putting those items all back into the toy basket.
 
 Usually, my four-year-old casually places the toys into the basket at a steady pace, so we can get on with the more fun parts of bedtime, like reading books.
 
@@ -31,111 +31,316 @@ Sometimes, it's a race, and the toys fly rapidly into the basket. Sometimes they
 
 ---
 
-In all of the above cases, the toys do exactly the same thing; they travel along a more-or-less predefined route to a set destination.
+In all of the above cases, the toys do exactly the same thing; they travel along a more-or-less predefined route to a set destination. But even though it's the same action every time, the _way_ the toys travel is meaningful.
 
-But yet, even though it's the same action every time, the _way_ the toys travel is meaningful. Their movement tells a story. I don't need to even see or hear my son to know what his mood is—and in fact, it would be perplexing to see a mismatch. (I would wonder what on Earth was going on if, for example, he seemed totally fine, but was still flinging his toys at high velocity.)
+<CalloutPlusQuote>
 
-This is a perfect way to illustrate the importance of easings in transitions and animations.
+There's a story in the way things move, both in the real world and in user interfaces.
 
-Artfully crafted, smooth transitions and animations are one of the most important details that help set an excellent user interface apart from the rest. Well-designed movement, where called for, makes a UI both more fun _and_ more intuitive to use. And, just as with my child's toy routine, they can _also_ help to communicate a specific vibe.
+</CalloutPlusQuote>
 
-Bad transitions and animations, however, can make the same UI feel mediocre, cheap, confusing or even broken. They could even be worse than having no movement at all.
+Artfully crafted, smooth transitions and animations are one of the most important details that help set an excellent user interface apart from the rest. Well-designed movement makes a UI both more engaging _and_ more intuitive.
 
-At the center of any movement on the web is what's called an easing curve. This curve is the "rhythm" of the transition, and understanding it well--towards the goal of improving our own UIs--is the aim of this post.
+Bad transitions and animations, however, can make the same UI feel mediocre, cheap, confusing, or even broken. Poorly implemented movement could even be worse than no movement at all.
+
+At the center of any movement on the web is what's called an easing curve. This curve is the "rhythm" of the movement, and understanding it well--with the aim of improving our own animations and UIs--is the goal of this post.
 
 
-## What is an easing curve, and how do they work?
+## What's the difference between a transition and an animation?
 
-The easing curve of any web-based movement is what's called a cubic bézier curve. That might sound fancy or intimidating, but all it means is: a line, usually curved, traveling from the bottom left to the top right of a graph.
+Before we get started, I'd like to clarify this point: **I'll use the words "transition" and "animation" mostly interchangeably in this post, even though the two concepts are distinct in CSS**.
 
-To illustrate: here's the image from the top of this article once again:
+I'll also assume you have a decent understanding of the CSS principles behind the two already, but as a refresher/clarifier:
 
-![Illustration of a cubic bezier curve, showing both the Y and X axes increasing from 0 at the lower left, to 1 at the upper-right.](/images/post_images/cubic-bezier.png)
+**Transition:**
 
-That might look like an illustration from a math textbook, but math need not be involved, and it's not nearly as complex as it might seem. Let's examine the pieces:
+- Uses the `transition` property
+- Transitions an element between exactly two states
+- Usually the result of a trigger event, like hovering over an element, or clicking on something
+- Plays once; stays in end state as long as the trigger condition is true, then reverts
+
+**Animation:**
+
+- Uses `@keyframes` animations, and applies them with the `animation` property (or properties)
+- Animates an element between any number of states
+- The animation may start because of a trigger event, but is usually either always on, or plays immediately once the element enters the DOM
+- Can repeat any number of times. May stay in end state, or revert to beginning state
+
+So yes, as far as CSS is concerned, those are technically two different things.  However, I'll mostly use the words "animation" and "transition" interchangeably in this post, because good fundamentals (and `cubic-bezier` curves) apply in both cases. Which one you use is mostly just an implementation detail that will depend on the situation.
+
+
+## What's an easing curve, and how does it work?
+
+The easing of any web-based movement is what's called a cubic bézier curve. That might sound fancy or intimidating (_diacritics_!), but all it means is: a line, usually curved, traveling from the bottom left to the top right of a graph.
+
+To illustrate, let's look at this curve from the top of the article once again:
+
+![Illustration of a cubic bezier curve, showing a steep hill at the bottom left gradually becoming a shallow slope in the middle, and then rapidly accelerating upwards toward the end](/images/post_images/easing/curve-solo.png)
+
+That might look like something from an algebra textbook (or maybe a vector software demo), but we need not do any math, and it's not nearly as complex as it might seem.
+
+- **The curvy line defines the "acceleration" of the movement** as playback progresses. The curve is shaped by the two circular handles (much like the pen tool in design software) originating from the ends of the curve.
 
 - **The horizontal _x_ axis represents the duration of the transition**. You could think of the _x_ axis as the timeline of the transition, kind of like the playback bar on an audio or video file: the transition starts at the far left, and moves to the right at a consistent pace.
 
-	If your transition lasts for 0.5 seconds, for example, the left side is 0 seconds, and the far right is 0.5 seconds.
-- **The vertical _y_ axis is the speed of the animation at that point in the transition**. The more vertical the line is at that point, the faster the animation moves. Conversely, the flatter the curve is at that point in the transition, the slower the transition will move. (So in the example above, the animation will start fast, ease to a slower pace in the middle, and then gradually pick up speed to end.)
+	If your transition lasts one second, for example, the left side is the very beginning of the animation, and the far right is the end state, one second in.
+
+- **The vertical _y_ axis is the speed of the animation**. The more vertical the curve is at that point, the faster the animation moves. Conversely, the flatter the curve is at that point in the transition, the slower the transition will move. (So in this example, the animation will start fast, ease to a slower pace in the middle, and then gradually pick up speed to end.)
+
+	![The curve accelerating and decelerating as described above](/images/post_images/easing/curve-illustrated.png)
+
 - For the purposes of defining curves, the _x_ and _y_ axes are both measured from 0 to 1. The bottom-left corner is `0, 0`; the top-right is `1, 1`.
 
-	Values are allowed to go out of bounds vertically on the _y_ axis (creating an "overshoot" effect), but _not_ on the _x_ axis (since animation can go backwards, but time doesn't).
-- The curve is shaped by the two circular handles (much like the pen tool in design software) originating from the ends of the curve. The coordinates of the handles are shown as _x_ and _y_.
+	![](/images/post_images/easing/axes.png)
 
-This is why, when you write an easing function in CSS, you write it as four numeric values from 0 to 1. The curve above would be represented in CSS as:
+	Values are allowed to go out of bounds vertically on the _y_ axis (creating an "overshoot" effect), but _not_ on the _x_ axis (since animation can go backwards, but time can't).
+
+**This is why CSS easing functions are written as four numeric values**. The curve above would be represented in CSS as:
 
 ```css
 cubic-bezier(0.12, 0.57, 0.63, 0.21)
 ```
 
-<SideNote>
+Or, if you prefer leaving off the leading zeroes, that's valid, too:
 
-The zeroes are optional in the CSS above.
+```css
+cubic-bezier(.12, .57, .63, .21)
+```
 
-</SideNote>
+The first two values of the `cubic-bezier` function are the _x_ and _y_ coordinates of the start handle, respectively; the last two, the _x_ and _y_ of the end handle.
 
-The first two values of the `cubic-bezier` function are the _x_ and _y_ coordinates of the lower-left handle; the last two, the _x_ and _y_ of the upper-right handle.
+Here's that full illustration one more time:
 
-Here's the curve in action; click to see the box move from right to left, and back, along the easing curve.
+![The easing curve above, with the handles controlling the curve shown. Their x and y coordinates are highlighted as in the CSS above, each of the four values a decimal between 0 and 1.](/images/post_images/easing/cubic-bezier.png)
 
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="XWBGVRm" data-user="collinsworth" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/collinsworth/pen/XWBGVRm">
-  Untitled</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+And here's that curve in action, in a real animation. The yellow box moves from far left to far right (via CSS `transform`), following that same easing curve we just looked at. (Click to pause.)
 
-Naturally, an element's position isn't the only thing you can change with animation, but it works well to illustrate the point.
+<ExampleCurve />
 
-By the way: if you'd like to play with curves, I made an [interactive easings playground here](/demos/easing). Feel free to check it out, and then hop back when you're ready. (Or, just bookmark it for when you want to play with some easing curves of your own.)
+Naturally, an element's position is just one of many possible attributes you could animate, but it works well to demonstrate the point.
 
-<iframe src="/demos/easing#demo-curve" width="100%" height="600px" />
+**If you'd like to play around with other types of easing curves, I made an [interactive easing playground here](/demos/easing)** (also shown below). Feel free to try it out, and then hop back in here when you're ready.
 
-I'd also like to give a shout-out here to [easings.co](https://easings.co), which lets you test out easing curves with a number of common UI transitions to see how they work firsthand visually.
+<figure>
+	<iframe src="/demos/easing#demo-curve" width="100%" height="600px" style="margin-bottom: var(--quarterNote)" />
+	<figcaption>
+		<a href="https://joshcollinsworth.com/demos/easing" target="_blank">Click here to open the easing playground in a new tab</a>
+	</figcaption>
+</figure>
+
+I'd also like to give a shout-out here to [easings.co](https://easings.co), which lets you test out various easing curves with a number of common UI elements, to see how they work visually in a realistic scenario. It's well worth a look if you're trying to settle on the right feel for your own UI.
 
 
 ## Why does easing matter?
 
-While the workings of bézier curves make for interesting trivia, a reasonable question you might have at this point is: why does this matter? Or, why is it important to use one easing curve over another--or for that matter, any curve at all?
+While the workings of bézier curves make for interesting trivia, you might reasonably ask: why does this matter? Why is it important to use one easing curve over another--or for that matter, any curve at all?
 
-True, transitions and animations (good ones, anyway) are cool. They're fun. They're interesting. But beyond that, well-implemented transitions can also be _intuitive_.
+True, transitions and animations are cool. They're fun. They're interesting. (The good ones, anyway.) But beyond that, well-implemented transitions can also be _intuitive_.
 
-In the real world, there little such thing as "instant." Nothing just appears or disappears. Things move into or out of place, and our brains perceive the changed state of things by observing that movement.
+<CalloutPlusQuote>
 
-Similarly, when things move, _how_ they move is key in understanding the movement. Think of a simple motion, like waving your hand. Vary the speed of the wave, and notice how the "feel" and perceived meaning of the gesture varies. A slow wave seems unsure; a fast wave seems enthusiastic. One that starts fast then slows down—or vice versa—seems to indicate your feelings might have changed.
+In the real world, there's little such thing as instant. Nothing just appears or disappears. Things move into or out of place, and our brains perceive the changed state of things by observing that movement.
 
+</CalloutPlusQuote>
+
+Similarly, when things move, _how_ they move is key in understanding the movement. Think of a simple motion, like waving your hand. Vary the speed of the wave, and notice how the "feel" and perceived meaning of the gesture varies. A slow wave seems unsure; a fast wave seems enthusiastic. One that starts fast then slows down—or vice versa—seems to indicate your feelings might be changing in real time. "_Oh, hey! I know you! …Oh wait…no I don't_." (Not that I've ever done anything like that.)
+
+Again: movement tells a story. The transition itself is the verb; the easing curve is the adverb.
+
+
+## Tips for great animations
+
+Let's wrap up this post by covering a few ways to improve your CSS transitions and animations on the web, and take them to the next level.
+
+
+### Pick the right curve
+
+Now that we understand how easing curves work, you might be asking: "ok, great, but how do I actually know which kind of easing to use?"
+
+The answer may be unsatisfying, but: I'm afraid trial and error (otherwise known as "experience") is the best teacher here.
+
+However, as you experiment, I would encourage you to think of movement in the real world, and compare it to the movement you're working with in your app. Is this transition a positive confirmation, appearing and sliding into place? That might call for a speedy intro with a smooth easing out, like an eager helper running up to report their task is done.
+
+How about an error message popping up on the screen? That might call for a slower easing curve, to indicate a slight reluctance. Or, if it's a critical error, it might call for "louder," more aggressive movement, to convey the severity of the situation.
+
+<CalloutPlusQuote>
+
+Movement is as subjective as color, but it's also as important. It's a key part of the feel and branding of your website or web&nbsp;app.
+
+</CalloutPlusQuote>
+
+So my best recommendation is: invest the time, and ask whether the movement conveys the appropriate feeling.
+
+And as a loose rule of thumb: things should generally not start or end suddenly. In the real world, we almost never see anything jump instantly to max speed, or come to a full and complete stop instantaneously. So our UIs will seem a little more "real" and intuitive if we avoid showing users curves that create that kind of movement, too.
+
+
+### Avoid the defaults
+
+You may already know the browser has some built-in easing curves available to use: `linear`, `ease`, `ease-in`, `ease-out`, and `ease-in-out`.
+
+However, while these named timing functions are convenient, they're also very generic. Many of the animations built into tools and libraries online fall prey to the same homogeny, even if they do offer a wider range of movement.
+
+If you want to get the most out of movement, you should reach beyond the most common off-the-shelf options.
+
+<CalloutPlusQuote>
+
+Just as a site built with [Bootstrap](https://getbootstrap.com/) or [Tailwind](https://tailwindcss.com/) defaults risks looking generic, off-the-shelf easing curves can often make our UIs seem bland and homogeneous.
+
+</CalloutPlusQuote>
+
+As an alternative, [VS Code](https://code.visualstudio.com/b) has an amazing autocomplete for `cubic-bezier` curves with a wide range of options:
+
+![VS Code auto-completing cubic-bezier with a variety of options in a pop-up UI](/images/post_images/easing/vs-code.png)
+
+All of those options are covered in [my easing playground](/demos/easing), if you'd like to [take a look and play with the presets](/demos/easing).
+
+Another excellent option: open your browser's dev tools and play with the easing curves in there. Firefox, for example, offers an interactive easing playground with the same kinds of presets to use as starting points.
+
+![Firefox dev tools, with a wide array of easing types and options](/images/post_images/easing/firefox.png)
+
+But however you choose to define your easing curves, I recommend you take some time to make them more unique than the defaults. 
+
+You probably wouldn't limit your color palette to only predefined CSS named colors, so you probably shouldn't limit your movements to a small handful of preset curves, either.
 
 
 ### Make it shorter than you think it should be
 
-The absolute #1 dead giveaway of an amateurish transition is that it lasts too long.
+I get it; if you just poured your time and effort into creating a great transition, you want to _enjoy_ it. If you're like me (and many other developers), you might even just sit there admiring your fanciful animation, watching it transition back and forth in delight. But here's the thing:
 
-I get it; if you just poured your time and effort into creating a great transition, you want to _enjoy_ it. If you're like me (and many other developers), you might even just sit there admiring your fanciful animation, watching it transition back and forth in delight.
+<CalloutPlusQuote>
 
-The thing is: your users aren't as enamored—and therefore, not as patient—as you are. Your users came to this site to get something done, and they aren't interested in waiting longer than they need to for _anything_, regardless of how cool it may be.
+The absolute #1 dead giveaway of poorly designed movement is that it lasts _way_ too long.
 
-My advice is: try to make your transitions as quick as possible, without being so short that the user might miss them. As a rule of thumb, I find that 200–400 milliseconds is the cap for most UI transition durations—although I'd say that stacks, so an out-then-in transition could go up to double that in most cases. (You wouldn't want the whiplash of _two_ separate animations crashing through as fast as possible.)
+</CalloutPlusQuote>
 
-In any case, though: if you find yourself creating transitions anywhere near a full second or more, I'd seriously consider whether it's adding to the user experience, or detracting from it, as objectively as possible.
+Your users aren't as enamored—and therefore, not as patient—as you are. Your users came to this site to get something done, and they aren't interested in waiting longer than they need to for _anything_, regardless of how cool it may be.
 
+My advice is: try to make your transitions as quick as possible, without being so short that the user might miss them. As a rule of thumb, I find that most single transitions work best somewhere in the 150–400 millisecond range (0.15 to 0.4 seconds). If you have an out-then-in, you can double that. (You wouldn't want the whiplash of _two_ separate animations crashing through as fast as possible.)
 
-### Get the most out of easing curves
+<CalloutPlusQuote>
 
-An easing curve is the speed at which a transition runs at various points in the animation. It might start slow, or end slow, or both. It might remain a continuous speed, or wildly change speed throughout.
+Keep making it faster until it feels _too_ fast, then back it off just a little.
 
-If you've ever used CSS keywords like `linear` or `ease-in-out`, you probably know the basics here. But if not—or if you'd just like a visual—the website [easings.co](https://easings.co/) illustrates the concept quite well. Take a little time to play with the easing curves and see how they all look and feel.
+</CalloutPlusQuote>
 
-Remember how our brains perceive change better when there's movement? In that same vein, movement looks more natural when it has an appropriate easing curve. Most of the movement that occurs in the real world doesn't remain a continuous speed; it starts fast, or ends fast, or is fast in the middle and slow on the ends. You probably open a door quickly, then slow it down once it's open wide enough. When you walk, you might be moving at a continuous speed, but each of your arms and legs moves quickly in the middle of the stride, then slows down and reverses course.
+If you find yourself setting a duration of anywhere _near_ a full second, I'd recommend seriously considering whether it's adding to the user experience, or detracting from it.
 
-Think of a simple gesture, like raising your hand to ask a question. Do it at various speeds. Slow down and speed up, and as you do so, notice how _the meaning of the movement changes_.
+That said, however: there are always exceptions, and the bigger the change is on the page, the slower the transition should probably be. There's a big difference between, say, a nice little accent animation for the number of items in your cart updating, and an entire page transition.
 
-Take this video as an example of the power of easing. Notice how this machine is doing (mostly) the exact same movement every single time, but the _easing_ of the movement changes the entire "personality" behind it.
+Also worth noting: an animation might not always _feel_ as long as it is. A transition with a very slow ease-in might seem like it doesn't start right away; conversely, a transition with a long tail might _seem_ finished before it technically is.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kproPsch7i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-It's pretty easy for me to spot a stock easing curve at this point.
-
-Not only does Svelte ship with 
+That's a great segue into the next section…
 
 
-## TODO: talk about hardware accellerated transitions
+### Ins go out, outs go in
+
+If you've taken the time to look at easing types, you may have noticed that there are three versions of each kind of curve: "in," "out," and "in-out" (i.e., both).
+
+![Many different types of curves, including sine, circular, quadratic, cubic, and others, each with an in, out, and combination option.](/images/post_images/easing/curve-types.png)
+
+As a quick aside: the names of most of these kinds of curves (cubic, quintic, etc.) represents the mathematical power used in generating the curves. The higher the number, the sharper the curve.
+
+- Quadratic: power of 2 (_squared_)
+- Cubic: power of 3 (_cubed_)
+- Quartic: power of 4
+- Quintic: power of 5
+- Exponential: power of 10
+
+Sine is its own mathematic thing (that I have neither the offhand knowledge nor the desire to get into); circular is based on square roots; and the "back" options just overshoot and then come back.
+
+You may also see other options, like "bounce" or "elastic" (Svelte ships with those, as do many easing and animation libraries), but often they require JavaScript—or at least, a fairly complex `@keyframes` animation—as a pure CSS bézier curve isn't quite capable of that number of steps.
+
+---
+
+Anyway—that's all interesting to know (depending on your point of view), but beside the point.
+
+More importantly: the "in" or "out" in the name represents whether the curve eases _in_ (starts slower), eases _out_ (ends slower), or _both_.
+
+<CalloutPlusQuote>
+
+The tricky thing with transitions is: you often want your transition _in_ to be an _ease-out_, and your transition _out_ to be an _ease-in_.
+
+</CalloutPlusQuote>
+
+Ok, that was probably as confusing for you to read as it was for me to write. Let's back up.
+
+**Say you've got a transition where one element leaves the page as another one appears to take its place**, like a page transition, or moving between two images in a lightbox.
+
+Typically, you want a UI transition to start slow, and end slow. (That's usually how things move in the real world; things generally don't start or end instantly. They accelerate and decelerate.)
+
+However, even though the user perceives this replacement as one smooth UI transition, under the hood, this is actually _two_ transitions: the old element leaving, followed by the new element entering.
+
+So that means if you're transitioning an element _out_, and you want it to start slowly, you need an _ease in_.
+
+Conversely, when an element is transitioning _in_, it should usually come to a gradual stop. That calls for an _ease out_ on the _transition in_.
+
+Those two would come together to create a smooth start, and a smooth end to the overall stitched-together UI change.
+
+
+### Lean on hardware acceleration
+
+Not all CSS properties can be animated or transitioned smoothly across all devices and browsers. In fact, there are only a handful of properties that are capable of tapping into a device's hardware acceleration for the smoothest, highest-framerate transitions possible.
+
+<SideNote>
+
+It's not important to understand what "hardware acceleration" is in order to take advantage of it. But if you're curious, it means that the browser can enlist the help of the device's graphics processing unit (GPU) to help make rendering significantly faster and smoother—but only under certain conditions.
+
+</SideNote>
+
+Properties that are always hardware-accelerated:
+
+- `transform` (including every form of `translate`, `scale`, and `rotate`, plus all their `3d` counterparts)
+- `opacity`
+
+Properties that are _sometimes_ hardware-accelerated:
+
+- Certain SVG properties
+- `filter`, depending on the browser and the filter
+
+<SideNote>
+
+Some other non-CSS things, like canvas and WebGL, tap into hardware acceleration too. I won't go into those here, however.
+
+</SideNote>
+
+The tl;dr of all the above is:
+
+<CalloutPlusQuote>
+
+If you want to move, scale, or rotate an element, always use the CSS `transform` property.
+
+</CalloutPlusQuote>
+
+Because `transform` doesn't affect layout, applying or modifying a transformation won't cause any reflow or repaint, which minimizes recalculations and keeps the browser humming along smoothly. Handily, many of the most common animations and transitions you might use on the web can be achieved using some combination of `transform` and `opacity`.
+
+But whatever you do, _avoid changing the size or placement of an element directly_. If you change a property like `height`, `width`, `border`, `margin` or `padding`--anything that could potentially affect the layout of the elements on the page--you risk noticeably slowing down the browser with the calculations involved to make that change.
+
+If you ever need to animate other properties for whatever reason, be sure to test in every possible device and browser. In my experience, Safari in particular is very bad about processing animations in a performant way by default, especially on iOS. Firefox isn't far behind, but you might not realize it if you're only testing on high-powered devices. A lot of the world lives on budget Androids; don't leave those out of your testing.
+
+And speaking of making exceptions…
+
+
+### Use `will-change` as needed
+
+If you _do_ run into issues with animations that should be smooth and performant in theory, but that seem choppy or stilted in practice (again: this is usually in Safari for me), make use of [the `will-change` property](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change).
+
+I won't go too far into the technical details, but `will-change` essentially gives the browser a heads-up on...well, on what _will change_. (Some things just have perfect names.)
+
+For example: if you know for sure the _only_ thing that's going to change with an element is its `transform` property, and can confidently let the browser know ahead of time via `will-change: transform`, it can safely skip all the other steps it might otherwise go through to re-render that element when something changes on the page.
+
+Best-case scenario: when used with properties that don't affect layout, this lets the browser offload the computation entirely to the GPU for the highest framerate, and smoothest performance.
+
+However, `will-change` is not a silver bullet. In fact, if over-used, it can actually _harm_ performance.
+
+That's because the browser creates a new layer (kind of like a new `z-index` level) for every element that has `will-change` applied to it. Used judiciously, this exchange is worth the price. Used carelessly, however, it could create even _more_ work for the browser. From MDN:
+
+> Warning: will-change is intended to be used as a last resort, in order to try to deal with existing performance problems. It should not be used to anticipate performance problems.
+
+Some sources even go so far as to recommend applying `will-change` prior to an animation or transition, and then removing it afterwards.
+
+So here, again, the best advice is: test thoroughly.
+
+
+## Wrapup
+
+Thanks for reading! I hope you've come away with a better understanding of CSS `cubic-bezier` easing curves and how to create the best possible transitions and animations in your own web UI.

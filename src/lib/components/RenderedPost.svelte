@@ -9,6 +9,7 @@
 	import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
 	import { onMount } from 'svelte'
 	import type { SvelteComponentTyped } from 'svelte'
+	import { dev } from '$app/environment'
 
 	export let PostContent: SvelteComponentTyped
 	export let meta: Post
@@ -116,104 +117,114 @@
 					{/each}
 				</TagList>
 			{/if}
+			<br>
+			<a href="#main" class="back-to-top">
+				Back to top
+			</a>
 		</aside>
 
-		<Comments />
+		{#if !dev}
+			<Comments />
+		{/if}
 	</article>
 </Main>
 
 
 <style lang="scss" global>
-	.post {
-		.cover-image {
-			margin: 0;
-			border: 1px solid hsla(var(--darkGrayHSL), 1);
-		}
-		
-		.meta + p::first-letter,
-		.meta + *:not(p) + p::first-letter,
-		.meta + *:not(p) + *:not(p) + p::first-letter{
-			font-size: 3.6em;
-			float: left;
-			line-height: 0.7em;
-			margin: 0.45rem 0.4rem 0 0;
-			color: inherit;
-			font-weight: bold;
-		}
-		
-		.meta {
-			font-size: 0.8rem;
-			line-height: 1.6;
-			margin: var(--halfNote) 0 var(--wholeNote);
-			width: max-content;
-			padding: 0.5em 0; 
-			font-family: var(--headingFont);
-			border-top: 2px solid var(--lightGray);
-			
-			b {
-				text-transform: uppercase;
-				font-style: normal;
-				font-size: 0.7rem;
-			}
-		}
-
-		.post-footer {	 
-			margin: 0 0 var(--halfNote);
-
-			.h4 {
-				margin: 0 0 calc(var(--quarterNote) / 2);
-
-				&::before {
-					display: none;
-				}
-			}
-		}
-
-		.post-links {
-			margin: var(--halfNote) 0;
-			font-family: var(--headingFont);
-
-			a {
-				margin-left: 1ch;
-			}
-
-			&__contact::marker {
-				content: '📩';
-			}
-
-			&__blog::marker {
-				content: '🔙';
-			}
-		}
-
-		.section-heading-image {
-			margin-top: var(--dottedWholeNote) ;
-
-			& + * {
-				margin-top: var(--quarterNote);
-			}
-		}
-
-		.cp_embed_wrapper {
-			width: calc(100% + var(--margin) + var(--margin));
-			max-width: unset;
-			margin-left: calc(var(--margin) * -1);
-
-			@media (max-width: vars.$xl) and (min-width: vars.$lg) {
-				margin-left: 0;
-			}
-		}
+.post {
+	.cover-image {
+		margin: 0;
+		border: 1px solid hsla(var(--darkGrayHSL), 1);
+	}
 	
-		@media (min-width: vars.$lg) {
-			h1 {
-				width: calc(100% + 15vw);
-				max-width: unset;
-				font-size: calc(1.8rem + 1.5vw);	
+	.meta + p::first-letter,
+	.meta + *:not(p) + p::first-letter,
+	.meta + *:not(p) + *:not(p) + p::first-letter{
+		font-size: 3.6em;
+		float: left;
+		line-height: 0.7em;
+		margin: 0.45rem 0.4rem 0 0;
+		color: inherit;
+		font-weight: bold;
+	}
+	
+	.meta {
+		font-size: 0.8rem;
+		line-height: 1.6;
+		margin: var(--halfNote) 0 var(--wholeNote);
+		width: max-content;
+		padding: 0.5em 0; 
+		font-family: var(--headingFont);
+		border-top: 2px solid var(--lightGray);
+		
+		b {
+			text-transform: uppercase;
+			font-style: normal;
+			font-size: 0.7rem;
+		}
+	}
+
+	.post-footer {	 
+		margin: 0 0 var(--halfNote);
+
+		.h4 {
+			margin: 0 0 calc(var(--quarterNote) / 2);
+
+			&::before {
+				display: none;
 			}
 		}
 	}
 
-	:global(.sidebar) {
-		margin-inline: auto !important;
+	.post-links {
+		margin: var(--halfNote) 0;
+		font-family: var(--headingFont);
+
+		a {
+			margin-left: 1ch;
+		}
+
+		&__contact::marker {
+			content: '📩';
+		}
+
+		&__blog::marker {
+			content: '🔙';
+		}
 	}
+
+	.section-heading-image {
+		margin-top: var(--dottedWholeNote) ;
+
+		& + * {
+			margin-top: var(--quarterNote);
+		}
+	}
+
+	.cp_embed_wrapper {
+		width: calc(100% + var(--margin) + var(--margin));
+		max-width: unset;
+		margin-left: calc(var(--margin) * -1);
+
+		@media (max-width: vars.$xl) and (min-width: vars.$lg) {
+			margin-left: 0;
+		}
+	}
+
+	.back-to-top {
+		position: relative;
+	}
+
+	@media (min-width: vars.$lg) {
+		h1 {
+			width: calc(100% + 15vw);
+			max-width: unset;
+			font-size: calc(1.8rem + 1.5vw);	
+		}
+	}
+}
+
+:global(.sidebar) {
+	margin-inline: auto !important;
+}
 </style>
