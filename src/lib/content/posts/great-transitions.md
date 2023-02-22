@@ -1,5 +1,5 @@
 ---
-title: Learning easing curves, and making better CSS transitions and animations
+title: Easing curves, and making better CSS transitions and animations
 date: 2023-02-22
 updated: 2023-02-22
 categories:
@@ -10,7 +10,7 @@ categories:
 coverImage: easing/cubic-bezier.png
 coverWidth: 16
 coverHeight: 9
-excerpt: The difference between a smooth, sleek animation and one that feels bland and generic is often just in the easing curve. Let's look at what easing curves are, and how the cubic-bezier function works in CSS.
+excerpt: The difference between a smooth, sleek animation and one that feels bland and generic is often in the easing curve. Let's look at what easing curves are and how they work in CSS, before diving into tips for making the best web animations possible.
 ---
 
 <script>
