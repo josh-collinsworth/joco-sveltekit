@@ -111,7 +111,7 @@
 			<div class="sticky">
 				<h2>CSS Easing playground</h2>
 				
-				<p>Created for this blog post, this interactive playground lets you examine how a variety of easing curves look and feel, and allows you to draw up your own and copy the CSS.</p>
+				<p>Created for <a href="/blog/great-transitions">this blog post</a>, this interactive playground lets you examine how a variety of easing curves look and feel, and allows you to draw up your own and copy the CSS.</p>
 				
 				<p>Every curve on the page is an SVG, including the interactive demo, which is accessible across device types. The curve redraws in real time as the handles are moved.</p>
 				<ul>
@@ -123,7 +123,7 @@
 			
 			<div class="image-gallery">
 				<figure>
-					<iframe src="/demos/easing#demo-curve" frameborder="0" title="Live demo of the starter, from sveltekit-static-starter.netlify.app" width="100%" height="800"></iframe>
+					<iframe src="/demos/easing" frameborder="0" title="Live demo of the starter, from sveltekit-static-starter.netlify.app" width="100%" height="800"></iframe>
 					<figcaption><a href="/demos/easing">joshcollinsworth.com/demos/easing</a></figcaption>
 				</figure>
 			</div>

@@ -1,6 +1,7 @@
 <script>
 import throttle from 'just-throttle'
 import { clamp, formatDecimal } from '$lib/assets/js/utils'
+import { onMount } from 'svelte'
 
 // The SVG exists from 0 to 140 on the X axis, and 0 to 300 on the Y axis. The inner square is from 20/100 to 120/200.
 let startHandleX = 30
@@ -107,14 +108,20 @@ $: if (currentEasingType) {
 	startHandleY = 300 - ((thisEasing[1] * 100) + 100)
 	endHandleX = (thisEasing[2] * 100) + 20
 	endHandleY = 300 - ((thisEasing[3] * 100) + 100)
-}	
+}
+
+let isFrame = false 
+
+onMount(() => {
+	if (window.self !== window.top) isFrame = true
+})
 </script>
 
 
-<form class="easing-demo" on:submit|preventDefault>
+<form class="easing-demo" class:is-frame={isFrame} on:submit|preventDefault>
 	<div class="intro intro-mobile">
 		<h2>CSS easing playground</h2>
-		<p>A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+		<p>A place to try out various easing types/cubic bézier curves, and to create your own. (Made to accompany <a href="/blog/great-transitions">this post</a>.)</p>
 	</div>
 
 	<div
@@ -164,7 +171,7 @@ $: if (currentEasingType) {
 	<div>
 		<div class="intro intro-desktop">
 			<h2>CSS easing playground</h2>
-			<p>A place to try out various easing types/cubic bézier curves, and to create your own.</p>
+			<p>A place to try out various easing types/cubic bézier curves, and to create your own. (Made to accompany <a href="/blog/great-transitions">this post</a>.)</p>
 		</div>
 		<div class="curve-selection">
 			{#each Object.entries(premadeEasings) as [group, _]}
@@ -360,6 +367,10 @@ code {
 		@media(min-width: vars.$md) {
 			display: none;
 		}
+	}
+
+	.is-frame & {
+		display: none !important;
 	}
 }
 

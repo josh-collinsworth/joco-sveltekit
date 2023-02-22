@@ -121,7 +121,7 @@ Naturally, an element's position is just one of many possible attributes you cou
 **If you'd like to play around with other types of easing curves, I made an [interactive easing playground here](/demos/easing)** (also shown below). Feel free to try it out, and then hop back in here when you're ready.
 
 <figure>
-	<iframe src="/demos/easing#demo-curve" width="100%" height="600px" style="margin-bottom: var(--quarterNote)" />
+	<iframe src="/demos/easing" width="100%" height="600px" style="margin-bottom: var(--quarterNote)" />
 	<figcaption>
 		<a href="https://joshcollinsworth.com/demos/easing" target="_blank">Click here to open the easing playground in a new tab</a>
 	</figcaption>
