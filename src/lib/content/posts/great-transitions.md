@@ -1,5 +1,5 @@
 ---
-title: Easing curves, and making better CSS transitions and animations
+title: Easing curves, and better CSS transitions and animations
 date: 2023-02-22
 updated: 2023-02-22
 categories:
