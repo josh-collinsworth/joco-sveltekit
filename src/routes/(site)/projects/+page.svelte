@@ -123,7 +123,7 @@
 			
 			<div class="image-gallery">
 				<figure>
-					<iframe src="/demos/easing" frameborder="0" title="Live demo of the starter, from sveltekit-static-starter.netlify.app" width="100%" height="800"></iframe>
+					<iframe src="/demos/easing#demo-curve" frameborder="0" title="Live demo of the starter, from sveltekit-static-starter.netlify.app" width="100%" height="800"></iframe>
 					<figcaption><a href="/demos/easing">joshcollinsworth.com/demos/easing</a></figcaption>
 				</figure>
 			</div>
