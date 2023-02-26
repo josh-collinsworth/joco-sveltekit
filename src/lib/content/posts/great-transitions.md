@@ -1,5 +1,5 @@
 ---
-title: The science of easing curves, and the art of great CSS animation
+title: The science of easing curves, and the art of CSS animation
 date: 2023-02-22
 updated: 2023-02-26
 categories:
