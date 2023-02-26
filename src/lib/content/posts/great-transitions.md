@@ -1,7 +1,7 @@
 ---
-title: Easing curves, and better CSS transitions and animations
+title: The science of easing curves, and the art of great CSS animation
 date: 2023-02-22
-updated: 2023-02-25
+updated: 2023-02-26
 categories:
   - css
   - design
@@ -38,7 +38,7 @@ There's a story in the way things move, both in the real world and in user inter
 
 </CalloutPlusQuote>
 
-Artfully crafted, smooth transitions and animations are one of the most important details that help set an excellent user interface apart from the rest. Well-designed movement makes a UI both more engaging _and_ more intuitive.
+Artfully crafted, smooth transitions and animations are one of the most important details that help set excellent user interfaces apart from the rest. Well-designed movement makes a UI both more engaging _and_ more intuitive.
 
 Bad transitions and animations, however, can make the same UI feel mediocre, cheap, confusing, or even broken. Poorly implemented movement could even be worse than no movement at all.
 
@@ -58,33 +58,70 @@ I'll also assume you have a decent understanding of the CSS principles behind th
 - Usually the result of a trigger event, like hovering over an element, or clicking on something
 - Plays once; stays in end state as long as the trigger condition is true, then reverts
 
+An example might be a button that changes color when it has hover or focus:
+
+```css
+.btn {
+  background: lightblue;
+  transition: background .2s ease;
+}
+
+.btn:is(:hover, :focus) {
+  background: yellow;
+}
+```
+
 **Animation:**
 
 - Uses `@keyframes` animations, and applies them with the `animation` property (or properties)
-- Animates an element between any number of states
+- Animates an element between _any number_ of states
 - The animation may start because of a trigger event, but is usually either always on, or plays immediately once the element enters the DOM
-- Can repeat any number of times. May stay in end state, or revert to beginning state. May also alternate directions.
+- Can repeat any number of times. May stay in end state, or revert to beginning state. May also alternate directions. Elements could also have multiple animations applied at once.
+
+A basic example might be a loading spinner that rotates indefinitely:
+
+```css
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+```
 
 So yes, as far as CSS is concerned, those are technically two different things.  However, I'll mostly use the words interchangeably in this post, because good fundamentals (and `cubic-bezier` curves) apply in both cases. Which one you use will mostly just depend on the situation.
+
+<SideNote>
+
+If you do apply any type of easing on a CSS `animation`, just note it will apply to _each step_ in the animation individually.
+
+For example: if an animation has five steps and uses `ease-out`, each _step_ will ease out, for five total easings, rather than the entire animation having one overall easing applied.
+
+</SideNote>
 
 
 ## What's an easing curve, and how does it work?
 
-The easing of any web-based movement is what's called a cubic bézier curve. That might sound fancy or intimidating (_diacritics_!), but all it means is: a line, usually curved, traveling from the bottom left to the top right of a graph.
+The easing of any web-based movement is what's called a [cubic bézier curve](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function#cubic_b%C3%A9zier_easing_function). That might sound fancy or intimidating (_diacritics_!), but all it means is: a line, usually curved, defined by four numeric values.
 
-To illustrate, let's look at this curve from the top of the article once again:
+As our example, let's look at this curve from the top of the article once again:
 
 ![Illustration of a cubic bezier curve, showing a steep hill at the bottom left gradually becoming a shallow slope in the middle, and then rapidly accelerating upwards toward the end](/images/post_images/easing/curve-solo.png)
 
 That might look like something from an algebra textbook (or maybe a vector software demo), but we need not do any math, and it's not nearly as complex as it might seem.
 
-- **The curvy line defines the "acceleration" of the movement** as playback progresses. The curve is shaped by the two circular handles originating from the ends of the curve--just like the pen tool in design software.
+- **The curve is shaped by the two circular handles** originating from the ends of the line--just like the pen tool in design software. (_In fact, you could create this exact curve with these same handle positions in your vector editing software of choice_.)
 
 - **The horizontal _x_ axis represents the duration of the transition**. You could think of the _x_ axis as the timeline of the transition, kind of like the playback bar on an audio or video file: the transition starts at the far left, and moves to the right at a consistent pace.
 
+![A video playback bar superimposed over the cubic bézier curve, showing playback begins at the far left of the graph and ends at the far right.](/images/post_images/easing/curve-playback.png)
+
 	If your transition lasts one second, for example, the left side is the very beginning of the animation, and the far right is the end state, one second in.
 
-- **The vertical _y_ axis is the speed of the animation**. The more vertical the curve is at that point, the faster the animation moves, and vice versa. (So in this example, the animation will start fast, ease to a slower pace in the middle, and then gradually pick up speed to end.)
+- **The vertical _y_ axis is the speed of the change**. The more vertical the line is at that point during playback, the more the change accelerates at that point in the transition. (So in this example, the transition will start fast, ease to a slower pace in the middle, and then gradually pick up speed to end fasr.)
 
 	![The curve accelerating and decelerating as described above](/images/post_images/easing/curve-illustrated.png)
 
@@ -92,9 +129,9 @@ That might look like something from an algebra textbook (or maybe a vector softw
 
 	![](/images/post_images/easing/axes.png)
 
-	Values are allowed to go out of bounds vertically on the _y_ axis (creating an "overshoot" effect), but _not_ on the _x_ axis (since animation can go backwards, but time can't).
+**This is why CSS easing functions are written as four numeric values**. You could quite literally think of `cubic-bezier` as a function that accepts exactly four arguments: the _x_ and _y_ coordinates of the start handle, and the _x_ and _y_ of the end handle, in that order.
 
-**This is why CSS easing functions are written as four numeric values**. The curve above would be represented in CSS as:
+The curve above would be represented in CSS as:
 
 ```css
 cubic-bezier(0.12, 0.57, 0.63, 0.21)
@@ -106,15 +143,25 @@ Or, if you prefer leaving off the leading zeroes, that's valid, too:
 cubic-bezier(.12, .57, .63, .21)
 ```
 
-The first two values of the `cubic-bezier` function are the _x_ and _y_ coordinates of the start handle, respectively; the last two, the _x_ and _y_ of the end handle.
+<SideNote>
+
+Values are allowed to go out of bounds vertically on the _y_ axis, but _not_ on the _x_ axis (since animation can go backwards, but time can't).
+
+So the first and third arguments (start x, end x) must be within the range of 0–1; but the second and fourth (start y, end y) can go beyond, in either direction--handy when you want to create an "overshoot" effect, where the transition goes beyond the start or end state and then comes back.
+
+</SideNote>
 
 Here's that full illustration one more time:
 
 ![The easing curve above, with the handles controlling the curve shown. Their x and y coordinates are highlighted as in the CSS above, each of the four values a decimal between 0 and 1.](/images/post_images/easing/cubic-bezier.png)
 
-And here's that curve in action, in a real animation. The yellow box moves from far left to far right (via CSS `transform`), following that same easing curve we just looked at. (Click to pause.)
+And here's that curve in action, in a real animation. The circles follow the easing curve (visually, and in movement speed) from bottom left to top right (via CSS `transform`):
 
-<ExampleCurve />
+<p class="codepen" data-height="650" data-default-tab="result" data-slug-hash="qBMqZjO" data-user="collinsworth" style="height: 650px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/collinsworth/pen/qBMqZjO">
+  Untitled</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
 Naturally, an element's position is just one of many possible attributes you could animate, but it works well to demonstrate the point.
 
