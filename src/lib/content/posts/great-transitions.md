@@ -16,7 +16,6 @@ excerpt: The easing curve can make or break any animation on the web. Let's look
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
-  import ExampleCurve from '$lib/components/demos/ExampleCurve.svelte'
 </script>
 
 
@@ -127,7 +126,7 @@ That might look like something from an algebra textbook (or maybe a vector softw
 
 - For the purposes of defining curves, the _x_ and _y_ axes are both measured from 0 to 1. The bottom-left corner is `0, 0`; the top-right is `1, 1`.
 
-	![](/images/post_images/easing/axes.png)
+	![A graph illustrating the previous paragraph](/images/post_images/easing/axes.png)
 
 **This is why CSS easing functions are written as four numeric values**. You could quite literally think of `cubic-bezier` as a function that accepts exactly four arguments: the _x_ and _y_ coordinates of the start handle, and the _x_ and _y_ of the end handle, in that order.
 
@@ -168,9 +167,9 @@ Naturally, an element's position is just one of many possible attributes you cou
 **If you'd like to play around with other types of easing curves, I made an [interactive easing playground here](/demos/easing)** (also shown below). Feel free to try it out, and then hop back in here when you're ready.
 
 <figure>
-	<iframe src="/demos/easing" width="100%" height="600px" style="margin-bottom: var(--quarterNote)" />
+	<iframe src="/demos/easing" width="100%" height="600px" style="margin-bottom: var(--quarterNote)" title="This site's CSS easings playground" />
 	<figcaption>
-		<a href="https://joshcollinsworth.com/demos/easing" target="_blank">Click here to open the easing playground in a new tab</a>
+		<a href="https://joshcollinsworth.com/demos/easing" target="_blank" rel="noreferrer">Click here to open the easing playground in a new tab</a>
 	</figcaption>
 </figure>
 

@@ -144,10 +144,6 @@ onMount(() => {
 			<rect class="current-curve__frame" x="20" y="100" width="100" height="100" />
 			<path class="current-curve__curve" d="M20,200 C{startHandleX},{startHandleY} {endHandleX},{endHandleY} 120,100" />
 
-			<line class="current-curve__track" x1="20" y1="270" x2="120" y2="270" />
-			<line class="current-curve__track" x1="20" y1="266" x2="20" y2="274" />
-			<line class="current-curve__track" x1="120" y1="266" x2="120" y2="274" />
-
 			<g class:transparent={dragging}>
 				<line class="current-curve__handle-tether" x1="20" y1="200" x2={startHandleX} y2={startHandleY} stroke="#34657f" />
 				<line class="current-curve__handle-tether" x1="120" y1="100" x2={endHandleX} y2={endHandleY} stroke="#34657f" />
@@ -155,7 +151,9 @@ onMount(() => {
 				<circle class="current-curve__handle" bind:this={endHandle} cx={endHandleX} cy={endHandleY} r="9" />
 			</g>
 
-			<circle class="current-curve__moving-circle" cx="20" cy="270" r="6" fill="#ffd100" style="--bezierCoordinates: {bezierCoordinates}"/>
+			<g class="current-curve__moving-circle-wrapper" style="--bezierCoordinates: {bezierCoordinates}">
+				<circle class="current-curve__moving-circle" cx="20" cy="200" r="7" />
+			</g>
 		</svg>
 
 		<code class="current-curve__coordinates">
@@ -260,13 +258,23 @@ onMount(() => {
 	}
 
 	.current-curve__moving-circle {
+		fill: var(--yellow);
+	}
+
+	.current-curve__moving-circle,
+	.current-curve__moving-circle-wrapper {
 		animation-name: move;
 		animation-duration: 1.5s;
 		animation-fill-mode: forwards;
-		animation-timing-function: cubic-bezier(var(--bezierCoordinates));
+		animation-timing-function: linear;
 		animation-iteration-count: infinite;
 		animation-direction: alternate-reverse;
 		pointer-events: none;
+	}
+	
+	.current-curve__moving-circle-wrapper {
+		animation-name: move_up;
+		animation-timing-function: cubic-bezier(var(--bezierCoordinates));
 	}
 
 	.current-curve__handle {
@@ -280,12 +288,6 @@ onMount(() => {
 		stroke-width:1px
 	}
 
-	.current-curve__track {
-		pointer-events: none;
-		stroke: var(--lightGray);
-		stroke-width: 0.5px;
-	}
-
 	.current-curve__frame {
 		fill: none;
 		stroke: var(--lightGray);
@@ -295,8 +297,8 @@ onMount(() => {
 
 	.current-curve__curve {
 		fill: none;
-		stroke: #ffd100;
-		stroke-width: 3px;
+		stroke: var(--yellow);
+		stroke-width: 2px;
 		pointer-events: none;
 	}
 
@@ -522,6 +524,15 @@ svg {
 	}
 	80%, 100% {
 		transform: translateX(71.45%)
+	}
+}
+
+@keyframes move_up {
+	0%, 20% {
+		transform: translateY(0)
+	}
+	80%, 100% {
+		transform: translateY(-33.33%)
 	}
 }
 </style>
