@@ -9,7 +9,7 @@ categories:
 coverImage: easing/cubic-bezier.png
 coverWidth: 16
 coverHeight: 9
-excerpt: The difference between a smooth, sleek animation and one that feels bland and generic is often in the easing curve. Let's look at what easing curves are and how they work in CSS, before diving into tips for making the best web animations possible.
+excerpt: The easing curve can make or break any animation on the web. Let's look at the science of CSS cubic-bezier curves, and the art of using them to make the best web animations possible.
 ---
 
 <script>
