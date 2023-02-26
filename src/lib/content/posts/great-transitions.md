@@ -134,13 +134,13 @@ That might look like something from an algebra textbook (or maybe a vector softw
 The curve above would be represented in CSS as:
 
 ```css
-cubic-bezier(0.12, 0.57, 0.63, 0.21)
+cubic-bezier(0.12, 0.57, 0.63, 0.21);
 ```
 
 Or, if you prefer leaving off the leading zeroes, that's valid, too:
 
 ```css
-cubic-bezier(.12, .57, .63, .21)
+cubic-bezier(.12, .57, .63, .21);
 ```
 
 <SideNote>
