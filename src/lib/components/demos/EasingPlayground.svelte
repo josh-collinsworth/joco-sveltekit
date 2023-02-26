@@ -143,16 +143,15 @@ onMount(() => {
 
 			<rect class="current-curve__frame" x="20" y="100" width="100" height="100" />
 			<path class="current-curve__curve" d="M20,200 C{startHandleX},{startHandleY} {endHandleX},{endHandleY} 120,100" />
-
+			
 			<g class:transparent={dragging}>
 				<line class="current-curve__handle-tether" x1="20" y1="200" x2={startHandleX} y2={startHandleY} stroke="#34657f" />
 				<line class="current-curve__handle-tether" x1="120" y1="100" x2={endHandleX} y2={endHandleY} stroke="#34657f" />
+				<g class="current-curve__moving-circle-wrapper" style="--bezierCoordinates: {bezierCoordinates}">
+					<circle class="current-curve__moving-circle" cx="20" cy="200" r="8" />
+				</g>
 				<circle class="current-curve__handle" bind:this={startHandle} cx={startHandleX} cy={startHandleY} r="9" />
 				<circle class="current-curve__handle" bind:this={endHandle} cx={endHandleX} cy={endHandleY} r="9" />
-			</g>
-
-			<g class="current-curve__moving-circle-wrapper" style="--bezierCoordinates: {bezierCoordinates}">
-				<circle class="current-curve__moving-circle" cx="20" cy="200" r="7" />
 			</g>
 		</svg>
 
