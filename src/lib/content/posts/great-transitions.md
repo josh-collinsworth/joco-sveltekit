@@ -1,4 +1,4 @@
----
+x---
 title: Understanding easing curves, and making great CSS animations
 date: 2023-02-22
 updated: 2023-02-26
@@ -46,18 +46,18 @@ At the center of any movement on the web is what's called an easing curve. This 
 
 ## What's the difference between a transition and an animation?
 
-Before we get started, I'd like to clarify this point: _I'll use the words "transition" and "animation" mostly interchangeably in this post, even though the two concepts are distinct in CSS_.
+Before we get started, I should clarify: _I'll use the words "transition" and "animation" mostly interchangeably in this post, even though the two concepts are distinct in CSS_.
 
 I'll also assume you have a decent understanding of the CSS principles behind the two already, but as a refresher/clarifier:
 
 **Transition:**
 
 - Uses the `transition` property
-- Transitions an element between exactly two states
-- Usually the result of a trigger event, like hovering over an element, or clicking on something
+- Transitions between exactly two states
+- Usually the result of a state change, like hovering, or clicking a button
 - Plays once; stays in end state as long as the trigger condition is true, then reverts
 
-An example might be a button that changes color when it has hover or focus:
+An example of a CSS `transition` might be a button that changes color when it has hover or focus:
 
 ```css
 .btn {
@@ -73,11 +73,11 @@ An example might be a button that changes color when it has hover or focus:
 **Animation:**
 
 - Uses `@keyframes` animations, and applies them with the `animation` property (or properties)
-- Animates an element between _any number_ of states
-- The animation may start because of a trigger event, but is usually either always on, or plays immediately once the element enters the DOM
+- Animates between _any number_ of states
+- May start because of a trigger event, but is usually either always on, or plays immediately once the element enters the DOM
 - Can repeat any number of times. May stay in end state, or revert to beginning state. May also alternate directions. Elements could also have multiple animations applied at once.
 
-A basic example might be a loading spinner that rotates indefinitely:
+A basic CSS `animation` example might be a loading spinner that rotates indefinitely:
 
 ```css
 .spinner {
@@ -142,19 +142,17 @@ Or, if you prefer leaving off the leading zeroes, that's valid, too:
 cubic-bezier(.12, .57, .63, .21);
 ```
 
-<SideNote>
-
-Values are allowed to go out of bounds vertically on the _y_ axis, but _not_ on the _x_ axis (since animation can go backwards, but time can't).
-
-So the first and third arguments (start x, end x) must be within the range of 0–1; but the second and fourth (start y, end y) can go beyond, in either direction--handy when you want to create an "overshoot" effect, where the transition goes beyond the start or end state and then comes back.
-
-</SideNote>
-
 Here's that full illustration one more time:
 
 ![The easing curve above, with the handles controlling the curve shown. Their x and y coordinates are highlighted as in the CSS above, each of the four values a decimal between 0 and 1.](/images/post_images/easing/cubic-bezier.png)
 
-And here's that curve in action, in a real animation. The circles follow the easing curve (visually, and in movement speed) from bottom left to top right (via CSS `transform`):
+<SideNote>
+
+Values are allowed to go out of bounds vertically on the _y_ axis, but _not_ on the _x_ axis (since animation can go backwards, but time can't). This allows you to create an "overshoot" effect, where the transition goes beyond the start or end state and then comes back.
+
+</SideNote>
+
+And here's that curve in action, in a real animation. The circles follow the easing curve (both visually and in the code) from bottom left to top right, via CSS `transform`:
 
 <p class="codepen" data-height="650" data-default-tab="result" data-slug-hash="qBMqZjO" data-user="collinsworth" style="height: 650px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/collinsworth/pen/qBMqZjO">
@@ -180,7 +178,7 @@ I'd also like to give a shout-out here to [easings.co](https://easings.co), whic
 
 While the workings of bézier curves make for interesting trivia, you might reasonably ask: why does this matter? Why is it important to use one easing curve over another--or for that matter, any curve at all?
 
-True, transitions and animations are cool. They're fun. They're interesting. (The good ones, anyway.) But beyond that, well-implemented transitions can also be _intuitive_.
+True, animation is cool. (When done well, anyway.) But beyond that, well-implemented animation can also be _intuitive_.
 
 <CalloutPlusQuote>
 
@@ -188,14 +186,16 @@ In the real world, there's little such thing as instant. Nothing just appears or
 
 </CalloutPlusQuote>
 
-Similarly, when things move, _how_ they move is key in understanding the movement. Think of a simple motion, like waving your hand. Vary the speed of the wave, and notice how the "feel" and perceived meaning of the gesture varies. A slow wave seems hesitant; a fast wave seems enthusiastic. One that starts fast then slows down (or vice versa) seems to indicate your feelings might be changing in real time. "_Oh, hey! I know you! …Oh wait…no I don't_." (Not that I've ever done anything like that.)
+Similarly, when things move, _how_ they move is key in understanding the movement, like I mentioned about in the intro. Think of a simple motion, like waving your hand. Vary the speed of the wave, and notice how the "feel" and perceived meaning of the gesture varies. A slow wave seems hesitant; a fast wave seems enthusiastic. One that starts fast then slows down (or vice versa) seems to indicate your feelings might be changing in real time. "_Oh, hey! I know you! …Oh wait…no I don't_." (Not that I've ever done anything like that.)
 
 Again: movement tells a story. The transition itself is the verb; the easing curve is the adverb.
 
 
-## Tips for great animations
+## 8 tips for great web animations
 
-Let's wrap up this post by covering a few ways to improve your CSS transitions and animations on the web, and take them to the next level.
+Now that we've pretty thoroughly covered what cubic bézier curves are, and how to use them in CSS, let's transition into the second half of this article. (Should this have been two separate posts? Probably.)
+
+From here on out, we'll be covering a few ways to improve your CSS transitions and animations on the web, and take them to the next level.
 
 
 ### Pick the right curve
@@ -206,7 +206,7 @@ The answer may be unsatisfying, but: I'm afraid trial and error (otherwise known
 
 However, as you experiment, I would encourage you to think of movement in the real world, and compare it to the movement you're working with in your app. Is this transition a positive confirmation, appearing and sliding into place? That might call for a speedy intro with a smooth but quick easing out, like an eager helper running up to report their task is done.
 
-How about an error message popping up on the screen? That might call for a slower easing curve, to indicate a slight reluctance. If it's something important that should be known about immediately, speed would be a priority. If it's _highly_ critical, it might even call for "louder," more aggressive movement, to convey the severity of the situation.
+How about an error message popping up on the screen? That might call for a slower easing curve, to indicate a slight reluctance. If it's something important that should be known about immediately, speed would be a priority. If it's _highly_ critical, it might even call for "louder," more aggressive movement (like shaking), to convey the severity of the situation and draw attention where needed.
 
 <CalloutPlusQuote>
 
