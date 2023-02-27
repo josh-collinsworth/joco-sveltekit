@@ -1,5 +1,5 @@
 ---
-title: The science of easing curves, and the art of CSS animation
+title: Understanding easing curves, and making great CSS animations
 date: 2023-02-22
 updated: 2023-02-26
 categories:
@@ -274,7 +274,44 @@ That said, however: there are always exceptions, and the bigger the change is on
 
 Also worth noting: an animation might not always _feel_ as long as it is. A transition with a very slow ease-in might seem like it doesn't start right away; conversely, a transition with a long tail might _seem_ finished before it technically is.
 
-That's a great segue into the next section…
+
+### Less is more
+
+In much the same vein as the previous tip: when you're crafting a transition or animation, it's easy to go overboard at first, as you're laser-focused on the effect and want to make it as flashy as possible. However, when it comes to CSS transitions, understated is usually better than overstated.
+
+<CalloutPlusQuote>
+	
+The bigger the difference between the starting and ending states of a transition or animation, the more the change may seem awkward or overdone.
+	
+</CalloutPlusQuote>
+
+If you're animating `opacity` from 0 to 1, maybe try a smaller range, like 0.4 to 1 instead. If your element grows larger on hover, a slight increase in size might seem more controlled, where a huge jump could seem clumsy.
+
+Does an element slide into place? I find that in most cases, movement should be in the range of about 8–32 pixels. (Not that there's anything special about those numbers; I just like exponents of 2.) Any less, and the movement may be too subtle to even notice. Any more, and it may go from a deft slide to a bumbling crash.
+
+
+### Play with delay
+
+When transitioning multiple elements (or one element with many parts), don't underestimate the effect `animation-delay` or `transition-delay` can have--particularly when staggered.
+
+Take a look at this CodePen example; each line uses a new kind of animation delay to create a different effect:
+
+<p class="codepen" data-height="654" data-default-tab="js,result" data-slug-hash="yLxVZMx" data-user="collinsworth" style="height: 654px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/collinsworth/pen/yLxVZMx">
+  Untitled</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+In the pen above, the first line just transitions all at once. Fine, but not particularly sharp.
+
+In each line following, however, varying degrees of animation delay are applied to each letter in the line, to create a playful "bounce-in" effect.
+There's even one that goes backwards, and one that causes the line to appear from the inside-out.
+
+All this said: there's a reason I put _less is more_ before this point. It's very easy to overdo animations like this, especially when there are _lots_ of elements transitioning, as in the example. (I used lots of letters just so the variety of delays was a little easier to see.)
+
+However, there are opportunities to apply this effect in just about any UI. Loading dots, maybe? Perhaps when a drawer or hamburger menu is opened, each item might appear on a slight delay?
+
+Again, keep it short and subtle. But where applied well, delays can help take web transitions to the next level.
 
 
 ### Ins go out, outs go in
