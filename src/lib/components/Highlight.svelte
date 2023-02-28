@@ -1,4 +1,4 @@
-<script>null</script>
+<!-- This component is just used in the Gridsome post, to keep a demo from breaking. -->
 
 <div class="highlight">
 	<slot />

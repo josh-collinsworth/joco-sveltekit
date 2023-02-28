@@ -1,7 +1,7 @@
 ---
 title: 'Page transitions in SvelteKit'
-date: '2023-02-24'
-updated: '2023-02-24'
+date: '2023-02-28'
+updated: '2023-02-28'
 categories:
   - 'javascript'
   - 'design'
@@ -97,7 +97,7 @@ Page transitions aren't just a nifty effect, however; illustrating a change with
 
 </Callout>
 
-(_I go deeper into that point in [my post on making better transitions](/blog/great-transitions), if you'd like some further reading on the topic_.)
+(_I go deeper into that point in [my post on CSS animation tips](/blog/great-transitions), if you'd like some further reading on the topic_.)
 
 <PullQuote>
 

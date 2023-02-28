@@ -111,9 +111,9 @@
 			<div class="sticky">
 				<h2>CSS Easing playground</h2>
 				
-				<p>Created for <a href="/blog/great-transitions">this blog post</a>, this interactive playground lets you examine how a variety of easing curves look and feel, and allows you to draw up your own and copy the CSS.</p>
+				<p>Created for <a href="/blog/easing-curves">this blog post</a>, this interactive playground lets you examine how a variety of easing curves look and feel, and allows you to draw up your own and copy the CSS.</p>
 				
-				<p>Every curve on the page is an SVG, including the interactive demo, which is accessible across device types. The curve redraws in real time as the handles are moved.</p>
+				<p>Every curve on the page is an SVG, including the interactive demo, which is accessible across device types. The curve redraws in real time as the handles are moved, and an animated node follows the curve to demonstrate the movement.</p>
 				<ul>
 					<li>
 						<a href="/demos/easing">Live demo</a>

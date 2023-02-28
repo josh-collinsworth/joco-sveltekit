@@ -14,16 +14,16 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 ---
 
 <script>
-	import Warning from '$lib/components/Warning.svelte'
+	import Note from '$lib/components/Note.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import PullQuote from '$lib/components/PullQuote.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-<Warning>
+<Note>
 I've done my best to keep this post up-to-date through all of SvelteKit's breaking changes. It should be fully updated for SvelteKit 1.0, but if you spot any issues, please let me know in the comments or send me a message. Thanks for reading!
-</Warning>
+</Note>
 
 If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:
 

@@ -121,7 +121,7 @@ onMount(() => {
 <form class="easing-demo" class:is-frame={isFrame} on:submit|preventDefault>
 	<div class="intro intro-mobile">
 		<h2>CSS easing playground</h2>
-		<p>A place to try out various easing types/cubic bézier curves, and to create your own. (Made to accompany <a href="/blog/great-transitions">this post</a>.)</p>
+		<p>A place to try out various easing types/cubic bézier curves, and to create your own. (Made to accompany <a href="/blog/easing-curves">this post</a>.)</p>
 	</div>
 
 	<div
@@ -168,7 +168,7 @@ onMount(() => {
 	<div>
 		<div class="intro intro-desktop">
 			<h2>CSS easing playground</h2>
-			<p>A place to try out various easing types/cubic bézier curves, and to create your own. (Made to accompany <a href="/blog/great-transitions">this post</a>.)</p>
+			<p>A place to try out various easing types/cubic bézier curves, and to create your own. (Made to accompany <a href="/blog/easing-curves">this post</a>.)</p>
 		</div>
 		<div class="curve-selection">
 			{#each Object.entries(premadeEasings) as [group, _]}

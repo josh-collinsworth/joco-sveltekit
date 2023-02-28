@@ -1,5 +1,3 @@
-<script>null</script>
-
 <div class="side-note">
 	<slot />
 </div>
