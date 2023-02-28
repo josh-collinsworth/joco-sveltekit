@@ -1,5 +1,5 @@
 ---
-title: Nine tips for excellent CSS transitions and animations
+title: Ten tips for excellent CSS transitions and animations
 date: 2023-02-28
 updated: 2023-02-28
 categories:
@@ -163,21 +163,24 @@ That said, though: you probably wouldn't limit your color palette to only predef
 
 ## 5. Less is more
 
+Words I've often needed to hear: _not everything needs a transition_.
+
+It's easy to get carried away and make every single thing on the page animate in. (I've certainly been guilty of that.) But unless this is your personal website and you just feel like going a little crazy, too much movement can easily do more harm than good.
+
 It's easy to go overboard as you're laser-focused on making an animation as impressive as possible. However, when it comes to transitioning things with CSS, understated is usually better than overstated.
 
 <CalloutPlusQuote>
-	
-The bigger the difference between the starting and ending states of a transition or animation, the more the change risks seeming overdone.
-	
+
+The more an element changes during an animation, the more the transition risks seeming overdone.
+
 </CalloutPlusQuote>
 
 If you're animating `opacity` from 0 to 1, maybe try a smaller range, like 0.4 to 1 instead. If your element grows larger on hover, a slight increase in size might seem more controlled, where a huge jump could feel clunky.
 
-Does an element slide into place? I find that in most cases, movement like that should be in the range of about 5–40 pixels. Any less, and the movement may be too subtle to even notice; much more, and it may go from a deft slide to a clumsy crash.
+Does an element slide into place? I find that in most cases, movement like that should be in the range of about 5–40 pixels. Any less, and the movement may be too subtle to even notice; much more, and a deft slide may become a clumsy crash.
 
 Doing too much can be worse than doing nothing at all. So find the point where the transition is just enough to be effective, and if you go further, do so cautiously.
 
-Also: not everything needs a transition. It's easy to get carried away and make every single thing on the page animate in. (I've certainly been guilty of that.) But here again, unless this is your personal website and you just feel like going a little crazy: less is more.
 
 
 ## 6. Play with delay
@@ -262,6 +265,14 @@ But whatever you do, _avoid changing the size or placement of an element directl
 
 If you ever need to animate other properties for whatever reason, be sure to test in every possible device and browser. In my experience, Safari in particular is very bad about processing animations in a performant way by default, especially on iOS. Firefox isn't far behind, but you might not realize it if you're only testing on high-powered devices. A lot of the world lives on budget Androids; don't leave those out of your testing.
 
+<SideNote>
+
+Just because something _can_ be hardware-accelerated doesn't mean it _will_ be. The browser makes the final call.
+
+One potential reason it may opt out: the GPU is faster, but it also consumes more energy. So if the device is low on power, or in battery-saving mode, the browser may choose battery over graphical performance.
+
+</SideNote>
+
 
 ## 9. Use `will-change` as needed
 
@@ -284,21 +295,84 @@ Some sources even go so far as to recommend applying `will-change` prior to an a
 So here again, the best advice is: test thoroughly.
 
 
-## Further caveats on hardware acceleration
+## 10. Respect the user's preferences
 
-The last couple of sections covered performance optimization via hardware acceleration (with and without `will-change`). There are a couple of rules to be aware of in this area, however.
+Users can indicate via their device settings whether they prefer reduced motion.
 
-First: **you can't mix properties that can be hardware accelerated with those that can't and expect a performant result**.
+The reasons a user may do so are many and varied. There's a range of medical reasons, for starters: a user may experience vertigo, nausea, or even seizures when exposed to excessive movement. Or, a user may just find too much movement distracting or obnoxious.
 
-For example, if a transition animates both `transform` (perfectly fine for hardware acceleration) and `width` (not fine; causes reflow), then we can't expect that transition to be as fluid as if we _only_ animated `transform`. Changing properties that cause layout changes will throw a wrench in the whole works. (You _may_ be able to get around this with `will-change` in some situations, but results will probably vary from browser to browser, and will also depend on the properties in question.)
+It doesn't really matter why, though; it's our job as developers to accommodate the user's preferences regardless.
 
-And second: **just because something _can_ be hardware-accelerated doesn't mean it _will_ be**. The browser makes the final call.
+We can either do this in CSS, using a media query (like this, [from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)):
 
-One potential reason the browser may opt _not_ to use the GPU: while it's much faster than the default hardware, it also takes more power. So if the device is low on power, or in battery-saving mode, the browser may choose battery over graphical performance. There are other situations as well, but that's the most common.
+```css
+@media (prefers-reduced-motion) {
+  /* styles to apply if the user's settings
+     are set to reduced motion */
+}
+```
+
+_Or_ we can use JavaScript. In this example, we'll check for a reduced-motion preference, and add a class to the `<html>` tag if found:
+
+```js
+const prefersReducedMotion =
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+if (prefersReducedMotion) {
+  document.documentElement.classList.add('reduce-motion')
+}
+```
+
+Following that JavaScript example, we could then add CSS to target elements on the page to set overrides:
+
+```css
+.reduce-motion {
+  /* Select stuff here and reduce motion */
+}
+```
+
+Just note that when using JavaScript, we'd want the page to be progressively enhanced, in order to ensure there was no flash of motion before the script ran, and no excluding users who have JavaScript disabled. So a mix of _both_ techniques is probably ideal.
+
+As far as _what_, exactly, we should do with our CSS in these cases: remember that **reduced motion doesn't mean _no_ motion**, or even no animation at all.
+
+One technique I often use is: change up keyframe animations to only use opacity where a reduced motion preference is detected:
+
+```css
+@keyframes slide_in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes slide_in_reduced {
+ from {
+    opacity: 0;
+  }
+}
+
+.animated-thing {
+  animation-name: slide_in;
+}
+
+@media (prefers-reduced-motion) {
+  .animated-thing {
+    animation-name: slide_in_reduced;
+  }
+}
+```
+
+Just because a user prefers minimal motion doesn't mean they don't value transitions.
+
+Plus, there are some situations where it may be better to keep movement intact. For example, if you show a progress bar as something loads in the background--or a playback indicator on an audio or video file--that's a key piece of information in the UI. Rather than eliminating that indicator altogether, consider finding a way to make the movement subtle and unobtrusive. Potentially, allow the user to hide the movement. Or, representing the info differently may be the way to go (a numerical percentage counter instead of an animated bar, as an example).
+
+At the _very_ least, users should be able to pause all continuous animations, including videos and gifs. However, ideally, we should be anticipating their needs based on their device preferences, instead of forcing them to deal with something they've already indicated they'd rather not see.
+
+I refer you to [this piece by Val Head for Smashing Magazine](https://www.smashingmagazine.com/2020/09/design-reduced-motion-sensitivities/), for a deeper dive on the topic of designing with reduced motion. It's a big topic in its own right, but hopefully this tip provides some general guidance.
 
 
 ## Wrap-up
 
 I hope this collection of tips helps you craft the best web animations possible.
 
-As always, feel free to send feedback below, and thanks for reading!
+As always, feel free to send feedback or questions below, and thanks for reading!
