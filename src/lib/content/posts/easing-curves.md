@@ -224,6 +224,6 @@ Again: movement tells a story. The transition itself is the verb; the easing cur
 
 Thanks for reading! I hope you've come away with a better understanding of CSS `cubic-bezier` easing curves, including how they work, and why they're valuable.
 
-If you're looking for practical next steps on where to go from here, I suggest reading [Ten tips for excellent CSS transitions and animations](/blog/great-transitions) next. It's a follow-up post where I dig deeper into the "how" of crafting optimal, fine-tuned animation on the web.
+If you're looking for practical next steps on where to go from here, I suggest reading [Ten tips for better CSS transitions and animations](/blog/great-transitions) next. It's a follow-up post where I dig deeper into the "how" of crafting optimal, fine-tuned animation on the web.
 
 Otherwise, thanks for reading, and feel free to send any feedback below!

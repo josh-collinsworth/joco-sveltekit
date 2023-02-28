@@ -1,5 +1,5 @@
 ---
-title: Ten tips for excellent CSS transitions and animations
+title: Ten tips for better CSS transitions and animations
 date: 2023-02-28
 updated: 2023-02-28
 categories:
@@ -42,7 +42,7 @@ So to hopefully get a better understanding of what's giving off those vibes--and
 
 <SideNote>
 
-While "transition" and "animation" are distinct concepts in CSS, I'll continue to use the words interchangeably here, to mean "any kind of movement or change."
+While "transition" and "animation" are distinct concepts in CSS, I'll continue to use the words mostly interchangeably here, to mean "any kind of movement or change."
 
 </SideNote>
 
@@ -97,7 +97,7 @@ So my best recommendation is: invest the time, and ask whether the movement conv
 If Pixar animated a robot that did the thing your UI is doing, how would it&nbsp;move?
 
 
-## 3. Always accelerate and decelerate
+## 3. Accelerate and decelerate
 
 In the real world, we pretty much never see any type of movement jump immediately to max speed, or come to a full and complete stop instantaneously. So our UIs will seem a little more "real" and intuitive if we avoid showing users curves that create that kind of movement, too.
 
@@ -126,6 +126,27 @@ If you want to go even further toward animation that feels like it has real-worl
 One important note on sudden starts and stops, though: **it's fine if the user can't see it**. If the object in question fades in, then a sudden start might be fine (since the beginning of the animation won't be perceptible in the first place).
 
 The same goes in reverse; if an element is fading to `opacity: 0`, then it may not matter exactly how the transition curve ends, since it won't be visible at the end anyway.
+
+
+## 4. Less is more
+
+A lot of these tips could be pretty well summarized as "less is more." Words I've often needed to hear: _not everything needs a transition_.
+
+It's easy to get carried away and make every single thing on the page animate in. (I've certainly been guilty of that.) But unless this is your personal website and you just feel like going a little crazy, too much movement can easily do more harm than good.
+
+It's easy to go overboard as you're laser-focused on making an animation as impressive as possible. However, when it comes to transitioning things with CSS, understated is usually better than overstated.
+
+<CalloutPlusQuote>
+
+The more an element changes during an animation, the more the transition risks seeming overdone.
+
+</CalloutPlusQuote>
+
+If you're animating `opacity` from 0 to 1, maybe try a smaller range, like 0.4 to 1 instead. If your element scales up to full size, try making it just slightly smaller to start, rather than so small it can't be seen.
+
+Does an element slide into place? I find that in most cases, movement like that should be in the range of about 5–40 pixels. Any less, and the movement may be too subtle to even notice; much more, and a deft slide may become a clumsy crash.
+
+Doing too much can be worse than doing nothing at all. So find the point where the transition is just enough to be effective, and if you go further, do so cautiously.
 
 
 ## 4. Avoid browser defaults
@@ -161,29 +182,84 @@ You can certainly get by with the presets in the browser, or in VS Code. And if 
 That said, though: you probably wouldn't limit your color palette to only predefined CSS named colors. So you might not want to limit your transitions to a small handful of preset curves, either.
 
 
-## 5. Less is more
+## 5. Multiple properties, multiple easings
 
-Words I've often needed to hear: _not everything needs a transition_.
+While this one won't always come in handy, there will be times you'll be animating more than one property at once on a single element, like when you scale an item with `transform` as its `opacity` also changes.
 
-It's easy to get carried away and make every single thing on the page animate in. (I've certainly been guilty of that.) But unless this is your personal website and you just feel like going a little crazy, too much movement can easily do more harm than good.
+You _could_ apply the same `cubic-bezier` curve to both properties, as shown here:
 
-It's easy to go overboard as you're laser-focused on making an animation as impressive as possible. However, when it comes to transitioning things with CSS, understated is usually better than overstated.
+```css
+/* ❌ Ok, but can be better: */
+.my-element {
+  transition: all cubic-bezier(.5, 0, .5, 1) .5s;
+}
+
+
+/* ❌ Also maybe not ideal: */
+@keyframes scale_and_appear {
+  from {
+    opacity: 0;		
+    transform: scale(0);
+  }
+}
+
+.my-element {
+  animation: scale_and_appear 0.5s cubic-bezier(.5, 0, .5, 1) forwards;
+}
+```
+
+Depending, that might look just fine. However, there will be situations where the same curve doesn't really work for every property being transitioned.
 
 <CalloutPlusQuote>
 
-The more an element changes during an animation, the more the transition risks seeming overdone.
+The easing curve that works well for the `transform` may not feel right for the fade. That's when it's handy to set a unique easing per CSS property.
 
 </CalloutPlusQuote>
 
-If you're animating `opacity` from 0 to 1, maybe try a smaller range, like 0.4 to 1 instead. If your element grows larger on hover, a slight increase in size might seem more controlled, where a huge jump could feel clunky.
+In those cases, you can split the `@keyframes` animations by property, or specify multiple `transition`s. Then, you can specify a different curve for each property, since both `transition` and `animation` can accept multiple values:
 
-Does an element slide into place? I find that in most cases, movement like that should be in the range of about 5–40 pixels. Any less, and the movement may be too subtle to even notice; much more, and a deft slide may become a clumsy crash.
+```css
+/* 👍 Better; each property has its own curve */
+.my-element {
+  transition: 
+    opacity linear .5s,
+    cubic-bezier(.5, 0, .5, 1) .5s;
+}
 
-Doing too much can be worse than doing nothing at all. So find the point where the transition is just enough to be effective, and if you go further, do so cautiously.
+
+/* 👍 Use two animations and apply both */
+@keyframes scale {
+  from { transform: scale(0); }
+}
+
+@keyframes appear {
+  from { opacity: 0; }		
+}
+
+.my-element {
+  animation:
+    scale 0.5s cubic-bezier(.5, 0, .5, 1) forwards,
+    appear 0.5s linear forwards;
+}
+```
+
+Here's a demo; as the boxes alternate in and out, notice how `opacity` and `scale` follow the same acceleration for the square on the left. On the right, however, `opacity` follows its own linear curve.
+
+<p class="codepen" data-height="443" data-default-tab="result" data-slug-hash="NWLdLGW" data-user="collinsworth" style="height: 443px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/collinsworth/pen/NWLdLGW">
+  Varying easings per property</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+Which one is _better_ depends on the effect you're going for. 
+
+Again, this one may not come up too often, but it's extremely handy when it does, and also easy to forget about, so it gets a spot on the list.
+
+You could even go so far as to change the duration of each property, but be careful things don't go out of sync if you decide to get that wacky.
 
 
 
-## 6. Play with delay
+## 7. Use staggered delays
 
 When transitioning multiple elements (or one element with many parts), don't underestimate the effect `animation-delay` or `transition-delay` can have--particularly when staggered.
 
@@ -199,14 +275,14 @@ In the pen above, the first line just transitions all at once. Fine, but not par
 
 In each line following, however, varying degrees of delay are applied to each letter, to create a playful "bounce-in" effect. There's even one that goes backwards, and one that causes the line to appear from the middle out.
 
-All this said: there's a reason I put _less is more_ before this point. It's very easy to overdo animations like this, especially when there are _lots_ of elements transitioning, as in the example. I used lots of letters and much more overstated movement than I normally would, just to illustrate the technique. In practice, an animation exactly like this would probably be too over-the-top for most UI work.
+All this said: there's a reason I put _less is more_ ahead of this point. **It's very easy to overdo animations like this**, especially when there are _lots_ of elements transitioning, as in the example. I used lots of letters and much more overstated movement than I normally would, just to illustrate the technique. In practice, an animation exactly like this would probably be too over-the-top for most UI work.
 
-However, there are opportunities to apply this effect on a more subtle scale. Loading dots, maybe? Perhaps when a drawer or hamburger menu is opened, each item might appear on a slight delay?
+However, there are opportunities to apply this effect on a more subtle scale. Dots in a loading screen, maybe? Perhaps when a drawer or hamburger menu is opened, each item might appear on a slight delay?
 
-Again, keep it short and subtle. But where applied well, delays can help take web transitions to the next level.
+Again, keep it short and subtle. But where applied well, staggered delays can help take web transitions to another level.
 
 
-## 7. Ins go out, outs go in
+## 8. Ins go out, outs go in
 
 If you've looked at various kinds of easing curves, you may have noticed they tend to come in three varieties: an ease _in_ (starts slower), ease _out_ (ends slower), and in-out (which is essentially both; faster in the middle and slower at the beginning and the end).
 
@@ -229,7 +305,7 @@ Conversely, when an element is transitioning _in_, it should usually come to a g
 Those two would come together to create the effect of one seamless movement.
 
 
-## 8. Lean on hardware acceleration
+## 9. Lean on hardware acceleration
 
 Not all CSS properties can be animated or transitioned smoothly across all devices and browsers. In fact, there are only a handful of properties that are capable of tapping into a device's hardware acceleration for the smoothest, highest-framerate transitions possible.
 
@@ -274,7 +350,7 @@ One potential reason it may opt out: the GPU is faster, but it also consumes mor
 </SideNote>
 
 
-## 9. Use `will-change` as needed
+## 10. Use `will-change` as needed
 
 If you _do_ run into issues with animations that should be smooth and performant in theory, but that seem choppy or stilted in practice (again: this is usually in Safari for me, but your mileage may vary), make use of [the `will-change` property](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change).
 
@@ -295,7 +371,7 @@ Some sources even go so far as to recommend applying `will-change` prior to an a
 So here again, the best advice is: test thoroughly.
 
 
-## 10. Respect the user's preferences
+## Bonus: respect the user's preferences
 
 Users can indicate via their device settings whether they prefer reduced motion.
 
@@ -373,6 +449,6 @@ I refer you to [this piece by Val Head for Smashing Magazine](https://www.smashi
 
 ## Wrap-up
 
-I hope this collection of tips helps you craft the best web animations possible.
+Best of luck crafting your own animations on the web! I hope this post has been engaging and useful, and you feel better equipped to make even stronger interactive experiences.
 
 As always, feel free to send feedback or questions below, and thanks for reading!
