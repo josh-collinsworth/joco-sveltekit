@@ -99,7 +99,7 @@ If Pixar animated a robot that did the thing your UI is doing, how would it&nbsp
 
 ## 3. Accelerate and decelerate
 
-In the real world, we pretty much never see any type of movement jump immediately to max speed, or come to a full and complete stop instantaneously. So our UIs will seem a little more "real" and intuitive if we avoid showing users curves that create that kind of movement, too.
+In the real world, we pretty much never see any type of movement jump immediately to max speed, or come to a full and complete stop instantaneously. So our UIs will seem a little more "real" and intuitive if we avoid curves that create that kind of movement, too.
 
 <CalloutPlusQuote>
 
