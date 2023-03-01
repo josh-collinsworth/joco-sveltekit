@@ -530,7 +530,7 @@ So we can make life a little easier on ourselves by organizing the transition op
   export let data
 
   const duration = 300
-  const delay = duration * 1.33
+  const delay = duration + 100
   const y = 10
 
   const transitionIn = { easing: cubicOut, y, duration, delay }
