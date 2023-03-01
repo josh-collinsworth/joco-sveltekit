@@ -30,11 +30,11 @@ If you're just here for the code (I get it), [here's the link to skip to that pa
 </Note>
 
 
-If you've navigated the web before (and if not, I'm impressed you're reading this right now), you know the default behavior when you click a link is rather unimpressive: the page we were just looking at is unceremoniously replaced, more or less immediately.
+If you've navigated the web before (and if not, thank whoever printed this out for you, I guess), you know the default behavior when you click a link is rather unimpressive: the page we were just looking at is unceremoniously replaced, more or less immediately.
 
 (_Let's be honest: you'll probably be staring at dimly pulsing skeleton UI elements for several seconds after that, because React, but you get the point_.)
 
-This is in stark contrast to the world of so-called "native" apps, and more recently, single-page applications (SPAs) on the web. SPAs use JavaScript to--among other things--fluidly animate between UI states.
+This is in stark contrast to the world of so-called "native" apps, and more recently, single-page applications (SPAs) on the web. Both have the capability to fluidly animate between UI states, which admittedly just _feels_ nicer. SPAs accomplish this using a healthy dollop of JavaScript.
 
 <SideNote>
 
@@ -42,9 +42,9 @@ You can pronounce each letter in SPA, as an acronym, or say it like the word "sp
 
 </SideNote>
 
-Recently, though, SPAs have come under heavy criticism. I won't link to the `#hotdrama` here, but suffice to say: some in the web community feel the benefits of SPAs (mobile app-like transitions; arguably better user experience) were heavily oversold, as their drawbacks (accessibility and performance issues) were downplayed.
+Recently, though, SPAs have come under heavy criticism. I won't link to the `#hotdrama` here, but suffice to say: some in the web community feel the benefits of SPAs (app-like transitions; arguably better user experience) were heavily oversold, as their drawbacks (accessibility and performance issues) were downplayed.
 
-While there's merit to that position, I'm not here to weigh in on the benefits of traditional "multi-page" apps (we used to just call them websites) vs. SPAs. Because luckily, SvelteKit makes it very easy to ask: _porque no los dos_?
+While there's merit to that position, I'm not here to weigh in on the benefits and tradeoffs between SPAs and "multi-page" apps (we used to just call them websites). Because luckily, SvelteKit makes it very easy to ask: _porque no los dos_?
 
 <FloatedImage alt="The 'why not both?' meme, asking why don't we have both?" path="/images/post_images/porque.png" />
 
@@ -72,7 +72,7 @@ But before we get into the _how_, let's spend a little time on _what_ page trans
 
 ## What is a page transition?
 
-A page transition is an effect that happens when the user clicks to navigate to a new page. Rather than the default page load, a page transition takes over, and animates the old page being replaced by the new one.
+A page transition is a visual effect that replaces normal page loading behavior. When you click a link, a page transition takes over, and animates the old page being replaced by the new one.
 
 For example, the old page might fade away as the new page materializes. Or, the old might slide off to the left as the new one enters from the right. You could even combine these effects, or do anything else you could possibly dream of that's possible in CSS and/or JavaScript.
 
@@ -143,7 +143,7 @@ However, as mentioned in the above section, this could go the opposite way, too.
 
 ## How page transitions are built in SvelteKit
 
-For starters, let's look at the three _key components_ (ha, ha) that make up SvelteKit's native page transitions, and how to implement them.
+For starters, let's look at the three _key components_ (ha, ha) that make up SvelteKit's native page transitions, and how to implement them, one by one.
 
 
 ### Built-in transitions
@@ -156,9 +156,9 @@ The Svelte compiler removes any unused parts of Svelte at build time--meaning ni
 
 </SideNote>
 
-To start, import the type of transition you want to use from `svelte/transition`. For now, let's use `fade`, since it's nice and simple. But there's also `crossfade`, `fly`, `slide`, `scale`, `blur`, and `draw` (the last of which is specifically for SVG strokes), all available out of the box.
+To start, import the type of transition you want to use from `svelte/transition`. Out of the box, you get `fade`, `crossfade`, `fly`, `slide`, `scale`, `blur`, and `draw` (the last of which is specifically for SVG strokes). But for now, let's use `fade`, since it's nice and simple. (It only animates opacity.) 
 
-Since this transition will apply at the page level, in our case, we'll want to use it in our global `+layout.svelte` file (i.e., the one at the top level of `src/routes`). So let's import it there:
+Since this will be a global transition that applies on every page, we'll want to use it in our global `+layout.svelte` file (i.e., the one at the top level of `src/routes`). So let's import it there:
 
 ```svelte
 <!-- src/routes/+layout.svelte -->
@@ -167,7 +167,7 @@ Since this transition will apply at the page level, in our case, we'll want to u
 </script>
 ```
 
-Once imported, we'll need to _apply_ the transition on an element, via the `transition` attribute.
+Once imported, we'll need to _apply_ the transition on an element, via the `transition:fade` attribute.
 
 You _might_ think that we could just plop the transition on the `<slot />` and be done with it, but unfortunately, slots can't accept attributes. You should see an error in your code editor if you try it.
 
@@ -191,9 +191,9 @@ Instead, it's much simpler to _wrap_ the slot element inside another element (or
 
 Keep in mind: this wrapper element will appear on _every page_ of our site/app. It will transition out with the old page, and then back in with the new one, every time the user navigates--
 
---_Eventually_, that is. **This won't do much on its own yet**.
+--_Eventually_, that is. This won't do much on its own yet.
 
-Why? Because at this point, that `div` doesn't change or leave the page when the user navigates. Since it's in `+layout.svelte`, it's global, just like a header or footer.
+Why? Because at this point, that `div` doesn't change or leave the page when the user navigates. Since it's in `+layout.svelte`, it's global, and unaffected by navigation, just like a header or footer.
 
 That's normal; that's how stuff in the layout file _should_ work. But it's not what we want in this case.
 
@@ -210,7 +210,7 @@ A `key` block is markup that reacts to state. Whenever that state changes, the b
 
 You could think of this as injected reactivity; we want to _watch_ an expression (just a variable, in this case), and when that changes, re-render the markup in the block.
 
-In more casual terms: a `key` block lets you say, "hey, Svelte: whenever that thing over there changes, I want you to re-render this chunk of code."
+In more casual terms: a `key` block lets you say, "hey, Svelte: here's a thing. Keep an eye on it, and whenever it changes, re-render this chunk of code."
 
 ("Sure thing!" Svelte replies, in Rich Harris's charming British accent. But I digress.)
 
@@ -225,7 +225,7 @@ _Ok_, you might be thinking. _Sounds good so far. But…how do we actually_ get 
 
 Smart question!
 
-We'll need a variable that holds the current path, and updates on navigation. And for that, we'll need to rely on data from the page `load` function.
+We'll need a variable that holds the current path, and updates on navigation. And for that, we'll need to rely on data from the `load` function.
 
 
 ### The `load` function
@@ -240,7 +240,7 @@ The `load` function runs before the page is loaded, and returns data for the pag
 
 Typically, this is handy for things like checking to see whether the current user is logged in, or for fetching data the page might need in order to render, as examples.
 
-And again: usually, this `load` function goes in a `+page.js` file alongside the `+page.svelte` route.
+And again: usually, this `load` function exists at the route level, per-page.
 
 However, we can _also_ use a `+layout.js` file--alongside our `+layout.svelte`--if we want a _global_ `load` function, that runs on _every_ page load. (Which we do, because we always want to know what the current route is and when it changes, site-wide.)
 
@@ -265,7 +265,7 @@ There's a bit of destructuring going on there, so let's break it down:
 
 We could, of course, just return `url` as-is, and handle getting the property we need from it in the template instead. That could even make our `+layout.js` file a one-liner.
 
-However, I personally prefer to keep the `.svelte` file as clean as possible. I'd rather do as much dirty work inside the `load` function as I can, and let the mess exist out of sight. (Besides: there's no point in having extra properties flying around inside the template if we're not going to use them.)
+However, I personally prefer to keep the `.svelte` file as clean as possible. I'd rather do as much dirty work inside the `load` function as I can, and let the mess exist out of sight. Besides: there's no point in having extra properties flying around inside the template if we're not going to use them.
 
 
 ### Accessing data returned from `load`
@@ -288,12 +288,12 @@ So, heading back to `+layout.svelte`, we can declare and access the `data` prop,
 {/key}
 ```
 
-That's the simplest way to it; just use `data.pathname` right in the template. But if you're like me, and like to destructure variables, there's a gotcha to be aware of.
+That's the simplest way to do it; just use `data.pathname` right in the template. But if you're like me, and like to destructure variables, there's a gotcha to be aware of.
 
 
 #### Gotcha: destructuring the data object
 
-While the `data` object we get from the `load` function is, itself reactive, remember that any variables declared from it will ***not*** be.
+While the `data` object we get from the `load` function is itself reactive, remember that any variables declared from it will ***not*** be.
 
 In other words, this won't work:
 
@@ -306,7 +306,7 @@ In other words, this won't work:
 </script>
 
 {#key pathname}
-  <!-- Contents aren't re-rendered -->
+  <!-- Contents aren't re-rendered on page load -->
 {/key}
 ```
 
@@ -346,9 +346,9 @@ Alternatively, you could use this shorthand, if you prefer destructuring:
 {/key}
 ```
 
-Either way will work just the same. It's just a matter of preference. The important part is making `pathname` a reactive declaration, if you choose to destructure that property.
+Either way will work just the same. It's just a matter of preference. The important part is making `pathname` a reactive declaration, using Svelte's `$:` operator, if you choose to destructure that property.
 
-Or, skip it and just use `data.pathname` like that, without declaring a new variable at all. Totally up to you.
+Or, skip it and just use `data.pathname` as-is, without declaring a new variable at all. Totally up to you.
 
 
 ## Assembling the pieces
@@ -389,7 +389,7 @@ We'll start by removing `transition:fade`, and replacing it with separate `in:fa
 
 Next, we'll supply each of those two attributes with an object of configuration options.
 
-And finally, we'll set a `delay` to the `in` transition, and set a `duration` on both, just to be sure we know exactly how long the fade is actually taking (and so we can shorten or lengthen it as we like).
+And finally, we'll add a `delay` to the `in` transition, and set a `duration` on both, just to be sure we know exactly how long the fade is actually taking (and so we can shorten or lengthen it as we like).
 
 ```svelte
 {#key pathname}
@@ -411,6 +411,7 @@ All transition timing properties are in milliseconds.
 You may notice the `delay` is slightly longer than the duration. That's mainly just because I think it creates a nice effect when there's a very short pause of "blankness" between transitions, rather than rapidly jumping between the two.
 
 But also: JavaScript timing is not always precise. A slight pause between the in and out transitions also acts as a buffer against jank.
+
 
 ## The final code
 
@@ -513,6 +514,43 @@ Plus, arguably, a fade alone isn't really that cool anyway. When it comes to Sve
 The `fly` transition combines movement with fading. You can supply it with `x` and/or `y` options to control the movement--though I wouldn't recommend using both together, unless you're just going for a really wild effect, and, of course, [respecting the user's motion preferences](/blog/great-transitions#bonus-respect-the-users-preferences). (You can also specify `opacity`, but the default is generally what you want.)
 
 The above transition is actually nearly identical to the transitions used on this website.
+
+
+## Optional: tidy it up
+
+At this point, our markup is getting just a little crowded with the transition options objects. It might be a little tricky to maintain--particularly if we add more properties, or if we start messing with the numbers. Any timing change could mean multiple values will need to be updated.
+
+So we can make life a little easier on ourselves by organizing the transition options a bit, and moving the complexity out of the template and into the `script` tag:
+
+```svelte
+<script>
+  import { fly } from 'svelte/transition'
+  import { cubicIn, cubicOut } from 'svelte/easing'
+
+  export let data
+
+  const duration = 300
+  const delay = duration * 1.33
+  const y = 10
+
+  const transitionIn = { easing: cubicOut, y, duration, delay }
+  const transitionOut = { easing: cubicIn, y: -y, duration }
+</script>
+
+
+{#key data.pathname}
+  <div
+    in:fly={transitionIn}
+    out:fly={transitionOut}
+  >
+    <slot />
+  </div>
+{/key}
+```
+
+There are two nice things about this approach. For one, it keeps the markup cleaner. But more importantly: **now you only need to update one variable to modify all the timing**. (You can also update the absolute value of the `y` transition in just one place.) This makes adjustments and tinkering much easier.
+
+We've got enough code here now that we might even consider abstracting this `div` to its own `<PageTransition>` component, rather than have all of this just sitting inside our `+layout.svelte` file, where there's sure to be plenty else going on, too.
 
 
 ## Try it out
