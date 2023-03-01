@@ -12,6 +12,6 @@
 	
 	<p>Neat, huh?</p>
 	
-	<a href="/blog/sveltekit-page-transitions#back-from-example">Follow this link to go back to reading.</a>
+	<a href="/blog/sveltekit-page-transitions#what-is-a-page-transition">Follow this link to go back to reading.</a>
 </Main>
 

@@ -21,11 +21,11 @@
 	<div
 		class="transition-wrapper"
 		class:span
-		in:fly={ { 
+		in:fly={{ 
 			y: yIn,
 			duration: transitionIn ? TIMING_DURATION : 0,
 			delay: transitionIn ? TIMING_DURATION : 0,
-			easing: cubicOut 
+			easing: cubicOut
 		}}
 		out:fly={{
 			y: yOut,
