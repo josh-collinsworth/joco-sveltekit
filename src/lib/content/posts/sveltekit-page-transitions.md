@@ -10,7 +10,7 @@ categories:
 coverImage: sveltekit-page-transitions.png
 coverWidth: 120
 coverHeight: 63
-excerpt: Transitions, easing, and routing are all baked into SvelteKit. This makes utilizing page transitions effects as easy as adding a few lines of layout code.
+excerpt: Transitions, easing, and routing are all baked into SvelteKit. This makes utilizing page transition effects in SvelteKit sites and apps as easy as adding just a few lines of code.
 ---
 
 <script>
