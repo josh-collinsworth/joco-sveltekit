@@ -592,7 +592,7 @@ Here's a very basic example (with the other bits stripped out, just to keep the 
 {/if}
 ```
 
-At a very basic level, that should do the trick. I leave the details of how to implement the loader up to you. You may want to add a transition to it; or, you may not want it inside a conditional statement at all. Maybe you'd prefer to keep it in the DOM and simply change its `opacity` (and probably `pointer-events`) when the page is loading.
+It's very basic, but that should do the trick. I leave the details of how to implement the loader up to you. You may want to add a transition to it; or, you may not want it inside a conditional statement at all. Maybe you'd prefer to keep it in the DOM and simply change its `opacity` (and probably `pointer-events`) when the page is loading.
 
 One other small note: you may want to check if the clicked link is an external link before setting `isLoading`. You can do so like this:
 
@@ -609,9 +609,7 @@ beforeNavigate(({ to }) => {
 If you want to get fancy with a bit of code golf, you can make that a one-liner with a little Nancy Sinatra:
 
 ```js
-beforeNavigate(({ to }) => {
-  isLoading = !!to.route.id
-})
+beforeNavigate(({ to }) => isLoading = !!to.route.id)
 ```
 
 (Nancy Sinatra...get it? _Bang Bang_? ...Ugh. I knew I should've gone with Jessie J instead. Ok, moving on.)
