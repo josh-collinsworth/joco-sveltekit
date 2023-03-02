@@ -7,8 +7,8 @@ categories:
   - design
   - web
 coverImage: easing/cubic-bezier.png
-coverWidth: 16
-coverHeight: 9
+coverWidth: 320
+coverHeight: 180
 excerpt: The easing curve can make or break any animation on the web. Let's look at the science of CSS cubic-bezier curves, and the art of using them to make the best web animations possible.
 ---
 

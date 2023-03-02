@@ -1,15 +1,15 @@
 ---
 title: Adding page transitions in SvelteKit
 date: 2023-03-01
-updated: 2023-03-01
+updated: 2023-03-02
 categories:
   - javascript
   - design
   - web
   - svelte
 coverImage: sveltekit-page-transitions.png
-coverWidth: 120
-coverHeight: 63
+coverWidth: 320
+coverHeight: 180
 excerpt: Transitions, easing, and routing are all baked into SvelteKit. This makes utilizing page transition effects in SvelteKit sites and apps as easy as adding just a few lines of code.
 ---
 

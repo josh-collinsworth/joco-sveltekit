@@ -8,8 +8,8 @@ categories:
   - web
   - advice
 coverImage: great-transitions.png
-coverWidth: 16
-coverHeight: 9
+coverWidth: 320
+coverHeight: 180
 excerpt: Creating high-quality, polished web animations is both a science and an art. This post covers the best things I've learned over the last decade of crafting web UIs.
 ---
 
