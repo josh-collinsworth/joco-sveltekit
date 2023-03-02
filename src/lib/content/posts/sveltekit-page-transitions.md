@@ -598,7 +598,7 @@ One other small note: you may want to check if the clicked link is an external l
 
 ```js
 beforeNavigate(({ to }) => {
-  if (!to.route.id) {
+  if (to.route.id) {
     isLoading = true
   }
 })
