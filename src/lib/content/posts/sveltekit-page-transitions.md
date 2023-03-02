@@ -553,6 +553,70 @@ There are two nice things about this approach. For one, it keeps the markup clea
 We've got enough code here now that we might even consider abstracting this `div` to its own `<PageTransition>` component, rather than have all of this just sitting inside our `+layout.svelte` file, where there's sure to be plenty else going on, too.
 
 
+## Extra credit: add a loading indicator
+
+[***Note:*** _this section, and the stupid parenthetical joke at the end of it, were added post-publish based on feedback from the [r/sveltejs subreddit](https://www.reddit.com/r/sveltejs/comments/11fiseb/adding_page_transitions_in_sveltekit_selfpromo/)_.]
+
+One thing you might notice when using page transitions: because the new page needs to load in via JavaScript, there can sometimes be a noticeable delay between the initial click/tap/etc., and the actual page navigation.
+
+That's not the greatest, from a UX perspective. It could even be confusing, and make the user think their click didn't register at all.
+
+<CalloutPlusQuote>
+
+When using page transitions, it's probably also a good idea to use some kind of a loading indicator.
+
+</CalloutPlusQuote>
+
+I won't go too far into the specifics here; this is a relatively deep rabbit hole that could easily become its own post. But at a basic level, here's what that might look like:
+
+1. Create a `<Loader>` component. This could be a simple spinner, an overlay, bouncing dots...whatever you like, really, just as long as it indicates the new page is loading in.
+2. Tap into SvelteKit's `beforeNavigate` and `afterNavigate` to update state during page loads.
+3. Show the loader conditionally based on that state change.
+
+Here's a very basic example (with the other bits stripped out, just to keep the code simpler):
+
+```svelte
+<!-- src/routes/+layout.svelte -->
+<script>
+  import Loader from '$lib/components/Loader.svelte' // Or whatever your component path is
+  import { beforeNavigate, afterNavigate } from '$app/navigation'
+
+  let isLoading = false
+
+  beforeNavigate(() => isLoading = true)
+  afterNavigate(() => isLoading = false)
+</script>
+
+{#if isLoading}
+  <Loader />
+{/if}
+```
+
+At a very basic level, that should do the trick. I leave the details of how to implement the loader up to you. You may want to add a transition to it; or, you may not want it inside a conditional statement at all. Maybe you'd prefer to keep it in the DOM and simply change its `opacity` (and probably `pointer-events`) when the page is loading.
+
+One other small note: you may want to check if the clicked link is an external link before setting `isLoading`. You can do so like this:
+
+```js
+beforeNavigate(({ to }) => {
+  if (!to.route.id) {
+    isLoading = true
+  }
+})
+```
+
+`to.route.id` contains the internal SvelteKit ID of the route being accessed. If the property is undefined, we can conclude pretty safely that the clicked link was external.
+
+If you want to get fancy with a bit of code golf, you can make that a one-liner with a little Nancy Sinatra:
+
+```js
+beforeNavigate(({ to }) => {
+  isLoading = !!to.route.id
+})
+```
+
+(Nancy Sinatra...get it? _Bang Bang_? ...Ugh. I knew I should've gone with Jessie J instead. Ok, moving on.)
+
+
 ## Try it out
 
 If you'd like to try some transitions out for yourself, my [SvelteKit Static Blog Starter](https://github.com/josh-collinsworth/sveltekit-blog-starter) may be a good playground (and easier than setting things up from scratch).

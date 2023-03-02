@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { LayoutData } from './$types';
+	import type { LayoutData } from './$types'
 	import '$lib/assets/scss/global.scss'
 	
 	import throttle from 'just-throttle'
@@ -51,19 +51,18 @@
 		}
 		lastScrollPosition = currentScrollPosition
 	}, 100)
-	
-	const startPageTransition = () => {
+
+	beforeNavigate(({ to }) => {
+		if (!to.route.id) return
+
 		setLoading(true)
 		root.classList.remove('smooth-scroll')
-	}
-	
-	const endPageTransition = async () => {
+	})
+
+	afterNavigate(() => {
 		setLoading(false)
 		root.classList.add('smooth-scroll')
-	}
-
-	beforeNavigate(() => startPageTransition() )
-	afterNavigate(() => endPageTransition() )
+	})
 
 	onMount(() => {
 		root = document.documentElement
