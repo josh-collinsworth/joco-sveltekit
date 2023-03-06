@@ -1,7 +1,7 @@
 ---
 title: Adding page transitions in SvelteKit
 date: 2023-03-01
-updated: 2023-03-02
+updated: 2023-03-06
 categories:
   - javascript
   - design
@@ -44,7 +44,7 @@ You can pronounce each letter in SPA, as an acronym, or say it like the word "sp
 
 Recently, though, SPAs have come under heavy criticism. I won't link to the `#hotdrama` here, but suffice to say: some in the web community feel the benefits of SPAs (app-like transitions; arguably better user experience) were heavily oversold, as their drawbacks (accessibility and performance issues) were downplayed.
 
-While there's merit to that position, I'm not here to weigh in on the benefits and tradeoffs between SPAs and "multi-page" apps (we used to just call them websites). Because luckily, SvelteKit makes it very easy to ask: _porque no los dos_?
+While there's merit to that position, I'm not here to weigh in on the benefits and tradeoffs between SPAs and "multi-page" apps (we used to just call them websites). Because luckily, SvelteKit makes it very easy to ask: _¿por qué no los dos?_
 
 <FloatedImage alt="The 'why not both?' meme, asking why don't we have both?" path="/images/post_images/porque.png" />
 
@@ -65,7 +65,7 @@ This means with SvelteKit, we can implement [progressively enhanced](https://en.
 
 </Callout>
 
-And as a bonus: implementing page transitions in SvelteKit requires very little code to implement.
+And as a bonus: implementing page transitions in SvelteKit requires very little code.
 
 But before we get into the _how_, let's spend a little time on _what_ page transitions are, and _why_ you might want them.
 
@@ -77,16 +77,6 @@ A page transition is a visual effect that replaces normal page loading behavior.
 For example, the old page might fade away as the new page materializes. Or, the old might slide off to the left as the new one enters from the right. You could even combine these effects, or do anything else you could possibly dream of that's possible in CSS and/or JavaScript.
 
 (This site uses page transitions; [here's a quick example](/blog/page-transition-example).)
-
-<CalloutPlusQuote>
-
-This type of transition is common in mobile apps, as well as in slide presentations. However, just as in Keynote or PowerPoint, while high quality transitions can add an impressive sheen, they're also easily overdone.
-
-</CalloutPlusQuote>
-
-With great power comes great responsibility; we want to make sure we're not giving our users vertigo, making them wait too long, or confusing them with an overwhelming flurry of movement. 
-
-Don't get me wrong; page transitions are undeniably nifty. (Source: me.) But [a little goes a long way](/blog/great-transitions).
 
 
 
@@ -122,9 +112,7 @@ That brings us to…
 
 Benefits aside, there _are_ a few important drawbacks of page transitions that we should consider.
 
-First of all, **page transitions require JavaScript**--for now, at least. The [view transitions API](https://developer.chrome.com/docs/web-platform/view-transitions/) is on the horizon, and it's quite possible that within a year or two of this writing, we could have this type of transition available (and progressively enhanced!) in all modern browsers.
-
-For now, however, page transitions unavoidably require extra JavaScript. That's not necessarily a bad thing per se, but it does add a bit to your bundle size.
+First of all, **page transitions require JavaScript**--for now, at least. The [view transitions API](https://developer.chrome.com/docs/web-platform/view-transitions/) is on the horizon, and it's quite possible that within a year or two of this writing, we could have this type of transition available (and progressively enhanced!) in all modern browsers. For now, however, page transitions unavoidably require extra JavaScript.
 
 Another drawback: **page transitions can be difficult to implement accessibly**. This is more of a concern when rolling your own page transition from scratch than it is when working with SvelteKit--which generally handles things like setting focus properly and making sure the back button works--but it's still something to be aware of.
 
@@ -134,11 +122,11 @@ Rather than looking impressive, a poorly implemented page transition risks seemi
 
 </PullQuote>
 
-Also: if poorly implemented, **page transitions can have the opposite of the desired effect**. Rather than looking impressive, a bad page transition risks seeming amateurish or over-the-top. It's easier to have too much than too little. So if you choose to add transitions, don't go too wild. (Unless, of course, this is a purely personal project where it doesn't matter, in which case: [GLHF](https://en.wiktionary.org/wiki/glhf).)
+Also: if poorly implemented, **page transitions can have the opposite of the desired effect**. Rather than looking impressive, a bad page transition risks seeming amateurish or over-the-top. It's easier to have too much than too little. So if you choose to add transitions, know that [a little goes a long way](/blog/great-transitions).
 
-Finally, page transitions risk making your site _feel_ a little slower than it might otherwise, since animating between two pages naturally takes time.
+With great power comes great responsibility; we want to make sure we're not giving our users vertigo, making them wait too long, or confusing them with an overwhelming flurry of movement. 
 
-However, as mentioned in the above section, this could go the opposite way, too. It just depends. You might nail an impressive bullseye, or you might shoot yourself in the foot. It's all in the execution.
+Finally, page transitions risk making your site _feel_ a little slower than it might otherwise, since animating between two pages naturally takes time. However, as mentioned in the above section, this could go the opposite way, too. It just depends. You might nail an impressive bullseye, or you might shoot yourself in the foot. It's all in the execution.
 
 
 ## How page transitions are built in SvelteKit
@@ -200,17 +188,15 @@ That's normal; that's how stuff in the layout file _should_ work. But it's not w
 We need this `div` to re-render every time the URL changes—and _that's_ where `key` blocks come in…
 
 
-### A `key` block
+### A `#key` block
 
 <CalloutPlusQuote>
 
-A `key` block is markup that reacts to state. Whenever that state changes, the block will re-render.
+A `#key` block is markup that reacts to state. Whenever that state changes, the block will re-render.
 
 </CalloutPlusQuote>
 
-You could think of this as injected reactivity; we want to _watch_ an expression (just a variable, in this case), and when that changes, re-render the markup in the block.
-
-In more casual terms: a `key` block lets you say, "hey, Svelte: here's a thing. Keep an eye on it, and whenever it changes, re-render this chunk of code."
+You could think of this as injected reactivity. In more casual terms, though: a `#key` block lets you say, "hey, Svelte: keep an eye on that thing there, and whenever it changes, re-render this chunk of code."
 
 ("Sure thing!" Svelte replies, in Rich Harris's charming British accent. But I digress.)
 
@@ -226,6 +212,12 @@ _Ok_, you might be thinking. _Sounds good so far. But…how do we actually_ get 
 Smart question!
 
 We'll need a variable that holds the current path, and updates on navigation. And for that, we'll need to rely on data from the `load` function.
+
+<SideNote>
+
+`#key` blocks can also watch an expression; it doesn't have to be a variable.
+
+</SideNote>
 
 
 ### The `load` function
@@ -481,7 +473,7 @@ To use one, import it from `svelte/easing`. Then, you can apply it in the option
 
 <SideNote>
 
-You might have noticed the "in" transition is an easing **out**, and vice versa. [That's intentional](/blog/great-transitions#8-ins-go-out-outs-go-in). The naming is just a little confusing.
+You might have noticed the "in" transition is an easing **out**, and vice versa. [That's intentional](/blog/great-transitions#8-ins-go-out-outs-go-in). The name refers to the type of easing curve, not what kind of transition it's meant to be used for.
 
 </SideNote>
 
@@ -511,9 +503,9 @@ Plus, arguably, a fade alone isn't really that cool anyway. When it comes to Sve
 {/key}
 ```
 
-The `fly` transition combines movement with fading. You can supply it with `x` and/or `y` options to control the movement--though I wouldn't recommend using both together, unless you're just going for a really wild effect, and, of course, [respecting the user's motion preferences](/blog/great-transitions#bonus-respect-the-users-preferences). (You can also specify `opacity`, but the default is generally what you want.)
+The `fly` transition combines movement with fading. You can supply it with `x` and/or `y` options to control the movement--though I wouldn't recommend using both together, unless you're just going for a really wild effect, and, of course, [respecting the user's motion preferences](/blog/great-transitions#bonus-respect-the-users-preferences). (You can also specify `opacity`, but the default fades from `0` to `1` and vice versa, which is generally what you want.)
 
-The above transition is actually nearly identical to the transitions used on this website.
+For what it's worth: the above transition is actually nearly identical to the transitions used on this website.
 
 
 ## Optional: tidy it up
@@ -559,7 +551,7 @@ We've got enough code here now that we might even consider abstracting this `div
 
 One thing you might notice when using page transitions: because the new page needs to load in via JavaScript, there can sometimes be a noticeable delay between the initial click/tap/etc., and the actual page navigation.
 
-That's not the greatest, from a UX perspective. It could even be confusing, and make the user think their click didn't register at all.
+That's not a great user experience. It could even be confusing, and make the user think their click didn't register at all.
 
 <CalloutPlusQuote>
 
@@ -569,7 +561,7 @@ When using page transitions, it's probably also a good idea to use some kind of 
 
 I won't go too far into the specifics here; this is a relatively deep rabbit hole that could easily become its own post. But at a basic level, here's what that might look like:
 
-1. Create a `<Loader>` component. This could be a simple spinner, an overlay, bouncing dots...whatever you like, really, just as long as it indicates the new page is loading in.
+1. Create a `<Loader>` component. This could be a simple spinner, an overlay, bouncing dots, a progress bar...whatever you like, really, just as long as it indicates the new page is loading in.
 2. Tap into SvelteKit's `beforeNavigate` and `afterNavigate` to update state during page loads.
 3. Show the loader conditionally based on that state change.
 
@@ -592,7 +584,7 @@ Here's a very basic example (with the other bits stripped out, just to keep the 
 {/if}
 ```
 
-It's very basic, but that should do the trick. I leave the details of how to implement the loader up to you. You may want to add a transition to it; or, you may not want it inside a conditional statement at all. Maybe you'd prefer to keep it in the DOM and simply change its `opacity` (and probably `pointer-events`) when the page is loading.
+Again, it's very basic, but that should do the trick. I leave the details of how to implement the loader up to you. You may want to add a transition to it; or, you may not want it inside a conditional statement at all. Maybe you'd prefer to keep it in the DOM and simply change its `opacity` (and probably `pointer-events`) when the page is loading.
 
 One other small note: you may want to check if the clicked link is an external link before setting `isLoading`. You can do so like this:
 
@@ -604,9 +596,9 @@ beforeNavigate(({ to }) => {
 })
 ```
 
-`to.route.id` contains the internal SvelteKit ID of the route being accessed. If the property is undefined, we can conclude pretty safely that the clicked link was external.
+`to.route.id` contains the internal SvelteKit ID of the route being accessed. If the property is undefined, we can conclude pretty safely that the clicked link was external. (Though you may want to use [optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) when drilling down into the object, just to be extra safe.)
 
-If you want to get fancy with a bit of code golf, you can make that a one-liner with a little Nancy Sinatra:
+If you want to get fancy, you can make that a one-liner with a little Nancy Sinatra:
 
 ```js
 beforeNavigate(({ to }) => isLoading = !!to.route.id)

@@ -5,10 +5,6 @@
 	export let to: string
 	export let path: string
 	export let mobileOnly: string|boolean = false
-	
-	const closeMenu = (): void => {
-		isMenuOpen.set(false)
-	}
 
 	let isCurrentPage: boolean
 	$: isCurrentPage = path === to
@@ -27,7 +23,6 @@
 		class="nav__link"
 		class:active={isCurrentPage}
 		aria-current={isCurrentPage ? 'page' : false}
-		on:click={closeMenu}
 	>	
 		<span>{text}</span>
 	</a>	

@@ -14,6 +14,7 @@
 	import { dev } from '$app/environment'
 
 	let root: HTMLElement
+	let isFrame = false
 
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
@@ -33,6 +34,7 @@
 	afterNavigate(() => endPageTransition() )
 
 	onMount(() => {
+		if (window.self !== window.top) isFrame = true
 		root = document.documentElement
 		root.classList.add('smooth-scroll')
 		if (!prefersReducedData()) {
@@ -61,5 +63,7 @@
 		<slot />
 	</div>
 
-	<Footer />
+	{#if !isFrame}
+		<Footer />
+	{/if}
 </div>

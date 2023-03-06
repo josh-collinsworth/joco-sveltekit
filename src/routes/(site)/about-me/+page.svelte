@@ -35,10 +35,9 @@
 		</p>
 
 		<p>
-			Before entering into the tech world, I spent a few years as a graphic designer (that's what my degree is in),
-			and prior to that, I mostly bartended, waited tables, played in bands. I currently live in the Kansas City area, 
-			but was previously in Omaha for many years.
-		</p>
+			Before entering tech, I spent a few years as a graphic designer (that's what my degree is in). Prior to that, I was a bartender and server, and regularly gigged as a musician, though that's all been many years ago now.</p>
+			
+		<p>I moved to the Kansas City area fairly recently, but was in Omaha for many years before that.</p>
 
 		<p>
 			Personally, I am a:

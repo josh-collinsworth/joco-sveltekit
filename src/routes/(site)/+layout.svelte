@@ -9,7 +9,7 @@
 	import PageHeading from '$lib/components/PageHeading.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { prefersReducedData } from '$lib/assets/js/utils'
-	import { isLoading, prefersReducedMotion, isScrollingDown } from '$lib/data/store'
+	import { isLoading, prefersReducedMotion, isScrollingDown, isMenuOpen } from '$lib/data/store'
 	import { onMount } from 'svelte'
 	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation'
 	import { dev } from '$app/environment'
@@ -27,14 +27,10 @@
 	let isSinglePost: boolean
 	$: isSinglePost = isSinglePostCheck.test(path)
 
-	const setLoading = (newState: boolean): void => {
-		isLoading.set(newState)
-	}
-
 	const handleScroll = throttle(() => {
 		// Early return if we're above mobile width
 		if (window.outerWidth >= 768) {
-			if ($isScrollingDown) isScrollingDown.set(false)
+			if ($isScrollingDown) $isScrollingDown = false
 			return
 		}
 
@@ -45,22 +41,23 @@
 		}
 
 		if (lastScrollPosition > currentScrollPosition) {
-			isScrollingDown.set(false)
+			$isScrollingDown = false
 		} else if (currentScrollPosition > 240) {
-			isScrollingDown.set(true)
+			$isScrollingDown = true
 		}
 		lastScrollPosition = currentScrollPosition
 	}, 100)
 
 	beforeNavigate(({ to }) => {
-		if (!to.route.id) return
-
-		setLoading(true)
-		root.classList.remove('smooth-scroll')
+		$isMenuOpen = false
+		if (to?.route?.id) {
+			$isLoading = true
+			root.classList.remove('smooth-scroll')
+		}
 	})
 
 	afterNavigate(() => {
-		setLoading(false)
+		$isLoading = false
 		root.classList.add('smooth-scroll')
 	})
 

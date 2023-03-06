@@ -1,7 +1,7 @@
 ---
 title: Ten tips for better CSS transitions and animations
 date: 2023-02-28
-updated: 2023-02-28
+updated: 2023-03-06
 categories:
   - css
   - design
@@ -34,7 +34,7 @@ There are certain things you just know when you experience them, even if you don
 
 You might not know anything about interiors, but you feel it when you're in a well-designed space.
 
-Even if you don't know the first thing about design, you can likely distinguish a good design from a bad one. You might not have any idea _why_ this one is better, or what specific details make that one worse, but you know it for sure, intuitively and without question.
+Similarly, you can likely distinguish a good app from a bad app, even if you can't explain what makes one _feel_ better than the other.
 
 In just that same way: users may not realize what it is _about_ the transitions or animations on our websites and apps, but they can keenly spot the difference between good and bad. They intuitively know when an app's movement _feels_ good, and when the impression is instead generic or unpolished--even if they can't explain how or why.
 

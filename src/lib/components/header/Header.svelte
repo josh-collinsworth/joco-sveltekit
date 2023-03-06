@@ -7,14 +7,6 @@
 	import { isMenuOpen, isScrollingDown } from '$lib/data/store'
 
 	export let path: string
-
-	const toggleMenu = (): void => {
-		isMenuOpen.set(!$isMenuOpen)
-	}
-
-	const handleClick = (): void => {
-		if ($isMenuOpen) toggleMenu()
-	}
 	
 	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
 	const focusMain = (e: Event): void => {
@@ -31,7 +23,7 @@
 			Skip to main content
 		</a>
 
-		<a href="/" class="logo" on:click={handleClick}>
+		<a href="/" class="logo">
 			<LogoSVG />
 			<span class="sr">Home</span>
 		</a>
