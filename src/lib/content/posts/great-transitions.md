@@ -1,7 +1,7 @@
 ---
 title: Ten tips for better CSS transitions and animations
 date: 2023-02-28
-updated: 2023-03-06
+updated: 2023-03-08
 categories:
   - css
   - design
@@ -38,7 +38,7 @@ Similarly, you can likely distinguish a good app from a bad app, even if you can
 
 In just that same way: users may not realize what it is _about_ the transitions or animations on our websites and apps, but they can keenly spot the difference between good and bad. They intuitively know when an app's movement _feels_ good, and when the impression is instead generic or unpolished--even if they can't explain how or why.
 
-So to hopefully get a better understanding of what's giving off those vibes--and how to sidestep the bad ones when building your own UIs--I've assembled this collection  of things I've learned about crafting transitions and animations on the web over the last decade or so.
+So to get a better understanding of what's giving off those vibes--and how to sidestep the bad ones when building your own UIs--I've assembled this collection of things I've learned about crafting transitions and animations on the web over the last decade or so.
 
 <SideNote>
 
@@ -57,9 +57,9 @@ The absolute #1 dead giveaway of poorly designed movement is that it lasts _way_
 
 </CalloutPlusQuote>
 
-Your users aren't as enamored—and therefore, not as patient—as you are. They came here to get something done, and they aren't interested in waiting longer than they need to for anything, regardless of how cool it may be.
+Your users aren't as enamored—and therefore, not as patient—as you are. They came here to get something done, and they aren't interested in waiting longer than they need to, regardless of how cool it may be.
 
-My advice is: try to make your transitions as quick as possible, without being so short that a user might miss them. As a rule of thumb, I find that most single transitions work best somewhere in the 150–400 millisecond range (0.15 to 0.4 seconds). If you have back-to-back transitions--as one element moves out then another moves in, for example--you can double that, and add a little time between them, too. (You wouldn't want the whiplash of _two_ separate animations rushing by.)
+My advice is: try to make your transitions as quick as possible, without being so short that a user might miss them. As a rule of thumb, I find that most single transitions work best somewhere in the 150–400 millisecond range (0.15 to 0.4 seconds). If you have back-to-back transitions--as one element moves out then another moves in afterwards, for example--you can double that, and add a little time between them, too. (You wouldn't want the whiplash of _two_ separate animations rushing by.)
 
 <CalloutPlusQuote>
 
@@ -67,9 +67,7 @@ Keep making it faster until it feels _too_ fast, then back it off just a little.
 
 </CalloutPlusQuote>
 
-That said, however: there are always exceptions, and the bigger the change is on the page, the more noticeable the transition should probably be. There's a big difference between, say, a nice little accent animation for the number of items in your cart updating, and an entire page transitioning out. 
-
-It feels normal when a fly zips by you, but it feels unnerving when a bus does. Don't let big changes go by _too_ fast.
+That said, however: there are always exceptions, and the bigger the change is on the page, the more noticeable the transition should probably be. There's a big difference between, say, a nice little accent animation for the number of items in your cart updating, and an entire page transitioning out. Don't let big changes go by _too_ fast.
 
 One final point worth noting: **an animation might not always _feel_ as long as it actually is**. A transition with a very slow ease-in might seem like it doesn't start right away; conversely, a transition with a long tail might _seem_ finished before it technically is. Keep that in mind. Perception is reality, so how the change _feels_ is more important than what the duration technically is in the code.
 
@@ -130,11 +128,9 @@ The same goes in reverse; if an element is fading to `opacity: 0`, then it may n
 
 ## 4. Less is more
 
-A lot of these tips could be pretty well summarized as "less is more." Words I've often needed to hear: _not everything needs a transition_.
+A lot of these tips could be pretty well summarized as "less is more."
 
-It's easy to get carried away and make every single thing on the page animate in. (I've certainly been guilty of that.) But unless this is your personal website and you just feel like going a little crazy, too much movement can easily do more harm than good.
-
-It's easy to go overboard as you're laser-focused on making an animation as impressive as possible. However, when it comes to transitioning things with CSS, understated is usually better than overstated.
+It's easy to get carried away and make every single thing on the page animate in. (I've certainly been guilty of that.) But unless this is your personal website and you just feel like going a little wild, too much movement can easily do more harm than good. When it comes to transitioning things with CSS, understated is usually better than overstated.
 
 <CalloutPlusQuote>
 
@@ -142,9 +138,9 @@ The more an element changes during an animation, the more the transition risks s
 
 </CalloutPlusQuote>
 
-If you're animating `opacity` from 0 to 1, maybe try a smaller range, like 0.4 to 1 instead. If your element scales up to full size, try making it just slightly smaller to start, rather than so small it can't be seen.
+If you're animating `opacity` from 0 to 1 (or the other way around), maybe try a smaller range, like 0.4 to 1 instead. If your element scales up to full size, try making it just slightly smaller to start, rather than so small it can't be seen.
 
-Does an element slide into place? I find that in most cases, movement like that should be in the range of about 5–40 pixels. Any less, and the movement may be too subtle to even notice; much more, and a deft slide may become a clumsy crash.
+Does an element slide into place? I find that in most cases, movement like that should be in the range of about 5–40 pixels. Any less, and the movement may be too subtle to even notice; much more, and a smooth slide may become a clumsy crash.
 
 Doing too much can be worse than doing nothing at all. So find the point where the transition is just enough to be effective, and if you go further, do so cautiously.
 
@@ -153,7 +149,7 @@ Doing too much can be worse than doing nothing at all. So find the point where t
 
 You may already know the browser has some built-in easing curves available to use: `linear`, `ease`, `ease-in`, `ease-out`, and `ease-in-out`.
 
-However, while these five named timing functions are convenient, they're also very generic. (Many of the animations built into tools and libraries online fall prey to the same homogeny, even if they do offer a wider range of options.)
+However, while these five named timing functions are convenient and useful in some situations, they're also very generic. (Many of the animations built into tools and libraries online fall prey to the same homogeny, even if they do offer a wider range of choices.)
 
 If you want to get the most out of movement, you should reach beyond the most common off-the-shelf named options.
 
@@ -198,7 +194,7 @@ You _could_ apply the same `cubic-bezier` curve to both properties, as shown her
 /* ❌ Also maybe not ideal: */
 @keyframes scale_and_appear {
   from {
-    opacity: 0;		
+    opacity: 0;
     transform: scale(0);
   }
 }
@@ -251,9 +247,9 @@ Here's a demo; as the boxes alternate in and out, notice how `opacity` and `scal
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-Which one is _better_ depends on the effect you're going for. 
+Which one is _better_? Well, that all depends on the effect you're going for.
 
-Again, this one may not come up too often, but it's extremely handy when it does, and also easy to forget about, so it gets a spot on the list.
+Again, this one may not come up too often, but it's very handy when it does, and also easy to forget about, so it gets a spot on the list.
 
 You could even go so far as to change the duration of each property, but be careful things don't go out of sync if you decide to get that wacky.
 
@@ -275,16 +271,16 @@ In the pen above, the first line just transitions all at once. Fine, but not par
 
 In each line following, however, varying degrees of delay are applied to each letter, to create a playful "bounce-in" effect. There's even one that goes backwards, and one that causes the line to appear from the middle out.
 
-All this said: there's a reason I put _less is more_ ahead of this point. **It's very easy to overdo animations like this**, especially when there are _lots_ of elements transitioning, as in the example. I used lots of letters and much more overstated movement than I normally would, just to illustrate the technique. In practice, an animation exactly like this would probably be too over-the-top for most UI work.
+All this said: remember _less is more_. **It's very easy to overdo animations like this**, especially when there are _lots_ of elements transitioning, as in the example. It's much more overstated than I'd generally recommend, just for demonstration purposes, and probably a little too busy for most UI work.
 
-However, there are opportunities to apply this effect on a more subtle scale. Dots in a loading screen, maybe? Perhaps when a drawer or hamburger menu is opened, each item might appear on a slight delay?
+That said: there are opportunities to apply this effect on a more subtle scale. Dots in a loading screen, maybe? Perhaps when a drawer or hamburger menu is opened, each item might appear on a slight delay?
 
 Again, keep it short and subtle. But where applied well, staggered delays can help take web transitions to another level.
 
 
 ## 8. Ins go out, outs go in
 
-If you've looked at various kinds of easing curves, you may have noticed they tend to come in three varieties: an ease _in_ (starts slower), ease _out_ (ends slower), and in-out (which is essentially both; faster in the middle and slower at the beginning and the end).
+If you've looked at various kinds of easing curves, you may have noticed they tend to come in three varieties: an ease _in_ (starts slower), ease _out_ (ends slower), and _in-out_ (which is essentially both; faster in the middle and slower at the beginning and the end).
 
 <CalloutPlusQuote>
 
@@ -307,7 +303,7 @@ Those two would come together to create the effect of one seamless movement.
 
 ## 9. Lean on hardware acceleration
 
-Not all CSS properties can be animated or transitioned smoothly across all devices and browsers. In fact, there are only a handful of properties that are capable of tapping into a device's hardware acceleration for the smoothest, highest-framerate transitions possible.
+Not all CSS properties can be animated or transitioned smoothly across all devices and browsers. In fact, only a handful are capable of tapping into a device's hardware acceleration for the smoothest, highest-framerate transitions possible.
 
 <SideNote>
 
@@ -335,11 +331,11 @@ If you want to move, scale, or rotate an element, always use the CSS `transform`
 
 </CalloutPlusQuote>
 
-Because `transform` doesn't affect layout, applying or modifying a transformation won't cause any reflow or repaint, which minimizes recalculations and keeps the browser humming along smoothly. Handily, many of the most common animations and transitions you might use on the web can be achieved using some combination of `transform` and `opacity`.
+Applying a `transform` won't affect layout, which minimizes recalculations and keeps the browser humming along smoothly. Handily, many of the most common animations and transitions you might use on the web can be achieved using some combination of `transform` and `opacity`.
 
-But whatever you do, _avoid changing the size or placement of an element directly_. If you change a property like `height`, `width`, `border`, `margin` or `padding`--anything that could potentially affect the layout of the elements on the page--you risk noticeably slowing down the browser with the calculations involved to make that change.
+But whatever you do, _avoid changing the size or placement of an element directly_. If you change a property that could potentially affect the layout of the elements on the page--`height`, `width`, `border`, `margin`, `padding`, etc.--you risk noticeably slowing down the page with the calculations required to make that change.
 
-If you ever need to animate other properties for whatever reason, be sure to test in every possible device and browser. In my experience, Safari in particular is very bad about processing animations in a performant way by default, especially on iOS. Firefox isn't far behind, but you might not realize it if you're only testing on high-powered devices. A lot of the world lives on budget Androids; don't leave those out of your testing.
+If you _do_ need to animate such properties, be sure to test in every possible device and browser. In my experience, Safari in particular is very bad about processing animations in a performant way by default, especially on iOS. Firefox isn't far behind, but you might not realize it if you're only testing on high-powered devices. A lot of the world lives on budget Androids; don't leave those out of your testing.
 
 <SideNote>
 
@@ -354,9 +350,9 @@ One potential reason it may opt out: the GPU is faster, but it also consumes mor
 
 If you _do_ run into issues with animations that should be smooth and performant in theory, but that seem choppy or stilted in practice (again: this is usually in Safari for me, but your mileage may vary), make use of [the `will-change` property](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change).
 
-I won't go too far into the technical details, but `will-change` essentially gives the browser a heads-up on...well, on what _will change_. (Some things just have perfect names.)
+I won't go too far into the technical details, but `will-change` essentially lets you tell the browser what _will change_ (easy enough to remember), so it can skip over other calculations. It's a little like letting the restaurant know ahead of time that your whole party will be ordering only from a limited menu; it saves time by letting the kitchen/browser know what to focus on, and what it doesn't need to care about.
 
-For example: if you know for sure the _only_ thing that's going to change with an element is its `transform` property, and can confidently let the browser know ahead of time via `will-change: transform`, it can safely skip all the other steps it might otherwise go through to re-render that element when something changes on the page.
+An example: if you know for sure the _only_ thing that's going to change with an element is its `transform` property, and can confidently let the browser know ahead of time via `will-change: transform`, it can safely skip all the other steps it might otherwise go through to re-render that element when something changes on the page.
 
 Best-case scenario: when used with properties that don't affect layout, this lets the browser offload the computation entirely to the GPU for the highest framerate, and smoothest performance.
 
@@ -407,7 +403,7 @@ Following that JavaScript example, we could then add CSS to target elements on t
 }
 ```
 
-Just note that when using JavaScript, we'd want the page to be progressively enhanced, in order to ensure there was no flash of motion before the script ran, and no excluding users who have JavaScript disabled. So a mix of _both_ techniques is probably ideal.
+Just note that when using JavaScript, we'd want the page to be progressively enhanced, in order to ensure there was no flash of motion before the script ran, and no excluding users who have JavaScript disabled. So a mix of _both_ techniques is ideal.
 
 As far as _what_, exactly, we should do with our CSS in these cases: remember that **reduced motion doesn't mean _no_ motion**, or even no animation at all.
 
