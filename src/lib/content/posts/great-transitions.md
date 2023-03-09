@@ -1,7 +1,7 @@
 ---
 title: Ten tips for better CSS transitions and animations
 date: 2023-02-28
-updated: 2023-03-08
+updated: 2023-03-09
 categories:
   - css
   - design
@@ -441,6 +441,25 @@ Plus, there are some situations where it may be better to keep movement intact. 
 At the _very_ least, users should be able to pause all continuous animations, including videos and gifs. However, ideally, we should be anticipating their needs based on their device preferences, instead of forcing them to deal with something they've already indicated they'd rather not see.
 
 I refer you to [this piece by Val Head for Smashing Magazine](https://www.smashingmagazine.com/2020/09/design-reduced-motion-sensitivities/), for a deeper dive on the topic of designing with reduced motion. It's a big topic in its own right, but hopefully this tip provides some general guidance.
+
+
+## Putting it all together
+
+This CodePen demo helps to illustrate how putting the tips in this article all together can completely change the feel of a UI transition. Click the "run animation" button on either side to see that column's items transition in.
+
+<p class="codepen" data-height="540" data-default-tab="result" data-slug-hash="jOvaYxK" data-user="collinsworth" style="height: 540px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/collinsworth/pen/jOvaYxK">
+  Animation tips visualized</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+**Notice how both sides have essentially the same animation**; the boxes scale, move, and fade in in both cases. But the _details_ of that transition completely transform the effect (no pun intended).
+
+On the left (red-orange) column, the items have no delay staggering; they all fade in at once, with a _huge_ swing in opacity, position, and scale. The transition also lasts a pretty long time, and uses the browser default `ease-out` curve--which isn't bad in this case, but it's not optimal, either.
+
+On the right (blue) column, on the other hand, the animation is staggered so the items enter one after the other. The delay and the total transition time are both fairly minimal, and the effects are all still there, but much more subtle. Finally, the easing is a custom `cubic-bezier` curve.
+
+Hopefully this demo makes it easy to see what a huge difference some small tweaks can make.
 
 
 ## Wrap-up
