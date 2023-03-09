@@ -159,7 +159,7 @@ Just as a site built with [Bootstrap](https://getbootstrap.com/) or [Tailwind](h
 
 </CalloutPlusQuote>
 
-As an alternative, [VS Code](https://code.visualstudio.com/b) has an amazing autocomplete for `cubic-bezier` curves with a wide range of options:
+As an alternative, [VS Code](https://code.visualstudio.com/) has an amazing autocomplete for `cubic-bezier` curves with a wide range of options; start typing `cubic-bezier` in a CSS context, and you should see the following dropdown appear:
 
 ![VS Code auto-completing cubic-bezier with a variety of options in a pop-up UI](/images/post_images/easing/vs-code.png)
 
