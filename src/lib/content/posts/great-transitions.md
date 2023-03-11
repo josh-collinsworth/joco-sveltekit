@@ -185,13 +185,13 @@ While this one won't always come in handy, there will be times you'll be animati
 You _could_ apply the same `cubic-bezier` curve to both properties, as shown here:
 
 ```css
-/* ❌ Ok, but can be better: */
+/* ⛔ Ok, but can be better: */
 .my-element {
   transition: all cubic-bezier(.5, 0, .5, 1) .5s;
 }
 
 
-/* ❌ Also maybe not ideal: */
+/* ⛔ Also maybe not ideal: */
 @keyframes scale_and_appear {
   from {
     opacity: 0;
@@ -219,7 +219,7 @@ In those cases, you can split the `@keyframes` animations by property, or specif
 .my-element {
   transition: 
     opacity linear .5s,
-    cubic-bezier(.5, 0, .5, 1) .5s;
+    transform cubic-bezier(.5, 0, .5, 1) .5s;
 }
 
 
