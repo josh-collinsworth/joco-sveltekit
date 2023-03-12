@@ -1,7 +1,7 @@
 ---
 title: Ten tips for better CSS transitions and animations
 date: 2023-02-28
-updated: 2023-03-09
+updated: 2023-03-12
 categories:
   - css
   - design
@@ -142,6 +142,14 @@ If you're animating `opacity` from 0 to 1 (or the other way around), maybe try a
 
 Does an element slide into place? I find that in most cases, movement like that should be in the range of about 5–40 pixels. Any less, and the movement may be too subtle to even notice; much more, and a smooth slide may become a clumsy crash.
 
+Here's an example of a transition that animates `opacity`, `translateY` and `scale`. Compare the first pronounced, drawn-out animation (orange), next to the very same transition, but toned down and a little quicker (blue).
+
+<p class="codepen" data-height="370" data-default-tab="result" data-slug-hash="abaqpRV" data-user="collinsworth" style="height: 370px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/collinsworth/pen/abaqpRV">
+  Big vs subtle animation</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
 Doing too much can be worse than doing nothing at all. So find the point where the transition is just enough to be effective, and if you go further, do so cautiously.
 
 
@@ -271,7 +279,7 @@ In the pen above, the first line just transitions all at once. Fine, but not par
 
 In each line following, however, varying degrees of delay are applied to each letter, to create a playful "bounce-in" effect. There's even one that goes backwards, and one that causes the line to appear from the middle out.
 
-All this said: remember _less is more_. **It's very easy to overdo animations like this**, especially when there are _lots_ of elements transitioning, as in the example. It's much more overstated than I'd generally recommend, just for demonstration purposes, and probably a little too busy for most UI work.
+However, remember _less is more_. **It's very easy to overdo animations like this**, especially when there are _lots_ of elements transitioning. I made that example much more overstated than I'd generally recommend, just for demonstration purposes. It's probably a little too busy for most UI work.
 
 That said: there are opportunities to apply this effect on a more subtle scale. Dots in a loading screen, maybe? Perhaps when a drawer or hamburger menu is opened, each item might appear on a slight delay?
 
