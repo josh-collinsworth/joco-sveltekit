@@ -7,6 +7,7 @@ categories:
   - design
   - web
   - advice
+  - popular
 coverImage: great-transitions.png
 coverWidth: 320
 coverHeight: 180

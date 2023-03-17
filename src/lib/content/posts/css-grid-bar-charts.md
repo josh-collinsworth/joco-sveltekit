@@ -5,7 +5,6 @@ updated: "2022-07-14"
 categories:
   - "css"
   - "web"
-  - "popular"
 coverImage: "bar-charts.png"
 coverWidth: 16
 coverHeight: 9
