@@ -154,7 +154,7 @@ Here's an example of a transition that animates `opacity`, `translateY` and `sca
 Doing too much can be worse than doing nothing at all. So find the point where the transition is just enough to be effective, and if you go further, do so cautiously.
 
 
-## 4. Avoid browser defaults
+## 5. Avoid browser defaults
 
 You may already know the browser has some built-in easing curves available to use: `linear`, `ease`, `ease-in`, `ease-out`, and `ease-in-out`.
 
@@ -187,7 +187,7 @@ You can certainly get by with the presets in the browser, or in VS Code. And if 
 That said, though: you probably wouldn't limit your color palette to only predefined CSS named colors. So you might not want to limit your transitions to a small handful of preset curves, either.
 
 
-## 5. Multiple properties, multiple easings
+## 6. Multiple properties, multiple easings
 
 While this one won't always come in handy, there will be times you'll be animating more than one property at once on a single element, like when you scale an item with `transform` as its `opacity` also changes.
 
