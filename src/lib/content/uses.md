@@ -13,7 +13,7 @@
 [Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org). Recently, however, I’ve been moving most new projects over to
 [SvelteKit](https://kit.svelte.dev/)
 (including this website), and loving both the dev experience and reduced bundle size.
-I've also been working on implmenting [TypeScript](https://www.typescriptlang.org/) in all new projects.
+I've also been working on implementing [TypeScript](https://www.typescriptlang.org/) in all new projects.
 Professionally, I work in [React](https://reactjs.org/),
 and have built several personal projects with it as well.
 I've also got working experience with jQuery and Knockout.
@@ -22,6 +22,8 @@ I've also got working experience with jQuery and Knockout.
 [SCSS](https://sass-lang.com/)). I love authoring smooth, fluid transitions and animations. (I've used Tailwind. It's nice in some ways, but I'm not personally a fan.)
 
 - I'm a strong proponent of well-architected, accessible, and semantic <b>HTML</b>. (I create and use SVG often.)
+
+- Professionally, I use [Remix](http://remix.run/) and [Tailwind](https://tailwindcss.com/) on a daily basis, though neither has found its way into any of my personal projects.
 
 - I’m a [WordPress](https://wordpress.org/) expert and generally prefer to build themes from scratch. I'm capable with PHP and MySQL.
 
