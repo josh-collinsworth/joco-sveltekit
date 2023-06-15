@@ -15,16 +15,16 @@ Front-end developer with 7+ years of experience designing, engineering, managing
 
 _August 2021 – present_
 
-- Actively participated in discussions of best approaches and practices to optimize scalability of Shopify's online marketing pages and funnels
-- Executed the conversion of several marketing pages from ERB templates to Hydrogen, Shopify's internal server-rendered React and GraphQL framework
-- Built out new pages and components using React, TypeScript, and Tailwind, collaborating with designers and stakeholders on implementation and futureproofing
-- Collaborated with designers and UX leaders on customization options for React design components, enabling bespoke designs for individual marketing landing pages within the design system and framework 
-- Implemented targeted "home cards," alerting logged-in users of new features and options based eligibility, determined by locale, language, subscription and/or installed apps
-- Operated as the lead developer on several web page internationalization projects, launching Shopify's point of sale marketing pages and offerings in Spain, Italy, and Singapore
-- Built out numerous marketing landing pages, including [omnichannel selling](https://www.shopify.com/pos/sell-everywhere), showcasing Shopify's integrated sales channels with video and animation
-- Worked with internal stakeholders to improve SEO and conversions, including implementing A/B testing
-- Collaborated with third-party product owners and API developers to improve Shopify's Installments product offering
-- Create internal diagnostics tools for troubleshooting third-party API interactions
+- Acted as lead developer on the comprehensive redesign and rebuild of all marketing pages for Shopify’s [point of sale](https://shopify.com/pos) and retail products in Remix for over 30 locales, facilitating development team and stakeholder communication throughout. The project resulted in an approximate 3–5% increase in conversion rate
+- Worked on small teams and independently to develop marketing landing pages for major Shopify initiatives, including Shopify’s enterprise offering, [Commerce Components](https://shopify.com/commerce-components), collaborating with designers and stakeholders to implement animation, evaluate technical tradeoffs, and deliver on tight deadlines
+- Assisted in conversion of marketing pages from Rails ERB templates to server- rendered React, featuring a new design, increasing conversions by up to 5%
+- Built out new pages and universal components using React, TypeScript, and Tailwind
+- Collaborated with designers and UX leaders on customization options for React design components, enabling bespoke implementations for individual landing pages
+- Implemented targeted “home cards” in Rails, alerting eligible users of new features, determined by locale, language, subscription and/or installed apps
+- Operated as lead developer on multiple web page internationalization projects, launching marketing pages and offerings for many international locales and languages
+- Worked with internal stakeholders to improve SEO and conversions, including implementation of A/B testing
+- Reviewed code, proposals and pull requests across teams
+- Administered code exercise interviews and feedback for prospective applicants
 
 
 ### Various publications
