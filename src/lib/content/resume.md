@@ -2,7 +2,9 @@
 
 ## Summary
 
-Front-end developer with 7+ years of experience designing, engineering, managing and supporting web applications. Specializing in UI design and user experience, working with JavaScript (especially Vue, Svelte and React), CSS, and responsive, accessible, semantic HTML.
+Proficient with semantic, accessible HTML; strong with responsive CSS/Sass, and ES6+ JavaScript; specialized in Vue, Svelte and SvelteKit, WordPress, SVG, web animation, performance, and optimization.
+
+Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, git/ GitHub, NPM, Jira, CLIs, DNS, SemVer.
 
 ---
 
@@ -112,7 +114,7 @@ _August 2014 – September 2015_
 
 ---
 
-## Skills
+## Relevant Skills
 
 - Proficient with semantic, accessible HTML; strong with responsive CSS/Sass, and ES6+ JavaScript; specialized in Vue, Svelte and SvelteKit, WordPress, SVG, web animation, performance, and optimization.
 - Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, git/GitHub, NPM, Jira, CLIs, DNS, SemVer.
