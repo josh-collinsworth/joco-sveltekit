@@ -17,7 +17,7 @@ Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karm
 
 _August 2021 – present_
 
-- Acted as lead developer on the comprehensive redesign and rebuild of all marketing pages for Shopify’s [point of sale](https://shopify.com/pos) and retail products in Remix for over 30 locales, facilitating development team and stakeholder communication throughout. The project resulted in an approximate 3–5% increase in conversion rate
+- Acted as lead developer on the comprehensive redesign and rebuild of all marketing pages for Shopify’s [point of sale](https://shopify.com/pos) and retail products in Remix for over 30 locales, facilitating development team and stakeholder communication throughout. The project resulted in an 18% increase in customer conversion rate
 - Worked on small teams and independently to develop marketing landing pages for major Shopify initiatives, including Shopify’s enterprise offering, [Commerce Components](https://shopify.com/commerce-components), collaborating with designers and stakeholders to implement animation, evaluate technical tradeoffs, and deliver on tight deadlines
 - Assisted in conversion of marketing pages from Rails ERB templates to server- rendered React, featuring a new design, increasing conversions by up to 5%
 - Built out new pages and universal components using React, TypeScript, and Tailwind
