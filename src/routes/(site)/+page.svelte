@@ -119,6 +119,7 @@
 	
 	ul {
 		margin-top: var(--halfNote);
+		margin-bottom: 0;
 	}
 }
 
