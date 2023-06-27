@@ -94,7 +94,7 @@ Not a lot of purchases I’ve been happier with than this one. It works incredib
 ## Productivity &amp; Utility
 
 - [1Password](https://1password.com):
-The first thing I instal on every new device. I’ve tried and liked other password software, but 1Password is just the most reliable cross-platform and -device in my experience.
+The first thing I install on every new device. I’ve tried and liked other password software, but 1Password is just the most reliable cross-platform and -device in my experience.
 
 - [Raycast](https://www.raycast.com/):
 the <em>second</em> thing I install on every new Mac. (I previously used [Alfred](https://www.alfredapp.com/), which I still love and support. But Raycast has more built in, and has seemed to capture the developer zeitgeist for the time being.) The main features I love are clipboard history, snippet expansion, global search (never touch Finder again!), and workflows to automate repetitive or tedious tasks. Wouldn’t ever want to work without it. As an added bonus, Raycast includes window management and emoji picking, which means you can forego some of the other apps previously on this list like [Rectangle](https://rectangleapp.com/) and [Rocket](https://matthewpalmer.net/rocket/) (though admittedly, Rocket's emoji picking is much nicer).
