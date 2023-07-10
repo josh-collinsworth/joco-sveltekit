@@ -36,6 +36,7 @@
 		white-space: pre;
 		display: flex;
 		align-items: center;
+		color: var(--darkGray);
 	}
 
 	.note__callout-arrow {
