@@ -154,8 +154,7 @@ p {
 
 blockquote {
 	margin: var(--halfNote) 0;
-	padding: 0rem 1rem;
-	font-size: 1.2rem;
+	padding: 0 0 0 var(--quarterNote);
 	font-style: italic;
 	line-height: 1.5;
 	position: relative;
