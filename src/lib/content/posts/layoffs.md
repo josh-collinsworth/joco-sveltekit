@@ -28,9 +28,9 @@ We, the officers, have been forced to make the difficult decision to put 15% of 
 
 </CalloutPlusQuote>
 
-Those of you impacted will find a note in your locker. To those of you: we're sad to see you go, and we thank you for your service. We wish you the best, wherever this ocean may take you.
+Those impacted will find a note in their locker. To those of you: we're sad to see you go, and we thank you for your service. We wish you the best, wherever this ocean may take you.
 
-To those remaining: we assure you this devastating loss of your colleagues and friends will actually make things much better. …For the ship, that is. Maybe not for you, personally, but we can't please everyone, now can we?
+To those remaining: we assure you this devastating loss of your colleagues and friends will actually make things much better.
 
 Anyway. Sad day; bright future. Onward we go!
 
@@ -38,27 +38,27 @@ Anyway. Sad day; bright future. Onward we go!
 
 Hello, crew. This is your captain once again. It seems there were quite a few questions following that last announcement, so please allow me to clarify.
 
-Yes, as many of you pointed out (immediately) after that last announcement, our affected crewmates were not, in fact, responsible for steering the ship.
+Yes, as many of you pointed out (immediately, in fact), the affected crewmates were not responsible for steering the ship.
 
 And yes, it's true that—if we're forced to point fingers here—that sort of general navigational thing is technically kind of _my_ job. As Captain.
 
 Allow me to set the record straight, then: I fear it's not so much that we're headed in the wrong direction, per se, as it is we're just a bit…er, overloaded, shall we say.
 
-That is, while we all very much feel for our departing crewmates, pragmatically speaking, we feel that we simply can't maintain the speed and operational efficiency we'd like with so many people to account for. Communication costs, and so on. And so we're forced—_forced!_—to trim things up a bit.
+That is, while we all very much feel for our departing crewmates, pragmatically speaking, we simply can't maintain the speed and operational efficiency we'd like with so many people to account for. Communication costs, and so on. And so, sailing into uncertainty as we are, we're forced to trim things up a bit—to ensure success, of course.
 
 Again, we're sorry to say it. Dreadfully sad. But we do hope this puts the whole messy matter to rest.
 
 ---
 
-Hello again, crew. It's your Captain again. It seems that previous message didn't put quite as many questions to rest as one might have hoped. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you.
+Hello again, crew. It's your Captain again. It seems that previous message didn't answer quite as many questions as one might have hoped. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you.
 
 True, as many of you have keenly observed, those responsible for deciding who to hire and when are, in fact, the officers. I can see that, to some of you, it seems a bit unfair that the people being removed from the ship had nothing to do with the poor decisions that necessitated the, ah, departure, as it were.
 
-Perhaps, some of you have posited, we would be better off removing the ones who made those bad calls, rather than those who were merely doing their jobs as directed—
+Perhaps, some of you have posited, we would be better off removing the people who _made_ those bad calls, rather than those who were merely doing their jobs as directed—
 
-—That is, if anyone has to go at all. Which is, apparently, yet another point of contention, it seems.
+—That is, if anyone has to go at all. Which, it seems, is yet a further point of contention.
 
-Ok, yes, it's true that we have plenty, both in reserves, and in new supplies continuously coming aboard. That's all thanks to the many partnerships you've helped us forge, and to the trading systems you've been a part of engineering. Our coffers are admittedly not in any danger. And again, we thank you all for your service in these endeavors.
+All right, yes, it's true that we have plenty, both in reserves, and in new supplies continuously coming aboard. That's all thanks to the many partnerships you've helped us forge, and to the trading systems you've been a part of engineering. Our coffers are admittedly not in any danger. And again, we thank you all for your service in these endeavors.
 
 <CalloutPlusQuote>
 
@@ -66,19 +66,21 @@ Please know that we'll think of you fondly as we continue reaping the benefits o
 
 </CalloutPlusQuote>
 
-Yes, it's true, there's plenty to go around, thanks largely to all of you. We admit it. Nonetheless, this plan is sadly necessary, and will continue as planned. It's a bummer, to be sure, but we thank you for your understanding.
+So yes, there's plenty to go around, thanks largely to all of you. We admit it. Nonetheless, this plan is sadly necessary, for many reasons, and will continue as planned. It's a bummer, to be sure, but we thank you for your understanding.
 
 ---
 
-[_Deep, lengthy sigh_]
+[_Deep, long sigh_]
 
-Ok, crew. Captain here. Fine. Let's admit it. We, the officers, placed some bets that didn't pan out quite as well as we would've hoped, and now we owe money to some people who are both _very_ eager to see a return, and _very_ persuasive in board meetings.
+Ok, crew. Captain here. All right, fine. The direction of the ship and its capacity are important reasons for all this, yes, but there are others, and it just didn't seem worth bothering you with them. But since those answers are evidently quite unsatisfactory, let's get into it.
 
-Look, I'm sorry, it's out of our hands now. The fastest way to make the numbers better is to stop feeding and sheltering people and their families.
+We, the officers, placed some bets that didn't pan out quite as well as we would've hoped, and now we owe money to some people who are both very eager to see a return, and highly persuasive in board meetings.
 
-So there you go. Nothing personal. Just boat stuff.
+Look, I'm sorry, it's out of our hands now. The numbers don't look the way we want them to, and the fastest way to change that is to stop feeding and sheltering people and their families.
 
-Please know: this decision was very hard. Awful, really. I know you all feel bad for the people on the life boats—as you should!—but…really, do spare a thought for us.
+So there you go. Nothing personal. Just, you know…boat stuff.
+
+Please know: this decision was very hard. Awful, really. I know we all feel just terrible for the people on the life boats, but…really, do spare a thought for us as well. We've had a rough go here, as well.
 
 ---
 
@@ -90,9 +92,7 @@ In any case, please know: I understand, and I accept full responsibility.
 
 ---
 
-[_Agitated grumbling_]
-
-Ok, clearly I need to explain that last part.
+Ok, crew, clearly your captain needs to explain that last part.
 
 Nothing's actually going to happen to _me_, personally. I'm still Captain. Let's not be given to flights of fancy here.
 
@@ -100,15 +100,15 @@ What I mean is: I accept the responsibility of continuing to captain this ship, 
 
 <CalloutPlusQuote>
 
-I will persevere, fostering the exact environment that led to this negative outcome, while earning a salary probably higher than most of you combined.
+I will persevere, fostering the exact environment that led to this negative outcome, while earning the highest salary of anyone aboard.
 
 </CalloutPlusQuote>
 
 _That's_ on me. I alone accept _that_ burden.
 
-Once again, I also fully acknowledge that nobody affected by this announcement did anything wrong, and that the error was almost entirely in my own judgment as Captain, since we apparently have to keep retreading that particular turf. You all seem to care very much about that part. Consider the point conceded.
+Once again, I also fully acknowledge that nobody affected by this announcement did anything wrong, and that the error was almost entirely in my own judgment as Captain, since we apparently have to keep retreading that particular turf. You all seem to care very much about that part. Consider the point conceded, then.
 
-But ask yourself: is it really fair if the person who makes the decisions is _also_ the person responsible for them? Honestly, just think about it. How would we ever get anywhere if leaders were constantly forced to deal with the consequences of their own actions all the time, instead of, you know…_leading_?
+But ask yourself: is it really best if the person who makes the decisions is _also_ the person responsible for them? Honestly, just think about it. How would we ever get anywhere if leaders were constantly forced to deal with the consequences of their own actions all the time, instead of, you know…_leading_?
 
 <CalloutPlusQuote>
 
@@ -138,7 +138,11 @@ I see you.
 
 And: there's plenty of room left in those life boats.
 
-Anyway, to those remaining: please be sad for a reasonable amount of time, and then immediately return to your normal duties, as well as the duties of those who are no longer here.
+<CalloutPlusQuote>
+
+Please be sad for a reasonable amount of time, and then immediately return to your normal duties, as well as the duties of those who are no longer here.
+
+</CalloutPlusQuote>
 
 And to those departing: thanks for building us such a great ship, and best of luck getting picked up by another vessel soon.
 
