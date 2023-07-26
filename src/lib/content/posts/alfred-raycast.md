@@ -42,7 +42,7 @@ In all that time with Raycast, I never found the compelling reason I was hoping 
 
 </CalloutPlusQuote>
 
-There was no big thing that grabbed me; no revelation in productivity or ease of use. Raycast was mostly just an Alfred stand-in. It was better in places and worse in others, but usually ont dramatically so in either direction, so its pros and cons tended to balance each other out. I wondered if I was actually gaining anything.
+There was no big thing that grabbed me; no revelation in productivity or ease of use. Raycast was mostly just an Alfred stand-in. It was better in places and worse in others, but usually not dramatically so in either direction, so its pros and cons tended to balance each other out. I wondered if I was actually gaining anything.
 
 Truthfully, if I'd never used Alfred before, I probably would've been 100% happy with Raycast, and would be writing this post singing its praises, instead of comparing the two and not really being certain which one I want to stick with. A lot of the things that bugged me about Raycast, I have to admit, are comparison issues; things that work just fine in Raycast but _slightly better_ in Alfred (in my opinion, at least).
 
@@ -62,7 +62,7 @@ For example: with Alfred, I still use [Rectangle](https://rectangleapp.com/) to 
 
 ### Raycast has an extension for everything
 
-The main advantage of Raycast is its vast ecosystem of [extensions](https://www.raycast.com/store), available in the Raycast "store."
+The main advantage of Raycast is its vast ecosystem of [extensions](https://www.raycast.com/store), available in the [Raycast "store."](https://www.raycast.com/store)
 
 <CalloutPlusQuote>
 
@@ -70,9 +70,9 @@ I have a feeling the extensions store is actually the killer feature, and that's
 
 </CalloutPlusQuote>
 
-I never installed more than two or three extensions in the time I was using Raycast (the default extensions get you pretty far), and the ones I _did_ install didn't seem to work that well, in my experience. The VS Code extension in particular, I never got to work, even after doing and installing all the things it told me to.
+I never installed very many extensions in the time I was using Raycast (the default extensions get you pretty far), and the ones I _did_ install just didn't seem to work that well, in my experience. The VS Code extension in particular, I never got to work, even after doing and installing all the things it told me to.
 
-No shade; this was very likely a remediable user error. It's a popular extension; I trust it's good and works well for most people. But it was never really worth the trouble to me to figure out. I love spending hours on shortcuts to save me a few seconds as much as the next dev, but when I'm ready to open a code file and get to typing, it's never the right time to debug an extension, and so I never got around to it.
+No shade; this was very likely a remediable user error or just a bad selection. It's a popular extension, as many are; I trust they're generally good and work well for most people. But it was never really worth the trouble to me to figure out. I love spending hours on shortcuts to save me a few seconds as much as the next dev, but when I'm ready to open a code file and get to typing, it's never the right time to debug an extension, and so I never got around to it.
 
 By contrast, while extensions _do_ exist in the Alfred world, they're much less…I guess "productized" might be the word. They're called [workflows](https://www.alfredapp.com/workflows/), and they're much less of a first-class citizen in Alfred than extensions are in Raycast. There's a lot more opening them up and tinkering with the internals, and less of a nice UI to just configure the settings.
 
@@ -82,27 +82,27 @@ The Alfred team have recently put their own store, called [Alfred Gallery](https
 
 </SideNote>
 
-In any case, Raycast already has a wide world of extensions, and it's also apparently relatively easy to build your own, if you have the scripting knowledge. (I haven't tried, personally.)
+Raycast already has a wide world of extensions available to install and configure, and it's also apparently relatively easy to build your own, if you have the scripting knowledge. (I haven't tried, personally.)
 
-In fairness, you can build your own workflows with Alfred, too—and depending on what you want the workflow to do, it may even be easier (Alfred has a nice UI for that)—but again, the sharing and configuration aspects are not as fully fleshed-out.
+In fairness, you can build your own workflows with Alfred, too—and depending on what you want to do, it may even be easier (Alfred has a nice UI for that)—but again, the sharing and configuration aspects are not as fully fleshed-out.
 
 ### Raycast's calculator is better
 
-This is a small one, but even I use the built-in calculator function enough that it's worth calling out. Alfred's calculator still throws up its hands if you enter a number with commas in it, which is just..._come on_. Raycast's calculator just handles various kinds of numbers better. (It also stays open to the last number you had in there by default, which some find handy.)
+This is a small one, but even I use the built-in calculator function enough that it's worth calling out. Alfred's calculator still throws up its hands if you enter a number with commas in it, which is just..._come on_. Raycast's calculator generally just works. (It also stays open to the last number you had in there by default, which some find handy.)
 
 ## Alfred advantages over Raycast
 
 Ok, so since Raycast and Alfred aren't really all that different—and in fact, operate pretty much identically most of the time (for my use cases, anyway), what was the friction that finally made me switch back this time?
 
-There wasn't so much one big thing. Mostly, it just wasn't that different, and yet, in any measurable way, Alfred was just _slightly_ better. However, there are some points worth covering.
+There wasn't so much one big thing. Mostly, it just wasn't that different. But in many measurable ways, Alfred was just _slightly_ better. Here are my takeaways.
 
 ### Alfred's file search is much better
 
 Raycast's file search does the job well enough, but it's noticeably slower than Alfred's (speed is a recurring theme in Alfred's wins), and doesn't seem to work quite as well in general.
 
-I don't use file search a ton, but I use it enough this minor friction eventually created a UX blister. I _love_ not needing to dig down into file trees, or even know where a file _is_ on my machine; I just type its name, and there it is. And Raycast just doesn't seem to do quite as well with it (in speed or in accuracy).
+I use file search pretty much any time I need to open a file or folder on my machine, so this minor friction eventually created a UX blister. I _love_ not needing to dig down into file trees, or even know where a file _is_ on my machine; I just type its name, and there it is. And Raycast just doesn't seem to do quite as well with it (in speed or in accuracy).
 
-I don't know what the algorithm is, but Raycast seems to lean much more on learning from your frecent (frequent + recent) history. (Not that Alfred doesn't, but it seems more "sticky" with Raycast.) If you're the kind of person who's always opening the _same_ files, Raycast will probably be just fine for you. But even when Raycast _did_ find the right files or folders for me, it was noticeably slower.
+I don't know what the algorithm is, but Raycast seems to lean much more on learning from your frecent (frequent + recent) history. (Not that Alfred doesn't, but it seems more "sticky" with Raycast.) If you're the kind of person who's always opening the _same_ files, Raycast will probably be just fine for you. But even when Raycast _did_ find the right files or folders for me, again, it was noticeably slower.
 
 ### Raycast's clipboard limit is a deal-breaker
 
@@ -116,7 +116,7 @@ I didn't run into it often, but every once in a while, I'd need to copy a big ch
 
 I'd go to paste the text, and instead of getting what I had just copied, I'd get whatever was in my clipboard history before that. The new entry didn't exist.
 
-I don't know where the limit is, but I encountered it somewhere between 1,000–2,000 lines of JSON. (Mostly short lines, which makes me suspect it may be more a length thing than a memory thing, but I could be wrong.)
+I don't know where the limit is, but I encountered it somewhere between 1,000–2,000 lines of JSON. It could be a character length thing, or just a memory thing. I'm not sure.
 
 In any case: more than once, I ran into a situation where I had to turn off Raycast; _then_ copy and paste the thing I needed to copy and paste; **_then_** re-enable Raycast. And it doesn't take very many times of doing that to make you look for alternatives.
 
@@ -124,7 +124,7 @@ In any case: more than once, I ran into a situation where I had to turn off Rayc
 
 In my experience, wherever Alfred and Raycast can do the same thing, Alfred _always_ seems faster than Raycast.
 
-I don't know what magic makes it so fast; I think it has to do with some kind of fancy indexing. (There are options within the app's settings to control how much memory, etc. you give to the indexer, and other things.) But whatever's going on under the hood, Alfred finds things as fast as I can type them, while there's a slight but noticeable lag with Raycast.
+I don't know what magic makes it so fast; I think it has to do with some kind of fancy indexing. (There are options within the app's settings to control how much memory, etc. you give to the indexer, and other things.) But whatever's going on under the hood, Alfred tends to find things as fast as I can type them, while there's a slight but noticeable lag with Raycast.
 
 <PullQuote>
 
@@ -146,15 +146,19 @@ For example, many users make `@@` expand into their full email address. I used t
 
 ### Alfred usually requires fewer keystrokes
 
-With Raycast, you need enter _two_ prompts to do things like search for a file using the _Search Files_ command, or find an emoji with the emoji extension. First, you need to manually type "file" to bring up file search; then hit enter; then you type the file you're looking for.
+With Raycast, you need enter _two_ prompts to do most things. For example, to search for a file: first, you need to manually type "file" (or similar) to bring up file search; then hit enter; then you type the file you're looking for.
 
 Alfred just needs one prompt: the name of the file. It's smart enough to match the name of the file without you specifying that's what you're looking for first.
 
-Over and over again, I'd type my prompt, then realize I forgot to specify first. So I'd have to either _delete_ what I'd just typed, put Raycast into the proper mode, hit enter, and _then retype_ it, or spend time fiddling with the mouse or arrow keys to move to the proper prompt in the list after the fact.
+Over and over again, I'd type my prompt, then realize I forgot to specify. So I'd have to either _delete_ what I'd just typed, put Raycast into the proper mode, hit enter, and _then retype_ it; or spend time fiddling with the mouse or arrow keys to move to the proper prompt in the list after the fact.
 
 Admittedly, Alfred's way can backfire. You might mean to do a Google search, but Alfred might find some random file on your machine that matches your query. But here's the thing:
 
 With Alfred, you have the option to change the search mode _any time_, by holding either command (to go to web search) or option (to default to file searching). That saves you from retyping or having to select between items in a list.
+
+Raycast has a similar option: if "web search" is the first option in the list, then "file search" might be second, and you can hit `⌘ + 2` to choose that second option instead.
+
+However, crucially, _there's no guarantee which order your options will be in_. File search (or whatever option you meant to choose) might be third, or fourth, or possibly not even on the short list. So you can't rely on muscle memory, or have a shortcut that always does the same thing.
 
 Admittedly, Raycast's worst-case is not particularly painful in isolation (keystrokes; boo-hoo). But it's the kind of tiny paper cut that adds up to a painful experience over time.
 
