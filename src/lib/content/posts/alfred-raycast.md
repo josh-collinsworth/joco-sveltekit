@@ -232,8 +232,8 @@ But then again…you can theme Alfred any way you like with a one-time license p
 
 In writing this post, I spent a while reading online discussions of Alfred vs. Raycast. It seems to me the general difference is: power users (i.e., the folks who care most about getting things done as efficiently as possible) tend to gravitate towards Alfred. Conversely, users who just have a small handful of specific things they want to be easier tend to pick Raycast, for the extensions that handle their use cases. (Again, however: Alfred's beginning to catch up on that front.)
 
-I'd generally agree there. I really hope the gap between these two apps closes a bit more. I'd love for Raycast to be faster and cheaper, and I'd love for Alfred to have a better product experience around adding new workflows.
+I'd generally agree there. I really hope the gap between these two apps closes a bit more. I'd love for Raycast to be faster, and for its paid plans to be more affordable long-term. Conversely, I'd love for Alfred to have a better product experience around adding new workflows and customizing them.
 
-Meanwhile, I'll be sticking with Alfred for a bit. Maybe I'll go back to Raycast eventually, for its superior ergonomics; maybe I'll decide to stick with Alfred for its speed.
+Meanwhile, I'll be sticking with Alfred for a bit. Maybe I'll go back to Raycast eventually, for its generally superior ergonomics; maybe I'll decide to stay with Alfred for its speed.
 
 In the end, I guess it's good we have both those choices.
