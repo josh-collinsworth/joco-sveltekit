@@ -90,6 +90,12 @@ In fairness, you can build your own workflows with Alfred, too—and depending o
 
 This is a small one, but even I use the built-in calculator function enough that it's worth calling out. Alfred's calculator still throws up its hands if you enter a number with commas in it, which is just..._come on_. Raycast's calculator generally just works. (It also stays open to the last number you had in there by default, which some find handy.)
 
+### Raycast's UI is a little nicer
+
+I'm lumping a lot of things into "UI" here, and that's not entirely fair. But overall, even though Raycast has tons of different extensions available, they all have a pretty unified interface and work pretty similarly. Raycast feels more like one cohesive product, and any time you're using or configuring it, the experience feels well coordinated.
+
+By contrast, Alfred's constituent parts feel a bit more like several different things all bolted together, and one part of Alfred may not always look or work a lot like another.
+
 ## Alfred advantages over Raycast
 
 Ok, so since Raycast and Alfred aren't really all that different—and in fact, operate pretty much identically most of the time (for my use cases, anyway), what was the friction that finally made me switch back this time?
