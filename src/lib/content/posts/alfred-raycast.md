@@ -8,7 +8,7 @@ categories:
 coverImage: raycast-to-alfred.png
 coverWidth: 16
 coverHeight: 9
-excerpt: After a year or so of using Raycast, I'm switching back to Alfred. This is what prompted me to make that decision, and why I may or may not stick with that decision.
+excerpt: After a year or so of using Raycast, I'm switching back to Alfred. This is what prompted me to make that decision, and why I may or may not stick with it.
 ---
 
 <script>
