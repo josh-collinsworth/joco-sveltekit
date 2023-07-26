@@ -7,7 +7,7 @@ body {
 
 ul,
 ol {
-	margin: var(--quarterNote) 0 var(--halfNote)
+	margin: var(--quarterNote) 0 var(--halfNote);
 }
 
 main ul:not(.toc) {
@@ -39,13 +39,12 @@ a {
 	text-decoration: underline;
 	text-decoration-color: currentColor;
 	text-decoration-thickness: from-font;
-	transition: color .15s;
-	
+	transition: color 0.15s;
+
 	&:hover {
 		color: var(--linkColor);
 	}
 }
-
 
 h1,
 .h1,
@@ -65,7 +64,7 @@ h6,
 	line-height: 1.2;
 	position: relative;
 	margin-bottom: var(--quarterNote);
-	margin-top: var(--wholeNote) ;
+	margin-top: var(--wholeNote);
 	padding: 0;
 
 	a {
@@ -79,7 +78,7 @@ h1,
 	position: relative;
 	margin-top: var(--quarterNote);
 	font-weight: normal;
-	
+
 	@media (min-width: vars.$xs) {
 		font-size: 2.6rem;
 	}
@@ -96,7 +95,7 @@ h2,
 		font-size: 1.8rem;
 		margin-top: var(--tiedWholeNote);
 	}
-	
+
 	&::before {
 		content: '';
 		width: var(--wholeNote);
@@ -112,7 +111,7 @@ h3,
 	font-size: 1.4rem;
 	font-weight: normal;
 	margin-top: var(--wholeNote);
-	
+
 	@media (min-width: vars.$xs) {
 		font-size: 1.6rem;
 	}
@@ -205,15 +204,15 @@ figcaption {
 		height: 1em;
 		line-height: 1;
 		text-align: center;
-		
-		@media(min-width: vars.$xxs) {
+
+		@media (min-width: vars.$xxs) {
 			left: -1em;
 		}
 	}
 
 	.icon-link {
 		position: relative;
-		
+
 		&::before {
 			content: '#';
 			color: var(--lightGray);
@@ -225,4 +224,22 @@ figcaption {
 	&:hover .icon-link::before {
 		opacity: 1;
 	}
+<<<<<<< Updated upstream
 }
+=======
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+.callout,
+.pull-quote {
+	text-wrap: pretty;
+}
+>>>>>>> Stashed changes
