@@ -1,7 +1,7 @@
 ---
 title: A message from the captain of the S.S. Layoff
-date: 2023-07-17
-updated: 2023-07-17
+date: 2023-07-27
+updated: 2023-07-27
 categories:
   - satire
 coverImage: ss-layoffs.png
