@@ -18,9 +18,17 @@ draft: true
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
+<Note>
+
+This is the first satirical post I've written here. Please take this little writing experiment much less seriously than you might any of my other content.
+
+</Note>
+
+<div><p>[<em>PA crackles</em>]</p></div>
+
 Greetings, crew. This is your Captain speaking. It is with a heavy heart I must inform you that, although we've shared for years now in this long and successful journey together, our ship is, sadly, not currently headed in the right direction.
 
-As a result, we're forced to make some changes, in order to ensure the success of our vessel and this collective voyage going forward.
+To right the situation, and in order to ensure the success of our vessel and this collective voyage going forward, we're forced to make some tough changes.
 
 <CalloutPlusQuote>
 
@@ -28,37 +36,41 @@ We, the officers, have been forced to make the difficult decision to put 15% of 
 
 </CalloutPlusQuote>
 
-Those impacted will find a note in their locker. To those of you: we're sad to see you go, and we thank you for your service. We wish you the best, wherever this ocean may take you.
+Those of you impacted will find a note in your locker. To those: we're sad to see you go, and we thank you for your service. We wish you the best, wherever this ocean may take you. Please collect your things, and make your way to the nearest life boat immediately.
 
-To those remaining: we assure you this devastating loss of your colleagues and friends will actually make things much better.
+To those remaining: we assure you this devastating loss of your colleagues and friends will actually make things much better. …For the ship, that is. Maybe not for every single person aboard, individually. But that's the way these things go, eh?
 
-Anyway. Sad day; bright future. Onward we go!
+Trust us, it has to be this way, but for good reason. Sad day; bright future. Onward we go!
 
 ---
 
 Hello, crew. This is your captain once again. It seems there were quite a few questions following that last announcement, so please allow me to clarify.
 
-Yes, as many of you pointed out (immediately, in fact), the affected crewmates were not responsible for steering the ship.
+Yes, as many of you pointed out (immediately afterwards, in fact), our departing crewmates were not, in point of fact, responsible for steering the ship. So it's not really their fault, directly, that the ship is off-course.
 
 And yes, it's true that—if we're forced to point fingers here—that sort of general navigational thing is technically kind of _my_ job. As Captain.
 
-Allow me to set the record straight, then: I fear it's not so much that we're headed in the wrong direction, per se, as it is we're just a bit…er, overloaded, shall we say.
+Allow me to set the record straight, then: I fear it's not so much that we're headed in the wrong direction, per se—though it is that, too!—as it is our capacity just…well, it hasn't kept up with expectations.
 
-That is, while we all very much feel for our departing crewmates, pragmatically speaking, we simply can't maintain the speed and operational efficiency we'd like with so many people to account for. Communication costs, and so on. And so, sailing into uncertainty as we are, we're forced to trim things up a bit—to ensure success, of course.
+That is, while we all very much feel for our departing crewmates, pragmatically speaking, we simply can't maintain the speed and operational efficiency we'd like with so many people to account for.
 
-Again, we're sorry to say it. Dreadfully sad. But we do hope this puts the whole messy matter to rest.
+We're just a bit…_overstaffed_, I suppose might be the word. Paying a little too much money to too many people, if you like. And so, sailing into uncertainty as we are, we're forced to trim things up a bit—to ensure our success, of course. Keep us moving faster.
+
+Again, we're sorry to say it. Dreadful, this sort of thing. Just awful. But we do hope this puts the whole messy matter to rest, and we can go forward into—
+
+[_The sound of knocking at the door_]
 
 ---
 
-Hello again, crew. It's your Captain again. It seems that previous message didn't answer quite as many questions as one might have hoped. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you.
+…Hello again, crew. It's your Captain again. It seems that previous message warranted further explanation. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you. Thank you for your questions.
 
 True, as many of you have keenly observed, those responsible for deciding who to hire and when are, in fact, the officers. I can see that, to some of you, it seems a bit unfair that the people being removed from the ship had nothing to do with the poor decisions that necessitated the, ah, departure, as it were.
 
-Perhaps, some of you have posited, we would be better off removing the people who _made_ those bad calls, rather than those who were merely doing their jobs as directed—
+Perhaps, some of you have posited, we would be better off removing the people who _made_ those bad choices, rather than those who were merely doing their jobs as directed—
 
 —That is, if anyone has to go at all. Which, it seems, is yet a further point of contention.
 
-All right, yes, it's true that we have plenty, both in reserves, and in new supplies continuously coming aboard. That's all thanks to the many partnerships you've helped us forge, and to the trading systems you've been a part of engineering. Our coffers are admittedly not in any danger. And again, we thank you all for your service in these endeavors.
+All right, yes, it's true that we have plenty, both in reserves, and in new supplies continuously coming aboard. And yes, we have a great many projects coming up that will require extra hands. That's all thanks to the many successful partnerships and trading systems you've been a part of engineering. And again, we thank you all for your service in these endeavors.
 
 <CalloutPlusQuote>
 
@@ -66,7 +78,9 @@ Please know that we'll think of you fondly as we continue reaping the benefits o
 
 </CalloutPlusQuote>
 
-So yes, there's plenty to go around, thanks largely to all of you. We admit it. Nonetheless, this plan is sadly necessary, for many reasons, and will continue as planned. It's a bummer, to be sure, but we thank you for your understanding.
+So yes, there's plenty to go around, thanks largely to all of you. We admit it. No shortage of work to be done, either, and we are sorry on that front.
+
+Nonetheless, this plan is sadly necessary, for many reasons, and will continue as planned. It's unfortunate, to be sure, but we thank you for your understanding.
 
 ---
 
@@ -74,21 +88,19 @@ So yes, there's plenty to go around, thanks largely to all of you. We admit it. 
 
 Ok, crew. Captain here. All right, fine. The direction of the ship and its capacity are important reasons for all this, yes, but there are others, and it just didn't seem worth bothering you with them. But since those answers are evidently quite unsatisfactory, let's get into it.
 
-We, the officers, placed some bets that didn't pan out quite as well as we would've hoped, and now we owe money to some people who are both very eager to see a return, and highly persuasive in board meetings.
+We—the officers and I, that is—placed some bets that didn't pan out quite as well as we would've hoped, and well…now we owe money to some people who are very eager to see a return, and highly persuasive in board meetings.
 
 Look, I'm sorry, it's out of our hands now. The numbers don't look the way we want them to, and the fastest way to change that is to stop feeding and sheltering people and their families.
 
-So there you go. Nothing personal. Just, you know…boat stuff.
+Nothing personal.
 
-Please know: this decision was very hard. Awful, really. I know we all feel just terrible for the people on the life boats, but…really, do spare a thought for us as well. We've had a rough go here, as well.
+Please know: this decision was very hard. Awful, really. I know we all feel just terrible for the people who've set off on the life boats, as we should, but…really, do spare a thought for us, too. We've had a rough of it go here, also.
 
----
+Hard times all around.
 
-Crew? Captain. Wow, a whole lot of you have brought up the fact that this is the _third_ time now that we've cut our numbers in the past couple of years or so.
+In any case, let me leave you with this:
 
-I had no idea the memory of the previous two departures would stick so strongly. Wow, you're sharp. You all should really form a quiz bowl team or something.
-
-In any case, please know: I understand, and I accept full responsibility.
+_I understand, and I accept full responsibility._
 
 ---
 
@@ -108,7 +120,7 @@ _That's_ on me. I alone accept _that_ burden.
 
 Once again, I also fully acknowledge that nobody affected by this announcement did anything wrong, and that the error was almost entirely in my own judgment as Captain, since we apparently have to keep retreading that particular turf. You all seem to care very much about that part. Consider the point conceded, then.
 
-But ask yourself: is it really best if the person who makes the decisions is _also_ the person responsible for them? Honestly, just think about it. How would we ever get anywhere if leaders were constantly forced to deal with the consequences of their own actions all the time, instead of, you know…_leading_?
+But ask yourself: is it really best if the person who makes the decisions is _also_ the person responsible for them? Honestly, just think about it. What ever happened to delegation, hm? How would we ever get anywhere if leaders were constantly forced to deal with the consequences of their own actions all the time, instead of, you know…_leading_?
 
 <CalloutPlusQuote>
 
@@ -124,7 +136,7 @@ Ok, crew. This will be my final message.
 
 A whole lot of you seem to think this decision will actually have an _adverse_ impact on our voyage, as it will both hinder our capacity going forward _and_ decimate morale for those who remain, making them much more likely to leave voluntarily.
 
-Some of you have apparently done some math, and claim to have found that the cost of the life boats, supplies, maritime lawyer fees, hiring and onboarding to replace those needed crew members (which will be harder now, given this hit to our reputation), loss of productivity, and so on and so forth, all actually outweigh what we're ostensibly saving.
+Some of you have apparently done some math, and claim to have found that the cost of the life boats, supplies, maritime lawyer fees, hiring and onboarding to replace those needed crew members (which will be harder now, given this hit to our reputation), loss of productivity, and so on and so forth, all actually outweigh what we're ostensibly saving with this measure.
 
 Some even go so far as to point to the numerous "readily available"—you can't see me, but I made air quotes there—"readily available" scientific studies, apparently finding little to no benefit whatsoever to this kind of reduction in crew size.
 
@@ -132,7 +144,7 @@ According to you lot, nearly all of those "studies"—I did air quotes again the
 
 To all the above, please let me say:
 
-I hear you. 
+I hear you.
 
 I see you.
 
