@@ -1,7 +1,7 @@
 ---
 title: 'Alfred vs. Raycast: my constant debate'
-date: 2023-07-24
-updated: 2023-07-24
+date: 2023-07-26
+updated: 2023-07-27
 categories:
   - personal
   - opinion
@@ -108,7 +108,7 @@ Raycast's file search does the job well enough, but it's noticeably slower than 
 
 I use file search pretty much any time I need to open a file or folder on my machine, so this minor friction eventually created a UX blister. I _love_ not needing to dig down into file trees, or even know where a file _is_ on my machine; I just type its name, and there it is. And Raycast just doesn't seem to do quite as well with it (in speed or in accuracy).
 
-I don't know what the algorithm is, but Raycast seems to lean much more on learning from your frecent (frequent + recent) history. (Not that Alfred doesn't, but it seems more "sticky" with Raycast.) If you're the kind of person who's always opening the _same_ files, Raycast will probably be just fine for you. But even when Raycast _did_ find the right files or folders for me, again, it was noticeably slower.
+I don't know what the algorithm is, but Raycast seems to lean much more on learning from your frecent (frequent + recent) history. (Not that Alfred doesn't, but it seems more "sticky" with Raycast.) If you're the kind of person who's always opening the _same_ files, Raycast will probably be just fine for you. But even when Raycast _did_ find the right files or folders for me, again, it was noticeably slower. Alfred's speed and accuracy made it the clear winner.
 
 ### Raycast's clipboard limit is a deal-breaker
 
@@ -126,21 +126,25 @@ I don't know where the limit is, but I encountered it somewhere between 1,000–
 
 In any case: more than once, I ran into a situation where I had to turn off Raycast; _then_ copy and paste the thing I needed to copy and paste; **_then_** re-enable Raycast. And it doesn't take very many times of doing that to make you look for alternatives.
 
+I don't know what Alfred's default setting is, but at the very least, you can easily make its maximum clipboard entry as large as you need it.
+
 ### Alfred is faster (especially with snippets)
 
-In my experience, wherever Alfred and Raycast can do the same thing, Alfred _always_ seems faster than Raycast.
+In my experience, wherever Alfred and Raycast can do the same thing, Alfred always seems faster than Raycast.
 
-I don't know what magic makes it so fast; I think it has to do with some kind of fancy indexing. (There are options within the app's settings to control how much memory, etc. you give to the indexer, and other things.) But whatever's going on under the hood, Alfred tends to find things as fast as I can type them, while there's a slight but noticeable lag with Raycast.
+I don't know what magic makes it so fast; I think it has to do with some kind of fancy indexing. (There are options within the app's settings to control how much memory, etc. you give to the indexer, and other things.) But whatever's going on under the hood, Alfred tends to find things about as fast as I can type them in most cases, while there's a slight but noticeable lag with Raycast.
 
 <PullQuote>
 
-In my experience, wherever Alfred and Raycast can do the same thing, Alfred _always_ seems faster than Raycast.
+In my experience, wherever Alfred and Raycast can do the same thing, Alfred always seems faster than Raycast.
 
 </PullQuote>
 
-Snippet expansion is one area where the difference in speed is especially noticeable. With Raycast, there's a pronounced delay between typing a snippet shortcode, and getting the replacement. It's under a second, but that's plenty of time to mess up the text you were trying to type when the new text gets added in.
+Snippet expansion is one area where the difference in speed is especially noticeable. With Raycast, there's a pronounced delay between typing a snippet shortcode, and getting the replacement. It's under a second, but it's long enough to make you wonder whether the expansion actually worked, and plenty of time to mess up the text you were trying to type when the new text gets added in.
 
-I think I actually got used to typing a snippet, and then _stopping and waiting_ before continuing. But it's not about the time; it's the interruption to workflow. Alfred is nearly instantaneous with snippet expansion, and so it doesn't seem like you have to adjust your thinking for it as much.
+I think I actually got used to typing a snippet, and then _stopping and waiting_ before continuing. But it's not about the time; it's the interruption to workflow.
+
+Alfred is nearly instantaneous with snippet expansion, and so it doesn't seem like you have to adjust your thinking for it as much.
 
 <SideNote>
 
@@ -156,13 +160,13 @@ With Raycast, you need enter _two_ prompts to do most things. For example, to se
 
 Alfred just needs one prompt: the name of the file. It's smart enough to match the name of the file without you specifying that's what you're looking for first.
 
-Over and over again, I'd type my prompt, then realize I forgot to specify. So I'd have to either _delete_ what I'd just typed, put Raycast into the proper mode, hit enter, and _then retype_ it; or spend time fiddling with the mouse or arrow keys to move to the proper prompt in the list after the fact.
+Over and over again, I'd type my prompt, then realize I forgot to specify. So I'd have to either _delete_ what I'd just typed, put Raycast into the proper mode, and _then retype_ it; or spend time fiddling with the mouse or arrow keys to move to the proper prompt in the list after the fact.
 
 Admittedly, Alfred's way can backfire. You might mean to do a Google search, but Alfred might find some random file on your machine that matches your query. But here's the thing:
 
 With Alfred, you have the option to change the search mode _any time_, by holding either command (to go to web search) or option (to default to file searching). That saves you from retyping or having to select between items in a list.
 
-Raycast has a similar option: if "web search" is the first option in the list, then "file search" might be second, and you can hit `⌘ + 2` to choose that second option instead.
+Raycast has a similar option: if "web search" is the first option in the list, then "file search" might be second, and you can hit `⌘ + 2` (or just hit the down arrow once) to choose that second option instead.
 
 However, crucially, _there's no guarantee which order your options will be in_. File search (or whatever option you meant to choose) might be third, or fourth, or possibly not even on the short list. So you can't rely on muscle memory, or have a shortcut that always does the same thing.
 
@@ -226,17 +230,17 @@ I have to admit: Raycast is just more visually appealing, by default, in terms o
 
 There's nothing _wrong_ with Alfred's appearance per se, but everything about the brand and out-of-the-box experience feels like it's from a past era of Mac apps, circa 2010. In web dev terms, I'd say: it feels very [Bootstrap](https://getbootstrap.com/); it seems like the brand hasn't really updated in probably over a decade.
 
-By contrast, Raycast looks very modern. (Yes, it also looks like most other maybe-not-technically-Tailwind-but-definitely-Tailwind-type-design tech sites/products, complete with text gradients over a dark background, but hey: it's at least 2020s.)
+By contrast, Raycast looks very modern. (Yes, it also looks like most other maybe-not-technically-Tailwind-but-definitely-Tailwind-type-design tech sites/products, complete with bold sans-serif text gradients over a dark background, but hey: it's at least 2020s.)
 
-In fairness, this is admittedly an odd critique to leverage: for most of Raycast's life up until this point, theming was impossible, and it was only recently—and only on the paid "Pro" plan—that users could theme Raycast in any way at all.
+However, for most of Raycast's life up until this point, theming was impossible, and it was only recently—and only on the paid "Pro" plan—that users could theme Raycast in any way at all.
 
 Granted, Raycast has a nice default appearance, so I don't consider this a problem per se, and I imagine most users don't either (even though the ability to skin Raycast with chosen fonts and colors is definitely appealing).
 
-But it's sort of hypocritical, I suppose, to critique Alfred while praising Raycast in the design department, given that Alfred actually offers nearly endless options to customize its interface however you like. (I have mine in [Averta](https://thedesignersfoundry.com/averta), the sans serif you see on this website, and [Dracula Pro](https://draculatheme.com/pro) purple. You don't care. That's fine.)
+But it's sort of hypocritical, I suppose, to critique Alfred's design while praising Raycast's, given that Alfred actually offers nearly endless options to customize its interface however you like. (I have mine in [Averta](https://thedesignersfoundry.com/averta), the sans serif you see on this website, and [Dracula Pro](https://draculatheme.com/pro) purple. You don't care. That's fine.)
 
 Still, though: branding is important, and Raycast clearly has the better overall aesthetic (out of the box, at least).
 
-But then again…you can theme Alfred any way you like with a one-time license purchase. You'll have to pay monthly for that privilege with Raycast.
+But then again…you can completely customize the Alfred UI with a one-time license purchase. You'll have to pay monthly for that privilege with Raycast.
 
 ## Conclusion
 
