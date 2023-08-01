@@ -160,6 +160,10 @@ blockquote {
 	border: 0;
 	border-left: 4px solid var(--lightBlue);
 
+	p {
+		margin-bottom: 0.75rem;
+	}
+
 	> *:last-of-type {
 		margin-bottom: 0;
 	}
