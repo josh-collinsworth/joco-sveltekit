@@ -1,7 +1,7 @@
 ---
 title: 'Alfred vs. Raycast: my constant debate'
 date: 2023-07-24
-updated: 2023-07-24
+updated: 2023-08-04
 categories:
   - personal
   - opinion
@@ -126,7 +126,7 @@ I don't know where the limit is, but I encountered it somewhere between 1,000–
 
 In any case: more than once, I ran into a situation where I had to turn off Raycast; _then_ copy and paste the thing I needed to copy and paste; **_then_** re-enable Raycast. And it doesn't take very many times of doing that to make you look for alternatives.
 
-### Alfred is faster (especially with snippets)
+### Alfred is faster
 
 In my experience, wherever Alfred and Raycast can do the same thing, Alfred _always_ seems faster than Raycast.
 
@@ -141,6 +141,8 @@ In my experience, wherever Alfred and Raycast can do the same thing, Alfred _alw
 Snippet expansion is one area where the difference in speed is especially noticeable. With Raycast, there's a pronounced delay between typing a snippet shortcode, and getting the replacement. It's under a second, but that's plenty of time to mess up the text you were trying to type when the new text gets added in.
 
 I think I actually got used to typing a snippet, and then _stopping and waiting_ before continuing. But it's not about the time; it's the interruption to workflow. Alfred is nearly instantaneous with snippet expansion, and so it doesn't seem like you have to adjust your thinking for it as much.
+
+[**EDIT, August 4, 2023**: I've discoverd Raycast actually has a setting for snippet expansion speed. I don't think it was always there, but in fairness, it is now.]
 
 <SideNote>
 
