@@ -7,7 +7,7 @@ categories:
 coverImage: because-of-react.png
 coverWidth: 320
 coverHeight: 180
-excerpt: Sometimes you miss things just because you never looked beyond the established, comfortable defaults. Frontend is a bad place to let that happen.
+excerpt: If you don't often look beyond established comfortable defaults, you might be surprised to learn just how far the world of frontend has moved away from React, and how big that gap continues to grow.
 ---
 
 <script>
