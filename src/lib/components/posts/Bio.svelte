@@ -1,25 +1,22 @@
 <script lang="ts">
-	export let currentPage: string
+	export let currentPage: string;
 </script>
 
 <div class="bio-wrapper">
 	<hr />
 	<div class="bio">
-		<img src="/images/bio-photo.jpg" alt="" class="thumbnail" width="1" height="1">
+		<img src="/images/bio-photo.jpg" alt="" class="thumbnail" width="1" height="1" />
 		<div>
 			<p class="about">
-				I'm Josh Collinsworth, a frontend developer, designer, teacher, and writer. I currently live in Kansas City, and work for Shopify as a senior frontend developer. 
+				I'm Josh Collinsworth, a frontend developer, designer, teacher, and writer. I currently live
+				in Kansas City, and work in tech as a senior frontend developer.
 			</p>
 			<ul class="link-list">
 				<li class="link-list__kofi">
-					<a href="https://ko-fi.com/collinsworth" rel="external">
-						Buy me a coffee
-					</a>
+					<a href="https://ko-fi.com/collinsworth" rel="external"> Buy me a coffee </a>
 				</li>
 				<li class="link-list__contact">
-					<a href="/contact?from_page={currentPage}">
-						Send me a note about this post
-					</a>
+					<a href="/contact?from_page={currentPage}"> Send me a note about this post </a>
 				</li>
 				<li class="link-list__more">
 					<a href="/">More about me</a>
@@ -29,7 +26,6 @@
 	</div>
 	<hr class="post-bio-hr" />
 </div>
-
 
 <style lang="scss">
 	.post-bio-hr {
@@ -47,7 +43,7 @@
 		@media (min-width: vars.$xxs) {
 			flex-wrap: nowrap;
 		}
-		
+
 		.about {
 			font-style: italic;
 			font-family: var(--bodyFont);
@@ -68,15 +64,15 @@
 			}
 
 			&__kofi::marker {
-				content: '☕ '
+				content: '☕ ';
 			}
 
 			&__contact::marker {
-				content: '📩 '
+				content: '📩 ';
 			}
 
 			&__more::marker {
-				content: '💁🏼‍♂️ '
+				content: '💁🏼‍♂️ ';
 			}
 		}
 

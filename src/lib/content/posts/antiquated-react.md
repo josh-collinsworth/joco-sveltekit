@@ -489,11 +489,11 @@ Svelte is fast; it's comparable to the fastest options available. Its DX is phen
 
 Svelte hews as closely to the web platform as possible, so even though it's incredibly powerful, its concepts will be largely familiar. Svelte also includes transitions, easings, CSS handling, component-scoped styles, and more niceties out of the box.
 
-That might make you wonder about framework size, but where Svelte differs is: instead of being a JavaScript runtime, it's a compiler. Anything you don't use is stripped away at build time, and your code is transpiled into tiny vanilla JavaScript. That means Svelte's bundles are generally a fraction the size of React's.
+That might make you wonder about framework size, but where Svelte differs is: instead of being a JavaScript runtime, it's a compiler. Anything you don't use is stripped away at build time, and your code is transpiled into tiny bits of vanilla JavaScript. That means Svelte's bundles are generally a fraction the size of React's.
 
 <CalloutPlusQuote>
 
-Although it feels and works like a framework, Svelte is, essentially, a small, elegant superset of HTML, with a delightfully simple syntax, which compiles to fast, tiny vanilla JavaScript bundles.
+Although it feels and works like a framework, Svelte is, essentially, a small, elegant superset of HTML, with a delightfully simple syntax, which compiles to fast, minimal bundles.
 
 </CalloutPlusQuote>
 
@@ -521,15 +521,15 @@ Community size/overall framework popularity is an important factor for you; you 
 
 #### Vue replaces:
 
-React itself, or [Nuxt](https://nuxt.com/) can replace Next.
+React itself, or [Nuxt](https://nuxt.com/) can replace anything you might be using Next for.
 
 ### [Solid](https://www.solidjs.com/)
 
-[Solid](https://www.solidjs.com/) is what I would call React, but better. It looks almost (if not entirely) identical to React in many cases, but Solid is far, far more performant (it's one of the fastest options available, in fact).
+[Solid](https://www.solidjs.com/) is what I would call React, but better. It looks almost (if not entirely) identical to React in many cases, but Solid is far, far more performant. It's one of the fastest options available, in fact.
 
-Solid essentially starts with React, and then rethinks it to eliminate complexity, performance issues, and a lot of boilerplate. Signals appear as a concept in Solid, which eliminate a great deal of the confusion and footguns around component rendering and lifecycles.
+Solid essentially starts with React, and then rethinks it to eliminate complexity, performance issues, and a lot of boilerplate. Signals appear as a concept in Solid, which eliminate a great deal of the confusion and footguns around component rendering and lifecycles. It might even be fair to say Solid is React, if React was built in the modern era, on top of all the lessons we've learned since 2013.
 
-Solid also offers its own meta-framework in [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart), though that is currently in beta. Solid itself is plenty mature enough to use, though.
+Solid also offers its own meta-framework in [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart), though that is currently in beta. Solid itself is plenty mature enough to use, though, and boasts an impressive gallery of sponsors.
 
 #### Solid is recommended if:
 
@@ -542,6 +542,8 @@ React and React DOM. Solid Start can replace Next, but it's much younger and may
 ### [Fresh](https://fresh.deno.dev/)
 
 [Fresh](https://fresh.deno.dev/) is a server-rendered frontend framework with islands architecture, built on Deno. It's a bit younger than most of the rest of the items on this list, but it's full of promise as a minimal-JS, island-based framework that can run on the edge—powered by Deno, no less, which means your server code is faster, more secure, TypeScript by default, and all the other benefits Deno brings over traditional Node (such as easier, first-party linting, testing, and code formatting settings).
+
+Fresh uses Preact for rendering, so you know it's fast, and won't be difficult to pick up if you're coming from React, either. And again: building on Deno feels great.
 
 #### Fresh is recommended if:
 
