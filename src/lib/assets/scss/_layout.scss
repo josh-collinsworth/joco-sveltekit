@@ -1,3 +1,5 @@
+@use './vars';
+
 body {
 	overflow-x: hidden;
 }
@@ -6,7 +8,7 @@ img {
 	width: auto;
 	max-width: 100%;
 	height: auto;
-	margin: var(--quarterNote)	0;
+	margin: var(--quarterNote) 0;
 }
 
 hr {
@@ -42,7 +44,7 @@ hr {
 	position: relative;
 	background: transparent;
 	color: var(--ink);
-	
+
 	main {
 		width: 100%;
 
@@ -62,7 +64,7 @@ hr {
 
 .ghosty button,
 .ghosty button::before {
-	transition: transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 	transform: translateY(-4rem);
 }
 
@@ -75,7 +77,7 @@ hr {
 	&-outer {
 		position: relative;
 		width: 100%;
-		
+
 		&::after {
 			content: '';
 			height: 100%;
@@ -92,10 +94,11 @@ table {
 	min-width: 100%;
 	border-collapse: collapse;
 	font-size: 0.9rem;
-	margin: var(--dottedHalfNote)	0 var(--halfNote);
+	margin: var(--dottedHalfNote) 0 var(--halfNote);
 	border-right: 2rem solid transparent;
 
-	td, th {
+	td,
+	th {
 		padding: 1em 2em 1em 0;
 		white-space: pre;
 		line-height: 1;
@@ -104,7 +107,7 @@ table {
 			padding-right: 0;
 		}
 	}
-	
+
 	th {
 		text-align: left;
 		padding-bottom: 0.5em;
@@ -112,7 +115,7 @@ table {
 		font-size: 1rem;
 		font-family: var(--headingFont);
 	}
-	
+
 	thead tr {
 		border-bottom: 2px solid;
 		line-height: 1;
@@ -131,4 +134,10 @@ table {
 	border: 1px solid;
 	padding: calc(var(--quarterNote) + var(--quarterNote));
 	margin: var(--halfNote) 0;
+}
+
+.blog-roll {
+	@media (min-width: vars.$lg) {
+		grid-column: span 2;
+	}
 }
