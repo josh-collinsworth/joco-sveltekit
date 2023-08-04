@@ -4,6 +4,8 @@ date: 2023-08-04
 updated: 2023-08-04
 categories:
   - opinion
+  - web
+  - react
 coverImage: because-of-react.png
 coverWidth: 320
 coverHeight: 180

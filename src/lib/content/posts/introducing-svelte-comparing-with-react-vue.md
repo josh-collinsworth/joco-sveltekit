@@ -5,6 +5,8 @@ updated: '2022-01-18'
 categories:
   - 'javascript'
   - 'svelte'
+  - 'vue'
+  - 'react'
   - 'web'
   - 'popular'
 coverImage: 'introducing_svelte.png'
@@ -24,11 +26,9 @@ excerpt: Svelte is a new style of framework for building sites and apps. Let's d
   import CodeComparison from '$lib/components/demos/CodeComparison.svelte'
 </script>
 
-
 Let's be honest: lots of things in web development are harder than they should be. Some days, it can seem as though everything in the frontend world is needlessly over-engineered and convoluted.
 
 That's what makes [Svelte](https://svelte.dev/) seem like such a breath of fresh air.
-
 
 ## What is Svelte?
 
@@ -37,7 +37,6 @@ At a basic level, you could think of Svelte as a frontend user interface (UI) fr
 As with any frontend framework, you use Svelte to build components, which are then the building blocks for your user interface (UI). As events happen and state and data change (for example: a user adding an item to the cart), the components automatically update to reflect those changes in the UI. (More on that in a bit.)
 
 So how is Svelte _different_? Glad you asked…
-
 
 ### How is Svelte different?
 
@@ -69,14 +68,11 @@ Just about everywhere I'd normally be reaching for a workaround or tripping over
 
 But instead of me talking about it, let's get to some comparisons. (Since this isn't intended to be a code-along, we'll cover actually _installing_ Svelte at the end.)
 
-
 <img src="/images/post_images/svelte-react-vue.png" alt="" class="section-heading-image" />
-
 
 ## Comparing Svelte to React and Vue
 
 As mentioned, at a basic level, Svelte is similar to other frontend frameworks. So let's look a little closer at the details of how Svelte differs: its focus on build-time over run-time, and the simplicity of its syntax.
-
 
 ### Build over browser
 
@@ -114,7 +110,6 @@ React and Vue both use a "[virtual DOM](https://stackoverflow.com/questions/2196
 There's a little more nuance than this when discussing Svelte's performance relative to the field, but we'll get into that in the last section.
 </SideNote>
 
-
 ### Authoring Svelte components
 
 One of the things I like most about Svelte is its HTML-first philosophy. With few exceptions, Svelte code is entirely browser-readable HTML and JavaScript. In fact, technically, you could call Svelte a small superset of HTML.
@@ -125,13 +120,12 @@ Just as you write `.jsx` component files in React and `.vue` files in Vue, Svelt
 
 ```svelte
 <script>
-  // Component logic goes here
+	// Component logic goes here
 </script>
 
 <!-- HTML goes here -->
-
 <style>
-  /* CSS goes here (scoped by default!) */
+	/* CSS goes here (scoped by default!) */
 </style>
 ```
 
@@ -156,13 +150,12 @@ There are some key differences I'd like to point out between the Svelte version 
 - **Svelte is reactive by default**. This means when a variable is reassigned, every place it's used or referenced also updates automatically. (_React and Vue both require you to explicitly initialize reactive variables_.)
 
   - React in particular does this because of an insistence on "immutability." Its philosophy dictates that you _shouldn't_ be able to change a variable's value without calling a function that's "authorized" to do so.
-  
+
     In theory this prevents unwanted mutations (changes), but in practice, 99% of the time it's unnecessary boilerplate.
 
 - **The Svelte version is the shortest**, both in terms of line count and character count. While this isn't necessarily meaningful on its own, shorter code _does_ tend to be less error-prone, as long as it's readable (which I would argue it definitely is).
 
 - **Svelte isn't picky about HTML.** React needs a `return` with a single element, and Vue needs a single `<template>` tag wrapping all the markup. (Vue 2 _also_ requires a single element inside _that_.) Svelte can have whatever HTML, wherever--and with all its attributes intact, unlike in JSX, React's de facto templating language.
-
 
 #### A more practical toggle button example
 
@@ -195,7 +188,6 @@ Other differences worth noting:
 The accessibility of this toggle button example is questionable, for the sake of brevity. I recommend Heydon Pickering's <a href="https://inclusive-components.design/toggle-button/" rel="external">Building Inclusive Toggle Buttons</a> for more info.
 </SideNote>
 
-
 #### Comparing form bindings
 
 Here's one last quick _and_ practical example, to compare form bindings between frameworks: a volume slider. Try it out:
@@ -216,7 +208,6 @@ It should also be noted that you can add two-way data binding to component props
 
 This would allow the `ChildComponent` to pass changes to the parent component and vice versa. React is firmly against this idea because, again, it highly values immutability and one-way data flow. In practice, I personally find that dogma more inhibiting than helpful.
 
-
 #### Comparing logic
 
 Though we've seen it already, I think it's worth glancing once more at how each of the three frameworks handles conditional rendering. Here's how you'd show a `<Hello />` component conditionally:
@@ -233,7 +224,6 @@ Here's an example where we show a `<WelcomeBanner />` component if the user is l
 
 <CodeComparison dir="complex-conditionals" />
 
-
 #### Loops
 
 I appreciate how Svelte allows loops inside of markup, without requiring you to tie the loop to any elements or map over an array (and in most cases, without requiring you to `key` each item, either).
@@ -243,7 +233,6 @@ Here, assume we have an array called `posts`, full of objects containing post in
 <CodeComparison dir="loops" />
 
 It's also nice that you can put any markup you like inside Svelte's `each` block; it doesn't need to be a single element.
-
 
 ### Other reasons to love Svelte
 
@@ -260,7 +249,6 @@ While the above examples don't cover them, some other features of Svelte that I 
 - **Easy shorthands** for class binding, prop passing, and event modifiers (that I miss now when working with other frameworks)
 
 I could go on and on about how easy Svelte makes things, and how advanced yet simple it seems. Even [Svelte's docs and tutorial site](https://svelte.dev/tutorial/basics) is way ahead of the game; the whole thing is a live REPL (coding environment) where you can write your own Svelte code and see it running live!
-
 
 ### CSS in Svelte
 
@@ -280,15 +268,14 @@ Svelte Preprocess is an Svelte add-on, with support for several "languages" (inc
 
 This way, if you have all of your Sass variables in an external `_vars.scss` file like me, you can just have the processer auto-import that into every component. This saves you the trouble of manually `@import`ing the SCSS file with a bunch of `../../../` file system traversal every time you want to use a variable in a component.
 
-
 ##### Conditional styling
 
 Conditional styling is a _breeze_ in Svelte thanks to its simple shorthands. Let's look a little closer at how you might apply a `.enabled` class to a component, based on a boolean value:
 
 ```svelte
 <script>
-  let enabled = false
-</script> 
+	let enabled = false;
+</script>
 
 <input class={enabled ? 'enabled' : ''} />
 ```
@@ -299,8 +286,8 @@ Like in React, you _could_ shorten this to a "short-circuit" conditional:
 
 ```svelte
 <script>
-  let enabled = false
-</script> 
+	let enabled = false;
+</script>
 
 <input class={enabled && 'enabled'} />
 ```
@@ -311,10 +298,10 @@ As an alternative, in Svelte, we can just do this instead:
 
 ```svelte
 <script>
-  let enabled = false
-</script> 
+	let enabled = false;
+</script>
 
-<input class:enabled={enabled} />
+<input class:enabled />
 ```
 
 That's pretty cool! It's easier to read, too; you can simply see what class will apply, based on what JS value.
@@ -323,8 +310,8 @@ That's pretty cool! It's easier to read, too; you can simply see what class will
 
 ```svelte
 <script>
-  let enabled = false
-</script> 
+	let enabled = false;
+</script>
 
 <input class:enabled />
 ```
@@ -334,16 +321,10 @@ That's pretty cool! It's easier to read, too; you can simply see what class will
 Also worth mentioning: you can have as many `class` attributes as you want (dynamic or otherwise) on a single element:
 
 ```svelte
-<div
-  class="layout"
-  class:logged-in={isLoggedIn}
-  class:darkMode
-  class:reduceMotion
->
-  <!-- ...Content here -->
+<div class="layout" class:logged-in={isLoggedIn} class:darkMode class:reduceMotion>
+	<!-- ...Content here -->
 </div>
 ```
-
 
 ##### Scoped vs. global styling
 
@@ -351,21 +332,21 @@ If you'd like to make a component's CSS global, you can do that on a per-rule ba
 
 ```svelte
 <style>
-  ul {
-    /* This CSS applies ONLY to the component */
+	ul {
+		/* This CSS applies ONLY to the component */
 
-    :global(li) {
-      /* These styles are global */
-    }
-  }
+		:global(li) {
+			/* These styles are global */
+		}
+	}
 </style>
 ```
 
-***Or*** if you prefer, you can make the entire tag global with the `global` attribute:
+**_Or_** if you prefer, you can make the entire tag global with the `global` attribute:
 
 ```svelte
 <style global>
-  /* All CSS here is global */
+	/* All CSS here is global */
 </style>
 ```
 
@@ -383,8 +364,7 @@ Because of this, I've found it's a good idea to always use a wrapping parent cla
 
 At worst, it's redundant, and at best you've saved yourself from unintentional style leakage (either now or if you decide to un-scope the styles in the future).
 
-If you'd like to read more about styling in Svelte, be sure to read [What I Like About Writing Styles with Svelte](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/) on CSS Tricks. 
-
+If you'd like to read more about styling in Svelte, be sure to read [What I Like About Writing Styles with Svelte](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/) on CSS Tricks.
 
 ### Props and component communication
 
@@ -402,7 +382,7 @@ To create a prop in a Svelte component, you simply create a variable using the `
 
 ```svelte
 <script>
-  export let propToBePassedIn
+	export let propToBePassedIn;
 </script>
 ```
 
@@ -410,7 +390,7 @@ The above indicates a _required_ prop; if you want to create an optional prop, j
 
 ```svelte
 <script>
-  export let propToBePassedIn = false
+	export let propToBePassedIn = false;
 </script>
 ```
 
@@ -423,23 +403,18 @@ Let's have one last comparison, just to look at how it's done in other framework
 In any of the above cases (since both props are just strings), you'd use the component just like so:
 
 ```html
-<PageHeading
-  pageTitle="The big page title text…"
-  pageSubtitle="…and a little subheading"
-/>
+<PageHeading pageTitle="The big page title text…" pageSubtitle="…and a little subheading" />
 ```
 
 A couple of things to point out:
 
-* Note that React does _not_ have any prop typing, or any way to require a prop. You'd need to import a library for that, probably [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html). (You could of course hand-write the logic in the component, but that doesn't scale well.)
+- Note that React does _not_ have any prop typing, or any way to require a prop. You'd need to import a library for that, probably [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html). (You could of course hand-write the logic in the component, but that doesn't scale well.)
 
-* While Svelte _does_ allow you to set required props, it doesn't have prop typing built-in, as Vue does. That's largely because Svelte is fully TypeScript compatible, however. The expectation seems to be: if you want prop typing, you can just go with TypeScript for that.
-
+- While Svelte _does_ allow you to set required props, it doesn't have prop typing built-in, as Vue does. That's largely because Svelte is fully TypeScript compatible, however. The expectation seems to be: if you want prop typing, you can just go with TypeScript for that.
 
 ## What to know about Svelte
 
 I'll be honest: to me, any arguments against adopting Svelte grow fewer and thinner all the time. But I'll mention some things you should know and some of the arguments for and against Svelte here, just for perspective if nothing else.
-
 
 ### Debunking the "small community" argument
 
@@ -453,16 +428,15 @@ The fear, then, is that when or if you need to reach for additional packages to 
 
 I'd like to put some context around that argument:
 
-1. **You don't often _need_ packages with Svelte.** When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework itself. 
+1. **You don't often _need_ packages with Svelte.** When you've been living in framework land long enough, it's easy to forget the reason you need a package in the first place is often compatibility with (or the need to work around) the framework itself.
 
-  Svelte is much closer to the HTML, CSS and JavaScript of the web, which means you don't often _need_ to go looking for a package that, say, plays nice with your framework's hooks or lifecycle methods. Plus, many of the features you'd need a package for in other frameworks come baked in with Svelte (motion, scoped CSS, and state management being the biggest examples).
+Svelte is much closer to the HTML, CSS and JavaScript of the web, which means you don't often _need_ to go looking for a package that, say, plays nice with your framework's hooks or lifecycle methods. Plus, many of the features you'd need a package for in other frameworks come baked in with Svelte (motion, scoped CSS, and state management being the biggest examples).
 
 2. **Svelte is extremely compatible with vanilla JavaScript packages.** This means that while, yes, the ecosystem of _dedicated_ Svelte packages and plugins is comparatively small, it can often benefit from and easily use _any_ framework-agnostic package--which is a pretty massive portion of the packages out there.
 
 3. **Even when you _do_ need to build something yourself, SvelteKit makes it comparatively simple.** One example: previously, I was using an RSS plugin with Gridsome, but no such package exists for SvelteKit.
 
-  A quick web search, however, was all it took to find a very easy way to [Create an RSS feed in SvelteKit](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit), with no dependencies, in under 40 lines of code.
-
+A quick web search, however, was all it took to find a very easy way to [Create an RSS feed in SvelteKit](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit), with no dependencies, in under 40 lines of code.
 
 ### Yes, Svelte scales
 
@@ -496,7 +470,6 @@ On the other hand, Svelte is comparably young. If I'm betting on which framework
 It's worth mentioning that since Svelte started becoming popular, other frameworks have learned from it and closed the performance gap a bit. React is still generally significantly heavier, but Vue 3 is fairly comparable to Svelte performance-wise in many cases.
 </SideNote>
 
-
 ### Svelte doesn't support Internet Explorer by default
 
 Svelte requires polyfills to run properly in Internet Explorer (and even then, support for any version of IE below 11 is not guaranteed).
@@ -505,12 +478,11 @@ If you need to support IE 11, you can read the [Svelte/IE11 GitHub issue](https:
 
 However, if you're starting a new project today: note that Internet Explorer is not long for this world. [Google search recently dropped support for IE 11](https://www.searchenginejournal.com/google-search-ends-support-for-internet-explorer-11/421726/), citing its tiny and shrinking market share (only around 1% of all browsers). WordPress, which powers about 40% of the web at this point, dropped support for IE 11 in [WordPress version 5.8 earlier this year](https://wordpress.org/news/2021/05/dropping-support-for-internet-explorer-11/). And even [Microsoft itself will be putting the final nail in IE 11's coffin in July 2022](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
 
-
 ### What are your goals?
 
 The answer to the question of whether you should use Svelte _right now_ is a classic: "it depends."
 
-Are you learning your _first_ framework? If so, what's your goal? If you're looking for an easy tool to learn, for something that will empower you to build interactive UIs, or just for some additional knowledge and experience, I'd recommend Svelte wholeheartedly. 
+Are you learning your _first_ framework? If so, what's your goal? If you're looking for an easy tool to learn, for something that will empower you to build interactive UIs, or just for some additional knowledge and experience, I'd recommend Svelte wholeheartedly.
 
 <Callout>
 There's no wrong choice when it comes to developing your own skills—particularly because having one framework down makes it much easier to learn a new one, like moving from instrument to&nbsp;instrument.
@@ -524,11 +496,9 @@ On the other hand, if you're learning in the hopes of getting a job with your ne
 
 Alternately: are you choosing a technology for a relatively new startup or project? Svelte will likely enable you to move more quickly and build something that's more performant, but hiring or collaborating may be a challenge, given the relatively small pool of Svelte devs. That said, though: knowing one JS framework tends to make learning a new one easier, and Svelte is in my opinion the easiest to start with. I think any developer who's already familiar with another frontend framework should be able to pick up Svelte pretty quickly (and vice versa).
 
-
 ### Svelte shines in limited environments
 
 I touched on this in the intro, but one of Svelte's biggest strengths is its minimal JavaScript bundle sizes. This makes it ideal for any code that will be executed by low-power devices that can't parse JavaScript quickly (smart TVs, watches, and other IoT devices for example, or older smartphones that might be more common in less economically advantaged markets). It _also_ means Svelte shines where bandwidth is limited, which again makes it a perfect fit for older devices and users who might be on poor internet connections.
-
 
 ### Reactivity with arrays and objects
 
@@ -536,13 +506,13 @@ Svelte's one notable "gotcha" is in how it handles automatic reactivity with arr
 
 ```svelte
 <script>
-let colors = ['red', 'orange', 'yellow']
+	let colors = ['red', 'orange', 'yellow'];
 
-colors.push('green')
-// ❌ Updates the array, but doesn't cause a re-render
+	colors.push('green');
+	// ❌ Updates the array, but doesn't cause a re-render
 
-colors = [...colors, 'blue']
-// ✅ Reassigning causes a re-render
+	colors = [...colors, 'blue'];
+	// ✅ Reassigning causes a re-render
 </script>
 ```
 
@@ -550,45 +520,42 @@ The same principle works with objects, as well:
 
 ```svelte
 <script>
-let me = {
-  firstName: 'Josh'
-}
+	let me = {
+		firstName: 'Josh'
+	};
 
-me.lastName = 'Collinsworth'
-// ❌ Updates the object, but doesn't cause a re-render
+	me.lastName = 'Collinsworth';
+	// ❌ Updates the object, but doesn't cause a re-render
 
-me = {...me, lastName: 'Collinsworth' }
-// ✅ Reassigning causes a re-render
+	me = { ...me, lastName: 'Collinsworth' };
+	// ✅ Reassigning causes a re-render
 </script>
 ```
 
 If for some reason you _had_ to use `.push()`, you could just assign the array to itself afterwards. This would work:
 
 ```js
-myArray.push(newThing)
-myArray = myArray
+myArray.push(newThing);
+myArray = myArray;
 ```
 
 But I think this is a little nicer (and works the exact same way):
 
 ```js
-myArray = [...myArray, newThing]
+myArray = [...myArray, newThing];
 ```
 
 If you want to get nerdy for a second: **this is actually a quirk of JavaScript itself**, rather than of Svelte. JavaScript still considers the array or object as the same unique thing until and unless it's reassigned. (This is why you can use `const` to declare an array or object and still modify its properties; the variable itself hasn't been mutated, even though its contents have.)
 
-
 ## How to get started with Svelte
 
 If you'd like to dive in and get some hands-on experience with Svelte (and I recommend you do!), there are two main ways forward at this point.
-
 
 ### The Svelte REPL
 
 Clearly I'm a big fan, so I could be biased, but I honestly think Svelte might have the best tutorial and documentation of any framework out there.
 
 There's a wonderful introduction in the [Svelte Tutorial](https://svelte.dev/tutorial/basics), which functions as a live coding environment where you're taught Svelte bit by bit, and try to finish incomplete Svelte code challenges along the way. (Or, if you like, you can just click "show me" to see the complete lesson.) It's fun and engaging, and covers all of Svelte's concepts from simple to complex extremely well. In fact, I find myself going back to it over and over. I highly recommend it both for learning and for reference.
-
 
 ### Starting your own Svelte project
 
@@ -599,7 +566,7 @@ Alternatively, there's a [Svelte quickstart guide](https://svelte.dev/blog/the-e
 > cd my-svelte-project
 > # to use TypeScript run:
 > # node scripts/setupTypeScript.js
-> 
+>
 > npm install
 > npm run dev
 > ```
@@ -611,7 +578,6 @@ If you're not familiar with those commands:
 - `degit` clones a repo (in this case, the `template` project from `sveltejs`), but _without_ its git history; it'll be as though you're starting up a fresh new project.
 
 Naturally, you can replace `my-svelte-project` with whatever name you'd like for your local project. Once you `npm install`, `npm run dev` will start a dev server that will show you your project and automatically refresh as you save your changes.
-
 
 ## Conclusion
 

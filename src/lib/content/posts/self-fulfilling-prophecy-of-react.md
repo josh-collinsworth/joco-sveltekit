@@ -1,12 +1,13 @@
 ---
-title: "The self-fulfilling prophecy of React"
-date: "2022-07-27"
-updated: "2022-08-01"
+title: 'The self-fulfilling prophecy of React'
+date: '2022-07-27'
+updated: '2022-08-01'
 categories:
-  - "web"
-  - "opinion"
-  - "popular"
-coverImage: "self-fulfilling-react.png"
+  - 'web'
+  - 'opinion'
+  - 'popular'
+  - 'react'
+coverImage: 'self-fulfilling-react.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: The only thing React is better at than other front-end frameworks is being popular. So how long will that self-perpetuating cycle continue?
@@ -37,7 +38,7 @@ But that's all kind of my point: much like a genre-defining movie, album, or vid
 
 ---
 
-Ok, I concede that analogy was a bit of an overreach. There's admittedly much less of a difference between React and its contemporaries than there is between, say, [_Citizen Kane_](https://en.wikipedia.org/wiki/Citizen_Kane) and a great movie from modern times, or between the original [_Legend of Zelda_ on the NES](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)) and [_Breath of the Wild_ on the Switch](https://www.nintendo.com/store/products/the-legend-of-zelda-breath-of-the-wild-switch). That said:
+Ok, I concede that analogy was a bit of an overreach. There's admittedly much less of a difference between React and its contemporaries than there is between, say, [_Citizen Kane_](https://en.wikipedia.org/wiki/Citizen_Kane) and a great movie from modern times, or between the original [_Legend of Zelda_ on the NES](<https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)>) and [_Breath of the Wild_ on the Switch](https://www.nintendo.com/store/products/the-legend-of-zelda-breath-of-the-wild-switch). That said:
 
 <CalloutPlusQuote>
 
@@ -48,7 +49,6 @@ React has aged. And I don't think most people—particularly those using it regu
 When you live only in the world of React, you likely only see the improvements. It seems like React is getting better and better all the time. In many ways, it is. But that perspective shields you from realizing React's velocity, and its ceiling, have long lagged behind that of its comparable colleagues.
 
 React does what it does well, but it doesn't do _anything_ better than other frameworks.
-
 
 ## The best choice for the job
 
@@ -73,7 +73,6 @@ I'd argue in all of those areas except maybe one (emphasis on _maybe_), React wo
 
 Let's go through the list.
 
-
 ### Performance
 
 There are [many different metrics by which you can measure performance](https://stefankrause.net/js-frameworks-benchmark8/table.html), but regardless of what your specific focus is, React is not in the top tier. Vue, Svelte, [Solid](https://www.solidjs.com/), [Inferno](https://www.infernojs.org/) and a host of others generally provide markedly better performance than React. Depending on your needs, you could go even more minimal with something like [Alpine](https://alpinejs.dev/) or [Petite Vue](https://github.com/vuejs/petite-vue) (_though I don't think they quite deserve to be lumped in the same classification as the others_).
@@ -85,7 +84,6 @@ React's performance relative to the field is pretty well-documented, so I don't 
 [Preact](https://preactjs.com/), a minimal version of React, is worthy of consideration in this case, but it's [different enough from React](https://preactjs.com/guide/v8/differences-to-react/) that it may or may not be a 1:1 drop-in replacement, so I don't count it as the same thing. Also: while Preact's performance is significantly better than React's, it's not necessarily better than some of the other contenders in the field mentioned above.
 
 </SideNote>
-
 
 ### Learning curve
 
@@ -105,7 +103,6 @@ Just about every framework was originally built for the general population—exc
 
 I'm sure I don't need to bring up `useEffect` here. Or how you can't use some standard HTML attributes in JSX (because JSX doesn't know the difference between a React prop and an HTML attribute). Or memoization. Or how there aren't _real_ conditionals, so you have to rely on short-circuit operators. Or how preventing infinite loops is _your_ responsibility—even though there aren't really loops, so you have to use array methods…you know what, let's just move on.
 
-
 ### Bundle size
 
 This is similar to speed, but I felt it was worth distinguishing between the two. It would be one thing if a large bundle sent over the wire translated to better performance once downloaded, but that's not the case here.
@@ -120,7 +117,6 @@ Here it also bears mentioning that Preact is a possibility, but again: Preact is
 
 </SideNote>
 
-
 ### Scalability
 
 While React certainly has the _most_ companies and apps demonstrating its ability to perform at scale, I don't think it's fair to say quantity equals quality.
@@ -131,7 +127,6 @@ React doesn't have anything special here; it just has the most examples.
 
 If that's your idea of safety, so be it. But it's not fair to say that React _really_ demonstrates better ability here. It's just been given more opportunities.
 
-
 ### Community and support
 
 <PullQuote>
@@ -140,11 +135,11 @@ Every major front-end framework has demonstrated ability to perform at large sca
 
 </PullQuote>
 
-I touch on this (albeit specifically to Svelte) in [another post](/blog/introducing-svelte-comparing-with-react-vue#debunking-the-small-community-argument), but to summarize: the idea that React has the largest community—while technically true—doesn't necessarily make it a better choice. 
+I touch on this (albeit specifically to Svelte) in [another post](/blog/introducing-svelte-comparing-with-react-vue#debunking-the-small-community-argument), but to summarize: the idea that React has the largest community—while technically true—doesn't necessarily make it a better choice.
 
 A big community can be a downside, too, especially in the case of a so-called "unopinionated" framework such as React. It can mean too many packages to choose from, and too many different, competing opinions that you'll have to decide between and take a stance on.
 
-But even besides that, bigger does not necessarily mean better. There's a point where the community is _big enough_, and the product doesn't necessarily continue to get better beyond that. 
+But even besides that, bigger does not necessarily mean better. There's a point where the community is _big enough_, and the product doesn't necessarily continue to get better beyond that.
 
 In the beginning, more participation builds better things. But there's a point of diminishing returns (and a point where communication cost starts to _slow down_ the project rather than speed it up). Beyond that point, there's no proportional relationship between the number of people participating in a community, and the quality of it.
 
@@ -154,7 +149,6 @@ But at some point, there's not _really_ a difference. Beyond a certain size, an 
 
 You don't need to be in the biggest boat. You just need to be in one that's big enough to weather the storms, and there are _plenty_ of those available.
 
-
 ### Financial backing
 
 Some people are very concerned (perhaps for good reason) that their framework of choice could vanish one day, if it stops being supported and/or maintained. React's Facebook connection is considered a sign of trust to those with this viewpoint, but at what point does a project have _enough_ backing that you can stop worrying?
@@ -162,7 +156,6 @@ Some people are very concerned (perhaps for good reason) that their framework of
 Angular is backed by Google. Vue is one of the most successful and well-funded open-source projects in history. Vercel is currently employing at least two Svelte maintainers (including Svelte's creator) to work on the project full-time. Solid has over 100 contributors and at least six major corporate sponsors.
 
 Clearly, backing is not an issue among major front-end frameworks. So this isn't really any point in React's favor, either.
-
 
 ### Developer experience
 
@@ -179,7 +172,6 @@ State of JS is just one survey, of course, and you get different answers dependi
 Anecdotally: [Scott Tolinski](https://scotttolinski.com/) mentioned on a recent episode of [Syntax](https://syntax.fm/) how one of his developers left for a React job that paid almost double—but that it was _still a tough decision_, because this developer loved working in Tolinski's [SvelteKit](https://kit.svelte.dev/) codebase so much.
 
 So while developers are clearly both aware of and using React, it doesn't seem fair to say it's the thing they're most interested in or satisfied with.
-
 
 ### Hireability
 
@@ -207,7 +199,6 @@ But bear in mind that choice _also_ gives you absolutely no tech advantage over 
 
 Safe bets don't pay off big.
 
-
 ## So why does React stay on top?
 
 Because we don't always value the _strongest_ choice as much as we value _consensus_. (In fact, you could make an argument that consensus _is_ the strongest choice, in many ways.)
@@ -224,14 +215,13 @@ React is the default, and absent a strong reason to choose otherwise, people usu
 
 ```js
 while (reactIsPopular) {
-  reactIsPopular = true
+	reactIsPopular = true;
 }
 ```
 
 "Nobody ever got fired for choosing React" is not how the original saying goes, but it might as well be at this point. It's the safe option. It might not be everybody's favorite, but it doesn't have to be. It probably won't be anybody's least favorite either. It'll get the job done.
 
 Absent a strong business need, both sides of the market—those hiring and those trying to get hired—are incentivized to coalesce. React, for better or worse, is the common ground they've landed on.
-
 
 ## When and how does this change?
 
