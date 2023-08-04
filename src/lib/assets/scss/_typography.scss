@@ -67,9 +67,9 @@ h6,
 	margin-top: var(--wholeNote);
 	padding: 0;
 
-	a {
-		text-decoration: none;
-	}
+	// a {
+	// 	// text-decoration: none;
+	// }
 }
 
 h1,
@@ -104,6 +104,10 @@ h2,
 		display: block;
 		margin: 0 0 var(--eighthNote);
 	}
+}
+
+h2 + h3 {
+	margin-top: var(--halfNote);
 }
 
 h3,
