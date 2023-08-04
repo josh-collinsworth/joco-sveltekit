@@ -207,11 +207,11 @@ Alex mentions React's lack of support for web components in that thread. That fe
 
 <CalloutPlusQuote>
 
-Meanwhile, pretty much all of React's contemporaries—any framework or technology choice you might choose instead of React—already have that story shipped and in production.
+Meanwhile, pretty much all of React's contemporaries—any framework or technology you might choose instead of React—already have that story shipped and in production.
 
 </CalloutPlusQuote>
 
-Web components are one thing. But they're far from the only item on the list of "stuff everything else does already and/or better."
+Web components are one thing. But they're far from the only item on the list of "stuff everything else does already and/or better." (We'll cover several others below.)
 
 React benefitted mightily from being early to the framework game; it set the standard. But that's come with severe drawbacks in agility and adaptability. Every decision React's made since its inception circa 2013 is another layer of tech debt—one that its newer contemporaries aren't constrained by.
 
@@ -237,7 +237,7 @@ Browsers have seen _wild_ growth in new feature adoption in the last ten years, 
 
 <SideNote>
 
-I realize calling React "legacy software" is controversial, but I think it's fair; it's complicated, it's old, it's got a lot of rules and gotchas, beginners are afraid of it, and the architectural decisions it's built on top of have long since become an impediment to its ability to iterate.
+I realize calling React "legacy software" is controversial, but I think it's fair; it's comparatively complicated, relatively old, contains a lot of rules and gotchas, beginners are often afraid of it, and the architectural decisions it's built on top of have long since become an impediment to its ability to iterate.
 
 </SideNote>
 
@@ -245,7 +245,7 @@ I realize calling React "legacy software" is controversial, but I think it's fai
 
 If I haven't completely alienated you yet by this point (_with some combination of quasi-elitism, rambling preamble, and overuse of parenthetical interjections_), I'd like to share some things you might have missed if your head's been entirely in the React world for a while, in the hopes of introducing you to some tunes you might be surprised to find are better than what's on your current playlist.
 
-## Part 2: Things you forgot (or never knew) because of React
+## Part 2: things you forgot (or never knew) because of React
 
 ### Your ecosystem doesn't need to be massive anymore (because it can share now)
 
@@ -255,7 +255,7 @@ You might have even had that thought as soon as you read the premise of this pos
 
 Why do we have this obsession with ecosystem size?
 
-Sure, we want to be certain this framework won't just vanish on us, or stop being maintained in a few years. That's perfectly reasonable. And yes, we wouldn't bet the farm on something _too_ new or unproven. But [Vue](https://vuejs.org), [Svelte](https://svelte.dev), [Preact](https://preactjs.com), [Solid](https://www.solidjs.com/), [Astro](https://astro.build/), and others are all _far_ past that point, well-supported and well-maintained. So it clearly isn't just that.
+Sure, we want to be certain this framework won't just vanish on us, or stop being maintained in a few years. That's perfectly valid. And yes, we wouldn't bet the farm on something _too_ new or unproven. But [Vue](https://vuejs.org), [Svelte](https://svelte.dev), [Preact](https://preactjs.com), [Solid](https://www.solidjs.com/), [Astro](https://astro.build/), and others are all _far_ past that point, well-supported and well-maintained. So it clearly isn't just that.
 
 So what _is_ the sticking point? I have a theory:
 
@@ -283,7 +283,7 @@ No other modern frontend framework is as stubbornly incompatible with the platfo
 
 </CalloutPlusQuote>
 
-If you're building using other modern tools and frameworks, it's _far_ more likely that the vanilla JavaScript packages available will work just fine for you—and there are _thousands_ of them. Not to mention: they all have the option of using web components, too.
+If you're building using other modern tools and frameworks, it's _far_ more likely that the vanilla JavaScript packages available will work just fine for you—and there are _thousands_ of them. They're far less likely to cause issues with render cycles, or other framework-specific issues. Not to mention: they all have the option of using web components, too.
 
 You often don't _need_ a specialized package or library tailor-built for your thing, because your thing probably already works with the platform, and therefore, everything else that's already out there.
 
@@ -301,7 +301,7 @@ Hooks are the newest evolution of React, replacing class components.
 
 Credit where it's due: hooks _were_ a massive shift in the frontend space. They revolutionized how we composed logic and state in our applications. Hooks are undeniably great, and pretty much every framework has coalesced around a hooks-like model for managing state.
 
-But React hooks aren't new anymore. (In fact, they're almost exactly the same age as my kid, and he's starting pre-k in two weeks.)
+But React hooks aren't new anymore. (In fact, stable React with hooks is almost exactly the same age as my kid, and he's starting pre-k in a couple of weeks.)
 
 Hooks are no longer a competitive advantage, or even a notable feature; they're the baseline. They're just the way we do things.
 
@@ -314,6 +314,12 @@ Every other framework not only has its own implementation of hooks, but notably:
 Preact's Signals warrant mention here; so do Svelte's dead-simple stores. Solid, too, has Signals. Even Vue 3's composition API, which is pretty directly inspired by hooks, has some key advantages over the React implementation.
 
 Hooks are an excellent pattern, and React deserves credit for popularizing it. But pretty much every other framework does hooks better, with fewer rules, and with less boilerplate.
+
+<SideNote>
+
+If you're unfamiliar with the concept of Signals: it's a crude oversimplification, but you could think of them as the next, better evolution of reactive state; an update to hooks, with better defaults around what causes re-renders, to only re-render the nodes that need to be re-rendered, instead of entire components.
+
+</SideNote>
 
 ### You don't need to micro-manage rendering anymore
 
@@ -331,9 +337,9 @@ These days, frameworks are smart enough to handle this kind of thing without you
 
 </CalloutPlusQuote>
 
-They know that they don't need to waste precious resources re-rendering when there's no real need. They're intelligent enough to only update values, and not constantly reevaluate things that don't need evaluation.
+They already know not to waste precious resources re-rendering when there's no real need. They're intelligent enough to only update values, and not constantly reevaluate things that don't need it.
 
-…Most of the time, anyway. They're not perfect. But they _are_ much better than React at knowing what to do, and doing it in a performant way by default. (Even Preact, if you're using Signals.)
+…Most of the time, anyway. They're not perfect. But they _are_ much better than React at knowing what to do, and doing it in a performant way by default.
 
 You _might_ need to optimize some things in other frameworks, too. They're not perfect. But by the time you do, you're way, _way_ past the point where you would've needed to in React.
 
@@ -355,7 +361,7 @@ In that world, most frontend UIs were built either with vanilla JavaScript, or w
 
 That's because you had to write your own selectors for each and every element and DOM node you might want to interact with, and you had to come up with your own manual way of tracking and syncing state. That usually involved writing to and retrieving from the DOM, which was messy, error-prone, and most importantly, slow. (That's where the virtual DOM came in, but even _that_ has been [pretty thoroughly outdated for years](https://svelte.dev/blog/virtual-dom-is-pure-overhead).)
 
-Writing modular code back then was difficult to impossible, and JS files often ballooned to hundreds of lines or more. If multiple authors were working on the same project, they'd often reinvent, repeat, or even override each other's code. And the bigger or more complex your app (_Facebook_), the worse the problem was.
+Writing modular code back then was difficult to impossible, and JS files often ballooned to hundreds of lines, if not thousands. If multiple authors were working on the same project, they'd often reinvent, repeat, or even override each other's code. And the bigger or more complex your app (_Facebook_), the worse the problem was.
 
 It's important to remember: that's our baseline for "does it scale?" as it relates to frontend. Does it stay reasonably maintainable even if my app grows exponentially?
 
@@ -365,13 +371,13 @@ The worry that a frontend framework might not scale is as old as jQuery, and sho
 
 </CalloutPlusQuote>
 
-React solved many of these problems, yes. But it didn't do so by being a marvel of modern engineering, so much as simply coming up with a good way to manage and share state, make data reactive, abstract complexity, and enable developers to share the same programming patterns.
+React solved many of these problems, yes. But it didn't do so by being a marvel of modern engineering, so much as simply coming up with a good way to manage and share state, make data reactive, abstract complexity, and enable developers to share the same programming patterns without conflicts or overrides.
 
-React wasn't the best, only, or even _first_ way to solve frontend scalability; it's just one of many possible versions of the same paradigm.
+React wasn't the best, only, or even _first_ solution to frontend scalability; it's just one of many possible versions of the same paradigm.
 
 (It also happens to be among the oldest.)
 
-How do I know this? Because a plethora of benchmark tests have been run, with publicly available results, comparing the performance of React to every other frontend framework at scale. (I'm not linking to any here, because they're readily available online.) They all confirm that just about every other option in the frontend space does as well or better than React—and in many cases, _significantly_ better.
+How do I know this? Because a plethora of benchmark tests have been run, with publicly available results, comparing the performance of React to every other frontend framework at scale. (I'm not linking to any here, because they're readily available online.) They all confirm that just about every other option in the frontend space does as well or better than React—and in many cases, _dramatically_ better.
 
 <SideNote>
 
@@ -426,6 +432,8 @@ You might not realize styling is a solved problem in several other frameworks.
 In particular, Vue and Svelte both have their own component styling story. They both have component-level scoping (Vue's is opt-in; Svelte's is opt-out). They both work wonderfully with vanilla CSS, if that's the way you want to go. But both of them—along with every other frontend framework—are still compatible with CSS modules, Tailwind, Sass, or whatever else you like to use.
 
 But most importantly: all the supposed problems with CSS—whether you actually consider them problems or not—are fully addressed by the built-in style handling. You don't need a mess of packages and configs nearly as much anywhere else, because scoped CSS solves just about every issue you could possibly imagine.
+
+Seriously; read through any list of reasons CSS is supposedly bad (it's not, but people who are bad at it like to say that). Just about any critique you could possibly have of CSS is solved by scoped styling, and multiple non-React frameworks just come with it already built in.
 
 ### Frameworks aren't as hard to learn anymore
 
