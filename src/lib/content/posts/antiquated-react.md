@@ -1,7 +1,7 @@
 ---
 title: Things you forgot (or never knew) because of React
 date: 2023-08-04
-updated: 2023-08-04
+updated: 2023-08-07
 categories:
   - opinion
   - web
