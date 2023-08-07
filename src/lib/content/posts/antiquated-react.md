@@ -127,7 +127,7 @@ h4 {
 </style>
 
 <!-- This markup was generated using the deprecated TableOfContents component. -->
-<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#part-1-an-intro-about-music-defaults-and-bubbles">Part 1: an intro about music, defaults, and bubbles</a><ul><li><a href="#finding-richness-beyond-the-defaults">Finding richness beyond the defaults</a></li><li><a href="#completing-the-analogy-and-acknowledging-its-shortcomings">Completing the analogy, and acknowledging its shortcomings</a></li><li><a href="#the-react-bubble">The React bubble</a></li></ul></li><li><a href="#part-2-things-you-forgot-or-never-knew-because-of-react">Part 2: Things you forgot (or never knew) because of React</a><ul><li><a href="#your-ecosystem-doesnt-need-to-be-massive-anymore-because-it-can-share-now">Your ecosystem doesn’t need to be massive anymore (because it can share now)</a></li><li><a href="#react-hooks-are-actually-kind-of-outdated">React hooks are actually kind of outdated</a></li><li><a href="#you-dont-need-to-micro-manage-rendering-anymore">You don’t need to micro-manage rendering anymore</a></li><li><a href="#nobody-else-is-afraid-of-their-frameworks-version-of-useeffect">Nobody else is afraid of their framework’s version of useEffect</a></li><li><a href="#scaling-isnt-really-a-frontend-concern-anymore">Scaling isn’t really a frontend concern anymore</a></li><li><a href="#server-side-rendering-isnt-special-anymore">Server-side rendering isn’t special anymore</a></li><li><a href="#two-way-data-binding-isnt-hard-and-it-isnt-a-bad-idea">Two-way data binding isn’t hard and it isn’t a bad idea</a></li><li><a href="#styling-is-easy-actually">Styling is easy, actually</a></li><li><a href="#frameworks-arent-as-hard-to-learn-anymore">Frameworks aren’t as hard to learn anymore</a></li></ul></li><li><a href="#part-3-the-other-stuff-you-should-try">Part 3: the other stuff you should try</a><ul><li><a href="#svelte-my-personal-pick">Svelte (my personal pick)</a></li><li><a href="#vue">Vue</a></li><li><a href="#solid">Solid</a></li><li><a href="#fresh">Fresh</a></li><li><a href="#astro">Astro</a></li><li><a href="#qwik">Qwik</a></li><li><a href="#web-component-libraries">Web component libraries</a></li></ul></li><li><a href="#epilogue">Epilogue</a></li></ul></aside></div>
+<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#part-1-an-intro-about-music-defaults-and-bubbles">Part 1: an intro about music, defaults, and bubbles</a><ul><li><a href="#finding-richness-beyond-the-defaults">Finding richness beyond the defaults</a></li><li><a href="#completing-the-analogy-and-acknowledging-its-shortcomings">Completing the analogy, and acknowledging its shortcomings</a></li><li><a href="#the-react-bubble">The React bubble</a></li></ul></li><li><a href="#part-2-things-you-forgot-or-never-knew-because-of-react">Part 2: Things you forgot (or never knew) because of React</a><ul><li><a href="#your-ecosystem-doesnt-need-to-be-massive-anymore-because-it-can-share-now">Your ecosystem doesn’t need to be massive anymore (because it can share now)</a></li><li><a href="#react-hooks-are-actually-kind-of-outdated">React hooks are actually kind of outdated</a></li><li><a href="#you-dont-need-to-micro-manage-rendering-anymore">You don’t need to micro-manage rendering anymore</a></li><li><a href="#nobody-else-is-afraid-of-their-frameworks-version-of-useeffect">Nobody else is afraid of their framework’s version of useEffect</a></li><li><a href="#scaling-isnt-really-a-frontend-concern-anymore">Scaling isn’t really a frontend concern anymore</a></li><li><a href="#server-side-rendering-isnt-special-anymore">Server-side rendering isn’t special anymore</a></li><li><a href="#two-way-data-binding-isnt-hard-and-it-isnt-a-bad-idea">Two-way data binding isn’t hard and it isn’t a bad idea</a></li><li><a href="#styling-is-easy-actually">Styling is easy, actually</a></li><li><a href="#frameworks-arent-as-hard-to-learn-anymore">Frameworks aren’t as hard to learn anymore</a></li></ul></li><li><a href="#part-3-the-other-stuff-you-should-try">Part 3: the other stuff you should try</a><ul><li><a href="#svelte-my-personal-pick">Svelte (my personal pick)</a></li><li><a href="#vue">Vue</a></li><li><a href="#solid">Solid</a></li><li><a href="#fresh">Fresh</a></li><li><a href="#astro">Astro</a></li><li><a href="#preact">Preact</a></li><li><a href="#qwik">Qwik</a></li><li><a href="#web-component-libraries">Web component libraries</a></li></ul></li><li><a href="#epilogue">Epilogue</a></li></ul></aside></div>
 
 ## Part 1: an intro about music, defaults, and bubbles
 
@@ -361,7 +361,7 @@ In that world, most frontend UIs were built either with vanilla JavaScript, or w
 
 That's because you had to write your own selectors for each and every element and DOM node you might want to interact with, and you had to come up with your own manual way of tracking and syncing state. That usually involved writing to and retrieving from the DOM, which was messy, error-prone, and most importantly, slow. (That's where the virtual DOM came in, but even _that_ has been [pretty thoroughly outdated for years](https://svelte.dev/blog/virtual-dom-is-pure-overhead).)
 
-Writing modular code back then was difficult to impossible, and JS files often ballooned to hundreds of lines, if not thousands. If multiple authors were working on the same project, they'd often reinvent, repeat, or even override each other's code. And the bigger or more complex your app (_Facebook_), the worse the problem was.
+Writing modular code back then was difficult to impossible, and JS files often ballooned to hundreds of lines, if not thousands. If multiple authors were working on the same project, they'd often reinvent, repeat, or even override each other's code (partly because code often went into a shared global namespace, which made collisions even more likely). And the bigger or more complex your app (_Facebook_), the worse the problem was.
 
 It's important to remember: that's our baseline for "does it scale?" as it relates to frontend. Does it stay reasonably maintainable even if my app grows exponentially?
 
@@ -371,7 +371,7 @@ The worry that a frontend framework might not scale is as old as jQuery, and sho
 
 </CalloutPlusQuote>
 
-React solved many of these problems, yes. But it didn't do so by being a marvel of modern engineering, so much as simply coming up with a good way to manage and share state, make data reactive, abstract complexity, and enable developers to share the same programming patterns without conflicts or overrides.
+React solved many of these problems, yes. But it didn't do so by being a marvel of modern engineering, so much as simply coming up with a good way to manage and share state, make data reactive, abstract complexity, and enable developers to share the same programming patterns without conflicts, namespace collisions, or overrides.
 
 React wasn't the best, only, or even _first_ solution to frontend scalability; it's just one of many possible versions of the same paradigm.
 
@@ -471,7 +471,13 @@ Two quick notes before we dive in, though:
 
 1. I list several options here, for the sake of covering all the other modern frameworks I mentioned above. **I don't expect anyone to learn about—let alone _use_—all of them**. If you have to pick one, go with Svelte, or maybe Vue. But in any case, know that I'm only listing them all for the sake of thoroughness.
 
-2. I didn't list _all_ the options here. There are others. I omitted Ember and Angular, for example, because they're both older than React, and don't generally tend to outperform React significantly, if at all, in benchmark tests (sorry, Mel). I also omitted the lightweight options like [Alpine](https://alpinejs.dev/) and [Petite Vue](https://github.com/vuejs/petite-vue), since those are more replacements for jQuery than React, and shine where you might not need something as heavy-handed as a framework. I also omitted exceptionally good tools in and around this category, like [Eleventy](https://www.11ty.dev/), since it's more of a pure static site generator than a framework. (Still worth a look if you're using Gatsby, however.)
+2. I didn't list _all_ the options here. There are others.
+
+   I omitted Ember and Angular, for example, because they're both older than React, and don't generally tend to outperform React significantly, if at all, in benchmark tests (sorry, Mel).
+
+   I also omitted the lightweight options like [Alpine](https://alpinejs.dev/) and [Petite Vue](https://github.com/vuejs/petite-vue), since those are more replacements for jQuery than React, and shine where you might not need something as heavy-handed as a framework.
+
+   Finally, I also omitted exceptionally good tools in and around this category, like [Eleventy](https://www.11ty.dev/), since it's more of a pure static site generator than a framework. (Still worth a look if you're using Gatsby, however.)
 
 All that said: here's your Discover Weekly.
 
@@ -533,17 +539,19 @@ Solid also offers its own meta-framework in [SolidStart](https://start.solidjs.c
 
 #### Solid is recommended if:
 
-You really like React (and JSX), but you just wish it was faster and easier.
+You generally like React (and JSX), but you just wish it was more modern, faster and/or easier; performance is an absolute top priority.
 
 #### Solid replaces:
 
-React and React DOM. Solid Start can replace Next, but it's much younger and may not be as full-featured.
+React and React DOM. SolidStart will likely be capable of replacing Next one day, but it's still in beta as of this writing.
 
 ### [Fresh](https://fresh.deno.dev/)
 
 [Fresh](https://fresh.deno.dev/) is a server-rendered frontend framework with islands architecture, built on Deno. It's a bit younger than most of the rest of the items on this list, but it's full of promise as a minimal-JS, island-based framework that can run on the edge—powered by Deno, no less, which means your server code is faster, more secure, TypeScript by default, and all the other benefits Deno brings over traditional Node (such as easier, first-party linting, testing, and code formatting settings).
 
-Fresh uses Preact for rendering, so you know it's fast, and won't be difficult to pick up if you're coming from React, either. And again: building on Deno feels great.
+Every Fresh component is either static-rendered and served at response time as HTML, with no JavaScript, or an "island," which means it renders only on the client. You can mix and match as needed. Because it runs on Deno, this opens the gate for extremely fast, dynamic content that loads as quickly as possible on any device anywhere in the world.
+
+Fresh uses Preact, so you know it's fast, and won't be difficult to pick up if you're coming from React, either. And again: building on Deno feels great.
 
 #### Fresh is recommended if:
 
@@ -570,6 +578,18 @@ You're building a largely static, or content/Markdown-based site (even if you ma
 #### Astro replaces:
 
 Gatsby, or similar React-based content tools.
+
+### [Preact](https://preactjs.com/)
+
+You probably already know about [Preact](https://preactjs.com/) if you live in React land, but it warrants mention here. It's a much slimmer, much faster version of React. Although it began more-or-less as a drop-in replacement for React, it's beginning to gain some superior features React doesn't have (like _Signals_, which we've already mentioned).
+
+#### Preact is recommended if:
+
+You want to stick with React, essentially, but you just want it to be faster.
+
+#### Preact replaces:
+
+React. (Actually, it just adds a P to the beginning. The P stands for performance. I made all that up; don't blame the Preact team for that.)
 
 ### [Qwik](https://qwik.builder.io/)
 
