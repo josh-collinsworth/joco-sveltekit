@@ -1,7 +1,7 @@
 ---
 title: Things you forgot (or never knew) because of React
 date: 2023-08-04
-updated: 2023-08-07
+updated: 2023-08-09
 categories:
   - opinion
   - web
@@ -393,7 +393,7 @@ Server Components finally shipped in React 18, only a few months ago as of this 
 
 Remix can do server-side rendering, and so can Next and Gatsby, of course—and those are all still React under the hood. But so can [SvelteKit](https://kit.svelte.dev/) (it's server-rendered by default, in fact) and [Nuxt](https://nuxt.com/), Vue's meta-framework.
 
-Astro, and [Fresh](https://fresh.deno.dev/) (Deno's frontend framework) both have server-side rendering, and they both use Preact (which, again, is even faster than React, and which has [Signals](https://preactjs.com/guide/v10/signals/), a much more performant and ergonomic version of `useState` and the reactivity model).
+Astro, and [Fresh](https://fresh.deno.dev/) (Deno's frontend framework) both have server-side rendering. Fresh uses Preact (which, again, is even faster than React, and which has [Signals](https://preactjs.com/guide/v10/signals/), a much more performant and ergonomic version of `useState` and the reactivity model). Astro just lets you server-render whatever flavor of components you want.
 
 [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart) (Solid's meta-framework) has server rendering. Qwik is built around it. Even some older frameworks like [Ember](https://emberjs.com/) and [Angular](https://angularjs.org/) have a story here; I'm sure I'm leaving out others, too.
 
