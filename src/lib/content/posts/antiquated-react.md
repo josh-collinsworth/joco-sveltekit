@@ -387,17 +387,25 @@ Here I'm referring to scaling in the general sense; making sure complexity stays
 
 ### Server-side rendering isn't special anymore
 
-Several years ago, when React introduced the concept of server components, they were a vision of the future. They weren't actually released yet (and weren't even close, it turns out), but people were still rightly excited for the idea that React could be rendered on a server as HTML, instead of on the client as a Single-Page App (SPA). The speed and SEO gains were impossible to ignore.
+<SideNote>
 
-Server Components finally shipped in React 18, only a few months ago as of this writing(!). But while we were waiting, pretty much every other framework got server rendering figured out.
+An earlier version of this section erroneously conflated server-side rendering with React Server Components (for reasons that I hope are at least understandable, given the confusing naming conventions).
 
-Remix can do server-side rendering, and so can Next and Gatsby, of course—and those are all still React under the hood. But so can [SvelteKit](https://kit.svelte.dev/) (it's server-rendered by default, in fact) and [Nuxt](https://nuxt.com/), Vue's meta-framework.
+</SideNote>
 
-Astro, and [Fresh](https://fresh.deno.dev/) (Deno's frontend framework) both have server-side rendering. Fresh uses Preact (which, again, is even faster than React, and which has [Signals](https://preactjs.com/guide/v10/signals/), a much more performant and ergonomic version of `useState` and the reactivity model). Astro just lets you server-render whatever flavor of components you want.
+There was a time, several years ago, when React was pretty much the only game in town when it came to server-rendered content (mainly via Next JS). People were rightly excited for the idea that React could be rendered on a server as HTML, instead of on the client as a Single-Page App (SPA). The speed and SEO gains were impossible to ignore, and initially, it took other frameworks a bit to catch up.
 
-[SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart) (Solid's meta-framework) has server rendering. Qwik is built around it. Even some older frameworks like [Ember](https://emberjs.com/) and [Angular](https://angularjs.org/) have a story here; I'm sure I'm leaving out others, too.
+However, as is a theme with these things in general, and with this post in particular: the first to iterate is rarely the best.
 
-Point is: way back when React introduced the concept of Server Components, they were special, and React was one of few that had the concept. Now, server rendering is table stakes, and React just barely made it to the party. A lot of newer frameworks don't just have the _option_ to render on the server; they do it _by default_.
+[SvelteKit](https://kit.svelte.dev/) is server-rendered by default, without you needing to do anything, and offers fine-grained control over its rendering patterns. [Nuxt](https://nuxt.com/), Vue's meta-framework, was earlier to the game (being obviously inspired by Next).
+
+[Fresh](https://fresh.deno.dev/) (Deno's frontend framework) is entirely server-rendered, except for what you designate as an "island" (client-rendered); anything else just ships as static HTML. Fresh also uses Preact (which, again, is even faster than React, and which has [Signals](https://preactjs.com/guide/v10/signals/), a much more performant and ergonomic version of `useState` and the reactivity model).
+
+Astro has server-rendering, and just lets you server-render whatever flavor of components you want. It can render other frameworks' components just fine, and has even been noted as a major performance upgrade from Next, in some cases.
+
+[SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart) (Solid's meta-framework) has server rendering. Qwik is entirely built around it. Even some older frameworks like [Ember](https://emberjs.com/) and [Angular](https://angularjs.org/) have a story here; I'm sure I'm leaving out others, too.
+
+Point is: way back when, React was one of few frameworks that had the concept of rendering client view framework components on a server. But now, server rendering is table stakes. A lot of newer frameworks don't just have the _option_ to render on the server; they do it _by default_.
 
 PHP is back, baby.
 
@@ -412,6 +420,10 @@ For some time, it seemed like one-way data flow was considered a best practice. 
 Working with forms in React is notoriously cumbersome because every user keystroke is a two-step process: get the value from the input; then set the state to match it (which in turn needlessly re-renders the input, to contain the exact value it already did, but synced up with React state). Sure, it's usually too fast to notice, but it's a lot of extra work.
 
 Svelte, Vue, and many others don't have this issue. You can just bind state in such a way that it updates automatically from both ends. If the state changes, the DOM updates; if the DOM changes, the state updates.
+
+This way, you don't have to do the multi-step dance. If you just want to capture, say, the value of a text box, you do two-way data binding. Then, when the user types into the field, the data updates automatically, and you can get it whenever the time is right with no further steps. If in the meantime you need to do something like set a value or clear the field, that's also a simple one-liner.
+
+Two-way data binding lets you keep data and the DOM in sync without the need to constantly make sure one is keeping up with the other.
 
 Could you get in trouble using these? For sure. But I find that dogmatic ideals of best practices get in the way as much or more than they help. One-way data flow is a prime example.
 
