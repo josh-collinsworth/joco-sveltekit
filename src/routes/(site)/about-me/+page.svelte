@@ -14,10 +14,9 @@
 		<h2>Who I am</h2>
 
 		<p>
-			In my most recent role, I was a senior frontend developer at <a href="https://shopify.com"
-				>Shopify</a
-			>. Shortly, I'll begin as a Frontend Engineer at <a href="https://deno.land">Deno</a>. In my
-			spare time, I love hobby coding; I'm the maker and designer of the word games <i>Quina</i>
+			I'm currently a Frontend Engineer at <a href="https://deno.land">Deno</a>. Before that, I was
+			a senior frontend developer at <a href="https://shopify.com">Shopify</a>. . In my spare time,
+			I love hobby coding; I'm the maker and designer of the word games <i>Quina</i>
 			(<a href="https://apps.apple.com/us/app/quina/id1636895462">iOS</a>/<a
 				href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a
 			>/<a href="https://quina.app">web</a>) and <i>Hondo</i>

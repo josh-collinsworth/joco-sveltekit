@@ -23,7 +23,8 @@
 			</h2>
 
 			<p class="subhead h2">
-				I currently live in the Kansas City area, and work as a senior frontend developer.
+				I currently live in the Kansas City area, and work for <a href="https://deno.land">Deno</a> as
+				a frontend engineer.
 			</p>
 
 			<p>
@@ -35,8 +36,8 @@
 				<a href="/projects">designed and built</a>
 				the word games
 				<a href="https://quina.app">Quina</a> and <a href="https://playhondo.com">Hondo</a>.
-				Sometimes I do
-				<a href="/about-me#appearances">podcast appearances</a>, but mainly I just
+				Occasianally I'll
+				<a href="/about-me#appearances">appear on a podcast</a>, and I semi-regularly
 				<a href="/blog">blog here</a>.
 			</p>
 

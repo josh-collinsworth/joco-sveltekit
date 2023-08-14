@@ -11,11 +11,19 @@ Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karm
 ## Experience
 
 
+
+### [Deno](https://deno.land/)
+
+**Frontend Engineer**
+
+_August 2023 – present_
+
+
 ### [Shopify](https://shopify.com/)
 
 **Senior Front End Developer**
 
-_August 2021 – present_
+_August 2021 – August 2023_
 
 - Acted as lead developer on the comprehensive redesign and rebuild of all marketing pages for Shopify’s [point of sale](https://shopify.com/pos) and retail products in Remix for over 30 locales, facilitating development team and stakeholder communication throughout. The project resulted in an 18% increase in customer conversion rate
 - Worked on small teams and independently to develop marketing landing pages for major Shopify initiatives, including Shopify’s enterprise offering, [Commerce Components](https://shopify.com/commerce-components), collaborating with designers and stakeholders to implement animation, evaluate technical tradeoffs, and deliver on tight deadlines
@@ -73,7 +81,7 @@ _August 2019 – January 2021_
 
 ### [Flywheel - Managed WordPress Hosting](https://getflywheel.com)
 
-**Support Technical Lead (Tier 2); Happiness Engineer**	
+**Support Technical Lead (Tier 2); Happiness Engineer**
 
 _September 2015 – August 2019_
 
@@ -81,7 +89,7 @@ _(Acquired by WP Engine June 2019)_
 
 - Led the US Tier 2 support team, including both local and remote engineers, guiding their work and training in WordPress, PHP, platform technologies such as NGINX and Varnish, and developing tools and resources for leveling up their knowledge and skills, such as a micro web app to assist with complex SQL queries, and in-depth training sessions on SSL, DNS, NGINX, and the Flywheel Cloud Platform architecture
 - Launched a private Chrome extension to add helpful productivity features (and visual themes) to Flywheel’s admin panel, which saves agents an estimated 15–20 minutes of productivity per day; acted as lead developer and maintainer on the project, which is still in use by all Flywheel support agents
-- Developed and taught a “WordPress 101” course to all Flywheel new hires 
+- Developed and taught a “WordPress 101” course to all Flywheel new hires
 - Built a self-driven “who’s who” app built in React using Flywheel’s HR software API to help new and existing employees learn one another’s names and faces in a fun browser game environment
 - Took on sole leadership for developing and maintaining the support team’s internal knowledge base WordPress site, used by all levels, including entry-level engineers new to the tech, and intermediate- to expert-level engineers as a reference on topics ranging from plugins to NGINX , caching and RegEx
 - Developed a set-it-and-forget-it [plugin](https://github.com/josh-collinsworth/flywheel-cloud-wp-load-fix/) to resolve compatibility issues between some WordPress plugins and themes and the Flywheel Cloud Platform’s file system architecture
