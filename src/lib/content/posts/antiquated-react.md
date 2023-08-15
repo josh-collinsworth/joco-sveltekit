@@ -1,7 +1,7 @@
 ---
 title: Things you forgot (or never knew) because of React
 date: 2023-08-04
-updated: 2023-08-09
+updated: 2023-08-15
 categories:
   - opinion
   - web
@@ -127,7 +127,7 @@ h4 {
 </style>
 
 <!-- This markup was generated using the deprecated TableOfContents component. -->
-<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#part-1-an-intro-about-music-defaults-and-bubbles">Part 1: an intro about music, defaults, and bubbles</a><ul><li><a href="#finding-richness-beyond-the-defaults">Finding richness beyond the defaults</a></li><li><a href="#completing-the-analogy-and-acknowledging-its-shortcomings">Completing the analogy, and acknowledging its shortcomings</a></li><li><a href="#the-react-bubble">The React bubble</a></li></ul></li><li><a href="#part-2-things-you-forgot-or-never-knew-because-of-react">Part 2: Things you forgot (or never knew) because of React</a><ul><li><a href="#your-ecosystem-doesnt-need-to-be-massive-anymore-because-it-can-share-now">Your ecosystem doesn’t need to be massive anymore (because it can share now)</a></li><li><a href="#react-hooks-are-actually-kind-of-outdated">React hooks are actually kind of outdated</a></li><li><a href="#you-dont-need-to-micro-manage-rendering-anymore">You don’t need to micro-manage rendering anymore</a></li><li><a href="#nobody-else-is-afraid-of-their-frameworks-version-of-useeffect">Nobody else is afraid of their framework’s version of useEffect</a></li><li><a href="#scaling-isnt-really-a-frontend-concern-anymore">Scaling isn’t really a frontend concern anymore</a></li><li><a href="#server-side-rendering-isnt-special-anymore">Server-side rendering isn’t special anymore</a></li><li><a href="#two-way-data-binding-isnt-hard-and-it-isnt-a-bad-idea">Two-way data binding isn’t hard and it isn’t a bad idea</a></li><li><a href="#styling-is-easy-actually">Styling is easy, actually</a></li><li><a href="#frameworks-arent-as-hard-to-learn-anymore">Frameworks aren’t as hard to learn anymore</a></li></ul></li><li><a href="#part-3-the-other-stuff-you-should-try">Part 3: the other stuff you should try</a><ul><li><a href="#svelte-my-personal-pick">Svelte (my personal pick)</a></li><li><a href="#vue">Vue</a></li><li><a href="#solid">Solid</a></li><li><a href="#fresh">Fresh</a></li><li><a href="#astro">Astro</a></li><li><a href="#preact">Preact</a></li><li><a href="#qwik">Qwik</a></li><li><a href="#web-component-libraries">Web component libraries</a></li></ul></li><li><a href="#epilogue">Epilogue</a></li></ul></aside></div>
+<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#part-1-an-intro-about-music-defaults-and-bubbles">Part 1: an intro about music, defaults, and bubbles</a><ul><li><a href="#finding-richness-beyond-the-defaults">Finding richness beyond the defaults</a></li><li><a href="#completing-the-analogy-and-acknowledging-its-shortcomings">Completing the analogy, and acknowledging its shortcomings</a></li><li><a href="#the-react-bubble">The React bubble</a></li></ul></li><li><a href="#part-2-things-you-forgot-or-never-knew-because-of-react">Part 2: Things you forgot (or never knew) because of React</a><ul><li><a href="#your-ecosystem-doesnt-need-to-be-massive-anymore-because-it-can-share-now">Your ecosystem doesn’t need to be massive anymore (because it can share now)</a></li><li><a href="#react-hooks-are-actually-kind-of-outdated">React hooks are actually kind of outdated</a></li><li><a href="#you-dont-need-to-micro-manage-rendering-anymore">You don’t need to micro-manage rendering anymore</a></li><li><a href="#nobody-else-is-afraid-of-their-frameworks-version-of-useeffect">Nobody else is afraid of their framework’s version of useEffect</a></li><li><a href="#scaling-isnt-really-a-frontend-concern-anymore">Scaling isn’t really a frontend concern anymore</a></li><li><a href="#server-side-rendering-isnt-special-anymore">Server-side rendering isn’t special anymore</a></li><li><a href="#two-way-data-binding-isnt-hard-and-it-isnt-a-bad-idea">Two-way data binding isn’t hard and it isn’t a bad idea</a></li><li><a href="#styling-is-easy-actually">Styling is easy, actually</a></li><li><a href="#frameworks-arent-as-hard-to-learn-anymore">Frameworks aren’t as hard to learn anymore</a></li><li><a href="#other-options-arent-just-new-and-shiny-and-nobody-cares-about-that-anyway">Other options aren't just "new and shiny" (and nobody cares about that anyway)</a></li><li><a href="#react-is-way-behind-in-performance">React is WAY behind in performance</a></li></ul></li><li><a href="#part-3-the-other-stuff-you-should-try">Part 3: the other stuff you should try</a><ul><li><a href="#svelte-my-personal-pick">Svelte (my personal pick)</a></li><li><a href="#vue">Vue</a></li><li><a href="#solid">Solid</a></li><li><a href="#fresh">Fresh</a></li><li><a href="#astro">Astro</a></li><li><a href="#preact">Preact</a></li><li><a href="#qwik">Qwik</a></li><li><a href="#web-component-libraries">Web component libraries</a></li></ul></li><li><a href="#epilogue">Epilogue</a></li></ul></aside></div>
 
 ## Part 1: an intro about music, defaults, and bubbles
 
@@ -387,12 +387,6 @@ Here I'm referring to scaling in the general sense; making sure complexity stays
 
 ### Server-side rendering isn't special anymore
 
-<SideNote>
-
-An earlier version of this section erroneously conflated server-side rendering with React Server Components (for reasons that I hope are at least understandable, given the confusing naming conventions).
-
-</SideNote>
-
 There was a time, several years ago, when React was pretty much the only game in town when it came to server-rendered content (mainly via Next JS). People were rightly excited for the idea that React could be rendered on a server as HTML, instead of on the client as a Single-Page App (SPA). The speed and SEO gains were impossible to ignore, and initially, it took other frameworks a bit to catch up.
 
 However, as is a theme with these things in general, and with this post in particular: the first to iterate is rarely the best.
@@ -472,6 +466,64 @@ Great things are created through iteration, and for the most part, other choices
 This means React is a bit like a git branch that's fallen well behind `main`. You might not realize it, if React is the star your galaxy orbits around, but…well, frontend has moved on. The ecosystem has taken those ideas and run with them to make things that are even better.
 
 We have no shortage of more performant, less complex, less difficult-to-learn options available to us now. And if you know React already, none of them will be very hard to learn as well.
+
+<Note>
+
+The following two sections were not included in the original draft of this post, and were added on August 15th, 2023, to address feedback from the original version.
+
+</Note>
+
+### Other options aren't just "new and shiny" (and nobody cares about that anyway)
+
+A common refrain I hear when discussing pieces such as this one goes something like this:
+
+_Those silly JavaScript developers, always chasing the shiny new thing! They don't care about maintaining their projects long-term. The hot new framework will be forgotten tomorrow and their code won't even run!_
+
+There's an inkling of truth there. True, JavaScript developers (dare I say frontend developers in general) seem to be attracted to new things in a way that other programming specialists tend to be a bit more wary of.
+
+…But how true is that, actually? Are we sure every JS dev in the world is rushing out to rewrite their entire tech stack the moment something new arrives? Or is that just what it _feels_ like, fed by an endless online hype cycle?
+
+I think it seems a lot more true than it is in reality, because early adopters of any given technology tend to be the ones getting all the attention; they're the ones writing all the blog posts and making all the videos, which in turn get shared and talked about in a way that makes it _seem_ like there's a lot more of this kind of behavior going on than there actually is. (After all, if it was even _half_ true, React's market share would be a fraction of what it is currently.)
+
+Most of the frontend devs I've met stick with what they know, just like any other kind of developer. I think it's just a little less costly for us to dabble in new things, and so we do.
+
+That's all beside the point, though: this view underestimates the maturity of the other options available in the field.
+
+Vue has been around as long as React, and its current version (v3) launched almost three years ago. The modern version of Svelte was launched only _two months_ after React hooks did (_did you think React hooks was new and shiny two months ago_?), and SvelteKit hit 1.0 almost a full year ago. Preact is on version 10. Solid's been 1.0+ for over two years. Astro hit 1.0 a year ago. Qwik and Fresh are the newest entries I'll mention here, but they're both at 1.0 as of earlier this year.
+
+So if _some_ of those entries are still a little too new for you, that's fine. I get that. But reducing any consideration of React alternatives to a short attention span is a fallacious glossing-over of the maturity and depth available in the field.
+
+### React is WAY behind in performance
+
+I won't harp too much on this here, because much has already been written on the topic (some in [this other post](/blog/self-fulfilling-prophecy-of-react) I wrote, much in other places easily discoverable online). But suffice to say: where React is slower, it may _seem_ like it's by a negligible amount (especially if you're privileged enough to be using very new/premium hardware, on a very fast internet connection). But the difference is far from trivial.
+
+React falls behind in terms of performance (and here I mean both bundle size and execution speed) by factors of 2 or more in many cases. (The bundle itself can be by 10x or more.) The latest run of the [JS web frameworks benchmark](https://github.com/krausest/js-framework-benchmark) places React's performance, on average, at almost 50% slower than Solid, 25% slower than Vue, 40% slower than Svelte, and 35% slower than Preact. (Other frameworks weren't available in this particular test.)
+
+<SideNote>
+
+That comparison was using _only_ React hooks; no `useTransition` hook, and no additional libraries like Redux.
+
+</SideNote>
+
+There are other studies, too. I'm sure the numbers are a bit different everywhere, and I'm sure there's always nuance to their findings. But:
+
+<CalloutPlusQuote>
+
+Pretty much no matter what results you consult, React will be larger and slower than just about anything that's come since.
+
+</CalloutPlusQuote>
+
+Anecdotally: I can _tell_, as a user, when the form I'm filling out on my Android uses React. There's a slowness to it, and its loop of updating the DOM to match the state to match the DOM, that I don't notice _unless_ it's React.
+
+But forget anecdotes; we just saw data. And I know those numbers might not _sound_ big, and that performance is one of many considerations when choosing your tech stack. "It all depends."
+
+But let's realize that a 25–50% improvement is _massive_ in terms of performance gains. Making the frontend load up to twice as fast for users is far, far beyond the boundaries of a marginal nice-to-have; we're talking numbers that add up to a _colossal_ difference at scale.
+
+I'm sure I don't need to quote the myriad studies available to demonstrate how valuable every tenth of a second is, when loading a website or waiting for an operation to complete. I hope I _also_ don't need to tell you how important it is to consider users who might not have the bandwidth to download huge JavaScript bundles, and/or the computing power to wait up to two times longer for every change the framework might make on the page.
+
+Any engineer who eliminates a chunk of loading or processing _that_ sizable has it in a prominent place on their résumé. It's a big deal.
+
+The performance difference between React and the rest of the field isn't _minimal_; it's _minimized_.
 
 ## Part 3: the other stuff you should try
 
