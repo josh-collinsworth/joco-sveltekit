@@ -23,7 +23,7 @@ I've also got working experience with jQuery and Knockout.
 
 - I'm a strong proponent of well-architected, accessible, and semantic <b>HTML</b>. (I create and use SVG often.)
 
-- Professionally, I use [Remix](http://remix.run/) and [Tailwind](https://tailwindcss.com/) on a daily basis, though neither has found its way into any of my personal projects.
+- Professionally, I've used [Remix](http://remix.run/) and [Tailwind](https://tailwindcss.com/) on a daily basis, though neither has found its way into any of my personal projects.
 
 - I’m a [WordPress](https://wordpress.org/) expert and generally prefer to build themes from scratch. I'm capable with PHP and MySQL.
 
@@ -80,7 +80,7 @@ I’m also a fan of
 - [Logitech MX Ergo Plus trackball mouse](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html): I was previously using an [Anker Vertical Mouse](https://www.anker.com/products/variant/xanker-24g-wireless-vertical-ergonomic-optical-mouse/xa7852011), but switched to a trackball when some wrist issues flared up. The trackball saves the arm movement. I tend to switch up what I use frequently these days, to keep any one thing from getting too repetitive (I also currently have a trackpad on my desk), but the trackball mouse has been my mainstay since summer 2022, and surprisingly easy to adjust to.
 
 - [ZSA Moonlander](https://www.zsa.io/moonlander) keyboard:
-I was previously using the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/), and still like that one, but the thumb keys on the Moonlander became key (ha) for reducing finger strain. Plus, the wide range of customization options is excellent. I wrote about [switching to the Moonlander in this post](/blog/moonlander).
+I was previously using the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/), and still like that one, but the thumb keys on the Moonlander became key (ha) for reducing finger strain. Plus, the wide range of customization options is excellent. I wrote about [switching to the Moonlander in this post](/blog/moonlander). (If you're a keyboard nerd like I now am: I use [these MT3 keycaps](https://drop.com/buy/drop-matt3o-devtty-custom-keycap-set) and [Glorious Panda](https://www.gloriousgaming.com/products/glorious-panda-mechanical-switches) switches.)
 
 - [Herman Miller Sayl Chair](https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/):
 I made it about two months as a full-time work-from-home employee before I went and bought one of these chairs. It’s the most comfortable and easily adjustable office chair I’ve ever sat in (and it looks really nice, too).
@@ -97,7 +97,7 @@ Not a lot of purchases I’ve been happier with than this one. It works incredib
 The first thing I install on every new device. I’ve tried and liked other password software, but 1Password is just the most reliable cross-platform and -device in my experience.
 
 - [Raycast](https://www.raycast.com/):
-the <em>second</em> thing I install on every new Mac. (I previously used [Alfred](https://www.alfredapp.com/), which I still love and support. But Raycast has more built in, and has seemed to capture the developer zeitgeist for the time being.) The main features I love are clipboard history, snippet expansion, global search (never touch Finder again!), and workflows to automate repetitive or tedious tasks. Wouldn’t ever want to work without it. As an added bonus, Raycast includes window management and emoji picking, which means you can forego some of the other apps previously on this list like [Rectangle](https://rectangleapp.com/) and [Rocket](https://matthewpalmer.net/rocket/) (though admittedly, Rocket's emoji picking is much nicer).
+the <em>second</em> thing I install on every new Mac. (I previously used [Alfred](https://www.alfredapp.com/), which I still love and support—and even go back and forth between, as I [wrote about here](/blog/alfred-raycast).) The main features I love are clipboard history, snippet expansion, global search (never touch Finder again!), and workflows to automate repetitive or tedious tasks. Wouldn’t ever want to work without it. As an added bonus, Raycast includes window management and emoji picking, which means you can forego some of the other apps previously on this list like [Rectangle](https://rectangleapp.com/) and [Rocket](https://matthewpalmer.net/rocket/) (though admittedly, Rocket's emoji picking is much nicer).
 
 - [CleanShot X](https://cleanshot.com/):
 taking screenshots and videos is a many-times-daily activity for me, and CleanShot X makes it as seamless as possible for an easy, one-time payment.
