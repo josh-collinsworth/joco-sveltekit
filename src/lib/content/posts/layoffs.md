@@ -18,23 +18,71 @@ draft: true
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
+<style lang="scss">
+.memo {
+	width: calc(100% + 2rem);
+	margin-left: -1rem;
+	padding: var(--wholeNote) var(--halfNote);
+	box-shadow: 0.125rem 0.125rem 0.5rem #0003, 0.0125rem 0.0125rem 0.125rem #0005;
+	margin-bottom: -2rem;
+	transform: rotate(1deg);
+	filter: sepia(10%);
+	background: var(--lightestGray);
+	background-image:
+		linear-gradient(to bottom right, #fedb, #efdb),
+		url('https://img.freepik.com/free-photo/vintage-grunge-paper-background_1048-10911.jpg?w=2000&t=st=1692825766~exp=1692826366~hmac=cbdc42e06b9f7c614d34ec9808fce79da200d910635dcb2196e75596d12e3dc2');
+	background-size: cover;
+	color: var(--black);
+}
+
+/* These selectors are insane but they don't get compiled right unless you do it this way */
+.memo + .memo {
+	transform: rotate(-1.5deg);
+}
+
+.memo + .memo + .memo {
+	transform: rotate(1.5deg);
+}
+
+.memo + .memo + .memo + .memo {
+	transform: rotate(-1deg);
+	margin-left: -0.5rem;
+}
+
+.memo + .memo + .memo + .memo +.memo {
+	transform: rotate(1.25deg);
+}
+
+.memo p {
+	font-style: italic;
+	em, i {
+		font-style: normal;
+	}
+}
+
+.memo div {
+	margin-bottom: var(--halfNote);
+}
+
+</style>
+
 <Note>
 
 This is the first satirical post I've written here. Please take this little writing experiment much less seriously than you might any of my other content.
 
 </Note>
 
-<div><p>[<em>PA crackles</em>]</p></div>
+<br />
+
+<div class="memo">
+
+<div><p>—<em>Captain's memo, 8:15am</em>—</p></div>
 
 Greetings, crew. This is your Captain speaking. It is with a heavy heart I must inform you that, although we've shared for years now in this long and successful journey together, our ship is, sadly, not currently headed in the right direction.
 
 To right the situation, and in order to ensure the success of our vessel and this collective voyage going forward, we're forced to make some tough changes.
 
-<CalloutPlusQuote>
-
 We, the officers, have been forced to make the difficult decision to put 15% of you on life boats, effective immediately.
-
-</CalloutPlusQuote>
 
 Those of you impacted will find a note in your locker. To those: we're sad to see you go, and we thank you for your service. We wish you the best, wherever this ocean may take you. Please collect your things, and make your way to the nearest life boat immediately.
 
@@ -42,7 +90,11 @@ To those remaining: we assure you this devastating loss of your colleagues and f
 
 Trust us, it has to be this way, but for good reason. Sad day; bright future. Onward we go!
 
----
+</div>
+
+<div class="memo">
+
+<div><p>—<em>Captain's memo, 10:26am</em>—</p></div>
 
 Hello, crew. This is your captain once again. It seems there were quite a few questions following that last announcement, so please allow me to clarify.
 
@@ -58,11 +110,15 @@ We're just a bit…_overstaffed_, I suppose might be the word. Paying a little t
 
 Again, we're sorry to say it. Dreadful, this sort of thing. Just awful. But we do hope this puts the whole messy matter to rest, and we can go forward into—
 
-[_The sound of knocking at the door_]
+—sorry, hang on, it sounds like somebody's knocking at the door…
 
----
+</div>
 
-…Hello again, crew. It's your Captain again. It seems that previous message warranted further explanation. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you. Thank you for your questions.
+<div class="memo">
+
+<div><p>—<em>Captain's memo, 1:05pm</em>—</p></div>
+
+Hello again, crew. It's your Captain again. It seems that previous message warranted further explanation. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you. Thank you for your questions.
 
 True, as many of you have keenly observed, those responsible for deciding who to hire and when are, in fact, the officers. I can see that, to some of you, it seems a bit unfair that the people being removed from the ship had nothing to do with the poor decisions that necessitated the, ah, departure, as it were.
 
@@ -72,19 +128,17 @@ Perhaps, some of you have posited, we would be better off removing the people wh
 
 All right, yes, it's true that we have plenty, both in reserves, and in new supplies continuously coming aboard. And yes, we have a great many projects coming up that will require extra hands. That's all thanks to the many successful partnerships and trading systems you've been a part of engineering. And again, we thank you all for your service in these endeavors.
 
-<CalloutPlusQuote>
-
 Please know that we'll think of you fondly as we continue reaping the benefits of your labor long after you've&nbsp;gone.
-
-</CalloutPlusQuote>
 
 So yes, there's plenty to go around, thanks largely to all of you. We admit it. No shortage of work to be done, either, and we are sorry on that front.
 
 Nonetheless, this plan is sadly necessary, for many reasons, and will continue as planned. It's unfortunate, to be sure, but we thank you for your understanding.
 
----
+</div>
 
-[_Deep, long sigh_]
+<div class="memo">
+
+<div><p>—<em>Captain's memo, 4:28pm</em>—</p></div>
 
 Ok, crew. Captain here. All right, fine. The direction of the ship and its capacity are important reasons for all this, yes, but there are others, and it just didn't seem worth bothering you with them. But since those answers are evidently quite unsatisfactory, let's get into it.
 
@@ -102,7 +156,11 @@ In any case, let me leave you with this:
 
 _I understand, and I accept full responsibility._
 
----
+</div>
+
+<div class="memo">
+
+<div><p>—<em>Captain's memo, 5:26pm</em>—</p></div>
 
 Ok, crew, clearly your captain needs to explain that last part.
 
@@ -110,11 +168,7 @@ Nothing's actually going to happen to _me_, personally. I'm still Captain. Let's
 
 What I mean is: I accept the responsibility of continuing to captain this ship, unaffected. I will, in fact, continue almost as though nothing happened at all.
 
-<CalloutPlusQuote>
-
 I will persevere, fostering the exact environment that led to this negative outcome, while earning the highest salary of anyone aboard.
-
-</CalloutPlusQuote>
 
 _That's_ on me. I alone accept _that_ burden.
 
@@ -122,15 +176,13 @@ Once again, I also fully acknowledge that nobody affected by this announcement d
 
 But ask yourself: is it really best if the person who makes the decisions is _also_ the person responsible for them? Honestly, just think about it. What ever happened to delegation, hm? How would we ever get anywhere if leaders were constantly forced to deal with the consequences of their own actions all the time, instead of, you know…_leading_?
 
-<CalloutPlusQuote>
-
 It's really not my fault that this is all my&nbsp;fault.
 
-</CalloutPlusQuote>
+</div>
 
----
+<div class="memo">
 
-[_The sound of a long, slow, exasperated drag from a cigarette_]
+<div><p>—<em>Captain's memo, 7:04pm</em>—</p></div>
 
 Ok, crew. This will be my final message.
 
@@ -150,11 +202,7 @@ I see you.
 
 And: there's plenty of room left in those life boats.
 
-<CalloutPlusQuote>
-
 Please be sad for a reasonable amount of time, and then immediately return to your normal duties, as well as the duties of those who are no longer here.
-
-</CalloutPlusQuote>
 
 And to those departing: thanks for building us such a great ship, and best of luck getting picked up by another vessel soon.
 
@@ -162,3 +210,5 @@ And to those departing: thanks for building us such a great ship, and best of lu
 <br>
 
 …Oh, and if you do get bit by a shark, try to make sure it happens before your healthcare expires.
+
+</div>
