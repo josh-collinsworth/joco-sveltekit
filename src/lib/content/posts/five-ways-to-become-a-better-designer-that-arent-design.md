@@ -1,15 +1,16 @@
 ---
 title: "Five Ways to Become a Better Designer (That Aren't Design)"
-date: "2017-02-04"
-updated: "2020-05-18"
+date: '2017-02-04'
+updated: '2020-05-18'
 categories:
-  - "design"
-  - "opinion"
-coverImage: "toa-heftiba-195458-1-1.jpg"
+  - design
+  - opinion
+coverImage: 'toa-heftiba-195458-1-1.jpg'
 coverWidth: 80
 coverHeight: 51
 excerpt: There’s vast world of design learning and opportunity right in front of us constantly. All we need to do is take the time to notice it and learn from it.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -18,7 +19,6 @@ excerpt: There’s vast world of design learning and opportunity right in front 
 Though this post is geared toward traditional graphic designers, when I say "designer," I really mean virtually any kind of creative—particularly those who do commercial design of some kind. Whether you're a web designer, UI/UX designer, interior designer, copy writer, or any other kind of creative-for-hire: this is my list of recommendations for you.
 
 (These, and of course, to [wear sunscreen](https://en.wikipedia.org/wiki/Wear_Sunscreen), because the rest of my advice has no basis more reliable than my own meandering experience.)
-
 
 ## 1\. Embrace Public Speaking
 
@@ -45,7 +45,6 @@ Now you might say, "I hate speaking in front of people; I don't want a job where
 1. Because one of the most important skills you can have to get noticed and promoted is the ability to address people (and you will likely want to advance at some point);
 2. Because if you ever decide you don't like the job you have (and you likely will in this scenario), you're going to have to interview, and that almost certainly involves presentations and speaking of some kind;
 3. A dislike of something is _not_ a valid reason to forego a vital skill any more than a dislike of vegetables is a valid reason to eat a hamburger for every meal.
-
 
 ## 2\. Put Down Your Phone and Notice the Ordinary
 
@@ -83,7 +82,6 @@ Look at the signage on buildings. Look at billboards. Look at shop window signag
 
 Asking these questions is important. Look up. There's a gold mine of design knowledge hidden in the everyday aspects of the real world.
 
-
 ## 3\. Immerse Yourself in the Lives of People Who Aren't Like You
 
 We, as designers, tend to think everybody likes—and is therefore persuaded, delighted and enriched by—beautiful graphics of the most modern and whimsical variety.
@@ -116,7 +114,6 @@ Chat up strangers, even, if you're so daring. Talk to your barista or your serve
 
 The wider your horizon, the more effectively you can solve problems for real people in the real world.
 
-
 ## 4\. Work in the Service Industry
 
 I worked as a server and bartender most of my life prior to becoming a full-time designer. And as it turns out, this was excellent practice; I was routinely speaking to groups of people gathered around a table, just like when giving a design presentation. I had to speak, and I had to listen. I had to be persuasive, steer the conversation, keep people's attention, and occasionally, to relay news that the recipient wasn't keen to hear.
@@ -128,7 +125,6 @@ _Well,_ I thought, _I've been presenting things to tables of people since I was 
 This is also a great way to expand your perspective, by the way. If you've never worked in customer service, trust me; your imagination of it is nothing like the reality. (Oh, hey! That sounds like point #3. How convenient!)
 
 Commercial design isn't exactly customer service, but it isn't too far removed. You'll still have people shopping for your goods, and you'll still need to communicate clearly with them and make sure they're happy at the end of the transaction. If the real thing isn't an option yet, there's no better place to practice your soft skills than in service.
-
 
 ## 5\. Socialize
 

@@ -1,17 +1,18 @@
 ---
-title: "Announcing Hondo"
-date: "2022-07-14"
-updated: "2022-08-01"
+title: 'Announcing Hondo'
+date: '2022-07-14'
+updated: '2022-08-01'
 categories:
-  - "javascript"
-  - "design"
-  - "svelte"
-  - "web"
-coverImage: "announcing_hondo/share-image.png"
+  - javascript
+  - design
+  - svelte
+  - web
+coverImage: 'announcing_hondo/share-image.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: Updating Quina to version 2.0 filled my head with new ideas that I just couldn't walk away from. Eventually, those ideas took the shape of a whole new word game, named Hondo.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -33,10 +34,9 @@ excerpt: Updating Quina to version 2.0 filled my head with new ideas that I just
 }
 </style>
 
-
 Earlier this year, I launched [Quina v2.0](https://quina.app), an update to my almost two-year-old word/logic game. I had a blast making the updates—so much fun that when I finally pushed v2 of Quina live, I found myself sad it was over, and not wanting to stop playing around with fresh ideas.
 
-So, I began tinkering on a *new* project…an exploration that eventually led to the launch of a new (and slightly less ambitious) word game named [Hondo](https://playhondo.com).
+So, I began tinkering on a _new_ project…an exploration that eventually led to the launch of a new (and slightly less ambitious) word game named [Hondo](https://playhondo.com).
 
 Here are the links, if you'd just like to skip ahead:
 
@@ -45,19 +45,17 @@ Here are the links, if you'd just like to skip ahead:
 - [Hondo PWA on the web](https://playhondo.com)
 - [GitHub repo](https://github.com/josh-collinsworth/hondo)
 
-
 ## What is Hondo?
 
 At a basic level, you could think of [Hondo](https://playhondo.com) as a continuous game of [Wordle](https://www.nytimes.com/games/wordle/index.html): instead of guessing just one word, your goal is to guess a series of words, back-to-back. There's quite a bit more to it than that, however (which I'll cover in a moment).
 
 The idea for the gameplay originated from Quina. Originally, I thought Hondo would be an extra “marathon mode” that I’d add to Quina. When the player guessed one word, instead of ending, the game would continue with a new word, and all the previous guesses would update to hint at the new word instead. That was the idea, anyway.
 
-However, I felt Quina was already straining under the weight of its own options, and I worried a whole new mode might add more complexity than value. (Plus, I wasn’t sure Quina would actually lend itself well to the format, since it often takes *many* guesses to hone in on the word.)
+However, I felt Quina was already straining under the weight of its own options, and I worried a whole new mode might add more complexity than value. (Plus, I wasn’t sure Quina would actually lend itself well to the format, since it often takes _many_ guesses to hone in on the word.)
 
 So, I started exploring this “marathon mode” as a standalone spin-off. I had a working demo up and running within a night or two, and it didn’t take long before I was enthralled with all the possibilities of this new side project.
 
 <img src="/images/post_images/announcing_hondo/hondo-iphone13.png" alt="Hondo gameplay shown on a small, mobile-size screen" class="float-right" />
-
 
 ### The rules
 
@@ -65,7 +63,7 @@ If Hondo had come out earlier in the year, when Wordle-like games were prolifera
 
 However, instead of having just six tries, in Hondo, you have an energy gauge (with 10 bars). Every incorrect guess costs one bar; every correct guess restores a bar, allowing you to play longer.
 
-And rather than trying to guess just _one_ code word, in Hondo, you score a point for _every_ code word you successfully guess. Then a new code word is chosen, and the previous guesses still on the board update to hint to the *new* word instead. (The last five guesses always stay on the board; old ones roll off as new ones are added.)
+And rather than trying to guess just _one_ code word, in Hondo, you score a point for _every_ code word you successfully guess. Then a new code word is chosen, and the previous guesses still on the board update to hint to the _new_ word instead. (The last five guesses always stay on the board; old ones roll off as new ones are added.)
 
 That’s the basic idea, but there are a couple of extra twists as well:
 
@@ -74,8 +72,7 @@ That’s the basic idea, but there are a couple of extra twists as well:
 
 The goal of Hondo is in the name: score a Hondo (i.e., 100 points—ideally, in as few guesses as possible).
 
-When you first start playing Hondo, 100 points may seem well out of reach. But eventually, as you get the hang of when and how to use Shuffles and Skips to best increase your chances of survival, your scores will get higher and higher. At some point, your goal will shift from just reaching 100 points to doing so in as few turns as possible. (You *might* even be able to pull off a perfect game eventually; while extremely difficult, it’s possible to Hondo in just 14 guesses.)
-
+When you first start playing Hondo, 100 points may seem well out of reach. But eventually, as you get the hang of when and how to use Shuffles and Skips to best increase your chances of survival, your scores will get higher and higher. At some point, your goal will shift from just reaching 100 points to doing so in as few turns as possible. (You _might_ even be able to pull off a perfect game eventually; while extremely difficult, it’s possible to Hondo in just 14 guesses.)
 
 ## The architecture
 
@@ -103,7 +100,6 @@ Almost two years later, I don't feel monetizing a game is either valuable or nec
 I kept my [Ko-Fi link](https://ko-fi.com/collinsworth) in the game, but it's really more about having a way for folks to say thanks than it is the money itself. I don't need the $3 (though I appreciate it); the meaningful part to me is that people took a moment out of their day to let me know the project meant something to them.
 
 By the way, [here's the GitHub repo](https://github.com/josh-collinsworth/hondo) if you'd like to take a look for yourself.
-
 
 ## Gameplay explorations
 
@@ -145,7 +141,7 @@ Hondo was beginning to take shape. I had the name, and the core concept. But it 
 
 Feeling the game was still missing something, around this time, I started exploring the idea of powerups; "equippable" items that would alter the gameplay in some core way, such as making guesses cost slightly less, or rewarding you with extra energy for correct guesses.
 
-My initial idea was to have a series of unlockable powerups the user could gain access to by hitting gameplay goals, and even upgrade over time. 
+My initial idea was to have a series of unlockable powerups the user could gain access to by hitting gameplay goals, and even upgrade over time.
 
 I went down a deep rabbit hole on this concept, and had some version of a working prototype for weeks. But the more I played with this idea, however, the more I became concerned I was losing the key simplicity at the heart of the game. Sure, it was cool and interesting, but it was very tough to implement in a way that seemed to make sense in "the world of the game," if you will.
 
@@ -166,7 +162,6 @@ True, the two have some overlap in usefulness, but they are primarily handy in d
 By contrast, skips can often be handy when you're happy with the letters on the board, and/or when you suspect guessing the current code word might take more guesses than you'd care to spend. (For example, if you know the current word matches `_A_ES` and just need to fill in the blanks, you might be wise to skip, as there are many, many possibilities, and you could waste lots of guesses finding the one or two missing letters.)
 
 I felt with skips that I'd added everything the game needed and could reasonably sustain without jumping to new levels of complexity. There were a lot of ways to go with the game, as you can tell, but I felt I'd reached a balance of strategy, interest, and simplicity I was finally happy with.
-
 
 ## Wrapup
 

@@ -3,9 +3,9 @@ title: 'Converting from Gridsome to SvelteKit'
 date: '2021-10-04'
 updated: '2021-10-14'
 categories:
-  - 'javascript'
-  - 'svelte'
-  - 'web'
+  - javascript
+  - svelte
+  - web
 coverImage: 'gridsome-to-sveltekit.png'
 coverWidth: 16
 coverHeight: 9
@@ -22,12 +22,11 @@ I'll assume for the sake of this post that you're at least a little familiar wit
 
 Otherwise: let's dive into what [SvelteKit](https://kit.svelte.dev/) is, how it works, why I made the choice to switch (other than the obvious fact that I just can't resist rebuilding my site about once a year), how it's paid off, and whether I'd make the same decisions again.
 
-
 ## What is SvelteKit?
 
 If you're familiar with [Next](https://nextjs.org/) or [Nuxt](https://nuxtjs.org/), it would be fair to think of SvelteKit as the Svelte equivalent.
 
-If not: all three are "meta-frameworks," sometimes also called app frameworks. You could think of meta-frameworks as a large set of add-ons for frontend UI frameworks like React, Vue, and Svelte (in the cases of Next, Nuxt, and SvelteKit, respectively). 
+If not: all three are "meta-frameworks," sometimes also called app frameworks. You could think of meta-frameworks as a large set of add-ons for frontend UI frameworks like React, Vue, and Svelte (in the cases of Next, Nuxt, and SvelteKit, respectively).
 
 <Callout>
 If a frontend framework is a toolbox, a meta-framework is a complete workshop.
@@ -42,7 +41,6 @@ If a frontend framework is a toolbox, a meta-framework is a complete workshop.
 A meta-framework is an enhanced toolset for building full-fledged sites and apps with a specific frontend framework (hence the "meta" part of the name; a framework for a framework).
 
 Most meta-frameworks come with all your build tools and routing pre-configured. They also generally include data stores; layouts; image optimization; better SEO and full-page control; data fetching; and/or plugins--usually just about everything except a database to help you build anything you might want.
-
 
 ### Going static
 
@@ -60,7 +58,7 @@ Currently, SvelteKit offers adapters to run your project as a Node app; as stati
 Thanks to the static adapter, most of this site works just fine even with JavaScript disabled&nbsp;entirely.
 </PullQuote>
 
-This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"--JavaScript running once the page has loaded--but they don't have to. 
+This site uses SvelteKit's static adapter, which means the pages and components are pre-rendered as plain ol' HTML files. They can still benefit from "hydration"--JavaScript running once the page has loaded--but they don't have to.
 
 <Callout>
 Thanks to the static adapter (and some strategic <code>&lt;noscript&gt;</code> tags), most of this site works just fine even with JavaScript disabled entirely.
@@ -72,7 +70,6 @@ Worth noting, however: by default, after the first page load, SvelteKit's router
 You don't have to go entirely one way or the other; even if you're deploying your project as a Node app or with serverless functions, you can still mark specific pages to be prerendered as static HTML--handy for things like an "about" page that don't need dynamic content.
 </SideNote>
 
-
 ### SvelteKit layouts
 
 SvelteKit follows the convention of [layout files](https://kit.svelte.dev/docs#layouts), which are: files that "wrap" the content of any given page in additional markup, such as a header and footer.
@@ -83,30 +80,30 @@ Here's what this site's main layout file's markup looks like (slightly simplifie
 
 ```svelte
 <div
-  id="app"
-  class:reduce-motion={$prefersReducedMotion}
-  class:prefers-dark={$prefersDarkMode}
-  class:sidebar={pageHasSidebar}
+	id="app"
+	class:reduce-motion={$prefersReducedMotion}
+	class:prefers-dark={$prefersDarkMode}
+	class:sidebar={pageHasSidebar}
 >
-  <Loader loading={$isLoading}/>
+	<Loader loading={$isLoading} />
 
-  <Header /> 
+	<Header />
 
-  <div class="layout"> 
-    <main id="#main" tabindex="-1">
-      <PageHeading />
+	<div class="layout">
+		<main id="#main" tabindex="-1">
+			<PageHeading />
 
-      <PageTransition>
-        <slot />
-      </PageTransition>
-    </main>
-    
-    {#if pageHasSidebar}
-      <Sidebar />
-    {/if}
-  </div>
+			<PageTransition>
+				<slot />
+			</PageTransition>
+		</main>
 
-  <Footer />
+		{#if pageHasSidebar}
+			<Sidebar />
+		{/if}
+	</div>
+
+	<Footer />
 </div>
 ```
 
@@ -116,7 +113,6 @@ It _is_ possible to have nested layouts, or layouts that apply on a per-route ba
 
 And speaking of routing…
 
-
 ### Routing in SvelteKit
 
 By default, a new SvelteKit project has a `src/routes` directory. Anything inside `src/routes` compiles to a page at that relative root.
@@ -124,7 +120,7 @@ By default, a new SvelteKit project has a `src/routes` directory. Anything insid
 For example:
 
 | File:                          | Becomes route:    |
-|--------------------------------|-------------------|
+| ------------------------------ | ----------------- |
 | `src/routes/index.svelte`      | `/` (_homepage_)  |
 | `src/routes/about.svelte`      | `/about`          |
 | `src/routes/blog/index.svelte` | `/blog`           |
@@ -151,45 +147,42 @@ Here's a somewhat simplified example of how you might create an endpoint to retu
 
 // The `get` function responds to GET requests; you can have post(), etc. as well
 export const get = async () => {
-  const posts = await Promise.all(
-    Object.entries(import.meta.glob('/blog/posts/*.md'))
-    .map(async ([path, page]) => {
-      const { metadata } = await page()
-      const slug = path.split('/').pop().split('.').shift()
-      return { ...metadata, slug }
-    })
-  )
+	const posts = await Promise.all(
+		Object.entries(import.meta.glob('/blog/posts/*.md')).map(async ([path, page]) => {
+			const { metadata } = await page();
+			const slug = path.split('/').pop().split('.').shift();
+			return { ...metadata, slug };
+		})
+	);
 
-  return {
-    status: 200,
-    body: {
-      posts //Automatically converted to JSON ✨
-    }
-  }
-}
+	return {
+		status: 200,
+		body: {
+			posts //Automatically converted to JSON ✨
+		}
+	};
+};
 ```
 
 Once you've retrieved the post data as JSON, you can display it in a Svelte page or component; here's a short example:
 
 ```svelte
 {#each posts as post}
-  <article>
-    <img src="/images/{post.coverImage}" alt="" />
+	<article>
+		<img src="/images/{post.coverImage}" alt="" />
 
-    <h3>
-      <a href={post.slug}>
-        {post.title}
-      </a>
-    </h3>
-    
-    <p class="excerpt">
-      {post.excerpt}
+		<h3>
+			<a href={post.slug}>
+				{post.title}
+			</a>
+		</h3>
 
-      <a href={post.slug}>
-        Read more…
-      </a>
-    </p>
-  </article>
+		<p class="excerpt">
+			{post.excerpt}
+
+			<a href={post.slug}> Read more… </a>
+		</p>
+	</article>
 {/each}
 ```
 
@@ -201,14 +194,11 @@ I won't get too much into it here, but SvelteKit also offers a way to [pre-load 
 The ability to read Markdown files isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).
 </SideNote>
 
-
-
 ## Static SvelteKit vs. Gridsome
 
 Before we dive into comparisons, it's worth mentioning that SvelteKit and Gridsome aren't exactly the same type of thing. SvelteKit is an meta-framework capable of generating many different kinds of sites and apps, where Gridsome is just a fairly straightforward static site generator.
 
 Still, if we're scoping the discussion to _just_ SvelteKit's static adapter, I think it's a fair, if not exact, comparison.
-
 
 ### Comparing performance
 
@@ -218,11 +208,11 @@ Luckily, SvelteKit _does_ offer `prefetch` and `prefetchRoutes` functions (the f
 
 **Even when preloading all the site's content, the SvelteKit build is dramatically smaller.**
 
-| Framework                              | Full size | Compressed    |
-|----------------------------------------|-----------|---------------|
-| **Gridsome**                           | 3.09 MB   | 1.74 MB       |
-| **SvelteKit**, _preload all routes_    | 1.7 MB    | 536 kB        |
-| **SvelteKit**, _top-level routes only_ | 322 kB    | 184 kB        |
+| Framework                              | Full size | Compressed |
+| -------------------------------------- | --------- | ---------- |
+| **Gridsome**                           | 3.09 MB   | 1.74 MB    |
+| **SvelteKit**, _preload all routes_    | 1.7 MB    | 536 kB     |
+| **SvelteKit**, _top-level routes only_ | 322 kB    | 184 kB     |
 
 As you can see from the table above, the SvelteKit version shaves about 45% off the Gridsome build, and _over two thirds_ when compressed. The SvelteKit site _at full size_ is about the size the Gridsome site was _compressed_!
 
@@ -244,12 +234,11 @@ Builds and dev start times with SvelteKit are also much faster: the production b
 
 2. Gridsome uses Webpack under the hood, where SvelteKit utilizes the much faster and more modern [Vite](https://vitejs.dev/) (pronounced "veet").
 
-One particularly nice thing about Gridsome was its built-in `<g-image>` component. Just by using it in place of the standard HTML `<img>` tag, Gridsome would compress your images, generate a resized, responsive source set, use lazy loading, ***and*** create blurred placeholder images.
+One particularly nice thing about Gridsome was its built-in `<g-image>` component. Just by using it in place of the standard HTML `<img>` tag, Gridsome would compress your images, generate a resized, responsive source set, use lazy loading, **_and_** create blurred placeholder images.
 
 By contrast, out of the box, SvelteKit does…nothing to help with images.
 
 My website uses few enough images (which are already generally compressed) that I decided browser-native lazy loading (combined with `aspect-ratio`) was acceptable for now. Hopefully, SvelteKit will have a first-party image compression option in the near future. (And even if not, it's possible to rig that up directly through Vite, though that's its own rabbit hole. Or, I could even use a service like [Cloudinary](https://cloudinary.com/) if image size became an issue.) But for now, the few Svelte-focused solutions I tried didn't work particularly well for my use case, and the tradeoff didn't seem to be worthwhile.
-
 
 ### Why move away from Gridsome?
 
@@ -287,7 +276,6 @@ This site, like any side project, is at least partially for me to enjoy. This is
 
 Finally, [TypeScript](https://www.typescriptlang.org/) has first-class support in SvelteKit. I'm relatively new to TypeScript and have somewhat mixed feelings on it at this scope (I think it mainly shines on larger projects with multiple contributors), but I've been working on involving it more in my workflows to get better at it. At this point, close to 100% of this site's JS is typed, so I've given it a good shot at least.
 
-
 #### What other options were considered?
 
 To some degree, I considered both [Astro](https://astro.build/) and [Eleventy](https://www.11ty.dev/) for this overhaul, and you could make reasonable arguments that either one would've been better suited for the task. If my primary goal had been to build the fastest statically generated site possible with absolutely minimal JavaScript client-side, I no doubt would've gravitated towards one of these tools.
@@ -295,7 +283,6 @@ To some degree, I considered both [Astro](https://astro.build/) and [Eleventy](h
 In the end, however, Eleventy is still too unopinionated for my personal tastes, and Astro is still a bit too new. (Yes, SvelteKit is new, too, but it seems to have much more of a foundation beneath it.)
 
 And again: this is my personal site, and so the tool I _like_ the most is an important factor. So while SvelteKit might arguably be a little overkill, personally, I think it's the most fun.
-
 
 ### How does the code compare?
 
@@ -323,13 +310,11 @@ By the way: I kept an [archival copy of the old site](https://joco-gridsome-arch
 
 And while we're on the topic: here's the link to [my site's new SvelteKit repo](https://github.com/josh-collinsworth/joco-sveltekit), if you'd like to take a firsthand look behind the scenes. A lot still needs to be refactored and cleaned up (I keep a list), but you're welcome to poke around, or even clone the repo as a starter for your own blog if you like.
 
-
 ### The redesign
 
 I didn't set out to make any design changes when moving this site over to SvelteKit, but after a while, I got tired of staring at the old design and started the dangerous journey of playing with new fonts.
 
 In the end, the old body font (Averta Std) got promoted to the heading font, and I added a nice serif (Alkes) for the body copy. More of a small refresh than an overhaul, but the pairing and tweaked styles give the site a fresh new look that I very much like.
-
 
 ## What to know about SvelteKit
 
@@ -339,13 +324,11 @@ I found the static rendering to be extremely good, but as mentioned, SvelteKit c
 
 Also worth knowing: Svelte itself doesn't support IE11 by default. There _are_ some workarounds, but hopefully that's not anything that matters to you in the first place—especially since not only has IE11 support been dropped by a slew of major companies at this point, but it's due to be killed by Microsoft itself in a matter of months at the time of writing.
 
-
 ### Don't listen to the haters
 
 Arguments against Svelte(Kit) tend to focus on how it theoretically scales (emphasis on _theoretically_), and the relative size of its community and ecosystem compared to other frameworks.
 
 I won't go into either of those here, but I _do_ address them both in detail in my [introduction to Svelte post](/blog/introducing-svelte-comparing-with-react-vue).
-
 
 ### Don't get confused by Sapper
 
@@ -354,7 +337,6 @@ One other thing to know at this point in SvelteKit's existence is that it's actu
 Sapper never seemed as big as SvelteKit does now, but it's been deprecated in favor of SvelteKit, and there's still some confusion that arises when searching online for code solutions in the space.
 
 SvelteKit doesn't always work exactly the same as Svelte _or_ Sapper by default (largely because Svelte and Sapper both have a Rollup config--Rollup being the bundler that powers Svelte--where SvelteKit has its own config file). So a lot of the examples and answers you come across related to setting up configuration are likely to either need some syntax adjustment, or just not work exactly as expected. (This doesn't apply to Svelte itself so much as to SvelteKit and its unique configurations.)
-
 
 ## Wrapup: would I use SvelteKit again?
 

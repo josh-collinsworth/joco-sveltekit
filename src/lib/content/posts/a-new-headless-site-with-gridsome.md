@@ -3,10 +3,10 @@ title: 'A New Headless Site with Gridsome'
 date: '2020-06-06'
 updated: '2021-01-19'
 categories:
-  - 'javascript'
-  - 'web'
-  - 'vue'
-  - 'wordpress'
+  - javascript
+  - web
+  - vue
+  - wordpress
 coverImage: 'wp-plus-gridsome.png'
 coverWidth: 160
 coverHeight: 89
@@ -32,7 +32,6 @@ This one, though, is at least more than a fresh layer of CSS or a new WordPress 
 <SideNote>
 This is going to be a long post, since I’ll go into depth on what headless means, its advantages and disadvantages, some of the techniques involved, and, finally, the design of this site specifically.
 </SideNote>
-
 
 ## What do "headless" and "Jamstack" mean?
 
@@ -66,7 +65,6 @@ The term "Jamstack" was coined by [Netlify](http://netlify.com) (which, by the w
 
 The advantages provided by a headless approach generally boil down to: speed; security; and developer experience.
 
-
 ### Speed
 
 As you may know if you've ever worked with a very old and/or large WordPress site, waiting for a large page or list of content to load can be very slow, because you're relying on PHP to both query the MySQL database for the content, _and_ then run the (in)famous WordPress loop to render it.
@@ -74,7 +72,6 @@ As you may know if you've ever worked with a very old and/or large WordPress sit
 Using the WP API is typically faster, because PHP isn't really rendering anything; the site is just sending text data in the form of JSON. And if you use a JavaScript-powered static site generator like Gridsome or Eleventy or Gatsby, that content can even be pre-rendered—building out a full static HTML site from the result of querying the WordPress database, reducing visitors' wait time to practically nothing.
 
 Using a static site generator (SSG) also means you can deploy all of your site's content on a global CDN, so it's immediately available and speedy anywhere around the globe.
-
 
 ### Security
 
@@ -84,7 +81,6 @@ With a headless approach, you also have the option of locking down your original
 
 That said, security probably shouldn't be your biggest reason to move to the Jamstack, since it's a tangential benefit, and since it won't solve bad WordPress security to begin with.
 
-
 ### Developer Experience
 
 Finally, working with modern frameworks like those mentioned above (though there are many others) is often more enjoyable for developers, as it allows you to introduce more modern tooling into your workflow, both in how the code is built and how it's deployed. (Typically, Jamstack sites are set up to deploy directly from a git repo, so that every time you push to the repo, the site deploys the code automatically, saving you from ever touching something like FTP.)
@@ -93,18 +89,15 @@ Finally, working with modern frameworks like those mentioned above (though there
 Naturally, developer experience should be the least of our concerns; our users’ experience with the site is more important than ours. But if we’re being responsible with our choices, developer experience should ideally help translate into better user experience, too.
 </SideNote>
 
-
 ## Headless WordPress drawbacks
 
 You might be wondering at this point if there are disadvantages to going headless. And the answer, in a word, is: yes. There are distinct and often significant tradeoffs for the speed, security and dev ergonomics that come with headless architecture.
-
 
 ### Less control over appearance from WordPress
 
 By far the biggest drawback, in the case of WordPress, is that your site's theme—as well as pretty much any plugin that does anything on the front-end of the site—will be rendered effectively useless, at least as far as its user-facing functionality. With headless, since your front-end isn't rendered by your theme's PHP template files anymore, plugins that change the appearance or layout of the site will lose their effect.
 
 Actually, the drawback isn't limited to plugins and themes; core WordPress features, like the customizer, widgets, and nav menus (basically, the whole Appearance tab in admin) will be rendered powerless by a headless setup.
-
 
 ### Greater hosting needs
 
@@ -116,18 +109,15 @@ With headless, since your front-end isn’t rendered by your theme’s PHP templ
 
 And if you _are_ pre-rendering content with an SSG (as opposed to querying data from your WP site's API on the fly), you'll need to redeploy the site each time content changes. (There are [plugins](https://wordpress.org/plugins/search/Netlify/) to solve that particular pain point, though.)
 
-
 ### Tricky DNS setup
 
 Something else to keep in mind: DNS is going to require some careful, likely much more complex setup with headless (more on that later), and unless you do some fancy stuff with your theme and DNS, post previews won't really work anymore.
-
 
 ### Fewer hosting features are relevant
 
 You might also be giving up some luxuries provided by your host, such as staging sites, for example. (You can still use staging, of course, but what you see there won't match what you'll see on the live headless site unless you do a lot of extra config.)
 
 Those tradeoffs probably sound very scary, and for a lot of WordPress users, they make moving to headless a non-starter. That's ok. Every site has different needs, and if sticking with the WordPress you've come to know and love sounds like your best path forward, rest assured you're not alone and you will not be unsupported in that choice.
-
 
 ## Why I chose headless
 
@@ -184,7 +174,6 @@ Keeping my WordPress site live means that I can have the best of both worlds in 
 </PullQuote>
 
 All of this flexibility is actually what sold me on sticking with a WordPress back-end, rather than going fully static. I knew that if I couldn't get a good form solution going on the Jamstack, I could always just use DNS to point a page back to WordPress and slap a [Ninja Form](https://ninjaforms.com/) on it, the user being none the wiser. (As it turns out, Netlify _does_ have a rather nifty forms solution, but I like knowing that I can fall back to WordPress for anything I'm not finding or not comfortable with on the Jamstack.)
-
 
 ## The new site
 
@@ -278,11 +267,9 @@ Incidentally, the 98% is because YSlow wants me to compress _everything_, but Ne
 It may seem like my home page isn’t a good benchmark, since it has virtually no content, and that’s definitely fair. However, note that Gridsome does some front-loading behind the scenes, pre-loading data for all the routes linked on the homepage, so that they can be rendered as quickly as possible once the user clicks one.
 </SideNote>
 
-
 ## What to watch out for when going headless
 
 If you decide to go headless with your own WordPress site, I have a few warnings to consider from my recent experience.
-
 
 ### **DNS is going to be a complex challenge.**
 
@@ -306,13 +293,11 @@ Which reminds me: keep in mind that you'll be changing things, DNS-wise, to go l
 
 And it goes without saying, but: if you have email on your domain, make sure you don't break it with DNS changes. (As long as you don't change name servers or MX records, you should be safe.)
 
-
 ## SEO and redirects
 
 Also: be sure all of your 301 redirects are in place and handled properly, and that you've taken care of any other SEO considerations (like adding meta descriptions, for example) before going live with a headless site. WordPress takes care of a _lot_ of things for you in this area (especially if you're using an SEO plugin), and you'll need to make sure you're not shooting yourself in the foot when you go live.
 
 Also, if you have Google Analytics or similar tracking codes or JavaScript loading in the `<head>` of your site, you'll need to be sure those get moved over to the new front-end as well.
-
 
 ### Deploys are only free to a point
 

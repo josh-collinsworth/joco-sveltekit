@@ -1,17 +1,18 @@
 ---
-title: "How to Connect Local with CodeKit"
-date: "2020-02-21"
-updated: "2020-07-15"
-categories: 
-  - "css"
-  - "javascript"
-  - "web"
-  - "wordpress"
-coverImage: "Untitled.png"
+title: 'How to Connect Local with CodeKit'
+date: '2020-02-21'
+updated: '2020-07-15'
+categories:
+  - css
+  - javascript
+  - web
+  - wordpress
+coverImage: 'Untitled.png'
 coverWidth: 1280
 coverHeight: 567
 excerpt: Enjoy all the convenience of easy local WordPress development with Local, plus build tools with CodeKit, without any of the tricky command line setup.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -24,8 +25,6 @@ Full disclosure: I currently work for [Flywheel](https://getflywheel.com/), the 
 As amazing as Local is on its own, though, some of the biggest benefits of developing locally (automatic browser refreshing, for example) aren't built in. That's where [CodeKit](https://codekitapp.com/) shines!
 
 ![CodeKit (on a Vue project, and in dark mode)](/images/post_images/codekit-window.png)
-
-
 
 ## What is CodeKit?
 
@@ -47,11 +46,9 @@ If you’re on Windows, you don’t have access to CodeKit (since it’s Mac onl
 
 If you're not sure about all of those features or only need a few, that's ok too! CodeKit makes it easy to use what you need, and ignore what you don't.
 
-
 ## Local + CodeKit
 
 It's probably pretty easy to imagine the benefits of getting all that cool stuff within Local, available for your WordPress development needs. **So let's get it set up!**
-
 
 ### 1\. Create (or Pick) a Site in Local
 
@@ -69,7 +66,6 @@ You _might_ see a warning about a port conflict in Local. If you do, just go ahe
 
 If you see a port conflict, just click the button to proceed. No big deal.
 
-
 ### 2\. Start Your Local Site and Note its Site Host Setting
 
 Again, the specific setup of the site doesn't really matter. The only things to be sure of are:
@@ -78,7 +74,6 @@ Again, the specific setup of the site doesn't really matter. The only things to 
 2. You note the Site Host (in the case of my screenshot, `localhost:10008`, but yours might be a custom `.local` domain instead)
 
 ![Look for 'Site host' in the Overview tab in Local](/images/post_images/Image-2020-02-20-at-8.47.39-PM-1024x691.png)
-
 
 ### 3\. Add Your Project to CodeKit
 
@@ -97,8 +92,6 @@ If you weren’t actually interested in using CodeKit for its live previews and 
 Once you've added your project, you'll see CodeKit look something like this:
 
 ![A Local CodeKit project](/images/post_images/codekit-public-folder.png)
-
-
 
 ### 4\. Configure the CodeKit Project's Settings
 
@@ -119,8 +112,6 @@ Here, you'll take the two steps necessary to connect CodeKit with Local:
 
 ![Toggle External Server on, and enter your Local site's Site Host URL as the address](/images/post_images/image-1024x557.png)
 
-
-
 ### 5\. Click the CodeKit Preview Link
 
 **That's it! You're connected!** Now all you need to do is preview in CodeKit to see changes live in real time. You can either go to **File > Preview** **in Browser…**, or hit the preview button at the top of the CodeKit window:
@@ -131,14 +122,13 @@ Here, you'll take the two steps necessary to connect CodeKit with Local:
 
 Now as you make changes in your code—for example, changing CSS files or editing the HTML on a page—your browser will just automatically refresh like magic! ✨
 
-![Now as you save your code changes, the page will automatically update and refresh!](/images/post_images/codekit-magic.gif) 
+![Now as you save your code changes, the page will automatically update and refresh!](/images/post_images/codekit-magic.gif)
 
 **If you're having issues**: be sure that the site is running in Local, and that the protocol matches between the two (http or https; it should be the same both places. You might need to check or un-check the TLS box under Security Options and/or restart the server):
 
-![Make sure the TLS setting in CodeKit matches your Local site's protocol](/images/post_images/codekit-preview-window.png) 
+![Make sure the TLS setting in CodeKit matches your Local site's protocol](/images/post_images/codekit-preview-window.png)
 
 The Preview Server URLs box (shown above) is also where you'll find the URLs you can use to view your Local site on other devices! Want to check out your site on your phone? It's as simple as heading to the Bonjour URL (iPhone) or Non-Bonjour URL (anything else) in your device's browser!
-
 
 ## Bonus: Setting Up Sass in CodeKit
 
@@ -155,7 +145,6 @@ As a bonus, if you have any errors in your Sass syntax (like here, where I forgo
 ![Errors shown in CodeKit](/images/post_images/image-3-1024x449.png)
 
 A similar set of options (minify, compile, generate source maps, etc.) is available with JavaScript files, plus many other file types.
-
 
 ## Final Step: Enjoy!
 

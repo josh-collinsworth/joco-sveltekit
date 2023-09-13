@@ -1,17 +1,18 @@
 ---
-title: "Why you should never use px to set font-size in CSS"
-date: "2022-10-28"
-updated: "2022-11-11"
+title: 'Why you should never use px to set font-size in CSS'
+date: '2022-10-28'
+updated: '2022-11-11'
 categories:
-  - "a11y"
-  - "web"
-  - "css"
-  - "popular"
-coverImage: "px_em_rem/never-px.png"
+  - 'a11y'
+  - web
+  - css
+  - popular
+coverImage: 'px_em_rem/never-px.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: Many developers seem to believe there's no difference between px and other CSS units. Let's dispel that myth, for the sake of better accessibility.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -32,11 +33,9 @@ Let's be very clear: it absolutely _does_ matter what unit you use in your CSS. 
 
 Again: "always" is a strong word, and a bit dogmatic. But the truth is: if you pick the wrong unit, you risk overriding your users' preferences, making it harder (maybe even impossible) for them to use your website, _and_ potentially harming the design with unintended visual side effects.
 
-
 ## What units are we talking about, and what do they do?
 
 Before we get into _why_ we should avoid `px` for `font-size`, let's make sure we're all clear on what units we're talking about, and how they behave in general.
-
 
 ### `px`
 
@@ -55,13 +54,12 @@ So instead, browsers on high-resolution displays _scale up_ what they show (zoom
 So these days, `1px` generally corresponds with the size of a scaled-up, "zoomed-in" pixel, rather than a literal pixel on the actual hardware. Something that is `1px` in our CSS will likely take up multiple physical hardware pixels, and we don't really have any way in pure CSS to specify a literal device pixel. But that's fine, because they'd generally be too small for us to want to mess with anyway.
 
 <SideNote>
- 
+
 An example: pixels on the iPhone 14 Pro are so microscopic that 16px, in literal device pixels, would be about the size of printed type at 2pt font size. Good thing browsers scale those up for us!
-  
+
 </SideNote>
 
 Most of that isn't really important in the context of this discussion, but I think it's nice to know anyway. The important part is: `1px` is equal to whatever the browser is treating as a single pixel (even if it's not literally a pixel on the hardware screen).
-
 
 ### `em` and `rem`
 
@@ -77,7 +75,6 @@ Em originally referred to the width of an "M" character, which is where the name
 
 </SideNote>
 
-
 #### The difference between `em` and `rem`
 
 To differentiate between the two: `1rem` is always equal to the browser's font size—or, more accurately the font size of the `html` element. `rem` stands for "root em," and the root of a webpage is the `<html>` tag. So, `1rem` = whatever the document font size is. (Which, again, by default, is `16px`, but can be overridden by the user.)
@@ -86,11 +83,11 @@ To differentiate between the two: `1rem` is always equal to the browser's font s
 
 ```css
 .container {
-  font-size: 200%;
+	font-size: 200%;
 }
 
 p {
-  font-size: 1em;
+	font-size: 1em;
 }
 ```
 
@@ -114,7 +111,6 @@ So to summarize:
 - `1rem` (root em) is the _document's_ font size (i.e., the browser's)
 
 All right; that's what the units mean and where they come from. So now let's answer why it matters which we use.
-
 
 ## Why this all matters
 
@@ -144,10 +140,9 @@ So while there _may_ be some valid use cases for that behavior, it's definitely 
 
 This is also a very good reason to avoid viewport units, like `vw` or `vh`, when setting font size. Those are also static, and impossible to override by the user.
 
-At _most_, a value like `calc(1rem + 1vw)` might be acceptable, since that still contains `rem` as a base. Even then, however, I'd recommend using `clamp()` or media queries to set minimum and maximum values, as screen sizes often go far beyond what we might expect or test. 
+At _most_, a value like `calc(1rem + 1vw)` might be acceptable, since that still contains `rem` as a base. Even then, however, I'd recommend using `clamp()` or media queries to set minimum and maximum values, as screen sizes often go far beyond what we might expect or test.
 
 </SideNote>
-
 
 ### Differences beyond font size
 
@@ -175,7 +170,7 @@ We have a few paragraphs, each with a `2px` border on the bottom, and `20px` mar
 
 If you zoom in or out, _the size and distance of the elements stays relative_. That is: the more you zoom in, the thicker that line gets, and the bigger that space between paragraphs gets.
 
-To save you the trouble, here's a screenshot, showing that same pen at 400% zoom. The text, the line, and the spacing are ***all*** 4 times larger; they stay the same size relative to one another:
+To save you the trouble, here's a screenshot, showing that same pen at 400% zoom. The text, the line, and the spacing are **_all_** 4 times larger; they stay the same size relative to one another:
 
 ![The CodePen above, at 400% zoom, with all elements scaled up to four times their original size and spacing.](/images/post_images/px_em_rem/zoomed-in.png)
 
@@ -205,7 +200,7 @@ This all means there are important, realistic design reasons to choose `px` over
 
 So to summarize here:
 
-- `px` values do ***not*** scale up or down when the user changes their font size
+- `px` values do **_not_** scale up or down when the user changes their font size
 - `em` and `rem` values _do_ adjust in proportion to font size
 
 If you'd like an interactive demo that ties all this together, check out this final CodePen; adjust the slider at the top to see the effect modifying the document font size has on various elements, based on the CSS unit they're using.
@@ -215,7 +210,6 @@ If you'd like an interactive demo that ties all this together, check out this fi
   The difference between px and rem in font scaling</a> by Josh Collinsworth (<a href="https://codepen.io/collinsworth">@collinsworth</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-
 
 ## Which to choose
 
@@ -233,18 +227,17 @@ But once more, if you take anything away from this post:
 
 **Never set `font-size` in `px` units**—at least, not unless you're incredibly sure of what you're doing, how it will behave, and whether it will still be accessible when you do.
 
-
 ### An important note about media queries
 
 This is a late addendum to this post, but: it's important to avoid `px` in `@media` queries for all the same reasons above; it will work fine when the user zooms, but a media query that uses `px` will fail users when they set a larger font size on their own.
 
 ```css
 @media (min-width: 800px) {
-  /* Changing font size does NOT affect this breakpoint */
+	/* Changing font size does NOT affect this breakpoint */
 }
 
 @media (min-width: 50rem) {
-  /* Changing font size DOES affect this breakpoint */
+	/* Changing font size DOES affect this breakpoint */
 }
 ```
 
@@ -255,7 +248,6 @@ Most likely, when we're writing CSS for larger breakpoints, we're taking for gra
 I ran into that issue on this very site; I was setting all of my breakpoints in `px`. When I set the default font size larger, however, my media queries didn't respond, as they were still only looking at the pixel width of the screen. So I still had a tiny sidebar, with huge text illegibly smashed inside it, since I didn't account for user preference. I changed to `rem` immediately after that, and it solved the issue.
 
 So in short: be sure to avoid using `px` in media queries, too, unless you're sure you know what you're doing and what effect it will have on users who set their own font size in the browser.
-
 
 ## A final word on accessibility
 

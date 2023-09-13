@@ -1,16 +1,17 @@
 ---
-title: "My Essential Tools for WordPress Development"
-date: "2016-06-25"
-updated: "2020-06-14"
+title: 'My Essential Tools for WordPress Development'
+date: '2016-06-25'
+updated: '2020-06-14'
 categories:
-  - "opinion"
-  - "web"
-  - "wordpress"
-coverImage: "Screenshot-2016-06-24-20_45_21.png"
+  - opinion
+  - web
+  - wordpress
+coverImage: 'Screenshot-2016-06-24-20_45_21.png'
 coverWidth: 1381
 coverHeight: 609
 excerpt: Some of these apps, resources and tools aren’t directly WordPress-related, or even necessarily development-related; some have to do with productivity or just make life a little easier. That’s by design. Part of being a developer is learning to work and use your tools as efficiently and with as little wasted time and mental energy as possible.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -28,7 +29,6 @@ This post hasn’t been updated for a while; Wunderlist isn’t a thing anymore,
 
 ![Dropbox Logo](/images/post_images/Dropbox.svg)
 
-
 ### [Dropbox](https://www.dropbox.com)
 
 **[dropbox.com](http://www.dropbox.com)** | _Up to 2 GB free; 1 TB $9.99 per month._
@@ -36,7 +36,6 @@ This post hasn’t been updated for a while; Wunderlist isn’t a thing anymore,
 You're going to need somewhere to store your files, and [Dropbox](https://www.dropbox.com) syncs beautifully with all your devices. You can also set up synced folders, so that anything you save in a particular folder on your machine is available on any machine, thus creating both a local and cloud copy. It can also automatically save screenshots, upload pics from your smartphone's camera for safe storage, and send/receive client files easily.
 
 ![LastPass logo](/images/post_images/LastPass-Logo-Color.svg)
-
 
 ### [LastPass/1Password](http://www.lastpass.com)
 
@@ -46,7 +45,6 @@ You're going to need somewhere to store your files, and [Dropbox](https://www.dr
 I don't have a strong preference between the two, but there's no excuse for not using a password manager in this day and age. Odds are good you'll have at least two usernames and passwords to remember for every single site you work on—maybe more—and repeating the same one or making it easy to type and remember is an awful idea when you're using the world's most popular CMS. Saving brain power is making your life better and your workflow more efficient. And besides, these are extremely affordable apps; LastPass is only $12 per year. Make like Nike and just do it.
 
 ![VS Code logo](/images/post_images/32078472-5053adea-baa7-11e7-9034-519002f12ac7.png)
-
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -64,7 +62,6 @@ I highly recommend the following extensions, but you can mix and match your own 
 
 ![GenerateWP logo](/images/post_images/GenerateWP.png)
 
-
 ### [GenerateWP.com](http://generatewp.com/)
 
 **[generatewp.com](http://generatewp.com/)** | _Free unlimited basic generators; premium starts at $7 per month_
@@ -74,7 +71,6 @@ There's a _ton_ of PHP to remember in WordPress, the difficulty of which is comp
 GenerateWP does the work for you in generating blocks of code. You just fill out some fields telling the site what you're after and it will spit out the code for you to copy and paste in the appropriate PHP file. Everything from custom `WP_Query` loops to defining custom post types and much, much more can now be handled by checking some boxes and filling out a few fields instead of peering through the WordPress Codex trying to remember the difference between `get_header()` and `wp_head()`.
 
 ![Local logo](/images/post_images/Local-Logo.svg)
-
 
 ### Local by Flywheel
 
@@ -88,7 +84,6 @@ Quick disclaimer: I do work for Flywheel, but I'd be writing this even if I didn
 
 ![CodeKit logo](/images/post_images/CodeKit.png)
 
-
 ### [CodeKit](http://incident57.com/codekit)
 
 **[incident57.com/codekit](http://incident57.com/codekit)** | _Free limited trial; one-time $32 licensing fee_
@@ -98,7 +93,6 @@ It's very hard to explain what [CodeKit](http://incident57.com/codekit) does in 
 That alone, to me, is well worth the low $32 price tag, but that's really only scratching the surface. It can grab external libraries for you, plus concatenate and minify your files so you're ready to go to production with a lean, efficient set of CSS and JS files, and so much more. I promise you that if you give CodeKit a real shot, it will become an indispensable part of your workflow.
 
 ![Advanced Custom Fields PRO logo](/images/post_images/acf-pro-dev-launch.png)
-
 
 ### [Advanced Custom Fields (PRO)](https://www.advancedcustomfields.com/)
 
@@ -114,7 +108,6 @@ In short, ACF makes the experience of using the WordPress site you've built for 
 
 ![Google Chrome browser logo](/images/post_images/Chrome.png)
 
-
 ### [Google Chrome](https://www.google.com/chrome/browser/desktop/)
 
 **[google.com/chrome/browser](http://www.google.com/chrome/browser)** | _Free_
@@ -129,7 +122,6 @@ Your choice of browser is less and less relevant these days, but Chrome is still
 
 ![GitHub](/images/post_images/github_desktop.png)
 
-
 ### [GitHub Desktop](https://desktop.github.com/)
 
 **[desktop.github.com](https://desktop.github.com/)** | _Free_
@@ -140,7 +132,6 @@ Git and version control can be a bit intimidating, but GitHub Desktop does a nic
 
 ![Transmit FTP client logo](/images/post_images/Transmit.png)
 
-
 ### [Transmit](https://panic.com/transmit/)
 
 **[panic.com/transmit](https://panic.com/transmit/)** | _Limited free trial; $34 one-time licensing fee_
@@ -150,7 +141,6 @@ If I'm being honest here, I couldn't give you much of an elevator speech on why 
 Still, Transmit is the industry gold standard in FTP clients, so there must be some reason for that (and the $34 price tag). I guess I just haven't used other FTP clients enough to really know the difference, so if you're into cutting cost, this might be a good place.
 
 ![Alfred app logo](/images/post_images/Alfred.png)
-
 
 ### [Alfred](https://www.alfredapp.com/)
 
@@ -163,7 +153,6 @@ The "spotlight" feature (see what I did there?) is that Alfred can search for an
 It's one of those tools that you won't realize you ever wanted until you try it and realize you can't live without it anymore. In fact, there's a very good chance it would be the very first thing I installed on a new computer.
 
 ![Spectacle app logo](/images/post_images/Spectacle-Logo.jpg)
-
 
 ### [Spectacle](https://www.spectacleapp.com/)
 
@@ -178,7 +167,6 @@ Sound familiar?
 Gallons of wasted time and effort are accumulated a drip at a time. Spectacle is one of those apps that helps stop the drip.
 
 ![Tiny PNG Logo](/images/post_images/Image-2017-01-24-at-9.45.27-AM-1024x359.png)
-
 
 ### [TinyPNG](https://tinypng.com/)
 
@@ -195,7 +183,6 @@ Of course, if cost and limits are a factor, you can always manually drop your im
 
 ![ClipMenu Mac app logo](/images/post_images/ClipMenu.png)
 
-
 ### [ClipMenu](http://www.clipmenu.com/)
 
 **[clipmenu.com](http://www.clipmenu.com/)** | _Free_
@@ -210,7 +197,6 @@ Or how about this: how many times have you gone through the tedious process of c
 
 ![Wunderlist app logo](/images/post_images/Wunderlist_Logo.png)
 
-
 ### [Wunderlist](https://www.wunderlist.com/)
 
 **[wunderlist.com](https://www.wunderlist.com/)** | _Free for basic use; Pro $4.99 per month_
@@ -224,7 +210,6 @@ It's a desktop app, a smartphone app and a browser extension, so you can make li
 And, of course, there's that whole conserving mental energy thing I'm a big fan of.
 
 ![WordPress.com plus Jetpack logos](/images/post_images/WP-plus-Jetpack.png)
-
 
 ### [Calypso/Jetpack](https://developer.wordpress.com/calypso/)
 
@@ -243,7 +228,6 @@ You'll have access to one app dashboard to manage all your sites. The major key 
 
 ![CodePen.io logo](/images/post_images/codepen.svg)
 
-
 ### [CodePen](http://codepen.io)
 
 **[codepen.io](http://codepen.io)** | _Free; Pro starts at $9 / month_
@@ -251,8 +235,8 @@ You'll have access to one app dashboard to manage all your sites. The major key 
 It may seem completely unrelated, but I can't tell you how handy it is to have an open playground for HTML, CSS and JS available at your fingertips at any time. I've learned lots of tricks, skills and shortcuts from trying things out in [CodePen](http://codepen.io) or looking at other users' code to see how they built their neat-o creation. It's also handy, when in lack of another solution, as a JavaScript linter and a debugging tool, or as a place to save code snippets for work or demo later. But more than anything, it's a sandbox. And you can learn a lot by building things in it.
 
 <!-- svelte-ignore a11y-img-redundant-alt -->
-![Affinity Photo logo](/images/post_images/affinity-photo-available-on-the-mac-app-store.png)
 
+![Affinity Photo logo](/images/post_images/affinity-photo-available-on-the-mac-app-store.png)
 
 ### [Affinity Photo](https://affinity.serif.com/photo/)
 
@@ -263,7 +247,6 @@ Photoshop also works, if you have access to it. So do the wide range of free or 
 It may not quite have all the features of Photoshop (though it's pretty close) or be quite the photo editing ninja that Lightroom is (though it's no slouch), but to replace the two apps together for a comparably low price tag, I feel the tradeoff is more than worth it.
 
 ![Elegant Themes logo](/images/post_images/elegant-themes-logo.svg)
-
 
 ### A Great Premium Theme
 
@@ -281,40 +264,38 @@ In short: when you need to build quickly and on a budget, you need a framework t
 
 ![Flywheel logo](/images/post_images/Flywheel-Logo.svg)
 
-
 ### [Flywheel](https://getflywheel.com/)
 
 **[getflywheel.com](https://getflywheel.com)** | _Single-site subscriptions start at $15 per month; bulk subscriptions (10+ sites) start at $100 per month._
 
 Full disclosure: I work for Flywheel. But I still wouldn't have another host even if I had the choice. The collaboration and client handoff tools are top-notch, the dashboard features (like a development mode, logs access, staging sites, cloned sites and others) are amazingly handy, and the performance is solid. Plus there are no headaches with things like keeping backups or restoring; it's all handled. The support's not too shabby, either. ;)
 
-
 ### Other plugins:
 
 Just a few of the modestly handy plugins I find myself using frequently:
 
 - [**WP Rocket**](https://wp-rocket.me/)
-    Concatenating and minifying your CSS and JS files is essential to optimizing page speed. There are free plugins to do this (like W3 Total Cache and Better WP Minify), but WP Rocket is worth the premium price tag to make the process simpler and easier. Ideally, you'd be handling all of that manually at the development level, but if that's not an option, WP Rocket gets my vote for the best post-development fix.
+  Concatenating and minifying your CSS and JS files is essential to optimizing page speed. There are free plugins to do this (like W3 Total Cache and Better WP Minify), but WP Rocket is worth the premium price tag to make the process simpler and easier. Ideally, you'd be handling all of that manually at the development level, but if that's not an option, WP Rocket gets my vote for the best post-development fix.
 - [**Ninja Forms**](https://wordpress.org/plugins/ninja-forms/)
-    Gravity Forms and Caldera Forms are also both fine choices, and I have no doubt there are others, too. I just like how easy it is to get Ninja Forms up and running for free.
+  Gravity Forms and Caldera Forms are also both fine choices, and I have no doubt there are others, too. I just like how easy it is to get Ninja Forms up and running for free.
 - [**WPS Hide Login**](https://wordpress.org/plugins/wps-hide-login/)
-    The internet is full of bots looking for your WordPress login screen, but they can only find it if you keep it at the same URI as everybody else (/wp-admin). Change it.
+  The internet is full of bots looking for your WordPress login screen, but they can only find it if you keep it at the same URI as everybody else (/wp-admin). Change it.
 - [**Custom Post Types UI**](https://wordpress.org/plugins/custom-post-type-ui/)
-    Although I do enjoy defining custom post types on my own, CPT UI is admittedly the easier way to do it. Just make sure you don't have a client who likes to go poking around where they don't belong when you turn the site over to them.
+  Although I do enjoy defining custom post types on my own, CPT UI is admittedly the easier way to do it. Just make sure you don't have a client who likes to go poking around where they don't belong when you turn the site over to them.
 - [**Essential Grid**](http://codecanyon.net/item/essential-grid-wordpress-plugin/7563340)I'm usually not much of a fan of Envato Market and its ilk because I disagree with some of their business practices and have had bad experiences with some of their plugins, but this particular paid plugin, at $26, offers the ability to get any kind of gallery up and running very quickly and easily on any site or page.
 - [**Yoast SEO**](https://wordpress.org/plugins/wordpress-seo/)
-    I'm not a big SEO guy, but this plugin will help you write better content so that your viewers can find it when it's relevant to them.
+  I'm not a big SEO guy, but this plugin will help you write better content so that your viewers can find it when it's relevant to them.
 - [**Enable Media Replace**](https://wordpress.org/plugins/enable-media-replace/)
-    Super simple, but allows you to replace a media file and keep its metadata (URI, alt, title, etc.) intact rather than having to delete it and upload a new file every time there's a change.
+  Super simple, but allows you to replace a media file and keep its metadata (URI, alt, title, etc.) intact rather than having to delete it and upload a new file every time there's a change.
 - [**Show Current Template**](https://wordpress.org/plugins/show-current-template/)
-    More of a debugging tool than anything, but it's extremely helpful to be able to tell whether you're bucking the WordPress template hierarchy successfully, and which PHP template files aside from the main one are being loaded on the page.
+  More of a debugging tool than anything, but it's extremely helpful to be able to tell whether you're bucking the WordPress template hierarchy successfully, and which PHP template files aside from the main one are being loaded on the page.
 - [**Insert PHP**](https://wordpress.org/plugins/insert-php/)
-    Handy if you need to run some PHP code from a WordPress content field. (Most developers will of course have ways around this, and it's presented here as more of a hack than a recommended way to do things. But in a pinch it works remarkably well.)
+  Handy if you need to run some PHP code from a WordPress content field. (Most developers will of course have ways around this, and it's presented here as more of a hack than a recommended way to do things. But in a pinch it works remarkably well.)
 - [**Force Regenerate Thumbnails**](https://wordpress.org/plugins/force-regenerate-thumbnails/)
-    If you change your media upload size after you've already uploaded some images, you'll want to run this.
+  If you change your media upload size after you've already uploaded some images, you'll want to run this.
 - **Captcha**
-    There are many kinds (with many levels of intrusiveness), but since Captcha secures all forms, it helps keep bots out of your comments, contact forms, and your login screen. Those are all really good things.
+  There are many kinds (with many levels of intrusiveness), but since Captcha secures all forms, it helps keep bots out of your comments, contact forms, and your login screen. Those are all really good things.
 - [**Akismet**](https://akismet.com/)
-    It's almost not worth mentioning because of its ubiquity and the fact that many WordPress users don't even allow comments on their site to begin with. But if you do allow comments, activate Akismet, get an API key, and and put the API key in place.
+  It's almost not worth mentioning because of its ubiquity and the fact that many WordPress users don't even allow comments on their site to begin with. But if you do allow comments, activate Akismet, get an API key, and and put the API key in place.
 
 That's it! I hope you've found something useful here. Happy developing, WordPressers.

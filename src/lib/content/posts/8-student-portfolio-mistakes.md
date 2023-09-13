@@ -1,22 +1,22 @@
 ---
-title: "8 Mistakes to Avoid in Your Student Design Portfolio"
-date: "2015-08-20"
-updated: "2021-01-19"
+title: '8 Mistakes to Avoid in Your Student Design Portfolio'
+date: '2015-08-20'
+updated: '2021-01-19'
 categories:
-  - "design"
-  - "opinion"
-coverImage: "Negative-Space.png"
+  - design
+  - opinion
+coverImage: 'Negative-Space.png'
 coverWidth: 4
 coverHeight: 3
 excerpt: Consider this post a guide on how to avoid the most common mistakes young designers make when assembling their portfolios.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
 Let me start this off by saying that I do not claim to be an authoritative expert on the subject of graphic design. Sure, I know some things. I'm technically a professional. But I also personally know at least a dozen people more qualified to write this list than I am. And I am going to express a few opinions with which they may disagree. So the following advice is mine, and it comes merely from my looking back at my own time as a graphic design student and the work it produced, with the benefit of a little bit of perspective and time. Hopefully it will be helpful in navigating you through the pitfalls I failed to avoid. (In other words, I can write this, because I've personally made just about all of these mistakes myself.)
-
 
 ## 8) Skimping on Cost
 
@@ -36,7 +36,6 @@ Some of the more impressive student design portfolios I've seen were hand-assemb
 
 Resourcefulness is a valuable quality to any employer, especially in design. Show that you can solve your own problems to make something impressive on a budget, and it will have at least as much of an impact as anything in the book itself.
 
-
 ## 7) Poor Image Resolution
 
 This is such a simple problem that I'm honestly surprised at the frequency with which I see it, but it keeps cropping up again and again. For whatever reason, graphic design students often try to push an image beyond its limits. Maybe it's because this practice is more common (and slightly less damaging) on the web. But in print, it never works.
@@ -51,7 +50,6 @@ And by the way: one of the most glorious things about being a graphic design stu
 
 And of course, it ought to go without saying that you should _never_ stretch or squash an image outside its original ratio.
 
-
 ## 6) Too Much Content
 
 Generally speaking, an interviewer probably has a pretty good idea of your talent level and style by the time you're through about five spreads (unless you've completely back-loaded your book, which I wouldn't recommend). After that, if you're not going to start showing some unique items or throwing some curveballs, you're just repeating yourself. Less is more in pretty much every way in portfolio design.
@@ -65,7 +63,6 @@ While there's no magic number for the total projects that you should show, I'd s
 Ideally, every one of the pieces in your student design portfolio should show off something—a skill, a style, a type of work, or a thought process—that no other piece does. Don't include two posters if one will do. Don't include fifteen projects just because you have that many. And _never_ put a project in your book just because you can't decide what to cut.
 
 **Design is decision-making.** If you can't make the decision on what to even include in your book for an interview, what does that say of your ability to make the decisions the job itself will require of you?
-
 
 ## 5) Not Knowing Your Strengths
 
@@ -85,7 +82,6 @@ And of course wedding invitations are by definition generally very visually appe
 
 In short, if you're applying for a graphic design job, showcase your skills as they relate to graphic design.
 
-
 ## 4) Not Proofreading
 
 I cannot overemphasize this point: spellcheck is not good enough.
@@ -103,7 +99,6 @@ For another, spellcheck might not recognize common punctuation errors, or distin
 For a third, you've likely got some words that spellcheck won't recognize somewhere in your book. (For example: names of typefaces, made-up companies, real companies with names that are spelled strangely, and proper nouns, including your own name.)
 
 And for a fourth and final reason to distrust spellcheck: you've almost certainly got some text somewhere in your book that's non-editable. This includes text that's been converted to outlines, rasterized, or simply hand-drawn—all of which render spellcheck completely and utterly useless.
-
 
 ## 3) Too Many Standard Typefaces (Especially Helvetica)
 
@@ -139,7 +134,6 @@ And just to clarify: I'm not saying you should always use wacky, gaudy, bold or 
 
 Of course, it should go without saying that you probably shouldn't be utilizing the likes of Times, Arial, Calibri, Impact and Brush Script in your book. And if by the point that you're building your portfolio I still need to tell you to avoid Comic Sans and Papyrus, you might want to either start paying attention in class or asking your school about a refund.
 
-
 ## 2) Using an Unnecessarily Large Book
 
 The book _[Flaunt](http://www.underconsideration.com/flaunt/)_ is a fantastic resource for anybody building a portfolio, packed with valuable advice and inspiration. It was in that book that I first read the following adage: the experience level of a designer is inversely proportional to the size of their book. ("Size" here referring to physical dimensions, not how many projects are included.)
@@ -155,7 +149,6 @@ You ought to be demonstrating that you are not limited by the parameters you’r
 </PullQuote>
 
 Logistical reasoning aside, though, there's another, arguably more important reason to consider a smaller book: designers very rarely get blank canvases. Designers get parameters, budgets and restrictions. We live in a world of letterheads that require logos and contact info, advertisements stuffed full of copy, and tiny screens packed with headers and menus. We are forced to make the most of very little. Therefore, you ought to be demonstrating that you are not limited by the parameters you're given, but that you flourish in whatever space is available; that you don't need a lot of space to make your content look good. That impression is easily lost in a portfolio too big to even fit on your interviewer's desk.
-
 
 ## 1) Not Using Enough Negative Space
 

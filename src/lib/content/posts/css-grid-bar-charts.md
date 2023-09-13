@@ -1,15 +1,16 @@
 ---
-title: "Creating dynamic bar charts with CSS grid"
-date: "2022-03-24"
-updated: "2022-07-14"
+title: 'Creating dynamic bar charts with CSS grid'
+date: '2022-03-24'
+updated: '2022-07-14'
 categories:
-  - "css"
-  - "web"
-coverImage: "bar-charts.png"
+  - css
+  - web
+coverImage: 'bar-charts.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: How to use CSS grid to make a responsive, adaptable bar chart with no math or external library required!
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -23,7 +24,6 @@ Inspired by Wordle, I recently added a bar chart element to [Quina](https://quin
 At first, when I set out to build that chart, I was concerned at the daunting complexity. How do I make sure the bars are the right scale, both in relation to each other and to the chart itself? Reaching for an external library looked like the easy option.
 
 Then I realized: this is actually a _perfect_ use-case for CSS grid!
-
 
 ## Setting up the grid
 
@@ -54,7 +54,6 @@ Each individual bar has a colored background to make it visible, and places the 
 
 Each individual bar _also_ has `grid-column: span x` set on it as well, where `x` is the bar's value, making each bar a column width equal to its value.
 
-
 ## Working with dynamic data
 
 In a real-world use case, you probably wouldn't be hard-coding your data into the HTML. Most likely, you'd be working with data from an external source.
@@ -64,13 +63,13 @@ Reusing our example from above, that data might look something like this:
 ```js
 // Our array of data, as an example
 [
-  { 
+  {
     name: 'Baseball'
     value: 9,
-  }, { 
+  }, {
     name: 'Football'
     value: 11,
-  },{ 
+  },{
     name: 'Basketball'
     value: 5,
   },
@@ -84,17 +83,17 @@ In Svelte, that might look something like this:
 
 ```svelte
 <script>
-  // This component will expect the data as a prop
-  export let dataPoints 
+	// This component will expect the data as a prop
+	export let dataPoints;
 </script>
 
 <ul class="chart">
-  {#each dataPoints as point}
-    <li style="grid-column: span {point.value}">
-      {point.name}
-      <span>{point.value}</span>
-    </li>
-  {/each}
+	{#each dataPoints as point}
+		<li style="grid-column: span {point.value}">
+			{point.name}
+			<span>{point.value}</span>
+		</li>
+	{/each}
 </ul>
 ```
 
@@ -113,7 +112,6 @@ This approach assumes you want the widest bar to be the width of the chart, whic
 In our loop, we also populate the bar's actual visible text content with the `point.name` and `point.value` props. Again, the value is contained in a `<span>` element, so we can push the name and value apart from one another—though depending on your implementation and design, this might be unneeded.
 
 I mentioned, however, that there were still some issues to solve here. Let's get to that now.
-
 
 ### Setting bar rows
 
@@ -136,25 +134,24 @@ Our final Svelte version, then, might look like this:
 
 ```svelte
 <script>
-  export let dataPoints 
+	export let dataPoints;
 </script>
 
 <ul class="chart">
-  {#each dataPoints as point}
-    <li style="grid-column-end: span {point.value}">
-      {point.name}
-      <span>{point.value}</span>
-    </li>
-  {/each}
+	{#each dataPoints as point}
+		<li style="grid-column-end: span {point.value}">
+			{point.name}
+			<span>{point.value}</span>
+		</li>
+	{/each}
 </ul>
 
 <style>
-  .chart li {
-    grid-column-start: 1;
-  }
+	.chart li {
+		grid-column-start: 1;
+	}
 </style>
 ```
-
 
 ### CSS
 
@@ -162,10 +159,10 @@ There are a few important styles needed to make this work. First off, make sure 
 
 ```scss
 .chart {
-  display: grid;
-  grid-template-columns: auto; /* The default, but best to be explicit */
-  gap: 0.5rem 0;
-  grid-auto-columns: 1fr;
+	display: grid;
+	grid-template-columns: auto; /* The default, but best to be explicit */
+	gap: 0.5rem 0;
+	grid-auto-columns: 1fr;
 }
 ```
 
@@ -179,18 +176,17 @@ Next, on the bars themselves, you'll want something like this:
 
 ```css
 .chart > li {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.25rem 0.5rem;
-  background: #ffd100; /* Or your color */
-  grid-column-start: 1;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.25rem 0.5rem;
+	background: #ffd100; /* Or your color */
+	grid-column-start: 1;
 }
 ```
 
 Aside from that, the rest is pretty straightforward, and you can add or adjust depending on your design. You'll probably want to set `list-style-type` to `none`, just to get rid of the bullets that come with a list element by default. You might want to adjust the browser's default `padding` on unordered lists, as well.
 
 One final warning: CSS wants to make elements wide enough to hold their text contents by default. So when dealing with very small bars, be sure they don't get wider than they should in the chart, just because the name of the bar is wide.
-
 
 ## Other options
 
@@ -225,5 +221,3 @@ All of this is only one possible implementation of a CSS grid bar chart. There a
 You could also change the style. One possible example: experiment with using grid placement to create partially overlapping items. Animating the bars so they rise one after another might be another potential enhancement.
 
 In any case: I hope I've shown you that you don't need to reach for some chart library for simple use cases, and that you have fun trying this out!
-
-

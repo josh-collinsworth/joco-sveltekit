@@ -1,10 +1,10 @@
 ---
-title: "Debugging iOS Safari (when all you have is a Mac)"
-date: "2022-05-10"
-updated: "2022-05-11"
-categories: 
-  - "web"
-coverImage: "debugging_ios/debugging-ios.png"
+title: 'Debugging iOS Safari (when all you have is a Mac)'
+date: '2022-05-10'
+updated: '2022-05-11'
+categories:
+  - web
+coverImage: 'debugging_ios/debugging-ios.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: Debugging iOS Safari is a challenge (and possibly expensive) when you don't have access to an iPhone. Here are a few options to get around that problem.
@@ -38,11 +38,9 @@ For the rest of us—working on a Mac, but without access to an iPhone or a paid
 
 And as a preview: there's a section at the end where I offer some thoughts on the current, inequitable state of affairs when it comes to debugging Safari. But first, let's get to the options.
 
-
 ## The simple option: MacOS Safari user agent emulation
 
 Safari on MacOS offers a very helpful combination of features for testing and debugging: **user agent emulation**, and **responsive design mode**. Between the two of these features, MacOS Safari manages to replicate an iPhone environment with very high accuracy. It's not perfect—and it's missing some things—but it's quick and easy if you already have a Mac on hand.
-
 
 ### First steps
 
@@ -66,12 +64,11 @@ Credit where it's due: this is an _extremely_ nice feature to have built into de
 
 So, if you want to cover all your bases, we need to go to our next option…
 
-
 ## The comprehensive option: Xcode device simulator
 
-Don’t panic. This option might *seem* extremely complex, but it’s not difficult, and it gives you a free, unlimited way to essentially use an iPhone on your Mac.
+Don’t panic. This option might _seem_ extremely complex, but it’s not difficult, and it gives you a free, unlimited way to essentially use an iPhone on your Mac.
 
-The downside, however: this approach requires you to commit a ***lot*** of time and disk space up front. You'll need several gigabytes of free disk space, both for Xcode and its simulator(s), and the time do download all of it, so be sure you have those resources before you start. (It will take at least 15–20 gigs to install both Xcode and one simulator. You can get by with just one simulator, but you may want more.)
+The downside, however: this approach requires you to commit a **_lot_** of time and disk space up front. You'll need several gigabytes of free disk space, both for Xcode and its simulator(s), and the time do download all of it, so be sure you have those resources before you start. (It will take at least 15–20 gigs to install both Xcode and one simulator. You can get by with just one simulator, but you may want more.)
 
 <SideNote>Xcode is an app primarily for developing Mac and iOS apps. We aren’t going to use it for that, though; we’re just going to use its very handy device simulator.</SideNote>
 
@@ -89,7 +86,7 @@ In Xcode preferences, select the “Components” tab, and you’ll find a list 
 
 Once your emulator of choice is downloaded and installed, however, you’re ready!
 
-With Xcode open, head to `Xcode` &rsaquo; `Open Developer Tool` &rsaquo; `Simulator`. You should see an iPhone show up on screen, running the iOS version you chose. The full iPhone UI is available here; your simulated device starts up and shuts down. It has memory and apps. It has the infamous notch. And most importantly for our testing purposes: when you open Safari, it features the full browser, complete with UI, that show us how our web site or app *really* looks in the hands of a user.
+With Xcode open, head to `Xcode` &rsaquo; `Open Developer Tool` &rsaquo; `Simulator`. You should see an iPhone show up on screen, running the iOS version you chose. The full iPhone UI is available here; your simulated device starts up and shuts down. It has memory and apps. It has the infamous notch. And most importantly for our testing purposes: when you open Safari, it features the full browser, complete with UI, that show us how our web site or app _really_ looks in the hands of a user.
 
 ![This very website, running on iOS 14 in a simulated iPhone 11](/images/post_images/debugging_ios/ios-simulator.png)
 
@@ -97,8 +94,7 @@ With Xcode open, head to `Xcode` &rsaquo; `Open Developer Tool` &rsaquo; `Simula
 
 It's about the closest you can get to testing on an actual iPhone (or other iOS device) without having one in your hands.
 
-Worth noting: I *did* experience at least one visual bug on the simulated iPhone that MacOS Safari’s emulation failed to reproduce. So while this approach requires a _lot_ of setup, it's well worth it if you don't have any better options for testing iOS Safari.
-
+Worth noting: I _did_ experience at least one visual bug on the simulated iPhone that MacOS Safari’s emulation failed to reproduce. So while this approach requires a _lot_ of setup, it's well worth it if you don't have any better options for testing iOS Safari.
 
 ## Epilogue: Safari is pay-to-play
 

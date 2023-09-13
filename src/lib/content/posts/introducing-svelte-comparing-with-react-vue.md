@@ -3,12 +3,11 @@ title: 'Introducing Svelte, and Comparing Svelte with React and Vue'
 date: '2021-10-1'
 updated: '2022-01-18'
 categories:
-  - 'javascript'
-  - 'svelte'
-  - 'vue'
-  - 'react'
-  - 'web'
-  - 'popular'
+  - javascript
+  - svelte
+  - vue
+  - react
+  - web
 coverImage: 'introducing_svelte.png'
 coverWidth: 16
 coverHeight: 9

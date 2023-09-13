@@ -1,16 +1,17 @@
 ---
-title: "The Five Things I Wish Somebody Had Told Me as a Design Student"
-date: "2016-02-21"
-updated: "2021-01-19"
+title: 'The Five Things I Wish Somebody Had Told Me as a Design Student'
+date: '2016-02-21'
+updated: '2021-01-19'
 categories:
-  - "design"
-  - "personal"
-  - "opinion"
-coverImage: "what-i-wish.png"
+  - design
+  - personal
+  - opinion
+coverImage: 'what-i-wish.png'
 coverWidth: 48
 coverHeight: 29
 excerpt: Your worst instructor as a design student will lay out clear goals and expectations which will not change; this is not a given with clients.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -21,7 +22,6 @@ I recently had the privilege of attending [Meet the Pros 2016](http://www.meetth
 I was at Meet the Pros myself two years ago, and it was a seminal experience in my professional path. I still flip through the small notebook in which I keep notes, quotes and advice that I wrote down during that two-day conference. And while I'm technically not a full-time graphic design professional anymore (I still freelance, but my focus is more diverse), it still got me thinking: what _have_ I learned in the past two years? What would I have benefitted from knowing as my two-years-younger self?
 
 Here's what I answered, and what I told the design students I spoke to last Tuesday. It was fun to think about and write for me; hopefully it's helpful for you in some way as well.
-
 
 ### Being a Great Person is Just as important as Having a Great Portfolio
 
@@ -49,7 +49,6 @@ There's a phenomenal quote that I heard from [Marty Amsler](http://www.baileylau
 
 Being the right person is usually at least as important as having the right portfolio. So while you're working on your book, don't forget to work on yourself, too. Be impressive. Be passionate. Be somebody other people want to be around.
 
-
 ### Your Worst Instructor is Still Better Than Any Bad Client
 
 Let's be real: we all have instructors we didn't like in school. And while sometimes that may have been for good reason, if we're honest with ourselves, a lot of the time it's because we didn't like their feedback. But whenever I hear students speak derisively of an instructor (which, it should go without saying, is something you should absolutely _never_ do in any remotely professional setting), I feel compelled to let them know how good they have it right now:
@@ -64,7 +63,6 @@ Let's be real: we all have instructors we didn't like in school. And while somet
 Besides the above, speaking poorly of anyone is a surefire way to throw a giant red flag in the professional world. So just don't do it.
 
 Instead, realize that your instructors are there to help you succeed. Besides, accepting and acquiescing to feedback you might not agree with is excellent practice for being a professional…
-
 
 ### You're Going to Need Thick Skin (and Zero Pride)
 
@@ -89,7 +87,6 @@ Take pride in your work, but don’t be prideful. Defend your work, but don’t 
 </PullQuote>
 
 Like it or not, what we do—while grounded in many objective principles and disciplines—is still subjective. My view of green is different than yours and your feelings about this typeface are different than mine. Our experiences lead us to different conclusions about what we see. It's nobody's fault. Keep the end goal and target audience in mind (your client probably isn't at this point) and just move on.
-
 
 ### Only Do the Work If You Care (and Don't Care About the Money)
 
@@ -133,7 +130,6 @@ Assuming your needs are met otherwise, financial deficiency is an easier burden 
 The thing is, the work itself wasn't bad. In fact, it was the kind of work that, under most other circumstances, I might have been doing just for fun. But knowing that my time and efforts were being transformed into a vehicle for furthering goals I didn't agree with for people whose values didn't align to mine sucked any hope of enjoyment out of the project. It was supposed to be freedom; it became entrapment.
 
 Design is hard enough work as it is. Don't make it harder by shackling yourself to people and projects you don't care about. It's never worth it. Assuming your needs are met otherwise, financial deficiency is an easier burden to carry than creative despair.
-
 
 ### School Doesn't Prepare You to Manage a Professional Workload
 

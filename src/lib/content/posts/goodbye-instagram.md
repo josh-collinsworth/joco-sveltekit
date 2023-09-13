@@ -1,14 +1,15 @@
 ---
 title: "This isn't the Time, But it's the Perfect Time; Goodbye, Instagram"
-date: "2020-06-03"
-updated: "2020-06-11"
-categories: 
-  - "personal"
-coverImage: "instagram-over-1.png"
+date: '2020-06-03'
+updated: '2020-06-11'
+categories:
+  - personal
+coverImage: 'instagram-over-1.png'
 coverWidth: 1200
 coverHeight: 709
 excerpt: …Lately, I’ve been wondering whether I can actually continue supporting Instagram and the company behind it, however passively or at whatever seemingly insignificant scale. And while I was zeroing in on this answer anyway, the events of the last couple of weeks have clearly cemented in my mind that the answer—for me, at least—is an unequivocal “no.”
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -25,7 +26,6 @@ I guess I thought Instagram was better; one of the things I hated about Facebook
 I also tended to use Instagram a lot less. It was just a place where I occasionally posted a picture of my dog (or later, my son). I was always surprised at the end of each year that I actually _had_ nine posts to make the signature 3 × 3 "top nine" grid out of.
 
 But lately, I've been wondering whether I can actually continue supporting Instagram and the company behind it, however passively or at whatever seemingly insignificant scale. And while I was zeroing in on this answer anyway, the events of the last couple of weeks have clearly cemented in my mind that the answer—for me, at least—is an unequivocal "no."
-
 
 ## Where we are
 
@@ -47,7 +47,7 @@ To my knowledge, there has never been any apology for A/B testing with the menta
 
 This is where I'll be conflating Facebook and Instagram a bit, but that's on purpose. It's clear that the two are intrinsically the same company as far as this topic goes. Marvel might be technically different than Disney, but the dollars go the same place.
 
-* * *
+---
 
 Before this year, Facebook—specifically, Mark Zuckerberg himself—pledged that the company would take a stand against unethical misuse of its platform, in light of the role Facebook played in Russia's campaign of misinformation during the 2016 election. It is only right, after all, that a platform vulnerable to such abuse takes any and all precautions to patch that vulnerability. I work at a software company; I regularly see exploits exponentially smaller than that still taken with grave sobriety.
 
@@ -82,7 +82,6 @@ In short, Facebook has failed us—as users, as citizens, and as humans—to an 
 But it's become clear in recent years that not only will Facebook move in the opposite direction of positive change, but that the company's role in supporting hate, malice and ignorance is not even a passive one; regardless of the intention or motivation, the outcome is the same. Facebook has positioned itself, actively and deliberately, to be a key player in enabling fascism.
 
 (If that word feels a little strong to you…well, give it time.)
-
 
 ## What does this do?
 

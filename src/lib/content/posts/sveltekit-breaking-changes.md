@@ -1,12 +1,12 @@
 ---
-title: "Breaking changes in SvelteKit, August 2022"
-date: "2022-08-17"
-updated: "2022-08-19"
-categories: 
-  - "svelte"
-  - "javascript"
-  - "web"
-coverImage: "sveltekit-breaking-changes.png"
+title: 'Breaking changes in SvelteKit, August 2022'
+date: '2022-08-17'
+updated: '2022-08-19'
+categories:
+  - svelte
+  - javascript
+  - web
+coverImage: 'sveltekit-breaking-changes.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: SvelteKit introduced breaking changes to its routing and data loading in August 2022. Learn how to convert from the old way of doing things to the new.
@@ -19,7 +19,6 @@ excerpt: SvelteKit introduced breaking changes to its routing and data loading i
   import PullQuote from '$lib/components/PullQuote.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
-
 
 SvelteKit introduced a new syntax for its routing, as well as for its data loading, in the newest pre-1.0 release. It's a complete overhaul of how `src/routes` works (from pages to endpoints), as well as a significant change to how and where you can use SvelteKit's powerful `load` function.
 
@@ -36,7 +35,6 @@ The migration tool is very nice. However, it likely can't fix everything for you
 This post will help cover what's changed, and how to convert the syntax and structure from the old to the new.
 
 Let's dig in.
-
 
 ## Routing syntax
 
@@ -90,7 +88,6 @@ In fact, you actually _can't_ prefix a file or folder inside of `src/routes` wit
 
 </SideNote>
 
-
 ### Converting to the new routing syntax
 
 Again, [the migration guide](https://github.com/sveltejs/kit/discussions/5774) and migration tool in it can do much of the work of converting for you. This is just to help understand the changes (in case you have to do anything manually).
@@ -124,7 +121,6 @@ Within the dynamic `[slug]/+page.svelte` file, you can grab whichever markdown f
 
 It's a little weird to explain, but there's more on that in my [SvelteKit Markdown Blog post](/blog/build-static-sveltekit-markdown-blog). Also, see the [routing docs](https://kit.svelte.dev/docs/routing#page). I only mention it here so you know you have options that _don't_ require creating specially named folders for each of your individual posts.
 
-
 ## Layouts
 
 Layouts fortunately haven't changed much. The only real difference is that now, instead of beginning with `__`, layout files _also_ begin with `+`.
@@ -148,7 +144,6 @@ Layouts fortunately haven't changed much. The only real difference is that now, 
 That means the conversion is pretty much as simple as changing the name of the file from `__layout.svelte` to `+layout.svelte`--although depending on what you were doing _inside_ the layout, there may be more to it. More on that in a bit.
 
 Also worth noting: the same applies to `__error.svelte`; it can simply be changed to `+error.svelte` instead.
-
 
 ## Hidden files and folders in `src/routes`
 
@@ -179,7 +174,6 @@ In all other cases: that thing won't get a route, even though it's inside the `r
 
 This means you don't actually _need_ to do any conversion here; a `_hidden` folder is still hidden. You just don't _need_ the underscore in front of its name anymore.
 
-
 ## The `load` function
 
 This is the other really big part of the newest breaking changes.
@@ -189,18 +183,18 @@ This is the other really big part of the newest breaking changes.
 ```svelte
 <!-- Old load function -->
 <script context="module">
-export const load = () => {
-  // Do stuff here
-  return {
-    props: {
-      // The stuff to return
-    }
-  }
-}
+	export const load = () => {
+		// Do stuff here
+		return {
+			props: {
+				// The stuff to return
+			}
+		};
+	};
 </script>
 
 <script>
-// Normal Svelte component stuff here
+	// Normal Svelte component stuff here
 </script>
 ```
 
@@ -212,7 +206,7 @@ Either way, the file is colocated with a corresponding `+page.svelte` file, like
 📂 src
 ┗ 📂 routes
   ┣ 📜 +page.svelte
-  ┗ 📜 +page.js 
+  ┗ 📜 +page.js
        (or +page.server.js)
 ```
 
@@ -232,7 +226,6 @@ Beyond that, everything is the same as before with the `load` function:
 
 **One other thing:** to execute a `load` function on _all_ pages, you'll do so in a `+layout.js` file, which lives alongside the `+layout.svelte` file.
 
-
 ### Converting from the old `load` function to the new
 
 Depending on what your `load` function is doing, this may be a simple conversion, or it may require some finessing. But for starters:
@@ -247,21 +240,21 @@ Data returned from the `load` function is available in the template as the `data
 
 ```svelte
 <script>
-// Data returned from `load` is automatically available as `data`
-export let data
+	// Data returned from `load` is automatically available as `data`
+	export let data;
 </script>
 
 <article>
-  <h1>{data.title}</h1>
+	<h1>{data.title}</h1>
 
-  <p>{data.date}</p>
+	<p>{data.date}</p>
 </article>
 ```
-
 
 ### Differences between `+page.js` and `+page.server.js`
 
 The main differences between the two are:
+
 - `+page.js` **runs on both the server and the client** (_as the load function did previously_).
 - `+page.server.js` **runs on the _server only_**. It can also respond to HTTP verbs.
 
@@ -271,12 +264,12 @@ Which to use will depend mainly on your use case. There's one key thing to remem
 
   ```js
   // +page.js only
-  import { json } from '@sveltejs/kit'
+  import { json } from '@sveltejs/kit';
 
   export const load = ({ fetch }) => {
-    const myData = fetch('/relative/path/here')
-    return json(myData)
-  }
+  	const myData = fetch('/relative/path/here');
+  	return json(myData);
+  };
   ```
 
 That's because **the client and server have different versions of fetch**; the Node version and the browser `fetch` API are _not_ identical. So when you pass `fetch` as a parameter to a `load` function, SvelteKit does a bit of magic (and adds some niceties) to make sure your fetch call works, and works well, on both the server and client.
@@ -287,14 +280,13 @@ This also means when using `fetch` on the server only, you'll need to be explici
 
 ```js
 // +page.server only
-import { json } from '@sveltejs/kit'
+import { json } from '@sveltejs/kit';
 
 export const load = ({ url }) => {
-  const myData = fetch(`${url.origin}/my/api/path`)
-  return json(myData)
-}
+	const myData = fetch(`${url.origin}/my/api/path`);
+	return json(myData);
+};
 ```
-
 
 ## Server routes (API endpoints)
 
@@ -330,15 +322,15 @@ Another change to be aware of: previously, SvelteKit handled setting the proper 
 ```js
 // Previously:
 export const get = () => {
-  const message = 'Hello!'
+	const message = 'Hello!';
 
-  return {
-    status: 200,
-    body: {
-      message
-    }
-  }
-}
+	return {
+		status: 200,
+		body: {
+			message
+		}
+	};
+};
 ```
 
 _Now_, however, **server routes _must_ return a proper [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response)**.
@@ -347,12 +339,12 @@ That would be a pain to do on our own, but fortunately, SvelteKit ships with a `
 
 ```js
 // The new way:
-import { json } from '@sveltejs/kit'
+import { json } from '@sveltejs/kit';
 
 export const GET = () => {
-  const message = 'Hello!'
-  return json(message)
-}
+	const message = 'Hello!';
+	return json(message);
+};
 ```
 
 Even if you use the conversion script mentioned above, you'll still need to adjust your endpoints' responses; adjust relative file paths (since SvelteKit's new routing syntax often requires nesting files a level deeper); and handle implementing the `json()` responses.
@@ -362,13 +354,13 @@ The only other big difference to be aware of--which you may have noticed already
 ```js
 // Old:
 export const get = () => {
-  // Do the thing
-}
+	// Do the thing
+};
 
 // New:
 export const GET = () => {
-  // Do the thing
-}
+	// Do the thing
+};
 ```
 
 Oh, and one last thing: since we're not returning an object with a `status` and a `body` anymore, we'll want to import SvelteKit's `error` function wherever we need to return a non-200 status.
@@ -376,21 +368,19 @@ Oh, and one last thing: since we're not returning an object with a `status` and 
 ```js
 // Old:
 return {
-  status: 400,
-  body: new Error('not found')
-}
+	status: 400,
+	body: new Error('not found')
+};
 
 // New:
-import { error } from '@sveltejs/kit'
+import { error } from '@sveltejs/kit';
 
 try {
-  //return something here
-}
-catch({ message }) {
-  throw error(400, message)
+	//return something here
+} catch ({ message }) {
+	throw error(400, message);
 }
 ```
-
 
 ### Converting server routes
 
@@ -407,7 +397,6 @@ As with pages, you may need to create new named folders for any server routes (A
 You'll also need to convert any HTTP verb function names to all-uppercase (`get` becomes `GET`, `post` becomes `POST`, etc.)
 
 And rather than `return` a JavaScript object with a `status` and `body`, you'll need to either use SvelteKit's `json` helper (if returning JSON); or, return a `new Response()` constructor, which takes two arguments: body, and options.
-
 
 ## Wrapup
 

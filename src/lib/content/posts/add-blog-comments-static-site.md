@@ -1,28 +1,28 @@
 ---
-title: "Adding blog comments to your static site with utterances"
-date: "2021-11-06"
-updated: "2021-11-09"
+title: 'Adding blog comments to your static site with utterances'
+date: '2021-11-06'
+updated: '2021-11-09'
 categories:
-  - "web"
-  - "javascript"
-  - "svelte"
-coverImage: "utterances.png"
+  - web
+  - javascript
+  - svelte
+coverImage: 'utterances.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: The web world is full of tradeoffs. Going from a CMS to a static site keeps things simple—but that simplicity comes with costs. Luckily, giving up comments on your blog doesn't have to be one of them.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-The web world is full of tradeoffs. As I wrote in my post about [moving away from WordPress](/blog/goodbye-wordpress), going from a CMS to a static site keeps things simple. That simplicity, however, comes with costs—one of which is the ability to have comments on blog posts. 
+The web world is full of tradeoffs. As I wrote in my post about [moving away from WordPress](/blog/goodbye-wordpress), going from a CMS to a static site keeps things simple. That simplicity, however, comes with costs—one of which is the ability to have comments on blog posts.
 
 I had to throw away all the existing comments on my blog when I moved away from WordPress. (Not that there were a lot; most of them were from ages ago, and on my [Pantone post](/blog/pantone), which somehow retains considerable SEO juice.) Due to the nature of static sites generally not having a database or a server to process data, there are few good, simple ways to allow user comments.
 
 There are plenty of options out there to solve this problem, of varying degrees of simplicity. But I've recently settled on a nifty little GitHub-based library called [utterances](https://utteranc.es).
-
 
 ## What is utterances, and what does it do?
 
@@ -48,7 +48,6 @@ You don't really need to know anything about GitHub issues, or even that GitHub 
 
 All you need to know is: utterances adds GitHub-powered comments to your site, simply and easily.
 
-
 ## How to set up utterances
 
 Again, the [utterances site](https://utteranc.es/) covers this nicely, so I'll just hit the high notes here:
@@ -57,10 +56,9 @@ Again, the [utterances site](https://utteranc.es/) covers this nicely, so I'll j
 
 2. **Be sure to [enable the utterances app](https://github.com/apps/utterances) in GitHub**. This is the part that gives utterances permission to create new issues. You have the choice of whether to enable it for _all_ of your repos, or to pick and choose.
 
-  Note that you may also need to be sure that issues are enabled in the repo's settings, particularly if the repo in question is a fork of another one. That option can be found on the first page in the repo's "Settings" tab, near the top.
+Note that you may also need to be sure that issues are enabled in the repo's settings, particularly if the repo in question is a fork of another one. That option can be found on the first page in the repo's "Settings" tab, near the top.
 
 3. **Finally, add the utterances script snippet to your site**. We'll dig into this a bit more next, since--while not too complex--it's the area that gave me the most trouble.
-
 
 ### Adding utterances to the page
 
@@ -68,13 +66,13 @@ The last step of the process is to add a small script (which, you may be happy t
 
 ```html
 <script
-  src="https://utteranc.es/client.js"
-  repo="github-name/repo-name"
-  issue-term="pathname"
-  theme="github-light"
-  crossorigin="anonymous"
-  async>
-</script>
+	src="https://utteranc.es/client.js"
+	repo="github-name/repo-name"
+	issue-term="pathname"
+	theme="github-light"
+	crossorigin="anonymous"
+	async
+></script>
 ```
 
 Some of those attributes are familiar, standard HTML attributes; others are specialized and used only by utterances when it loads. The `theme` option controls the appearance of the form (there are several options), and the `issue-term` controls how any new issues will be named in your repo (there are also several options here, though I've described the default).
@@ -98,34 +96,34 @@ I followed the spirit of his example closely, but changed it in a few ways. Here
 ```svelte
 <!-- Comments.svelte -->
 <script>
-  import { onMount } from 'svelte'
-  import { prefersDarkMode } from '$lib/data/store'
+	import { onMount } from 'svelte';
+	import { prefersDarkMode } from '$lib/data/store';
 
-  // Translate the user's dark mode preference to a theme
-  const siteTheme = $prefersDarkMode ? 'github-dark' : 'github-light'
+	// Translate the user's dark mode preference to a theme
+	const siteTheme = $prefersDarkMode ? 'github-dark' : 'github-light';
 
-  // An object with all the utterances options I want
-  const options = {
-    src: 'https://utteranc.es/client.js',
-    repo: 'josh-collinsworth/joco-sveltekit',
-    label: 'comments',
-    crossorigin: 'anonymous',
-    theme: siteTheme,
-    async: '',
-    'issue-term': 'pathname',
-  }
+	// An object with all the utterances options I want
+	const options = {
+		src: 'https://utteranc.es/client.js',
+		repo: 'josh-collinsworth/joco-sveltekit',
+		label: 'comments',
+		crossorigin: 'anonymous',
+		theme: siteTheme,
+		async: '',
+		'issue-term': 'pathname'
+	};
 
-  onMount(() => {
-    const utteranceScript = document.createElement('script')
-    const targetTag = document.getElementById('utterances-comments')
-  
-    // Loop over the options & apply each property as an attribute
-    for (const prop in options) {
-      utteranceScript.setAttribute(prop, options[prop])
-    }
+	onMount(() => {
+		const utteranceScript = document.createElement('script');
+		const targetTag = document.getElementById('utterances-comments');
 
-    targetTag.appendChild(utteranceScript)
-  })
+		// Loop over the options & apply each property as an attribute
+		for (const prop in options) {
+			utteranceScript.setAttribute(prop, options[prop]);
+		}
+
+		targetTag.appendChild(utteranceScript);
+	});
 </script>
 
 <div id="utterances-comments" />
@@ -133,19 +131,17 @@ I followed the spirit of his example closely, but changed it in a few ways. Here
 
 The main differences are:
 
-* I prefer to abstract the script attributes to an `options` object (and also, prefer descriptive variable names). While this makes the code longer, I feel it also makes it more readable (or at least, less repetitive);
+- I prefer to abstract the script attributes to an `options` object (and also, prefer descriptive variable names). While this makes the code longer, I feel it also makes it more readable (or at least, less repetitive);
 
-* Since my site has two themes, I dynamically set the GitHub theme based on the user's site-level preference. (This site _does_ detect and respect the user's dark mode preference by default, but _also_ allows them to override it, just in case they like the opposite version here. So OS preference may or may not be site preference); and
+- Since my site has two themes, I dynamically set the GitHub theme based on the user's site-level preference. (This site _does_ detect and respect the user's dark mode preference by default, but _also_ allows them to override it, just in case they like the opposite version here. So OS preference may or may not be site preference); and
 
-* Finally, I put the script itself _inside_ the target `div`, rather than before it. This is mostly just to avoid having an empty div lying around, but it could also potentially help with styling. (The comments form itself is in an `iframe`, so you can't style it directly regardless, but at least this way you can have control over the wrapping `div`.)
+- Finally, I put the script itself _inside_ the target `div`, rather than before it. This is mostly just to avoid having an empty div lying around, but it could also potentially help with styling. (The comments form itself is in an `iframe`, so you can't style it directly regardless, but at least this way you can have control over the wrapping `div`.)
 
 To restate/emphasize, since I'm talking about somebody else's code here: this is all just personal preference. Both versions have advantages, and either is perfectly fine.
-
 
 ## Pros and cons
 
 I found utterances to be a good fit for me and my site personally, but there are reasons you may or may not come to the same conclusion.
-
 
 ### Utterances benefits
 
@@ -163,7 +159,6 @@ Also, because it uses GitHub as the comments engine under the hood, you can do a
 
 Finally: utterances is a perfect fit for static sites, because it doesn't require a rebuild to display new content; adding and retrieving comments is all handled client-side.
 
-
 ### Utterances tradeoffs
 
 It's hard to complain about such a simple and effective solution, but as with all things, this approach comes with tradeoffs.
@@ -175,7 +170,6 @@ Another item worth mentioning: since this is all powered by GitHub comments unde
 Also, there's no commenting on other comments or threading comments, at least not for now--though as mentioned before, there are at least reaction emoji available. But again, this _is_ open-source, so it's possible we could see that change.
 
 Finally, I suppose you could consider it a drawback that your comments management moves to GitHub. Personally, I like that my comments are now hosted in the same place as the code itself, but I can see where going into GitHub to manage content could be undesirable in some cases. At the very least, it means you have less control over approving and moderating comments that you might with, say, WordPress. (That said, however: GitHub almost certainly has much better control over spam issues and comments than I'd ever be able to devise.) Also, while I haven't spent much time looking, I'd bet there are VS Code extensions to help you manage issues right in your editor.
-
 
 ## Conclusion
 

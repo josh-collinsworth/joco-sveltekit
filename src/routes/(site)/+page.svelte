@@ -37,8 +37,8 @@
 				the word games
 				<a href="https://quina.app">Quina</a> and <a href="https://playhondo.com">Hondo</a>.
 				Occasionally I'll
-				<a href="/about-me#appearances">appear on a podcast</a>, and I semi-regularly
-				<a href="/blog">blog here</a>.
+				<a href="/about-me#appearances">appear on a podcast</a>, and I
+				<a href="/blog">blog here</a> once in a while.
 			</p>
 
 			<section>

@@ -6,6 +6,7 @@ categories:
   - opinion
   - web
   - react
+  - popular
 coverImage: because-of-react.png
 coverWidth: 320
 coverHeight: 180
@@ -19,7 +20,7 @@ excerpt: If you don't often look beyond established comfortable defaults, you mi
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-<style lang="scss"> 
+<style lang="scss">
 h4 {
 	margin-top: var(--dottedQuarterNote);
 	margin-bottom: var(--eighthNote);

@@ -1,15 +1,16 @@
 ---
-title: "Profit is Not a Value"
-date: "2015-08-05"
-updated: "2020-05-19"
+title: 'Profit is Not a Value'
+date: '2015-08-05'
+updated: '2020-05-19'
 categories:
-  - "opinion"
-  - "personal"
-coverImage: "money.png"
+  - opinion
+  - personal
+coverImage: 'money.png'
 coverWidth: 8
 coverHeight: 5
 excerpt: Any executive or business owner will say their company values integrity, and virtually every company claims that they reward and value their employees exhibiting their brand values. But is that really accurate?
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -27,7 +28,7 @@ Phrases like “we put service first,” or “we have a commitment to excellenc
 
 One of the things I love about where I work and the process we employ is that these conversations are not by far the end of our discovery—nor should they be for any agency that takes branding seriously. [David Day | Associates](http://dday.com)’ brand process (at the risk of sounding like too much of a company man) can often take weeks or even months of intensive research, interviews, surveys, workshops, roundtables and market exploration. All of this takes place at every level; stakeholder, consumer, competitor, market peers and those completely outside the brand's hemisphere.
 
-This practice certainly isn't unique to dda (though most branding agencies have honed and personalized their approach to it, ours included), but the goal and result of this is the distillation of _brand values:_ a collection of words or phrases painstakingly extracted from this process which form the central brand identity. These values are a mantra of sorts, a kind of brand code, refining and solidly defining why the organization exists, how it does everything it does and will go about operating in the future. Some companies (and the agencies that brand them) have other names for the brand values, but the meaning is the same, and virtually every company on the planet—especially the larger and more successful ones—have and embrace them.
+This practice certainly isn't unique to dda (though most branding agencies have honed and personalized their approach to it, ours included), but the goal and result of this is the distillation of *brand values:* a collection of words or phrases painstakingly extracted from this process which form the central brand identity. These values are a mantra of sorts, a kind of brand code, refining and solidly defining why the organization exists, how it does everything it does and will go about operating in the future. Some companies (and the agencies that brand them) have other names for the brand values, but the meaning is the same, and virtually every company on the planet—especially the larger and more successful ones—have and embrace them.
 
 If done well and researched carefully, the words and phrases that emerge from the branding process form a cohesive identity. These values will be personal, meaningful and unique.
 
@@ -52,14 +53,13 @@ _Deep breath._
 
 But…that's not often the case, is it?
 
-
 ## Where Brands Fall Apart
 
 Here's where I'm going with this: that company I just described doesn't really seem to exist in reality most of the time, does it? Which begs the question:
 
 _If this sort of holistic dedication to brand values is so common in theory, why is it so rare in practice?_
 
-Just as any executive or business owner will _say_ their company values integrity (and quality and service, of course), so virtually every company _claims_ that they reward and value their employees exhibiting their brand values.
+Just as any executive or business owner will *say* their company values integrity (and quality and service, of course), so virtually every company *claims* that they reward and value their employees exhibiting their brand values.
 
 But is that really accurate?
 
@@ -73,7 +73,7 @@ So where are all of the CEOs, executives and managers who lost their jobs for fa
 
 To take the example above, if you work at Zappos, hopefully somebody will take notice if you're not pursuing growth and learning (#5), or if you are not helping to build a positive team and family spirit (#7). But whether or not that happens in reality (and I can't speak to that particular company's culture either way), I feel confident they'll notice and respond quickly if you're costing the company money.
 
-Sure, the point of business is to make money, but if these brand values are really supposed to inform everything that a company does, shouldn't the question at least be asked occasionally: _does profit ever conflict with our values_? What if the employee or manager who's losing the money is doing so in the name of upholding the brand values?
+Sure, the point of business is to make money, but if these brand values are really supposed to inform everything that a company does, shouldn't the question at least be asked occasionally: *does profit ever conflict with our values*? What if the employee or manager who's losing the money is doing so in the name of upholding the brand values?
 
 <PullQuote>
 Sure, the point of business is to make money, but if these brand values are really supposed to inform everything that a company does, shouldn’t the question at least be asked occasionally: does profit ever conflict with our values?
@@ -81,9 +81,9 @@ Sure, the point of business is to make money, but if these brand values are real
 
 There are many instances where this exact thing does happen; we just don't tend to think of it in this light. For example: a business that says it puts people first will lay off workers in a location that isn't sufficiently profitable even when there were other options available; a company that claims to value family above all else will either pay its employees too little to afford child care or demand too many hours to make raising children viable; a company that says it values innovation will try to guard its own research from other innovators for fear of losing dollars; and a business that supposedly takes pride in its country, state and local community will move offshore to avoid taxes. Hell, I've even heard people in healthcare argue against treating patients in desperate need if they can't pay.
 
-All of this is invariably done for one central, core, defining purpose: profit. It's the first option in the flowchart of modern capitalism: 
+All of this is invariably done for one central, core, defining purpose: profit. It's the first option in the flowchart of modern capitalism:
 
-_Can you make money?_ > Yes > _Make money._ [End of chart]
+*Can you make money?* > Yes > _Make money._ [End of chart]
 
 So this leaves us in the position of accepting one of two uncomfortable realities:
 
@@ -100,7 +100,7 @@ It's up to you, employees, to raise your voice and blow the proverbial whistle 
 
 And it's up to you, bosses, managers, presidents and CEOs, to put the health of your brand ahead of the health of your shareholders’ wallets. Money's nice, but it's nothing more than a means to an end. And if you're sacrificing good people on the way to that end, then it isn't worth it.
 
-The best way to improve your product, service, or whatever it is that your organization offers is to invest in the people creating it. And _that_ is often completely counterintuitive to investing in profit.
+The best way to improve your product, service, or whatever it is that your organization offers is to invest in the people creating it. And *that* is often completely counterintuitive to investing in profit.
 
 Profit is not a value.
 

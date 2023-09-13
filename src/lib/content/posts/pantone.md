@@ -1,14 +1,15 @@
 ---
-title: "Pantone, Color, and What I Wish I Had Known Sooner as a Designer"
-date: "2015-04-01"
-updated: "2021-01-19"
+title: 'Pantone, Color, and What I Wish I Had Known Sooner as a Designer'
+date: '2015-04-01'
+updated: '2021-01-19'
 categories:
-  - "design"
-coverImage: "ColorPost-4.jpg"
+  - design
+coverImage: 'ColorPost-4.jpg'
 coverWidth: 35
 coverHeight: 22
 excerpt: One of the most difficult things for me to learn in my transition from the classroom to a professional branding agency was how to properly handle color output. So I decided to write this post in the hope of saving you some from some of the pitfalls that I failed to avoid.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -19,7 +20,6 @@ One of the most difficult things for me to learn in my transition from the class
 Don't get me wrong; I had great teachers. But little in a classroom environment compares with the task of creating a comprehensive logo and stationery package for a real-world client. (Plus, the print overview course at my school was an elective that I didn't...er, elect.)
 
 Trust me: it's no fun having to redo 300 logos because you didn't get the colors exactly right. So I decided to write this post in the hope of saving you some from some of the pitfalls that I failed to avoid.
-
 
 ## An explanation of spot colors
 
@@ -58,7 +58,6 @@ Most pertinently, spot colors each require their own ink well during printing. L
 
 In short, spot color printing is the best way to ensure color accuracy and a high-quality print, but because of its nature, it's difficult and often expensive. Even large companies usually reserve spot color printing only for the most important printed materials, or those that only require one or maybe two colors.
 
-
 ## Pantone is more than spot inks
 
 So you probably can't print actual Pantone _inks_ on your own, but there's good news:
@@ -68,7 +67,6 @@ Each Pantone swatch in the book includes CMYK, RGB and HTML values to reproduce 
 ![Pantone swatches include recommended CMYK, RGB and HTML values](/images/post_images/ColorPost-2.jpg)
 
 Always be sure to use the CMYK, RGB and/or HTML values recommended here on the Pantone swatch. Avoid converting by any other method.
-
 
 ### Getting consistent color without using Pantone inks
 
@@ -98,7 +96,6 @@ Put another, less technical way: sending a document with spot colors through a s
 
 In the print popup window, select "output" on the left and see how many inks are in the ink section. If it's more than the basic four process inks, you'll want to convert your spot colors to process colors for optimal print results.
 
-
 ## If you want something done right, you've got to do it yourself.
 
 This is where I went wrong as a student and as a rookie professional.
@@ -125,7 +122,6 @@ Changing the document color mode and/or the color mode in the color panel of a d
 
 Take the example in the above image: the recommended CMYK formula for Pantone 132 C is 9/38/100/32. That's _very_ far from the values that InDesign dialed up for me in the color panel in the screenshot before that. (A telltale sign of improperly converted CMYK swatches is that they involve decimal points, e.g., the 13.04% black shown in the color panel screenshot above. No Pantone swatch's recommended CMYK value ever calls for decimals.)
 
-
 ## Coated or Uncoated?
 
 You may have noticed every Pantone swatch has a suffix, usually either "C" or "U" (though there are others). These two initials stand for coated and uncoated, respectively, and indicate the type of paper for which the swatch is best suited.
@@ -150,7 +146,6 @@ So if, for example, your brand color is Pantone 109 (bonus factoid: that's the y
 
 \[Additional edit: this site has been moved off WordPress, so there are no longer comments. You live on in infamy, Dave.\]
 
-
 ## Dammit, gamut
 
 Have a look through a Pantone swatch book and you'll notice each individual swatch has two side-by-side samples. The left sample is printed with true Pantone ink (which, by the way, is why Pantone books are so expensive; printing hundreds of spot colors is no cheap or simple task). The right sample, meanwhile, is appended with a "P," indicating it's printed with process color.
@@ -168,7 +163,6 @@ Due to the limitations of the CMYK gamut and halftone printing, some colors will
 When choosing colors for a client, I often try to find Pantone swatches with as little discernible difference between the spot and process sample as possible, since most clients will rarely (if ever) be printing with a true Pantone spot color ink.
 
 One tip worth noting: a CMYK value that has at least one ink at or near 100% will usually give you a richer and more consistent process color output than a swatch with process colors all at low or mid values.
-
 
 ## OK, so what about RGB and HTML color?
 
@@ -194,7 +188,6 @@ If you want to mimic, for example, Pantone 109 C onscreen, you should input the 
 
 Note that just because you manually set your swatch's CMYK value to what's on the Pantone swatch doesn't mean the RGB is correct, too. To the contrary; as I mentioned earlier, there's no precise way to convert colors from one color space to another, so if your color is correct in one color space, it's wrong in the other. Calibrate for your intended purpose. And remember that to properly output RGB color, your entire document should be set to RGB color mode.
 
-
 ## What to provide to your clients
 
 This depends somewhat on the client and the intended use, but in general, if you and/or your client are serious about accurate and consistent color reproduction, you should be providing your client with a suite which includes every permutation of their logo dialed up in each of these color modes (and with multiple file types for each):
@@ -218,7 +211,6 @@ I could go further into this, but for now, just know that standard CMYK black is
 **So does this mean that I should give my client two sets of black files?**
 
 If you want to be incredibly picky, you can. But it's generally safe to assume that a client's only use for a black logo is in print. There isn't any restriction on color in onscreen media—no cheap print jobs, no costly ink, no black-and-white newspaper ads—so it's probably ok to only make black logos using whatever CMYK black formula you settle on.
-
 
 ## Great! I read this whole thing, so now my colors will always match perfectly, right?
 

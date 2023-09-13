@@ -1,16 +1,17 @@
 ---
-title: "Adding Gutenberg Full- and Wide-Width Image Support to Your WordPress Theme"
-date: "2019-03-16"
-updated: "2020-05-13"
-categories: 
-  - "css"
-  - "web"
-  - "wordpress"
-coverImage: "gutenberg-wide-illustration.png"
+title: 'Adding Gutenberg Full- and Wide-Width Image Support to Your WordPress Theme'
+date: '2019-03-16'
+updated: '2020-05-13'
+categories:
+  - css
+  - web
+  - wordpress
+coverImage: 'gutenberg-wide-illustration.png'
 coverWidth: 32
 coverHeight: 29
 excerpt: Gutenberg brings with it the ability to set image blocks as full-width or wide-width. This article talks about how to enable support for that feature in your theme, and one way to write the CSS that makes it work.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -26,14 +27,13 @@ Here's a visual example of what I mean:
 
 **Ordinarily, an image would be constrained to the content width** (visualized by the dotted lines in the image above). Being able to allow images to break out of those confines is a powerful layout tool, though, as it allows content authors to add a great deal of visual interest and hierarchy to any page, post, or content supported by the new Gutenberg editor!
 
-
 ## Adding Theme Support
 
 Adding support for wide- and full-width images is up to the theme developer. Fortunately, from the backend, it's dead simple; just add this line to the theme's `functions.php` file (please be sure to use a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) as appropriate):
 
 ```php
-//functions.php 
- 
+//functions.php
+
 add_theme_support( 'align-wide' );
 ```
 
@@ -47,17 +47,16 @@ When the user chooses either of these options, the `<figure>` element that appea
 
 However, we still need to actually _implement_ these layout techniques on the front-end of the site, using our theme's CSS. Otherwise, nothing will happen visually when a content author chooses the full-width or wide-with image option.
 
-
 ## Front-End CSS for Full-Width Images
 
 I wanted to write this post mainly to share one technique that I came across online, which I feel is particularly clever in this situation (and which is not at all exclusive to Gutenberg or WordPress):
 
 ```css
 /* style.css */
- 
+
 .alignfull {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
 }
 ```
 
@@ -95,16 +94,14 @@ Now that our image's left side is directly in the center of the screen, the rest
 
 ![A left margin of 50% - 50vw gives us the perfectly centered, fullwidth element we're looking for.](/images/post_images/fullwidth-achieved.png)
 
-
-
 ### Some Extra Notes About the Above Full-Width CSS
 
 Once more, here's the CSS from above:
 
 ```css
 .alignfull {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
 }
 ```
 
@@ -122,7 +119,6 @@ And if you're wondering (or just wanting to get super technical): yes, this _doe
 
 Lastly, as you probably realized: **this post assumes the content container is already centered on the screen**. If your content is _not_ already centered in the viewport, this specific CSS won't work for you, and you'll need to do something a little more creative to get your images full-width.
 
-
 ## Front-End CSS for Wide-Width Images
 
 Wide-width images work similarly to the above, but naturally, we don't want to make them the _full_ width of the screen; otherwise, there would be no difference between wide-width and full-width (and that, of course, would just be silly).
@@ -131,9 +127,9 @@ How wide the image should be, exactly, as well as how to achieve the effect, is 
 
 ```css
 .alignwide {
-    width: calc(100% + 20vw);
-    position: relative;
-    left: -10vw;
+	width: calc(100% + 20vw);
+	position: relative;
+	left: -10vw;
 }
 ```
 
@@ -159,17 +155,17 @@ I eventually landed on something like this for my personal use on wide-width ima
 
 ```css
 /* style.css */
- 
+
 .alignwide {
-  width: 100vw;
-  margin: 2rem calc(50% - 50vw);
+	width: 100vw;
+	margin: 2rem calc(50% - 50vw);
 }
- 
+
 @media (min-width: 960px) {
-  .alignwide {
-    width: calc(100% + 20vw);
-    margin: 2rem -10vw;
-  }
+	.alignwide {
+		width: calc(100% + 20vw);
+		margin: 2rem -10vw;
+	}
 }
 ```
 

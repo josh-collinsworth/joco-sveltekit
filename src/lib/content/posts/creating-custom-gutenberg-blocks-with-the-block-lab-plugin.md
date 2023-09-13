@@ -1,17 +1,18 @@
 ---
-title: "How to Create Custom Editor Blocks with Block Lab"
-date: "2020-06-14"
-updated: "2020-07-02"
-categories: 
-  - "css"
-  - "design"
-  - "php"
-  - "wordpress"
-coverImage: "block-lab-banner.png"
+title: 'How to Create Custom Editor Blocks with Block Lab'
+date: '2020-06-14'
+updated: '2020-07-02'
+categories:
+  - css
+  - design
+  - php
+  - wordpress
+coverImage: 'block-lab-banner.png'
 coverWidth: 386
 coverHeight: 125
 excerpt: Block Lab is a WordPress plugin that simplifies the process of creating custom blocks to use in the block editor, AKA Gutenberg, the new content editor in WordPress 5.0. This post explains how to use it, even if you only know basic HTML.
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import Callout from '$lib/components/Callout.svelte'
@@ -20,7 +21,6 @@ excerpt: Block Lab is a WordPress plugin that simplifies the process of creating
 </script>
 
 I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in my post on [going headless with Gridsome](https://api.joshcollinsworth.com/a-new-headless-site-with-gridsome/), but I find it to be such a handy plugin that I thought I'd write just a bit more in depth on what it does and how to use it, as well as how I've adapted it specifically to my workflow in writing content for a headless WordPress site.
-
 
 ## What is Block Lab and what does it do?
 
@@ -39,7 +39,6 @@ There are three main steps to this process:
 3. Optionally, add some CSS to style the block.
 
 While there is technically a tiny bit of PHP involved, it's so little (and in the form of such reusable boilerplate) that I'd say anybody comfortable writing HTML (and maybe a bit of CSS) should be just fine getting started with Block Lab.
-
 
 ## Why custom blocks?
 
@@ -77,7 +76,6 @@ Custom blocks can be easily selected from the normal block menu…
 
 That's a lot better than styling the block manually or adding classes each time you want to use it, so let's dive into how to get that custom block set up.
 
-
 ## Creating your first custom block
 
 Like I said before: this will require a _little_ bit of editing files and writing code, but as long as you're comfortable with basic HTML and navigating your WordPress file system, this should be perfectly well within your grasp. Don't sweat it if you don't know PHP—there's so little required for basic blocks, it wouldn't even help anyway.
@@ -87,9 +85,6 @@ The natural first step is to install the Block Lab plugin, which of course you c
 Either way, once it's installed and activated, you'll find a new "**Block Lab**" item in the WordPress admin sidebar. Head there, and choose "**New block**."
 
 ![The “add new block” options screen in WordPress](/images/post_images/add-new-block-1024x687.png)
-
-
-
 
 ### Block options
 
@@ -104,7 +99,6 @@ Let's cover the block options in the screenshot above briefly:
 At minimum, you'll need to give your block a name (which will also assign it a slug, which you'll also need). Icon, category and keyword are all optional, but also all good ideas.
 
 Once you've named your block, click the "**add field**" button to start adding some actual customized functionality to your block.
-
 
 ### Field options
 
@@ -152,7 +146,6 @@ As you can see, Block Lab helpfully lets you know what to do next once you've pu
 Technically, your block is available to choose in the block editor at this point, but it won’t work right until you take the next step and add a template file.
 </SideNote>
 
-
 ### Create a template file for your custom block
 
 In order to display your custom block (either in the block editor or on the front end of the site), you'll need to create a PHP template file for it. Don't panic, though. As I've already mentioned: the beautiful thing about Block Lab is that you don't need to know anything about PHP to create custom blocks. Just a little HTML and CSS is enough. All you'll need to know is where to find your theme's folder, and how to add files to it. (And it may go without saying, but be sure you're using a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) or your own custom theme before you attempt this, or your work will probably be overwritten next time your theme updates.)
@@ -190,7 +183,6 @@ The important thing is just to make sure that the string inside the parentheses 
 
 What this all means is: every time you use this block, it'll be dynamically rendered wrapped in a `div` with the `side-note` class. And the cool thing is: that applies both in the editor, and on the front end!
 
-
 ### Adding CSS
 
 Obviously, a `div` doesn't do us much good on its own; we need to use some CSS to style our content, too. That code _could_ go in your theme's stylesheet if you only care about styling the block on the front end and not in the editor. However, if you want to use the same styles both places (which I personally feel is nice, since it'll help the editing experience mirror the finished look), you'll want to add a new stylesheet just for blocks.
@@ -205,29 +197,28 @@ Here's the actual CSS code I use on this site to create that Side Note component
 
 ```css
 .side-note {
-  padding: .5rem 1.5rem;
-  position: relative;
-  margin: 3rem 0;
-  font-size: .9rem;
-  font-style: italic;
-  border: 1px solid var(--lightBlue);
+	padding: 0.5rem 1.5rem;
+	position: relative;
+	margin: 3rem 0;
+	font-size: 0.9rem;
+	font-style: italic;
+	border: 1px solid var(--lightBlue);
 }
- 
+
 .side-note:before {
-  content: 'Side Note';
-  position: absolute;
-  top: -.5em;
-  left: .5rem;
-  background: var(--paper);
-  padding: 0 1rem;
-  line-height: 1;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: .7rem;
-  color: var(--lightBlue);
+	content: 'Side Note';
+	position: absolute;
+	top: -0.5em;
+	left: 0.5rem;
+	background: var(--paper);
+	padding: 0 1rem;
+	line-height: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	color: var(--lightBlue);
 }
 ```
-
 
 ## Recap
 
@@ -236,7 +227,6 @@ Here's the actual CSS code I use on this site to create that Side Note component
 1. Using Block Lab to create a block and pick its options;
 2. Adding a block template file to your theme;
 3. Optionally, adding CSS for the block.
-
 
 ## Notes on Block Lab's future, and unlocking Block Lab Pro
 

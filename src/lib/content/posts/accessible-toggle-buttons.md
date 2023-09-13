@@ -4,11 +4,11 @@ date: '2022-05-19'
 updated: '2023-08-25'
 categories:
   - 'a11y'
-  - 'web'
-  - 'javascript'
-  - 'vue'
-  - 'svelte'
-  - 'popular'
+  - web
+  - javascript
+  - vue
+  - svelte
+  - popular
 coverImage: 'toggle_switches/accessible-toggle-buttons.png'
 coverWidth: 16
 coverHeight: 9

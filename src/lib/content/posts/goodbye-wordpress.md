@@ -1,16 +1,17 @@
 ---
-title: "Goodbye, WordPress"
-date: "2021-02-01"
-updated: "2021-02-02"
+title: 'Goodbye, WordPress'
+date: '2021-02-01'
+updated: '2021-02-02'
 categories:
-  - "wordpress"
-  - "javascript"
-  - "vue"
-coverImage: "gw.png"
+  - wordpress
+  - javascript
+  - vue
+coverImage: 'gw.png'
 coverWidth: 128
 coverHeight: 72
 excerpt: WordPress was potentially the most impactful and empowering technology I've yet encountered. It transformed my career path and enabled me to do anything I wanted at every point in my journey. So why leave it now?
 ---
+
 <script>
   import Callout from '$lib/components/Callout.svelte'
   import PullQuote from '$lib/components/PullQuote.svelte'
@@ -45,8 +46,6 @@ At the time, I made the decision to go headless because I wanted to keep a foot 
 Fast-forward several months, and I've come to the inevitable conclusion that, in the case of this, my personal website and (occasional) blog, WordPress does not represent value so much as tech debt.
 </Callout>
 
-
-
 ## Why move? Why now?
 
 My personal site has been on WordPress for somewhere around the last 6–7 years. Toward the beginning of that time, the cost of hosting and maintaining a WordPress site carried enough value that it was a no-brainer; the cost was trivial compared to what WordPress unlocked for me.
@@ -77,8 +76,6 @@ Eventually, I came to the conclusion that I just want things simple, and headles
 
 Again: that doesn't mean WordPress is bad. It's not. (And while we're near the topic: neither is PHP. That joke can just die, please.) This just means that of the zillion things WordPress is and is capable of, either I'm not doing them, or doing them WordPress's way isn't personally worth the tradeoff to me, and for my unique set of needs and goals.
 
-
-
 ### An aside on WordPress's trajectory and future
 
 There's an interesting story here about how WordPress, in many ways, made its name—rightfully—as the democratizer of the web. Anybody could get a website and set it up to do pretty much whatever they wanted with WordPress. And if you just wanted that to be a simple blog, hey, even better! You can host it for free on WordPress.com.
@@ -103,15 +100,13 @@ There's an argument to be made that Jamstack companies like Netlify and Vercel a
 There's an argument to be made that Jamstack companies like Netlify and Vercel are succeeding because they're filling a gap that WordPress just&nbsp;isn't.
 </Callout>
 
-Granted, the tech hurdle is higher—not just anybody can code up a static site, and that's not to be discounted—but I can have a live Jamstack site on the web for _absolutely free_ any time I want with Netlify, et al. 
+Granted, the tech hurdle is higher—not just anybody can code up a static site, and that's not to be discounted—but I can have a live Jamstack site on the web for _absolutely free_ any time I want with Netlify, et al.
 
 <Callout>
 WordPress, for all its myriad benefits, is definitely <em>not</em> the choice if you just want a random side project to live on the web, forever, for minimal personal cost.
 </Callout>
 
 As I write this, WP Engine and, no doubt, many other hosts are working on the headless WordPress story, and figuring out how to empower that tech stack and solve its problems in the same way they solved WordPress's. I have no doubt they'll come forward with something very compelling that will meet a great many customers' needs, but I also have no doubt it won't be cheap—certainly not as cheap as what the Jamstack is currently offering. And I think that will make many more people ask the same question I asked, and come to the same conclusion; WordPress just won't continue to be worth it for everyone all the time.
-
-
 
 ## So what's the alternative?
 
@@ -150,7 +145,7 @@ featuredMedia: projects/image.png
 category: design + illustration
 summary: This project was awesome
 ---
- 
+
 The project content Markdown would go here. Neato!
 ```
 
@@ -181,7 +176,7 @@ templates: {
 }
 ```
 
-*The above config code tells Gridsome how to convert Markdown files to HTML content. Other SSGs, like <a rel="external" href="11ty.dev">Eleventy</a> or Gatsby, work similarly.*
+_The above config code tells Gridsome how to convert Markdown files to HTML content. Other SSGs, like <a rel="external" href="11ty.dev">Eleventy</a> or Gatsby, work similarly._
 
 Finally, the template file for rendering the data collected from the Markdown files (the `single_project.vue` file seen above, simplified here just to communicate the general idea):
 
@@ -218,8 +213,6 @@ When I was initially converting this site to headless, I didn't go full static a
 
 #1 wasn't really enough value to keep WordPress around, even if there weren't other alternatives in the Jamstack world. But #2 proved to be the largest stumbling block, so to speak…
 
-
-
 ## The challenges of exporting WordPress content
 
 <PullQuote>
@@ -236,7 +229,7 @@ This miraculous little CLI tool takes your WordPress export XML file, and not on
 Frontmatter is how metadata is handled in Markdown. You might have noticed it in the project file example above. Information such as publish date, post title, categories and tags is all typed out in a comment-like block (technically YAML) at the top of the file. Frontmatter isn't part of the main post content, but its data is accessible for display or filtering purposes.
 </SideNote>
 
-While I had a few small hiccups with it (mostly not really the tool's fault), the biggest was my custom blocks. The info on what a custom block should look like is *not* stored in the database; instead, there's just some text like this:
+While I had a few small hiccups with it (mostly not really the tool's fault), the biggest was my custom blocks. The info on what a custom block should look like is _not_ stored in the database; instead, there's just some text like this:
 
 ```
 <!-- wp:block-lab/block_name_here -->
@@ -252,8 +245,6 @@ Fortunately, I only have like 20 posts on this site (over the course of like sev
 
 Also fortunately: I like my current solution to custom blocks better anyway.
 
-
-
 ## Handling images without WordPress
 
 One of the amazing things that WordPress does for you, for free and out of the box, is generate multiple image sizes and serve your content images with responsive source sets. This means users always load the appropriate image size for their device, which is a big benefit to both user experience and performance. If you're using Jetpack, you also get your images (optionally) loaded from WordPress.com's global CDN servers for faster load times.
@@ -268,15 +259,13 @@ There _is_ the matter of getting the images you need without the ones you don't 
 
 A couple of other considerations around images, though:
 
-* **All your images need to live in your repo with this approach.** I don't have enough (and they aren't large enough) that it's a problem, but that might be an issue for some sites.
+- **All your images need to live in your repo with this approach.** I don't have enough (and they aren't large enough) that it's a problem, but that might be an issue for some sites.
 
-* **Build times balloon with lots of images.** Netlify is free to use up to a certain number of build minutes, and the only times I've gotten close were when I was doing regular updates on this site. (Thankfully, there's a [Gridsome Cache Netlify plugin](https://github.com/edm00se/netlify-plugin-gridsome-cache) to prevent unnecessary duplicate image processing.
-
-
+- **Build times balloon with lots of images.** Netlify is free to use up to a certain number of build minutes, and the only times I've gotten close were when I was doing regular updates on this site. (Thankfully, there's a [Gridsome Cache Netlify plugin](https://github.com/edm00se/netlify-plugin-gridsome-cache) to prevent unnecessary duplicate image processing.
 
 ## Building with Vue components in Markdown
 
-Among Gridsome's library of plugins is a particularly delightful one called [Vue Remark](https://gridsome.org/plugins/@gridsome/vue-remark). 
+Among Gridsome's library of plugins is a particularly delightful one called [Vue Remark](https://gridsome.org/plugins/@gridsome/vue-remark).
 
 <PullQuote>
 Vue Remark allows you to simply drop Vue components into Markdown files anywhere they're&nbsp;needed.
@@ -293,18 +282,16 @@ Vue Remark allows you to simply drop Vue components into Markdown files anywhere
 Here's an example:
 
 ```markdown
-
 # Some generic Markdown
- 
+
 A paragraph _also_ using _Markdown_.
- 
+
 <SomeVueComponent props="whatever">
   Use components where needed!
 </SomeVueComponent>
- 
 
 ## Back to Markdown!
- 
+
 _Neat, huh?_
 ```
 
@@ -315,8 +302,6 @@ The authoring experience is incredibly nice, too; since Gridsome runs on a local
 <SideNote>
 Nuxt has a similar feature available via installable module, but even goes so far as to allow you to edit the Markdown file by editing the text in the browser, which is a type of dark witchcraft I'm not even sure I can handle.
 </SideNote>
-
-
 
 ## Other considerations
 
@@ -329,40 +314,37 @@ Personally, I created a `drafts` folder inside my `posts` folder, and then added
 Also note that generating taxonomy pages (categories, tags, etc.) will likely be an extra manual challenge with any static site generator. In the case of Gridsome, you can modify the `gridsome.server.js` file to add new collections. Here's how I achieved mine:
 
 ```javascript
-module.exports = function(api) {
-  api.loadSource(actions => {
- 
-    //Create a new "categories" collection
-    const categories = actions.addCollection({
-      typeName: 'category'
-    })
- 
-    //Get all the posts (which already exist from the vue-remark plugin)
-    const allPosts = actions.getCollection('post')._collection.data
- 
-    //Loop over the posts and add their categories to an array
-    let allPostsCategories = []
-    allPosts.forEach(post => allPostsCategories.push(...post.categories))
- 
-    //Filter out duplicates
-    const uniqueCategories = new Set(allPostsCategories)
- 
-    //Finally, add each category as a data node, with an array of the matching posts
-    uniqueCategories.forEach(category => {
-      categories.addNode({
-        title: category,
-        posts: allPosts.filter(post => post.categories.includes(category))
-      })
-    })
-  })
-}
+module.exports = function (api) {
+	api.loadSource((actions) => {
+		//Create a new "categories" collection
+		const categories = actions.addCollection({
+			typeName: 'category'
+		});
+
+		//Get all the posts (which already exist from the vue-remark plugin)
+		const allPosts = actions.getCollection('post')._collection.data;
+
+		//Loop over the posts and add their categories to an array
+		let allPostsCategories = [];
+		allPosts.forEach((post) => allPostsCategories.push(...post.categories));
+
+		//Filter out duplicates
+		const uniqueCategories = new Set(allPostsCategories);
+
+		//Finally, add each category as a data node, with an array of the matching posts
+		uniqueCategories.forEach((category) => {
+			categories.addNode({
+				title: category,
+				posts: allPosts.filter((post) => post.categories.includes(category))
+			});
+		});
+	});
+};
 ```
 
 <SideNote>
 There are more efficient ways to achieve the above; my first try used <code>flatMap</code>. But turns out: Node doesn't have the <code>flatMap</code> array method, so it wouldn't compile on Netlify's servers. So this was my slightly longer workaround.
 </SideNote>
-
-
 
 ## Final thoughts
 
@@ -376,7 +358,7 @@ This approach certainly isn't right for everyone. It works great for me because 
 I still love WordPress. But I found myself wanting a site I could tinker with in my editor, all together in one place. No database; no SQL dumps; no live server at all. Just content files compiled to beautifully uncomplicated&nbsp;HTML.
 </PullQuote>
 
-And of course, what *I* find to be simple may be very different from what *you* find to be simple. I love living in my code editor. You might find a visual interface easier to use. Both are just fine. It's just a matter of personal preference.
+And of course, what _I_ find to be simple may be very different from what _you_ find to be simple. I love living in my code editor. You might find a visual interface easier to use. Both are just fine. It's just a matter of personal preference.
 
 WordPress just didn't quite fit my wants and needs for this project. It might still be a great fit for you and yours. And I'm sure it will be again for me for a future project.
 

@@ -1,16 +1,17 @@
 ---
-title: "Why Designers Shouldn't \"Fix\" Other Designers' Logos"
-date: "2015-09-04"
-updated: "2021-01-19"
+title: 'Why Designers Shouldn''t "Fix" Other Designers'' Logos'
+date: '2015-09-04'
+updated: '2021-01-19'
 categories:
-  - "design"
-  - "personal"
-  - "opinion"
-coverImage: "Screen-Shot-2015-09-03-at-9_14_54-AM.png"
+  - design
+  - personal
+  - opinion
+coverImage: 'Screen-Shot-2015-09-03-at-9_14_54-AM.png'
 coverWidth: 85
 coverHeight: 36
-excerpt: "No matter how simple the end product, design is hard work. To come up with something that looks good, something people like, is at best tangential to the main point. The question is: does it succeed at meeting the project goals? And you don’t know how to answer that question."
+excerpt: 'No matter how simple the end product, design is hard work. To come up with something that looks good, something people like, is at best tangential to the main point. The question is: does it succeed at meeting the project goals? And you don’t know how to answer that question.'
 ---
+
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
@@ -54,8 +55,7 @@ But tangent aside, and not specific to Google: any time a new design comes out, 
 
 I'm not necessarily saying Google's new logo is the greatest thing ever (though that's beside the point: Google's problem wasn't that they needed the greatest logo ever; their problem was that they needed a unifying identity system, and that problem has now been solved.) And I'm not saying all the feedback that emerged from the design community was unwarranted or inaccurate. That typographer above makes some reasonable points. Many designers did.
 
-But the problem was, they made these points and registered these reactions instantaneously and without regard for what makes graphic design more than subjective window dressing: the _how_ and the _why_.
-
+But the problem was, they made these points and registered these reactions instantaneously and without regard for what makes graphic design more than subjective window dressing: the *how* and the _why_.
 
 ## Emotion vs. Thought
 
@@ -77,14 +77,13 @@ Emotion screams out at first impression. It's irrational and unhesitant, but it'
 
 And that's one reason why you shouldn't be writing scathing blog posts about new logo designs or remaking them to "fix" them within the first hours of their existence. But there's another, more important one:
 
-
 ## The Message You're Sending
 
 Even if you were able to immediately and completely process a new design at first glance and be ready to write a comprehensive blog post about it on first impression (and just to reiterate, you can't. But even if you could), there's still a good reason why you shouldn't.
 
-If you're a designer, you undoubtedly tell your clients the same thing you were told as a design student, namely: no matter how simple the end product, design is hard work, and aesthetics aren't the whole point. To come up with something that _looks_ good, something somebody _likes_, is at best tangential to the main point. We've all chanted the mantra a thousand times: design is about more than appearances. It's about problem solving and communication. And problem solving and communication generally require days, weeks or maybe even months of intensive research, ideation, brainstorming, creation and revision.
+If you're a designer, you undoubtedly tell your clients the same thing you were told as a design student, namely: no matter how simple the end product, design is hard work, and aesthetics aren't the whole point. To come up with something that _looks_ good, something somebody *likes*, is at best tangential to the main point. We've all chanted the mantra a thousand times: design is about more than appearances. It's about problem solving and communication. And problem solving and communication generally require days, weeks or maybe even months of intensive research, ideation, brainstorming, creation and revision.
 
-Whether the result of real problem-solving design work is something anybody _likes_ is beside the point. The question is, does it succeed at meeting the project goals? Does it _solve_ the problem?
+Whether the result of real problem-solving design work is something anybody *likes* is beside the point. The question is, does it succeed at meeting the project goals? Does it _solve_ the problem?
 
 And you don't know the answer to that question.
 
@@ -100,7 +99,7 @@ That gives you absolutely no right to critique anything except the subjective ae
 Remake somebody else's logo design all you want, but know that it's utterly meaningless, because you get to do whatever you want and the original designer&nbsp;didn't.
 </PullQuote>
 
-And I'm willing to bet money that you _hate it_ when somebody does that to your design.
+And I'm willing to bet money that you *hate it* when somebody does that to your design.
 
 "Well, sure I wanted to change this, but the brief required…"
 
@@ -115,7 +114,6 @@ Remaking somebody else's logo without knowledge of the full process behind it
 These are all sentences you can't hear because you get the luxury of seeing the final product without any knowledge whatsoever of how it came into existence. Remake somebody else's logo design all you want, but know that it's utterly meaningless, because you get to do whatever you want and the original designer didn't. They had deadlines, budgets, parameters, meetings, goals, briefs, revisions, concerns and loads of client feedback. All you have is a starting point that somebody else already created for you and a social platform full of people willing to click the "like" button.
 
 Remaking somebody else's logo without knowledge of the full process behind it isn't design; it's practice at best, and doodling at worst.
-
 
 ## Don't Cheapen Design
 

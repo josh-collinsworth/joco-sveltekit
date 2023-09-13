@@ -3,10 +3,10 @@ title: 'The self-fulfilling prophecy of React'
 date: '2022-07-27'
 updated: '2022-08-01'
 categories:
-  - 'web'
-  - 'opinion'
-  - 'popular'
-  - 'react'
+  - web
+  - opinion
+  - popular
+  - react
 coverImage: 'self-fulfilling-react.png'
 coverWidth: 16
 coverHeight: 9
