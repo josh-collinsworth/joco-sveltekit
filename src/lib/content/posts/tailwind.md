@@ -18,35 +18,69 @@ draft: true
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-If you've played [Mario Kart 8](https://www.nintendo.com/store/products/mario-kart-8-deluxe-switch/) on Switch, you might know the game offers a number of accessibility options to help younger and/or less skilled players enjoy the game alongside more competitive series veterans (such as myself).
+When my younger brother and I were younger, our tastes in music were pretty close to polar opposites. He loved classic rock and took great joy in rediscovering bands from the '70s and '80s; I was a hipster who valued what I saw as artistic integrity and intellectual lyrics, and who judged you if you hadn't heard of my favorite new underground indie band (even though I took a lot of misplaced pride in making sure you hadn't. I've grown up since then, thankfully).
 
-One of those features is called [Smart Steering](https://www.nintendolife.com/guides/mario-kart-8-deluxe-smart-steering-how-to-turn-auto-steering-on-and-off), and it's a little like an AI autopilot that makes sure you never go off the track. Veer too far to the side of the road or get too close to an obstacle, and the game will momentarily and automatically take the wheel and steer you away from disaster. No more driving backwards in the grass, or off the side of Rainbow Road.
+Like any good elitist snob, I hated popular things. So, naturally, my brother's brand of music—arguably the most popular kind ever—was anathema to me at the time.
 
-This accessibility option (and others, like auto-acceleration) are wonderful additions to the game; indeed, they're what enable me and my young son to play together, and can help to even the playing field among any mixed group.
+My brother, to his credit, always seemed willing to at least give my music a shot, and even liked some of it. But he never really understood what it was I seemed to dislike so strongly about his preferences. So finally, one day, he asked me.
 
-Once you've reached a certain skill threshold, however, Smart Steering stops helping, and actually starts getting in the way.
+I thought about the question for a minute, and then summarized: "it's all style and no substance."
 
-Smart Steering will prevent you from taking shortcuts, for one thing; it can't tell _why_ you're going off the main road, but it jumps in the way and prevents you from doing so regardless. It may even intervene when you didn't intend for it to, pushing you off your intended course at inopportune moments when assistance wasn't needed. Maybe you decided going off road was preferable to colliding with an obstacle, or had a strategic reason in mind for a collision; Smart Steering won't allow it to happen regardless.
+My brother laughed out loud. "That's the _best_ thing about it!"
+
+It might seem like an obvious, even banal realization that two people can individually love and hate the exact same thing _for the exact same reasons_. But that interaction opened my eyes.
+
+Neither of us was wrong; we were just coming to the table with completely different contexts.
+
+---
+
+Tailwind is a nearly ubiquitous CSS framework these days, and it's so polarizing that merely _mentioning_ it on social media feels risky. It seems to be at once the most beloved and most reviled tool in modern web development.
+
+Proponents show a near cult-like devotion to Tailwind, some even going so far as to claim it's "fixed CSS," (or at the very least, made it manageable and predictable in a way it wasn't before). I've heard more than one Tailwind enthusiast say that they never want to style an element without it again.
+
+Detractors, on the other hand, claim it's messy, gets in the way, violates core fundamentals of web development, or even that it does the _opposite_ of what it's supposed to, adding complexity and making projects even _harder_ to maintain.
+
+After using Tailwind professionally—and even on a few small personal projects—over the last year, I'm prepared to finally declare a winner in this years-long debate:
+
+Both sides are right.
+
+Tailwind _is_ great. It's _also_ terrible. But we won't ever get anywhere debating the merits or drawbacks of Tailwind itself, because I've come to believe this dispute isn't actually about the tooling.
+
+My brother and I disagreed entirely about music, and we both had persuasive arguments why our point of view was the right one. But there was a reason debating the music itself never went anywhere: _it was never about the music itself_.
+
+Because we were each listening for _completely different reasons_, our contention really began before we'd ever even pressed the play button.
+
+Similarly, I don't think developers on either side of the Tailwind debate will ever make headway in either direction, because the very core of this debate isn't so much about the visible, factual details of the technology in front of us; it's about the intangible context each one of us is bringing to the table.
 
 <CalloutPlusQuote>
 
-These options to _remove_ challenge, at a certain point, start _adding it in again_, and prevent you from going above a certain threshold.
+When we're doing the same thing, but approaching it with entirely different sets of priorities, values, and desired outcomes, how _could_ we possibly agree?
 
 </CalloutPlusQuote>
 
-<hr />
+## The tool you like depends on who you are: a Mario Kart analogy
 
-I've been using Tailwind professionally, and even on the occasional hobby/learning project, for the better part of a year now. While I've understood why lots of developers seem to like it, and have seen that it does indeed have its compelling upsides, I've struggled for most of the last year to put into words what it is about this tool that just doesn't jive with me.
+If you've played [Mario Kart 8](https://www.nintendo.com/store/products/mario-kart-8-deluxe-switch/) on Switch, you might know the game offers a number of accessibility options.
 
-Something about Tailwind just feels like cutting against the grain; like doing things the wrong way around, at least as my brain has come to understand it.
+One of those features is called [Smart Steering](https://www.nintendolife.com/guides/mario-kart-8-deluxe-smart-steering-how-to-turn-auto-steering-on-and-off), and it's a little like an AI autopilot that makes sure you never go off the track. Veer too far to the side of the road or get too close to an obstacle, and the game will momentarily and automatically take the wheel and steer you away from disaster. No more driving backwards in the grass, or off the side of Rainbow Road.
+
+This accessibility option (and others, like auto-acceleration) are wonderful additions to the game; indeed, these options are what enable me and my young son to play together, and can help to even the playing field among any mixed group. Even skilled, experienced players might elect to use Smart Steering for any number of their own reasons.
+
+Once you've reached a certain threshold in skill and competitiveness, however, Smart Steering stops helping, and actually starts getting in the way.
+
+Smart Steering will prevent you from taking shortcuts, for one thing; it can't tell _why_ you're going off the main road, but it jumps in the way and prevents you from doing so regardless. It may even intervene when you didn't intend for it to, pushing you off your intended course at inopportune moments when assistance wasn't needed. Maybe you had a strategic reason in mind for a collision, or decided going off road was preferable to steering into an obstacle; Smart Steering won't allow it to happen regardless.
+
+The option to _lower_ the challenge, at a certain point, starts _making the game harder_. But whether you think it does the former or the latter will depend entirely on _you_ and where you are on that curve.
+
+The more you know the tracks, and know where all the shortcuts are; the more you can map out all the pitfalls, and understand not only how to get around them quickly and easily, but how to use them to your _advantage_; the more a feature designed to augment your skills instead begins to inhibit them.
+
+I'm a very good Mario Kart player (I spent 20-some years of my life playing Mario Kart games before Smart Steering came along), and so I hate Smart Steering. I can't stand it. I might not notice it a lot of the time—it might even occasionally help me—but what stands out to me are the times it jumps in my way at the worst possible moments, turning what should've been an opportunity to put my skills to good use when needed most into a bland, generic outcome where my input barely even mattered.
 
 <CalloutPlusQuote>
 
 If you're sufficiently skilled, Tailwind feels like being forced to write CSS with Smart Steering on.
 
 </CalloutPlusQuote>
-
-The more you know the tracks, and know where all the shortcuts are; the more you can map out all the pitfalls, and understand not only how to get around them quickly and easily, but how to use them to your _advantage_; the more a feature designed to augment your skills instead begins to inhibit them.
 
 <hr />
 
@@ -66,7 +100,7 @@ Maybe they have plenty of skill to finish the race, but they're just looking for
 
 Hell, maybe they just _like_ it.
 
-Those are all fine reasons to use any tool. I'm not trying to say you suck if you use Tailwind. Your probably don't. But your goals _are_ probably different than mine. Maybe building things as fast as possible is more important to you than it is to me; maybe you find the guardrails useful, even if you don't actually need them. Maybe you're not looking for the pure ideal "best" route, and you're just looking for the one with the least friction. Maybe your projects look different enough from mine that you aren't hitting the same downsides that I am. Maybe you iterate less than I do, or reach for weird/new/tricky CSS things on a regular basis than I do.
+Those are all fine reasons to use any tool. I'm not trying to say you suck if you wind. Your probably don't. But your goals _are_ probably different than mine. Maybe building things as fast as possible is more important to you than it is to me; maybe you find the guardrails useful, even if you don't actually need them. Maybe you're not looking for the pure ideal "best" route, and you're just looking for the one with the least friction. Maybe your projects look different enough from mine that you aren't hitting the same downsides that I am. Maybe you iterate less than I do, or reach for weird/new/tricky CSS things on a regular basis than I do.
 
 None of that is bad, and moreover, none of that means _you_ are bad. It just means we are bound to have different points of view on what constitutes the ideal work environment.
 
@@ -76,7 +110,7 @@ But it doesn't help _me_ do the things _I_ want to do; like Smart Steering, it m
 
 <CalloutPlusQuote>
 
-When you force strong CSS developer to use Tailwind, _you are making them worse_. They are slower, they can do less, and they lose access to many of their most powerful techniques.
+When you force strong CSS developer to wind, _you are making them worse_. They are slower, they can do less, and they lose access to many of their most powerful techniques.
 
 </CalloutPlusQuote>
 
@@ -111,7 +145,7 @@ Noisy as the Tailwind crowd infamously may be, just about every frontend develop
 
 Given the choice, most of us would just as soon forego Tailwind altogether. (I think that's part of why the pro-Tailwind crowd seems so comparatively vocal; lots and lots of frontend developers can't even speak to Tailwind, because they've never had a compelling reason to even reach for it in the first place.)
 
-Even those frontend developers I know who _do_ use Tailwind with some degree of regularity don't seem to be fans or evangelists, and instead, just find some value in Tailwind as a basic utility library; a supplement to their existing CSS, rather than as a totalitarian methodology.
+Even those frontend developers I know who _do_ wind with some degree of regularity don't seem to be fans or evangelists, and instead, just find some value in Tailwind as a basic utility library; a supplement to their existing CSS, rather than as a totalitarian methodology.
 
 I think it's because: when your CSS skills have reached a certain level, the Smart Steering and Auto Acceleration that Tailwind offers stop being benefits, and start being liabilities instead.
 
