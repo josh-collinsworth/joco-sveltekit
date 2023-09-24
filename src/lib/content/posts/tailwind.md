@@ -4,10 +4,10 @@ date: 2023-08-28
 updated: 2023-08-28
 categories:
   - advice
-coverImage: great-transitions.png
-coverWidth: 320
-coverHeight: 180
-excerpt: 'TODO: fill this out'
+coverImage: tailwind.svg
+coverWidth: 1920
+coverHeight: 1080
+excerpt: It's popular to say we can’t agree on Tailwind, but I posit we actually already do. I think what we actually disagree on isn’t the details of this (or any) specific software; it's how we define assets and liabilities.
 draft: true
 ---
 
@@ -18,79 +18,75 @@ draft: true
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-When my brother and I were younger, our tastes in music were nearly polar opposites. I was an obnoxious hipster (though I didn't describe myself that way at the time), and valued what I saw as artistic integrity and creative innovation. I probably would've judged you if you hadn't heard of my favorite new underground indie band (even though I took a lot of misplaced pride in making sure you hadn't. I've grown up a bit since then, thankfully).
+When my brother and I were younger, our tastes in music were nearly polar opposites. I was an obnoxious hipster, and valued what I saw as artistic integrity and creative innovation. I probably would've judged you if our music tastes didn't align. (I've grown up a bit since then, thankfully).
 
-Conversely, my brother's taste was pretty eclectic, but centered on classic rock of the '70s and '80s. He loved rediscovering decades-old albums.
+In contrast, my brother's taste was pretty eclectic, but centered on classic rock of the '70s and '80s. He loved rediscovering decades-old albums by many of the most well-known artists of their time.
 
-Like any good elitist snob, I hated popular things. So, naturally, my brother's kind of music—arguably the most popular kind ever—was anathema to me at the time.
+Like any good elitist snob, I hated popular things. So, naturally, my brother's kind of music was anathema to me at the time.
 
-My brother never really understood what it was I seemed to dislike so strongly about the music that he (and lots of other people) enjoyed. So finally, one day, he asked me.
+He never really understood what it was I seemed to dislike so strongly. So finally, one day, he asked me.
 
 I thought about the question for a minute, and then summarized:
 
 "It's all style and no substance."
 
-My brother laughed out loud at me.
+My brother burst out in laughter.
 
-"That's the _best_ thing about it!" he said with a grin.
+"That's the _best_ thing about it!" he said with an amused grin. "That's the whole point!"
 
-It might seem like an obvious, even banal realization that two people can not only love and hate the exact same thing, but do so _for the exact same reasons_.
+In that moment I realized: we could each love and hate the exact same thing, and it could be _for the exact same reasons_.
 
-Neither of us were wrong; we were just coming to the table with completely different contexts and expectations.
+Neither of us was wrong at all; we just had completely different sets of qualifications.
 
-## Why we can't agree
+## Why we can't agree on Tailwind
 
-Tailwind is a nearly ubiquitous CSS framework these day, as well as explosively polarizing. Just _mentioning_ Tailwind, to assert any opinion at all, seems like a risky invitation for derision. (_Nevertheless, he blogged_.)
+Tailwind is nearly as ubiquitous as it is polarizing these days. (I trust if you've been interested enough to read this far, I don't need to cite any sources here.)
 
 Proponents show a near cult-like devotion to Tailwind, some even going so far as to claim it's "fixed" CSS—or at the very least, made it manageable and predictable in a way it wasn't for them before. More than one Tailwind enthusiast has proclaimed they never want to style anything without it again.
 
-Detractors, on the other hand, claim it's messy, gets in the way, violates core fundamentals of web development, "does nothing," or even that it does the _opposite_ of what it's supposed to, adding complexity and making projects even _harder_ to maintain.
+Detractors, on the other hand, claim it's messy, gets in the way, violates core fundamentals of web development, does nothing, or even that it does the _opposite_ of what it's supposed to, adding complexity and making projects even _harder_ to maintain.
+
+How could we disagree so sharply?
 
 After using Tailwind professionally—and even on a few small personal projects—over the last year, I've come to what might just prove to be the most unpopular opinion of all:
 
 **Both sides are right.**
 
-Thinking back to how my brother and I disagreed entirely about music, I remember us fervently debating various songs and artists, rarely arriving at much of a consensus. But there was a reason debating the music itself never went anywhere: like I said, we didn't fundamentally agree on the criteria to begin with.
+We won't ever get anywhere debating the merits or flaws of Tailwind, for the same reason my brother and I never made any progress with each other talking about our music tastes: it turns out, he and I actually saw every artist and album in pretty much exactly the same way; we just didn't agree on what was a feature, and what was a bug.
 
-Because we were each listening _for completely different reasons_, our contention really began before we'd ever even pressed the play button.
+Likewise, I suspect most people on opposing sides of the Tailwind debate actually see Tailwind quite similarly. I've come to believe the core of the debate isn't so much about the factual details of the thing in front of us (and so debating those is useless); it's about the intangible personal context each one of us is bringing to the table.
 
-Similarly, I don't think developers on either side of the Tailwind debate will ever make headway in either direction, because the very core of this debate isn't so much about the visible, factual details of the technology in front of us; it's about the intangible context each one of us is bringing to the table.
+Tailwind _is_ great.
 
-<CalloutPlusQuote>
+Tailwind is also terrible.
 
-When we're doing the same thing, but approaching it with entirely different sets of priorities, values, and desired outcomes, how _could_ we possibly agree?
+And it is both, at the same time, for exactly the same reasons.
 
-</CalloutPlusQuote>
-
-Tailwind _is_ good.
-
-It's also bad.
-
-And it is both, for exactly the same reasons.
-
-## The usefulness of the tool depends on the skill of the wielder
+## What a tool does depends on who's using it
 
 If you've played [Mario Kart 8](https://www.nintendo.com/store/products/mario-kart-8-deluxe-switch/) on Switch, you might know the game offers a feature called [Smart Steering](https://www.nintendolife.com/guides/mario-kart-8-deluxe-smart-steering-how-to-turn-auto-steering-on-and-off).
 
 (_Yes, this is still about Tailwind. Bear with me here_.)
 
-Aimed mainly at newer or less skilled players (but also potentialy useful to others), Smart Steering is basically an AI copilot that makes sure you never go off the track. You control your racer as normal, but if you veer too far to the side of the road or get too close to an obstacle, the game will automatically take the wheel and guide you away from disaster. No more driving backwards in the grass, or plummeting off the side of the track.
+Smart Steering is essentially an AI copilot. When enabled, you control your racer as normal, except that if you veer too far to the side of the road or get too close to an obstacle, the game will automatically take the wheel and steer you away from disaster. No more driving backwards in the grass, or plummeting off the side of the track.
 
-This option (and others, like auto-acceleration) are wonderful additions to the game; indeed, these options are what enable me and my family to play together, and can help to even the playing field among any mixed group. Even skilled, experienced players might elect to use Smart Steering for any number of reasons.
+This option (and other similar features, like auto-acceleration) are wonderful additions to the game; indeed, these options are what enable me and my family to play together, and can help to even the playing field among any mixed group.
 
-Once you've reached a certain threshold in skill and competitiveness, however, Smart Steering stops helping, and actually starts getting in the way.
+But if you play Mario Kart long enough, and become competitive enough, Smart Steering begins to help less and less, and eventually, starts getting in the way instead.
 
-Smart Steering will prevent you from taking shortcuts, for one thing; it can't tell _why_ you're going off the main road, but it jumps in the way and prevents you from doing so regardless. It may even intervene when you didn't intend for it to, pushing you off your intended course at inopportune moments when assistance was unwanted. Maybe you had a strategic reason in mind for a collision, or decided that going off road was preferable to steering into an obstacle; Smart Steering won't allow it to happen regardless.
+Smart Steering will prevent you from taking shortcuts, for one thing; it can't tell _why_ you're going off the main road, but it jumps in the way and prevents you from doing so regardless. It may even intervene when you didn't intend for it to, pushing you off your intended course at inopportune moments. You might have a strategic reason in mind for a collision, or you might have decided going off road was preferable to steering into an obstacle, but Smart Steering won't allow it regardless.
 
 <CalloutPlusQuote>
 
-This option to lower the challenge, at a certain point, starts making the game harder. But whether it makes you better or worse will depend entirely on where you're coming from.
+At a certain point, Smart Steering makes the game harder instead of easier. But whether it makes you better or worse--and to what degree--will depend entirely on where you're coming from.
 
 </CalloutPlusQuote>
 
-The more you know the tracks, and know where all the shortcuts are; the more you can map out all the pitfalls, and understand not only how to get around them quickly and easily, but how to use them to your _advantage_; the more a feature designed to augment your skills instead begins to inhibit them.
+The more you know the tracks, and where all the shortcuts are; the more you can map out all the pitfalls, and understand not only how to get around them quickly and easily, but how to use them to your _advantage_; the more a feature designed to augment your skills instead begins to _inhibit_ them.
 
-I'm a very good Mario Kart player (I spent 20-some years of my life playing Mario Kart games before Smart Steering came along, after all), and so I hate Smart Steering. I never use it. I can't stand it. It's antithetical to the game to me. I might not notice it a lot of the time—it might even occasionally help me—but what stands out to me are the times it jumps in my way at the worst possible moments, turning what should've been an opportunity to put my skills to good use when needed the most, into a bland, generic outcome where my input barely even mattered.
+No matter how good a player you are or how much better your maneuvering would've been, Smart Steering will assume you don't know what you're doing and step in anyway.
+
+I'm a very good Mario Kart player (I spent 20-some years of my life playing Mario Kart games before Smart Steering came along, after all), and so I can't stand Smart Steering. I never use it. It's antithetical to the game to me. I might not notice it a lot of the time—it might even occasionally help me—but what stands out to me are the times it jumps in my way at the worst possible moments, taking what should've been an opportunity to put my skills to good use when needed the most, and turning it into a bland, generic outcome where my input barely even mattered.
 
 <CalloutPlusQuote>
 
@@ -104,29 +100,25 @@ That's why any conversation I have with somebody who likes Tailwind will probabl
 
 _"I don't like that it keeps me from driving off the track. Also, sometimes I have valid reasons for wanting to crash into things."_
 
-_"What!? Why would you want to do that!?"_
+_"What!? Why would you ever want to do that!?"_
 
 ### These analogies are not value statements
 
-I should explain that I mean neither to brag on myself, nor to insult anyone who likes Tailwind. That's not at all my intention. There are plenty of shots already fired in that bitter rivalry, and I'm not here to contribute.
+I realize I probably sound incredibly arrogant choosing this particular comparison. I don't mean to come across that way, and I hope that's mainly a shortcoming of the analogy.
 
-On its own, the "I'm so good I don't need this" angle, I know, sounds _extremely_ cocky. I get that, and I don't mean to sing my own praises in any way. I'm no so-called 10x developer. (I don't think such a thing exists anyway, but that's beside the point.) I'm not above anything, and I certainly don't know everything. But I do know CSS very well, and I am good at what I do. I hope my work speaks to that being an honest enough assessment.
+Mario Kart is, of course, a racing game, which means there's only one winner. I think that unfortunately colors the comparison in a way I don't intend. I don't mean to paint myself as the winner, nor Tailwind appreciators as losers.
 
-On the other side: I _also_ understand that comparing Tailwind to a video game feature largely used by unskilled players might come off as insulting. That's also not my intention; please consider it a shortcoming of this rather imperfect analogy. It's obvious that plenty of very good developers (some undoubtedly better than I) use Tailwind and like it just fine.
+Maybe it's helpful to imagine if, instead, the goal was merely to reach the finish line; order and speed didn't matter. After all, that's much closer to what web development is really like most of the time. We're typically not racing against competitors; we're generally just trying to achieve our own measure of success in whatever way works best for us (and to avoid the obstacles and pitfalls along the way).
 
-I mean it more in the sense that: any given Mario Kart player might decide to use Smart Steering for any number of reasons. _One_ of those many possible reasons is that they haven't developed their skills beyond the need for it yet. But that's just one.
-
-Maybe they have plenty of skill to finish the race, but they're just looking for the easiest path there. Maybe they find the game more enjoyable without that aspect to worry about. Maybe they're plenty competitive even with it on. Maybe they find they're roughly as good with or without it, so why expend the effort?
-
-Maybe they just want to get to the finish line, and being the first one there isn't their highest priority. Maybe they just find their focus is better applied to other aspects of the game.
+In that case (in _any_ case, really), any given Mario Kart player might decide to use Smart Steering for any number of reasons. Maybe they have plenty of skill to run the race on their own, but they're just looking for an easier option. Maybe they find the game more enjoyable without that aspect to worry about. Maybe they're plenty competitive even with it on. Maybe they find they're roughly as good with or without it, so why expend the effort? Maybe they find their focus is better applied elsewhere.
 
 Hell, maybe they just _like_ it.
 
-Those are all fine reasons to use any tool. I'm not saying you suck if you like it. You probably don't.
+Those are all fine. I'm not saying you suck if you like it or choose to use it. You probably don't. You might well be better than I am.
 
-But I _am_ saying: you're probably playing the game differently than I am. You probably have different goals, different values, and/or different desired outcomes.
+But I _am_ saying: you're probably playing the game _differently_ than I am. You probably have different goals, different values, and/or different desired outcomes.
 
-None of that is bad, and moreover, none of that means _you_ are bad. It just means we are bound to have different points of view on what constitutes the ideal working environment.
+None of that is bad, and moreover, none of that means _you_ are bad (or, for that matter, that I am good, let alone better). It just means we most likely don't have similar ideas on what constitutes the ideal environment.
 
 Regardless, whatever your reasons may be: I'm glad Tailwind helps _you_ do the things you want to do.
 
@@ -134,23 +126,23 @@ But it doesn't always help _me_ do the things _I_ want to do; oftentimes, it jus
 
 ## There are no benefits without tradeoffs
 
-While for the most part it's perfectly fine if we simply see the same thing in two different ways, there's one universal truth I think it's important that we agree to as common ground before proceeding, namely: _benefits always come with tradeoffs_.
+While for the most part it's perfectly fine if we simply see the same thing in two different, or even opposite ways, there's one universal truth I think it's important that we agree to as common ground before proceeding: _benefits always come with tradeoffs_.
 
-That is: complexity in software exists, even if it's remanded to a place you don't regularly experience it.
+That is: complexity always exists, even if it's remanded to a place you don't regularly experience it.
 
 <CalloutPlusQuote>
 
-Any time something seems to get better and easier, it's just because the complexity moved somewhere else, with a new and different set of tradeoffs.
+Any time something seems to get better and easier, it's almost certainly because the complexity moved somewhere else, with a new and different set of tradeoffs.
 
 </CalloutPlusQuote>
 
-Don't get me wrong; that's still usually a good thing. The new set is generally better than the old set (though not always).
+Don't get me wrong; that's still usually a good thing. The new set is generally preferable to the old set.
 
 Regardless, though: we should be incredibly wary of any product that claims it's eliminated the complexity—destroyed it, removed it, turned it into nothing—without acknowledging whatever they did, and however good it might be, still has distinct disadvantages.
 
-A real-world example: watering crops at scale is a hard problem, and I don't think any modern farmer would want to go back to the way things used to be done a century or two ago. But still: implementing and maintaining a technologically sophisticated irrigation system comes with its own set of hard problems. The complexity is not less (if anything, it's more), but it's shifted to a new area.
+A frontend-focused example might be code tooling. In the days before the bundlers and compilers we have now (Webpack, Vite, etc.), shipping a minimal code bundle that worked well across all browsers and platforms was wildly complex. These days, it's close to trivial. But the complexity isn't gone; it's just usually locked inside a little Pandora's box called `node_modules`, and you know well that it still very much exists if you've ever suddenly found your project completely unworkable by some failing somewhere in the toolchain.
 
-A more frontend-focused example might be code tooling. In the days before bundlers and compilers, shipping a minimal code bundle that worked well across all browsers and platforms was a nightmare. These days, it's close to trivial. But again: the complexity isn't gone; it's just usually locked inside a little Pandora's box called `node_modules`, and you know well that it still very much exists if you've ever suddenly found your project completely unworkable by some failing somewhere in the toolchain.
+As a more real-world example: watering crops at scale is a hard problem, and I don't think any modern farmer would want to go back to the way things used to be done a century or two ago. Still, though: implementing and maintaining a technologically sophisticated irrigation system comes with its own set of hard problems. The complexity is not less (if anything, it's more), but it's shifted to a new area. The farmer might not feel it every day, but when they do, they feel it much more acutely.
 
 <CalloutPlusQuote>
 
@@ -158,11 +150,13 @@ Problems in tech don't _vanish_; they just _move_.
 
 </CalloutPlusQuote>
 
-Tailwind, generally speaking, is marketed (and spoken of by its proponents) as though it's achieved this impossible task of obliterating complexity in CSS from existence.
+Ok, fine. Why is this all important?
+
+Because Tailwind is generally marketed (and spoken of by its proponents) as a framework that's achieved this impossible task of obliterating complexity in CSS from existence.
 
 If you would make this argument, I would dissent. But I also think you're probably right _in your case_.
 
-That's really the whole point I'm trying to get at; if you and I can't agree on Tailwind, it's probably virtually nothing to do with that specific piece of software. It's probably much more to do with the specific context, goals, and valuation of tradeoffs that we both bring to the table.
+Going back to the central thesis of this post: if you and I can't agree on Tailwind, it's probably got nothing to do with that specific piece of software. It's much more likely about the differing goals, and valuation of tradeoffs that we both bring to the table.
 
 Where you see style, I see a lack of substance.
 
@@ -173,6 +167,10 @@ Where you see a solved problem, I see tech debt that simply hasn't come due yet.
 We're both just observing the same truths from different points of view.
 
 We're both wrong. We're both right.
+
+## Style and substance
+
+I've spent a good while now asserting that our collective differences regarding Tailwind center around an inversion of opinion on benefits and drawbacks. So, I think there's value in examining some of those specifics,
 
 ## Forcing Tailwind is a mistake
 
@@ -257,6 +255,5 @@ In that same vein: theoretically, Tailwind speeds up prototyping by enabling you
 ## Inconsistent syntax
 
 ## It might feel good, but is it actually? (Or: was context switching really that much of a problem to begin with?)
-
 
 <!-- Maybe this can go back in to a section somewhere, or be its own kinda section? -->
