@@ -2,11 +2,10 @@
 	<slot />
 </aside>
 
-
 <style lang="scss">
 	.pull-quote {
 		float: right;
-		margin: var(--halfNote) -12em var(--dottedHalfNote)	var(--halfNote) ;
+		margin: var(--halfNote) -12em var(--dottedHalfNote) var(--halfNote);
 		font-size: 1.3rem;
 		line-height: 1.4;
 		position: relative;
@@ -17,20 +16,21 @@
 		font-style: normal;
 		font-weight: normal;
 		max-width: 16em;
-		
+
 		@media (min-width: vars.$lg) {
 			display: block;
 			font-size: 1.4rem;
+			margin-right: calc(-1em - 13vw);
 		}
-		
+
 		@media (min-width: vars.$xl) {
-			margin-right: -14em;
+			margin-right: -13em;
 			max-width: 18em;
 		}
 
 		&:after {
 			content: '';
-			height: .25rem;
+			height: 0.25rem;
 			width: 100%;
 			margin-left: -100%;
 			background: linear-gradient(to right, var(--blueToYellow));
