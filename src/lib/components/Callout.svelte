@@ -2,10 +2,9 @@
 	<slot />
 </p>
 
-
 <style lang="scss">
 	.callout {
-		margin: var(--halfNote) 0;
+		margin: var(--dottedQuarterNote) 0;
 		font-size: 1.3rem;
 		line-height: 1.4;
 

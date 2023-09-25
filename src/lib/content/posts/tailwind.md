@@ -20,19 +20,19 @@ draft: true
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-When my brother and I were younger, our tastes in music were nearly polar opposites. I was an obnoxious hipster, and valued what I saw as artistic integrity and creative innovation. I probably would've judged you if our music tastes didn't align (even though I probably didn't actually want them to; I liked feeling "in the know." I've grown up a bit since then, thankfully).
+When my brother and I were younger, our tastes in music were nearly polar opposites. I was an obnoxious hipster, and valued what I saw as artistic integrity and creative innovation. I was almost entirely into new and active artists.
 
-In contrast, my brother made virtually no judgments at all. He was generally open to anything, but his choices largely centered on classic rock of the '70s and '80s. He loved rediscovering decades-old albums by many of the most well-known artists of their time.
+In contrast, my brother made virtually no judgments at all. He was open to anything and everything, but his mainstays centered on classic rock of the '70s and '80s. He loved rediscovering decades-old albums by many of the most well-known artists of their time.
 
-Like any good elitist snob, I hated popular things. So naturally, my brother's kind of music was anathema to me at the time.
+Like any good elitist snob, I hated anything popular. So naturally, my brother's kind of music was anathema to me at the time.
 
-He never really understood what it was I seemed to dislike so strongly. So finally, one day, he asked me.
+My brother never really understood what it was I seemed to dislike so strongly. So finally, one day, he asked me.
 
 I thought about the question for a minute, and then summarized: "it's all style and no substance."
 
 My brother burst out in laughter.
 
-"That's the _best_ thing about it!" he said with an amused grin. "That's the whole point!"
+"That's the _best_ thing about it!" he laughed. "That's the whole point!"
 
 I knew we looked at the same things in opposite ways. But I had never realized before then that, wildly enough, we had _all the exact same reasons_ for it.
 
@@ -40,9 +40,11 @@ I knew we looked at the same things in opposite ways. But I had never realized b
 
 Tailwind is nearly as ubiquitous as it is polarizing these days. (I trust if you've been interested enough to read this far, I don't need to cite any sources on that score.)
 
-Proponents show a near cult-like devotion to Tailwind, some even going so far as to claim it's "fixed" CSS—or at the very least, made it manageable and predictable in a way it wasn't for them before. More than one Tailwind enthusiast has proclaimed they never want to style anything without it again. Most frontend frameworks and products feature a first-class Tailwind integration, due to its popularity.
+Proponents show a near cult-like devotion to Tailwind, some even going so far as to claim it's "fixed" CSS—or at the very least, made it manageable and predictable in a way it wasn't for them before. Most frontend frameworks and products feature a first-class Tailwind integration, due to its popularity.
 
-Detractors, on the other hand, claim Tailwind is messy; it gets in the way; it violates core fundamentals of web development; it really does nothing; it diminishes the power of CSS; and/or that it does the _opposite_ of what it's supposed to, adding complexity and making projects even _harder_ to maintain.
+Detractors, on the other hand, claim Tailwind is messy; it gets in the way; it violates core fundamentals of web development; it diminishes the power of CSS; and/or that it does the _opposite_ of what it's supposed to, adding complexity and making projects even _harder_ to maintain.
+
+Many who use Tailwind never want to go back; many who _don't_ never want to.
 
 How could we possibly disagree so sharply?
 
@@ -50,19 +52,23 @@ After using Tailwind for the last year—both professionally and on a few small 
 
 **Both sides are right.**
 
-We won't ever get anywhere debating the merits or flaws of Tailwind, for the same reason my brother and I never persuaded each other on music. It turns out, he and I actually saw every artist and album in pretty much exactly the same way.
+…Ok, ok, I can hear the boos. Nobody likes a centrist. But hear me out.
 
-We just didn't agree on what was a feature, and what was a bug.
+We won't ever get anywhere debating the merits or flaws of Tailwind, for the same reason my brother and I never persuaded each other on music.
 
 <CalloutPlusQuote>
 
-We could've dissected Billy Joel and Sufjan Stevens all we wanted. But it didn't matter, because ultimately, our disagreement started before either one of us ever pressed the play button.
+We could've dissected Billy Joel and Sufjan Stevens all we wanted. But it didn't matter, because our disagreement ultimately started before either one of us ever pressed the play button.
 
 </CalloutPlusQuote>
 
+It turns out, he and I actually saw every artist and album in pretty much exactly the same way.
+
+We just never agreed on what was a feature, and what was a bug.
+
 Likewise, I suspect most people on opposing sides of the Tailwind debate actually see Tailwind quite similarly.
 
-I've come to believe the core of the debate isn't so much about the factual details of the thing in front of us (and so debating those is useless, because where one of us sees a selling point, the other sees a flaw). Instead, I believe it's about the valuations we made long before we ever came to the table.
+Our contention isn't with Tailwind; it's with the valuations we made long before we ever chose our tools. Where one of us sees a selling point, the other sees a flaw.
 
 Tailwind _is_ great.
 
@@ -76,53 +82,63 @@ If you've played [Mario Kart 8 Deluxe](https://www.nintendo.com/store/products/m
 
 (_Yes, this is still about Tailwind. Bear with me here_.)
 
-Smart Steering is essentially an AI copilot. When enabled, you control your racer as normal, except that if you start to go off the road, the game will automatically take the wheel and steer you back on the track. No more slogging through the grass, or plummeting off the side of the course.
+Smart Steering is essentially an AI copilot. When enabled, you control your racer as normal, except that if you start to go off the road, the game will automatically take the wheel and steer you back on course. No more slogging through the grass, or plummeting off the side of the track.
 
-Smart Steering is a wonderful addition to the game. It, and similar other options, are what enable me and my whole family to play together, and can help to even the playing field among any mixed group (particularly on higher engine classes, where racers' speed is much higher and even very good players may find themselves hurling off the track).
+Smart Steering can help even the playing field among any mixed group (particularly on higher engine classes, where even very good players may find themselves hurling off the track).
 
-But as you play more and more, and get better and better at the game, Smart Steering begins to help less and less, until eventually, it starts getting in the way instead.
+But as you get better and better at the game, Smart Steering begins to help less and less…until eventually, it starts getting in the way instead.
 
-Smart Steering will prevent you from taking shortcuts, for one thing; it can't tell _why_ you're going off the main road, but it jumps in the way and prevents you from doing so regardless. It may even intervene unexpectedly, pushing you off your intended course at inopportune moments. You might have a strategic reason in mind for going off the road (maybe you decided it was better to go off the course than run into an obstacle, for example), but Smart Steering won't allow it regardless. Plus, as a balancing feature, the game's strongest speed boosts are disabled for players utilizing Smart Steering.
+![A chart demonstrating the above paragraph; as skill level increases, the impact of usage goes from entirely positive to entirely negative.](/images/post_images/impact.png)
 
-The better you know the terrain, the more a feature designed to augment your skills instead begins to inhibit them. But whether it makes you better or worse, and to what degree, will depend entirely on where you're coming from.
+Smart Steering will prevent you from taking shortcuts, for one thing; it can't tell _why_ you're going off the main road, but it jumps in the way and prevents you from doing so regardless. It may even intervene unexpectedly, pushing you off your intended course at inopportune moments.
 
-I'm a very good Mario Kart player (I spent 30 years of my life playing Mario Kart games before Smart Steering came along, after all), and so I can't stand Smart Steering. I never use it. I might not notice it a lot of the time—it might even occasionally help me—but what stands out to me are the times it jumps in my way at the worst possible moments.
+You might have a strategic reason in mind for going off the road (maybe you were avoiding a ruinous obstacle, for example), but Smart Steering won't allow it regardless.
+
+Plus, as a balancing feature, the game's strongest speed boosts are disabled for players utilizing Smart Steering.
+
+<CalloutPlusQuote>
+
+The better are, the more a feature designed to augment your skills instead begins to inhibit them. But whether it makes you better or worse--and to what degree--will depend entirely on where you're coming from.
+
+</CalloutPlusQuote>
+
+I'm a very good Mario Kart player (I spent some thirty years of my life playing Mario Kart games before Smart Steering came along, after all), and so I can't stand Smart Steering. I never use it. I might not notice it a lot of the time—it might even occasionally help me—but what stands out to me are the times it jumps in my way at the worst possible moments.
 
 Smart Steering might keep me on the track, but it _also_ suppresses my fullest abilities. It thwarts the best outcomes just as commonly as it averts the worst disasters.
 
 <CalloutPlusQuote>
 
-If you're sufficiently skilled, Tailwind feels like being forced to write CSS with Smart Steering on.
+To those sufficiently skilled with CSS, Tailwind feels like being forced to code with Smart Steering on.
 
 </CalloutPlusQuote>
 
-That's why any conversation I have with somebody who likes Tailwind will probably be like trying to explain why I don't like Smart Steering to a Mario Kart player who likes it and/or relies on it.
+That's why any conversation I have with somebody who likes Tailwind will probably be like trying to explain why I don't like Smart Steering to a Mario Kart player who relies on it.
 
-Me: _"I don't like that it keeps me from driving off the track."_
-
-Them: _"What!? Why would you ever want to do that!?"_
-
-Me: _"You can actually skip ahead if you use this trick right here..."_
-
-Them: _"Ugh, what a hacky workaround. It's really best practice to stay on the track, you know."_
-
-Me: _"Look, I understand why you're saying that, but I've been doing this for 30 years, and I know what I'm doing."_
-
-Them: _"I just don't know why you'd make things harder on yourself, just to do something you're not supposed to do anyway."_
+> "I don't like that it keeps me from driving off the track."
+>
+> "What!? Why would you ever want to do that!?"
+>
+> "You can actually skip ahead if you use this trick right here..."
+>
+> "Ugh, what a hacky workaround. It's really best practice to stay on the track, you know."
+>
+> "Look, I understand why you're saying that, but I've been doing this for a long time, and I know what I'm doing."
+>
+> "I just don't know why you'd make things harder on yourself, just to do something you're not supposed to do anyway."
 
 <SideNote>
 
-I realize I might sound rather arrogant in choosing this comparison. Mario Kart is a racing game, after all, which might seem to imply I think my way wins, and yours loses, or that I just think I'm better than you.
+I realize I might sound rather arrogant in choosing this comparison. Mario Kart is a racing game, after all, which might seem to imply that I think of myself as a winner, and people who don't do things my way as inferior.
 
 That's not at all my intent; I only mean to point out that if Tailwind is your thing, it's probably because we're coming from different places and value different things.
 
-Whether Tailwind helps you do the things you want to do, or whether you (like me) feel that it just grabs the steering wheel away from you, that doesn't inherently mean anything good, or bad, about either one of us.
+Whether Tailwind helps you do the things you want to do, or whether you (like me) feel that it just grabs the steering wheel away from you, that doesn't inherently mean anything good, or bad, about either one of us. It just means we have two different approaches.
 
 </SideNote>
 
 ## There are no benefits without tradeoffs
 
-For the most part, it's perfectly fine if we see the same thing in two different, even opposite ways. However, there's one universal truth I think it's important we agree on as common ground: _benefits always come with tradeoffs_.
+For the most part, it's perfectly fine if we see the same thing in two different, even opposite ways. However, there's one universal truth I think it's important we agree on as common ground, namely: _benefits always come with tradeoffs_.
 
 <CalloutPlusQuote>
 
@@ -130,11 +146,11 @@ That is: complexity always exists, even if it's remanded to a place you don't re
 
 </CalloutPlusQuote>
 
-Any time it seems like complexity has disappeared, it's almost certainly because it moved somewhere else, where there's a new and different set of tradeoffs.
+When things seem to get better and simpler, we're actually just experiencing the _upside_ of some architectural decision. That decision, whatever it was, has downsides elsewhere; some other part of the chain, further away from our view, is now also more complex than it used to be.
 
-Don't get me wrong; that's still usually a good thing. The new set is often (though not always) preferable to the old set.
+Don't get me wrong; that's still usually a good thing. The new set of tradeoffs is often (though not always) preferable to the old set. A mess in the basement is better than a mess in the living room.
 
-Regardless, though: we should be incredibly wary of any product that claims it's eliminated the complexity—destroyed it, removed it, turned it into nothing—without acknowledging it had to go _somewhere_, and whatever technique is being used to obscure it will unavoidably create its own downsides.
+Regardless, though: we should be incredibly skeptical of any product that claims it's eliminated the complexity—destroyed it, removed it, turned it into nothing—without acknowledging it had to go _somewhere_, and that other drawbacks are created by shifting it to that new location.
 
 Problems in tech don't _vanish_; they just _move_.
 
@@ -144,7 +160,7 @@ Now, however, we've _moved_ that complexity into a little Pandora's box called `
 
 <CalloutPlusQuote>
 
-The complexity never dies; we just trade frequent inconveniences for sporadic agony.
+The complexity never dies; we just trade frequent inconvenience for sporadic agony.
 
 </CalloutPlusQuote>
 
