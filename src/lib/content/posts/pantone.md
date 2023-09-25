@@ -3,7 +3,7 @@ title: 'Pantone, Color, and What I Wish I Had Known Sooner as a Designer'
 date: '2015-04-01'
 updated: '2021-01-19'
 categories:
-  - design
+  - 'design'
 coverImage: 'ColorPost-4.jpg'
 coverWidth: 35
 coverHeight: 22
@@ -31,7 +31,10 @@ Even the best process printers are mixing inks on the fly to create a limited ra
 
 As you probably know, most color printers create color by mixing cyan, magenta, yellow and black inks. This is called CMYK, 4-color, or "process" printing (and by the way, the K in CMYK stands for "key," as the black color plate was once referred to as the key plate, in case you were wondering). Cyan plus magenta equals blue, magenta plus yellow equals red, and on and on. CMYK is very popular because it's cheap, and most colors can be recreated decently within the process printing color range, also known as a "gamut."
 
-<SideNote>Some printers add extra inks to the standard CMYK—most commonly a light cyan and a light magenta, but sometimes others—for better color reproduction, especially in photos. If you're serious about home printing, a 6- or 8-color printer can be a very good investment.) But regardless, there is a limit to the color precision of process printing. Even the best process printers are mixing inks on the fly to create a limited range of color, and that can often result in inconsistency.
+<SideNote>
+
+Some printers add extra inks to the standard CMYK—most commonly a light cyan and a light magenta, but sometimes others—for better color reproduction, especially in photos. If you're serious about home printing, a 6- or 8-color printer can be a very good investment.) But regardless, there is a limit to the color precision of process printing. Even the best process printers are mixing inks on the fly to create a limited range of color, and that can often result in inconsistency.
+
 </SideNote>
 
 That's where the Pantone Matching System, called just Pantone or PMS for short, comes in.

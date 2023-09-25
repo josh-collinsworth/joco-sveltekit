@@ -18,7 +18,6 @@ excerpt: The easing curve can make or break any animation on the web. Let's look
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-
 Part of my son's evening routine is picking up the various toys he's gotten out and played with that day (or gotten out, at least), and putting those items all back into the toy basket.
 
 Usually, my four-year-old casually places the toys into the basket at a steady pace, so we can get on with the more fun parts of bedtime, like reading books.
@@ -43,7 +42,6 @@ Bad transitions and animations, however, can make the same UI feel mediocre, che
 
 At the center of any movement on the web is what's called an easing curve. This curve is the "rhythm" of the movement, and understanding it well--with the aim of improving our own animations and UIs--is the goal of this post.
 
-
 ## What's the difference between a transition and an animation?
 
 Before we get started, I should clarify: _I'll use the words "transition" and "animation" mostly interchangeably in this post, even though the two concepts are distinct in CSS_.
@@ -61,12 +59,12 @@ An example of a CSS `transition` might be a button that changes color when it ha
 
 ```css
 .btn {
-  background: lightblue;
-  transition: background .2s ease;
+	background: lightblue;
+	transition: background 0.2s ease;
 }
 
 .btn:is(:hover, :focus) {
-  background: yellow;
+	background: yellow;
 }
 ```
 
@@ -81,17 +79,17 @@ A basic CSS `animation` example might be a loading spinner that rotates indefini
 
 ```css
 .spinner {
-  animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
+	to {
+		transform: rotate(1turn);
+	}
 }
 ```
 
-So yes, as far as CSS is concerned, those are technically two different things.  However, I'll mostly use the words interchangeably in this post, because good fundamentals (and `cubic-bezier` curves) apply in both cases. Which one you use will mostly just depend on the situation.
+So yes, as far as CSS is concerned, those are technically two different things. However, I'll mostly use the words interchangeably in this post, because good fundamentals (and `cubic-bezier` curves) apply in both cases. Which one you use will mostly just depend on the situation.
 
 <SideNote>
 
@@ -100,7 +98,6 @@ If you do apply any type of easing on a CSS `animation`, just note it will apply
 For example: if an animation has five steps and uses `ease-out`, each _step_ will ease out, for five total easings, rather than the entire animation having one overall easing applied.
 
 </SideNote>
-
 
 ## What's an easing curve, and how does it work?
 
@@ -118,15 +115,15 @@ That might look like something from an algebra textbook (or maybe a vector softw
 
 ![A video playback bar superimposed over the cubic bézier curve, showing playback begins at the far left of the graph and ends at the far right.](/images/post_images/easing/curve-playback.png)
 
-	If your transition lasts one second, for example, the left side is the very beginning of the animation, and the far right is the end state, one second in.
+    If your transition lasts one second, for example, the left side is the very beginning of the animation, and the far right is the end state, one second in.
 
 - **The vertical _y_ axis is the speed of the change**. The more vertical the line is at that point during playback, the more the change accelerates at that point in the transition. (So in this example, the transition will start fast, ease to a slower pace in the middle, and then gradually pick up speed to end fasr.)
 
-	![The curve accelerating and decelerating as described above](/images/post_images/easing/curve-illustrated.png)
+  ![The curve accelerating and decelerating as described above](/images/post_images/easing/curve-illustrated.png)
 
 - For the purposes of defining curves, the _x_ and _y_ axes are both measured from 0 to 1. The bottom-left corner is `0, 0`; the top-right is `1, 1`.
 
-	![A graph illustrating the previous paragraph](/images/post_images/easing/axes.png)
+  ![A graph illustrating the previous paragraph](/images/post_images/easing/axes.png)
 
 **This is why CSS easing functions are written as four numeric values**. You could quite literally think of `cubic-bezier` as a function that accepts exactly four arguments: the _x_ and _y_ coordinates of the start handle, and the _x_ and _y_ of the end handle, in that order.
 
@@ -177,9 +174,7 @@ The screenshot below is from Firefox, but every major browser has the same tooli
 
 ![Firefox dev tools, with a wide array of easing types and options](/images/post_images/easing/firefox.png)
 
-
 I'd also like to give a shout-out here to [easings.co](https://easings.co), which lets you test out various easing curves with a number of common UI elements, to see how they work visually in a realistic scenario. It's well worth a look if you're trying to settle on the right feel for your own UI.
-
 
 ## Where do easings get their names?
 
@@ -201,7 +196,6 @@ You may also see other named presets, like "bounce" or "elastic" (Svelte ships w
 
 None of that is really important to know before _using_ the curves in question, but it may help make some sense of the names when you're browsing. It can _also_ give you an idea of how to create similar curves from scratch, should the need arise.
 
-
 ## Why does easing matter?
 
 While the workings of bézier curves make for interesting trivia, you might reasonably ask: why does this matter? Why is it important to use one easing curve over another--or for that matter, any curve at all?
@@ -217,8 +211,6 @@ In the real world, there's little such thing as instant. Nothing just appears or
 Similarly, when things move, _how_ they move is key in understanding the movement, like I mentioned about in the intro. Think of a simple motion, like waving your hand. Vary the speed of the wave, and notice how the "feel" and perceived meaning of the gesture varies. A slow wave seems hesitant; a fast wave seems enthusiastic. One that starts fast then slows down (or vice versa) seems to indicate your feelings might be changing in real time. "_Oh, hey! I know you! …Oh wait…no I don't_." (Not that I've ever done anything like that.)
 
 Again: movement tells a story. The transition itself is the verb; the easing curve is the adverb.
-
-
 
 ## Wrap-up and next steps
 

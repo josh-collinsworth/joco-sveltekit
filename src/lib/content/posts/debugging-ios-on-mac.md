@@ -3,7 +3,7 @@ title: 'Debugging iOS Safari (when all you have is a Mac)'
 date: '2022-05-10'
 updated: '2022-05-11'
 categories:
-  - web
+  - 'web'
 coverImage: 'debugging_ios/debugging-ios.png'
 coverWidth: 16
 coverHeight: 9
@@ -70,7 +70,11 @@ Don’t panic. This option might _seem_ extremely complex, but it’s not diffic
 
 The downside, however: this approach requires you to commit a **_lot_** of time and disk space up front. You'll need several gigabytes of free disk space, both for Xcode and its simulator(s), and the time do download all of it, so be sure you have those resources before you start. (It will take at least 15–20 gigs to install both Xcode and one simulator. You can get by with just one simulator, but you may want more.)
 
-<SideNote>Xcode is an app primarily for developing Mac and iOS apps. We aren’t going to use it for that, though; we’re just going to use its very handy device simulator.</SideNote>
+<SideNote>
+
+Xcode is an app primarily for developing Mac and iOS apps. We aren’t going to use it for that, though; we’re just going to use its very handy device simulator.
+
+</SideNote>
 
 The first step is to [head to the App Store and download Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) (if you don’t have it already; there’s a chance you might, if you use your Mac for development).
 

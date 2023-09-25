@@ -3,10 +3,10 @@ title: 'How to Connect Local with CodeKit'
 date: '2020-02-21'
 updated: '2020-07-15'
 categories:
-  - css
-  - javascript
-  - web
-  - wordpress
+  - 'css'
+  - 'javascript'
+  - 'web'
+  - 'wordpress'
 coverImage: 'Untitled.png'
 coverWidth: 1280
 coverHeight: 567
@@ -33,7 +33,9 @@ As amazing as Local is on its own, though, some of the biggest benefits of devel
 Unlike Local, CodeKit is a paid app, but it comes with a free trial if you'd like to check it out. In my opinion and experience, it's _well_ worth the $~35 price tag if you prefer a nice visual app interface to the command line.
 
 <SideNote>
+
 If you’re on Windows, you don’t have access to CodeKit (since it’s Mac only). But while I haven’t tried it myself, Prepros appears to be a equivalent app.
+
 </SideNote>
 
 **Some examples of what CodeKit provides:**
@@ -86,7 +88,9 @@ By default, Local places your sites inside of a "Local Sites" folder. So the pat
 The `public` folder is your Local WordPress site's root directory. You'll want to watch that directory so that any time something changes anywhere in the WordPress site, CodeKit will be aware of it and can react by compiling files, refreshing the browser, etc.
 
 <SideNote>
+
 If you weren’t actually interested in using CodeKit for its live previews and auto-refreshing, and all you wanted was the code features, you could just add whatever directory you’re working in (the theme, for example) instead of adding the whole site.
+
 </SideNote>
 
 Once you've added your project, you'll see CodeKit look something like this:
@@ -98,7 +102,9 @@ Once you've added your project, you'll see CodeKit look something like this:
 Now that your project (site) has been added in CodeKit, head into Project Settings, either from **View > Project Settings** or from the gear icon on the left sidebar.
 
 <SideNote>
+
 You can rename the project from here if you want—which you might want to do to make things easier if you’re working on multiple Local WordPress projects at once.
+
 </SideNote>
 
 In Project Settings, head to **Browser-Refreshing** and scroll down to the External Server Options section.

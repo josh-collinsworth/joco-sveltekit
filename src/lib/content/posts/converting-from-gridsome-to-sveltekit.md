@@ -67,7 +67,9 @@ Thanks to the static adapter (and some strategic <code>&lt;noscript&gt;</code> t
 Worth noting, however: by default, after the first page load, SvelteKit's router hydrates and takes over page loading, to make transitions as smooth and fast as possible. You can even designate routes to preload in the background, so that by the time the user clicks, the load is nearly instantaneous.
 
 <SideNote>
+
 You don't have to go entirely one way or the other; even if you're deploying your project as a Node app or with serverless functions, you can still mark specific pages to be prerendered as static HTML--handy for things like an "about" page that don't need dynamic content.
+
 </SideNote>
 
 ### SvelteKit layouts
@@ -191,7 +193,9 @@ I won't get too much into it here, but SvelteKit also offers a way to [pre-load 
 **Worth noting:** when using the static adapter, there of course isn't any server to query at run time. So in that case, any server-side queries or `fetch` calls will run at build time, and whatever the result at that point, it will be output as plain static files. Any JSON routes you might have will still be query-able on the live site, but they'll be static.
 
 <SideNote>
-The ability to read Markdown files isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).
+
+<p>The ability to read Markdown files isn't included by default in SvelteKit, but it <em>does</em> have the fairly easy-to-install <a href="https://mdsvex.com/" rel="external">MDSvex</a> for that (the Svelte version of MDX, if you're familiar).</p>
+
 </SideNote>
 
 ## Static SvelteKit vs. Gridsome

@@ -22,13 +22,11 @@ excerpt: Transitions, easing, and routing are all baked into SvelteKit. This mak
 	import FloatedImage from '$lib/components/FloatedImage.svelte'
 </script>
 
-
 <Note>
 
 If you're just here for the code (I get it), [here's the link to skip to that part](#the-final-code).
 
 </Note>
-
 
 If you've navigated the web before (and if not, thank whoever printed this out for you, I guess), you know the default behavior when you click a link is rather unimpressive: the page we were just looking at is unceremoniously replaced, more or less immediately.
 
@@ -58,7 +56,6 @@ With SvelteKit, we can implement progressively enhanced page transitions with ve
 
 </PullQuote>
 
-
 <Callout>
 
 This means with SvelteKit, we can implement [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) page transitions with very little penalty (just a little extra JavaScript).
@@ -69,7 +66,6 @@ And as a bonus: implementing page transitions in SvelteKit requires very little 
 
 But before we get into the _how_, let's spend a little time on _what_ page transitions are, and _why_ you might want them.
 
-
 ## What is a page transition?
 
 A page transition is a visual effect that replaces normal page loading behavior. When you click a link, a page transition takes over, and animates the old page being replaced by the new one.
@@ -78,12 +74,9 @@ For example, the old page might fade away as the new page materializes. Or, the 
 
 (This site uses page transitions; [here's a quick example](/blog/page-transition-example).)
 
-
-
 ## Page transitions: why or why not?
 
 You might choose to implement page transitions (or not) based on a variety of factors. Let's look at some pros and cons.
-
 
 ### Benefits of page transitions
 
@@ -107,7 +100,6 @@ Page transitions _may_ also increase perceived performance (i.e., how fast a sit
 
 That brings us to…
 
-
 ### Drawbacks of page transitions
 
 Benefits aside, there _are_ a few important drawbacks of page transitions that we should consider.
@@ -124,15 +116,13 @@ Rather than looking impressive, a poorly implemented page transition risks seemi
 
 Also: if poorly implemented, **page transitions can have the opposite of the desired effect**. Rather than looking impressive, a bad page transition risks seeming amateurish or over-the-top. It's easier to have too much than too little. So if you choose to add transitions, know that [a little goes a long way](/blog/great-transitions).
 
-With great power comes great responsibility; we want to make sure we're not giving our users vertigo, making them wait too long, or confusing them with an overwhelming flurry of movement. 
+With great power comes great responsibility; we want to make sure we're not giving our users vertigo, making them wait too long, or confusing them with an overwhelming flurry of movement.
 
 Finally, page transitions risk making your site _feel_ a little slower than it might otherwise, since animating between two pages naturally takes time. However, as mentioned in the above section, this could go the opposite way, too. It just depends. You might nail an impressive bullseye, or you might shoot yourself in the foot. It's all in the execution.
-
 
 ## How page transitions are built in SvelteKit
 
 For starters, let's look at the three _key components_ (ha, ha) that make up SvelteKit's native page transitions, and how to implement them, one by one.
-
 
 ### Built-in transitions
 
@@ -140,18 +130,18 @@ While you can certainly [hand-roll your own transitions](https://svelte.dev/tuto
 
 <SideNote>
 
-The Svelte compiler removes any unused parts of Svelte at build time--meaning nice things like transitions and easing curves can be included in the base framework without  unnecessary bloat in the final production bundle.
+The Svelte compiler removes any unused parts of Svelte at build time--meaning nice things like transitions and easing curves can be included in the base framework without unnecessary bloat in the final production bundle.
 
 </SideNote>
 
-To start, import the type of transition you want to use from `svelte/transition`. Out of the box, you get `fade`, `crossfade`, `fly`, `slide`, `scale`, `blur`, and `draw` (the last of which is specifically for SVG strokes). But for now, let's use `fade`, since it's nice and simple. (It only animates opacity.) 
+To start, import the type of transition you want to use from `svelte/transition`. Out of the box, you get `fade`, `crossfade`, `fly`, `slide`, `scale`, `blur`, and `draw` (the last of which is specifically for SVG strokes). But for now, let's use `fade`, since it's nice and simple. (It only animates opacity.)
 
 Since this will be a global transition that applies on every page, we'll want to use it in our global `+layout.svelte` file (i.e., the one at the top level of `src/routes`). So let's import it there:
 
 ```svelte
 <!-- src/routes/+layout.svelte -->
 <script>
-  import { fade } from 'svelte/transition'
+	import { fade } from 'svelte/transition';
 </script>
 ```
 
@@ -173,7 +163,7 @@ Instead, it's much simpler to _wrap_ the slot element inside another element (or
 ```svelte
 <!-- ✅ Better, but won't do much yet... -->
 <div transition:fade>
-  <slot />
+	<slot />
 </div>
 ```
 
@@ -186,7 +176,6 @@ Why? Because at this point, that `div` doesn't change or leave the page when the
 That's normal; that's how stuff in the layout file _should_ work. But it's not what we want in this case.
 
 We need this `div` to re-render every time the URL changes—and _that's_ where `key` blocks come in…
-
 
 ### A `#key` block
 
@@ -202,7 +191,7 @@ You could think of this as injected reactivity. In more casual terms, though: a 
 
 ```svelte
 {#key variableName}
-  <!-- All elements in this block will re-render 
+	<!-- All elements in this block will re-render
        whenever variableName changes -->
 {/key}
 ```
@@ -218,7 +207,6 @@ We'll need a variable that holds the current path, and updates on navigation. An
 `#key` blocks can also watch an expression; it doesn't have to be a variable.
 
 </SideNote>
-
 
 ### The `load` function
 
@@ -241,12 +229,12 @@ At a minimum, that might look like this:
 ```js
 // src/routes/+layout.js
 export const load = ({ url }) => {
-  const { pathname } = url
+	const { pathname } = url;
 
-  return {
-    pathname
-  }
-}
+	return {
+		pathname
+	};
+};
 ```
 
 There's a bit of destructuring going on there, so let's break it down:
@@ -259,7 +247,6 @@ We could, of course, just return `url` as-is, and handle getting the property we
 
 However, I personally prefer to keep the `.svelte` file as clean as possible. I'd rather do as much dirty work inside the `load` function as I can, and let the mess exist out of sight. Besides: there's no point in having extra properties flying around inside the template if we're not going to use them.
 
-
 ### Accessing data returned from `load`
 
 The object returned from the `load` function is available in the corresponding `.svelte` file as the `data` prop. It's passed in automatically; we just have to declare it.
@@ -268,41 +255,40 @@ So, heading back to `+layout.svelte`, we can declare and access the `data` prop,
 
 ```svelte
 <script>
-  import { fade } from 'svelte/transition'
+	import { fade } from 'svelte/transition';
 
-  export let data
+	export let data;
 </script>
 
 {#key data.pathname}
-  <div transition:fade>
-    <slot />
-  </div>
+	<div transition:fade>
+		<slot />
+	</div>
 {/key}
 ```
 
 That's the simplest way to do it; just use `data.pathname` right in the template. But if you're like me, and like to destructure variables, there's a gotcha to be aware of.
 
-
 #### Gotcha: destructuring the data object
 
-While the `data` object we get from the `load` function is itself reactive, remember that any variables declared from it will ***not*** be.
+While the `data` object we get from the `load` function is itself reactive, remember that any variables declared from it will **_not_** be.
 
 In other words, this won't work:
 
 ```svelte
 <!-- src/routes/+layout.svelte -->
 <script>
-  export let data
+	export let data;
 
-  let pathname = data.pathname // ⚠️ This won't work as desired
+	let pathname = data.pathname; // ⚠️ This won't work as desired
 </script>
 
 {#key pathname}
-  <!-- Contents aren't re-rendered on page load -->
+	<!-- Contents aren't re-rendered on page load -->
 {/key}
 ```
 
-That's because the value of `pathname` will be **set once**, on initialization, but will then never change on further page loads. 
+That's because the value of `pathname` will be **set once**, on initialization, but will then never change on further page loads.
 
 That might seem confusing, because it appears to go against how Svelte works. Aren't variables supposed to be reactive by default?
 
@@ -312,14 +298,14 @@ This works instead:
 
 ```svelte
 <!-- src/routes/+layout.svelte -->
-<script>  
-  export let data
+<script>
+	export let data;
 
-  $: pathname = data.pathname // 👍 This works!
+	$: pathname = data.pathname; // 👍 This works!
 </script>
 
 {#key pathname}
-  <!-- All good -->
+	<!-- All good -->
 {/key}
 ```
 
@@ -328,20 +314,19 @@ Alternatively, you could use this shorthand, if you prefer destructuring:
 ```svelte
 <!-- src/routes/+layout.svelte -->
 <script>
-  export let data
+	export let data;
 
-  $: ({pathname} = data) // 😎 This shorthand works, too
+	$: ({ pathname } = data); // 😎 This shorthand works, too
 </script>
 
 {#key pathname}
-  <!-- Still good -->
+	<!-- Still good -->
 {/key}
 ```
 
 Either way will work just the same. It's just a matter of preference. The important part is making `pathname` a reactive declaration, using Svelte's `$:` operator, if you choose to destructure that property.
 
 Or, skip it and just use `data.pathname` as-is, without declaring a new variable at all. Totally up to you.
-
 
 ## Assembling the pieces
 
@@ -351,15 +336,15 @@ Here's where we should be now with `+layout.svelte`:
 
 ```svelte
 <script>
-  import { fade } from 'svelte/transition'
+	import { fade } from 'svelte/transition';
 
-  export let data
+	export let data;
 </script>
 
 {#key data.pathname}
-  <div transition:fade>
-    <slot />
-  </div>
+	<div transition:fade>
+		<slot />
+	</div>
 {/key}
 ```
 
@@ -385,12 +370,9 @@ And finally, we'll add a `delay` to the `in` transition, and set a `duration` on
 
 ```svelte
 {#key pathname}
-  <div 
-    in:fade={{ duration: 300, delay: 400 }}
-    out:fade={{ duration: 300 }}
-  >
-    <slot />
-  </div>
+	<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
+		<slot />
+	</div>
 {/key}
 ```
 
@@ -404,7 +386,6 @@ You may notice the `delay` is slightly longer than the duration. That's mainly j
 
 But also: JavaScript timing is not always precise. A slight pause between the in and out transitions also acts as a buffer against jank.
 
-
 ## The final code
 
 Here's the final code, if you'd like to see all the changes in one place together:
@@ -412,37 +393,32 @@ Here's the final code, if you'd like to see all the changes in one place togethe
 ```js
 // src/routes/+layout.js
 export const load = ({ url }) => {
-  const { pathname } = url
+	const { pathname } = url;
 
-  return {
-    pathname
-  }
-}
+	return {
+		pathname
+	};
+};
 ```
 
 ```svelte
 <!-- src/routes/+layout.svelte -->
 <script>
-  import { fade } from 'svelte/transition'
+	import { fade } from 'svelte/transition';
 
-  export let data
+	export let data;
 </script>
 
-
 {#key data.pathname}
-  <div
-    in:fade={{ duration: 300, delay: 400 }}
-    out:fade={{ duration: 300 }}
-  >
-    <slot />
-  </div>
+	<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
+		<slot />
+	</div>
 {/key}
 ```
 
 That's all there is to creating basic page transitions in SvelteKit!
 
 However, there are some other options that are worth exploring…
-
 
 ## Optional: add easing
 
@@ -454,20 +430,19 @@ To use one, import it from `svelte/easing`. Then, you can apply it in the option
 
 ```svelte
 <script>
-  import { fade } from 'svelte/transition'
-  import { cubicIn, cubicOut } from 'svelte/easing'
+	import { fade } from 'svelte/transition';
+	import { cubicIn, cubicOut } from 'svelte/easing';
 
-  export let data
+	export let data;
 </script>
 
-
 {#key data.pathname}
-  <div
-    in:fade={{ easing: cubicOut, duration: 300, delay: 400 }}
-    out:fade={{ easing: cubicIn, duration: 300 }}
-  >
-    <slot />
-  </div>
+	<div
+		in:fade={{ easing: cubicOut, duration: 300, delay: 400 }}
+		out:fade={{ easing: cubicIn, duration: 300 }}
+	>
+		<slot />
+	</div>
 {/key}
 ```
 
@@ -477,7 +452,6 @@ You might have noticed the "in" transition is an easing **out**, and vice versa.
 
 </SideNote>
 
-
 ## Optional: add movement
 
 Using easing curves one a pure `fade` transition probably won't make much of a discernible difference. Easing curves have a _much_ bigger impact when actual _movement_ is involved.
@@ -486,27 +460,25 @@ Plus, arguably, a fade alone isn't really that cool anyway. When it comes to Sve
 
 ```svelte
 <script>
-  import { fly } from 'svelte/transition'
-  import { cubicIn, cubicOut } from 'svelte/easing'
+	import { fly } from 'svelte/transition';
+	import { cubicIn, cubicOut } from 'svelte/easing';
 
-  export let data
+	export let data;
 </script>
 
-
 {#key data.pathname}
-  <div
-    in:fly={{ easing: cubicOut, y: 10, duration: 300, delay: 400 }}
-    out:fly={{ easing: cubicIn, y: -10, duration: 300 }}
-  >
-    <slot />
-  </div>
+	<div
+		in:fly={{ easing: cubicOut, y: 10, duration: 300, delay: 400 }}
+		out:fly={{ easing: cubicIn, y: -10, duration: 300 }}
+	>
+		<slot />
+	</div>
 {/key}
 ```
 
 The `fly` transition combines movement with fading. You can supply it with `x` and/or `y` options to control the movement--though I wouldn't recommend using both together, unless you're just going for a really wild effect, and, of course, [respecting the user's motion preferences](/blog/great-transitions#bonus-respect-the-users-preferences). (You can also specify `opacity`, but the default fades from `0` to `1` and vice versa, which is generally what you want.)
 
 For what it's worth: the above transition is actually nearly identical to the transitions used on this website.
-
 
 ## Optional: tidy it up
 
@@ -516,27 +488,23 @@ So we can make life a little easier on ourselves by organizing the transition op
 
 ```svelte
 <script>
-  import { fly } from 'svelte/transition'
-  import { cubicIn, cubicOut } from 'svelte/easing'
+	import { fly } from 'svelte/transition';
+	import { cubicIn, cubicOut } from 'svelte/easing';
 
-  export let data
+	export let data;
 
-  const duration = 300
-  const delay = duration + 100
-  const y = 10
+	const duration = 300;
+	const delay = duration + 100;
+	const y = 10;
 
-  const transitionIn = { easing: cubicOut, y, duration, delay }
-  const transitionOut = { easing: cubicIn, y: -y, duration }
+	const transitionIn = { easing: cubicOut, y, duration, delay };
+	const transitionOut = { easing: cubicIn, y: -y, duration };
 </script>
 
-
 {#key data.pathname}
-  <div
-    in:fly={transitionIn}
-    out:fly={transitionOut}
-  >
-    <slot />
-  </div>
+	<div in:fly={transitionIn} out:fly={transitionOut}>
+		<slot />
+	</div>
 {/key}
 ```
 
@@ -544,10 +512,9 @@ There are two nice things about this approach. For one, it keeps the markup clea
 
 We've got enough code here now that we might even consider abstracting this `div` to its own `<PageTransition>` component, rather than have all of this just sitting inside our `+layout.svelte` file, where there's sure to be plenty else going on, too.
 
-
 ## Extra credit: add a loading indicator
 
-[***Note:*** _this section, and the stupid parenthetical joke at the end of it, were added post-publish based on feedback from the [r/sveltejs subreddit](https://www.reddit.com/r/sveltejs/comments/11fiseb/adding_page_transitions_in_sveltekit_selfpromo/)_.]
+[**_Note:_** _this section, and the stupid parenthetical joke at the end of it, were added post-publish based on feedback from the [r/sveltejs subreddit](https://www.reddit.com/r/sveltejs/comments/11fiseb/adding_page_transitions_in_sveltekit_selfpromo/)_.]
 
 One thing you might notice when using page transitions: because the new page needs to load in via JavaScript, there can sometimes be a noticeable delay between the initial click/tap/etc., and the actual page navigation.
 
@@ -570,17 +537,17 @@ Here's a very basic example (with the other bits stripped out, just to keep the 
 ```svelte
 <!-- src/routes/+layout.svelte -->
 <script>
-  import Loader from '$lib/components/Loader.svelte' // Or whatever your component path is
-  import { beforeNavigate, afterNavigate } from '$app/navigation'
+	import Loader from '$lib/components/Loader.svelte'; // Or whatever your component path is
+	import { beforeNavigate, afterNavigate } from '$app/navigation';
 
-  let isLoading = false
+	let isLoading = false;
 
-  beforeNavigate(() => isLoading = true)
-  afterNavigate(() => isLoading = false)
+	beforeNavigate(() => (isLoading = true));
+	afterNavigate(() => (isLoading = false));
 </script>
 
 {#if isLoading}
-  <Loader />
+	<Loader />
 {/if}
 ```
 
@@ -590,10 +557,10 @@ One other small note: you may want to check if the clicked link is an external l
 
 ```js
 beforeNavigate(({ to }) => {
-  if (to.route.id) {
-    isLoading = true
-  }
-})
+	if (to.route.id) {
+		isLoading = true;
+	}
+});
 ```
 
 `to.route.id` contains the internal SvelteKit ID of the route being accessed. If the property is undefined, we can conclude pretty safely that the clicked link was external. (Though you may want to use [optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) when drilling down into the object, just to be extra safe.)
@@ -601,11 +568,10 @@ beforeNavigate(({ to }) => {
 If you want to get fancy, you can make that a one-liner with a little Nancy Sinatra:
 
 ```js
-beforeNavigate(({ to }) => isLoading = !!to.route.id)
+beforeNavigate(({ to }) => (isLoading = !!to.route.id));
 ```
 
 (Nancy Sinatra...get it? _Bang Bang_? ...Ugh. I knew I should've gone with Jessie J instead. Ok, moving on.)
-
 
 ## Try it out
 
@@ -614,7 +580,6 @@ If you'd like to try some transitions out for yourself, my [SvelteKit Static Blo
 You can clone [the repo](https://github.com/josh-collinsworth/sveltekit-blog-starter), get it up and running (see the readme file), then open `+layout.svelte` to start making adjustments. The starter already has a basic `fade` transition applied, so it should require minimal modification to change the transition to match your own preferences.
 
 By the way: you don't _have_ to use the same type of transition for both the `in` and `out` changes. It's probably a good idea in most cases, but you may be able to create some interesting effects by mixing.
-
 
 ## Further reading
 

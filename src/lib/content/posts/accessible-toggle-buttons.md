@@ -57,7 +57,9 @@ But fourth and most importantly: _checkboxes aren’t actually buttons_. Yes, th
 Again, don't get me wrong: you could do much worse than a native HTML checkbox for a toggle switch. At least a checkbox toggle is still generally perceivable and operable. But it’s not quite the best option.
 
 <SideNote>
+
 Another, similar option would be a pair of radio inputs. While arguably better in some ways, and while perfectly viable, this option still falls prey to many of the issues above, and so it isn't really the best solution.
+
 </SideNote>
 
 ## Accessible toggle button requirements
@@ -173,9 +175,11 @@ To elaborate on that third point: VoiceOver announces “_toggle text, down-poin
 As a general rule of thumb: wherever you find yourself adding visual elements to buttons—icons, arrows, colors, nubs that slide back and forth, or whatever else—those should probably be hidden from assistive technologies with `aria-hidden`.
 
 <SideNote>
+
 <p>If your button <em>only</em> contains an icon or other non-text visuals, be sure to include either an <code>aria-label</code> attibute on the button, or some visually hidden but still screen reader-friendly text inside of it.</p>
 
 <p>(The <code>title</code> attribute is sometimes recommended here (including in a previous version of this post), but according to accessibility engineer <a href="https://melanie.codes/">Melanie Sumner</a>, <code>aria-label</code> is a bit better implemented, and therefore generally preferred.)</p>
+
 </SideNote>
 
 As a final note: I use showing and hiding text _only_ as a convenient example to show that the button is doing _something_. If revealing text is the actual purpose of your toggle button in production, there may be accessibility concerns I'm not covering here (for example: alerting the user that the page content has changed, and/or properly directing focus to the text).

@@ -3,8 +3,8 @@ title: 'WordPress Child Theme Explanation and Walkthrough'
 date: '2015-12-31'
 updated: '2020-06-16'
 categories:
-  - web
-  - wordpress
+  - 'web'
+  - 'wordpress'
 coverImage: 'wordpress-bg-medblue.png'
 coverWidth: 40
 coverHeight: 21
@@ -45,7 +45,9 @@ In the case of our stylesheets, we can set up a child theme to use all of the pa
 The process of setting up a child theme can seem a little intimidating, particularly if you don't spend much time in FTP or WordPress's file structure, but it's actually pretty simple. Let's walk through the steps.
 
 <SideNote>
+
 There are plugins to create child themes for you, and that’s generally simpler and easier than this process. But if you’d like to do it manually for full control, or if you’d just like to understand what goes into a child theme better, read on.
+
 </SideNote>
 
 ### Step 1: Create a New Theme Folder

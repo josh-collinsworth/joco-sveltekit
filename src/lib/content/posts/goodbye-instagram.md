@@ -3,7 +3,7 @@ title: "This isn't the Time, But it's the Perfect Time; Goodbye, Instagram"
 date: '2020-06-03'
 updated: '2020-06-11'
 categories:
-  - personal
+  - 'personal'
 coverImage: 'instagram-over-1.png'
 coverWidth: 1200
 coverHeight: 709
@@ -40,9 +40,11 @@ It’s become clear that Facebook sees its ability to spread misinformation not 
 In this moment—Blackout Tuesday, as it's being called by many (for better or worse, given its dubious origins and ill effects on the critical #BlackLivesMatter hashtag feed)—it's become clearer than ever that Facebook does not now, nor will it ever take responsibility for its ongoing, deliberate, and destructive impact on the world in general, and the US in particular.
 
 <SideNote>
+
 One of the things that prompted me to leave Facebook was the revelation that it conducted a secret study which attempted (successfully!) to cause depression by artificially altering some users’ feeds to show primarily negative posts, just to find out whether it could.
 <br /><br />
 To my knowledge, there has never been any apology for A/B testing with the mental health of non-consenting people. Regardless, this looks tragically tame compared with the list of Facebook’s more modern crimes.
+
 </SideNote>
 
 This is where I'll be conflating Facebook and Instagram a bit, but that's on purpose. It's clear that the two are intrinsically the same company as far as this topic goes. Marvel might be technically different than Disney, but the dollars go the same place.

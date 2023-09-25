@@ -3,9 +3,9 @@ title: 'Impressions of the ZSA Moonlander at one month'
 date: '2023-01-24'
 updated: '2023-01-29'
 categories:
-  - personal
-  - gear
-  - opinion
+  - 'personal'
+  - 'gear'
+  - 'opinion'
 coverImage: 'moonlander/thumb.jpg'
 coverWidth: 16
 coverHeight: 9

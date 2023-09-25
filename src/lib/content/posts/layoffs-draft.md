@@ -7,7 +7,7 @@ categories:
 coverImage: great-transitions.png
 coverWidth: 320
 coverHeight: 180
-excerpt: "TODO: fill this out"
+excerpt: 'TODO: fill this out'
 draft: true
 ---
 
@@ -33,7 +33,6 @@ That's the definition of pyrrhic victory; a win that's as bad as, or worse than,
 It's on my mind because lots of companies seem to be seeking their own fiery victories these days, whether through cannibalizing its own users, or destroying the goodwill it has with its own employees.
 
 Let's start with Netflix, who is currently attempting to win a battle against password-sharing users ("pirates," as the company likes to call them). And I believe that victory—like most similar battles corporations choose to fight in order to claw value back—will likely come at a cost greater than simply taking that "L" and moving on to the next game.
-
 
 ## The so-called piracy problem
 
@@ -105,7 +104,6 @@ If I'm right--or even close to right--Netflix comes out of this whole fiasco in 
 
 Pyrrhic victory attained.
 
-
 ### Netflix and Metallica
 
 This whole situation reminds me of Lars Ulrich vs. Napster in the early 2000s; Metallica sued Napster for millions because its songs were found on the platform (to oversimplify).
@@ -125,7 +123,6 @@ The band degraded themselves in the public eye, Lars Ulrich's name became a punc
 Obviously, I'm speculating here. I don't have access to Metallica's album sales figures or the desire to go find them, let alone project an alternate version of history. I also don't think most people would say Napster was fine or that artists were wrong to be bothered that their music was being distributed for free. That's not my point.
 
 My point is: it was very easy to _overestimate_ the "lost" value, and therefore, to _underestimate_ the cost of going to battle to retrieve it. That's what leads companies like Netflix to embark on massive campaigns against costs and lost profits; corporate-level loss aversion.
-
 
 ## First you want attention, then you want money
 
@@ -154,8 +151,6 @@ So in my case, the end result of all of this is: Netflix tries to claw back mone
 </CalloutPlusQuote>
 
 Most people who illegally downloaded _Enter Sandman_ aren't going to go out and buy the album.
-
-
 
 ## Piracy isn't the problem
 

@@ -21,7 +21,6 @@ excerpt: Creating high-quality, polished web animations is both a science and an
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-
 <Note>
 
 This is a followup to the post [Understanding easing and cubic bezier curves in CSS](/blog/easing-curves). (This is also the original URL of that post.)
@@ -29,7 +28,6 @@ This is a followup to the post [Understanding easing and cubic bezier curves in 
 If you came here looking for that--or if you don't already have a solid grasp on CSS `cubic-bezier` curves--I suggest [reading that post now](/blog/easing-curves).
 
 </Note>
-
 
 There are certain things you just know when you experience them, even if you don't know where the intuition comes from, or can't quite put into words what it is you recognize, exactly.
 
@@ -46,7 +44,6 @@ So to get a better understanding of what's giving off those vibes--and how to si
 While "transition" and "animation" are distinct concepts in CSS, I'll continue to use the words mostly interchangeably here, to mean "any kind of movement or change."
 
 </SideNote>
-
 
 ## 1. Make it shorter than you think it should be
 
@@ -72,7 +69,6 @@ That said, however: there are always exceptions, and the bigger the change is on
 
 One final point worth noting: **an animation might not always _feel_ as long as it actually is**. A transition with a very slow ease-in might seem like it doesn't start right away; conversely, a transition with a long tail might _seem_ finished before it technically is. Keep that in mind. Perception is reality, so how the change _feels_ is more important than what the duration technically is in the code.
 
-
 ## 2. Match the curve to the action
 
 Admittedly, this is easier said than done. You might be saying "ok, great, but how do I actually _know_ which kind of cubic bézier curve to use in any given situation?"
@@ -94,7 +90,6 @@ If it's something important that should be known about immediately, speed and ap
 So my best recommendation is: invest the time, and ask whether the movement conveys the appropriate _feeling_. Does this movement seem consistent with the brand of the product or page?
 
 If Pixar animated a robot that did the thing your UI is doing, how would it&nbsp;move?
-
 
 ## 3. Accelerate and decelerate
 
@@ -126,7 +121,6 @@ One important note on sudden starts and stops, though: **it's fine if the user c
 
 The same goes in reverse; if an element is fading to `opacity: 0`, then it may not matter exactly how the transition curve ends, since it won't be visible at the end anyway.
 
-
 ## 4. Less is more
 
 A lot of these tips could be pretty well summarized as "less is more."
@@ -152,7 +146,6 @@ Here's an example of a transition that animates `opacity`, `translateY` and `sca
 </p>
 
 Doing too much can be worse than doing nothing at all. So find the point where the transition is just enough to be effective, and if you go further, do so cautiously.
-
 
 ## 5. Avoid browser defaults
 
@@ -180,12 +173,11 @@ Every major browser has an easing panel available as a sandbox to try different 
 
 ![Firefox dev tools, with a wide array of easing types and options](/images/post_images/easing/firefox.png)
 
-However you choose to define your easing curves, though: I recommend you take some time to make subtle tweaks. Use `cubic-bezier`, and don't be afraid to tinker. 
+However you choose to define your easing curves, though: I recommend you take some time to make subtle tweaks. Use `cubic-bezier`, and don't be afraid to tinker.
 
 You can certainly get by with the presets in the browser, or in VS Code. And if you're using `cubic-bezier` over keyword values, you're ahead of the game already.
 
 That said, though: you probably wouldn't limit your color palette to only predefined CSS named colors. So you might not want to limit your transitions to a small handful of preset curves, either.
-
 
 ## 6. Multiple properties, multiple easings
 
@@ -196,20 +188,19 @@ You _could_ apply the same `cubic-bezier` curve to both properties, as shown her
 ```css
 /* ⛔ Ok, but can be better: */
 .my-element {
-  transition: all cubic-bezier(.5, 0, .5, 1) .5s;
+	transition: all cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
 }
-
 
 /* ⛔ Also maybe not ideal: */
 @keyframes scale_and_appear {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
 }
 
 .my-element {
-  animation: scale_and_appear 0.5s cubic-bezier(.5, 0, .5, 1) forwards;
+	animation: scale_and_appear 0.5s cubic-bezier(0.5, 0, 0.5, 1) forwards;
 }
 ```
 
@@ -226,25 +217,24 @@ In those cases, you can split the `@keyframes` animations by property, or specif
 ```css
 /* 👍 Better; each property has its own curve */
 .my-element {
-  transition: 
-    opacity linear .5s,
-    transform cubic-bezier(.5, 0, .5, 1) .5s;
+	transition: opacity linear 0.5s, transform cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
 }
-
 
 /* 👍 Use two animations and apply both */
 @keyframes scale {
-  from { transform: scale(0); }
+	from {
+		transform: scale(0);
+	}
 }
 
 @keyframes appear {
-  from { opacity: 0; }		
+	from {
+		opacity: 0;
+	}
 }
 
 .my-element {
-  animation:
-    scale 0.5s cubic-bezier(.5, 0, .5, 1) forwards,
-    appear 0.5s linear forwards;
+	animation: scale 0.5s cubic-bezier(0.5, 0, 0.5, 1) forwards, appear 0.5s linear forwards;
 }
 ```
 
@@ -261,8 +251,6 @@ Which one is _better_? Well, that all depends on the effect you're going for.
 Again, this one may not come up too often, but it's very handy when it does, and also easy to forget about, so it gets a spot on the list.
 
 You could even go so far as to change the duration of each property, but be careful things don't go out of sync if you decide to get that wacky.
-
-
 
 ## 7. Use staggered delays
 
@@ -286,7 +274,6 @@ That said: there are opportunities to apply this effect on a more subtle scale. 
 
 Again, keep it short and subtle. But where applied well, staggered delays can help take web transitions to another level.
 
-
 ## 8. Ins go out, outs go in
 
 If you've looked at various kinds of easing curves, you may have noticed they tend to come in three varieties: an ease _in_ (starts slower), ease _out_ (ends slower), and _in-out_ (which is essentially both; faster in the middle and slower at the beginning and the end).
@@ -308,7 +295,6 @@ So that means if you're transitioning an element _out_, and you want it to start
 Conversely, when an element is transitioning _in_, it should usually come to a gradual stop. That calls for an _ease out_.
 
 Those two would come together to create the effect of one seamless movement.
-
 
 ## 9. Lean on hardware acceleration
 
@@ -354,7 +340,6 @@ One potential reason it may opt out: the GPU is faster, but it also consumes mor
 
 </SideNote>
 
-
 ## 10. Use `will-change` as needed
 
 If you _do_ run into issues with animations that should be smooth and performant in theory, but that seem choppy or stilted in practice (again: this is usually in Safari for me, but your mileage may vary), make use of [the `will-change` property](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change).
@@ -375,7 +360,6 @@ Some sources even go so far as to recommend applying `will-change` prior to an a
 
 So here again, the best advice is: test thoroughly.
 
-
 ## Bonus: respect the user's preferences
 
 Users can indicate via their device settings whether they prefer reduced motion.
@@ -388,7 +372,7 @@ We can either do this in CSS, using a media query (like this, [from MDN](https:/
 
 ```css
 @media (prefers-reduced-motion) {
-  /* styles to apply if the user's settings
+	/* styles to apply if the user's settings
      are set to reduced motion */
 }
 ```
@@ -396,11 +380,10 @@ We can either do this in CSS, using a media query (like this, [from MDN](https:/
 _Or_ we can use JavaScript. In this example, we'll check for a reduced-motion preference, and add a class to the `<html>` tag if found:
 
 ```js
-const prefersReducedMotion =
-  window.matchMedia('(prefers-reduced-motion: reduce)').matches
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (prefersReducedMotion) {
-  document.documentElement.classList.add('reduce-motion')
+	document.documentElement.classList.add('reduce-motion');
 }
 ```
 
@@ -408,7 +391,7 @@ Following that JavaScript example, we could then add CSS to target elements on t
 
 ```css
 .reduce-motion {
-  /* Select stuff here and reduce motion */
+	/* Select stuff here and reduce motion */
 }
 ```
 
@@ -420,26 +403,26 @@ One technique I often use is: change up keyframe animations to only use opacity 
 
 ```css
 @keyframes slide_in {
-  from {
-    opacity: 0;
-    transform: translateY(2rem);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
 }
 
 @keyframes slide_in_reduced {
- from {
-    opacity: 0;
-  }
+	from {
+		opacity: 0;
+	}
 }
 
 .animated-thing {
-  animation-name: slide_in;
+	animation-name: slide_in;
 }
 
 @media (prefers-reduced-motion) {
-  .animated-thing {
-    animation-name: slide_in_reduced;
-  }
+	.animated-thing {
+		animation-name: slide_in_reduced;
+	}
 }
 ```
 
@@ -450,7 +433,6 @@ Plus, there are some situations where it may be better to keep movement intact. 
 At the _very_ least, users should be able to pause all continuous animations, including videos and gifs. However, ideally, we should be anticipating their needs based on their device preferences, instead of forcing them to deal with something they've already indicated they'd rather not see.
 
 I refer you to [this piece by Val Head for Smashing Magazine](https://www.smashingmagazine.com/2020/09/design-reduced-motion-sensitivities/), for a deeper dive on the topic of designing with reduced motion. It's a big topic in its own right, but hopefully this tip provides some general guidance.
-
 
 ## Putting it all together
 
@@ -469,7 +451,6 @@ On the left (red-orange) column, the items have no delay staggering; they all fa
 On the right (blue) column, on the other hand, the animation is staggered so the items enter one after the other. The delay and the total transition time are both fairly minimal, and the effects are all still there, but much more subtle. Finally, the easing is a custom `cubic-bezier` curve.
 
 Hopefully this demo makes it easy to see what a huge difference some small tweaks can make.
-
 
 ## Wrap-up
 

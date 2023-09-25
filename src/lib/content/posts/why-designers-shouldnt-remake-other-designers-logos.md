@@ -3,9 +3,9 @@ title: 'Why Designers Shouldn''t "Fix" Other Designers'' Logos'
 date: '2015-09-04'
 updated: '2021-01-19'
 categories:
-  - design
-  - personal
-  - opinion
+  - 'design'
+  - 'personal'
+  - 'opinion'
 coverImage: 'Screen-Shot-2015-09-03-at-9_14_54-AM.png'
 coverWidth: 85
 coverHeight: 36
@@ -18,7 +18,9 @@ excerpt: 'No matter how simple the end product, design is hard work. To come up 
 </script>
 
 <SideNote>
-I once had a design student read this post, and mistakenly think I was advising them against redesigning logos in an academic context. Far from it; redesign can be an excellent creative exercise for students. This post is about the rather toxic habit some in the design community have of spending a day (or an hour) tweaking a logo or brand and calling it "better..
+
+I once had a design student read this post, and mistakenly think I was advising them against redesigning logos in an academic context. Far from it; redesign can be an excellent creative exercise for students. This post is about the rather toxic habit some in the design community have of spending a day (or an hour) tweaking a logo or brand and calling it "better."
+
 </SideNote>
 
 Earlier this week, [Google](http://google.com) unveiled their new sans-serif identity, ditching the familiar serifs for which the company has been known since its inception for a cleaner, simpler look:
