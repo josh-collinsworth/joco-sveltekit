@@ -3,9 +3,9 @@ title: 'Breaking changes in SvelteKit, August 2022'
 date: '2022-08-17'
 updated: '2022-08-19'
 categories:
-  - svelte
-  - javascript
-  - web
+  - 'svelte'
+  - 'javascript'
+  - 'web'
 coverImage: 'sveltekit-breaking-changes.png'
 coverWidth: 16
 coverHeight: 9

@@ -3,10 +3,10 @@ title: "Let's learn SvelteKit by building a static Markdown blog from scratch"
 date: '2021-12-27'
 updated: '2023-02-17'
 categories:
-  - svelte
-  - javascript
-  - web
-  - popular
+  - 'svelte'
+  - 'javascript'
+  - 'web'
+  - 'popular'
 coverImage: 'sveltekit-learn.png'
 coverWidth: 16
 coverHeight: 9
@@ -78,7 +78,9 @@ When you run that `init` command, SvelteKit will ask you some questions about yo
 We'll select the "Skeleton project" option. (_Note: **not** "Library skeleton project;" we're just building a site, not a library._)
 
 <SideNote>
+
 If this is your very first time using SvelteKit, feel free to choose "SvelteKit demo app," poke around a bit to get a sense of how things work, then come back. It's a good intro, but it comes with several files and styles that would be a lot to undo as a starter.
+
 </SideNote>
 
 The setup tool will also ask for your preferences on TypeScript, ESlint, and Prettier. For simplicity's sake, I won't use TypeScript, but you're welcome to if you like. (Svelte works quite well with it.)
@@ -118,7 +120,9 @@ So, from inside `src/routes`:
 - `blog/some-post/+page.svelte` becomes `/blog/some-post`
 
 <SideNote>
-The convention of <code>+page.svelte</code> might seem a bit confusing or unnecessary—especially if you're used to the old <code>index.svelte</code> convention—but as we'll see soon, the special <code>+</code> prefix helps distinguish between components and pages.<br><br>There are also <em>other</em> things we can add to routes besides just pages, like dynamic server paths; more on that later.
+
+<p>The convention of <code>+page.svelte</code> might seem a bit confusing or unnecessary—especially if you're used to the old <code>index.svelte</code> convention—but as we'll see soon, the special <code>+</code> prefix helps distinguish between components and pages.<br><br>There are also <em>other</em> things we can add to routes besides just pages, like dynamic server paths; more on that later.</p>
+
 </SideNote>
 
 ### Adding pages
@@ -130,7 +134,9 @@ Within each of those folders, we'll add a `+page.svelte` file, to serve as the r
 Within each of those files, let's toss a quick heading, and maybe some text, just so we can see a little content.
 
 <SideNote>
+
 Svelte files can just contain plain HTML.
+
 </SideNote>
 
 ```svelte
@@ -224,7 +230,9 @@ Inside `src/lib`, we'll create a folder named `components`, just for organizatio
 ```
 
 <SideNote>
+
 You don't have to capitalize component names, or keep components in their own folder, but both are generally preferred conventions.
+
 </SideNote>
 
 Inside our new `Header` component, let's place some proper (albeit basic) navigation:
@@ -329,7 +337,9 @@ Create a new folder inside of `src/lib` for your styles, and add a `style.css` f
 ```
 
 <SideNote>
-There are no rules about how you structure things inside of <code>src/lib</code>. You aren't even required to use <code>lib</code> at all. Feel free to organize your folders however you like.
+
+There are no rules about how you structure things inside of `src/lib`. You aren't even required to use `lib` at all. Feel free to organize your folders however you like.
+
 </SideNote>
 
 You can add whatever CSS you prefer, but if you need a suggestion, here's a little bit of boilerplate that should begin to get things looking _slightly_ better:
@@ -367,7 +377,9 @@ Once we've got a stylesheet with some CSS in it, loading it globally is as easy 
 Since SvelteKit is server-rendered, if you view the page source, you'll even see our style has been added to the HTML, rather than being client-rendered. Neat!
 
 <SideNote>
+
 Importing stylesheets in JavaScript files is not a web standard; it's just supported by some bundlers and build tools.
+
 </SideNote>
 
 ### Adding Sass to SvelteKit
@@ -416,7 +428,9 @@ Note that you'll need to create the `preprocess` option; it's not there by defau
 Also note that you _can_ pass an object with more granular options into the `sveltePreprocess()` function, but we won't for now. It knows what to do with Sass by default, so no further customization is needed.
 
 <SideNote>
+
 It's worth mentioning the <code>scss.prependData</code> option, which allows you to automatically inject code at the start of any Sass processing (such as Sass variables or an <code>@import</code>). You can read more in the <a href="https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md#31-prepending-content"><code>svelte-preprocess</code> docs</a>; I just wanted to mention it since it's quite handy.
+
 </SideNote>
 
 **One more quick, important thing to know:** you'll want to stop and restart your dev server any time you make a config change.
@@ -583,7 +597,9 @@ More markdown _here_!
 ```
 
 <SideNote>
-As you might have already realized: this means you can even import Markdown files into <em>other</em> Markdown files!
+
+As you might have already realized: this means you can even import Markdown files into _other_ Markdown files!
+
 </SideNote>
 
 ## Setting up the blog
@@ -688,7 +704,9 @@ First, create a `.svelte` file to serve as the mdsvex layout. This file could go
 ```
 
 <SideNote>
-The router will ignore <code>post.svelte</code>, even though it's inside the <code>routes</code> folder, because it's not a valid <code>+</code> file.
+
+The router will ignore `post.svelte`, even though it's inside the `routes` folder, because it's not a valid `+` file.
+
 </SideNote>
 
 Just like our `+layout.svelte` file, this component will _wrap_ posts, as a parent component, and slot the post in as its child. The difference is: it'll work _just_ on Markdown posts in the blog, not every route.
@@ -776,7 +794,9 @@ We created the Markdown files at the beginning of approach #1. If you skipped th
 Notice at this point, `/blog/1` and `/blog/2` won't load. That's because every route on our site needs a `+page.svelte` (or other valid `+` file) to render.
 
 <SideNote>
+
 You could also create a subfolder for your Markdown posts, or even put them somewhere else entirely, if you like. Anywhere is fine; I just chose the simplest path. If you change their location, just be sure to adjust the file paths in the code.
+
 </SideNote>
 
 So how _do_ we load a given post's content? Well, that's where we (finally) get around to dynamic routes!
@@ -822,7 +842,9 @@ Here's an illustration:
 ```
 
 <SideNote>
-If you prefer TypeScript, you can use a <code>.ts</code> file instead of <code>.js</code>.
+
+If you prefer TypeScript, you can use a `.ts` file instead of `.js`.
+
 </SideNote>
 
 Since we're doing some dynamic things, we'll need to lean on the preloading capabilities of `+page.js`. So let's create that file now:
@@ -895,9 +917,11 @@ That in place, now when we load a blog post, we should see everything!
 ![Our blog post page is now rendering with a title and a date.](/images/post_images/sveltekit-rendered-md-post-with-meta.png)
 
 <SideNote>
-In case you're not familiar, <code>&lt;svelte:component /&gt;</code> is what's called a dynamic component; it renders an arbitrary Svelte component (provided as the <code>this</code> prop value), when the exact component isn't known beforehand. Perfect in this situation, because we aren't sure <em>which</em> post's content will need to be rendered.
+
+<p>In case you're not familiar, <code>&lt;svelte:component /&gt;</code> is what's called a dynamic component; it renders an arbitrary Svelte component (provided as the <code>this</code> prop value), when the exact component isn't known beforehand. Perfect in this situation, because we aren't sure <em>which</em> post's content will need to be rendered.
 <br /><br />
-Also: this works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file.
+Also: this works because earlier, we set <code>.md</code> files to be treated as components in our <code>svelte.config.js</code> file.</p>
+
 </SideNote>
 
 **As an alternative syntax**: we could destructure all the `data` props, and use them individually. That's a little more setup, but it has the advantage of allowing you to use `Content` as its own component.
@@ -921,7 +945,9 @@ This is equivalent to the above:
 Which to use is up to you. I like the convenience of destructuring, personally, but it is also a little more boilerplate. They both work the same way.
 
 <SideNote>
+
 If you go with the second option, note that the content/component name (<code>Content</code>, in this case) <strong>must</strong> be capitalized, to distinguish it as a component—both in the template and in the data returned from the <code>load</code> function.
+
 </SideNote>
 
 ---
@@ -982,7 +1008,9 @@ With that in place, we should be able to visit `/api/posts` and see the followin
 How _cool_ is it that!? Our API route doesn't return anything useful just yet, obviously, but it's still pretty awesome to have it up and running that easily!
 
 <SideNote>
-While we won't add it here, there are parameters available inside the <code>GET</code> function, which expose headers, query parameters, and other info about the request.
+
+While we won't add it here, there are parameters available inside the `GET` function, which expose headers, query parameters, and other info about the request.
+
 </SideNote>
 
 ### Writing a utility to fetch posts
@@ -1022,7 +1050,9 @@ export const fetchMarkdownPosts = async () => {
 ```
 
 <SideNote>
-If you followed approach #1 above and have every post inside its own individual folder, you'll need to change the import path to end <code>/blog/**/*.md</code>, to go one level deeper.
+
+<p>If you followed approach #1 above and have every post inside its own individual folder, you'll need to change the import path to end <code>/blog/\*_/_.md</code>, to go one level deeper.</p>
+
 </SideNote>
 
 **There's a lot going on in that file**. Let's break it down:
@@ -1231,8 +1261,8 @@ To start, if you don't already have some categories in your posts' frontmatter, 
 
 categories:
 
-- numbers
-- odd
+- "numbers"
+- "odd"
 
 ---
 ```
@@ -1242,8 +1272,8 @@ categories:
 
 categories:
 
-- numbers
-- even
+- "numbers"
+- "even"
 
 ---
 ```
@@ -1261,7 +1291,9 @@ From here, we'll do much the same as we did with the dynamic `[slug]` path earli
 ```
 
 <SideNote>
-A reminder: the word <code>category</code> isn't special; it's just a variable. But as with any variable, it's good to name it semantically. We'll access <code>params.category</code> inside <code>+page.js</code>.
+
+A reminder: the word `category` isn't special; it's just a variable. But as with any variable, it's good to name it semantically. We'll access `params.category` inside `+page.js`.
+
 </SideNote>
 
 Once you've created those, you may notice you can actually visit `/blog/category/` followed by any text, and you won't get a 404. The dynamic route handles _all_ unmatched `/blog/category/*` routes. The trick now is just to load the right content based on the route.
@@ -1453,7 +1485,9 @@ ${posts
 I pulled my example from [this guide](https://www.davidwparker.com/posts/how-to-make-an-rss-feed-in-sveltekit) and [this one](https://scottspence.com/posts/make-an-rss-feed-with-sveltekit), for reference. And if you want to make sure you've done it correctly, here's an [online XML validator](https://codebeautify.org/xmlviewer).
 
 <SideNote>
-Notice the <code>export const prerender = true</code> line. The feed will work when developing regardless, but that prop is necessary to get the RSS feed to prerender when building the site.
+
+Notice the `export const prerender = true` line. The feed will work when developing regardless, but that prop is necessary to get the RSS feed to prerender when building the site.
+
 </SideNote>
 
 ### Add heading links with rehype
@@ -1463,7 +1497,9 @@ It's nice to let users link directly to a section of a post. Manually adding lin
 Luckily, mdsvex allows us to use many [rehype](https://github.com/rehypejs/rehype) plugins to add extra features to markdown processing, and so we can make this all happen automatically with just a bit of config adjustment.
 
 <SideNote>
+
 Rehype is an HTML parser, and not specific to Svelte or mdsvex; it's commonly used in a wide range of projects.
+
 </SideNote>
 
 There are two rehype plugins we'll want specifically:
@@ -1511,7 +1547,9 @@ With that in place, restart the dev server. Now pop open the inspector and check
 However, we'll need to add a bit of styling to make the links show up properly.
 
 <SideNote>
-The <code>.icon.icon-link</code> class is a <a href="https://fontawesome.com/">Font Awesome</a> convention, so it doesn't mean or do anything in our project by default.
+
+The `.icon.icon-link` class is a <a href="https://fontawesome.com/">Font Awesome</a> convention, so it doesn't mean or do anything in our project by default.
+
 </SideNote>
 
 How you choose to handle this is personal preference, but this block of Sass should basically do the trick:
@@ -1545,7 +1583,9 @@ That CSS will make a pound sign (or hash, or "octothorpe," if you're fancy) appe
 Thanks to how CSS treats pseudo elements, that icon is fully clickable as part of the link, to navigate directly to the heading in question.
 
 <SideNote>
-Please be aware that while this example is ok, hovering is not an intuitive gesture on touchscreen devices. It's probably better to <em>always</em> show some indication of the link.
+
+Please be aware that while this example is ok, hovering is not an intuitive gesture on touchscreen devices. It's probably better to _always_ show some indication of the link.
+
 </SideNote>
 
 You could _also_ add some JavaScript to handle automatically copying the link to the clipboard (probably with some JavaScript inside a Svelte component's `onMount` function), but I'll leave that detail up to you. For now, our links are at least present and working, even if they might not be ideal yet.
@@ -1664,7 +1704,9 @@ To use them, just import them in a page or layout (our global layout file might 
 ```
 
 <SideNote>
-<code>$app</code> contains several modules available in SvelteKit for things you might need in an app, like <code>env</code> and <code>paths</code>, along with <code>navigation</code>. See the <a href="https://kit.svelte.dev/docs#modules">modules docs</a> for full details.
+
+`$app` contains several modules available in SvelteKit for things you might need in an app, like `env` and `paths`, along with `navigation`. See the [modules docs](https://kit.svelte.dev/docs#modules) for full details.
+
 </SideNote>
 
 The difference between the two is:

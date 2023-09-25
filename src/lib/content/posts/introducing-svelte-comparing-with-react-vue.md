@@ -106,7 +106,9 @@ All your Svelte code is compiled down to minimal, self-contained JavaScript befo
 React and Vue both use a "[virtual DOM](https://stackoverflow.com/questions/21965738/what-is-virtual-dom)," for rendering, which--while faster than crawling the DOM itself to make changes--still has its own performance implications. Thanks to the Svelte compiler, however, we don't have to worry about that; components are tied directly to their DOM nodes. You can read more about that in Rich Harris's [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead).
 
 <SideNote>
+
 There's a little more nuance than this when discussing Svelte's performance relative to the field, but we'll get into that in the last section.
+
 </SideNote>
 
 ### Authoring Svelte components
@@ -141,7 +143,9 @@ Click through the examples below to compare this component in different framewor
 <CodeComparison dir="counter-button" includeBothVues={true} />
 
 <SideNote>
+
 I use arrow functions and omit semicolons in these examples, but that's just personal stylistic preference.
+
 </SideNote>
 
 There are some key differences I'd like to point out between the Svelte version and the others:
@@ -184,7 +188,9 @@ Other differences worth noting:
 - In React and Vue, you need to wrap conditional elements in HTML and/or stringify them. Svelte lets you put whatever otherwise valid markup you want inside of `#if` blocks, and doesn't require you to tie them to an element, either.
 
 <SideNote>
-The accessibility of this toggle button example is questionable, for the sake of brevity. I recommend Heydon Pickering's <a href="https://inclusive-components.design/toggle-button/" rel="external">Building Inclusive Toggle Buttons</a> for more info.
+
+The accessibility of this toggle button example is questionable, for the sake of brevity. I recommend Heydon Pickering's [Building Inclusive Toggle Buttons](https://inclusive-components.design/toggle-button) for more info.
+
 </SideNote>
 
 #### Comparing form bindings
@@ -214,7 +220,9 @@ Though we've seen it already, I think it's worth glancing once more at how each 
 <CodeComparison dir="conditionals" />
 
 <SideNote>
+
 I'm not distinguishing between Vue 2 and 3 in these examples because their templating syntax is identical.
+
 </SideNote>
 
 You can of course do `else` as well (and `else if` for that matter, though I won't demo that just because writing the React expression would be a little bit of a nightmare).
@@ -466,7 +474,9 @@ _Plus_, this whole discussion focuses on how things are right now, in this momen
 On the other hand, Svelte is comparably young. If I'm betting on which framework will improve more in the future _relative to its current position_, I'm backing Svelte, no question.
 
 <SideNote>
+
 It's worth mentioning that since Svelte started becoming popular, other frameworks have learned from it and closed the performance gap a bit. React is still generally significantly heavier, but Vue 3 is fairly comparable to Svelte performance-wise in many cases.
+
 </SideNote>
 
 ### Svelte doesn't support Internet Explorer by default

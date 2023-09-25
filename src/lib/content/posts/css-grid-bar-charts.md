@@ -3,8 +3,8 @@ title: 'Creating dynamic bar charts with CSS grid'
 date: '2022-03-24'
 updated: '2022-07-14'
 categories:
-  - css
-  - web
+  - 'css'
+  - 'web'
 coverImage: 'bar-charts.png'
 coverWidth: 16
 coverHeight: 9
@@ -47,7 +47,9 @@ Let's start with a simple, albeit contrived example: a bar chart that shows how 
 If you poke around at the code a bit, you'll see I used an unordered list (`<ul>`) as the chart/grid container, and made each list item (`<li>`) a bar in the chart. This helps to ensure an accessible experience, as the contents of each bar will be read by assistive technologies like screen readers as an individual list item (something like, “_'Baseball: 9,' one of six_”).
 
 <SideNote>
-It may seem like a <code>&lt;dl&gt;</code> element would be a good fit here, but I consulted an accessibility expert and was told screen reader support for definition lists is not great. They recommended I use an unordered list instead in this case.
+
+It may seem like a `<dl>` element would be a good fit here, but I consulted an accessibility expert and was told screen reader support for definition lists is not great. They recommended I use an unordered list instead in this case.
+
 </SideNote>
 
 Each individual bar has a colored background to make it visible, and places the value (number) inside a `<span>`. That's just so we can use `display: flex` and `justify-content: space-between` to space out the two.
@@ -106,7 +108,9 @@ Next, we iterate over each `point`, using an `<li>` for each one, which spans as
 Again, that's the heart of this particular CSS trick; making each bar span X columns, which ensures the chart is always exactly as wide as the widest item(s), saving us from doing any math to figure out how chart items should be sized!
 
 <SideNote>
+
 This approach assumes you want the widest bar to be the width of the chart, which you might not, depending on use case. If your bar chart shows percentages, for example, it might be more intuitive to make the chart exactly 100 columns wide, so the bars are corresponding width.
+
 </SideNote>
 
 In our loop, we also populate the bar's actual visible text content with the `point.name` and `point.value` props. Again, the value is contained in a `<span>` element, so we can push the name and value apart from one another—though depending on your implementation and design, this might be unneeded.
@@ -199,7 +203,9 @@ Here I've shown a horizontal bar chart, but it wouldn't take much to change the 
 </p>
 
 <SideNote>
+
 The above pen uses Vue instead of Svelte, if you'd like to take a peek at another framework implementation.
+
 </SideNote>
 
 The main things to keep in mind if you want the bars to go vertical are:

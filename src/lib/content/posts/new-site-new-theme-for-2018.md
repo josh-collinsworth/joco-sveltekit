@@ -3,10 +3,10 @@ title: 'New Site, New Theme for 2018'
 date: '2018-01-02'
 updated: '2020-05-18'
 categories:
-  - design
-  - web
-  - php
-  - wordpress
+  - 'design'
+  - 'web'
+  - 'php'
+  - 'wordpress'
 coverImage: '2018-logo.jpg'
 coverWidth: 16
 coverHeight: 9
@@ -19,7 +19,9 @@ excerpt: Building a WordPress theme (and a new brand) from scratch.
 </script>
 
 <SideNote>
+
 This site is no longer on WordPress, so the theme described here can't actually be seen anywhere, and the features described mostly aren't on this website any longer.
+
 </SideNote>
 
 It's been a goal of mine for a very long time to completely redesign my WordPress theme from scratch. Finally, that goal is a reality!

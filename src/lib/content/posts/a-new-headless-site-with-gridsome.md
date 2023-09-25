@@ -20,7 +20,9 @@ excerpt: A lengthy write-up diving into what headless means, its advantages and 
 </script>
 
 <SideNote>
-This post is a bit outdated; this website still looks and works mostly the same, but it's no longer headless WordPress <em>or</em> Gridsome; it's <a href="https://joshcollinsworth.com/blog/converting-from-gridsome-to-sveltekit">SvelteKit</a>. So a few of the smaller features described here, like the search bar, aren't in place anymore.
+
+This post is a bit outdated; this website still looks and works mostly the same, but it's no longer headless WordPress _or_ Gridsome; it's [SvelteKit](/blog/converting-from-gridsome-to-sveltekit). So a few of the smaller features described here, like the search bar, aren't in place anymore.
+
 </SideNote>
 
 There's a joke (the kind that's made less because it's funny and more because it's true) about developers and designers spending more time redesigning their website than actually _doing_ something with it. Right off the bat, I'll go ahead and admit I fit that cliché; I've had some version of this blog live since 2014, and the number of redesigns I've done is uncomfortably close to the number of _actual blog posts_ I've written in that same time.
@@ -30,7 +32,9 @@ In fact, at the time of this writing, the post I wrote about the last redesign�
 This one, though, is at least more than a fresh layer of CSS or a new WordPress theme. This one is taking an entirely new approach: going headless with the Jamstack.
 
 <SideNote>
+
 This is going to be a long post, since I’ll go into depth on what headless means, its advantages and disadvantages, some of the techniques involved, and, finally, the design of this site specifically.
+
 </SideNote>
 
 ## What do "headless" and "Jamstack" mean?
@@ -86,7 +90,9 @@ That said, security probably shouldn't be your biggest reason to move to the Jam
 Finally, working with modern frameworks like those mentioned above (though there are many others) is often more enjoyable for developers, as it allows you to introduce more modern tooling into your workflow, both in how the code is built and how it's deployed. (Typically, Jamstack sites are set up to deploy directly from a git repo, so that every time you push to the repo, the site deploys the code automatically, saving you from ever touching something like FTP.)
 
 <SideNote>
+
 Naturally, developer experience should be the least of our concerns; our users’ experience with the site is more important than ours. But if we’re being responsible with our choices, developer experience should ideally help translate into better user experience, too.
+
 </SideNote>
 
 ## Headless WordPress drawbacks
@@ -208,7 +214,9 @@ pre.language-css:before {
 ```
 
 <SideNote>
+
 This site may load up to six fonts on a page, which is admittedly quite a few by web standards. I didn’t want to compromise on the design, though, so I used other means to mitigate the performance impact, including subsetting each font, conditional loading, and setting font-display: swap to avoid invisible text.
+
 </SideNote>
 
 This change in fonts also necessitated a redesign of my personal logo, since the old one wouldn't have fit with the new look and feel.
@@ -230,13 +238,17 @@ Speaking of fun things: I tried to put something interesting (interesting for me
 On the topic of visual interest: the new site generates a bit extra using a couple of custom editor blocks; **Callouts** (which work a lot like pull quotes from a print publication), and **Highlights** (which serve to enlarge key pieces of text). Both make the posts a bit more skimmable (not a word; I'm ok with it), and help convey its main points at a glance.
 
 <PullQuote>
+
 When you’re on a wide enough screen, the callouts appear with the article text conventionally wrapping around them (and hidden using ARIA to prevent screen readers repeating the text).
+
 </PullQuote>
 
 You've probably seen both of them in this article already, but not if you're reading this on mobile. Callouts _repeat_ text, which is confusing when you've only got a single column on a mobile screen, so I hide those at mobile widths. When you're on a wide enough screen, the callouts appear with the article text conventionally wrapping around them (and hidden using ARIA to prevent screen readers repeating the text).
 
 <SideNote>
+
 Highlight blocks aren't present on the site any longer (save for this page) since it didn't seem to make sense to have two different ways to call out text, and the styling conflicted a bit with headings. Instead I settled on a different solution to the "repeat reading" problem described above (I stopped caring), and combined both blocks into one.
+
 </SideNote>
 
 Highlights, in either case, only appear as larger text (no different to screen readers, since it didn't feel like emphasizing entire sentences or paragraphs was probably the right thing to do), though they're styled a bit differently on mobile, just to fit their surroundings better.
@@ -264,7 +276,9 @@ And here's the **GTMetrix** score:
 Incidentally, the 98% is because YSlow wants me to compress _everything_, but Netlify doesn't compress components that are already less than 1kb to begin with. So I'd be trying to bloat a component just to make a speed test happy in order to get that last two percent, ironically.
 
 <SideNote>
+
 It may seem like my home page isn’t a good benchmark, since it has virtually no content, and that’s definitely fair. However, note that Gridsome does some front-loading behind the scenes, pre-loading data for all the routes linked on the homepage, so that they can be rendered as quickly as possible once the user clicks one.
+
 </SideNote>
 
 ## What to watch out for when going headless
@@ -286,7 +300,9 @@ That gets things working; however, you'll probably want to make sure WordPress a
 Another DNS warning: **you _don't_ want to redirect any wp-\* path**. That includes `wp-admin` and `wp-login` (so you can still access the original WP site), as well as `wp-json` for the API, and `wp-content` to load any images and other assets that may still come from the original site. (At least, not unless you're planning on downloading all your images and serving them from the same relative path on the headless front end; I decided not to do that in my case, since I already get good image handling from [Jetpack](https://wordpress.org/plugins/jetpack/).)
 
 <SideNote>
+
 Ordinarily, WordPress handles creating responsive images for you with source sets; that’s another thing you’ll lose going headless. Gridsome and other SSGs can help make that up if you serve images from the headless front end, though.
+
 </SideNote>
 
 Which reminds me: keep in mind that you'll be changing things, DNS-wise, to go live with the headless front-end. Odds are, you'll have at least a few places in your headless site's configuration that will still be referencing the "live" URL, and you'll need to deftly handle that during the go-live process.
@@ -310,7 +326,9 @@ The images step is easily the most time-consuming part of this site's build (Gri
 ---
 
 <PullQuote>
+
 In the end, I had a lot of fun building this site, and I’m excited for it to be live in the world, and to continue smoothing out its rough&nbsp;edges.
+
 </PullQuote>
 
 Thanks for taking the time to read about my headless WordPress site. And by the way, [here's a link to the GitHub repo](https://github.com/josh-collinsworth/joco-gridsome), if you're the sort of person who enjoys checking out that sort of thing. (It's still a little bit of a mess.)

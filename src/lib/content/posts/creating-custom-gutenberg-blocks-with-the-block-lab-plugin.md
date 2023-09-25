@@ -3,10 +3,10 @@ title: 'How to Create Custom Editor Blocks with Block Lab'
 date: '2020-06-14'
 updated: '2020-07-02'
 categories:
-  - css
-  - design
-  - php
-  - wordpress
+  - 'css'
+  - 'design'
+  - 'php'
+  - 'wordpress'
 coverImage: 'block-lab-banner.png'
 coverWidth: 386
 coverHeight: 125
@@ -51,7 +51,9 @@ If you're familiar with WordPress shortcodes, think of custom blocks as the next
 Personally, I have a few custom blocks. One I really like—that I'll use for this example—is my "side note" block. It renders content like this on the front end of the site:
 
 <SideNote>
+
 This is just an example of the Side Note block! Nifty, eh.
+
 </SideNote>
 
 I find that block handy for expressing tangential thoughts and info in the middle of some content; it helps tell the reader that they can skip that part if they're not interested in extra details, while also adding some visual interest.
@@ -105,7 +107,9 @@ Once you've named your block, click the "**add field**" button to start adding s
 Fields are the things you actually fill in with your content when using the block. You could think of the field(s) as the variable part of the block; the part that the user adds each time the block is used.
 
 <SideNote>
+
 Theoretically, you could have a block without fields if it just looked and worked the same each time it was used—a divider or spacer block, for example—but generally, you’ll want at least one field to fill in with some content.
+
 </SideNote>
 
 Most of the time, I find just one field per block is what I want, but you can get creative do more than one. Either way, you have several options for field type. Let's get a quick overview of the main options:
@@ -143,7 +147,9 @@ Helpfully, Block Lab gives you a popup detailing your next step, which is: creat
 As you can see, Block Lab helpfully lets you know what to do next once you've published your block.
 
 <SideNote>
+
 Technically, your block is available to choose in the block editor at this point, but it won’t work right until you take the next step and add a template file.
+
 </SideNote>
 
 ### Create a template file for your custom block
@@ -160,7 +166,9 @@ Again, Block Lab lets you know exactly what you should name your template file a
 2. Create a file for your custom block, with the name that Block Lab gives you, inside that folder.
 
 <SideNote>
+
 Obviously, you’ll need to be able to access your site’s files in order to complete this step. That means either using FTP, or a plugin that gives you access to the file system from the WordPress admin.
+
 </SideNote>
 
 The naming convention is: `block-slug.php`, where `slug` becomes the actual "slug" field you used above when the block was created. In the case of the example "side note" block, the file that Block Lab will look for to render the block is `block-side-note.php`.
@@ -190,7 +198,9 @@ Obviously, a `div` doesn't do us much good on its own; we need to use some CSS t
 To do this, create a `blocks.css` file, also in the `blocks` folder in your active theme. Block Lab will automatically read this stylesheet and apply its styles on both the front and back end of the site.
 
 <SideNote>
-You could also have <a href="https://getblocklab.com/docs/get-started/style-block-lab-custom-blocks/" target="_blank" rel="noreferrer noopener">a separate CSS file for each block</a>, but unless a block gets pretty complex, I personally prefer just having all block styling together in one place.
+
+<p>You could also have <a href="https://getblocklab.com/docs/get-started/style-block-lab-custom-blocks/" target="_blank" rel="noreferrer noopener">a separate CSS file for each block</a>, but unless a block gets pretty complex, I personally prefer just having all block styling together in one place.</p>
+
 </SideNote>
 
 Here's the actual CSS code I use on this site to create that Side Note component, if you're interested or want to try this block out on your site:

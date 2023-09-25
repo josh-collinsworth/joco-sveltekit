@@ -3,9 +3,9 @@ title: 'My Essential Tools for WordPress Development'
 date: '2016-06-25'
 updated: '2020-06-14'
 categories:
-  - opinion
-  - web
-  - wordpress
+  - 'opinion'
+  - 'web'
+  - 'wordpress'
 coverImage: 'Screenshot-2016-06-24-20_45_21.png'
 coverWidth: 1381
 coverHeight: 609
@@ -24,7 +24,9 @@ Some of these apps, resources and tools aren't directly WordPress-related, or ev
 This is a list of the things that help me toward that goal. If you handed me a brand new MacBook and told me to get to work on building your WordPress site, everything on this list would most likely be in my dock, browser history and/or plugins list by the end of the day.
 
 <SideNote>
+
 This post hasn’t been updated for a while; Wunderlist isn’t a thing anymore, and neither is Spectacle (it’s a new app called Rectangle now, which honestly is better). Some of the pricing has changed; neither LastPass nor Chrome are my first choices in their category anymore; and in this moment at least, I’d definitely add Block Lab to the list. Still, I leave the post as-is both in the interest of not rewriting history, and because I still think the list is mostly helpful. You can check my /uses page for more.
+
 </SideNote>
 
 ![Dropbox Logo](/images/post_images/Dropbox.svg)

@@ -20,11 +20,15 @@ excerpt: 'The story of building Quina, a word game Progressive Web App built wit
 </script>
 
 <SideNote>
+
 About six months after I wrote this post, I published <a href="https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/">a longer, more technically in-depth version of this article on CSS Tricks</a>.
+
 </SideNote>
 
 <SideNote>
+
 …And about a year and a half later, I released Quina v2. Lots of the things in both this post and the CSS Tricks article are outdated now (especially the screenshots) but the underlying technical information is still accurate.
+
 </SideNote>
 
 One of my favorite code hobbies is making games on [CodePen](https://codepen.io). I've got a handful I've created in the online sandbox code editor over the years—[Connect Four](https://codepen.io/collinsworth/pen/MWwXpLd), [Color Flood](https://codepen.io/collinsworth/pen/Pymdxo), [Hangman](https://codepen.io/collinsworth/pen/oNbavJN) and [sliding puzzles](https://codepen.io/collinsworth/pen/XwPXrM), to name a few—but I've wanted to build a legit, standalone app for a long time now.
@@ -75,7 +79,9 @@ You could also just play the game _on_ the website, in your browser, if you want
 Beyond the core word game, Quina has a number of features to hopefully keep it entertaining and engaging for a good, long while.
 
 <SideNote>
+
 The images below are from the Google Play Store app listing, so they’re a bit more marketing-y than I’d normally choose. Sorry.
+
 </SideNote>
 
 - Quina offers three different word sets to help players find the right challenge level: **Basic**, **Tricky**, and **Random**. All told, there are about 1,200 code words between the three.
@@ -105,7 +111,9 @@ Progressive Web Apps are essentially websites, but with some extra features that
 There's a lot more detail in the link above, but the main features of a PWA include: the ability to actually _install_ the website/web app on your device and launch it fullscreen, just like an ordinary native app; to run offline (thanks to JavaScript service workers); and access to device functionality like push notifications and vibration, via modern browser enhancements.
 
 <SideNote>
+
 If you’ve ever visited a website and been prompted to add it to your home screen, that website was probably a progressive web app.
+
 </SideNote>
 
 You can build a PWA with anything you might use to build a website; plain ol' HTML, CSS and JavaScript will work just fine, and you definitely don't _need_ to use a framework (let alone one as robust as Nuxt). As I considered the options, however, it became clear that Nuxt was my #1 choice, and one I've never regretted.
@@ -135,7 +143,9 @@ For example: actually getting all the features of a PWA up and running on your o
 The game actually runs as a static site, however (albeit with a healthy dose of JavaScript); Nuxt can either build out your finished product to run on a Node server, or as a statically generated site. I chose the latter, since there isn't really anything I need done server-side (thanks mainly to the fact that all of Quina's data is saved in local storage, rather than in a database).
 
 <SideNote>
+
 I did have a version of Quina working with Firebase authentication and Firestore for permanent accounts and data storage, but I abandoned that when security became too difficult and I realized it was overkill for what I was trying to do.
+
 </SideNote>
 
 ![The Quina home screen](/images/post_images/01-Google-Pixel-4-Front-879x1024.jpg)
@@ -206,7 +216,9 @@ This was the most challenging part, honestly. Google Play offers a feature where
 So regardless of what you do here, you'll need to jump through some hoops. (I wound up using `keytool` to generate a key and used that, because I'd already taken that approach in a failed tutorial.)
 
 <SideNote>
+
 If the key hosted on your site doesn’t match the key in your Play Store app, the app will still work, but it will just function like an ordinary browser window, rather than looking like a native app.
+
 </SideNote>
 
 The other really tricky part was that both Google and Bubblewrap ask you for an app name in a format like `app.builder.build`. It was frustratingly impossible to figure out what was _expected_ to provide in that format—some I saw started with `app`, others with `com`; some had three parts, others two. It seemed like there must be some proper protocol to follow here, and I didn't know what it was.
@@ -214,7 +226,9 @@ The other really tricky part was that both Google and Bubblewrap ask you for an 
 Turns out, there's no real rule that I can find here, other than: make it unique. The format is apparently a Java convention. (Android apps are often built with Java, it would seem.) Typically, it appears most apps are named such as `tld.developerName.appName`, but again, the only real important thing is uniqueness.
 
 <SideNote>
+
 By default, Bubblewrap validates that your live web app meets all PWA criteria. Quina was failing the offline test for some reason even though I knew it was valid, but helpfully, there is a flag to skip the check.
+
 </SideNote>
 
 ### The Google Play Store (is awful to use)
