@@ -300,4 +300,4 @@ We're both just observing the same truths from different points of view.
 
 We're both wrong. We're both right.
 
-It just depends where we intend to go on the course.
+It just depends how we intend to navigate the course.
