@@ -208,13 +208,13 @@ Crafters may be building holistic products and projects, just like Builders. But
 
 Because of their skills with (or willingness to be challenged by) CSS, Crafters often see Tailwind as a blunt instrument that dampens their abilities. At worst, Tailwind locks off the best parts of both CSS and of their jobs. (Tailwind can't keep up with new CSS features, and even where it can, it can't implement everything or do everything that CSS can.) At best, it represents a hefty learning curve, just to get back to where they already are.
 
-Speed isn't an issue for Crafters—or at least, not a priority; they are more concerned with the handiwork of their product. Styling is exactly where they want to be, because they value doing the work uniquely well over doing it well enough. They see their work as central and defining to the product, and not just a detail of it.
+Speed isn't an issue for Crafters—or at least, not a priority; they are more concerned with the handiwork of their product. Styling is exactly where they want to be, because they value doing the work uniquely well over doing it well enough. Again, they see this work as central and defining to the product, and not just a detail of it.
 
 ### Builders and Crafters
 
 As [Jeremy Keith put it so well](https://adactio.com/journal/18982): where it comes to styling, Builders want imperative programming; they want to specify what they want, where they want, how they want it. No surprises.
 
-Crafters want declarative programming; they understand how to wield the power of creating a living, breathing system, and wish to use that power, rather than [micromanaging the browser](https://buildexcellentwebsit.es/).
+Crafters want declarative programming; they understand how to wield the power of creating a complex system, and wish to use that power, rather than [micromanaging the browser](https://buildexcellentwebsit.es/).
 
 Both Builders and Crafters have fully valid points of view. And in fairness, as I implied earlier, there exists a rich gradient of options between the two. You can balance workmanship and craftsmanship. You can use Tailwind only as much as you choose, and opt to reach for hand-authored CSS the rest of the time.
 
