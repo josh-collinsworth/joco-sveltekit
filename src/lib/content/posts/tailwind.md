@@ -10,8 +10,7 @@ categories:
 coverImage: tailwind.png
 coverWidth: 1920
 coverHeight: 1080
-excerpt: It's popular to say we can’t agree on Tailwind, but I posit we actually already do. I think what we actually disagree on isn’t the details of this (or any) specific software; it's how we define assets and liabilities.
-draft: true
+excerpt: It's popular to say we can’t agree on Tailwind, but I posit we actually already do. I think what we actually disagree on isn’t the details of this (or any) specific software; it's in what we value, and how we each define assets and liabilities.
 ---
 
 <script>
@@ -159,11 +158,11 @@ If you would make this argument, I would firmly dissent. But I would also agree 
 
 <CalloutPlusQuote>
 
-You likely don't work in the areas where the tradeoffs are, so they might seem like they don't exist to you.
+You likely don't work in the areas where the tradeoffs are, so they might seem like they don't exist to&nbsp;you.
 
 </CalloutPlusQuote>
 
-Boring and lazily centrist as it may sound: I think we have to agree that Tailwind and vanilla CSS are both unique sets of tradeoffs. Whether we consider one better than the other will depend very much on where we spend our time, what we value, and what we consider to be _the point_ of all of this.
+Boring and lazily centrist as it may sound: I think we have to agree that Tailwind and vanilla CSS are both unique sets of tradeoffs. Whether we consider one better than the other will depend very much on where we spend our time, what we value, and what we ultimately consider to be _the point_ of all of this.
 
 Let's be fair: CSS _does_ have myriad complexities and pitfalls, and Tailwind admittedly smooths out many of those rough edges, in various ways.
 
@@ -171,15 +170,13 @@ But CSS is _also_ an incredibly powerful programming language, which Tailwind di
 
 The only _invalid_ point of view is that you can have all benefits and no downsides. It just doesn't work that way.
 
-It all depends.
-
-It all _always_ depends.
+_It all depends™._
 
 ## The divide: where do you want to be?
 
 So if what we actually disagree on is what we value, that naturally begs the question: where does this divide begin?
 
-To me, the gap between Tailwind supporters and critics comes down to what part of the job they enjoy, and would prefer to _focus on_; and what part, by contrast, they just want to _get through_.
+To me, the gap between Tailwind supporters and critics comes down to what part of the job they consider to be the most important, or perhaps, which part they simply prefer to focus on.
 
 Because continuing to come up with synonyms for supporters and detractors is tedious, for the sake of this section, I propose we give the opposing groups names. These names will, in themselves, be coarse generalizations, which means they will have obvious outliers and glaring contradictions. But for the sake of a model that is hopefully useful despite its flaws:
 
@@ -193,21 +190,21 @@ This isn't to say that Crafters don't build things, or that the Builders aren't 
 
 ### Builders
 
-Builders clearly value getting the work done as quickly and efficiently as possible. They are making something—likely something with parts beyond the frontend—and they want to see that thing through to completion.
+Builders clearly value getting the work done as quickly and efficiently as possible. They are making something—likely something with parts beyond the frontend—and they are eager to see that thing through to completion.
 
 Builders tend to tout Tailwind as the thing that got rid of the hard parts of CSS, after all. They like that Tailwind makes the work easy and fast.
 
-That, in turn, strongly implies Builders value getting through this particular part of their work as quickly and easily as possible. (We all value efficient productivity, of course. But _where_ you value it says something about your priorities.)
+That, in turn, strongly implies Builders value getting through this particular part of their work as quickly and easily as possible. (We all value efficient productivity, of course. But _where_ you value it may implicitly say something about your priorities.)
 
-This also implies one or both of the following: either a) that this work was challenging for them before; and/or b) that this is not the part of their job they wish to be challenged in. They likely don't shy away from challenge; they simply prefer it in different form.
+This also implies one or both of the following: either a) that they found this work overly challenging before; and/or b) that this is not the part of their job they wish to be challenged in. They likely don't shy away from challenge, mind you; they may simply prefer it in different form.
 
-There are exceptions, of course, but as a group: Builders tend to be people who've spent their careers, if not in other parts of the stack, then at least in other areas of frontend. That is: for most Builders (though not all), CSS is not a specialty—or at any rate, not a priority. Many people who like Tailwind are also very good at CSS, but those people tend to be bringing a more balanced approach, where they use Tailwind for the broad strokes of utility classes, and heavily customize the config file and/or write their own CSS to fill in the gaps.
+Again: exceptions and outliers will be plentiful, of course. But as a group: Builders tend to be people who've spent their careers, if not in other parts of the stack, then at least in other areas of frontend. That is: for most Builders (though not all), CSS is not a specialty—or at any rate, not a priority. Many people who like Tailwind are also very good at CSS, but those Builders tend to be bringing a more balanced approach, where they use Tailwind for the broad strokes of utility classes, and heavily customize the config file and/or write their own CSS to fill in the gaps.
 
 ### Crafters
 
 On the other side, the Crafters tend to be seasoned CSS specialists, and almost always enjoy the part of the work that Tailwind is supposed to make easier. It's fair to say they've overcome the challenge presented by CSS—or, at least, that this is where they _like_ to be challenged.
 
-Crafters may be building holistic products and projects, just like Builders. But Crafters generally are less focused on _getting through_ the frontend as a _part_ of that work, and instead see the frontend as a the product itself.
+Crafters may be building holistic products and projects, just like Builders. But Crafters generally are less focused on _getting through_ the frontend as a _part_ of that work, and instead see the frontend as _the product itself_.
 
 Because of their skills with (or willingness to be challenged by) CSS, Crafters often see Tailwind as a blunt instrument that dampens their abilities. At worst, Tailwind locks off the best parts of both CSS and of their jobs. (Tailwind can't keep up with new CSS features, and even where it can, it can't implement everything or do everything that CSS can.) At best, it represents a hefty learning curve, just to get back to where they already are.
 
@@ -235,7 +232,7 @@ In my view, the more you optimize for building quickly, the more you optimize fo
 
 I acknowledge that Tailwind might be a great solution, if its downsides are not issues for you. If it solves your problems, by all means, disregard my qualms as the ramblings of an old man yelling at a Tailwind-shaped cloud. It's only a tool, after all. It shouldn't be something we have to agree on if we're not working together, let alone a pillar of anyone's identity.
 
-But to me, Tailwind _is_ a problem in and of itself. The tradeoffs may be a net benefit for your use cases, and if so, that's great. I've tested Tailwind pretty thoroughly, however, and I've concluded that it is _not_ a net positive in my case.
+But to me, Tailwind _is_ a problem in and of itself. The tradeoffs may be a net benefit for your use cases, and if so, that's great. I've tested Tailwind pretty thoroughly, however, and I've concluded that it is _not_ a net positive in my case. I don't mind working with it on a team (it _is_ useful as a unifying system, after all), but at the very least, I request the freedom to break out of it at my discretion as needed and as it's useful.
 
 I do not care how fast I build, or how easily I prototype, so much as I care that I am building something uniquely good, and building it the right way.
 
