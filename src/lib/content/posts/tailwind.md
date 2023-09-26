@@ -1,7 +1,7 @@
 ---
 title: Classic rock, Mario Kart, and why we can't agree on Tailwind
-date: 2023-09-25
-updated: 2023-09-25
+date: 2023-09-26
+updated: 2023-09-26
 categories:
   - css
   - personal
