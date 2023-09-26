@@ -39,17 +39,17 @@ I knew we looked at the same things in opposite ways. But I had never realized b
 
 ## Why we can't agree on Tailwind
 
-Tailwind is nearly as ubiquitous as it is polarizing these days. (I trust if you've been interested enough to read this far, I don't need to cite any sources on that score.)
+Tailwind is nearly as ubiquitous as it is polarizing these days. (I trust if you've been interested enough to read this far, I don't need to cite any sources there.)
 
-Proponents show a near cult-like devotion to Tailwind, some even going so far as to claim it's "fixed" CSS—or at the very least, made it manageable and predictable in a way it wasn't for them before. Most frontend frameworks and products feature a first-class Tailwind integration, due to its popularity.
+Proponents show a near cult-like devotion to Tailwind, some even going so far as to claim it's "fixed" CSS—or at the very least, made it manageable and predictable in a way it wasn't for them before. Most frontend frameworks and products feature a first-class Tailwind integration, due to its soaring popularity.
 
-Detractors, on the other hand, claim Tailwind is messy; it gets in the way; it violates core fundamentals of web development; it diminishes the power of CSS; and/or that it does the _opposite_ of what it's supposed to, adding complexity and making projects even _harder_ to maintain.
+Detractors, on the other hand, claim Tailwind is messy; it gets in the way; it violates core fundamentals of web development; it cuts against the grain; it diminishes the power of CSS; and/or that it does the _opposite_ of what it's supposed to, adding complexity and making projects even _harder_ to maintain.
 
 Many who use Tailwind never want to go back; many who _don't_ never want to.
 
 How could we possibly disagree so sharply?
 
-After using Tailwind for the last year—both professionally and on a few small personal projects—I've come to what might just be the most unpopular opinion of all, in regards to that question:
+After using Tailwind for a good while now—both professionally and on a few small personal projects—I've come to what might just be the most unpopular opinion of all, in regards to that question:
 
 **Both sides are right.**
 
@@ -59,7 +59,7 @@ We won't ever get anywhere debating the merits or flaws of Tailwind, for the sam
 
 <CalloutPlusQuote>
 
-We could've dissected Billy Joel and Sufjan Stevens all we wanted. But it didn't matter, because our disagreement ultimately started before either one of us ever pressed the play button.
+We could've dissected Billy Joel and Sufjan Stevens all we wanted. But it didn't matter, because our disagreement ultimately started before either one of us ever pressed the play&nbsp;button.
 
 </CalloutPlusQuote>
 
@@ -67,9 +67,7 @@ It turns out, he and I actually saw every artist and album in pretty much exactl
 
 We just never agreed on what was a feature, and what was a bug.
 
-Likewise, I suspect most people on opposing sides of the Tailwind debate actually see Tailwind quite similarly.
-
-Our contention isn't with Tailwind; it's with the valuations we made long before we ever chose our tools. Where one of us sees a selling point, the other sees a flaw.
+Likewise, I suspect most people on opposing sides of the Tailwind debate actually complete agree on Tailwind itself. I don't think we disagree on atomic CSS, or utility classes; I think our contention comes from the valuations we made long before we ever chose our tools. Where one of us sees a selling point, the other sees a flaw.
 
 Tailwind _is_ great.
 
@@ -99,7 +97,7 @@ Plus, as a balancing feature, the game's strongest speed boosts are disabled for
 
 <CalloutPlusQuote>
 
-The better you are, the more a feature designed to augment your skills instead begins to inhibit them. But whether it makes you better or worse--and to what degree--will depend entirely on where you're coming from.
+The better you are, the more this feature designed to augment your skills instead begins to inhibit them. But whether it makes you better or worse--and to what degree--will depend entirely on where you're coming from.
 
 </CalloutPlusQuote>
 
@@ -131,77 +129,75 @@ That's why any conversation I have with somebody who likes Tailwind will probabl
 
 I realize I might sound rather arrogant in choosing this comparison. Mario Kart is a racing game, after all, which might seem to imply that I think of myself as a winner, and people who don't do things my way as inferior.
 
-That's not at all my intent; I only mean to point out that if Tailwind is your thing, it's probably because we're coming from different places and value different things.
-
-Whether Tailwind helps you do the things you want to do, or whether you (like me) feel that it just grabs the steering wheel away from you, that doesn't inherently mean anything good, or bad, about either one of us. It just means we like to play the game differently.
+That's not at all my intent; I only mean to point out that if Tailwind is your thing, it's probably because we're coming from different places, value different things, and ultimately, like to play the game differently. Web development isn't a race; we're all just trying to finish in whatever way works best for us. Tailwind just isn't a vehicle that works well for me.
 
 </SideNote>
 
 ## There are no benefits without tradeoffs
 
-For the most part, it's perfectly fine if we see the same thing in two different, even opposite ways. However, there's one universal truth I think it's important we agree on as common ground, namely: _benefits always come with tradeoffs_.
+For the most part, it's perfectly fine if we see the same thing in two different, even opposite ways. However, there's one universal truth I think it's important we agree on as common ground, namely: _benefits always come with tradeoffs_ (and vice versa).
+
+When it comes to frameworks, at least (CSS or otherwise), any place things seem simpler, we're actually just experiencing the _upside_ of some architectural decision. That decision, whatever it was, has downsides elsewhere; some other part of the chain, further away from our view, is now also _more_ complex or difficult than it used to be.
+
+Don't get me wrong; that's still usually a good thing. The new set of tradeoffs is often preferable to the old set; we wouldn't use frameworks if that weren't the case.
 
 <CalloutPlusQuote>
 
-That is: complexity always exists, even if it's remanded to a place you don't regularly experience it.
+But complexity always exists, even if it's remanded to a place you don't regularly experience&nbsp;it.
 
 </CalloutPlusQuote>
 
-When things seem to get better and simpler, we're actually just experiencing the _upside_ of some architectural decision. That decision, whatever it was, has downsides elsewhere; some other part of the chain, further away from our view, is now also more complex than it used to be.
+Problems in tech don't _vanish_; they simply get reconfigured into new shapes with new .
 
-Don't get me wrong; that's still usually a good thing. The new set of tradeoffs is often preferable to the old set (though not always). If we cleaned up a small mess in the living room by making a bigger mess in the bedroom, we might still consider that a net win.
-
-Regardless, though: we should be incredibly skeptical of any product that claims it's eliminated the complexity—destroyed it, removed it, turned it into nothing—without acknowledging it had to go _somewhere_, and that other drawbacks were created by shifting it to that new location.
-
-Problems in tech don't _vanish_; they simply _move_.
-
-An example from the world of frontend might be: our build tools. Before the likes of Vite and Webpack (and before them, Grunt, Gulp, Browserify, and others), coercing our frontend code into a minimal bundle that worked cross-browser and -device was a painstaking task we dealt with on a regular basis.
-
-Now, however, we've _moved_ that complexity into a little Pandora's box called `node_modules`. Most of us probably don't even think of the complexity day-to-day. But it's still very much there—only now, when something goes wrong, it goes _extremely_ wrong, as an inscrutable failure somewhere in the opaque toolchain can render our project inoperable for hours or possibly even days at a time.
-
-<CalloutPlusQuote>
-
-The problem never really dies; we just keep pushing its severity and frequency in opposite directions.
-
-</CalloutPlusQuote>
+So we should be incredibly skeptical of any framework (any _product_, really) that claims to have eliminated complexity—destroyed it, turned it into nothing—without being honest about the downsides that come along with .
 
 Ok, fine. Why is this all important?
 
 Because Tailwind is often marketed (and spoken of by many of its proponents) as a framework that's achieved this impossible task of obliterating CSS's complexity from existence.
 
-If you would make this argument, I would firmly dissent. But I would also think you're probably right _in your case_. You likely don't work in the areas where the tradeoffs are, so they seem like they don't exist to you.
-
-You never go into the basement—or at the very least, don't see the mess down there as a problem. As long as the living room is clean, that's all you care about.
+If you would make this argument, I would firmly dissent. But I would also think you're probably right _in your case_. You likely don't work in the areas where the tradeoffs are, so they might seem like they don't exist to you.
 
 Boring and lazily centrist as it may sound: I think we have to agree that Tailwind and vanilla CSS are both unique sets of tradeoffs. Whether we consider one better than the other will depend very much on where we spend our time, and what we consider to be _the point_ of all of this.
 
-CSS _does_ have myriad complexities and pitfalls, and Tailwind admittedly smooths out many of those rough edges.
+Let's be fair: CSS _does_ have myriad complexities and pitfalls, and Tailwind admittedly smooths out many of those rough edges, in various ways.
 
-But CSS is _also_ an incredibly powerful programming language, which Tailwind diminishes, creating messes of its own.
+But CSS is _also_ an incredibly powerful programming language, which Tailwind diminishes, creating liabilities of its own along the way.
 
-The only _invalid_ point of view is that you can have all benefits and no downsides.
+The only _invalid_ point of view is that you can have all benefits and no downsides. It just doesn't work that way.
 
 It all depends.
 
 It all _always_ depends.
 
-## Assembly lines and artisans
+## Where do you want to be?
 
-I suspect that perhaps the main thing that separates pro-Tailwind folks from pro-CSS folks, as a broad and coarse generalization, is what part of building interfaces they enjoy.
+<Note>
 
-If you're a hardcore Tailwind fan, you might see it as the thing that finally got rid of the hard parts of CSS, curbed the complexity, and made styling manageable for you. It made you _fast_, and I'd guess you probably like fast, because you're just trying to get through this part in decent shape so you can get on with the other parts of the job that you like better and/or are better at.
+Heads up: this section will be full of broad, coarse generalizations, and anecdotes. You've been warned.
 
-On the other side, if you're a seasoned frontend dev with a strong mastery of CSS, you may see Tailwind as a clumsy, blunt instrument that dismantled the best parts of CSS, diluted it, and muzzled your abilities with it. I suspect if you're in this camp, speed wasn't an issue for you (or at least, not a priority); you were more concerned with the craftsmanship of your product.
+</Note>
 
-Both of those are fully valid points of view. And, in fairness, there exists a rich gradient of options between the two. You can use Tailwind only as much as you choose, and opt to reach for hand-authored CSS the rest of the time. The question is really just what you value, and where you want to spend your time.
+The divide I tend to notice between Tailwind fans and critics hinges on what part of the job they enjoy, and would prefer to focus on.
+
+Tailwind enthusiasts tend to tout it as the thing that got rid of the hard parts of CSS. It makes the work easy and fast, and they generally like that. There seem to be other parts of development they'd rather focus on.
+
+Conversely, the people who aren't fans of Tailwind, in my (purely subjective) experience, tend to be seasoned veterans of frontend development, and almost always enjoy the part of the work that Tailwind is supposed to make easier. These folks generally aren't concerned with speed; they're more concerned with the craftsmanship of their product. They're already where they want to be.
+
+The thing I'd like to point out is: a person who is excited to complete their work as quickly and easily as possible is probably not somebody who _enjoys_ the work they do, or takes particular pride in it.
+
+Sure, we all just want to get things done. No shade for that. But if you're a person who's saying "wow, food was always so hard for me before I bought my microwave, and now it's so easy," I _might_ think that microwave is pretty great. But I'll _definitely_ think you're probably not the person I want in the kitchen.
+
+They often see Tailwind as a clumsy, blunt instrument that, at best, dampens their abilities, and at worst, locks off the best parts of both CSS and of their jobs. Speed isn't an issue for these folks (or at least, not a priority); they are more concerned with the craftsmanship of their product. Styling is exactly where they want to be.
+
+Both of those are fully valid points of view. And, in fairness, there exists a rich gradient of options between the two. You can balance speed and craft. You can use Tailwind only as much as you choose, and opt to reach for hand-authored CSS the rest of the time. The question is really just what you value, and where you want to spend your time.
 
 <CalloutPlusQuote>
 
-To a certain extent, the more you optimize for building quickly and easily, the more you're probably just making the same thing everybody else is.
+The more you optimize for building quickly and easily, the more you're probably just making the same thing everybody else&nbsp;is.
 
 </CalloutPlusQuote>
 
-I acknowledge that Tailwind might be a great solution, if that's not an issue for you. If it solves your problems, by all means, disregard my qualms as the ramblings of a bitter old man. It's only a tool, after all. It shouldn't be something we have to agree on if we're not working together, let alone a pillar of anyone's identity.
+I acknowledge that Tailwind might be a great solution, if that's not an issue for you. If it solves your problems, by all means, disregard my qualms as the ramblings of an old man yelling at a Tailwind-shaped cloud. It's only a tool, after all. It shouldn't be something we have to agree on if we're not working together, let alone a pillar of anyone's identity.
 
 But to me, Tailwind _is_ a problem in and of itself. The tradeoffs may be a net benefit for your use cases, and if so, that's great. I've tested Tailwind pretty thoroughly, however, and I've concluded that it is _not_ a net positive in my case.
 
