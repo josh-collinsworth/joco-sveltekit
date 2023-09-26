@@ -214,7 +214,7 @@ Speed isn't an issue for Crafters—or at least, not a priority; they are more c
 
 As [Jeremy Keith put it so well](https://adactio.com/journal/18982): where it comes to styling, Builders want imperative programming; they want to specify what they want, where they want, how they want it. No surprises.
 
-Crafters instead want declarative programming; they understand how to wield the power of creating rules of governance within complex system, and wish to use that power, rather than [micromanaging the browser](https://buildexcellentwebsit.es/).
+Crafters instead want declarative programming; they understand how to wield the power of creating rules of governance within a complex system, and wish to use that power, rather than [micromanaging the browser](https://buildexcellentwebsit.es/).
 
 Both Builders and Crafters have fully valid points of view. And in fairness, as I implied earlier, there exists a rich gradient of options between the two. You can balance workmanship and craftsmanship. You can use Tailwind only as much as you choose, and opt to reach for hand-authored CSS the rest of the time.
 
