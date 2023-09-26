@@ -252,7 +252,7 @@ Clearly, there was a sharp lack of representation in the room when that decision
 
 We, the frontend team, tried reasoning with the more senior and more backend-focused developers in charge of this tooling decision; tried to explain why an all-Tailwind, no-CSS approach was not just crippling our ability to execute on our designers' creations, but forcing us into questionable architecture choices as well. (Custom components proliferated out of control, to the point that it almost didn't make sense to have components at all.)
 
-We also explained how this change was having adverse effect, both on the workers and the work. By putting our best tools just out of reach, we were forced to put more effort into crude workarounds, just to achieve mediocre results.
+We also explained how this change was having adverse effects, both on the workers and the work. By putting our best tools just out of reach, we were forced to put more effort into crude workarounds, just to achieve mediocre results.
 
 We weren't happy, and neither were the designers whose work we were implementing. (_Try explaining to a designer that what they want would be not only possible, but relatively trivial, if you weren't locked into a Tailwind-only world._)
 
@@ -272,7 +272,7 @@ They couldn't fathom the downsides.
 
 In the months that followed, many of my colleagues transferred to other teams in other areas of the company. Some (like me) left entirely. That admittedly wasn't my main reason, and I suspect it wasn't anyone else's either. But still: being creatively stifled by people who don't try to understand your problems and don't really trust that you even know what you're talking about to begin with…well, it has a way of sticking with you.
 
-I think often about what I could have said in those conversations; what might have made those more senior developers in charge of our projects realize the lose-lose situation they'd put us into; made them realize that where they saw a shining sunrise of pure upside, we saw long, dark shadows of disadvantages.
+I think often about what I could have said in those conversations; what might have made those more senior developers in charge of our projects understand the lose-lose situation they'd put us into; made them realize that where they saw a shining sunrise of pure upside, we saw long, dark shadows of disadvantages.
 
 I don't know if I could have. But since I've spent so much of this post talking about upsides and downsides, and how one person's bug is another person's feature, let's close on that.
 
@@ -282,9 +282,9 @@ Where you might see a helpful copilot who keeps you on the track, I see a meddle
 
 Where Tailwind ostensibly saves you from context switching, it keeps me away from the places where I do my best work.
 
-Where you see a tool that helps you get through a part of the job you either aren't good at or just don't enjoy, I see a missed opportunity for us to collaborate and put _both_ our skillsets to optimal use. (I also see a cheapening of what I do; _your_ code is considered important; _mine_ is just something to be plowed through and done well enough to move on.)
+Where you see a tool that helps you get through a part of the job you either aren't best at or just don't enjoy, I see a missed opportunity for us to collaborate and put _both_ our skillsets to optimal use. (I also see a cheapening of what I do; _your_ code is considered important; _mine_ is just something to be plowed through and done well enough to move on.)
 
-Where you see a solved problem, I see tech debt that simply hasn't come due yet; where you saw how easily and quickly they could write something the _first_ time, I know from painful experience how difficult it will make future refactors and rewrites.
+Where you see a solved problem, I see tech debt that simply hasn't come due yet; where you saw how easily and quickly you could write something the _first_ time, I know from painful experience how difficult it will make future refactors and rewrites.
 
 Where you see a tool that finally makes you free, I see a lock-in mechanism that will be incredibly harrowing to undo.
 
