@@ -190,11 +190,11 @@ This isn't to say that Crafters don't build things, or that the Builders aren't 
 
 ### Builders
 
-Builders clearly value getting the work done as quickly and efficiently as possible. They are making something—likely something with parts beyond the frontend—and are eager to see it through to completion. This means Builders may focus more on completion than on maintainability.
+Builders value getting the work done as quickly and efficiently as possible. They are making something—likely something with parts beyond the frontend—and are often eager to see it through to completion. This means Builders may prize that initial execution over other long-term factors.
 
 Builders tend to tout Tailwind as the saving grace that got rid of the hard parts of CSS. They like that Tailwind makes the work tidy and fast.
 
-That, in turn, strongly implies Builders value getting through this particular part of their work as quickly and easily as possible. (We all value efficient productivity, of course. But _where_ you value it may implicitly say something about your priorities.)
+That, in turn, strongly implies Builders value getting through this particular part of their work as quickly and easily as possible. (We all value efficiency, of course. But _where_ you value it may implicitly say something about your priorities.)
 
 This also implies one or both of the following: either a) that they found this work overly challenging before; and/or b) that this is not the part of their job they wish to be challenged in. They likely don't shy away from challenge; they probably just prefer it in a different form.
 
@@ -204,13 +204,13 @@ Again: exceptions and outliers will be plentiful, of course. But: as a group, Bu
 
 On the other side, the Crafters tend to be seasoned CSS specialists, and almost always enjoy the part of the work that Tailwind is supposed to make easier. It's fair to say they've overcome the challenge presented by CSS—or, at least, that this is where they _like_ to be challenged.
 
-Crafters may be building holistic products and projects, just like Builders. But Crafters generally are less focused on _getting through_ the frontend as a _part_ of that work, and instead see the frontend as _the product itself_.
+Crafters may be building holistic products and projects, just like Builders. But Crafters generally are less focused on _getting through_ the frontend as a _part_ of that work, and instead see the frontend as _the product itself_. They also tend to have views beyond the initial completion of the project.
 
 Because of their skills with (or willingness to be challenged by) CSS, Crafters often see Tailwind as a blunt instrument that dampens their abilities. At worst, Tailwind locks off the best parts of both CSS and of their jobs. (Tailwind can't keep up with new CSS features, and even where it can, it can't implement everything or do everything that CSS can.) At best, it represents a hefty learning curve, just to get back to where they already are.
 
 Speed isn't an issue for Crafters—or at least, not a priority; they are more concerned with the handiwork of their product. Styling is exactly where they want to be, because they value doing the work uniquely well over doing it well enough. Again, they see this work as central and defining to the product, and not just a detail of it.
 
-Crafters may often value details like maintainability, legibility, and accessibility above deadlines and swift project completion.
+Crafters are more likely to value long-term factors like ease of maintainability, legibility, and accessibility, and may not consider the project finished until those have also been accounted for.
 
 ### Builders and Crafters
 
