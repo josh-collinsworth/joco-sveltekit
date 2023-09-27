@@ -8,7 +8,7 @@ pre {
 	padding: 1.5em;
 	margin: var(--halfNote) auto;
 	color: var(--white);
-	font-size: .8rem;
+	font-size: 0.8rem;
 	overflow: auto;
 	line-height: 1.5;
 	width: 100%;
@@ -47,39 +47,39 @@ code,
 pre {
 	font-family: var(--codeFont);
 
-	&[class*="language-"] {
+	&[class*='language-'] {
 		color: #f8f8f2;
 		background: none;
 		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 		font-family: var(--codeFont);
 		font-display: swap;
-		font-size: .75rem;
+		font-size: 0.75rem;
 		text-align: left;
 		white-space: pre;
 		word-spacing: normal;
 		word-break: normal;
 		word-wrap: normal;
 		line-height: 1.5;
- 
-		-moz-tab-size: 4;
-		-o-tab-size: 4;
-		tab-size: 4;
- 
+
+		-moz-tab-size: 2;
+		-o-tab-size: 2;
+		tab-size: 2;
+
 		-webkit-hyphens: none;
 		-moz-hyphens: none;
 		-ms-hyphens: none;
 		hyphens: none;
 	}
 }
- 
+
 /* Code blocks */
-pre[class*="language-"] {
-	padding: var(--halfNote) var(--eighthNote) var(--eighthNote) ;
+pre[class*='language-'] {
+	padding: var(--halfNote) var(--eighthNote) var(--eighthNote);
 	margin: var(--halfNote) 0;
 	overflow: auto;
 	position: relative;
 	width: 100%;
- 
+
 	&::before {
 		content: 'Code';
 		top: 0;
@@ -102,27 +102,27 @@ pre.language-undefined {
 		display: none;
 	}
 }
- 
+
 pre.language-bash:before {
 	content: 'Terminal';
 }
 
 pre.language-fs:before {
-	content: 'Project files'
+	content: 'Project files';
 }
- 
+
 pre.language-css:before {
 	content: 'CSS';
 }
- 
+
 pre.language-php:before {
 	content: 'PHP';
 }
- 
+
 pre.language-markdown:before {
 	content: 'Markdown';
 }
- 
+
 pre.language-html:before {
 	content: 'HTML';
 }
@@ -138,47 +138,46 @@ pre.language-svelte:before {
 pre.language-jsx:before {
 	content: 'React';
 }
- 
+
 pre.language-js:before,
 pre.language-javascript:before {
 	content: 'JavaScript';
 }
- 
+
 :not(pre) > code,
 pre {
-	&[class*="language-"] {
+	&[class*='language-'] {
 		background: $background;
 	}
 }
- 
+
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+:not(pre) > code[class*='language-'] {
+	padding: 0.1em;
+	border-radius: 0.3em;
 	white-space: normal;
 }
- 
+
 .token {
- 
 	&.comment,
 	&.prolog,
 	&.doctype,
 	&.cdata {
-		color: #7970A9;
+		color: #7970a9;
 	}
 
 	&.parameter {
-		color: #FFC97C;
+		color: #ffc97c;
 	}
- 
+
 	&.punctuation {
 		color: #f2f2f2;
 	}
- 
+
 	&.namespace {
-		opacity: .8;
+		opacity: 0.8;
 	}
- 
+
 	&.property,
 	&.tag,
 	&.constant,
@@ -186,44 +185,44 @@ pre {
 	&.deleted {
 		color: #ff80bf;
 	}
- 
+
 	&.boolean,
 	&.number {
 		color: #9580ff;
 	}
- 
+
 	&.selector,
 	&.attr-name,
 	&.string,
 	&.char,
 	&.builtin,
 	&.inserted {
-		color: #FFFF80;
+		color: #ffff80;
 	}
- 
+
 	&.operator,
 	&.entity,
 	&.url,
 	&.variable {
 		color: #ff80bf;
 	}
- 
+
 	&.atrule,
 	&.attr-value,
 	&.function,
 	&.class-name {
-		color: #8AFF80;
+		color: #8aff80;
 	}
- 
+
 	&.keyword {
 		color: #ff80bf;
 	}
- 
+
 	&.regex,
 	&.important {
 		color: #fc9867;
 	}
- 
+
 	&.important,
 	&.bold {
 		font-weight: bold;
@@ -231,12 +230,12 @@ pre {
 	&.italic {
 		font-style: italic;
 	}
- 
+
 	&.entity {
 		cursor: help;
 	}
 }
- 
+
 .language-css .token.string,
 .style .token.string,
 .token.variable {

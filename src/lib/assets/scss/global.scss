@@ -7,13 +7,15 @@
 @use './code';
 @use './print';
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 	font-family: inherit;
 }
 
 *:focus,
-input[type="checkbox"]:focus + label {
+input[type='checkbox']:focus + label {
 	outline: 2px solid var(--lightBlue);
 	outline-offset: 1px;
 }
@@ -55,11 +57,16 @@ body {
 	padding: 0;
 }
 
-html, body {
+html,
+body {
 	scrollbar-color: var(--yellow) var(--paper);
 	scrollbar-width: thin;
 
 	&.smooth-scroll {
 		scroll-behavior: smooth;
 	}
+}
+
+:target {
+	scroll-margin-block: 5ex;
 }
