@@ -66,7 +66,7 @@ It turns out, he and I actually saw every artist and album in pretty much exactl
 
 We just never agreed on what was a feature, and what was a bug.
 
-Likewise, I suspect most people on opposing sides of the Tailwind debate actually complete agree on Tailwind itself. I don't think we disagree on atomic CSS, or utility classes; I think our contention comes from the valuations we made long before we ever chose our tools. Where one of us sees a selling point, the other sees a flaw.
+Likewise, I suspect most people on opposing sides of the Tailwind debate actually completely agree on Tailwind itself. I don't think our divide centers on atomic CSS, or utility classes; I think the contention comes from valuations we made long before we ever chose our tools. Where one of us sees a selling point, the other sees a flaw.
 
 Tailwind _is_ great.
 
@@ -174,9 +174,9 @@ _It all depends™._
 
 ## The divide: where do you want to be?
 
-So if what we actually disagree on is what we value, that naturally begs the question: where does this divide come from?
+So if what we actually disagree on is what we value, that naturally begs the question: where does this rift come from?
 
-To me, the gap between Tailwind supporters and critics comes down to what part of the job they consider to be the most important, or perhaps, which part they just prefer to focus on.
+To me, the gap between Tailwind supporters and critics comes down to what part of the job they consider to be the most important—or at least, which part they prefer to focus on.
 
 Because continuing to come up with synonyms for supporters and detractors is tedious, for the sake of this section, I propose we give the opposing groups names. These names will, in themselves, be coarse generalizations, which means they will have obvious outliers and glaring contradictions. But for the sake of a model that is hopefully useful despite its flaws:
 
@@ -190,13 +190,13 @@ This isn't to say that Crafters don't build things, or that the Builders aren't 
 
 ### Builders
 
-Builders clearly value getting the work done as quickly and efficiently as possible. They are making something—likely something with parts beyond the frontend—and are eager to see it through to completion.
+Builders clearly value getting the work done as quickly and efficiently as possible. They are making something—likely something with parts beyond the frontend—and are eager to see it through to completion. This means Builders may focus more on completion than on maintainability.
 
-Builders tend to tout Tailwind as the saving grace that got rid of the hard parts of CSS, after all. They like that Tailwind makes the work tidy and fast.
+Builders tend to tout Tailwind as the saving grace that got rid of the hard parts of CSS. They like that Tailwind makes the work tidy and fast.
 
 That, in turn, strongly implies Builders value getting through this particular part of their work as quickly and easily as possible. (We all value efficient productivity, of course. But _where_ you value it may implicitly say something about your priorities.)
 
-This also implies one or both of the following: either a) that they found this work overly challenging before; and/or b) that this is not the part of their job they wish to be challenged in. They likely don't shy away from challenge; they probably just prefer it in different form.
+This also implies one or both of the following: either a) that they found this work overly challenging before; and/or b) that this is not the part of their job they wish to be challenged in. They likely don't shy away from challenge; they probably just prefer it in a different form.
 
 Again: exceptions and outliers will be plentiful, of course. But: as a group, Builders tend to be people who've spent their careers, if not in other parts of the stack, then at least in other areas of frontend. That is: for most Builders (though not all), CSS is not a specialty—or at any rate, not a priority. Many people who like Tailwind are also very good at CSS, but those Builders tend to be bringing a more balanced approach, where they use Tailwind for the broad strokes of utility classes, and heavily customize the config file and/or write their own CSS to fill in the gaps.
 
@@ -210,11 +210,17 @@ Because of their skills with (or willingness to be challenged by) CSS, Crafters 
 
 Speed isn't an issue for Crafters—or at least, not a priority; they are more concerned with the handiwork of their product. Styling is exactly where they want to be, because they value doing the work uniquely well over doing it well enough. Again, they see this work as central and defining to the product, and not just a detail of it.
 
+Crafters may often value details like maintainability, legibility, and accessibility above deadlines and swift project completion.
+
 ### Builders and Crafters
 
 As [Jeremy Keith put it so well](https://adactio.com/journal/18982): where it comes to styling, Builders want imperative programming; they want to specify what they want, where they want, how they want it. No surprises.
 
-Crafters instead want declarative programming; they understand how to wield the power of creating rules of governance within a complex system, and wish to use that power, rather than [micromanaging the browser](https://buildexcellentwebsit.es/).
+Crafters instead want declarative programming; they understand how to wield the power of creating rules of governance within a complex system, and want to use that power, rather than [micromanaging the browser](https://buildexcellentwebsit.es/).
+
+Builders value predictability; they will often sacrifice power if it also means eliminating risk and instability.
+
+Crafters value proficiency; they will often accept greater risk and responsibility if it also expands their abilities.
 
 Both Builders and Crafters have fully valid points of view. And in fairness, as I implied earlier, there exists a rich gradient of options between the two. You can balance workmanship and craftsmanship. You can use Tailwind only as much as you choose, and opt to reach for hand-authored CSS the rest of the time.
 
@@ -234,7 +240,9 @@ I acknowledge that Tailwind might be a great solution, if its downsides are not 
 
 If it solves your problems, by all means, disregard my qualms as the ramblings of an old man yelling at a Tailwind-shaped cloud. It's only a tool, after all. It shouldn't be something we have to agree on if we're not working together, let alone a pillar of anyone's identity.
 
-But to me, Tailwind _is_ a problem in and of itself. The tradeoffs may be a net benefit for your use cases, and if so, that's great. I've tested Tailwind pretty thoroughly, however, and I've concluded that it is _not_ a net positive in my case. I don't mind working with it on a team (it _is_ useful as a unifying system, after all), but at the very least, I request the freedom to break out of it at my discretion as needed and as it's useful. I feel _anyone_ working with Tailwind should have this autonomy. I'd even go so far as to say you're suppressing your Crafters if you _don't_ allow them that.
+But to me, Tailwind _is_ a problem in and of itself. The tradeoffs may be a net benefit for your use cases, and if so, that's great. I've tested Tailwind pretty thoroughly for a good long while now, however, and I've concluded that it is _not_ a net positive in my case.
+
+I don't mind working with it on a team (it _is_ useful as a unifying system, after all), but at the very least, I request the freedom to break out of it at my discretion as needed and as it's useful. I feel _anyone_ working with Tailwind should have this autonomy. I'd even go so far as to say you're suppressing your Crafters if you _don't_ allow them that freedom.
 
 I do not care how fast I build, or how easily I prototype, so much as I care that I am building something uniquely good, and building it the right way.
 
@@ -246,13 +254,13 @@ Point is: I think Tailwind served the world of pre-2023 frontend development qui
 
 ### Some backstory
 
-There was a time in my career when I, along with the rest of the frontend engineers I worked with, were _forced_ to write absolutely _everything_ in Tailwind. There literally wasn't a stylesheet to even put CSS into; it was forbidden. We couldn't even edit the Tailwind config file for most of the time I was there. The powers at that company decided that was the best way to keep us all consistent. If it wasn't Tailwind, it didn't ship.
+There was a time in my career when I, along with the rest of the frontend engineers I worked with, were forced to write absolutely _everything_ in Tailwind. There literally wasn't a stylesheet to even put CSS into; it was forbidden. We couldn't even edit the Tailwind config file for most of the time I was there. The powers at that company decided that was the best way to keep us all consistent. If it wasn't Tailwind, it didn't ship.
 
 (_Everybody I've told this to finds it bafflingly ridiculous. Even the most ardent Tailwind fans cite the ability to simply break out of it and write CSS any time as a necessary and beneficial feature. Nonetheless, it was our reality._)
 
 Clearly, there was a sharp lack of representation in the room when that decision was made.
 
-We, the frontend team, tried reasoning with the more senior and more backend-focused developers in charge of this tooling decision; tried to explain why an all-Tailwind, no-CSS approach was not just crippling our ability to execute on our designers' creations, but forcing us into questionable architecture choices as well. (Custom components proliferated out of control, to the point that it almost didn't make sense to have components at all.)
+We, the frontend team, tried reasoning with the more senior and more backend-focused developers in charge of this tooling decision; tried to explain why an all-Tailwind, no-CSS approach was not just crippling our ability to execute on our designers' creations, but forcing us into questionable architecture choices as well. (Custom components proliferated out of control, to the point that it almost didn't make sense to have components at all. A bustling inline-style-tag-smuggling economy sprung up.)
 
 We also explained how this change was having adverse effects, both on the workers and the work. By putting our best tools just out of reach, we were forced to put more effort into crude workarounds, just to achieve mediocre results.
 
@@ -268,13 +276,13 @@ Both the process and the output suffered; things were harder to build, and they 
 
 Unfortunately, try as we did, those explanations were summarily dismissed. It was just like the Mario Kart conversation from earlier; _why could you possibly want to go off the track? You're not supposed to do that!_
 
-To the powers in that company, Tailwind _was_ the be-all, end-all solution. In their minds, anybody who was complaining just didn't understand, or didn't know what they were doing.
+To the powers in that company, Tailwind _was_ the be-all, end-all solution. In their minds, anybody who didn't like the arrangement didn't understand, didn't know what they were doing, or were just griping about being forced to learn a new approach.
 
 They couldn't fathom the downsides.
 
 In the months that followed, many of my colleagues transferred to other teams in other areas of the company. Some (like me) left entirely. That admittedly wasn't my main reason, and I suspect it wasn't anyone else's either. But still: being creatively stifled by people who don't try to understand your problems and don't really trust that you even know what you're talking about to begin with…well, it has a way of sticking with you.
 
-I think often about what I could have said in those conversations; what might have made those more senior developers in charge of our projects understand the lose-lose situation they'd put us into; made them realize that where they saw a shining sunrise of pure upside, we saw long, dark shadows of disadvantages.
+I think often about what I could have said in those conversations; what might have made those more senior developers in charge of our projects understand the lose-lose situation they'd put us into; painted the promising sunrise they saw on their side of the mountain as the long, dark, ominous shadow we saw on ours.
 
 I don't know if I could have. But since I've spent so much of this post talking about upsides and downsides, and how one person's bug is another person's feature, let's close on that.
 
@@ -290,13 +298,11 @@ Where you see a solved problem, I see tech debt that simply hasn't come due yet;
 
 Where you see a tool that promises freedom, I see a lock-in mechanism that will be incredibly harrowing to undo.
 
-Where you see easy prototyping and fast styling, I see a tool that's railroading us into speed-running making all the same web pages and interfaces everybody is, too.
+Where you see easy prototyping and fast styling, I see a tool that's railroading us into speed-running making all the same web pages and interfaces everybody else is, too.
 
 Where you see complexity simplified, I see a once-powerful tool, dulled and watered-down almost beyond recognition.
 
-Where you see empowerment, I see suppression.
-
-Where you see protective walls, I see a constricting cage.
+Where you see empowerment, I see suppression. Where you see protective walls, I see a constricting cage.
 
 We're both just observing the same truths from different points of view.
 
