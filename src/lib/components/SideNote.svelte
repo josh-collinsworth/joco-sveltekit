@@ -51,6 +51,12 @@
 		background: var(--darkerBlue);
 	}
 
+	:global(html:not(.light) .side-note) {
+		@media (prefers-color-scheme: dark) {
+			background: var(--darkerBlue);
+		}
+	}
+
 	:global(.side-note > *:last-child) {
 		margin-bottom: 0;
 	}

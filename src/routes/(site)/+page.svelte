@@ -138,4 +138,10 @@
 			transform: translateY(0);
 		}
 	}
+
+	:global(html:not(.light) .intro .subhead) {
+		@media (prefers-color-scheme: dark) {
+			color: var(--ink) !important;
+		}
+	}
 </style>

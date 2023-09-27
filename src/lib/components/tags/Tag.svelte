@@ -1,7 +1,6 @@
 <script lang="ts">
-	export let to: string
+	export let to: string;
 </script>
-
 
 <template>
 	<li class="tag">
@@ -10,7 +9,6 @@
 		</a>
 	</li>
 </template>
-
 
 <style lang="scss">
 	.tag {
@@ -33,7 +31,7 @@
 		font-size: 0.65em;
 		line-height: 0;
 		text-transform: uppercase;
-		transition: background .15s, color .15s;
+		transition: background 0.15s, color 0.15s;
 
 		&:hover,
 		&:focus {
@@ -45,5 +43,14 @@
 	:global(.dark .tag .tag__link) {
 		color: var(--ink);
 		background: var(--darkBlue);
+	}
+
+	:global(html:not(.light)) {
+		@media (prefers-color-scheme: dark) {
+			.tag .tag__link {
+				background: var(--darkBlue);
+				color: var(--ink);
+			}
+		}
 	}
 </style>
