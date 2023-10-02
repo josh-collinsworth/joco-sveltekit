@@ -1,7 +1,7 @@
 ---
 title: A message from the captain of the S.S. Layoff
-date: 2023-07-27
-updated: 2023-07-27
+date: 2023-10-02
+updated: 2023-10-02
 categories:
   - satire
 coverImage: ss-layoffs.png
@@ -19,64 +19,28 @@ draft: true
 </script>
 
 <style lang="scss">
-.memo {
-	width: calc(100% + 2rem);
-	margin-left: -1rem;
-	padding: var(--wholeNote) var(--halfNote);
-	box-shadow: 0.125rem 0.125rem 0.5rem #0003, 0.0125rem 0.0125rem 0.125rem #0005;
-	margin-bottom: -2rem;
-	transform: rotate(1deg);
-	filter: sepia(10%);
-	background: var(--lightestGray);
-	background-image:
-		linear-gradient(to bottom right, #fedb, #efdb),
-		url('https://img.freepik.com/free-photo/vintage-grunge-paper-background_1048-10911.jpg?w=2000&t=st=1692825766~exp=1692826366~hmac=cbdc42e06b9f7c614d34ec9808fce79da200d910635dcb2196e75596d12e3dc2');
-	background-size: cover;
-	color: var(--black);
-}
-
-/* These selectors are insane but they don't get compiled right unless you do it this way */
 .memo + .memo {
-	transform: rotate(-1.5deg);
-}
-
-.memo + .memo + .memo {
-	transform: rotate(1.5deg);
-}
-
-.memo + .memo + .memo + .memo {
-	transform: rotate(-1deg);
-	margin-left: -0.5rem;
-}
-
-.memo + .memo + .memo + .memo +.memo {
-	transform: rotate(1.25deg);
-}
-
-.memo p {
-	font-style: italic;
-	em, i {
-		font-style: normal;
-	}
+	border-top: 1px solid var(--lighterGray);
+	padding-top: var(--halfNote);
+	margin-top: var(--halfNote);
 }
 
 .memo div {
 	margin-bottom: var(--halfNote);
 }
-
 </style>
 
 <Note>
 
-This is the first satirical post I've written here. Please take this little writing experiment much less seriously than you might any of my other content.
+This is the first satirical post I've written here. Maybe take this little writing experiment a bit less seriously than you might any of my other content.
 
 </Note>
 
-<br />
+<div>
 
-<div class="memo">
+_[\*PA speakers crackle\*]_
 
-<div><p>—<em>Captain's memo, 8:15am</em>—</p></div>
+</div>
 
 Greetings, crew. This is your Captain speaking. It is with a heavy heart I must inform you that, although we've shared for years now in this long and successful journey together, our ship is, sadly, not currently headed in the right direction.
 
@@ -86,41 +50,35 @@ We, the officers, have been forced to make the difficult decision to put 15% of 
 
 Those of you impacted will find a note in your locker. To those: we're sad to see you go, and we thank you for your service. We wish you the best, wherever this ocean may take you. Please collect your things, and make your way to the nearest life boat immediately.
 
-To those remaining: we assure you this devastating loss of your colleagues and friends will actually make things much better. …For the ship, that is. Maybe not for every single person aboard, individually. But that's the way these things go, eh?
+To those remaining: we assure you this devastating loss of your colleagues and friends will actually make things much better in the long run. …For the ship, that is.
 
-Trust us, it has to be this way, but for good reason. Sad day; bright future. Onward we go!
+Trust us, it has to be this way, but for good reason. It's a sad day, to be sure, but I assure you it's a necessary pivot on the road towards a bright future. Onward we go!
 
-</div>
-
-<div class="memo">
-
-<div><p>—<em>Captain's memo, 10:26am</em>—</p></div>
+<hr />
 
 Hello, crew. This is your captain once again. It seems there were quite a few questions following that last announcement, so please allow me to clarify.
 
 Yes, as many of you pointed out (immediately afterwards, in fact), our departing crewmates were not, in point of fact, responsible for steering the ship. So it's not really their fault, directly, that the ship is off-course.
 
-And yes, it's true that—if we're forced to point fingers here—that sort of general navigational thing is technically kind of _my_ job. As Captain.
+And yes, it's true that—if we're forced to point fingers here (and I don't really see the point, but just to indulge in that little exercise)—that sort of general navigational thing is technically kind of _my_ job. As Captain.
 
-Allow me to set the record straight, then: I fear it's not so much that we're headed in the wrong direction, per se—though it is that, too!—as it is our capacity just…well, it hasn't kept up with expectations.
+I have have misspoken slightly. Allow me to set the record straight, then: I fear it's not so much that we're headed in the wrong direction, per se—though it is that, too!—as it is our capacity just…well, it hasn't kept up with expectations.
 
 That is, while we all very much feel for our departing crewmates, pragmatically speaking, we simply can't maintain the speed and operational efficiency we'd like with so many people to account for.
 
-We're just a bit…_overstaffed_, I suppose might be the word. Paying a little too much money to too many people, if you like. And so, sailing into uncertainty as we are, we're forced to trim things up a bit—to ensure our success, of course. Keep us moving faster.
+We're just a bit…_overstaffed_, I suppose might be the word. Too many people; not enough work. And so, sailing into uncertainty as we are, we're forced to trim things up a bit—to ensure our success, of course. Keep us moving faster.
 
 Again, we're sorry to say it. Dreadful, this sort of thing. Just awful. But we do hope this puts the whole messy matter to rest, and we can go forward into—
 
 —sorry, hang on, it sounds like somebody's knocking at the door…
 
-</div>
-
-<div class="memo">
-
-<div><p>—<em>Captain's memo, 1:05pm</em>—</p></div>
+<hr />
 
 Hello again, crew. It's your Captain again. It seems that previous message warranted further explanation. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you. Thank you for your questions.
 
-True, as many of you have keenly observed, those responsible for deciding who to hire and when are, in fact, the officers. I can see that, to some of you, it seems a bit unfair that the people being removed from the ship had nothing to do with the poor decisions that necessitated the, ah, departure, as it were.
+First off, many of you have pointed out that there was actually no shortage of work to be done prior to this departure. And, in fact, this change will only _increase_ the amount of work each person is responsible for. I suppose that's true, but you see, we must focus on the most _important_ work. Some of the items on our to-do list are simply best left there for the time being, for efficiency's sake. I'm sure all those little leaks in the hull and holes in the sails and such will be just fine.
+
+Setting that aside: I acknowledge, as many of you have keenly observed, those responsible for deciding who to hire and when are, in fact, the officers. I can see that, to some of you, it seems a bit unfair that the people being removed from the ship had nothing to do with the poor decisions that necessitated the departure.
 
 Perhaps, some of you have posited, we would be better off removing the people who _made_ those bad choices, rather than those who were merely doing their jobs as directed—
 
@@ -134,15 +92,11 @@ So yes, there's plenty to go around, thanks largely to all of you. We admit it. 
 
 Nonetheless, this plan is sadly necessary, for many reasons, and will continue as planned. It's unfortunate, to be sure, but we thank you for your understanding.
 
-</div>
+<hr />
 
-<div class="memo">
+Ok, crew. Captain here. All right, fine. Since all the previous answers to your questions are evidently quite unsatisfactory, let's get into it.
 
-<div><p>—<em>Captain's memo, 4:28pm</em>—</p></div>
-
-Ok, crew. Captain here. All right, fine. The direction of the ship and its capacity are important reasons for all this, yes, but there are others, and it just didn't seem worth bothering you with them. But since those answers are evidently quite unsatisfactory, let's get into it.
-
-We—the officers and I, that is—placed some bets that didn't pan out quite as well as we would've hoped, and well…now we owe money to some people who are very eager to see a return, and highly persuasive in board meetings.
+We—the officers and I, that is—took some money from some investors. We used it to place some bets that didn't pan out quite as well as we would've hoped, and well…now we owe money to some people who are very eager to see a return, and who are also highly persuasive in board meetings.
 
 Look, I'm sorry, it's out of our hands now. The numbers don't look the way we want them to, and the fastest way to change that is to stop feeding and sheltering people and their families.
 
@@ -156,33 +110,29 @@ In any case, let me leave you with this:
 
 _I understand, and I accept full responsibility._
 
-</div>
+<hr />
 
-<div class="memo">
-
-<div><p>—<em>Captain's memo, 5:26pm</em>—</p></div>
-
-Ok, crew, clearly your captain needs to explain that last part.
+All right, all right, clearly I need to explain that last part.
 
 Nothing's actually going to happen to _me_, personally. I'm still Captain. Let's not be given to flights of fancy here.
 
-What I mean is: I accept the responsibility of continuing to captain this ship, unaffected. I will, in fact, continue almost as though nothing happened at all.
+What I mean is: I accept the responsibility of continuing to captain this ship, though I myself will be unaffected.
 
-I will persevere, fostering the exact environment that led to this negative outcome, while earning the highest salary of anyone aboard.
+I will persevere, making the same kinds of decisions and fostering the exact same kind of environment that led to this negative outcome, while continuing to earn the highest salary of anyone aboard.
 
 _That's_ on me. I alone accept _that_ burden.
 
 Once again, I also fully acknowledge that nobody affected by this announcement did anything wrong, and that the error was almost entirely in my own judgment as Captain, since we apparently have to keep retreading that particular turf. You all seem to care very much about that part. Consider the point conceded, then.
 
-But ask yourself: is it really best if the person who makes the decisions is _also_ the person responsible for them? Honestly, just think about it. What ever happened to delegation, hm? How would we ever get anywhere if leaders were constantly forced to deal with the consequences of their own actions all the time, instead of, you know…_leading_?
+But ask yourself: is it really best if the person who makes the decisions is _also_ the person responsible for them?
+
+Honestly, just think about it.
+
+What ever happened to delegation, hm? How would we ever get anywhere if leaders were constantly forced to deal with the consequences of their own actions all the time, instead of, you know…_leading_?
 
 It's really not my fault that this is all my&nbsp;fault.
 
-</div>
-
-<div class="memo">
-
-<div><p>—<em>Captain's memo, 7:04pm</em>—</p></div>
+<hr />
 
 Ok, crew. This will be my final message.
 
@@ -206,9 +156,6 @@ Please be sad for a reasonable amount of time, and then immediately return to yo
 
 And to those departing: thanks for building us such a great ship, and best of luck getting picked up by another vessel soon.
 
-<br>
-<br>
+<p>&nbsp;</p>
 
 …Oh, and if you do get bit by a shark, try to make sure it happens before your healthcare expires.
-
-</div>
