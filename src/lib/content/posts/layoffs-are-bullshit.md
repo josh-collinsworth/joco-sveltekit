@@ -5,8 +5,8 @@ updated: 2023-10-02
 categories:
   - satire
 coverImage: ss-layoffs.png
-coverWidth: 16
-coverHeight: 9
+coverWidth: 1920
+coverHeight: 1080
 excerpt: "Indeed, there's plenty to go around, thanks largely to all of you. But the fastest way to make the numbers better is to stop feeding and sheltering people and their families. Nothing personal."
 ---
 
