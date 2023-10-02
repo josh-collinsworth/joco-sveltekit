@@ -7,7 +7,7 @@ categories:
 coverImage: ss-layoffs.png
 coverWidth: 16
 coverHeight: 9
-excerpt: "Indeed, there's plenty to go around, thanks largely to all of you. But we, the officers, placed some bets that didn't pan out quite as well as we would've hoped, and the fastest way to make the numbers better is to stop feeding and sheltering people and their families. Nothing personal."
+excerpt: "Indeed, there's plenty to go around, thanks largely to all of you. But the fastest way to make the numbers better is to stop feeding and sheltering people and their families. Nothing personal."
 ---
 
 <script>
@@ -17,21 +17,9 @@ excerpt: "Indeed, there's plenty to go around, thanks largely to all of you. But
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-<style lang="scss">
-.memo + .memo {
-	border-top: 1px solid var(--lighterGray);
-	padding-top: var(--halfNote);
-	margin-top: var(--halfNote);
-}
-
-.memo div {
-	margin-bottom: var(--halfNote);
-}
-</style>
-
 <Note>
 
-This is the first satirical post I've written here. Maybe take this little writing experiment a bit less seriously than you might any of my other content.
+This is my first foray into satirical writing. Please take it as such.
 
 </Note>
 
@@ -75,7 +63,9 @@ Again, we're sorry to say it. Dreadful, this sort of thing. Just awful. But we d
 
 Hello again, crew. It's your Captain again. It seems that previous message warranted further explanation. You are quite the inquisitive bunch. Bright crew! The S.S. Layoff is better for having you. Thank you for your questions.
 
-First off, many of you have pointed out that there was actually no shortage of work to be done prior to this departure. And, in fact, this change will only _increase_ the amount of work each person is responsible for. I suppose that's true, but you see, we must focus on the most _important_ work. Some of the items on our to-do list are simply best left there for the time being, for efficiency's sake. I'm sure all those little leaks in the hull and holes in the sails and such will be just fine.
+First off, many of you have pointed out that there was actually no shortage of work to be done prior to this departure. And, in fact, this change will only _increase_ the amount of work each person is responsible for.
+
+I suppose that's true, but you see, we must focus on the most _important_ work. Some of the items on our to-do list are simply best left there for the time being, for efficiency's sake. I'm sure all those tiny holes in the sails and drips in the hull and such will be just fine.
 
 Setting that aside: I acknowledge, as many of you have keenly observed, those responsible for deciding who to hire and when are, in fact, the officers. I can see that, to some of you, it seems a bit unfair that the people being removed from the ship had nothing to do with the poor decisions that necessitated the departure.
 
@@ -89,7 +79,7 @@ Please know that we'll think of you fondly as we continue reaping the benefits o
 
 So yes, there's plenty to go around, thanks largely to all of you. We admit it. No shortage of work to be done, either, and we are sorry on that front.
 
-Nonetheless, this plan is sadly necessary, for many reasons, and will continue as planned. It's unfortunate, to be sure, but we thank you for your understanding.
+Nonetheless, this plan is sadly necessary, for many reasons, and will continue as planned. It's unfortunate, to be sure, but we thank you for your understand—_ok I hear you! At least let me finish the address!_
 
 <hr />
 
@@ -117,11 +107,11 @@ Nothing's actually going to happen to _me_, personally. I'm still Captain. Let's
 
 What I mean is: I accept the responsibility of continuing to captain this ship, though I myself will be unaffected.
 
-I will persevere, making the same kinds of decisions and fostering the exact same kind of environment that led to this negative outcome, while continuing to earn the highest salary of anyone aboard.
+I will persevere, making the same kinds of decisions and fostering the exact kind of environment that led to this negative outcome to begin with, all while continuing to earn the highest salary of anyone aboard.
 
 _That's_ on me. I alone accept _that_ burden.
 
-Once again, I also fully acknowledge that nobody affected by this announcement did anything wrong, and that the error was almost entirely in my own judgment as Captain, since we apparently have to keep retreading that particular turf. You all seem to care very much about that part. Consider the point conceded, then.
+Once again, I also fully acknowledge that nobody affected by this announcement did anything wrong, and that the error was almost entirely in my own judgment as Captain, since we apparently have to keep retreading that particular turf. You all seem to care very much about that part. Fine. Consider the point conceded, then.
 
 But ask yourself: is it really best if the person who makes the decisions is _also_ the person responsible for them?
 
@@ -133,11 +123,13 @@ It's really not my fault that this is all my&nbsp;fault.
 
 <hr />
 
+[_Long, deep sigh_]
+
 Ok, crew. This will be my final message.
 
-A whole lot of you seem to think this decision will actually have an _adverse_ impact on our voyage, as it will both hinder our capacity going forward _and_ decimate morale for those who remain, making them much more likely to leave voluntarily.
+A whole lot of you seem to think this decision will actually have an _adverse_ impact on our voyage, as it will both hinder our capacity going forward _and_ decimate morale for those who remain, making them less productive and more likely to leave voluntarily.
 
-Some of you have apparently done some math, and claim to have found that the cost of the life boats, supplies, maritime lawyer fees, hiring and onboarding to replace those needed crew members (which will be harder now, given this hit to our reputation), loss of productivity, and so on and so forth, all actually outweigh what we're ostensibly saving with this measure.
+Some of you have apparently done some math—math! Goody!—and claim to have found that the cost of the life boats, supplies, maritime lawyer fees, hiring and onboarding to replace those needed crew members (which you postulate will be more difficult now, given this hit to our reputation), loss of productivity, and so on and so forth, all actually outweigh what we're ostensibly saving with this measure.
 
 Some even go so far as to point to the numerous "readily available"—you can't see me, but I made air quotes there—"readily available" scientific studies, apparently finding little to no benefit whatsoever to this kind of reduction in crew size.
 
