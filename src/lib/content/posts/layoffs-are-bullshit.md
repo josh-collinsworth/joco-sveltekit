@@ -8,7 +8,6 @@ coverImage: ss-layoffs.png
 coverWidth: 16
 coverHeight: 9
 excerpt: "Indeed, there's plenty to go around, thanks largely to all of you. But we, the officers, placed some bets that didn't pan out quite as well as we would've hoped, and the fastest way to make the numbers better is to stop feeding and sheltering people and their families. Nothing personal."
-draft: true
 ---
 
 <script>
