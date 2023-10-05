@@ -85,7 +85,7 @@ Look, I'm sorry, it's out of our hands now. The numbers don't look the way we wa
 
 Nothing personal.
 
-Please know: this decision was very hard. Awful, really. I know we all feel just terrible for the people who've set off on the life boats, as we should, but…really, do spare a thought for us, as well. We've had a rough of it go here, too.
+Please know: this decision was very hard. Awful, really. I know we all feel just terrible for the people who've set off on the life boats, as we should, but…really, do spare a thought for us, as well. We've had a rough go of it here, too.
 
 Hard times all around.
 
