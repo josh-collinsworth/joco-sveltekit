@@ -13,7 +13,7 @@ const fetchPosts = async ({ offset = 0, limit = 10, category = '' }: PostsEndpoi
 		})
 	)
 
-	if (!dev) posts = posts.filter(post => post.draft !== true)
+	if (!dev) posts = posts.filter(post => !post.draft)
 
 	let sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
 
