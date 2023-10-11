@@ -1,19 +1,12 @@
 <script lang="ts">
+	const white = '#fcfcfc'
+	const black = '#101820'
 	const colors: string[] = ['#ffd100', '#34657f', '#7ba7bc', '#ff6a13', '#e6002a']
+	const grays: string[] = [white, '#a7a8aa', '#878a8c', '#53565a', '#424548', '#331f22', black]
 
-	const grays: string[] = [
-		'#fcfcfc',
-		'#a7a8aa',
-		'#878a8c',
-		'#53565a',
-		'#424548',
-		'#331f22',
-		'#101820'
-	]
-
-	const getOutlineColor = (color) => {
-		if (color === '#101820') return '#fcfcfc'
-		if (color === '#fcfcfc') return '#101820'
+	const getOutlineColor = (color: string) => {
+		if (color === black) return white
+		if (color === white) return black
 		return 'transparent'
 	}
 </script>
@@ -59,23 +52,24 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 0;
+		margin: 0;
 		gap: var(--eighthNote);
+	}
 
-		.color {
-			list-style-type: none;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			font-size: 0.9rem;
-			font-family: var(--codeFont);
-			text-shadow: 0 0 1px var(--trueWhite);
-			margin: 0;
+	.color {
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		font-size: 0.9rem;
+		font-family: var(--codeFont);
+		text-shadow: 0 0 1px var(--trueWhite);
+		margin: 0;
 
-			.swatch {
-				width: 3.5em;
-				height: 3.5em;
-				margin-right: 0.5rem;
-			}
+		.swatch {
+			width: 3.5em;
+			height: 3.5em;
+			margin-right: 0.5rem;
 		}
 	}
 </style>
