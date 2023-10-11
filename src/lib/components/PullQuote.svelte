@@ -39,7 +39,7 @@
 		}
 	}
 
-	:global(.pull-quote p) {
+	:global(.pull-quote p:last-child) {
 		display: inline;
 	}
 

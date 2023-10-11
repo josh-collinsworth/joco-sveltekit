@@ -23,7 +23,13 @@ I never had any real interest at all in mechanical keyboards until recently. I m
 
 Over the last year or so, however, I've been going deeper and deeper down the rabbit hole of mechanical keyboards, and I've discovered a much richer, more fulfilling world than I ever suspected. There's just something about nerding out over the finest details of the machine you touch and use every day that can be extremely gratifying.
 
-I now think it was silly that I never looked any closer at things like keycaps and switches. After all, a person who spends all day on their feet will likely care deeply about their shoes; why shouldn't someone whose fingers press keys thousands of times a day be invested in how their fingers feel?
+<PullQuote>
+
+My gateway into mechanical keyboards was purely driven by the search for better ergonomics.
+
+</PullQuote>
+
+It was silly that I never looked any closer at things like keycaps and switches, I now realize. After all, a person who spends all day on their feet will likely care deeply about their shoes; why shouldn't someone whose fingers press keys thousands of times a day be invested in how their fingers feel?
 
 However, unlike many mechanical keyboard enthusiasts, I wasn't initially drawn to the hobby by any interest in the feel, sound, look, or performance.
 
@@ -43,7 +49,7 @@ That split keyboard served me well for nearly two years; it got my hands further
 
 That's when I started looking at keyboards with thumb keys. It made sense to me that pressing the keys you use most often with your larger, stronger thumbs, rather than with your smaller fingers--and in the natural position of your thumbs--would lead to a better outcome.
 
-So, in asking around (mainly in the ShopTalk Show D-D-D-Discord), I eventually wound up with a ZSA Moonlander. (Chris Coyier's old one, in fact.)
+So, in asking around (mainly in the [ShopTalk Show](https://shoptalkshow.com) D-D-D-Discord), I eventually wound up with a [ZSA Moonlander](https://www.zsa.io/moonlander/). (Chris Coyier's old one, in fact.)
 
 At first, I hated the Moonlander. No matter how much I configured it, I was horrendously slow, and sucking at something as basic as typing is a maddeningly frustrating experience. More than once, I packed the Moonlander back in its box after a tryout, resolute to never touch it again.
 
@@ -53,7 +59,11 @@ The Moonlander was my daily driver for most of that following year, and for most
 
 Over time, however, a new RSI flared up, even with the Moonlander.
 
+<CalloutPlusQuote>
+
 As I write this, I'm still recovering from this latest injury, and diagnosing the cause of it. Some of it, I owe to the Moonlander specifically; some is my own fault for improper setup and usage. Some might be both.
+
+</CalloutPlusQuote>
 
 However, I will say (as I said in my first impressions post): I think the Moonlander is a keyboard that wants to be cool first, and ergonomic second, and my experience with it over the past several months bears that out. The wrist rests are suboptimal, the tenting control you get out of the box is minimal, and the extreme tenting made possible by the Platform add-on comes with its own issues.
 
@@ -69,7 +79,7 @@ But in short: I came to realize the issue came down to where and how my hands we
 
 So, again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
 
-That's when I started thinking maybe the Glove80 could be the fit I was looking for.
+That's when I started thinking maybe the [Glove80](https://www.moergo.com/collections/glove80-keyboards) could be the fit I was looking for.
 
 ## Why the Glove80?
 
@@ -77,12 +87,64 @@ Ergonomic keyboards cover an incredibly wide spectrum. On one end, they're littl
 
 On the other end of the spectrum are keyboards that, well, barely even resemble traditional keyboards. They're often split (i.e., in two pieces, instead of one, allowing the wrists and forearms to sit straight in front of the shoulders instead of pointing awkwardly inwards together), and they frequently have a highly unconventional shape and layout.
 
+<PullQuote>
+
+Even if you've spent some time in this rabbit hole within a rabbit hole, neither Glove80 nor its maker, MoErgo, are likely to be among the main names you've heard of.
+
+</PullQuote>
+
 Some can look unfinished, being little more than raw circuit boards with keys on top. Some are made to be 3D-printable. Others are high-end devices from well-known manufacturers, but which still may look very different from the type of keyboards most people use.
 
 Not all ergonomic keyboards are mechanical, but apart from those by the major brands you'd might find in any average electronics store (like the Microsofts and Logitechs mentioned above), most are; ergonomic keyboards are generally a sub-niche of the mechanical keyboard niche.
 
-Even if you've spent some time in this rabbit hole within a rabbit hole, though, neither Glove80 nor MoErgo are likely to be among the main names you've heard of. Generally, it seems like [Kinesis](https://kinesis-ergo.com/) and [ZSA](https://www.zsa.io/) have the largest mindshare in the space, though there are others, like [Cloud Nine](https://cloudnineergo.com/), [Dygma](https://dygma.com/) and [UHK](https://ultimatehackingkeyboard.com/).
+Anyway, point is: even if you've spent some time in this rabbit hole within a rabbit hole, though, neither [Glove80](https://www.moergo.com/collections/glove80-keyboards) nor its maker, a New Zealand company called [MoErgo](https://www.moergo.com/), are likely to be among the main names you've heard of. Generally, it seems like [Kinesis](https://kinesis-ergo.com/) and [ZSA](https://www.zsa.io/) have the largest mindshare in the space, though there are others, like [Cloud Nine](https://cloudnineergo.com/), [Dygma](https://dygma.com/) and [UHK](https://ultimatehackingkeyboard.com/).
 
-Nearly as I can tell, MoErgo is the least-known of those names. The Glove80 might quite possibly be the least popular keyboard of any of the above makers; just finding reviews for it was challenging. Plus—and I'm sorry in advance, but let's be brutally honest here—MoErgo's web design and store are, hands-down, the worst of the bunch. (The UHK site is poor, but it looks clean and crisp next to the decidedly dated and messy design of MoErgo's site.)
+Nearly as I can tell, MoErgo isn't any more popular than any of the above manufacturers. The Glove80 might quite possibly be the least well-known keyboard of any of the above; just finding reviews for it was challenging. Plus—and I'm sorry in advance, but let's be completely honest here—MoErgo's web design and store are, hands-down, the worst of the bunch.
 
-So: how and why did I buy the least-known keyboard from the least-known manufacturer with the worst website?
+<CalloutPlusQuote>
+
+So: why did I buy the least-known keyboard from the least-popular manufacturer with the least appealing website?
+
+Because I could tell they cared—maybe more than anyone—about actual ergonomics.
+
+</CalloutPlusQuote>
+
+While the design of the website might conjure a small toy store more than a serious international keyboard manufacturer, the Glove80 is no toy, and MoErgo does indeed take it very seriously. (Join the Discord and you'll find the founders regularly responding to questions and issues.)
+
+MoErgo goes to great lengths to explain how and why they landed on the Glove80's design, and it shows. This doesn't feel like a cool keyboard with "ergonomics" slapped on as an afterthought selling point, just because it can tent a little (looking at you, Moonlander).
+
+The Glove80 genuinely feels as though every decision was in service to ergonomics first and foremost, and everything else was secondary.
+
+MoErgo designates a pretty hefty portion of its website and printed materials to telling [the story of the Glove80's design](https://www.moergo.com/pages/glove80-ergonomic-keyboard-design-journey-1). It's undeniably impressive; over 500 experiments and prototypes are laid out in painstaking detail. The journey of assumptions being made, challenged, rethought and re-challenged is a testament to the designers' dedication to arriving at the best possible ergonomic solution.
+
+With all that preamble out of the way, let's get to the main course.
+
+## My impressions of the Glove80
+
+As I'm writing this, I'm a little over a week into using the Glove80 as my full-time daily driver. I initially thought I might do a pros/cons list, but a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach.
+
+### Pricing and shipping
+
+Although the Glove80 is made by a New Zealand company, it ships from China. I initially thought this might mean that shipping would be very expensive, very slow, or possibly both. To my surprise, however, shipping is included with the price of the Glove80, and mine arrived in less than two weeks.
+
+That price tag, I'll note, is certainly far from trivial; the Glove80 will run you $399 USD. That might be a lot for many folks, but that's a pretty fair price, comparatively speaking; similar models from other manufacturers fall in the same ballpark.
+
+However, to their credit, MoErgo includes just about everything you might need in that price: shipping, as mentioned, but also a carrying case (as of October 1st), the attached palm rests, and lots of extra parts to customize tenting and tilting to your liking.
+
+<SideNote>
+
+Tenting is the degree to which the keyboard slopes from the lower left and right edges up towards the center; tilting is the degree to which the whole board slopes towards or away from you.
+
+Most all ergonomic keyboards adjust these angles for better comfort than the simple, flat form of standard keyboards. Many allow you to customize one or both yourself.
+
+</SideNote>
+
+In contrast, while most manufacturers sell the bare-bones version of their keyboard for somewhere around $300–350, they _also_ feature a wide range of optional, paid add-ons that quickly drive the price much higher. In most cases, even the palm rests are an extra $30 or more (sometimes as much as $80).
+
+It's also common for supposedly ergonomic keyboards to only offer a minimal degree of tenting and/or tilting out of the box, and to offer a paid bolt-on to unlock more customization, which might run you over $100 all on its own. Wireless connectivity, if offered, is also usually a premium paid add-on. There may also be costs associated with certain colors, lights, switches, or other features.
+
+So, while MoErgo's $399 USD might bring a bit of sticker shock with it, know that unlike with most similar keyboards, that's the full and final price.
+
+I'd also like to credit MoErgo: Unbeknownst to me at the time, I ordered my Glove80 just before the cutoff when boards began shipping with carrying cases. Total bummer for me, since I could've had a carrying case for free if I'd just happened to have waited another week or so.
+
+Still, it's worth mentioning this as a credit to the company. While you _can_ buy the travel case, it now comes included at no extra cost. That's a pretty big deal. Plus, MoErgo took the initiative to offer a store credit to myself and anybody else in my situation, without even being asked. That kind of good service speaks volumes about the folks running the show and what their priorities are, if you ask me.
