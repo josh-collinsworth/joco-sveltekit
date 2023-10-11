@@ -16,29 +16,29 @@ $xxxl: 122rem;
 	--redHS: 349, 100%;
 	--lightGrayHS: 220, 2%;
 
-	--yellowHSL: 49, 100%, 50%;
-	--lightGrayHSL: 220, 2%, 66%;
-	--lightBlueHSL: 199, 33%, 61%;
-	--darkBlueHSL: 201, 42%, 35%;
-	--orangeHSL: 22, 100%, 54%;
-	--redHSL: 349, 100%, 45%;
-	--midGrayHSL: 204, 2%, 54%;
+	--yellowHSL: 49.1, 100%, 50%; //#ffd100
+	--lightGrayHSL: 220, 2%, 66%; //#a7a8aa
+	--lightBlueHSL: 199, 33%, 60.95%; //#7ba7bc
+	--darkBlueHSL: 201, 42%, 35.2%; //#34657f
+	--orangeHSL: 22, 100%, 53.8%; //#ff6a13
+	--redHSL: 349, 100%, 45%; //#e6002a
+	--midGrayHSL: 204, 2%, 54%; // #878a8c
 	// --darkGrayHSL: 214, 4%, 34%; // Older darkGray based on #53565a
 	--darkGrayHSL: 210, 4%, 27%; // Newer, darker darkGray based on #424548
-	--darkerGrayHSL: 349, 25%, 16%;
-	--whiteHSL: 0, 0%, 99%;
-	--trueWhiteHSL: 0, 0%, 100%;
-	--blackHSL: 210, 33%, 9%;
-	--trueBlackHSL: 0, 0%, 0%;
+	--darkerGrayHSL: 349, 25%, 16%; // #331f22
+	--whiteHSL: 0, 0%, 99%; // #fcfcfc
+	--trueWhiteHSL: 0, 0%, 100%; // #ffffff
+	--blackHSL: 210, 33%, 9.5%; // #101820
+	--trueBlackHSL: 0, 0%, 0%; // #000000
 
 	--white: hsl(var(--whiteHSL));
 	--trueWhite: hsl(var(--trueWhiteHSL));
 
 	--black: hsl(var(--blackHSL));
 	--trueBlack: hsl(var(--trueBlackHSL));
-	
+
 	--headingFont: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-	'Helvetica Neue', Arial, sans-serif;
+		'Helvetica Neue', Arial, sans-serif;
 	--bodyFont: 'Alkes', Georgia, serif;
 	--codeFont: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
@@ -59,7 +59,7 @@ $xxxl: 122rem;
 	--red: hsl(var(--redHSL));
 	--lightestGray: hsl(var(--lightGrayHS), 94%);
 	--lighterGray: hsl(var(--lightGrayHS), 86%);
-	--lightGray: 	hsl(var(--lightGrayHSL));
+	--lightGray: hsl(var(--lightGrayHSL));
 	--midGray: hsl(var(--midGrayHSL));
 	--darkGray: hsl(var(--darkGrayHSL));
 	--darkerGray: hsl(var(--darkerGrayHSL));
@@ -99,15 +99,15 @@ $xxxl: 122rem;
 	@media (min-width: $xs) {
 		--margin: var(--halfNote);
 	}
-	
+
 	@media (min-width: $sm) {
 		--margin: var(--dottedHalfNote);
 	}
-	
+
 	@media (min-width: $xxl) {
 		--margin: var(--wholeNote);
 	}
-	
+
 	@media (min-width: $xxxl) {
 		--margin: var(--dottedWholeNote);
 	}
@@ -119,7 +119,7 @@ $xxxl: 122rem;
 		--headingColor: var(--white);
 		--accentColor: var(--lightBlue);
 		--linkColor: var(--lightBlue);
-		--highlightColor: var(--darkerGray);	
+		--highlightColor: var(--darkerGray);
 		--lighterGray: hsl(var(--lightGrayHS), 26%);
 		--lightestGray: hsl(var(--lightGrayHS), 13%);
 	}

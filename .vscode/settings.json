@@ -3,5 +3,13 @@
 		"premade",
 		"rando",
 		"sluggify",
-	]
+	],
+	"editor.formatOnSave": true,
+	"javascript.format.semicolons": "remove",
+	"typescript.format.semicolons": "remove",
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"prettier.singleQuote": true,
+	"svelte.plugin.svelte.format.config.singleQuote": true,
+	"editor.defaultFormatter": "svelte.svelte-vscode"
 }
