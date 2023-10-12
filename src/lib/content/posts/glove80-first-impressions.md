@@ -1,10 +1,12 @@
 ---
-title: How I accidentally became a keyboard guy, and you can, too
+title: First impressions of the MoErgo Glove80 ergonomic keyboard
 date: 2023-11-04
 updated: 2023-11-04
 categories:
-  - satire
-coverImage: capn.webp
+  - gear
+  - advice
+  - opinion
+coverImage: glove80/mine.webp
 coverWidth: 1920
 coverHeight: 1080
 excerpt: 'TODO'
@@ -43,41 +45,43 @@ Then came 2020, and the pandemic exploded in the US. The home became the workpla
 
 Over these weeks and months, I developed a repetitive stress injury (RSI), and though I didn't know it then, it would be my first of many. This time, it was my right wrist, pinched by the angle at which it was constantly bent for typing. The pain was ever-present, at times even preventing me from holding things tightly or carrying heavy items, and it became clear it would never subside if I didn't make changes.
 
+<figure>
+
+![Demonstration of how the forearms tend to point inward, with the wrists sharply bent outward, while using a standard keyboard](/images/post_images/glove80/ulnar-deviation-problem.jpg)
+
+<figcaption>Image from <a href="https://kinesis-ergo.com/solutions/keyboard-risk-factors/">kinesis-ergo.com</a></figcaption>
+
+</figure>
+
 Over the first year of working from home full-time, I ended up spending probably around $2,000 on overhauling my at-home workplace to alleviate this pain. New chair, desk, keyboard tray, and—finally—keyboard: my first split keyboard, the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/).
 
 That split keyboard served me well for nearly two years; it got my hands further apart, and allowed my wrists to sit at a more natural angle. But it eventually led to another, different injury: because its layout matched the default layout of a standard Mac keyboard almost identically (apart from the split in the middle, of course), my left thumb was constantly bending at uncomfortable angles to press the command key to initiate shortcuts--in particular, the command + tab shortcut, which I use dozens if not hundreds of times a day.
 
 That's when I started looking at keyboards with thumb keys. It made sense to me that pressing the keys you use most often with your larger, stronger thumbs, rather than with your smaller fingers--and in the natural position of your thumbs--would lead to a better outcome.
 
-So, in asking around (mainly in the [ShopTalk Show](https://shoptalkshow.com) D-D-D-Discord), I eventually wound up with a [ZSA Moonlander](https://www.zsa.io/moonlander/). (Chris Coyier's old one, in fact.)
+So, in asking around (mainly in the [ShopTalk Show](https://shoptalkshow.com) D-D-D-Discord), I eventually wound up with a [ZSA Moonlander](https://www.zsa.io/moonlander/). ([Chris Coyier](https://chriscoyier.net)'s old one, in fact.) You can [read the whole story here](https://joshcollinsworth.com/blog/moonlander).
 
-At first, I hated the Moonlander. No matter how much I configured it, I was horrendously slow, and sucking at something as basic as typing is a maddeningly frustrating experience. More than once, I packed the Moonlander back in its box after a tryout, resolute to never touch it again.
-
-Eventually, though, I decided I would never learn if I didn't go all-in. So put my other keyboards away, and used the Moonlander as my solo keyboard for a few weeks that eventually became several months.
-
-The Moonlander was my daily driver for most of that following year, and for most of that time, I truly loved the keyboard. While the ortholinear (columnar) layout took a lot of getting used to, it paid off and felt amazing once I was finished. I even went so far as to invest in a new set of switches and keycaps for the Moonlander, which made me love it even more.
+At first, I hated the Moonlander. But over time, with dedication and practice, I came to truly love that keyboard. While the ortholinear (columnar grid) layout took a lot of getting used to, it paid off and felt amazing once I was finished. I even went so far as to invest in a new set of switches and keycaps for the Moonlander, which made me love it even more.
 
 Over time, however, a new RSI flared up, even with the Moonlander.
 
 <CalloutPlusQuote>
 
-As I write this, I'm still recovering from this latest injury, and diagnosing the cause of it. Some of it, I owe to the Moonlander specifically; some is my own fault for improper setup and usage. Some might be both.
+As I write this, I'm still recovering from, and diagnosing the cause of, this latest injury. Some of it, I owe to the Moonlander specifically; some is my own fault for improper setup and usage. Some might be both.
 
 </CalloutPlusQuote>
 
-However, I will say (as I said in my first impressions post): I think the Moonlander is a keyboard that wants to be cool first, and ergonomic second, and my experience with it over the past several months bears that out. The wrist rests are suboptimal, the tenting control you get out of the box is minimal, and the extreme tenting made possible by the Platform add-on comes with its own issues.
+The short version is: the Moonlander doesn't really allow your palms to rest. (Or at least, it didn't how I was using it.) So over time, my left arm muscles fatigued from constant usage and no rest; they were always activated, even when I wasn't typing. I had to train myself to move my arm off the keyboard when not in use, since, again, my hand couldn't really rest on it.
 
-I _thought_ if I could get my hands on the similar Ergodox EZ, it might be similar enough to solve my problems. The Ergodox could be used with thick palm rests, and featured extra thumb keys, which sounded nice. Plus, its multiple feet seemed to offer a wider range of tenting and tilting options.
+I'm not here to tell you the Moonlander is bad, or that it won't work for you. However, I will say (as I said in my [first impressions post](https://joshcollinsworth.com/blog/moonlander)): I think the Moonlander is a keyboard that wants to be cool first, and ergonomic second, and my experience with it over the past several months bears that out. The wrist rests are suboptimal, the tenting control you get out of the box is minimal, and the extreme tenting made possible by the Platform add-on comes with its own issues.
+
+I _thought_ if I could get my hands on the similar Ergodox EZ, it might solve my problems. The Ergodox could be used with thick palm rests, and featured extra thumb keys, which sounded nice. Plus, its multiple feet seemed to offer a wider range of tenting and tilting options.
 
 However, the Ergodox didn't turn out to be as different from the Moonlander as I'd hoped. Like the Moonlander, it was a letdown in the range of customizations it offered. Plus, the keyboard was so thick that the tall wrist rests weren't actually much better than the Moonlander's thin mounted plastic ones.
 
-So, much as I loved my Moonlander, it became apparent that _some_ kind of change was necessary.
-
 Again, I should emphasize that despite my valid criticisms of the Moonlander, some of my issues with it were of my own creation. (My choice of tall keycaps may even have contributed.)
 
-But in short: I came to realize the issue came down to where and how my hands were resting when I wasn't actively typing. I don't think the Moonlander lets your palms rest comfortably in just about any position (especially not at higher tenting angles), and over time, the stress of actively holding my hands in place, rather than letting them rest properly, became a painful physical issue for me.
-
-So, again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
+Still, even making all the adjustments I knew how to make, it wasn't working for me. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
 
 That's when I started thinking maybe the [Glove80](https://www.moergo.com/collections/glove80-keyboards) could be the fit I was looking for.
 
@@ -94,6 +98,14 @@ Even if you've spent some time in this rabbit hole within a rabbit hole, neither
 </PullQuote>
 
 Some can look unfinished, being little more than raw circuit boards with keys on top. Some are made to be 3D-printable. Others are high-end devices from well-known manufacturers, but which still may look very different from the type of keyboards most people use.
+
+<figure>
+
+<img src="/images/post_images/glove80/rtings.jpg" alt="" />
+
+<figcaption>A wide range of ergonomic, split, and/or mechanical keyboards. Image from <a href="https://www.rtings.com/keyboard/reviews/best/ergonomic">rtings.com</a>.</figcaption>
+
+</figure>
 
 Not all ergonomic keyboards are mechanical, but apart from those by the major brands you'd might find in any average electronics store (like the Microsofts and Logitechs mentioned above), most are; ergonomic keyboards are generally a sub-niche of the mechanical keyboard niche.
 
@@ -122,6 +134,14 @@ With all that preamble out of the way, let's get to the main course.
 ## My impressions of the Glove80
 
 As I'm writing this, I'm a little over a week into using the Glove80 as my full-time daily driver. I initially thought I might do a pros/cons list, but a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach.
+
+<figure>
+
+<img src="/images/post_images/glove80/mine.webp" alt="" />
+
+<figcaption>My Glove80, with some of the keys rearranged from their original positions. Most do what they say, but because no extra keys are included, a few don't.</figcaption>
+
+</figure>
 
 ### Pricing and shipping
 
@@ -160,26 +180,106 @@ Plus, that travel case now comes included with all new Glove80s at no extra cost
 
 ### Layout customization
 
-The Glove80 uses ZMK software for customization. (Incidentally, the keyboard ships with three default layers, but with the ability to add more.)
+Like many keyboard manufacturers, MoErgo has their own layout editor app, available at [my.glove80.com](https://my.glove80.com/). This is where you go to make changes to your layout. Under the hood, this app uses open-source [ZMK software](https://zmk.dev/) for customization. The keyboard ships with three default layers: layer 0, layer 1, and the "magic" layer, which is triggered by the conspicuous MoErgo logo key, and which holds most of the hardware controls, like lights and Bluetooth. You have the ability to add more layers, if desired.
 
-I haven't used a lot of keyboard customization software; mainly jut ZSA's Oryx, so that's my only strong point of reference. Using the Glove80's ZMK-based GUI is fairly comparable to Oryx, and relatively simple to use, at least for standard things. Adding a key like hyper or meh is a little more complex (you have to add each individual key separately, which is a little tedious), and it would be nice to have a single button for those instead, but that's a minor quibble.
+I haven't used a lot of keyboard customization software; mainly jut ZSA's Oryx, so that's my only real point of reference. Using the Glove80's ZMK-based GUI is fairly comparable to Oryx, and relatively simple to use, at least for standard things. Adding a complex modifier like hyper (`cmd` + `opt` + `shift` + `ctrl`) is a little more involved; you have to add each individual modifier separately, making this example a four-step process. It would be nice to have a single button for those instead, but that's a minor quibble.
 
-I also got used to ZSA's autoshift feature, which I don't believe is present in ZMK. But that's easy enough to add with Karabiner, so it's still enabled.
+I notice MoErgo's layout editor doesn't let you do much besides change the keys themselves, unlike Oryx, which boasts a massive range of other options related to your keyboard. I didn't use most of them, but one I did particularly like was autoshift, which lets you long-press a key instead of shift-pressing, which I find handy. It's nice to just press the "a" key for slightly longer to get an uppercase "A," (or to change `[` to `{`), rather than getting another finger involved, especially when you're still learning your layout.
 
-The really noticeable pain point, in terms of customization, appears when you go to flash your layout to the keyboard.
+<figure>
 
-For starters, you have to flash _both_ sides individually. With the Moonlander and Ergodox EZ, just uploading your layout once did the trick. Here, while the left side is the "driver," you still have to upload your layouts to each half individually, which means the process takes about twice as long.
+![The MoErgo layout editor, showing my current layout, named Collinsworth v0.4](/images/post_images/glove80/layout.webp)
 
-Plus, putting the keyboard into bootloader mode (which is what allows the board to accept a new layout file) is a little tedious in and of itself. With the Moonlander and Ergodox, you just hit a tiny button on the board, and that does the trick. Here, hoever, you have to either designate a special bootloader key in your layout (not too difficult, but remember, you'll need one on each half of the board); or, there are special key combos you can hold when powering on the board to activate bootloader mode, which you can find in the instruction booklet.
+<figcaption>The Glove80 layout editor at <a href="https://my.glove80.com">my.glove80.com</a></figcaption>
+
+</figure>
+
+Autoshift alone is easy enough to add with [Karabiner-Elements](https://karabiner-elements.pqrs.org/), so it's still enabled. I prefer it that way, actually; it lets me use autoshift even when using the built-in laptop keyboard.
+
+Anyway, though it's less full-featured than Oryx, the layout editor works great for customizing keys. But if you want to go any deeper than that, you'll likely have to write your own code. (There's a box for you to put your own custom code into in the editor, with a strong "make sure you know what you're doing" caveat.) Fine, and probably even better for some power users, but I'll likely never touch it if it's not in the GUI, and I'm guessing a lot of users won't either.
+
+Anyway, when you're done making changes in your editor, it generates a layout file that you then upload to your keyboard. (This is often called "flashing.")
+
+<CalloutPlusQuote>
+
+One noticeable pain point: when modifying your layout, you're required to flash each side of the keyboard separately.
+
+</CalloutPlusQuote>
+
+With the Moonlander and Ergodox EZ, just uploading your layout once did the trick. Here, once you have your customization file downloaded, you'll need to put each half of the keyboard in bootloader mode, and upload the config file to each one.
+
+<SideNote>
+
+I've been told that as long as all you're doing is changing the key mappings, you should be able to get away with only uploading the layout to the left half. However, I was warned against this by the manufacturer.
+
+</SideNote>
+
+Plus, putting the keyboard into bootloader mode (which is what allows the board to accept a new layout file) is a little tedious in and of itself. With the Moonlander and Ergodox, you just hit a tiny button on the board, and that does the trick. Here, however, you have to either designate a special bootloader key in your layout (not too difficult, but remember, you'll need one on each half of the board); or, there are special key combos you can hold when powering on the board to activate bootloader mode (a little like holding shift while powering on your computer to boot in safe mode). You can find these combos in the instruction booklet.
 
 This isn't a particularly big pain point for me, personally, since I've already got my preferred layout pretty well dialed-in. But I remember when I started learning the Moonlander, I would often modify my layout multiple times a day, and that sort of on-the-fly experimentation would hit some major friction here.
 
+In fairness, having a bootloader key available, instead of being forced to use a teensy pinhole button, might be considered a pro. That's fair enough, but it brings up another quibble, which is: it's fairly easy to accidentally hit a key or key combo that interferes with the normal operation of the keyboard.
+
+If you have a bootloader key, you might hit it accidentally. There's a key that resets Bluetooth; I hit it on accident--even though it was buried in the special Magic layer (I was trying to toggle the LEDs, incidentally), and was forced to pair my keyboard all over again. No big deal, but it's a potential hazard.
+
+This section has gotten pretty long with various quibbles and minor issues. None of them are substantial on their own, but they stack up to make use of this keyboard a potentially daunting affair.
+
+<CalloutPlusQuote>
+
+The level of technical know-how required to use and modify the Glove80 makes it pretty hard to recommend to beginners or casual users.
+
+</CalloutPlusQuote>
+
+Even customizing the layout might be tricky for non-tech-savvy folks--especially knowing how easy it is to accidentally mess something up and be forced to go digging through the troubleshooting FAQ.
+
+That said, I gather ZMK is actively developed software with planned future improvements, so maybe that, and/or MoErgo's own customization tool, will become a bit more friendly to casual users as time goes on.
+
 ### Lights
 
-While the Glove80 _does_ have RGB lights under each key, they're very much less full-featured than comparable keyboards. You can't set individual colors per-key, or even per-layer, and there's only a very small number of animations to choose from.
+While the Glove80 _does_ have RGB lights under each key, the lighting seems less full-featured than comparable keyboards. You can't set individual colors per-key, or even per-layer.
 
-I think this may be a limitation of the open-source ZMK customization software, and I gather that project anticipates some improvements in the future, so some of this may change. But in any case: I wouldn't say the lights are a selling point here.
+I think this may be a limitation of ZMK (the customization software MoErgo's editor is built on), so maybe some of this may change. (Or, if you're savvy enough, maybe you could program your way around it?)
 
-### Bluetooth
+But in any case: I wouldn't say the lights are a selling point here. They're neat, and maybe nice to have. They can look pretty cool in the dark, but they accelerate battery usage when in wireless mode, and there are only a few lighting options to choose from anyway.
 
-The wireless connectivity has mostly worked very well for me. There have been a couple of instances where I need to reconfigure the board to get things working again, but I think those were probably my fault and not the board's.
+There's a nice rainbow animation that slides across all the keys (my personal favorite). If you're not using that animation, every key has to be the same color, but you can choose whether they stay lit, gradually pulse off and on, or rotate through hues in sync all together. All of this is set using the keys on the Magic layer, rather than in the layout editor. (And, of course, you can just leave the lights off.)
+
+<figure>
+
+![The right half of the Glove80 in the dark, keys illuminated in rainbow colors](/images/post_images/glove80/rainbow.webp)
+
+<figcaption>A still of the rainbow animation</figcaption>
+
+</figure>
+
+I personally wouldn't have missed the lights--or at least, wouldn't have minded if they were just there to provide a little light in the dark and didn't have all the customization options. Still, they're a nice little add-on, I suppose.
+
+One other note on the topic of lights: MoErgo cleverly decided to use the RGB lights as a status indicator. When you hit the Magic key (that's the one with the MoErgo logo), the left half illuminates to show the battery level of each half of the keyboard, which layer is currently active, key lock status, and Bluetooth status.
+
+![The left half of the Glove80 with limited keys lit up to convey the current state of the keyboard, as described in the paragraph above. The second and third rows of keys serve as battery indicators, with more keys lit left to right to indicate a higher charge per half.](/images/post_images/glove80/status.webp)
+
+### Wireless and battery
+
+The wireless connectivity has mostly worked very well for me. Only the left half connects to your host machine via Bluetooth; the right half then just connects with the left.
+
+There have been a couple of instances where the halves lost connection with each other and I needed to do some troubleshooting to get them reconnected, but I'm fairly sure those were both my fault, and caused by improper resets. In any case, re-flashing the right half was all it took to set things right again, so no big deal.
+
+With the comparable keyboards I've used, just one half needed to be powered by the host, and the other half is connected via a cable. With the Glove80, however, both halves are powered by USB-C.
+
+This is both a pro and a con. It's nice that there's no wire running between the halves, and each can be independently positioned wherever you like, however close or far from the other half. (I often store my phone and other objects between the halves of my split, so that's nice.)
+
+However, it's a con because it means you'll need to keep an eye on the power of both halves. That said, though, the battery life seems to be very good.
+
+<CalloutPlusQuote>
+
+I've used my Glove80 in wireless mode almost the entire time I've had it, and it seems like each half would easily last at least a few days on a full charge, maybe more.
+
+</CalloutPlusQuote>
+
+(_Note that this is without the RGB lights on, however; if you're using those, I'd recommend plugging both halves in_.)
+
+Each half has an independent power button, which is just a small springy nub of a switch that feels a little on the cheap side. However, since the keyboard automatically sleeps when not in use, in practice, I've rarely had a reason to turn either side off.
+
+### Ok fine but how does it actually feel?
+
+Maybe I kinda buried the lede here. The Glove80 generally feels _great_. I find myself placing my hands on it just to feel it whenever I walk through the room.

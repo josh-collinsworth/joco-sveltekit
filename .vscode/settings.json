@@ -11,5 +11,11 @@
 	"typescript.preferences.quoteStyle": "single",
 	"prettier.singleQuote": true,
 	"svelte.plugin.svelte.format.config.singleQuote": true,
-	"editor.defaultFormatter": "svelte.svelte-vscode"
+	"editor.defaultFormatter": "svelte.svelte-vscode",
+	"cSpell.words": [
+		"autoshift",
+		"bootloader",
+		"Ergodox",
+		"Karabiner"
+	]
 }

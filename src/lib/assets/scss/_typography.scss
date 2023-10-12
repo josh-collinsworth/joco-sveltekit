@@ -190,15 +190,22 @@ ol {
 figure {
 	margin: 0 0 3rem;
 
+	p {
+		margin: 0;
+	}
+
 	img {
+		display: block;
 		margin-bottom: 0;
+		margin-inline: auto;
 	}
 }
 
 figcaption {
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	text-align: center;
 	margin: 0.5rem 0 0;
+	font-style: italic;
 }
 
 :where(h2, h3, h4, h5, h6) {
