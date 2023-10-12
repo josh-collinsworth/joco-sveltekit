@@ -127,9 +127,12 @@ As I'm writing this, I'm a little over a week into using the Glove80 as my full-
 
 Although the Glove80 is made by a New Zealand company, it ships from China. I initially thought this might mean that shipping would be very expensive, very slow, or possibly both. To my surprise, however, shipping is included with the price of the Glove80, and mine arrived in less than two weeks.
 
-That price tag, I'll note, is certainly far from trivial; the Glove80 will run you $399 USD. That might be a lot for many folks, but that's a pretty fair price, comparatively speaking; similar models from other manufacturers fall in the same ballpark.
+That price tag, I'll note, is certainly far from trivial; the Glove80 will run you $399 USD. That might be a lot for many folks, but that's a pretty fair price for two reasons:
 
-However, to their credit, MoErgo includes just about everything you might need in that price: shipping, as mentioned, but also a carrying case (as of October 1st), the attached palm rests, and lots of extra parts to customize tenting and tilting to your liking.
+1. Similar models from other manufacturers run similar prices; and (or perhaps _but_)
+2. the Glove80 already includes several extras other manufacturers charge extra for.
+
+For example: as mentioned, shipping is included. So are a carrying case (as of October 1st), the attached palm rests, Bluetooth connectivity, backlit keys, and lots of extra parts to customize tenting and tilting to your liking.
 
 <SideNote>
 
@@ -139,12 +142,44 @@ Most all ergonomic keyboards adjust these angles for better comfort than the sim
 
 </SideNote>
 
-In contrast, while most manufacturers sell the bare-bones version of their keyboard for somewhere around $300–350, they _also_ feature a wide range of optional, paid add-ons that quickly drive the price much higher. In most cases, even the palm rests are an extra $30 or more (sometimes as much as $80).
+In contrast, while the bare-bones version of most similar keyboards run around $300–400, they _also_ often feature a wide range of optional, paid add-ons that quickly drive the price much higher.
 
-It's also common for supposedly ergonomic keyboards to only offer a minimal degree of tenting and/or tilting out of the box, and to offer a paid bolt-on to unlock more customization, which might run you over $100 all on its own. Wireless connectivity, if offered, is also usually a premium paid add-on. There may also be costs associated with certain colors, lights, switches, or other features.
+It's common for supposedly ergonomic keyboards to only allow a minimal degree of tenting and/or tilting out of the box, but to offer a paid bolt-on to unlock more customization, which might run you over $100 all on its own. Wireless connectivity, if offered, is also usually a premium paid add-on. There may also be costs associated with certain colors, lights, switches, or other features. In many cases, even the palm rests are an extra $30 or more (sometimes as much as $80).
 
-So, while MoErgo's $399 USD might bring a bit of sticker shock with it, know that unlike with most similar keyboards, that's the full and final price.
+<CalloutPlusQuote>
 
-I'd also like to credit MoErgo: Unbeknownst to me at the time, I ordered my Glove80 just before the cutoff when boards began shipping with carrying cases. Total bummer for me, since I could've had a carrying case for free if I'd just happened to have waited another week or so.
+So while $399 USD might seem steep, know that unlike with most similar keyboards, that's the full and final price; no up-sells or add-ons.
 
-Still, it's worth mentioning this as a credit to the company. While you _can_ buy the travel case, it now comes included at no extra cost. That's a pretty big deal. Plus, MoErgo took the initiative to offer a store credit to myself and anybody else in my situation, without even being asked. That kind of good service speaks volumes about the folks running the show and what their priorities are, if you ask me.
+</CalloutPlusQuote>
+
+Another credit to MoErgo: unbeknownst to me at the time, I ordered my Glove80 just before the new version of the keyboard began shipping. (It's not significantly different; it mostly just features minor construction improvements, and now comes with a travel case.) MoErgo put the old stock on sale for $20 off, about a week after my order.
+
+Total bummer for me, since I would've either got the newer package, or paid $20 less, if I'd only waited a little longer. But to the company's credit, they took the initiative to automatically issue a $20 store credit to me and to everybody else in the same situation. That speaks well of the company's character.
+
+Plus, that travel case now comes included with all new Glove80s at no extra cost, and that speaks very highly of the folks running the show and what their priorities are, in my opinion.
+
+### Layout customization
+
+The Glove80 uses ZMK software for customization. (Incidentally, the keyboard ships with three default layers, but with the ability to add more.)
+
+I haven't used a lot of keyboard customization software; mainly jut ZSA's Oryx, so that's my only strong point of reference. Using the Glove80's ZMK-based GUI is fairly comparable to Oryx, and relatively simple to use, at least for standard things. Adding a key like hyper or meh is a little more complex (you have to add each individual key separately, which is a little tedious), and it would be nice to have a single button for those instead, but that's a minor quibble.
+
+I also got used to ZSA's autoshift feature, which I don't believe is present in ZMK. But that's easy enough to add with Karabiner, so it's still enabled.
+
+The really noticeable pain point, in terms of customization, appears when you go to flash your layout to the keyboard.
+
+For starters, you have to flash _both_ sides individually. With the Moonlander and Ergodox EZ, just uploading your layout once did the trick. Here, while the left side is the "driver," you still have to upload your layouts to each half individually, which means the process takes about twice as long.
+
+Plus, putting the keyboard into bootloader mode (which is what allows the board to accept a new layout file) is a little tedious in and of itself. With the Moonlander and Ergodox, you just hit a tiny button on the board, and that does the trick. Here, hoever, you have to either designate a special bootloader key in your layout (not too difficult, but remember, you'll need one on each half of the board); or, there are special key combos you can hold when powering on the board to activate bootloader mode, which you can find in the instruction booklet.
+
+This isn't a particularly big pain point for me, personally, since I've already got my preferred layout pretty well dialed-in. But I remember when I started learning the Moonlander, I would often modify my layout multiple times a day, and that sort of on-the-fly experimentation would hit some major friction here.
+
+### Lights
+
+While the Glove80 _does_ have RGB lights under each key, they're very much less full-featured than comparable keyboards. You can't set individual colors per-key, or even per-layer, and there's only a very small number of animations to choose from.
+
+I think this may be a limitation of the open-source ZMK customization software, and I gather that project anticipates some improvements in the future, so some of this may change. But in any case: I wouldn't say the lights are a selling point here.
+
+### Bluetooth
+
+The wireless connectivity has mostly worked very well for me. There have been a couple of instances where I need to reconfigure the board to get things working again, but I think those were probably my fault and not the board's.
