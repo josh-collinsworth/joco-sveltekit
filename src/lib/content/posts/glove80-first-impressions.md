@@ -9,7 +9,7 @@ categories:
 coverImage: glove80/mine.webp
 coverWidth: 1920
 coverHeight: 1080
-excerpt: 'TODO'
+excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonlander and Ergodox? I share my impressions after the first few weeks of use.'
 draft: true
 published: false
 ---
@@ -20,6 +20,13 @@ published: false
   import Note from '$lib/components/Note.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
+
+<Note>
+
+This post is a work in progress and is subject to change. This note will be removed when the post reaches final draft status.
+
+</Note>
+
 
 I never had any real interest at all in mechanical keyboards until recently. I mostly considered them novelties; the kind of thing that was fine as a hobby, but not anything particularly practical.
 
@@ -39,11 +46,13 @@ Instead, my gateway into mechanical keyboards was purely driven by the search fo
 
 ## Backstory: my history with keyboards, ergonomics, and RSI
 
-For most of my life, whatever keyboard was attached to or supplied with the computer I was using was just fine with me. Even when I transitioned into full-time design and development, and spent my entire working day at a desk, I rarely gave any thought to the device beneath my fingertips.
+For most of my life, whatever keyboard was attached to or supplied with the computer I was using was just fine with me. Even when I transitioned into full-time design and development, and spent my entire working day at a desk, I rarely gave any thought to the device resting beneath my fingertips.
 
-Then came 2020, and the pandemic exploded in the US. The home became the workplace. I had been an in-office worker until that point, but haven't been back to work in an office since. Between my work and desperate attempts at escapism, my laptop was pretty much always, well, on top of my lap. (And even when it wasn't, it was probably on a surface that was in no way designed to be a comfortable workstation.)
+Then came 2020, and the pandemic exploded in the US. The home became the workplace.  Between the constant demands of remote work, and desperate attempts at escapism, my laptop was pretty much always, well, on top of my lap. (And even when it wasn't, it was probably on a surface that was in no way designed to be a comfortable workstation.)
 
-Over these weeks and months, I developed a repetitive stress injury (RSI), and though I didn't know it then, it would be my first of many. This time, it was my right wrist, pinched by the angle at which it was constantly bent for typing. The pain was ever-present, at times even preventing me from holding things tightly or carrying heavy items, and it became clear it would never subside if I didn't make changes.
+Over these weeks and months, I developed a repetitive stress injury (RSI), and though I didn't know it then, it would be my first of many. My right wrist, constantly pinched, was in ever-present and worsening pain, which was at times so bad I couldn't even hold things tightly or carry heavy items.
+
+It became clear I couldn't keep going without making changes.
 
 <figure>
 
@@ -53,9 +62,15 @@ Over these weeks and months, I developed a repetitive stress injury (RSI), and t
 
 </figure>
 
-Over the first year of working from home full-time, I ended up spending probably around $2,000 on overhauling my at-home workplace to alleviate this pain. New chair, desk, keyboard tray, and—finally—keyboard: my first split keyboard, the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/).
+<CalloutPlusQuote>
 
-That split keyboard served me well for nearly two years; it got my hands further apart, and allowed my wrists to sit at a more natural angle. But it eventually led to another, different injury: because its layout matched the default layout of a standard Mac keyboard almost identically (apart from the split in the middle, of course), my left thumb was constantly bending at uncomfortable angles to press the command key to initiate shortcuts--in particular, the command + tab shortcut, which I use dozens if not hundreds of times a day.
+Over the first year of working from home, I ended up spending around $2,000 on overhauling my at-home workplace to alleviate the pain and prevent new injuries.
+
+</CalloutPlusQuote>
+
+I got a new chair, new desk, added a keyboard tray, and—finally—purchased my first split keyboard: the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/).
+
+That split keyboard served me well for nearly two years; it got my hands further apart, and allowed my wrists to sit at a more natural angle. But it eventually led to another, different injury: my left thumb was constantly bending at uncomfortable angles to press the command key to initiate shortcuts.
 
 That's when I started looking at keyboards with thumb keys. It made sense to me that pressing the keys you use most often with your larger, stronger thumbs, rather than with your smaller fingers--and in the natural position of your thumbs--would lead to a better outcome.
 
@@ -67,29 +82,35 @@ Over time, however, a new RSI flared up, even with the Moonlander.
 
 <CalloutPlusQuote>
 
-As I write this, I'm still recovering from, and diagnosing the cause of, this latest injury. Some of it, I owe to the Moonlander specifically; some is my own fault for improper setup and usage. Some might be both.
+As I write this, I'm still recovering from this latest injury. Some of it, I owe to the Moonlander specifically; some is my own fault for improper setup and usage. Some might be both.
 
 </CalloutPlusQuote>
 
-The short version is: the Moonlander doesn't really allow your palms to rest. (Or at least, it didn't how I was using it.) So over time, my left arm muscles fatigued from constant usage and no rest; they were always activated, even when I wasn't typing. I had to train myself to move my arm off the keyboard when not in use, since, again, my hand couldn't really rest on it.
+I was adjusting the Moonlander a dozen times a day trying to figure out the problem. Turns out: it doesn't really allow your hands to just _rest_ when they're not typing. (Or at least, it didn't how I was using it.) So over time, my left arm muscles fatigued from constant activation. I had to train myself to move my arm off the keyboard when not in use, since, again, there wasn't any really comfortable way to just rest my hand (especially when using the Platform for higher tenting degrees).
 
 I'm not here to tell you the Moonlander is bad, or that it won't work for you. However, I will say (as I said in my [first impressions post](https://joshcollinsworth.com/blog/moonlander)): I think the Moonlander is a keyboard that wants to be cool first, and ergonomic second, and my experience with it over the past several months bears that out. The wrist rests are suboptimal, the tenting control you get out of the box is minimal, and the extreme tenting made possible by the Platform add-on comes with its own issues.
 
-I _thought_ if I could get my hands on the similar Ergodox EZ, it might solve my problems. The Ergodox could be used with thick palm rests, and featured extra thumb keys, which sounded nice. Plus, its multiple feet seemed to offer a wider range of tenting and tilting options.
+I initially thought the similar Ergodox EZ might solve my problems, with its thicker palm rests. However, the Ergodox didn't turn out to be as different from the Moonlander as I'd hoped. Like the Moonlander, it was a letdown in the range of customizations it offered. Plus, the keyboard was so thick that the tall wrist rests weren't actually much better than the Moonlander's thin mounted plastic ones.
 
-However, the Ergodox didn't turn out to be as different from the Moonlander as I'd hoped. Like the Moonlander, it was a letdown in the range of customizations it offered. Plus, the keyboard was so thick that the tall wrist rests weren't actually much better than the Moonlander's thin mounted plastic ones.
+Again, I should emphasize that despite valid criticisms of the Moonlander, some of my issues with it were of my own creation. (My choice of tall keycaps may even have contributed.)
 
-Again, I should emphasize that despite my valid criticisms of the Moonlander, some of my issues with it were of my own creation. (My choice of tall keycaps may even have contributed.)
+<CalloutPlusQuote>
 
-Still, even making all the adjustments I knew how to make, it wasn't working for me. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
+Ergonomics are highly personal, and even a great keyboard may or may not solve RSI issues, or prevent future injuries.
+
+</CalloutPlusQuote>
+
+All the keyboards I rejected above worked great for me at one point, after all.
+
+Still, even making all the adjustments I knew how to make--despite how much I loved the feel of it--the Moonlander just wasn't working for me anymore. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
 
 That's when I started thinking maybe the [Glove80](https://www.moergo.com/collections/glove80-keyboards) could be the fit I was looking for.
 
 ## Why the Glove80?
 
-Ergonomic keyboards cover an incredibly wide spectrum. On one end, they're little more than standard keyboards with a few curves and a palm rest added. (Microsoft's [Sculpt Ergonomic Desktop](https://www.microsoft.com/en/accessories/products/keyboards/sculpt-ergonomic-desktop?activetab=pivot:overviewtab) and Logitech's [K350](https://www.logitech.com/en-us/products/keyboards/k350-wave-ergonomic.920-001996.html) [Ergo K860](https://www.logitech.com/en-us/products/keyboards/k860-split-ergonomic.920-009166.html) both fit this bill.)
+Ergonomic keyboards cover an incredibly wide spectrum. On one end, they're little more than standard keyboards with a few curves, a gap in the middle, and/or a palm rest added. (Microsoft's [Sculpt Ergonomic Desktop](https://www.microsoft.com/en/accessories/products/keyboards/sculpt-ergonomic-desktop?activetab=pivot:overviewtab) and Logitech's [K350](https://www.logitech.com/en-us/products/keyboards/k350-wave-ergonomic.920-001996.html) and [Ergo K860](https://www.logitech.com/en-us/products/keyboards/k860-split-ergonomic.920-009166.html) fit this bill.)
 
-On the other end of the spectrum are keyboards that, well, barely even resemble traditional keyboards. They're often split (i.e., in two pieces, instead of one, allowing the wrists and forearms to sit straight in front of the shoulders instead of pointing awkwardly inwards together), and they frequently have a highly unconventional shape and layout.
+On the other end of the spectrum are devices that barely even resemble traditional keyboards. They're often split (i.e., in two pieces, instead of one, allowing the wrists and forearms to sit straight in front of the shoulders instead of pointing awkwardly inwards together), and they frequently have a highly unconventional shape and layout.
 
 <PullQuote>
 
@@ -97,7 +118,9 @@ Even if you've spent some time in this rabbit hole within a rabbit hole, neither
 
 </PullQuote>
 
-Some can look unfinished, being little more than raw circuit boards with keys on top. Some are made to be 3D-printable. Others are high-end devices from well-known manufacturers, but which still may look very different from the type of keyboards most people use.
+Some can look unfinished, being little more than raw circuit boards with keys on top. Some are made to be 3D-printable. Others are high-end devices from well-known manufacturers.
+
+Not all ergonomic keyboards are mechanical (or split, for that matter; that's a three-circle Venn diagram), but apart from the major brands you might find in any average electronics store, most are; ergonomic keyboards are very often a sub-niche of the mechanical keyboard niche.
 
 <figure>
 
@@ -106,8 +129,6 @@ Some can look unfinished, being little more than raw circuit boards with keys on
 <figcaption>A wide range of ergonomic, split, and/or mechanical keyboards. Image from <a href="https://www.rtings.com/keyboard/reviews/best/ergonomic">rtings.com</a>.</figcaption>
 
 </figure>
-
-Not all ergonomic keyboards are mechanical, but apart from those by the major brands you'd might find in any average electronics store (like the Microsofts and Logitechs mentioned above), most are; ergonomic keyboards are generally a sub-niche of the mechanical keyboard niche.
 
 Anyway, point is: even if you've spent some time in this rabbit hole within a rabbit hole, though, neither [Glove80](https://www.moergo.com/collections/glove80-keyboards) nor its maker, a New Zealand company called [MoErgo](https://www.moergo.com/), are likely to be among the main names you've heard of. Generally, it seems like [Kinesis](https://kinesis-ergo.com/) and [ZSA](https://www.zsa.io/) have the largest mindshare in the space, though there are others, like [Cloud Nine](https://cloudnineergo.com/), [Dygma](https://dygma.com/) and [UHK](https://ultimatehackingkeyboard.com/).
 
@@ -123,7 +144,7 @@ Because I could tell they cared—maybe more than anyone—about actual ergonomi
 
 While the design of the website might conjure a small toy store more than a serious international keyboard manufacturer, the Glove80 is no toy, and MoErgo does indeed take it very seriously. (Join the Discord and you'll find the founders regularly responding to questions and issues.)
 
-MoErgo goes to great lengths to explain how and why they landed on the Glove80's design, and it shows. This doesn't feel like a cool keyboard with "ergonomics" slapped on as an afterthought selling point, just because it can tent a little (looking at you, Moonlander).
+MoErgo goes to great lengths to explain how and why they landed on the Glove80's design, and it shows. This doesn't feel like a cool keyboard with "ergonomics" slapped on as an afterthought selling point, just because it can tent a little. [_Side-eyes ZSA_]
 
 The Glove80 genuinely feels as though every decision was in service to ergonomics first and foremost, and everything else was secondary.
 
@@ -282,39 +303,61 @@ Each half has an independent power button, which is just a small springy nub of 
 
 ### Ok fine but how does it actually feel?
 
-Maybe I kinda buried the lede here. The Glove80 generally feels _great_. I find myself placing my hands on it just to feel it whenever I walk through the room.
+Maybe I kinda buried the lede here. All right, let's get into it:
+
+<CalloutPlusQuote>
+
+The Glove80 generally feels _great_. I find myself placing my hands on it just to feel it whenever I walk through the room.
+
+</CalloutPlusQuote>
+
+MoErgo recommends using the keyboard in its fully "flat" default position while getting used to it, before making any tenting or tilting adjustments. I've mostly done this, and I've found the result to be generally very pleasant. I truly thought I _needed_ tenting, but at this point in my ergonomic journey, at least, what I _actually_ needed was just a really good palm rest that kept my wrists at a neutral angle.
 
 It should be noted that MoErgo sees the Glove80 as a kind of spiritual successor to the [Kinesis Advantage](https://kinesis-ergo.com/shop/advantage2/); a sort of "platform" for your hands with a scooped-out key well for each set of fingers. For many years, the Advantage was one of the only really innovative ergonomic keyboards on the market, and it seems the MoErgo makers were fans. But while it was perhaps revolutionary for its time (its layout appears to have inspired the current generation of ortholinear keyboards), it left room for improvement and iteration.
 
-I've never used a "scooped" keyboard before, but I find the feeling surprisingly natural. However, that's with the strong caveat that I've already put my time in with ortholinear boards, and know how to touch type with them well coming in. No matter what your first ortholinear keyboard is, I'd recommend expecting a ramp up time of at least a week or two with daily practice, maybe up to a couple of months.
+I've never used a "scooped" keyboard before, but I find the feeling surprisingly natural. However, that's with the strong caveat that I've already put my time in with ortholinear boards; I can touch type with them quite well at this point. No matter what your first ortholinear keyboard is, I'd recommend expecting a ramp up time of at least a week or two with daily practice, maybe up to a couple of months. (And if you've never taken the time to learn touch typing--typing without looking, using the proper fingers for each key--I'd highly recommend it, regardless of your chosen keyboard.)
+
+<CalloutPlusQuote>
 
 One of the main ergonomic goals of the Glove80 seems to be keeping your wrists in as much of a natural position as possible. That is: not bent outwards, inwards, up, or down; just flat at the same angle as your forearm.
 
-To achieve this with a scooped layout, MoErgo opted for low-profile switches and keys (Kailh Choc v1 low profile switches, specifically, and MCC-profile keycaps—more on those in another section).
+</CalloutPlusQuote>
 
-What this means is: the keys on the Glove80 are significantly taller than those on an Apple laptop or the Apple keyboard, but still also significantly shorter than any other mechanical keyboard. I opted for brown switches on my board, and they feel quite a bit like Cherry Browns, despite a lower travel distance. (If that doesn't mean anything to you, don't worry. It just means the keys have a modest bump and are moderately springy, and while they make some a little bit of sound, they aren't loud or clicky.)
+To achieve this with a scooped layout, MoErgo opted for low-profile switches and keys (Kailh Choc v1, specifically—more on the switches and keycaps in another section).
+
+What this means is: while the keys on the Glove80 are noticeably taller than those on an Apple laptop or the Apple keyboard, they're still also significantly shorter than any standard (mechanical) keyboard.
+
+<CalloutPlusQuote>
+
+I notice that the angle of my wrist is _dramatically_ lessened with the Glove80. Since my fingertips can sit a full 1–2 inches lower, my hands can sit in a far more neutral position.
+
+</CalloutPlusQuote>
 
 Many reviewers have commented how easy it is to slide your fingers up and down the columns of keys, and I've also had this experience. Gliding up or down from the home row is so easy I often find myself overshooting.
 
 Which reminds me: many reviewers _also_ comment that the Glove80 works well for folks with smaller than average hands. My hands are about average size, maybe a bit on the small side for a male, and I can confirm that I can reach any key without any issue. Again: sometimes I even _overreach_, just because the keys are nestled so nicely together.
 
-You might notice that each column of the keyboard is scooped at a little different depth, to accommodate each individual finger length. That might look funky, but honestly, it hasn't been an issue in my experience. If anything, it's kind of helpful; one of my more petty gripes with the Glove80 is that it doesn't include homing keys. (You can buy them, but not printed; they're just blank, which is a bummer.) On other boards, I rely on homing keys to make sure my fingers are in the proper position without looking, but here, thanks to those individually scooped finger trenches, if you're off the mark, you'll probably realize it right away.
+You might notice that each column of the keyboard is scooped at a little different depth, creating vertical trenches to accommodate each individual finger's length. That might look funky, but honestly, it hasn't been an issue in my experience. If anything, it's kind of helpful; one of my more petty gripes with the Glove80 is that it doesn't include homing keys. (You can buy them, but not printed; they're just blank, which is a bummer.) On other boards, I rely on homing keys to make sure my fingers are in the proper position without looking, but here, thanks to those individually scooped finger trenches, if you're off the mark, you'll probably realize it right away.
 
 ### Switches and keycaps
 
 One of the biggest bummers about the Glove80 is that the switches are not hot-swappable; they're soldered in place.
 
-The reasoning makes sense; it's a manufacturing concern. It's apparently tough to get swappable switches as close together as the Glove80's keys are, and to ensure consistent quality. So, while you won't be able to change your mind about your switches after you've purchased your keyboard, at least you _can_ still repair it, if you've got the soldering expertise or can find somebody who does.
+The reasoning makes sense; it's a manufacturing concern. It's apparently tough to get swappable switches as close together as the Glove80's keys are, and also to ensure consistent quality. So, bummer that you can't swap your switches out, but for good reason.
 
-The Glove80 ships with your choice of four switches (really, three): Red, Red Pro, White, and Brown. Like I mentioned, I got the brown, and while I'm ok with them, I wish there was an option with a little more oomph. (I used Glorious Pandas on my Moonlander and absolutely loved them.)
+And in fairness, there aren't that many low-profile switches to choose from anyway.
+
+The Glove80 ships with your choice of four switches (really, three): Red, Red Pro, White, and Brown.
 
 The Red and Red Pro are both linear switches, which means they don't have any bump or clickiness to them; they just go straight down silently when you press them. (I personally can't stand linear switches; I like to _feel_ my keypresses register. But if you're gaming, or doing something else where every millisecond counts, reds are apparently the way to go.) The Pro version requires less force to press, so it might be nice if you have weak fingers or RSI that gets in the way of applying force.
 
 The Brown and White appear to be identical, except that the White makes a clicking sound when pressed, and the Brown does not. Both are tactile switches, which means you feel a bump when you press them.
 
-Not an impressive array of choices, unfortunately, but at least every major category of switch is represented.
+I opted for Brown switches on my board, and as expected, they feel quite a bit like Cherry Browns, despite a lower travel distance. (If that doesn't mean anything to you, don't worry. It just means the keys have a modest bump and are moderately springy, and while they make a little bit of sound, they aren't loud or clicky.)
 
-As for the keycaps: Choc v1 keycaps are extremely difficult to find, in my experience. This would seem to be because Choc v1 uses its own stem (generally just referred to as Choc), which looks a bit like an electrical plug, instead of the de facto industry standard Cherry stem.
+The Brown switches are fine, but I wish there was an option with a little more oomph. I used Glorious Pandas on my Moonlander and absolutely loved them. But I don't think that's the Glove80's fault; nearly as I can tell, there just aren't any other Kailh Choc v1 switches on the market. Still, at least every major category of switch is represented (linear, tactile, and clicky).
+
+As for the keycaps: Choc v1 keycaps seem to be much harder to find than standard Cherry-compatible keycaps. This would seem to be because Choc v1 uses its own stem (generally just referred to as Choc), which looks a bit like an electrical plug, instead of the de facto industry standard Cherry stem.
 
 <figure>
 
@@ -324,6 +367,6 @@ As for the keycaps: Choc v1 keycaps are extremely difficult to find, in my exper
 
 </figure>
 
-MoErgo made this decision deliberately, however; many feel that the v2 switches, despite wider compatibility, only really manage to be the worst of both worlds. Many standard Cherry-compatible keycaps _aren't_ actually compatible with the low profile switch, and that's doubly true when the keys are so close together and angled towards each other, as on the Glove80. Choc v2 switches are also marginally taller than Choc v1, and apparently significantly less popular for the reasons above.
+MoErgo made this decision deliberately, however; many feel that Choc v2 switches, despite wider compatibility, only really manage to be the worst of both worlds. Turns out, many standard Cherry-compatible keycaps _aren't_ actually compatible with the low profile switch (they take up too much room for the two to fit together), and that's doubly true when the keys are so close together and angled towards each other, as on the Glove80. Choc v2 switches are also marginally taller than Choc v1, and apparently significantly less popular for all of those reasons; good in theory, bad in practice.
 
-Anyway: still, even though v1 is by all accounts better and more popular than v2, it can still be challenging to find Choc keycaps. (That said, there are at least three profiles available; the Glove80 ships with MCC profile, which is slightly sloped to create a vertical halfpipe shape, but there's also MBK and MBK Convex.)
+Anyway: still, even though v1 is by all accounts better and more popular than v2, it can still be challenging to find Choc keycaps. That said, there are at least three profiles available; the Glove80 ships with MCC profile, which is slightly sloped to create a vertical halfpipe shape (which is what lets your fingers "skate" up and down the columns of keys), but there's also MBK and MBK Convex.
