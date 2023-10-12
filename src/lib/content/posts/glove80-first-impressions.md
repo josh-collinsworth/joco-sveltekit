@@ -283,3 +283,47 @@ Each half has an independent power button, which is just a small springy nub of 
 ### Ok fine but how does it actually feel?
 
 Maybe I kinda buried the lede here. The Glove80 generally feels _great_. I find myself placing my hands on it just to feel it whenever I walk through the room.
+
+It should be noted that MoErgo sees the Glove80 as a kind of spiritual successor to the [Kinesis Advantage](https://kinesis-ergo.com/shop/advantage2/); a sort of "platform" for your hands with a scooped-out key well for each set of fingers. For many years, the Advantage was one of the only really innovative ergonomic keyboards on the market, and it seems the MoErgo makers were fans. But while it was perhaps revolutionary for its time (its layout appears to have inspired the current generation of ortholinear keyboards), it left room for improvement and iteration.
+
+I've never used a "scooped" keyboard before, but I find the feeling surprisingly natural. However, that's with the strong caveat that I've already put my time in with ortholinear boards, and know how to touch type with them well coming in. No matter what your first ortholinear keyboard is, I'd recommend expecting a ramp up time of at least a week or two with daily practice, maybe up to a couple of months.
+
+One of the main ergonomic goals of the Glove80 seems to be keeping your wrists in as much of a natural position as possible. That is: not bent outwards, inwards, up, or down; just flat at the same angle as your forearm.
+
+To achieve this with a scooped layout, MoErgo opted for low-profile switches and keys (Kailh Choc v1 low profile switches, specifically, and MCC-profile keycaps—more on those in another section).
+
+What this means is: the keys on the Glove80 are significantly taller than those on an Apple laptop or the Apple keyboard, but still also significantly shorter than any other mechanical keyboard. I opted for brown switches on my board, and they feel quite a bit like Cherry Browns, despite a lower travel distance. (If that doesn't mean anything to you, don't worry. It just means the keys have a modest bump and are moderately springy, and while they make some a little bit of sound, they aren't loud or clicky.)
+
+Many reviewers have commented how easy it is to slide your fingers up and down the columns of keys, and I've also had this experience. Gliding up or down from the home row is so easy I often find myself overshooting.
+
+Which reminds me: many reviewers _also_ comment that the Glove80 works well for folks with smaller than average hands. My hands are about average size, maybe a bit on the small side for a male, and I can confirm that I can reach any key without any issue. Again: sometimes I even _overreach_, just because the keys are nestled so nicely together.
+
+You might notice that each column of the keyboard is scooped at a little different depth, to accommodate each individual finger length. That might look funky, but honestly, it hasn't been an issue in my experience. If anything, it's kind of helpful; one of my more petty gripes with the Glove80 is that it doesn't include homing keys. (You can buy them, but not printed; they're just blank, which is a bummer.) On other boards, I rely on homing keys to make sure my fingers are in the proper position without looking, but here, thanks to those individually scooped finger trenches, if you're off the mark, you'll probably realize it right away.
+
+### Switches and keycaps
+
+One of the biggest bummers about the Glove80 is that the switches are not hot-swappable; they're soldered in place.
+
+The reasoning makes sense; it's a manufacturing concern. It's apparently tough to get swappable switches as close together as the Glove80's keys are, and to ensure consistent quality. So, while you won't be able to change your mind about your switches after you've purchased your keyboard, at least you _can_ still repair it, if you've got the soldering expertise or can find somebody who does.
+
+The Glove80 ships with your choice of four switches (really, three): Red, Red Pro, White, and Brown. Like I mentioned, I got the brown, and while I'm ok with them, I wish there was an option with a little more oomph. (I used Glorious Pandas on my Moonlander and absolutely loved them.)
+
+The Red and Red Pro are both linear switches, which means they don't have any bump or clickiness to them; they just go straight down silently when you press them. (I personally can't stand linear switches; I like to _feel_ my keypresses register. But if you're gaming, or doing something else where every millisecond counts, reds are apparently the way to go.) The Pro version requires less force to press, so it might be nice if you have weak fingers or RSI that gets in the way of applying force.
+
+The Brown and White appear to be identical, except that the White makes a clicking sound when pressed, and the Brown does not. Both are tactile switches, which means you feel a bump when you press them.
+
+Not an impressive array of choices, unfortunately, but at least every major category of switch is represented.
+
+As for the keycaps: Choc v1 keycaps are extremely difficult to find, in my experience. This would seem to be because Choc v1 uses its own stem (generally just referred to as Choc), which looks a bit like an electrical plug, instead of the de facto industry standard Cherry stem.
+
+<figure>
+
+<img src="/images/post_images/glove80/choc-vs-cherry.jpg" alt="" />
+
+<figcaption>Kailh Choc v1 switch with proprietary Choc stem, left; Choc v2 switch featuring a standard Cherry-compatible stem, right.</figcaption>
+
+</figure>
+
+MoErgo made this decision deliberately, however; many feel that the v2 switches, despite wider compatibility, only really manage to be the worst of both worlds. Many standard Cherry-compatible keycaps _aren't_ actually compatible with the low profile switch, and that's doubly true when the keys are so close together and angled towards each other, as on the Glove80. Choc v2 switches are also marginally taller than Choc v1, and apparently significantly less popular for the reasons above.
+
+Anyway: still, even though v1 is by all accounts better and more popular than v2, it can still be challenging to find Choc keycaps. (That said, there are at least three profiles available; the Glove80 ships with MCC profile, which is slightly sloped to create a vertical halfpipe shape, but there's also MBK and MBK Convex.)
