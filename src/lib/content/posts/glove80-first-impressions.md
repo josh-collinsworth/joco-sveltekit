@@ -150,9 +150,9 @@ The Glove80 genuinely feels as though every decision was in service to ergonomic
 
 MoErgo designates a pretty hefty portion of its website and printed materials to telling [the story of the Glove80's design](https://www.moergo.com/pages/glove80-ergonomic-keyboard-design-journey-1). It's undeniably impressive; over 500 experiments and prototypes are laid out in painstaking detail. The journey of assumptions being made, challenged, rethought and re-challenged is a testament to the designers' dedication to arriving at the best possible ergonomic solution.
 
-With all that preamble out of the way, let's get to the main course.
+---
 
-## My impressions of the Glove80
+With all that preamble out of the way, let's get to the main course.
 
 As I'm writing this, I'm a little over a week into using the Glove80 as my full-time daily driver. I initially thought I might do a pros/cons list, but a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach.
 
@@ -164,7 +164,8 @@ As I'm writing this, I'm a little over a week into using the Glove80 as my full-
 
 </figure>
 
-### Pricing and shipping
+## Pricing and shipping
+
 
 Although the Glove80 is made by a New Zealand company, it ships from China. I initially thought this might mean that shipping would be very expensive, very slow, or possibly both. To my surprise, however, shipping is included with the price of the Glove80, and mine arrived in less than two weeks.
 
@@ -199,7 +200,7 @@ Total bummer for me, since I would've either got the newer package, or paid $20 
 
 Plus, that travel case now comes included with all new Glove80s at no extra cost, and that speaks very highly of the folks running the show and what their priorities are, in my opinion.
 
-### Layout customization
+## Layout customization
 
 Like many keyboard manufacturers, MoErgo has their own layout editor app, available at [my.glove80.com](https://my.glove80.com/). This is where you go to make changes to your layout. Under the hood, this app uses open-source [ZMK software](https://zmk.dev/) for customization. The keyboard ships with three default layers: layer 0, layer 1, and the "magic" layer, which is triggered by the conspicuous MoErgo logo key, and which holds most of the hardware controls, like lights and Bluetooth. You have the ability to add more layers, if desired.
 
@@ -255,7 +256,7 @@ Even customizing the layout might be tricky for non-tech-savvy folks--especially
 
 That said, I gather ZMK is actively developed software with planned future improvements, so maybe that, and/or MoErgo's own customization tool, will become a bit more friendly to casual users as time goes on.
 
-### Lights
+## Lights
 
 While the Glove80 _does_ have RGB lights under each key, the lighting seems less full-featured than comparable keyboards. You can't set individual colors per-key, or even per-layer.
 
@@ -279,7 +280,7 @@ One other note on the topic of lights: MoErgo cleverly decided to use the RGB li
 
 ![The left half of the Glove80 with limited keys lit up to convey the current state of the keyboard, as described in the paragraph above. The second and third rows of keys serve as battery indicators, with more keys lit left to right to indicate a higher charge per half.](/images/post_images/glove80/status.webp)
 
-### Wireless and battery
+## Wireless and battery
 
 The wireless connectivity has mostly worked very well for me. Only the left half connects to your host machine via Bluetooth; the right half then just connects with the left.
 
@@ -301,7 +302,7 @@ I've used my Glove80 in wireless mode almost the entire time I've had it, and it
 
 Each half has an independent power button, which is just a small springy nub of a switch that feels a little on the cheap side. However, since the keyboard automatically sleeps when not in use, in practice, I've rarely had a reason to turn either side off.
 
-### Ok fine but how does it actually feel?
+## Ok fine but how does it actually feel?
 
 Maybe I kinda buried the lede here. All right, let's get into it:
 
@@ -339,7 +340,7 @@ Which reminds me: many reviewers _also_ comment that the Glove80 works well for 
 
 You might notice that each column of the keyboard is scooped at a little different depth, creating vertical trenches to accommodate each individual finger's length. That might look funky, but honestly, it hasn't been an issue in my experience. If anything, it's kind of helpful; one of my more petty gripes with the Glove80 is that it doesn't include homing keys. (You can buy them, but not printed; they're just blank, which is a bummer.) On other boards, I rely on homing keys to make sure my fingers are in the proper position without looking, but here, thanks to those individually scooped finger trenches, if you're off the mark, you'll probably realize it right away.
 
-### Switches and keycaps
+## Switches and keycaps
 
 One of the biggest bummers about the Glove80 is that the switches are not hot-swappable; they're soldered in place.
 
