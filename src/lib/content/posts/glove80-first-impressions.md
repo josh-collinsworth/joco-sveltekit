@@ -1,7 +1,7 @@
 ---
 title: First impressions of the MoErgo Glove80 ergonomic keyboard
-date: 2023-11-04
-updated: 2023-11-04
+date: 2023-10-24
+updated: 2023-10-24
 categories:
   - gear
   - advice
