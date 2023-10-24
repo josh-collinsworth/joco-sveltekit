@@ -293,7 +293,7 @@ This is apparently a limitation of ZMK (for now, at least), but there are hacks 
 
 In any case, though: I wouldn't say the lights are a major selling point here. They're neat. They can look pretty cool in the dark. But they accelerate battery usage when in wireless mode, and there are only a few lighting options to choose from anyway.
 
-There's a nice rainbow animation that slides across all the keys (my personal favorite, pictured below). If you're not using that animation, again, every key has to be the same color, but you can choose whether they stay lit, gradually pulse off and on, or rotate through hues in sync all together.
+There's a nice rainbow animation that slides across all the keys (my personal favorite, pictured below). If you're not using that animation, again, every key has to be the same color, but you can choose whether they stay lit, gradually pulse off and on, or rotate through hues in sync all together. Hue, saturation, and animation speed can all be adjusted, at least.
 
 By the way, the lights are toggled and adjusted using the keys on the Magic layer, rather than in the layout editor. (And, of course, you can just leave the lights off.)
 
