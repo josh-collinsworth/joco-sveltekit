@@ -22,13 +22,18 @@ published: false
 
 <style lang="scss">
 	.toc-details {
-		border: 1px solid;
+		border: 1px solid var(--lightGray);
 		padding: 1rem;
 		margin-bottom: var(--halfNote);
 		font-family: var(--headingFont);
 
+		::marker {
+			color: var(--yellow);
+		}
+
 		ul {
-			margin-block: var(--quarterNote);
+			margin-block: var(--eighthNote);
+			padding-inline-start: var(--dottedQuarterNote);
 		}
 	}
 </style>
@@ -43,6 +48,9 @@ published: false
     <li><a href="#lights">Lights</a></li>
     <li><a href="#wireless-and-battery">Wireless and battery</a></li>
     <li><a href="#ergonomics-and-customization">Ergonomics and customization</a></li>
+		<ul>
+    	<li><a href="#did-it-solve-my-issues">Did it solve my issues?</a></li>
+		</ul>
     <li><a href="#switches-and-keycaps">Switches and keycaps</a></li>
     <li><a href="#summary">Summary</a></li>
 	</ul>
@@ -68,7 +76,7 @@ Instead, my gateway into mechanical keyboards was purely driven by the search fo
 
 For most of my life, whatever keyboard was attached to or supplied with the computer I was using was just fine with me. I rarely gave any thought to the device resting beneath my fingertips.
 
-Then came 2020, and the pandemic. The home became the workplace. Between the constant demands of remote work and desperate attempts at escapism, my laptop was pretty much always, well, on top of my lap. (And even when it wasn't, it was probably on a surface that was in no way designed to be a comfortable workstation.)
+Then came 2020, and the pandemic. The home became the workplace. Between the constant demands of remote work and desperate attempts at escapism, my laptop was pretty much always…well, on top of my lap. (And even when it wasn't, it was probably on a surface that was in no way designed to be a comfortable workstation.)
 
 Over these weeks and months, I developed a repetitive stress injury (RSI), and though I didn't know it then, it would be my first of many. My right wrist, constantly pinched, was in ever-present and worsening pain, which was at times so bad I couldn't even tighten my grip or carry heavy things.
 
@@ -88,7 +96,7 @@ Over the first year of working from home, I ended up spending around $2,000 over
 
 </CalloutPlusQuote>
 
-(_What a great system, that makes working most expensive for the people least able to do it_.)
+(_What a great system, that makes working most expensive for the people for whom it's the most painful._.)
 
 I got a better chair, a standing desk, a wrist brace, and—finally—my first split keyboard: the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/).
 
@@ -97,7 +105,7 @@ I got a better chair, a standing desk, a wrist brace, and—finally—my first s
 <figcaption>The Kinesis Freestyle2 for Mac (my first ergonomic split keyboard)</figcaption>
 </figure>
 
-That split keyboard served me well for nearly two years; it got my hands further apart, and allowed my wrists to sit at a more natural angle. But it eventually led to another, different injury: my left thumb was constantly bending at uncomfortable angles to press the command key to initiate shortcuts.
+That keyboard served me well for nearly two years; it got my hands further apart, and allowed my wrists to sit at a more natural angle. But it eventually led to another, different injury: my left thumb was constantly bending at uncomfortable angles to press the command key to initiate shortcuts.
 
 That's when I started looking at keyboards with thumb keys, and ended up with a [ZSA Moonlander](https://www.zsa.io/moonlander/). [I wrote about that story here](https://joshcollinsworth.com/blog/moonlander).
 
@@ -112,13 +120,13 @@ Over time, however, a new RSI flared up, even with the Moonlander.
 
 <CalloutPlusQuote>
 
-As I write this, I'm still recovering from this latest injury. Some of it, I owe to the Moonlander specifically; some is my own fault for improper setup and usage. Some might be both.
+As I write this, I'm still recovering from this latest injury. Some of it, I attribute to the Moonlander specifically; some is probably my own fault.
 
 </CalloutPlusQuote>
 
-I was adjusting the Moonlander a dozen times a day trying to figure out the problem. Turns out: it doesn't really allow your hands to just _rest_ when they're not typing. (Or at least, it didn't how I was using it.) So over time, my left arm muscles fatigued from constant activation. I had to train myself to move my arm off the keyboard when not in use, since, again, there wasn't any really comfortable way to just rest my hand (especially when using the Platform for higher tenting angles).
+I was adjusting the Moonlander a dozen times a day trying to figure out the problem. Turns out: it doesn't really allow your hands to just _rest_ when they're not typing. (Or at least, it didn't how I was using it.) So over time, my left arm muscles fatigued from constant activation. I had to train myself to move my arm off the keyboard when not in use, since, again, there wasn't any really comfortable way to just rest my hand (especially at higher tenting angles).
 
-I'm not here to tell you the Moonlander is bad, or that it won't work for you. However, I will [say again](https://joshcollinsworth.com/blog/moonlander): I think the Moonlander is a keyboard that wants to be cool first, and ergonomic second.
+I'm not here to tell you the Moonlander is bad, or that it won't work for you. However, I will [say again](https://joshcollinsworth.com/blog/moonlander): I think it's a keyboard that wants to be cool first, and ergonomic second.
 
 I initially thought the similar [Ergodox EZ](https://ergodox-ez.com/) might solve my problems, with its thicker palm rests. However, the keyboard itself is so tall, it really wasn't any different. And sadly, like the Moonlander, the Ergodox was a letdown in the range of customizations it offered.
 
@@ -126,13 +134,13 @@ Again, I should emphasize that despite valid criticisms of the Moonlander, some 
 
 <CalloutPlusQuote>
 
-Ergonomics are highly personal, and even a great keyboard may or may not solve RSI issues, or prevent future injuries.
+Ergonomics are highly personal, and what works for one person might not work for another.
 
 </CalloutPlusQuote>
 
 All the keyboards I rejected above worked great for me at one point, after all.
 
-Still, even making all the adjustments I knew how to make--despite how much I loved the feel of it--the Moonlander just wasn't working for me anymore. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
+Still, even making all the adjustments I knew how to make--despite how much I loved the feel of it--I felt like there might be a better option for me. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
 
 That's when I started thinking maybe the [Glove80](https://www.moergo.com/collections/glove80-keyboards) could be the fit I was looking for.
 
@@ -148,8 +156,6 @@ Even within the nested rabbit hole of ergonomic mechanical keyboards, neither Gl
 
 </PullQuote>
 
-Some can look unfinished, being little more than raw circuit boards with keys on top. Some are made to be 3D-printable. Others are high-end devices from well-known manufacturers.
-
 Not all ergonomic keyboards are mechanical (or split, for that matter), but many are; ergonomic keyboards are often a sub-niche of the mechanical keyboard niche.
 
 <figure>
@@ -160,9 +166,9 @@ Not all ergonomic keyboards are mechanical (or split, for that matter), but many
 
 </figure>
 
-Even within the nested rabbit hole of ergonomic mechanical keyboards, however, neither the [Glove80](https://www.moergo.com/collections/glove80-keyboards) nor its maker, a New Zealand company called [MoErgo](https://www.moergo.com/), are likely to be among the main names you've heard of. Generally, it seems like [Kinesis](https://kinesis-ergo.com/) and [ZSA](https://www.zsa.io/) have the largest mindshare in the space (though there are others, like [Cloud Nine](https://cloudnineergo.com/), [Dygma](https://dygma.com/) and [UHK](https://ultimatehackingkeyboard.com/)).
+Even within the nested rabbit hole of ergonomic mechanical keyboards, however, neither the [Glove80](https://www.moergo.com/collections/glove80-keyboards) nor its maker, a New Zealand company called [MoErgo](https://www.moergo.com/), are likely to be among the main names you've heard of. Generally, it seems like [Kinesis](https://kinesis-ergo.com/) and [ZSA](https://www.zsa.io/) have the largest mindshare in the space (though there are others, like [Cloud Nine](https://cloudnineergo.com/), [Dygma](https://dygma.com/) and UGL, maker of the [UHK](https://ultimatehackingkeyboard.com/)).
 
-Nearly as I can tell, the MoErgo Glove80 is a dark horse; just finding reviews for it was challenging. I can't help but wonder how much of that is due to MoErgo's website design; their store has a highly dated and not particularly professional look and feel. It's definitely not a storefront that inspires confidence in the product, as far as aesthetics go.
+Nearly as I can tell, the MoErgo Glove80 is a dark horse—or at least, it was until recently. Just finding reviews for it was challenging. The designer in me can't help but wonder how much of that may be due to MoErgo's website design; their store has a pretty dated, somewhat amateurish look and feel. It's definitely not a storefront that inspires confidence in the product, as far as aesthetics go.
 
 <CalloutPlusQuote>
 
@@ -172,9 +178,9 @@ Because I could tell they cared—maybe more than anyone—about actual ergonomi
 
 </CalloutPlusQuote>
 
-While MoErgo's website does more to conjure a small toy store than a serious international keyboard manufacturer, the Glove80 is no toy, and MoErgo does indeed take it very seriously. (Join the Discord and you'll find the founders fastidiously posting updates, and actively responding to questions and issues.)
+MoErgo clearly takes the Glove80 very seriously. Join the Discord, and you'll find the founders fastidiously posting updates, and actively responding to questions and issues.
 
-MoErgo goes to great lengths to explain how and why they landed on the Glove80's design, and it shows. This doesn't feel like a cool keyboard with "ergonomics" slapped on as an afterthought selling point, just because it can tent a little. [_Side-eyes ZSA_]
+More impressive than that, though: MoErgo goes to great lengths to explain how and why they landed on the Glove80's design, and that commitment shows. This doesn't feel like a cool keyboard with "ergonomics" slapped on as an afterthought selling point, just because it can tent a little. [_Side-eyes ZSA_]
 
 <CalloutPlusQuote>
 
@@ -182,13 +188,13 @@ The Glove80 genuinely feels as though every decision was in service to ergonomic
 
 </CalloutPlusQuote>
 
-MoErgo designates a pretty hefty portion of its website and printed materials to telling [the story of the Glove80's design](https://www.moergo.com/pages/glove80-ergonomic-keyboard-design-journey-1). It's undeniably impressive; over 500 experiments and prototypes are laid out in painstaking detail. The journey of assumptions being made, challenged, rethought and re-challenged is a testament to the designers' dedication to arriving at the best possible ergonomic solution.
+MoErgo designates a pretty hefty portion of its website and printed materials to telling [the story of the Glove80's design](https://www.moergo.com/pages/glove80-ergonomic-keyboard-design-journey-1). It's undeniably impressive; over 500 experiments and prototypes are laid out in detail. The journey of assumptions being made, challenged, rethought and re-challenged is a testament to the designers' dedication to arriving at the best possible ergonomic solution.
 
 ---
 
 With all that preamble out of the way, let's get to the main course.
 
-As I'm writing this, I'm a couple of weeks into using the Glove80 as my full-time daily driver. I initially thought I might do a pros/cons list, but a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach.
+As I'm writing this, I'm a few weeks into using the Glove80 as my full-time daily driver. I initially thought I might do a pros/cons list, but a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach.
 
 <figure>
 	<img src="/images/post_images/glove80/glove80-default.webp" alt="" />
@@ -197,21 +203,11 @@ As I'm writing this, I'm a couple of weeks into using the Glove80 as my full-tim
 
 ## Pricing and shipping
 
-Although the Glove80 is made by a New Zealand company, it ships from China. I initially thought this might mean shipping would be extremely slow and/or expensive. To my surprise, however, mine arrived in less than two weeks, and shipping was included in the price of the keyboard.
+Although the Glove80 is made by a New Zealand company, it ships from China. I initially thought this might mean shipping would be very slow and/or expensive. To my surprise, however, mine arrived in less than two weeks, and shipping was included in the price of the keyboard.
 
-That price, I'll note, is certainly far from trivial; the Glove80 will run you $399 USD. That's quite steep for many folks, but all things considered, it's actually a pretty good price. Other manufacturers charge similarly for comparable keyboards, but the Glove80 already includes several extras for which those other companies might charge extra.
+That price, I'll note, is certainly far from trivial; the Glove80 will run you $399 USD. That's undeniably hefty, but all things considered, it's actually a pretty good price. Other manufacturers charge similar rates for comparable keyboards, but the Glove80 already includes several extras for which those other companies often charge extra.
 
-For example: as mentioned, shipping is included. So are the palm rests, Bluetooth connectivity, backlit keys, and lots of extra parts to customize tenting and tilting to your liking. It even includes a padded travel case now (although that's new; it didn't when I ordered mine).
-
-<SideNote>
-
-Tenting is the degree to which the keyboard slopes from the lower left and right edges up towards the center; tilting is the degree to which the whole board slopes towards or away from you.
-
-Most all ergonomic keyboards adjust these angles for better comfort than the simple, flat form of standard keyboards. Many allow you to customize one or both yourself.
-
-</SideNote>
-
-In contrast, it's common for supposedly ergonomic keyboards to only allow a minimal degree of tenting and/or tilting out of the box, but to offer a paid add-on to unlock more customization (which might run you over $100 all on its own). Wireless connectivity, if offered, can also be an upcharge. You might also pay for certain colors, lights, switches, keys, or other features. In many cases, even the palm rests run an extra $30–80.
+It's sadly common for supposedly ergonomic keyboards to only allow a minimal degree of tenting and/or tilting out of the box, but to offer a paid add-on to unlock more customization, which might run you over $100 all on its own. [_Side-eyes ZSA again_] Wireless connectivity, if offered, can also be an upcharge. You might also pay for RGB lighting, or for certain customization options. In many cases, even the palm rests run an extra $30–80.
 
 <CalloutPlusQuote>
 
@@ -219,7 +215,7 @@ So while $399 USD might seem steep, know that unlike with most similar keyboards
 
 </CalloutPlusQuote>
 
-Another credit to MoErgo: unbeknownst to me at the time, I ordered my Glove80 just before the new version of the keyboard began shipping. (It's not significantly different; it mostly just features minor construction improvements, and now comes with a travel case.) MoErgo put the old stock on sale for $20 off, about a week after my order.
+Another credit to MoErgo: unbeknownst to me at the time, I ordered my Glove80 just before the new version of the keyboard began shipping. (It's not significantly different; it mostly just features minor construction improvements, and now comes with a few extra accessories and a travel case.) MoErgo put the old stock on sale for $20 off, about a week after my order.
 
 Total bummer for me, since I would've either got the newer package, or paid $20 less, if I'd only waited a little longer. But to the company's credit, they took the initiative to automatically issue a $20 gift card and to everybody else in the same situation.
 
@@ -251,7 +247,7 @@ I haven't used a lot of keyboard customization software; mainly jut ZSA's Oryx, 
 
 I notice the editor is fairly straightforward; while you can customize key presses in a pretty wide variety of ways, you can't do much _besides_ customizing keys.
 
-That is, with Oryx, there's a wide range of keyboard options, too. I didn't use most of them, but one I did particularly like was autoshift, which lets you long-press a key instead of shift-pressing, which I find handy. It's nice to just press the "a" key for slightly longer to get an uppercase "A," (or, `[` to get `{`), rather than getting another finger involved—especially when you're still learning your layout or when it's a stretch.
+That is, with Oryx, there's a wide range of keyboard options, too. I didn't use most of them, but one I did particularly like was autoshift, which lets you long-press a key instead of shift-pressing, which I find handy. It's nice to just press the "a" key for slightly longer to get an uppercase "A," (or, `[` to get `{`), rather than getting another finger involved—especially when you're still learning your layout or when it's a physical stretch.
 
 Autoshift alone is easy enough to add with [Karabiner-Elements](https://karabiner-elements.pqrs.org/), so it's still enabled. I prefer it that way, actually; it lets me use autoshift even when using the built-in laptop keyboard.
 
@@ -263,7 +259,7 @@ One noticeable pain point: when modifying your layout, you're required to flash 
 
 </CalloutPlusQuote>
 
-With the Moonlander and Ergodox EZ, just uploading your layout once did the trick. Here, once you have your customization file downloaded, you'll need to put each half of the keyboard in bootloader mode, and upload the config file to each one.
+With the Moonlander and Ergodox EZ, just uploading your layout once did the trick. Here, once you have your customization file downloaded from the customizer app, you'll need to upload the config file to each one.
 
 <SideNote>
 
@@ -271,15 +267,17 @@ I've been told that as long as all you're doing is changing the key mappings, yo
 
 </SideNote>
 
-Plus, putting the keyboard into bootloader mode (which is what allows the board to accept a new layout file) is a little tedious in and of itself. With the Moonlander and Ergodox, you just hit a tiny physical button on the board itself. Here, however, you have to either designate a special bootloader key in your layout (not too difficult, but remember, you'll need one on each half of the board); or, hold down certain keys when powering on the keyboard (a little like holding shift while powering on your computer to boot in safe mode). You can find these combos in the instruction booklet.
+Plus, uploading a new layout file requires putting the keyboard into bootloader mode, which is a little tedious in and of itself.
+
+With the Moonlander and Ergodox, you just hit a tiny physical button on the board itself. Here, however, you have to either designate a special bootloader key in your layout (not difficult, but remember, you'll need one on each half of the board); or, hold down a special key combo when powering on the keyboard half (a little like holding shift while powering on your computer to boot it in safe mode). You can find these combos in the instruction booklet.
 
 This isn't a particularly big pain point for me, personally, since I've already got my preferred layout pretty well dialed-in. But I remember when I started learning the Moonlander, I would often modify my layout multiple times a day, and that sort of on-the-fly experimentation would hit some strong friction here.
 
-In fairness, having a bootloader key available, instead of being forced to use a teensy pinhole button, might be considered a pro. That's fair enough, but it brings up another quibble, which is: it's fairly easy to accidentally hit a key or key combo that interferes with the normal operation of the keyboard.
+In fairness, having a bootloader key available, instead of being forced to use a teensy pinhole button, might be considered a benefit. That's fair enough, but it brings up another quibble: if you have a bootloader key, you might hit it accidentally.
 
-If you have a bootloader key, you might hit it accidentally. There's a key that resets Bluetooth which I hit on accident once, even though it was buried in the special Magic layer (I was trying to toggle the LEDs, incidentally), and was forced to pair my keyboard all over again. No big deal, but it's a potential hazard.
+There's a key that resets Bluetooth that I hit mistakenly once, even though it was buried in the special Magic layer (I was trying to toggle the LEDs, incidentally). I was forced to pair my keyboard all over again. No big deal, but it's a potential hazard.
 
-This section has gotten pretty long with various quibbles and minor issues. None of them are substantial on their own, but they stack up to make use of this keyboard a potentially daunting affair.
+This section has gotten pretty long with various quibbles and minor issues. None of them are substantial on their own, but they stack up to make using this keyboard a fairly daunting affair.
 
 <CalloutPlusQuote>
 
@@ -289,17 +287,19 @@ The level of technical know-how required to use and modify the Glove80 makes it 
 
 Even customizing the layout might be tricky for non-tech-savvy folks--especially knowing how easy it is to accidentally mess something up and be forced to go digging through the troubleshooting FAQ.
 
-That said, I gather ZMK is actively developed software with planned future improvements, so maybe that, and/or MoErgo's own customization tool, will become a bit more friendly to casual users as time goes on.
+That said, I gather both MoErgo's customizer and the ZMK software it's built on are actively developed software with planned future improvements. So maybe the Glove80 will become a bit more friendly to casual users as time goes on. (Of course, you don't _have_ to customize the layout, or use layers.)
 
 ## Lights
 
-While the Glove80 _does_ have RGB lights under each key, the lighting seems a little less full-featured than comparable keyboards. Unless you're using the built-in rainbow animation, every key has to be the same color; you can't customize per-key or per-layout.
+While the Glove80 _does_ have RGB lights under each key, the lighting seems a little less full-featured than comparable keyboards. While you can customize the color, every key has to be the _same_ color; you can't customize per-key or per-layout.
 
-This _may_ be a limitation of ZMK (I'm not sure), so maybe some of this may change. Or, if you're savvy enough, maybe you could program your way around it. There are forks of ZMK that do extra things, but that of course is "you better know what you're doing" territory.
+This is apparently a limitation of ZMK (for now, at least), but there are hacks to work around it. I haven't looked into them, but regardless, that's fairly technical "you better know what you're doing" territory.
 
-In any case: I wouldn't say the lights are a major selling point here. They're neat. They can look pretty cool in the dark. But they accelerate battery usage when in wireless mode, and there are only a few lighting options to choose from anyway.
+In any case, though: I wouldn't say the lights are a major selling point here. They're neat. They can look pretty cool in the dark. But they accelerate battery usage when in wireless mode, and there are only a few lighting options to choose from anyway.
 
-There's a nice rainbow animation that slides across all the keys (my personal favorite, pictured below). If you're not using that animation, every key has to be the same color, but you can choose whether they stay lit, gradually pulse off and on, or rotate through hues in sync all together. All of this is set using the keys on the Magic layer, rather than in the layout editor. (And, of course, you can just leave the lights off.)
+There's a nice rainbow animation that slides across all the keys (my personal favorite, pictured below). If you're not using that animation, again, every key has to be the same color, but you can choose whether they stay lit, gradually pulse off and on, or rotate through hues in sync all together.
+
+By the way, the lights are toggled and adjusted using the keys on the Magic layer, rather than in the layout editor. (And, of course, you can just leave the lights off.)
 
 <figure>
 
@@ -311,7 +311,7 @@ There's a nice rainbow animation that slides across all the keys (my personal fa
 
 I personally wouldn't have missed the lights--or at least, wouldn't have minded if they were just there to provide a little light in the dark and didn't have all the customization options. Still, they're a nice-to-have.
 
-One other note on the topic of lights, though: MoErgo cleverly decided to use the RGB lights as a status indicator. When you tap the Magic layer key (that's the one with the MoErgo logo), the left half illuminates to show the battery level of each side of the keyboard, which layer is currently active, key lock status, and Bluetooth status.
+One other note on the topic of lights, though: MoErgo cleverly decided to use the RGB lights as a status indicator. When you tap the Magic layer key (the one with the MoErgo logo), the left half illuminates to show the battery level of each side of the keyboard, which layer is currently active, key lock status, and Bluetooth profile info.
 
 ![The left half of the Glove80 with limited keys lit up to convey the current state of the keyboard, as described in the paragraph above. The second and third rows of keys serve as battery indicators, with more keys lit left to right to indicate a higher charge per half.](/images/post_images/glove80/status.webp)
 
@@ -321,21 +321,21 @@ It's a clever workaround that lets you access that information without the need 
 
 The wireless connectivity has mostly worked very well for me. Only the left half connects to your host machine via Bluetooth; the right half then just connects with the left.
 
-There have been a couple of instances where the halves lost connection with each other and I needed to do some troubleshooting to get them reconnected, but I'm fairly sure those were both my fault, and caused by improper resets. In any case, re-flashing the right half was all it took to set things right again, so no big deal.
+There have been a couple of instances where the halves lost connection with each other and I needed to do some troubleshooting to get them reconnected, but I'm fairly certain those were both my fault. They both happened while I was still learning how to change the layout, and it hasn't happened since. In any case, re-flashing the right half was all it took to set things right again, so no big deal.
 
-Incidentally, the Glove80 offers multiple Bluetooth profiles (those are the six thumb keys in the photo above), which you can toggle between using Magic layer keys. This lets you connect to multiple devices, and switch between them without the need to disconnect or re-pair; you can just hit the proper key for the device you're using.
+Connection-wise, the Glove80 offers multiple Bluetooth profiles, represented by the six thumb keys in the photo above. You can toggle between using Magic layer keys. This lets you connect to multiple devices, and switch between them without the need to disconnect or re-pair; you can just hit the proper key for the device you're using.
 
 In my limited testing (switching between two MacBooks), this feature works even better than I expected. In my experience, Bluetooth is finicky on its own, and doubly so where Macbooks are involved, so I didn't expect toggling between machines to work seamlessly or on the first try, but that's exactly what happened.
 
 <CalloutPlusQuote>
 
-If you plan to use the Glove80 wirelessly with multiple devices, I'm happy to report this feature seems to work excellently
+If you plan to use the Glove80 wirelessly with multiple devices, I'm happy to report this feature seems to work excellently.
 
 </CalloutPlusQuote>
 
-With the comparable keyboards I've used, just one half needed to be powered by the host, and the other half is connected via a cable. With the Glove80, however, both halves are powered by USB-C.
+On to power. With the comparable keyboards I've used, just one half needed to be powered by the host, and the other half is connected to that one via a connector cable. With the Glove80, however, both halves are independently powered with a USB-C port.
 
-This is both a pro and a con. It's nice that there's no wire running between the halves, and that each can be independently positioned wherever you like, however close or far from the other half. (I often store my phone and other objects between the halves of my split, so that's convenient.)
+This is both a pro and a con. It's nice that there's no wire running between the halves, and that each can be independently positioned wherever you like, however close or far from the other half. (I often set my phone and other objects between the halves of my split, so that's convenient.)
 
 However, it's a con because it means you'll need to keep an eye on the power of both halves. That said, though, the battery life seems to be very good.
 
@@ -357,11 +357,21 @@ I guess this is the section that matters, so maybe I kinda buried the lede here.
 
 <CalloutPlusQuote>
 
-The Glove80 generally feels _great_. I find myself placing my hands on it just to feel it whenever I walk through the room.
+The Glove80 feels _great_. I find myself placing my hands on it just to feel it whenever I walk through the room.
 
 </CalloutPlusQuote>
 
-MoErgo recommends using the keyboard in its fully "flat" default position while getting used to it, before making any tenting or tilting adjustments. I've mostly done this, and I've found the result to be generally very pleasant. I truly thought I _needed_ tenting, but at this point in my ergonomic journey, at least, maybe I _actually_ needed a really good palm rest that kept my wrists at a neutral angle more than that.
+I'm resisting the urge to use the phrase "fits like a glove," but it really does.
+
+MoErgo recommends using the keyboard in its fully "flat" default position while getting used to it, before making any tenting or tilting adjustments. I've mostly done this, and I've found the result to be generally very pleasant. I truly thought I _needed_ tenting, but at this point in my ergonomic journey, at least, maybe I _actually_ needed a really good palm rest that kept my wrists at a neutral angle.
+
+<SideNote>
+
+Tenting is the degree to which the keyboard slopes from the lower left and right edges up towards the center; tilting is the degree to which the whole board slopes towards or away from your body.
+
+Most all ergonomic keyboards try to optimize these form factors; many allow you to customize one or both yourself.
+
+</SideNote>
 
 It should be noted that MoErgo sees the Glove80 as a kind of spiritual successor to the [Kinesis Advantage](https://kinesis-ergo.com/shop/advantage2/); a sort of "platform" for your hands with a scooped-out key well for each set of fingers.
 
@@ -439,7 +449,11 @@ Since I started this post off by talking about the RSI issues that led me to try
 
 I'd love to say the Glove80 has been exactly what I needed, but truthfully: while my condition now is much better than it was when I was shopping, I'm not exactly sure what to attribute to the hardware, and what to attribute to other life changes.
 
-Like any physical health issue, the causes of repetitive stress injuries (and their cures, for that matter) can often be complex. Lots of factors contribute both ways, and so just changing one thing, keyboard or otherwise, isn't always likely to have a dramatic impact all on its own.
+<CalloutPlusQuote>
+
+Like any physical issue, the cause of (and remedy for) RSI is often complex. So just changing one thing, keyboard or otherwise, isn't always likely to have a significant impact all on its own.
+
+</CalloutPlusQuote>
 
 My situation was already beginning to improve before the Glove80 arrived, thanks to the arm and wrist exercises I'd been doing regularly. So it's tough to say what's the keyboard, and what's just me, being more mindful and diligent.
 
