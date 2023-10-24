@@ -10,8 +10,6 @@ coverImage: glove80/mine.webp
 coverWidth: 1920
 coverHeight: 1080
 excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonlander and Ergodox? I share my impressions after the first few weeks of use.'
-draft: true
-published: false
 ---
 
 <script>
@@ -26,11 +24,12 @@ published: false
 		padding: 1rem;
 		margin-bottom: var(--halfNote);
 		font-family: var(--headingFont);
-
 		::marker {
 			color: var(--yellow);
 		}
-
+		summary + ul {
+			margin-block-start: var(--quarterNote);
+		}
 		ul {
 			margin-block: var(--eighthNote);
 			padding-inline-start: var(--dottedQuarterNote);
@@ -53,10 +52,13 @@ published: false
 		</ul>
     <li><a href="#switches-and-keycaps">Switches and keycaps</a></li>
     <li><a href="#summary">Summary</a></li>
+		<ul>
+    	<li><a href="#pros-and-cons">Pros and cons</a></li>
+		</ul>
 	</ul>
 </details>
 
-I never had any real interest at all in mechanical keyboards until recently. I mostly considered them novelties; the kind of thing that was fine as a hobby, but not anything particularly practical.
+I never had any real interest at all in mechanical keyboards until recently. I mostly considered them a novelty; the kind of thing that was fine as a hobby, but not anything particularly practical.
 
 Over the last year or so, however, I've been going deeper and deeper down the rabbit hole of mechanical keyboards, and I've discovered a much richer, more fulfilling world than I ever suspected. There's just something about nerding out over the finest details of the machine you touch and use every day that can be extremely gratifying.
 
@@ -66,7 +68,7 @@ My gateway into mechanical keyboards was purely driven by the search for better 
 
 </PullQuote>
 
-It was silly that I never looked any closer at things like keycaps and switches, I now realize. After all, a person who spends all day on their feet will likely care deeply about their shoes; why shouldn't someone whose fingers press keys thousands of times a day be invested in how their fingers feel?
+It was silly that I never looked any closer at things like keycaps and switches, I now realize. After all, a person who spends all day on their feet will likely care deeply about their shoes; why shouldn't someone who logs thousands of keypresses a day be invested in how their fingers feel?
 
 However, unlike most mechanical keyboard enthusiasts, I wasn't initially drawn to the hobby by any interest in the feel, sound, look, or performance.
 
@@ -138,9 +140,9 @@ Ergonomics are highly personal, and what works for one person might not work for
 
 </CalloutPlusQuote>
 
-All the keyboards I rejected above worked great for me at one point, after all.
+(All the keyboards I rejected above worked great for me at one point, after all.)
 
-Still, even making all the adjustments I knew how to make--despite how much I loved the feel of it--I felt like there might be a better option for me. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
+Still, even making all the adjustments I knew how to make--despite how much I loved the feel of it--I felt like there might be a better option for me than the Moonlander at this stage of my life and career. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
 
 That's when I started thinking maybe the [Glove80](https://www.moergo.com/collections/glove80-keyboards) could be the fit I was looking for.
 
@@ -149,12 +151,6 @@ That's when I started thinking maybe the [Glove80](https://www.moergo.com/collec
 Ergonomic keyboards cover an incredibly wide spectrum. On one end, they're little more than standard keyboards with a few curves, a gap in the middle, and/or a palm rest added. (Microsoft's [Sculpt Ergonomic Desktop](https://www.microsoft.com/en/accessories/products/keyboards/sculpt-ergonomic-desktop?activetab=pivot:overviewtab) and Logitech's [K350](https://www.logitech.com/en-us/products/keyboards/k350-wave-ergonomic.920-001996.html) and [Ergo K860](https://www.logitech.com/en-us/products/keyboards/k860-split-ergonomic.920-009166.html) fit this bill.)
 
 On the other end of the spectrum are devices that barely even resemble traditional keyboards. They're often split (i.e., in two pieces, instead of one, allowing the wrists and forearms to sit straight in front of the shoulders instead of pointing awkwardly inwards together), and they frequently have a highly unconventional shape and layout.
-
-<PullQuote>
-
-Even within the nested rabbit hole of ergonomic mechanical keyboards, neither Glove80 nor its maker, MoErgo, are likely to be among the main names you've heard of.
-
-</PullQuote>
 
 Not all ergonomic keyboards are mechanical (or split, for that matter), but many are; ergonomic keyboards are often a sub-niche of the mechanical keyboard niche.
 
@@ -194,7 +190,7 @@ MoErgo designates a pretty hefty portion of its website and printed materials to
 
 With all that preamble out of the way, let's get to the main course.
 
-As I'm writing this, I'm a few weeks into using the Glove80 as my full-time daily driver. I initially thought I might do a pros/cons list, but a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach.
+As I'm writing this, I'm almost a month into using the Glove80 as my full-time daily driver. I'll wrap things up with a tidy list of pros and cons, but in the meantime, a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach to this post.
 
 <figure>
 	<img src="/images/post_images/glove80/glove80-default.webp" alt="" />
@@ -373,7 +369,7 @@ Most all ergonomic keyboards try to optimize these form factors; many allow you 
 
 </SideNote>
 
-It should be noted that MoErgo sees the Glove80 as a kind of spiritual successor to the [Kinesis Advantage](https://kinesis-ergo.com/shop/advantage2/); a sort of "platform" for your hands with a scooped-out key well for each set of fingers.
+It should be noted that MoErgo sees the Glove80 as a kind of spiritual successor to the [Kinesis Advantage](https://kinesis-ergo.com/shop/advantage2/); a sort of raised "platform" for your hands with a scooped-out key well for each set of fingers.
 
 <figure>
 
@@ -385,7 +381,7 @@ It should be noted that MoErgo sees the Glove80 as a kind of spiritual successor
 
 For many years, the Advantage was one of the only really innovative ergonomic keyboards on the market, and it seems the MoErgo makers were fans. But while it was perhaps revolutionary for its time (its layout appears to have inspired the current generation of ortholinear keyboards), it left room for improvement and iteration.
 
-I've never used a "scooped" keyboard before, but I found the adjustment surprisingly minimal. However, that's with the strong caveat that I've already put my time in with ortholinear boards; I can touch type with them quite well at this point. I'm sure the learning curve would've been exponentially higher if this had been my first ortholinear keyboard.
+I've never used a raised keyboard before, but I found the adjustment surprisingly minimal. However, that's with the strong caveat that I've already put my time in with ortholinear boards; I can touch type with them quite well at this point. I'm sure the learning curve would've been exponentially higher if this had been my first ortholinear keyboard.
 
 <SideNote>
 
@@ -399,11 +395,11 @@ One of the main ergonomic goals of the Glove80 seems to be keeping your wrists i
 
 </CalloutPlusQuote>
 
-To achieve this with a scooped layout, MoErgo opted for low-profile switches and keys (Kailh Choc v1, specifically—more on the switches and keycaps in another section).
+To achieve this with a raised keyboard MoErgo opted for low-profile switches and keys (Kailh Choc v1, specifically—more on the switches and keycaps in another section).
 
 What this means is: while the keys on the Glove80 are noticeably taller than those on an Apple laptop or the Apple keyboard, they're still also significantly shorter than any standard (mechanical) keyboard. The home row sits at a little less than an inch above the desk surface.
 
-It should be noted that some ergonomics-minded folks don't like scooped key wells. The argument goes that in order to have _lowered_ keys, your hands are forced to be _higher_ above the surface of the desk. This in turn means the optimal desk height with a scooped keyboard will be lower than it would be with a standard keyboard, to accommodate the difference in height. (In the case of the Glove80, this is probably a matter of about 1–1.5 inches.)
+It should be noted that some ergonomics-minded folks don't like raised keyboards, since the scooped key wells mean your hands have to sit higher above the desk surface. This in turn means the optimal desk height with a raised keyboard will be lower than it would be with a standard keyboard, to accommodate the difference in height. (In the case of the Glove80, this is probably a matter of only about 1–1.5 inches, depending on your own adjustments.)
 
 This isn't an issue for me, with my adjustable [Uplift desk](https://www.upliftdesk.com/) legs. But that said: I _do_ find myself pushing the desk to its lowest possible point more now than I did before. If your work surface doesn't adjust—or isn't very low—you might have issues that I didn't.
 
@@ -447,11 +443,11 @@ Regardless, for now, I haven't felt the need to utilize the added hardware, as t
 
 Since I started this post off by talking about the RSI issues that led me to try the Glove80 in the first place, I should probably address the question of how much the Glove80 has helped with those issues.
 
-I'd love to say the Glove80 has been exactly what I needed, but truthfully: while my condition now is much better than it was when I was shopping, I'm not exactly sure what to attribute to the hardware, and what to attribute to other life changes.
+I'd love to say the Glove80 has been exactly what I needed, but it's not that simple. Truthfully: while my condition now is much better than it was when I was shopping, I'm not exactly sure what to attribute to the hardware, and what to attribute to other life changes.
 
 <CalloutPlusQuote>
 
-Like any physical issue, the cause of (and remedy for) RSI is often complex. So just changing one thing, keyboard or otherwise, isn't always likely to have a significant impact all on its own.
+Like any physical issue, the cause of RSI is often complex and multi-faceted. So just changing one thing, keyboard or otherwise, isn't likely to fix things all on its own.
 
 </CalloutPlusQuote>
 
@@ -465,7 +461,7 @@ So…what if I had found the Glove80 right away, back when my issues first start
 
 Obviously, I have no way of knowing for sure. But I think so. I think using this keyboard for the better part of the last three years or so probably would've saved me some issues.
 
-For now, in any case, my plan is to stick with the Glove80 for the foreseeable future, and closely watch the changes over time. The strongest signals will only emerge with time.
+For now, in any case, my plan is to stick with the Glove80 for the foreseeable future, and try to listen better to what my body is telling me. The strongest signals will only emerge with time, and I may revisit this post (or write a new one) as I learn more.
 
 
 ## Switches and keycaps
@@ -520,4 +516,46 @@ The Glove80 is definitely the most ergonomics-minded keyboard I've ever touched.
 
 </CalloutPlusQuote>
 
-It's unfortunate that
+It's unfortunate that it's limited in terms of switches and keycaps, and that it's a little more technical than some of its contemporaries. But all things considered, I'm very happy with my investment here, and I think this is a keyboard I'll continue to use for a very long time.
+
+I've assembled a final pros and cons list, if you're just looking for the tl;dr on the lengthy ramblings above. Most of the cons are things not everyone would care about (and/or that are only important to keyboard nerds such as myself). So while I certainly can find a number of nits to pick, nits they remain. This is overall a very good value.
+
+(Also worth noting: it's entirely possible some of the items on the "cons" list change over time as the software receives further updates.)
+
+### Pros and cons
+
+<div class="pro-con">
+	<style lang="scss">
+		.pro-con {
+			grid-template-columns: 1fr;
+			margin-block-end: var(--halfNote);
+			@media (min-width: 32rem) {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: var(--dottedQuarterNote);
+			}
+		}
+	</style>
+<div>
+
+**Pro:**
+
+- Good value for price; lots included
+- Feels very good
+- Broad range of adjustments
+- Good wireless connection  and battery life
+- Likely to be comfortable for a wide range of hand types
+- Relatively low profile for a raised keyboard
+
+</div>
+<div>
+
+**Con:**
+
+- Moderately expensive
+- Limited selection of switches and keycaps
+- Not as easy to customize as some comparable models
+- Limited and unimpressive lighting
+
+</div>
+</div>
