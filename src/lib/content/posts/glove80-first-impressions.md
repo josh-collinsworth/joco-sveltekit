@@ -490,7 +490,7 @@ The Brown switches are fine, but the keyboard enthusiast in me wishes there was 
 
 In any case, the narrow range of choices isn't MoErgo's fault; nearly as I can tell, there just aren't any other Kailh Choc v1 switches on the market. At least you still have a choice of linear, tactile, or clicky.
 
-As for the keycaps: Choc v1 keycaps seem to be much harder to find than standard Cherry-compatible keycaps. This would seem to be because Choc v1 uses its own stem (generally just referred to as Choc), which looks a bit like a two-prong electrical plug, instead of the de facto industry standard Cherry "plus" stem.
+As for the keycaps: Choc v1 keycaps seem to be much harder to find than standard Cherry-compatible keycaps. This is probably largely because Choc v1 uses its own stem (generally just referred to as Choc), which looks a bit like a two-prong electrical plug, instead of the de facto industry standard Cherry "plus" stem.
 
 <figure>
 
@@ -506,7 +506,7 @@ Turns out, not all Cherry-compatible keycaps are actually compatible with low pr
 
 Choc v2 switches are also marginally taller than Choc v1, so they represent a small but meaningful change to ergonomics. All that makes Choc v2 good in theory, but suboptimal in practice (in this use case, at least), and so MoErgo chose once again to optimize for fit over compatibility, which I see as a good thing.
 
-Still, it can be very challenging to find Choc keycaps. They're a small fraction the popularity of Cherry. MoErgo sells a few add-on packs, but they're not much. A lot of popular keycap manufacturers don't even offer Choc sets, but some do.
+Still, again: it can be very challenging to find Choc keycaps. They're a small fraction the popularity of Cherry. MoErgo sells a few add-on packs, but they're not much. A lot of popular keycap manufacturers don't even offer Choc sets, but some do.
 
 ## Summary
 
@@ -546,6 +546,7 @@ I've assembled a final pros and cons list, if you're just looking for the tl;dr 
 - Good wireless connection  and battery life
 - Likely to be comfortable for a wide range of hand types
 - Relatively low profile for a raised keyboard
+- Travels easily
 
 </div>
 <div>
