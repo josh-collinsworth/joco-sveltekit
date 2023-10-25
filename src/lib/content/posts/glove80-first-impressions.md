@@ -1,7 +1,7 @@
 ---
 title: First impressions of the MoErgo Glove80 ergonomic keyboard
 date: 2023-10-24
-updated: 2023-10-24
+updated: 2023-10-25
 categories:
   - gear
   - advice
@@ -341,7 +341,7 @@ I've used my Glove80 in wireless mode almost the entire time I've had it, and it
 
 </CalloutPlusQuote>
 
-(_Note that this is without the RGB lights on, however; if you're using those, I'd recommend plugging both halves in_.)
+(_Note that this is without the RGB lights on, however; if you're using those, I'd recommend plugging both halves in. That's why I said "would" above; I can't resist toying with the LEDs for long enough to actually test how long the keyboard would stay charged without them on_.)
 
 Each half has an independent power button, which is just a small springy nub of a switch that feels a little on the cheap side. However, since the keyboard automatically sleeps when not in use, in practice, I've rarely had a reason to turn either side off.
 
@@ -353,7 +353,7 @@ I guess this is the section that matters, so maybe I kinda buried the lede here.
 
 <CalloutPlusQuote>
 
-The Glove80 feels _great_. I find myself placing my hands on it just to feel it whenever I walk through the room.
+The Glove80 feels _fantastic_. I find myself placing my hands on it just to feel it whenever I walk through the room. That's now nice it feels.
 
 </CalloutPlusQuote>
 
@@ -411,6 +411,8 @@ I notice the angle of my wrist is _dramatically_ lessened with the Glove80. Betw
 
 </CalloutPlusQuote>
 
+I actually pulled out my Moonlander after using the Glove80 for a while, and I noticed my wrists bend upward _much_ more severely with the former than with the latter. (I wanted to switch to the Moonlander for a bit, just to enjoy my old switches and keycaps, but after feeling how suboptimal its palm rest is, I sadly just put it back in its case. Maybe another day.)
+
 Many reviewers have commented how easy it is to slide your fingers up and down the columns of keys, and I've also had this experience. Gliding up or down from the home row is so easy I often find myself overshooting.
 
 Which reminds me: many reviewers _also_ comment that the Glove80 works well for folks with smaller hands. My hands are pretty average size for an adult male (about 7.5 inches from my wrist to the tip of my middle finger), but I can confirm that I can reach any key without any issue, though the function keys are a slight stretch.
@@ -423,7 +425,7 @@ You might notice that each column of the keyboard is scooped at a little differe
 
 That might look funky or intimidating, but honestly, it hasn't been an issue in my experience. If anything, it's kind of helpful; one of my more petty gripes with the Glove80 is that it doesn't include homing keys. (You can buy them, but not printed; they're just blank, which is a bummer.) On other boards, I rely on homing keys to make sure my fingers are in the proper position without looking, but here, thanks to those individually scooped finger trenches, if you're off the mark, you'll probably realize it right away.
 
-Anyway, all that to say: so far I've been very pleased with the feel and ergonomics, though I haven't done much to customize tenting or tilting yet.
+Anyway, all that to say: so far I've been very pleased with the feel and ergonomics, though I haven't customized tenting or tilting _too_ far just yet.
 
 Speaking of that, though: the Glove80 has five adjustable feet on the bottom of each side. Each individual foot can be adjusted by tightening or loosening the screw to create the desired angle. (The sixth foot, on the outer middle, is not adjustable, as it doesn't really need to be.)
 
