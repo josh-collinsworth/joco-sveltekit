@@ -18,6 +18,8 @@ Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karm
 
 _August 2023 – present_
 
+- Lead frontend and occasional role in various redesigns of Deno website pages and architecture, as well as new features in the [Deploy](https://deno.com/deploy) dashboard.
+
 
 ### [Shopify](https://shopify.com/)
 

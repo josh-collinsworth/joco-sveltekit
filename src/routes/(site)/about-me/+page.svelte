@@ -1,8 +1,17 @@
 <script lang="ts">
-	import { EXTERNAL_POSTS } from '$lib/data/external_posts';
-	import { talks } from '$lib/data/talks';
-	import Main from '$lib/components/Main.svelte';
+	import { EXTERNAL_POSTS } from '$lib/data/external_posts'
+	import { talks } from '$lib/data/talks'
+	import Main from '$lib/components/Main.svelte'
 </script>
+
+<svelte:head>
+	<title>Josh Collinsworth | About me</title>
+	<meta
+		data-key="description"
+		name="description"
+		content="A bit about my personal life and work history."
+	/>
+</svelte:head>
 
 <Main>
 	<div class="compressed-content writing">
@@ -15,8 +24,8 @@
 
 		<p>
 			I'm currently a Frontend Engineer at <a href="https://deno.land">Deno</a>. Before that, I was
-			a senior frontend developer at <a href="https://shopify.com">Shopify</a>. . In my spare time,
-			I love hobby coding; I'm the maker and designer of the word games <i>Quina</i>
+			a senior frontend developer at <a href="https://shopify.com">Shopify</a>. In my spare time, I
+			love hobby coding; I'm the maker and designer of the word games <i>Quina</i>
 			(<a href="https://apps.apple.com/us/app/quina/id1636895462">iOS</a>/<a
 				href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a
 			>/<a href="https://quina.app">web</a>) and <i>Hondo</i>
@@ -26,10 +35,10 @@
 		</p>
 
 		<p>
-			I wrote and maintain an open-source SvelteKit static blog starter (<a
-				href="https://github.com/josh-collinsworth/sveltekit-blog-starter">repo</a
-			>/<a href="https://sveltekit-static-starter.netlify.app">demo</a>), and I still do occasional
-			freelance development and design.
+			I wrote and maintain an open-source SvelteKit static blog starter (when I have the time, at
+			least—<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">repo</a>/<a
+				href="https://sveltekit-static-starter.netlify.app">demo</a
+			>), and I still do occasional freelance development and design.
 		</p>
 
 		<p>
@@ -58,13 +67,14 @@
 		</p>
 
 		<p>
-			I moved to the Kansas City area fairly recently, but was in Omaha for many years before that.
+			I moved to the Kansas City area fairly recently, but was in Omaha for several years before
+			that.
 		</p>
 
 		<p>
 			Personally, I am a: hobby coder; font hoarder; husband since 2012; dad since 2019 (though
-			notorious for dad jokes since long before); accessibility advocate; cold brew consumer; DEI
-			accomplice; Facebook, Instagram, and Twitter abandoner; Mastodon appreciator; semi-notorious
+			notorious for dad jokes since long before); accessibility advocate; DEI accomplice; cold brew
+			aficionado; Facebook, Instagram, and Twitter abandoner; Mastodon appreciator; semi-notorious
 			React critic; occasional public speaker and podcast guest; pun enthusiast; curious learner;
 			dog person; lifelong Nintendo fan; musician/guitarist/hack pianist; he/him/his; liberal abuser
 			of semicolons.
