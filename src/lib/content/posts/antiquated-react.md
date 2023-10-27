@@ -1,7 +1,7 @@
 ---
 title: Things you forgot (or never knew) because of React
 date: 2023-08-04
-updated: 2023-08-15
+updated: 2023-10-27
 categories:
   - opinion
   - web
@@ -406,6 +406,8 @@ PHP is back, baby.
 
 ### Two-way data binding isn't hard and it isn't a bad idea
 
+Or, a better title for this section might be: <strong>forms just aren't supposed to be that hard</strong>.
+
 I think it's important to remember that React was created by Facebook, in order to solve Facebook's unique set of problems.
 
 One of React's strongest opinions—that data should flow only one way (top down)—is a good example of how the engineering challenges of Facebook in the early 2010s indelibly shaped React's architecture.
@@ -414,7 +416,15 @@ For some time, it seemed like one-way data flow was considered a best practice. 
 
 Working with forms in React is notoriously cumbersome because every user keystroke is a two-step process: get the value from the input; then set the state to match it (which in turn needlessly re-renders the input, to contain the exact value it already did, but synced up with React state). Sure, it's usually too fast to notice, but it's a lot of extra work.
 
-Svelte, Vue, and many others don't have this issue. You can just bind state in such a way that it updates automatically from both ends. If the state changes, the DOM updates; if the DOM changes, the state updates.
+This is why there's a proliferation of form libraries for React; making a form in React is notoriously one of the most difficult things to do with the framework. In fact, I can genuinely say I have no knowledge of any other tool that makes working with forms so infamously unwieldy.
+
+<CalloutPlusQuote>
+
+Forms are a standard web platform feature, and many frameworks that have come since have opted to trust and use the platform, rather than push so obstinately against it.
+
+</CalloutPlusQuote>
+
+Even if you forget about the server side of things, though, and deal with forms purely on the frontend: Svelte, Vue, and many others, don't have the same data binding and syncing issues. You can just bind state in such a way that it updates automatically from both ends. If the state changes, the DOM updates; if the DOM changes, the state updates.
 
 This way, you don't have to do the multi-step dance. If you just want to capture, say, the value of a text box, you do two-way data binding. Then, when the user types into the field, the data updates automatically, and you can get it whenever the time is right with no further steps. If in the meantime you need to do something like set a value or clear the field, that's also a simple one-liner.
 
