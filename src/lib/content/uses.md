@@ -9,10 +9,9 @@
 
 - Aside from good old fashioned HTML and CSS, JavaScript is my main language these days, and [SvelteKit](https://kit.svelte.dev/) is my framework of choice for just about any new project. I've begun to default to [TypeScript](https://www.typescriptlang.org/) for pretty much all new projects, as well (even though I'm not convinced it's really doing much for me in most cases; I just kinda like it).
 
-- Previously, I've worked a good deal with [Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org). Professionally, I work in [React](https://reactjs.org/), [Remix](http://remix.run/) and/or [Preact](https://preactjs.com/), and have built several personal projects with React as well (though it's not my first choice). I've also got working experience with jQuery and Knockout.
+- Previously, I've worked a good deal with [Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org). Professionally, I work/have worked a lot in various [React](https://reactjs.org/) flavors, including [Preact](https://preactjs.com/), [Fresh](https://fresh.deno.dev), and [Remix](http://remix.run/). I've also got working experience with jQuery and Knockout.
 
-- I love CSS passionately, and generally do not use any CSS libraries or frameworks, if I have the choice. All my CSS is from-scratch, responsive, and custom (usually written in
-  [SCSS](https://sass-lang.com/), though I do enjoy CSS modules as well). I love authoring smooth, fluid transitions and animations. I know Tailwind and have worked with it professionally, but I'm not a fan, for reasons I should probably just write a blog post about.
+- I love CSS passionately, and generally do not use any CSS libraries or frameworks, if I have the choice. I often lean on [SCSS](https://sass-lang.com/), though I do enjoy CSS modules as well. I love authoring smooth, fluid transitions and animations. I know [Tailwind](https://tailwindcss.com) and use it professionally. Parts of it are very nice, but I don't favor it personally.
 
 - I'm a strong proponent of well-architected, accessible, and semantic <b>HTML</b>. (I create and use SVG often.)
 
@@ -58,8 +57,8 @@
 
 - [Logitech MX Ergo Plus trackball mouse](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html): I was previously using an [Anker Vertical Mouse](https://www.anker.com/products/variant/xanker-24g-wireless-vertical-ergonomic-optical-mouse/xa7852011), but switched to a trackball when some wrist issues flared up. The trackball saves the arm movement. I tend to switch up what I use frequently these days, to keep any one thing from getting too repetitive (I also currently have a trackpad on my desk), but the trackball mouse has been my mainstay since summer 2022, and surprisingly easy to adjust to.
 
-- [ZSA Moonlander](https://www.zsa.io/moonlander) keyboard:
-  I was previously using the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/), and still like that one, but the thumb keys on the Moonlander became key (ha) for reducing finger strain. Plus, the wide range of customization options is excellent. I wrote about [switching to the Moonlander in this post](/blog/moonlander). (If you're a keyboard nerd like I now am: I use [these MT3 keycaps](https://drop.com/buy/drop-matt3o-devtty-custom-keycap-set) and [Glorious Panda](https://www.gloriousgaming.com/products/glorious-panda-mechanical-switches) switches.)
+- [MoErgo Glove80](https://moergo.com/) keyboard:
+	My ergonomic keyboard journey is kinda long and detailed, but the Glove80 is where I am right now. You can [read more about my keyboard/ergonomics story here](/blog/glove80-first-impressions). Previously, I used the [ZSA Moonlander](https://www.zsa.io/moonlander) for close to a year, and before that, the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/).
 
 - [Herman Miller Sayl Chair](https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/):
   I made it about two months as a full-time work-from-home employee before I went and bought one of these chairs. It’s the most comfortable and easily adjustable office chair I’ve ever sat in (and it looks really nice, too).
