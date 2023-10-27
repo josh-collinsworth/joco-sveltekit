@@ -1,7 +1,7 @@
 ---
 title: First impressions of the MoErgo Glove80 ergonomic keyboard
 date: 2023-10-24
-updated: 2023-10-25
+updated: 2023-10-27
 categories:
   - gear
   - advice
@@ -122,7 +122,7 @@ Over time, however, a new RSI flared up, even with the Moonlander.
 
 <CalloutPlusQuote>
 
-As I write this, I'm still recovering from this latest injury. Some of it, I attribute to the Moonlander specifically; some is probably my own fault.
+As I write this, I'm still recovering from this latest injury. Some of it, I attribute to the Moonlander specifically; some is probably my own fault. Some might not even be work-related.
 
 </CalloutPlusQuote>
 
@@ -445,7 +445,7 @@ Regardless, for now, I haven't felt the need to utilize the added hardware, as t
 
 Since I started this post off by talking about the RSI issues that led me to try the Glove80 in the first place, I should probably address the question of how much the Glove80 has helped with those issues.
 
-I'd love to say the Glove80 has been exactly what I needed, but it's not that simple. Truthfully: while my condition now is much better than it was when I was shopping, I'm not exactly sure what to attribute to the hardware, and what to attribute to other life changes.
+I'd love to say the Glove80 has been exactly what I needed, but while I think it _has_ help, it's also not that simple. Truthfully: while my condition now is much better than it was when I was shopping, I'm not exactly sure what to attribute to the hardware, and what to attribute to other life changes.
 
 <CalloutPlusQuote>
 
@@ -455,9 +455,9 @@ Like any physical issue, the cause of RSI is often complex and multi-faceted. So
 
 My situation was already beginning to improve before the Glove80 arrived, thanks to the arm and wrist exercises I'd been doing regularly. So it's tough to say what's the keyboard, and what's just me, being more mindful and diligent.
 
-What I _can_ say is: I absolutely love the palm rest on this keyboard. It's just plastic, of course, but its positioning feels as supportive and comfortable as I wished all my other keyboards' palm rests were. My hands feel as though they're in a very comfortable position, and the Glove80 seems as though it can accommodate any adjustments I might decide I need in the future.
+That said: I absolutely love the palm rest on this keyboard. It's just plastic, of course, but its positioning feels as supportive and comfortable as I wished all my other keyboards' palm rests were. My hands feel as though they're in a very comfortable position, and the Glove80 seems as though it can accommodate any adjustments I might decide I need in the future. And, for what it's worth: since using the Glove80, I really haven't had any issues in either wrist. I even think it might be helping my elbow, although I'm not 100% sure that was ever totally a work thing, and it's too soon to tell anyway.
 
-So, the Glove80 probably isn't a miracle cure. But then again, that's not really fair. Ergonomics is arguably more about prevention than recuperation anyway.
+In any case: the Glove80 probably isn't a miracle cure. But then again, that's not really fair. Ergonomics is arguably more about prevention than recuperation anyway.
 
 So…what if I had found the Glove80 right away, back when my issues first started over three years ago? Would it have made more of a major difference, coming from the default Apple keyboard? And more importantly, would it have saved me some of these issues I've dealt with since?
 
