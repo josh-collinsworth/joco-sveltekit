@@ -1,7 +1,7 @@
 ---
 title: First impressions of the MoErgo Glove80 ergonomic keyboard
 date: 2023-10-24
-updated: 2023-10-27
+updated: 2023-10-29
 categories:
   - gear
   - advice
@@ -126,21 +126,21 @@ As I write this, I'm still recovering from this latest injury. Some of it, I att
 
 </CalloutPlusQuote>
 
-I was adjusting the Moonlander a dozen times a day trying to figure out the problem. Turns out: it doesn't really allow your hands to just _rest_ when they're not typing. (Or at least, it didn't how I was using it.) So over time, my left arm muscles fatigued from constant activation. I had to train myself to move my arm off the keyboard when not in use, since, again, there wasn't any really comfortable way to just rest my hand (especially at higher tenting angles).
+I don't think my issues _all_ stemmed from working on a computer, either; I notice minor pain sometimes even from playing my Switch in handheld mode for extended periods, or from keeping my arm locked in place when driving long distances.
 
-I'm not here to tell you the Moonlander is bad, or that it won't work for you. However, I will [say again](https://joshcollinsworth.com/blog/moonlander): I think it's a keyboard that wants to be cool first, and ergonomic second.
+Still: I was adjusting the Moonlander a dozen times a day trying to figure out the problem. Turns out: it doesn't really allow your hands to just _rest_ when they're not typing. (Or at least, it didn't how I was using it, and certainly not without bending your wrists upward.) So over time, my left arm muscles fatigued from constant activation. I had to train myself to move my arm off the keyboard when not in use, since, again, there wasn't any really comfortable way to just rest my hand (especially at higher tenting angles).
+
+I'm not here to tell you the Moonlander is bad, or that it won't work for you.  However, I will [say again](https://joshcollinsworth.com/blog/moonlander): I think it's a keyboard that wants to be cool first, and ergonomic second.
 
 I initially thought the similar [Ergodox EZ](https://ergodox-ez.com/) might solve my problems, with its thicker palm rests. However, the keyboard itself is so tall, it really wasn't any different. And sadly, like the Moonlander, the Ergodox was a letdown in the range of customizations it offered.
 
-Again, I should emphasize that despite valid criticisms of the Moonlander, some of my issues with it were of my own creation. (My choice of tall keycaps may even have contributed.)
+Again, I should emphasize that despite valid criticisms of the Moonlander, some of my issues with it were of my own creation, and some probably weren't even entirely work-related.
 
 <CalloutPlusQuote>
 
-Ergonomics are highly personal, and what works for one person might not work for another.
+Ergonomics are highly personal, and everything you do in your day contributes. What works for one person might not work for another.
 
 </CalloutPlusQuote>
-
-(All the keyboards I rejected above worked great for me at one point, after all.)
 
 Still, even making all the adjustments I knew how to make--despite how much I loved the feel of it--I felt like there might be a better option for me than the Moonlander at this stage of my life and career. So again, beset by arm pain (this time in both wrists, as well as my left elbow), I set out to find a solution.
 
@@ -443,9 +443,9 @@ Regardless, for now, I haven't felt the need to utilize the added hardware, as t
 
 ### Did it solve my issues?
 
-Since I started this post off by talking about the RSI issues that led me to try the Glove80 in the first place, I should probably address the question of how much the Glove80 has helped with those issues.
+Since I started this post off by talking about the RSI issues that led me to try the Glove80 in the first place, I should probably address the question of how much it's helped with those issues.
 
-I'd love to say the Glove80 has been exactly what I needed, but while I think it _has_ help, it's also not that simple. Truthfully: while my condition now is much better than it was when I was shopping, I'm not exactly sure what to attribute to the hardware, and what to attribute to other life changes.
+I'd love to say the keyboard solved all my problems, but while I think it _has_ helped, it's also not that simple. Truthfully: while my condition now is much better than it was when I was shopping, I'm not exactly sure what to attribute to the hardware, and what to attribute to other life changes.
 
 <CalloutPlusQuote>
 
@@ -455,15 +455,23 @@ Like any physical issue, the cause of RSI is often complex and multi-faceted. So
 
 My situation was already beginning to improve before the Glove80 arrived, thanks to the arm and wrist exercises I'd been doing regularly. So it's tough to say what's the keyboard, and what's just me, being more mindful and diligent.
 
-That said: I absolutely love the palm rest on this keyboard. It's just plastic, of course, but its positioning feels as supportive and comfortable as I wished all my other keyboards' palm rests were. My hands feel as though they're in a very comfortable position, and the Glove80 seems as though it can accommodate any adjustments I might decide I need in the future. And, for what it's worth: since using the Glove80, I really haven't had any issues in either wrist. I even think it might be helping my elbow, although I'm not 100% sure that was ever totally a work thing, and it's too soon to tell anyway.
+That said: I absolutely love the palm rest on this keyboard. It's just plastic, of course, but its positioning feels as supportive and comfortable as I wished all my other keyboards' palm rests were. My hands feel as though they're in a very comfortable position, and the Glove80 seems as though it can accommodate any adjustments I might decide I need in the future.
 
-In any case: the Glove80 probably isn't a miracle cure. But then again, that's not really fair. Ergonomics is arguably more about prevention than recuperation anyway.
+And, for what it's worth: since using the Glove80, I really haven't had any issues in either wrist. I even think it might be helping my elbow, although I'm not 100% sure that was ever totally a work thing, and it's too soon to tell anyway.
 
-So…what if I had found the Glove80 right away, back when my issues first started over three years ago? Would it have made more of a major difference, coming from the default Apple keyboard? And more importantly, would it have saved me some of these issues I've dealt with since?
+I can say this, though: the last several weeks, I've felt my wrists and arms wear down as the week went on. I'd rest and recuperate on the weekend, not touching a computer the whole time, and then start all over the following week.
 
-Obviously, I have no way of knowing for sure. But I think so. I think using this keyboard for the better part of the last three years or so probably would've saved me some issues.
+<CalloutPlusQuote>
 
-For now, in any case, my plan is to stick with the Glove80 for the foreseeable future, and try to listen better to what my body is telling me. The strongest signals will only emerge with time, and I may revisit this post (or write a new one) as I learn more.
+This past Friday was the first in weeks, maybe months, where I actually felt fine, and I wasn't straining my arms and wrists just to get through the last day of the week. Plus, I don't remember the last time I felt like I needed to do a full stretching routine.
+
+</CalloutPlusQuote>
+
+That's saying something. But is it all due to the Glove80? Probably not. At the same time, though, I doubt I'd be writing that last bit if it weren't for the new keyboard, either.
+
+I wasn't a firm believer at first. (Earlier drafts of this post weren't this positive in this section.) But I'm telling you...when you get your desk and arm rests dialed in with those palm rests on the keyboard, it's a magical feeling.
+
+Granted, other keyboards have solved my issues before, too, before eventually creating new ones. So I'll be sticking with the Glove80 for the foreseeable future to see if it can both exorcise old demons and ward off new ones. The strongest signals will only emerge with time, and I may revisit this post (or write a new one) as I learn more.
 
 
 ## Switches and keycaps
