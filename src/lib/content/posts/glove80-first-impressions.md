@@ -1,7 +1,7 @@
 ---
 title: First impressions of the MoErgo Glove80 ergonomic keyboard
 date: 2023-10-24
-updated: 2023-10-29
+updated: 2023-10-30
 categories:
   - gear
   - advice
@@ -39,23 +39,20 @@ excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonl
 
 <details class="toc-details">
 	<summary>Table of contents</summary>
-	<ul>
-    <li><a href="#backstory-my-history-with-keyboards-ergonomics-and-rsi">Backstory: my history with keyboards, ergonomics, and RSI</a></li>
-    <li><a href="#why-the-glove80">Why the Glove80?</a></li>
-    <li><a href="#pricing-and-shipping">Pricing and shipping</a></li>
-    <li><a href="#layout-customization">Layout customization</a></li>
-    <li><a href="#lights">Lights</a></li>
-    <li><a href="#wireless-and-battery">Wireless and battery</a></li>
-    <li><a href="#ergonomics-and-customization">Ergonomics and customization</a></li>
-		<ul>
-    	<li><a href="#did-it-solve-my-issues">Did it solve my issues?</a></li>
-		</ul>
-    <li><a href="#switches-and-keycaps">Switches and keycaps</a></li>
-    <li><a href="#summary">Summary</a></li>
-		<ul>
-    	<li><a href="#pros-and-cons">Pros and cons</a></li>
-		</ul>
-	</ul>
+
+	- [Backstory: my history with keyboards, ergonomics, and RSI](#backstory-my-history-with-keyboards-ergonomics-and-rsi)
+	- [Why the Glove80?](#why-the-glove80)
+	- [Options](#options)
+	- [Pricing and shipping](#pricing-and-shipping)
+	- [Layout customization](#layout-customization)
+	- [Lights](#lights)
+	- [Wireless and battery](#wireless-and-battery)
+	- [Ergonomics and customization](#ergonomics-and-customization)
+		- [Did it solve my issues?](#did-it-solve-my-issues)
+	- [Switches and keycaps](#switches-and-keycaps)
+	- [Summary](#summary)
+		- [Pros and cons](#pros-and-cons)
+
 </details>
 
 I never had any real interest at all in mechanical keyboards until recently. I mostly considered them a novelty; the kind of thing that was fine as a hobby, but not anything particularly practical.
@@ -193,9 +190,29 @@ With all that preamble out of the way, let's get to the main course.
 As I'm writing this, I'm almost a month into using the Glove80 as my full-time daily driver. I'll wrap things up with a tidy list of pros and cons, but in the meantime, a lot of my observations really aren't either (or, are both at the same time), and so I think I'll take more of a scattershot approach to this post.
 
 <figure>
-	<img src="/images/post_images/glove80/glove80-default.webp" alt="" />
+	<img src="/images/post_images/glove80/glove80-sideways.jpg" alt="" />
 	<figcaption>The Glove80 with default layout. Image from MoErgo</figcaption>
 </figure>
+
+## Options
+
+Compared to some other similar keyboards, the choices you'll need to make when ordering a Glove80 are fairly minimal. Mainly, you only choose:
+
+- Switches (covered in depth [here](#switches-and-keycaps)); and
+- Color; grey or white
+
+The keyboard comes with the palm rests already attached, but they can be removed if you prefer, for whatever reason. (They're a big part of the package to me, so I don't know why you'd want to, but maybe in some special mounting scenarios you might.)
+
+<figure>
+
+<img src="/images/post_images/glove80/glove80-white.webp" alt="" />
+<figcaption>Glove80 in white, with palm rests removed and additional custom keycaps. Image from MoErgo.</figcaption>
+</figure>
+
+There's also a version available with unsoldered switches, in case you're mechanically minded and want to add your own, but most of us will probably just be choosing switches and color.
+
+Worth noting: the keycaps (and included cable) will be white regardless of what color you choose for the body of the keyboard.
+
 
 ## Pricing and shipping
 
@@ -480,7 +497,7 @@ The switches on the Glove80 are low-profile Choc v1 switches, and unfortunately,
 
 There's a good reason for this drawback, though: apparently, when the keys are as close together as the Glove80's are—and when they sit at angles, rather than uniformly flat—swappable switches are much riskier to the quality and consistency of the keyboard. Soldering the switches in place essentially means a better product.
 
-Besides, there aren't very many Choc v1 switches to choose from anyway. The Glove80 ships with your choice of four switches (really, three): Brown, White, Red, and Red Pro.
+Besides, there aren't very many Choc v1 switches to choose from anyway. The Glove80 ships with your choice of four switches (kinda three): Brown, White, Red, and Red Pro.
 
 <SideNote>
 
@@ -496,11 +513,13 @@ The Browns and Whites appear to be identical from the tech specs, except that th
 
 I opted for Brown switches on my board, and as expected, they feel quite a bit like Cherry Browns, despite a lower travel distance. (If that doesn't mean anything to you, don't worry. It just means the keys have a modest bump and are moderately springy, and while they do make a little bit of sound, they aren't loud or clicky.)
 
-The Brown switches are fine, but the keyboard enthusiast in me wishes there was an option with a little more oomph. I used [Glorious Pandas](https://www.gloriousgaming.com/products/glorious-panda-mechanical-switches) on my Moonlander and absolutely loved them. I still haven't gotten used to the softer feel of the browns yet (although that will probably take a few weeks of use).
+The Brown switches are fine, but the keyboard enthusiast in me wishes there was an option with a little more oomph. I used [Glorious Pandas](https://www.gloriousgaming.com/products/glorious-panda-mechanical-switches) on my Moonlander and absolutely loved them. I still haven't fully gotten used to the softer feel of the browns yet.
 
 In any case, the narrow range of choices isn't MoErgo's fault; nearly as I can tell, there just aren't any other Kailh Choc v1 switches on the market. At least you still have a choice of linear, tactile, or clicky.
 
-As for the keycaps: Choc v1 keycaps seem to be much harder to find than standard Cherry-compatible keycaps. This is probably largely because Choc v1 uses its own stem (generally just referred to as Choc), which looks a bit like a two-prong electrical plug, instead of the de facto industry standard Cherry "plus" stem.
+As for the keycaps: the caps included with the Glove80 appear to be opaque white at first glance, but when you activate the RGB LEDs, their translucency becomes apparent, and you can see the light shining through from below.
+
+If you're the modding sort, know that Choc v1 keycaps seem to be much harder to find than standard Cherry-compatible keycaps. This is probably largely because Choc v1 uses its own stem (generally just referred to as _Choc_), which looks a bit like a two-prong electrical plug, instead of the de facto industry standard Cherry "plus" stem.
 
 <figure>
 
@@ -551,12 +570,12 @@ I've assembled a final pros and cons list, if you're just looking for the tl;dr 
 **Pro:**
 
 - Good value for price; lots included
-- Feels very good
+- Feels great
 - Broad range of adjustments
 - Good wireless connection  and battery life
 - Likely to be comfortable for a wide range of hand types
 - Relatively low profile for a raised keyboard
-- Travels easily
+- Lightweight; travels easily
 
 </div>
 <div>
