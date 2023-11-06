@@ -1,7 +1,7 @@
 ---
 title: First impressions of the MoErgo Glove80 ergonomic keyboard
 date: 2023-10-24
-updated: 2023-10-30
+updated: 2023-11-6
 categories:
   - gear
   - advice
@@ -119,11 +119,11 @@ Over time, however, a new RSI flared up, even with the Moonlander.
 
 <CalloutPlusQuote>
 
-As I write this, I'm still recovering from this latest injury. Some of it, I attribute to the Moonlander specifically; some is probably my own fault. Some might not even be work-related.
+As I write this, I'm still recovering from this latest injury. Some of it, I attribute to the Moonlander specifically; some is likely my own fault. Some probably isn't even work-related.
 
 </CalloutPlusQuote>
 
-I don't think my issues _all_ stemmed from working on a computer, either; I notice minor pain sometimes even from playing my Switch in handheld mode for extended periods, or from keeping my arm locked in place when driving long distances.
+I don't think _all_ my issues stemmed from working on a computer; I notice minor pain sometimes even from playing my Switch in handheld mode for extended periods, or from keeping my arm locked in place when driving long distances.
 
 Still: I was adjusting the Moonlander a dozen times a day trying to figure out the problem. Turns out: it doesn't really allow your hands to just _rest_ when they're not typing. (Or at least, it didn't how I was using it, and certainly not without bending your wrists upward.) So over time, my left arm muscles fatigued from constant activation. I had to train myself to move my arm off the keyboard when not in use, since, again, there wasn't any really comfortable way to just rest my hand (especially at higher tenting angles).
 
@@ -199,9 +199,9 @@ As I'm writing this, I'm almost a month into using the Glove80 as my full-time d
 Compared to some other similar keyboards, the choices you'll need to make when ordering a Glove80 are fairly minimal. Mainly, you only choose:
 
 - Switches (covered in depth [here](#switches-and-keycaps)); and
-- Color; grey or white
+- Color; grey (basically black), or white
 
-The keyboard comes with the palm rests already attached, but they can be removed if you prefer, for whatever reason. (They're a big part of the package to me, so I don't know why you'd want to, but maybe in some special mounting scenarios you might.)
+The keyboard comes with the palm rests already attached, but they can be removed if you prefer, for whatever reason. (They're a big part of the package to me, so I don't know why you'd want to, but maybe if you were mounting the keyboard you would.)
 
 <figure>
 
@@ -209,7 +209,7 @@ The keyboard comes with the palm rests already attached, but they can be removed
 <figcaption>Glove80 in white, with palm rests removed and additional custom keycaps. Image from MoErgo.</figcaption>
 </figure>
 
-There's also a version available with unsoldered switches, in case you're mechanically minded and want to add your own, but most of us will probably just be choosing switches and color.
+There's also a version available with unsoldered switches, in case you're mechanically minded and want to add your own, but most of us will probably just choose switches and color.
 
 Worth noting: the keycaps (and included cable) will be white regardless of what color you choose for the body of the keyboard.
 
@@ -220,7 +220,9 @@ Although the Glove80 is made by a New Zealand company, it ships from China. I in
 
 That price, I'll note, is certainly far from trivial; the Glove80 will run you $399 USD. That's undeniably hefty, but all things considered, it's actually a pretty good price. Other manufacturers charge similar rates for comparable keyboards, but the Glove80 already includes several extras for which those other companies often charge extra.
 
-It's sadly common for supposedly ergonomic keyboards to only allow a minimal degree of tenting and/or tilting out of the box, but to offer a paid add-on to unlock more customization, which might run you over $100 all on its own. [_Side-eyes ZSA again_] Wireless connectivity, if offered, can also be an upcharge. You might also pay for RGB lighting, or for certain customization options. In many cases, even the palm rests run an extra $30–80.
+It's sadly common for supposedly ergonomic keyboards to only allow a minimal degree of tenting and/or tilting out of the box, but to offer a paid add-on to unlock more customization, which might run you over $100 all on its own. [_Side-eyes ZSA again_]
+
+Wireless connectivity, if offered, can also be an upcharge. You might also pay for RGB lighting, or for certain customization options. In many cases, even the palm rests run an extra $30–80.
 
 <CalloutPlusQuote>
 
@@ -232,7 +234,7 @@ Another credit to MoErgo: unbeknownst to me at the time, I ordered my Glove80 ju
 
 Total bummer for me, since I would've either got the newer package, or paid $20 less, if I'd only waited a little longer. But to the company's credit, they took the initiative to automatically issue a $20 gift card and to everybody else in the same situation.
 
-Plus, that travel case now comes included with all new Glove80s at no extra cost. All of this speaks very highly of the folks running the show and what their priorities are. You get the sense that MoErgo is willing to sacrifice profits to make people happy, and that's one of the best things you can say about a company, if you ask me.
+Plus, that travel case now comes included with all new Glove80s at no extra cost. All of this speaks very highly of the folks running the show and what their priorities are. You get the sense that MoErgo is willing to invest profits to make people happier, and that's one of the best things you can say about a company, if you ask me.
 
 ## Layout customization
 
@@ -354,15 +356,19 @@ However, it's a con because it means you'll need to keep an eye on the power of 
 
 <CalloutPlusQuote>
 
-I've used my Glove80 in wireless mode almost the entire time I've had it, and it seems like each half would easily last at least a few days on a full charge, maybe more.
+I've used my Glove80 in wireless mode almost the entire time I've had it, and the battery lasts easily a good couple of weeks or more.
 
 </CalloutPlusQuote>
 
-(_Note that this is without the RGB lights on, however; if you're using those, I'd recommend plugging both halves in. That's why I said "would" above; I can't resist toying with the LEDs for long enough to actually test how long the keyboard would stay charged without them on_.)
+It seems like the left half tends to drain a little faster than the right (which makes sense, since it's the "brain"). Still, as of this update, it's been at least 10 full days since I last powered down or charged either half, and they're both reading at over 50% battery.
+
+Worth noting: I use the Glove80 full-time during my workday, but don't usually use it on evenings or weekends. I also haven't had the RGB LEDs active in that time period; I'm sure the lights would accelerate battery use.
 
 Each half has an independent power button, which is just a small springy nub of a switch that feels a little on the cheap side. However, since the keyboard automatically sleeps when not in use, in practice, I've rarely had a reason to turn either side off.
 
 In fact, I left my keyboard on while I was out of town for over a week, and didn't notice any significant battery drain when I returned.
+
+So all in all: high marks for battery.
 
 ## Ergonomics and customization
 
