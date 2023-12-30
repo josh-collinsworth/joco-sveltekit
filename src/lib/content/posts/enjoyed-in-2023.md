@@ -64,7 +64,7 @@ My best time thus far is around 4 hours 45 minutes (game time, that is; real tim
 
 There are also single-game randomizers out there, if mixing the two is a little intense for you. It's not for everyone, but if you have an easier time remembering the map of Zebes and Hyrule than you do remembering why you just walked into the physical room you're in, you might find a randomizer worth your time. (Warning: they're a little hard to get started with because Nintendo is notoriously litigious; you'll need your own ROM of the game, and they aren't always easy to come by.)
 
-Enabling this habit has been _Parallels_, a software that lets you run a Windows...uh, window, on your Mac. It worked well enough for me to give up Boot Camp, and even well enough to run some Windows-only Steam games. (Or do some dev testing on Windows, if you wanna be, ya know, productive and all.)
+Enabling this habit has been _Parallels_, a software that lets you run a Windows...uh, window, on your Mac. I only have the one-time-purchase subscription (which apparently doesn't work as well as the subscription model), but it works well enough for me to give up Boot Camp, and even well enough to run some Windows-only Steam games. (Or do some dev testing on Windows, if you wanna be, ya know, productive and all.)
 
 ## Mastodon
 
