@@ -76,7 +76,7 @@ No—really. It's a feature. You'll hit a point on Mastodon where you've seen al
 
 ## Mechanical keyboards
 
-At this time in 2024, I had barely begun to try out the ZSA Moonlander, and was still mostly frustrated by its steep learning curve. But that curve wasn't as painful as the thumb and wrist pain that had gradually taken over my work life, and so 2023 was the year I fully committed to mechanical/ergonomic keyboards, and I'm incredibly happy I did. I fell in love, and my wrists haven't been in such good shape in December since at least 2019.
+At this time in 2022, I had barely begun to try out the ZSA Moonlander, and was still mostly frustrated by its steep learning curve. But that curve wasn't as painful as the thumb and wrist pain that had gradually taken over my work life, and so 2023 was the year I fully committed to mechanical/ergonomic keyboards, and I'm incredibly happy I did. I fell in love, and my wrists haven't been in such good shape in December since at least 2019.
 
 I also now have opinions on things like key switches, keycap profiles, and other similar nerdery, and own more sets of keycaps than actual keyboards. (Three, is the number of keyboards; the Moonlander, a Ergodox EZ, and the Glove80. I don't think I'll be trying any new ones out for a while now, though.)
 
