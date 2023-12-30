@@ -161,3 +161,13 @@ I didn't play a lot of tabletop games in 2023, but I started getting back into t
 ## Writing satire
 
 My biggest CodePen of the year was [this Honest LinkedIn Notifications](https://codepen.io/collinsworth/pen/eYxMQbj) pen, and I also wrote [this satirical post about layoffs](https://joshcollinsworth.com/blog/layoffs-are-bullshit) in 2023. Maybe I'll do more of that kind of writing in 2024, too.
+
+## Good kitchen tools
+
+I cooked more in 2023 than I had for most of my life prior, and good quality stuff for the kitchen is the difference in a bad time cooking and a smooth, enjoyable experience.
+
+I love lots of stuff from [Our Place](https://fromourplace.com/), especially the Always Pan 2.0 (pretty much any time I cooked anything, I used this) and the Oven Pan, which handily doubles as a griddle if needed. Both are amazingly non-sticky. Our Place's kitchen shears are also great (especially good for cutting up a kid's pasta, pizza, hot dogs, etc.)
+
+I also love my [Hedley & Bennett](https://www.hedleyandbennett.com/) chef's knife. I have a comparable Wüsthof, and I honestly think the H&N one is better.
+
+Lastly, a Vitamix blender is worth every penny. (I mainly use mine for smoothies and for grinding a pound of coffee beans at a time to make cold brew, but it makes short work of both.)
