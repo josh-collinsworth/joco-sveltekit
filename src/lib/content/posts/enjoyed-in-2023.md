@@ -22,7 +22,7 @@ The change is night and day, in all the ways I hoped and expected. I loved Shopi
 
 I traveled a lot this year; both companies sent me on international trips (more on that later), and my family was able to take a summer vacation to Tennessee, along with a couple of other, shorter excursions.
 
-In daily life, we spent our first full year in Kansas City, after moving in late 2020. My son started pre-k, and began making friends at school and in the neighborhood. I started to drink less and exercise more (both things I'm still working on and still not where I want to be with, but still positive). I wrote more blog posts than any previous year. I started getting back into tabletop gaming just a little bit, mostly on the casual side of things.
+In daily life, we spent our first full year in Kansas City, after moving in late 2022. My son started pre-k, and began making friends at school and in the neighborhood. I started to drink less and exercise more (both things I'm still working on and still not where I want to be with, but still positive). I wrote more blog posts than any previous year. I started getting back into tabletop gaming just a little bit, mostly on the casual side of things.
 
 I blogged more than any other year (without even needing this post to pad the numbers). [I got to appear on a podcast](https://podcasters.spotify.com/pod/show/sean-g7/episodes/Why-ReactJS-is-Outdated-w-Josh-Collinsworth-e297f7j) because of one of the posts that blew up in dev circles, was mentioned or quoted on a few others, and started a handful of personal projects (at least one of which, hopefully, will see the light of day at some point).
 
