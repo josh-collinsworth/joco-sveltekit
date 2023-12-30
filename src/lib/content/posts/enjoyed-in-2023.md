@@ -157,3 +157,7 @@ My most-listened podcast of the year, and the only one I never miss an episode o
 ## Casual tabletop games
 
 I didn't play a lot of tabletop games in 2023, but I started getting back into them after playing pretty much none for the last few years, and I've enjoyed both _Taco Cat Goat Cheese Pizza_, and _Chicken!_, both of which can be adequately played with a 4–5-year-old.
+
+## Writing satire
+
+My biggest CodePen of the year was [this Honest LinkedIn Notifications](https://codepen.io/collinsworth/pen/eYxMQbj) pen, and I also wrote [this satirical post about layoffs](https://joshcollinsworth.com/blog/layoffs-are-bullshit) in 2023. Maybe I'll do more of that kind of writing in 2024, too.
