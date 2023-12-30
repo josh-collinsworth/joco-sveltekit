@@ -96,6 +96,8 @@ I think it'll take me a second read to really start to fully appreciate _All the
 
 I've also been reading [_The Murderbot Diaries_](https://www.marthawells.com/murderbot.htm) series, which I'm four books into at this point, and which is a fun, bite-sized escape from reality.
 
+(By the way, I read all these on a Kindle PaperWhite, and while I don't love supporting Amazon, it's a great reader.)
+
 In audio books (do I need to separate the two? I don't even know), I listened to most or all of, and enjoyed, the following:
 
 - [_Cultish_](https://www.harpercollins.com/products/cultish-amanda-montell), an eye-opening read about cult-like groups and how they use language to reinforce group status in ways that play to our innate human needs and desires. Definitely worth a read just for the perspective on the appeal of such groups and how we're all not so different as we'd like to think from those we know who get sucked into a "cult" of one kind or another.
@@ -152,7 +154,7 @@ The album rocks.
 
 ## ShopTalk Show
 
-My most-listened podcast of the year, and the only one I never miss an episode of.
+My most-listened podcast of the year, and the only one I never miss an episode of. The D-D-D-Discord is full of great people and conversations too.
 
 ## Casual tabletop games
 
