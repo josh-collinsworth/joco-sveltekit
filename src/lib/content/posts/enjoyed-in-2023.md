@@ -120,7 +120,7 @@ Was this the best year ever for CSS? It's hard to track what landed when (how do
 
 Other shows I watched this year worth mentioning are [_Silo_](https://tv.apple.com/us/show/silo/umc.cmc.3yksgc857px0k0rqe5zd4jice), a sci-fi novel adaptation about an underground city where class structure mimics the levels of the physical structure. Nobody knows the history of why or how they got there, but most are certain they can never go outside, and fearfully heed the harsh rules of the Silo for fear of expulsion.
 
-Solo is excellent, and I definitely recommend it, but it started stronger than it ended, in my opinion. (Also: Common is in way, way, _way_ over his head in this cast.) Still, it's a journey well worth taking, and the wide-open door left for the second season offers some very intriguing possibilities.
+Silo is excellent, and I definitely recommend it, but it started stronger than it ended, in my opinion. (Also: Common is in way, way, _way_ over his head in this cast.) Still, it's a journey well worth taking, and the wide-open door left for the second season offers some very intriguing possibilities.
 
 Finally, I enjoyed finally getting to [_The Morning Show_](https://tv.apple.com/us/show/the-morning-show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m), although as of this writing I've mainly only seen season one. It was very good, though at times its highly recognizable cast got in the way of the story more than they supported it, in my opinion, and the jury's still out on season two and beyond.
 
