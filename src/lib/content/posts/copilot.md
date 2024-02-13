@@ -36,7 +36,7 @@ Other times, however, Copilot is clearly just regurgitating irrelevant code samp
 
 I assume this is because of a flaw in how LLMs work. They're prediction engines; they're literally built to guess. They're not made to give you verifiable facts or to say "I don't know" (at least, not above a certain threshold of probability).
 
-Copilot gets its name because, well, it's supposed to be your assistant. Somebody you trust to work with you towards your goal. But that's not always accurate, in my experience.
+Copilot gets its name because, well, it's supposed to be your assistant; somebody you trust to work with, who has your back. But that's not always accurate, in my experience.
 
 <CalloutPlusQuote>
 
@@ -211,7 +211,7 @@ I tried prompting Copilot a third time. This time, I was _extremely_ explicit ab
 
 I'm not going to bother posting the result I got here, because it was more of the same. `<a href="#">` with JavaScript to do all the work. At least all the tags were right this time, even if the implementation was obviously bad.
 
-Another solution with all the same problems, so clear that my editor already had them underlined.
+Another solution with most of the same problems, so clear that my editor already had them underlined.
 
 
 ## The burden of responsibility
@@ -224,7 +224,7 @@ It's pretty obvious things like 25 nested `div` elements are a wild malfunction 
 
 And for any reasonably competent frontend developer, the other cases above _should_ throw up red flags. But there are a lot of issues here.
 
-Let's start with how historically abysmal developers have been at identifying inaccessible code.
+Let's start with how historically abysmal track record developers have when it comes to identifying inaccessible code.
 
 It seems like every year, we get a new study showing that somewhere around 99% of the internet has accessibility issues—and that's just the ones machines can detect. There are _way_ more kinds than _that_.
 
@@ -236,13 +236,13 @@ When the microwave was brand new to the market, and this new space-age technolog
 
 <CalloutPlusQuote>
 
-Products of all kinds are forced to ensure misuse is discouraged, at a minimum, if not difficult or impossible. I don't see why LLMs should be any different.
+Products of all kinds are required to ensure misuse is discouraged, at a minimum, if not difficult or impossible. I don't see why LLMs should be any different.
 
 </CalloutPlusQuote>
 
-We wouldn't even find it acceptable if ChatGPT, or any other LLM, failed to build some basic safety into the product. It shouldn't fail to give you help if you desperately need it, and it shouldn't put anyone in harm's way. (LLMs have done both of those things before, in fact, and faced sharp backlash that led directly to the products being improved.)
+We wouldn't even find it acceptable if ChatGPT, or any other LLM, failed to build some basic safety into the product. It shouldn't fail to give you help if you desperately need it, and it shouldn't put anyone in harm's way. (LLMs have done both of those things before, in fact, and faced sharp backlash that led directly to the products being improved. So we know it's possible.)
 
-Plus, there are _far less_ sophisticated technologies that are fully capable of warning us, or even stopping us, when we're writing inaccessible or improper code. Why should we just accept that LLM tools not only _fail_ to give us similar warnings—or at least to avoid code that would trigger them—but to _actively push us the wrong way_?
+Plus, there are _far less_ sophisticated technologies that are fully capable of warning us, or even stopping us, when we're writing inaccessible or improper code. Why should we just accept that LLM tools not only _fail_ to at least give us the same warnings, but _actively push us the wrong way_?
 
 
 ### Fighting gravity
@@ -261,7 +261,7 @@ Yes, _I_ would know better than to put a fake button or a link without an `href`
 
 After all, if I were using Copilot to write, say, Rust or Go, I wouldn't have any idea whether I was writing good code or not. I'd try it out, and if it seemed to work, I'd move on.
 
-But we know that approach can cause problems on both sides of development. And when it comes to frontend, the likelihood that blind faith just made your product less accessible is currently unacceptably high.
+But we know that approach can cause problems on both sides of development. And when it comes to frontend interactivity, the likelihood that blind faith just made your product less accessible is currently quite high.
 
 Here's another case: what happens if I'm actually a good developer who can spot that violation, but I don't, because Copilot's already worn me down like a little kid asking for candy, and my will and focus have been eroded by hundreds of previous nudges?
 
@@ -271,7 +271,7 @@ Any tool that can and will produce inaccessible code is effectively weighting th
 
 </CalloutPlusQuote>
 
-If ensuring quality is _your responsibility_, and the tool you're using pushes bad quality your way, you are fighting against gravity in that situation. It's you versus the forces of entropy. And unless you fight perfectly (which you won't), the end result is, unavoidably, a bad one.
+If ensuring quality is _your responsibility_, and the tool you're using pushes bad quality your way, you are fighting against gravity in that situation. It's you versus the forces of entropy. And unless you fight perfectly (which you won't), the end result is, unavoidably, a worse one.
 
 Besides, we probably shouldn't make assumptions about who can, or will, spot the issues put forth by LLMs in the first place. It's tempting to dismiss the concern and say "sure, yeah, bad developers will take bad suggestions."
 
@@ -283,17 +283,18 @@ We're all bad developers at least some of the time.
 
 None of us is perfect. We have deadlines, and other responsibilities, and bosses who want lots of things that aren't necessarily directly related to code quality. We're not all going to spot every piece of bad code that comes across our screen. (Heck, most of us have _pushed_ bad code, that we wrote, on a Friday afternoon.) So when we use a tool that throws bad code our way some percentage of the time, we're effectively guaranteeing bad code ends up in what we make.
 
+
 ### The quality delta
 
 Another common argument I see in defense of Copilot is: yes, bad developers will push bad code with it. But they're bad developers; they would've been pushing bad code anyway! And along the way, maybe Copilot actually helps them do something better, too.
 
-Personally, I find that argument unacceptably dismissive. Will some people put bad code out there? Of course! Does that absolve us of giving them a tool to put out even worse code, even faster? I really don't think it does.
+Personally, I find that argument unacceptably dismissive. Will some people put bad code out there? Of course. Does that absolve us of giving them a tool to put out even worse code, even faster? I really don't think it does.
 
 Sure, I gave Mark a beer, but he's an alcoholic; he probably would've been drinking anyway.
 
 Unfair? Maybe. I'm not so sure. I would argue that if you know _any_ number of people will abuse something, you have at least _some_ responsibility to try to prevent it.
 
-In any case, if we know we exist on an uneven playing field (which we do), _we shouldn't see the slant as the baseline_. If the status quo is already inequitable (which it is), we shouldn't see what is _equally inequitable_ as just fine, because it's not. It's just more of the same inequitable slant.
+In any case, if we know we exist on an uneven playing field (which we do), _we shouldn't see the slant as the baseline_. If the status quo is already inequitable (which it is), we shouldn't see something that's _equally inequitable_ as just fine, because it's not. It's just more of the same inequitable slant.
 
 Go back to the section before; if Copilot is enabling bad developers to work even faster, and do more bad things than ever before, on top of _actively passing_ them bad suggestions, I don't think we can just get away with saying the whole thing is purely the fault of those developers.
 
@@ -328,8 +329,9 @@ Many think this type of thing will come to browsers, somehow, and will be able t
 Again, I think there's warranted optimism here. However:
 
 1. That's still a long ways off, if it ever comes;
-2. There's no guarantee of how well it will work even when it does arrive (will it describe the image correctly? Will it understand the context? _Should it_ in the firs place, if the developer left the `alt` empty on purpose? And by the way, why do we have such faith in an LLM to get this right when we've spent this whole time talking about an LLM getting accessibility very wrong? Are we sure we have the cause for optimism we think we do here?); and finally
+2. There's no guarantee of how well it will work even when it does arrive (will it describe the image correctly? Will it understand the context? _Should it_ in the first place, if the developer left the `alt` empty on purpose? And by the way, why do we have such faith in an LLM to get this right when we've spent this whole time talking about an LLM getting accessibility very wrong? Are we sure we have the cause for optimism we think we do here?); and finally
 3. There's no credit card for inequity. I don't think it's ethically sound to suggest that any present wrongdoing is justified by a future solution that will undo it, especially given points 1 and 2.
+
 
 ### What's the alternative?
 
@@ -337,11 +339,11 @@ The final pro-Copilot argument I'd like to address here is: it's not any worse t
 
 In theory, if you didn't have Copilot available, you'd go and search Google, most likely ending up on StackOverflow. And there's no guarantee that what you find in that search will be of good quality, or that it'll be any more accessible.
 
-That, too, is fair. But I'd point out that by the time you've gotten to that answer, you've seen at least a half dozen _potential_ solutions (via the search results and the StackOverflow answers). You might even decide to look at two or three of them, just to compare and contrast.
+That, too, is fair. But I'd point out that by the time you've gotten to that answer, you've seen at least a half dozen _potential_ solutions (via the search results and the StackOverflow answers). You might come across a "don't do it this way" headline. You might decide to look at two or three options, just to compare and contrast.
 
 That's _invaluable_ context. Not only are you now better equipped to understand _this_ solution, you learned more for next time. You're a better developer than you were.
 
-Not so with Copilot. You gained no context. You didn't really learn anything. I certainly wouldn't be learning Rust, if I were just letting Copilot generate it all for me. I got the answer handed to me, and my brain was not challenged or wrinkled in the slightest.
+Not so with Copilot. You gained zero context. You didn't really learn anything. I certainly wouldn't be learning Rust, if I were just letting Copilot generate it all for me. I got a workable answer of unknown quality handed to me, and my brain was not challenged or wrinkled in the slightest.
 
 _Plus_, with StackOverflow, you most likely have plenty of comments and explanations of _why_ one solution might be better than another, or potential pitfalls to avoid. The discussion around the code might well be even more useful than the code itself.
 
@@ -372,22 +374,21 @@ Let's say you went out and bought the new, revolutionary vacuum of the future. I
 
 Let's say you got this vacuum home, and sure enough: it's amazing. It cleans with speed and smarts you've never seen before.
 
-But then, you start to realize: a lot of the time, the vacuum isn't actually doing a very good job. In fact, sometimes, it does the exact _opposite_ of what it's supposed to do, and instead of sucking up dirt and debris, it spews them out across the floor.
+But then, you start to realize: a lot of the time, the vacuum isn't actually doing a very good job. You realize you spend a lot of time following it around and either redoing what it's done, or sending it back for another pass.
+
+In fact, sometimes, it even does the exact _opposite_ of what it's supposed to do, and instead of sucking up dirt and debris, it spews them out across the floor.
 
 You would find that entirely unacceptable. You would take that vacuum back to the store.
 
-And if the salesman who sold you the vacuum laughed in a congenial, but mildly condescending way and assured you that's how the vacuum was _supposed_ to work, and that's all totally normal, and that's just how these amazing new models work; vacuums just "hallucinate" from time to time…
+And if the salesman who sold you the vacuum laughed in a congenial, but mildly condescending way and assured you that's how the vacuum was _supposed_ to work, and that's all totally normal, and that's just a quirk of these amazing new models; they just "hallucinate" from time to time…
 
 …Well, I don't think you'd have much faith in that product.
 
-And while I can certainly understand why an LLM trained on all the data of the internet, with all its notoriously shoddy code, would have some incredibly bad data in its innards, shouldn't we expect better than this?
+And while I can certainly understand why an LLM trained on all of the internet, with all its notoriously shoddy code, would have some incredibly bad data in its innards, shouldn't we expect better than this?
 
 The internet is already an overwhelmingly inequitable place.
 
 I don't think we should accept that what we get in exchange for our money is, inevitably, a force for further inequity, and yes, ultimately, for discrimination.
-
-
-
 
 <FootnoteAnnotations footnotes={[`Like this.`,`“Hallucination” is a nice word the AI industry made up to explain that its product is failing, without admitting its product is failing, and framing it as a charming side effect rather than a massive flaw.`,`AI is not actually the proper term for Copilot, or ChatGPT, or just about any technology we call AI these days. In reality, they’re large language models, i.e., very complex prediction engines built on statistics. They aren’t intelligent. (“Spicy autocomplete” is my personal favorite moniker for them.)`,`I guess I shouldn’t assume; I wasn’t around when microwaves were first introduced. But the point still stands even if it wasn’t that way to begin with.`]}/>
 
