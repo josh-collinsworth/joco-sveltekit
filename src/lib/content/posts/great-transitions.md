@@ -6,7 +6,6 @@ categories:
   - css
   - design
   - web
-  - advice
   - popular
 coverImage: great-transitions.png
 coverWidth: 320

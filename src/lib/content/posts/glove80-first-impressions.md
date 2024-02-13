@@ -4,7 +4,6 @@ date: 2023-10-24
 updated: 2023-11-6
 categories:
   - gear
-  - advice
   - opinion
 coverImage: glove80/mine.webp
 coverWidth: 1920

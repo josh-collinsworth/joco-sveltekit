@@ -62,11 +62,12 @@ body {
 	scrollbar-color: var(--yellow) var(--paper);
 	scrollbar-width: thin;
 
-	&.smooth-scroll {
-		scroll-behavior: smooth;
-	}
+	// Had this before, but doesn't work well with footnotes.
+	// &.smooth-scroll {
+		// scroll-behavior: smooth;
+	// }
 }
 
 :target {
-	scroll-margin-block: 5ex;
+	scroll-margin-block: 0.5rem;
 }

@@ -16,6 +16,7 @@
 		font-style: normal;
 		font-weight: normal;
 		max-width: 16em;
+		text-wrap: balance;
 
 		@media (min-width: vars.$lg) {
 			display: block;
