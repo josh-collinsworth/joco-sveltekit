@@ -4,6 +4,7 @@ date: '2024-2-13'
 updated: '2024-2-13'
 categories:
   - 'opinion'
+  - 'a11y'
 coverImage: 'copilot/copilot.webp'
 coverWidth: 16
 coverHeight: 9
@@ -239,16 +240,16 @@ Products of all kinds are forced to ensure misuse is discouraged, at a minimum, 
 
 </CalloutPlusQuote>
 
-We wouldn't even find it acceptable if ChatGPT, another LLM, failed to build some basic safety into its product. It shouldn't fail to give you help if you desperately need it, and it shouldn't put anyone in harm's way. (It has done both of those things before, in fact, and faced sharp backlash that led directly to the product being improved.)
+We wouldn't even find it acceptable if ChatGPT, or any other LLM, failed to build some basic safety into the product. It shouldn't fail to give you help if you desperately need it, and it shouldn't put anyone in harm's way. (LLMs have done both of those things before, in fact, and faced sharp backlash that led directly to the products being improved.)
 
-Plus, there are already multiple things in my frontend toolchain that will warn me when I'm writing inaccessible or improper code; why should we just accept that LLM tools not only _fail_ to give us similar warnings—or at least to avoid code that would trigger them—but to _actively push us the wrong way_?
+Plus, there are _far less_ sophisticated technologies that are fully capable of warning us, or even stopping us, when we're writing inaccessible or improper code. Why should we just accept that LLM tools not only _fail_ to give us similar warnings—or at least to avoid code that would trigger them—but to _actively push us the wrong way_?
 
 
 ### Fighting gravity
 
-That pushing is my real concern. Sure, you should know bad code when you see it, and you should not let it past you when you do.
+That pushing is my real concern.
 
-But what happens when you're seeing bad code _all day every day_?
+Sure, you should know bad code when you see it, and you should not let it past you when you do. But what happens when you're seeing bad code _all day every day_?
 
 What happens when _you aren't sure_ whether it's good or not?
 
