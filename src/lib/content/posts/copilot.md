@@ -1,7 +1,7 @@
 ---
 title: "I worry our Copilot is leaving some passengers behind"
 date: '2024-2-13'
-updated: '2024-2-13'
+updated: '2024-2-14'
 categories:
   - 'opinion'
   - 'a11y'
@@ -67,6 +67,12 @@ I'm worried the global, net effect of Copilot might be that it's making accessib
 </CalloutPlusQuote>
 
 I'm worried Copilot might be acting, in the silent, covert way systems often do, as a force for discrimination.
+
+<SideNote>
+
+There are plenty of other, similar LLM coding tools out there; Copilot is generally just the oldest and most common. While I mostly only refer to Copilot here, I think this entire post applies to all of these tools.
+
+</SideNote>
 
 ## A real-world example: my simple component
 
@@ -358,6 +364,27 @@ Copilot doesn't tell you why it picked that suggestion, or how it's better than 
 But even if it did: how could you fully trust it?
 
 </CalloutPlusQuote>
+
+
+## Other unavoidable issues with LLMs
+
+There are plenty of other issues with GitHub Copilot, and with other LLM tools, which I haven't even mentioned yet. They're essentially plagiarism machines, enabling corporations to profit on unpaid, non-consensual labor. Nobody whose data was used to train these LLMs was, really, allowed any say in the matter. In a lot of ways, in fact, "AI" is just the newest iteration of a very old form of colonial capitalism; build a wall around something you didn't create, call it yours, and charge for access. (And when the natives complain, call them primitive and argue they're blocking inevitable progress.)
+
+LLMs have security issues, too. We've already seen cases where people's private keys were leaked publicly, as an example.
+
+And, they're wildly energy intensive. LLMs consume an obscene amount of power and water—and the data centers that house them are often in places in _need_ of more water.
+
+<CalloutPlusQuote>
+
+It seems wildly unjust to spend buckets of water on answering our stupid questions, when real humans in the real world would benefit from that water. (Especially when we've proven we can find the answers on our own anyway.)
+
+</CalloutPlusQuote>
+
+I added this section post-publish because (thanks to a Mastodon comment) I realized I'd completely glossed over these issues, and others.
+
+That's not on purpose, or because I wanted to brush these issues aside. They're serious, and if I'm being honest, it sure seems like the world is a more just place without LLMs than with them, for all the reasons above.
+
+The accessibility-in-code angle is one I haven't seen discussed as much, however, and so I wanted to especially call attention to that in particular.
 
 
 ## We deserve better
