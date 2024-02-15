@@ -1,7 +1,7 @@
 ---
 title: "I worry our Copilot is leaving some passengers behind"
 date: '2024-2-13'
-updated: '2024-2-14'
+updated: '2024-2-15'
 categories:
   - 'opinion'
   - 'a11y'
@@ -230,7 +230,7 @@ It's pretty obvious things like 25 nested `div` elements are a wild malfunction 
 
 And for any reasonably competent frontend developer, the other cases above _should_ throw up red flags. But there are a lot of issues here.
 
-Let's start with how historically abysmal track record developers have when it comes to identifying inaccessible code.
+Let's start with the historically abysmal track record developers have when it comes to identifying inaccessible code.
 
 It seems like every year, we get a new study showing that somewhere around 99% of the internet has accessibility issues—and that's just the ones machines can detect. There are _way_ more kinds than _that_.
 
@@ -238,7 +238,7 @@ Given that current state of affairs, I don't have a lot of faith in the status q
 
 Besides: there's a point where a dangerous tool bears some of the responsibility for its own safety.
 
-When the microwave was brand new to the market, and this new space-age technology allowed what used to take 10–20 minutes or more to get done in mere seconds, the manufacturers did't get to make ovens that stayed on when you opened the door just because the tech was new and revolutionary. They couldn't claim the user should've known better, while allowing their kitchen to fry and their pets to die of internal burns. They had to build safety features in.<Footnote number="4" />
+When the microwave was brand new to the market, and this new space-age technology allowed what used to take 10–20 minutes or more to get done in mere seconds, the manufacturers did't get to make ovens that stayed on when you opened the door just because the tech was new and revolutionary. They couldn't claim the user should've known better, while allowing their kitchen to fry and their pets to die of internal burns (even though, presumably, most of the people using the new microwaves were previously experienced cooks). They had to build safety features in.<Footnote number="4" />
 
 <CalloutPlusQuote>
 
@@ -253,7 +253,7 @@ Plus, there are _far less_ sophisticated technologies that are fully capable of 
 
 ### Fighting gravity
 
-That pushing is my real concern.
+That constant pressure is my real concern.
 
 Sure, you should know bad code when you see it, and you should not let it past you when you do. But what happens when you're seeing bad code _all day every day_?
 
@@ -265,7 +265,7 @@ Again: I'm not concerned with some platonic ideal of code quality here; I'm conc
 
 Yes, _I_ would know better than to put a fake button or a link without an `href` on a page. But what happens when one of my colleagues, who's not focused on frontend, is using Copilot just to get some stuff out of their way? What happens if that code gets accepted because it's not their specialty, but it appears to work fine to them?
 
-After all, if I were using Copilot to write, say, Rust or Go, I wouldn't have any idea whether I was writing good code or not. I'd try it out, and if it seemed to work, I'd move on.
+After all, if I were using Copilot to write, say, Rust or Go, I wouldn't have any idea whether I was writing good code or not. I'd try it out, and if it seemed to work, I'd move on. I probably wouldn't even remember what the code looked like five minutes later.
 
 But we know that approach can cause problems on both sides of development. And when it comes to frontend interactivity, the likelihood that blind faith just made your product less accessible is currently quite high.
 
@@ -287,7 +287,7 @@ We're all bad developers at least some of the time.
 
 </CalloutPlusQuote>
 
-None of us is perfect. We have deadlines, and other responsibilities, and bosses who want lots of things that aren't necessarily directly related to code quality. We're not all going to spot every piece of bad code that comes across our screen. (Heck, most of us have _pushed_ bad code, that we wrote, on a Friday afternoon.) So when we use a tool that throws bad code our way some percentage of the time, we're effectively guaranteeing bad code ends up in what we make.
+None of us is perfect. We have deadlines, and other responsibilities, and bosses who want lots of things that aren't necessarily directly related to code quality. We're not all going to spot every piece of bad code that comes across our screen. (Heck, most of us have _pushed_ bad code, that we wrote, on a Friday afternoon.) So when we use a tool that throws bad code our way some percentage of the time, we're effectively guaranteeing it influences what we make.
 
 
 ### The quality delta
@@ -300,7 +300,7 @@ Sure, I gave Mark a beer, but he's an alcoholic; he probably would've been drink
 
 Unfair? Maybe. I'm not so sure. I would argue that if you know _any_ number of people will abuse something, you have at least _some_ responsibility to try to prevent it.
 
-In any case, if we know we exist on an uneven playing field (which we do), _we shouldn't see the slant as the baseline_. If the status quo is already inequitable (which it is), we shouldn't see something that's _equally inequitable_ as just fine, because it's not. It's just more of the same inequitable slant.
+In any case, if we know we exist on an uneven playing field (which we do), _we shouldn't see the slant as the baseline_. If the status quo is already inequitable (which it is), we shouldn't see something that's _equally inequitable_ as just fine, just because that's the current reality. It's _not_ fine. It's just more of the same inequitable slant.
 
 Go back to the section before; if Copilot is enabling bad developers to work even faster, and do more bad things than ever before, on top of _actively passing_ them bad suggestions, I don't think we can just get away with saying the whole thing is purely the fault of those developers.
 
@@ -328,14 +328,14 @@ There's been a lot of talk about how LLMs will soon be able to fix accessibility
 
 I've seen it myself, in fact. I have a common condition known as color vision deficiency; partial colorblindness. Certain parts of the red-green spectrum are invisible to my eye. I can see _most_ reds and greens fine, but certain hues blend together. Light pinks might look white; a lime green might seem yellow; green stoplights just look white; and purple almost always looks blue to me, because I can't see the red in it. (Actually, I just learned recently the Goombas in Mario games are brown, not red, as I've always seen them.)
 
-But I'm a developer and designer, and so working with color is crucial for me. So lately, when I've wanted to make sure the color I'm working with is _actually_ the color I think it is, I'll pop open ChatGPT, paste in the hex code, and ask what color it actually is.
+But I'm a developer and designer, and so working with color is crucial for me. So lately, when I've wanted to make sure the color I'm working with is _actually_ the color I think it is, I'll pop open ChatGPT, paste in the hex code, and ask what color it actually is. "That's a bright yellow," it might tell me.
 
 Many think this type of thing will come to browsers, somehow, and will be able to help correct accessibility errors in similar ways. If an image doesn't have `alt` text, for example, an LLM tool may be able to describe the image.
 
 Again, I think there's warranted optimism here. However:
 
 1. That's still a long ways off, if it ever comes;
-2. There's no guarantee of how well it will work even when it does arrive (will it describe the image correctly? Will it understand the context? _Should it_ in the first place, if the developer left the `alt` empty on purpose? And by the way, why do we have such faith in an LLM to get this right when we've spent this whole time talking about an LLM getting accessibility very wrong? Are we sure we have the cause for optimism we think we do here?); and finally
+2. There's no guarantee of how well it will work even when it does arrive (will it describe the image correctly? Will it understand the context, and the vibes of the image? _Should it_ in the first place, if the author left the `alt` empty on purpose? And by the way, why do we have such faith in an LLM to get this right when we've spent this whole time talking about an LLM getting accessibility very wrong? Are we sure we have the cause for optimism we think we do here?); and finally
 3. There's no credit card for inequity. I don't think it's ethically sound to suggest that any present wrongdoing is justified by a future solution that will undo it, especially given points 1 and 2.
 
 
@@ -355,7 +355,7 @@ _Plus_, with StackOverflow, you most likely have plenty of comments and explanat
 
 And, of course, it's all sorted by a voting system that, while certainly not perfect, generally pushes good results to the top, and suppresses bad answers.
 
-You don't get any of that with Copilot. You get one suggestion, the one the algorithm in the black box decided was the one you most likely want, based on whatever context it was able to glean.
+You don't get any of that with Copilot. You get one suggestion: the one the algorithm in the black box decided was the one you most likely want, based on whatever context it was able to glean.
 
 <CalloutPlusQuote>
 
@@ -394,7 +394,7 @@ It seems wildly unjust to spend buckets of water on answering our stupid questio
 
 I added this section post-publish because (thanks to some Mastodon comments) I realized I'd completely glossed over these issues, and others.
 
-That's not on purpose, or because I wanted to brush these issues aside. They're serious, and if I'm being honest, it sure seems like the world is a more just place without LLMs than with them, for all the reasons above.
+That's not on purpose. These issues are every bit as important, if not more so. And if I'm being honest, it sure seems like the world is a more just place without LLMs than with them, for all the reasons above.
 
 The accessibility-in-code angle is one I haven't seen discussed as much, however, and so I wanted to especially call attention to that in particular.
 
