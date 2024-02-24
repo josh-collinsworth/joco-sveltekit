@@ -163,6 +163,7 @@ blockquote {
 	position: relative;
 	border: 0;
 	border-left: 4px solid var(--lightBlue);
+	white-space: pre-wrap;
 
 	p {
 		margin-bottom: 1em;

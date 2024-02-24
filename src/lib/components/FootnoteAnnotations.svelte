@@ -8,7 +8,7 @@
 	<hr />
 	<ol>
 		{#each footnotes as footnote, idx}
-			<li id="footnote-{idx + 1}">
+			<li id="footnote-{idx + 1}" tabindex="-1">
 				{@html footnote}
 				<a
 					href={`#footnote-link-${idx + 1}`}

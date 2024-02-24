@@ -98,12 +98,18 @@ As for the relevant bits of code, I'd expect most any competent frontend develop
 <!-- ...Somewhere down the page: -->
 
 <ol>
-	<li id="footnote-1">
+	<li id="footnote-1" tabindex="-1">
 		My footnote content
 		<a href="#link-1">Back</a>
 	</li>
 </ol>
 ```
+
+<SideNote>
+
+If you wanted to make this even simpler, you could make links target each other's IDs. Then you wouldn't need to add any attributes at all to the list item.
+
+</SideNote>
 
 Just links doing link things. Good old-fashioned HTML.
 

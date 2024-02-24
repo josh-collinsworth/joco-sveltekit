@@ -1,4 +1,4 @@
-import type Talk from '../types/talk';
+import type Talk from '../types/talk'
 
 const talks: Talk[] = [
 	{
@@ -78,15 +78,22 @@ const talks: Talk[] = [
 		month: 11
 	},
 	{
-		title: 'Why React is Outdated w/ Josh Collinsworth ',
+		title: 'Why React is Outdated w/ Josh Collinsworth',
 		link:
 			'https://podcasters.spotify.com/pod/show/sean-g7/episodes/Why-ReactJS-is-Outdated-w-Josh-Collinsworth-e297f7j',
 		event: 'Web Perspectives podcast',
 		year: 2023,
 		month: 9
+	},
+	{
+		title: 'Deno, React Alternatives, and Copilot Concerns with Triple Threat Josh Collinsworth',
+		link: 'https://shoptalkshow.com/603/',
+		event: 'ShpTalk Show podcast',
+		year: 2024,
+		month: 2
 	}
-];
+]
 
-talks.sort((a, b) => b.year - a.year || b.month - a.month);
+talks.sort((a, b) => b.year - a.year || b.month - a.month)
 
-export { talks };
+export { talks }
