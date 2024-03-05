@@ -4,7 +4,6 @@
 	const currentYear: number = new Date().getFullYear()
 </script>
 
-
 <div class="footer-wrapper">
 	<Grid inverted={true} />
 	<footer class="footer">
@@ -32,18 +31,27 @@
 		</div>
 
 		<div class="fine-print">
-			<p>©2015–{ currentYear } Josh Collinsworth.</p>
+			<a href="https://notbyai.fyi/about">
+				<img src="/images/ai-badge.svg" alt="Made by a human, not by AI." />
+			</a>
 
-			<p>This site uses no tracking or cookies, other than privacy-respecting, GDPR-compliant analytics via <a href="https://plausible.io">Plausible</a>.</p>
+			<p>©2015–{currentYear} Josh Collinsworth.</p>
+
+			<p>
+				This site uses no tracking or cookies, other than privacy-respecting, GDPR-compliant
+				analytics via <a href="https://plausible.io">Plausible</a>.
+			</p>
 
 			<p>
 				Made with
-				<a rel="external" href="https://kit.svelte.dev/">SvelteKit</a>; hosted&nbsp;on&nbsp;<a rel="external" href="https://netlify.com">Netlify</a>.
+				<a rel="external" href="https://kit.svelte.dev/">SvelteKit</a>; hosted&nbsp;on&nbsp;<a
+					rel="external"
+					href="https://netlify.com">Netlify</a
+				>.
 			</p>
 		</div>
 	</footer>
 </div>
-
 
 <style lang="scss">
 	.footer {
@@ -52,13 +60,13 @@
 		color: var(--white);
 		line-height: 1.6em;
 		padding: 2.5rem var(--margin) 2rem;
-		
+
 		@media (min-width: vars.$sm) {
 			display: grid;
 			grid-template-columns: 1fr 1fr 2fr;
 			align-items: stretch;
 		}
-		
+
 		@media (min-width: vars.$sm) {
 			font-size: 0.8rem;
 		}
@@ -73,6 +81,10 @@
 		a {
 			color: inherit;
 			text-decoration-color: var(--yellow);
+		}
+
+		img {
+			display: block;
 		}
 
 		&-wrapper {
@@ -113,7 +125,7 @@
 			align-self: center;
 
 			@media (min-width: vars.$sm) {
-			 margin-left: 0;
+				margin-left: 0;
 			}
 
 			p {
