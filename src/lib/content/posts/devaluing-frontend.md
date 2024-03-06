@@ -8,8 +8,8 @@ categories:
   - css
   - web
 coverImage: deval.webp
-coverWidth: 1920
-coverHeight: 1080
+coverWidth: 1200
+coverHeight: 630
 excerpt: I keep noticing those of us in the frontend field being treated much the same as nurses, paralegals, and executive assistants. Our work is seen as important, certainly, but just not as important as the “real” work.
 ---
 
