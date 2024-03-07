@@ -3,7 +3,7 @@
 	import Tag from '../tags/Tag.svelte'
 	import TagList from '../tags/TagList.svelte'
 	import ExternalLink from '../icons/ExternalLink.svelte'
-	import { readableDate } from '$lib/assets/js/utils';
+	import { readableDate } from '$lib/assets/js/utils'
 
 	export let external: boolean = false
 	export let post: Post
@@ -14,7 +14,6 @@
 	let computedURL: string
 	$: computedURL = slugPath + post.slug
 </script>
-
 
 <li>
 	<article class="post-preview">
@@ -41,16 +40,16 @@
 					{/if}
 				</a>
 			</h2>
-			
+
 			{#if post.subtitle}
 				<p class="subtitle">{post.subtitle}</p>
 			{:else}
 				<p class="subtitle">{readableDate(post.date)}</p>
 			{/if}
-			
+
 			<p class="excerpt">
 				{post.excerpt}
-				<a href="{computedURL}" data-sveltekit-preload-code>
+				<a href={computedURL} data-sveltekit-preload-code>
 					{#if external}
 						Read more on {post.subtitle}
 						<ExternalLink />
@@ -59,20 +58,19 @@
 					{/if}
 				</a>
 			</p>
-			
+
 			{#if post.categories}
 				<TagList>
 					{#each post.categories as category}
-					<Tag to="/blog/category/{category}/">
-						{ category }
-					</Tag>
+						<Tag to="/blog/category/{category}/">
+							{category}
+						</Tag>
 					{/each}
 				</TagList>
 			{/if}
 		</div>
 	</article>
 </li>
-
 
 <style lang="scss">
 	li {
@@ -82,9 +80,9 @@
 			margin: 0;
 		}
 	}
-	
+
 	.post-preview {
-		transition: .2s;
+		transition: 0.2s;
 		transform-origin: bottom left;
 		display: block;
 
@@ -129,7 +127,7 @@
 				border: 1px solid hsla(var(--darkGrayHSL), 1);
 			}
 		}
-		
+
 		.subtitle,
 		.excerpt a {
 			font-weight: bold;
@@ -138,15 +136,15 @@
 			font-style: normal;
 			font-size: 0.65rem;
 			color: var(--midGray);
-			margin: 0;
+			margin: 0.5em 0 0;
 		}
-	
+
 		.excerpt {
 			font-style: italic;
 			margin: var(--quarterNote) 0 1.5rem;
 			font-size: 0.8rem;
 			line-height: 1.5;
-	
+
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -157,5 +155,4 @@
 			}
 		}
 	}
-	
 </style>
