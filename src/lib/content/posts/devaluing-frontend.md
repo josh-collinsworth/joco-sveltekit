@@ -24,7 +24,7 @@ excerpt: I keep noticing those of us in the frontend field being treated much th
 
 There's a trend I've noticed—or at least, I _think_ I've noticed. It's the kind of thing that's hard to be sure of; the kind that might genuinely be true, or might simply _appear_ to be true if you look at it a certain way.
 
-I can't tell if I'm right, or if the shapes I'm envisioning in arbitrary ink blots say more about me and my own biases than they do about what I'm observing.
+I can't tell if I'm right, or if the shapes I'm envisioning in arbitrary ink blots say more about me than they do about what I'm observing.
 
 Maybe it's both. Maybe it's all subjective gray area and I'm just picking a spot to draw a line.
 
@@ -34,50 +34,48 @@ I guess you can decide for yourself.
 
 <CalloutPlusQuote>
 
-The trend I feel like I'm seeing is the widespread diminishment of the practice of frontend. Nearly everywhere I look, I see its importance being minimized, and its difficulty trivialized.
+I feel like I'm seeing a widespread diminishment of the practice of frontend. Nearly everywhere I look, I notice its importance being minimized, and its challenges trivialized.
 
 </CalloutPlusQuote>
 
-Like most biases and implicit understandings, this effect might be invisible to you right now. And thus, you might be reflexively inclined to say it doesn't exist.
+This effect might be invisible to you right now. And thus, you might be reflexively inclined to say it doesn't exist.
 
 Maybe you're right. Maybe it doesn't. Maybe I just need to step away from my little screens in my little basement office a little more often.
 
-Or, maybe it's just like any bias; maybe it seems like it doesn't exist because it feels so _ordinary_ until you know what to look for.
+Or, maybe it's just like any other implicit bias; maybe it seems like it doesn't exist because it feels so _ordinary_ until you know what to look for.
 
 So: let's talk about what I see. Maybe you'll see it, too.
 
 
 ## I see it in the way we talk about frontend languages
 
-I notice CSS is widely considered some or all of the following: "unmaintainable," "subjective," "messy," "unruly," "unpredictable," "a footgun," "overly complicated," "unscalable," and "a nightmare."
+I notice CSS is widely considered some or all of the following: "unmaintainable;" "subjective;" "messy;" "unruly;" "unpredictable;" "a footgun;" "overly complicated;" "unscalable;" and "a nightmare."
 
 (I generally disagree with all of those. But then, I'm also fond of saying CSS is the only language that gets blamed when the _author_ is bad.)
 
-But despite all of this, CSS is _also_ somehow "not a real programming language."
-
-Lots of people online will tell you so, often quite loudly. Same with HTML. That debate, in fact, might be second only to Tailwind in its ability to ignite fiery altercations amongst developers.
+But despite all of this, CSS is _also_ somehow "not a real programming language." Many people online will tell you so, often quite loudly. Same with HTML.
 
 <CalloutPlusQuote>
 
-It's like CSS exists in some bizarre quantum state, somehow both too complex to use, and too simple to take seriously, all at once.
+It's like CSS exists in some bizarre quantum state; somehow both too complex to use, yet too simple to take seriously, all at once.
 
 </CalloutPlusQuote>
 
-I find what most people who make this distinction actually _mean_ is that HTML and CSS aren't _scripting_ languages, which: a) of course they aren't; and b) is not really the point at all.
+I find what most of those people actually _mean_ is: HTML and CSS aren't _scripting_ languages. Which: a) of course they aren't; and b) is not really the point at all.
 
-CSS is a programming language, because that's what you're doing when you write it; you're _programming_ the application's presentation logic. And that's important, because CSS has power enough to either maximize the useability of software, or to ruin it beyond all utility.
+CSS is a programming language because that's what you're doing when you write it; you're _programming_ the application's presentation logic. And that's important, because CSS has power enough to either maximize the useability of software, or to ruin it beyond all utility.
 
 <CalloutPlusQuote>
 
-In many ways, CSS has greater impact than any other language on a user's experience. That translates pretty directly to success. Why, then, is its role so belittled?
+In many ways, CSS has greater impact than any other language on a user's experience, which often directly shapes its success. Why, then, is its role so belittled?
 
 </CalloutPlusQuote>
 
-HTML is similar; HTML might not have things like loops and conditionals, but it is still a programming interface nonetheless because it's how you program a UI. And to do it well requires as much care and expertise as any other language.
+HTML is similar; HTML might not have things like loops and conditionals, but it is still a programming interface nonetheless because it's how you _program_ a UI—and to do it well requires as much care and expertise as any other language.
 
 ---
 
-This might all sound trivial. It might seem like I'm just asserting my stance in some petty online argument. But I believe there's actually an important reason to care:
+This might all sound trivial. It might seem like I'm just asserting my stance in some petty online argument. Who cares what developers argue about online? Get a life (as we used to say in the '90s). But I believe there's actually an important reason to care:
 
 To assert that these languages are not programming languages is to assert that what one is doing when writing them is not programming, but something _else_. Something _different_.
 
@@ -89,23 +87,45 @@ Certain pursuits are always validated with an air of importance, dignity, and ho
 
 Doctors. Lawyers. Architects. CEOs. Software engineers.
 
-Some kinds of work are "serious" work, which is fine—except that, implicitly, that means other kinds are _not_.
+Some kinds of work are "serious" work, which is well and good—except that, implicitly, that means other kinds are _not_ serious.
 
-We might not ever say it, or even think it, but when we cast some people as heroes, we relegate others to the role of the sidekick—even though their labor is no less important, and they do at least as much to push the work toward completion.
+We might not ever say it, or even think it, but when we cast some people as heroes, we relegate others to the role of the sidekick—even though their labor is no less important, and they do at least as much to push the work toward success.
 
 Nurses. Paralegals. Interior designers. Executive assistants.
 
 Frontend developers.
 
-Backend work is generally considered _serious_ work. It's _important_. It's _real_ computer science. (Computer science itself being a higher level of things we've decided are real, serious, and important—maybe not quite as much as medicine or law, but then again, maybe so in some circles.)
+Other forms of development are generally considered _serious_ work. They're _important_. They're _real_ computer science. (Computer science itself being a higher level of things we've decided are real, serious, and important—maybe not quite as much as medicine or law, but then again, maybe so in some circles.)
 
-Backend engineering is unquestionably difficult and respectable work. The idea that these engineers are smart—even smarter than we are—is the kind of stereotype that feels so common and true it's rarely even questioned.
+Engineering is unquestionably difficult and respectable work. The idea that other engineers are smart—even smarter than we are—is the kind of stereotype that feels so common and true it's rarely even questioned.
 
 <CalloutPlusQuote>
 
-Mostly, nobody actually *says* frontend is less important, or less real, or that you don't have to be as smart to do it. But sometimes, what's _not_ being said speaks the loudest.
+Mostly, nobody actually *says* frontend is less important, or less real, or that you don't have to be as smart to do it. But it often seems to be implied.
 
 </CalloutPlusQuote>
+
+If I were to guess at the origins of this perception, I'd propose it might all come down to optics. Frontend engineers work in languages that, while notoriously difficult to master, are relatively straightforward to learn. A lot of engineers stop at the basics and move on to other things—which is fine. But I posit this leads to a [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) where those who haven't taken the time to learn what they don't know never actually become aware of that hazardous chasm, or the mistakes they might have _already made_ relying on their established knowledge.
+
+I'd guess most engineering managers and other folks in charge of developers probably know some HTML, CSS and JavaScript. These tend to be basics most developers touch on early on.
+
+I think when those people in charge look at a frontend developer, there's an unconscious "I could do that."
+
+<CalloutPlusQuote>
+
+Our output is artistic, to some degree, and artistic things have a long, storied history of being tragically devalued merely because they seem simple and enjoyable.
+
+</CalloutPlusQuote>
+
+Contrast our workflows and our output with a backend developer, or site reliability engineer, as examples. They live in worlds of daunting terminals, oceans of data, and inscrutably interconnected systems. What they do _looks_ scary, like something I couldn't do and wouldn't want to.
+
+Their output is easily measurable. A new API feature; a more efficient database; crises averted and crashes prevented. They go on charts and get presented to board members.
+
+Our work? Mostly, people just critique it.
+
+Like art.
+
+### Naming things is hard
 
 Not always, but more often than not, the most implicitly esteemed titles go to other people, rather than to those of us who work on frontend.
 
