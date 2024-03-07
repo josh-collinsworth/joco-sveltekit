@@ -177,6 +177,12 @@ Though critical to the project, frontend work will quite often be disregarded by
 
 Yes, of course, it's important. It's work that _somebody_ needs to do, certainly. But probably not the important people, whose valuable attention is focused on other, bigger, more important problems.
 
+Design itself is typically conflated with frontend, and design has long been a "feminine" pursuit. The deep technical challenges of frontend functionality are often mistakenly regarded more as a sort of painting with pixels; making things _look_ right, rather than _work_ correctly.
+
+Incidentally, folks involved in UI and design tend to be hit harder in layoffs than their peers, who are perceived as "more technical."
+
+Probably just coincidence.
+
 ## I see it in the way we talk about frontend developers
 
 Frontend is complicated. Few would contend with that.
