@@ -277,6 +277,8 @@ It doesn't seem like it. These tools, the speedy ones: they promise you can just
 
 Like every frontend concern is something you just install a WordPress plugin for.
 
+The proliferation of AI tools plays into this as well. I'm sure somebody's working on some AI product to build your backend for you (if there aren't already such products on the market). But in the meantime, I've already seen a handful for frontend. Their code isn't accessible, or well built, and it took dedicated frontend engineers to point that out. The companies making them didn't know, or didn't care (or both). All that mattered was slapping something up on the screen as quickly and easily as possible.
+
 ## I see it in how "good enough" has become the goal
 
 The web is positively overrun with inaccessible code. Odds are, even if that specific problem doesn't currently affect you, you still see forms that won't submit, invisible buttons, errors surfaced in the UI, utterly broken layouts, things that don't work on mobile devices or in certain browsers, text and fonts that are difficult to impossible to read, interfaces that are impossible to zoom or scroll, interactions that break down, and silent or unhelpful error messages—all quite likely on a daily or near-daily basis.
