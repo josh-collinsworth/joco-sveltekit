@@ -1,7 +1,7 @@
 ---
 title: The quiet, pervasive devaluation of frontend
-date: 2024-03-06
-updated: 2024-03-06
+date: 2024-03-07
+updated: 2024-03-07
 categories:
   - personal
   - opinion
@@ -34,7 +34,7 @@ I guess you can decide for yourself.
 
 <CalloutPlusQuote>
 
-I feel like I'm seeing a widespread diminishment of the practice of frontend. Nearly everywhere I look, I notice its importance being minimized, and its challenges trivialized.
+I feel like I'm seeing a widespread diminishment of the practice of frontend. Nearly everywhere I look, I notice its importance minimized, and its challenges trivialized.
 
 </CalloutPlusQuote>
 
@@ -49,11 +49,11 @@ So: let's talk about what I see. Maybe you'll see it, too.
 
 ## I see it in the way we talk about frontend languages
 
-I notice CSS is widely considered some or all of the following: "unmaintainable;" "subjective;" "messy;" "unruly;" "unpredictable;" "a footgun;" "overly complicated;" "unscalable;" and "a nightmare."
+I notice CSS is widely considered some or all of the following: unmaintainable; subjective; messy; unruly; unpredictable; a footgun; overly complicated; unscalable; and a nightmare.
 
 (I generally disagree with all of those. But then, I'm also fond of saying CSS is the only language that gets blamed when the _author_ is bad.)
 
-But despite all of this, CSS is _also_ somehow "not a real programming language." Many people online will tell you so, often quite loudly. Same with HTML.
+But despite all these claims, CSS is _also_ somehow "not a real programming language." Many people online will tell you so, often quite loudly, and sometimes even using memes. Same with HTML.
 
 <CalloutPlusQuote>
 
@@ -63,37 +63,47 @@ It's like CSS exists in some bizarre quantum state; somehow both too complex to 
 
 I find what most of those people actually _mean_ is: HTML and CSS aren't _scripting_ languages. Which: a) of course they aren't; and b) is not really the point at all.
 
-CSS is a programming language because that's what you're doing when you write it; you're _programming_ the application's presentation logic. And that's important, because CSS has power enough to either maximize the useability of software, or to ruin it beyond all utility.
+CSS is a programming language because that's what you're doing when you write it; you're _programming_ the application's presentation logic. And that's important, because CSS has power enough to either maximize the useability of software, or to ruin it beyond all utility. (Really; you'd probably be astounded how many ways there are to utterly destroy anything on the web with hardly any CSS.)
 
 <CalloutPlusQuote>
 
-In many ways, CSS has greater impact than any other language on a user's experience, which often directly shapes its success. Why, then, is its role so belittled?
+In many ways, CSS has greater impact than any other language on a user's experience, which often directly influences success. Why, then, is its role so belittled?
 
 </CalloutPlusQuote>
 
 HTML is similar; HTML might not have things like loops and conditionals, but it is still a programming interface nonetheless because it's how you _program_ a UI—and to do it well requires as much care and expertise as any other language.
 
----
+### Language is reality
 
-This might all sound trivial. It might seem like I'm just asserting my stance in some petty online argument. Who cares what developers argue about online? Get a life (as we used to say in the '90s). But I believe there's actually an important reason to care:
+This might all sound trivial. It might seem like I'm just asserting my stance in some petty online argument. Who cares what developers argue about online? Get a life (as we used to say in the '90s).
 
-To assert that these languages are not programming languages is to assert that what one is doing when writing them is not programming, but something _else_. Something _different_.
+However, I believe there are actually very important reasons to care.
+
+To assert that frontend languages are not programming languages is to assert that what one is doing when writing them is not programming, but something _else_. Something _different_.
 
 Something—perhaps not explicitly spoken, but undeniably implied—_lesser_.
 
+And yes, as biases go, even if there _is_ one against frontend developers, it would be pretty hard to rank it above any of the myriad _other_ biases present in everyday society…
+
+…unless this bias is actually a _part of_ those other biases?
+
+[Frontend tends to be the most diverse job title among developers](https://cord.co/insights/diversity-and-inclusion/articles/gender-representation#:~:text=Front%20End%20is%20the%20most,and%200.07%25%20non%2Dbinary.). If you wanted to find the dev specialization with the _most_ people who aren't cishet white males, you'd pick frontend.
+
+Do we honestly believe the language around frontend is different purely by mere coincidence?
+
 ## I see it in the way we talk about practices
 
-Certain pursuits are always validated with an air of importance, dignity, and honor.
+Certain pursuits are validated with importance, dignity, and honor.
 
-Doctors. Lawyers. Architects. CEOs. Software engineers.
+Doctors; lawyers; architects; CEOs; software engineers.
 
 Some kinds of work are "serious" work, which is well and good—except that, implicitly, that means other kinds are _not_ serious.
 
 We might not ever say it, or even think it, but when we cast some people as heroes, we relegate others to the role of the sidekick—even though their labor is no less important, and they do at least as much to push the work toward success.
 
-Nurses. Paralegals. Interior designers. Executive assistants.
+Nurses; paralegals; interior designers; executive assistants; frontend developers.
 
-Frontend developers.
+(Surely it's a coincidence the first group tends to be more male than the second.)
 
 Other forms of development are generally considered _serious_ work. They're _important_. They're _real_ computer science. (Computer science itself being a higher level of things we've decided are real, serious, and important—maybe not quite as much as medicine or law, but then again, maybe so in some circles.)
 
@@ -105,7 +115,9 @@ Mostly, nobody actually *says* frontend is less important, or less real, or that
 
 </CalloutPlusQuote>
 
-If I were to guess at the origins of this perception, I'd propose it might all come down to optics. Frontend engineers work in languages that, while notoriously difficult to master, are relatively straightforward to learn. A lot of engineers stop at the basics and move on to other things—which is fine. But I posit this leads to a [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) where those who haven't taken the time to learn what they don't know never actually become aware of that hazardous chasm, or the mistakes they might have _already made_ relying on their established knowledge.
+If I were to guess at the origins of this perception, I'd propose it might all come down to optics. Frontend engineers work in languages that, while notoriously difficult to master, are relatively straightforward to learn. A lot of engineers stop at the basics and move on to other things—which is fine, of course.
+
+But I posit this leads to a [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) where those who haven't taken the time to learn what they don't know never actually become aware of that hazardous chasm, or the mistakes they might have _already made_ relying on their established knowledge.
 
 I'd guess most engineering managers and other folks in charge of developers probably know some HTML, CSS and JavaScript. These tend to be basics most developers touch on early on.
 
@@ -121,23 +133,23 @@ Contrast our workflows and our output with a backend developer, or site reliabil
 
 Their output is easily measurable. A new API feature; a more efficient database; crises averted and crashes prevented. They go on charts and get presented to board members.
 
-Our work? Mostly, people just critique it.
+Our work? Much harder to measure. Mostly, people just critique it.
 
 Like art.
 
 ### Naming things is hard
 
-Not always, but more often than not, the most implicitly esteemed titles go to other people, rather than to those of us who work on frontend.
+Do you ever notice that the job of a person who works on frontend is, explicitly, developing sofware—and yet, esteemed titles like "software developer" (or the arguably even more esteemed "software _engineer_") very strongly imply something else.
 
-We're usually not _engineers_; we're more often _developers_—a fine title, but certainly not quite as honorary.
+If our job title _does_ include the word "engineer," it will almost certainly specify _what_ we're engineering. It'll be _UI engineer_, or _frontend engineer_, or maybe the newer (and arguably more fitting) _design engineer_.
 
-And if our job title _does_ include the word "engineer," it will almost certainly specify _what_ we're engineering. It'll be _UI engineer_, or _frontend engineer_, or maybe the newer (and arguably more fitting) _design engineer_.
+But it's probably not "software developer" or "software engineer" without any other qualification. Because that, tacitly, _is not what we do_.
 
-But whatever our title says, it's probably not "software developer" or "software engineer" without any other qualification. Because that, tacitly, _is not what we do_.
+Somebody _else_ does that. What we do is, at best, only a _part_ of that. (Implicitly: _less_ than that.)
 
-Somebody _else_ does that; we're just there to help.
+Sure, this is nuance of language and these titles serve to disambiguate. I get that. Nobody sat down one day and came up with these titles, let alone maliciously; they're just functions of language and time, and the way they shook out probably wasn't anyone's design.
 
-Sure, this is nuance of language and it serves to disambiguate. I get that. But we ought to know by now the power language has to shape our perceptions, and in turn, our behavior.
+Still: we ought to know by now the power language has to shape our perceptions, and in turn, our behavior.
 
 <CalloutPlusQuote>
 
@@ -169,7 +181,7 @@ Yes, of course, it's important. It's work that _somebody_ needs to do, certainly
 
 Frontend is complicated. Few would contend with that.
 
-But for some reason, where the difficulty of backend is generally blamed on the daunting complexity of computers themselves (and where, again, we generally revere the people who dare attempt to wrangle that complexity), there's a pervasive myth that frontend is only complex because _frontend developers made it that way_.
+But for some reason, where the difficulty of other forms of engineering are generally blamed on the daunting complexity of computers themselves (and where, again, we generally revere the people who dare attempt to wrangle that complexity), there's a pervasive myth that frontend is only complex because _frontend developers made it that way_.
 
 As though we added frameworks and compilers and heaps of packages to our projects because we simply didn't know any better.
 
@@ -179,7 +191,7 @@ As though the nearly impossible job of supporting every possible device, operati
 
 </CalloutPlusQuote>
 
-Jokes are often made about frontend developers. Often, we're the ones making them; we're not above laughing at ourselves.
+There are lots of jokes about frontend developers. There's nothing wrong with that. Often, we're the ones making them; we're not above laughing at ourselves, and besides, there are plenty of jokes about other specialties, too.
 
 We like to kid about our affinity for new things. How we're always coming up with new frameworks. How we're always chasing the new hotness.
 
@@ -187,7 +199,7 @@ That's all well and good…until the joke starts to become the actual perception
 
 <CalloutPlusQuote>
 
-Yes, as a group, we generally get excited about new things. But why doesn't that make us curious, or adaptable, or inquisitive? Why don't we get credit for our joy of learning, instead of denigrated for refusing to stay in place?
+Yes, as a group, we get excited about new things. But why doesn't that make us curious, or adaptable, or inquisitive? Why don't we get credit for our joy of learning, instead of denigrated for refusing to stay in place?
 
 Why don't we get the benefit of the doubt?
 
@@ -203,7 +215,7 @@ Don't we deserve to be considered just a bit more than flighty little magpies, c
 
 ## I see it in our responsibilities
 
-In my experience (yours may vary, of course), frontend engineers are constantly relegated to "fixers" on projects. We often aren't included at the beginning stages, where we could easily identify costly accessibility, performance, and user experience mistakes; we're brought in at the end, when things have already been built and it's too late to change anything significantly. By then, it's our job just to pretty things up.
+In my experience (yours may vary, of course), frontend engineers are regularly deployed as "fixers" on projects. We often aren't included at the beginning stages, where we could easily identify costly accessibility, performance, and user experience mistakes; we're brought in at the end, when things have already been built and it's too late to change anything significantly. By then, it's our job just to pretty things up.
 
 "Here; other people already made this." (i.e., they already did the _real_ work.) "Now we just need you to fix it up."
 
@@ -213,7 +225,7 @@ Why aren't we addressing the pipeline that generated a flawed product to begin w
 
 <CalloutPlusQuote>
 
-If our skills are valuable as duct tape over the cracks of organizational shortcomings, why aren't they valuable during the planning and decision-making that led to those defects?
+If our skills are valuable as duct tape over the cracks of organizational shortcomings, why aren't they valuable during the planning and decision-making that led to those defects, when we could potentially prevent them?
 
 </CalloutPlusQuote>
 
@@ -223,7 +235,7 @@ Why are we considered mere decorators, brought in at the end to spruce the place
 
 ## I see it in what's expected of us
 
-The list of skills that a frontend engineer must know expands constantly and infinitely.
+The list of skills that a frontend engineer must know expands constantly and unendingly. The world where you could just learn some HTML, CSS, and JavaScript in a couple of months and be ready for a job is mostly in the past.
 
 HTML itself is enough to fill a very thick book, if you want to do it right—and yet, it's often seen as the _simplest_ thing a frontend developer ought to know.
 
@@ -231,15 +243,15 @@ Then there's CSS, and JavaScript itself, with all its myriad quirks. Then you'll
 
 Then there's accessibility, which is a topic so complex and nuanced almost _nobody_ gets it fully right. But it's your job, if you're on the frontend—and not your whole job, either. Just part of it. Good luck!
 
-You've got to know things about SEO, too, and that, also, requires nearly a full-time focus to do extremely well, even though you'll be expected to manage it in a small slice of your time.
+You've got to know things about SEO, too, and that, also, requires nearly a full-time focus to do extremely well, even though you'll be expected to manage it, too, in a small slice of your time.
 
 Then there's design, and of course, that includes all the tenets of user interfaces and user experience—all of which a person could spend years learning all on their own.
 
 More and more, you'll need to know about legal compliance. And marketing, which is its own whole college major.
 
-You also need to know at least a little TypeScript. And come to think of it, you'll probably be expected to learn at least _some_ backend languages, too.
+You also need to know at least a little TypeScript. And come to think of it, you'll probably be expected to learn at least _one_ backend language, too. ("So you can unblock yourself" is the reason given, although "so you can do your own job, plus a little bit of someone else's," is sometimes more accurate.)
 
-Fron there, it might just be some animation libraries. Charts and data visualization. Testing and assertion libraries. Command line utilities. Cookies. Caching. DNS. Networks. Performance. The edge. Serverless. GraphQL. AWS. Docker. At least a little about databases. How's your knowledge of email? Can you write us some regular expressions? Oh by the way, the marketing team needs you to dig into their analytics, maybe run some A/B tests.
+From there, it might just be some animation libraries. Charts and data visualization. Testing and assertion libraries. Command line utilities. Cookies. Caching. DNS. Networks. Performance. The edge. Serverless. GraphQL. AWS. Docker. At least a little about databases. How's your knowledge of email? Can you write us some regular expressions? Oh by the way, the marketing team needs you to dig into their analytics, maybe run some A/B tests.
 
 The list goes on. Yet, for this unceasingly distended list of skills, frontend is still that silly thing that isn't the _real_ dev work.
 
@@ -281,9 +293,7 @@ It seems like nobody thinks of frontend as a critical part of the product anymor
 
 We need a framework; React will be good enough. No need to look any further.
 
-Just pick a nice color. Yes, that one is good enough.
-
-Yes, that default font is good enough. No, don't bother writing any custom CSS. Whatever Tailwind has already will be good enough.
+Just pick a nice color and a serviceable font. No, don't bother writing any custom CSS; whatever Tailwind comes with will be good enough.
 
 Anything to move on to the next thing. Because whatever the real, important, serious thing is on this project, it isn't _this_. Not the frontend.
 
