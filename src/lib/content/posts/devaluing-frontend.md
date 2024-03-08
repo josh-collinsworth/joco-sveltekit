@@ -133,7 +133,9 @@ Contrast our workflows and our output with a backend developer, or site reliabil
 
 Their output is easily measurable. A new API feature; a more efficient database; crises averted and crashes prevented. They go on charts and get presented to board members.
 
-Our work? Much harder to measure. Mostly, people just critique it.
+Our work? Much harder to measure.
+
+Mostly, people just critique it.
 
 Like art.
 
