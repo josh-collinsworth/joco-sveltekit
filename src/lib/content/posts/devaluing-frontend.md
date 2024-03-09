@@ -1,7 +1,7 @@
 ---
 title: The quiet, pervasive devaluation of frontend
 date: 2024-03-07
-updated: 2024-03-07
+updated: 2024-03-09
 categories:
   - personal
   - opinion
@@ -245,7 +245,7 @@ The list of skills that a frontend engineer must know expands constantly and une
 
 HTML itself is enough to fill a very thick book, if you want to do it right—and yet, it's often seen as the _simplest_ thing a frontend developer ought to know.
 
-Then there's CSS, and JavaScript itself, with all its myriad quirks. Then you'll of course need to know a framework (probably at least a couple), plus a slew of add-ons, plugins, and packages. Probably a system to manage them all, too.
+Then there's CSS, and JavaScript itself, with all its myriad quirks. Then you'll of course need to know a framework (probably at least a couple, including the legacy one the company still uses and will never get around to completely replacing), plus a slew of add-ons, plugins, and packages. Probably a system to manage them all, too.
 
 Then there's accessibility, which is a topic so complex and nuanced almost _nobody_ gets it fully right. But it's your job, if you're on the frontend—and not your whole job, either. Just part of it. Good luck!
 
@@ -257,7 +257,9 @@ More and more, you'll need to know about legal compliance. And marketing, which 
 
 You also need to know at least a little TypeScript. And come to think of it, you'll probably be expected to learn at least _one_ backend language, too. ("So you can unblock yourself" is the reason given, although "so you can do your own job, plus a little bit of someone else's," is sometimes more accurate.)
 
-From there, it might just be some animation libraries. Charts and data visualization. Testing and assertion libraries. Command line utilities. Cookies. Caching. DNS. Networks. Performance. The edge. Serverless. GraphQL. AWS. Docker. At least a little about databases. How's your knowledge of email? Can you write us some regular expressions? Oh by the way, the marketing team needs you to dig into their analytics, maybe run some A/B tests.
+From there, it might just be some animation libraries. Charts and data visualization. Testing and assertion libraries. Command line utilities. Cookies. Caching (and cache invalidation). DNS. Networks. Performance. The edge. Serverless. GraphQL. AWS. Docker. At least a little about databases. How's your knowledge of email? Can you write us some regular expressions? Oh by the way, the marketing team needs you to dig into their analytics, maybe run some A/B tests.
+
+Earlier versions of this post completely left out state management libraries—and said nothing of security. What do you know about preventing XSS attacks? CORS? Content security policies?
 
 The list goes on. Yet, for this unceasingly distended list of skills, frontend is still that silly thing that isn't the _real_ dev work.
 
