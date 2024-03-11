@@ -1,10 +1,10 @@
-<img src="/images/post_images/2020-logo-final.svg" alt="Josh Collinsworth" class="resume-logo" />
+<img src="/images/post_images/2020-logo-final.svg" alt="Josh Collinsworth" class="resume-logo" width="5rem" />
 
 ## Summary
 
 Proficient with semantic, accessible HTML; strong with responsive CSS/Sass, and ES6+ JavaScript; specialized in Vue, Svelte and SvelteKit, WordPress, SVG, web animation, performance, and optimization.
 
-Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, git/ GitHub, NPM, Jira, CLIs, DNS, SemVer.
+Experienced with React/Preact, TypeScript, Tailwind, Deno, Fresh, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, git/ GitHub, NPM, Jira, CLIs, DNS, SemVer.
 
 ---
 
@@ -12,13 +12,16 @@ Experienced with React, TypeScript, Tailwind, Knockout, jQuery, JS testing (Karm
 
 
 
-### [Deno](https://deno.land/)
+### [Deno](https://deno.com/)
 
 **Frontend Engineer**
 
 _August 2023 – present_
 
-- Lead frontend and occasional role in various redesigns of Deno website pages and architecture, as well as new features in the [Deploy](https://deno.com/deploy) dashboard.
+- Lead frontend developer, and occasional design roles. Projects include:
+	- Implementing a full-scale redesign of [Deno.com](https://deno.com)
+	- Adding new features to the [Deploy](https://deno.com/deploy) dashboard
+	- Design, branding, and frontend work on [JSR.io](https://jsr.io)
 
 
 ### [Shopify](https://shopify.com/)
