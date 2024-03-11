@@ -141,7 +141,7 @@ Like art.
 
 ### Naming things is hard
 
-Do you ever notice that the job of a person who works on frontend is, explicitly, developing sofware—and yet, esteemed titles like "software developer" (or the arguably even more esteemed "software _engineer_") very strongly imply something else.
+Do you ever notice that the job of a person who works on frontend is, explicitly, developing sofware—and yet, esteemed titles like "software developer" (or the arguably even more esteemed "software _engineer_") very strongly imply something else?
 
 If our job title _does_ include the word "engineer," it will almost certainly specify _what_ we're engineering. It'll be _UI engineer_, or _frontend engineer_, or maybe the newer (and arguably more fitting) _design engineer_.
 
