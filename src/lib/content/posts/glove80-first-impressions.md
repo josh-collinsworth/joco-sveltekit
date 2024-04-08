@@ -1,7 +1,7 @@
 ---
 title: First impressions of the MoErgo Glove80 ergonomic keyboard
 date: 2023-10-24
-updated: 2023-11-6
+updated: 2024-04-08
 categories:
   - gear
   - opinion
@@ -14,6 +14,7 @@ excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonl
 <script>
   import PullQuote from '$lib/components/PullQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
+  import Note from '$lib/components/Note.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
@@ -53,6 +54,12 @@ excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonl
 		- [Pros and cons](#pros-and-cons)
 
 </details>
+
+<Note>
+
+I wrote [a follow-up to this post here](/blog/glove80-followup), after using the Glove80 for six months.
+
+</Note>
 
 I never had any real interest at all in mechanical keyboards until recently. I mostly considered them a novelty; the kind of thing that was fine as a hobby, but not anything particularly practical.
 
@@ -594,3 +601,9 @@ I've assembled a final pros and cons list, if you're just looking for the tl;dr 
 
 </div>
 </div>
+
+<Note>
+
+I wrote [a follow-up to this post here](/blog/glove80-followup), after using the Glove80 for six months.
+
+</Note>
