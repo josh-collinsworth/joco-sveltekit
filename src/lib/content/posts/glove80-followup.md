@@ -8,7 +8,7 @@ categories:
 coverImage: glove80.webp
 coverWidth: 1920
 coverHeight: 1080
-excerpt: A followup on my previous first impressions post, with an update on how the Glove80 ergonomic split keyboard has been after about six months of daily use.
+excerpt: "An update on my previous first impressions post, covering how it's been using the MoErgo Glove80 every day for the past six months, how it's affected my RSI, and whether I'd recommend it (short answer: yes)."
 ---
 
 <script>
