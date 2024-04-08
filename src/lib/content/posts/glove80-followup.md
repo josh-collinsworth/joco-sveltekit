@@ -26,7 +26,7 @@ This is a follow-up to my previous post, [First impressions of the MoErgo Glove8
 
 A handful of people have reached out to me directly since my last post on the Glove80, which was a sort of in-depth "first impressions" type of post. It happened often enough I decided it's time to preemptively answer the question: ok, first impressions were good, but how has it been using the Glove80 since?
 
-If you're just curious or looking for the quick answer: if anything, I've only become a bigger fan.
+If you're just curious, or looking for the quick answer: if anything, I've only become a bigger fan.
 
 <CalloutPlusQuote>
 
@@ -49,6 +49,8 @@ The Glove80, in stark contrast, feels like every aspect of the keyboard was care
 ## Six months later
 
 Not much has changed since the original post; for the most part, I still maintain the same [pros and cons](http://localhost:1027/blog/glove80-first-impressions#pros-and-cons). (I have grown a bit more fond of the rainbow RGB lighting effect, though, even though the lighting is not very customizable.)
+
+As you can see from the image at the top, I did eventually find [Choc v1 keycaps that I liked from Chosfox](https://chosfox.com/collections/chosfox-exclusive/products/chocfox-wob) and added them, which I think ups the visual appeal of the board. There's no shine-through, but I don't mind.
 
 There actually _are_ more Choc v1 switches on the market than I realized at the time of writing, but that won't do you any good unless you're handy with soldering. That's a nit that won't matter for most people, but if you're the kind of nerd who likes obsessing over such hardware details, it's a minor drawback. I do wish the Glove80 was available with more switch options, though; the browns are good, but not great.
 
