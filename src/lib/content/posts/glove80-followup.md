@@ -20,7 +20,7 @@ excerpt: "An update on my previous first impressions post, covering how it's bee
 
 <Note>
 
-This is a follow-up to my previous post, [First impressions of the MoErgo Glove80 ergonomic keyboard](/blog/glove80-first-impressions). When I wrote that post, I had only been using the Glove80 for several weeks; now, it's been my daily driver for over six months.
+This is a follow-up to my previous post, [First impressions of the MoErgo Glove80 ergonomic keyboard](/blog/glove80-first-impressions). When I wrote that post, I had only been using the Glove80 for a few weeks; now, it's been my daily driver for over six months.
 
 </Note>
 
