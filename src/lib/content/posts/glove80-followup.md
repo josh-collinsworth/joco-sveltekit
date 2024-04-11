@@ -48,7 +48,7 @@ The Glove80, in stark contrast, feels like every aspect of the keyboard was care
 
 ## Six months later
 
-Not much has changed since the original post; for the most part, I still maintain the same [pros and cons](http://localhost:1027/blog/glove80-first-impressions#pros-and-cons). (I have grown a bit more fond of the rainbow RGB lighting effect, though, even though the lighting is not very customizable.)
+Not much has changed since the original post; for the most part, I still maintain the same [pros and cons](/blog/glove80-first-impressions#pros-and-cons). (I have grown a bit more fond of the rainbow RGB lighting effect, though, even though the lighting is not very customizable.)
 
 As you can see from the image at the top, I did eventually find [Choc v1 keycaps that I liked from Chosfox](https://chosfox.com/collections/chosfox-exclusive/products/chocfox-wob) and added them, which I think ups the visual appeal of the board. There's no shine-through, but I don't mind.
 
