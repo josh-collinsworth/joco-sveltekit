@@ -19,7 +19,7 @@ excerpt: "A personal (read: meandering) post inspired by the realization that I 
 	import FootnoteAnnotations from '$lib/components/FootnoteAnnotations.svelte'
 </script>
 
-It suddenly struck me today that I began first learning code, starting with the very basics of HTML and CSS, at the job I had exactly ten years ago. That means I've been doing this (coding, that is; building things on the web, in some form or another) for a decade now.
+It suddenly struck me today that I began first learning code, starting with the very basics of HTML and CSS, at an internship exactly ten years ago. That means I've been doing this (coding, that is; building things on the web, in some form or another) for a decade now.
 
 _A decade!_ Ten whole years I've been putting these silly little characters into silly little shapes to make silly little things appear on silly little screens.
 
