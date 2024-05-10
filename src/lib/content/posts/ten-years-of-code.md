@@ -5,7 +5,7 @@ updated: 2024-05-10
 categories:
   - personal
   - web
-coverImage: html-css-book.jpg
+coverImage: html-css-book.webp
 excerpt: "A personal (read: meandering) post inspired by the realization that I first began to learn HTML and CSS exactly ten years ago, reflecting on the lucky turning points that brought me to where I am today."
 
 ---
@@ -27,7 +27,7 @@ That's reductive, of course. Even I don't buy that.
 
 I'm lucky.
 
-I remember the magic of the moment when, almost exactly ten years ago, I built my first responsive layout. I was a graphic design intern when my manager, Brad (_also an instructor I was fortunate to have in school, and who helped me get multiple internship opportunities_), handed me [Jon Duckett's _HTML & CSS_ book](https://htmlandcssbook.com/).<Footnote number="1" />
+I remember the magic of the moment when, almost exactly ten years ago, I built my first responsive layout. I was a graphic design intern when my manager, Brad (_also an instructor I was fortunate to have in school, and who helped me get multiple internship opportunities_), handed me [Jon Duckett's _HTML & CSS_ book](https://htmlandcssbook.com/).<Footnote number="1" /> (Thanks, Jon and Brad.)
 
 That was back in the relatively early days of responsive web design, when floats were still how responsive layouts were achieved, Internet Explorer was still a big deal, and (largely because of that) jQuery was pretty much synonymous with JavaScript.<Footnote number="2"/>
 
