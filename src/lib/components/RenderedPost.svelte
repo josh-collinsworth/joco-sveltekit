@@ -15,7 +15,9 @@
 	export let meta: Post
 
 	let imagePath: string
-	$: imagePath = `/images/post_images/${meta.coverImage}`
+	$: imagePath = meta.coverImage
+		? `/images/post_images/${meta.coverImage}`
+		: `/images/post_images/default.jpg`
 
 	const wrapTablesInScrollableDivs = (): void => {
 		/**
@@ -45,12 +47,16 @@
 		 */
 		const tweets = document.getElementsByClassName('twitter-tweet')
 		const codePens = document.getElementsByClassName('codepen')
+		const mastodonEmbeds = document.getElementsByClassName('mastodon-embed')
 
 		if (tweets.length) {
 			appendScriptToHead('https://platform.twitter.com/widgets.js')
 		}
 		if (codePens.length) {
 			appendScriptToHead('https://cpwebassets.codepen.io/assets/embed/ei.js')
+		}
+		if (mastodonEmbeds.length) {
+			appendScriptToHead('https://hachyderm.io/embed.js')
 		}
 	}
 
@@ -159,7 +165,7 @@
 		}
 
 		.post-footer {
-			margin: 0 0 var(--halfNote);
+			margin: var(--wholeNote) 0 var(--halfNote);
 
 			.h4 {
 				margin: 0 0 calc(var(--quarterNote) / 2);

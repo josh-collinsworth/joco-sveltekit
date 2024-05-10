@@ -18,16 +18,18 @@
 <li>
 	<article class="post-preview">
 		<a href={computedURL} data-sveltekit-preload-code class="image-link">
-			<img
-				src="/images/post_images/{post.coverImage}"
-				style="
+			{#if post.coverImage}
+				<img
+					src="/images/post_images/{post.coverImage}"
+					style="
 					aspect-ratio: {post.coverWidth} / {post.coverHeight};
 					width: {post.coverWidth};
 					height: {post.coverHeight}
 				"
-				alt="Preview image for {post.title}"
-				loading="lazy"
-			/>
+					alt="Preview image for {post.title}"
+					loading="lazy"
+				/>
+			{/if}
 		</a>
 
 		<div class="article-info">
@@ -48,15 +50,17 @@
 			{/if}
 
 			<p class="excerpt">
-				{post.excerpt}
-				<a href={computedURL} data-sveltekit-preload-code>
-					{#if external}
-						Read more on {post.subtitle}
-						<ExternalLink />
-					{:else}
-						Read&nbsp;more…
-					{/if}
-				</a>
+				{#if post.excerpt}
+					{post.excerpt}
+					<a href={computedURL} data-sveltekit-preload-code>
+						{#if external}
+							Read more on {post.subtitle}
+							<ExternalLink />
+						{:else}
+							Read&nbsp;more…
+						{/if}
+					</a>
+				{/if}
 			</p>
 
 			{#if post.categories}

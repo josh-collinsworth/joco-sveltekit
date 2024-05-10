@@ -5,7 +5,6 @@
 </script>
 
 <footer>
-	<hr />
 	<ol>
 		{#each footnotes as footnote, idx}
 			<li id="footnote-{idx + 1}" tabindex="-1">
@@ -23,6 +22,9 @@
 <style>
 	ol {
 		font-size: 0.8rem;
+		padding-top: var(--quarterNote);
+		margin-top: var(--halfNote);
+		border-top: 1px solid var(--lighterGray);
 	}
 
 	.back-link {

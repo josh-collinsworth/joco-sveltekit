@@ -1,11 +1,9 @@
 <script lang="ts">
-	export let currentPage: string;
+	export let currentPage: string
 </script>
 
 <div class="bio-wrapper">
-	<hr />
 	<div class="bio">
-		<img src="/images/bio-photo.jpg" alt="" class="thumbnail" width="1" height="1" />
 		<div>
 			<p class="about">
 				I'm Josh Collinsworth, a frontend developer, designer, teacher, and writer. I currently live
@@ -23,8 +21,8 @@
 				</li>
 			</ul>
 		</div>
+		<img src="/images/bio-photo.jpg" alt="" class="thumbnail" width="1" height="1" />
 	</div>
-	<hr class="post-bio-hr" />
 </div>
 
 <style lang="scss">
@@ -39,6 +37,9 @@
 		align-items: center;
 		align-content: center;
 		flex-wrap: wrap;
+		padding-block: var(--quarterNote);
+		border-block: 1px solid currentColor;
+		margin-block: var(--quarterNote);
 
 		@media (min-width: vars.$xxs) {
 			flex-wrap: nowrap;
@@ -79,10 +80,10 @@
 		.thumbnail {
 			width: 6rem;
 			border-radius: 3rem;
-			margin: 0 auto var(--quarterNote);
+			margin: var(--quarterNote) auto 0;
 
 			@media (min-width: vars.$xxs) {
-				margin: 0 var(--quarterNote) 0 0;
+				margin: 0 0 0 var(--quarterNote);
 			}
 		}
 
