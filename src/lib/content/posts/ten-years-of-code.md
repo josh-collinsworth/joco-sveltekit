@@ -99,15 +99,13 @@ I was successful in design. I mean, I was still very small potatoes (it was Omah
 
 But ultimately, I fell out of love with design.
 
-<PullQuote>
-
-Design never changes. Ultimately, it's just the same function called with different arguments, over and over again.
-
-</PullQuote>
-
 After a few projects, I started to realize: design never changes. Parts of branding I still love (typography and logo design, especially), but ultimately, it's just the same function called with different arguments, over and over again. Discovery; ideation; solution. If you don't love that grind, it'll burn you out fast—especially because design is one of those fields where you're constantly talked down to by people who understand it far less than you do, for low-grade pay and little hope of advancement.
 
+<CalloutPlusQuote>
+
 Loving design is basically the only reason to do it, and I felt my relationship with design growing stale.
+
+</CalloutPlusQuote>
 
 At the same time, though, development seemed to offer a never-ending universe of possibilities to explore, full of things that would take me a lifetime to learn.
 
