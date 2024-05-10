@@ -4,9 +4,10 @@ date: 2024-05-10
 updated: 2024-05-10
 categories:
   - personal
-  - css
   - web
 coverImage: html-css-book.jpg
+excerpt: "A personal (read: meandering) post inspired by the realization that I first began to learn HTML and CSS exactly ten years ago, reflecting on the lucky turning points that brought me to where I am today."
+
 ---
 
 <script>
