@@ -7,8 +7,6 @@ categories:
   - css
   - web
 coverImage: html-css-book.jpg
-draft: true
-published: false
 ---
 
 <script>
