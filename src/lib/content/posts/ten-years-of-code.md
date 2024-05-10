@@ -133,21 +133,19 @@ I imagine most teachers can probably relate to all of that.
 
 ---
 
-I was lucky to land my first tech job<Footnote number="3"/> at a company like Flywheel, even though I didn't realize at the time how much I and most of the people around me were being undervalued. (That's a long story with many chapters, but one common to midwestern tech companies.)
+I was lucky to land my first tech job<Footnote number="3"/> at a company like [Flywheel](https://getflywheel.com), even though I didn't realize at the time how much I and most of the people around me were being undervalued. (That's a long story with many chapters, but one common to midwestern tech companies.)
 
 Still, the opportunity to learn everything I learned there—both in terms of the day-to-day technical aspects, and the inner workings of a startup—was one that doesn't come along often, and one I didn't fully appreciate until years later.
 
-I was lucky by the time I landed an interview with Shopify, I'd spent _years_ live-coding in front of students, and hacking my way through things I didn't really understand in a support role. I'd made so many embarrassing mistakes in front of so many rooms of students I had no fear. I could easily talk through what I was doing. I knew how to avoid what mistakes I could, and to move past the ones I couldn't.
+I was lucky by the time I landed an interview with [Shopify](https://shopify.com), I'd spent _years_ live-coding in front of students, and hacking my way through things I didn't really understand in a support role. I'd made so many embarrassing mistakes in front of so many groups of people, I had no fear. I could easily talk through what I was doing. I knew how to avoid the mistakes I could, and to move past the ones I couldn't.
 
-I tried to recruit some other developers I knew to Shopify, most of whom much more senior then me, many I counted among my mentors. But none of them made it through the interview process, because tech interviews are broken.
+I tried to recruit some other people I knew to Shopify during my years there, most of whom much more senior then me, and many I counted among my mentors. But none of them made it through the interview process, because tech interviews are broken.
 
-I just happened to have the exact right combination of skills to get past the stacked deck. I got to the end of the run with the perfect build to beat the boss.
+I just happened to have the exact right combination of skills play the game with the stacked deck. I got to the end of the run with the perfect build to beat the boss.
 
 Like I said…I'm lucky.
 
 ---
-
-Ten years is an eon in web time.
 
 When I first got the title of web developer, I remember being overwhelmed with contentedness.
 
@@ -180,4 +178,3 @@ I still get to do a very cool thing every single day. Although the shine has fad
 And despite all the mess of the way things are now, I'm excited to see where the web is another ten years from now.
 
 <FootnoteAnnotations  footnotes={[`The website for the book itself is not responsive, ironically enough. Just locked in at 940px wide.`,`If you don't remember those days, check out the CodePen here, and generally just be grateful that the web has come a long, long way since then.`,`Actually, technically, my first tech job was as a call center rep for America Online, but we don't need to go back that far.`]}/>
-
