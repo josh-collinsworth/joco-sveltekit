@@ -6,6 +6,8 @@ categories:
   - personal
   - web
 coverImage: html-css-book.webp
+coverWidth: 1920
+coverHeight: 1080
 excerpt: "A personal (read: meandering) post inspired by the realization that I first began to learn HTML and CSS exactly ten years ago, reflecting on the lucky turning points that brought me to where I am today."
 
 ---

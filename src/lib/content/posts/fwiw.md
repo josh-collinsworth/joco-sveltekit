@@ -6,6 +6,8 @@ categories:
   - opinion
   - personal
 coverImage: fwiw.svg
+coverWidth: 1920
+coverHeight: 1080
 excerpt: "A collection of things I've learned over my decade in the industry, on how and where to look for jobs, applying, interviewing, and talking salary."
 
 ---
