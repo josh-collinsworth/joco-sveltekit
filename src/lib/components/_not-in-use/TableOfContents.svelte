@@ -4,7 +4,7 @@
 	 * approach I could find. I even used the remark/rehype plugins, but they caused a reload
 	 * when a link was clicked. So although I would much prefer to have this HTML pre-generated,
 	 * this works as a progressive enhancement, so I'm sticking with it for now at least.
-	 * 
+	 *
 	 * EDIT: ended up removing this component entirely. Left here just in case I decide to reuse it one day.
 	 */
 
@@ -23,13 +23,13 @@
 
 	/**
 	 * This whole approach feels hacky, but I tried several others and kept running into walls
-	 * with how list HTML tags need to be nested. 
-	 * 
-	 * Every other solution I could think of either required a usage of `{each}` that Svelte 
-	 * doesn't allow (it requires you to close tags within the block; you can't leave one open), 
-	 * or way, way more looping (or both). So I'll just stick with this hacky approach since 
+	 * with how list HTML tags need to be nested.
+	 *
+	 * Every other solution I could think of either required a usage of `{each}` that Svelte
+	 * doesn't allow (it requires you to close tags within the block; you can't leave one open),
+	 * or way, way more looping (or both). So I'll just stick with this hacky approach since
 	 * it works and as a bonus, is a progressive enhancement.
-	*/
+	 */
 	onMount(() => {
 		const allHeadings = document.querySelectorAll('article h1 ~ :is(h2, h3, h4, h5, h6)')
 
@@ -37,11 +37,11 @@
 
 		showTableOfContents = true
 		let previousHeadingLevel: number
-		
+
 		Array.from(allHeadings).forEach((heading, i) => {
 			const { innerText, tagName } = heading as HTMLHeadingElement
 			const level = parseInt(tagName[1])
-			heading.id = `heading-${i}`
+			// heading.id = `heading-${i}`
 
 			if (i === 0) {
 				output += `<li>`
@@ -50,18 +50,15 @@
 			} else if (previousHeadingLevel < level) {
 				output += `<ul><li>`
 			} else if (previousHeadingLevel > level) {
-				const subtraction =
-					i + 1 === allHeadings.length
-						? level + 1
-						: previousHeadingLevel - level 
+				const subtraction = i + 1 === allHeadings.length ? level + 1 : previousHeadingLevel - level
 				for (let n = 0; n < subtraction; n++) {
 					output += '</li></ul>'
 				}
 				output += `</li><li>`
 			}
-			output += `<a href="#heading-${i}">${innerText}</a>`
+			output += `<a href="#${heading.id}">${innerText}</a>`
 			previousHeadingLevel = level
-		}) 
+		})
 	})
 </script>
 
@@ -73,15 +70,13 @@
 				Table of contents
 				<span class="closing-bracket" aria-hidden="true">]</span>
 			</h2>
-			
+
 			<ul class="toc-list" on:click|preventDefault={scrollToHeading}>
 				{@html output}
 			</ul>
 		</aside>
 	</div>
 {/if}
-
-
 
 <style lang="scss" global>
 	.toc-wrap {
@@ -103,7 +98,7 @@
 		h2 {
 			font-weight: bold;
 			font-family: var(--headingFont);
-			font-size: 0.8rem;	
+			font-size: 0.8rem;
 			margin: 0;
 			background: var(--paper);
 			position: relative;
@@ -124,7 +119,7 @@
 				position: relative;
 				z-index: 2;
 				left: -1px;
-				bottom: .05em;
+				bottom: 0.05em;
 			}
 
 			.closing-bracket {
@@ -132,12 +127,12 @@
 				right: -1px;
 			}
 		}
-		
+
 		.toc-list {
 			list-style-type: decimal;
 			font-size: 0.85rem;
 			margin: 0;
-	
+
 			li::marker {
 				color: var(--ink);
 				content: unset;
@@ -155,7 +150,7 @@
 					font-weight: normal;
 				}
 			}
-			
+
 			ul {
 				list-style-type: lower-alpha;
 				margin: 0.25em 0 0;
@@ -164,7 +159,7 @@
 					list-style-type: decimal;
 				}
 			}
-			
+
 			li {
 				list-style-type: inherit;
 				margin: 0 0 0.25em;
