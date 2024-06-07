@@ -1,5 +1,5 @@
 ---
-title: "For what it's worth: whatever I know about getting hired in tech"
+title: "For whatever it's worth: my advice on job hunting in tech"
 date: 2024-06-07
 updated: 2024-06-07
 categories:
