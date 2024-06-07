@@ -144,7 +144,7 @@ Your behavioral story bank might be your single most important resource. It'll h
 
 </CalloutPlusQuote>
 
-You'll be returning to your BSB over and over again throughout the entire process. (Every time you go back to your BSB, you can think _Backstreet's Back, all right_!)
+You'll be returning to your BSB over and over again throughout the entire process. (Every time you go back to your BSB, you can think _Backstreet's back, all right_!)
 
 The point of this exercise is to have a list ready to go, so you're never caught off-guard, ready to answer any question on demand.
 
@@ -222,7 +222,9 @@ It's hard to stand out when you're the same circle avatar, on the same page, wit
 
 A personal website is a great way to stand out. You can, and should, link to it from everywhere. Having one has served me extremely well over the years.
 
-Your website doesn't need to be fancy. Bonus points for building it yourself, but it's not a hard requirement. You don't have to blog, though it's a good idea, if you're into it at all. (“_But I don't have anything new or unique to say_,” you might argue. To which I might reply: “_This ain't the world's first job advice post, but you're still reading it_.”)
+Your website doesn't need to be fancy. Bonus points for building it yourself, but it's not required. If you do, build it well. (Or in other words: rock your `<body>` right. Yes, these jokes will continue. No, I will not apologize).
+
+You don't have to blog, though it's a good idea, if you're into it at all. (“_But I don't have anything new or unique to say_,” you might argue. To which I might reply: “_This ain't the world's first job advice post, but you're still reading it_.”)
 
 You don't even need to have multiple pages, or a lot of content. (This should go without saying, but: do ***not*** fill your website with AI-generated slop. People can smell that these days, and it _will_ backfire.)
 
@@ -431,9 +433,9 @@ The point of your resume is to tell your story. "I did all these things" isn't a
 
 - Set the scene (situation, task)
 - Say what you did (action)
-- _Show how that had an impact_ (result)
+- Show how that had an impact in the end (result)
 
-Use specific, qualitative numbers and measurements wherever possible.
+Use specific, quantitative numbers and measurements wherever possible.
 
 Usually, when I give this advice, the immediate response is "but what if I don't have numbers?" That's fine. Give it your best reasonable guess.
 
@@ -447,13 +449,13 @@ One last time: _don't lie_. But a reasonably confident guess based on best avail
 
 ### Talk about yourself as a human, not a technology checklist
 
-Yes, you have to list every technology you've ever touched, because there's a chance you'll be filtered by whether or not the term "React" is on your resume. That sucks and I hate it, too, but it's the unfortunate reality of this whole stupid process.
+Yes, you have to list every technology you've ever touched, because there's a chance you'll be filtered by whether or not the term "React" is on your resume. Nobody likes it, but it's the unfortunate reality of this whole ridiculous process.
 
-However, _don't stop there_. If your qualifications are all you have to stand on—“I have proficiency in _x_, _y_, and _z_”—then you haven't given a prospective employer any reason at all to hire you over anyone else with those same skills. (Or even over _no one_ else; ChatGPT probably knows at least as much about React as you do. Hell, there are probably trained monkeys who can write JSX these days.)
+However, _don't stop there_. If your qualifications are all you have to stand on—“I have proficiency in _x_, _y_, and _z_”—then you haven't given a prospective employer any reason at all to hire you over anyone else with those same skills. (Besides, most hard skills, on their own, aren't particularly valuable to employers. Hell, there are probably trained monkeys who can write JSX these days.)
 
-You're never going to win the checklist game. Somebody else will always have a longer, more impressive list than you. So don't compete purely on that level.
+You're never going to win the checklist game. Somebody else will always have a longer, more impressive list. So don't compete purely on that level.
 
-Your employer has their pick of candidates who check the technical boxes. The question is: what _else_ do you bring to the table?
+Go beyond checking the technical boxes. What _else_ do you bring to the table?
 
 <CalloutPlusQuote>
 
@@ -541,35 +543,33 @@ Congrats! Let's talk about what to do in this part.
 
 ### Fail early and often
 
-My absolute best advice for interviewing is: do it _as often as you can_.
+That heading is a little bit of a joke. But really, though: my absolute best advice for interviewing is: do it _as often as you can_.
 
-Interviewing is a skill, and just like any other skill, you're going to suck at it for a while before you get good at it.
-
-In fact, sucking at it is the only way to _get_ good at it in the first place.
+Interviewing is a skill, and just like any other skill, the only way to improve is to just keep being bad at it until you're not anymore.
 
 So: practice all you can. Do mock interviews with friends, family, or online, if it helps. Run through what you'd say in given scenarios in your head while you're commuting.
 
-And, of course: actually _take_ real interviews. The more, the better, until you start to feel confident. (Personally, I think it's even a good idea to take interviews even when you're _not_ looking for a job, just to stay sharp.)
+And, of course: actually _take_ real interviews. The more, the better, until you start to feel confident. (Personally, I think it's a good idea to take interviews even when you're _not_ looking for a job, just to stay sharp.)
 
 I was lucky that I often coded in front of students while I was teaching for a local code school. So by the time I got in front of real interviewers, I was pretty well-practiced at talking through things, and had long ago lost my fear of looking silly or making mistakes. I'd recommend you find ways to do something similar. (In other words: reproduce my luck.)
 
 By the time you're interviewing for a job you _really_ want, you'll want to feel comfortable in that situation. You'll want to know how to handle yourself under that pressure, and be accustomed to answering the questions that might come up.
 
-The only way to get there is through practice, and failure.
+The only way to get there is through practice.
 
 <CalloutPlusQuote>
 
-Pardon the sports analogy, but: you don't want your first time at bat to be in a playoff game. So get out there and swing at some pitches before it really matters.
+Pardon the baseball analogy, but: you don't want your first time at the plate to be in a playoff game. So get out there and swing at some pitches while the stakes are still low.
 
 </CalloutPlusQuote>
 
-One important caveat here: I'm not suggesting you waste anyone's time. I don't recommend you interview for a job you're 100% certain you'd never consider taking. That's rude to the person who's giving their time to interview you in good faith.
+One important caveat here: I'm not suggesting you waste anyone's time. I don't recommend you interview for a job you know for sure you'd never consider taking. That's rude to the person who's giving their time to interview you in good faith.
 
-That said: you might be surprised how much things can change once you actually talk to some folks at any given company. The interview process has definitely changed my mind before, in both directions. I've said no to things I'd previously considered dream jobs, after getting a glimpse of the inner workings of the company. I've also said yes to jobs I applied for on a whim, never really expecting to hear back from, while contentedly employed elsewhere. So don't ever be _too_ sure before you've actually spent the time exploring.
+That said: you might be surprised how much things can change once you actually talk to some folks at any given company. The interview process has definitely changed my mind before, in both directions. I've said no to things I'd previously considered dream jobs, after getting a glimpse of the inner workings of the company. I've also said yes to jobs I applied for on a whim, never really expecting to hear back from, while contentedly employed elsewhere, having been so impressed. So don't ever be _too_ sure before you've actually spent the time exploring.
 
 There's nothing wrong with going into the process just to learn more. In fact, that's the whole point of it. Remember: this is a two-way agreement; you're not just selling yourself away to the first bidder. Ideally, at least, you should be asking questions and making sure it's a fit on your end, too, and there's little way to do that without interviewing.
 
-Besides: this playing field is _heavily_ slanted towards companies, and a lot of them _will_ ghost you and worse. Even the companies who _won't_ ghost you will still have no qualms at all with asking you to do hours and hours of unpaid labor over the course of interviewing, quite likely for absolutely nothing in return. So even if you _did_ waste someone's time just for a practice interview, well...with the way things are right now, I guess I'd have a hard time feeling too bad about that.
+Besides: this playing field is _heavily_ slanted towards companies, and a lot of them _will_ ghost you and worse. Even the companies who _won't_ ghost you will still have no qualms at all with asking you to do hours and hours of unpaid labor over the course of interviewing, quite likely for absolutely nothing in return. So even if you _did_ waste someone's time just for a practice interview, well...they're still getting paid. With the way things are right now, I guess I'd have a hard time feeling too bad about that.
 
 <SideNote>
 
@@ -701,7 +701,7 @@ Honestly, I wish I didn't have to write this section. In my opinion, live coding
 
 Why? Because there's nothing an interviewer can learn about you by watching you code that they couldn't have sussed out through an ordinary conversation, for one thing.
 
-Besides, performance in that environment has virtually no correlation at all with real-world job performance, or what it's like to the actual work. No manager at any remotely sane company will _ever_ show up at your desk with a problem you've never seen before, set a timer for 30 minutes, sit there and watch you work on it, and fire you if time expires. It just doesn't happen.
+Besides, that environment has virtually nothing in common with what it's like to do the actual work. No manager at any remotely sane company will _ever_ show up at your desk with a problem you've never seen before, set a timer for 30 minutes, sit there and watch you work on it, and fire you if time expires. It just doesn't happen.
 
 <CalloutPlusQuote>
 
@@ -719,7 +719,7 @@ Tech, in general, loves gatekeeping. So it's no surprise the code interview is m
 
 </CalloutPlusQuote>
 
-Anyway, I digress. Unfortunately, most companies still administer these arcane, bias-ridden exercises, and so you'll probably have to take some.
+Anyway, I digress. Unfortunately, most companies still administer these archaic, bias-ridden exercises, and so you'll probably have to take some.
 
 The good news is: most companies at least keep the difficulty fairly low, and many won't eliminate you just because you couldn't get through one on time. The exercise is, at least ostensibly, about seeing how you think, and about making sure you're not somebody who's just hoping to make it a few weeks before anyone notices they have no coding skills.
 
@@ -729,29 +729,29 @@ I _hope_ you don't have to do live coding, but I've had to for most of my jobs, 
 
 The only way to get better is practice. And the only way to overcome a fear of failure is…just get used to failure.
 
-<CalloutPlusQuote>
-
 Before you're in an actual interview, get in front of people, and talk as you type. Make mistakes. Talk about them. Laugh about them. Keep going, until it stops being so uncomfortable.
 
-</CalloutPlusQuote>
+<CalloutPlusQuote>
 
 Your goal isn't to stop making mistakes; that's impossible. Your goal is to get so used to it, it doesn't bother you anymore.
+
+</CalloutPlusQuote>
 
 (_What, you think that wildly underqualified guy over there worried about_ his _mistakes? Hell, he probably didn't even know he made them_.)
 
 You don't need to be a great performer _or_ a great coder. You just want to get reasonably comfortable talking through code while you write it, and shrugging off any inevitable mistakes along the way. That's it.
 
-I know it's painful. I know some people just aren't suited for this kind of thing, and it's not fair to force those people to go through it anyway. If you're one of those people, I'm sorry. It's stupid. But I know you can do it. Trust me. It just takes practice.
+I know it's painful. I know some people just aren't suited for this kind of thing, and it's not fair to force those people to go through it anyway. If you're one of those people, I'm sorry. It sucks. But I know you can do it. I believe in you. It just takes practice.
 
 ### Once the clock starts
 
-When you do find yourself in an actual code interview, first and foremost: _don't rush_. This will feel counter-intuitive; you've only got so many minutes. But trust me.
+When you do find yourself in an actual code interview, first and foremost: _don't rush_. This will feel counter-intuitive; you've only got so many minutes. But don't let the clock be a distraction, and don't let it dictate your mindset.
 
 Once you've received the directions, read them slowly and carefully. Then, ask anything and everything that comes to mind.
 
 Don't hesitate to ask about something you're not sure of, even if it seems like you should be. Make sure you fully understand the directions, and repeat them back in your own words to be certain.
 
-After you're sure you understand the assignment, pause, and think about possible ways to accomplish the task. Talk through them as you think, if you can, so your interviewer can get a glimpse into your thought process. Talk through the tradeoffs of each approach that comes to mind.
+After you're sure you understand the assignment, pause once more, and consider possible ways to accomplish the task. Talk through them as you think, if you can, so your interviewer can get a glimpse into your thought process. Talk through the tradeoffs of each approach that comes to mind.
 
 <CalloutPlusQuote>
 
@@ -840,7 +840,7 @@ Don't shoot the moon and ask for a wildly unrealistic number, of course. But ask
 
 You're probably not going to get rejected over shooting a little high, so don't be afraid of it. At worst, you'll probably just hear something like "that's slightly high for this role; we're budgeting more in the range of [x]" at which point you can still work on coming to an agreement, if you want to. (And if they slam the door on you over a reasonably small difference, walk away knowing you dodged a bullet.)
 
-One last thing to keep in mind: salary isn't everything. There are lots of other things to consider, like:
+Also keep in mind: salary isn't everything. There are lots of other things to consider, like:
 
 - How good is the insurance? (Do look at that. I mean, really look at it, even if you're still young and healthy. Get the details up front as much as you can.)
 - Do you get shares in the company, or any other sort of equity? If so, find out how much, how you earn them, and when.
@@ -864,8 +864,6 @@ If this happens, at the _very_ least, get every detail you can, in writing, incl
 
 Promises are quickly forgotten. If you're relying on anyone's word for anything, get the receipts.
 
-Pics, or it didn't happen.
-
 ##  Mindset
 
 It's possible you'll find something quickly, and I hope you do. However, even if you find yourself looking month after month after month, I do think there are some ways to steel your outlook and conserve some of your energy, to move at a sustainable pace over the long haul.
@@ -874,17 +872,17 @@ It's possible you'll find something quickly, and I hope you do. However, even if
 
 I won't sugarcoat it: this is a weird, hard time for everyone in tech. As the general economy around us continues humming along steadily, our sector has, for various reasons (mostly to do with corporate greed), chilled pretty severely. It's a rough time, and again: that's nothing to do with you.
 
-Anecdotally, however: years ago, since the day I put the word "developer" on my LinkedIn profile, I started getting regular, sometimes _relentless_ recruiter spam. (In fact, I've joked before that the best way to get a job as a developer is to say you already are one.)
+Anecdotally, however: years ago, starting the day I put the word "developer" on my LinkedIn profile, I began getting regular, sometimes _relentless_ recruiter spam. (In fact, I've joked before that the best way to get a job as a developer is to say you already are one.)
 
 That all went silent at some point in the last year or so, but I've noticed it beginning to tick back up again lately.
 
-My personal take (again, purely anecdotal) is: companies have started to realize laying off so much of their staff over the last year or two has made them a lot slower than they'd like to be. (I also theorize they've realized AI didn't replace people the way they thought.)
+My personal take (again, purely anecdotal) is: companies have started to realize laying off so much of their staff over the last year or two has made them a lot slower than they'd like to be, and also, the people who were left started jumping ship after having their trust in the company permanently shaken. (I also theorize companies are beginning to realize AI isn't replacing people quite the way they thought it would.)
 
 On top of this, the much-prognosticated recession that helped lead to the layoffs in the first place never really materialized, tech's current downturn notwithstanding.
 
 Money is still tight in the tech world, but I'd bet on it loosening back up again in the foreseeable future, personally.
 
-Even if it doesn't, though: there are upsides to walking a long and trying road. A lot of your competition will probably give up and go looking elsewhere. Long job searches suck, but they give you plenty of time to work on your portfolio and side projects.
+Even if it doesn't, though: there are upsides to walking a long and trying road. A lot of your competition will probably give up and go looking elsewhere. You'll have plenty of time to work on your portfolio and side projects, and by the time hiring _does_ pick up again, if you're still out there, you'll be _way_ ahead, having spent the winter sharpening your skills instead of hibernating.
 
 Try to keep putting one foot in front of the other, doing little things each day to get 1% better, and it'll pay off in the long run.
 
@@ -926,9 +924,10 @@ But don't forget, you're still a human, which means you need water, sun, playtim
 
 </CalloutPlusQuote>
 
-At the end of the day, we're all basically just (slightly) sophisticated house pets. Look after yourself like you'd look after your favorite animal.
+At the end of the day, we're all basically just (slightly) sophisticated house pets. Look after yourself like you'd look after your favorite pet.
 
-You can do this. I know you can.
+I don't care who you are, where you're from, what you did… (Sorry, I had to get one last one in there. I'm done now. I promise.)
+
+Seriously: you can do this. I know you can.
 
 It's just a matter of time, practice, and persistence.
-
