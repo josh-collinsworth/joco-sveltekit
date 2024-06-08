@@ -78,7 +78,7 @@ Before you get to the thrilling and wonderful world of applications and phone ca
 
 Obviously, what you want is a job, because you'd like to make money to eat and survive and pay for Netflix. But since that answer probably won't get you anywhere in interviews, let's go a little deeper.
 
-Really think about what's worked for you in the past, and what hasn't. What _kind_ of role best suits you, and in what type of organization? Do you like being a small part of a big team, and having well-defined criteria? Or, do you like having lots of autonomy and forging your own path? (Or somewhere between?)
+Really think about what's worked for you in the past, and what hasn't. What _kind_ of role best suits you, and in what type of organization? Do you like being a small part of a big team, with well-defined roles and success criteria? Do you like having lots of autonomy, wearing lots of hats, and forging your own path somewhere smaller? (Or somewhere between?)
 
 What sort of opportunities would you want in your next position? How would you like it to be different from your last job, and how would you like it to be the same?
 
@@ -90,7 +90,7 @@ If it helps: write down every criteria you can think of (pay, benefits, autonomy
 
 <CalloutPlusQuote>
 
-Spend some serious time figuring out what you value most, and put it down on paper.
+Spend some serious time figuring out what you value, and put it down on paper.
 
 </CalloutPlusQuote>
 
@@ -98,7 +98,7 @@ While I'm not generally a fan of personality tests and the like, I've found the 
 
 Whether or not you take any tests, though, be honest with yourself.
 
-Write your answers down, and keep them handy; they'll help you filter your search, and help you answer interview questions like "why are you interested in this company?"
+Keep your answers handy; they'll help you filter your search, and answer interview questions like "why are you interested in this company?"
 
 As a bonus: they'll _also_ help guide you to some good questions _you_ can ask in interviews. We'll talk a little more about both of those later on.
 
@@ -114,7 +114,7 @@ I personally believe effort is better spent bolstering strengths than mitigating
 
 </PullQuote>
 
-You don't need to be an expert in any of those things, by any stretch, but they shouldn't be unfamiliar to you. If you can have a basic high-level conversation about them, that's probably good enough for now. (_I've been working in React, TypeScript, and Tailwind for years, and I wouldn't consider myself an expert in any of the three_.)
+You don't need to be an expert in everything, by any stretch, but things likely to come up should be at least familiar. If you can have a basic high-level conversation about them, that's probably good enough for now. (_I've been working in React, TypeScript, and Tailwind for years, and I wouldn't consider myself an expert in any of the three_.)
 
 Beyond addressing any severe vulnerabilities, however: I personally believe effort is better spent bolstering strengths than mitigating weaknesses. There's usually a reason some things click with you while others don't, and so you're fighting against yourself trying to drag your lowest stats up. That energy goes a lot further leaning into things that come more easily. Plus, this is a long process; you need some wins along the way.
 
@@ -161,8 +161,6 @@ That's obviously not a work story. But it's one that absolutely showed persisten
 If you faced a challenge and got positive results, it counts. Don't disqualify relevant experience just because it happened outside the walls of an office.
 
 </CalloutPlusQuote>
-
-
 
 ### If you can, be financially prepared
 
@@ -252,6 +250,8 @@ It's up to you, and it really doesn't matter. The important part is:
 2. It looks good and functions well.
 
 Quality over quantity. One really good small project is worth a handful of sloppy demos, so get all the help and feedback you can. It's likely people will peer into the code, so make sure it's in good shape, and make it as accessible and performant as possible.
+
+Lastly: if this is still something you need to check off your list, pick something you'll enjoy working on, but will learn a little bit from, too. (I'd recommend a balance of about 70/30 as far as that goes.)
 
 <SideNote>
 
