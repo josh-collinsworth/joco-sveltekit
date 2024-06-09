@@ -40,7 +40,7 @@ This will serve as a collection of whatever I've learned, for whatever it's wort
 
 ## What this is (and isn't)
 
-**This is advice for anyone actively looking for a job in tech, or about to start**. It aims to cover the search, from beginning to end.
+**This is advice for anyone actively looking for a job in tech, or about to start**, particularly developers. It aims to cover the search, from beginning to end.
 
 Just to get this out of the way right off the bat: I'm no authoritative expert, either on hiring or on tech in general. If there was a talking heads-style TV show about tech careers, nobody would call me up to sit on the panel.
 
