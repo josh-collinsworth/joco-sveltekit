@@ -36,7 +36,7 @@ This will serve as a collection of whatever I've learned, for whatever it's wort
 
 
 <!-- This markup was generated using the deprecated TableOfContents component. -->
-<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#what-this-is-and-isnt">What this is (and isn’t)</a></li><li><a href="#before-you-start">Before you start</a><ul><li><a href="#know-what-you-want">Know what you want</a></li><li><a href="#shore-up-weaknesses-but-focus-on-strengths">Shore up weaknesses, but focus on strengths</a></li><li><a href="#create-a-behavioral-story-bank">Create a behavioral story bank</a></li><li><a href="#if-you-can-be-financially-prepared">If you can, be financially prepared</a></li><li><a href="#get-out-there-and-network">Get out there and network</a></li><li><a href="#you-need-a-website">You need a website</a></li><li><a href="#have-some-writing-templates-ready">Have some writing templates ready</a></li></ul></li><li><a href="#where-to-look">Where to look</a></li><li><a href="#applying">Applying</a><ul><li><a href="#track-your-efforts">Track your efforts</a></li><li><a href="#front-load-the-search">Front-load the search</a></li><li><a href="#be-among-the-first-to-apply">Be among the first to apply</a></li><li><a href="#go-to-the-source">Go to the source</a></li><li><a href="#dont-worry-how-many-other-applicants-there-are">Don’t worry how many other applicants there are</a></li><li><a href="#write-good-cover-letters-if-you-can-dont-if-you-cant">Write good cover letters if you can; don’t if you can’t</a></li><li><a href="#dont-disqualify-yourself">Don’t disqualify yourself</a></li><li><a href="#be-active-online">Be active online</a></li></ul></li><li><a href="#resume-advice">Resume advice</a><ul><li><a href="#focus-on-effect-not-actions">Focus on effect, not actions</a></li><li><a href="#talk-about-yourself-as-a-human-not-a-technology-checklist">Talk about yourself as a human, not a technology checklist</a></li><li><a href="#tailor-your-resume-to-the-job">Tailor your resume to the job</a></li><li><a href="#keep-it-short-and-simple">Keep it short and simple</a></li><li><a href="#sweat-the-details">Sweat the details</a></li></ul></li><li><a href="#interviewing">Interviewing</a><ul><li><a href="#fail-early-and-often">Fail early and often</a></li><li><a href="#have-your-behavioral-story-bank-ready">Have your behavioral story bank ready</a></li><li><a href="#take-the-time-you-need">Take the time you need</a></li><li><a href="#never-ever-ever-say-bad-things-about-previous-jobs-or-coworkers">Never, ever, EVER say bad things about previous jobs or coworkers</a></li><li><a href="#always-have-questions-ready-and-always-ask-them">Always have questions ready, and always ask them</a></li><li><a href="#be-prepared-to-talk-salary">Be prepared to talk salary</a></li><li><a href="#follow-up-and-connect-after-interviews">Follow up and connect after interviews</a></li><li><a href="#ask-for-feedback">Ask for feedback</a></li><li><a href="#one-weird-trick">One weird trick</a></li></ul></li><li><a href="#handling-live-coding-interviews">Handling live coding interviews</a><ul><li><a href="#preparation-and-mindset">Preparation and mindset</a></li><li><a href="#once-the-clock-starts">Once the clock starts</a></li><li><a href="#dont-panic">Don’t panic</a></li><li><a href="#after-times-up">After time’s up</a></li></ul></li><li><a href="#talking-salary">Talking salary</a></li><li><a href="#mindset">Mindset</a><ul><li><a href="#things-are-bad-but-i-think-theyre-getting-better">Things are bad, but I think they’re getting better</a></li><li><a href="#its-not-you-its-them">It’s not you, it’s them</a></li><li><a href="#take-care-of-yourself">Take care of yourself</a></li></ul></li></ul></aside></div>
+<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#what-this-is-and-isnt">What this is (and isn’t)</a></li><li><a href="#before-you-start">Before you start</a><ul><li><a href="#know-what-you-want">Know what you want</a></li><li><a href="#shore-up-weaknesses-but-focus-on-strengths">Shore up weaknesses, but focus on strengths</a></li><li><a href="#create-a-behavioral-story-bank">Create a behavioral story bank</a></li><li><a href="#if-you-can-be-financially-prepared">If you can, be financially prepared</a></li><li><a href="#get-out-there-and-network">Get out there and network</a></li><li><a href="#you-need-a-website">You need a website</a></li><li><a href="#have-some-writing-templates-ready">Have some writing templates ready</a></li></ul></li><li><a href="#where-to-look">Where to look</a></li><li><a href="#applying">Applying</a><ul><li><a href="#track-your-efforts">Track your efforts</a></li><li><a href="#front-load-the-search">Front-load the search</a></li><li><a href="#be-among-the-first-to-apply">Be among the first to apply</a></li><li><a href="#go-to-the-source">Go to the source</a></li><li><a href="#dont-worry-how-many-other-applicants-there-are">Don’t worry how many other applicants there are</a></li><li><a href="#write-good-cover-letters-if-you-can-dont-if-you-cant">Write good cover letters if you can; don’t if you can’t</a></li><li><a href="#dont-disqualify-yourself">Don’t disqualify yourself</a></li><li><a href="#be-active-online">Be active online</a></li></ul></li><li><a href="#resume-advice">Resume advice</a><ul><li><a href="#focus-on-effect-not-actions">Focus on effect, not actions</a></li><li><a href="#talk-about-yourself-as-a-human-not-a-technology-checklist">Talk about yourself as a human, not a technology checklist</a></li><li><a href="#tailor-your-resume-to-the-job">Tailor your resume to the job</a></li><li><a href="#keep-it-short-and-simple">Keep it short and simple</a></li><li><a href="#sweat-the-details">Sweat the details</a></li></ul></li><li><a href="#interviewing">Interviewing</a><ul><li><a href="#fail-early-and-often">Fail early and often</a></li><li><a href="#have-your-behavioral-story-bank-ready">Have your behavioral story bank ready</a></li><li><a href="#take-the-time-you-need">Take the time you need</a></li><li><a href="#never-ever-ever-say-bad-things-about-previous-jobs-or-coworkers">Never, ever, EVER say bad things about previous jobs or coworkers</a></li><li><a href="#always-have-questions-ready-and-always-ask-them">Always have questions ready, and always ask them</a></li><li><a href="#be-prepared-to-talk-salary">Be prepared to talk salary</a></li><li><a href="#follow-up-and-connect-after-interviews">Follow up and connect after interviews</a></li><li><a href="#invest-in-your-setup">Invest in your setup</a></li><li><a href="#ask-for-feedback">Ask for feedback</a></li><li><a href="#one-weird-trick">One weird trick</a></li></ul></li><li><a href="#handling-live-coding-interviews">Handling live coding interviews</a><ul><li><a href="#preparation-and-mindset">Preparation and mindset</a></li><li><a href="#once-the-clock-starts">Once the clock starts</a></li><li><a href="#dont-panic">Don’t panic</a></li><li><a href="#after-times-up">After time’s up</a></li></ul></li><li><a href="#talking-salary">Talking salary</a></li><li><a href="#mindset">Mindset</a><ul><li><a href="#things-are-bad-but-i-think-theyre-getting-better">Things are bad, but I think they’re getting better</a></li><li><a href="#its-not-you-its-them">It’s not you, it’s them</a></li><li><a href="#take-care-of-yourself">Take care of yourself</a></li></ul></li></ul></aside></div>
 
 ## What this is (and isn't)
 
@@ -469,7 +469,7 @@ Companies can't just hire your knowledge or skills; they have to hire _you_. So 
 
 I'm certain you have positive qualities that aren't merely the software you know, or the things you've memorized. It's the _overlap_ of those qualities and your hard skills, together, that creates your real value.
 
-As one example: take a comic strip artist, the kind who makes the comics you might see in the paper. (Or would have, years ago, when everyone still got papers. If you were born after the '90s, just use your imagination here.)
+As one example: take a comic strip artist, the kind who makes the comics you might see in the paper. (Or would have, years ago, when everyone still got papers. If you were born after the '90s, just know that we used to get our memes delivered to us printed on paper.)
 
 Comic strip artists are illustrators, writers, and comics. They need to have some skill in all three areas.
 
@@ -481,11 +481,15 @@ It's also fairly easy to find somebody who, for instance, communicates well. Or,
 
 But finding _all_ of those in the same person? *That's* value. So find your value, and then talk about it. It's not in what you know; it's in _everything_ you bring to the table all together, and your hard skills are just one part of that equation.
 
-In my personal career, I've been valued at more than one company because I can not only build things on the web, but I can communicate well with stakeholders, and explain things in simple terms (skills built from years in other jobs).
+<CalloutPlusQuote>
 
-In some places, my coworkers were even so used to dealing with temperamental, stubborn developers, that it made me—a person willing and able to listen, compromise, and partner on goals—far more valuable than either soft skills or hard skills ever would've on their own.
+You aren't just a dev; you're a dev who has lots of other skills and positive qualities, too. The combination is what makes you uniquely valuable.
 
-Are you a good communicator? Do you have stories of how you've supported others in your career? How are you a good team player? Do you take responsibility? Do you demonstrate empathy? Are you a persistent problem solver? Can you talk about a time you tracked down an extra tricky bug?
+</CalloutPlusQuote>
+
+Speaking from personal experience: my dev skills have been _most_ valuable when I could use them together with my communication and design skills. Dev skills alone never would've matched the value that fusion could achieve.
+
+That's just my unique mixture; what's yours? Are you a good communicator? Do you have skills in other areas, like design, marketing, or sales? Do you have stories of how you've supported others in your career? How are you a good team player? Do you take responsibility? Do you demonstrate empathy? Are you a persistent problem solver? Can you talk about a time you tracked down an extra tricky bug?
 
 Heck, are you just nice to work with? Are you a decent human being? Do people like having you around?
 
@@ -511,7 +515,7 @@ Hard skills might get you in the building, but soft skills unlock most of the do
 
 </CalloutPlusQuote>
 
-So if you've got the hard skills down, you know where your efforts are best invested.
+So if you feel like you're well qualified, but you're still hitting a wall, soft skills may well be where your efforts are best invested.
 
 ### Tailor your resume to the job
 
@@ -641,7 +645,7 @@ If you say your manager is awful to you, people will wonder what _you_ did to yo
 
 I'm sure you can probably identify this phenomenon in the real world without looking very hard. Sadly, cases where victims report their abusers, only to have many suggest the victims did something to deserve or invite it, are far too common. (_As if it's possible to deserve to be victimized_.)
 
-Regardless of the effect, however: it's still pretty tactless to disparage parties who aren't present to defend themselves anyway. So just don't do it. You will _not_ look like the good person. Save those stories for people who know you and trust you.
+Regardless of the effect, however: it's pretty tactless to disparage parties who aren't present to defend themselves anyway. So just don't do it. You will _not_ look like the good person. Save those stories for people who know you and trust you.
 
 If you're _forced_ to bring up a negative—if, for example, you're asked what it is you don't like about your current position—try focusing on the impersonal, objective, and aspirational, rather than on the personal, subjective, and/or current state of affairs.
 
@@ -669,13 +673,23 @@ There are lots of resources available for this. Take the time to look up some go
 
 Don't throw softballs. This is your chance to really dig. “_What's your favorite thing about this job_?” probably won't tell you much you didn't already know.
 
-Instead, try something like: “_what's your favorite thing about this job, and what's one thing you would change if you could_?”
+Instead, try something like: “_what's your favorite thing about this company, and what's one thing you would change about it if you could_?” Push for the full story.
 
 One of my personal favorite questions: “_what would make somebody successful in this role_?” It's open-ended, and hopefully, the answer describes you. If so, you can give a little nudge on that. But either way, it helps you understand the job, and the company's expectations.
 
 ### Be prepared to talk salary
 
 There's a whole section on this later. But for now, I mention it here so if you only read this section, you'll know to look up what people in this role make at _this_ company, and what they make in similar roles across the tech field.
+
+### Invest in your setup
+
+Consider this less essential than other items, but: if you're interviewing via video call, like it or not, people's impression of you will be partly shaped by your video and audio.
+
+Record yourself to see how you look and sound in the video. Move your computer to a place with good lighting, if you can.
+
+If you have really good lighting, and headphones or earbuds with a decent mic, that's probably good enough (assuming your environment isn't too noisy). Good lighting makes up for a bad camera better than a good camera makes up for bad lighting. But get a decent webcam if you can. Consider an external mic, if you think you need it, but that's more of a luxury than a necessity.
+
+Spend some time on your background, too. It's part of the impression you make. If your resume says you're organized and pay attention to details, a messy room will undermine you. Work on your background like it's part of your resume. (Tip: you can even put interesting personal items back there to help yourself stand out a little bit.)
 
 ### Follow up and connect after interviews
 
@@ -717,13 +731,13 @@ Making a developer pass a live-coding interview is like forcing Taylor Swift to 
 
 </CalloutPlusQuote>
 
-What _does_ happen, however, is that this style of interview filters out people who would've been excellent at the job, but who simply can't perform well in front of others, under pressure, and/or quickly. (Which, again, are all things the actual job pretty much never calls for.)
+Worse: this style of interview filters out people who would've been excellent at the job, but who simply can't perform well in front of others, under pressure, and/or quickly. (_Which, again, are all things the actual job pretty much never calls for_.)
 
 Live coding interviews don't filter for skill; they filter for cocksureness.
 
 <CalloutPlusQuote>
 
-Tech, in general, loves gatekeeping. So it's no surprise the code interview is more of a grand celebration of gatekeeping than it is any reasonable, sane attempt to gauge a candidate's actual abilities and qualifications.
+Tech, in general, loves gatekeeping. So it's no surprise the code interview is more of a grand celebration of gatekeeping than it is any reasonable attempt to gauge a candidate's actual qualifications.
 
 </CalloutPlusQuote>
 
@@ -779,9 +793,9 @@ Don't stress over code perfection at this point. Priority one is to get somethin
 
 ### Don't panic
 
-I know the situation might feel very uncomfortable, but don't let the time constraints push you into rushing. Breathe slowly and deeply. As much as you can, be of calm mind and body. (The practice helps with this.)
+I know the situation might feel very uncomfortable, but again, don't let the clock push you into rushing. Breathe slowly and deeply. As much as you can, be of calm mind and body. (The practice helps with this.)
 
-If you sense yourself getting overly anxious, just stop and take a minute. Don't worry about the clock. Feel free to tell your interviewer you're taking a moment to think through the problem. It's your time; use it however you want.
+If you sense yourself getting overly anxious, just stop and take a minute. Forget about the time limit for a moment. Feel free to tell your interviewer you're taking a minute to think through the problem. It's your time; use it however you want.
 
 <CalloutPlusQuote>
 
@@ -839,12 +853,12 @@ So: do your research. If the numbers you find are in alignment with your expecta
 
 Alternatively, if you're _forced_ to get into numbers, I find it's helpful to phrase the question like this (at least to yourself, if nothing else):
 
-1. Where does the number get high enough I probably couldn't say no?
-2. Where does the number get low enough I probably couldn't say yes?
+1. What number is low enough I probably couldn't say yes?
+2. What number is high enough I probably couldn't say no?
 
 Once you've answered that, you have a pretty good idea of your range. Ask for the very high end of it, so you'll hopefully fall on the upper end if you end up negotiating. (If it's accepted right away, you might've asked low.)
 
-Don't shoot the moon and ask for a wildly unrealistic number, of course. But ask for what you want and what you're worth. What you think is a high number probably isn't to the company. (This is all assuming they haven't posted the salary range, or given you any indication; you want to set the starting point high, because it's not going anywhere but down.)
+Don't shoot the moon and ask for a wildly unrealistic number, of course. But ask for what you want and what you're worth. What you think is a high number probably isn't to the company. (This is all assuming they haven't posted the salary range, or given you any indication; you want to set the starting point high, in that scenario because it's not going anywhere but down.)
 
 You're probably not going to get rejected over shooting a little high, so don't be afraid of it. At worst, you'll probably just hear something like "that's slightly high for this role; we're budgeting more in the range of [x]" at which point you can still work on coming to an agreement, if you want to. (And if they slam the door on you over a reasonably small difference, walk away knowing you dodged a bullet.)
 
@@ -882,9 +896,9 @@ I won't sugarcoat it: this is a weird, hard time for everyone in tech. As the ge
 
 Anecdotally, however: years ago, starting the day I put the word "developer" on my LinkedIn profile, I began getting regular, sometimes _relentless_ recruiter spam. (In fact, I've joked before that the best way to get a job as a developer is to say you already are one.)
 
-That all went silent at some point in the last year or so, but I've noticed it beginning to tick back up again lately.
+That all went silent at some point in the last year or so. But I've noticed it beginning to tick back up again lately.
 
-My personal take (again, purely anecdotal) is: companies have started to realize laying off so much of their staff over the last year or two has made them a lot slower than they'd like to be, and also, the people who were left started jumping ship after having their trust in the company permanently shaken. (I also theorize companies are beginning to realize AI isn't replacing people quite the way they thought it would.)
+My personal take (again, purely anecdotal) is: companies have started to realize laying off so much of their staff over the last year or two has made them a lot slower than they'd like to be. And also: the people who were left probably started jumping ship after having their trust in the company permanently shaken. (I further theorize companies are beginning to realize AI isn't replacing people quite the way they thought it might.)
 
 On top of this, the much-prognosticated recession that helped lead to the layoffs in the first place never really materialized, tech's current downturn notwithstanding.
 
@@ -934,7 +948,7 @@ But don't forget, you're still a human, which means you need water, sun, playtim
 
 At the end of the day, we're all basically just (slightly) sophisticated house pets. Look after yourself like you'd look after your favorite pet.
 
-I don't care who you are, where you're from, what you did… (Sorry, I had to get one last one in there. I'm done now. I promise.)
+I don't care who you are, where you're from, what you did… (Sorry, I had to get one last Backstreet Boys joke in there. I'm done now. I promise.)
 
 Seriously: you can do this. I know you can.
 
