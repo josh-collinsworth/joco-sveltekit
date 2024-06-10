@@ -8,7 +8,7 @@ categories:
 coverImage: fwiw.svg
 coverWidth: 1920
 coverHeight: 1080
-excerpt: "A collection of things I've learned over my decade in the industry, on how and where to look for jobs, applying, interviewing, and all those fun things. For whatever it's worth."
+excerpt: "A collection of things I've learned over my decade in the industry, on how and where to look for jobs, applying, interviewing, talking about yourself and your work, and all those other fun things. For whatever it's worth."
 
 ---
 
