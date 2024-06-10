@@ -1,7 +1,7 @@
 ---
 title: "For whatever it's worth: my advice on job hunting in tech"
 date: 2024-06-07
-updated: 2024-06-09
+updated: 2024-06-10
 categories:
   - opinion
   - personal
