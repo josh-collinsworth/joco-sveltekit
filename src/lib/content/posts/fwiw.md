@@ -1,7 +1,7 @@
 ---
 title: "For whatever it's worth: my advice on job hunting in tech"
 date: 2024-06-07
-updated: 2024-06-10
+updated: 2024-06-11
 categories:
   - opinion
   - personal
@@ -671,7 +671,7 @@ If you say your company is terrible, people will probably just think you're a co
 
 If you say your manager is awful to you, people will wonder what _you_ did to your manager to make them treat you like that.
 
-I'm sure you can probably identify this phenomenon in the real world without looking very far. Sadly, cases where abusers are called out, only for the victims to face the accusation _they_ did something to deserve or invite the abuse, are far too common. (_As if it's possible to deserve to be victimized_.)
+I'm sure you can probably identify this phenomenon in the real world without looking very far. Sadly, cases where abusers are called out, only for the victims to face accusations _they_ did something to deserve or invite the abuse, are far too common. (_As if it's possible to deserve to be victimized_.)
 
 Regardless: it's pretty tactless to turn an interview into a gossip session. So just don't do it. You will _not_ look like the good person. Save those stories for people who know you and trust you.
 
@@ -704,7 +704,7 @@ If you have to involve pronouns, make it collaborative; use "us" or "we" instead
 
 **Better**:
 - “_That code_ could be clearer.”
-- “_That approach_ doesn't scale well.”
+- “_That approach_ may not scale well.”
 - “_Let's_ rethink that.”
 
 ### Always have questions ready, and always ask them
@@ -735,11 +735,11 @@ There's a whole section on this later. But for now, I mention it here so if you 
 
 Consider this less essential than other items, but: if you're interviewing via video call, like it or not, people's impression of you will be partly shaped by your video and audio.
 
-Record yourself to see how you look and sound in the video. Move your computer to a place with good lighting, if you can.
+Record yourself beforehand, to see how you look and sound in the video. Move your computer to a place with good lighting, if you can.
 
-If you have good lighting, and headphones or earbuds with a decent mic, that's probably good enough (assuming your environment isn't too noisy). Good lighting makes up for a bad camera better than a good camera makes up for bad lighting. But get a decent webcam if you're able; even a relatively cheap one will probably be better than whatever's built in to your machine. Consider an external mic, if you think you need it, but that's more of a luxury than a necessity.
+If you have good lighting, and headphones or earbuds with a decent mic, that's probably good enough (assuming your environment isn't too noisy). Good lighting makes up for a bad camera better than a good camera makes up for bad lighting. So get a decent webcam if you're able; even a relatively cheap one will probably be better than whatever's built in to your machine. But if not, fall back to good lighting (and, of course, a clean lens). Consider an external mic if you think you need it and can afford it, but consider it more of a luxury than a necessity.
 
-Spend some time on your background, too. It's part of the impression you make. If your resume says you're organized and pay attention to details, a messy room will undermine you. Work on your background like it's part of your resume. (Tip: you can even put interesting personal items back there to help yourself stand out a little bit.)
+Spend some time on your background, too. It's part of the impression you make. If your resume says you're organized and pay attention to details, a messy room will undermine you. Work on your background like it's part of your resume. (Tip: you can even put interesting personal items back there to help yourself stand out a little bit, and give you some good conversation pieces.)
 
 ### Follow up and connect after interviews
 
@@ -908,17 +908,17 @@ Alternatively, if you're _forced_ to get into numbers, I find it's helpful to ph
 
 Once you've answered that, you have a pretty good idea of your range. Ask for the very high end of it, so you'll hopefully fall on the upper end if you end up negotiating. (If it's accepted right away, you might've asked low.)
 
-Don't shoot the moon and ask for a wildly unrealistic number, of course. But ask for what you want and what you're worth. What you think is a high number probably isn't to the company. (This is all assuming they haven't posted the salary range, or given you any indication; you want to set the starting point high, in that scenario because it's not going anywhere but down.)
+Don't shoot the moon and ask for a wildly unrealistic number, of course. But ask for what you want and what you're worth. What you think is a high number probably isn't to the company. (This is all assuming they haven't posted the salary range, or given you any indication; you want to set your starting point high, in that scenario, because it's not going anywhere but down.)
 
-You're probably not going to get rejected over shooting a little high, so don't be afraid of it. At worst, you'll probably just hear something like "that's slightly high for this role; we're budgeting more in the range of [x]" at which point you can still work on coming to an agreement, if you want to. (And if they slam the door on you over a reasonably small difference, walk away knowing you dodged a bullet.)
+Don't be afraid of negotiation. As long as your ask isn't outrageous, at worst, you'll probably just hear something like "that's slightly high for this role; we're budgeting more in the range of [x]" at which point you can still work on coming to an agreement, if you want to. (And if they slam the door on you over a reasonably small difference, walk away knowing you dodged a bullet.)
 
 Also keep in mind: salary isn't everything. There are lots of other things to consider, like:
 
-- How good is the insurance? (Do look at that. I mean, really look at it, even if you're still young and healthy. Get the details up front as much as you can.)
+- How good is the insurance? (Do look at that. I mean, really look at it, even if you're still young and healthy. Get the details up front as much as you can. Bad insurance can eat a _lot_ of your paycheck.)
 - Do you get shares in the company, or any other sort of equity? If so, find out how much, how you earn them, and when.
 - Are there bonuses? If so, what range are they, and how do you earn them?
 - Are there other perks, like retirement funds? Is there 401k matching?
-- What about non-monetary benefits? Do you get food? Office stipends? Travel opportunities? Is the culture great? Is there a learning or conference budget? Is this a promotion, or a better title? Will it look better on your resume the next time you're job searching?
+- What about non-monetary benefits? Do you get food? Office stipends? Travel opportunities? Is the culture great? Is there a learning or conference budget? Is this a promotion, or a better title? Will it look better on your resume the next time you're job searching? What growth and learning opportunities will you have?
 
 Consider the whole package. It might be worth a lower salary if the benefits are better, the culture is better, and/or the role is just more fulfilling.
 
@@ -930,11 +930,11 @@ Money makes up for poor perks better than the other way around, but no amount of
 
 </CalloutPlusQuote>
 
-One last thing: be extremely wary of promises. If you hear anything at all like "we're going to start you low, but we expect you'll be promoted quickly," or "the salary is lower because we give regular bonuses," that should set off some alarms.
+One last thing: be extremely wary of promises. If you hear anything at all like "we're going to start you low, but we expect you'll be promoted quickly," or "the salary is lower because we give regular bonuses," proceed with an abundance of caution.
 
 If this happens, at the _very_ least, get every detail you can, in writing, including what you'll need to do to earn that promotion/bonus by the time stated, and what figures they'll be.
 
-Promises are quickly forgotten. If you're relying on anyone's word for anything, get the receipts.
+Promises are quickly forgotten. They might be sincere and in good faith, but regardless: if you're relying on anyone's word for anything, get the receipts. If it's not in writing, it didn't happen.
 
 ##  Mindset
 
