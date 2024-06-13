@@ -11,7 +11,6 @@
 	$: ({ PostContent, meta } = data)
 
 	const handleScroll = throttle(() => {
-		console.log(window.scrollY)
 		hasScrolled = window.scrollY > 1200
 	}, 500)
 
