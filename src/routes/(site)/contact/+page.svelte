@@ -73,18 +73,15 @@
 				</p>
 			</noscript>
 
-			<p class="big">
-				Happy to chat! Email addresses submitted here are used only for replies. I try to respond to
-				everything that isn't spam. No solicitations, please.
-			</p>
+			<p class="big">Happy to chat! Email used only for replies. No solicitations, please.</p>
 
 			<ul class="small">
 				<li>
-					<strong>Yes</strong>, you may re-publish content from this blog in other languages, with
+					<strong>Yes</strong>, you may re-publish content from this blog in other languages with
 					attribution. No need to ask first.
 				</li>
 
-				<li><strong>No</strong>, I do not do guest posts. Please don't ask.</li>
+				<li><strong>No</strong>, I do not publish guest posts on this blog. Please don't ask.</li>
 			</ul>
 
 			<form
@@ -119,7 +116,7 @@
 							type="email"
 							name="email"
 							bind:value={formData.email}
-							placeholder="Where can I send my response?"
+							placeholder="Where can I send a response?"
 						/>
 					</div>
 				</div>
@@ -156,6 +153,7 @@
 	.big {
 		font-family: var(--headingFont);
 		font-size: var(--quarterNote);
+		text-wrap: balance;
 	}
 
 	.small {

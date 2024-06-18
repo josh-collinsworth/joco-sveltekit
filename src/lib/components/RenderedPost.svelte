@@ -14,10 +14,9 @@
 	export let PostContent: SvelteComponentTyped
 	export let meta: Post
 
+	const defaultImagePath = `/images/site-image.png`
 	let imagePath: string
-	$: imagePath = meta.coverImage
-		? `/images/post_images/${meta.coverImage}`
-		: `/images/post_images/default.jpg`
+	$: imagePath = meta.coverImage ? `/images/post_images/${meta.coverImage}` : defaultImagePath
 
 	const wrapTablesInScrollableDivs = (): void => {
 		/**
@@ -83,16 +82,18 @@
 
 <Main>
 	<article class="post compressed-content post-{meta.slug}">
-		<img
-			class="cover-image"
-			src={imagePath}
-			alt=""
-			style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight}"
-			width={meta.coverWidth}
-			height={meta.coverHeight}
-		/>
+		{#if imagePath !== defaultImagePath}
+			<img
+				class="cover-image"
+				src={imagePath}
+				alt=""
+				style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight}"
+				width={meta.coverWidth}
+				height={meta.coverHeight}
+			/>
+		{/if}
 
-		<h1>{meta.title}</h1>
+		<h1 style={imagePath === defaultImagePath ? `margin-top: 0;` : ''}>{meta.title}</h1>
 
 		<div class="meta">
 			<b>Published:</b>
