@@ -22,13 +22,13 @@
 
 <svelte:window on:scroll={handleScroll} />
 
-<a href="#top" class:show={hasScrolled}>
+<a href="#app" class:show={hasScrolled}>
 	<div class="arrow" />
 	<div>Top</div>
 </a>
 
 <style lang="scss">
-	a[href='#top'] {
+	a[href='#app'] {
 		position: fixed;
 		bottom: var(--quarterNote);
 		right: 0;
@@ -69,7 +69,7 @@
 		}
 	}
 
-	:global(.dark a[href='#top']) {
+	:global(.dark a[href='#app']) {
 		background: var(--lightBlue) !important;
 	}
 </style>
