@@ -709,15 +709,19 @@ A sneaky truth about interviewing: your questions say as much about you as your 
 
 </CalloutPlusQuote>
 
-Most interviews will end with 5–10 minutes for you to ask anything you'd like. Don't pass up this valuable opportunity. Have a list of open-ended questions prepared.
+Most interviews will end with 5–10 minutes for you to ask anything you'd like. _Don't pass up this valuable opportunity_. Have a list of open-ended questions prepared.
 
-Ideally, pull from the list you put together in the "know what you want" section. Ask questions that help reveal how closely aligned this company is to your values and preferences.
+Ideally, base these on the list you put together in the "know what you want" section: ask questions that help reveal how closely aligned this company is to your values and preferences.
 
-Don't throw softballs. This is your chance to really dig. “_What's your favorite thing about this job_?” probably won't tell you much you didn't already know.
+Don't throw softballs. “_What's your favorite thing about this job_?” probably won't tell you much you didn't already know.
 
-Instead, try something like: “_what's your favorite thing about this company, and what's one thing you would change about it if you could_?” Push for the full story.
+Instead, try something like: “_what's your favorite thing about this company, and what's one thing you would change about it if you could_?” Dig for the full picture.
+
+<CalloutPlusQuote>
 
 This is probably your only chance to get an honest answer that hasn't been filtered through HR and marketing. Take full advantage.
+
+</CalloutPlusQuote>
 
 One of my personal favorite questions: “_what would make somebody successful in this role_?” It's open-ended, and hopefully, the answer describes you. If so, you can give a little nudge on that. But either way, it helps you understand the job, and the company's expectations.
 
@@ -727,13 +731,13 @@ There's a whole section on this later. But for now, I mention it here so if you 
 
 ### Invest in your setup
 
-Consider this less essential than other items, but: if you're interviewing via video call, like it or not, people's impression of you will be partly shaped by your video and audio.
+Consider this less essential than other items, but: if you're interviewing via video call, like it or not, people's impression of you will be partially shaped by your video and audio.
 
 Record yourself beforehand, to see how you look and sound in the video. Move your computer to a place with good lighting, if you can.
 
-If you have good lighting, and headphones or earbuds with a decent mic, that's probably good enough (assuming your environment isn't too noisy). Good lighting makes up for a bad camera better than a good camera makes up for bad lighting. So get a decent webcam if you're able; even a relatively cheap one will probably be better than whatever's built in to your machine. But if not, fall back to good lighting (and, of course, a clean lens). Consider an external mic if you think you need it and can afford it, but consider it more of a luxury than a necessity.
+If you have good lighting, and headphones or earbuds with a decent mic, that's probably good enough (assuming your environment isn't too noisy). Good lighting makes up for a bad camera better than a good camera makes up for bad lighting, but even an affordable webcam will probably be better than the one built into your machine. (Just make sure the lens is clean.)
 
-Spend some time on your background, too. It's part of the impression you make. If your resume says you're organized and pay attention to details, a messy room will undermine you. Work on your background like it's part of your resume. (Tip: you can even put interesting personal items back there to help yourself stand out a little bit, and give you some good conversation pieces.)
+Spend some time on the space in your background, too. It's part of the impression you make. If your resume says you're organized and pay attention to details, a messy room will undermine you. Work on your background like it's part of your resume. (Tip: you can even put interesting personal items back there to help yourself stand out a little bit, and give you some good conversation pieces.)
 
 ### Follow up and connect after interviews
 
