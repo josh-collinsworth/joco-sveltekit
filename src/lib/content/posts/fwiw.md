@@ -1,7 +1,7 @@
 ---
 title: "For whatever it's worth: my advice on job hunting in tech"
 date: 2024-06-07
-updated: 2024-06-11
+updated: 2024-06-20
 categories:
   - opinion
   - personal
@@ -54,7 +54,7 @@ I'll be the first to tell you a lot of my journey has been lucky. Still, though:
 
 </CalloutPlusQuote>
 
-This will be very US-focused, and developer-focused (especially frontend), so not everything will apply to you if you're in another country, or in another role. I think a lot of it still will, however.
+This will be very US- and developer-centric (especially frontend), so not everything will apply to you if you're in another country or role. I think a lot of it still will, however.
 
 I won't go deep into specifics on certain things (for example: how to write cover letters, or understanding algorithms), just because there are plenty of resources already available on those topics. I'll give my general advice, though.
 
@@ -74,7 +74,7 @@ For whatever it's worth.
 
 ##  Before you start
 
-Before you get to the thrilling and wonderful world of filling out applications and taking phone calls with strangers, you should spend some time—as long as it takes—checking these things off your list, to ensure you're as prepared as possible. (If you've started searching already, these are things you might want to work on sooner than later.)
+Before you get to the thrilling and wonderful world of filling out applications and taking phone calls with strangers, you should spend some time checking these things off your list, to ensure you're as prepared as possible. (If you've started searching already, these are things you might want to work on sooner than later.)
 
 ### Know what you want
 
@@ -82,7 +82,7 @@ Obviously, what you want is a job, because you'd like to make money to eat and s
 
 Really think about what's worked for you in the past, and what hasn't. What _kind_ of role best suits you, and in what type of organization? Do you like being a small part of a big team, with well-defined roles and success criteria? Do you like having lots of autonomy, wearing lots of hats, and forging your own path somewhere smaller and more ambiguous? (Or something in-between?)
 
-What sort of opportunities would you want in your next position? How would you like it to be different from your last job, and how would you like it to be the same?
+How would you like it to be different from your last job, and how would you like it to be the same?
 
 Would you take less pay for something more fulfilling?
 
@@ -90,27 +90,27 @@ For that matter: what makes you feel fulfilled in the first place?
 
 One useful exercise: write down every criteria you can think of (pay, benefits, autonomy, company size, prestige, title, interesting work, culture, social impact, stability, etc.)
 
-Once you've thought of every aspect you can, _rank them_, and save your ranked list for later.
+Once you've thought of every aspect you can, _rank them_, first through last, and save your ranked list for later.
 
 Compare your ranked list to any job you consider applying for, to see how closely it matches. (You probably won't find a perfect fit, but the list _will_ help you notice bad fits.) However you do it, though:
 
 <CalloutPlusQuote>
 
-Spend some serious time figuring out what you value, and put it down on paper.
+Spend some serious time figuring out what you value, and write it down.
 
 </CalloutPlusQuote>
 
 While I'm not generally a fan of personality tests and the like, I've found the [CliftonStrengths Assessment](https://www.gallup.com/cliftonstrengths/en/252137/home.aspx) (also called the StrengthsFinder, or Top Five Strengths) to be illuminating for me, personally. It's helped me to understand what I value, what I bring to the table, and where I fit in best. Whether or not you take any tests, though, be honest with yourself.
 
-Keep your answers handy; they'll help you filter your search, and answer interview questions like "why are you interested in this company?"
+Keep your list handy; it will help you filter your search, and answer interview questions like "why are you interested in this company?"
 
-As a bonus: they'll _also_ help guide you to some good questions _you_ can ask in interviews. We'll talk a little more about both of those later on.
+As a bonus: the list will  _also_ help guide you to some good questions _you_ can ask in interviews.
 
 ### Shore up weaknesses, but focus on strengths
 
 If you have any severe deficiencies, it's worth addressing those immediately. Now's the time to make sure you're ready for whatever comes your way.
 
-Learn the basics of any technology or area that's likely to come up for the kinds of role you'll be going for. Research and practice anything you're likely to be doing. Look up articles; listen to podcasts; watch videos; whatever works for you. Half the battle is just getting your brain focused on those things.
+Learn the basics of any technology or topic that's likely to come up for the kinds of role you're applying for. Research and practice anything you're likely to be doing. Look up articles; listen to podcasts; watch videos; whatever works for you. Half the battle is just getting your brain focused on those things.
 
 You don't need to become an expert, by any stretch, let alone an expert in everything that might come up in an interview. If you can have a basic high-level conversation about them, that's probably good enough for now. (_I've been working in React, TypeScript, and Tailwind for years, and I wouldn't consider myself an expert in any of the three_.)
 
@@ -128,21 +128,19 @@ Don't get me wrong: you _should_ address your weaknesses, to some extent. But do
 
 <CalloutPlusQuote>
 
-You'll be hired for what you're good at, not for what you've avoided being bad at. So don't leave any gaping holes in your armor, but also: don't polish your shield when you could be sharpening your sword.
+You'll be hired for what you're good at, not for what you've avoided being bad at.
 
 </CalloutPlusQuote>
 
 ### Create a behavioral story bank
 
-A "behavioral story bank" (_BSB, not to be confused with Backstreet Boys_) is a collection of stories you can tell about yourself any time you need to highlight your skills, positive qualities, and/or the results you've achieved. It's a prepared list of all your best stories about yourself.
+A "behavioral story bank" (_BSB, not to be confused with Backstreet Boys_) is a collection of stories you can tell about yourself any time you need to highlight your skills, positive qualities, and/or the results you've achieved. It's a prepared list of all your best anecdotes about yourself.
 
-If it helps: you can reverse-engineer your BSB from common interview questions (_take the time to look some up_).
+Think of times you've had success, or faced adversity, or learned new things; times you overcame challenges; times you earned recognition, or times your coworkers were grateful for something you did. If it helps: you can reverse-engineer your BSB from common interview questions (_take the time to look some up_).
 
-Think of times you've had success, or faced adversity, or learned new things; times you overcame challenges; times you earned recognition, or times your coworkers were grateful for something you did.
+Once you have a handful of those situations, put them into the [STAR format](https://www.interviewbit.com/star-interview-questions/) (Situation, Task, Action, Result).
 
-Once you have a handful of those situations, put them into the [STAR format](https://www.interviewbit.com/star-interview-questions/) (Situation, Task, Action, Result), as short stories you can retell on demand.
-
-Write the list down, and have it ready at all times. Ideally, have the stories ready to go from memory, but keep the list handy and refer to it any time you need to. That's your BSB.
+Write the list down, and have it ready at all times. That's your BSB.
 
 <CalloutPlusQuote>
 
@@ -152,13 +150,11 @@ Your behavioral story bank might be your single most important resource. It'll h
 
 You'll be returning to your BSB over and over again throughout the entire process. (Every time you go back to your BSB, you can think _Backstreet's back, all right_!)
 
-The point of this exercise is to have a list of stories ready to go, so you're never caught off-guard or left struggling to come up with examples.
-
-Prepare like a stand-up performer; you want to have a set of your best material ready to go at any moment, and constantly refine it as you practice and gauge the results. To some extent, interviews are performative (for better or worse). So, be ready to perform.
+Prepare like a stand-up performer; you want to have a set of your best material ready to go at any moment, so you're never caught trying to come up with something on the spot. To some extent, interviews are performative (for better or worse). So, be ready to perform.
 
 One other piece of advice on your BSB: while stories should positively showcase your behaviors and results, they don't all have to be super business-y, or directly related. They can be from other industries, or even personal.
 
-One example that's stuck with me through the years: a Latino applicant shared a story of overcoming racism from his school guidance counselor. His counselor tried dissuade him from going for his chosen academic field because of his race, and asserted he was better suited for the trades. The applicant rejected his counselor's racist discouragement, and found a way to succeed in his chosen academic field despite it.
+One example that's stuck with me through the years: a Latino applicant shared a story of overcoming racism from his school guidance counselor, who tried to railroad the applicant away from his chosen major and into the trades. The applicant rejected his counselor's racist discouragement, and found a way to succeed in his chosen academic field despite it.
 
 That's obviously not a work story. But it's one that absolutely showed persistence in overcoming adversity (and, one that made me feel invested in that applicant, rooting for his success). Point is:
 
@@ -172,17 +168,17 @@ If you faced a challenge and got positive results, it counts. Don't disqualify r
 
 If you have the luxury, save money for your search. If you don't (if you just found yourself laid off, for example—I'm very sorry), start cutting expenses now. Sadly, but realistically: you don't know how long this might take.
 
-Steel yourself, in any case. It's likely to take at least 6–8 weeks to find a job in the current market, even in the best-case scenario. It'll most likely be longer, and quite possibly much longer. I say that not to scare you, but to prepare you for all contingencies. Settle in, and find sustainable pace; this will be a marathon, not a sprint. It's probably wise to extend your runway as far as it can go.
+Steel yourself, in any case. It's likely to take at least 6–8 weeks to find a job in the current market, even in the best-case scenario. It'll most likely be longer, and quite possibly much longer. I say that not to scare you, but to prepare you for all contingencies. Settle in, and find sustainable pace; this will be a marathon, not a sprint. It's probably wise to extend your financial runway as far as it can go.
 
 ### Get out there and network
 
- In this era, where everything is digital, the more of a personal connection you can make, and the more people you can make it with, the better off you'll be.
+In this era, where everything is digital, the more of a personal connection you can make, and the more people you can make it with, the better off you'll be.
 
 It doesn't have to be just LinkedIn, or business-y meetups; you can do fun events, too (online or in person). Just make sure you're doing something to make you visible as a human, and to make some kind of actual connection with other humans.
 
 A great way to do this is to get involved with any local or regional organization you can find. Most cities and metro areas will have developer meetups, and probably some dev groups on Discord, Slack, Meetup, etc. There may even be Facebook groups, bulletin boards, and the like.
 
-Even if you aren't looking locally, I'd still recommend seeking out groups for professionals like you, especially in your area. Get involved, and get to know the members. Go wherever the crowd happens to be. If you can make in-person connections, they'll likely be your strongest, but online friends are real friends, too.
+Even if you aren't looking locally, I'd still recommend seeking out groups for professionals like you, especially in your area. Get involved, and get to know the members. If you can make in-person connections, they'll likely be your strongest, but online friends are real friends, too.
 
 <CalloutPlusQuote>
 
@@ -228,15 +224,15 @@ It's hard to stand out when you're the same circle avatar, on the same page, wit
 
 A personal website is a great way to stand out. You can, and should, link to it from everywhere. Having one has served me extremely well over the years.
 
-Your website doesn't need to be fancy, at all. Bonus points for building it yourself, but it's not required. If you do, build it well. Overly simple is better than overstuffed. (In other words: rock your `<body>` right. Yes, the Backstreet Boys jokes will continue. No, I will not apologize).
+Your website doesn't need to be fancy, at all. Bonus points for building it yourself, but it's not required. If you do, build it well. Overly simple is better than over-complicated. (In other words: rock your `<body>` right. Yes, the Backstreet Boys jokes will continue. No, I will not apologize).
 
-You don't have to blog, though it's a good idea, if you're into it at all. You can just write about stuff you're working on and learning, if nothing else. (“_But I don't have anything new or unique to say_,” you might argue. To which I might reply: “_This ain't the world's first job advice post, but yet, here we both are_.”)
+You don't have to blog, though it's a good idea, if you're into it at all. You can just write about stuff you're working on and learning, if nothing else. (“_But I don't have anything new or unique to say_,” you might argue. To which I might reply: “_This ain't the world's first job advice post, yet here we both are_.”)
 
 You don't even need to have multiple pages, or a lot of content. One page will do, if that's what you feel fits best. (This should go without saying, but: do ***not*** fill your website with AI-generated slop. People can smell that these days, and it most likely _will_ backfire.)
 
-However big or small, though, your site absolutely _should_ exist in some form, and it should look professional. After all, you're trying to get a job coding things. So, step one: make the things you code look really nice. Nice enough somebody might want to hire you to make that kind of thing.
+However big or small, though, your site absolutely _should_ exist in some form, and it should be well-made. After all, you're trying to get a job coding things, so make the things you code nice enough that somebody might want to hire you to code their thing, too.
 
-If you aren't comfortable designing your own site, get some help, or use a template of some kind. If all else fails, mimic something tasteful and minimalist. When in doubt, keep it simple. Having a website that looks amateurish probably hurts you more than not having one at all, so put in the work.
+If you aren't comfortable designing your own site, get some help, or use a template of some kind. If all else fails, mimic something tasteful and minimalist. When in doubt, keep it simple. Having a website that looks amateurish probably hurts you more than not having one at all, so put in the work. Seek out feedback, in any case.
 
 Similarly: you need some projects to show. (Hint: the website itself could be one.)
 
@@ -248,16 +244,14 @@ If you can link to something you've worked on professionally, definitely do that
 
 (_This is less important if you've been in the industry a while, and your career track record speaks for itself. But it never hurts_.)
 
-Whatever project(s) you show don't have to be big, or particularly ambitious. You don't need a full-fledged SaaS app, or an official open-source project. What you show doesn't even need to be particularly practical. But it _should_ be something you built on your own, to show you have the necessary drive and skills.
+Whatever project(s) you show don't have to be big, or particularly ambitious. You don't need a full-fledged SaaS app, or an official open-source project. What you show doesn't even need to be particularly practical or useful. The main thing is: it's something you built on your own, to show you have the necessary drive and skills.
 
-A simple game is fine, if that's your thing. Or maybe a tiny app that you find useful, even if nobody else does. Maybe it's a fan website, or a database, or some kind of calculator. Maybe it's generative art explorations.
-
-It's up to you, and it really doesn't matter. The important part is:
+The important thing is:
 
 1. You made something; and
 2. It looks good and functions well.
 
-Quality over quantity. One really good small project is worth a handful of sloppy demos, so get all the help and feedback you can. It's likely people will peer into the code, so make sure it's in good shape, and make it as accessible and performant as possible.
+Quality over quantity. One really good small project is worth a handful of sloppy demos, so again, get all the help and feedback you can here. It's likely people will peer into the code, so make sure it's in good shape, and make it as accessible and performant as possible.
 
 Lastly: if a side project is still something you need to check off your list, pick something you know you'll enjoy working on. It'll be easier to stay motivated if you're having fun.
 
@@ -323,7 +317,7 @@ All right, you've covered your basics, and you're well prepared. Time to start s
 
 ### Track your efforts
 
-When I was applying for jobs in earnest, I kept a database table in Notion (a spreadsheet, essentially, in case you're not familiar). In it, I meticulously tracked every job I'd applied for, when, how, and what the status was, along with any other relevant notes and information. This helps in lots of ways:
+When I was applying for jobs in earnest, I kept a spreadsheet. In it, I meticulously tracked every job I'd applied for, when, how, and what the status was, along with any other relevant notes and information. This helps in lots of ways:
 
 1. You can visualize your efforts, and see how far you've gotten;
 2. You won't end up forgetting which companies and roles you've applied to already;
@@ -343,7 +337,7 @@ Don't be discouraged by this; there are things you can do to grease your success
 
 There are a few reasons for this:
 
-1. Later on, when your applications start turning into interviews, you won't have as much time to apply. So front-loading the process with applications helps make sure you've still got possibilities in the pipeline later on, when you want to be focusing more on interview prep and less on blasting applications at the wall.
+1. Later on, when your applications start turning into interviews, you won't have as much time. So front-loading the process with applications helps make sure you've still got possibilities in the pipeline later, when you want to be focusing more on interview prep.
 
 2. You want to be getting as many interviews as possible. This isn't necessarily to maximize your odds short-term, but to gain valuable experience at interviewing itself. (More on that later.)
 
@@ -399,7 +393,7 @@ The job description is an employer's wish list; it's all the things they hope th
 
 I'd say if you really want the job, go ahead and apply even if you feel you're only about half qualified.
 
-The truth is: the posting will contain mostly stuff you'll probably learn on the job anyway. It's notoriously more rigorous than the actual role. So gather up all your positive data points about how you solve problems, and what a great coworker you are, and apply anyway.
+The truth is: the posting will contain mostly stuff you'll probably learn on the job anyway. It's notoriously more rigorous than the actual role. If you want it, shoot your shot.
 
 <CalloutPlusQuote>
 
@@ -417,9 +411,7 @@ Remember: to the person reading your application and resume, you're just another
 
 </CalloutPlusQuote>
 
-Have a website. Add a blog, if you're even remotely interested in writing (it helps to show your thinking style and communication skills). Have at least one live side project, however small, plus any socials you want to be on. Be active, but go with quality over quantity; you don't want to seem like a bot.
-
-Show your human side. Focus what you're good at, what you're interested in, and why somebody might want to get to know you. Be relevant, friendly and helpful. Get some good karma on your side. Round out that vague impression of you someone might have from your application or resume. Add some personality.
+Definitely have relevant content in your web presence (like your website and projects), but show your human side, too. Talk about what you're good at, what you're interested in, and why somebody might want to get to know you. Be relevant, friendly and helpful. Round out that vague impression of you someone might have from your application or resume.
 
 Be authentic. You don't need to be anodyne, but obviously, don't get _too_ edgy or controversial either.
 
@@ -443,7 +435,7 @@ The point of your resume is to tell your story. "I did all these things" isn't a
 
 - Set the scene (situation, task)
 - Say what you did (action)
-- Show how that had an impact in the end (result)
+- Show how that changed things in the end (result)
 
 Use specific, quantitative numbers and measurements wherever possible.
 
@@ -461,9 +453,9 @@ Yes, you have to list every technology you've ever touched, because there's a ch
 
 However, _don't stop there_. If your qualifications are all you have to stand on—“I have proficiency in _x_, _y_, and _z_”—then you haven't given a prospective employer any reason at all to hire you over anyone else with those same skills.
 
-Besides, most hard skills, on their own, aren't particularly valuable to employers. For just about any hard skill you can list—say, React experience—there's a metaphorical line of humans down the hallway with that skill. (Hell, there are probably trained monkeys who can write JSX these days.)
+Besides, most hard skills aren't particularly valuable on their own. For just about any skill you can list—say, React experience—there's a metaphorical line of humans down the hallway with that skill. (Hell, there are probably trained monkeys who can write JSX these days.)
 
-You're never going to win the checklist game. Somebody else will always have a longer, more impressive list. So don't compete purely on that level.
+You're never going to win the checklist game. So don't compete purely on that level.
 
 <CalloutPlusQuote>
 
@@ -493,7 +485,7 @@ You aren't just a dev; you're a human who embodies lots of other skills, experie
 
 Speaking from personal experience: my dev skills have been _most_ valuable when I could use them together with my communication and design skills. Dev skills alone never would've matched the value that fusion could achieve.
 
-That's just my unique mixture; what's yours? Are you a good communicator? Do you have skills in other areas, like design, marketing, or sales? Do you have stories of how you've supported others in your career? How are you a good team player? Do you take responsibility? Do you demonstrate empathy? Are you a persistent problem solver? Can you talk about a time you tracked down an extra tricky bug?
+That's just my unique mixture; what's yours? Are you a good communicator? Do you have skills in other areas, like design, marketing, or sales? Do you have stories of how you've supported others in your career? Do you take responsibility? Do you demonstrate empathy? Are you a persistent problem solver?
 
 Heck, are you just nice to work with? Are you a decent human being? Do people like having you around?
 
@@ -529,7 +521,7 @@ So if you feel like you're well qualified, but you're still hitting a wall, soft
 
 ### Tailor your resume to the job
 
-This might be in "bonus points" territory; it won't always apply (ha). But wherever you can, make adjustments to your resume (and also, your application and cover letters) to better fit the specific job you're applying for.
+Wherever you can, make adjustments to your resume (and also, your application and cover letters) to better fit the specific job you're applying for.
 
 Even if you're going for a frontend role, there are _lots_ of different kinds of those. Is the role in design systems? Put the design and component work you've done front and center.
 
@@ -545,7 +537,7 @@ Don't let your resume get longer than two pages; keep it to one, if you can. Don
 
 Unfortunately, you probably have to stuff a lot of keywords in there to try to get it past automated screening software, but try to find a way to do that without making the reader's eyes glaze over.
 
-Your resume is an opportunity to tell your story and set yourself apart. By all means, take whatever advice seems prudent on making sure the required content is there, so you get through the initial screen. But beyond that: be sure this piece of paper highlights who you are, what you've done, and what impact you had, without just looking like a wall of text.
+Your resume is an opportunity to tell your story and set yourself apart. By all means, take whatever advice seems prudent on making sure the required content is there. But beyond that: be sure this piece of paper highlights who you are, what you've done, and what impact you had, without just looking like a wall of text.
 
 (Pro design tip: white space is your friend. You'll usually hit the point where you can't possibly squeeze your content any further _long_ before you hit the point of too much white space.)
 
@@ -573,17 +565,21 @@ Congrats! Let's talk about what to do in this part.
 
 That heading is a little bit of a joke. But really, though: my absolute best advice for interviewing is: do it _as often as you can_.
 
-Interviewing is a skill, and just like any other skill, the only way to improve is to just keep being bad at it until you're not anymore.
+Interviewing is a skill, and just like any other skill, the only way to improve is to just keep doing it.
 
-So: practice all you can. Do mock interviews with friends, family, or online, if it helps. Run through what you'd say in given scenarios in your head while you're commuting. Talk with strangers, if you can find some who are willing. (_Service industry workers don't count_.)
+<CalloutPlusQuote>
+
+Contrary to the popular saying, doing something over and over and expecting different results is _not_ the definition of insanity; it's the definition of _practice_.
+
+</CalloutPlusQuote>
+
+Practice all you can. Do mock interviews with friends, family, or online, if it helps. Run through what you'd say in given scenarios in your head while you're commuting. Talk with strangers, if you can find some who are willing. (_Service industry workers don't count_.)
 
 And, of course: actually _take_ real interviews. The more, the better, until you start to feel confident. (Personally, I think it's a good idea to take interviews even when you're _not_ looking for a job, just to stay sharp.)
 
 I was lucky that I often coded in front of students while I was teaching for a local code school. So by the time I got in front of real interviewers, I was pretty well-practiced at talking through things, and had long ago lost my fear of looking silly or making mistakes. I'd recommend you find ways to do something similar. (In other words: reproduce my luck.)
 
-By the time you're interviewing for a job you _really_ want, you'll want to feel comfortable in that situation. You'll want to know how to handle yourself under that pressure, and be accustomed to answering the questions that might come up.
-
-The only way to get there is through practice.
+By the time you're interviewing for a job you _really_ want, you'll want to feel comfortable in that situation. The only way to get there is through practice.
 
 <CalloutPlusQuote>
 
@@ -593,7 +589,7 @@ Pardon the baseball analogy, but: you don't want your first time at the plate to
 
 One important caveat here: I'm not suggesting you waste anyone's time. I don't recommend you interview for a job you know for sure you'd never consider taking. That's rude to the person who's giving their time to interview you in good faith.
 
-That said: you might be surprised how much things can change once you actually talk to some folks at any given company. The interview process has definitely changed my mind before, in both directions. I've said no to things I'd previously considered dream jobs, after getting a glimpse of the inner workings of the company. I've also said yes to jobs I applied for on a whim, never really expecting to hear back from, while contentedly employed elsewhere, having been so impressed. So don't ever be _too_ sure before you've actually spent the time exploring.
+That said: you might be surprised how much things can change once you actually talk to some folks at any given company. The interview process has definitely changed my mind before, in both directions. I've said no to things I'd previously considered dream jobs, and I've also said yes to jobs I applied for on a whim, both because of the interviews. So don't ever be _too_ sure before you've actually spent the time exploring.
 
 There's nothing wrong with taking an interview just to learn more. In fact, that's kind of the whole point.
 
@@ -603,7 +599,7 @@ This is a two-way agreement; you're not just selling yourself away to the first 
 
 </CalloutPlusQuote>
 
-Besides: this playing field is _heavily_ slanted towards companies, and a lot of them _will_ ghost you and worse. Even the companies who _won't_ ghost you will still have no qualms at all with asking you to do hours and hours of unpaid labor over the course of interviewing, quite likely for absolutely nothing in return. So even if you _did_ waste someone's time just for a practice interview, well...they're still getting paid. With the way things are right now, I guess I'd have a hard time feeling too bad about that.
+Besides: this playing field is _heavily_ slanted towards companies, and a lot of them _will_ ghost you and worse. Even the companies who _won't_ ghost you will still have no qualms at all with asking you to do hours and hours of unpaid labor over the course of interviewing, quite likely for absolutely nothing in return. So even if you did waste someone's time just for a practice interview, well...they're still getting paid. With the way things are right now, I guess I'd have a hard time feeling too bad about that.
 
 <SideNote>
 
@@ -641,7 +637,7 @@ Showing you're a person who's capable of learning and growth, and who can identi
 
 If you're asked a question, and you can't think of an answer right away, just say "let me think about that for a minute."
 
-It's easy to feel the pressure to constantly perform in an interview, but anxiety and panic produce terrible results. It's perfectly fine to ask for time, and to take as much of it as you need.
+It's easy to feel the pressure to constantly perform in an interview, it's perfectly fine to ask for time, and to take as much of it as you need.
 
 It will probably feel awkward as you sit there in silence, but it's just fine. Really. You won't get docked for it, but even if you did, the pause will probably produce a better result than hastily fumbling through a bad answer would.
 
@@ -649,9 +645,7 @@ It's possible it'll even be noted as a _good_ thing that you're confident enough
 
 ### Never, ever, EVER say bad things about previous jobs or coworkers
 
-Seriously: never. No matter how awful the employer; no matter how bad the coworkers; no matter how inept the management; no matter how miserable the conditions. Not even if you're fully and inarguably in the right.
-
-Do not ever, under any circumstances, disparage any other party in an interview.
+Seriously: never. Do not ever, under any circumstances, disparage any other party in an interview, _no matter what_.
 
 _Never_.
 
@@ -669,7 +663,7 @@ Put simply: we're innately wired to shoot the messenger.
 
 If you say your company is terrible, people will probably just think you're a complainer, and the real problem is with _you_.
 
-If you say your manager is awful to you, people will wonder what _you_ did to your manager to make them treat you like that.
+If you say your manager is awful, people will wonder what _you_ did to your manager to make them treat you like that.
 
 I'm sure you can probably identify this phenomenon in the real world without looking very far. Sadly, cases where abusers are called out, only for the victims to face accusations _they_ did something to deserve or invite the abuse, are far too common. (_As if it's possible to deserve to be victimized_.)
 
@@ -691,7 +685,7 @@ Related advice—which goes here because I couldn't figure out where else to put
 
 <CalloutPlusQuote>
 
-Unless you're talking specifically about yourself or the other party, avoid the words "I" and "you." Focus the conversation on the topic, not the people in it.
+Try to avoid the words "I" and "you." Focus the conversation on the topic, not the people in it.
 
 </CalloutPlusQuote>
 
@@ -715,15 +709,15 @@ A sneaky truth about interviewing: your questions say as much about you as your 
 
 </CalloutPlusQuote>
 
-Most interviews will end with 5–10 minutes for you to ask anything you'd like. Don't pass up this valuable opportunity. Come prepared with some things you'd really like to know. Have a list of open-ended questions prepared.
+Most interviews will end with 5–10 minutes for you to ask anything you'd like. Don't pass up this valuable opportunity. Have a list of open-ended questions prepared.
 
 Ideally, pull from the list you put together in the "know what you want" section. Ask questions that help reveal how closely aligned this company is to your values and preferences.
-
-There are lots of resources available for this. Take the time to look up some good questions to ask employers. Ask anything you want to know about how the organization works, what the role entails, and how conflict is handled.
 
 Don't throw softballs. This is your chance to really dig. “_What's your favorite thing about this job_?” probably won't tell you much you didn't already know.
 
 Instead, try something like: “_what's your favorite thing about this company, and what's one thing you would change about it if you could_?” Push for the full story.
+
+This is probably your only chance to get an honest answer that hasn't been filtered through HR and marketing. Take full advantage.
 
 One of my personal favorite questions: “_what would make somebody successful in this role_?” It's open-ended, and hopefully, the answer describes you. If so, you can give a little nudge on that. But either way, it helps you understand the job, and the company's expectations.
 
