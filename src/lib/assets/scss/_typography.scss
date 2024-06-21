@@ -3,11 +3,11 @@
 body {
 	line-height: var(--bodyLineHeight);
 	font-weight: var(--bodyFontWeight);
+	font-variant-numeric: oldstyle-nums;
 }
 
-ul,
-ol {
-	margin: var(--quarterNote) 0 var(--halfNote);
+::marker {
+	font-variant-numeric: oldstyle-nums;
 }
 
 main ul:not(.toc) {
@@ -177,7 +177,12 @@ blockquote {
 
 ul,
 ol {
-	padding-left: 1em;
+	padding-left: 1rem;
+	margin: var(--quarterNote) 0;
+
+	li {
+		padding-left: var(--sixteenthNote);
+	}
 
 	ul,
 	ol {

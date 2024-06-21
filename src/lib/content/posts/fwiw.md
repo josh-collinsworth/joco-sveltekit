@@ -36,7 +36,7 @@ This will serve as a collection of whatever I've learned, for whatever it's wort
 
 
 <!-- This markup was generated using the deprecated TableOfContents component. -->
-<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#what-this-is-and-isnt">What this is (and isn’t)</a></li><li><a href="#before-you-start">Before you start</a><ul><li><a href="#know-what-you-want">Know what you want</a></li><li><a href="#shore-up-weaknesses-but-focus-on-strengths">Shore up weaknesses, but focus on strengths</a></li><li><a href="#create-a-behavioral-story-bank">Create a behavioral story bank</a></li><li><a href="#if-you-can-be-financially-prepared">If you can, be financially prepared</a></li><li><a href="#get-out-there-and-network">Get out there and network</a></li><li><a href="#you-need-a-website">You need a website</a></li><li><a href="#have-some-writing-templates-ready">Have some writing templates ready</a></li></ul></li><li><a href="#where-to-look">Where to look</a></li><li><a href="#applying">Applying</a><ul><li><a href="#track-your-efforts">Track your efforts</a></li><li><a href="#front-load-the-search">Front-load the search</a></li><li><a href="#be-among-the-first-to-apply">Be among the first to apply</a></li><li><a href="#go-to-the-source">Go to the source</a></li><li><a href="#dont-worry-how-many-other-applicants-there-are">Don’t worry how many other applicants there are</a></li><li><a href="#write-good-cover-letters-if-you-can-dont-if-you-cant">Write good cover letters if you can; don’t if you can’t</a></li><li><a href="#dont-disqualify-yourself">Don’t disqualify yourself</a></li><li><a href="#be-active-online">Be active online</a></li></ul></li><li><a href="#resume-advice">Resume advice</a><ul><li><a href="#focus-on-effect-not-actions">Focus on effect, not actions</a></li><li><a href="#talk-about-yourself-as-a-human-not-a-technology-checklist">Talk about yourself as a human, not a technology checklist</a></li><li><a href="#tailor-your-resume-to-the-job">Tailor your resume to the job</a></li><li><a href="#keep-it-short-and-simple">Keep it short and simple</a></li><li><a href="#sweat-the-details">Sweat the details</a></li></ul></li><li><a href="#interviewing">Interviewing</a><ul><li><a href="#fail-early-and-often">Fail early and often</a></li><li><a href="#have-your-behavioral-story-bank-ready">Have your behavioral story bank ready</a></li><li><a href="#take-the-time-you-need">Take the time you need</a></li><li><a href="#never-ever-ever-say-bad-things-about-previous-jobs-or-coworkers">Never, ever, EVER say bad things about previous jobs or coworkers</a></li><li><a href="#always-have-questions-ready-and-always-ask-them">Always have questions ready, and always ask them</a></li><li><a href="#be-prepared-to-talk-salary">Be prepared to talk salary</a></li><li><a href="#follow-up-and-connect-after-interviews">Follow up and connect after interviews</a></li><li><a href="#invest-in-your-setup">Invest in your setup</a></li><li><a href="#ask-for-feedback">Ask for feedback</a></li><li><a href="#one-weird-trick">One weird trick</a></li></ul></li><li><a href="#handling-live-coding-interviews">Handling live coding interviews</a><ul><li><a href="#preparation-and-mindset">Preparation and mindset</a></li><li><a href="#once-the-clock-starts">Once the clock starts</a></li><li><a href="#dont-panic">Don’t panic</a></li><li><a href="#after-times-up">After time’s up</a></li></ul></li><li><a href="#talking-salary">Talking salary</a></li><li><a href="#mindset">Mindset</a><ul><li><a href="#things-are-bad-but-i-think-theyre-getting-better">Things are bad, but I think they’re getting better</a></li><li><a href="#its-not-you-its-them">It’s not you, it’s them</a></li><li><a href="#take-care-of-yourself">Take care of yourself</a></li></ul></li></ul></aside></div>
+<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>Table of contents<span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#what-this-is-and-isnt">What this is (and isn’t)</a></li><li><a href="#before-you-start">Before you start</a><ul><li><a href="#know-what-you-want">Know what you want</a></li><li><a href="#shore-up-weaknesses-but-focus-on-strengths">Shore up weaknesses, but focus on strengths</a></li><li><a href="#create-a-behavioral-story-bank">Create a behavioral story bank</a></li><li><a href="#if-you-can-be-financially-prepared">If you can, be financially prepared</a></li><li><a href="#get-out-there-and-network">Get out there and network</a></li><li><a href="#you-need-a-website">You need a website</a></li><li><a href="#have-some-writing-templates-ready">Have some writing templates ready</a></li></ul></li><li><a href="#where-to-look">Where to look</a></li><li><a href="#applying">Applying</a><ul><li><a href="#track-your-efforts">Track your efforts</a></li><li><a href="#front-load-the-search">Front-load the search</a></li><li><a href="#be-among-the-first-to-apply">Be among the first to apply</a></li><li><a href="#go-to-the-source">Go to the source</a></li><li><a href="#dont-worry-how-many-other-applicants-there-are">Don’t worry how many other applicants there are</a></li><li><a href="#write-good-cover-letters-if-you-can-dont-if-you-cant">Write good cover letters if you can; don’t if you can’t</a></li><li><a href="#dont-disqualify-yourself">Don’t disqualify yourself</a></li><li><a href="#invest-in-your-web-presence">Invest in your web presence</a></li></ul></li><li><a href="#resume-advice">Resume advice</a><ul><li><a href="#focus-on-effect-not-actions">Focus on effect, not actions</a></li><li><a href="#talk-about-yourself-as-a-human-not-a-technology-checklist">Talk about yourself as a human, not a technology checklist</a></li><li><a href="#tailor-your-resume-to-the-job">Tailor your resume to the job</a></li><li><a href="#keep-it-short-and-simple">Keep it short and simple</a></li><li><a href="#sweat-the-details">Sweat the details</a></li></ul></li><li><a href="#interviewing">Interviewing</a><ul><li><a href="#fail-early-and-often">Fail early and often</a></li><li><a href="#have-your-behavioral-story-bank-ready">Have your behavioral story bank ready</a></li><li><a href="#take-the-time-you-need">Take the time you need</a></li><li><a href="#never-ever-ever-say-bad-things-about-previous-jobs-or-coworkers">Never, ever, EVER say bad things about previous jobs or coworkers</a></li><li><a href="#always-have-questions-ready-and-always-ask-them">Always have questions ready, and always ask them</a></li><li><a href="#be-prepared-to-talk-salary">Be prepared to talk salary</a></li><li><a href="#follow-up-and-connect-after-interviews">Follow up and connect after interviews</a></li><li><a href="#invest-in-your-setup">Invest in your setup</a></li><li><a href="#ask-for-feedback">Ask for feedback</a></li><li><a href="#one-weird-trick">One weird trick</a></li></ul></li><li><a href="#handling-live-coding-interviews">Handling live coding interviews</a><ul><li><a href="#preparation-and-mindset">Preparation and mindset</a></li><li><a href="#once-the-clock-starts">Once the clock starts</a></li><li><a href="#dont-panic">Don’t panic</a></li><li><a href="#after-times-up">After time’s up</a></li></ul></li><li><a href="#talking-salary">Talking salary</a></li><li><a href="#mindset">Mindset</a><ul><li><a href="#things-are-bad-but-i-think-theyre-getting-better">Things are bad, but I think they’re getting better</a></li><li><a href="#its-not-you-its-them">It’s not you, it’s them</a></li><li><a href="#take-care-of-yourself">Take care of yourself</a></li></ul></li></ul></aside></div>
 
 ## What this is (and isn't)
 
@@ -74,7 +74,7 @@ For whatever it's worth.
 
 ##  Before you start
 
-Before you get to the thrilling and wonderful world of filling out applications and taking phone calls with strangers, you should spend some time checking these things off your list, to ensure you're as prepared as possible. (If you've started searching already, these are things you might want to work on sooner than later.)
+Regardless of where you are in your journey, these are things you might want to work on sooner than later.
 
 ### Know what you want
 
@@ -84,9 +84,7 @@ Really think about what's worked for you in the past, and what hasn't. What _kin
 
 How would you like it to be different from your last job, and how would you like it to be the same?
 
-Would you take less pay for something more fulfilling?
-
-For that matter: what makes you feel fulfilled in the first place?
+Would you take less pay for something more fulfilling? For that matter: what makes you feel fulfilled in the first place?
 
 One useful exercise: write down every criteria you can think of (pay, benefits, autonomy, company size, prestige, title, interesting work, culture, social impact, stability, etc.)
 
@@ -100,7 +98,7 @@ Spend some serious time figuring out what you value, and write it down.
 
 </CalloutPlusQuote>
 
-While I'm not generally a fan of personality tests and the like, I've found the [CliftonStrengths Assessment](https://www.gallup.com/cliftonstrengths/en/252137/home.aspx) (also called the StrengthsFinder, or Top Five Strengths) to be illuminating for me, personally. It's helped me to understand what I value, what I bring to the table, and where I fit in best. Whether or not you take any tests, though, be honest with yourself.
+While I'm not generally a fan of personality tests and the like, I've found the [CliftonStrengths Assessment](https://www.gallup.com/cliftonstrengths/en/252137/home.aspx) (also called the StrengthsFinder, or Top Five Strengths) to be illuminating for me, personally. It's helped me to understand what I value, what I bring to the table, and where I fit in best.
 
 Keep your list handy; it will help you filter your search, and answer interview questions like "why are you interested in this company?"
 
@@ -110,9 +108,9 @@ As a bonus: the list will  _also_ help guide you to some good questions _you_ ca
 
 If you have any severe deficiencies, it's worth addressing those immediately. Now's the time to make sure you're ready for whatever comes your way.
 
-Learn the basics of any technology or topic that's likely to come up for the kinds of role you're applying for. Research and practice anything you're likely to be doing. Look up articles; listen to podcasts; watch videos; whatever works for you. Half the battle is just getting your brain focused on those things.
+Practice for interviews. Brush up on any technology or topic that's likely to come up for the kinds of role you're applying for. Look up articles; listen to podcasts; watch videos; whatever works for you. You just want to get your brain out of passive mode, and actively thinking about these kinds of things.
 
-You don't need to become an expert, by any stretch, let alone an expert in everything that might come up in an interview. If you can have a basic high-level conversation about them, that's probably good enough for now. (_I've been working in React, TypeScript, and Tailwind for years, and I wouldn't consider myself an expert in any of the three_.)
+You don't need to become an expert, by any stretch, in everything that might come up in an interview. Just get to where you know the basics well enough to have a simple, high-level conversation (or at least, fake your way through one).
 
 <PullQuote>
 
@@ -120,7 +118,7 @@ Don't fight against yourself trying to drag your lowest stats up. That energy go
 
 </PullQuote>
 
-Beyond addressing any severe vulnerabilities, however: I personally believe effort is better spent bolstering strengths than mitigating weaknesses. There's usually a reason some things click with you while others don't, so don't fight against yourself trying to drag your lowest stats up. That energy goes a lot further leaning into your strengths.
+Beyond addressing any severe vulnerabilities, however: I personally believe effort is better spent bolstering strengths than mitigating weaknesses. There's usually a reason some things click with you while others don't, so don't fight against yourself trying to drag your lowest stats up. That energy goes a lot further leaning into your strengths and interests.
 
 Plus, this is a long process; you need some wins along the way. Spend time working on the stuff you're good at and enjoy.
 
@@ -134,9 +132,9 @@ You'll be hired for what you're good at, not for what you've avoided being bad a
 
 ### Create a behavioral story bank
 
-A "behavioral story bank" (_BSB, not to be confused with Backstreet Boys_) is a collection of stories you can tell about yourself any time you need to highlight your skills, positive qualities, and/or the results you've achieved. It's a prepared list of all your best anecdotes about yourself.
+A "behavioral story bank" (_BSB, not to be confused with Backstreet Boys_) is a collection of stories about yourself you can tell any time you need to highlight your skills, positive qualities, and/or the results you've achieved. It's a prepared list of all the best anecdotes about you.
 
-Think of times you've had success, or faced adversity, or learned new things; times you overcame challenges; times you earned recognition, or times your coworkers were grateful for something you did. If it helps: you can reverse-engineer your BSB from common interview questions (_take the time to look some up_).
+Think of times you've had success, or faced adversity, or learned new things; times you overcame challenges; times you earned recognition, or times your coworkers were grateful for something you did. If it helps: you can reverse-engineer your BSB from common interview questions (take the time to look some up).
 
 Once you have a handful of those situations, put them into the [STAR format](https://www.interviewbit.com/star-interview-questions/) (Situation, Task, Action, Result).
 
@@ -150,11 +148,11 @@ Your behavioral story bank might be your single most important resource. It'll h
 
 You'll be returning to your BSB over and over again throughout the entire process. (Every time you go back to your BSB, you can think _Backstreet's back, all right_!)
 
-Prepare like a stand-up performer; you want to have a set of your best material ready to go at any moment, so you're never caught trying to come up with something on the spot. To some extent, interviews are performative (for better or worse). So, be ready to perform.
+Prepare like a stand-up performer; you want to have a set of your best material ready to go at any moment, so you're never caught trying to come up with something on the spot. To some extent, interviews are performative (for better or worse). So, have some bits ready to go.
 
 One other piece of advice on your BSB: while stories should positively showcase your behaviors and results, they don't all have to be super business-y, or directly related. They can be from other industries, or even personal.
 
-One example that's stuck with me through the years: a Latino applicant shared a story of overcoming racism from his school guidance counselor, who tried to railroad the applicant away from his chosen major and into the trades. The applicant rejected his counselor's racist discouragement, and found a way to succeed in his chosen academic field despite it.
+One example that's stuck with me through the years: a Latino applicant shared a story of overcoming racism from his school guidance counselor, who tried to railroad the applicant away from his chosen academic field, and into the trades instead. The applicant rejected his counselor's racist discouragement, and found a way to succeed in his chosen field despite it.
 
 That's obviously not a work story. But it's one that absolutely showed persistence in overcoming adversity (and, one that made me feel invested in that applicant, rooting for his success). Point is:
 
@@ -194,13 +192,13 @@ _Do_ let folks know you're looking, of course, but only _after_ you've gotten in
 
 <CalloutPlusQuote>
 
-Communities are not charities; you shouldn't try to take from them without first contributing to and participating in them.
+Don't try to take from a community you're not giving to and participating in.
 
 </CalloutPlusQuote>
 
 The more you can become a helpful, friendly person to other people, the more those people will remember you for any opportunities that come up.
 
-Naturally, this also means: don't spam, and don't just post for the sake of posting. Quiet, infrequent involvement is fine, if that's you. Be real. Just don't lurk; get involved.
+Naturally, this also means: don't spam, and don't just post for the sake of posting. Quiet, infrequent involvement is fine, if that's you. Be real.
 
 <SideNote>
 
@@ -218,21 +216,21 @@ Being on LinkedIn, etc. is a good start, but you shouldn't stop there.
 
 No matter how great your LinkedIn profile is, it's still just another LinkedIn profile.
 
-It's hard to stand out when you're the same circle avatar, on the same page, with the same colors and layout as everyone else.
+It's hard to stand out when you're the same circle avatar, on a page 95% the same as everyone else's.
 
 </CalloutPlusQuote>
 
 A personal website is a great way to stand out. You can, and should, link to it from everywhere. Having one has served me extremely well over the years.
 
-Your website doesn't need to be fancy, at all. Bonus points for building it yourself, but it's not required. If you do, build it well. Overly simple is better than over-complicated. (In other words: rock your `<body>` right. Yes, the Backstreet Boys jokes will continue. No, I will not apologize).
+Your website doesn't need to be fancy at all. Bonus points for building it yourself, but it's not required. If you do, build it well. Overly simple is better than over-complicated. (In other words: rock your `<body>` right. Yes, the Backstreet Boys jokes will continue. No, I will not apologize).
 
-You don't have to blog, though it's a good idea, if you're into it at all. You can just write about stuff you're working on and learning, if nothing else. (“_But I don't have anything new or unique to say_,” you might argue. To which I might reply: “_This ain't the world's first job advice post, yet here we both are_.”)
+You don't have to blog, though it's a good idea if you're into it at all. You can just write about stuff you're working on and learning, if nothing else. (“_But I don't have anything new or unique to say_,” you might argue. To which I might reply: “_This ain't the world's first job advice post, yet here we both are_.”)
 
-You don't even need to have multiple pages, or a lot of content. One page will do, if that's what you feel fits best. (This should go without saying, but: do ***not*** fill your website with AI-generated slop. People can smell that these days, and it most likely _will_ backfire.)
+You don't need a lot of content. Even one page will do, if that's what you feel fits best. (This should go without saying, but: do ***not*** fill your website with AI-generated writing. It's easy to spot and it looks terrible.)
 
-However big or small, though, your site absolutely _should_ exist in some form, and it should be well-made. After all, you're trying to get a job coding things, so make the things you code nice enough that somebody might want to hire you to code their thing, too.
+Whatever the size and shape of your site, though: it should be well-made. After all, you're trying to get a job coding things, so make the things you code nice enough that somebody might want to hire you to code their thing, too.
 
-If you aren't comfortable designing your own site, get some help, or use a template of some kind. If all else fails, mimic something tasteful and minimalist. When in doubt, keep it simple. Having a website that looks amateurish probably hurts you more than not having one at all, so put in the work. Seek out feedback, in any case.
+If you aren't comfortable designing your own site, get some help, or use a template of some kind. If all else fails, mimic something tasteful and minimalist. When in doubt, keep it simple. Having a website that looks amateurish probably hurts you more than not having one at all, so put in the work. Seek out feedback.
 
 Similarly: you need some projects to show. (Hint: the website itself could be one.)
 
@@ -244,22 +242,17 @@ If you can link to something you've worked on professionally, definitely do that
 
 (_This is less important if you've been in the industry a while, and your career track record speaks for itself. But it never hurts_.)
 
-Whatever project(s) you show don't have to be big, or particularly ambitious. You don't need a full-fledged SaaS app, or an official open-source project. What you show doesn't even need to be particularly practical or useful. The main thing is: it's something you built on your own, to show you have the necessary drive and skills.
+Whatever project(s) you show don't have to be big, or particularly ambitious. You don't need a full-fledged SaaS app, or an official open-source project. What you show doesn't even need to be particularly practical or useful. It can be something just for fun, or just for you.
 
-The important thing is:
+The main thing is: it's something you built on your own, that looks good and functions well, to show you have the necessary drive and skills.
 
-1. You made something; and
-2. It looks good and functions well.
+_Quality over quantity_. One really good small project is worth a handful of sloppy demos, so again, get all the help and feedback you can here. It's likely people will peer into the code, so make sure it's in good shape, and make it as accessible and performant as possible.
 
-Quality over quantity. One really good small project is worth a handful of sloppy demos, so again, get all the help and feedback you can here. It's likely people will peer into the code, so make sure it's in good shape, and make it as accessible and performant as possible.
-
-Lastly: if a side project is still something you need to check off your list, pick something you know you'll enjoy working on. It'll be easier to stay motivated if you're having fun.
-
-Pick a technology you already know pretty well (_you don't want to be spending all your time on your side project, just figuring out how to build it in the first place_), but if you can, pick something something you'll learn a little bit from, too. I'd recommend a balance of about 70/30 as far as that goes.
+Lastly: if a side project is still something you need to check off your list, pick something you know you'll enjoy working on. It'll be easier to stay motivated if you're having fun. Use this as an opportunity to learn something new if you want, but don't go so far outside your current area of expertise that you're too busy learning to actually build.
 
 <SideNote>
 
-I haven't mentioned GitHub to this point. I think you should have a profile, with some things in it, probably, but I don't think it's as important as the other factors. I've never gotten the impression recruiters put any stock at all into GitHub contribution stats.
+I haven't mentioned GitHub to this point. I think you should have a profile, with some things in it, probably, but I don't think it's as important as the other factors. I've never gotten the impression recruiters put any stock at all into GitHub contribution stats (nor should they).
 
 </SideNote>
 
@@ -274,8 +267,6 @@ Use AI if that makes it easier; just be sure to read through the output extremel
 If a recruiter catches any whiff of AI slop in your writing, it'll signal you're not invested, and that'll likely be plenty enough reason to toss you aside.
 
 </CalloutPlusQuote>
-
-Nonetheless: feel free to use AI to enhance your _own_ writing, if you can do it without sounding like a bot.
 
 In any case: having these templates ready to go from the beginning will help minimize friction and time spent on tertiary tasks during the actual job search. When it's time to write a thank you, or a follow up, or a cover letter, you'll have  a head start, and won't lose a whole day researching and drafting.
 
@@ -333,11 +324,11 @@ So for those reasons, I'd highly encourage you to keep a spreadsheet with all th
 
 Your response rate will probably only be somewhere around 5–10%. That's not on you; it's just a weird, hard time in tech. But it does mean, on average, you'll need to apply to 10–20 jobs just to hear back from one.
 
-Don't be discouraged by this; there are things you can do to grease your success rate. But when you're first getting going, put all your energy into sending out as many applications as you can. Don't be careless, and don't send out apps for jobs you know you'd never take or are wildly unqualified for. But do go for quantity initially.
+When you're first getting started, put all your energy into sending out as many applications as you can. Don't be careless, of course, and don't send out apps for jobs you know you'd never take or are wildly unqualified for. But _do_ go for quantity initially.
 
 There are a few reasons for this:
 
-1. Later on, when your applications start turning into interviews, you won't have as much time. So front-loading the process with applications helps make sure you've still got possibilities in the pipeline later, when you want to be focusing more on interview prep.
+1. Later on, when your applications start turning into interviews, you won't have as much time for applying. So front-loading the process helps ensure you've still got possibilities in the pipeline later, when you want to be focusing more on interview prep.
 
 2. You want to be getting as many interviews as possible. This isn't necessarily to maximize your odds short-term, but to gain valuable experience at interviewing itself. (More on that later.)
 
@@ -351,11 +342,11 @@ Wherever possible, apply directly through the company's website, as opposed to a
 
 ### Don't worry how many other applicants there are
 
-Some job sites show you how many people have applied to a posting already. **Ignore that number, no matter what it is**. (It will commonly be in the hundreds, or higher.)
+Some job sites show you how many people have applied to a posting already. _Ignore that number, no matter what it is_. (It will commonly be in the hundreds, or higher.)
 
 Why apply to a job hundreds of other people have already applied for, you might ask?
 
-- Many of those applications are probably bots;
+- Many of those applications are probably spam;
 - Many of those who _are_ human aren't qualified;
 - Many who _are_ qualified will be eliminated for other reasons;
 - Many of _those_ people won't get past the initial screen;
@@ -373,7 +364,7 @@ Your competition (if you want to call it that) is not nearly so daunting as it a
 
 ### Write good cover letters if you can; don't if you can't
 
-People are divided on whether you should include cover letters. As long as you can write them well and fairly sincerely (there are numerous guides and templates available on that front), I'd advise you to do so.
+People are divided on whether you should include cover letters. As long as you can write them well and fairly sincerely (there are numerous guides available), I'd advise you to do so.
 
 <CalloutPlusQuote>
 
@@ -383,7 +374,7 @@ A good cover letter can only help. However, a bad cover letter probably hurts yo
 
 (_By now, you should know this means: don't trust ChatGPT to spit something out for you_.)
 
-Also, since you'll probably be applying to many positions at once, don't let the cover letter slow you down. Better to include a few carefully considered cover letters, for the jobs you want most, than to send out halfhearted consensual spam to every company.
+Also, since you'll probably be applying to many positions at once, don't let the cover letter slow you down. Better to include a few carefully considered cover letters for the jobs you want most than to send out halfhearted consensual spam to every company.
 
 ### Don't disqualify yourself
 
@@ -393,7 +384,7 @@ The job description is an employer's wish list; it's all the things they hope th
 
 I'd say if you really want the job, go ahead and apply even if you feel you're only about half qualified.
 
-The truth is: the posting will contain mostly stuff you'll probably learn on the job anyway. It's notoriously more rigorous than the actual role. If you want it, shoot your shot.
+The truth is: the posting will contain mostly stuff you'll probably learn on the job anyway. It's notoriously more rigorous than the actual role. If you want it, shoot your shot, my friend.
 
 <CalloutPlusQuote>
 
@@ -401,23 +392,29 @@ A company will never offer your dream salary and benefits, so don't feel like yo
 
 </CalloutPlusQuote>
 
-### Be active online
+### Invest in your web presence
 
-This is intentionally a retread of earlier advice; it's important enough to bear repeating.
+Wait, haven't we already covered this point?
+
+Yes, but _before_ we were mainly being active online to help find opportunities. _Now_ we're being active online to _show who we are_. (You can do both at once, of course, but that shift is why we're talking about this again.)
+
+Ok, but why do we want to do that?
 
 <CalloutPlusQuote>
 
-Remember: to the person reading your application and resume, you're just another face in a bubble. It's tough to tell much about you at this stage. So if they search for you online, give them something good to find.
+To the person reading your application and resume, you're just another face in a bubble. It's tough to tell much about you at this stage. So if they search for you online, give them something good to find.
 
 </CalloutPlusQuote>
 
-Definitely have relevant content in your web presence (like your website and projects), but show your human side, too. Talk about what you're good at, what you're interested in, and why somebody might want to get to know you. Be relevant, friendly and helpful. Round out that vague impression of you someone might have from your application or resume.
+Definitely have relevant career content in your web presence, of course, but show your human side, too. Talk about what you're good at, what you're interested in, and why somebody might want to get to know you. Build on that vague impression of you someone might have from your application or resume.
 
-Be authentic. You don't need to be anodyne, but obviously, don't get _too_ edgy or controversial either.
+Be authentic. You don't need to be anodyne or fake, but obviously, don't get _too_ edgy or controversial either.
 
-Paint a positive picture of yourself online, and you'll stand out as a human, not just as a random applicant.
+If you're not comfortable having your socials public (there are plenty of valid
+reasons for this), take them private for your search. Just make sure there's
+still enough out there to give anyone searching for you an idea of the amazing person you are.
 
-If you can do all of this _before_ it's time to start the search—or at least, as early in the process as possible—it'll pay off well.
+Showing who you are online helps promote you from a generic applicant to a real, fleshed-out human. Invest in your web presence; it can be a big differentiator.
 
 ##  Resume advice
 

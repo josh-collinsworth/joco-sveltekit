@@ -17,5 +17,11 @@
 		"bootloader",
 		"Ergodox",
 		"Karabiner"
-	]
+	],
+	"editor.wordWrap": "bounded",
+	"prettier.proseWrap": "always",
+	"[markdown]": {
+		"editor.wordWrap": "bounded",
+		"editor.wordWrapColumn": 80
+	}
 }
