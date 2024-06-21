@@ -767,11 +767,11 @@ Say you want the job. Really. You'd be surprised how far just vocalizing your en
 
 ##  Handling live coding interviews
 
-Honestly, I wish I didn't have to write this section. In my opinion, live coding interviews should die immediately and forever.
+Honestly, I wish I didn't have to write this section. In my opinion, live coding interviews should die immediately and forever. (This includes anything by similar names; whiteboarding, leetcode exercises, whatever you want to call them.)
 
 Why? Because there's nothing an interviewer can learn about you by watching you code that they couldn't have sussed out through an ordinary conversation, for one thing.
 
-Besides, that environment has virtually nothing in common with what it's like to do the actual work. No manager at any remotely sane company will _ever_ show up at your desk with a problem you've never seen before, set a timer for 30 minutes, sit there and watch you work on it, and fire you if time expires. It just doesn't happen.
+But more importantly: that environment has virtually nothing in common with what it's like to do the actual work. No manager at any remotely sane company will _ever_ show up at your desk with a problem you've never seen before, set a timer for 30 minutes, sit there and watch you work on it, and fire you if time expires. It just doesn't happen.
 
 <CalloutPlusQuote>
 
@@ -791,13 +791,24 @@ Tech, in general, loves gatekeeping. So it's no surprise the code interview is m
 
 Anyway, I digress. Unfortunately, most companies still administer these archaic, bias-ridden exercises, and so you'll probably have to take some.
 
-The good news is: most companies at least keep the difficulty fairly low, and many won't eliminate you just because you couldn't get through one on time. The exercise is, at least ostensibly, about seeing how you think, and about making sure you're not somebody who's just hoping to make it a few weeks before anyone notices they have no coding skills.
+The good news is: most companies at least keep the difficulty fairly low, and many won't eliminate you just because you couldn't get through one on time. The exercise is, at least ostensibly, about seeing how you think, and about making sure you're not somebody who's just hoping to make it a few weeks before anyone notices they have no coding skills. (Again, this could easily be accomplished through conversation, but, well, tech bros make the rules in this world, and they tend to see human interaction as a last resort rather than, ya know, normal.)
 
 ### Preparation and mindset
 
 I _hope_ you don't have to do live coding, but I've had to for most of my jobs, and odds are high you will, too.
 
-The only way to get better is practice. And the only way to overcome a fear of failure is…just get used to failure.
+The only way to get better is practice, and there are two aspects to prepare for:
+
+1. The actual coding part; and
+2. The in-front-of-people part.
+
+For the first part, I highly recommend a site like [CodeWars](https://www.codewars.com). Despite the scary-sounding name, CodeWars lets you tackle exercises based on your skill level. It's an excellent place to try out some of the kinds of things you might be asked in interviews, and to sharpen your skills.
+
+Look up some leetcode interview questions, too. Try some out, but be sure to check other people's answers. You can learn a lot just by observing at how other devs solve problems.
+
+I also personally enjoyed and benefitted from the [Better JavaScript](https://levelup.video/tutorials/better-javascript) course on [Level Up Tutorials](https://levelup.video/). The course does a good job on explaining why some practices are better than others, and helped put me in a good mindset for thinking through code and talking about it.
+
+That's the first half. The _other_ half is the performance part; getting comfortable in front of people.
 
 Before you're in an actual interview, get in front of people, and talk as you type. Make mistakes. Talk about them. Laugh about them. Keep going, until it stops being so uncomfortable.
 

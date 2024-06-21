@@ -37,8 +37,9 @@ li:not(:last-of-type) {
 a {
 	color: inherit;
 	text-decoration: underline;
-	text-decoration-color: currentColor;
-	text-decoration-thickness: from-font;
+	text-decoration-color: var(--lightBlue);
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 0.1em;
 	transition: color 0.15s;
 
 	&:hover {
