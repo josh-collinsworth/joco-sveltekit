@@ -1,7 +1,7 @@
 ---
 title: "For whatever it's worth: my advice on job hunting in tech"
 date: 2024-06-07
-updated: 2024-06-21
+updated: 2024-06-22
 categories:
   - opinion
   - personal
@@ -46,7 +46,7 @@ Just to get this out of the way right off the bat: I'm no authoritative expert, 
 
 I don't claim to know everything. I don't even claim whatever I _do_ know will be useful in the first place; what worked for me before might not work for you now.
 
-However, I've had what I think is fair to consider a pretty good run in tech so far. I've been building things on the web for about ten years. I've worked for agencies, taught development courses, and I've spent the last few years full-time in frontend at companies like [Flywheel/WP Engine](https://wpengine.com), [Shopify](https://shopify.com) and [Deno](https://deno.com).
+However, I've had what I think is fair to consider a pretty good run in tech so far. I've been building things on the web for about ten years. I've worked for agencies, taught development courses, and I've spent the last few years full-time in frontend at some notable software companies.
 
 <CalloutPlusQuote>
 
@@ -62,7 +62,7 @@ Finally, I have to thank the members of the [ShopTalk Show](https://shoptalkshow
 
 ---
 
-This is very long, which is why I've broken it up into sections. I've tried to make it as easy as possible to skip around, and get the ideas involved without reading every single word.
+This is very long, which is why I've broken it up into sections. I've tried to make it as easy as possible to skip around and skim.
 
 All that said: the rest of my advice has no basis more reliable than my own meandering experience.
 
@@ -82,7 +82,7 @@ Obviously, what you want is a job, because you'd like to make money to eat and s
 
 Really think about what's worked for you in the past, and what hasn't. What _kind_ of role best suits you, and in what type of organization? Do you like being a small part of a big team, with well-defined roles and success criteria? Do you like having lots of autonomy, wearing lots of hats, and forging your own path somewhere smaller and more ambiguous? (Or something in-between?)
 
-How would you like it to be different from your last job, and how would you like it to be the same?
+How would you like your next job to be different from your last job, and how would you like it to be the same?
 
 Would you take less pay for something more fulfilling? For that matter: what makes you feel fulfilled in the first place?
 
@@ -100,7 +100,7 @@ Spend some serious time figuring out what you value, and write it down.
 
 While I'm not generally a fan of personality tests and the like, I've found the [CliftonStrengths Assessment](https://www.gallup.com/cliftonstrengths/en/252137/home.aspx) (also called the StrengthsFinder, or Top Five Strengths) to be illuminating for me, personally. It's helped me to understand what I value, what I bring to the table, and where I fit in best.
 
-Keep your list handy; it will help you filter your search, and answer interview questions like "why are you interested in this company?"
+In any case, keep your list handy; it will help you filter your search, and answer interview questions like "why are you interested in this company?"
 
 As a bonus: the list will  _also_ help guide you to some good questions _you_ can ask in interviews.
 
@@ -110,7 +110,7 @@ If you have any severe deficiencies, it's worth addressing those immediately. No
 
 Practice for interviews. Brush up on any technology or topic that's likely to come up for the kinds of role you're applying for. Look up articles; listen to podcasts; watch videos; whatever works for you. You just want to get your brain out of passive mode, and actively thinking about these kinds of things.
 
-You don't need to become an expert, by any stretch, in everything that might come up in an interview. Just get to where you know the basics well enough to have a simple, high-level conversation (or at least, fake your way through one).
+You don't need to become an expert, by any stretch, in everything that might come up in an interview. Just absorb enough of the basics to have a high-level conversation (or at least, fake your way through one).
 
 <PullQuote>
 
@@ -122,7 +122,7 @@ Beyond addressing any severe vulnerabilities, however: I personally believe effo
 
 Plus, this is a long process; you need some wins along the way. Spend time working on the stuff you're good at and enjoy.
 
-Don't get me wrong: you _should_ address your weaknesses, to some extent. But don't get so caught up in it, you end up being average at everything.
+Don't get me wrong: you _should_ address your weaknesses, to some extent. But don't get so caught up in it that you end up being average at everything.
 
 <CalloutPlusQuote>
 
@@ -146,7 +146,7 @@ Your behavioral story bank might be your single most important resource. It'll h
 
 </CalloutPlusQuote>
 
-You'll be returning to your BSB over and over again throughout the entire process. (Every time you go back to your BSB, you can think _Backstreet's back, all right_!)
+You'll be returning to your BSB over and over again throughout the entire process. (Every time you go back to your BSB, you can think _Backstreet's back, all right_! I know you won't actually do that, but I'll still say it here.)
 
 Prepare like a stand-up performer; you want to have a set of your best material ready to go at any moment, so you're never caught trying to come up with something on the spot. To some extent, interviews are performative (for better or worse). So, have some bits ready to go.
 
@@ -418,7 +418,7 @@ Showing who you are online helps promote you from a generic applicant to a real,
 
 ##  Resume advice
 
-I won't get too deep into the specifics on writing or designing resumes here; that's well-covered territory elsewhere online. I do have a few specific points to keep in mind, however.
+I won't get too deep into writing or designing resumes here; that's well-covered territory elsewhere online. I do have a few specific points to keep in mind, however.
 
 ### Focus on effect, not actions
 
@@ -626,17 +626,17 @@ Be honest. Don't try too hard to look like the good person. Instead, be sure to 
 
 <CalloutPlusQuote>
 
-Showing you're a person who's capable of learning and growth, and who can identify and be honest about their flaws, is more valuable (and believable) than coming off perfect.
+Showing you're a person who's capable of learning and growth, who can identify and be honest about their flaws, is more valuable (and believable) than coming off perfect.
 
 </CalloutPlusQuote>
 
 ### Take the time you need
 
-If you're asked a question, and you can't think of an answer right away, just say "let me think about that for a minute."
+If you can't think of an answer to a question right away, just say, "let me think about that for a minute."
 
-It's easy to feel the pressure to constantly perform in an interview, it's perfectly fine to ask for time, and to take as much of it as you need.
+It's easy to feel pressure to constantly perform in an interview, but it's perfectly fine to ask for time, and to take as much of it as you need.
 
-It will probably feel awkward as you sit there in silence, but it's just fine. Really. You won't get docked for it, but even if you did, the pause will probably produce a better result than hastily fumbling through a bad answer would.
+It may feel awkward as you sit there in silence, but it's just fine. Really. You won't get docked for it. And even if you did, the pause will probably produce a better result than hastily fumbling through a bad answer would.
 
 It's possible it'll even be noted as a _good_ thing that you're confident enough to ask for what you need.
 
@@ -674,11 +674,11 @@ If you're _forced_ to bring up a negative—if, for example, you're asked what i
 
 **Bad**: “_My current company doesn't promote anyone unless management likes them. Everyone knows it, and it sucks_.”
 
-**Better**: “_I feel I've grown as much as I can at my current position, and I'm looking for a role with greater challenges, where I can learn more and continue to expand my skills and knowledge_.”
+**Better**: “_I feel I've grown as much as I can at my current position, and I'm looking for a role with greater challenges, where I can continue to expand my skills and knowledge_.”
 
 ---
 
-Related advice—which goes here because I couldn't figure out where else to put it—impersonal language is _always_ better in professional contexts. (Bonus tip: it's often better in personal relationships, too.)
+Related advice—which goes here because I couldn't figure out where else to put it—impersonal language is almost always better in professional contexts. (It's often better in personal relationships, too.)
 
 <CalloutPlusQuote>
 
@@ -686,16 +686,16 @@ Try to avoid the words "I" and "you." Focus the conversation on the topic, not t
 
 </CalloutPlusQuote>
 
-If you have to involve pronouns, make it collaborative; use "us" or "we" instead of "I" or "you."
+Soften your language; try not to speak in absolutes. If you have to involve pronouns, make it collaborative; use "us" or "we" instead of "I" or "you."
 
 **Bad**:
-- “You could be clearer.”
+- “You're unclear.”
 - “I don't think that scales well.”
 - “You should rethink that.”
 
 **Better**:
 - “_That code_ could be clearer.”
-- “_That approach_ may not scale well.”
+- “_That approach_ _may not_ scale as well as it could.”
 - “_Let's_ rethink that.”
 
 ### Always have questions ready, and always ask them
@@ -720,7 +720,7 @@ This is probably your only chance to get an honest answer that hasn't been filte
 
 </CalloutPlusQuote>
 
-One of my personal favorite questions: “_what would make somebody successful in this role_?” It's open-ended, and hopefully, the answer describes you. If so, you can give a little nudge on that. But either way, it helps you understand the job, and the company's expectations.
+One of my personal favorite questions: “_what would make somebody successful in this role_?” It's open-ended, and hopefully, the answer describes you. If so, you can give a little nudge on that. But either way, it helps you understand the job, the company's expectations, and how you'll be evaluated.
 
 ### Be prepared to talk salary
 
@@ -732,13 +732,13 @@ Consider this less essential than other items, but: if you're interviewing via v
 
 Record yourself beforehand, to see how you look and sound in the video. Move your computer to a place with good lighting, if you can.
 
-If you have good lighting, and headphones or earbuds with a decent mic, that's probably good enough (assuming your environment isn't too noisy). Good lighting makes up for a bad camera better than a good camera makes up for bad lighting, but even an affordable webcam will probably be better than the one built into your machine. (Just make sure the lens is clean.)
+If you have good lighting, and headphones or earbuds with a decent mic, that's probably good enough (assuming your environment isn't too noisy). Good lighting makes up for a bad camera better than a good camera makes up for bad lighting, but even an affordable webcam will probably be better than the one built into your machine. (Either way: make sure the lens is clean.)
 
-Spend some time on the space in your background, too. It's part of the impression you make. If your resume says you're organized and pay attention to details, a messy room will undermine you. Work on your background like it's part of your resume. (Tip: you can even put interesting personal items back there to help yourself stand out a little bit, and give you some good conversation pieces.)
+Spend some time on the space in your background, too. It's part of the impression you make. If your resume says you're organized and detail-oriented, a messy room will undermine you. Work on your background like it's part of your resume. (Tip: you can even put interesting personal items back there to help yourself stand out a little bit, and give you some good conversation pieces.)
 
 ### Follow up and connect after interviews
 
-After any interviews you have, take a moment to follow up with the people you spoke with. Shoot them a quick email or LinkedIn message thanking them for their time and insight. (You _did_ ask questions, right?) If you can do so without forcing it, find a way to work in your enthusiasm for the role and continuing in the process. Do this as soon afterward as possible, without making it so fast it's creepy.
+After any interviews you have, take a moment to follow up with the people you spoke with. Shoot them a quick email or LinkedIn message thanking them for their time and insight. (You _did_ ask questions, right?) If it doesn't feel forced, find a way to work in your enthusiasm for the role and continuing in the process. Do this as soon afterward as possible, without making it so fast it's creepy.
 
 <CalloutPlusQuote>
 
@@ -766,9 +766,9 @@ Say you want the job. Really. You'd be surprised how far just vocalizing your en
 
 Honestly, I wish I didn't have to write this section. In my opinion, live coding interviews should die immediately and forever. (This includes anything by similar names; whiteboarding, leetcode exercises, whatever you want to call them.)
 
-Why? Because there's nothing an interviewer can learn about you by watching you code that they couldn't have sussed out through an ordinary conversation, for one thing.
+Why? Because there's little an interviewer can learn about you by watching you type that they couldn't have sussed out through an ordinary conversation, for one thing.
 
-But more importantly: that environment has virtually nothing in common with what it's like to do the actual work. No manager at any remotely sane company will _ever_ show up at your desk with a problem you've never seen before, set a timer for 30 minutes, sit there and watch you work on it, and fire you if time expires. It just doesn't happen.
+But more importantly: doing a code exercise has almost nothing in common with doing the actual job. The skills and experience are almost completely different.
 
 <CalloutPlusQuote>
 
@@ -776,13 +776,13 @@ Making a developer pass a live-coding interview is like forcing Taylor Swift to 
 
 </CalloutPlusQuote>
 
-Worse: this style of interview filters out people who would've been excellent at the job, but who simply can't perform well in front of others, under pressure, and/or quickly. (_Which, again, are all things the actual job pretty much never calls for_.)
+Worse: this style of interview filters out people who would've been excellent at the job—working tickets, building features, understanding the system, collaborating on a team—but who don't have the testing skills. (_Which, again, are all things the actual job pretty much never calls for_.)
 
-Live coding interviews don't filter for skill; they filter for cocksureness.
+It's just like standardized testing in schools: it doesn't find the _smartest_ students; it finds the _best test-takers_.
 
 <CalloutPlusQuote>
 
-Tech, in general, loves gatekeeping. So it's no surprise the code interview is more of a grand celebration of gatekeeping than it is any reasonable attempt to gauge a candidate's actual qualifications.
+Tech, in general, loves gatekeeping. So it's little surprise most code interviews are more a grand celebration of gatekeeping than they are any reasonable attempt to gauge a candidate's actual qualifications.
 
 </CalloutPlusQuote>
 
@@ -803,11 +803,11 @@ For the first part, I highly recommend a site like [CodeWars](https://www.codewa
 
 Look up some leetcode interview questions, too. Try some out, but be sure to check other people's answers. You can learn a lot just by observing at how other devs solve problems.
 
-I also personally enjoyed and benefitted from the [Better JavaScript](https://levelup.video/tutorials/better-javascript) course on [Level Up Tutorials](https://levelup.video/). The course does a good job on explaining why some practices are better than others, and helped put me in a good mindset for thinking through code and talking about it.
+I also personally enjoyed and benefitted from the [Better JavaScript](https://levelup.video/tutorials/better-javascript) course on [Level Up Tutorials](https://levelup.video/). The series does a good job on explaining why some practices are better than others, and helped put me in a good mindset for thinking through code and talking about it.
 
 That's the first half. The _other_ half is the performance part; getting comfortable in front of people.
 
-Before you're in an actual interview, get in front of people, and talk as you type. Make mistakes. Talk about them. Laugh about them. Keep going, until it stops being so uncomfortable.
+Before you're in an actual interview, practice. Get in front of people, and talk as you type. Make mistakes. Talk about them. Laugh about them. Keep going, until it stops being so uncomfortable.
 
 <CalloutPlusQuote>
 
@@ -825,17 +825,19 @@ I know it's painful. I know some people just aren't suited for this kind of thin
 
 When you do find yourself in an actual code interview, first and foremost: _don't rush_. This will feel counter-intuitive; you've only got so many minutes. But don't let the clock be a distraction, and don't let it dictate your mindset.
 
-Once you've received the directions, read them slowly and carefully. Then, ask anything and everything that comes to mind.
+First, read the directions slowly and carefully. Ask any and every question that pops into your mind.
 
-Don't hesitate to ask about something you're not sure of, even if it seems like you should be. Make sure you fully understand the directions, and repeat them back in your own words to be certain.
+Don't hesitate to ask about something you're not sure of, even if it seems like you should be.
 
-After you're sure you understand the assignment, pause once more, and consider possible ways to accomplish the task. Talk through them as you think, if you can, so your interviewer can get a glimpse into your thought process. Talk through the tradeoffs of each approach that comes to mind.
+Make sure you understand the assignment by repeating it back in your own words. Then pause once more, and consider possible ways to accomplish the task. Talk through them as you think, if you can, so your interviewer can get a glimpse into your thought process. Talk through the tradeoffs of each approach that comes to mind.
 
 <CalloutPlusQuote>
 
-The more you talk through what you're doing, the better. You're here to show how you think through things, how you approach solving problems, and how you communicate—not just to bash some code out to finish a puzzle.
+The more you talk through what you're doing, the better. You're here to show how you think through things, how you approach solving problems, and how you communicate.
 
 </CalloutPlusQuote>
+
+(Solutions also often appear when we try to explain the problem, so talking through everything you're doing has other benefits, too.)
 
 Once you feel confident about a direction, write out the steps you need to get to a solution. Use comments in your code, if you can, but list them out somewhere.
 
@@ -851,7 +853,7 @@ Don't stress over code perfection at this point. Priority one is to get somethin
 
 I know the situation might feel very uncomfortable, but again, don't let the clock push you into rushing. Breathe slowly and deeply. As much as you can, be of calm mind and body. (The practice helps with this.)
 
-If you sense yourself getting overly anxious, just stop and take a minute. Forget about the time limit for a moment. Feel free to tell your interviewer you're taking a minute to think through the problem. It's your time; use it however you want.
+If you sense yourself getting overly anxious, just stop and breathe for a minute. Feel free to tell your interviewer you're taking a minute to think through the problem. It's your time; use it however you want.
 
 <CalloutPlusQuote>
 
