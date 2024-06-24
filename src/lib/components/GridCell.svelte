@@ -2,7 +2,7 @@
 	import { prefersReducedMotion } from '$lib/data/store'
 	import { TIMING_DURATION } from '$lib/data/constants'
 	import { onMount } from 'svelte'
-	
+
 	export let color: string = 'transparent'
 	export let out: boolean = false
 	export let gridWidth: number = 0
@@ -19,26 +19,26 @@
 	})
 
 	const randomDelay = (): string => {
-		return Math.random() * .5 + "s"
+		return Math.random() * 0.5 + 's'
 	}
 
 	const randomX = (): string => {
-		const randomLeftValue = Math.floor((Math.random() * gridWidth) - 1) - (size * 2)
+		const randomLeftValue = Math.floor(Math.random() * gridWidth - 1) - size * 2
 
 		return `${randomLeftValue / 2}rem`
 	}
 
 	const randomDrop = (): string => {
 		const drop = Math.random() * 100
-			if (drop > 93) {
-				return '1rem'
-			} else if (drop > 80) {
-				return '0.5rem'
-			} else if (drop > 60) {
-				return '-0.5rem'
-			} else if (drop > 40) {
-				return '-1rem'
-			}
+		if (drop > 93) {
+			return '1rem'
+		} else if (drop > 80) {
+			return '0.5rem'
+		} else if (drop > 60) {
+			return '-0.5rem'
+		} else if (drop > 40) {
+			return '-1rem'
+		}
 		return '0'
 	}
 
@@ -47,9 +47,8 @@
 	}
 </script>
 
-
 <template>
-	{#key randomTiming() }
+	{#key randomTiming()}
 		<div
 			class="cell"
 			class:reduce={$prefersReducedMotion}
@@ -66,22 +65,30 @@
 	{/key}
 </template>
 
-
 <style lang="scss">
 	.cell {
 		opacity: 0;
 		mix-blend-mode: overlay;
 		position: absolute;
-		animation: fade_in .36s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
-		
+		animation: fade_in 0.36s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+
 		&.out {
 			opacity: 1;
-			animation: fade_out .36s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;			
+			animation: fade_out 0.36s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+
+			&.reduce {
+				opacity: 1;
+				animation-name: reduce_motion_fade_out;
+				animation-duration: 0.2s;
+				animation-timing-function: ease-out;
+			}
 		}
-		
+
 		&.reduce {
-			animation: none;
-			opacity: 1;
+			opacity: 0;
+			animation-name: reduce_motion_fade;
+			animation-duration: 0.2s;
+			animation-timing-function: ease-in;
 		}
 	}
 
@@ -106,7 +113,7 @@
 			transform: translateY(-12px);
 		}
 	}
-	
+
 	@keyframes reduce_motion_fade {
 		from {
 			opacity: 0;
@@ -116,7 +123,7 @@
 		}
 	}
 
-	@keyframes reduce_motion_fade_reverse {
+	@keyframes reduce_motion_fade_out {
 		from {
 			opacity: 1;
 		}
