@@ -1,7 +1,7 @@
 ---
 title: "For whatever it's worth: my advice on job hunting in tech"
 date: 2024-06-07
-updated: 2024-06-22
+updated: 2024-06-24
 categories:
   - opinion
   - personal
@@ -44,9 +44,9 @@ This will serve as a collection of whatever I've learned, for whatever it's wort
 
 Just to get this out of the way right off the bat: I'm no authoritative expert, either on hiring or on tech in general. If there was a talking heads-style TV show about tech careers, nobody would call me up to sit on the panel.
 
-I don't claim to know everything. I don't even claim whatever I _do_ know will be useful in the first place; what worked for me before might not work for you now.
+I don't claim to know everything. I don't even claim whatever I _do_ know will be useful in the first place; what worked for _me then_ might not work for _you now_.
 
-However, I've had what I think is fair to consider a pretty good run in tech so far. I've been building things on the web for about ten years. I've worked for agencies, taught development courses, and I've spent the last few years full-time in frontend at some notable software companies.
+However, I've had what I think is fair to consider a pretty good run in tech so far. I've been building things on the web for about ten years. I've worked for agencies, taught development courses, and I've spent the last several years full-time in frontend at some notable software companies.
 
 <CalloutPlusQuote>
 
@@ -58,7 +58,7 @@ This will be very US- and developer-centric (especially frontend), so not everyt
 
 I won't go deep into specifics on certain things (for example: how to write cover letters, or understanding algorithms), just because there are plenty of resources already available on those topics. I'll give my general advice, though.
 
-Finally, I have to thank the members of the [ShopTalk Show](https://shoptalkshow.com) [D-D-D-Discord](https://www.patreon.com/shoptalkshow) for helping me flesh out this post with their own best suggestions and advice, especially [Dave Rupert](https://daverupert.com/), [Andrew Walpole](https://andrewwalpole.com/), and [Erick Merchant](https://erickmerchant.com/). Several of these points are theirs; I just added some fluff.
+Finally, I have to thank the members of the [ShopTalk Show](https://shoptalkshow.com) [D-D-D-Discord](https://www.patreon.com/shoptalkshow) for helping me flesh out this post with their own best suggestions and advice, especially [Dave Rupert](https://daverupert.com/), [Andrew Walpole](https://andrewwalpole.com/), and [Erick Merchant](https://erickmerchant.com/). Several of these points are theirs; I just added some color commentary.
 
 ---
 
@@ -152,7 +152,7 @@ Prepare like a stand-up performer; you want to have a set of your best material 
 
 One other piece of advice on your BSB: while stories should positively showcase your behaviors and results, they don't all have to be super business-y, or directly related. They can be from other industries, or even personal.
 
-One example that's stuck with me through the years: a Latino applicant shared a story of overcoming racism from his school guidance counselor, who tried to railroad the applicant away from his chosen academic field, and into the trades instead. The applicant rejected his counselor's racist discouragement, and found a way to succeed in his chosen field despite it.
+One example that's stuck with me through the years: a Latino applicant shared a story of overcoming racism from his high school guidance counselor. His counselor tried to dissuade him from going to college, saying higher education "wasn't for people like him." The applicant rejected his counselor's racist discouragement, and successfully graduated in his chosen academic field anyway.
 
 That's obviously not a work story. But it's one that absolutely showed persistence in overcoming adversity (and, one that made me feel invested in that applicant, rooting for his success). Point is:
 
@@ -166,17 +166,15 @@ If you faced a challenge and got positive results, it counts. Don't disqualify r
 
 If you have the luxury, save money for your search. If you don't (if you just found yourself laid off, for example—I'm very sorry), start cutting expenses now. Sadly, but realistically: you don't know how long this might take.
 
-Steel yourself, in any case. It's likely to take at least 6–8 weeks to find a job in the current market, even in the best-case scenario. It'll most likely be longer, and quite possibly much longer. I say that not to scare you, but to prepare you for all contingencies. Settle in, and find sustainable pace; this will be a marathon, not a sprint. It's probably wise to extend your financial runway as far as it can go.
+Steel yourself, in any case. It's likely to take at least 6–8 weeks to find a job in the current market. It could be longer, and quite possibly much longer. I say that not to scare you, but to prepare you for all contingencies. Settle in, and find sustainable pace; this will be a marathon, not a sprint. It's probably wise to stretch your financial runway as far as it can go.
 
 ### Get out there and network
 
 In this era, where everything is digital, the more of a personal connection you can make, and the more people you can make it with, the better off you'll be.
 
-It doesn't have to be just LinkedIn, or business-y meetups; you can do fun events, too (online or in person). Just make sure you're doing something to make you visible as a human, and to make some kind of actual connection with other humans.
+A great way to do this is to get involved with any relevant regional dev group you can find. Most large cities have developer meetups, and groups on Discord, Slack, Meetup, etc. There may even be Facebook groups, bulletin boards, and the like.
 
-A great way to do this is to get involved with any local or regional organization you can find. Most cities and metro areas will have developer meetups, and probably some dev groups on Discord, Slack, Meetup, etc. There may even be Facebook groups, bulletin boards, and the like.
-
-Even if you aren't looking locally, I'd still recommend seeking out groups for professionals like you, especially in your area. Get involved, and get to know the members. If you can make in-person connections, they'll likely be your strongest, but online friends are real friends, too.
+Even if you aren't looking locally, I'd still recommend seeking out dev groups in your area. Get involved, and get to know the members. If you can make in-person connections, they'll likely be your strongest, but online friends are real friends, too.
 
 <CalloutPlusQuote>
 
@@ -184,7 +182,7 @@ Wherever you are, be active. Have helpful and friendly conversations. Share usef
 
 </CalloutPlusQuote>
 
-Nobody likes the guy who pops into the channel on day one and says "hey everyone, I'm looking, have any jobs? Send them my way."
+Nobody likes the guy who pops into the channel on day one and says "hey everyone, I'm looking, send jobs my way."
 
 That's tactless. Don't be that guy. Nobody has any reason to help that person.
 
@@ -252,7 +250,7 @@ Lastly: if a side project is still something you need to check off your list, pi
 
 <SideNote>
 
-I haven't mentioned GitHub to this point. I think you should have a profile, with some things in it, probably, but I don't think it's as important as the other factors. I've never gotten the impression recruiters put any stock at all into GitHub contribution stats (nor should they).
+I haven't mentioned GitHub to this point. I think you should have a profile, and it shouldn't look abandoned, but I don't think it's nearly as important as the other factors covered here. I've never gotten the impression recruiters put any stock at all into GitHub contribution stats (nor should they).
 
 </SideNote>
 
@@ -308,13 +306,14 @@ All right, you've covered your basics, and you're well prepared. Time to start s
 
 ### Track your efforts
 
-When I was applying for jobs in earnest, I kept a spreadsheet. In it, I meticulously tracked every job I'd applied for, when, how, and what the status was, along with any other relevant notes and information. This helps in lots of ways:
+When I was applying for jobs in earnest, I kept a spreadsheet. In it, I meticulously tracked every job I'd applied for, when, how, and what the status was, along with the posting link, any other relevant notes and information. This helps in lots of ways:
 
 1. You can visualize your efforts, and see how far you've gotten;
 2. You won't end up forgetting which companies and roles you've applied to already;
 3. You can track where you are in the process with each company;
 4. You'll know when it might be time to follow up;
-5. You can keep track of what conversations you've had, and with whom.
+5. You can keep track of what conversations you've had, and with whom;
+6. You won't forget what you've applied for, or get similar roles at the same company mixed up. (You'll be surprised how quickly postings will start to run together.)
 
 If you do this long enough, and with detailed enough notes, you might also start to get a sense for what's working and what's not.
 
@@ -456,23 +455,19 @@ You're never going to win the checklist game. So don't compete purely on that le
 
 <CalloutPlusQuote>
 
-Companies can't just hire your knowledge or skills anyway; they have to hire _you_. So show who you are and what value you bring to the table beyond just your bona fides.
+Companies can't just hire your knowledge or skills anyway; they have to hire _you_. So show who you are and what you bring to the table beyond just your bona fides.
 
 </CalloutPlusQuote>
 
-I'm certain you have positive qualities that aren't merely the software you know, or the things you've memorized. It's the _overlap_ of those qualities and your hard skills, together, that creates your real value.
+Your value isn't just the software you know, or the things you've memorized. It's the _overlap_ of all your hard skills and all your other personal qualities that catalyzes your real value.
 
-As one example: take a comic strip artist, the kind who makes the comics you might see in the paper. (Or would have, years ago, when everyone still got papers. If you were born after the '90s, just know that we used to get our memes delivered to us printed on paper.)
-
-Comic strip artists are illustrators, writers, and comics. They need to have some skill in all three areas.
-
-Most comic strip artists, however, aren't as funny as a comedian, as talented as an illustrator, or as skilled as a writer. They probably wouldn't be the first candidate picked for any job where just _one_ of those skills was in demand. Yet, the three perhaps seemingly unrelated skills catalyze to create the perfect candidate for that specific role.
+No development role _only_ involves development (even if you define "development" as broadly as possible). It's still a job a human has to do, largely by actually _talking_ with other humans, and by using a slew of other skills that aren't just typing characters into a text editor.
 
 If companies just want somebody who knows React, it's easy to find that person. (Maybe even a monkey.)
 
-It's also fairly easy to find somebody who, for instance, communicates well. Or, someone and can step in to lead projects where needed.
+It's also fairly easy to find somebody who, for instance, communicates well. Or, someone who's good at managing projects.
 
-But finding _all_ of those in the same person? *That's* value. So find your value, and then talk about it. It's not in what you know; it's in _everything_ you bring to the table all together, and your hard skills are just one part of that equation.
+But finding _all_ of those in the same person? *That's* value. So find your value, and then talk about it. It's not just in what you know; it's in _everything_ you bring to the table all together, and your hard skills are only one part of that equation.
 
 <CalloutPlusQuote>
 
@@ -482,9 +477,11 @@ You aren't just a dev; you're a human who embodies lots of other skills, experie
 
 Speaking from personal experience: my dev skills have been _most_ valuable when I could use them together with my communication and design skills. Dev skills alone never would've matched the value that fusion could achieve.
 
-That's just my unique mixture; what's yours? Are you a good communicator? Do you have skills in other areas, like design, marketing, or sales? Do you have stories of how you've supported others in your career? Do you take responsibility? Do you demonstrate empathy? Are you a persistent problem solver?
+That's just my unique mixture; what's yours? Are you a good communicator? Do you have skills in other areas, like design, marketing, or sales? Do you have stories of how you've supported others in your career? Do you take responsibility? Are you good at managing projects? Are you a persistent problem solver?
 
 Heck, are you just nice to work with? Are you a decent human being? Do people like having you around?
+
+(You'd seriously be _amazed_ how many doors will open for you if you're just a decent coder who's also a decent person.)
 
 <CalloutPlusQuote>
 
