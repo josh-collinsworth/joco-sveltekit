@@ -24,9 +24,13 @@
 			<ul aria-labelledby="footer-links">
 				<li><a href="/api/rss.xml" data-sveltekit-reload>RSS</a></li>
 				<li><a href="https://ko-fi.com/collinsworth">Ko-Fi</a></li>
-				<li><a href="https://github.com/josh-collinsworth" rel="me">GitHub</a></li>
+				<li>
+					<a href="https://github.com/josh-collinsworth" rel="me">GitHub</a>
+				</li>
 				<li><a href="https://codepen.io/collinsworth">CodePen</a></li>
-				<li><a rel="me" href="https://hachyderm.io/@collinsworth">Mastodon</a></li>
+				<li>
+					<a rel="me" href="https://hachyderm.io/@collinsworth">Mastodon</a>
+				</li>
 			</ul>
 		</div>
 
@@ -38,15 +42,16 @@
 			<p>©2015–{currentYear} Josh Collinsworth.</p>
 
 			<p>
-				This site uses no tracking or cookies, other than privacy-respecting, GDPR-compliant
-				analytics via <a href="https://plausible.io">Plausible</a>.
+				This site uses no tracking or cookies, other than privacy-respecting,
+				GDPR-compliant analytics via <a href="https://plausible.io">Plausible</a
+				>.
 			</p>
 
 			<p>
 				Made with
-				<a rel="external" href="https://kit.svelte.dev/">SvelteKit</a>; hosted&nbsp;on&nbsp;<a
-					rel="external"
-					href="https://netlify.com">Netlify</a
+				<a rel="external" href="https://kit.svelte.dev/">SvelteKit</a>;
+				hosted&nbsp;on&nbsp;<a rel="external" href="https://netlify.com"
+					>Netlify</a
 				>.
 			</p>
 		</div>
@@ -80,7 +85,6 @@
 
 		a {
 			color: inherit;
-			text-decoration-color: var(--yellow);
 		}
 
 		img {
