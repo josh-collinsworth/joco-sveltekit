@@ -10,9 +10,19 @@
 
 <svelte:head>
 	<title>Josh Collinsworth | Uses</title>
-	<meta data-key="description" name="description" content="Things I use and like" />
-	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
-	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta
+		data-key="description"
+		name="description"
+		content="Things I use and like"
+	/>
+	<meta
+		property="og:image"
+		content="https://joshcollinsworth.com/images/site-image.png"
+	/>
+	<meta
+		name="twitter:image"
+		content="https://joshcollinsworth.com/images/site-image.png"
+	/>
 </svelte:head>
 
 <Main>
