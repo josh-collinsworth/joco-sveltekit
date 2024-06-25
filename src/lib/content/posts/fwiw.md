@@ -449,29 +449,27 @@ Yes, you have to list every technology you've ever touched, because there's a ch
 
 However, _don't stop there_. If your qualifications are all you have to stand on—“I have proficiency in _x_, _y_, and _z_”—then you haven't given a prospective employer any reason at all to hire you over anyone else with those same skills.
 
-Besides, most hard skills aren't particularly valuable on their own. For just about any skill you can list—say, React experience—there's a metaphorical line of humans down the hallway with that skill. (Hell, there are probably trained monkeys who can write JSX these days.)
+For just about any skill you can list—say, React experience—there's a metaphorical line of humans down the hallway with that skill. (Hell, there are probably trained monkeys who can write JSX these days.)
 
 You're never going to win the checklist game. So don't compete purely on that level.
 
 <CalloutPlusQuote>
 
-Companies can't just hire your knowledge or skills anyway; they have to hire _you_. So show who you are and what you bring to the table beyond just your bona fides.
+Companies can't just hire your knowledge or skills; they have to hire _you_. So show who you are and what you bring to the table beyond just your bona fides.
 
 </CalloutPlusQuote>
-
-Your value isn't just the software you know, or the things you've memorized. It's the _overlap_ of all your hard skills and all your other personal qualities that catalyzes your real value.
-
-No development role _only_ involves development (even if you define "development" as broadly as possible). It's still a job a human has to do, largely by actually _talking_ with other humans, and by using a slew of other skills that aren't just typing characters into a text editor.
 
 If companies just want somebody who knows React, it's easy to find that person. (Maybe even a monkey.)
 
 It's also fairly easy to find somebody who, for instance, communicates well. Or, someone who's good at managing projects.
 
-But finding _all_ of those in the same person? *That's* value. So find your value, and then talk about it. It's not just in what you know; it's in _everything_ you bring to the table all together, and your hard skills are only one part of that equation.
+But finding _all_ of those in the same person? *That's* value. So find your value, and then talk about it. It's not just what you know; it's in _everything_ you bring to the table all together, and your hard skills are only one dimension of that.
 
 <CalloutPlusQuote>
 
-You aren't just a dev; you're a human who embodies lots of other skills, experiences, and positive qualities, too. The combination is what makes you uniquely valuable.
+A lot of development _isn't_ development; it's a job a human has to do, largely by actually talking with other humans, and using a slew of other skills that aren't typing code.
+
+Don't make the mistake of excluding strengths and assets just because they aren't technical skills.
 
 </CalloutPlusQuote>
 
@@ -483,11 +481,7 @@ Heck, are you just nice to work with? Are you a decent human being? Do people li
 
 (You'd seriously be _amazed_ how many doors will open for you if you're just a decent coder who's also a decent person.)
 
-<CalloutPlusQuote>
-
 At the end of the day, you're a human who has to work with other humans. So don't _just_ talk about how you work with computers.
-
-</CalloutPlusQuote>
 
 Mine that BSB. (_Backstreet's back, all right!_)
 
