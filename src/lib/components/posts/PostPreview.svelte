@@ -97,6 +97,10 @@
 			margin-bottom: var(--wholeNote);
 		}
 
+		h2 a {
+			text-decoration: none;
+		}
+
 		.article-info {
 			padding: 1.5rem 0;
 			max-width: 32rem;

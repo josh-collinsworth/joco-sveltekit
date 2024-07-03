@@ -46,6 +46,7 @@ code {
 code,
 pre {
 	font-family: var(--codeFont);
+	font-variant: none;
 
 	&[class*='language-'] {
 		color: #f8f8f2;

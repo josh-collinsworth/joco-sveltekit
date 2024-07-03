@@ -4,11 +4,10 @@
 	import TagList from './tags/TagList.svelte'
 	import Tag from './tags/Tag.svelte'
 	import PostSearch from './PostSearch.svelte'
-	
+
 	export let popularPosts: Post[]
 	export let allCategories: string[]
 </script>
-
 
 <aside class="sidebar">
 	<PostSearch />
@@ -30,11 +29,11 @@
 	<TagList>
 		{#each allCategories as category}
 			<Tag to="/blog/category/{category}">
-				{ category }
+				{category}
 			</Tag>
 		{/each}
 	</TagList>
-	
+
 	<h2>More links</h2>
 
 	<ul>
@@ -50,10 +49,9 @@
 	</ul>
 </aside>
 
-
 <style lang="scss">
 	.sidebar {
-		font-size: .85rem;
+		font-size: 0.85rem;
 		max-width: var(--maxWidth);
 		font-family: var(--headingFont);
 		margin: var(--dottedHalfNote) 0 0;
@@ -61,15 +59,19 @@
 		@media (min-width: vars.$lg) {
 			margin: 0;
 		}
-		
+
+		li {
+			padding-left: 0;
+		}
+
 		:global(h2) {
-			font-size: .8em;
+			font-size: 0.8em;
 			font-weight: bold;
 			text-transform: uppercase;
 			margin: 3em 0 1em;
-			padding: 0 0 .1em 0;
+			padding: 0 0 0.1em 0;
 			border: none;
-			border-bottom: .15em solid;
+			border-bottom: 0.15em solid;
 			width: max-content;
 			text-align: inherit;
 			color: var(--headingColor);
@@ -112,7 +114,7 @@
 						&:before {
 							position: absolute;
 							content: '[';
-							left: -.35em;
+							left: -0.35em;
 						}
 					}
 

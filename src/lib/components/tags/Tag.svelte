@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let to: string;
+	export let to: string
 </script>
 
 <template>
@@ -13,6 +13,7 @@
 <style lang="scss">
 	.tag {
 		margin: 0;
+		padding-left: 0;
 
 		&::marker {
 			content: none;
