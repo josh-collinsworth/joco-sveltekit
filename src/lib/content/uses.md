@@ -7,15 +7,13 @@
 
 ### Languages and frameworks
 
-- Aside from good old fashioned HTML and CSS, JavaScript is my main language these days, and [SvelteKit](https://kit.svelte.dev/) is my framework of choice for just about any new project. I've begun to default to [TypeScript](https://www.typescriptlang.org/) for pretty much all new projects, as well (even though I'm not convinced it's really doing much for me in most cases; I just kinda like it).
+- Aside from good old fashioned HTML and CSS, JavaScript is my main language these days, and [SvelteKit](https://kit.svelte.dev/) is my framework of choice for just about any new project. I've begun to default to [TypeScript](https://www.typescriptlang.org/) for pretty much all new projects, as well (even though I'm not convinced it's always doing much for me, but it's still nice, and not a bad habit to have).
 
 - Previously, I've worked a good deal with [Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org). Professionally, I work/have worked a lot in various [React](https://reactjs.org/) flavors, including [Preact](https://preactjs.com/), [Fresh](https://fresh.deno.dev), and [Remix](http://remix.run/). I've also got working experience with jQuery and Knockout.
 
-- I love CSS passionately, and generally do not use any CSS libraries or frameworks, if I have the choice. I often lean on [SCSS](https://sass-lang.com/), though I do enjoy CSS modules as well. I love authoring smooth, fluid transitions and animations. I know [Tailwind](https://tailwindcss.com) and use it professionally. Parts of it are very nice, but I don't favor it personally.
+- I love CSS passionately, and generally do not use any CSS libraries or frameworks, if I have the choice. I often lean on [SCSS](https://sass-lang.com/), though I do enjoy CSS modules as well. I love authoring smooth, fluid transitions and animations. I know [Tailwind](https://tailwindcss.com) and use it professionally. It's nice as a system, but I favor scoped CSS instead, which comes standard with just about every non-React framework these days. (I also favor those.)
 
-- I'm a strong proponent of well-architected, accessible, and semantic <b>HTML</b>. (I create and use SVG often.)
-
-- I wouldn't call myself a full-stack developer, but I know my way around Ruby on Rails (I've worked in a Rails stack for most of my professional career), and have dabbled in some Node. I cut my teeth on [WordPress](https://wordpress.org/), and so I'm capable with PHP and MySQL. I'm working on learning [Deno](https://deno.com) better, and plan to start learning [Rust](https://www.rust-lang.org/) soon as well.
+- I wouldn't call myself a full-stack developer, I've worked in Ruby on Rails, Node, and [Deno](https://deno.com). I cut my teeth on [WordPress](https://wordpress.org/), and so I'm capable with PHP and MySQL. I'm also learning [Rust](https://www.rust-lang.org/) (very slowly).
 
 ### Code tools
 
@@ -34,6 +32,8 @@
 
     - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens):
       less indispensable now that VS Code has the [Timeline view](https://scotch.io/bar-talk/vs-code-v144-adds-a-git-timeline-view), but still amazingly handy for viewing git status and history in projects.
+
+    - [Font Preview](https://marketplace.visualstudio.com/items?itemName=ctcuff.font-preview): lets you check out fonts and their features right in your editor, which is super handy, especially for variable fonts and special features like ligatures.
 
     - [Close HTML/XML Tag](https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag):
       the only keyboard shortcut I miss from Sublime Text is easily replicated with this extension. Gives you a key command to auto-close whatever HTML tag your cursor is currently inside of.
@@ -58,7 +58,7 @@
 - [Logitech MX Ergo Plus trackball mouse](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html): I was previously using an [Anker Vertical Mouse](https://www.anker.com/products/variant/xanker-24g-wireless-vertical-ergonomic-optical-mouse/xa7852011), but switched to a trackball when some wrist issues flared up. The trackball saves the arm movement. I tend to switch up what I use frequently these days, to keep any one thing from getting too repetitive (I also currently have a trackpad on my desk), but the trackball mouse has been my mainstay since summer 2022, and surprisingly easy to adjust to.
 
 - [MoErgo Glove80](https://moergo.com/) keyboard:
-	My ergonomic keyboard journey is kinda long and detailed, but the Glove80 is where I am right now. You can [read more about my keyboard/ergonomics story here](/blog/glove80-first-impressions). Previously, I used the [ZSA Moonlander](https://www.zsa.io/moonlander) for close to a year, and before that, the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/).
+	My ergonomic keyboard journey is kinda long and detailed, but the Glove80 is where I am right now (and have been for the past year or so). I love the feel of it, and even wrote a couple of blog posts about it; [first impressions here](/blog/glove80-first-impressions) and [followup here](/blog/glove80-followup/). Previously, I used the [ZSA Moonlander](https://www.zsa.io/moonlander) for close to a year, and before that, the [Kinesis Freestyle2 for Mac](https://kinesis-ergo.com/shop/freestyle2-mac/).
 
 - [Herman Miller Sayl Chair](https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/):
   I made it about two months as a full-time work-from-home employee before I went and bought one of these chairs. It’s the most comfortable and easily adjustable office chair I’ve ever sat in (and it looks really nice, too).
@@ -74,7 +74,7 @@
   The first thing I install on every new device. I’ve tried and liked other password software, but 1Password is just the most reliable cross-platform and -device in my experience.
 
 - [Raycast](https://www.raycast.com/):
-  the <em>second</em> thing I install on every new Mac. (I previously used [Alfred](https://www.alfredapp.com/), which I still love and support—and even go back and forth between, as I [wrote about here](/blog/alfred-raycast).) The main features I love are clipboard history, snippet expansion, file search, and workflows to automate repetitive or tedious tasks. I love being able to just type a command to do it, without searching for anything or moving away from the current window. Wouldn’t ever want to work without it. As an added bonus, Raycast includes window management and emoji picking, which means you can forego some of the other apps previously on this list like [Rectangle](https://rectangleapp.com/) and [Rocket](https://matthewpalmer.net/rocket/) (though admittedly, Rocket's emoji picking is a little nicer).
+  the _second_ thing I install on every new Mac. (I previously used [Alfred](https://www.alfredapp.com/), which I still love and support—and even go back and forth between, as I [wrote about here](/blog/alfred-raycast).) The main features I love are clipboard history, snippet expansion, file search, and workflows to automate repetitive or tedious tasks. I love being able to just type a command to do it, without searching for anything or moving away from the current window. Wouldn’t ever want to work without it. As an added bonus, Raycast includes window management and emoji picking, which means you can forego some of the other apps previously on this list like [Rectangle](https://rectangleapp.com/) and [Rocket](https://matthewpalmer.net/rocket/) (though admittedly, Rocket's emoji picking is a little nicer).
 
 - [CleanShot X](https://cleanshot.com/):
   taking screenshots and videos is a many-times-daily activity for me, and CleanShot X makes it as seamless as possible for an easy, one-time payment.
@@ -83,10 +83,7 @@
   a simple, minimalist app for managing your computer’s fonts that looks and works better than Mac’s built-in FontBook.
 
 - [Oh My ZSH](https://ohmyz.sh/):
-  makes your terminal easier to use and cooler-looking
-
-- [Fig](https://fig.io/)
-  a sort of auto-complete for your terminal that gives you a nice visual selection of possible commands and branches, so you're not just typing in the dark or relying on memory
+  makes your terminal easier to use and cooler-looking.
 
 - [Notion](https://notion.so):
   my current favorite notes app. Can grow and get as complex as you need it to be, but for simple notes, the markdown and code highlight support is fantastic.
