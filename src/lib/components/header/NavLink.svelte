@@ -4,12 +4,11 @@
 	export let text: string
 	export let to: string
 	export let path: string
-	export let mobileOnly: string|boolean = false
+	export let mobileOnly: string | boolean = false
 
 	let isCurrentPage: boolean
 	$: isCurrentPage = path === to
 </script>
-
 
 <li
 	class="nav__item"
@@ -23,19 +22,18 @@
 		class="nav__link"
 		class:active={isCurrentPage}
 		aria-current={isCurrentPage ? 'page' : false}
-	>	
+	>
 		<span>{text}</span>
-	</a>	
-</li>	
-
+	</a>
+</li>
 
 <style lang="scss">
 	.nav__item {
 		margin: 0 0 0 1.5em;
 
-		@media (max-width: vars.$xs) {
-			--itemTransition: .4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-	
+		@media (max-width: vars.$sm) {
+			--itemTransition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
 			opacity: 0;
 			margin-bottom: 1.5rem;
 			font-size: 1.25rem;
@@ -63,13 +61,13 @@
 				animation: none;
 				opacity: 1;
 			}
-	
+
 			@for $i from 1 through 9 {
 				&:nth-of-type(#{$i}) {
 					animation-delay: $i * 0.1 + s;
 				}
 			}
-	
+
 			a {
 				color: var(--white);
 			}

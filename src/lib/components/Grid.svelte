@@ -14,6 +14,8 @@
 	let thisPage: string = ''
 	let loadedIn = false
 
+	let base = 16
+
 	const gridColors: string[] = [
 		'var(--lightGray)',
 		'var(--ink)',
@@ -36,32 +38,31 @@
 	const setSquareCount = debounce(() => {
 		if (!browser) return
 
-		let newGridWidth = 
-			window.innerWidth
-			/ parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size'))
-			* 2
+		let newGridWidth = window.innerWidth
 
+		if (window.innerWidth > 1024) {
+			base = 18
+		} else {
+			base = 16
+		}
 
 		// Prevents re-renders when only height changes
-		if (gridWidth && gridWidth === newGridWidth) {	 
+		if (gridWidth && gridWidth === newGridWidth) {
 			return
 		}
 
 		gridWidth = newGridWidth
 
-		thisPage == refresh ? thisPage = String(Math.random()) :	thisPage = refresh
+		thisPage == refresh
+			? (thisPage = String(Math.random()))
+			: (thisPage = refresh)
 
 		if (squareCount) {
 			count = squareCount
 			return
 		}
 
-		count = 
-			Math.floor(
-				(window.innerWidth
-				/ (parseInt(window.getComputedStyle(window.document.body, null).getPropertyValue('font-size')) / 0.65)
-			* 2)
-		)
+		count = Math.floor(window.innerWidth / base)
 	}, 300)
 
 	onMount(() => {
@@ -71,28 +72,25 @@
 
 	const randomColor = () => {
 		const color = Math.floor(Math.random() * gridColors.length)
-
 		return gridColors[color]
 	}
 </script>
 
-
 <svelte:window on:resize={setSquareCount} />
 
-<div class="grid-wrapper">
+<div class="grid-wrapper" style="--base: {base}px">
 	{#key thisPage}
 		<div class="cell-grid" class:inverted aria-hidden="true">
 			{#each Array(count) as cell}
-				<GridCell color={randomColor()} {out} {gridWidth} />
+				<GridCell color={randomColor()} {out} {base} {gridWidth} />
 			{/each}
 		</div>
 	{/key}
 </div>
 
-
 <style lang="scss">
 	.grid-wrapper {
-		height: 2.5rem;
+		height: calc(var(--base) * 2.5);
 		position: relative;
 		contain: layout size style;
 		width: 100%;
@@ -100,16 +98,16 @@
 	}
 
 	.cell-grid {
-		height: 2.5rem;
+		height: calc(var(--base) * 2.5);
 		position: absolute;
 		z-index: 2;
-		top: 0.5rem;
+		top: calc(var(--base) * 0.5);
 		left: 0;
 		width: 100%;
 		max-width: 100vw;
 
 		&.inverted {
-			top: 2.5rem;
+			top: calc(var(--base) * 2.5);
 
 			&:before {
 				--paperHSL: var(--darkBlueHSL);
@@ -120,10 +118,14 @@
 		&:before {
 			width: 100%;
 			content: '';
-			background: linear-gradient(60deg, hsla(var(--paperHSL), 0), hsla(var(--paperHSL), 0.5));
-			height: 4rem;
+			background: linear-gradient(
+				60deg,
+				hsla(var(--paperHSL), 0),
+				hsla(var(--paperHSL), 0.5)
+			);
+			height: calc(var(--base) * 4);
 			position: absolute;
-			top: -1rem;
+			top: calc(var(--base) * -1);
 			z-index: 2;
 			max-width: 100vw;
 		}

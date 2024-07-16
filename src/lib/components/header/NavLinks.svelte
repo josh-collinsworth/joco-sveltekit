@@ -5,7 +5,6 @@
 	export let path: string
 </script>
 
-
 <ul class:open={$isMenuOpen}>
 	<!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
 	<NavLink to="/" text="Home" {path} mobileOnly={true} />
@@ -13,9 +12,8 @@
 	<NavLink to="/projects" text="Projects" {path} />
 	<NavLink to="/about-me" text="About Me" {path} />
 	<NavLink to="/contact" text="Contact" {path} />
-	<NavLink to="/uses" text="Uses"{path} />
-</ul>	
-
+	<NavLink to="/uses" text="Uses" {path} />
+</ul>
 
 <style lang="scss">
 	ul {
@@ -23,11 +21,11 @@
 		flex-wrap: wrap;
 		margin: 0;
 		width: auto;
-		font-size: .875rem;
+		font-size: 0.875rem;
 		list-style-type: none;
 		padding: 0;
 
-		@media (max-width: vars.$xs) {
+		@media (max-width: vars.$sm) {
 			list-style-type: none;
 			text-align: left;
 			width: 100%;

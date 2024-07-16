@@ -6,30 +6,26 @@
 	export let path: string
 </script>
 
-
 <template>
 	<div>
 		<HamburgerButton />
 
-		<nav
-			class="main-nav nav"
-			class:open={$isMenuOpen}
-		>
+		<nav class="main-nav nav" class:open={$isMenuOpen}>
 			<NavLinks {path} />
 		</nav>
 	</div>
 </template>
-
 
 <style lang="scss">
 	.main-nav {
 		text-align: right;
 		font-family: var(--headingFont);
 
-		@media (max-width: vars.$xs) {
+		@media (max-width: vars.$sm) {
 			display: block;
 			position: fixed;
-			transition: transform .4s cubic-bezier(1, 0, 0, 1), opacity .4s cubic-bezier(1, 0, 0, 1);
+			transition: transform 0.4s cubic-bezier(1, 0, 0, 1),
+				opacity 0.4s cubic-bezier(1, 0, 0, 1);
 			transform: translateX(0);
 			background: hsla(var(--blackHSL), 0.95);
 			width: 100vw;
@@ -50,7 +46,7 @@
 			}
 		}
 
-		@media (min-width: vars.$xs) {
+		@media (min-width: vars.$sm) {
 			display: flex;
 			justify-content: flex-end;
 		}

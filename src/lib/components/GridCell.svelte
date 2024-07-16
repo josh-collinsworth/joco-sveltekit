@@ -6,15 +6,16 @@
 	export let color: string = 'transparent'
 	export let out: boolean = false
 	export let gridWidth: number = 0
+	export let base: number
 
-	let size = 0.5
+	let size = base / 2
 
 	onMount(() => {
 		const cellSize = Math.random()
 		if (cellSize > 0.95) {
-			size = 1.5
+			size = base * 1.5
 		} else if (cellSize > 0.8) {
-			size = 1
+			size = base
 		}
 	})
 
@@ -23,21 +24,20 @@
 	}
 
 	const randomX = (): string => {
-		const randomLeftValue = Math.floor(Math.random() * gridWidth - 1) - size * 2
-
-		return `${randomLeftValue / 2}rem`
+		const randomLeftValue = Math.floor((Math.random() * gridWidth) / base)
+		return `${randomLeftValue * base}px`
 	}
 
 	const randomDrop = (): string => {
 		const drop = Math.random() * 100
 		if (drop > 93) {
-			return '1rem'
+			return 'var(--base)'
 		} else if (drop > 80) {
-			return '0.5rem'
+			return 'calc(var(--base) * 0.5)'
 		} else if (drop > 60) {
-			return '-0.5rem'
+			return 'calc(var(--base) * -0.5)'
 		} else if (drop > 40) {
-			return '-1rem'
+			return 'calc(var(--base) * -1)'
 		}
 		return '0'
 	}
@@ -54,9 +54,10 @@
 			class:reduce={$prefersReducedMotion}
 			class:out
 			style="
+				--base: {base}px;
 				background: {color};
-				width: {size}rem;
-				height: {size}rem;
+				width: {size}px;
+				height: {size}px;
 				animation-delay: {randomDelay()};
 				top: {randomDrop()};
 				left: {randomX()};
