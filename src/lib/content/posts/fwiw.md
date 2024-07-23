@@ -1,7 +1,7 @@
 ---
 title: "For whatever it's worth: my advice on job hunting in tech"
 date: 2024-06-07
-updated: 2024-06-24
+updated: 2024-07-23
 categories:
   - opinion
   - personal
@@ -222,7 +222,7 @@ A personal website is a great way to stand out. You can, and should, link to it 
 
 Your website doesn't need to be fancy at all. Bonus points for building it yourself, but it's not required. If you do, build it well. Overly simple is better than over-complicated. (In other words: rock your `<body>` right. Yes, the Backstreet Boys jokes will continue. No, I will not apologize).
 
-You don't have to blog, though it's a good idea if you're into it at all. You can just write about stuff you're working on and learning, if nothing else. (“_But I don't have anything new or unique to say_,” you might argue. To which I might reply: “_This ain't the world's first job advice post, yet here we both are_.”)
+You don't have to blog, though it's a good idea if you're into it at all. You can just write about stuff you're working on and learning, if nothing else. (“_But I don't have anything new or unique to say_,” you might argue—to which I might reply, “_this ain't the world's first job advice post, yet here we both are_.”)
 
 You don't need a lot of content. Even one page will do, if that's what you feel fits best. (This should go without saying, but: do ***not*** fill your website with AI-generated writing. It's easy to spot and it looks terrible.)
 
@@ -309,11 +309,9 @@ All right, you've covered your basics, and you're well prepared. Time to start s
 When I was applying for jobs in earnest, I kept a spreadsheet. In it, I meticulously tracked every job I'd applied for, when, how, and what the status was, along with the posting link, any other relevant notes and information. This helps in lots of ways:
 
 1. You can visualize your efforts, and see how far you've gotten;
-2. You won't end up forgetting which companies and roles you've applied to already;
-3. You can track where you are in the process with each company;
-4. You'll know when it might be time to follow up;
-5. You can keep track of what conversations you've had, and with whom;
-6. You won't forget what you've applied for, or get similar roles at the same company mixed up. (You'll be surprised how quickly postings will start to run together.)
+2. You can track where you are in the process with each company, and know when it might be time to follow up;
+3. You can log conversations you've had, and who they were with;
+4. You won't forget what you've applied for, or get similar roles at the same company mixed up. (You'll be surprised how quickly postings will start to run together.)
 
 If you do this long enough, and with detailed enough notes, you might also start to get a sense for what's working and what's not.
 
@@ -971,7 +969,7 @@ Remember, this has to be a match from both sides, and every company will be look
 
 <CalloutPlusQuote>
 
-As long as you bring something to the table, all you have to do is find the right table.
+As long as you bring something to the table, all you have to do is keep looking for the right table.
 
 </CalloutPlusQuote>
 
