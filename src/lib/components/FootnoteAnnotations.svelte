@@ -19,12 +19,13 @@
 	</ol>
 </footer>
 
-<style>
+<style lang="scss">
 	ol {
 		font-size: 0.8rem;
 		padding-top: var(--quarterNote);
 		margin-top: var(--halfNote);
 		border-top: 1px solid var(--lighterGray);
+		line-height: 1.5;
 	}
 
 	.back-link {
