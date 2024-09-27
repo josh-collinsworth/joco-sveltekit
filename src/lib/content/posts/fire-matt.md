@@ -205,7 +205,7 @@ Point is: WP Engine _does_ do a lot more than zero. You could argue those contri
 
 Besides, Matt's company does exactly the same thing with Jetpack, which charges $5–$50 per month, depending on tier, so...not sure where that moral high ground is supposed to be coming from. Is Automattic really gonna claim Jetpack's paid features are purely for the altruistic benefit of the community? Why do _they_ get a pass on paid features?
 
-I think could fairly, if crudely, paraphrase Matt's argument thusly: "WP Engine is in it for the money, and we are in it for WordPress."
+I think you could fairly, if crudely, paraphrase Matt's argument as: "WP Engine is in it for the money, and we are in it for WordPress."
 
 That's a really flimsy stance in my view, without even getting into whether we can, or should, have exactly the same expectations of both companies in the first place (which is at least questionable; Automattic has their hands in a lot more things than WP Engine does, including Tumblr, PocketCasts, Longreads, and many others things that may or may not be related to WordPress, along with at least two hosting companies).
 
@@ -233,7 +233,11 @@ But I'm getting ahead of myself.
 
 So that's the core of this whole thing; Matt thinks private equity is ruining everything and taking too much without giving enough back. It's an easy home run of a point to make in this economy. Pretty much nobody disagrees with that.
 
-The split, instead, is in whether that core point _justifies_ Matt's actions. Most people seem to agree it does not.
+Maybe he thought he'd come off like Robin Hood in this whole deal. I don't know. But if there was a way to tactfully and gracefully thread that needle, it wasn't the rampaging hippopotamus approach Matt took.
+
+The split in the community seems to lie in whether that core point _justifies_ Matt's actions.
+
+It seems to me that most people agree it does _not_; that Matt's committed too many flagrant fouls of his own for the original infraction to matter.
 
 <CalloutPlusQuote>
 
@@ -255,7 +259,7 @@ Forget for a second whether you agree with Matt or not; we're getting into some 
 
 This type of maneuver, plainly, is anti-competitive. It's a flagrant exploitation of Matt's many roles and the wild control he has over many branches of WordPress, many with conflicting priorities.
 
-It's bullying, really; WP Engine doesn't have any tools to strike back like that. It can't. (Maybe it _wouldn't_, since to date, WP Engine appears to be the company with grown-ups in the room, that knows to behave as though your actions will be examined in a courtroom one day.)
+It's bullying, really; WP Engine doesn't have any tools to strike back like that. It can't. (Maybe it _wouldn't_, since to date, WP Engine appears to be the company with grown-ups in the room, who know to behave as though their actions will be examined in a courtroom one day.)
 
 <CalloutPlusQuote>
 
@@ -263,9 +267,9 @@ This would be like Meta one day deciding it didn't like how a competitor was usi
 
 </CalloutPlusQuote>
 
-I think Matt _thought_ WP Engine had no retaliation. I think he was _counting_ on this maneuver being yet another push towards their eventual acquiescence.
+I think Matt _thought_ WP Engine had no retaliation. I think he was _counting_ on this maneuver being yet another push towards their eventual acquiescence. But I guess it doesn't matter; that's just my speculation.
 
-But Matt wasn't done. Matt went on abusing his power by updating the [WordPress trademark policy](https://wordpressfoundation.org/trademark-policy/) to _retroactively disincentivize the use of the term "WP" in titles of products and companies_. ([Here's the source on that change.](https://www.reddit.com/r/Wordpress/comments/1foknoq/the_wordpress_foundation_trademark_policy_was/))
+In any case, Matt wasn't done. Matt went on flexing (read: abusing) his power by updating the [WordPress trademark policy](https://wordpressfoundation.org/trademark-policy/) to _retroactively disincentivize the use of the term "WP" in titles of products and companies_. ([Here's the source on that change.](https://www.reddit.com/r/Wordpress/comments/1foknoq/the_wordpress_foundation_trademark_policy_was/))
 
 You know why you constantly get notifications saying "we've updated our terms"? Because you legally _have_ to do that. To just change the terms without letting people know is shady at best, and actively malicious at worst.
 
@@ -378,7 +382,7 @@ Second: _not being able to update plugins is a **massive** deal_. You could very
 
 <CalloutPlusQuote>
 
-This is carpet bombing civilians. This is putting innocent bystanders in harm's way. This is firing the Death Star.
+This is bombing civilians. This is putting innocent bystanders in harm's way. This is firing the Death Star.
 
 What Matt's done is unforgivable, no matter how right he might have been at the beginning. To unleash harm on actual _users_ of WordPress, indiscriminantly, solely over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
 
@@ -391,6 +395,20 @@ _You don't hurt users because you're beefing with their host_.
 You don't bomb civilians because they live near a criminal, you don't shoot at innocent bystanders because a terrorist is hiding behind them, and you don't fire the Death Star because you disagree with Alderaan's government.
 
 It no longer matters what this was all about at that point, or whether you were originally right or not. _You are irreversibly the bad guy now_.
+
+It's also worth calling out a side effect of this move, which may or may not have been deliberate:
+
+<CalloutPlusQuote>
+
+Matt's actions have ensure his hosting companies are now the _only_ WordPress hosts that can guarantee something like this will never happen to its users.
+
+</CalloutPlusQuote>
+
+I mean, he can just flip the switch at any time. He can change the rules whenever he wants to. So what company is safe?
+
+None. Except his.
+
+I hope I don't need to go into how anti-competitive that is, all on its own, or what an egregious abuse of power it is to have put himself and his company in that position by using WordPress.org to do it.
 
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
