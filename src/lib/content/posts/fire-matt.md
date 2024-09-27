@@ -360,11 +360,11 @@ I tried my best to look up Matt's net worth and work out what percentage he's gi
 
 Which, fine, that's still millions of dollars going to charity, and that's objectively a good thing.
 
-But also: if my wife and I gave that percentage of _our_ income, it wouldn't even be enough money to get a tax deduction for it. So it's worth mentioning that just for scale. Contextually, Matt's donating at below the standard deduction level for somebody of his net worth.
+But also: if my wife and I gave that percentage of _our_ income, it wouldn't even be enough money to get a tax deduction for it. So it's worth mentioning that just for scale. Contextually, Matt's donating at below the standard deduction level for somebody of his net worth. (And, most likely, enjoying significant tax benefits for it.)
 
-Anyway, no matter which way you look at it, that's all weird. I don't think pretty much anybody was asking for that, and regardless, it has major "look what a good guy I am" energy.
+Anyway, no matter which way you look at it, that's all weird, but it doesn't even really matter in the case of this larger discussion. It has major "oh yeah? Well would a bad guy do THIS?" energy.
 
-The sort of thing actual good guys don't usually have to do.
+You know...the sort of thing actual good guys don't usually have to do.
 
 Almost like Matt was trying to distract from something…
 
