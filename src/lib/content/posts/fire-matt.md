@@ -400,7 +400,7 @@ It's also worth calling out a side effect of this move, which may or may not hav
 
 <CalloutPlusQuote>
 
-Matt's actions have ensure his hosting companies are now the _only_ WordPress hosts that can guarantee something like this will never happen to its users.
+Matt's actions have ensured his hosting companies are now the _only_ WordPress hosts that can guarantee something like this will never happen to its users.
 
 </CalloutPlusQuote>
 
