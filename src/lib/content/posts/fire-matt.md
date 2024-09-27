@@ -143,7 +143,7 @@ Family members don't always get tech. That's not a sign that something is wrong,
 
 #### Matt claims WP Engine is selling "cheap knock-off" of WordPress
 
-Matt also claims WordPress is selling "something that they’ve chopped up, hacked, butchered to look like WordPress." His reason for this wild claim? Because WP Engine disables revisions (a default feature of WordPress).
+Matt also claims WP Engine is selling "something that they’ve chopped up, hacked, butchered to look like WordPress." His reason for this wild claim? Because WP Engine disables revisions (a default feature of WordPress).
 
 Literally, that's it. One tiny feature. The whole thing's been "hacked and butchered" because they just chose to modify one tiny detail.
 
