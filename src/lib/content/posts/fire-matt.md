@@ -272,7 +272,7 @@ Following all this, WP Engine—quite understandably—doesn't really care for a
 That would be questionable in a vacuum, to be sure. But we're steeped in context at this point. (A lot of users either turn it off or ignore it on their own anyway, for what it's worth.)
 
 
-Following WordCamp US, WP Engine _also_ sent a [cease-and-desist](https://wpengine.com/wp-content/uploads/2024/09/Cease-and-Desist-Letter-to-Automattic-and-Request-to-Preserve-Documents-Sent.pdf) to Automattic. It's pretty damning, and does a good job laying out all the points I tried to cover above. (In short: Matt tried to extort money from WP Engine for spurious licensing claims and use disinformation to do it.)
+Following WordCamp US, WP Engine _also_ sent a [cease-and-desist](https://wpengine.com/wp-content/uploads/2024/09/Cease-and-Desist-Letter-to-Automattic-and-Request-to-Preserve-Documents-Sent.pdf) to Automattic. It's pretty damning, and does a good job laying out all the points I tried to cover above. (In short: Matt tried to extort money from WP Engine for spurious licensing claims, and used disinformation, or at least heavily slanted data, to do it.)
 
 <CalloutPlusQuote>
 
@@ -286,9 +286,9 @@ Second, while Automattic _does_ apparently own the WooCommerce copyright, it doe
 
 But it gets even murkier from there, as the Foundation is maybe (or maybe not) WordPress.org? And either way, the Foundation is apparently three people, and Matt Mullenweg is not only one of them, he appears to be _the only active one_!
 
-Of the other two board members, one is a blogger whose company Matt bought out, and who apparently is no longer in the industry. The other is—surprise!—a Partner and Managing Director at a private equity firm (not to mention a failed Republican politician).
+Of the other two board members, one is a blogger whose company Matt bought out, and who apparently is no longer in the industry. The other is apparently a Partner and Managing Director at—surprise!—_a private equity firm_ (not to mention a twice-failed Republican politician).
 
-Wait...isn't private equity running things bad, Matt?
+Wait...isn't private equity bad? I guess not if it's on Matt's side. (For the record, Matt and his companies are tied up in private equity in other more substantial ways than this.)
 
 <CalloutPlusQuote>
 
@@ -306,11 +306,13 @@ Let's not leave unspoken the irony that the guy who basically _is_ WordPress.com
 
 </CalloutPlusQuote>
 
-Anyway. [Automattic responded](https://automattic.com/2024/09/25/open-source-trademarks-wp-engine/) by sending its own cease-and-desist to WP Engine, claiming mainly that WP Engine is deliberately confusing people, and that it owes licensing to...someone. Automattic, I guess, though the lines are so blurry it's clear the separation was only ever a smokescreen.
+Anyway. [Automattic responded](https://automattic.com/2024/09/25/open-source-trademarks-wp-engine/) by sending its own cease-and-desist to WP Engine, claiming mainly that WP Engine is deliberately confusing people, and that it owes licensing to...someone. Automattic, I guess, though the lines are so blurry it's clear the separations between WordPress entities were only ever little more than a smokescreen.
 
 ---
 
 **I should mention: most people believe WordPress.com and WordPress.org/the Foundation are two (three!?) separate entities**. I sure did, before this week. I thought the two had separated many years ago, with the express intent of preventing any one for-profit company from abusing the WordPress name.
+
+I guess they technically are. But when one person apparently enjoys unchecked control over all of them…
 
 [Guitar begins strumming with Alanis Morissette vocalizing]
 
