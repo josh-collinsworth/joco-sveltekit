@@ -63,6 +63,12 @@ Lots of acquaintances and old freelance clients have told me how bad it's gotten
 
 So this post might be a lot of things, but I can assure you it's _not_ me defending my old company just because I used to work for them. I've got literally no reason to do that.
 
+<CalloutPlusQuote>
+
+To the extent I'm on WP Engine's side, it's not because of any sense of loyalty to the company or to the remaining good people I know there; it's because I believe what Matt's doing is deeply wrong.
+
+</CalloutPlusQuote>
+
 I'll also go on record as saying I got pretty far in the interview process at Automattic once, a few years back. And, since we're being honest, it was the absolute _worst_ interview process I've ever taken part of as a web professional (though the people themselves were lovely). But that alone ain't gonna get a post out of me. I'm not wasting my time and yours just to gripe about an interview I chose to drop out of over three years ago. Just thought it merited a mention.
 
 I _am_, however, somebody who still cares deeply about WordPress. It's what gave me my start, and I still recommend it to a lot of people when they ask me what system might best suit their needs.
