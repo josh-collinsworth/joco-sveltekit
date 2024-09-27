@@ -185,7 +185,7 @@ Regardless, Matt seems irked that WP Engine isn't abiding by the ["Five for the 
 
 But it's not a requirement, or a policy, and enforcing it as such—acting unilaterally as the WordPress police, let alone so suddenly and violently—is extremely questionable and deeply troubling. (Not to mention a likely deterrent for people and organizations who might want to participate in the WordPress space.)
 
-Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way.
+Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way, because again: Matt's taken it upon himself to be WP PD to enforce a law that isn't even a law.
 
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
