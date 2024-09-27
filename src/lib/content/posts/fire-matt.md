@@ -334,27 +334,29 @@ Almost like Matt was trying to distract from something…
 
 ### Matt goes nuclear
 
-The next move, and most recent development in this story, is still shocking to me.
+The next move, and most recent development in this story, is still shocking to me. I think it should be shocking, and deeply disturbing, to _any_ observer.
 
 [WordPress.org banned WP Engine sites from accessing the plugin repository](https://techcrunch.com/2024/09/25/wordpress-org-bans-wp-engine-blocks-it-from-accessing-its-resources/).
 
+No more doing anything with plugins via the WordPress admin area. No installing, no updating. Not if you're on WP Engine/Flywheel.
+
 There are many layers to this.
 
-First: again, this is the `.org` arm of WordPress. It's not _supposed_ to be controlled solely by an oligarch who can bend it to the will of him, to directly benefit his own for-profit companies. It's _supposed_ to be agnostic. Its entire reason for existence was to prevent things like this from happening.
+First: again, this is the `.org` arm of WordPress enforcing this brutal new law. The Organization, or Foundation, or _whatever_ is not _supposed_ to be controlled solely by an oligarch who can bend it to their own will, to directly benefit their own interests. It's _supposed_ to be agnostic. Its entire reason for existence was to prevent things like this from happening.
 
-Second: _not being able to update plugins is a **massive** deal_. You could very well be exposing your site to vulnerabilities if plugins don't update. There are nonprofits, charities, government agencies, and public services that host on WP Engine. All of those are just being thrown under the bus.
+Second: _not being able to update plugins is a **massive** deal_. You could very well be exposing your site to vulnerabilities if plugins don't update (to say nothing of bugs). There are nonprofits, charities, government agencies, and public services that host on WP Engine, on top of countless businesses. All of those are just being thrown under the bus to serve one man's whims.
 
-_Yes,_ it's possible to manually update plugins, but nobody's gonna do that. Certainly not the agencies and freelancers who oversee dozens or hundreds of sites on WP Engine.
+(_Yes,_ it's possible to manually update plugins, but nobody's gonna do that. Certainly not the agencies and freelancers who oversee dozens or hundreds of sites on WP Engine.)
 
 <CalloutPlusQuote>
 
-_This is bombing civilians_. This is putting innocent bystanders in harm's way. This is firing the Death Star.
+_This is carpet bombing civilians_. This is putting innocent bystanders in harm's way. This is firing the Death Star.
+
+What Matt's done is unforgivable, no matter how right he might have been at the beginning. To unleash harm on actual _users_ of WordPress, just over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
 
 </CalloutPlusQuote>
 
-What Matt's done is unforgivable, no matter how right he might have been at first. To open up harm on actual _users_ of WordPress, just over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
-
-(In the middle of all this, a separate host Automattic owns started offering promos to help people migrate to them from WP Engine. That alone should be majorly headline-grabbing, but Matt's abuses up to this point are so egregious it barely even registers.)
+(In the middle of all this, Pressable, a separate host Automattic owns started offering promos to help people migrate to them from WP Engine. That alone should be majorly headline-grabbing, but Matt's abuses up to this point are so egregious it barely even registers.)
 
 _You don't hurt users because you're beefing with their host_.
 
@@ -362,7 +364,7 @@ You don't bomb civilians because they live near a criminal, you don't shoot at i
 
 It no longer matters what this was all about at that point, or whether you were originally right or not. _You are irreversibly the bad guy now_.
 
-## If Matt cares about WordPress, he should step down immediately
+## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
 <CalloutPlusQuote>
 
@@ -376,7 +378,7 @@ Imagine if Apple got into a dispute with Google, and blocked all text messages f
 
 Imagine if Google had a dispute with Amazon, and refused to show their messages in Gmail.
 
-_This is the scale of thing we're talking about._ This is the collateral damage Matt has unleashed on the WordPress community, and it's not to _anyone's_ benefit except maybe Matt's and his own companies'.
+_This is the scale of thing we're talking about._ This is the collateral damage Matt has unleashed on the WordPress community, and it's not to _anyone's_ benefit except maybe Matt's and his own companies'. (For now, anyway. We'll see how it all shakes out; it seems pretty inevitable that a class action suit will follow and this all gets dragged into court.)
 
 Virtually no WordPress users are happy about this, no matter how they felt about WP Engine.
 
