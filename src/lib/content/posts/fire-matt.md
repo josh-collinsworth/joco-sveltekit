@@ -332,6 +332,10 @@ Two really weird things happened on Wednesday.
 
 First, _out of nowhere_, Matt decides to [publish a post on his personal blog](https://ma.tt/2024/09/charitable-contributions/) outlining his charitable donations. He really frames it as though he's being victimized and bullied into revealing this information, and I suppose some people were probably (reasonably) asking how much _he_ gives, since he spent the whole week blowing up half the internet over how much WP Engine gives.
 
+He also spends a lot more time defending himself against claims of being a "mafia boss" than most people who aren't mafia bosses or acting like mafia bosses ever feel the need to do.
+
+Weird move, all around. Especially since the implication seems to be...what? "I'm a good guy so I can't do bad things"?
+
 I tried my best to look up Matt's net worth and work out what percentage he's giving, and by the best figures I could find, we're likely at or below 5% here.
 
 Which, fine, that's still millions of dollars and that's objectively a good thing.
@@ -382,6 +386,8 @@ The weapons Matt Mullenweg has wielded unilaterally in this war shouldn't even _
 
 </CalloutPlusQuote>
 
+I believe the ability to block an entire hosting provider from accessing the plugins repository is a power that nobody should have. If one could _ever_ be justified in the use of such unthinkably drastic measures, this case most certainly isn't extreme enough to do that.
+
 Imagine if Microsoft got into a dispute with Apple, and decided to block npm for anyone using a Mac.
 
 Imagine if Apple got into a dispute with Google, and blocked all text messages from Android phones.
@@ -390,21 +396,23 @@ Imagine if Google had a dispute with Amazon, and refused to show their messages 
 
 _This is the scale of thing we're talking about._ This is the collateral damage Matt has unleashed on the WordPress community, and it's not to _anyone's_ benefit except maybe Matt's and his own companies'. (For now, anyway. We'll see how it all shakes out; it seems pretty inevitable that a class action suit will follow and this all gets dragged into court.)
 
-Virtually no WordPress users are happy about this, no matter how they felt about WP Engine.
+Virtually no WordPress users are happy about this, no matter how they felt about WP Engine. Certainly, none benefit.
 
 <CalloutPlusQuote>
 
-No reasonable person could argue WordPress is in a _better_ place today than it was a week ago, or is on a better path.
+No reasonable person could argue WordPress is in a _better_ place today than it was a week ago, or is on a better path now than it was then.
 
 </CalloutPlusQuote>
 
 It's less secure, less trustworthy, more volatile, and overall just not something _anybody_ is as excited about as they were a week ago.
 
+The neighborhood we all lived in just got a bomb dropped on it, by a man who's enjoyed unchecked power as the head of every branch of the current government, as it were. And he _insists_ he's doing the right thing by us for dropping that bomb. (Forgive me, I know the metaphor is beleaguered by this point, but it seems apt.)
+
 Matt's clearly willing to burn it all down to score a pyrrhic victory, and that's not a power he or anybody else should ever have over a community this size.
 
 Matt has to go.
 
-I don't expect him to be removed from Automattic leadership (although I think the company's leadership absolutely _should_ be considering whether that's the right move). But in any case:
+I don't expect him to be removed from Automattic leadership (although I think others in leadership absolutely _should_ be considering whether that's the right move). But in any case:
 
 <CalloutPlusQuote>
 
