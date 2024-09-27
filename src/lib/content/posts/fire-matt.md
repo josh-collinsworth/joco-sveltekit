@@ -61,6 +61,10 @@ So this post might be a lot of things, but I can assure you it's _not_ me defend
 
 I'll also go on record as saying I got pretty far in the interview process at Automattic once, a few years back. And, since we're being honest, it was the absolute _worst_ interview process I've ever taken part of as a web professional (though the people themselves were lovely). But that alone ain't gonna get a post out of me. I'm not wasting my time and yours just to gripe about an interview I chose to drop out of over three years ago. Just thought it merited a mention.
 
+I _am_, however, somebody who still cares deeply about WordPress. It's what gave me my start, and I still recommend it to a lot of people when they ask me what system might best suit their needs.
+
+It's a wonderful community, all in all, and despite my inactivity, I still feel invested in WordPress, and interested in seeing it continue to be a productive way to democratize the web.
+
 Finally: I am not a lawyer, and since it's Friday now and this feud had already reached lawyers-involved level by Monday morning, I should be careful to clarify any legal commentary here is expressly my personal, non-expert opinion.
 
 ## I'm sorry, what happened?
