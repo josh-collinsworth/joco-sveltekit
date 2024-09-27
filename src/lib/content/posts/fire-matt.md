@@ -21,7 +21,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the poorly edited jumble of thoughts. It will likely be edited and changed.
+This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the poorly edited jumble of thoughts. It will likely be edited and changed. I also usually avoid cussing on my blog, but I do a little here because it feels warranted.
 
 Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-beatings-will-continue-until-morale) (unaffiliated).
 
@@ -65,11 +65,13 @@ So this post might be a lot of things, but I can assure you it's _not_ me defend
 
 <CalloutPlusQuote>
 
-To the extent I'm on WP Engine's side, it's not because of any sense of loyalty to the company or to the remaining good people I know there; it's because I believe what Matt's doing is deeply wrong.
+To the extent I'm on WP Engine's side, it's not because of any sense of loyalty to the company or to the remaining good people I know there; it's because I believe what Matt's doing is deeply wrong and foolishly destructive.
 
 </CalloutPlusQuote>
 
 I'll also go on record as saying I got pretty far in the interview process at Automattic once, a few years back. And, since we're being honest, it was the absolute _worst_ interview process I've ever taken part of as a web professional (though the people themselves were lovely). But that alone ain't gonna get a post out of me. I'm not wasting my time and yours just to gripe about an interview I chose to drop out of over three years ago. Just thought it merited a mention.
+
+Ok, so I'm not a huge fan of either party.
 
 I _am_, however, somebody who still cares deeply about WordPress. It's what gave me my start, and I still recommend it to a lot of people when they ask me what system might best suit their needs.
 
@@ -89,6 +91,8 @@ Automattic was offering WP Engine some kind of "licensing," at a rate of 8% of t
 
 WP Engine apparently turned down this offer, presumably because _it doesn't appear they actually need any license_. The term "WP" is explicitly not covered by the [WordPress trademark policy](https://wordpressfoundation.org/trademark-policy/), and using the term "WordPress" to describe products and services (e.g., calling yourself a "WordPress specialist," or saying you offer "WordPress hosting") is fully allowed, according to the policy.
 
+They've also been in business for like 15 years now, and somehow none of this has come up before.
+
 Besides, I could name dozens of companies just off the top of my head also using one or both of those terms. So the "you need a license to say this" argument seems highly targeted and extremely dubious.
 
 ### Matt's rejected, so he tries new strategies
@@ -101,11 +105,11 @@ Most reasonable and knowledgeable people seem to share this opinion. Companies h
 
 Anyway, this filing of spurious trademarks makes it appear very much like Matt's endgame was to extract money from WP Engine, but he just needed more of a foundation to do it (pun intended?). So, following that initial rejection, Matt set the Foundation arm of WordPress working on securing highly dubious trademarks, which, again, I and most reasonable observers think and hope will fail.
 
-Meanwhile, Matt began sending a series of very apparently extortive messages to WP Engine leadership, essentially demanding they pay up "or else." (This is all in [WP Engine's letter to Automattic](https://wpengine.com/wp-content/uploads/2024/09/Cease-and-Desist-Letter-to-Automattic-and-Request-to-Preserve-Documents-Sent.pdf), which I'm getting to, but which comes later in the story.)
+Meanwhile, Matt _also_ began sending a series of very apparently extortive messages to WP Engine leadership, essentially demanding they pay up or else. (This is all in [WP Engine's letter to Automattic](https://wpengine.com/wp-content/uploads/2024/09/Cease-and-Desist-Letter-to-Automattic-and-Request-to-Preserve-Documents-Sent.pdf), which I'm getting to, but which comes later in the story.)
 
-All of this was in the run-up [WordCamp US](https://us.wordcamp.org/2024/), the largest WordPress event of the year, at least in North America. (Of note: WP Engine [sponsored this event](https://us.wordcamp.org/2024/sponsors/) at the highest level, as did WordPress.com.)
+All of this was in the run-up to [WordCamp US](https://us.wordcamp.org/2024/), the largest WordPress event of the year, at least in North America. (Of note: WP Engine [sponsored this event](https://us.wordcamp.org/2024/sponsors/) at the highest level, as did WordPress.com.)
 
-Matt let WP Engine leadership know, via private DMs, that he intended to "go nuclear" and "scorched earth" on WP Engine in his keynote at the conference—that is, if WP Engine failed to acquiesce to his monetary demands, i.e., 8% of total revenue, equaling tens of millions of dollars. It appears he repeated the "just pay up and I'll make this all go away" offer up to the literal last minute before he went on stage.
+Matt let WP Engine leadership know, via private DMs, that he intended to "go nuclear" and "scorched earth" on WP Engine in his keynote at the conference—that is, if WP Engine failed to acquiesce to his monetary demands, i.e., 8% of total revenue, i.e., tens of millions of dollars. It appears he repeated the "just pay up and I'll make this all go away" offer up to the literal last minute before he went on stage.
 
 <CalloutPlusQuote>
 
@@ -115,9 +119,9 @@ Let's not beat around the bush: words like "threat" and "extortion" very much ap
 
 Again: this demand was ostensibly in exchange for a "license" to use terms like "WordPress," "WordPress hosting," "WooCommerce," etc.—none of which appear to be actually necessary.
 
-The only _possible_ exception seems to be "WooCommerce," which _is_ a trademark (and product/company) owned by Automattic. However, the lines are very blurry on what is and is not permissable when it comes to using the WooCommerce name. WP Engine does indeed call one of its offerings "WooCommerce hosting," which is explicitly called out in the guidelines.
+The only _possible_ exception seems to be "WooCommerce," which _is_ a trademark (and product/company) owned by Automattic. However, the lines are very blurry on what is and is not permissable when it comes to using the WooCommerce name. WP Engine does indeed call one of its offerings "WooCommerce hosting," which is explicitly called out in the guidelines. So I don't know, _maybe_ there's validity there. _Maybe_.
 
-However, for one thing, it's hard to know how much the trademark guidelines might have been changed in the lead-up to all of this. Matt made several changes to the WordPress license page in the last week, among other things, to call out WP Engine. I don't trust that the WooCommerce license page I'm looking at today is the same as it was last week—which, all on its own, should be setting off raging alarms for even the most casual of observers. It's extremely bad news when the company you're doing business with can just decide what the new terms are with no warning or recourse.
+However, for one thing, it's hard to know whether, or how much the trademark guidelines might have changed. Matt made several changes to the WordPress license page in the last week, among other things, to call out WP Engine. That makes me not trust that the WooCommerce license page I'm looking at today is the same as it was last week—which, all on its own, should be setting off raging alarms for even the most casual of observers. It's extremely bad news when the company you're doing business with can just decide what the new terms are with no warning or recourse.
 
 Anyway, Matt keeps sending the DMs all the way up until the literal last minute, offering _not_ to excoriate WP Engine onstage during his keynote at the country's (continent's? world's?) largest WordPress event, provided they simply pay up.
 
@@ -127,7 +131,7 @@ WP Engine says no (actually, they ask for more time, which Matt denies and takes
 
 ### Wait—what's Matt's actual deal? Why is he doing this?
 
-Aside from the licensing issue, Matt's got some other complaints with WP Engine—some probably valid, some pretty tenuous, in my estimation. Let's walk through them.
+Aside from the licensing issue, which I covered above, Matt's got some other complaints with WP Engine—some probably valid, some pretty shaky, in my estimation. Let's walk through them.
 
 #### Matt claims WP Engine is misrepresenting itself
 
@@ -135,27 +139,29 @@ Among Matt's complaints: that WP Engine is "misrepresenting" itself as an entity
 
 <CalloutPlusQuote>
 
-I'm sure it's frustrating, having taken over half the internet and being worth hundreds of millions of dollars, only to find out your own mom _still_ doesn't really understand what you do, but: _come on, bro_.
+I'm sure it's frustrating, having taken over half the internet and being worth hundreds of millions of dollars, only to find out your own mom _still_ doesn't really understand what you do, but: come on, bro.
 
 </CalloutPlusQuote>
 
-First, as many people have already noted: Matt runs both `wordpress.com` _and_ `wordpress.org`, which are entirely separate entities that do two completely different things. You wanna tell me _that's_ clear, but somehow WP Engine and WordPress.com are too similar? Really?
+First, _tons_ of companies use "WP" in their names, and/or the names of their products. Why isn't Matt going after them?
 
-Second, my kindergartner and every kid in his class could tell the difference between the WordPress W and WP Engine's dumb logo. (WP Engine's logo has always been a grid of weird, almost-square shapes that's apparently meant to vaguely resemble an engine, but which makes no sense to pretty much anyone who's ever seen it. WP Engine updated it recently, to make the shapes slightly less dumb. It's a bad logo, in my professional opinion as a designer. But I digress. Point is: it looks literally nothing like any WordPress logo. Also: it's not the same color. I have color vision deficiency, and even _I_ can tell that. Anyway…)
+Second, as many people have already noted: Matt runs both `wordpress.com` _and_ `wordpress.org`, which are entirely separate entities that do two completely different things. You wanna tell me _that's_ clear, but somehow WP Engine and WordPress.com are too similar? Really?
+
+Third, my kindergartner and every kid in his class could tell the difference between the WordPress W and WP Engine's dumb logo. (WP Engine's logo has always been a grid of weird, almost-square shapes that's apparently meant to vaguely resemble an engine, but which makes no sense to pretty much anyone who's ever seen it, far as I can tell. It's a bad logo, in my professional opinion as a designer, even the slightly better version they just released recently. But I digress. Point is: it looks literally nothing like any WordPress logo. Also: it's not the same color. I have color vision deficiency, and even _I_ can tell that. Anyway…)
 
 Finally, for the whole two years I worked for Shopify, most of my family thought I was at Spotify. Now I'm at Deno, and nobody in my family has any clue what a JavaScript runtime is, and my dad basically thinks I work for Java.
 
 Family members don't always get tech. That's not a sign that something is wrong, and it's most _certainly_ not a sign that any wrongdoing has been committed, let alone deliberately.
 
-#### Matt claims WP Engine is selling "cheap knock-off" of WordPress
+#### Matt claims WP Engine is selling a "cheap knock-off" of WordPress
 
-Matt also claims WP Engine is selling "something that they’ve chopped up, hacked, butchered to look like WordPress." His reason for this wild claim? Because WP Engine disables revisions (a default feature of WordPress).
+Matt also claims WP Engine is selling "something that they’ve chopped up, hacked, butchered to look like WordPress." His reason for this wild claim? Because WP Engine disables revisions (a default feature of WordPress, albeit a pretty small one).
 
 Literally, that's it. One tiny feature. The whole thing's been "hacked and butchered" because they just chose to modify one tiny detail.
 
-Of all Matt's spurious claims, this one might be the one that reeks the most of absolute made-up bullshit. WP Engine will just turn on revisions if you want them to, but that's beside the point. _It's open-source software_! You don't get to tell people how they use it!
+Of all Matt's spurious claims, this one might be the one that reeks the most of absolute made-up bullshit. WP Engine will just turn on revisions if you want them to, but that's beside the point. _It's open-source software_! You don't get to tell people how they use it! Besides, pretty much all hosts limit revisions in some way or another.
 
-We could also get into the utter hypocrisy that many of WordPress.com's plans do far, far, _far_ more invasive modifications of WordPress core (_you can't even install plugins, FFS!_), but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license. Sit down.
+We could also get into the utter hypocrisy that many of WordPress.com's plans do far, far, _far_ more invasive modifications of WordPress core (_you can't even install themes and plugins, FFS!_), but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license. This claim is clearly total garbage.
 
 #### Matt says WP Engine doesn't give back enough
 
@@ -165,11 +171,11 @@ Matt's other complaint—and I think this is what everything else really boils d
 
 </CalloutPlusQuote>
 
-Matt showed some numbers onscreen at WCUS, comparing Automattic's contributions to WP Engine's. But I'm not going to repeat them because I'm certain they're distorted. Besides, I'm not sure the two companies' work can, or _should_, be considered directly comparable in the first place. They do different things in different ways, and there's no law or license mandating either of them do anything.
+Matt showed some numbers onscreen at WCUS, comparing Automattic's contributions to WP Engine's. But I'm not going to repeat them because I'm certain they're distorted. Besides, I'm not sure the two companies' work can, or _should_, be considered directly comparable in the first place. They do different things in different ways, and there's no law or license mandating either of them do anything to begin with.
 
-Regardless, Matt seems irked that WP Engine isn't abiding by the ["Five for the Future" program, outlined on WordPress.org](https://wordpress.org/five-for-the-future). Five for the Future asks that if you benefit from WordPress, you give back 5% of your time directly to that open-source project, which I think pretty much everyone can agree is a very noble and admirable aspiration that companies such as those involved _should_ be doing.
+Regardless, Matt seems irked that WP Engine isn't abiding by the ["Five for the Future" program, outlined on WordPress.org](https://wordpress.org/five-for-the-future). Five for the Future asks that if you benefit from WordPress, you give back 5% of your time directly to that open-source project, which I think pretty much everyone can agree is a very noble and admirable aspiration that companies such as these involved _should_ probably be doing.
 
-But it's not a requirement, or a policy, and enforcing it as such—acting unilaterally as the WordPress police, let alone so suddenly and violently—is extremely questionable and deeply troubling. (Not to mention a likely deterrent for other organizations who might want to participate in the WordPress space.)
+But it's not a requirement, or a policy, and enforcing it as such—acting unilaterally as the WordPress police, let alone so suddenly and violently—is extremely questionable and deeply troubling. (Not to mention a likely deterrent for people and organizations who might want to participate in the WordPress space.)
 
 Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way.
 
@@ -197,9 +203,11 @@ This is to say nothing of their sponsoring of WordCamps, their own tutorials and
 
 Point is: WP Engine _does_ do a lot more than zero. You could argue those contributions are not "pure" (Matt does), and that they're ultimately in service WP Engine, not the WordPress community. But in fairness: sure, they're all marketing tools in some form or another, but you don't _have_ to pay for any of them. They all get maintained, and they all have tons of users both on and off WP Engine, and they all work no matter what host you choose. (I'm sure they're all used on WordPress.com, too. I'd even use some of those things if I had to spin up a WordPress site tomorrow.)
 
-Besides, Matt's company does exactly the same thing with Jetpack, which charges $5–$50 per month, depending on tier, so...not sure where that moral high ground is supposed to be coming from. Is Automattic really gonna claim Jetpack's paid features are supposed to be purely for the community? Why do they get a pass on paid features?
+Besides, Matt's company does exactly the same thing with Jetpack, which charges $5–$50 per month, depending on tier, so...not sure where that moral high ground is supposed to be coming from. Is Automattic really gonna claim Jetpack's paid features are purely for the altruistic benefit of the community? Why do _they_ get a pass on paid features?
 
-I could crudely paraphrase Matt's argument thusly: "WP Engine is a private equity-owned company that does nothing, we are a benevolent company that does way more." That's a really flimsy stance in my view, without even getting into whether we can, or should, have exactly the same expectations of both companies in the first place (which is at least questionable; Automattic has their hands in a lot more things than WP Engine does, including Tumblr, PocketCasts, Longreads, and many others things that may or may not be related to WordPress).
+I think could fairly, if crudely, paraphrase Matt's argument thusly: "WP Engine is in it for the money, and we are in it for WordPress."
+
+That's a really flimsy stance in my view, without even getting into whether we can, or should, have exactly the same expectations of both companies in the first place (which is at least questionable; Automattic has their hands in a lot more things than WP Engine does, including Tumblr, PocketCasts, Longreads, and many others things that may or may not be related to WordPress, along with at least two hosting companies).
 
 Still, once more: there's probably _some_ validity there. WP Engine is a big company that makes lots of money, and it probably can and should do more.
 
@@ -211,7 +219,7 @@ _Matt could've made that point_. I think most people would've agreed with him, i
 
 _If_ Matt Mullenweg had done this the right way.
 
-But Matt, being Matt _didn't_ make that point in a good way.
+But Matt, being Matt, _didn't_ make that point in a good way.
 
 (Sorry, this post is already too long without me going into all the times in the past he's stirred up drama and just generally been a toxic jerk to undeserving people in the WordPress community. But if you're not aware: it's become increasingly common. He was even adding public snarky comments on WP Engine employees' posts, ones who had given decades of their life to the project, as recently as yesterday.)
 
@@ -239,25 +247,23 @@ Anyway, back to the timeline. (Note: I may have the chronology slightly mixed up
 
 At some point in this chaos (during his keynote at WCUS, or shortly after), Matt used his sway over every branch of power in the WordPress government to write a blog post called "[WP Engine is not WordPress](https://wordpress.org/news/2024/09/wp-engine/)," (which isn't something anybody seems to have been confused about, except of course Matt's mom).
 
-That post, crucially, went up on WordPress.org, which on its own seems questionable. WordPress.org is ostensibly the website for the nonprofit foundation; it's supposed to exist to _prevent_ any one for-profit company from having too much power over the WordPress ecosystem.
+That post, crucially, went up on WordPress.org, which on its own seems questionable. WordPress.org is ostensibly the website for the nonprofit foundation; it's supposed to exist to _prevent_ any one for-profit company from having too much power over the WordPress ecosystem. It's supposed to be agnostic.
 
-But not only was that boundary ignored, but since the post was published as WordPress news, it was then _syndicated to each and every WordPress admin dashboard in the world_.
+Not only was that boundary ignored, but since the post was published as WordPress news, it was then _syndicated to each and every WordPress admin dashboard in the world_.
 
 Forget for a second whether you agree with Matt or not; we're getting into some of the worst of the conflicts of interest and abuses of power here.
 
 This type of maneuver, plainly, is anti-competitive. It's a flagrant exploitation of Matt's many roles and the wild control he has over many branches of WordPress, many with conflicting priorities.
 
-It's bullying, really; WP Engine doesn't have any tools to strike back like that. It can't. (Maybe it _wouldn't_, since to date, WP Engine appears to be the company that knows how its behavior is going to look when this all inevitably ends up in a courtroom.)
-
-I think Matt _thought_ WP Engine had no retaliation. I think he was _counting_ on this maneuver being yet another push towards their eventual acquiescence.
-
-But let's talk about the abuse of power here.
+It's bullying, really; WP Engine doesn't have any tools to strike back like that. It can't. (Maybe it _wouldn't_, since to date, WP Engine appears to be the company with grown-ups in the room, that knows to behave as though your actions will be examined in a courtroom one day.)
 
 <CalloutPlusQuote>
 
 This would be like Meta one day deciding it didn't like how a competitor was using React, and serving every single Facebook user a story on their home feed, brutally disparaging that competitor. It's _clearly_ a dramatic overreach.
 
 </CalloutPlusQuote>
+
+I think Matt _thought_ WP Engine had no retaliation. I think he was _counting_ on this maneuver being yet another push towards their eventual acquiescence.
 
 But Matt wasn't done. Matt went on abusing his power by updating the [WordPress trademark policy](https://wordpressfoundation.org/trademark-policy/) to _retroactively disincentivize the use of the term "WP" in titles of products and companies_. ([Here's the source on that change.](https://www.reddit.com/r/Wordpress/comments/1foknoq/the_wordpress_foundation_trademark_policy_was/))
 
@@ -298,7 +304,7 @@ But it gets even murkier from there, as the Foundation is maybe (or maybe not) W
 
 Of the other two board members, one is a blogger whose company Matt bought out, and who apparently is no longer in the industry. The other is apparently a Partner and Managing Director at—surprise!—_a private equity firm_ (not to mention a twice-failed Republican politician).
 
-Wait...isn't private equity bad? I guess not if it's on Matt's side. (For the record, Matt and his companies are tied up in private equity in other more substantial ways than this.)
+Wait...isn't private equity bad? I guess not if it's on Matt's side. (For the record, Matt and his companies are tied up in private equity in other, more substantial ways than this, but that's not worth getting into. It's all pretty hypocritical.)
 
 <CalloutPlusQuote>
 
@@ -332,17 +338,19 @@ Two really weird things happened on Wednesday.
 
 First, _out of nowhere_, Matt decides to [publish a post on his personal blog](https://ma.tt/2024/09/charitable-contributions/) outlining his charitable donations. He really frames it as though he's being victimized and bullied into revealing this information, and I suppose some people were probably (reasonably) asking how much _he_ gives, since he spent the whole week blowing up half the internet over how much WP Engine gives.
 
-He also spends a lot more time defending himself against claims of being a "mafia boss" than most people who aren't mafia bosses or acting like mafia bosses ever feel the need to do.
+In the post, he also spends a lot more time defending himself against claims of being a "mafia boss" than most people who aren't mafia bosses or acting like mafia bosses ever feel the need to do.
 
-Weird move, all around. Especially since the implication seems to be...what? "I'm a good guy so I can't do bad things"?
+Weird move all around. Especially since the implication seems to be...what? "I'm a good guy so I can't do bad things"?
 
-I tried my best to look up Matt's net worth and work out what percentage he's giving, and by the best figures I could find, we're likely at or below 5% here.
+I tried my best to look up Matt's net worth and work out what percentage he's giving, and by the best figures I could find, we're likely at or below 5% here. (He's said to be worth around $400 million, although that figure appears to be a little outdated—especially since he may or may not have [sold a shitload of user data to AI companies earlier this year](https://www.404media.co/tumblr-and-wordpress-to-sell-users-data-to-train-ai-tools/).)
 
-Which, fine, that's still millions of dollars and that's objectively a good thing.
+Which, fine, that's still millions of dollars going to charity, and that's objectively a good thing.
 
-But also: if my wife and I gave that percentage of _our_ income, it wouldn't even be enough money to get a tax deduction for it. So it's worth mentioning that just for scale.
+But also: if my wife and I gave that percentage of _our_ income, it wouldn't even be enough money to get a tax deduction for it. So it's worth mentioning that just for scale. Contextually, Matt's donating at below the standard deduction level for somebody of his net worth.
 
-So that's weird. I don't think pretty much anybody was asking for that, and regardless, it has major "look what a good guy I am" energy.
+Anyway, no matter which way you look at it, that's all weird. I don't think pretty much anybody was asking for that, and regardless, it has major "look what a good guy I am" energy.
+
+The sort of thing actual good guys don't usually have to do.
 
 Almost like Matt was trying to distract from something…
 
@@ -356,21 +364,27 @@ No more doing anything with plugins via the WordPress admin area. No installing,
 
 There are many layers to this.
 
-First: again, this is the `.org` arm of WordPress enforcing this brutal new law. The Organization, or Foundation, or _whatever_ is not _supposed_ to be controlled solely by an oligarch who can bend it to their own will, to directly benefit their own interests. It's _supposed_ to be agnostic. Its entire reason for existence was to prevent things like this from happening.
+First: again, this is the `.org` arm of WordPress enforcing this brutal new edict. The Organization, or Foundation, or _whatever_, is not _supposed_ to be controlled solely by an oligarch who can bend it to their own will, to directly benefit their own interests. It's _supposed_ to be agnostic.
 
-Second: _not being able to update plugins is a **massive** deal_. You could very well be exposing your site to vulnerabilities if plugins don't update (to say nothing of bugs). There are nonprofits, charities, government agencies, and public services that host on WP Engine, on top of countless businesses. All of those are just being thrown under the bus to serve one man's whims.
+<CalloutPlusQuote>
+
+WordPress.org's entire reason for existence, as I understood it (and I think as it was pitched to a lot of people), was explicitly to prevent things like this from happening.
+
+</CalloutPlusQuote>
+
+Second: _not being able to update plugins is a **massive** deal_. You could very well be exposing your site to security vulnerabilities if plugins don't update (to say nothing of bugs). There are nonprofits, charities, government agencies, and public services that host on WP Engine, on top of countless businesses. All of those are just being thrown under the bus to serve one man's whims.
 
 (_Yes,_ it's possible to manually update plugins, but nobody's gonna do that. Certainly not the agencies and freelancers who oversee dozens or hundreds of sites on WP Engine.)
 
 <CalloutPlusQuote>
 
-_This is carpet bombing civilians_. This is putting innocent bystanders in harm's way. This is firing the Death Star.
+This is carpet bombing civilians. This is putting innocent bystanders in harm's way. This is firing the Death Star.
 
-What Matt's done is unforgivable, no matter how right he might have been at the beginning. To unleash harm on actual _users_ of WordPress, just over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
+What Matt's done is unforgivable, no matter how right he might have been at the beginning. To unleash harm on actual _users_ of WordPress, indiscriminantly, solely over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
 
 </CalloutPlusQuote>
 
-(In the middle of all this, Pressable, a separate host Automattic owns started offering promos to help people migrate to them from WP Engine. That alone should be majorly headline-grabbing, but Matt's abuses up to this point are so egregious it barely even registers.)
+(In the middle of all this, Pressable, a separate host Automattic owns, started offering promos to help people migrate to them from WP Engine. That alone should be majorly headline-grabbing, but Matt's abuses up to this point are so egregious it barely even registers on the scale.)
 
 _You don't hurt users because you're beefing with their host_.
 
@@ -394,6 +408,8 @@ Imagine if Apple got into a dispute with Google, and blocked all text messages f
 
 Imagine if Google had a dispute with Amazon, and refused to show their messages in Gmail.
 
+And imagine if _one person_ at any one of those companies had the power to make that decision, unilaterally and without challenge.
+
 _This is the scale of thing we're talking about._ This is the collateral damage Matt has unleashed on the WordPress community, and it's not to _anyone's_ benefit except maybe Matt's and his own companies'. (For now, anyway. We'll see how it all shakes out; it seems pretty inevitable that a class action suit will follow and this all gets dragged into court.)
 
 Virtually no WordPress users are happy about this, no matter how they felt about WP Engine. Certainly, none benefit.
@@ -416,7 +432,7 @@ I don't expect him to be removed from Automattic leadership (although I think ot
 
 <CalloutPlusQuote>
 
-It's clear that the blurry lines between WordPress.org and WordPress.com should be turned into unbreachable walls, with no one company on both sides, or able to exercise power over the Foundation and/or Organization as well as a for-profit company.
+It's clear that the blurry lines between WordPress.org and WordPress.com should be turned into unbreachable walls, with no one company on both sides, or able to exercise power over the Foundation and/or Organization as well as any other for-profit company.
 
 </CalloutPlusQuote>
 
