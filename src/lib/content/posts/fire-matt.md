@@ -27,11 +27,11 @@ Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-b
 
 </Note>
 
-There are some people who think being right about something gives them a license to do whatever they think should be done about it; a license to act however they see fit in order to right that wrong.
+There are some people who think being right about something gives them the right to do whatever they think should be done about it; a license to act however they see fit in order to correct that wrong.
 
-This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how in-the-right you are, there are some things it never justifies.
+This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how in-the-right you are, there are some things it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
 
-Matt Mullenweg appears to be one of those people who believe the ends justify their means, as he's effectively just dropped a massive bomb on a huge neighborhood, in order to scare its landlords.
+Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively just dropped a bomb on a huge neighborhood, as a message to its landlords.
 
 Matt has, for far too long, enjoyed unchecked powers at the top of WordPress—powers which are all too often a direct and flagrant conflict of interest. And while we've seen this power abused before, we've never seen it on this scale.
 
@@ -39,7 +39,11 @@ And while, yes, Matt's original point _might_ be warranted, his egregious action
 
 A line has been crossed, and the entire situation is worse for it.
 
-I believe that if WordPress is to survive, Matt Mullenweg must be removed from all forms of official WordPress leadership, as expediently as possible.
+<CalloutPlusQuote>
+
+I believe that if WordPress is to survive, let alone thrive, Matt Mullenweg must be removed from all forms of official WordPress leadership, as expediently as possible.
+
+</CalloutPlusQuote>
 
 ## Wait, who are you and why do you care?
 
@@ -203,7 +207,7 @@ _If_ Matt Mullenweg had done this the right way.
 
 But Matt, being Matt _didn't_ make that point in a good way.
 
-(Sorry, this post is already too long without me going into all the times in the past he's stirred up drama and just generally been a toxic jerk to undeserving people in the WordPress community. But if you're not aware: it's become increasingly common.)
+(Sorry, this post is already too long without me going into all the times in the past he's stirred up drama and just generally been a toxic jerk to undeserving people in the WordPress community. But if you're not aware: it's become increasingly common. He was even adding public snarky comments on WP Engine employees' posts, ones who had given decades of their life to the project, as recently as yesterday.)
 
 <CalloutPlusQuote>
 
