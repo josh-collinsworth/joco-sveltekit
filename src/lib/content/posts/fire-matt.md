@@ -173,7 +173,7 @@ Having explored Matt's complaints, I'd like to pause for a moment, because this 
 
 The relatively small number of people in the community who appear to remain on Matt's side (which seems to be mostly made up of his own employees and some people with their own reasons for hating WP Engine) appear to be sticking with him because they agree with _this_ core point, i.e.: WP Engine should be doing more—maybe much more—especially considering that they're a company owned by private equity and making significant money off WordPress.
 
-**On its own, I think that claim seems perfectly fair**. We could disagree about the details, or how much is too much or too little, but I don't think it's unreasonable to say a company the size and profitability of WPE probably owes quite a lot to the open-source software it's built on. Totally fair.
+**On its own, I think that claim seems perfectly fair**. We could disagree about the details, or how much is too much or too little, but I don't think it's unreasonable to say a company the size and profitability of WPE probably owes quite a lot to the open-source software it's built on.
 
 <CalloutPlusQuote>
 
@@ -191,7 +191,7 @@ Besides, Matt's company does exactly the same thing with Jetpack, which charges 
 
 I could crudely paraphrase Matt's argument thusly: "WP Engine is a private equity-owned company that does nothing, we are a benevolent company that does way more." That's a really flimsy stance in my view, without even getting into whether we can, or should, have exactly the same expectations of both companies in the first place (which is at least questionable; Automattic has their hands in a lot more things than WP Engine does, including Tumblr, PocketCasts, Longreads, and many others things that may or may not be related to WordPress).
 
-Still, again: there's probably _some_ validity there. WP Engine is a big company that makes lots of money, and it probably wouldn't hurt that company to do more. You could make a reasonable case they owe it to WordPress.
+Still, once more: there's probably _some_ validity there. WP Engine is a big company that makes lots of money, and it probably can and should do more.
 
 <CalloutPlusQuote>
 
@@ -239,7 +239,7 @@ This type of maneuver, plainly, is anti-competitive. It's a flagrant exploitatio
 
 It's bullying, really; WP Engine doesn't have any tools to strike back like that. It can't. (Maybe it _wouldn't_, since to date, WP Engine appears to be the company that knows how its behavior is going to look when this all inevitably ends up in a courtroom.)
 
-I think Matt _though_ WP Engine had no retaliation. I think he was _counting_ on this maneuver being yet another push towards getting them to cave.
+I think Matt _thought_ WP Engine had no retaliation. I think he was _counting_ on this maneuver being yet another push towards their eventual acquiescence.
 
 But let's talk about the abuse of power here.
 
