@@ -434,7 +434,7 @@ Imagine if Microsoft got into a dispute with Apple, and decided to block npm for
 
 Imagine if Apple got into a dispute with Google, and blocked all text messages from Android phones.
 
-Imagine if Google had a dispute with Amazon, and refused to show their messages in Gmail.
+Imagine if Google had a dispute with Amazon, and blocked all Amazon communications in Gmail. Or with Walmart, and prevented store locations from showing up on Google Maps.
 
 And imagine if _one person_ at any one of those companies had the power to make that decision, unilaterally and without challenge.
 
@@ -448,11 +448,11 @@ No reasonable person could argue WordPress is in a _better_ place today than it 
 
 </CalloutPlusQuote>
 
-It's less secure, less trustworthy, more volatile, and overall just not something _anybody_ is as excited about as they were a week ago.
+It's less secure, less trustworthy, more volatile, and overall just not something _anybody_ is as excited about as they were a week ago. People who spent the majority of their lives working on this software are leaving it. Professionals are looking at new tools to sell their clients. Major sites are considering changing platforms, when they wouldn't have before.
 
-The neighborhood we all lived in just got a bomb dropped on it, by a man who's enjoyed unchecked power as the head of every branch of the current government, as it were. And he _insists_ he's doing the right thing by us for dropping that bomb. (Forgive me, I know the metaphor is beleaguered by this point, but it seems apt.)
+The neighborhood we all lived in just rocked, by a man who's enjoyed unchecked power as the head of every branch of the current government, as it were. And he _insists_ he's doing the right thing by us for blowing up a whole bunch of our homes. (Forgive me, I know the metaphor is beleaguered by this point, but it seems apt.)
 
-Matt's clearly willing to burn it all down to score a pyrrhic victory, and that's not a power he or anybody else should ever have over a community this size.
+Matt's clearly willing to burn it all down to score a pyrrhic victory, and that's not a power he or anybody else should ever have over any community, let alone one this size.
 
 Matt has to go.
 
@@ -460,8 +460,8 @@ I don't expect him to be removed from Automattic leadership (although I think ot
 
 <CalloutPlusQuote>
 
-It's clear that the blurry lines between WordPress.org and WordPress.com should be turned into unbreachable walls, with no one company on both sides, or able to exercise power over the Foundation and/or Organization as well as any other for-profit company.
+It's clear that the blurry lines between WordPress.org and WordPress.com should be turned into unbreachable walls, with no one company on both sides, or able to exercise power over the Foundation and/or Organization.
 
 </CalloutPlusQuote>
 
-I don't care about Automattic's giving 5% to WordPress anymore. I want it to give up Matt's unchecked, unilateral power. Because it's clearer than ever he can't be trusted with it.
+I don't care about Automattic giving 5% to WordPress anymore. I want it to give up Matt's unchecked, unilateral power. Because it's clearer than ever he can't be trusted with it.
