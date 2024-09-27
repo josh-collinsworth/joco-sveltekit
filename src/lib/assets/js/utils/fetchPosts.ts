@@ -1,6 +1,6 @@
+import { dev } from '$app/environment'
 import type Post from '$lib/types/post'
 import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
-import { dev } from '$app/environment'
 
 const fetchPosts = async ({
 	offset = 0,
@@ -11,23 +11,43 @@ const fetchPosts = async ({
 	let posts: Post[]
 
 	posts = await Promise.all(
-		Object.entries(import.meta.glob(`../../../content/posts/*.md`)).map(async ([path, page]) => {
-			const { metadata } = await page()
-			const slug = path.split('/').pop().split('.').shift()
-			return { ...metadata, slug }
-		})
+		Object.entries(import.meta.glob(`../../../content/posts/*.md`)).map(
+			async ([path, page]) => {
+				const { metadata } = await page()
+				const slug = path.split('/').pop().split('.').shift()
+				return { ...metadata, slug }
+			}
+		)
 	)
+
+	if (dev) {
+		const drafts = await Promise.all(
+			Object.entries(
+				import.meta.glob(`../../../content/posts/drafts/*.md`)
+			).map(async ([path, page]) => {
+				const { metadata } = await page()
+				const slug = path.split('/').pop().split('.').shift()
+				return { ...metadata, slug }
+			})
+		)
+
+		posts = [...posts, ...drafts]
+	}
 
 	if (!dev) posts = posts.filter((post) => !post.draft)
 
-	let sortedPosts = posts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+	let sortedPosts = posts.sort(
+		(a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+	)
 
 	if (category) {
 		sortedPosts = posts.filter((post) => post.categories.includes(category))
 	}
 
 	if (year) {
-		sortedPosts = posts.filter((post) => new Date(post.date).getFullYear() === year)
+		sortedPosts = posts.filter(
+			(post) => new Date(post.date).getFullYear() === year
+		)
 	}
 
 	if (offset) {

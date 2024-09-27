@@ -7,3 +7,4 @@ src/lib/content/most-retweeted.js
 src/lib/content/tweets.js
 src/routes/tweets/
 static/images/tweet_images/
+src/lib/content/posts/drafts/
