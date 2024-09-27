@@ -21,7 +21,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the poorly edited jumble of thoughts. It will likely be edited and changed. I also usually avoid cussing on my blog, but I do a little here because it feels warranted.
+This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the poorly edited jumble of thoughts. It's being actively edited. I also usually avoid cussing on my blog, but I do a little here because it feels warranted.
 
 Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-beatings-will-continue-until-morale) (unaffiliated).
 
@@ -29,15 +29,15 @@ Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-b
 
 There are some people who think being right about something gives them the right to do whatever they think should be done about it; a license to act however they see fit in order to correct that wrong.
 
-This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how in-the-right you are, there are some things it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
+This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how bad the original infraction, there are some responses it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
 
-Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively just dropped a bomb on a huge neighborhood, as a message to its landlords.
+Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively blowing up massive swaths of the WordPress community in his fight with some of its landlords.
 
 Matt has, for far too long, enjoyed unchecked powers at the top of WordPress—powers which are all too often a direct and flagrant conflict of interest. And while we've seen this power abused before, we've never seen it on this scale.
 
-And while, yes, Matt's original point _might_ be warranted, his egregious actions utterly nullify any previous merit.
+Yes, Matt's original point _might_ be warranted. But his egregious actions utterly nullify any previous merit.
 
-A line has been crossed, and the entire situation is worse for it.
+A line has been crossed, and the entire community is worse for it.
 
 <CalloutPlusQuote>
 
@@ -59,7 +59,7 @@ Yes, I used to work for WP Engine. I even kinda liked them, for a while (mostly 
 
 We don't need to dredge up a bunch of old and buried stuff that isn't really important anyway, but suffice to say: I really don't have any reason to be a WP Engine cheerleader. Most of the people I knew there have left, and I've watched from the sidelines as the company has implemented a bunch of scummy policies and shady sales tactics to squeeze money from their customers and make it harder to leave.
 
-Lots of acquaintances and old freelance clients have told me how bad it's gotten over there. On most days, if you wanted to have a conversation about how much WP Engine sucks, frankly, I'd be a happy participant.
+On most days, if you wanted to have a conversation about how much WP Engine sucks, frankly, I'd be a happy participant.
 
 So this post might be a lot of things, but I can assure you it's _not_ me defending my old company just because I used to work for them. I've got literally no reason to do that.
 
@@ -71,7 +71,9 @@ To the extent I'm on WP Engine's side, it's not because of any sense of loyalty 
 
 I'll also go on record as saying I got pretty far in the interview process at Automattic once, a few years back. And, since we're being honest, it was the absolute _worst_ interview process I've ever taken part of as a web professional (though the people themselves were lovely). But that alone ain't gonna get a post out of me. I'm not wasting my time and yours just to gripe about an interview I chose to drop out of over three years ago. Just thought it merited a mention.
 
-Ok, so I'm not a huge fan of either party.
+I still regarded Matt Mullenweg himself pretty highly after that, up until the last year or so. This post isn't long enough to get into the details, but Matt had already become a pretty "problemattic" character well before any of this went down.
+
+So in summary: I'm not a big fan of either party, and I don't have any good reason to side with either one of them.
 
 I _am_, however, somebody who still cares deeply about WordPress. It's what gave me my start, and I still recommend it to a lot of people when they ask me what system might best suit their needs.
 
@@ -131,7 +133,7 @@ WP Engine says no (actually, they ask for more time, which Matt denies and takes
 
 ### Wait—what's Matt's actual deal? Why is he doing this?
 
-Aside from the licensing issue, which I covered above, Matt's got some other complaints with WP Engine—some probably valid, some pretty shaky, in my estimation. Let's walk through them.
+Aside from the licensing issue, which I covered above (and which seems like a mostly flimsy premise to me), Matt's got some other complaints with WP Engine. Some have validity, some seem completely made-up. Let's walk through them.
 
 #### Matt claims WP Engine is misrepresenting itself
 
@@ -145,13 +147,13 @@ I'm sure it's frustrating, having taken over half the internet and being worth h
 
 First, _tons_ of companies use "WP" in their names, and/or the names of their products. Why isn't Matt going after them?
 
-Second, as many people have already noted: Matt runs both `wordpress.com` _and_ `wordpress.org`, which are entirely separate entities that do two completely different things. You wanna tell me _that's_ clear, but somehow WP Engine and WordPress.com are too similar? Really?
+Second, as many people have already noted: Matt effectively runs both `wordpress.com` _and_ `wordpress.org`, which are entirely separate entities that do two completely different things. You wanna tell me _that's_ clear, but somehow WP Engine and WordPress.com are too similar? Really?
 
-Third, my kindergartner and every kid in his class could tell the difference between the WordPress W and WP Engine's dumb logo. (WP Engine's logo has always been a grid of weird, almost-square shapes that's apparently meant to vaguely resemble an engine, but which makes no sense to pretty much anyone who's ever seen it, far as I can tell. It's a bad logo, in my professional opinion as a designer, even the slightly better version they just released recently. But I digress. Point is: it looks literally nothing like any WordPress logo. Also: it's not the same color. I have color vision deficiency, and even _I_ can tell that. Anyway…)
+Third, my kindergartner and every kid in his class could tell the difference between the WordPress W and WP Engine's dumb logo. (WP Engine's logo has always been a grid of weird, almost-square shapes that's apparently meant to vaguely resemble an engine, but which makes no sense to pretty much anyone who's ever seen it, far as I can tell. It's a bad logo, in my professional opinion as a designer, even the slightly better version they just released recently. But I digress. Point is: it looks literally nothing like any WordPress logo. Also: it's not the same color. I have color vision deficiency, and even _I_ can tell that.)
 
 Finally, for the whole two years I worked for Shopify, most of my family thought I was at Spotify. Now I'm at Deno, and nobody in my family has any clue what a JavaScript runtime is, and my dad basically thinks I work for Java.
 
-Family members don't always get tech. That's not a sign that something is wrong, and it's most _certainly_ not a sign that any wrongdoing has been committed, let alone deliberately.
+Family members don't always get tech. That's not a sign that something is wrong, and it's most _certainly_ not a sign that any wrongdoing has been committed, let alone deliberately. (Which, I assume, probably wasn't Matt's mom's point to begin with, but that didn't stop him from running with it.)
 
 #### Matt claims WP Engine is selling a "cheap knock-off" of WordPress
 
@@ -159,7 +161,13 @@ Matt also claims WP Engine is selling "something that they’ve chopped up, hack
 
 Literally, that's it. One tiny feature. The whole thing's been "hacked and butchered" because they just chose to modify one tiny detail.
 
-Of all Matt's spurious claims, this one might be the one that reeks the most of absolute made-up bullshit. WP Engine will just turn on revisions if you want them to, but that's beside the point. _It's open-source software_! You don't get to tell people how they use it! Besides, pretty much all hosts limit revisions in some way or another.
+Of all Matt's spurious claims, this one might be the one that reeks the most of absolute made-up bullshit. WP Engine will just turn on revisions if you want them to, but that's beside the point.
+
+First, if I decide to build something with, say, Laravel, but decide there's one feature I want to turn off, I'm not "hacking and butchering" Laravel. That's obviously ridiculous.
+
+Second, pretty much all hosts limit revisions in some way or another anyway, because they take up a ton of memory and most people don't really need them that bad.
+
+And third, _it's open-source software_! You don't get to tell people how they use it!
 
 We could also get into the utter hypocrisy that many of WordPress.com's plans do far, far, _far_ more invasive modifications of WordPress core (_you can't even install themes and plugins, FFS!_), but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license. This claim is clearly total garbage.
 
@@ -189,7 +197,7 @@ Having explored Matt's complaints, I'd like to pause for a moment, because this 
 
 The relatively small number of people in the community who appear to remain on Matt's side (which seems to be mostly made up of his own employees and some people with their own reasons for hating WP Engine) appear to be sticking with him because they agree with _this_ core point, i.e.: WP Engine should be doing more—maybe much more—especially considering that they're a company owned by private equity and making significant money off WordPress.
 
-**On its own, I think that claim seems perfectly fair**. We could disagree about the details, or how much is too much or too little, but I don't think it's unreasonable to say a company the size and profitability of WPE probably owes quite a lot to the open-source software it's built on.
+**On its own, I think that claim seems perfectly fair**. We could disagree about the details, or how much is too much or too little, but I don't think it's unreasonable to say a company the size and profitability of WPE probably owes quite a lot to the open-source software it's built on (ethically, at least; probably not legally).
 
 <CalloutPlusQuote>
 
@@ -199,9 +207,11 @@ So it bears mentioning that WP Engine actually _does_ do a pretty good deal for 
 
 WP Engine pays several staff members to contribute work hours to WordPress core (again, maybe the number should be greater than it is, but it's definitely not zero), on top of the full-time maintenance of plugins, themes, and apps like Advanced Custom Fields, WP Migrate, WP GraphQL, Genesis, Local WP, and many others—all of which used by countless thousands of WordPress users every day.
 
-This is to say nothing of their sponsoring of WordCamps, their own tutorials and articles, their own events, and so on and so forth.
+This is to say nothing of WP Engine sponsoring of WordCamps, creating their own tutorials and educational material, their own events, and so on and so forth.
 
-Point is: WP Engine _does_ do a lot more than zero. You could argue those contributions are not "pure" (Matt does), and that they're ultimately in service WP Engine, not the WordPress community. But in fairness: sure, they're all marketing tools in some form or another, but you don't _have_ to pay for any of them. They all get maintained, and they all have tons of users both on and off WP Engine, and they all work no matter what host you choose. (I'm sure they're all used on WordPress.com, too. I'd even use some of those things if I had to spin up a WordPress site tomorrow.)
+Point is: WP Engine _does_ do a lot more than zero. You could argue those contributions are not "pure" (Matt does), and that they're ultimately in service WP Engine, not the WordPress community.
+
+But in fairness: sure, they're all marketing tools in some form or another, but you don't _have_ to pay for any of them. They all get maintained, they all have tons of users both on and off WP Engine, and they all work no matter what host you choose. (I'm sure they're all used on WordPress.com. I'd even use some of those things if I had to spin up a WordPress site tomorrow, even if I probably wouldn't host on WP Engine, personally. I'd probably choose SpinupWP, myself, which is another company with "WP" in the name that Matt apparently doesn't care about.)
 
 Besides, Matt's company does exactly the same thing with Jetpack, which charges $5–$50 per month, depending on tier, so...not sure where that moral high ground is supposed to be coming from. Is Automattic really gonna claim Jetpack's paid features are purely for the altruistic benefit of the community? Why do _they_ get a pass on paid features?
 
