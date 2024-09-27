@@ -185,7 +185,7 @@ Regardless, Matt seems irked that WP Engine isn't abiding by the ["Five for the 
 
 But it's not a requirement, or a policy, and enforcing it as such—acting unilaterally as the WordPress police, let alone so suddenly and violently—is extremely questionable and deeply troubling. (Not to mention a likely deterrent for people and organizations who might want to participate in the WordPress space.)
 
-Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way, because again: Matt's taken it upon himself to be WP PD to enforce a law that isn't even a law.
+Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way, because again: Matt's taken it upon himself to act as the WP PD to enforce a law that isn't even a law.
 
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
@@ -197,11 +197,11 @@ Having explored Matt's complaints, I'd like to pause for a moment, because this 
 
 The relatively small number of people in the community who appear to remain on Matt's side (which seems to be mostly made up of his own employees and some people with their own reasons for hating WP Engine) appear to be sticking with him because they agree with _this_ core point, i.e.: WP Engine should be doing more—maybe much more—especially considering that they're a company owned by private equity and making significant money off WordPress.
 
-**On its own, I think that claim seems perfectly fair**. We could disagree about the details, or how much is too much or too little, but I don't think it's unreasonable to say a company the size and profitability of WPE probably owes quite a lot to the open-source software it's built on (ethically, at least; probably not legally).
+**On its own, I think that claim seems perfectly fair**. We could disagree about the details, or how much is too much or too little, but I don't think it's unreasonable to say a company the size and profitability of WPE probably owes quite a lot to the open-source software it's built on (ethically, at least; likely not legally).
 
 <CalloutPlusQuote>
 
-So it bears mentioning that WP Engine actually _does_ do a pretty good deal for WordPress. You can cherry-pick specific ways it maybe hasn't contributed much, and you could certainly make a reasonable case they should be doing more. But to say they've given "$0" strikes me as pretty deliberately misleading.
+So it bears mentioning that WP Engine actually _does_ do a pretty good deal for WordPress. You can cherry-pick specific ways it hasn't contributed much, and you could certainly make a reasonable case they should be doing more. But to say they've given "$0" strikes me as pretty deliberately misleading.
 
 </CalloutPlusQuote>
 
@@ -209,9 +209,9 @@ WP Engine pays several staff members to contribute work hours to WordPress core 
 
 This is to say nothing of WP Engine sponsoring of WordCamps, creating their own tutorials and educational material, their own events, and so on and so forth.
 
-Point is: WP Engine _does_ do a lot more than zero. You could argue those contributions are not "pure" (Matt does), and that they're ultimately in service WP Engine, not the WordPress community.
+Point is: WP Engine _does_ do a lot more than zero. You could argue those contributions are not "pure" (Matt does), and that they're ultimately in service to WP Engine, and not the WordPress community.
 
-But in fairness: sure, they're all marketing tools in some form or another, but you don't _have_ to pay for any of them. They all get maintained, they all have tons of users both on and off WP Engine, and they all work no matter what host you choose. (I'm sure they're all used on WordPress.com. I'd even use some of those things if I had to spin up a WordPress site tomorrow, even if I probably wouldn't host on WP Engine, personally. I'd probably choose SpinupWP, myself, which is another company with "WP" in the name that Matt apparently doesn't care about.)
+But in fairness: sure, they're all marketing tools in some form or another, but you don't _have_ to pay for any of them. They all get maintained, they all have tons of users both on and off WP Engine, and they all work no matter what host you choose. (I'm sure they're all used on WordPress.com. I'd even use some of those things if I had to spin up a WordPress site tomorrow, even if I probably wouldn't host on WP Engine, personally. I'd probably choose [SpinupWP](https://spinupwp.com/), myself, which is another company with "WP" in the name that Matt apparently doesn't care about.)
 
 Besides, Matt's company does exactly the same thing with Jetpack, which charges $5–$50 per month, depending on tier, so...not sure where that moral high ground is supposed to be coming from. Is Automattic really gonna claim Jetpack's paid features are purely for the altruistic benefit of the community? Why do _they_ get a pass on paid features?
 
