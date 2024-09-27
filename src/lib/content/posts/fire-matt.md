@@ -269,7 +269,7 @@ But yet...he's burning WordPress to the ground to make that point.
 
 Following all this, WP Engine—quite understandably—doesn't really care for all of their users seeing that negative messaging in their wp-admin. So, WP Engine finds a way to block the news feed on WP Engine sites.
 
-Maybe a thing you'd probably support in a vacuum, but we're steeped in context at this point. (A lot of users either turn it off or ignore it on their own anyway, for what it's worth.)
+That would be questionable in a vacuum, to be sure. But we're steeped in context at this point. (A lot of users either turn it off or ignore it on their own anyway, for what it's worth.)
 
 
 Following WordCamp US, WP Engine _also_ sent a [cease-and-desist](https://wpengine.com/wp-content/uploads/2024/09/Cease-and-Desist-Letter-to-Automattic-and-Request-to-Preserve-Documents-Sent.pdf) to Automattic. It's pretty damning, and does a good job laying out all the points I tried to cover above. (In short: Matt tried to extort money from WP Engine for spurious licensing claims and use disinformation to do it.)
