@@ -21,7 +21,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the hastily written, poorly edited jumble of thoughts. It will likely be edited and changed.
+This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the poorly edited jumble of thoughts. It will likely be edited and changed.
 
 Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-beatings-will-continue-until-morale) (unaffiliated).
 
