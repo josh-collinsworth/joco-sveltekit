@@ -117,7 +117,7 @@ Again: this demand was ostensibly in exchange for a "license" to use terms like 
 
 The only _possible_ exception seems to be "WooCommerce," which _is_ a trademark (and product/company) owned by Automattic. However, the lines are very blurry on what is and is not permissable when it comes to using the WooCommerce name. WP Engine does indeed call one of its offerings "WooCommerce hosting," which is explicitly called out in the guidelines.
 
-However, for one thing, it's hard to know how much the trademark guidelines might have been changed in the lead-up to all of this. Matt made several changes to the WordPress license page in the last week, among other things, to call out WP Engine. I don't trust that the WooCommerce license page I'm looking at today is the same as it was last week—which, all on its own, should be setting off raging alarms for even the most casual of observers. (Back to that "updated terms of service" thing. It's bad news when the company you're doing business with can just decide what the new terms are with no warning.)
+However, for one thing, it's hard to know how much the trademark guidelines might have been changed in the lead-up to all of this. Matt made several changes to the WordPress license page in the last week, among other things, to call out WP Engine. I don't trust that the WooCommerce license page I'm looking at today is the same as it was last week—which, all on its own, should be setting off raging alarms for even the most casual of observers. It's extremely bad news when the company you're doing business with can just decide what the new terms are with no warning or recourse.
 
 Anyway, Matt keeps sending the DMs all the way up until the literal last minute, offering _not_ to excoriate WP Engine onstage during his keynote at the country's (continent's? world's?) largest WordPress event, provided they simply pay up.
 
@@ -205,7 +205,7 @@ Still, once more: there's probably _some_ validity there. WP Engine is a big com
 
 <CalloutPlusQuote>
 
-_Matt could've make that point_. I think most people would've agreed with him, if he had gone about it properly. We'd probably be lining up with him. There was a way to rally the community around this.
+_Matt could've made that point_. I think most people would've agreed with him, if he had gone about it properly. We'd probably be lining up with him. There was a way to rally the community around this.
 
 </CalloutPlusQuote>
 
