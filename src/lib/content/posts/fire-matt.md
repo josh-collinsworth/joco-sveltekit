@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-09-27
+updated: 2024-09-28
 categories:
   - opinion
   - web
@@ -21,7 +21,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the poorly edited jumble of thoughts. It's being actively edited. I also usually avoid cussing on my blog, but I do a little here because it feels warranted.
+This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the jumble of thoughts. It's being actively edited, though I've noted updates made since the original publish date. I also usually avoid cussing on my blog, but I do a little here because it feels warranted.
 
 Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-beatings-will-continue-until-morale) (unaffiliated).
 
@@ -29,7 +29,7 @@ Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-b
 
 There are some people who think being right about something gives them the right to do whatever they think should be done about it; a license to act however they see fit in order to correct that wrong.
 
-This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how bad the original infraction, there are some responses it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
+This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how egregious the original infraction, there are some responses it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
 
 Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively blowing up massive swaths of the WordPress community in his fight with some of its landlords.
 
@@ -119,6 +119,8 @@ Let's not beat around the bush: words like "threat" and "extortion" very much ap
 
 </CalloutPlusQuote>
 
+[Edit 9/28/24: I left out that Matt's demands included the alternative option for WP Engine to "pay" in contribution hours; i.e., instead of cash, they could just donate employee work hours to WordPress. I didn't feel this was important, since ultimately it all shakes out the same (ha), but I suppose it's relevant information.]
+
 Again: this demand was ostensibly in exchange for a "license" to use terms like "WordPress," "WordPress hosting," "WooCommerce," etc.—none of which appear to be actually necessary.
 
 The only _possible_ exception seems to be "WooCommerce," which _is_ a trademark (and product/company) owned by Automattic. However, the lines are very blurry on what is and is not permissable when it comes to using the WooCommerce name. WP Engine does indeed call one of its offerings "WooCommerce hosting," which is explicitly called out in the guidelines. So I don't know, _maybe_ there's validity there. _Maybe_.
@@ -155,11 +157,13 @@ Finally, for the whole two years I worked for Shopify, most of my family thought
 
 Family members don't always get tech. That's not a sign that something is wrong, and it's most _certainly_ not a sign that any wrongdoing has been committed, let alone deliberately. (Which, I assume, probably wasn't Matt's mom's point to begin with, but that didn't stop him from running with it.)
 
+[Update 9/28/24: As an additional point here: if the problem was confusion around WP Engine's name, why not just ask them for a name change? Why all the contribution stuff, too? Conversely, if Matt's beef was with WP Engine's lack of contribution, why is he going after their name and marketing? It feels very much like Matt's just trying to cobble together all the reasons he can think of to justify his assault, in my opinion.]
+
 #### Matt claims WP Engine is selling a "cheap knock-off" of WordPress
 
 Matt also claims WP Engine is selling "something that they’ve chopped up, hacked, butchered to look like WordPress." His reason for this wild claim? Because WP Engine disables revisions (a default feature of WordPress, albeit a pretty small one).
 
-Literally, that's it. One tiny feature. The whole thing's been "hacked and butchered" because they just chose to modify one tiny detail.
+Literally, that's it. One tiny feature. The whole thing's been "hacked and butchered" because they just chose to modify one mostly insignificant detail.
 
 Of all Matt's spurious claims, this one might be the one that reeks the most of absolute made-up bullshit. WP Engine will just turn on revisions if you want them to, but that's beside the point.
 
@@ -261,7 +265,7 @@ Anyway, back to the timeline. (Note: I may have the chronology slightly mixed up
 
 At some point in this chaos (during his keynote at WCUS, or shortly after), Matt used his sway over every branch of power in the WordPress government to write a blog post called "[WP Engine is not WordPress](https://wordpress.org/news/2024/09/wp-engine/)," (which isn't something anybody seems to have been confused about, except of course Matt's mom).
 
-That post, crucially, went up on WordPress.org, which on its own seems questionable. WordPress.org is ostensibly the website for the nonprofit foundation; it's supposed to exist to _prevent_ any one for-profit company from having too much power over the WordPress ecosystem. It's supposed to be agnostic.
+That post lambasts WP Engine for all of the already discussed reasons. It also, crucially, went up on WordPress.org, which on its own seems questionable. WordPress.org is ostensibly the website for the nonprofit foundation; it's supposed to exist to _prevent_ any one for-profit company from having too much power over the WordPress ecosystem. It's supposed to be agnostic.
 
 Not only was that boundary ignored, but since the post was published as WordPress news, it was then _syndicated to each and every WordPress admin dashboard in the world_.
 
@@ -428,7 +432,7 @@ The weapons Matt Mullenweg has wielded unilaterally in this war shouldn't even _
 
 </CalloutPlusQuote>
 
-I believe the ability to block an entire hosting provider from accessing the plugins repository is a power that nobody should have. If one could _ever_ be justified in the use of such unthinkably drastic measures, this case most certainly isn't extreme enough to do that.
+I believe the ability to block an entire hosting provider from accessing the plugins repository is a power that nobody should have. If such unthinkably drastic measures could _ever_ be justified, this case most certainly doesn't seem extreme enough for that.
 
 Imagine if Microsoft got into a dispute with Apple, and decided to block npm for anyone using a Mac.
 
