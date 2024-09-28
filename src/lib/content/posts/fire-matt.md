@@ -255,7 +255,7 @@ It seems to me that most people agree it does _not_; that Matt's committed too m
 
 <CalloutPlusQuote>
 
-Matt had a problem with the landlords, so he carpet bombed the neighborhood. He didn't like Alderaan's leaders, and so he fired the Death Star. And now it doesn't really matter what his original point was; he's made himself the bad guy.
+Matt had a problem with the landlords, so he set fire to the building. He disagreed with Alderaan's leaders, and so he fired the Death Star. And now it doesn't really matter what his original point was; he's made himself the bad guy.
 
 </CalloutPlusQuote>
 
@@ -396,7 +396,7 @@ Second: _not being able to update plugins is a **massive** deal_. You could very
 
 <CalloutPlusQuote>
 
-This is bombing civilians. This is putting innocent bystanders in harm's way. This is firing the Death Star.
+This is setting fire to the commons. This is putting innocent bystanders in harm's way. This is firing the Death Star.
 
 What Matt's done is unforgivable, no matter how right he might have been at the beginning. To unleash harm on actual _users_ of WordPress, indiscriminantly, solely over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
 
@@ -404,9 +404,7 @@ What Matt's done is unforgivable, no matter how right he might have been at the 
 
 (In the middle of all this, Pressable, a separate host Automattic owns, started offering promos to help people migrate to them from WP Engine. That alone should be majorly headline-grabbing, but Matt's abuses up to this point are so egregious it barely even registers on the scale.)
 
-_You don't hurt users because you're beefing with their host_.
-
-You don't bomb civilians because they live near a criminal, you don't shoot at innocent bystanders because a terrorist is hiding behind them, and you don't fire the Death Star because you disagree with Alderaan's government.
+_You don't hurt users because you're beefing with their host_. You don't put innocent bystanders in harm's way.
 
 It no longer matters what this was all about at that point, or whether you were originally right or not. _You are irreversibly the bad guy now_.
 
