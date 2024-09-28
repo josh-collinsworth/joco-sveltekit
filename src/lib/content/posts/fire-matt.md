@@ -31,7 +31,7 @@ There are some people who think being right about something gives them the right
 
 This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how egregious the original infraction, there are some responses it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
 
-Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively blowing up massive swaths of the WordPress community in his fight with some of its landlords.
+Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively spent the week causing destruction and collateral damage to countless WordPress sites and users, in his fight with some of its landlords.
 
 Matt has, for far too long, enjoyed unchecked powers at the top of WordPress—powers which are all too often a direct and flagrant conflict of interest. And while we've seen this power abused before, we've never seen it on this scale.
 
@@ -452,7 +452,7 @@ No reasonable person could argue WordPress is in a _better_ place today than it 
 
 It's less secure, less trustworthy, more volatile, and overall just not something _anybody_ is as excited about as they were a week ago. People who spent the majority of their lives working on this software are leaving it. Professionals are looking at new tools to sell their clients. Major sites are considering changing platforms, when they wouldn't have before.
 
-The neighborhood we all lived in just rocked, by a man who's enjoyed unchecked power as the head of every branch of the current government, as it were. And he _insists_ he's doing the right thing by us for blowing up a whole bunch of our homes. (Forgive me, I know the metaphor is beleaguered by this point, but it seems apt.)
+We all sat by as one of our neighboring planets just got fired upon (forgive me, I'm going to the Death Star metaphor one last time). And as if that weren't bad enough, the man who ordered that strike _insists_ he's doing the right thing, by putting our neighbors directly in the path of harm, and incinerating the trust and security of our shared community.
 
 Matt's clearly willing to burn it all down to score a pyrrhic victory, and that's not a power he or anybody else should ever have over any community, let alone one this size.
 
