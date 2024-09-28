@@ -31,7 +31,7 @@ There are some people who think being right about something gives them the right
 
 This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how egregious the original infraction, there are some responses it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
 
-Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively spent the week causing destruction and collateral damage to countless WordPress sites and users, in his fight with some of its landlords.
+Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively spent the week causing destruction and collateral damage to countless WordPress sites and users, in his fight with one of their landlords.
 
 Matt has, for far too long, enjoyed unchecked powers at the top of WordPress—powers which are all too often a direct and flagrant conflict of interest. And while we've seen this power abused before, we've never seen it on this scale.
 
