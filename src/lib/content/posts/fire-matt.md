@@ -261,11 +261,13 @@ Matt had a problem with the landlords, so he set fire to the building. He disagr
 
 </CalloutPlusQuote>
 
+There are some people who just keep reading about all this and saying "but, but WP Engine…" and my dude, _it does not matter_. (It's always a dude.) We're past that point. We've all seen a sporting match where one player commits a minor foul, and it enrages an opposing player into a frenzy of flagrant violations that gets them tossed from the game. That's basically where we are; Matt's the second guy. Whatever he was reacting to: sure, it existed, and you can point to it all you want. But if that's all you're focused on, you're severely missing the point.
+
 Anyway, back to the timeline. (Note: I may have the chronology slightly mixed up here on a few of the points, but I don't think it should really matter.)
 
 ### The WordCamp US fallout and Matt's abuse of power
 
-At some point in this chaos (during his keynote at WCUS, or shortly after), Matt used his sway over every branch of power in the WordPress government to write a blog post called "[WP Engine is not WordPress](https://wordpress.org/news/2024/09/wp-engine/)," (which isn't something anybody seems to have been confused about, except of course Matt's mom).
+At some point in this chaos (during his keynote at WCUS, or shortly after), Matt used his control over every branch of power in the WordPress government to publish a post titled “[WP Engine is not WordPress](https://wordpress.org/news/2024/09/wp-engine/)” (which isn't something anybody seems to have been confused about, except of course Matt's mom).
 
 That post lambasts WP Engine for all of the already discussed reasons. It also, crucially, went up on WordPress.org, which on its own seems questionable. WordPress.org is ostensibly the website for the nonprofit foundation; it's supposed to exist to _prevent_ any one for-profit company from having too much power over the WordPress ecosystem. It's supposed to be agnostic.
 
@@ -283,13 +285,11 @@ This would be like Meta one day deciding it didn't like how a competitor was usi
 
 </CalloutPlusQuote>
 
-I think Matt _thought_ WP Engine had no retaliation. I think he was _counting_ on this maneuver being yet another push towards their eventual acquiescence. But I guess it doesn't matter; that's just my speculation.
+But Matt wasn't done. Matt went on flexing (read: abusing) his power by updating the [WordPress trademark policy](https://wordpressfoundation.org/trademark-policy/) to _retroactively disincentivize the use of the term "WP" in titles of products and companies_. ([Here's the source on that change.](https://www.reddit.com/r/Wordpress/comments/1foknoq/the_wordpress_foundation_trademark_policy_was/))
 
-In any case, Matt wasn't done. Matt went on flexing (read: abusing) his power by updating the [WordPress trademark policy](https://wordpressfoundation.org/trademark-policy/) to _retroactively disincentivize the use of the term "WP" in titles of products and companies_. ([Here's the source on that change.](https://www.reddit.com/r/Wordpress/comments/1foknoq/the_wordpress_foundation_trademark_policy_was/))
+I want to emphasize the word "retroactively" in the above paragraph. You know why you constantly get notifications saying "we've updated our terms"? Because you legally _have_ to do that. To just change the terms without letting people know is shady at best, and actively malicious at worst.
 
-You know why you constantly get notifications saying "we've updated our terms"? Because you legally _have_ to do that. To just change the terms without letting people know is shady at best, and actively malicious at worst.
-
-Well, Matt just went in and changed the terms.
+Well, Matt just went in and changed the rules everyone's been playing by this whole time.
 
 <CalloutPlusQuote>
 
@@ -303,10 +303,9 @@ But yet...he's burning WordPress to the ground to make that point.
 
 ### WP Engine's reaction
 
-Following all this, WP Engine—quite understandably—doesn't really care for all of their users seeing that negative messaging in their wp-admin. So, WP Engine finds a way to block the news feed on WP Engine sites.
+WP Engine—quite understandably—doesn't really care for all of their users seeing that smear blog post in their wp-admin. So, WP Engine finds a way to block the news feed on WP Engine sites.
 
-That would be questionable in a vacuum, to be sure. But we're steeped in context at this point. (A lot of users either turn it off or ignore it on their own anyway, for what it's worth.)
-
+That would be questionable in a vacuum, to be sure. But we're steeped in context at this point. (A lot of users either turn off the news feed, or ignore it on their own anyway, for what it's worth.) I have to assume this was only meant to be temporary, until the post cycled out of the most recent headlines, but either way: maybe not great, but probably not very impactful.
 
 Following WordCamp US, WP Engine _also_ sent a [cease-and-desist](https://wpengine.com/wp-content/uploads/2024/09/Cease-and-Desist-Letter-to-Automattic-and-Request-to-Preserve-Documents-Sent.pdf) to Automattic. It's pretty damning, and does a good job laying out all the points I tried to cover above. (In short: Matt tried to extort money from WP Engine for spurious licensing claims, and used disinformation, or at least heavily slanted data, to do it.)
 
@@ -328,7 +327,7 @@ Wait...isn't private equity bad? I guess not if it's on Matt's side. (For the re
 
 <CalloutPlusQuote>
 
-It appears neither of the other two Foundation board members is active, and therefore, Matt is essentially, behind the curtains, the King, Prime Minister, and Pope when it comes to WordPress.
+It appears neither of the other two Foundation board members is active, and therefore, behind the curtains, Matt is the King, Prime Minister, and Pope when it comes to WordPress.
 
 </CalloutPlusQuote>
 
@@ -338,11 +337,11 @@ Also: Matt apparently kinda sorta owns WordPress.org, too. So he has a dizzying 
 
 <CalloutPlusQuote>
 
-Let's not leave unspoken the irony that the guy who basically _is_ WordPress.com, _and_ WordPress.org, ***and*** the WordPress Foundation, wants you to think the name "WP Engine" is confusing.
+Let's acknowledge the irony that the guy who basically _is_ WordPress.com, _and_ WordPress.org, ***and*** the WordPress Foundation, wants you to think the name "WP Engine" is confusing.
 
 </CalloutPlusQuote>
 
-Anyway. [Automattic responded](https://automattic.com/2024/09/25/open-source-trademarks-wp-engine/) by sending its own cease-and-desist to WP Engine, claiming mainly that WP Engine is deliberately confusing people, and that it owes licensing to...someone. Automattic, I guess, though the lines are so blurry it's clear the separations between WordPress entities were only ever little more than a smokescreen.
+Anyway. [Automattic responded](https://automattic.com/2024/09/25/open-source-trademarks-wp-engine/) by sending its own cease-and-desist to WP Engine, claiming mainly that WP Engine is deliberately confusing people, and that it owes licensing to...someone. Automattic, I guess, though the lines are so blurry it's clear the separations between WordPress entities were always little more than a smokescreen.
 
 ---
 
@@ -350,7 +349,7 @@ Anyway. [Automattic responded](https://automattic.com/2024/09/25/open-source-tra
 
 I guess they technically are. But when one person apparently enjoys unchecked control over all of them…
 
-[Guitar begins strumming with Alanis Morissette vocalizing]
+[Guitar strumming begins with Alanis Morissette vocalizing]
 
 ### Matt melts down
 
@@ -392,7 +391,7 @@ WordPress.org's entire reason for existence, as I understood it (and I think as 
 
 </CalloutPlusQuote>
 
-Second: _not being able to update plugins is a **massive** deal_. You could very well be exposing your site to security vulnerabilities if plugins don't update (to say nothing of bugs). There are nonprofits, charities, government agencies, and public services that host on WP Engine, on top of countless businesses. All of those are just being thrown under the bus to serve one man's whims.
+Second: _not being able to update plugins can be a **massive** deal_. You could very well be exposing your site to security vulnerabilities if plugins don't update (to say nothing of bugs). There are nonprofits, charities, government agencies, and public services that host on WP Engine, on top of countless businesses. All of those are just being thrown under the bus to serve one man's whims.
 
 (_Yes,_ it's possible to manually update plugins, but nobody's gonna do that. Certainly not the agencies and freelancers who oversee dozens or hundreds of sites on WP Engine.)
 
@@ -400,11 +399,11 @@ Second: _not being able to update plugins is a **massive** deal_. You could very
 
 This is setting fire to the commons. This is putting innocent bystanders in harm's way. This is firing the Death Star.
 
-What Matt's done is unforgivable, no matter how right he might have been at the beginning. To unleash harm on actual _users_ of WordPress, indiscriminantly, solely over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
+What Matt's done is unforgivable, no matter how good of a point he might have had at the beginning. To unleash harm on actual _users_ of WordPress, indiscriminantly, solely over where they choose to host their sites, is an unconscionable, terroristic abuse of power.
 
 </CalloutPlusQuote>
 
-(In the middle of all this, Pressable, a separate host Automattic owns, started offering promos to help people migrate to them from WP Engine. That alone should be majorly headline-grabbing, but Matt's abuses up to this point are so egregious it barely even registers on the scale.)
+(In the middle of all this, Pressable, a separate host Automattic owns, started offering promos to help people migrate to them, from WP Engine. That alone should be majorly headline-grabbing, since Matt's abuses of power are the main reason anybody would even be considering leaving WP Engine right now to begin with. But Matt's other abuses are so egregious this one barely even registers on the scale.)
 
 _You don't hurt users because you're beefing with their host_. You don't put innocent bystanders in harm's way.
 
