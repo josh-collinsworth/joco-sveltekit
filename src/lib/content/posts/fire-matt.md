@@ -183,13 +183,15 @@ Matt's other complaint—and I think this is what everything else really boils d
 
 </CalloutPlusQuote>
 
-Matt showed some numbers onscreen at WCUS, comparing Automattic's contributions to WP Engine's. But I'm not going to repeat them because I'm certain they're distorted. Besides, I'm not sure the two companies' work can, or _should_, be considered directly comparable in the first place. They do different things in different ways, and there's no law or license mandating either of them do anything to begin with.
+Matt showed some numbers onscreen at WCUS, comparing Automattic's contributions to WP Engine's. But I'm not going to repeat them because I'm certain they're heavily distorted. Besides, I'm not sure the two companies' work can, or _should_, be considered directly comparable in the first place. They do different things in different ways, and there's no law or license mandating either of them do anything to begin with.
 
 Regardless, Matt seems irked that WP Engine isn't abiding by the ["Five for the Future" program, outlined on WordPress.org](https://wordpress.org/five-for-the-future). Five for the Future asks that if you benefit from WordPress, you give back 5% of your time directly to that open-source project, which I think pretty much everyone can agree is a very noble and admirable aspiration that companies such as these involved _should_ probably be doing.
 
 But it's not a requirement, or a policy, and enforcing it as such—acting unilaterally as the WordPress police, let alone so suddenly and violently—is extremely questionable and deeply troubling. (Not to mention a likely deterrent for people and organizations who might want to participate in the WordPress space.)
 
 Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way, because again: Matt's taken it upon himself to act as the WP PD to enforce a law that isn't even a law.
+
+[Edit 9/28/24: It's also worth calling out that Matt is the one doing _all_ the math on _both_ companies' contributions, and he's quite obviously skewing the numbers heavily in his own favor, as I explore more in the next section. Even without seeing the full ledger, it's clear Matt's making some highly suspect choices on what counts and what doesn't. If he wanted to make the point that WPE was doing less than his company, he really should've showed up with something at least vaguely resembling an objective tally. But the numbers he showed fall apart at even a cursory examination, and even if a less biased dataset would've still made his point, it really damages Matt's credibility that he came in with such blatantly one-sided figures.]
 
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
@@ -199,7 +201,7 @@ But we're not in a vacuum; there's a lot of context here. So I'd like to talk ab
 
 Having explored Matt's complaints, I'd like to pause for a moment, because this is where the sides seems to diverge.
 
-The relatively small number of people in the community who appear to remain on Matt's side (which seems to be mostly made up of his own employees and some people with their own reasons for hating WP Engine) appear to be sticking with him because they agree with _this_ core point, i.e.: WP Engine should be doing more—maybe much more—especially considering that they're a company owned by private equity and making significant money off WordPress.
+The relatively small minority of people in the community who appear to remain on Matt's side (which seems to be mostly made up of his own employees and some people with their own reasons for hating WP Engine) appear to be sticking with him because they agree with _this_ core point, i.e.: WP Engine should be doing more—maybe much more—especially considering that they're a company owned by private equity and making significant money off WordPress.
 
 **On its own, I think that claim seems perfectly fair**. We could disagree about the details, or how much is too much or too little, but I don't think it's unreasonable to say a company the size and profitability of WPE probably owes quite a lot to the open-source software it's built on (ethically, at least; likely not legally).
 
@@ -215,7 +217,7 @@ This is to say nothing of WP Engine sponsoring of WordCamps, creating their own 
 
 Point is: WP Engine _does_ do a lot more than zero. You could argue those contributions are not "pure" (Matt does), and that they're ultimately in service to WP Engine, and not the WordPress community.
 
-But in fairness: sure, they're all marketing tools in some form or another, but you don't _have_ to pay for any of them. They all get maintained, they all have tons of users both on and off WP Engine, and they all work no matter what host you choose. (I'm sure they're all used on WordPress.com. I'd even use some of those things if I had to spin up a WordPress site tomorrow, even if I probably wouldn't host on WP Engine, personally. I'd probably choose [SpinupWP](https://spinupwp.com/), myself, which is another company with "WP" in the name that Matt apparently doesn't care about.)
+But in fairness: sure, they're all marketing tools in some form or another, but you don't _have_ to pay for any of them. They all get maintained by WP Engine, they all have tons of users both on and off WP Engine, and they all work no matter what host you choose. (I'm sure they're all used on WordPress.com. I'd even use some of those things if I had to spin up a WordPress site tomorrow, even if I probably wouldn't host on either WPE or WordPress.com, personally. I'd probably choose [SpinupWP](https://spinupwp.com/), myself, which is another company with "WP" in the name that Matt apparently doesn't care about.)
 
 Besides, Matt's company does exactly the same thing with Jetpack, which charges $5–$50 per month, depending on tier, so...not sure where that moral high ground is supposed to be coming from. Is Automattic really gonna claim Jetpack's paid features are purely for the altruistic benefit of the community? Why do _they_ get a pass on paid features?
 
@@ -320,7 +322,7 @@ Second, while Automattic _does_ apparently own the WooCommerce copyright, it doe
 
 But it gets even murkier from there, as the Foundation is maybe (or maybe not) WordPress.org? And either way, the Foundation is apparently three people, and Matt Mullenweg is not only one of them, he appears to be _the only active one_!
 
-Of the other two board members, one is a blogger whose company Matt bought out, and who apparently is no longer in the industry. The other is apparently a Partner and Managing Director at—surprise!—_a private equity firm_ (not to mention a twice-failed Republican politician).
+Of the other two board members, one is a blogger whose company Matt bought out, and who apparently is no longer in the industry. The other is reportedly a Partner and Managing Director at—surprise!—_a private equity firm_ (not to mention a twice-failed Republican politician).
 
 Wait...isn't private equity bad? I guess not if it's on Matt's side. (For the record, Matt and his companies are tied up in private equity in other, more substantial ways than this, but that's not worth getting into. It's all pretty hypocritical.)
 
@@ -438,9 +440,9 @@ Imagine if Apple got into a dispute with Google, and blocked all text messages f
 
 Imagine if Google had a dispute with Amazon, and blocked all Amazon communications in Gmail. Or with Walmart, and prevented store locations from showing up on Google Maps.
 
-And imagine if _one person_ at any one of those companies had the power to make that decision, unilaterally and without challenge.
+And imagine if _one person_ at any one of those companies had both the power to make that decision, ***and*** was the sole arbiter of what justified that measure, unilaterally and without challenge.
 
-_This is the scale of thing we're talking about._ This is the collateral damage Matt has unleashed on the WordPress community, and it's not to _anyone's_ benefit except maybe Matt's and his own companies'. (For now, anyway. We'll see how it all shakes out; it seems pretty inevitable that a class action suit will follow and this all gets dragged into court.)
+_This is the scale of thing we're talking about._ This is the collateral damage Matt has unleashed on the WordPress community, and it's not to _anyone's_ benefit, except maybe Matt's and his own companies'. (For now, anyway. We'll see how it all shakes out; it seems pretty inevitable that a class action suit will follow and this all gets dragged into court.)
 
 Virtually no WordPress users are happy about this, no matter how they felt about WP Engine. Certainly, none benefit.
 
@@ -458,7 +460,7 @@ Matt's clearly willing to burn it all down to score a pyrrhic victory, and that'
 
 Matt has to go.
 
-I don't expect him to be removed from Automattic leadership (although I think others in leadership absolutely _should_ be considering whether that's the right move). But in any case:
+I don't expect him to be removed from Automattic leadership (although if there actually _is_ a board, or other people who can challenge Matt's power in that company, I think they absolutely _should_ be considering whether that's the right move for the company). But in any case:
 
 <CalloutPlusQuote>
 
