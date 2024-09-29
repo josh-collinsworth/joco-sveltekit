@@ -191,7 +191,7 @@ But it's not a requirement, or a policy, and enforcing it as such—acting unila
 
 Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way, because again: Matt's taken it upon himself to act as the WP PD to enforce a law that isn't even a law.
 
-[Edit 9/28/24: It's also worth calling out that Matt is the one doing _all_ the math on _both_ companies' contributions, and he's quite obviously skewing the numbers heavily in his own favor, as I explore more in the next section. Even without seeing the full ledger, it's clear Matt's making some highly suspect choices on what counts and what doesn't. If he wanted to make the point that WPE was doing less than his company, he really should've showed up with something at least vaguely resembling an objective tally. But the numbers he showed fall apart at even a cursory examination, and even if a less biased dataset would've still made his point, it really damages Matt's credibility that he came in with such blatantly one-sided figures.]
+[Edit 9/28/24: It's also worth calling out that Matt is the one doing _all_ the math on _both_ companies' contributions, and he's quite obviously skewing the numbers heavily in his own favor, as I explore more in the next section. Even without seeing the full ledger, it's pretty clear Matt's making some highly suspect choices on what counts and what doesn't. He really should've showed up with something at least vaguely resembling an objective tally if he wanted to make this point. The numbers he showed fall apart at even a cursory examination. And even if an unbiased dataset would still agree with him, it seriously damages Matt's credibility that he came in with such blatantly one-sided figures.]
 
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
@@ -261,7 +261,9 @@ Matt had a problem with the landlords, so he set fire to the building. He disagr
 
 </CalloutPlusQuote>
 
-There are some people who just keep reading about all this and saying "but, but WP Engine…" and my dude, _it does not matter_. (It's always a dude.) We're past that point. We've all seen a sporting match where one player commits a minor foul, and it enrages an opposing player into a frenzy of flagrant violations that gets them tossed from the game. That's basically where we are; Matt's the second guy. Whatever he was reacting to: sure, it existed, and you can point to it all you want. But if that's all you're focused on, you're severely missing the point.
+There are some people who just keep reading about all this and saying "but, but WP Engine…" and my dude (it's always a dude), _it does not matter_. We're past that point.
+
+We've all seen a sporting match where one player commits a minor foul, and it enrages an opposing player into a frenzy of flagrant violations that gets them tossed from the game. That's basically where we are; Matt's the second guy. Whatever he was reacting to: sure, it existed, and you can point to it all you want. But if that's all you're focused on, you're severely missing the point.
 
 Anyway, back to the timeline. (Note: I may have the chronology slightly mixed up here on a few of the points, but I don't think it should really matter.)
 
