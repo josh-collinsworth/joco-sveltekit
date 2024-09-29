@@ -461,7 +461,7 @@ Matt's clearly willing to burn it all down to score a pyrrhic victory, and that'
 
 Matt has to go.
 
-I don't expect him to be removed from Automattic leadership (although if there actually _is_ a board, or other people who can challenge Matt's power in that company, I think they absolutely _should_ be considering whether that's the right move for the company). But in any case:
+I don't expect him to be removed from Automattic leadership (although if there actually _is_ a board, or other people who can challenge Matt's power there, I think they absolutely _should_ be considering whether that's the right move for the company). But in any case:
 
 <CalloutPlusQuote>
 
