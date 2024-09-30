@@ -413,7 +413,13 @@ What Matt's done is unforgivable, no matter how good of a point he might have ha
 
 </CalloutPlusQuote>
 
-(In the middle of all this, Pressable, a separate host Automattic owns, started offering promos to help people migrate to them, from WP Engine. That alone should be majorly headline-grabbing, since Matt's abuses of power are the main reason anybody would even be considering leaving WP Engine right now to begin with. But Matt's other abuses are so egregious this one barely even registers on the scale.)
+At some point in the middle of all this, [Pressable](https://pressable.com/), yet another WordPress host, and one which Automattic also owns, started offering a [promo to help users migrate to Pressable from WP Engine](https://pressable.com/wpe-contract-buyout/).
+
+That alone should be majorly headline-grabbing, since Matt's abuses of power are the main reason anybody would even be considering leaving WP Engine right now to begin with. But Matt's other abuses are so egregious this one barely even registers on the scale, even though it absolutely should.
+
+Exercising power over a nonprofit to steal users from a competitor is in fact _very much_ something a mafia boss would do.
+
+But back to the plugins thing:
 
 _You don't hurt users because you're beefing with their host_. You don't put innocent bystanders in harm's way.
 
