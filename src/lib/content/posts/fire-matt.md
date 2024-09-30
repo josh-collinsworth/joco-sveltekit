@@ -463,7 +463,7 @@ No reasonable person could argue WordPress is in a _better_ place today than it 
 
 </CalloutPlusQuote>
 
-It's less secure, less trustworthy, more volatile, and overall just not something _anybody_ is as excited about as they were a week ago. People who spent the majority of their lives working on this software are leaving it. Professionals are looking at new tools to sell their clients. Major sites are considering changing platforms, when they wouldn't have before.
+It's less secure, less trustworthy, more volatile, and overall just not something _anybody_ is as excited about as they were a week ago. People who spent the majority of their lives working on this software are leaving it. Professionals are looking at new solutions and tech stacks, to keep their clients out of the line of fire. Major sites are considering changing platforms, when they wouldn't have had any reason to previously.
 
 We all sat by as one of our neighboring planets just got fired upon (forgive me, I'm going to the Death Star metaphor one last time). And as if that weren't bad enough, the man who ordered that strike _insists_ he's doing the right thing, by putting our neighbors directly in the path of harm, and incinerating the trust and security of our shared community.
 
