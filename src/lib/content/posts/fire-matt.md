@@ -27,15 +27,17 @@ Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-b
 
 </Note>
 
-There are some people who think being right about something gives them the right to do whatever they think should be done about it; a license to act however they see fit in order to correct that wrong.
+There are some people who think being right about something confers the right to do whatever they think should be done about it; a license to act however they see fit in order to correct what they see as wrongness.
 
-This, of course, is never the case. Doing the wrong thing for the right reason never makes it the right thing. No matter how egregious the original infraction, there are some responses it never justifies. Two wrongs don't make a right, to be pithy about it. The ends don't justify…you know how it goes.
+This, of course, is never the case. No matter how egregious the original infraction, there are some responses it never justifies. That's such common knowledge it's proverbial: two wrongs don't make a right; the ends don't justify the means; etc.
 
-Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively spent the week causing destruction and collateral damage to countless WordPress sites and users, in his fight with one of their landlords.
+Doing the wrong thing for the right reason doesn't makes it the right thing.
+
+Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively spent the week causing destruction and collateral damage to countless WordPress sites and users, in his fight with one of the community's landlords.
 
 Matt has, for far too long, enjoyed unchecked powers at the top of WordPress—powers which are all too often a direct and flagrant conflict of interest. And while we've seen this power abused before, we've never seen it on this scale.
 
-Yes, Matt's original point _might_ be warranted. But his egregious actions utterly nullify any previous merit.
+Some might agree with Matt's original reasoning. But his egregious actions and reactions since then have utterly nullify any previous merit.
 
 A line has been crossed, and the entire community is worse for it.
 
@@ -71,7 +73,7 @@ To the extent I'm on WP Engine's side, it's not because of any sense of loyalty 
 
 I'll also go on record as saying I got pretty far in the interview process at Automattic once, a few years back. And, since we're being honest, it was the absolute _worst_ interview process I've ever taken part of as a web professional (though the people themselves were lovely). But that alone ain't gonna get a post out of me. I'm not wasting my time and yours just to gripe about an interview I chose to drop out of over three years ago. Just thought it merited a mention.
 
-I still regarded Matt Mullenweg himself pretty highly after that, up until the last year or so. This post isn't long enough to get into the details, but Matt had already become a pretty "problemattic" character well before any of this went down.
+I still regarded Matt Mullenweg himself pretty highly after that, up until the last year or so. This post isn't long enough to get into the details, but Matt had already become a pretty problemat(t)ic character well before any of this went down.
 
 So in summary: I'm not a big fan of either party, and I don't have any good reason to side with either one of them.
 
