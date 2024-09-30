@@ -33,11 +33,11 @@ This, of course, is never the case. No matter how egregious the original infract
 
 Doing the wrong thing for the right reason doesn't makes it the right thing.
 
-Matt Mullenweg appears to be one of those people who believe the ends do indeed justify the means, as he's effectively spent the week causing destruction and collateral damage to countless WordPress sites and users, in his fight with one of the community's landlords.
+Matt Mullenweg appears to have decided those truisms don't apply to him, as he's effectively spent the week causing destruction and collateral damage to countless WordPress sites and users, in his fight with one of the community's landlords.
 
 Matt has, for far too long, enjoyed unchecked powers at the top of WordPress—powers which are all too often a direct and flagrant conflict of interest. And while we've seen this power abused before, we've never seen it on this scale.
 
-Some might agree with Matt's original reasoning. But his egregious actions and reactions since then have utterly nullify any previous merit.
+Some might agree with Matt's original reasoning. But his egregious actions and reactions since then have utterly nullified any previous merit.
 
 A line has been crossed, and the entire community is worse for it.
 
