@@ -496,3 +496,15 @@ It's clear that the blurry lines between WordPress.org and WordPress.com should 
 </CalloutPlusQuote>
 
 I don't care about Automattic giving 5% to WordPress anymore. I want it to give up Matt's unchecked, unilateral power. Because it's clearer than ever he can't be trusted with it.
+
+---
+
+[Addition 9/30/24: Matt's repeatedly downplayed his role as dictator by saying if he turns into "Evil Matt," WordPress can just be forked—as though this is something incredibly easy and simple. Technically, sure, anyone could press the button to fork WordPress core, but that doesn't really solve the problem. The Foundation/.org would still oversee the themes and plugins repository in that scenario, plus the news feed, and who knows how many other things in the ecosystem—all of which would _also_ need to be replaced in order to fully extricate WordPress from Matt's control, and all of which would cost _massive_ amounts of money.
+
+Each version of WordPress is downloaded tens, if not hundreds of millions of times. The entire plugin repository would need to be replicated, with all its untold millions of interactions a day. Same with themes, and probably lots else.
+
+Infrastructure on that scale is a colossal undertaking that isn't anywhere nearly as simple as just pressing a button or dropping some stuff on a CDN—and that's without even getting into the logistical nightmare of keeping this new fork updated and maintained, which would require a huge dedicated team.
+
+It's possible enough of the community rallies behind a fork to create a critical mass, but that seems unlikely to me. That's incredibly difficult to pull off in several ways, especially without some pretty massive cash behind it. And whoever's fronting that cash probably wants a return, and probably holds a position of power in that new world, and so we've likely just recreated the same problem in a new form.
+
+I think the better approach is to reshape what we have, not throw untold resources at forking and rebuilding everything, only to possibly end up in the same situation all over again, just with a different dictator.]
