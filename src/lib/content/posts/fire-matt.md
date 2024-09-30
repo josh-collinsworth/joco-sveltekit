@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-09-28
+updated: 2024-09-30
 categories:
   - opinion
   - web
@@ -21,7 +21,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-This post is a little more hasty than some of my others, in the interest of expedience. I hope you'll bear with the jumble of thoughts. It's being actively edited, though I've noted updates made since the original publish date. I also usually avoid cussing on my blog, but I do a little here because it feels warranted.
+This post is a little more hasty than some of my others, in the interest of keeping up with unfolding events. I hope you'll bear with the jumble of thoughts. It's being actively edited, though I've noted updates made since the original publish date.
 
 Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-beatings-will-continue-until-morale) (unaffiliated).
 
@@ -57,7 +57,7 @@ You might have spotted the word "Flywheel" up there and realized that company wa
 
 Yes, I used to work for WP Engine. I even kinda liked them, for a while (mostly while they just kinda left us alone for the first year or so). But I wouldn't say my time at the company left a good taste in my mouth.
 
-We don't need to dredge up a bunch of old and buried stuff that isn't really important anyway, but suffice to say: I really don't have any reason to be a WP Engine cheerleader. Most of the people I knew there have left, and I've watched from the sidelines as the company has implemented a bunch of scummy policies and shady sales tactics to squeeze money from their customers and make it harder to leave.
+We don't need to dredge up a bunch of old and buried stuff that isn't really important anyway, but suffice to say: I really don't have any reason to be a WP Engine cheerleader. Most of the people I knew there have left, and I've watched from the sidelines as the company has implemented a bunch of scummy policies and shady sales tactics to squeeze money from their customers and make it harder to leave. (Oh yeah: they also like to brag about record growth and profits in the midst of layoffs.)
 
 On most days, if you wanted to have a conversation about how much WP Engine sucks, frankly, I'd be a happy participant.
 
@@ -173,7 +173,7 @@ Second, pretty much all hosts limit revisions in some way or another anyway, bec
 
 And third, _it's open-source software_! You don't get to tell people how they use it!
 
-We could also get into the utter hypocrisy that many of WordPress.com's plans do far, far, _far_ more invasive modifications of WordPress core (_you can't even install themes and plugins, FFS!_), but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license. This claim is clearly total garbage.
+We could also get into the utter hypocrisy that many of WordPress.com's plans do far, far, _far_ more invasive modifications of WordPress core (notice [you _can't even install themes and plugins_ until you upgrade to the Business plan](https://wordpress.com/pricing/)!) but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license. This claim is clearly total garbage.
 
 #### Matt says WP Engine doesn't give back enough
 
@@ -193,6 +193,12 @@ Matt's claimed he/Automattic have been soliciting WP Engine for increased contri
 
 [Edit 9/28/24: It's also worth calling out that Matt is the one doing _all_ the math on _both_ companies' contributions, and he's quite obviously skewing the numbers heavily in his own favor, as I explore more in the next section. Even without seeing the full ledger, it's pretty clear Matt's making some highly suspect choices on what counts and what doesn't. He really should've showed up with something at least vaguely resembling an objective tally if he wanted to make this point. The numbers he showed fall apart at even a cursory examination. And even if an unbiased dataset would still agree with him, it seriously damages Matt's credibility that he came in with such blatantly one-sided figures.]
 
+[Edit 9/30/24: To underscore the above point, over the weekend, [Matt floated the idea of merging Advanced Custom Fields Pro into WordPress core](https://www.reddit.com/r/Wordpress/comments/1frcor8/matt_brings_up_bringing_acf_pro_into_core/). Now, I don't really take Matt seriously here; this reads more like a threat or a troll than something that's likely to happen, in my view. But it underscores Matt's lopsided criteria for what counts as a contribution.
+
+[Advanced Custom Fields](https://www.advancedcustomfields.com/) has been one of the most-used and -loved plugins in WordPress as long as I've been around. WP Engine acquired it in 2022, and has fully funded its ongoing development since then. If we take Matt _at all_ seriously in this comment, it's even valuable enough to consider merging into core. But yet, somehow, all the time and money WPE has put into it doesn't actually count for anything?
+
+Conversely, if we _don't_ take Matt seriously, and if he's just stirring up trouble for fun like a mini Musk, then, well, that _also_ reinforces the point that he's not the person who should be in charge of all this.]
+
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
 But we're not in a vacuum; there's a lot of context here. So I'd like to talk about that next.
@@ -211,7 +217,7 @@ So it bears mentioning that WP Engine actually _does_ do a pretty good deal for 
 
 </CalloutPlusQuote>
 
-WP Engine pays several staff members to contribute work hours to WordPress core (again, maybe the number should be greater than it is, but it's definitely not zero), on top of the full-time maintenance of plugins, themes, and apps like Advanced Custom Fields, WP Migrate, WP GraphQL, Genesis, Local WP, and many others—all of which used by countless thousands of WordPress users every day.
+WP Engine pays several staff members to contribute work hours to WordPress core (again, maybe the number should be greater than it is, but it's definitely not zero), on top of the full-time maintenance of plugins, themes, and apps like Advanced Custom Fields, WP Migrate, WP GraphQL, Genesis, Local WP, and many others—all of which used by countless thousands of WordPress users every day. (In some parts of the community, many of those plugins are even considered essential enough to be part of WordPress core.)
 
 This is to say nothing of WP Engine sponsoring of WordCamps, creating their own tutorials and educational material, their own events, and so on and so forth.
 
@@ -373,7 +379,7 @@ Anyway, no matter which way you look at it, that's all weird, but it doesn't eve
 
 You know...the sort of thing actual good guys don't usually have to do.
 
-Almost like Matt was trying to distract from something…
+The whole thing seemed like a distraction, and it turns out, it was…
 
 ### Matt goes nuclear
 
@@ -424,6 +430,8 @@ I mean, he can just flip the switch at any time. He can change the rules wheneve
 None. Except his.
 
 I hope I don't need to go into how anti-competitive that is, all on its own, or what an egregious abuse of power it is to have put himself and his company in that position by using WordPress.org to do it.
+
+[Edit 9/30/24: I didn't even cover what _else_ somebody with Matt's powers might do; what other escalations would be possible with unilateral control over WordPress.org. Blocking the plugin repo is scary, but there's a lot more Matt _could_ do with this power that would potentially be even scarier—which is why I don't think _any_ one person should hold all the keys in this situation, and _especially_ not Matt Mullenweg. He's shown us what he's capable of and willing to do. There's no other reasonable response but to take him seriously, and ensure neither he nor anyone else can ever abuse such all-encompassing power over WordPress again.]
 
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
