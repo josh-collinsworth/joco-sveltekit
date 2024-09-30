@@ -175,9 +175,11 @@ Besides, pretty much all hosts limit revisions in some way or another anyway, be
 
 And regardless, _it's open-source software_! You don't get to tell people how they use it.
 
-We could also get into the utter hypocrisy that many of WordPress.com's plans do far, _far_ more invasive modifications of WordPress core (notice [you _can't even install themes and plugins_ until you upgrade to the Business plan](https://wordpress.com/pricing/)!) but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license.
+We could also get into the utter hypocrisy that many of WordPress.com's plans do far, _far_ more invasive modifications of WordPress core (notice [you _can't even install themes and plugins_ until you upgrade to the Business plan](https://wordpress.com/pricing/)!) but again, that's all beside the point.
 
-This claim is clearly total garbage, and the fact that Mullenweg even tried to sell this as a legitimate grievance seriously undermines his credibility, in my view.
+[The ability to disable or customize revisions is built into WordPress](https://wordpress.org/documentation/article/revisions/), for crying out loud. So it's obviously not some forbidden mutation, like Matt seems to be presenting it.
+
+This whole claim is clearly total garbage, and the fact that Mullenweg even tried to sell this as a significant and legitimate grievance seriously undermines the credibility of his case, in my view.
 
 #### Matt says WP Engine doesn't give back enough
 
