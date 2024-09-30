@@ -337,7 +337,13 @@ But it gets even murkier from there, as the Foundation is maybe (or maybe not) W
 
 Of the other two board members, one is a blogger whose company Matt bought out, and who apparently is no longer in the industry. The other is reportedly a Partner and Managing Director at—surprise!—_a private equity firm_ (not to mention a twice-failed Republican politician).
 
-Wait...isn't private equity bad? I guess not if it's on Matt's side. (For the record, Matt and his companies are tied up in private equity in other, more substantial ways than this, but that's not worth getting into. It's all pretty hypocritical.)
+Wait...isn't private equity bad? I guess not if it's on Matt's side.
+
+For the record, Matt and his companies are tied up in equity in many other, far more substantial ways than this. He outlines more than a dozen of Automattic's investors [in this blog post](https://ma.tt/2024/09/are-investors-bad/), which came out right before WCUS. The post praises all 14 of Automattic's investors for being "the fuel of entrepreneurship and capitalism and responsible for most of what we enjoy today" (yikes), while indirectly implying WP Engine's investors are bad, and "just taking," rather than contributing, all as a preview to Matt's talk.
+
+Again: sure, nobody likes private equity, with good reason. And yes, WP Engine's done some pretty slimy stuff in order to maximize their investors' returns. But it looks pretty hypocritical of Matt to think _he's_ the guy to make this point (let alone in a post that largely reads like a paean to capitalism)—especially when ultimately, the moves he's making quite transparently seem designed to maximize _his own_ companies' profits.
+
+Anyway: the WordPress Foundation is basically just Matt, it turns out, and he's just fine using his authority however he sees fit.
 
 <CalloutPlusQuote>
 
