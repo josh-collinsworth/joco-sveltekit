@@ -167,15 +167,17 @@ Matt also claims WP Engine is selling "something that they’ve chopped up, hack
 
 Literally, that's it. One tiny feature. The whole thing's been "hacked and butchered" because they just chose to modify one mostly insignificant detail.
 
-Of all Matt's spurious claims, this one might be the one that reeks the most of absolute made-up bullshit. WP Engine will just turn on revisions if you want them to, but that's beside the point.
+Of all Matt's spurious claims, this one strikes me as the biggest reach, for a lot of reasons. For one: WP Engine will just turn on revisions if you want them to, but that's honestly beside the point.
 
-First, if I decide to build something with, say, Laravel, but decide there's one feature I want to turn off, I'm not "hacking and butchering" Laravel. That's obviously ridiculous.
+If I decide to build something with, say, Laravel, but decide there's one feature I want to turn off, I'm not "hacking and butchering" Laravel. That's obviously ridiculous.
 
-Second, pretty much all hosts limit revisions in some way or another anyway, because they take up a ton of memory and most people don't really need them that bad.
+Besides, pretty much all hosts limit revisions in some way or another anyway, because they take up a ton of memory and most people don't really need them that bad.
 
-And third, _it's open-source software_! You don't get to tell people how they use it!
+And regardless, _it's open-source software_! You don't get to tell people how they use it.
 
-We could also get into the utter hypocrisy that many of WordPress.com's plans do far, far, _far_ more invasive modifications of WordPress core (notice [you _can't even install themes and plugins_ until you upgrade to the Business plan](https://wordpress.com/pricing/)!) but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license. This claim is clearly total garbage.
+We could also get into the utter hypocrisy that many of WordPress.com's plans do far, _far_ more invasive modifications of WordPress core (notice [you _can't even install themes and plugins_ until you upgrade to the Business plan](https://wordpress.com/pricing/)!) but again, that's all beside the point. It's open-source. They can do that. Anyone can. It's in the license.
+
+This claim is clearly total garbage, and the fact that Mullenweg even tried to sell this as a legitimate grievance seriously undermines his credibility, in my view.
 
 #### Matt says WP Engine doesn't give back enough
 
