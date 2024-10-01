@@ -406,7 +406,7 @@ I guess they technically are. But when one person apparently enjoys unchecked co
 
 It should be said that licensing the WordPress trademark to other companies would obviously be a massive cash opportunity for the Foundation. But since the Foundation and Automattic are already so inextricably intertwined and controlled by one person, it raises some serious, potentially even IRS-level questions of exactly where that money would going, exactly.
 
-If you wanna sell licenses, you need to set the terms at the start, not just suddenly tell people they're on the wrong plan to slap them with a huge up-sell way down the road.
+Regardless: if you wanna sell licenses, you need to set the terms at the start, not just suddenly tell people they're on the wrong plan to slap them with a huge up-sell years down the road.
 
 Plus, this whole thing reminds me a lot of the Unity saga from earlier this year, where Unity decided to just charge a bunch of extra money for licenses out of the blue and the entire community revolted. The decision was eventually walked back, but the damage was done.
 
