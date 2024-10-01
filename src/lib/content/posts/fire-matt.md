@@ -502,6 +502,16 @@ Matt agreed to unblock the plugins repo temporarily after the community backlash
 
 </Edit>
 
+<Edit date="10/1/24">
+
+Matt has now apparently rescinded the previous 8% licensing agreement, and is instead [threatening a corporate takeover of WP Engine](https://www.therepository.email/mullenweg-threatens-corporate-takeover-of-wp-engine).
+
+There are some incredibly Trumpian quotes from Matt in that article; he makes a lot of this about him, personally, paints himself as the victim, and promises the destruction of his enemies—yet provides no substantial plan. It's very unclear how Matt thinks this takeover would theoretically happen, which makes it seem more like a threat than any realistic scenario. (Guessing it wouldn't be a sale; Matt and WPE probably aren't in the same ballpark on a price tag at this point. So are we off to court? I'm sure I'm not the only one who would be deeply curious to see how Matt's antics would play in a courtroom.)
+
+Regardless, if anything, this only reinforces my stance. If Matt's hellbent on using the monopolistic powers at his disposal to absorb and neutralize his only real threat and competition, this is the mafia-bossiest move thus far (or the most capitalistic, at least), and perhaps the most striking indication yet that far too much power is concentrated in his unfit hands—even if it does turn out to be less than he seems to think it is.
+
+</Edit>
+
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
 <CalloutPlusQuote>
