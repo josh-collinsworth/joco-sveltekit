@@ -101,7 +101,7 @@ Besides, I could name dozens of companies just off the top of my head also using
 
 ### Matt's rejected, so he tries new strategies
 
-Immediately following WP Engine's rejection, [the WordPress Foundation](https://wordpressfoundation.org/) (the nonprofit that governs WordPress, the open source software, and which Matt Mullenweg _also_ runs, in effect if not nominally) [filed to trademark the terms "Managed WordPress" and "Hosted WordPress](https://www.searchenginejournal.com/wordpress-files-to-trademark-managed-wordpress-hosted-wordpress/528112/)."
+Immediately following WP Engine's rejection, [the WordPress Foundation](https://wordpressfoundation.org/) (the nonprofit side of WordPress, the open source software, and which Matt Mullenweg _also_ runs, in effect if not nominally) [filed to trademark the terms "Managed WordPress" and "Hosted WordPress](https://www.searchenginejournal.com/wordpress-files-to-trademark-managed-wordpress-hosted-wordpress/528112/)."
 
 Neither trademark has been granted at this point, nor should they; they've been in use for ages, and are obviously far too generic for any one organization to hold.
 
@@ -161,6 +161,8 @@ Family members don't always get tech. That's not a sign that something is wrong,
 
 [Update 9/28/24: As an additional point here: if the problem was confusion around WP Engine's name, why not just ask them for a name change? Why all the contribution stuff, too? Conversely, if Matt's beef was with WP Engine's lack of contribution, why is he going after their name and marketing? It feels very much like Matt's just trying to cobble together all the reasons he can think of to justify his assault, in my opinion.]
 
+[Update 10/1/24: WP Engine have added a disclaimer to their website footer, clarifying that they have no official affiliation with WordPress, and have removed the word "WordPress" from the titles of their hosting plans.]
+
 #### Matt claims WP Engine is selling a "cheap knock-off" of WordPress
 
 Matt also claims WP Engine is selling "something that they’ve chopped up, hacked, butchered to look like WordPress." His reason for this wild claim? Because WP Engine disables revisions (a default feature of WordPress, albeit a pretty small one).
@@ -204,6 +206,10 @@ Matt's claimed he/Automattic have been soliciting WP Engine for increased contri
 [Advanced Custom Fields](https://www.advancedcustomfields.com/) has been one of the most-used and -loved plugins in WordPress as long as I've been around. WP Engine acquired it in 2022, and has fully funded its ongoing development since then. If we take Matt _at all_ seriously in this comment, it's even valuable enough to consider merging into core. But yet, somehow, all the time and money WPE has put into it doesn't actually count for anything…?
 
 Conversely, if we _don't_ take Matt seriously, and if he's just stirring up trouble for fun like a mini-Musk, then…well, that _also_ reinforces the point that he's not the person who should be in charge of all this.]
+
+[Edit 10/1/24: Although it's difficult to confirm this, a number of people have reached out to me to say Matt Mullenweg is the one who owns wordpress.org. The project itself is open-source, but he is at least alleged to privately own the domain, as yet another item on the conflict-of-interest pile.
+
+It also raises questions of Matt even having the right to ask for contributions in the first place. I mean, if he owns .org and helms the Foundation, isn't he, at least to some degree, demanding WP Engine do more work _for him_?]
 
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
@@ -451,6 +457,8 @@ I hope I don't need to go into how anti-competitive that is, all on its own, or 
 
 [Edit 9/30/24: I didn't even cover what _else_ somebody with Matt's powers might do; what other escalations would be possible with unilateral control over WordPress.org. Blocking the plugin repo is scary, but there's a lot more Matt _could_ do with this power that would potentially be even scarier—which is why I don't think _any_ one person should hold all the keys in this situation, and _especially_ not Matt Mullenweg. He's shown us what he's capable of and willing to do. There's no other reasonable response but to take him seriously, and ensure neither he nor anyone else can ever abuse such all-encompassing power over WordPress again.]
 
+[Edit 10/1/24: Matt agreed to unblock the plugins repo temporarily after the community backlash, but the block went back up today. It seems WP Engine must already have a workaround in place this time, though.]
+
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
 <CalloutPlusQuote>
@@ -497,9 +505,12 @@ It's clear that the blurry lines between WordPress.org and WordPress.com should 
 
 I don't care about Automattic giving 5% to WordPress anymore. I want it to give up Matt's unchecked, unilateral power. Because it's clearer than ever he can't be trusted with it.
 
----
 
-[Addition 9/30/24: Matt's repeatedly downplayed his role as dictator by saying if he turns into "Evil Matt," WordPress can just be forked—as though this is something incredibly easy and simple. Technically, sure, anyone could press the button to fork WordPress core, but that doesn't really solve the problem. The Foundation/.org would still oversee the themes and plugins repository in that scenario, plus the news feed, and who knows how many other things in the ecosystem—all of which would _also_ need to be replaced in order to fully extricate WordPress from Matt's control, and all of which would cost _massive_ amounts of money.
+## Addendum: on the future of WordPress
+
+[This section was added on 9/30 and 10/1]
+
+Matt's repeatedly downplayed his role as dictator by saying if he ever turns into "Evil Matt," WordPress can just be forked—as though this is something incredibly easy and simple. Technically, sure, anyone could press the button to fork WordPress core, but that doesn't really solve the problem. The Foundation/.org would still oversee the themes and plugins repository in that scenario, plus the news feed, and who knows how many other things in the ecosystem—all of which would _also_ need to be replaced in order to fully extricate WordPress from Matt's control, and all of which would cost _massive_ amounts of money.
 
 Each version of WordPress is downloaded tens, if not hundreds of millions of times. The entire plugin repository would need to be replicated, with all its untold millions of interactions a day. Same with themes, and probably lots else.
 
@@ -507,4 +518,16 @@ Infrastructure on that scale is a colossal undertaking that isn't anywhere nearl
 
 It's possible enough of the community rallies behind a fork to create a critical mass, but that seems unlikely to me. That's incredibly difficult to pull off in several ways, especially without some pretty massive cash behind it. And whoever's fronting that cash probably wants a return, and probably holds a position of power in that new world, and so we've likely just recreated the same problem in a new form.
 
-I think the better approach is to reshape what we have, not throw untold resources at forking and rebuilding everything, only to possibly end up in the same situation all over again, just with a different dictator.]
+I think the better approach is to reshape what we have, not throw untold resources at forking and rebuilding everything, only to possibly end up in the same situation all over again, just with a different dictator.
+
+It's clear to me what WordPress needs is community governance—some kind of board or council—not control by a dictator. The kinds of decisions Matt's making shouldn't be made by one person or organization, and they shouldn't be made by anyone with a business stake or conflict of interest in their consideration or execution.
+
+Clearly, too much power has been concentrated in the hands of too few.
+
+Ironic, then, that Matt insists venture funding is good as long as capital doesn't achieve too big a stake and take control, as he's essentially just made himself the embodiment of that problem. Whether it's a VC or a [BDFL](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life), the risks of corruption and exploitation are the same.
+
+The WordPress Foundation claims its reason for existence is "[to ensure free access, in perpetuity, to the software projects we support](https://wordpressfoundation.org/)."
+
+It's quite obvious the man who helms the foundation, who authors the news, and who holds pretty much all the cards when it comes to WordPress, isn't interested in any ideals but his own.
+
+I believe an entirely new leadership structure is needed. Maybe Matt still has a say in this new form of community governance (I remain vague on its details because I don't believe my place is to make that prescription), but it should never be the case again that Matt's say is all that matters, or that nobody else can override his authority.
