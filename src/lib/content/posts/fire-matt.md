@@ -506,9 +506,27 @@ Matt agreed to unblock the plugins repo temporarily after the community backlash
 
 Matt has now apparently rescinded the previous 8% licensing agreement, and is instead [threatening a corporate takeover of WP Engine](https://www.therepository.email/mullenweg-threatens-corporate-takeover-of-wp-engine).
 
-There are some incredibly Trumpian quotes from Matt in that article; he makes a lot of this about him, personally, paints himself as the victim, and promises the destruction of his enemies—yet provides no substantial plan. It's very unclear how Matt thinks this takeover would theoretically happen, which makes it seem more like a threat than any realistic scenario. (Guessing it wouldn't be a sale; Matt and WPE probably aren't in the same ballpark on a price tag at this point. So are we off to court? I'm sure I'm not the only one who would be deeply curious to see how Matt's antics would play in a courtroom.)
+There are some incredibly Trumpian quotes from Matt in that article; he makes a lot of this about him, personally, and paints himself as the victim. ("I was taken advantage of for so many years," Matt claims—leaving this reader, for one, wondering exactly how one might be taken advantage of in such a way to become worth a half billion dollars or so.)
 
-Regardless, if anything, this only reinforces my stance. If Matt's hellbent on using the monopolistic powers at his disposal to absorb and neutralize his only real threat and competition, this is the mafia-bossiest move thus far (or the most capitalistic, at least), and perhaps the most striking indication yet that far too much power is concentrated in his unfit hands—even if it does turn out to be less than he seems to think it is.
+Matt repeats the claim that he's been asking WP Engine for increased contributions "for years," but again: we haven't actually seen receipts on that one yet. Still, even if it's 100% true Matt was repeatedly rebuffed, it seems like shaky ground for this whole campaign anyway.
+
+Matt also loosely threatens his enemy and promises vengeance—via corporate takeover, I guess—yet provides no hint of a substantial plan for actually achieving that.
+
+It's very unclear how Matt thinks a takeover would theoretically happen, which makes it seem more like a threat than a realistic scenario. I don't know a lot about this type of business dealing, so I may not know what I'm talking about at all here, but: wouldn't Matt either have to reach an agreement with WP Engine, or win against them in court for this to actually happen? Like, you can't just march into WP Engine headquarters and take it over (though that does kinda sound like Matt at this point).
+
+A sale doesn't seem very likely to me; Matt and WPE probably aren't even in the same ballpark on a price tag, since Matt already feels the company owes him many millions of dollars—and that's even if WPE _was_ motivated to negotiate, which I seriously doubt.
+
+_Maybe_ Matt comes in really high with (*_ahem_*) an offer they can't refuse, to pressure the investors into a sale. That also seems unlikely to me, but crazier takeovers have happened in tech in recent memory.
+
+So if that doesn't happen, are we off to court? No idea. There's a strong chance it's all just posturing. But I'm sure I'm not the only one who would be deeply curious to see how Matt's antics would play in a courtroom.
+
+Regardless of how it all shakes out, though: this only reinforces my stance that Matt's power must be severely curtailed. Matt's intent to use the monopolistic powers at his disposal to absorb and neutralize his business's only real threat and competition, all over a sudden extortive rules change, is perhaps the most striking sign yet that far too much power is concentrated in his unfit hands (even if said power does eventually turn out to be less than he seems to think it is).
+
+Yet again, Matt comes off just like a mafia boss. “_Nice business you've got there. Looks like it's really feeling the squeeze lately. Sure would be a shame if that bad stuff kept happening, huh? You'd stand to lose an awful lot. But maybe we could reach some kind of an agreement…_?”
+
+If Matt's lawyers _really_ aren't telling him not to say stuff like this, you'd expect him to at least have the self-awareness to realize how it comes off.
+
+...Actually, I take it back. I wouldn't expect that from him. Not anymore.
 
 </Edit>
 
