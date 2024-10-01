@@ -362,7 +362,7 @@ One of the biggest revelations here is: Matt wanted the money he was trying to g
 
 There are some pretty obvious conflicts of interest here. First and foremost, Automattic (or WordPress.com, at least) is a direct competitor of WP Engine's.
 
-Second, while Automattic _does_ apparently own the WooCommerce copyright, it does _not_ own the WordPress copyright. That is owned by the WordPress Foundation.
+Second, while Automattic _does_ apparently own the WooCommerce trademark, it does _not_ own the WordPress trademark. That is owned by the WordPress Foundation (which evidently grants Automattic a license to use it. Gee, how thoughtful).
 
 But it gets even murkier from there, as the Foundation is maybe (or maybe not) WordPress.org? And either way, the Foundation is apparently three people, and Matt Mullenweg is not only one of them, he appears to be _the only active one_!
 
@@ -401,6 +401,16 @@ Anyway. [Automattic responded](https://automattic.com/2024/09/25/open-source-tra
 I guess they technically are. But when one person apparently enjoys unchecked control over all of them…
 
 [Guitar strumming begins with Alanis Morissette vocalizing]
+
+<Edit date="10/1/24">
+
+It should be said that licensing the WordPress trademark to other companies would obviously be a massive cash opportunity for the Foundation. But since the Foundation and Automattic are already so inextricably intertwined and controlled by one person, it raises some serious, potentially even IRS-level questions of exactly where that money would going, exactly.
+
+If you wanna sell licenses, you need to set the terms at the start, not just suddenly tell people they're on the wrong plan to slap them with a huge up-sell way down the road.
+
+Plus, this whole thing reminds me a lot of the Unity saga from earlier this year, where Unity decided to just charge a bunch of extra money for licenses out of the blue and the entire community revolted. The decision was eventually walked back, but the damage was done.
+
+</Edit>
 
 ### Matt melts down
 
