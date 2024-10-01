@@ -3,7 +3,7 @@
 </script>
 
 <div class="edit">
-	<p class="date">Edit {date}</p>
+	<p class="date">Update {date}</p>
 	<slot />
 </div>
 
