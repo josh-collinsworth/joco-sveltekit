@@ -14,7 +14,7 @@
 		margin-block: var(--dottedHalfNote) var(--halfNote);
 		margin-inline-start: 0;
 		border-left: 1px solid var(--lightBlue);
-		padding-inline-start: var(--quarterNote);
+		padding-inline-start: 16px;
 	}
 
 	.date {
