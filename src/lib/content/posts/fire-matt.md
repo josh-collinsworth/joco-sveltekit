@@ -236,7 +236,7 @@ This also raises questions of Matt's rights and motivations for even asking for 
 
 </Edit>
 
-<Edit date="10/1/24">
+<Edit date="10/1/24" id="terms-sheet">
 
 [Automattic released a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/), in a post coming after WP Engine pretty aggressively, accusing WPE of lying about the terms that were offered. (WP Engine, in its original [cease-and-desist letter](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), didn't mention any offer of work contribution as a payment method; they just said Matt demanded payment. Automattic seems to be saying this is a lie, and that it was never a just a demand for money; work contributions were apparently always an option, according to Automattic.)
 

@@ -1,8 +1,9 @@
 <script lang="ts">
-	export let date: String
+	export let date: string
+	export let id: string = ''
 </script>
 
-<div class="edit">
+<div class="edit" {id}>
 	<p class="date">Update {date}</p>
 	<slot />
 	<p class="sr">End update</p>
