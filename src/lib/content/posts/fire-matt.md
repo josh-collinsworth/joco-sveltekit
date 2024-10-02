@@ -539,7 +539,7 @@ Automattic offers as proof [the terms sheet they offered to WPE](https://automat
 
 Is there not an earlier version Matt can show? If this went down the way he says it did, why aren't we seeing more evidence of earlier terms being offered, rather than the literal day-of offer made at the last minute?
 
-For another, it's worth restating that whether WP Engine is paying people to work on WordPress, or paying Automattic to pay people to work on WordPress, it's all the same in the end. Matt's still demanding money, one way or the other, from WP Engine, to his company. I don't think this really gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
+It's worth restating that whether WP Engine is paying people to work on WordPress, or paying Automattic to pay people to work on WordPress, it's all the same in the end; they both have the exact same price tag. Matt's still demanding money, one way or the other, from WP Engine, to his company. I don't think this really gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
 
 —_especially_ since, once again, _this is all going through Automattic_! Not through the WordPress Foundation or .org (which owns the actual WordPress trademark in question), but through Matt's own for-profit company, a direct competitor of WP Engine.
 
