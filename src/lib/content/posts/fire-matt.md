@@ -232,6 +232,8 @@ Conversely, if we _don't_ take Matt seriously, and if he's just stirring up trou
 
 A number of people have reached out to confirm Matt Mullenweg, [by his own admission](https://x.com/photomatt/status/1840980359673995362), is the sole owner of wordpress.org. The project itself is ostensibly open-source, but he privately owns the domain, and there do not appear to be any other people or entities involved, as yet another item on the conflict-of-interest pile.
 
+![`Jason Grigsby asks Matt whether he really individually owns WordPress.org. Not Automattic? Not a different LLC or something? No employees? No board of directors? Just you? To which Matt replies: just me.`](/images/post_images/fire-matt/dotorg.png)
+
 This also raises questions of Matt's rights and motivations for even asking for contributions in the first place. I mean, if he owns .org and helms and funds the Foundation, isn't he, at least to some degree, demanding WP Engine do more work _for him_?
 
 </Edit>
@@ -394,7 +396,7 @@ It appears neither of the other two Foundation board members is active, and ther
 
 Nobody holds any ability to check his power or challenge him. (That's very relevant to what happens next.)
 
-Also: Matt apparently kinda sorta owns WordPress.org, too. So he has a dizzying interweaving of conflicts of interest and power abuses here. ([Source for all that about the foundation here](https://www.pluginvulnerabilities.com/2024/09/24/who-is-on-the-wordpress-foundation-board/).)
+Also: Matt apparently owns WordPress.org, too. So he has a dizzying interweaving of conflicts of interest and power abuses here. ([Source for all that about the foundation here](https://www.pluginvulnerabilities.com/2024/09/24/who-is-on-the-wordpress-foundation-board/).)
 
 <CalloutPlusQuote>
 
