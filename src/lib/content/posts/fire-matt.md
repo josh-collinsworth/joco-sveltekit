@@ -551,9 +551,9 @@ Automattic offers as proof [the terms sheet they offered to WPE](https://automat
 
 Is there not an earlier version Matt can release? If this went down the way he says it did, why aren't we seeing more evidence of earlier terms being offered, rather than the literal last minute one?
 
-Besides which, I'm not sure how much the "contribution" angle really matters, because again: there was really only one offer on table. The difference was only in how WP Engine wanted to pay for it (directly, or indirectly).
+Besides which, I'm not sure how much the "contribution" angle really matters, because ultimately, there was really only one offer on table, i.e., 8%. The difference was only in how WP Engine wanted to cough it up.
 
-That is: whether WP Engine is paying people to work on WordPress, or paying _Automattic_ that money, it's all the same in the end; the price tag is identical. It was the same percentage both ways. It's not really two options, so much one option with two payment methods. So I don't think this gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
+That is: whether WP Engine pays 8% to their people, or pays _Automattic_ 8%, it's all the same in the end; the price tag is identical. It's not really two options, so much as one option with two payment methods. So I don't think this gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
 
 —_especially_ since, once again, _this is all going through Automattic_! Not through the WordPress Foundation or .org (which owns the actual WordPress trademark in question), but through Matt's own for-profit company, a direct competitor of WP Engine.
 
@@ -577,7 +577,9 @@ But again: Matt insists it _wasn't_ a day offer; it was a conversation that had 
 
 Unless there's more to come that we haven't seen yet (and it's hard to imagine both what that would be and why it wasn't released initially), it's tough to see this as anything but Matt just digging himself in even deeper.
 
-Oh, by the way, the terms sheet also showed Matt wanted 8% of _gross_ revenue(!), and wanted WordPress.org (i.e., him) to decide what WP Engine was paying its employees to work on for him, had they gone with that option; WPE wouldn't even be able to choose what they were paying their own employees to do.
+Oh, by the way, that 8% figure we've been talking about? The terms sheet showed Matt wanted that to be 8% of _gross_ revenue(!), which most observers seem to agree is absurd. It's easy to hear 8% and think of it as a small number, but to tax _gross_ earnings—i.e., pre-tax, pre-expenses, etc.—means the number is, in effect, dramatically higher. (8% gross could easily be 20% or more of net profits, possibly even as high as 50% in some businesses. Hard to say what the exact figure would be in WP Engine's case, and I'm not qualified to try, but it's definitely a much bigger number than 8.)
+
+Matt also wanted WordPress.org (i.e., him) to decide what WP Engine was paying its employees to work on for him, had they gone with that option; WPE wouldn't even be able to choose what they were paying their own employees to do.
 
 The entire of demands seems incredibly outrageous, even in a vacuum, but especially between competitors, and particularly knowing the labyrinthine conflicts of interest and questionable authority at play here.
 
