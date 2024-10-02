@@ -282,6 +282,16 @@ But Matt, being Matt, _didn't_ make that point in a good way.
 
 (Sorry, this post is already too long without me going into all the times in the past he's stirred up drama and just generally been a toxic jerk to undeserving people in the WordPress community. But if you're not aware: it's become increasingly common. He was even adding public snarky comments on WP Engine employees' posts, ones who had given decades of their life to the project, as recently as yesterday.)
 
+<Edit date="10/2/24" id="tip">
+
+As if to underscore this point, Matt himself saw this post, went to [my Ko-Fi](https://ko-fi.com/collinsworth), and paid to leave a condescending message—presumably after seeing that I literally closed comments on this post explicitly because I figured he might come argue with me.
+
+![Matt's donation on Ko-Fi, with the following note: 'You write so much but understand so little. Thanks for following along. Check out my Theo interview and watch what happens this week.'](/images/post_images/fire-matt/tip.png)
+
+So yeah…Matt's apparently the kind of guy who will respond to allegations that he's not being a very good guy by paying for the privilege of sending you a mildly harassing note. (It was a nice tip though, in fairness.)
+
+</Edit>
+
 <CalloutPlusQuote>
 
 Matt tried extortion, and threats, and petty, childish tantrums, and when none of that worked, he fully exercised his unmatched and unchecked powers in an inconscionable way, in order to extract millions of dollars from WP Engine to put in his own for-profit competitor's bank account.
