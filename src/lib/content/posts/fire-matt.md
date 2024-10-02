@@ -236,42 +236,6 @@ This also raises questions of Matt's rights and motivations for even asking for 
 
 </Edit>
 
-<Edit date="10/1/24" id="terms-sheet">
-
-[Automattic released a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/), in a post coming after WP Engine pretty aggressively, accusing WPE of lying about the terms that were offered. (WP Engine, in its original [cease-and-desist letter](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), didn't mention any offer of work contribution as a payment method; they just said Matt demanded payment. Automattic seems to be saying this is a lie, and that it was never a just a demand for money; work contributions were apparently always an option, according to Automattic.)
-
-Automattic offers as proof [the terms sheet they offered to WPE](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), but the sheet, bizarrely, is dated September 20th—i.e., the same day as Matt's keynote at WCUS. So I'm a little confused how this is meant to show what Automattic seems to think it does. If Matt wanted to prove he _didn't_ make a last-minute extortion attempt, this is pretty much the opposite of what he needed.
-
-Is there not an earlier version Matt can show? If this went down the way he says it did, why aren't we seeing more evidence of earlier terms being offered, rather than the literal day-of offer made at the last minute?
-
-For another, it's worth restating that whether WP Engine is paying people to work on WordPress, or paying Automattic to pay people to work on WordPress, it's all the same in the end. Matt's still demanding money, one way or the other, from WP Engine, to his company. I don't think this really gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
-
-—_especially_ since, once again, _this is all going through Automattic_! Not through the WordPress Foundation or .org (which owns the actual WordPress trademark in question), but through Matt's own for-profit company, a direct competitor of WP Engine.
-
-Honestly, this whole release is a little baffling, because it seems to do more to _reaffirm_ WP Engine's version of events than refute them.
-
-It's also worth calling out that in WP Engine's version of events, they claim Matt was making "harassing texts and calls" to company leaders. (They showed some of those texts.)
-
-Automattic, for their part, notes "On September 19th and 20th, Lee and Heather did not answer any of Matt’s calls."
-
-Hmmm.
-
-The rest of the timeline Automattic presents seems to show lots of meetings between company leaders, mostly in the last year, but it's just a written text schedule. There's only one link, and it's to a video of a conference panel talk from March of last year. At a cursory look, it doesn't even seem to be relevant to the current issues; it just happens to feature Matt and people from both companies.
-
-I'll take it on good faith those meetings happened, but their nature and content remains unclear. Even if the terms were discussed in some form, the fact that Matt isn't showing any official offer from before the same day as his presentation means we don't really know much now that we didn't already, and if anything, we have _more_ reason to question his version of events.
-
-One other interesting takeaway: the terms included full rights for Automattic to audit _all of WP Engine's finances_, which WP Engine would've been required to provide, itemized, on a monthly basis, for the full _seven years_ of the contract.
-
-Seems to me like anything _remotely_ that invasive would take months, if not years to get in order and approved by legal, HR, etc. Certainly not a day.
-
-But Matt insists it _wasn't_ a day offer; it was a conversation that had been going on for "years." So if that's true, why aren't we seeing earlier documents, or evidence of prior conversations? Why are we just seeing the one document from the 20th?
-
-Unless there's more to come that we haven't seen yet (and it's hard to imagine what that would be and why it wasn't released initially), it's tough to see this as anything but Matt just digging himself in even deeper.
-
-Oh, by the way, the terms sheet also showed Matt wanted 8% of _gross_ revenue(!), and wanted WordPress.org (i.e., him) to decide what WP Engine was paying its employees to work on for him, had they gone with that option; WPE wouldn't even be able to choose what their own employees would be working on, as they paid them to do it. The entire list of demands seems incredibly outrageous, even in a vacuum, but especially knowing the labyrinthine conflicts of interest and questionable authority at play here.
-
-</Edit>
-
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
 But we're not in a vacuum; there's a lot of context here. So I'd like to talk about that next.
@@ -532,13 +496,13 @@ I didn't even cover what _else_ somebody with Matt's powers might do; what other
 
 </Edit>
 
-<Edit date="10/1/24">
+<Edit date="10/1/24" id="unblock">
 
 Matt agreed to unblock the plugins repo temporarily after the community backlash, but the block went back up today. It seems WP Engine must already have a workaround in place this time, though.
 
 </Edit>
 
-<Edit date="10/1/24">
+<Edit date="10/1/24" id="takeover">
 
 Matt has now apparently rescinded the previous 8% licensing agreement, and is instead [threatening a corporate takeover of WP Engine](https://www.therepository.email/mullenweg-threatens-corporate-takeover-of-wp-engine).
 
@@ -563,6 +527,43 @@ Yet again, Matt comes off just like a mafia boss. “_Nice business you've got t
 If Matt's lawyers _really_ aren't telling him not to say stuff like this, you'd expect him to at least have the self-awareness to realize how it comes off.
 
 ...Actually, I take it back. I wouldn't expect that from him. Not anymore.
+
+</Edit>
+
+
+<Edit date="10/1/24" id="terms-sheet">
+
+[Automattic released a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/), in a post coming after WP Engine pretty aggressively, accusing WPE of lying about the terms that were offered. (WP Engine, in its original [cease-and-desist letter](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), didn't mention any offer of work contribution as a payment method; they just said Matt demanded payment. Automattic seems to be saying this is a lie, and that it was never a just a demand for money; work contributions were apparently always an option, according to Automattic.)
+
+Automattic offers as proof [the terms sheet they offered to WPE](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), but the sheet, bizarrely, is dated September 20th—i.e., the same day as Matt's keynote at WCUS. So I'm a little confused how this is meant to show what Automattic seems to think it does. If Matt wanted to prove he _didn't_ make a last-minute extortion attempt, this is pretty much the opposite of what he needed.
+
+Is there not an earlier version Matt can show? If this went down the way he says it did, why aren't we seeing more evidence of earlier terms being offered, rather than the literal day-of offer made at the last minute?
+
+For another, it's worth restating that whether WP Engine is paying people to work on WordPress, or paying Automattic to pay people to work on WordPress, it's all the same in the end. Matt's still demanding money, one way or the other, from WP Engine, to his company. I don't think this really gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
+
+—_especially_ since, once again, _this is all going through Automattic_! Not through the WordPress Foundation or .org (which owns the actual WordPress trademark in question), but through Matt's own for-profit company, a direct competitor of WP Engine.
+
+Honestly, this whole release is a little baffling, because it seems to do more to _reaffirm_ WP Engine's version of events than refute them.
+
+It's also worth calling out that in WP Engine's version of events, they claim Matt was making "harassing texts and calls" to company leaders. (They showed some of those texts.)
+
+Automattic, for their part, notes "On September 19th and 20th, Lee and Heather did not answer any of Matt’s calls."
+
+Hmmm.
+
+The rest of the timeline Automattic presents seems to show lots of meetings between company leaders, mostly in the last year, but it's just a written text schedule. There's only one link, and it's to a video of a conference panel talk from March of last year. At a cursory look, it doesn't even seem to be relevant to the current issues; it just happens to feature Matt and people from both companies.
+
+I'll take it on good faith those meetings happened, but their nature and content remains unclear. Even if the terms were discussed in some form, the fact that Matt isn't showing any official offer from before the same day as his presentation means we don't really know much now that we didn't already, and if anything, we have _more_ reason to question his version of events.
+
+One other interesting takeaway: the terms included full rights for Automattic to audit _all of WP Engine's finances_, which WP Engine would've been required to provide, itemized, on a monthly basis, for the full _seven years_ of the contract.
+
+Seems to me like anything _remotely_ that invasive would take months, if not years to get in order and approved by legal, HR, etc. Certainly not a day.
+
+But Matt insists it _wasn't_ a day offer; it was a conversation that had been going on for "years." So if that's true, why aren't we seeing earlier documents, or evidence of prior conversations? Why are we just seeing the one document from the 20th?
+
+Unless there's more to come that we haven't seen yet (and it's hard to imagine what that would be and why it wasn't released initially), it's tough to see this as anything but Matt just digging himself in even deeper.
+
+Oh, by the way, the terms sheet also showed Matt wanted 8% of _gross_ revenue(!), and wanted WordPress.org (i.e., him) to decide what WP Engine was paying its employees to work on for him, had they gone with that option; WPE wouldn't even be able to choose what their own employees would be working on, as they paid them to do it. The entire list of demands seems incredibly outrageous, even in a vacuum, but especially knowing the labyrinthine conflicts of interest and questionable authority at play here.
 
 </Edit>
 
