@@ -565,7 +565,9 @@ Unless there's more to come that we haven't seen yet (and it's hard to imagine w
 
 Oh, by the way, the terms sheet also showed Matt wanted 8% of _gross_ revenue(!), and wanted WordPress.org (i.e., him) to decide what WP Engine was paying its employees to work on for him, had they gone with that option; WPE wouldn't even be able to choose what they were paying their own employees to do.
 
-The entire list of demands seems incredibly outrageous, even in a vacuum, but especially between competitors, and particularly knowing the labyrinthine conflicts of interest and questionable authority at play here.
+The entire of demands seems incredibly outrageous, even in a vacuum, but especially between competitors, and particularly knowing the labyrinthine conflicts of interest and questionable authority at play here.
+
+No wonder WPE stopped taking his calls.
 
 </Edit>
 
