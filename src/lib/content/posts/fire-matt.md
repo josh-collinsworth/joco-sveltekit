@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-01
+updated: 2024-10-02
 categories:
   - opinion
   - web
