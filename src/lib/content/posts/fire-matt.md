@@ -416,7 +416,7 @@ I guess they technically are. But when one person apparently enjoys unchecked co
 
 <Update date="10/1/24">
 
-It should be said that licensing the WordPress trademark to other companies would obviously be a massive cash opportunity for the Foundation. But since the Foundation and Automattic are already so inextricably intertwined and controlled by one person, it raises some serious, potentially even IRS-level questions of exactly where that money would going, exactly.
+It should be said that licensing the WordPress trademark to other companies would obviously be a massive cash opportunity. But since the Foundation and Automattic are already so inextricably intertwined, and controlled by one person, it raises some serious, potentially even IRS-level questions of where that money would be going, exactly. (I'm not a lawyer or a tax expert. It's just that using a nonprofit to help create a monopoly that funnels money to your own for-profit company, which doesn't have to pay the nonprofit like the other businesses do because you run both of them, just _sounds_ like the kind of thing federal agencies might be interested in.)
 
 Regardless: if you wanna sell licenses, you need to set the terms at the start, not just suddenly tell people they're on the wrong plan to slap them with a huge up-sell years down the road.
 
