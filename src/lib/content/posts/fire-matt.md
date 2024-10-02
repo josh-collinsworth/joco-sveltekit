@@ -268,6 +268,8 @@ But Matt insists it _wasn't_ a day offer; it was a conversation that had been go
 
 Unless there's more to come that we haven't seen yet (and it's hard to imagine what that would be and why it wasn't released initially), it's tough to see this as anything but Matt just digging himself in even deeper.
 
+Oh, by the way, the terms sheet also showed Matt wanted 8% of _gross_ revenue(!), and wanted WordPress.org (i.e., him) to decide what WP Engine was paying its employees to work on for him, had they gone with that option; WPE wouldn't even be able to choose what their own employees would be working on, as they paid them to do it. The entire list of demands seems incredibly outrageous, even in a vacuum, but especially knowing the labyrinthine conflicts of interest and questionable authority at play here.
+
 </Edit>
 
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
