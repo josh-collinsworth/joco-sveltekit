@@ -19,20 +19,22 @@
 	}
 
 	.date {
-		position: absolute;
-		height: 1em;
-		display: flex;
-		align-items: center;
+		position: sticky;
 		transform-origin: left center;
-		top: -1.75em;
+		top: 0;
 		left: -0.25em;
-		background: var(--paper);
+		background: linear-gradient(
+			to bottom,
+			var(--paper),
+			var(--paper) 70%,
+			transparent
+		);
 		font-style: italic;
 		font-size: 0.85rem;
-		line-height: 0;
 		color: var(--lightBlue);
 		margin: 0;
 		padding: 0;
+		padding-block-end: 1em;
 	}
 
 	:global(.edit > *:nth-last-child(2)) {

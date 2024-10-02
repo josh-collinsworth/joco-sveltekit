@@ -17,7 +17,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
   import SideNote from '$lib/components/SideNote.svelte'
   import Note from '$lib/components/Note.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
-  import Edit from '$lib/components/Edit.svelte'
+  import Update from '$lib/components/Update.svelte'
 </script>
 
 <Note>
@@ -122,11 +122,11 @@ Let's not beat around the bush: words like "threat" and "extortion" very much ap
 
 </CalloutPlusQuote>
 
-<Edit date="9/28/24">
+<Update date="9/28/24">
 
 I left out that Matt's demands included the alternative option for WP Engine to "pay" in contribution hours; i.e., instead of cash, they could just donate employee work hours to WordPress. I didn't feel this was important, since ultimately it all shakes out the same (ha), but I suppose it's relevant information.
 
-</Edit>
+</Update>
 
 Again: this demand was ostensibly in exchange for a "license" to use terms like "WordPress," "WordPress hosting," "WooCommerce," etc.—none of which appear to be actually necessary.
 
@@ -164,17 +164,17 @@ Finally, for the whole two years I worked for Shopify, most of my family thought
 
 Family members don't always get tech. That's not a sign that something is wrong, and it's most _certainly_ not a sign that any wrongdoing has been committed, let alone deliberately. (Which, I assume, probably wasn't Matt's mom's point to begin with, but that didn't stop him from running with it.)
 
-<Edit date="9/28/24">
+<Update date="9/28/24">
 
 As an additional point here: if the problem was confusion around WP Engine's name, why not just ask them for a name/marketing change? Why all the contribution stuff, too? Conversely, if Matt's beef was with WP Engine's lack of contribution, why is he going after their name and marketing? It feels very much like Matt's just trying to cobble together all the reasons he can think of to justify his assault, in my opinion.
 
-</Edit>
+</Update>
 
-<Edit date="10/1/24">
+<Update date="10/1/24">
 
 WP Engine have added a disclaimer to their website footer, clarifying that they have no official affiliation with WordPress, and have removed the word "WordPress" from the titles of their hosting plans.
 
-</Edit>
+</Update>
 
 #### Matt claims WP Engine is selling a "cheap knock-off" of WordPress
 
@@ -212,13 +212,13 @@ But it's not a requirement, or a policy, and enforcing it as such—acting unila
 
 Matt's claimed he/Automattic have been soliciting WP Engine for increased contributions for "years," and that they've given "$0" to the WordPress foundation. To the best of my knowledge, neither of those claims has been substantiated, but I suppose they don't really change this discussion much either way, because again: Matt's taken it upon himself to act as the WP PD to enforce a law that isn't even a law.
 
-<Edit date="9/28/24">
+<Update date="9/28/24">
 
 It's also worth calling out that Matt is the one doing _all_ the math on _both_ companies' contributions, and he's quite obviously skewing the numbers heavily in his own favor, as I explore more in the next section. Even without seeing the full ledger, it's pretty clear Matt's making some highly suspect choices on what counts and what doesn't. He really should've showed up with something at least vaguely resembling an objective and transparent tally if he wanted to make this point. The numbers he showed fall apart at even a cursory examination. And even if an unbiased dataset would still agree with him, it seriously damages Matt's credibility that he came in with such blatantly one-sided figures.
 
-</Edit>
+</Update>
 
-<Edit date="9/30/24">
+<Update date="9/30/24">
 
 To underscore the above point, over the weekend, [Matt floated the idea of merging Advanced Custom Fields Pro into WordPress core](https://www.reddit.com/r/Wordpress/comments/1frcor8/matt_brings_up_bringing_acf_pro_into_core/). Now, I don't really take Matt seriously here; this reads more like a threat or a troll than something that's likely to happen, in my view. But it highlights Matt's lopsided criteria for what counts as a contribution.
 
@@ -226,9 +226,9 @@ To underscore the above point, over the weekend, [Matt floated the idea of mergi
 
 Conversely, if we _don't_ take Matt seriously, and if he's just stirring up trouble for fun like a mini-Musk, then…well, that _also_ reinforces the point that he's not the person who should be in charge of all this.
 
-</Edit>
+</Update>
 
-<Edit date="10/1/24">
+<Update date="10/1/24">
 
 A number of people have reached out to confirm Matt Mullenweg, [by his own admission](https://x.com/photomatt/status/1840980359673995362), is the sole owner of wordpress.org. The project itself is ostensibly open-source, but he privately owns the domain, and there do not appear to be any other people or entities involved, as yet another item on the conflict-of-interest pile.
 
@@ -236,7 +236,7 @@ A number of people have reached out to confirm Matt Mullenweg, [by his own admis
 
 This also raises questions of Matt's rights and motivations for even asking for contributions in the first place. I mean, if he owns .org and helms and funds the Foundation, isn't he, at least to some degree, demanding WP Engine do more work _for him_?
 
-</Edit>
+</Update>
 
 So that's it; that's what Matt's mad about. There's _some_ substance there, and in a vacuum, I think he'd probably have a lot of people on his side.
 
@@ -284,7 +284,7 @@ But Matt, being Matt, _didn't_ make that point in a good way.
 
 (Sorry, this post is already too long without me going into all the times in the past he's stirred up drama and just generally been a toxic jerk to undeserving people in the WordPress community. But if you're not aware: it's become increasingly common. He was even adding public snarky comments on WP Engine employees' posts, ones who had given decades of their life to the project, as recently as yesterday.)
 
-<Edit date="10/2/24" id="tip">
+<Update date="10/2/24" id="tip">
 
 As if to underscore this point, Matt himself saw this post, went to [my Ko-Fi](https://ko-fi.com/collinsworth), and paid to leave a condescending message—presumably after seeing that I literally closed comments on this post explicitly because I figured he might come argue with me.
 
@@ -292,7 +292,7 @@ As if to underscore this point, Matt himself saw this post, went to [my Ko-Fi](h
 
 So yeah…Matt's apparently the kind of guy who will respond to allegations that he's not being a very good guy by paying for the privilege of sending you a mildly harassing note. (It was a nice tip though, in fairness.)
 
-</Edit>
+</Update>
 
 <CalloutPlusQuote>
 
@@ -414,7 +414,7 @@ I guess they technically are. But when one person apparently enjoys unchecked co
 
 [Guitar strumming begins with Alanis Morissette vocalizing]
 
-<Edit date="10/1/24">
+<Update date="10/1/24">
 
 It should be said that licensing the WordPress trademark to other companies would obviously be a massive cash opportunity for the Foundation. But since the Foundation and Automattic are already so inextricably intertwined and controlled by one person, it raises some serious, potentially even IRS-level questions of exactly where that money would going, exactly.
 
@@ -422,7 +422,7 @@ Regardless: if you wanna sell licenses, you need to set the terms at the start, 
 
 Plus, this whole thing reminds me a lot of the Unity saga from earlier this year, where Unity decided to just charge a bunch of extra money for licenses out of the blue and the entire community revolted. The decision was eventually walked back, but the damage was done.
 
-</Edit>
+</Update>
 
 ### Matt melts down
 
@@ -502,19 +502,19 @@ None. Except his.
 
 I hope I don't need to go into how anti-competitive that is, all on its own, or what an egregious abuse of power it is to have put himself and his company in that position by using WordPress.org to do it.
 
-<Edit date="9/30/24">
+<Update date="9/30/24">
 
 I didn't even cover what _else_ somebody with Matt's powers might do; what other escalations would be possible with unilateral control over WordPress.org. Blocking the plugin repo is scary, but there's a lot more Matt _could_ do with this power that would potentially be even scarier—which is why I don't think _any_ one person should hold all the keys in this situation, and _especially_ not Matt Mullenweg. He's shown us what he's capable of and willing to do. There's no other reasonable response but to take him seriously, and ensure neither he nor anyone else can ever abuse such all-encompassing power over WordPress again.
 
-</Edit>
+</Update>
 
-<Edit date="10/1/24" id="unblock">
+<Update date="10/1/24" id="unblock">
 
 Matt agreed to unblock the plugins repo temporarily after the community backlash, but the block went back up today. It seems WP Engine must already have a workaround in place this time, though.
 
-</Edit>
+</Update>
 
-<Edit date="10/1/24" id="takeover">
+<Update date="10/1/24" id="takeover">
 
 Matt has now apparently rescinded the previous 8% licensing agreement, and is instead [threatening a corporate takeover of WP Engine](https://www.therepository.email/mullenweg-threatens-corporate-takeover-of-wp-engine).
 
@@ -540,10 +540,10 @@ If Matt's lawyers _really_ aren't telling him not to say stuff like this, you'd 
 
 ...Actually, I take it back. I wouldn't expect that from him. Not anymore.
 
-</Edit>
+</Update>
 
 
-<Edit date="10/1/24" id="terms-sheet">
+<Update date="10/1/24" id="terms-sheet">
 
 [Automattic released a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/), in a post coming after WP Engine pretty aggressively, accusing WPE of lying about the terms that were offered. (WP Engine, in its original [cease-and-desist letter](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), didn't mention any offer of work contribution as a payment method; they just said Matt demanded payment. Automattic seems to be saying this is a lie, and work contributions were apparently always an option.)
 
@@ -585,7 +585,7 @@ The entire of demands seems incredibly outrageous, even in a vacuum, but especia
 
 No wonder WPE stopped taking his calls.
 
-</Edit>
+</Update>
 
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
