@@ -230,9 +230,9 @@ Conversely, if we _don't_ take Matt seriously, and if he's just stirring up trou
 
 <Edit date="10/1/24">
 
-Although it's difficult to confirm this, a number of people have reached out to me to say Matt Mullenweg is the one who owns wordpress.org. The project itself is open-source, but he is at least alleged to privately own the domain, as yet another item on the conflict-of-interest pile.
+A number of people have reached out to confirm Matt Mullenweg, [by his own admission](https://x.com/photomatt/status/1840980359673995362), is the sole owner of wordpress.org. The project itself is ostensibly open-source, but he privately owns the domain, and there do not appear to be any other people or entities involved, as yet another item on the conflict-of-interest pile.
 
-If true, this also raises questions of Matt's rights and motivations for even asking for contributions in the first place. I mean, if he owns .org and helms and funds the Foundation, isn't he, at least to some degree, demanding WP Engine do more work _for him_?
+This also raises questions of Matt's rights and motivations for even asking for contributions in the first place. I mean, if he owns .org and helms and funds the Foundation, isn't he, at least to some degree, demanding WP Engine do more work _for him_?
 
 </Edit>
 
