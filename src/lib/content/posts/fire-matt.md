@@ -547,13 +547,13 @@ If Matt's lawyers _really_ aren't telling him not to say stuff like this, you'd 
 
 [Automattic released a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/), in a post coming after WP Engine pretty aggressively, accusing WPE of lying about the terms that were offered. (WP Engine, in its original [cease-and-desist letter](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), didn't mention any offer of work contribution as a payment method; they just said Matt demanded payment. Automattic seems to be saying this is a lie, and work contributions were apparently always an option.)
 
-Automattic offers as proof [the terms sheet they offered to WPE](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), but the sheet, bizarrely, is dated September 20th—i.e., the same day as Matt's keynote at WCUS. So I'm a little confused how this is meant to show what Automattic seems to think it does. It shows the two payment options, sure, but that's not the only allegation at play here. If Matt wanted to refute WP Engine's claim that he made a last-minute extortion attempt, this is pretty much the opposite of what he needed to show.
+Automattic offers as proof [the terms sheet they offered to WPE](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), but the sheet, bizarrely, is dated September 20th—i.e., the same day as Matt's keynote at WCUS. So I'm a little confused how this is meant to show what Automattic seems to think it does. It shows the two payment options, sure, but that's not the only allegation at play here. If Matt wanted to refute WP Engine's claim that he made a last-minute extortion attempt, this is pretty much the opposite of what he needed to produce.
 
-Is there not an earlier version Matt can release? If this went down the way he says it did, why aren't we seeing more evidence of earlier terms being offered, rather than the literal day-of offer made at the last minute?
+Is there not an earlier version Matt can release? If this went down the way he says it did, why aren't we seeing more evidence of earlier terms being offered, rather than the literal last minute one?
 
 Besides which, I'm not sure how much the "contribution" angle really matters, because again: there was really only one offer on table. The difference was only in how WP Engine wanted to pay for it (directly, or indirectly).
 
-Whether WP Engine is paying people to work on WordPress, or paying _Automattic_ to pay people to work on WordPress, it's all the same in the end; the price tag is identical. It's not really two options, so much one option with two payment methods. Matt's still demanding money, one way or the other, from WP Engine, to his company. I don't think this really gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
+That is: whether WP Engine is paying people to work on WordPress, or paying _Automattic_ that money, it's all the same in the end; the price tag is identical. It was the same percentage both ways. It's not really two options, so much one option with two payment methods. So I don't think this gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
 
 —_especially_ since, once again, _this is all going through Automattic_! Not through the WordPress Foundation or .org (which owns the actual WordPress trademark in question), but through Matt's own for-profit company, a direct competitor of WP Engine.
 
@@ -573,9 +573,9 @@ One other interesting takeaway: the terms included full rights for Automattic to
 
 Seems to me like anything _remotely_ that invasive would take months, if not years to get in order and approved by legal, HR, etc. Certainly not a day.
 
-But Matt insists it _wasn't_ a day offer; it was a conversation that had been going on for "years." So if that's true, why aren't we seeing earlier documents, or evidence of prior conversations? Why are we just seeing the one document from the 20th?
+But again: Matt insists it _wasn't_ a day offer; it was a conversation that had been going on for "years." So if that's true, why aren't we seeing earlier documents, or hard evidence of the substance of prior conversations? Why are we just seeing the one document from the 20th, and a bunch of dates?
 
-Unless there's more to come that we haven't seen yet (and it's hard to imagine what that would be and why it wasn't released initially), it's tough to see this as anything but Matt just digging himself in even deeper.
+Unless there's more to come that we haven't seen yet (and it's hard to imagine both what that would be and why it wasn't released initially), it's tough to see this as anything but Matt just digging himself in even deeper.
 
 Oh, by the way, the terms sheet also showed Matt wanted 8% of _gross_ revenue(!), and wanted WordPress.org (i.e., him) to decide what WP Engine was paying its employees to work on for him, had they gone with that option; WPE wouldn't even be able to choose what they were paying their own employees to do.
 
