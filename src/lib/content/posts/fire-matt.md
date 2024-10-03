@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-02
+updated: 2024-10-03
 categories:
   - opinion
   - web
@@ -22,7 +22,9 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-This post is a little more hasty than some of my others, in the interest of keeping up with unfolding events. I hope you'll bear with the jumble of thoughts. It's being actively edited, though I've noted updates made since the original publish date.
+If you're just here for the post-publish updates, most of them [start here](#unblock).
+
+This post is a little more hasty than some of my others, in the interest of keeping up with unfolding events. I hope you'll bear with the jumble of thoughts. It's being actively edited, though I've noted updates made since the original publish date. (Look for the "Update mm/dd/yy" marker.)
 
 Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-beatings-will-continue-until-morale) (unaffiliated).
 
@@ -124,7 +126,7 @@ Let's not beat around the bush: words like "threat" and "extortion" very much ap
 
 <Update date="9/28/24">
 
-I left out that Matt's demands included the alternative option for WP Engine to "pay" in contribution hours; i.e., instead of cash, they could just donate employee work hours to WordPress. I didn't feel this was important, since ultimately it all shakes out the same (ha), but I suppose it's relevant information.
+I left out that Matt's demands included the alternative option for WP Engine to "pay" in contribution hours; i.e., instead of cash, they could just donate employee work hours to WordPress. I didn't feel this was important, since ultimately it all shakes out the same—it's an identical sum of money that WP Engine is paying, one way or the other—but I suppose it's relevant information.
 
 </Update>
 
@@ -593,27 +595,37 @@ No wonder WPE stopped taking his calls.
 
 WP Engine is officially pursuing a series of legal complaints against Matt Mullenweg. [Here's the announcement](https://x.com/wpengine/status/1841633469685723292?t=Zc5MrODFXpYHhFVC_nJNwQ), and [here's a direct link to the actual legal document](https://wpengine.com/wp-content/uploads/2024/10/Complaint-WP-Engine-v-Automattic-et-al-with-Exhibit.pdf).
 
-I remain very much not a lawyer, so take this with an appropriately sized grain of salt. But as a quick overview, the complaint appears to be aimed at both Matt and Automattic. WP Engine lists a dozen ways Matt and/or Automattic interfered with its business dealings, extorted WP Engine, broke verbal contracts, took unauthorized actions, and made libelous and slanderous statements that hurt their business (including insinuating patent and trademark violations). I have to imagine this is pretty standard business clash stuff, but even if it's only 50% true (which it likely seems to be, because of everything else we've already covered), it's still incredibly damning. In any case (ha), WP Engine seeks a range of remedies, damages, and awards.
+I remain very much not a lawyer, so take this with an appropriately sized grain of salt. But as a quick overview, the complaint names _both_ Matt and Automattic as defendants. WP Engine lists a dozen ways Matt and/or Automattic interfered with its business dealings, extorted WP Engine, broke verbal contracts, took unauthorized actions, and made libelous and slanderous statements that hurt their business (including insinuating patent and trademark violations). It's a document full of receipts, and it makes WPE's previous C&D look lighthearted by comparison. In any case (ha), WP Engine asks for s jury trial, and seeks a range of remedies, damages, and awards.
 
-Most of the specifics are covered here already, but there are a few new juicy bits:
+Most of the things they allege are things covered here already, but there are a few new juicy bits:
 
-1. **Matt tried to poach Heather Brunner, WP Engine's CEO**. When she refused, he threatened to "go public" with claims that she interviewed at Automattic (as this allegation could be severely damaging to her). WP Engine (and Heather, presumably) denies there was ever any actual interview; they seem to make this all out to be a series of unsolicited offers from Matt that Heather either denied or ignored. The filing include enough screenshots of Matt's communications to make a convincing case.
+1. **Matt tried to poach Heather Brunner, WP Engine's CEO, and threatened her**. When Heather ignored Matt's offer, he threatened to "go public" with claims that she interviewed at Automattic (as this allegation could be severely damaging to her). WP Engine denies there was ever any actual interview; only a series of unsolicited offers from Matt that Heather either denied or ignored. The filing include enough screenshots of Matt's communications to make a convincing case.
 
-2. WP Engine also asserts that **Matt probably messed up real bad in IRS filings for the Foundation**. For one thing, it's a .org domain, which is generally reserved for nonprofits, and yet Matt owns it personally. Is that a crime? I don't know. Probably not. It doesn't look good, though, at any rate.
+2. WP Engine also asserts **Matt probably messed up real bad in IRS filings for the Foundation**. For one thing, it's a .org domain, which is generally reserved for nonprofits, which probably isn't a crime in itself, but which does sorta imply some shady dealings.
 
-  More seriously, however: the Foundation apparently never disclosed that it owns the WordPress trademark to the IRS, nor that it provided an exclusive license to use this trademark to Automattic—which is a big problem, as Matt's claiming it's worth the millions and millions of dollars WP Engine allegedly owes him. Yet, no asset remotely near that value has ever been reported on the Foundation's taxes, according to the filing.
+  More seriously, however: **the Foundation apparently never disclosed to the IRS that it owns the WordPress trademark, nor that it provided an exclusive license to use this trademark to Matt's companies**—which is a big problem, as Matt's claiming it's worth the millions and millions of dollars WP Engine allegedly owes him. Yet, no asset remotely near that value has ever been reported on the Foundation's taxes, according to the filing.
 
-  Essentially, either the trademark is _not_ worth the millions Matt seems to think it is (because he never reported that asset to the IRS)..._or_, it is, and Matt's been filing bad tax reports for over a decade.
+  Essentially, either the WordPress trademark owned by the Foundation (i.e., Matt) is _not_ worth the millions Matt wants for it (because if it was, he should've reported that asset to the IRS)..._or_, it is, and Matt's been filing bad tax reports for several years.
 
   _Yikes!_
 
-WP Engine also officially states that there were no conversations about licensing the WordPress trademark prior to September, and any prior conversations had been specifically about a WooCommerce partner program. Automattic, they allege, suddenly pulled the rug on those talks in September as part of Matt's extortion attempt.
+WP Engine also officially states that **there were no conversations about licensing the WordPress trademark prior to mid September**, just before WCUS. A They say any prior conversations had been specifically about a WooCommerce partner program. Automattic, they allege, suddenly pulled the rug on those talks in August, before suddenly bringing Matt's extortion attempt days before WCUS. (WPE concedes there had been talk of "a license," as part of these dealings, but says no details about what the license was, or was for, or would cost, had been mentioned prior to mid September.)
 
-WPE also calls Matt out for driving down their business's value before making claims he would acquire the business. You know...mafia boss stuff.
+**Matt's insisted his apparent extortion was never about money, and that the talks had been going on for "years." But now that both sides have showed their cards, it looks very much like he's been lying about both.** Matt had the chance to bring proof earlier in the week, and he came in with a doc from September 20th that very clearly asks for 8% in cash one way or another, and a weak list of meetings that barely went back a year. WP Engine's saying in a legal document full of screenshots it didn't go down the way Matt says it did, and thus far he's completely failed to offer anything of substance to refute their version of events.
 
-It's striking how much of the filing is literally just Matt running his mouth. So much of it is just screenshots of actual things he said or did. WPE's entire strategy seems to be "stay quiet and let him dig his own grave," and at this point it sure seems like they picked the perfect strategy.
+It's striking how much of the filing is literally just Matt running his mouth. So much of it is just screenshots of actual things he said or did. WPE's entire strategy seems to be "stay quiet and let him dig his own grave," and at this point it sure seems like they picked the perfect tactic.
 
-There's probably more to get into there, but I think those are the biggest highlights.
+Unless Matt comes out with a _major_ stockpile of receipts that directly contradicts huge swaths of this filing, I don't see how he bounces back from this. Even if the filing were only 50% accurate, how could the community ever trust him after all this?
+
+</Update>
+
+<Update date="10/3/24">
+
+It's being leaked through a number of channels that Automattic is offering employees buyout packages, said to be worth up to $30k, if they want to leave over all of this. It appears to be generous, although it evokes Elon's deal to Twitter employees (which at this point I'm guessing Matt would take as a compliment); "get with me or get out."
+
+A number of prominent figures in the organization are said to have taken the exit deal, [reportedly including Josepha Haden Chomphosy](https://x.com/jeffr0/status/1841679115419553825), the Executive Director of the WordPress project (who by all accounts—including my own—is an exceptional person, and who many felt was much better fit to lead WordPress than Matt. Also, unrelated: she's also a fellow Kansas Citian and elected official in my county, so shout-out to a local Councilmember).
+
+Also, [more Matt harassing innocent people](https://medium.com/@kelliepeterson/nice-guy-matt-mullenweg-ceo-of-wordpress-com-cries-foul-and-threatens-me-with-legal-action-f116ac57d862).
 
 </Update>
 
