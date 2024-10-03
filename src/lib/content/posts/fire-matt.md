@@ -625,7 +625,9 @@ It's being leaked through a number of channels that Automattic is offering emplo
 
 A number of prominent figures in the organization are said to have taken the exit deal, [reportedly including Josepha Haden Chomphosy](https://x.com/jeffr0/status/1841679115419553825), the Executive Director of the WordPress project (who by all accounts—including my own—is an exceptional person, and who many felt was much better fit to lead WordPress than Matt. Also, unrelated: she's also a fellow Kansas Citian and elected official in my county, so shout-out to a local Councilmember).
 
-Also, [more Matt harassing innocent people](https://medium.com/@kelliepeterson/nice-guy-matt-mullenweg-ceo-of-wordpress-com-cries-foul-and-threatens-me-with-legal-action-f116ac57d862).
+Josepha's loss is a huge blow to the community all on its own. But there are said to be dozens of Automatticians (yes, they're really called that) who have also exited at this point, on top of the hundreds and quite possibly thousands of people who were kicked out, harassed, dissuaded, or just turned off by Matt's actions. The lasting damage Matt's done to the community really can't be overstated. All, ironically, in the name of somehow defending it.
+
+Also, [more Matt harassing innocent people](https://medium.com/@kelliepeterson/nice-guy-matt-mullenweg-ceo-of-wordpress-com-cries-foul-and-threatens-me-with-legal-action-f116ac57d862). (He's been dropping into a lot of DMs and comment threads, which doesn't seem like advisable behavior for a defendant and CEO of a company that's a defendant.)
 
 </Update>
 
