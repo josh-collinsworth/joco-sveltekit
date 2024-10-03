@@ -35,6 +35,7 @@
 		margin: 0;
 		padding: 0;
 		padding-block-end: 1em;
+		z-index: 2;
 	}
 
 	:global(.edit > *:nth-last-child(2)) {

@@ -587,6 +587,36 @@ No wonder WPE stopped taking his calls.
 
 </Update>
 
+<Update date="10/2/24" id="filing">
+
+**Welp, looks like we're going to court.**
+
+WP Engine is officially pursuing a series of legal complaints against Matt Mullenweg. [Here's the announcement](https://x.com/wpengine/status/1841633469685723292?t=Zc5MrODFXpYHhFVC_nJNwQ), and [here's a direct link to the actual legal document](https://wpengine.com/wp-content/uploads/2024/10/Complaint-WP-Engine-v-Automattic-et-al-with-Exhibit.pdf).
+
+I remain very much not a lawyer, so take this with an appropriately sized grain of salt. But as a quick overview, the complaint appears to be aimed at both Matt and Automattic. WP Engine lists a dozen ways Matt and/or Automattic interfered with its business dealings, extorted WP Engine, broke verbal contracts, took unauthorized actions, and made libelous and slanderous statements that hurt their business (including insinuating patent and trademark violations). I have to imagine this is pretty standard business clash stuff, but even if it's only 50% true (which it likely seems to be, because of everything else we've already covered), it's still incredibly damning. In any case (ha), WP Engine seeks a range of remedies, damages, and awards.
+
+Most of the specifics are covered here already, but there are a few new juicy bits:
+
+1. **Matt tried to poach Heather Brunner, WP Engine's CEO**. When she refused, he threatened to "go public" with claims that she interviewed at Automattic (as this allegation could be severely damaging to her). WP Engine (and Heather, presumably) denies there was ever any actual interview; they seem to make this all out to be a series of unsolicited offers from Matt that Heather either denied or ignored. The filing include enough screenshots of Matt's communications to make a convincing case.
+
+2. WP Engine also asserts that **Matt probably messed up real bad in IRS filings for the Foundation**. For one thing, it's a .org domain, which is generally reserved for nonprofits, and yet Matt owns it personally. Is that a crime? I don't know. Probably not. It doesn't look good, though, at any rate.
+
+  More seriously, however: the Foundation apparently never disclosed that it owns the WordPress trademark to the IRS, nor that it provided an exclusive license to use this trademark to Automattic—which is a big problem, as Matt's claiming it's worth the millions and millions of dollars WP Engine allegedly owes him. Yet, no asset remotely near that value has ever been reported on the Foundation's taxes, according to the filing.
+
+  Essentially, either the trademark is _not_ worth the millions Matt seems to think it is (because he never reported that asset to the IRS)..._or_, it is, and Matt's been filing bad tax reports for over a decade.
+
+  _Yikes!_
+
+WP Engine also officially states that there were no conversations about licensing the WordPress trademark prior to September, and any prior conversations had been specifically about a WooCommerce partner program. Automattic, they allege, suddenly pulled the rug on those talks in September as part of Matt's extortion attempt.
+
+WPE also calls Matt out for driving down their business's value before making claims he would acquire the business. You know...mafia boss stuff.
+
+It's striking how much of the filing is literally just Matt running his mouth. So much of it is just screenshots of actual things he said or did. WPE's entire strategy seems to be "stay quiet and let him dig his own grave," and at this point it sure seems like they picked the perfect strategy.
+
+There's probably more to get into there, but I think those are the biggest highlights.
+
+</Update>
+
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
 <CalloutPlusQuote>
