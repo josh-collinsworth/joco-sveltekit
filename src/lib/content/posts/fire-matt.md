@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-03
+updated: 2024-10-04
 categories:
   - opinion
   - web
@@ -621,13 +621,44 @@ Unless Matt comes out with a _major_ stockpile of receipts that directly contrad
 
 <Update date="10/3/24">
 
-It's being leaked through a number of channels that Automattic is offering employees buyout packages, said to be worth up to $30k, if they want to leave over all of this. It appears to be generous, although it evokes Elon's deal to Twitter employees (which at this point I'm guessing Matt would take as a compliment); "get with me or get out."
+It's being leaked through a number of channels that Automattic is offering employees buyout packages, said to be worth ~~up to $30k~~ at least $30k (see below), if they want to leave over all of this. It appears to be generous, although it evokes Elon's deal to Twitter employees (which at this point I'm guessing Matt would take as a compliment); "get with me or get out."
 
 A number of prominent figures in the organization are said to have taken the exit deal, [reportedly including Josepha Haden Chomphosy](https://x.com/jeffr0/status/1841679115419553825), the Executive Director of the WordPress project (who by all accounts—including my own—is an exceptional person, and who many felt was much better fit to lead WordPress than Matt. Also, unrelated: she's also a fellow Kansas Citian and elected official in my county, so shout-out to a local Councilmember).
 
 Josepha's loss is a huge blow to the community all on its own. But there are said to be dozens of Automatticians (yes, they're really called that) who have also exited at this point, on top of the hundreds and quite possibly thousands of people who were kicked out, harassed, dissuaded, or just turned off by Matt's actions. The lasting damage Matt's done to the community really can't be overstated. All, ironically, in the name of somehow defending it.
 
 Also, [more Matt harassing innocent people](https://medium.com/@kelliepeterson/nice-guy-matt-mullenweg-ceo-of-wordpress-com-cries-foul-and-threatens-me-with-legal-action-f116ac57d862). (He's been dropping into a lot of DMs and comment threads, which doesn't seem like advisable behavior for a defendant and CEO of a company that's a defendant.)
+</Update>
+
+<Update date="10/4/24">
+
+A number of folks have also reached out to remind me of [this incident on Tumblr earlier this year](https://techcrunch.com/2024/02/22/tumblr-ceo-publicly-spars-with-trans-user-over-account-ban-revealing-private-account-names-in-the-process/).
+
+</Update>
+
+<Update date="10/4/24">
+
+[According to Matt](https://ma.tt/2024/10/alignment/), the deal he offered employees is actually better than reported; it's 6 months of salary, or $30k, whichever is greater. He says 159 employees accepted the offer, which is a little under 10% of the company.
+
+(In my opinion, anyone and everyone in a company the size and scale of Automattic, with a hundred-millionaire at the helm, should be making at _least_ the $60k required to eliminate the need for the "whichever is greater" clause. But alas, such companies often severely underpay where they can, which is often support teams in particular, because there's a never-ending supply of people working even worse jobs waiting to be lured by fancy benefits, burned out, and discarded for the next wave. I know WPE does this, too, as did Flywheel, and as just about any tech company does. It's part of the cycle that inevitably leads to these companies being completely out of touch with their own users, but I digress.)
+
+Six months of salary is a sweet deal, to be sure. I'd definitely consider taking it even if I _didn't_ have any issues with the company. Not too many times in your life you get to take a six-month paid vacation. (I'm sure it's not as simple as that for many of the employees, however.)
+
+Still: it worries me that Matt, who has come off like an egomaniac throughout all of this (and since long before) is in effect cleaning house; getting rid of the dissenters, thus perpetuating the very culture that created all these problems in the first place.
+
+Clearly, if there were adults in the room when Matt made these decisions, something kept their concerns from being heard. In my view, Matt's doing the opposite of what he should be here, and making himself even _less_ likely to be challenged. I don't think it's ultimately good for WordPress in any way, shape, or form, and it will likely result in even worse behavior and decisions out of Matt.
+
+Matt/Automattic also secured a lawyer, who [called WP Engine's lawsuit "meritless,"](https://automattic.com/2024/10/03/meritless/) which is of course the first thing any defense lawyer will do in any case no matter what. I've watched enough true crime to know a defendant could be in the middle of live-streaming their own crime spree to 10 million viewers, and the defense lawyer would still say the charges are baseless and the client is innocent.
+
+I'm guessing things will probably quiet down at this point. Now that it's legally super serious, I surmise both parties will be a lot slower to speech and action. So maybe I'm near the end of these updates, as we may be getting to the long, slow, legal portion of all this now.
+
+One last thing worth mentioning: Automattic's new lawyer, [Neal Katyal](https://en.wikipedia.org/wiki/Neal_Katyal), is apparently known for—among other things—defending Nestlé and Cargill against a class action suit brought by _formerly enslaved children who were kidnapped and forced to work on cocoa farms for those corporations_.
+
+Yes, really. And it gets worse: his whole argument was that Nestlé and Cargill shouldn't be prosecuted because—I cannot believe I am not making this up—_the companies that supplied cyanide to the Nazis weren't convicted either_.
+
+He also charged Johnson & Johnson $2,500 per hour (that's several million per year, if anything even remotely in the ballpark of full-time work) to defend them for selling baby powder contaminated with carcinogens. (It's all in [his Wikipedia](https://en.wikipedia.org/wiki/Neal_Katyal), if you'd like to see for yourself.) So...yeah. Draw from that what you will.
+
+Incidentally, he also really likes Burning Man, just like Matt. ([Look at that outfit](https://abovethelaw.com/2023/09/biglaw-partner-neal-katyal-escapes-burning-man-avoids-trench-foot/)). And finally, he is—surprise!—a board member of a venture capital firm.
 
 </Update>
 
