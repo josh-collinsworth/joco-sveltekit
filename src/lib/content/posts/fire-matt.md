@@ -662,6 +662,34 @@ Incidentally, he also really likes Burning Man, just like Matt. ([Look at that o
 
 </Update>
 
+<Update date="10/5/24">
+
+I almost can't believe Matt is still doing such destructive, careless things that I'm still writing these, but here we are. 
+
+Matt announced there's a vulnerability in ACF, which you'll recall, is a plugin WP Engine maintains, and which is reportedly installed on millions of WordPress sites. (You may also recall this doesn't count as a contribution to the community in Matt's estimation, but that's not relevant to this specific news item.)
+
+Matt hasn't released the details of the vulnerability, but he _did_ publicly disclose that it's with ACF, which strikes me as highly questionable. I don't know that this announcement needed to be made in the first place, but if it did, why couldn't it be more vague? Why is Matt letting every hacker out there know exactly where to look? That just does not seem like something a guy who's supposed to care about the community would do.
+
+He didn't disclose the specifics (except to WPE), but that info _will_ be released in 30 days, and so WPE has that time to fix the vulnerability, whatever it is.
+
+Pretty awful to start that clock on a Saturday, though. Matt knows the engineers in charge of the plugin are now likely forced to work on the weekend to try to keep users safe.
+
+However—and this is the _really_ shitty thing: remember, **WP Engine is still locked out of the .org plugin repo _because of Matt_**. So even once WPE does fix the issue, it _can't_ automatically go out to actual users; they have to *manually* update, which I don't need to tell you, a huge chunk of them aren't going to do. 
+
+**Matt is effectively holding actual WordPress users hostage**, and it's no longer just WP Engine's customers; it's _anyone_ with ACF installed. And again: ACF is one of the absolute most popular plugins in all of WordPress. 
+
+This is inexcusable, dangerous behavior on Matt's part, made all the worse by how borderline _giddy_ he seems to be at the prospect of playing chicken with his own community members' digital safety and wellbeing.
+
+Matt is clearly just fine with risking very real harm to very real people in his feud, which is made all the more scary by the fact that his company just jettisoned 159 voices that could be telling him how destructive and malicious he's actually being. 
+
+I'm running out of ways to say good guys don't do this. The harm here is no longer theoretical; it is a statistical certainty. And yet, Matt not only doesn't seem to mind that people will be hurt by this, he seems to enjoy it.
+
+The utter incineration of trust and goodwill is staggering.
+
+This vindictive child of a man isn't qualified to lead a shift crew at Wendy's.
+
+</Update>
+
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
 <CalloutPlusQuote>
