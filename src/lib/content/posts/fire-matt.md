@@ -690,6 +690,16 @@ This vindictive child of a man isn't qualified to lead a shift crew at Wendy's.
 
 </Update>
 
+<Update date="10/4/24">
+
+Sounds like that ACF vulnerability is low severity, which is good. But that doesn't change the fact that Matt _weaponized_ a vulnerability, made some extreme dick moves in the disclosure (including going public with it without releasing it to the maintainers first), and did it all fully knowing he's standing in the way of that vulnerability actually being fixed.
+
+And he did it all gleefully, because it serves his purposes, and he obviously doesn't care who gets caught up in the collateral damage.
+
+We deserve so much better than this petty tyrant. 
+
+</Update>
+
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
 <CalloutPlusQuote>
