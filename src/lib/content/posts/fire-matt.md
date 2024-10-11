@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-05
+updated: 2024-10-11
 categories:
   - opinion
   - web
@@ -664,7 +664,7 @@ Incidentally, he also really likes Burning Man, just like Matt. ([Look at that o
 
 <Update date="10/5/24">
 
-I almost can't believe Matt is still doing such destructive, careless things that I'm still writing these, but here we are. 
+I almost can't believe Matt is still doing such destructive, careless things that I'm still writing these, but here we are.
 
 Matt announced there's a vulnerability in ACF, which you'll recall, is a plugin WP Engine maintains, and which is reportedly installed on millions of WordPress sites. (You may also recall this doesn't count as a contribution to the community in Matt's estimation, but that's not relevant to this specific news item.)
 
@@ -674,13 +674,13 @@ He didn't disclose the specifics (except to WPE), but that info _will_ be releas
 
 Pretty awful to start that clock on a Saturday, though. Matt knows the engineers in charge of the plugin are now likely forced to work on the weekend to try to keep users safe.
 
-However—and this is the _really_ shitty thing: remember, **WP Engine is still locked out of the .org plugin repo _because of Matt_**. So even once WPE does fix the issue, it _can't_ automatically go out to actual users; they have to *manually* update, which I don't need to tell you, a huge chunk of them aren't going to do. 
+However—and this is the _really_ shitty thing: remember, **WP Engine is still locked out of the .org plugin repo _because of Matt_**. So even once WPE does fix the issue, it _can't_ automatically go out to actual users; they have to *manually* update, which I don't need to tell you, a huge chunk of them aren't going to do.
 
-**Matt is effectively holding actual WordPress users hostage**, and it's no longer just WP Engine's customers; it's _anyone_ with ACF installed. And again: ACF is one of the absolute most popular plugins in all of WordPress. 
+**Matt is effectively holding actual WordPress users hostage**, and it's no longer just WP Engine's customers; it's _anyone_ with ACF installed. And again: ACF is one of the absolute most popular plugins in all of WordPress.
 
 This is inexcusable, dangerous behavior on Matt's part, made all the worse by how borderline _giddy_ he seems to be at the prospect of playing chicken with his own community members' digital safety and wellbeing.
 
-Matt is clearly just fine with risking very real harm to very real people in his feud, which is made all the more scary by the fact that his company just jettisoned 159 voices that could be telling him how destructive and malicious he's actually being. 
+Matt is clearly just fine with risking very real harm to very real people in his feud, which is made all the more scary by the fact that his company just jettisoned 159 voices that could be telling him how destructive and malicious he's actually being.
 
 I'm running out of ways to say good guys don't do this. The harm here is no longer theoretical; it is a statistical certainty. And yet, Matt not only doesn't seem to mind that people will be hurt by this, he seems to enjoy it.
 
@@ -696,7 +696,41 @@ Sounds like that ACF vulnerability is low severity, which is good. But that does
 
 And he did it all gleefully, because it serves his purposes, and he obviously doesn't care who gets caught up in the collateral damage.
 
-We deserve so much better than this petty tyrant. 
+We deserve so much better than this petty tyrant.
+
+<Update date="10/11/24">
+
+I've missed a lot here because of work, but most of it is not especially relevant to the overall thread; just more Matt being Matt (i.e., provoking people, having confusing and unproductive conversations, and making the kinds of choices that have pretty much everyone questioning his motivations and/or wellness).
+
+The plugin vulnerability has been fixed, though it sounds like it required somebody on the inside to help, and also isn't the best fix, because again, Matt's standing in the way in every possible way he can, acting as the sole owner and officiator for WordPress.org.
+
+Speaking of which: Matt added this checkbox to the WordPress.org login screen, requiring users to verify they have nothing to do with WP Engine before being allowed to log in:
+
+![A checkbox on the WordPress.org login screen, asking the user to confirm 'I am not affiliated with WP Engine in any way, financially or otherwise'](/images/post_images/fire-matt/dotorg-login.png)
+
+This prompted [a lot of good questions in the WordPress Slack](https://threadreaderapp.com/thread/1843963052183433331.html), such as "what does this actually mean?" and "why does this exist?" (Paraphrasing mine.) WP Engine is massive and they make lots of things. Many WordPress devs pay them money, so…does that make them affiliated? Can a person who works at WPE or has clients there not contribute to WordPress?
+
+Matt gave lots of non-answers, almost as though he didn't want to implicate himself, and eventually banned the people asking the questions in the first place, including [Javier Casaras](https://www.javiercasares.com/), longtime contributor to WordPress. (Joost from Yoast SEO was also fighting with Matt in the thread, but I don't know his current status.)
+
+Matt (as WordPress.org) also dropped [this protest to WP Engine to 'please stop attacking us'](https://x.com/wordpress/status/1843965031719088368), which is laughable.
+
+In the Slack thread above, Matt insists the WordPress Foundation "only" made $23k in donations last year, which is "barely 10–20 hours of legal fees," all of which I find deeply disingenuous for a few reasons:
+
+1. Now that it's been revealed Matt himself _is_ the organization for all intents and purposes, where is this money going and how can we trust it? Are we not just effectively donating to Matt Mullenweg?
+
+2. Matt picked the lawyer. He didn't have to go out and get a guy with his own Wikipedia page. Not every lawyer charges $2500 per hour.
+
+3. Matt playing the victim here when the aggression has been all on his side (and what there is from WPE has been in their own defense) is very gaslight-y; and
+
+4. Matt is a hundred-millionaire, and he claims the WordPress license the Foundation owns is worth tens of millions of dollars (if not more).
+
+Funny—in the deeply ironic way—that Matt paints the Foundation as a poor, innocent nonprofit that's barely scraping by, trying to defend itself from attacks, when it suits his purposes. Because up until this point, we've only seen it as as a weapon, wielded and controlled unilaterally by a hundred-millionaire, for extortive and divisive purposes, as he claims the Foundation is in possession of a license that's worth tens of millions of dollars.
+
+Anyway, anyone who's ever seen an abusive relationship will recognize the dynamics at play here. Matt's the aggressor, and when he gets any kind of push back, suddenly he's the victim.
+
+Meanwhile, Matt just keeps stirring up small dramas everywhere he can. Some people are sincerely asking whether he's ok, seemingly theorizing this whole episode to be either mental illness or drug-induced. For his part, Matt seems to insist he's fine while [trying to act like this is all part of his grand master plan](https://x.com/DustinSnider/status/1844364915613762032), which I don't think anybody buys at this point.
+
+(Personally, I subscribe to a much simpler opinion: I think most people just severely underestimate what an overdose of power and wealth will actually do to a person.)
 
 </Update>
 
