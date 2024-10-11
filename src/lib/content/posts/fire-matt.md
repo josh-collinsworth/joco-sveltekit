@@ -698,11 +698,13 @@ And he did it all gleefully, because it serves his purposes, and he obviously do
 
 We deserve so much better than this petty tyrant.
 
+</Update>
+
 <Update date="10/11/24">
 
 I've missed a lot here because of work, but most of it is not especially relevant to the overall thread; just more Matt being Matt (i.e., provoking people, having confusing and unproductive conversations, and making the kinds of choices that have pretty much everyone questioning his motivations and/or wellness).
 
-The plugin vulnerability has been fixed, though it sounds like it required somebody on the inside to help, and also isn't the best fix, because again, Matt's standing in the way in every possible way he can, acting as the sole owner and officiator for WordPress.org.
+The ACF plugin vulnerability has been fixed, though it sounds like it required somebody on the inside to help, and also isn't the best fix, because again, Matt's standing in the way in every possible way he can, acting as the sole owner and officiator for WordPress.org.
 
 Speaking of which: Matt added this checkbox to the WordPress.org login screen, requiring users to verify they have nothing to do with WP Engine before being allowed to log in:
 
