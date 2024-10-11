@@ -730,9 +730,19 @@ Funny—in the deeply ironic way—that Matt paints the Foundation as a poor, in
 
 Anyway, anyone who's ever seen an abusive relationship will recognize the dynamics at play here. Matt's the aggressor, and when he gets any kind of push back, suddenly he's the victim.
 
-Meanwhile, Matt just keeps stirring up small dramas everywhere he can. Some people are sincerely asking whether he's ok, seemingly theorizing this whole episode to be either mental illness or drug-induced. For his part, Matt seems to insist he's fine while [trying to act like this is all part of his grand master plan](https://x.com/DustinSnider/status/1844364915613762032), which I don't think anybody buys at this point.
+For example, here's Kellie Peterson (who you might remember from above; Matt's already made a bunch of accusations and threats against her over literally nothing). She made an obviously silly joke about Matt's clearly erratic behavior, and he accused her of threatening his life over it.
 
-(Personally, I subscribe to a much simpler opinion: I think most people just severely underestimate what an overdose of power and wealth will actually do to a person.)
+![On X, Kellie Peterson jokes, 'has anyone tried turning @photomatt off and restarting him?' To which he replies, 'By turning off, do you mean my life should end?'](/images/post_images/fire-matt/image.png)
+
+(Longtime followers of Matt drama might recognize this play from Tumblr.)
+
+Matt just keeps stirring up small dramas everywhere he can. Some people are sincerely asking whether he's ok, seemingly theorizing this whole episode to be either mental illness or drug-induced. For his part, Matt seems to insist he's fine while [trying to act like this is all part of his grand master plan](https://x.com/DustinSnider/status/1844364915613762032), which I don't think anybody buys at this point.
+
+Personally, I subscribe to a much simpler theory: I think most people just severely underestimate what an overdose of power and wealth will actually do to a person.
+
+Anyway, none of these incidents are especially meaningful on their own, and I'm going down kind of a rabbit hole by even exploring any of them. But I'm doing that because together, they paint a very dark and troubling picture.
+
+Over and over again, in big actions and in small interactions, Matt shows himself as someone who can't be trusted with the power he has, and honestly, probably shouldn't have _any_ power over the community to whatever extent it's now possible.
 
 </Update>
 
