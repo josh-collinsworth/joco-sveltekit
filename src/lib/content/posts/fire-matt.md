@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-11
+updated: 2024-10-12
 categories:
   - opinion
   - web
@@ -743,6 +743,32 @@ Personally, I subscribe to a much simpler theory: I think most people just sever
 Anyway, none of these incidents are especially meaningful on their own, and I'm going down kind of a rabbit hole by even exploring any of them. But I'm doing that because together, they paint a very dark and troubling picture.
 
 Over and over again, in big actions and in small interactions, Matt shows himself as someone who can't be trusted with the power he has, and honestly, probably shouldn't have _any_ power over the community to whatever extent it's now possible.
+
+</Update>
+
+<Update date="10/12/24">
+
+I gotta hand it to Matt: he really knows how to top himself.
+
+[Matt has commandeered the Advanced Custom Fields plugin](https://wordpress.org/news/2024/10/secure-custom-fields/), and is now calling it [Secure Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/).
+
+In that post, Matt says he's "forking" ACF. The tenuous premise for this "fork" is [Point 18 of the plugin directory guidelines](https://github.com/wordpress/wporg-plugin-guidelines/blob/trunk/guideline-18.md), which you can read yourself (it's short), but certainly doesn't seem to me to be grounds for a hostile, forced takeover of a plugin without consent from its maintainer.
+
+By the way, the reason I keep saying "fork" in quotes is because the new version (SCF; dumb name, dumb logo) is _not a fork_. It's a takeover.
+
+See, when you fork something, you have a new copy. Your plugin needs to be a _new_ entry in the repo, and it will start at zero users, zero installs, zero reviews, and so on.
+
+That's not what's happening here. As you can see, [SCF](https://wordpress.org/plugins/advanced-custom-fields/) has all of ACF's 2 million+ installs, thousand+ reviews, and everything.
+
+The _actual_ ACF team [took to X](https://x.com/wp_acf/status/1845169499064107049) to say "A plugin under active development has never been unilaterally and forcibly taken away from its creator without consent in the 21 year history of WordPress."
+
+Again, reading point 18, it seems designed to handle cases where a plugin's maintainer can't keep up with the workload any longer, or where there's an imminent security threat. Neither of those is the case here, so Matt's complaint really boils down to the fact that ACF asked people to get updates straight from WP Engine—which, you may recall, they had to do _literally because of Matt_.
+
+The disrespect and cruelty here is striking. Taking away a developer's project, without their consent, all on its own, would've been all but unthinkable except in the most extreme of cases a mere 3–4 weeks ago (_how has it only been that long_!?)
+
+But to do that because _you_ forced the developer to go around you by refusing them the access they needed to make updates, and then _punishing_ them for doing what they had to do to keep their own users safe…I just can't think of any other word but cruel.
+
+Matt put people on the trolley tracks, WP Engine pulled the lever to save them, and Matt is punishing them for it.
 
 </Update>
 
