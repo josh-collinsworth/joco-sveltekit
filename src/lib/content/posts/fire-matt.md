@@ -776,21 +776,19 @@ Matt put people on the trolley tracks, WP Engine pulled the lever to save them, 
 
 </Update>
 
-<Update date="10/15/24" title="Another lawsuit, this one against Matt, his (very racist) mom, and Audrey Capital" id="another-lawsuit">
+<Update date="10/15/24" title="Another lawsuit, this one against Matt, his (allegedly very racist) mom, and Audrey Capital" id="another-lawsuit">
 
-A [whole new lawsuit was filed](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600093.pdf) by a private nurse, hired by Matt, who worked for Matt Mullenweg's mom Kathleen as a full-time (and then some) caretaker.
+Folks online dug up [a whole different lawsuit against Matt, filed in 2022](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600093.pdf) by a private nurse hired by Matt, who worked for his mom Kathleen as a full-time (and then some) caretaker.
 
-(There's a sort of irony that this all started with Matt's mom, and has now circled back to her in a way I don't think anyone expected.)
+There's a ***lot*** to go into here, and [this tweet summarizes the claims pretty well](https://x.com/trentlapinski/status/1845700375589826701). A quick summary doesn't do it justice, but: it claims this nurse (a mom, and a Muslim) was lured by promises of pay she never received, given half the pay of a male colleague, forced to work overtime in brutal conditions, defamed, abused, and exposed to horrific harassment and bigotry of pretty much every kind. When she spoke up—directly to Matt, who had allegedly promised her much more pay than he actually gave her—she was retaliated against and threatened. She eventually quit due to unbearable working conditions.
 
-There's a ***lot*** to go into here, and [this tweet summarizes the claims pretty well](https://x.com/trentlapinski/status/1845700375589826701). A quick summary doesn't do it justice, but: this poor nurse (a mom, and a Muslim) was lured by promises of pay she never received, given half the pay of a male colleague, forced to work overtime in brutal conditions, defamed, abused, and exposed to horrific harassment and bigotry of pretty much every kind. When she spoke up—directly to Matt, who had allegedly promised her much more pay than he actually gave her—she was retaliated against and threatened. She eventually quit due to unbearable working conditions.
-
-Seriously: read the actual filing and your jaw will drop. Just be warned it details _shocking_ levels of racism and mistreatment, along with just about every other kind of bigotry and harassment. (I'd argue the term "sexual assault" even applies here.) Most of it is on the part of Matt's mom, but Matt was allegedly very much aware of it, and not only did nothing, but made the caretaker's life even worse whenever complaints arose.
+Read the actual filing and your jaw will drop. Just be warned it details _shocking_ levels of racism and mistreatment, along with just about every other kind of bigotry and harassment. (I'd argue the term "sexual assault" even applies here.) Most of it is on the part of Matt's mom, but Matt was allegedly very much aware of it, and not only did nothing, but made the caretaker's life even worse whenever complaints arose.
 
 The nurse was apparently paid through Audrey Capital, which Matt owns, and which the lawsuit claims is basically a shell corporation for shady financial dealings. ("Fraud" is a word used in the filing.)
 
-Some might say we shouldn't rush to judgment before the case is settled, and while there's merit to that position, I would argue we _must_ take these allegations seriously. If we don't, we give the benefit of the doubt to the rich abuser, rather than to his alleged victims. If we don't treat the allegations as though there at least _could be_ truth to them (and I don't see any strong reason to doubt it at this stage), then we risk being complicit in the abuse.
+Some might say we shouldn't rush to judgment before the case is settled, and while there's certainly merit to that position, at the same time, we _must_ take these allegations seriously. If we don't, we give the benefit of the doubt to the rich abuser, rather than to his victims, and I hope we've learned better than that in recent history.
 
-Besides, data tells us it's extremely rare, almost to the point of nonexistence, for this type of allegation to be made without any substantiation—_especially_ in the form of a lawsuit. The plaintiff is taking extreme cost and risk into her own hands, likely well aware of the public harassment she's unfortunately exposing herself to in doing so. That alone demands we take her case seriously.
+If we don't treat the allegations as though there at least _could be_ truth to them (and I don't see any strong reason to throw out that possibility), then we risk being complicit in the abuse itself.
 
 Similarly, some folks will argue this doesn't have anything to do with the ongoing WordPress drama. They might say this whole incident is irrelevant in that larger picture, because it only has to do with Matt's family and personal life.
 
@@ -798,19 +796,28 @@ I disagree. We're talking about not just _a_ leader, but _the_ leader at the cor
 
 We've seen this all before. The specifics might be different, but the plot is the same every time; anyone who dares to defy Matt is threatened, bullied, cut off, and/or made an example of.
 
-In short, this lawsuit confirms and reinforces everything we've already seen from Matt. It tells us that yes, again, for the nth time, this is exactly who he is, and who he's always been.
-
-<CalloutPlusQuote>
-
-Matt uses his power to hurt people. Full stop.
-
-</CalloutPlusQuote>
+Matt is just fine using his power to hurt people. We've seen it plenty of times now. So it seems odd to think a meritless suit could nonetheless describe Matt's normal behavior so consistently.
 
 Besides, the type of shady financial dealings this lawsuit alleges are very much in keeping with what we've already seen from Matt in this case.
 
-As more and more people speak out, the picture becomes clearer and clearer: Matt is shady and terrible and wildly untrustworthy in every possible way.
+</Update>
+
+<Update date="10/15/24" title="Matt responds to the 'other lawsuits'" id="">
+
+There's also [a second lawsuit from 2022](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600095.pdf) (brought by the same lawyer), for similar claims as the first; low pay for unbearable working conditions, this time brought by a former assistant. [Here's another quick summary](https://x.com/trentlapinski/status/1845718004673265722).
+
+[Matt's spoken out about both of those, as of today](https://ma.tt/2024/10/other-lawsuits/), claiming they're baseless. He says the lawyer who filed both suits coerced both workers into filing and basically made everything up as a way to get money. He (predictably) claims this is all part of the "smear campaign" against him, and that he's fighting the cases because they're baseless, and he doesn't want to encourage more people to make stuff up.
+
+I acknowledge there's no way to know who's telling the truth here, but I maintain my position that we should take the claims seriously and not take Matt's word for it or extend the benefit of the doubt unevenly (particularly since all of this is exactly what we could expect Matt to say whether or not he was guilty).
+
+I will note, however, that Matt's response reads a lot like his response to everything up to this point. He's a poor, innocent victim, even when what's happening to him is 100% a direct result of his own aggressions against another party.
+
+Everyone's against him. It's all a conspiracy. He didn't do anything at all (even the things we all watched him do).
+
+It's all very Trumpian.
 
 </Update>
+
 
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
