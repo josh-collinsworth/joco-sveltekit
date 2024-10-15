@@ -816,6 +816,8 @@ Everyone's against him. It's all a conspiracy. He didn't do anything at all (eve
 
 It's all very Trumpian.
 
+Also: I can't help but notice we keep finding Matt in situations where he could easily provide documentation to refute the allegations against him, and he keeps _not_ doing that, and instead, just asking us to believe him.
+
 </Update>
 
 
