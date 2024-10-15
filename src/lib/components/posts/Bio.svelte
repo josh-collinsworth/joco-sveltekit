@@ -6,30 +6,38 @@
 	<div class="bio">
 		<div>
 			<p class="about">
-				I'm Josh Collinsworth, a frontend developer, designer, teacher, and writer. I currently live
-				in Kansas City, and work for <a href="https://deno.land">Deno</a> as a senior frontend developer.
+				I'm Josh Collinsworth, a frontend developer, designer, teacher, and
+				writer. I currently live in Kansas City, and work for <a
+					href="https://deno.land">Deno</a
+				> as a senior frontend developer.
 			</p>
 			<ul class="link-list">
 				<li class="link-list__kofi">
-					<a href="https://ko-fi.com/collinsworth" rel="external"> Buy me a coffee </a>
+					<a href="https://ko-fi.com/collinsworth" rel="external">
+						Buy me a coffee
+					</a>
 				</li>
 				<li class="link-list__contact">
-					<a href="/contact?from_page={currentPage}"> Send me a note about this post </a>
+					<a href="/contact?from_page={currentPage}">
+						Send me a note about this post
+					</a>
 				</li>
 				<li class="link-list__more">
 					<a href="/">More about me</a>
 				</li>
 			</ul>
 		</div>
-		<img src="/images/bio-photo.jpg" alt="" class="thumbnail" width="1" height="1" />
+		<img
+			src="/images/bio-photo.jpg"
+			alt=""
+			class="thumbnail"
+			width="1"
+			height="1"
+		/>
 	</div>
 </div>
 
 <style lang="scss">
-	.post-bio-hr {
-		background: linear-gradient(to left, var(--blueToYellow));
-	}
-
 	.bio {
 		font-size: 0.85rem;
 		overflow: auto;

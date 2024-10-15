@@ -6,17 +6,17 @@
 	export let dir: string
 
 	interface framework {
-		title: string;
-		slug: string;
-		component: SvelteComponentTyped;
+		title: string
+		slug: string
+		component: SvelteComponentTyped
 	}
 
 	let React: SvelteComponentTyped,
-			Vue2: SvelteComponentTyped,
-			Vue3: SvelteComponentTyped,
-			Svelte: SvelteComponentTyped,
-			currentFramework: SvelteComponentTyped
-	
+		Vue2: SvelteComponentTyped,
+		Vue3: SvelteComponentTyped,
+		Svelte: SvelteComponentTyped,
+		currentFramework: SvelteComponentTyped
+
 	let frameworks: framework[] = []
 
 	const changeFramework = (component: SvelteComponentTyped): void => {
@@ -35,24 +35,29 @@
 			{
 				title: 'Svelte',
 				slug: 'code-svelte',
-				component: Svelte,
-			}, {
+				component: Svelte
+			},
+			{
 				title: 'React',
 				slug: 'code-react',
-				component: React,
-			}, {
+				component: React
+			},
+			{
 				title: includeBothVues ? 'Vue 2' : 'Vue',
 				slug: 'code-vue2',
-				component: Vue2,
+				component: Vue2
 			}
 		]
 
 		if (includeBothVues) {
-			frameworks = [...frameworks, {
-				title: 'Vue 3.2',
-				slug: 'code-vue3',
-				component: Vue3,
-			}]
+			frameworks = [
+				...frameworks,
+				{
+					title: 'Vue 3.2',
+					slug: 'code-vue3',
+					component: Vue3
+				}
+			]
 		}
 
 		currentFramework = Svelte
@@ -60,9 +65,13 @@
 </script>
 
 <div class="svelte-code-comparison">
-	<div class="svelte-code-comparison__button-bar" role="tablist" aria-label="Framework">
+	<div
+		class="svelte-code-comparison__button-bar"
+		role="tablist"
+		aria-label="Framework"
+	>
 		{#each frameworks as framework}
-			<button 
+			<button
 				on:click={() => changeFramework(framework.component)}
 				role="tab"
 				aria-controls={framework.slug}
@@ -75,11 +84,7 @@
 	</div>
 
 	{#each frameworks as framework}
-		<div
-			id={framework.slug}
-			tabindex={currentFramework == framework.component ? 0 : -1}
-			hidden={currentFramework != framework.component}
-		>
+		<div id={framework.slug} hidden={currentFramework != framework.component}>
 			<svelte:component this={framework.component} />
 		</div>
 	{/each}
@@ -90,7 +95,6 @@
 		{/each}
 	</noscript>
 </div>
-
 
 <style lang="scss">
 	.svelte-code-comparison {
@@ -130,7 +134,7 @@
 			font-weight: bold;
 		}
 
-		:global(pre[class*="language-"]) {
+		:global(pre[class*='language-']) {
 			margin-top: 0 !important;
 			padding-top: 1rem;
 

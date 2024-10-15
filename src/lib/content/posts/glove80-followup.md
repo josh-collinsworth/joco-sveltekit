@@ -62,7 +62,7 @@ That's a lot of nits, but I will call out one major benefit I think I underestim
 
 <figure>
 
-![an image](/images/post_images/glove80/glove80-sideways.jpg)
+![The Glove80's scooped keywells, like a halfpipe, higher closer and further from your palms, lowest in the middle](/images/post_images/glove80/glove80-sideways.jpg)
 
 <figcaption>The concave "scooped" keywells on the Glove80 allow your palms to sit higher, to avoid bent wrists.</figcaption>
 

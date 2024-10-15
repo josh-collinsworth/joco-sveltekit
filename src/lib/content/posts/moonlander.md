@@ -198,7 +198,7 @@ In the latter case, you might be better off going with ZSA's other major keyboar
 If you're curious about my own personal layout, you can check it out here:
 
 <div style="padding-top: 60%; position: relative; margin: var(--halfNote) 0;">
-	<iframe src="https://configure.zsa.io/embed/moonlander/layouts/6wVPq/latest/0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%"></iframe>
+	<iframe src="https://configure.zsa.io/embed/moonlander/layouts/6wVPq/latest/0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%" title="My Moonlander layout"></iframe>
 </div>
 
 If you click through, you'll see I've got shift, command, and option on the left side of the thumb keys, with space, backspace, and enter on the right. That lets my thumbs do all the repetitive work (with more or less the same hand that would hit the keys by default). The big red keys are escape and tab, respectively, since those are a little harder to reach, and those keys are used a little less frequently. This has the added bonus of making my two most-used shortcuts--cmd + tab to switch apps, and cmd + space to open Raycast--available using thumbs only. (Tab is also available in its default position on the left, for when I need a one-handed combo.)
