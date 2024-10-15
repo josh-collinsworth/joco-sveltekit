@@ -776,7 +776,7 @@ Matt put people on the trolley tracks, WP Engine pulled the lever to save them, 
 
 </Update>
 
-<Update date="10/15/24" title="Another lawsuit, this one against Matt, his (allegedly very racist) mom, and Audrey Capital" id="another-lawsuit">
+<Update date="10/15/24" title="Previous lawsuits against Matt come to light" id="another-lawsuit">
 
 Folks online dug up [a whole different lawsuit against Matt, filed in 2022](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600093.pdf) by a private nurse hired by Matt, who worked for his mom Kathleen as a full-time (and then some) caretaker.
 
@@ -800,13 +800,13 @@ Matt is just fine using his power to hurt people. We've seen it plenty of times 
 
 Besides, the type of shady financial dealings this lawsuit alleges are very much in keeping with what we've already seen from Matt in this case.
 
+There's also [a second lawsuit from 2022](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600095.pdf) (brought by the same lawyer), for similar claims as the first; low pay for unbearable working conditions, this time brought by a former assistant. [Here's another quick summary](https://x.com/trentlapinski/status/1845718004673265722).
+
 </Update>
 
 <Update date="10/15/24" title="Matt responds to the 'other lawsuits'" id="">
 
-There's also [a second lawsuit from 2022](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600095.pdf) (brought by the same lawyer), for similar claims as the first; low pay for unbearable working conditions, this time brought by a former assistant. [Here's another quick summary](https://x.com/trentlapinski/status/1845718004673265722).
-
-[Matt's spoken out about both of those, as of today](https://ma.tt/2024/10/other-lawsuits/), claiming they're baseless. He says the lawyer who filed both suits coerced both workers into filing and basically made everything up as a way to get money. He (predictably) claims this is all part of the "smear campaign" against him, and that he's fighting the cases because they're baseless, and he doesn't want to encourage more people to make stuff up.
+[Matt speaks out about both of those suits from 2022](https://ma.tt/2024/10/other-lawsuits/), claiming they're baseless. He says the lawyer who filed both suits coerced both workers into filing and basically made everything up as a way to get money. He (predictably) claims this is all part of the "smear campaign" against him, and that he's fighting the cases because they're baseless, and he doesn't want to encourage more people to make stuff up.
 
 I acknowledge there's no way to know who's telling the truth here, but I maintain my position that we should take the claims seriously and not take Matt's word for it or extend the benefit of the doubt unevenly (particularly since all of this is exactly what we could expect Matt to say whether or not he was guilty).
 
@@ -815,6 +815,8 @@ I will note, however, that Matt's response reads a lot like his response to ever
 Everyone's against him. It's all a conspiracy. He didn't do anything at all (even the things we all watched him do).
 
 It's all very Trumpian.
+
+Especially the "smear campaign" thing. Far as I can see, the only people saying anything negative or critical of Matt Mullenweg are people who are just noticing the things he's actually saying and doing, and calling attention to those things.
 
 Also: I can't help but notice we keep finding Matt in situations where he could easily provide documentation to refute the allegations against him, and he keeps _not_ doing that, and instead, just asking us to believe him.
 
