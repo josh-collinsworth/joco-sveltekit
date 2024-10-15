@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-12
+updated: 2024-10-15
 categories:
   - opinion
   - web
@@ -22,7 +22,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-If you're just here for the post-publish updates, most of them [start here](#unblock).
+If you're just here for the post-publish updates, most of them [start here](#updates-everything-thats-happened-since-october-1st), from October 1st onward.
 
 This post is a little more hasty than some of my others, in the interest of keeping up with unfolding events. I hope you'll bear with the jumble of thoughts. It's being actively edited, though I've noted updates made since the original publish date. (Look for the "Update mm/dd/yy" marker.)
 
@@ -510,13 +510,17 @@ I didn't even cover what _else_ somebody with Matt's powers might do; what other
 
 </Update>
 
+## Updates: everything that's happened since October 1st
+
+I'll continue to update this section as long as it's practical and useful.
+
 <Update date="10/1/24" id="unblock">
 
 Matt agreed to unblock the plugins repo temporarily after the community backlash, but the block went back up today. It seems WP Engine must already have a workaround in place this time, though.
 
 </Update>
 
-<Update date="10/1/24" id="takeover">
+<Update date="10/1/24" id="takeover" title="Matt talks taking over WP Engine">
 
 Matt has now apparently rescinded the previous 8% licensing agreement, and is instead [threatening a corporate takeover of WP Engine](https://www.therepository.email/mullenweg-threatens-corporate-takeover-of-wp-engine).
 
@@ -545,7 +549,7 @@ If Matt's lawyers _really_ aren't telling him not to say stuff like this, you'd 
 </Update>
 
 
-<Update date="10/1/24" id="terms-sheet">
+<Update date="10/1/24" id="terms-sheet" title="Automattic releases the terms sheet, which kinda backfires">
 
 [Automattic released a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/), in a post coming after WP Engine pretty aggressively, accusing WPE of lying about the terms that were offered. (WP Engine, in its original [cease-and-desist letter](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), didn't mention any offer of work contribution as a payment method; they just said Matt demanded payment. Automattic seems to be saying this is a lie, and work contributions were apparently always an option.)
 
@@ -589,7 +593,7 @@ No wonder WPE stopped taking his calls.
 
 </Update>
 
-<Update date="10/2/24" id="filing">
+<Update date="10/2/24" id="filing" title="WP Engine files suit against Matt and Automattic">
 
 **Welp, looks like we're going to court.**
 
@@ -619,7 +623,7 @@ Unless Matt comes out with a _major_ stockpile of receipts that directly contrad
 
 </Update>
 
-<Update date="10/3/24">
+<Update date="10/3/24" title="Matt offers buyouts to Automattic employees">
 
 It's being leaked through a number of channels that Automattic is offering employees buyout packages, said to be worth ~~up to $30k~~ at least $30k (see below), if they want to leave over all of this. It appears to be generous, although it evokes Elon's deal to Twitter employees (which at this point I'm guessing Matt would take as a compliment); "get with me or get out."
 
@@ -636,7 +640,7 @@ A number of folks have also reached out to remind me of [this incident on Tumblr
 
 </Update>
 
-<Update date="10/4/24">
+<Update date="10/4/24" title="159 Automattic employees take the buyout; Matt hires a famous lawyer who's a horrible human">
 
 [According to Matt](https://ma.tt/2024/10/alignment/), the deal he offered employees is actually better than reported; it's 6 months of salary, or $30k, whichever is greater. He says 159 employees accepted the offer, which is a little under 10% of the company.
 
@@ -662,7 +666,7 @@ Incidentally, he also really likes Burning Man, just like Matt. ([Look at that o
 
 </Update>
 
-<Update date="10/5/24">
+<Update date="10/5/24" title="Matt gleefully exposes a vulnerability in ACF, but prevents WPE from fixing it">
 
 I almost can't believe Matt is still doing such destructive, careless things that I'm still writing these, but here we are.
 
@@ -700,7 +704,7 @@ We deserve so much better than this petty tyrant.
 
 </Update>
 
-<Update date="10/11/24">
+<Update date="10/11/24" title="Matt adds a vague anti-WP Engine checkbox to WordPress.org, but fails to clarify why, all while playing the victim">
 
 I've missed a lot here because of work, but most of it is not especially relevant to the overall thread; just more Matt being Matt (i.e., provoking people, having confusing and unproductive conversations, and making the kinds of choices that have pretty much everyone questioning his motivations and/or wellness).
 
@@ -746,7 +750,7 @@ Over and over again, in big actions and in small interactions, Matt shows himsel
 
 </Update>
 
-<Update date="10/12/24">
+<Update date="10/12/24" title="Matt commandeers ACF, using WordPress.org to steal a competitor's product">
 
 I gotta hand it to Matt: he really knows how to top himself.
 
@@ -769,6 +773,42 @@ The disrespect and cruelty here is striking. Taking away a developer's project, 
 But to do that because _you_ forced the developer to go around you by refusing them the access they needed to make updates, and then _punishing_ them for doing what they had to do to keep their own users safe…I just can't think of any other word but cruel.
 
 Matt put people on the trolley tracks, WP Engine pulled the lever to save them, and Matt is punishing them for it.
+
+</Update>
+
+<Update date="10/15/24" title="Another lawsuit, this one against Matt, his (very racist) mom, and Audrey Capital" id="another-lawsuit">
+
+A [whole new lawsuit was filed](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600093.pdf) by a private nurse, hired by Matt, who worked for Matt Mullenweg's mom Kathleen as a full-time (and then some) caretaker.
+
+(There's a sort of irony that this all started with Matt's mom, and has now circled back to her in a way I don't think anyone expected.)
+
+There's a ***lot*** to go into here, and [this tweet summarizes the claims pretty well](https://x.com/trentlapinski/status/1845700375589826701). A quick summary doesn't do it justice, but: this poor nurse (a mom, and a Muslim) was lured by promises of pay she never received, given half the pay of a male colleague, forced to work overtime in brutal conditions, defamed, abused, and exposed to horrific harassment and bigotry of pretty much every kind. When she spoke up—directly to Matt, who had allegedly promised her much more pay than he actually gave her—she was retaliated against and threatened. She eventually quit due to unbearable working conditions.
+
+Seriously: read the actual filing and your jaw will drop. Just be warned it details _shocking_ levels of racism and mistreatment, along with just about every other kind of bigotry and harassment. (I'd argue the term "sexual assault" even applies here.) Most of it is on the part of Matt's mom, but Matt was allegedly very much aware of it, and not only did nothing, but made the caretaker's life even worse whenever complaints arose.
+
+The nurse was apparently paid through Audrey Capital, which Matt owns, and which the lawsuit claims is basically a shell corporation for shady financial dealings. ("Fraud" is a word used in the filing.)
+
+Some might say we shouldn't rush to judgment before the case is settled, and while there's merit to that position, I would argue we _must_ take these allegations seriously. If we don't, we give the benefit of the doubt to the rich abuser, rather than to his alleged victims. If we don't treat the allegations as though there at least _could be_ truth to them (and I don't see any strong reason to doubt it at this stage), then we risk being complicit in the abuse.
+
+Besides, data tells us it's extremely rare, almost to the point of nonexistence, for this type of allegation to be made without any substantiation—_especially_ in the form of a lawsuit. The plaintiff is taking extreme cost and risk into her own hands, likely well aware of the public harassment she's unfortunately exposing herself to in doing so. That alone demands we take her case seriously.
+
+Similarly, some folks will argue this doesn't have anything to do with the ongoing WordPress drama. They might say this whole incident is irrelevant in that larger picture, because it only has to do with Matt's family and personal life.
+
+I disagree. We're talking about not just _a_ leader, but _the_ leader at the core of perhaps the largest ecosystem on the web, in a discussion of that (probably-not-so) benevolent dictator's character. And in this filing, we see patterns we've witnessed in the WordPress ecosystem (and Tumblr, and others) reinforced and played out again and again.
+
+We've seen this all before. The specifics might be different, but the plot is the same every time; anyone who dares to defy Matt is threatened, bullied, cut off, and/or made an example of.
+
+In short, this lawsuit confirms and reinforces everything we've already seen from Matt. It tells us that yes, again, for the nth time, this is exactly who he is, and who he's always been.
+
+<CalloutPlusQuote>
+
+Matt uses his power to hurt people. Full stop.
+
+</CalloutPlusQuote>
+
+Besides, the type of shady financial dealings this lawsuit alleges are very much in keeping with what we've already seen from Matt in this case.
+
+As more and more people speak out, the picture becomes clearer and clearer: Matt is shady and terrible and wildly untrustworthy in every possible way.
 
 </Update>
 

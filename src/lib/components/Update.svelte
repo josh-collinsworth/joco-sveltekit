@@ -1,18 +1,26 @@
 <script lang="ts">
 	export let date: string
 	export let id: string = ''
+	export let title: string = ''
 </script>
 
 <div class="edit" {id}>
+	{#if title}
+		<h3>{title}</h3>
+	{/if}
 	<p class="date">Update {date}</p>
 	<slot />
 	<p class="sr">End update</p>
 </div>
 
 <style>
+	h3 {
+		margin-block: 0;
+	}
+
 	.edit {
 		position: relative;
-		margin-block: var(--dottedHalfNote) var(--halfNote);
+		margin-block: var(--dottedHalfNote);
 		margin-inline-start: 0;
 		border-left: 1px solid var(--lightBlue);
 		padding-inline-start: 16px;
