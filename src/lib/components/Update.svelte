@@ -5,22 +5,22 @@
 </script>
 
 <div class="edit" {id}>
+	<p class="date">Update {date}</p>
 	{#if title}
 		<h3>{title}</h3>
 	{/if}
-	<p class="date">Update {date}</p>
 	<slot />
 	<p class="sr">End update</p>
 </div>
 
 <style>
 	h3 {
-		margin-block: 0;
+		margin-block-start: 0;
 	}
 
 	.edit {
 		position: relative;
-		margin-block: var(--dottedHalfNote);
+		margin-block: var(--dottedHalfNote) var(--halfNote);
 		margin-inline-start: 0;
 		border-left: 1px solid var(--lightBlue);
 		padding-inline-start: 16px;
