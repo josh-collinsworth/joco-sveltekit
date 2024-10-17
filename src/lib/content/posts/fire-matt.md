@@ -22,15 +22,170 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
 
 <Note>
 
-If you're just here for the post-publish updates, most of them [start here](#updates-everything-thats-happened-since-october-1st), from October 1st onward.
-
-This post is a little more hasty than some of my others, in the interest of keeping up with unfolding events. I hope you'll bear with the jumble of thoughts. It's being actively edited, though I've noted updates made since the original publish date. (Look for the "Update mm/dd/yy" marker.)
+This post is a little more hasty than some of my others, in the interest of keeping up with unfolding events. I hope you'll bear with the jumble of thoughts. It's being actively edited; use the table of contents below to jump to any updates.
 
 Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-beatings-will-continue-until-morale) (unaffiliated).
 
 </Note>
 
-There are some people who think being right about something confers the right to do whatever they think should be done about it; a license to act however they see fit in order to correct what they see as wrongness.
+<div class="toc-wrap">
+  <aside class="toc">
+    <h2>
+      <span class="opening-bracket" aria-hidden="true">[</span>Table of
+      contents<span class="closing-bracket" aria-hidden="true">]</span>
+    </h2>
+    <ol class="toc-list">
+      <li>
+        <a href="#intro"
+          >Introduction</a
+        >
+      </li>
+      <li>
+        <a href="#wait-who-are-you-and-why-do-you-care"
+          >Wait, who are you and why do you care?</a
+        >
+      </li>
+      <li>
+        <a href="#im-sorry-what-happened">I’m sorry, what happened?</a>
+        <ul>
+          <li>
+            <a href="#automattic-approaches-wp-engine-to-offer-a-license"
+              >Automattic approaches WP Engine to offer a “license”</a
+            >
+          </li>
+          <li>
+            <a href="#matts-rejected-so-he-tries-new-strategies"
+              >Matt’s rejected, so he tries new strategies</a
+            >
+          </li>
+          <li>
+            <a href="#waitwhats-matts-actual-deal-why-is-he-doing-this"
+              >Wait—what’s Matt’s actual deal? Why is he doing this?</a
+            >
+            <ul>
+              <li>
+                <a href="#matt-claims-wp-engine-is-misrepresenting-itself"
+                  >Matt claims WP Engine is misrepresenting itself</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#matt-claims-wp-engine-is-selling-a-cheap-knock-off-of-wordpress"
+                  >Matt claims WP Engine is selling a “cheap knock-off” of
+                  WordPress</a
+                >
+              </li>
+              <li>
+                <a href="#matt-says-wp-engine-doesnt-give-back-enough"
+                  >Matt says WP Engine doesn't give back enough</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#an-aside-on-motivations-and-justifications"
+              >An aside on motivations and justifications</a
+            >
+          </li>
+          <li>
+            <a href="#the-wordcamp-us-fallout-and-matts-abuse-of-power"
+              >The WordCamp US fallout and Matt’s abuse of power</a
+            >
+          </li>
+          <li><a href="#wp-engines-reaction">WP Engine’s reaction</a></li>
+          <li><a href="#matt-melts-down">Matt melts down</a></li>
+          <li><a href="#matt-goes-nuclear">Matt goes nuclear</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#updates-everything-thats-happened-since-october-1st"
+          >Updates: everything that’s happened since October 1st</a
+        >
+        <ul>
+          <li>
+            <a href="#matt_talks_taking_over_wp_engine"
+              >Matt talks taking over WP Engine</a
+            >
+          </li>
+          <li>
+            <a href="#automattic_releases_the_terms_sheet_which_kinda_backfires"
+              >Automattic releases the terms sheet, which kinda backfires</a
+            >
+          </li>
+          <li>
+            <a href="#wp_engine_files_suit_against_matt_and_automattic"
+              >WP Engine files suit against Matt and Automattic</a
+            >
+          </li>
+          <li>
+            <a href="#matt_offers_buyouts_to_automattic_employees"
+              >Matt offers buyouts to Automattic employees</a
+            >
+          </li>
+          <li>
+            <a
+              href="#159_automattic_employees_take_the_buyout_matt_hires_a_famous_lawyer_whos_a_horrible_human"
+              >159 Automattic employees take the buyout; Matt hires a famous
+              lawyer who's a horrible human</a
+            >
+          </li>
+          <li>
+            <a
+              href="#matt_gleefully_exposes_a_vulnerability_in_acf_but_prevents_wpe_from_fixing_it"
+              >Matt gleefully exposes a vulnerability in ACF, but prevents WPE
+              from fixing it</a
+            >
+          </li>
+          <li>
+            <a
+              href="#matt_adds_a_vague_anti-wp_engine_checkbox_to_wordpressorg_but_fails_to_clarify_why_all_while_playing_the_victim"
+              >Matt adds a vague anti-WP Engine checkbox to WordPress.org, but
+              fails to clarify why, all while playing the victim</a
+            >
+          </li>
+          <li>
+            <a
+              href="#matt_commandeers_acf_using_wordpressorg_to_steal_a_competitors_product"
+              >Matt commandeers ACF, using WordPress.org to steal a competitor's
+              product</a
+            >
+          </li>
+          <li>
+            <a href="#previous_lawsuits_against_matt_come_to_light"
+              >Previous lawsuits against Matt come to light</a
+            >
+          </li>
+          <li>
+            <a href="#matt_responds_to_the_other_lawsuits"
+              >Matt responds to the 'other lawsuits'</a
+            >
+          </li>
+          <li>
+            <a
+              href="#matt_wars_against_dissenters_with_second_buyout_offer_threatens_employees_who_speak_out_intercepts_employees_emails"
+              >Matt wars against dissenters with second buyout offer; threatens
+              employees who speak out; intercepts employees' emails</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a
+          href="#if-matt-cares-about-wordpress-he-should-step-down-immediately-and-if-matt-wont-step-down-he-should-be-removed"
+          >If Matt cares about WordPress, he should step down immediately. And
+          if Matt won’t step down, he should be removed.</a
+        >
+      </li>
+      <li>
+        <a href="#addendum-on-the-future-of-wordpress"
+          >Addendum: on the future of WordPress</a
+        >
+      </li>
+    </ol>
+  </aside>
+</div>
+
+<p id="intro">There are some people who think being right about something confers the right to do whatever they think should be done about it; a license to act however they see fit in order to correct what they see as wrongness.</p>
 
 This, of course, is never the case. No matter how egregious the original infraction, there are some responses it never justifies. That's such common knowledge it's proverbial: two wrongs don't make a right; the ends don't justify the means; etc.
 

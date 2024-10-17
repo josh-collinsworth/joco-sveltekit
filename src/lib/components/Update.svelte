@@ -1,10 +1,11 @@
 <script lang="ts">
+	import { sluggify } from '$lib/assets/js/utils'
+
 	export let date: string
-	export let id: string = ''
-	export let title: string = ''
+	export let title: string
 </script>
 
-<div class="edit" {id}>
+<div class="edit" id={sluggify(title)}>
 	<p class="date">Update {date}</p>
 	{#if title}
 		<h3>{title}</h3>
