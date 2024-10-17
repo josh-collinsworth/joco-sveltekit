@@ -822,6 +822,57 @@ Also: I can't help but notice we keep finding Matt in situations where he could 
 
 </Update>
 
+<Update date="10/17/24" title="Matt wars against dissenters with second buyout offer; threatens employees who speak out; intercepts employees' personal emails" id="">
+
+As reported by 404 Media, [Matt is offering employees another round of buyouts](https://www.404media.co/automattic-buyout-offer-wordpress-matt-mullenweg/), this time worth _nine_ months of pay rather than the previous six.
+
+Evidently, some employees have regretted their decision to stay on Matt's side. Others never agreed with his crusade in the first place, and made the decision based purely on economic realities. Either way, Matt obviously wants anyone who disagrees with him purged.
+
+Employees were reportedly given mere hours to make the decision. As of this writing, it's unclear how many opted in. (Of note: Matt stipulated the opt-in resignation be submitted via personal DM. So Matt himself is the only one who knows for now.)
+
+The article mentions a loud group of "sycophants" remaining at Automattic. This group, like Matt, is described as vocal, and hostile to dissenters—naturally making life pretty miserable for those who remained, but weren't fully committed. Perhaps predictably, this group compares Mullenweg to Trump and Musk, as a compliment.
+
+I agree with the comparison, but not for favorable reasons. Just as Musk and Trump have poured billions into doubling down for their own narrow, barbarous bases over and over again—at great personal expense and for dubious benefit—Mullenweg obviously cares only about catering to his own base of loyal minions, no matter how much it might cost him.
+
+Approval is a hell of a drug.
+
+On a personal note: I genuinely revered Matt for many years. Since the early WordPress days, and until relatively recent history, it seemed like he was one of the few actual, genuine good guys in powerful positions in tech. It's deeply saddening to see both the community he built ripped apart by petty squabbles, and a once-benevolent figure descend into such a twisted, dark, grotesque version of themselves.
+
+But maybe I'm getting ahead of myself. There's nothing _wrong_ with offering buyouts, per se (even if it's ultimately a bad move for the company).
+
+Far _more_ ethically questionable is intercepting employees' personal emails, which is exactly what Matt's done.
+
+Since Blind requires signing up with an employer email address (to verify authenticity), the employer has the power over delivery of those emails, via the DNS records.
+
+Not satisfied with merely blocking or filtering employee emails from Blind, Matt actually _had them forwarded to himself_!
+
+This isn't unlike your boss reading your LinkedIn DMs, or tracking your personal email. It's a serious and nearly unthinkable breach of trust and confidentiality.
+
+In fact, it's quite possibly _literally unprecedented_, according to a Blind spokesperson:
+
+> “[We've] never seen a CEO or executive try to limit their employees from signing up for Blind by redirecting emails.”
+
+To make things worse, _this email forwarding wasn't even announced_! Employees found out about it only _after_ they reached out to Blind support...only to learn their private emails were going directly to the CEO.
+
+In the midst of all this, Matt threatened dissenters who choose to "leak" info to the press or to their former coworkers with immediate termination with no severance, and possible legal action for "violating confidentiality agreement." (Whether such agreement exists, or whether employees have in fact broken it, I can't say. Even if it does, I don't think it justifies intercepting employees' email, let alone without so much as a notice.)
+
+I just keep coming back to the question: **what kind of person does it take to do this**?
+
+What kind of person is so petty as to retaliate against anyone who dares to speak against them?
+
+What kind of person is so controlling, they forcefully and secretively steal their employees' autonomy and ability to speak out?
+
+What kind of person is so utterly childish that they can't even tolerate the mere _presence_ of anyone who might disagree with them?
+
+What kind of person demands unquestioning loyalty and obedience, no matter the circumstance or the cost?
+
+It's a rhetorical question, of course—one that invites many comparisons, none at all favorable.
+
+My point is: if you were to create an archetype of the absolute _worst_ person to be a leader in a community—the exact _opposite_ of the person you'd want in that role—this is exactly what you'd describe.
+
+</Update>
+
+
 
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
 
