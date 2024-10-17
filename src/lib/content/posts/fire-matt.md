@@ -987,7 +987,7 @@ Employees were reportedly given mere hours to make the decision. As of this writ
 
 The article mentions a loud group of "sycophants" remaining at Automattic. This group, like Matt, is described as vocal, and hostile to dissenters—naturally making life pretty miserable for those who remained, but weren't fully committed. Perhaps predictably, this group compares Mullenweg to Trump and Musk, as a compliment.
 
-I agree with the comparison, but not for favorable reasons. Just as Musk and Trump have poured billions into doubling down for their own narrow, barbarous bases over and over again—at great personal expense and for dubious benefit—Mullenweg obviously cares only about catering to his own base of loyal minions, no matter how much it might cost him (all the while, drifting further and further away from any sense of objective reality).
+I agree with the comparison, but not for favorable reasons. Just as Musk and Trump have poured billions into doubling down for their own narrow, barbarous bases over and over again—at great personal expense and for dubious benefit—Mullenweg obviously cares only about catering to his own base of loyal minions, no matter how much it might cost him or hurt anyone else (all the while, drifting further and further away from any sense of objective reality).
 
 Approval is a hell of a drug.
 
