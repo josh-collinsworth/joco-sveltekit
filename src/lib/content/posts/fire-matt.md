@@ -822,7 +822,7 @@ Also: I can't help but notice we keep finding Matt in situations where he could 
 
 </Update>
 
-<Update date="10/17/24" title="Matt wars against dissenters with second buyout offer; threatens employees who speak out; intercepts employees' personal emails" id="">
+<Update date="10/17/24" title="Matt wars against dissenters with second buyout offer; threatens employees who speak out; intercepts employees' emails" id="">
 
 As reported by 404 Media, [Matt is offering employees another round of buyouts](https://www.404media.co/automattic-buyout-offer-wordpress-matt-mullenweg/), this time worth _nine_ months of pay rather than the previous six.
 
@@ -840,19 +840,23 @@ On a personal note: I genuinely revered Matt for many years. Since the early Wor
 
 But maybe I'm getting ahead of myself. There's nothing _wrong_ with offering buyouts, per se (even if it's ultimately a bad move for the company).
 
-Far _more_ ethically questionable is intercepting employees' personal emails, which is exactly what Matt's done.
+Far _more_ ethically questionable is intercepting employees' emails, which is exactly what Matt's done.
 
 Since Blind requires signing up with an employer email address (to verify authenticity), the employer has the power over delivery of those emails, via the DNS records.
 
 Not satisfied with merely blocking or filtering employee emails from Blind, Matt actually _had them forwarded to himself_!
 
-This isn't unlike your boss reading your LinkedIn DMs, or tracking your personal email. It's a serious and nearly unthinkable breach of trust and confidentiality.
+Regardless of the fact that the address is a work email address, this is a serious and nearly unthinkable breach of trust and confidentiality. It's not unlike your employer combing through your Slack DMs, or reading private emails between you and your colleagues.
 
 In fact, it's quite possibly _literally unprecedented_, according to a Blind spokesperson:
 
 > “[We've] never seen a CEO or executive try to limit their employees from signing up for Blind by redirecting emails.”
 
 To make things worse, _this email forwarding wasn't even announced_! Employees found out about it only _after_ they reached out to Blind support...only to learn their private emails were going directly to the CEO.
+
+Again: imagine that not only is your boss _intercepting_ your emails, but he's doing it _without even telling you_.
+
+The level of disregard is chilling.
 
 In the midst of all this, Matt threatened dissenters who choose to "leak" info to the press or to their former coworkers with immediate termination with no severance, and possible legal action for "violating confidentiality agreement." (Whether such agreement exists, or whether employees have in fact broken it, I can't say. Even if it does, I don't think it justifies intercepting employees' email, let alone without so much as a notice.)
 
