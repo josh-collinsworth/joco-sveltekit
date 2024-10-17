@@ -997,7 +997,9 @@ But maybe I'm getting ahead of myself. There's nothing _wrong_ with offering buy
 
 Far _more_ ethically questionable is intercepting employees' emails, which is exactly what Matt's done.
 
-Since Blind requires signing up with an employer email address (to verify authenticity), the employer has the power over delivery of those emails, via the DNS records.
+In further effort to squash all dissent, Matt's redirected all employee emails that come from [Blind](https://www.teamblind.com/), the social platform where employees can speak publicly and anonymously about their employer and workplace.
+
+Since Blind requires signing up with an employer email address (to verify authenticity), whoever owns the domain (i.e., the employer) has the power over delivery of those emails, via DNS records.
 
 Not satisfied with merely blocking or filtering employee emails from Blind, Matt actually _had them forwarded to himself_!
 
