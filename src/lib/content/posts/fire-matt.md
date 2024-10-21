@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-17
+updated: 2024-10-21
 categories:
   - opinion
   - web
@@ -754,7 +754,7 @@ No wonder WPE stopped taking his calls.
 
 WP Engine is officially pursuing a series of legal complaints against Matt Mullenweg. [Here's the announcement](https://x.com/wpengine/status/1841633469685723292?t=Zc5MrODFXpYHhFVC_nJNwQ), and [here's a direct link to the actual legal document](https://wpengine.com/wp-content/uploads/2024/10/Complaint-WP-Engine-v-Automattic-et-al-with-Exhibit.pdf).
 
-I remain very much not a lawyer, so take this with an appropriately sized grain of salt. But as a quick overview, the complaint names _both_ Matt and Automattic as defendants. WP Engine lists a dozen ways Matt and/or Automattic interfered with its business dealings, extorted WP Engine, broke verbal contracts, took unauthorized actions, and made libelous and slanderous statements that hurt their business (including insinuating patent and trademark violations). It's a document full of receipts, and it makes WPE's previous C&D look lighthearted by comparison. In any case (ha), WP Engine asks for s jury trial, and seeks a range of remedies, damages, and awards.
+I remain very much not a lawyer, so take this with an appropriately sized grain of salt. But as a quick overview, the complaint names _both_ Matt and Automattic as defendants. WP Engine lists a dozen ways Matt and/or Automattic interfered with its business dealings, extorted WP Engine, broke verbal contracts, took unauthorized actions, and made libelous and slanderous statements that hurt their business (including insinuating patent and trademark violations). It's a document full of receipts, and it makes WPE's previous C&D look lighthearted by comparison. In any case (ha), WP Engine asks for a jury trial, and seeks a range of remedies, damages, and awards.
 
 Most of the things they allege are things covered here already, but there are a few new juicy bits:
 
@@ -764,7 +764,7 @@ Most of the things they allege are things covered here already, but there are a 
 
   More seriously, however: **the Foundation apparently never disclosed to the IRS that it owns the WordPress trademark, nor that it provided an exclusive license to use this trademark to Matt's companies**—which is a big problem, as Matt's claiming it's worth the millions and millions of dollars WP Engine allegedly owes him. Yet, no asset remotely near that value has ever been reported on the Foundation's taxes, according to the filing.
 
-  Essentially, either the WordPress trademark owned by the Foundation (i.e., Matt) is _not_ worth the millions Matt wants for it (because if it was, he should've reported that asset to the IRS)..._or_, it is, and Matt's been filing bad tax reports for several years.
+  Essentially, either the WordPress trademark owned by the Foundation is _not_ worth the millions Matt wants for it (because if it was, he should've reported that asset to the IRS)..._or_, it is, and Matt's been filing bad tax reports for several years.
 
   _Yikes!_
 
@@ -780,7 +780,7 @@ Unless Matt comes out with a _major_ stockpile of receipts that directly contrad
 
 <Update date="10/3/24" title="Matt offers buyouts to Automattic employees">
 
-It's being leaked through a number of channels that Automattic is offering employees buyout packages, said to be worth ~~up to $30k~~ at least $30k (see below), if they want to leave over all of this. It appears to be generous, although it evokes Elon's deal to Twitter employees (which at this point I'm guessing Matt would take as a compliment); "get with me or get out."
+It's being leaked through a number of channels that Automattic is offering employees buyout packages, said to be worth ~~up to $30k~~ at least $30k, if they want to leave over all of this. It appears to be generous, although it evokes Elon's deal to Twitter employees (which at this point I'm guessing Matt would take as a compliment); "get with me or get out."
 
 A number of prominent figures in the organization are said to have taken the exit deal, [reportedly including Josepha Haden Chomphosy](https://x.com/jeffr0/status/1841679115419553825), the Executive Director of the WordPress project (who by all accounts—including my own—is an exceptional person, and who many felt was much better fit to lead WordPress than Matt. Also, unrelated: she's also a fellow Kansas Citian and elected official in my county, so shout-out to a local Councilmember).
 
@@ -1030,6 +1030,20 @@ What kind of person demands unquestioning loyalty and obedience, no matter the c
 It's a rhetorical question, of course—one that invites many comparisons, none at all favorable.
 
 My point is: if you were to create an archetype of the absolute _worst_ person to be a leader in a community—the exact _opposite_ of the person you'd want in that role—this is exactly what you'd describe.
+
+</Update>
+
+<Update date="10/21/24" title="WP Engine files an injunction to regain access to WordPress.org">
+
+I missed this one over the weekend, but [WP Engine has filed a motion for preliminary injunction](https://www.documentcloud.org/documents/25237665-wp-engine-injunction?responsive=1&title=1) against Automattic and Mullenweg, requesting that the court both allow the company and all its employees and associates access to WordPress.org once again, and to reclaim ACF (the plugin Matt effectively stole from them, above).
+
+The injunction points out, accurately, that doing so would cost Matt/Automattic nothing.
+
+And since the whole reason Matt took over ACF in the _first place_ is that he says WP Engine's updates weren't safe (because they didn't go through the official .org repo, which they couldn't, because of Matt), it seems like he doesn't really have a leg to stand on here. (Again: not a lawyer; just personal commentary.)
+
+Seems to me you can't very well argue that a company being *outside* of .org is harmful if _you're_ the one keeping them out.
+
+That is, unless you're prepared to admit you _want_ users to be in harm's way, as an extortion tactic.
 
 </Update>
 
