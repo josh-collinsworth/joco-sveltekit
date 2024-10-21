@@ -167,6 +167,12 @@ Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-b
               employees who speak out; intercepts employees' emails</a
             >
           </li>
+          <li>
+            <a
+              href="#wp_engine_files_an_injunction_to_regain_access_to_wordpressorg"
+              >WP Engine files an injunction to regain access to WordPress.org</a
+            >
+          </li>
         </ul>
       </li>
       <li>
