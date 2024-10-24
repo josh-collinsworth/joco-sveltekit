@@ -988,6 +988,10 @@ Using WordPress.org with WordPress is as fundamental to the software as the app 
 
 It's as ingrained in the ecosystem as npm is for JavaScript. If a Microsoft competitor was one day blocked from npm, the community would very rightly revolt. And taking access to .org away from a competitor is no less unacceptable of Matt and Automattic that Microsoft's behavior would be in that unthinkable scenario.
 
+This sums up the obvious duplicity rather well:
+
+![A tweet from Trent, @trentlapinski : Apparently I spent 5 years of my life just working on some dudes website and not the open source project I thought it was. Cool. Thanks. #wpdrama](/images/post_images/fire-matt/some-dudes-website.png)
+
 Matt _might_ have a legal point here. Once more, I'm not a lawyer, but: from a purely legal standpoint, one could understand where Matt may technically be within his judicial rights.
 
 But _having the right_ is not the same as _being in the right_. And we're only in this position because Matt fleeced the entire community into thinking he didn't possess the power he secretively hoarded for himself, and spent decades convincing everybody who ever touched WordPress it was in better hands than it actually is.
