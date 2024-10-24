@@ -19,6 +19,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
   import Update from '$lib/components/Update.svelte'
   import Callout from '$lib/components/Callout.svelte'
+  import TableOfContents from '$lib/components/_not-in-use/TableOfContents.svelte'
 </script>
 
 <Note>
@@ -29,174 +30,11 @@ Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-b
 
 </Note>
 
-<div class="toc-wrap">
-  <aside class="toc">
-    <h2>
-      <span class="opening-bracket" aria-hidden="true">[</span>Table of
-      contents<span class="closing-bracket" aria-hidden="true">]</span>
-    </h2>
-    <ol class="toc-list">
-      <li>
-        <a href="#intro"
-          >Introduction</a
-        >
-      </li>
-      <li>
-        <a href="#wait-who-are-you-and-why-do-you-care"
-          >Wait, who are you and why do you care?</a
-        >
-      </li>
-      <li>
-        <a href="#im-sorry-what-happened">I’m sorry, what happened?</a>
-        <ul>
-          <li>
-            <a href="#automattic-approaches-wp-engine-to-offer-a-license"
-              >Automattic approaches WP Engine to offer a “license”</a
-            >
-          </li>
-          <li>
-            <a href="#matts-rejected-so-he-tries-new-strategies"
-              >Matt’s rejected, so he tries new strategies</a
-            >
-          </li>
-          <li>
-            <a href="#waitwhats-matts-actual-deal-why-is-he-doing-this"
-              >Wait—what’s Matt’s actual deal? Why is he doing this?</a
-            >
-            <ul>
-              <li>
-                <a href="#matt-claims-wp-engine-is-misrepresenting-itself"
-                  >Matt claims WP Engine is misrepresenting itself</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#matt-claims-wp-engine-is-selling-a-cheap-knock-off-of-wordpress"
-                  >Matt claims WP Engine is selling a “cheap knock-off” of
-                  WordPress</a
-                >
-              </li>
-              <li>
-                <a href="#matt-says-wp-engine-doesnt-give-back-enough"
-                  >Matt says WP Engine doesn't give back enough</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#an-aside-on-motivations-and-justifications"
-              >An aside on motivations and justifications</a
-            >
-          </li>
-          <li>
-            <a href="#the-wordcamp-us-fallout-and-matts-abuse-of-power"
-              >The WordCamp US fallout and Matt’s abuse of power</a
-            >
-          </li>
-          <li><a href="#wp-engines-reaction">WP Engine’s reaction</a></li>
-          <li><a href="#matt-melts-down">Matt melts down</a></li>
-          <li><a href="#matt-goes-nuclear">Matt goes nuclear</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#updates-everything-thats-happened-since-october-1st"
-          >Updates: everything that’s happened since October 1st</a
-        >
-        <ul>
-          <li>
-            <a href="#matt_talks_taking_over_wp_engine"
-              >Matt talks taking over WP Engine</a
-            >
-          </li>
-          <li>
-            <a href="#automattic_releases_the_terms_sheet_which_kinda_backfires"
-              >Automattic releases the terms sheet, which kinda backfires</a
-            >
-          </li>
-          <li>
-            <a href="#wp_engine_files_suit_against_matt_and_automattic"
-              >WP Engine files suit against Matt and Automattic</a
-            >
-          </li>
-          <li>
-            <a href="#matt_offers_buyouts_to_automattic_employees"
-              >Matt offers buyouts to Automattic employees</a
-            >
-          </li>
-          <li>
-            <a
-              href="#159_automattic_employees_take_the_buyout_matt_hires_a_famous_lawyer_whos_a_horrible_human"
-              >159 Automattic employees take the buyout; Matt hires a famous
-              lawyer who's a horrible human</a
-            >
-          </li>
-          <li>
-            <a
-              href="#matt_gleefully_exposes_a_vulnerability_in_acf_but_prevents_wpe_from_fixing_it"
-              >Matt gleefully exposes a vulnerability in ACF, but prevents WPE
-              from fixing it</a
-            >
-          </li>
-          <li>
-            <a
-              href="#matt_adds_a_vague_anti-wp_engine_checkbox_to_wordpressorg_but_fails_to_clarify_why_all_while_playing_the_victim"
-              >Matt adds a vague anti-WP Engine checkbox to WordPress.org, but
-              fails to clarify why, all while playing the victim</a
-            >
-          </li>
-          <li>
-            <a
-              href="#matt_commandeers_acf_using_wordpressorg_to_steal_a_competitors_product"
-              >Matt commandeers ACF, using WordPress.org to steal a competitor's
-              product</a
-            >
-          </li>
-          <li>
-            <a href="#previous_lawsuits_against_matt_come_to_light"
-              >Previous lawsuits against Matt come to light</a
-            >
-          </li>
-          <li>
-            <a href="#matt_responds_to_the_other_lawsuits"
-              >Matt responds to the 'other lawsuits'</a
-            >
-          </li>
-          <li>
-            <a
-              href="#matt_wars_against_dissenters_with_second_buyout_offer_threatens_employees_who_speak_out_intercepts_employees_emails"
-              >Matt wars against dissenters with second buyout offer; threatens
-              employees who speak out; intercepts employees' emails</a
-            >
-          </li>
-          <li>
-            <a
-              href="#wp_engine_files_an_injunction_to_regain_access_to_wordpressorg"
-              >WP Engine files an injunction to regain access to WordPress.org</a
-            >
-          </li>
-          <li>
-            <a
-              href="#matt_responds_saying_wordpressorg_belongs_to_him_and_him_alone"
-              >Matt responds, saying WordPress.org belongs to him and him alone</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a
-          href="#if-matt-cares-about-wordpress-he-should-step-down-immediately-and-if-matt-wont-step-down-he-should-be-removed"
-          >If Matt cares about WordPress, he should step down immediately. And
-          if Matt won’t step down, he should be removed.</a
-        >
-      </li>
-      <li>
-        <a href="#addendum-on-the-future-of-wordpress"
-          >Addendum: on the future of WordPress</a
-        >
-      </li>
-    </ol>
-  </aside>
-</div>
+<!-- <TableOfContents /> -->
+
+<div class="toc-wrap s-QxGJVNas-JkL"><aside class="toc s-QxGJVNas-JkL"><h2 class="s-QxGJVNas-JkL"><span class="opening-bracket s-QxGJVNas-JkL" aria-hidden="true">[</span>
+				Table of contents
+        <span class="closing-bracket s-QxGJVNas-JkL" aria-hidden="true">]</span></h2> <ul class="toc-list s-QxGJVNas-JkL"><li><a href="#wait-who-are-you-and-why-do-you-care">Wait, who are you and why do you care?</a></li><li><a href="#im-sorry-what-happened">I’m sorry, what happened?</a><ul><li><a href="#automattic-approaches-wp-engine-to-offer-a-license">Automattic approaches WP Engine to offer a “license”</a></li><li><a href="#matts-rejected-so-he-tries-new-strategies">Matt’s rejected, so he tries new strategies</a></li><li><a href="#waitwhats-matts-actual-deal-why-is-he-doing-this">Wait—what’s Matt’s actual deal? Why is he doing this?</a><ul><li><a href="#matt-claims-wp-engine-is-misrepresenting-itself">Matt claims WP Engine is misrepresenting itself</a></li><li><a href="#matt-claims-wp-engine-is-selling-a-cheap-knock-off-of-wordpress">tt claims WP Engine is selling a “cheap knock-off” of WordPress</a></li><li><a href="#matt-says-wp-engine-doesnt-give-back-enough">Matt says WP Engine doesn’t give back enough</a></li></ul></li><li><a href="#an-aside-on-motivations-and-justifications">An aside on motivations and justifications</a></li><li><a href="#the-wordcamp-us-fallout-and-matts-abuse-of-power">The WordCamp US fallout and Matt’s abuse of power</a></li><li><a href="#wp-engines-reaction">WP Engine’s reaction</a></li><li><a href="#matt-melts-down">Matt melts down</a></li><li><a href="#matt-goes-nuclear">Matt goes nuclear</a></li></ul></li><li><a href="#updates-everything-thats-happened-since-october-1st">Updates: everything that’s happened since October 1st</a><ul><li><a href="#101-matt-talks-taking-over-wp-engine">10.1: Matt talks taking over WP Engine</a></li><li><a href="#101-automattic-releases-the-terms-sheet-which-kinda-backfires">10.1: Automattic releases the terms sheet, which kinda backfires</a></li><li><a href="#102-wp-engine-files-suit-against-matt-and-automattic">10.2: WP Engine files suit against Matt and Automattic</a></li><li><a href="#103-matt-offers-buyouts-to-automattic-employees">10.3: Matt offers buyouts to Automattic employees</a></li><li><a href="#104-159-automattic-employees-take-the-buyout-matt-hires-a-famous-lawyer-whos-a-horrible-human">10.4: 159 Automattic employees take the buyout; Matt hires a famous lawyer who’s a horrible human</a></li><li><a href="#105-matt-gleefully-exposes-a-vulnerability-in-acf-but-prevents-wpe-from-fixing-it">10.5: Matt gleefully exposes a vulnerability in ACF, but prevents WPE from fixing it</a></li><li><a href="#1011-matt-adds-a-vague-anti-wp-engine-checkbox-to-wordpressorg-but-fails-to-clarify-why-all-while-playing-the-victim">10.11 Matt adds a vague anti-WP Engine checkbox to WordPress.org, but fails to clarify why, all while playing the victim</a></li><li><a href="#1012-matt-commandeers-acf-using-wordpressorg-to-steal-a-competitors-product">10.12 Matt commandeers ACF, using WordPress.org to steal a competitor’s product</a></li><li><a href="#1015-previous-lawsuits-against-matt-come-to-light">10.15: Previous lawsuits against Matt come to light</a></li><li><a href="#1015-matt-responds-to-the-other-lawsuits">10.15: Matt responds to the “other lawsuits”</a></li><li><a href="#1017-matt-wars-against-dissenters-with-second-buyout-offer-threatens-employees-who-speak-out-intercepts-employees-emails">10.17 Matt wars against dissenters with second buyout offer; threatens employees who speak out; intercepts employees’ emails</a></li><li><a href="#1021-wp-engine-files-an-injunction-to-regain-access-to-wordpressorg">10.21: WP Engine files an injunction to regain access to WordPress.org</a></li><li><a href="#1023-matt-responds-saying-wordpressorg-belongs-to-him-and-him-alone">10.23: Matt responds, saying WordPress.org belongs to him and him alone</a></li></ul></li><li><a href="#if-matt-cares-about-wordpress-he-should-step-down-immediately-and-if-matt-wont-step-down-he-should-be-removed">If Matt cares about WordPress, he should step down immediately. And if Matt won’t step down, he should be removed.</a></li><li><a href="#addendum-on-the-future-of-wordpress">Addendum: on the future of WordPress</a></li></ul></aside></div>
 
 <p id="intro">There are some people who think being right about something confers the right to do whatever they think should be done about it; a license to act however they see fit in order to correct what they see as wrongness.</p>
 
@@ -688,7 +526,7 @@ Matt agreed to unblock the plugins repo temporarily after the community backlash
 
 </Update>
 
-<Update date="10/1/24" id="takeover" title="Matt talks taking over WP Engine">
+### 10.1: Matt talks taking over WP Engine
 
 Matt has now apparently rescinded the previous 8% licensing agreement, and is instead [threatening a corporate takeover of WP Engine](https://www.therepository.email/mullenweg-threatens-corporate-takeover-of-wp-engine).
 
@@ -714,10 +552,7 @@ If Matt's lawyers _really_ aren't telling him not to say stuff like this, you'd 
 
 ...Actually, I take it back. I wouldn't expect that from him. Not anymore.
 
-</Update>
-
-
-<Update date="10/1/24" id="terms-sheet" title="Automattic releases the terms sheet, which kinda backfires">
+### 10.1: Automattic releases the terms sheet, which kinda backfires
 
 [Automattic released a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/), in a post coming after WP Engine pretty aggressively, accusing WPE of lying about the terms that were offered. (WP Engine, in its original [cease-and-desist letter](https://automattic.com/wp-content/uploads/2024/09/term-sheet-wp-engine-inc.-automattic-trademark-license_09.19.2024-1.pdf), didn't mention any offer of work contribution as a payment method; they just said Matt demanded payment. Automattic seems to be saying this is a lie, and work contributions were apparently always an option.)
 
@@ -727,9 +562,13 @@ Is there not an earlier version Matt can release? If this went down the way he s
 
 Besides which, I'm not sure how much the "contribution" angle really matters, because ultimately, there was really only one offer on table, i.e., 8%. The difference was only in how WP Engine wanted to cough it up.
 
-That is: whether WP Engine pays 8% to their people, or pays _Automattic_ 8%, it's all the same in the end; the price tag is identical. It's not really two options, so much as one option with two payment methods. So I don't think this gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—
+<CalloutPlusQuote>
 
-—_especially_ since, once again, _this is all going through Automattic_! Not through the WordPress Foundation or .org (which owns the actual WordPress trademark in question), but through Matt's own for-profit company, a direct competitor of WP Engine.
+Whether WP Engine would've paid 8% to their people to do the work, or paid Automattic 8%, it's all the same in the end; the price tag is identical. It's not really two options, so much as one option with two payment methods.
+
+</CalloutPlusQuote>
+
+So I don't think this gives a lot of credence to the "it was never about money" argument Matt and Automattic seem to be trying to make—_especially_ since, once again, _this is all going through Automattic_! Not through the WordPress Foundation or .org (which owns the actual WordPress trademark in question), but through Matt's own for-profit company, a direct competitor of WP Engine.
 
 Honestly, this whole release is a little baffling, because it seems to do more to _reaffirm_ WP Engine's version of events than refute them.
 
@@ -759,9 +598,7 @@ The entire of demands seems incredibly outrageous, even in a vacuum, but especia
 
 No wonder WPE stopped taking his calls.
 
-</Update>
-
-<Update date="10/2/24" id="filing" title="WP Engine files suit against Matt and Automattic">
+### 10.2: WP Engine files suit against Matt and Automattic
 
 **Welp, looks like we're going to court.**
 
@@ -777,7 +614,11 @@ Most of the things they allege are things covered here already, but there are a 
 
   More seriously, however: **the Foundation apparently never disclosed to the IRS that it owns the WordPress trademark, nor that it provided an exclusive license to use this trademark to Matt's companies**—which is a big problem, as Matt's claiming it's worth the millions and millions of dollars WP Engine allegedly owes him. Yet, no asset remotely near that value has ever been reported on the Foundation's taxes, according to the filing.
 
-  Essentially, either the WordPress trademark owned by the Foundation is _not_ worth the millions Matt wants for it (because if it was, he should've reported that asset to the IRS)..._or_, it is, and Matt's been filing bad tax reports for several years.
+  <CalloutPlusQuote>
+
+  Essentially, either the WordPress trademark owned by the Foundation is _not_ worth the millions Matt wants for it (because if it was, he should've reported that asset to the IRS)...or it _is_, and Matt's been filing bad tax reports for several years.
+
+  </CalloutPlusQuote>
 
   _Yikes!_
 
@@ -785,13 +626,15 @@ WP Engine also officially states that **there were no conversations about licens
 
 **Matt's insisted his apparent extortion was never about money, and that the talks had been going on for "years." But now that both sides have showed their cards, it looks very much like he's been lying about both.** Matt had the chance to bring proof earlier in the week, and he came in with a doc from September 20th that very clearly asks for 8% in cash one way or another, and a weak list of meetings that barely went back a year. WP Engine's saying in a legal document full of screenshots it didn't go down the way Matt says it did, and thus far he's completely failed to offer anything of substance to refute their version of events.
 
+<CalloutPlusQuote>
+
 It's striking how much of the filing is literally just Matt running his mouth. So much of it is just screenshots of actual things he said or did. WPE's entire strategy seems to be "stay quiet and let him dig his own grave," and at this point it sure seems like they picked the perfect tactic.
+
+</CalloutPlusQuote>
 
 Unless Matt comes out with a _major_ stockpile of receipts that directly contradicts huge swaths of this filing, I don't see how he bounces back from this. Even if the filing were only 50% accurate, how could the community ever trust him after all this?
 
-</Update>
-
-<Update date="10/3/24" title="Matt offers buyouts to Automattic employees">
+### 10.3: Matt offers buyouts to Automattic employees
 
 It's being leaked through a number of channels that Automattic is offering employees buyout packages, said to be worth ~~up to $30k~~ at least $30k, if they want to leave over all of this. It appears to be generous, although it evokes Elon's deal to Twitter employees (which at this point I'm guessing Matt would take as a compliment); "get with me or get out."
 
@@ -800,7 +643,6 @@ A number of prominent figures in the organization are said to have taken the exi
 Josepha's loss is a huge blow to the community all on its own. But there are said to be dozens of Automatticians (yes, they're really called that) who have also exited at this point, on top of the hundreds and quite possibly thousands of people who were kicked out, harassed, dissuaded, or just turned off by Matt's actions. The lasting damage Matt's done to the community really can't be overstated. All, ironically, in the name of somehow defending it.
 
 Also, [more Matt harassing innocent people](https://medium.com/@kelliepeterson/nice-guy-matt-mullenweg-ceo-of-wordpress-com-cries-foul-and-threatens-me-with-legal-action-f116ac57d862). (He's been dropping into a lot of DMs and comment threads, which doesn't seem like advisable behavior for a defendant and CEO of a company that's a defendant.)
-</Update>
 
 <Update date="10/4/24">
 
@@ -808,7 +650,7 @@ A number of folks have also reached out to remind me of [this incident on Tumblr
 
 </Update>
 
-<Update date="10/4/24" title="159 Automattic employees take the buyout; Matt hires a famous lawyer who's a horrible human">
+### 10.4: 159 Automattic employees take the buyout; Matt hires a famous lawyer who's a horrible human
 
 [According to Matt](https://ma.tt/2024/10/alignment/), the deal he offered employees is actually better than reported; it's 6 months of salary, or $30k, whichever is greater. He says 159 employees accepted the offer, which is a little under 10% of the company.
 
@@ -818,7 +660,13 @@ Six months of salary is a sweet deal, to be sure. I'd definitely consider taking
 
 Still: it worries me that Matt, who has come off like an egomaniac throughout all of this (and since long before) is in effect cleaning house; getting rid of the dissenters, thus perpetuating the very culture that created all these problems in the first place.
 
-Clearly, if there were adults in the room when Matt made these decisions, something kept their concerns from being heard. In my view, Matt's doing the opposite of what he should be here, and making himself even _less_ likely to be challenged. I don't think it's ultimately good for WordPress in any way, shape, or form, and it will likely result in even worse behavior and decisions out of Matt.
+<CalloutPlusQuote>
+
+Clearly, if there were adults in the room when Matt made these decisions, something kept their concerns from being heard. In my view, Matt's doing the opposite of what he should be here, by making himself even _less_ likely to be challenged.
+
+I think this purging of dissenters is ultimately a very bad thing for WordPress, as it will likely result in even worse behavior and decisions out of Matt.
+
+</CalloutPlusQuote>
 
 Matt/Automattic also secured a lawyer, who [called WP Engine's lawsuit "meritless,"](https://automattic.com/2024/10/03/meritless/) which is of course the first thing any defense lawyer will do in any case no matter what. I've watched enough true crime to know a defendant could be in the middle of live-streaming their own crime spree to 10 million viewers, and the defense lawyer would still say the charges are baseless and the client is innocent.
 
@@ -832,13 +680,11 @@ He also charged Johnson & Johnson $2,500 per hour (that's several million per ye
 
 Incidentally, he also really likes Burning Man, just like Matt. ([Look at that outfit](https://abovethelaw.com/2023/09/biglaw-partner-neal-katyal-escapes-burning-man-avoids-trench-foot/)). And finally, he is—surprise!—a board member of a venture capital firm.
 
-</Update>
-
-<Update date="10/5/24" title="Matt gleefully exposes a vulnerability in ACF, but prevents WPE from fixing it">
+### 10.5: Matt gleefully exposes a vulnerability in ACF, but prevents WPE from fixing it
 
 I almost can't believe Matt is still doing such destructive, careless things that I'm still writing these, but here we are.
 
-Matt announced there's a vulnerability in ACF, which you'll recall, is a plugin WP Engine maintains, and which is reportedly installed on millions of WordPress sites. (You may also recall this doesn't count as a contribution to the community in Matt's estimation, but that's not relevant to this specific news item.)
+Matt announced a vulnerability in ACF, which you'll recall, is a plugin WP Engine maintains, and which is reportedly installed on millions of WordPress sites. (You may also recall this doesn't count as a contribution to the community in Matt's estimation, but that's not relevant to this specific news item.)
 
 Matt hasn't released the details of the vulnerability, but he _did_ publicly disclose that it's with ACF, which strikes me as highly questionable. I don't know that this announcement needed to be made in the first place, but if it did, why couldn't it be more vague? Why is Matt letting every hacker out there know exactly where to look? That just does not seem like something a guy who's supposed to care about the community would do.
 
@@ -848,7 +694,11 @@ Pretty awful to start that clock on a Saturday, though. Matt knows the engineers
 
 However—and this is the _really_ shitty thing: remember, **WP Engine is still locked out of the .org plugin repo _because of Matt_**. So even once WPE does fix the issue, it _can't_ automatically go out to actual users; they have to *manually* update, which I don't need to tell you, a huge chunk of them aren't going to do.
 
+<CalloutPlusQuote>
+
 **Matt is effectively holding actual WordPress users hostage**, and it's no longer just WP Engine's customers; it's _anyone_ with ACF installed. And again: ACF is one of the absolute most popular plugins in all of WordPress.
+
+</CalloutPlusQuote>
 
 This is inexcusable, dangerous behavior on Matt's part, made all the worse by how borderline _giddy_ he seems to be at the prospect of playing chicken with his own community members' digital safety and wellbeing.
 
@@ -860,8 +710,6 @@ The utter incineration of trust and goodwill is staggering.
 
 This vindictive child of a man isn't qualified to lead a shift crew at Wendy's.
 
-</Update>
-
 <Update date="10/5/24">
 
 Sounds like that ACF vulnerability is low severity, which is good. But that doesn't change the fact that Matt _weaponized_ a vulnerability, made some extreme dick moves in the disclosure (including going public with it without releasing it to the maintainers first), and did it all fully knowing he's standing in the way of that vulnerability actually being fixed.
@@ -872,7 +720,7 @@ We deserve so much better than this petty tyrant.
 
 </Update>
 
-<Update date="10/11/24" title="Matt adds a vague anti-WP Engine checkbox to WordPress.org, but fails to clarify why, all while playing the victim">
+### 10.11 Matt adds a vague anti-WP Engine checkbox to WordPress.org, but fails to clarify why, all while playing the victim
 
 I've missed a lot here because of work, but most of it is not especially relevant to the overall thread; just more Matt being Matt (i.e., provoking people, having confusing and unproductive conversations, and making the kinds of choices that have pretty much everyone questioning his motivations and/or wellness).
 
@@ -882,7 +730,7 @@ Speaking of which: Matt added this checkbox to the WordPress.org login screen, r
 
 ![A checkbox on the WordPress.org login screen, asking the user to confirm 'I am not affiliated with WP Engine in any way, financially or otherwise'](/images/post_images/fire-matt/dotorg-login.png)
 
-This prompted [a lot of good questions in the WordPress Slack](https://threadreaderapp.com/thread/1843963052183433331.html), such as "what does this actually mean?" and "why does this exist?" (Paraphrasing mine.) WP Engine is massive and they make lots of things. Many WordPress devs pay them money, so…does that make them affiliated? Can a person who works at WPE or has clients there not contribute to WordPress?
+This prompted [a lot of good questions in the WordPress Slack](https://threadreaderapp.com/thread/1843963052183433331.html), such as "what does this actually mean?" and "why does this exist?" (paraphrasing mine). WP Engine is massive and they make lots of things. Many WordPress devs use them, have clients who use them, and/or pay them money. So…does that make them affiliated? Can a person who works at WPE or has clients there not contribute to WordPress?
 
 Matt gave lots of non-answers, almost as though he didn't want to implicate himself, and eventually banned the people asking the questions in the first place, including [Javier Casaras](https://www.javiercasares.com/), longtime contributor to WordPress. (Joost from Yoast SEO was also fighting with Matt in the thread, but I don't know his current status.)
 
@@ -890,15 +738,19 @@ Matt (as WordPress.org) also dropped [this protest to WP Engine to 'please stop 
 
 In the Slack thread above, Matt insists the WordPress Foundation "only" made $23k in donations last year, which is "barely 10–20 hours of legal fees," all of which I find deeply disingenuous for a few reasons:
 
-1. Now that it's been revealed Matt himself _is_ the organization for all intents and purposes, where is this money going and how can we trust it? Are we not just effectively donating to Matt Mullenweg?
+1. Now that it's been revealed Matt himself _is_ the organization for all intents and purposes, where is that donation money going and how can we trust it? Are we not just effectively donating to Matt Mullenweg?
 
-2. Matt picked the lawyer. He didn't have to go out and get a guy with his own Wikipedia page. Not every lawyer charges $2500 per hour.
+2. Matt picked the lawyer. He didn't have to go out and get a guy with his own Wikipedia page. Not every lawyer charges $2,500 per hour.
 
 3. Matt playing the victim here when the aggression has been all on his side (and what there is from WPE has been in their own defense) is very gaslight-y; and
 
 4. Matt is a hundred-millionaire, and he claims the WordPress license the Foundation owns is worth tens of millions of dollars (if not more).
 
-Funny—in the deeply ironic way—that Matt paints the Foundation as a poor, innocent nonprofit that's barely scraping by, trying to defend itself from attacks, when it suits his purposes. Because up until this point, we've only seen it as as a weapon, wielded and controlled unilaterally by a hundred-millionaire, for extortive and divisive purposes, as he claims the Foundation is in possession of a license that's worth tens of millions of dollars.
+<CalloutPlusQuote>
+
+Notice how the Foundation is a poor, innocent nonprofit that's barely scraping by when it suits Matt's purposes, but yet, the sole owner of a license worth tens of millions of dollars when he prefers to weaponize it.
+
+</CalloutPlusQuote>
 
 Anyway, anyone who's ever seen an abusive relationship will recognize the dynamics at play here. Matt's the aggressor, and when he gets any kind of push back, suddenly he's the victim.
 
@@ -914,11 +766,13 @@ Personally, I subscribe to a much simpler theory: I think most people just sever
 
 Anyway, none of these incidents are especially meaningful on their own, and I'm going down kind of a rabbit hole by even exploring any of them. But I'm doing that because together, they paint a very dark and troubling picture.
 
+<CalloutPlusQuote>
+
 Over and over again, in big actions and in small interactions, Matt shows himself as someone who can't be trusted with the power he has, and honestly, probably shouldn't have _any_ power over the community to whatever extent it's now possible.
 
-</Update>
+</CalloutPlusQuote>
 
-<Update date="10/12/24" title="Matt commandeers ACF, using WordPress.org to steal a competitor's product">
+### 10.12 Matt commandeers ACF, using WordPress.org to steal a competitor's product
 
 I gotta hand it to Matt: he really knows how to top himself.
 
@@ -942,9 +796,8 @@ But to do that because _you_ forced the developer to go around you by refusing t
 
 Matt put people on the trolley tracks, WP Engine pulled the lever to save them, and Matt is punishing them for it.
 
-</Update>
 
-<Update date="10/15/24" title="Previous lawsuits against Matt come to light" id="another-lawsuit">
+### 10.15: Previous lawsuits against Matt come to light
 
 Folks online dug up [a whole different lawsuit against Matt, filed in 2022](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600093.pdf) by a private nurse hired by Matt, who worked for his mom Kathleen as a full-time (and then some) caretaker.
 
@@ -970,17 +823,19 @@ Besides, the type of shady financial dealings this lawsuit alleges are very much
 
 There's also [a second lawsuit from 2022](https://freewp.com/wp-content/uploads/2024/10/Complaint-MATTHEW-C.-MULLENWEG-CGC-22-600095.pdf) (brought by the same lawyer), for similar claims as the first; low pay for unbearable working conditions, this time brought by a former assistant. [Here's another quick summary](https://x.com/trentlapinski/status/1845718004673265722).
 
-</Update>
-
-<Update date="10/15/24" title="Matt responds to the 'other lawsuits'" id="">
+### 10.15: Matt responds to the "other lawsuits"
 
 [Matt speaks out about both of those suits from 2022](https://ma.tt/2024/10/other-lawsuits/), claiming they're baseless. He says the lawyer who filed both suits coerced both workers into filing and basically made everything up as a way to get money. He (predictably) claims this is all part of the "smear campaign" against him, and that he's fighting the cases because they're baseless, and he doesn't want to encourage more people to make stuff up.
 
-I acknowledge there's no way to know who's telling the truth here, but I maintain my position that we should take the claims seriously and not take Matt's word for it or extend the benefit of the doubt unevenly (particularly since all of this is exactly what we could expect Matt to say whether or not he was guilty).
+I acknowledge there's no way to know who's telling the truth here, but I maintain my position that we should take the claims seriously and not take Matt's word for it or extend the benefit of the doubt unevenly (particularly since all of this is exactly what we could expect Matt to say whether or not he was guilty). That said:
 
-I will note, however, that Matt's response reads a lot like his response to everything up to this point. He's a poor, innocent victim, even when what's happening to him is 100% a direct result of his own aggressions against another party.
+<CalloutPlusQuote>
+
+Matt's response is always the same, no matter what he's responding to. He's a poor, innocent victim, even when what's happening to him is 100% a direct result of his own aggressions against another party.
 
 Everyone's against him. It's all a conspiracy. He didn't do anything at all (even the things we all watched him do).
+
+</CalloutPlusQuote>
 
 It's all very Trumpian.
 
@@ -988,9 +843,7 @@ Especially the "smear campaign" thing. Far as I can see, the only people saying 
 
 Also: I can't help but notice we keep finding Matt in situations where he could easily provide documentation to refute the allegations against him, and he keeps _not_ doing that, and instead, just asking us to believe him.
 
-</Update>
-
-<Update date="10/17/24" title="Matt wars against dissenters with second buyout offer; threatens employees who speak out; intercepts employees' emails" id="">
+### 10.17 Matt wars against dissenters with second buyout offer; threatens employees who speak out; intercepts employees' emails
 
 As reported by 404 Media, [Matt is offering employees another round of buyouts](https://www.404media.co/automattic-buyout-offer-wordpress-matt-mullenweg/), this time worth _nine_ months of pay rather than the previous six.
 
@@ -1010,9 +863,13 @@ But maybe I'm getting ahead of myself. There's nothing _wrong_ with offering buy
 
 Far _more_ ethically questionable is intercepting employees' emails, which is exactly what Matt's done.
 
-In further effort to squash all dissent, Matt's redirected all employee emails that come from [Blind](https://www.teamblind.com/), the social platform where employees can speak publicly and anonymously about their employer and workplace.
+<CalloutPlusQuote>
 
-Since Blind requires signing up with an employer email address (to verify authenticity), whoever owns the domain (i.e., the employer) has the power over delivery of those emails, via DNS records.
+In a further effort to squash dissent, Matt's redirected and intercepted all emails from [Blind](https://www.teamblind.com/), the social platform where employees can speak publicly and anonymously about their employer and workplace.
+
+</CalloutPlusQuote>
+
+Since Blind requires signing up with an employer email address (to verify authenticity), whoever owns the domain--i.e., the employer--has power over delivery of those emails, via DNS records.
 
 Not satisfied with merely blocking or filtering employee emails from Blind, Matt actually _had them forwarded to himself_!
 
@@ -1024,7 +881,11 @@ In fact, it's quite possibly _literally unprecedented_, according to a Blind spo
 
 To make things worse, _this email forwarding wasn't even announced_! Employees found out about it only _after_ they reached out to Blind support...only to learn their private emails were going directly to the CEO.
 
-Again: imagine that not only is your boss _intercepting_ your emails, but he's doing it _without even telling you_.
+<CalloutPlusQuote>
+
+Imagine that not only is your boss _intercepting_ your emails, but he's doing it _without even telling you_.
+
+</CalloutPlusQuote>
 
 The level of disregard is chilling.
 
@@ -1044,9 +905,7 @@ It's a rhetorical question, of course—one that invites many comparisons, none 
 
 My point is: if you were to create an archetype of the absolute _worst_ person to be a leader in a community—the exact _opposite_ of the person you'd want in that role—this is exactly what you'd describe.
 
-</Update>
-
-<Update date="10/21/24" title="WP Engine files an injunction to regain access to WordPress.org">
+### 10.21: WP Engine files an injunction to regain access to WordPress.org
 
 I missed this one over the weekend, but [WP Engine has filed a motion for preliminary injunction](https://www.documentcloud.org/documents/25237665-wp-engine-injunction?responsive=1&title=1) against Automattic and Mullenweg, requesting that the court both allow the company and all its employees and associates access to WordPress.org once again, and to reclaim ACF (the plugin Matt effectively stole from them, above).
 
@@ -1058,10 +917,7 @@ Seems to me you can't very well argue that a company being *outside* of .org is 
 
 That is, unless you're prepared to admit you _want_ users to be in harm's way, as an extortion tactic.
 
-</Update>
-
-
-<Update date="10/23/24" title="Matt responds, saying WordPress.org belongs to him and him alone">
+### 10.23: Matt responds, saying WordPress.org belongs to him and him alone
 
 Matt and Automattic have [filed a response to WP Engine's latest legal filings](https://storage.courtlistener.com/recap/gov.uscourts.cand.437474/gov.uscourts.cand.437474.33.0.pdf).
 
@@ -1069,11 +925,11 @@ Most notably, the filing basically claims that WordPress.org is Matt's; it's his
 
 > WordPress.org is not WordPress. WordPress.org is not Automattic or the WordPress Foundation, and is not controlled by either. To the contrary, as Plaintiff itself acknowledges, WordPress.org is Mr. Mullenweg’s responsibility.
 
-Basically, "yeah, we did everything they said, and we had every right to do it." (Pretty much the exact response you'd expect from a lawyer who [defended corporations against formerly enslaved children and cited Nazis as precedent](https://slate.com/news-and-politics/2020/12/neal-katyal-supreme-court-nestle-cargill-child-slavery.html).) (Yes, I know Matt's lawyer isn't technically a reflection on Matt, but if you're the human who took that case and helped corporations exploit enslaved children without consequence, I think you deserve to have it brought up literally every time anyone on Earth breathes mention of your miserable shitbag existence.)
+Basically, "yeah, we did everything they said, and we had every right to do it." (Pretty much the exact response you'd expect from a lawyer who [defended corporations against formerly enslaved children and cited Nazis as precedent](https://slate.com/news-and-politics/2020/12/neal-katyal-supreme-court-nestle-cargill-child-slavery.html).) (Yes, I know Matt's lawyer isn't technically a reflection on Matt, but if you're the human who took that case and helped corporations exploit enslaved children without consequence, I think you deserve to have it brought up literally every time anyone on Earth breathes mention of your miserable existence.)
 
 Anyway: I'm not qualified to speak on the legal soundness of this defense, but in the real world, there are a lot of problems with it.
 
-For starters: as I've mentioned several times now, we were all led to believe that the Foundation _actually **is**_ .org, and that its entire reason for existence was to prevent this exact flavor of corporate white-collar crime.
+For starters: as I've mentioned several times now, we were all led to believe that the Foundation actually ***is*** .org, and that its entire reason for existence was to prevent this exact flavor of corporate white-collar crime.
 
 For another, the Foundation's _explicit mission_ and reason for existence is:
 
@@ -1081,7 +937,7 @@ For another, the Foundation's _explicit mission_ and reason for existence is:
 
 I guess I'm not sure what software projects the _WordPress-effing-foundation_ supports if it isn't, ya know, _WordPress_.
 
-Now, at this point, Matt would argue the Foundation _is_ actually doing its job and he's totally within his rights, because WordPress itself actually _is_ still available to everyone. (He argues this, in fact, in the legal filing.) Anyone, he and his (shitbag) lawyers point out, can still access WordPress and use it for any reason.
+Now, at this point, Matt would argue the Foundation _is_ actually doing its job and he's totally within his rights, because WordPress itself actually _is_ still available to everyone. (He argues this, in fact, in the legal filing.) Anyone, he points out, can still access WordPress itself, and use it for any reason.
 
 Problem is: we have all been led to believe, for decades now, that access to .org is _very explicitly_ a part of using WordPress.
 
@@ -1095,25 +951,38 @@ I just downloaded the latest version of WordPress, and did a quick search: `word
 
 I didn't actually try it, but I'm gonna make a well-educated guess that if I started commenting out those lines of code, or replacing that domain, my WordPress install wouldn't keep working for very long.
 
-Point is: **WordPress.org _is_, for all intents and purposes, _a part of WordPress_**.
 
-It would have never crossed any reasonable person's mind that access to the theme and plugin repository, and the entire community under the .org umbrella, was somehow separate from WordPress; that you may or may not get that if you choose to use WordPress as the software that powers your website.
+<CalloutPlusQuote>
 
-We've never had any reason to think that. Before a month ago, we'd all been led to believe—seemingly deliberately—that wasn't even _possible_.
+Whatever the courts decide, I think it's more than fair to say WordPress.org _is_, for all intents and purposes, a part of WordPress.
+
+</CalloutPlusQuote>
+
+It would have never crossed any reasonable person's mind that access to the theme and plugin repository, and the entire community under the .org umbrella, was somehow separate from WordPress.
+
+True, Matt never signed a contract where he agreed to give WP Engine, or anyone else, free use of .org.
+
+But he _also_ never did anything to suggest to anyone this whole enterprise was his and his alone. Quite to the contrary; it seems he very deliberately let us all believe that WordPress.org is indeed a fundamental part of WordPress; a service anyone and everyone in the community could count on indefinitely and under any circumstances.
+
+We've never had any reason to think otherwise.
 
 **I can't help but feel that _everyone_ in WordPress is being betrayed here**.  We _all_ believed WordPress.org was in the hands of a benevolent nonprofit, not a tyrannical dictator. We _all_ thought this could never happen to _anyone_ in the community.
 
-<Callout>
+<CalloutPlusQuote>
 
-Literally _everyone_ believed—as any reasonable person would—that WordPress.org was _part of WordPress_, insomuch as access to it was understood to be an irrevocable aspect of the software.
+Everyone believed—as any reasonable person would—that WordPress.org was _part of WordPress_, insomuch as access to it was understood to be a permanent, integral, irrevocable aspect of the software.
 
-</Callout>
+</CalloutPlusQuote>
 
 Zero businesses would've been built on this software if _this_ had been the public face at the beginning; if it had been clear that anyone and everyone's fortunes were subject to the whims of a petty, childish narcissist.
 
 Nobody even realized .org was entirely owned and operated by Matt Mullenweg, _let alone_ that access to it could ever be revoked for any reason he decided was valid, with zero other governance or authority keeping him in check.
 
+<CalloutPlusQuote>
+
 Whether deliberately or not, Matt let all of us believe in a lie.
+
+</CalloutPlusQuote>
 
 Using WordPress.org with WordPress is as fundamental to the software as the app store is to using an iPhone.
 
@@ -1124,9 +993,6 @@ Matt _might_ have a legal point here. Once more, I'm not a lawyer, but: from a p
 But _having the right_ is not the same as _being in the right_. And we're only in this position because Matt fleeced the entire community into thinking he didn't possess the power he secretively hoarded for himself, and spent decades convincing everybody who ever touched WordPress it was in better hands than it actually is.
 
 We all bought a lie. And now we have two paths: remove the liar; or pick up the pieces and build something new, with proper governance, safe far away from the previous steward's control.
-
-</Update>
-
 
 
 ## If Matt cares about WordPress, he should step down immediately. And if Matt won't step down, he should be removed.
