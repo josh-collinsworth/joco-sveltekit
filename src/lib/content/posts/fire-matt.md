@@ -1,7 +1,7 @@
 ---
 title: If WordPress is to survive, Matt Mullenweg must be removed
 date: 2024-09-27
-updated: 2024-10-21
+updated: 2024-10-23
 categories:
   - opinion
   - web
@@ -18,6 +18,7 @@ excerpt: I believe Matt Mullenweg's abuses of his unilateral, unchecked powers p
   import Note from '$lib/components/Note.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
   import Update from '$lib/components/Update.svelte'
+  import Callout from '$lib/components/Callout.svelte'
 </script>
 
 <Note>
@@ -171,6 +172,12 @@ Cover image from [this Etsy store](https://www.etsy.com/listing/1341940035/the-b
             <a
               href="#wp_engine_files_an_injunction_to_regain_access_to_wordpressorg"
               >WP Engine files an injunction to regain access to WordPress.org</a
+            >
+          </li>
+          <li>
+            <a
+              href="#matt_responds_saying_wordpressorg_belongs_to_him_and_him_alone"
+              >Matt responds, saying WordPress.org belongs to him and him alone</a
             >
           </li>
         </ul>
@@ -1050,6 +1057,73 @@ And since the whole reason Matt took over ACF in the _first place_ is that he sa
 Seems to me you can't very well argue that a company being *outside* of .org is harmful if _you're_ the one keeping them out.
 
 That is, unless you're prepared to admit you _want_ users to be in harm's way, as an extortion tactic.
+
+</Update>
+
+
+<Update date="10/23/24" title="Matt responds, saying WordPress.org belongs to him and him alone">
+
+Matt and Automattic have [filed a response to WP Engine's latest legal filings](https://storage.courtlistener.com/recap/gov.uscourts.cand.437474/gov.uscourts.cand.437474.33.0.pdf).
+
+Most notably, the filing basically claims that WordPress.org is Matt's; it's his private website, and he can do whatever he wants with it.
+
+> WordPress.org is not WordPress. WordPress.org is not Automattic or the WordPress Foundation, and is not controlled by either. To the contrary, as Plaintiff itself acknowledges, WordPress.org is Mr. Mullenweg’s responsibility.
+
+Basically, "yeah, we did everything they said, and we had every right to do it." (Pretty much the exact response you'd expect from a lawyer who [defended corporations against formerly enslaved children and cited Nazis as precedent](https://slate.com/news-and-politics/2020/12/neal-katyal-supreme-court-nestle-cargill-child-slavery.html).) (Yes, I know Matt's lawyer isn't technically a reflection on Matt, but if you're the human who took that case and helped corporations exploit enslaved children without consequence, I think you deserve to have it brought up literally every time anyone on Earth breathes mention of your miserable shitbag existence.)
+
+Anyway: I'm not qualified to speak on the legal soundness of this defense, but in the real world, there are a lot of problems with it.
+
+For starters: as I've mentioned several times now, we were all led to believe that the Foundation _actually **is**_ .org, and that its entire reason for existence was to prevent this exact flavor of corporate white-collar crime.
+
+For another, the Foundation's _explicit mission_ and reason for existence is:
+
+> …to ensure free access, in perpetuity, to the software projects we support.
+
+I guess I'm not sure what software projects the _WordPress-effing-foundation_ supports if it isn't, ya know, _WordPress_.
+
+Now, at this point, Matt would argue the Foundation _is_ actually doing its job and he's totally within his rights, because WordPress itself actually _is_ still available to everyone. (He argues this, in fact, in the legal filing.) Anyone, he and his (shitbag) lawyers point out, can still access WordPress and use it for any reason.
+
+Problem is: we have all been led to believe, for decades now, that access to .org is _very explicitly_ a part of using WordPress.
+
+And why wouldn't we!? The API exists in every WordPress install. Pretty much the first thing you see when you log into a new WordPress site is a prompt to install themes and plugins _straight from WordPress.org_!
+
+In fact, ironically, pretty much the only place on the internet you might host a WordPress site that _doesn't_ include that privilege is…WordPress.com.
+
+I just downloaded the latest version of WordPress, and did a quick search: `wordpress.org` appears _nearly a thousand times_ in the core WordPress code! (It also appears in two of the four links you get after you click the download button, with a Foundation link being one of the other two.)
+
+![A search for WordPress.org in the base WordPress install reveals a total of 957 search results in 277 files.](/images/post_images/fire-matt/orgsearch.png)
+
+I didn't actually try it, but I'm gonna make a well-educated guess that if I started commenting out those lines of code, or replacing that domain, my WordPress install wouldn't keep working for very long.
+
+Point is: **WordPress.org _is_, for all intents and purposes, _a part of WordPress_**.
+
+It would have never crossed any reasonable person's mind that access to the theme and plugin repository, and the entire community under the .org umbrella, was somehow separate from WordPress; that you may or may not get that if you choose to use WordPress as the software that powers your website.
+
+We've never had any reason to think that. Before a month ago, we'd all been led to believe—seemingly deliberately—that wasn't even _possible_.
+
+**I can't help but feel that _everyone_ in WordPress is being betrayed here**.  We _all_ believed WordPress.org was in the hands of a benevolent nonprofit, not a tyrannical dictator. We _all_ thought this could never happen to _anyone_ in the community.
+
+<Callout>
+
+Literally _everyone_ believed—as any reasonable person would—that WordPress.org was _part of WordPress_, insomuch as access to it was understood to be an irrevocable aspect of the software.
+
+</Callout>
+
+Zero businesses would've been built on this software if _this_ had been the public face at the beginning; if it had been clear that anyone and everyone's fortunes were subject to the whims of a petty, childish narcissist.
+
+Nobody even realized .org was entirely owned and operated by Matt Mullenweg, _let alone_ that access to it could ever be revoked for any reason he decided was valid, with zero other governance or authority keeping him in check.
+
+Whether deliberately or not, Matt let all of us believe in a lie.
+
+Using WordPress.org with WordPress is as fundamental to the software as the app store is to using an iPhone.
+
+It's as ingrained in the ecosystem as npm is for JavaScript. If a Microsoft competitor was one day blocked from npm, the community would very rightly revolt. And taking access to .org away from a competitor is no less unacceptable of Matt and Automattic that Microsoft's behavior would be in that unthinkable scenario.
+
+Matt _might_ have a legal point here. Once more, I'm not a lawyer, but: from a purely legal standpoint, one could understand where Matt may technically be within his judicial rights.
+
+But _having the right_ is not the same as _being in the right_. And we're only in this position because Matt fleeced the entire community into thinking he didn't possess the power he secretively hoarded for himself, and spent decades convincing everybody who ever touched WordPress it was in better hands than it actually is.
+
+We all bought a lie. And now we have two paths: remove the liar; or pick up the pieces and build something new, with proper governance, safe far away from the previous steward's control.
 
 </Update>
 

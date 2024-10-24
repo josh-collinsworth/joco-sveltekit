@@ -1051,7 +1051,7 @@ export const fetchMarkdownPosts = async () => {
 
 <SideNote>
 
-<p>If you followed approach #1 above and have every post inside its own individual folder, you'll need to change the import path to end <code>/blog/\*_/_.md</code>, to go one level deeper.</p>
+<p>If you followed approach #1 above and have every post inside its own individual folder, you'll need to change the import path to end <code>/blog/**/*.md</code>, to go one level deeper.</p>
 
 </SideNote>
 
