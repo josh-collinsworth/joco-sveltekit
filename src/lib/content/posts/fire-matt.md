@@ -1044,7 +1044,7 @@ Mullenweg has reportedly been attempting to acquire Bullenweg, and as of this we
 
 > Bullenweg.com is no longer available following threats of legal action from Matthew Mullenweg.
 
-(Interestingly, as of this writing, that message has been replaced with a direct and severely damaging quote from one of the lawsuits against Matt. So it would appear whoever the anonymous person or group behind Bullenweg is, it would appear they might not be going down without a fight.)
+(Interestingly, as of this writing, that message has been replaced with a direct and severely damaging quote from one of the lawsuits against Matt. So whoever the anonymous person or group behind Bullenweg is, it would appear they might not be going down without a fight.)
 
 <CalloutPlusQuote>
 
