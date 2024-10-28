@@ -1036,11 +1036,15 @@ I didn't report on that post before now, because on its own, it's not really tha
 
 The whole post is just Matt screaming into the void in the same melodramatic and self-victimizing way he always does. But new developments have arisen that make this more relevant than it was when it was just a tantrum.
 
-In particular, The Register is reporting [WordCamp organizers are being forced to provide social login credentials, and to take down pro-WP Engine posts](https://www.theregister.com/AMP/2024/10/28/wordcamp_password_sharing_requirement/).
+In particular, The Register is reporting [WordCamp organizers are being forced to provide social login credentials, and to take down pro-WP Engine posts](https://www.theregister.com/AMP/2024/10/28/wordcamp_password_sharing_requirement/). Thus far the examples are few, but apparently WordCamps—which are almost all community-organized and run by volunteers who just want to get together with other WordPress users—are now being forced to fall in line with Matt's personal agenda and talking points.
 
-At the same time, the website [Bullenweg.com](https://bullenweg.com), has faced threats against its speech as well. (Bullenweg is a site that chronicles a timeline of all of Matt's "bull," i.e., problematic behavior, created in the midst of this mess and apparently run by one or more anonymous developers.)
+Meanwhile, WordCamp attendance has been impacted by all this drama, as Matt's ridiculous shenanigans are quite predictably having a pronounced negative impact on enthusiasm. So some organizers, at least, are being forced to make do with less, even as they're also being forbidden from saying anything about it that disagrees with Matt's viewpoint. (Notice that only pro-WP Engine posts were targeted. It's not as though _all_ references to the ongoing debacle were barred; only those that Matt disagrees with.)
 
-Mullenweg has reportedly been attempting to acquire Bullenweg, and as of this weekend, the entire page was replaced with a message saying:
+At the same time, the website [Bullenweg.com](https://bullenweg.com), has faced threats against its speech as well.
+
+Bullenweg is a site that chronicles a timeline of all of Matt's "bull," i.e., problematic behavior, created in the midst of this mess and apparently run by one or more anonymous developers.
+
+Mullenweg has reportedly been attempting to acquire and/or take down Bullenweg for a while now. Then, as of this weekend, the entire page was replaced with a message saying:
 
 > Bullenweg.com is no longer available following threats of legal action from Matthew Mullenweg.
 
