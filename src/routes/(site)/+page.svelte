@@ -11,20 +11,28 @@
 		name="description"
 		content="Front-end developer, designer, teacher and writer"
 	/>
-	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
-	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta
+		property="og:image"
+		content="https://joshcollinsworth.com/images/site-image.png"
+	/>
+	<meta
+		name="twitter:image"
+		content="https://joshcollinsworth.com/images/site-image.png"
+	/>
 </svelte:head>
 
 <Main>
 	<div class="intro">
 		<div class="intro__headline">
 			<h2>
-				<strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer, writer, and&nbsp;teacher.
+				<strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer,
+				writer, and&nbsp;teacher.
 			</h2>
 
 			<p class="subhead h2">
-				I currently live in the Kansas City area, and work for <a href="https://deno.land">Deno</a> as
-				a frontend engineer.
+				I currently live in the Kansas City area, and work for <a
+					href="https://deno.land">Deno</a
+				> as a frontend engineer.
 			</p>
 
 			<p>
@@ -35,8 +43,8 @@
 				on <a href="https://css-tricks.com">CSS Tricks</a>. I
 				<a href="/projects">designed and built</a>
 				the word games
-				<a href="https://quina.app">Quina</a> and <a href="https://playhondo.com">Hondo</a>.
-				Occasionally I'll
+				<a href="https://quina.app">Quina</a> and
+				<a href="https://playhondo.com">Hondo</a>. Occasionally I'll
 				<a href="/about-me#appearances">appear on a podcast</a>, and I
 				<a href="/blog">blog here</a> once in a while.
 			</p>

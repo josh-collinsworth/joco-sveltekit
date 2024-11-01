@@ -23,61 +23,80 @@
 		<h2>Who I am</h2>
 
 		<p>
-			I'm currently a Frontend Engineer at <a href="https://deno.land">Deno</a>. Before that, I was
-			a senior frontend developer at <a href="https://shopify.com">Shopify</a>. In my spare time, I
-			love hobby coding; I'm the maker and designer of the word games <i>Quina</i>
+			I'm currently a Frontend Engineer at <a href="https://deno.land">Deno</a>
+			(<i
+				>I made
+				<a href="https://deno.com/brand">the new logo</a>, so I guess I'm
+				technically still a designer, too</i
+			>). I've been with Deno since 2023, and before that, I spent a couple of
+			years as a senior frontend developer at
+			<a href="https://shopify.com">Shopify</a>.
+		</p>
+		<p>
+			In my spare time, I enjoy hobby coding; I'm the maker and designer of the
+			word games <i>Quina</i>
 			(<a href="https://apps.apple.com/us/app/quina/id1636895462">iOS</a>/<a
-				href="https://play.google.com/store/apps/details?id=app.quina.collinsworth">Android</a
+				href="https://play.google.com/store/apps/details?id=app.quina.collinsworth"
+				>Android</a
 			>/<a href="https://quina.app">web</a>) and <i>Hondo</i>
-			(<a href="https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone">iOS</a>/<a
-				href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa">Android</a
-			>/<a href="https://playhondo.com">web</a>).
+			(<a
+				href="https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone"
+				>iOS</a
+			>/<a
+				href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa"
+				>Android</a
+			>/<a href="https://playhondo.com">web</a>). I wrote and maintain an
+			open-source SvelteKit static blog starter (when I have the time, at least—<a
+				href="https://github.com/josh-collinsworth/sveltekit-blog-starter"
+				>repo</a
+			>/<a href="https://sveltekit-static-starter.netlify.app">demo</a>), and I
+			still do occasional freelance development and design.
 		</p>
 
 		<p>
-			I wrote and maintain an open-source SvelteKit static blog starter (when I have the time, at
-			least—<a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">repo</a>/<a
-				href="https://sveltekit-static-starter.netlify.app">demo</a
-			>), and I still do occasional freelance development and design.
-		</p>
-
-		<p>
-			Previously, I worked as a Senior JavaScript developer at <a href="https://aware3.com"
-				>Aware3</a
-			>, and as a front-end engineer at <a href="https://wpengine.com">WP Engine</a>. Before
-			becoming a full-time dev, I was a senior support lead at
-			<a href="https://getflywheel.com">Flywheel</a>, and also a course instructor for
-			<a href="https://interfaceschool.com">AIM Code School</a>, where I taught WordPress
-			development, and was solely responsible for both curriculum development and teaching.
+			Previously, I worked as a Senior JavaScript developer at <a
+				href="https://aware3.com">Aware3</a
+			>, and as a front-end engineer at
+			<a href="https://wpengine.com">WP Engine</a>. Before becoming a full-time
+			dev, I was a senior support lead at
+			<a href="https://getflywheel.com">Flywheel</a>, and also a course
+			instructor for
+			<a href="https://interfaceschool.com">AIM Code School</a>, where I taught
+			WordPress development, and was solely responsible for both curriculum
+			development and teaching.
 		</p>
 
 		<p>
 			As a writer, I authored the CSS Tricks series <a
 				href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
 				>A Complete Beginner's Guide to NPM</a
-			>, and I enjoy blogging about dev, design and tech (both <a href="#writing">freelance</a> and
-			<a href="blog">here on this site</a>). Occasionally, I get asked to talk about what I write
+			>, and I enjoy blogging about dev, design and tech (both
+			<a href="#writing">freelance</a>
+			and
+			<a href="blog">here on this site</a>). Occasionally, I get asked to talk
+			about what I write
 			<a href="#appearances">on podcasts</a>.
 		</p>
 
 		<p>
-			Before entering tech, I spent a few years as a graphic designer (that's what my degree is in).
-			Prior to that, I was a bartender and server, and regularly gigged as a musician, though that's
-			all been many years ago now.
+			Before entering tech, I spent a few years as a graphic designer (that's
+			what my degree is in), worked in foodservice, and was a regularly gigging
+			musician (though not otherwise successful).
 		</p>
 
 		<p>
-			I moved to the Kansas City area fairly recently, but was in Omaha for several years before
-			that.
+			I lived in Omaha for most of my career, but I've been in Kansas City since
+			2022.
 		</p>
 
 		<p>
-			Personally, I am a: hobby coder; font hoarder; husband since 2012; dad since 2019 (though
-			notorious for dad jokes since long before); accessibility advocate; DEI accomplice; cold brew
-			aficionado; Facebook, Instagram, and Twitter abandoner; Mastodon appreciator; semi-notorious
-			React critic; occasional public speaker and podcast guest; pun enthusiast; curious learner;
-			dog person; lifelong Nintendo fan; musician/guitarist/hack pianist; he/him/his; liberal abuser
-			of semicolons.
+			Personally, I am a: hobby coder; font hoarder; husband since 2012; dad
+			since 2019 (though notorious for dad jokes since long before);
+			accessibility advocate; DEI accomplice; cold brew aficionado; Facebook,
+			Instagram, and Twitter abandoner; Mastodon appreciator; semi-notorious
+			React critic; occasional public speaker and podcast guest; pun enthusiast;
+			curious learner; dog person; lifelong Nintendo fan;
+			musician/guitarist/hack pianist; he/him/his; liberal abuser of semicolons.
 		</p>
 
 		<h3>More:</h3>
@@ -87,7 +106,9 @@
 				<a href="/contact?from_page=about">Contact</a>
 			</li>
 			<li>
-				<a href="https://linkedin.com/in/joshcollinsworth" rel="nofollow">LinkedIn</a>
+				<a href="https://linkedin.com/in/joshcollinsworth" rel="nofollow"
+					>LinkedIn</a
+				>
 			</li>
 			<li>
 				<a href="https://github.com/josh-collinsworth" rel="nofollow">GitHub</a>
