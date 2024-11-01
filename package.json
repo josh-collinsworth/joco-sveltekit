@@ -2,7 +2,9 @@
   "name": "josh-collinsworth-sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite dev --port 1027",
+    "original-dev": "vite dev --port 1027",
+    "watch-sass": "sass src/lib/assets/scss/global.scss static/global.css --style=compressed --watch",
+    "dev": "npm-run-all --parallel original-dev watch-sass",
     "host": "vite dev --port 1027 --host",
     "build": "vite build",
     "preview": "vite preview",
@@ -24,6 +26,7 @@
     "eslint-plugin-svelte3": "^3.2.0",
     "mdsvex": "^0.9.8",
     "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "~2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
     "sass": "^1.38.2",

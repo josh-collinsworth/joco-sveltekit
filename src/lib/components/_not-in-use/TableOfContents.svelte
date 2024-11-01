@@ -31,7 +31,9 @@
 	 * it works and as a bonus, is a progressive enhancement.
 	 */
 	onMount(() => {
-		const allHeadings = document.querySelectorAll('article h1 ~ :is(h2, h3, h4, h5, h6)')
+		const allHeadings = document.querySelectorAll(
+			'article h1 ~ :is(h2, h3, h4, h5, h6)'
+		)
 
 		if (allHeadings.length < 5) return
 
@@ -50,7 +52,10 @@
 			} else if (previousHeadingLevel < level) {
 				output += `<ul><li>`
 			} else if (previousHeadingLevel > level) {
-				const subtraction = i + 1 === allHeadings.length ? level + 1 : previousHeadingLevel - level
+				const subtraction =
+					i + 1 === allHeadings.length
+						? level + 1
+						: previousHeadingLevel - level
 				for (let n = 0; n < subtraction; n++) {
 					output += '</li></ul>'
 				}
@@ -77,101 +82,3 @@
 		</aside>
 	</div>
 {/if}
-
-<style lang="scss" global>
-	.toc-wrap {
-		background: linear-gradient(to bottom right, var(--lightGray), var(--yellow));
-		background: linear-gradient(to bottom right, #a7a8aa, #92abb2, #5eca78, #b6ec1f, #ffd100);
-		padding: 2px;
-		margin: 3rem 0;
-	}
-
-	.toc {
-		background: var(--paper);
-		padding: 1rem 1.5rem 1.5rem;
-		line-height: 1.6;
-		width: 100%;
-		position: relative;
-		z-index: 2;
-		font-family: var(--headingFont);
-
-		h2 {
-			font-weight: bold;
-			font-family: var(--headingFont);
-			font-size: 0.8rem;
-			margin: 0;
-			background: var(--paper);
-			position: relative;
-			padding: 0;
-			top: calc(-1rem - 0.5em);
-			left: 0;
-			text-transform: uppercase;
-			color: var(--lightGray);
-			display: flex;
-			width: 12em;
-			justify-content: space-between;
-			align-items: center;
-			line-height: 1;
-
-			.opening-bracket,
-			.closing-bracket {
-				display: block;
-				position: relative;
-				z-index: 2;
-				left: -1px;
-				bottom: 0.05em;
-			}
-
-			.closing-bracket {
-				left: unset;
-				right: -1px;
-			}
-		}
-
-		.toc-list {
-			list-style-type: decimal;
-			font-size: 0.85rem;
-			margin: 0;
-
-			li::marker {
-				color: var(--ink);
-				content: unset;
-				font-weight: normal;
-			}
-
-			> li {
-				font-weight: bold;
-
-				&::marker {
-					font-weight: bold;
-				}
-
-				ul {
-					font-weight: normal;
-				}
-			}
-
-			ul {
-				list-style-type: lower-alpha;
-				margin: 0.25em 0 0;
-
-				ul {
-					list-style-type: decimal;
-				}
-			}
-
-			li {
-				list-style-type: inherit;
-				margin: 0 0 0.25em;
-
-				::marker {
-					content: '- ';
-				}
-
-				a {
-					text-decoration: none;
-				}
-			}
-		}
-	}
-</style>
