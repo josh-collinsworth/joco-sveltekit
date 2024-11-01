@@ -141,6 +141,12 @@
   to = "/about-me"
   status = 301
 
+[[redirects]]
+  from = "https://collinsworth.dev/*"
+  to = "https://joshcollinsworth.com/:splat"
+  status = 301
+  force = true
+
 # ---
 # Headers
 # ---
