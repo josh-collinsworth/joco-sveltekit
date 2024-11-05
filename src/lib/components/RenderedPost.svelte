@@ -16,7 +16,11 @@
 
 	const defaultImagePath = `/images/site-image.png`
 	let imagePath: string
-	$: imagePath = meta.coverImage ? `/images/post_images/${meta.coverImage}` : defaultImagePath
+	$: imagePath = meta.coverImage
+		? meta.coverImage.startsWith('http')
+			? meta.coverImage
+			: `/images/post_images/${meta.coverImage}`
+		: defaultImagePath
 
 	const wrapTablesInScrollableDivs = (): void => {
 		/**
@@ -76,8 +80,14 @@
 	<meta property="og:image" content="https://joshcollinsworth.com{imagePath}" />
 	<meta property="og:image:width" content={meta.coverWidth} />
 	<meta property="og:image:height" content={meta.coverHeight} />
-	<meta name="twitter:image" content="https://joshcollinsworth.com{imagePath}" />
-	<meta property="og:url" content="https://joshcollinsworth.com/blog/{meta.slug}/" />
+	<meta
+		name="twitter:image"
+		content="https://joshcollinsworth.com{imagePath}"
+	/>
+	<meta
+		property="og:url"
+		content="https://joshcollinsworth.com/blog/{meta.slug}/"
+	/>
 </svelte:head>
 
 <Main>
@@ -93,7 +103,9 @@
 			/>
 		{/if}
 
-		<h1 style={imagePath === defaultImagePath ? `margin-top: 0;` : ''}>{meta.title}</h1>
+		<h1 style={imagePath === defaultImagePath ? `margin-top: 0;` : ''}>
+			{meta.title}
+		</h1>
 
 		<div class="meta">
 			<b>Published:</b>
