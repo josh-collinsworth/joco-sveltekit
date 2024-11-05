@@ -9,7 +9,7 @@ categories:
 coverImage: wtf.webp
 coverWidth: 1280
 coverHeight: 720
-excerpt: I feel it's important to issue a critical reading of Automattic's post, as it doesn't seem to offer any serious or objective examination of the issues at hand. Rather, the post unfortunately reads as something more akin to a puff piece, or corporate propaganda.
+excerpt: I feel it's important to issue a critical reading of Automattic's post, as it doesn't seem to offer much of a serious or objective examination of the issues at hand. Rather, the post unfortunately reads as something more akin to a puff piece, or corporate propaganda.
 ---
 
 <script>
@@ -32,13 +32,13 @@ h2 + blockquote {
 }
 </style>
 
-This post is a response to “[Defending Open Source: Protecting the Future of WordPress](https://automattic.com/2024/protecting-wordpress/),” which was recently published on the Automattic blog as an explanation of the company's ongoing legal disputes with WP Engine.
+This post is a response to “[Defending Open Source: Protecting the Future of WordPress](https://automattic.com/2024/protecting-wordpress/),” which was recently published on Automattic's website as an explanation of the company's ongoing legal disputes with WP Engine.
 
-I feel it's important to issue a critical reading of Automattic's post, as it doesn't seem to offer any serious or objective examination of the issues at hand.
+I feel it's important to issue a critical reading of Automattic's post, as it doesn't seem to offer much of a serious or objective examination of the issues at hand.
 
-Rather, the post unfortunately reads as something more akin to a puff piece, or corporate propaganda.
+Rather, the post unfortunately reads as something more akin to a puff piece, or corporate propaganda. (Expectedly enough, I suppose, since Matt and Automattic are currently embroiled in lawsuits against WP Engine.)
 
-In _this_ post, I'll go through the original Automattic piece, and address to a wide range of the claims, adding the questions and context I feel are obviously missing.
+In _this_ post, I'll go through the original Automattic piece, quoting key pieces, and adding the questions and context I feel are obviously missing.
 
 (If you're new to this whole WordPress drama, I have [a whole other post covering it here](/blog/fire-matt). I guess writing about this whole thing is a new hobby of mine.)
 
