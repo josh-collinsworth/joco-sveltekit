@@ -109,7 +109,7 @@ Matt just managed to steal it without anyone noticing until now.
 
 > WP Engine responded predictably—issuing multiple legal filings—while ignoring invitations for open debates.
 
-Let's call a spade a spade: demanding debates is a childish move. It's childish to believe the only reason someone doesn't acknowledge your indisputable correctness is that you haven't had the opportunity to crush them in the suffocating grip of your cold, hard reason. There are plenty of other valid reasons a person might disagree with you, and/or won't debate you.
+Let's call a spade a spade: demanding debates is a childish move. It's childish to believe the only reason someone doesn't acknowledge your indisputable correctness is that you haven't had the opportunity to crush them in the suffocating grip of your cold, hard reason. It's childish to assume there are no other valid reasons a person might disagree with you, and/or won't debate you. Frankly, It's childish to think you can change their mind with a debate anyway.
 
 Maybe you're not as right as you think you are. Maybe they've already looked into all your points and have very good reason to disagree with them.
 
