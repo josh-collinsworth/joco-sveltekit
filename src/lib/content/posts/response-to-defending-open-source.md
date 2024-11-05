@@ -56,7 +56,7 @@ That said: let's go through the Automattic post, section by section.
 
 If this were Wikipedia, there would be at least five "who?" "such as?" and "citation needed" links in this sentence.
 
-First: why does it matter what WP Engine's revenue was, or is? What's the point of bringing it up not just here, but repeatedly throughout the article, if there's never going to be any meaning attached to the figure? (And indeed, as we'll see, there's not. It's just a number that I guess is supposed to just sound big and scary.)
+First: why does it matter what WP Engine's revenue was, or is? What's the point of bringing it up not just here, but repeatedly throughout the article, if there's never going to be any meaning attached to the figure?
 
 Was this growth different than the growth of comparable companies over the same period? If it was, why is this important? Why is this growth apparently _bad_, both in general and for WordPress in particular?
 
@@ -80,21 +80,23 @@ The `wordpress.org` domain is hard-coded into WordPress core almost a thousand t
 
 WordPress doesn't even _work_ without WordPress.org. It is, for all intents and purposes, a part of WordPress. The fact that it's an external repository and not something you download with the core software is nothing more than a necessary technical detail.
 
-I don't think anyone who _ever_ contributed to WordPress.org—either the repo itself, or the themes and plugins it houses—realized before this whole episode that they were working on one man's personal project, or that their work could be ripped away from others (or even from ***themselves!***) at the drop of a hat.
+I don't think anyone who _ever_ contributed to WordPress.org—either the repo itself, or the themes and plugins it houses—realized before this whole episode that they were working on something that would ever be described as one man's personal project, or that their work could be ripped away from others (or even from ***themselves!***) at the drop of a hat.
 
-In fact, the place where contributors worked on core itself is actually _called_ "dotorg" in the official WordPress Slack, and in other places. So the two have very, very commonly been thought of and considered as one thing, even directly under Matt's leadership.
+In fact, the place where contributors worked on core itself is actually _called_ "dotorg" in the official WordPress Slack, and in other places. So the two have very, very commonly been thought of and considered as one thing, even under Matt's direct leadership.
 
-WordPress.org has _never_, at _any_ point, been positioned as an add-on to WordPress, or a separate companion piece. It was never presented as a separate project, and _certainly_ not one operated by one man, whose capricious whims could lock thousands of users out at any time, in the name of a corporate dispute built on shaky claims of community disruption. (Indeed, whatever WP Engine's ostensible disruption to the community, it would be difficult to argue they were greater, or would have become greater, than the disruption Matt himself has unleashed on end users of WordPress.)
+WordPress.org has _never_, at _any_ point, been positioned as an add-on to WordPress, or a separate companion piece. It was never presented as a discrete project, and _certainly_ not one operated by one man, who could or would lock users out, in the name of a corporate dispute built on shaky claims of community disruption. (Indeed, whatever WP Engine's ostensible disruption to the community, it would be difficult to argue they were greater, or would have become greater, than the disruption Matt himself has unleashed on end users of WordPress.)
 
 I think we all know if this were a business dispute taking place behind the scenes, without involving the users, we'd be having a whole different conversation.
 
 But the authors who maintain the repo itself, and the plugins and themes it houses, fully believed in good faith their work was _for everyone_, "in perpetuity" (as the WP Foundation's mission statement goes).
 
-So to take that work, intended and believed to be part of the community commons, and put it instead inside a walled garden—all because of where someone chooses to host their site—is a flagrant abuse of Matt's trust and power.
+So to take that work, intended and believed to be part of the community commons, and put it instead inside a walled garden—all because of where someone chooses to host their site—is a flagrant abuse of Matt's trust and power. And to claim it's all just his own site, like some blog he threw together on his own, is preposterous in nearly every possible sense.
 
-Now, that's all my opinion, and I'm not a lawyer.
+Now: that's all my opinion, and I'm not a lawyer.
 
-There's every possibility the courts side with Mullenweg on this point, and conclude he's within his rights, legally speaking. But the law is an imperfect model of justice, and being within your rights isn't the same thing as being _in the right_.
+There's every possibility the courts side with Mullenweg on the point that he alone owns WordPress.org, and conclude he's within his rights, legally speaking, to do whatever he wants with it.
+
+But the law is an imperfect model of justice, and being within your rights isn't the same thing as being _in the right_.
 
 The idea that Matt doesn't "owe" access to .org is an absurd legalistic technicality on par with a childish claim like "I never said I did _all_ my homework."
 
