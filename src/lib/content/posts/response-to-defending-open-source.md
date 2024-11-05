@@ -82,7 +82,7 @@ WordPress doesn't even _work_ without WordPress.org. It is, for all intents and 
 
 I don't think anyone who _ever_ contributed to WordPress.org—either the repo itself, or the themes and plugins it houses—realized before this whole episode that they were working on something that would ever be described as one man's personal project, or that their work could be ripped away from others (or even from ***themselves!***) at the drop of a hat.
 
-In fact, the place where contributors worked on core itself is actually _called_ "dotorg" in the official WordPress Slack, and in other places. So the two have very, very commonly been thought of and considered as one thing, even under Matt's direct leadership.
+In fact, the place where contributors worked on core itself is actually _called_ "dotorg" in the official WordPress Slack, and in other places. So the two have very, very commonly been considered one and the same, even under Matt's direct leadership.
 
 WordPress.org has _never_, at _any_ point, been positioned as an add-on to WordPress, or a separate companion piece. It was never presented as a discrete project, and _certainly_ not one operated by one man, who could or would lock users out, in the name of a corporate dispute built on shaky claims of community disruption. (Indeed, whatever WP Engine's ostensible disruption to the community, it would be difficult to argue they were greater, or would have become greater, than the disruption Matt himself has unleashed on end users of WordPress.)
 
@@ -153,20 +153,20 @@ For that matter: how do you even _count_ what WP Engine is doing? Where would yo
 
 The fact that Matt isn't interested in even asking this question is rather telling, in my view.
 
-Even if WPE isn't contributing as many hours specifically to core as Automattic is (and arguably: they shouldn't be expected to), they're clearly building things for the community and drawing people into it. WordPress has grown as WP Engine has grown. People keep using their stuff. Their products and plugins are obviously good for WordPress, generally speaking. Lots of them aren't even used by people who host on WP Engine. (I, for one, would use Local and ACF for any WordPress site I built, even if didn't host with WPE.)
+Even if WPE isn't contributing as many hours specifically to core as Automattic is (and arguably: they shouldn't be expected to), they're clearly building things for the community and drawing people into it. WordPress has grown as WP Engine has grown. People keep using their stuff. Their products and plugins are obviously good for WordPress, generally speaking. Lots of them aren't even used by people who host on WP Engine. (I, for one, would use Local and ACF for any WordPress site I built, even if I didn't host with WPE.)
 
 So why is Matt's personal math all that counts?
 
 And more importantly: why won't he even show his work?
 
-Not that any of this matters, actually, because I'm sorry: it's open-source software. You don't just get to extort people, out of nowhere, if you decide you don't like how they're using it.
+Not that any of this matters, actually, because I'm sorry: it's open-source software. You don't just get to extort people out of nowhere if you decide you don't like how they're using it.
 
 
 ## 2. Private Equity vs. Open Source
 
-Honestly, I don't even know if there's much quotable in the next two sections. Most of it just describes how capitalism works, while expecting the reader to do the work of equating capitalism with WP Engine.
+Honestly, I don't even know if there's much quotable in the next two sections. This one mostly just describes how capitalism works, while expecting the reader to do the work of equating capitalism with WP Engine. (It helps if you forget Automattic is _also_ a for-profit company, I suppose.)
 
-A lot of people can get down to the anti-capitalist blues (myself included). But it doesn't really hit the same way when it's played by a guy worth around half a billion dollars, talking about his own for-profit company's biggest competitor.
+A lot of people can get down to the anti-capitalist blues, myself included. But it doesn't really hit the same way when it's played by a guy worth around half a billion dollars, talking about his own for-profit company's biggest competitor.
 
 Aside from "private equity is usually bad," there's very little of meaningful substance here. A lot of it is bad-faith tactics and fallacies.
 
@@ -176,18 +176,18 @@ _Did you know WP Engine is worth more now that it was five years ago!? Woooooooo
 
 _That's because…they **bought things** and **did marketing**_! [Sound of children screaming]
 
-WP Engine is bad because they make money, apparently. (Again: this does more to promote the idea that Matt just wants to squash his biggest competitor than it does to bolster his "this is all about the community" stance.)
+WP Engine is bad because they make money, apparently. (Again: this does more to promote the idea that Matt's focused on them because of their threat to his business than because they pose any real threat to the community or open source project.)
 
 Matt's company also makes money. But he wants us to know _his_ company does it the one true, pure way, and WP Engine does it the bad, evil way that will destroy everything (without doing much to spell out what the distinction is).
 
-Matt points to how much his company does for WordPress, but since he's the only arbiter of what counts, everything on his side gets tallied while nothing on WP Engine's side does. It's impossible to take seriously.
+Matt points to how much his company does for WordPress, but since he's the only arbiter of what counts, everything on his side gets tallied while nothing on WP Engine's side does. It's hard to even take it seriously.
 
 If I had tried to submit this post in my community college English class, I would've gotten it back with marks all over this section.
 
 
 ## 3. Silver Lake & WP Engine
 
-This whole section doesn't even really talk about WP Engine; it's just a Cliff's notes version of bad things private equity firms have done in the past, which once more fails to connect the dots on why and how that translated to harm or danger for WordPress itself, via WP Engine or otherwise.
+This whole section doesn't even really talk about WP Engine; it's just a Cliff's notes version of bad things private equity firms have done in the past, which once more fails to connect the dots on why and how that translates to harm or danger for WordPress itself, via WP Engine or otherwise.
 
 We're again left to conclude on our own that WP Engine will do to WordPress what private equity has done to, say, nursing homes, with nothing provided to get us from point A to point B.
 
@@ -197,20 +197,20 @@ Do I think WP Engine does some shitty things in the name of profit? 100% yes.
 
 But do I believe there was such an imminent threat to WordPress that it warranted _anything_ Matt's done in the past two months? _Absolutely not_.
 
-This section does nothing to provide any persuasive context, or explain why WP Engine is somehow the one profitable company doing questionable things in the name of growth that's bad. (There are, after all, plenty of others, both in the space and beyond it.)
+This section does nothing to provide any persuasive context, or explain why WP Engine is somehow the one profitable company doing questionable things in the name of growth that happens to be a "danger." (There are, after all, plenty of other companies making questionable decisions in the name of maximizing profits, both in the WordPress space and beyond it.)
 
 By the way: it's worth mentioning Matt has taken money from about a dozen investors himself. One of the other two people on the Foundation board with him is a Partner at a private equity firm. His lawyer is a board member of a venture capital firm (and [a really awful human](https://newrepublic.com/article/160481/neal-katyal-depravity-big-law)). I'm sure that's not the complete list of the ways Matt himself is tied up in VC money and/or private equity.
 
 So yeah, we can all get behind the core message, but it looks mighty hypocritical in this context—not to mention suspiciously targeted.
 
-Especially because Matt's argued elsewhere that essentially, when he does it, it's the right and virtuous way; when WP Engine does it, it's the wrong and evil way.
+Another instance of the double standard; when Matt does it, it's the right way, and when WP Engine does it, it's the wrong way.
 
 
 ## 4. Calling out WP Engine
 
 > For nearly a year, Matt has attempted to constructively engage WP Engine on proper use of the trademark and the need for them to contribute to the community from which they profit.
 
-Citation very much needed here.
+Citation _very much_ needed here.
 
 Matt's repeatedly claimed he's been trying "for years" to get WP Engine on what he sees as the right path. So it's interesting that now it's just "for nearly a year."
 
@@ -220,7 +220,7 @@ And more importantly: where are the receipts?
 
 Matt [published a timeline and terms sheet](https://automattic.com/2024/10/01/wpe-terms/) back at the start of October, but it really didn't show _any_ communication between WPE and Matt/Automattic on this topic _at all_—except for the term sheet itself, which was dated September 20 (i.e., the same day Matt went on stage at WCUS to publicly excoriate WP Engine in his keynote presentation).
 
-So if this conversation has been going on so long: where's the proof? Show us some emails. Surely you didn't try to negotiate multimillion dollar contracts without a paper trail…right?
+So if this conversation has been going on so long: where's the proof? Show us some emails, or contracts, or _something_. Surely you didn't try to negotiate multimillion dollar contracts without a paper trail…right?
 
 We've seen nothing to prove Matt's version of events, and the only document he _has_ produced actually does more to contradict it than support it.
 
@@ -399,13 +399,13 @@ Matt literally put a checkbox on WordPress.org to keep anyone affiliated with WP
 
 Matt has also now _twice_ bought out dissenters to get them to leave his company. He's monitored employee emails for communications from Blind, threatened people who talk to the media, demanded people take down pro-WP Engine posts, and tried to infiltrate the Automattic alumni Slack.
 
-Not to mention how he's barged in on virtually any online forum where people are talking about this situation, and being a jerk to try to shut them up.
+Not to mention how he's barged in on virtually any online forum where people are talking about this situation and picked fights with the people there who didn't agree with him.
 
-So excuse me for not buying the "open dialogue" crap one bit.
+So excuse me for not buying the "open dialogue" crap in the slightest bit.
 
 A hell of a lot of people at WP Engine _were_ collaborating. Then they got locked out.
 
-Even more people at Matt's company were collaborating; then their boss demanded loyalty or else, and they left.
+Even more people at Matt's company were collaborating; then their boss demanded loyalty or else, and they left. (And then that happened a second time.)
 
 The values in Matt's words very clearly fail to align with the values in Matt's actions.
 
