@@ -1,7 +1,7 @@
 ---
 title: "A response to \"Defending Open Source: Protecting the Future of WordPress\""
 date: 2024-11-5
-updated: 2024-11-5
+updated: 2024-11-6
 categories:
   - opinion
   - web
@@ -32,19 +32,19 @@ h2 + blockquote {
 }
 </style>
 
-This post is a response to “[Defending Open Source: Protecting the Future of WordPress](https://automattic.com/2024/protecting-wordpress/),” which was recently published on Automattic's website as an explanation of the company's ongoing legal disputes with WP Engine.
+This post is a response to “[Defending Open Source: Protecting the Future of WordPress](https://automattic.com/2024/protecting-wordpress/),” which was recently published on Automattic's website as an explanation of the company's ongoing dispute with WP Engine.
 
 I feel it's important to issue a critical reading of Automattic's post, as it doesn't seem to offer much of a serious or objective examination of the issues at hand.
 
 Rather, the post unfortunately reads as something more akin to a puff piece, or corporate propaganda. (Expectedly enough, I suppose, since Matt and Automattic are currently embroiled in lawsuits against WP Engine.)
 
-In _this_ post, I'll go through the original Automattic piece, quoting key pieces, and adding the questions and context I feel are obviously missing.
+In _this_ post, I'll go through the original Automattic post, quoting key pieces, and adding the questions and context I feel are obviously missing.
 
 (If you're new to this whole WordPress drama, I have [a whole other post covering it here](/blog/fire-matt). I guess writing about this whole thing is a new hobby of mine.)
 
-Below, I frequently reference the author as "Matt" (meaning of course Matt Mullenweg), though I don't actually know if he himself wrote this post, in part or in whole. In fact, I doubt it; it's much more subdued than the manic, aggressive tone Matt's largely taken over the last eight weeks or more.
+Below, I frequently reference the author as "Matt" (meaning of course Matt Mullenweg), though I don't actually know if he himself wrote this post, in part or in whole. In fact, I doubt it's solely his; it's much more subdued than the manic, aggressive tone Matt's largely taken over the last eight weeks or more. It clearly went through a more rigorous vetting than most of his recent communications.
 
-I say "Matt" regardless, however, because ultimately, this whole thing _is_ essentially Matt. He is Automattic, he is apparently the Foundation, and he is .org. This sequence of events was set in motion by Matt, and if these words weren't written by him, they were written by somebody doing what he wanted, probably trying their best to please him. Most likely, he approved the final version, no matter how involved he was in its production.
+I say "Matt" regardless, however, because ultimately, this whole thing _is_ essentially Matt. He is Automattic, he is apparently the Foundation, and he is .org. This sequence of events was set in motion by Matt, and if these words weren't directly written by him, they were written by somebody doing what he wanted, probably trying their best to please him. Most likely, he approved the final version, no matter how involved he was in its production.
 
 So let's set aside the technicalities: all of this is Matt, directly or indirectly, whether filtered through marketing and legal or not.
 
@@ -68,7 +68,9 @@ Profits aside, we're also left to wonder: what use of trademarks went beyond fai
 
 (As a reminder: Matt edited the official trademark guidelines after he started this whole thing. So if anyone's failed to live up to the original agreement here, it sure seems like it's not WP Engine.)
 
-Finally: _who_ was confused, exactly? (Besides Matt's mom, of course.) What was the outcome of that confusion? Why was it harmful? I'm not aware of anyone, say, signing a contract with the wrong company by mistake, or being misled into any other kind of commitment or expenditure.
+It's also worth a reminder that WP Engine _did_ somewhat alter their plan names in response to this whole mess, and add some disambiguation to their website, to make sure folks know they're not officially affiliated with WordPress. So even if they _were_ out-of-bounds, it seems like they've remediated that part of the issue.
+
+Regardless, though: _who_ was confused, exactly? (Besides Matt's mom, of course.) What was the outcome of that confusion? Why was it harmful? I'm not aware of anyone, say, signing a contract with the wrong company by mistake, or being misled into any other kind of commitment or expenditure.
 
 If there was so much of this confusion, and if it was so damaging, why is Matt's claim about his mom literally the only example we've ever been provided?
 
@@ -76,9 +78,9 @@ And, again, with every other company in the ecosystem doing exactly the same thi
 
 > Matt blocked WP Engine’s convenient access to resources he was under no obligation to provide such as the WordPress.org plugin directory.
 
-The `wordpress.org` domain is hard-coded into WordPress core almost a thousand times. Its functionality is central and vital to WordPress. Developers are required to push updates through WordPress.org.
+The `wordpress.org` domain is hard-coded into WordPress core almost a thousand times, and indirectly referenced hundreds more. Its functionality is central and vital to WordPress. Developers are required to push updates through WordPress.org.
 
-WordPress doesn't even _work_ without WordPress.org. It is, for all intents and purposes, a part of WordPress. The fact that it's an external repository and not something you download with the core software is nothing more than a necessary technical detail.
+WordPress doesn't even _work_ without WordPress.org. It is, for all intents and purposes, a part of WordPress. The fact that it's an external repository with its own domain, and not something you download with the core software, is nothing more than a necessary technical detail.
 
 I don't think anyone who _ever_ contributed to WordPress.org—either the repo itself, or the themes and plugins it houses—realized before this whole episode that they were working on something that would ever be described as one man's personal project, or that their work could be ripped away from others (or even from ***themselves!***) at the drop of a hat.
 
@@ -196,6 +198,12 @@ Do I believe private equity is bad? You betcha.
 Do I think WP Engine does some shitty things in the name of profit? 100% yes.
 
 But do I believe there was such an imminent threat to WordPress that it warranted _anything_ Matt's done in the past two months? _Absolutely not_.
+
+Besides: if private equity is going to hurt WP Engine, how does _that_ translate to harm for the broader ecosystem?
+
+It's not like WP Engine has the market cornered. There are plenty of other WordPress hosts, products, and services. To the extent WP Engine "enshittifies" their own offerings (to borrow the term), isn't that just hurting _them_?
+
+Maybe Matt is convinced that, if left unchecked, WP Engine _would_ eventually buy up enough of the market to singlehandedly cause its collapse. But it strikes me that the right move in that case would've been to just keep doing what he was already doing—i.e., growing WordPress.com, and supporting both core and tertiary products—rather than starting a war over some specious future crime that hasn't been committed yet.
 
 This section does nothing to provide any persuasive context, or explain why WP Engine is somehow the one profitable company doing questionable things in the name of growth that happens to be a "danger." (There are, after all, plenty of other companies making questionable decisions in the name of maximizing profits, both in the WordPress space and beyond it.)
 
