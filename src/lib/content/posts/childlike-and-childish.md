@@ -182,7 +182,7 @@ _The rules are for you; winning is for me._
 
 We told our son, months ago, that a woman was running for President. We told him that if elected, she would be the first woman to ever serve as President.
 
-He was excited for her. He wanted her to win. Not because he understands anything about politics, or because we indoctrinated him into our way of thinking; just because our son, being the pure, goodhearted kid that he is, recognizes it's not fair when somebody never gets their turn.
+He was excited for her. He wanted her to win. Not because he understands anything about politics, or because we indoctrinated him into our way of thinking; just because our son, being the pure, goodhearted kid that he is, recognizes it's not fair when people are left out, and never get their turn.
 
 He cried this morning.
 
