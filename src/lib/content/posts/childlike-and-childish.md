@@ -94,7 +94,9 @@ It's crushing and disheartening to discover I live in a country where half the a
 
 Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other wants nothing to do with the rules unless it helps them win and helps their opponents to lose.
 
-But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of our friends and neighbors actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
+The adults believe in more. In _better_. They dare to dream, and wonder about our collective future in a definitely hopeful way. Maybe even _childlike_.
+
+But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of our friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
 I found out in a way I knew before but never fully realized, that so many millions I share this society with believe no matter what their team does, and no matter how obviously and flagrantly against the rules it is, they genuinely and even proudly _do not care_.
 
