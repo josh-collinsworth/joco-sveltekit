@@ -92,11 +92,13 @@ That the rules aren't just for everyone else, and that winning isn't just for hi
 
 It's crushing and disheartening to discover I live in a country where half the adults around me _still_ haven't learned something I'm teaching my kindergartener.
 
-Today I woke up to learn half of my peers are just fine with the rules applying to others and not them; with calling made-up fouls, and crying "unfair," and making themselves the only characters who matter.
+Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other wants nothing to do with the rules unless it helps them win and helps their opponents to lose.
+
+But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of our friends and neighbors actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
 I found out in a way I knew before but never fully realized, that so many millions I share this society with believe no matter what their team does, and no matter how obviously and flagrantly against the rules it is, they genuinely and even proudly _do not care_.
 
-All that matters is _their team winning_.
+All that matters is _their team winning_. Even if it destroys them. Even if it destroys the game itself.
 
 _The rules are for you; winning is for me_.
 
@@ -168,7 +170,7 @@ It's clear to me most of us actually _do_ like progressive policies.
 
 A lot of us have just been taught to hate actual progressive _people_.
 
-(Or what passes for "progressive" in these increasingly fascist United States, anyway.)
+(This is a reason I believe we're still underestimating the role of misinformation, propaganda, and outside influence in these outcomes, but that's another topic for another time.)
 
 So they go on, voting for the exact opposite of what they actually want, and in many cases, even against what's even good for them. Because that's what they see as winning, and their version of winning is the only thing they care about.
 
