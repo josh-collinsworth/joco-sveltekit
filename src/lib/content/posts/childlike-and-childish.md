@@ -1,7 +1,7 @@
 ---
 title: The childlike and the childish
 date: 2024-11-6
-updated: 2024-11-7
+updated: 2024-11-6
 categories:
   - personal
 coverImage: scribbles.webp
