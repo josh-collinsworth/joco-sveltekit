@@ -66,9 +66,11 @@ _Even if_ that means we lose.
 
 ---
 
-Play is a learning opportunity. It's about understanding how things work in a fair and just society with rules and laws and more people who matter than just him.
+Play is a learning opportunity. It's about understanding how things work in a fair and just society, with rules and laws and more people who matter than just him.
 
-That you can't just change the rules when something happens that you don't like. Because the game is for all of us; we're all in it together.
+It's about understanding you can't just change the rules when something happens that you don't like. Because the game is for all of us; we're all in it together.
+
+The rules are for everyone.
 
 Again: my son is a good kid. _Better_ than good. The behavior I'm describing here is just natural human tendency. He comes by it honestly, and I don't doubt every other kid in the world does the same things sometimes. I also don't doubt he's already growing up and learning better.
 
@@ -78,15 +80,13 @@ By default, left to our own baser instincts, we are the centers of our own unive
 
 I've mentally scrambled to find a rule that might have just been broken, to force things back to the way I wanted.
 
-But I know deep down that, just like my kid, I'd be making that rule up, or enforcing it unfairly.
+But I know deep down that if I did that, just like my kid, I'd be making that rule up, or enforcing it unfairly—not out of a genuine, sincere concern for the game or its rules, but just because it's a convenient vehicle to help me get what I want in that moment.
 
-If I did that, it wouldn't be out of a genuine, sincere concern for the rules we're all abiding by, or the game we're all playing; it would just be because it's a convenient vehicle to help me get what I want in that moment.
-
-That's why my wife and I, like any good parents, feel it's good and right and necessary to help our child adjust his perspective, and teach him to think more fairly, more justly, and more objectively.
+My wife and I, like any good parents (I _think_ we're good parents), feel it's right and necessary to help our child adjust his perspective, and teach him to think more fairly, more justly, and more objectively.
 
 We want him to know the rules matter _all_ the time, and not just when it's convenient for him.
 
-That the rules aren't just for everyone else, and that winning isn't just for him.
+That the rules aren't just for everyone else.
 
 ---
 
@@ -108,25 +108,25 @@ _The rules are for you; winning is for me_.
 
 For years, we heard about Joe Biden's age and mental state on a perpetual repeat.
 
-Trump and his supporters loudly exclaimed, on a daily basis, that it was _unacceptable_ for a man so old and so shaky in his speech to be President.
+Trump and his supporters ensured this message permeated every form of media, on a daily basis: it is _unacceptable_ for a man so old and so shaky in his speech to be President.
 
 They beat this drum for a good long while, until: suddenly, Trump's opponent _wasn't_ Joe Biden; it was Kamala Harris, a person dramatically younger and sharper than Trump.
 
 Overnight, Trump went from being the youngest person in the race, to the oldest and most senile, by a massive margin.
 
-So, naturally, Republicans realized they'd be hypocrites to support Trump, and immediately found another candidate.
+So, naturally, Republicans realized they'd be hypocrites to support a blathering old man, and immediately found another candidate.
 
 I kid, of course. That didn't happen. Nothing as sensible as that has ever once happened in the modern history of the Republican party.
 
 Quite the opposite, actually: Republicans suddenly became _proud_ of his advanced age. Some literally even wore adult diapers in support of him.
 
-You see, when a Democrat breaks the rules, they generally resign, or are fired.
+You see, when a Democrat breaks the rules, they generally resign, or are fired. The rules matter to the Democrats; to the adults.
 
 But when a _Republican_ does something that would be considered breaking the rules, _the rules suddenly change_.
 
-And change they did. The national media which made Biden's age and sharpness the centerpiece of all political coverage for months if not years on end suddenly just…_stopped caring_.
+And change they did. The national media which made Biden's age and sharpness the centerpiece of all political coverage for months (if not years) on end suddenly just…_stopped caring_.
 
-Even as Trump rambled unhinged nonsense night after night, few paid attention. Whether he was making it up or so completely detached from reality, nobody could tell, but it obviously didn't matter to most observers.
+Even as Trump rambled unhinged nonsense night after night, few paid attention, no matter how nonsensical or objectively wrong it got. Whether he was making it up or so completely detached from reality, nobody could tell, but it obviously didn't matter to most observers.
 
 The perceived fouls of age and cognition were, quite clearly, never about age or cognition.
 
@@ -142,23 +142,31 @@ To keep the other side from scoring a goal. (Literally, it was to prevent the Bi
 
 No Republicans were even mad about it. None even _cared_, as far as I can tell.
 
-It obviously couldn't have been both a crisis, _and_ something that could simply be put off for another year or so. So clearly, the whole thing was yet another foul, made up just to try to make the game go their way.
+It obviously couldn't have been both a crisis, _and_ something that could simply be put off for another year or so, a can casually kicked down the road.
 
-I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the rules were different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public dialogue, or vice versa.
+So clearly, the whole thing was yet another made-up foul, to make the game go their way.
+
+_The rules aren't for us. The rules are for you._
+
+I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the game was different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public dialogue, or vice versa.
 
 "Family values" is an easy one. It would be frankly difficult to find a man who embodies the idea _less_ than their candidate. But it doesn't matter. The rules aren't for them.
 
-The term "garbage" wasn't offensive when they used it against _other_ people, but yet, it was horrifically offensive to use that word against _them_, in exactly the same way Trump's racist rhetoric wasn't offensive, but Hillary Clinton using the word "deplorables" was.
+The term "garbage" wasn't offensive when they used it against _other_ people, but yet, it was horrifically offensive to use that word against _them_ (a play familiar both for anyone who remembers 2016, and anyone who's ever experienced the [DARVO](https://en.wikipedia.org/wiki/DARVO) of an abuser).
 
-Republicans were anti-Russia, until Trump was pro-Russia. Hell, they were anti-Trump, until Trump became the path to winning at any cost.
+Republicans were anti-Russia, until Trump was pro-Russia.
+
+Hell, they were anti-Trump, until Trump became the path to winning at any cost.
 
 They were most _certainly_ against election theft, and pro-democracy…until their guy tried to steal an election. We won't see Harris demand that anyone goes and "finds votes" for her—but if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
 
-If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it. That, or perhaps the proposition of abolishing the Constitution. But he said them both, so they stopped being gravely blasphemous and became acceptable instead.
+If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it.
+
+That, or perhaps the proposition of abolishing the Constitution. But he said them both, so they stopped being gravely blasphemous and immediately shifted to acceptable instead.
 
 Republicans don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
-When it was time for Obama to appoint a Supreme Court Justice nine months from the end of his term, it was much too close, and the nominee was blocked. But then when it was time for Trump to do the same, mere weeks from his exit, of course, his pick went straight through.
+When it was time for Obama to appoint a Supreme Court Justice nine months from the end of his term, it was deemed much too close, and the nominee was blocked. But then, when Trump appointed one only _four_ months from leaving office, his pick went straight through, no questions asked.
 
 They're so pro-shifting-goalposts they even got that same Supreme Court to declare that there _aren't goalposts_ for the President.
 
