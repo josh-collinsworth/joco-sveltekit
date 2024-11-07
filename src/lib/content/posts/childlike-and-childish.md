@@ -7,7 +7,7 @@ categories:
 coverImage: scribbles.webp
 coverWidth: 1920
 coverHeight: 1080
-excerpt: It's crushing and disheartening to discover I live in a country where half the adults around me still haven't learned something I'm teaching my kindergartener.
+excerpt: Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other is merely making up ad-hoc rules from moment to moment, for no reason but to help them win.
 ---
 
 <script>
@@ -70,7 +70,7 @@ Play is a learning opportunity. It's about understanding how things work in a fa
 
 It's about understanding you can't just change the rules when something happens that you don't like. Because the game is for all of us; we're all in it together.
 
-The rules are for everyone.
+The rules are for everyone, and there's more to this game than just winning.
 
 Again: my son is a good kid. _Better_ than good. The behavior I'm describing here is just natural human tendency. He comes by it honestly, and I don't doubt every other kid in the world does the same things sometimes. I also don't doubt he's already growing up and learning better.
 
@@ -92,9 +92,11 @@ That the rules aren't just for everyone else.
 
 It's crushing and disheartening to discover I live in a country where half the adults around me _still_ haven't learned something I'm teaching my kindergartener.
 
-Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other wants nothing to do with the rules unless it helps them win and their opponents to lose.
+Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other is merely making up ad-hoc rules from moment to moment, for no reason but to help them win.
 
 The adults believe in more. In _better_. They dare to dream, and envision our collective future in a definitively hopeful way. Maybe even _childlike_.
+
+They want the game to be for _everyone_ playing, and therefore, want the rules to apply equally to everyone.
 
 But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of our friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
