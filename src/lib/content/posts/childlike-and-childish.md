@@ -138,11 +138,11 @@ We know this because despite Republicans _insisting_ it was a disastrous emergen
 
 Why?
 
-To keep the other side from scoring a goal. (Literally, it was to prevent the Biden administration from chalking up a win in an election year.)
+To keep the other side from scoring a goal. (Literally, it was to prevent the Biden administration from chalking up a political win in an election year.)
 
 No Republicans were even mad about it. None even _cared_, as far as I can tell.
 
-It obviously couldn't have been both a crisis, _and_ something that could simply be put off for another year or so, a can casually kicked down the road.
+The border obviously couldn't have been both a crisis, _and_ something that could simply be put off for another year or so; a proverbial can casually kicked down the road.
 
 So clearly, the whole thing was yet another made-up foul, to make the game go their way.
 
@@ -150,7 +150,7 @@ _The rules aren't for us. The rules are for you._
 
 I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the game was different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public dialogue, or vice versa.
 
-"Family values" is an easy one. It would be frankly difficult to find a man who embodies the idea _less_ than their candidate. But it doesn't matter. The rules aren't for them.
+"Family values" is an easy one. It would be frankly difficult to find a man who embodies the ideal _less_ than their candidate. But it doesn't matter. The rules aren't for them.
 
 The term "garbage" wasn't offensive when they used it against _other_ people, but yet, it was horrifically offensive to use that word against _them_ (a play familiar both for anyone who remembers 2016, and anyone who's ever experienced the [DARVO](https://en.wikipedia.org/wiki/DARVO) of an abuser).
 
@@ -158,11 +158,11 @@ Republicans were anti-Russia, until Trump was pro-Russia.
 
 Hell, they were anti-Trump, until Trump became the path to winning at any cost.
 
-They were most _certainly_ against election theft, and pro-democracy…until their guy tried to steal an election. We won't see Harris demand that anyone goes and "finds votes" for her—but if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
+They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a valid citizen casting a valid vote without a photo ID matters less to them than their own candidate staging a coup and trying to steal the whole election outright. We won't see Harris demand that anyone goes and "finds votes" for her—but if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
 
 If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it.
 
-That, or perhaps the proposition of abolishing the Constitution. But he said them both, so they stopped being gravely blasphemous and immediately shifted to acceptable instead.
+That, or perhaps the (absurd) proposition of abolishing the Constitution. But he said them both, so they stopped being gravely blasphemous and immediately shifted to acceptable instead.
 
 Republicans don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
