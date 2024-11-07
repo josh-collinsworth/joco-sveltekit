@@ -154,6 +154,8 @@ They were most _certainly_ against election theft, and pro-democracy…until the
 
 The proposition of abolishing the Constitution would have been the deepest, gravest conservative sin imaginable a few short years ago. But he said it, so it stopped being absurd and blasphemous and became acceptable instead.
 
+Republicans don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
+
 They're so pro-shifting-goalposts they even got the Supreme Court to declare that there _aren't goalposts_ for the President.
 
 That's how much they believe in "rules are for you; winning is for me."
