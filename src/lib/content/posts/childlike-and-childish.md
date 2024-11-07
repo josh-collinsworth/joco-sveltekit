@@ -154,7 +154,7 @@ I honestly have my pick of literally hundreds more examples of the goalposts sud
 
 "Family values" is an easy one. It would be frankly difficult to find a man who embodies that ideal _less_ than a serial philanderer and rapist on his third marriage.
 
-So is "Christian," for that matter; it's hard to imagine someone _less_ Christlike than a hot-tempered, hateful, spiteful, narcissistic, money-worshipping, power-hungry, egotistical bully who lies so casually it's impossible to judge his grasp on reality. He's the embodied inversion of everything Christians claim to believe.
+So is "Christian," for that matter; it's hard to imagine someone _less_ Christlike than a hot-tempered, hateful, spiteful, narcissistic, money-worshipping, power-hungry, egotistical bully who lies so casually it's impossible to judge his grasp on reality. He's the embodied inversion of everything Christians claim to believe, without even _mentioning_ his vast collection of bigotries.
 
 But it doesn't matter. The Bible is rules, and the rules aren't for them.
 
