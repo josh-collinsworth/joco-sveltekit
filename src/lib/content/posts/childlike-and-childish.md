@@ -96,11 +96,11 @@ Those acting like adults believe in more. In _better_. They dare to dream, and e
 
 They want the game to be for _everyone_ playing, and therefore, want the rules to apply equally to everyone.
 
-But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of our friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
+But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of the friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
 What petty, sullen grievances they care about, more than the weakening societal infrastructure we all share.
 
-I found out in a new way that so many millions around me believe no matter what their team does, and no matter how obviously and flagrantly against the rules it is, they genuinely and even proudly _do not care_.
+I found out in a new way that no matter what their team does, and no matter how obviously and flagrantly against the rules it is, millions around me genuinely and even proudly _do not care_.
 
 All that matters is _their team winning_. Even if it destroys them. Even if it destroys the game itself.
 
