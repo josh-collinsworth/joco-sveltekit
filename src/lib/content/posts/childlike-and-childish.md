@@ -94,7 +94,7 @@ It's crushing and disheartening to discover I live in a country where half the a
 
 Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other is merely making up ad-hoc rules from moment to moment, for no reason but to help them win.
 
-The adults believe in more. In _better_. They dare to dream, and envision our collective future in a definitively hopeful way. Maybe even _childlike_.
+Those acting like adults believe in more. In _better_. They dare to dream, and envision our collective future in a definitively hopeful way. Maybe even _childlike_.
 
 They want the game to be for _everyone_ playing, and therefore, want the rules to apply equally to everyone.
 
@@ -124,19 +124,19 @@ I kid, of course. That didn't happen. Nothing as sensible as that has ever once 
 
 Quite the opposite, actually: Republicans suddenly became _proud_ of his advanced age. Some literally even wore adult diapers in support of him.
 
-You see, when a Democrat breaks the rules, they generally resign, or are fired. The rules matter to the Democrats; to the adults.
+You see, when a Democrat breaks the rules, they generally resign, or are fired. The rules matter to those of us acting like adults.
 
 But when a _Republican_ does something that would be considered breaking the rules, _the rules suddenly change_.
 
-And change they did. The national media which made Biden's age and sharpness the centerpiece of all political coverage for months (if not years) on end suddenly just…_stopped caring_.
+And change they did. The national media which made age and eloquence the centerpiece of all political coverage for months on end suddenly just…_stopped caring_.
 
-Even as Trump rambled unhinged nonsense night after night, few paid attention, no matter how nonsensical or objectively wrong it got. Whether he was making it up or so completely detached from reality, nobody could tell, but it obviously didn't matter to most observers.
+Even as Trump rambled unhinged nonsense night after night, few paid attention, no matter how nonsensical or objectively wrong it got. Whether he was making it up or so completely detached from reality he genuinely believed the insane things coming out of his mouth, nobody could tell. But it obviously didn't matter to most observers.
 
 The perceived fouls of age and cognition were, quite clearly, never about age or cognition.
 
 They were about winning.
 
-We also heard about the border, incessantly and in dire superlatives, as though it's the most urgent threat our country has faced in the last century—but by now we know it was never about the border.
+We also heard about the border, incessantly and in dire superlatives—but by now we know it was never about the border.
 
 We know this because despite Republicans _insisting_ it was a disastrous emergency, they unilaterally shot down the exact border bill they were asking for. The "fix" they wanted was literally on the table in front of them, and they killed it.
 
@@ -152,7 +152,7 @@ So clearly, the whole thing was yet another made-up foul, to make the game go th
 
 _The rules aren't for us. The rules are for you._
 
-I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the game was different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public dialogue, or vice versa.
+I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the game was different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public discourse, or vice versa.
 
 "Family values" is an easy one. It would be frankly difficult to find a man who embodies the ideal _less_ than their candidate (a serial philanderer and rapist with five children from three marriages).
 
@@ -164,13 +164,15 @@ Republicans were anti-Russia, until Trump was pro-Russia. Then they softened.
 
 For that matter, most of them were anti-_Trump_, until Trump became the path to winning at any cost.
 
-They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a valid citizen casting a valid vote without a photo ID matters more to them than their own candidate staging a coup to illegitimately steal the entire election outright. We won't see Harris demand that anyone goes and "finds votes" for her. But if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
+They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a valid citizen casting a valid vote without a photo ID matters more to them than their own candidate staging a coup to illegitimately steal the entire election outright.
+
+We won't see Harris demand that anyone goes and "finds votes" for her, or encouraging her supporters to storm the Capitol, and certainly not threatening the life of her VP pick. But if we did, of course, those things would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
 
 If she had won, our news would be filled with the inevitable, childish cries of “_that didn't count!_” and “_no fair!_” and “_you cheated!_”
 
-But she didn't win. And so it was valid.
+But she didn't win. And so it was all valid.
 
-The rules did what they were supposed to do, in these childish people's minds: the rules made them win.
+The rules did what they were supposed to do, in the childish people's minds: the rules made them winners.
 
 If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it.
 
@@ -178,7 +180,7 @@ That, or perhaps the (absurd) proposition of abolishing the Constitution. But he
 
 Republicans don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
-When it was time for Obama to appoint a Supreme Court Justice nine months from the end of his term, it was deemed much too close, and the nominee was blocked. But then, when Trump appointed one only _four_ months from leaving office, his pick went straight through, no questions asked.
+When it was time for Obama to appoint a Supreme Court Justice nine months from the end of his term, it was deemed much too close, and the nominee was blocked. But when Trump appointed one only _four_ months from leaving office, his pick went straight through, no questions asked.
 
 They're so pro-shifting-goalposts they even got that same Supreme Court to declare that there _aren't goalposts_ for the President.
 
@@ -198,13 +200,13 @@ Despite the furious bigotry on display, polls show us that in a vacuum, most Ame
 
 It's clear to me most of us actually _do_ like progressive policies.
 
-A lot of us have just been taught to hate actual progressive _people_.
+A lot of us have just been conditioned to hate progressive _people_.
 
 (This is a reason I believe we're still underestimating the role of misinformation, propaganda, and outside influence in these outcomes. It's also a reason I still have hope; the election is lost, but our collective values still hold. But those are both other topics for another time.)
 
 So they go on, voting for the exact opposite of what they actually want, and in many cases, even against what's good for them. Because that's what they see as winning, and their version of winning is the only thing they care about.
 
-Never mind the rules. Nothing is sacred. Nothing is shared.
+Never mind the rules. Nothing is sacred. Nothing is shared, or belongs to all of us.
 
 I've long since given up on anything ever being bad enough for Trump's supporters, not just because the past several years have been a nonstop parade of egregiously escalating offenses, but because they'd have to actually care about the rules first. They'd have to give a shit about the other people they share this society with, who own it every bit as much as they do. They'd have to stop being the main character; stop being the only ones the rules _don't_ apply to. And if they were going to do that—if they were even _capable_ of that—it would've happened a long time ago.
 
