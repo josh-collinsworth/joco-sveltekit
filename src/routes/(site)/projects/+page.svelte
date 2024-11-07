@@ -237,12 +237,24 @@
 				<h3>Websites</h3>
 				<ul>
 					<li>I mean...this one.</li>
-					<li><a href="https://deno.com">deno.com</a> (largely)</li>
+					<li>
+						I've been the main developer on <a href="https://deno.com"
+							>deno.com</a
+						> and a handful of related properties since 2023.
+					</li>
+					<li>
+						Some work I did is probably still floating around on <a
+							href="https://shopify.com/pos">Shopify POS</a
+						> and its sub-pages.
+					</li>
 					<li>
 						<a href="https://rise.getflywheel.com" rel="external">Rise</a>,
 						Flywheel/WP Engine's BIPOC employee resource group
 					</li>
-					<li><a href="https://nolanfabricius.com">NolanFabricius.com</a></li>
+					<li>
+						<a href="https://nolanfabricius.com">NolanFabricius.com</a>, a sort
+						of avant-garde personal website
+					</li>
 					<li>
 						Flywheel retreat websites for <a
 							href="https://fest2019.getflywheel.com/"
@@ -255,10 +267,14 @@
 				<h3>Apps</h3>
 				<ul>
 					<li>
-						<a href="https://passthepigs.vercel.app/" rel="external"
-							>Pass the Pigs scorekeeper app</a
+						<del>
+							<a href="https://passthepigs.vercel.app/" rel="external"
+								>Pass the Pigs scorekeeper app</a
+							>
+							built in React</del
 						>
-						built in React
+						(<i>no longer live since moving off Vercel; under reconstruction</i
+						>)
 					</li>
 					<li>
 						A handy <a href="https://vlmc.netlify.app/" rel="external"
@@ -277,11 +293,15 @@
 						>
 					</li>
 					<li>
-						<a
-							href="https://wpmultisitedomainreplace.vercel.app/"
-							rel="external">WPMultisiteDomainReplace</a
-						>, a Nuxt app to update your WordPress multisite's database when
-						switching main domains
+						<del
+							><a
+								href="https://wpmultisitedomainreplace.vercel.app/"
+								rel="external">WPMultisiteDomainReplace</a
+							>, a Nuxt app to build SQL queries for WordPress multisites
+						</del>
+						(<i
+							>no longer live since moving off Vercel; probably won't rebuild</i
+						>)
 					</li>
 				</ul>
 

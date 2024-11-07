@@ -188,6 +188,8 @@ Never mind the rules. Nothing is sacred. Nothing is shared.
 
 I've long since given up on anything ever being bad enough for Trump's supporters, not just because the past several years have been a nonstop parade of egregiously escalating offenses, but because they'd have to actually care about the rules first. They'd have to give a shit about the other people they share this society with, who own it every bit as much as they do. They'd have to stop being the main character; stop being the only ones the rules _don't_ apply to. And if they were going to do that—if they were even _capable_ of that—it would've happened a long time ago.
 
+None of it makes sense. None of it is _supposed_ to make sense. That's not the game they're playing.
+
 _The rules are for you; winning is for me._
 
 ---
