@@ -152,9 +152,11 @@ _The rules aren't for us. The rules are for you._
 
 I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the game was different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public discourse, or vice versa.
 
-"Family values" is an easy one. It would be frankly difficult to find a man who embodies the ideal _less_ than their candidate (a serial philanderer and rapist with five children from three marriages).
+"Family values" is an easy one. It would be frankly difficult to find a man who embodies that ideal _less_ than a serial philanderer and rapist on his third marriage.
 
-But it doesn't matter. The rules aren't for them.
+So is "Christian," for that matter; it's hard to imagine someone _less_ Christlike than a hot-tempered, hateful, spiteful, narcissistic, money-worshipping, power-hungry, egotistical bully who lies so casually it's impossible to judge his grasp on reality. He's the embodied inversion of everything Christians claim to believe.
+
+But it doesn't matter. The Bible is rules, and the rules aren't for them.
 
 The term "garbage" wasn't offensive when they used it against _other_ people, but yet, it was horrifically offensive to use that word against _them_ (a play familiar both for anyone who remembers 2016, and anyone who's ever experienced the [DARVO](https://en.wikipedia.org/wiki/DARVO) of an abuser).
 
