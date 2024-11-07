@@ -70,7 +70,7 @@ Play is a learning opportunity. It's about understanding how things work in a fa
 
 It's about understanding you can't just change the rules when something happens that you don't like. Because the game is for all of us; we're all in it together.
 
-The rules are for everyone, and there's more to this game than just winning.
+The rules are for everyone, and there's more to the game than just winning.
 
 Again: my son is a good kid. _Better_ than good. The behavior I'm describing here is just natural human tendency. He comes by it honestly, and I don't doubt every other kid in the world does the same things sometimes. I also don't doubt he's already growing up and learning better.
 
@@ -100,7 +100,9 @@ They want the game to be for _everyone_ playing, and therefore, want the rules t
 
 But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of our friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
-I found out in a new way that so many millions I share this society with believe no matter what their team does, and no matter how obviously and flagrantly against the rules it is, they genuinely and even proudly _do not care_.
+What petty, sullen grievances they care about, more than the weakening societal infrastructure we all share.
+
+I found out in a new way that so many millions around me believe no matter what their team does, and no matter how obviously and flagrantly against the rules it is, they genuinely and even proudly _do not care_.
 
 All that matters is _their team winning_. Even if it destroys them. Even if it destroys the game itself.
 
