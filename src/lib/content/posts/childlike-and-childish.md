@@ -172,7 +172,7 @@ It's clear to me most of us actually _do_ like progressive policies.
 
 A lot of us have just been taught to hate actual progressive _people_.
 
-(This is a reason I believe we're still underestimating the role of misinformation, propaganda, and outside influence in these outcomes, but that's another topic for another time.)
+(This is a reason I believe we're still underestimating the role of misinformation, propaganda, and outside influence in these outcomes. It's also a reason I still have hope; the election is lost, but our collective values still hold. But those are both other topics for another time.)
 
 So they go on, voting for the exact opposite of what they actually want, and in many cases, even against what's even good for them. Because that's what they see as winning, and their version of winning is the only thing they care about.
 
