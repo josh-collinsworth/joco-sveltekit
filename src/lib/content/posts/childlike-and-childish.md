@@ -154,7 +154,7 @@ Republicans were anti-Russia, until Trump was pro-Russia. Hell, they were anti-T
 
 They were most _certainly_ against election theft, and pro-democracy…until their guy tried to steal an election. We won't see Harris demand that anyone goes and "finds votes" for her—but if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
 
-The proposition of abolishing the Constitution would have been the deepest, gravest conservative sin imaginable a few short years ago. But he said it, so it stopped being absurd and blasphemous and became acceptable instead.
+If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it. That, or perhaps the proposition of abolishing the Constitution. But he said them both, so they stopped being gravely blasphemous and became acceptable instead.
 
 Republicans don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
@@ -162,7 +162,7 @@ When it was time for Obama to appoint a Supreme Court Justice nine months from t
 
 They're so pro-shifting-goalposts they even got that same Supreme Court to declare that there _aren't goalposts_ for the President.
 
-That's how much they believe in "rules are for you; winning is for me."
+That's how much they believe the rules aren't for them. The rules are for everyone else.
 
 ---
 
@@ -172,7 +172,7 @@ Progressive abortion referendums were on the ballots in multiple states; most pa
 
 My neighboring state, despite being deeply red, passed a very progressive minimum wage law, as did Alaska. Trump won both of those states, and is openly hostile to workers.
 
-Classically Democratic policies like marriage equality remain overwhelmingly popular, and several were passed in this election—some, again, even in states that went to Trump, whose most ardent supporters want to make anything having to do with LGBTQIA+ identities literally criminal.
+Classically Democratic policies like marriage equality remain overwhelmingly popular, and several were passed in this election—some, again, even in states that went to Trump, even though many of his supporters want to make anything having to do with LGBTQIA+ identities literally criminal.
 
 Despite the furious bigotry on display, polls show us that in a vacuum, most Americans support trans people's right to exist, and immigrants' freedom to live here.
 
@@ -182,7 +182,7 @@ A lot of us have just been taught to hate actual progressive _people_.
 
 (This is a reason I believe we're still underestimating the role of misinformation, propaganda, and outside influence in these outcomes. It's also a reason I still have hope; the election is lost, but our collective values still hold. But those are both other topics for another time.)
 
-So they go on, voting for the exact opposite of what they actually want, and in many cases, even against what's even good for them. Because that's what they see as winning, and their version of winning is the only thing they care about.
+So they go on, voting for the exact opposite of what they actually want, and in many cases, even against what's good for them. Because that's what they see as winning, and their version of winning is the only thing they care about.
 
 Never mind the rules. Nothing is sacred. Nothing is shared.
 
@@ -194,7 +194,7 @@ _The rules are for you; winning is for me._
 
 We told our son, months ago, that a woman was running for President. We told him that if elected, she would be the first woman to ever serve as President.
 
-He was excited for her. He wanted her to win. Not because he understands anything about politics, or because we indoctrinated him into our way of thinking; just because our son, being the pure, goodhearted kid that he is, recognizes it's not fair when people are left out, and never get their turn.
+He was excited for her. He wanted her to win. Not because he understands anything about politics, or because we indoctrinated him into our way of thinking; just because our son, being the pure, goodhearted kid that he is, recognizes it's not fair when people are left out, and never get the turn they deserve.
 
 He cried this morning.
 
