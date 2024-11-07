@@ -1,7 +1,7 @@
 ---
 title: The childlike and the childish
 date: 2024-11-6
-updated: 2024-11-6
+updated: 2024-11-7
 categories:
   - personal
 coverImage: scribbles.webp
@@ -92,13 +92,13 @@ That the rules aren't just for everyone else, and that winning isn't just for hi
 
 It's crushing and disheartening to discover I live in a country where half the adults around me _still_ haven't learned something I'm teaching my kindergartener.
 
-Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other wants nothing to do with the rules unless it helps them win and helps their opponents to lose.
+Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other wants nothing to do with the rules unless it helps them win and their opponents to lose.
 
 The adults believe in more. In _better_. They dare to dream, and envision our collective future in a definitively hopeful way. Maybe even _childlike_.
 
 But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of our friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
-I found out in a way I knew before but never fully realized, that so many millions I share this society with believe no matter what their team does, and no matter how obviously and flagrantly against the rules it is, they genuinely and even proudly _do not care_.
+I found out in a new way that so many millions I share this society with believe no matter what their team does, and no matter how obviously and flagrantly against the rules it is, they genuinely and even proudly _do not care_.
 
 All that matters is _their team winning_. Even if it destroys them. Even if it destroys the game itself.
 
@@ -156,7 +156,9 @@ The proposition of abolishing the Constitution would have been the deepest, grav
 
 Republicans don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
-They're so pro-shifting-goalposts they even got the Supreme Court to declare that there _aren't goalposts_ for the President.
+When it was time for Obama to appoint a Supreme Court Justice nine months from the end of his term, it was much too close, and the nominee was blocked. But then when it was time for Trump to do the same, mere weeks from his exit, of course, his pick went straight through.
+
+They're so pro-shifting-goalposts they even got that same Supreme Court to declare that there _aren't goalposts_ for the President.
 
 That's how much they believe in "rules are for you; winning is for me."
 
