@@ -92,11 +92,9 @@ That the rules aren't just for everyone else.
 
 Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other is merely making up ad-hoc rules from moment to moment, for no reason but to help them win.
 
-Those acting like adults believe in more. In _better_. They dare to dream, and envision our collective future in a definitively hopeful way.
+Those acting like adults want the game to be for _everyone_ playing, and therefore, want the rules to apply equally to everyone. They want everyone to have a shot. They want everyone to be included, even though this largely isn't how the game has worked up until now.
 
-They want the game to be for _everyone_ playing, and therefore, want the rules to apply equally to everyone.
-
-I suppose you could call it childlike, this defiant willingness to believe in a better, more just world.
+I suppose you could call it childlike, this defiant willingness to believe in a better, more just version of the game we're all playing; that we can achieve it together.
 
 But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of the friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
@@ -196,7 +194,7 @@ One of the many cruel ironies of the story is: we can tell it's not even about t
 
 Progressive abortion referendums were on the ballots in multiple states; most passed, even in states where Trump (who of course actively facilitated the Supreme Court's gutting of Roe v. Wade), won overwhelmingly.
 
-My neighboring state, despite being deeply red, passed a very progressive minimum wage law, as did Alaska. Trump won both of those states, and is openly hostile to workers.
+My neighboring state, despite being deeply red, passed a very progressive minimum wage law, as did Alaska. Paid sick leave was included, and also passed in Nebraska. Yet Trump won all of those states, and is openly hostile to workers.
 
 Classically Democratic policies like marriage equality remain overwhelmingly popular, and several were passed in this election—some, again, even in states that went to Trump, even though many of his supporters want to make anything having to do with LGBTQIA+ identities literally criminal.
 
