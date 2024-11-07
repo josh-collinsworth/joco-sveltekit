@@ -76,7 +76,7 @@ Again: my son is a good kid. _Better_ than good. The behavior I'm describing her
 
 All children—all _humans_, actually—struggle with this message.
 
-By default, left to our own baser instincts, we are the centers of our own universes. It's not hard to think of times in my adult life when I've screamed “_that's not fair!_” or “_that doesn't count!_”—inwardly, at least, if not outwardly.
+By default, left to our own baser instincts, we are the centers of our own universes. It's not hard to think of times in my adult life when I've screamed “_that's not fair!_”—inwardly, at least, if not outwardly.
 
 I've mentally scrambled to find a rule that might have just been broken, to force things back to the way I wanted.
 
