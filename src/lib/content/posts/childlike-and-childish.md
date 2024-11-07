@@ -150,15 +150,23 @@ _The rules aren't for us. The rules are for you._
 
 I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the game was different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public dialogue, or vice versa.
 
-"Family values" is an easy one. It would be frankly difficult to find a man who embodies the ideal _less_ than their candidate. But it doesn't matter. The rules aren't for them.
+"Family values" is an easy one. It would be frankly difficult to find a man who embodies the ideal _less_ than their candidate (a serial philanderer and rapist with five children from three marriages).
+
+But it doesn't matter. The rules aren't for them.
 
 The term "garbage" wasn't offensive when they used it against _other_ people, but yet, it was horrifically offensive to use that word against _them_ (a play familiar both for anyone who remembers 2016, and anyone who's ever experienced the [DARVO](https://en.wikipedia.org/wiki/DARVO) of an abuser).
 
-Republicans were anti-Russia, until Trump was pro-Russia.
+Republicans were anti-Russia, until Trump was pro-Russia. Then they softened.
 
-Hell, they were anti-Trump, until Trump became the path to winning at any cost.
+For that matter, most of them were anti-_Trump_, until Trump became the path to winning at any cost.
 
-They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a valid citizen casting a valid vote without a photo ID matters less to them than their own candidate staging a coup and trying to steal the whole election outright. We won't see Harris demand that anyone goes and "finds votes" for her—but if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
+They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a valid citizen casting a valid vote without a photo ID matters more to them than their own candidate staging a coup to illegitimately steal the entire election outright. We won't see Harris demand that anyone goes and "finds votes" for her. But if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
+
+If she had won, our news would be filled with the inevitable, childish cries of “_that didn't count!_” and “_no fair!_” and “_you cheated!_”
+
+But she didn't win. And so it was valid.
+
+The rules did what they were supposed to do, in these childish people's minds: the rules made them win.
 
 If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it.
 
