@@ -168,7 +168,7 @@ They claim to be pro-democracy, and _deeply_ concerned about the integrity of el
 
 Harris won't demand that anyone "finds votes" for her, or claim the election was fraudulent. She won't do those things because she's an adult, and she therefore knows those things are unacceptable and always have been.
 
-But if she _did_ do those things, of course, the people who tolerated and even cheered for them before would suddenly find them unacceptable in a way they didn't when it was _their_ team doing them.
+But if she _did_ do those things, of course, the people who tolerated and even cheered for them before would suddenly find them unacceptable in a way they didn't when it was _their_ team doing them (and indeed, were very openly prepared to do again, had they not gotten the result they wanted).
 
 At the same time, if she _had_ won, our news would be filled with the inevitable, childish cries of “_that didn't count!_” and “_no fair!_” and “_you cheated!_”
 
