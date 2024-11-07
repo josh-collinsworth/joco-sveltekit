@@ -40,7 +40,7 @@ Like any human, he can also be child_ish_.
 
 ---
 
-Lately, my son's been really into soccer. (Or, at least, the closest game you can play to soccer inside, with the doorways on either side of the living room serving as the goals. We play with a small, soft, squishy ball, so as to minimize the collateral damage.)
+Lately, my son's been really into playing soccer. (Or, at least, the closest game you can play to soccer inside, with the doorways on either side of the living room serving as the goals. We play with a small, soft, squishy ball, so as to minimize the collateral damage.)
 
 He laughs and squeals as we fight for control of the ball, racing back and forth across the miniaturized field. He never stops moving, or shouting in delight, no matter how long the game goes. Rarely have I ever seen his energy supply exhausted.
 
@@ -68,7 +68,7 @@ _Even if_ that means we lose.
 
 Play is a learning opportunity. It's about understanding how things work in a fair and just society, with rules and laws and more people who matter than just him.
 
-It's about understanding you can't just change the rules when something happens that you don't like. Because the game is for all of us; we're all in it together.
+It's about understanding you can't just change the rules or stop the game entirely when something happens that you don't like. Because the game is for all of us; we're all in it together.
 
 The rules are for everyone, and there's more to the game than just winning.
 
