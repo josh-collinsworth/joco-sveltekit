@@ -76,7 +76,7 @@ Again: my son is a good kid. _Better_ than good. The behavior I'm describing her
 
 All children—all _humans_, actually—struggle with this message.
 
-By default, left to our own baser instincts, we are the centers of our own universes. It's not hard to think of times in my adult life when I've screamed “_that's not fair!_”—inwardly, at least, if not outwardly.
+By default, left to our own baser instincts, we are the centers of our own universes. It's not hard to think of times in my adult life when I've screamed “_that's not fair!_” or “_that doesn't count!_”—inwardly, at least, if not outwardly.
 
 I've mentally scrambled to find a rule that might have just been broken, to force things back to the way I wanted.
 
@@ -89,8 +89,6 @@ We want him to know the rules matter _all_ the time, and not just when it's conv
 That the rules aren't just for everyone else.
 
 ---
-
-It's crushing and disheartening to discover I live in a country where half the adults around me _still_ haven't learned something I'm teaching my kindergartener.
 
 Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other is merely making up ad-hoc rules from moment to moment, for no reason but to help them win.
 
