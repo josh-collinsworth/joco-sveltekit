@@ -166,9 +166,11 @@ For that matter, most of them were anti-_Trump_, until Trump became the path to 
 
 They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a citizen casting a valid vote without a photo ID matters more to them than their own candidate staging a coup to illegitimately steal the entire election outright.
 
-Harris won't demand that anyone "finds votes" for her, or claim the election was fraudulent, or stage a violent coup. She won't do those things because she's an adult, and those things have always been unacceptable. But if she _did_, of course, the people who tolerated and even cheered all of those things would suddenly change their minds.
+Harris won't demand that anyone "finds votes" for her, or claim the election was fraudulent. She won't do those things because she's an adult, and she therefore knows those things are unacceptable and always have been.
 
-If she _had_ won, our news would be filled with the inevitable, childish cries of “_that didn't count!_” and “_no fair!_” and “_you cheated!_”
+But if she _did_ do those things, of course, the people who tolerated and even cheered for them before would suddenly find them unacceptable in a way they didn't when it was _their_ team doing them.
+
+At the same time, if she _had_ won, our news would be filled with the inevitable, childish cries of “_that didn't count!_” and “_no fair!_” and “_you cheated!_”
 
 But she didn't win. And so it was all valid.
 
@@ -176,7 +178,7 @@ The rules did what they were supposed to do, in the childish people's minds: the
 
 If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it.
 
-That, or perhaps the (absurd) proposition of abolishing the Constitution. But he said them both, so they stopped being grave blasphemies the moment they were spoken.
+That, or perhaps the (absurd) proposition of abolishing the Constitution. But he said them both, so they both stopped being grave blasphemies the moment they were spoken.
 
 They don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
