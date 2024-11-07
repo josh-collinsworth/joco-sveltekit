@@ -92,9 +92,11 @@ That the rules aren't just for everyone else.
 
 Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other is merely making up ad-hoc rules from moment to moment, for no reason but to help them win.
 
-Those acting like adults believe in more. In _better_. They dare to dream, and envision our collective future in a definitively hopeful way. Maybe even _childlike_.
+Those acting like adults believe in more. In _better_. They dare to dream, and envision our collective future in a definitively hopeful way.
 
 They want the game to be for _everyone_ playing, and therefore, want the rules to apply equally to everyone.
+
+I suppose you could call it childlike, this defiant willingness to believe in a better, more just world.
 
 But today, I and many others learned, in a way very few actually understood or anticipated, exactly how _utterly childish_ so many of the friends and neighbors we're playing the game with actually are. _How far_ they're willing to go, and how much they're willing to overlook, in the name of making the game go the way they want it to.
 
