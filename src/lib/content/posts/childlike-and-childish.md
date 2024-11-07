@@ -152,6 +152,8 @@ Republicans were anti-Russia, until Trump was pro-Russia. Hell, they were anti-T
 
 They were most _certainly_ against election theft, and pro-democracy…until their guy tried to steal an election. We won't see Harris demand that anyone goes and "finds votes" for her—but if we did, of course, that would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
 
+The proposition of abolishing the Constitution would have been the deepest, gravest conservative sin imaginable a few short years ago. But he said it, so it stopped being absurd and blasphemous and became acceptable instead.
+
 They're so pro-shifting-goalposts they even got the Supreme Court to declare that there _aren't goalposts_ for the President.
 
 That's how much they believe in "rules are for you; winning is for me."
