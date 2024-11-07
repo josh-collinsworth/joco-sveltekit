@@ -114,7 +114,7 @@ Trump and his supporters ensured this message permeated every form of media, on 
 
 They beat this drum for a good long while, until: suddenly, Trump's opponent _wasn't_ Joe Biden; it was Kamala Harris, a person dramatically younger and sharper than Trump.
 
-Overnight, Trump went from being the youngest person in the race, to the oldest and most senile, by a massive margin.
+Overnight, Trump went from being the youngest person in the race, to the oldest and most senile, both by a massive margin.
 
 So, naturally, Republicans realized they'd be hypocrites to support a blathering old man, and immediately found another candidate.
 
@@ -124,11 +124,11 @@ Quite the opposite, actually: Republicans suddenly became _proud_ of his advance
 
 You see, when a Democrat breaks the rules, they generally resign, or are fired. The rules matter to those of us acting like adults.
 
-But when a _Republican_ does something that would be considered breaking the rules, _the rules suddenly change_.
+But when a _conservative_ does something that would be considered breaking the rules, _the rules suddenly change_.
 
 And change they did. The national media which made age and eloquence the centerpiece of all political coverage for months on end suddenly just…_stopped caring_.
 
-Even as Trump rambled unhinged nonsense night after night, few paid attention, no matter how nonsensical or objectively wrong it got. Whether he was making it up or so completely detached from reality he genuinely believed the insane things coming out of his mouth, nobody could tell. But it obviously didn't matter to most observers.
+Even as Trump rambled unhinged nonsense night after night, few paid attention, no matter how nonsensical or objectively wrong it got. Whether he was making it up or so completely detached from reality he genuinely believed the insane things coming out of his mouth, nobody could tell. But it obviously didn't matter to most observers. The argument never went the other way.
 
 The perceived fouls of age and cognition were, quite clearly, never about age or cognition.
 
@@ -150,7 +150,7 @@ So clearly, the whole thing was yet another made-up foul, to make the game go th
 
 _The rules aren't for us. The rules are for you._
 
-I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the game was different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public discourse, or vice versa.
+I honestly have my pick of literally hundreds more examples of the goalposts suddenly shifting.
 
 "Family values" is an easy one. It would be frankly difficult to find a man who embodies that ideal _less_ than a serial philanderer and rapist on his third marriage.
 
@@ -160,15 +160,15 @@ But it doesn't matter. The Bible is rules, and the rules aren't for them.
 
 The term "garbage" wasn't offensive when they used it against _other_ people, but yet, it was horrifically offensive to use that word against _them_ (a play familiar both for anyone who remembers 2016, and anyone who's ever experienced the [DARVO](https://en.wikipedia.org/wiki/DARVO) of an abuser).
 
-Republicans were anti-Russia, until Trump was pro-Russia. Then they softened.
+Republicans were anti-Russia, until Trump was pro-Russia.
 
 For that matter, most of them were anti-_Trump_, until Trump became the path to winning at any cost.
 
-They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a valid citizen casting a valid vote without a photo ID matters more to them than their own candidate staging a coup to illegitimately steal the entire election outright.
+They claim to be pro-democracy, and _deeply_ concerned about the integrity of elections. But somehow, the threat of a citizen casting a valid vote without a photo ID matters more to them than their own candidate staging a coup to illegitimately steal the entire election outright.
 
-We won't see Harris demand that anyone goes and "finds votes" for her, or encouraging her supporters to storm the Capitol, and certainly not threatening the life of her VP pick. But if we did, of course, those things would suddenly be back to being absolutely unacceptable, after a brief hiatus that began the precise moment their team did it.
+Harris won't demand that anyone "finds votes" for her, or claim the election was fraudulent, or stage a violent coup. She won't do those things because she's an adult, and those things have always been unacceptable. But if she _did_, of course, the people who tolerated and even cheered all of those things would suddenly change their minds.
 
-If she had won, our news would be filled with the inevitable, childish cries of “_that didn't count!_” and “_no fair!_” and “_you cheated!_”
+If she _had_ won, our news would be filled with the inevitable, childish cries of “_that didn't count!_” and “_no fair!_” and “_you cheated!_”
 
 But she didn't win. And so it was all valid.
 
@@ -176,7 +176,7 @@ The rules did what they were supposed to do, in the childish people's minds: the
 
 If there were such thing as a cardinal sin for conservatives, I imagine disparaging the troops would've been it.
 
-That, or perhaps the (absurd) proposition of abolishing the Constitution. But he said them both, so they stopped being gravely blasphemous and immediately shifted to acceptable instead.
+That, or perhaps the (absurd) proposition of abolishing the Constitution. But he said them both, so they stopped being grave blasphemies the moment they were spoken.
 
 They don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
@@ -210,7 +210,9 @@ So they go on, voting for the exact opposite of what they actually want, and in 
 
 Never mind the rules. Nothing is sacred. Nothing is shared, or belongs to all of us.
 
-I've long since given up on anything ever being bad enough for Trump's supporters, not just because the past several years have been a nonstop parade of egregiously escalating offenses, but because they'd have to actually care about the rules first. They'd have to give a shit about the other people they share this society with, who own it every bit as much as they do. They'd have to stop being the main character; stop being the only ones the rules _don't_ apply to. And if they were going to do that—if they were even _capable_ of that—it would've happened a long time ago.
+I've long since given up on anything ever being bad enough for Trump's supporters, not just because the past several years have been a nonstop parade of egregiously escalating offenses, but because they'd have to actually care about the rules first. They'd have to give a shit about the other people they share this society with, who own it every bit as much as they do. They'd have to stop being the main character; stop believing the rules only apply to other people.
+
+And if they were going to do that—if they were even _capable_ of that—it would've happened a long time ago.
 
 None of it makes sense. None of it is _supposed_ to make sense. That's not the game they're playing.
 
