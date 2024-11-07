@@ -92,7 +92,7 @@ That the rules aren't just for everyone else.
 
 Life in America has long felt like a game played between adults and children; a game where one side knows the rules and is dedicated to keeping them, and the other is merely making up ad-hoc rules from moment to moment, for no reason but to help them win.
 
-Those acting like adults want the game to be for _everyone_ playing, and therefore, want the rules to apply equally to everyone. They want everyone to have a shot. They want everyone to be included, even though this largely isn't how the game has worked up until now.
+Those acting like adults want the game to be for _everyone_, and therefore, want the rules to apply fairly to everybody, even though this largely isn't how the game has worked up until now.
 
 I suppose you could call it childlike, this defiant willingness to believe in a better, more just version of the game we're all playing; that we can achieve it together.
 
