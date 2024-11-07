@@ -146,6 +146,8 @@ It obviously couldn't have been both a crisis, _and_ something that could simply
 
 I honestly have my pick of literally hundreds more examples; times the goalposts shifted, the rules were different for the two sides, and the thing that was previously of crucial importance suddenly vanished from all public dialogue, or vice versa.
 
+"Family values" is an easy one. It would be frankly difficult to find a man who embodies the idea _less_ than their candidate. But it doesn't matter. The rules aren't for them.
+
 The term "garbage" wasn't offensive when they used it against _other_ people, but yet, it was horrifically offensive to use that word against _them_, in exactly the same way Trump's racist rhetoric wasn't offensive, but Hillary Clinton using the word "deplorables" was.
 
 Republicans were anti-Russia, until Trump was pro-Russia. Hell, they were anti-Trump, until Trump became the path to winning at any cost.
