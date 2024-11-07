@@ -178,13 +178,15 @@ If there were such thing as a cardinal sin for conservatives, I imagine disparag
 
 That, or perhaps the (absurd) proposition of abolishing the Constitution. But he said them both, so they stopped being gravely blasphemous and immediately shifted to acceptable instead.
 
-Republicans don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
+They don't believe felons deserve to vote, but they believe _their_ felon deserves to be in the White House.
 
-When it was time for Obama to appoint a Supreme Court Justice nine months from the end of his term, it was deemed much too close, and the nominee was blocked. But when Trump appointed one only _four_ months from leaving office, his pick went straight through, no questions asked.
+When it was time for Obama to nominate a Supreme Court Justice nearly a full year from the end of his term, it was deemed unacceptably close, and they refused to allow the nomination. But Trump was allowed a nomination mere _months_ from his exit, and his pick went straight through, no questions asked.
 
-They're so pro-shifting-goalposts they even got that same Supreme Court to declare that there _aren't goalposts_ for the President.
+They shift the goalposts so much, they even got that same Supreme Court to declare that there _aren't goalposts_ for the President.
 
-That's how much they believe the rules aren't for them. The rules are for everyone else.
+Somehow, against all logic and sanity, the President can do literally anything he wants, no matter what the law says—but, of course, that really only means _their_ President. _Our_ President can't do a damned thing without somebody screaming out that he's breaking the rules, and he will leave office with a great number of things he actually _tried_ to do blocked by the very same people who insist the President is allowed to do anything.
+
+That's how much they believe the rules aren't for them; the rules are for everyone else.
 
 ---
 

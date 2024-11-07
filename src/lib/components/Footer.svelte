@@ -31,6 +31,9 @@
 				<li>
 					<a rel="me" href="https://hachyderm.io/@collinsworth">Mastodon</a>
 				</li>
+				<li>
+					<a href="https://bsky.app/profile/collinsworth.dev">Bluesky</a>
+				</li>
 			</ul>
 		</div>
 
