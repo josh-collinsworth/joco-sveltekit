@@ -70,7 +70,7 @@ Play is a learning opportunity. It's about understanding how things work in a fa
 
 That you can't just change the rules when something happens that you don't like. Because the game is for all of us; we're all in it together.
 
-Again: my son is a good kid. _Better_ than good. The behavior I'm describing here is just natural human tendency. He comes by it honestly, and I don't doubt any other kid in the world does the same things sometimes. I also don't doubt he's already growing up and learning better.
+Again: my son is a good kid. _Better_ than good. The behavior I'm describing here is just natural human tendency. He comes by it honestly, and I don't doubt every other kid in the world does the same things sometimes. I also don't doubt he's already growing up and learning better.
 
 All children—all _humans_, actually—struggle with this message.
 
