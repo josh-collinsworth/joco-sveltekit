@@ -267,19 +267,27 @@
 				<h3>Apps</h3>
 				<ul>
 					<li>
-						<del>
-							<a href="https://passthepigs.vercel.app/" rel="external"
-								>Pass the Pigs scorekeeper app</a
-							>
-							built in React</del
-						>
-						(<i>no longer live since moving off Vercel; under reconstruction</i
-						>)
+						<a href="https://quina.app">Quina</a> and
+						<a href="https://playhondo.com">Hondo</a>, both featured above
 					</li>
 					<li>
 						A handy <a href="https://vlmc.netlify.app/" rel="external"
 							>liquid measurement converter</a
-						> PWA, built with Vue
+						>
+						PWA, built with Vue (and the subject of
+						<a href="https://blog.logrocket.com/building-pwa-vue/"
+							>this blog post on the LogRocket blog</a
+						>)
+					</li>
+					<li>
+						<a href="https://sweet-pair-o-swine.netlify.app/" rel="external"
+							>Pass the Pigs scorekeeper app</a
+						>
+						built in React
+						<i
+							>(and currently slated for reconstruction; it was one of my very
+							first apps and has a lot of issues)</i
+						>
 					</li>
 					<li>
 						A Svelte <a href="https://dadjokefinder.netlify.app/" rel="external"
