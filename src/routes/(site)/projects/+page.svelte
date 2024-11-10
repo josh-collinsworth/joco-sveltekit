@@ -308,7 +308,11 @@
 							>, a Nuxt app to build SQL queries for WordPress multisites
 						</del>
 						(<i
-							>no longer live since moving off Vercel; probably won't rebuild</i
+							>no longer live since moving off Vercel; probably won't rebuild,
+							but <a
+								href="https://github.com/josh-collinsworth/wp_multisite_domain_replace"
+								>the old repo is here</a
+							></i
 						>)
 					</li>
 				</ul>
