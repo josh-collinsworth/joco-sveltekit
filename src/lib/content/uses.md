@@ -47,9 +47,7 @@
 - [iTerm2](https://www.iterm2.com/):
   I’ve tried other terminals, but none seem to run as well, and with the recent update, arguably, none look better, either.
 
-- [Netlify](https://www.netlify.com/):
-  I’m also a fan of
-  [Vercel](https://vercel.com/home) but Netlify has taken over my Jamstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
+- [Netlify](https://www.netlify.com/): I once used Vercel, but never again. Netlify has taken over my Jamstack hosting #1 spot. It’s free to start and unbelievably easy. Netlify makes the painfully difficult effortlessly simple.
 
 - [Plausible Analytics](https://plausible.io/): I've done away with Google Analytics. Plausible is privacy-respecting, GDPR compliant, and very affordable. Happy to support them.
 
