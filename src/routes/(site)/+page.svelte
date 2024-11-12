@@ -1,5 +1,9 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
+
+	export let data
+
+	console.log(data)
 </script>
 
 <svelte:head>
@@ -23,53 +27,70 @@
 
 <Main>
 	<div class="intro">
-		<div class="intro__headline">
-			<h2>
-				<strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer,
-				writer, and&nbsp;teacher.
-			</h2>
+		<h2>
+			<strong>Hi, I’m Josh</strong>. I'm a frontend developer, designer, writer,
+			and&nbsp;teacher.
+		</h2>
 
-			<p class="subhead h2">
-				I currently live in the Kansas City area, and work for <a
-					href="https://deno.land">Deno</a
-				> as a frontend engineer.
-			</p>
-
-			<p>
-				I specialize in performant, accessible, user-focused interfaces. I wrote
-				<a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
-					><i>a Complete Beginner's Guide to npm</i></a
-				>
-				on <a href="https://css-tricks.com">CSS Tricks</a>. I
-				<a href="/projects">designed and built</a>
-				the word games
-				<a href="https://quina.app">Quina</a> and
-				<a href="https://playhondo.com">Hondo</a>. Occasionally I'll
-				<a href="/about-me#appearances">appear on a podcast</a>, and I
-				<a href="/blog">blog here</a> once in a while.
-			</p>
-
+		<p class="subhead h2">
+			I currently live in the Kansas City area, and work for <a
+				href="https://deno.land">Deno</a
+			> as a frontend engineer.
+		</p>
+		<p class="bio">
+			I specialize in performant, accessible, user-focused interfaces. I wrote
+			<a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
+				><i>a Complete Beginner's Guide to npm</i></a
+			>
+			on <a href="https://css-tricks.com">CSS Tricks</a>. I
+			<a href="/projects">designed and built</a>
+			the word games
+			<a href="https://quina.app">Quina</a> and
+			<a href="https://playhondo.com">Hondo</a>. Occasionally I'll
+			<a href="/about-me#appearances">appear on a podcast</a>, and I
+			<a href="/blog">blog here</a> once in a while.
+		</p>
+		<div class="intro__grid">
 			<section>
-				<nav>
-					<ul>
-						<li><a href="/about-me">More about me and what I do</a></li>
-						<li><a href="/blog">My blog</a></li>
-						<li><a href="/projects">Some of my projects</a></li>
-						<li><a href="/contact">Get in touch</a></li>
-					</ul>
-				</nav>
+				<h3 class="list-heading" id="links-list">More</h3>
+				<ul aria-labelledby="links-list">
+					<li><a href="/about-me">More about me and what I do</a></li>
+					<li><a href="/blog">My blog</a></li>
+					<li><a href="/projects">Some of my projects</a></li>
+					<li><a href="/contact">Get in touch</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 class="list-heading" id="recent-posts">Recent posts</h3>
+				<ul aria-labelledby="recent-posts">
+					{#each data.recentPosts as post}
+						<li>
+							<a href="/blog/{post.slug}">{post.title}</a>
+						</li>
+					{/each}
+				</ul>
+			</section>
+			<section>
+				<h3 class="list-heading" id="popular-posts">Popular posts</h3>
+				<ul aria-labelledby="popular-posts">
+					{#each data.popularPosts as post}
+						<li>
+							<a href="/blog/{post.slug}">{post.title}</a>
+						</li>
+					{/each}
+				</ul>
 			</section>
 		</div>
 	</div>
 </Main>
 
 <style lang="scss">
-	@for $i from 1 through 4 {
-		.intro .intro__headline > *:nth-child(#{$i}) {
+	@for $i from 1 through 5 {
+		.intro > *:nth-child(#{$i}) {
 			animation-delay: 0.2 + ($i * 0.14s);
 		}
-		.intro .intro__headline ul li:nth-child(#{$i}) {
-			animation-delay: 0.8 + ($i * 0.1s);
+		.intro__grid section:nth-child(#{$i}) {
+			animation-delay: 0.8 + ($i * 0.1s) !important;
 		}
 	}
 
@@ -78,21 +99,38 @@
 		position: relative;
 		margin-top: var(--wholeNote);
 
-		.intro__headline > *,
-		.intro__headline ul li {
+		@media (min-width: vars.$md) {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		> h2,
+		> p {
+			@media (min-width: vars.$md) {
+				grid-column: 1 / 3;
+			}
+			@media (min-width: vars.$xl) {
+				grid-column: 1 / 5;
+			}
+			@media (min-width: vars.$xxl) {
+				grid-column: 1 / 4;
+			}
+		}
+
+		> *,
+		.intro__grid section {
 			opacity: 0;
-			transform: translateY(16px);
 			animation: fade_in_intro 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 
-			.reduce-motion & {
-				transform: translateY(0);
+			@media (prefers-reduced-motion: reduce) {
+				animation-name: fade_in_intro_reduced;
 			}
 		}
 
 		@media (min-width: vars.$xl) {
-			display: grid; //TODO: leftover from old design. Probably not needed unless I decide to put stuff in that narrow right column again.
-			grid-template-columns: 48rem 1fr;
-			gap: 0 calc(var(--wholeNote) * 2);
+			display: grid;
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+			gap: 0 var(--wholeNote);
 		}
 
 		h2,
@@ -101,7 +139,7 @@
 			font-size: clamp(1.8rem, calc(1rem + 3vw), 3.5rem);
 			margin-bottom: var(--halfNote);
 			font-weight: normal;
-			max-width: 17em;
+			text-wrap: balance;
 
 			strong {
 				background: var(--yellow);
@@ -119,7 +157,6 @@
 			margin-bottom: var(--halfNote);
 			color: var(--darkGray);
 			line-height: 1.4;
-			max-width: 23em;
 
 			.dark & {
 				color: var(--ink);
@@ -130,26 +167,90 @@
 			}
 		}
 
-		p {
-			max-width: 38em;
+		.bio {
+			@media (min-width: vars.$sm) {
+				grid-column: 1 / 3;
+			}
+			@media (min-width: vars.$xl) {
+				grid-column: 1 / 4;
+			}
+			@media (min-width: vars.$fourxl) {
+				grid-column: 1 / 3;
+			}
 		}
 
 		ul {
-			margin-top: var(--halfNote);
-			margin-bottom: 0;
+			margin: 0;
+			margin-top: var(--quarterNote);
+			list-style-type: none;
+			padding-left: 0;
+
+			li {
+				padding-left: 0;
+				text-wrap: balance;
+
+				a {
+					text-decoration-thickness: 1px;
+				}
+			}
+		}
+	}
+
+	.intro__grid {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		margin-top: var(--dottedWholeNote);
+		gap: var(--wholeNote);
+		font-size: 0.8rem;
+		line-height: 1.5;
+		grid-column-start: 1;
+		grid-column: 1 / -1;
+
+		@media (min-width: vars.$md) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		@media (min-width: vars.$xxl) {
+			grid-column: 3 / 6;
+			grid-row: 5 / 6;
+		}
+	}
+
+	.list-heading {
+		font-size: 0.8rem;
+		font-family: var(--headingFont);
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: unset;
+		border-bottom: 1px solid var(--lightGray);
+		padding-bottom: var(--sixteenthNote);
+	}
+
+	:global(html:not(.light) .intro .subhead) {
+		@media (prefers-color-scheme: dark) {
+			color: var(--ink) !important;
 		}
 	}
 
 	@keyframes fade_in_intro {
+		from {
+			opacity: 0;
+			transform: translateY(16px);
+		}
 		to {
 			opacity: 1;
 			transform: translateY(0);
 		}
 	}
 
-	:global(html:not(.light) .intro .subhead) {
-		@media (prefers-color-scheme: dark) {
-			color: var(--ink) !important;
+	@keyframes fade_in_intro_reduced {
+		from {
+			opacity: 0;
+			transform: translateY(0);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 </style>

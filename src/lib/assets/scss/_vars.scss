@@ -7,6 +7,7 @@ $lg: 82rem;
 $xl: 92rem;
 $xxl: 108rem;
 $xxxl: 122rem;
+$fourxl: 144rem;
 
 :root {
 	// Looks kinda messy but allows for colors to be lightened or darkened.
@@ -44,7 +45,7 @@ $xxxl: 122rem;
 
 	--bodyFontWeight: normal;
 	--bodyFontSize: 1.125rem;
-	--bodyLineHeight: calc(var(--quarterNote) * 1.25);
+	--bodyLineHeight: 1.5;
 
 	@media (min-width: $xs) {
 		--bodyFontSize: 1.1875rem;

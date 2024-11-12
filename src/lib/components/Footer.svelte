@@ -71,12 +71,14 @@
 
 		@media (min-width: vars.$sm) {
 			display: grid;
-			grid-template-columns: 1fr 1fr 2fr;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 0 var(--wholeNote);
 			align-items: stretch;
+			font-size: 0.8rem;
 		}
 
-		@media (min-width: vars.$sm) {
-			font-size: 0.8rem;
+		@media (min-width: vars.$xl) {
+			grid-template-columns: repeat(5, minmax(0, 1fr));
 		}
 
 		h2 {
@@ -110,9 +112,8 @@
 
 			@media (min-width: vars.$sm) {
 				border-bottom: 0;
-				border-right: 1px solid var(--lightBlue);
-				padding: 1rem;
-				margin-left: 0;
+				padding: 0;
+				margin-inline: 0;
 			}
 
 			ul {

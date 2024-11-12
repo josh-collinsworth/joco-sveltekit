@@ -358,6 +358,8 @@ I guess WP Engine's users and customers and employees don't count as part of the
 
 Kinda seems like a healthy community shouldn't be just fine throwing some of its members under the bus and acting as though they don't matter, based solely on where they choose to host their site.
 
+_That_ sounds like a threat to a community, to me.
+
 
 > …and whenever possible have helped users and businesses transition smoothly and easily.
 

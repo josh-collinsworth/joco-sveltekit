@@ -1,5 +1,5 @@
 export default interface Post {
-	categories?: string|string[]
+	categories?: string | string[]
 	coverImage: string
 	coverWidth?: number
 	coverHeight?: number
@@ -10,4 +10,5 @@ export default interface Post {
 	title: string
 	updated?: string
 	draft?: boolean
+	published?: boolean
 }

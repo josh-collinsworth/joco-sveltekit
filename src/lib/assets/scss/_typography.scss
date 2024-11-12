@@ -40,10 +40,11 @@ a {
 	text-decoration-color: var(--lightBlue);
 	text-decoration-thickness: 1.5px;
 	text-underline-offset: 0.1em;
-	transition: color 0.15s;
+	transition: color 0.15s, text-decoration-color 0.1s;
 
-	&:hover {
-		color: var(--linkColor);
+	&:hover,
+	&:focus {
+		text-decoration-color: var(--yellow);
 	}
 }
 
