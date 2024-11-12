@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { prefersReducedMotion } from '$lib/data/store'
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 
 	export let title: string
@@ -18,7 +17,7 @@
 		title = title.split('/').join(' / ').replace(/-/g, ' ')
 
 		isWorking = false
-		
+
 		setTimeout(() => {
 			isWorking = true
 			computedTitle = title
@@ -26,15 +25,10 @@
 	}
 </script>
 
-
 <PageTransition refresh={isSinglePost} span={true}>
 	<div class="page-head">
 		{#if !isSinglePost}
-			<div
-				class="heading-wrapper"
-				class:in={isWorking}
-				class:no-motion={$prefersReducedMotion}
-			>
+			<div class="heading-wrapper" class:in={isWorking}>
 				<span class="brace" aria-hidden="true">[</span>
 				<h1>
 					<div class="title-wrap">
@@ -43,7 +37,7 @@
 					</div>
 				</h1>
 				<span class="brace closing-brace" aria-hidden="true">]</span>
-				
+
 				<noscript>
 					<!-- Just here to allow the heading to show when JS is disabled. -->
 					<style>
@@ -57,10 +51,9 @@
 	</div>
 </PageTransition>
 
-
 <style lang="scss">
 	.page-head {
-		--transition: transform .24s cubic-bezier(0.165, 0.84, 0.44, 1);
+		--transition: transform 0.24s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 		margin-bottom: var(--halfNote);
 		display: flex;
@@ -92,7 +85,7 @@
 					color: var(--yellow);
 					margin: 0;
 					transition: var(--transition);
-					transform: translateX(calc(-100% + .3em));
+					transform: translateX(calc(-100% + 0.3em));
 					position: absolute;
 					left: 100%;
 					width: 100%;
@@ -106,8 +99,10 @@
 				transform: translateX(0);
 			}
 
-			&.no-motion .closing-brace {
-				transform: translateX(0);
+			@media (prefers-reduced-motion: reduce) {
+				.closing-brace {
+					transform: translateX(0);
+				}
 			}
 		}
 
@@ -123,7 +118,14 @@
 			.title-wrap {
 				position: relative;
 				z-index: 1;
-				background: linear-gradient(90deg, #a7a8aa, #92abb2, #5eca78, #b6ec1f, #ffd100);
+				background: linear-gradient(
+					90deg,
+					#a7a8aa,
+					#92abb2,
+					#5eca78,
+					#b6ec1f,
+					#ffd100
+				);
 				-webkit-text-fill-color: transparent;
 				-webkit-background-clip: text;
 				background-clip: text;

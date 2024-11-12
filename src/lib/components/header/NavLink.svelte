@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { isMenuOpen, prefersReducedMotion } from '$lib/data/store'
+	import { isMenuOpen } from '$lib/data/store'
 
 	export let text: string
 	export let to: string
@@ -10,12 +10,7 @@
 	$: isCurrentPage = path === to
 </script>
 
-<li
-	class="nav__item"
-	class:open={$isMenuOpen}
-	class:no-motion={$prefersReducedMotion}
-	class:mobile-only={mobileOnly}
->
+<li class="nav__item" class:open={$isMenuOpen} class:mobile-only={mobileOnly}>
 	<a
 		data-sveltekit-preload-code
 		href={to}
@@ -57,7 +52,7 @@
 		&.open {
 			animation: move_in_left var(--itemTransition);
 
-			&.no-motion {
+			@media (prefers-reduced-motion: reduce) {
 				animation: none;
 				opacity: 1;
 			}

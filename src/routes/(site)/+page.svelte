@@ -2,8 +2,6 @@
 	import Main from '$lib/components/Main.svelte'
 
 	export let data
-
-	console.log(data)
 </script>
 
 <svelte:head>
@@ -181,7 +179,7 @@
 
 		ul {
 			margin: 0;
-			margin-top: var(--quarterNote);
+			margin-top: 1.25em;
 			list-style-type: none;
 			padding-left: 0;
 
@@ -206,7 +204,7 @@
 		grid-column-start: 1;
 		grid-column: 1 / -1;
 
-		@media (min-width: vars.$md) {
+		@media (min-width: vars.$sm) {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 
@@ -222,8 +220,10 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		margin: unset;
-		border-bottom: 1px solid var(--lightGray);
-		padding-bottom: var(--sixteenthNote);
+		border-bottom: 0.15em solid var(--lightGray);
+		padding-bottom: 0.15em;
+		line-height: 1;
+		display: inline-block;
 	}
 
 	:global(html:not(.light) .intro .subhead) {

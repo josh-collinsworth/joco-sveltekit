@@ -77,7 +77,7 @@
 			font-size: 0.8rem;
 		}
 
-		@media (min-width: vars.$xl) {
+		@media (min-width: vars.$xxl) {
 			grid-template-columns: repeat(5, minmax(0, 1fr));
 		}
 
@@ -134,6 +134,10 @@
 
 			@media (min-width: vars.$sm) {
 				margin-left: 0;
+			}
+
+			@media (min-width: vars.$xxl) {
+				grid-column: span 2;
 			}
 
 			p {

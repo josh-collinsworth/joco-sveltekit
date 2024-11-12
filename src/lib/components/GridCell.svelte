@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { prefersReducedMotion } from '$lib/data/store'
 	import { TIMING_DURATION } from '$lib/data/constants'
 	import { onMount } from 'svelte'
 
@@ -51,7 +50,6 @@
 	{#key randomTiming()}
 		<div
 			class="cell"
-			class:reduce={$prefersReducedMotion}
 			class:out
 			style="
 				--base: {base}px;
@@ -77,7 +75,7 @@
 			opacity: 1;
 			animation: fade_out 0.36s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
 
-			&.reduce {
+			@media (prefers-reduced-motion: reduce) {
 				opacity: 1;
 				animation-name: reduce_motion_fade_out;
 				animation-duration: 0.2s;
@@ -85,7 +83,7 @@
 			}
 		}
 
-		&.reduce {
+		@media (prefers-reduced-motion: reduce) {
 			opacity: 0;
 			animation-name: reduce_motion_fade;
 			animation-duration: 0.2s;
