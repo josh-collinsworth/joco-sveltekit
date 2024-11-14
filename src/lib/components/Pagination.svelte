@@ -1,28 +1,23 @@
 <script lang="ts">
 	export let currentPage: number
 	export let totalPosts: number
-	
+
 	let pagesAvailable: number
 	$: pagesAvailable = Math.ceil(totalPosts / 10)
 
 	const isCurrentPage = (page: number): boolean => page == currentPage
 </script>
 
-
 <nav aria-label="Pagination navigation" class="pagination">
 	<h2>Go to page:</h2>
 	<ul>
-		{#each Array.from({length: pagesAvailable}, (_, i) => i + 1) as page}
+		{#each Array.from({ length: pagesAvailable }, (_, i) => i + 1) as page}
 			<li>
-				<a href="/blog/page/{page}" aria-current="{isCurrentPage(page)}">
+				<a href="/blog/page/{page}" aria-current={isCurrentPage(page)}>
 					{#if isCurrentPage(page)}
-						<span class="sr">
-							Current page
-						</span>
+						<span class="sr"> Current page </span>
 					{:else}
-						<span class="sr">
-							Go to page
-						</span>
+						<span class="sr"> Go to page </span>
 					{/if}
 					{page}
 				</a>
@@ -30,7 +25,6 @@
 		{/each}
 	</ul>
 </nav>
-
 
 <style lang="scss">
 	.pagination {
@@ -70,26 +64,25 @@
 				height: 2em;
 				font-family: var(--headingFont);
 				font-weight: bold;
-				transition: background .1s;
+				transition: background 0.1s;
 
 				&:hover {
 					background: var(--yellow);
 				}
 
-				&[aria-current="true"] {
+				&[aria-current='true'] {
 					background: var(--yellow);
 					color: var(--black);
 					border: 1px solid currentColor;
 				}
 			}
-
 		}
 	}
 
 	:global(.dark .pagination ul a) {
 		background: var(--darkBlue) !important;
 
-		&[aria-current="true"] {
+		&[aria-current='true'] {
 			background: var(--yellow) !important;
 		}
 	}
