@@ -1141,6 +1141,8 @@ Matt took the loss like a good sport and a professional—haha, just kidding. He
 
 > It's hard to imagine wanting to continue to working [sic] on WordPress after this. I'm sick and disgusted to be legally compelled to provide free labor to an organization as parasitic and exploitive as WP Engine. …I hope you all get what you and WP Engine wanted.
 
+Later in the day, Matt also added the "middle finger" emoji reaction to another user's post.
+
 We shouldn't be surprised; Matt's already shown he's utterly incapable of seeing things from any point of view but his own narcissistic and twisted version of reality. But here's yet another tantrum to add to the list of reasons he's unfit for the role he's made for himself.
 
 Automattic have made a public statement that they intend to continue the fight. Guess we'll see what happens next. But for now, at least, the petty tyrant has been dealt a severe and well-deserved blow by the legal system.
