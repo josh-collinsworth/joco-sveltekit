@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import type { SvelteComponentTyped } from 'svelte'
+	import type { SvelteComponent } from 'svelte'
 
 	export let includeBothVues: boolean = false
 	export let dir: string
@@ -8,18 +8,18 @@
 	interface framework {
 		title: string
 		slug: string
-		component: SvelteComponentTyped
+		component: SvelteComponent
 	}
 
-	let React: SvelteComponentTyped,
-		Vue2: SvelteComponentTyped,
-		Vue3: SvelteComponentTyped,
-		Svelte: SvelteComponentTyped,
-		currentFramework: SvelteComponentTyped
+	let React: SvelteComponent,
+		Vue2: SvelteComponent,
+		Vue3: SvelteComponent,
+		Svelte: SvelteComponent,
+		currentFramework: SvelteComponent
 
 	let frameworks: framework[] = []
 
-	const changeFramework = (component: SvelteComponentTyped): void => {
+	const changeFramework = (component: SvelteComponent): void => {
 		currentFramework = component
 	}
 

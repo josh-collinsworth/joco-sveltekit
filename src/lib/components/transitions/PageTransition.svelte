@@ -27,13 +27,13 @@
 	<div
 		class="transition-wrapper"
 		class:span
-		in:fly={{
+		in:fly|global={{
 			y: yIn,
 			duration: transitionIn ? TIMING_DURATION : 0,
 			delay: transitionIn ? TIMING_DURATION : 0,
 			easing: cubicOut
 		}}
-		out:fly={{
+		out:fly|global={{
 			y: yOut,
 			duration: transitionOut ? TIMING_DURATION : 0,
 			easing: cubicIn

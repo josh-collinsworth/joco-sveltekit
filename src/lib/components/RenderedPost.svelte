@@ -8,10 +8,10 @@
 	import Main from '$lib/components/Main.svelte'
 	import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
 	import { onMount } from 'svelte'
-	import type { SvelteComponentTyped } from 'svelte'
+	import type { SvelteComponent } from 'svelte'
 	import { dev } from '$app/environment'
 
-	export let PostContent: SvelteComponentTyped
+	export let PostContent: SvelteComponent
 	export let meta: Post
 
 	const defaultImagePath = `/images/site-image.png`

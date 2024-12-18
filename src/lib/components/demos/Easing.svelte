@@ -40,14 +40,14 @@
 		{#key renderProps}
 			<div
 				class="box"
-				in:fly={{
+				in:fly|global={{
 					duration: inDuration,
 					delay: (transitionDuration * 1.1),
 					y: -225,
 					opacity: 1,
 					easing: allEasings[currentEasingIn]
 				}}
-				out:fly={{
+				out:fly|global={{
 					duration: outDuration,
 					y: 225,
 					opacity: 1,
