@@ -45,5 +45,8 @@
     "just-throttle": "^4.2.0",
     "rehype-autolink-headings": "^6.1.0",
     "rehype-slug": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.6.1"
   }
 }
