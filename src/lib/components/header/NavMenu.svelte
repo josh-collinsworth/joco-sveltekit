@@ -3,7 +3,11 @@
 	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
 	import { isMenuOpen } from '$lib/data/store'
 
-	export let path: string
+	interface Props {
+		path: string;
+	}
+
+	let { path }: Props = $props();
 </script>
 
 <template>

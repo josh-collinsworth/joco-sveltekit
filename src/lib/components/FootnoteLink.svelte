@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let number: number
+	interface Props {
+		number: number;
+	}
+
+	let { number }: Props = $props();
 </script>
 
 <a href="#footnote-{number}" class="footnote-link" id="footnote-link-{number}">

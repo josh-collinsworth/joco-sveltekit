@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let currentPage: string
+	interface Props {
+		currentPage: string;
+	}
+
+	let { currentPage }: Props = $props();
 </script>
 
 <div class="bio-wrapper">

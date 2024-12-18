@@ -1,7 +1,15 @@
+<script lang="ts">
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+</script>
+
 <!-- This component is just used in the Gridsome post, to keep a demo from breaking. -->
 
 <div class="highlight">
-	<slot />
+	{@render children?.()}
 </div>
 
 <style lang="scss">

@@ -1,17 +1,19 @@
 <script lang="ts">
+	import { preventDefault } from 'svelte/legacy';
+
 	import type contactFormSubmission from '$lib/types/contact-form-submission'
 	import { onMount } from 'svelte'
 	import Main from '$lib/components/Main.svelte'
 
-	let isSubmitted = false
-	let showError = false
+	let isSubmitted = $state(false)
+	let showError = $state(false)
 
-	let formData: contactFormSubmission = {
+	let formData: contactFormSubmission = $state({
 		from_page: '',
 		name: '',
 		email: '',
 		message: ''
-	}
+	})
 
 	onMount((): void => {
 		const params = new URLSearchParams(window.location.search)
@@ -88,7 +90,7 @@
 				id="contact-form"
 				name="contact"
 				method="post"
-				on:submit|preventDefault={handleSubmit}
+				onsubmit={preventDefault(handleSubmit)}
 				action="/success/"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
@@ -128,7 +130,7 @@
 						bind:value={formData.message}
 						rows="6"
 						placeholder="What would you like to talk about?"
-					/>
+					></textarea>
 				</div>
 
 				{#if showError}

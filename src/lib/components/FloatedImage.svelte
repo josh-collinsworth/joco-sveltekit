@@ -1,6 +1,10 @@
 <script lang="ts">
-export let path: string
-export let alt: string = ''
+	interface Props {
+		path: string;
+		alt?: string;
+	}
+
+	let { path, alt = '' }: Props = $props();
 </script>
 
 

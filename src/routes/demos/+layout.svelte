@@ -12,9 +12,14 @@
 	import { onMount } from 'svelte'
 	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation'
 	import { dev } from '$app/environment'
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	let root: HTMLElement
-	let isFrame = false
+	let isFrame = $state(false)
 
 	const setLoading = (newState: boolean): void => {
 		isLoading.set(newState)
@@ -60,7 +65,7 @@
 	<Loader loading={$isLoading} />
 
 	<div class="layout">
-		<slot />
+		{@render children?.()}
 	</div>
 
 	{#if !isFrame}

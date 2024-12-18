@@ -6,14 +6,23 @@
 	import Main from '$lib/components/Main.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
 
-	export let data: PageData;
 
-	export let posts: Post[] = data.posts || [];
-	export let page: number = data.page || 1;
-	export let totalPosts: number = data.totalPosts;
+	interface Props {
+		data: PageData;
+		posts?: Post[];
+		page?: number;
+		totalPosts?: number;
+	}
 
-	$: lowerBound = page * 10 - 9 || 1;
-	$: upperBound = Math.min(page * 10, totalPosts);
+	let {
+		data,
+		posts = data.posts || [],
+		page = data.page || 1,
+		totalPosts = data.totalPosts
+	}: Props = $props();
+
+	let lowerBound = $derived(page * 10 - 9 || 1);
+	let upperBound = $derived(Math.min(page * 10, totalPosts));
 </script>
 
 <svelte:head>

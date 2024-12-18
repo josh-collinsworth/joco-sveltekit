@@ -1,7 +1,11 @@
 <script lang="ts">
 	import BackUpArrow from './icons/BackUpArrow.svelte'
 
-	export let footnotes: string[] = []
+	interface Props {
+		footnotes?: string[];
+	}
+
+	let { footnotes = [] }: Props = $props();
 </script>
 
 <footer>

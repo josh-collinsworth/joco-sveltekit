@@ -1,4 +1,6 @@
-<script type="typescript">
+<!-- @migration-task Error while migrating Svelte code: Unexpected token
+https://svelte.dev/e/js_parse_error -->
+<script lang="ts">
 	import ExternalLink from '$lib/components/icons/ExternalLink.svelte'
 	import { onMount } from 'svelte'
 
@@ -20,22 +22,23 @@
 	$: sizeInPx = size + 'px'
 
 	let fontName: string
-	$: fontName = (label || font)
+	$: fontName = label || font
 
 	let computedFontWeight: string
 	$: computedFontWeight = (displayBold && 'bold') || fontWeight || 'normal'
-	
+
 	let computedFontStyle: string
 	$: computedFontStyle = (displayItalic && 'italic') || fontStyle || 'normal'
 
-	onMount(() => { text = label || font })
+	onMount(() => {
+		text = label || font
+	})
 
 	const select = (e: Event): void => {
 		const target = e.target as HTMLInputElement
 		target && target.select()
 	}
 </script>
-
 
 <template>
 	<form class="tester-form" on:submit|preventDefault>
@@ -44,7 +47,7 @@
 			<input
 				id={fontName}
 				type="text"
-				placeholder={placeholder}
+				{placeholder}
 				on:click={select}
 				bind:value={text}
 				style="
@@ -73,18 +76,21 @@
 		{/if}
 
 		{#if italic}
-			<input id="{fontName}-italic" type="checkbox" bind:checked={displayItalic} />
+			<input
+				id="{fontName}-italic"
+				type="checkbox"
+				bind:checked={displayItalic}
+			/>
 			<label for="{fontName}-italic">Italic</label>
 		{/if}
 
 		{#if link}
 			<p class="details">
-				<a rel="external" href={link}>{ fontName } family<ExternalLink /></a>
+				<a rel="external" href={link}>{fontName} family<ExternalLink /></a>
 			</p>
 		{/if}
 	</form>
 </template>
-
 
 <style lang="scss">
 	.tester-form {
@@ -94,24 +100,24 @@
 		font-family: var(--headingFont);
 
 		label {
-			font-size: .8rem;
+			font-size: 0.8rem;
 			flex: 1 1 14em;
-			margin-top: .5rem;
+			margin-top: 0.5rem;
 		}
 
-		input[type="range"] {
+		input[type='range'] {
 			flex: 1 1 70%;
 			padding: 0;
-			margin: .5rem 0 0;
+			margin: 0.5rem 0 0;
 			max-width: 12rem;
 			outline: none;
 			border: none;
 		}
 
-		input[type=text] {
+		input[type='text'] {
 			border: none;
 			margin: 0;
-			padding: .6em 0;
+			padding: 0.6em 0;
 			width: 100vw;
 			max-width: calc(100vw - (var(--margin) + 1rem));
 			line-height: 1em;

@@ -1,20 +1,26 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import GridCell from './GridCell.svelte'
 	import { onMount } from 'svelte'
 	import { browser } from '$app/environment'
 	import debounce from 'just-debounce'
 
-	export let refresh: string = ''
-	export let inverted: boolean = false
-	export let squareCount: number = 0
+	interface Props {
+		refresh?: string;
+		inverted?: boolean;
+		squareCount?: number;
+	}
 
-	let count: number = 0
-	let gridWidth: number
-	let out: boolean = false
-	let thisPage: string = ''
-	let loadedIn = false
+	let { refresh = '', inverted = false, squareCount = 0 }: Props = $props();
 
-	let base = 16
+	let count: number = $state(0)
+	let gridWidth: number = $state()
+	let out: boolean = $state(false)
+	let thisPage: string = $state('')
+	let loadedIn = $state(false)
+
+	let base = $state(16)
 
 	const gridColors: string[] = [
 		'var(--lightGray)',
@@ -25,15 +31,17 @@
 		'var(--orange)'
 	]
 
-	$: if (refresh && loadedIn) {
-		out = true
-		setTimeout(() => {
-			thisPage = refresh
-			out = false
-		}, 360)
-	} else {
-		loadedIn = true
-	}
+	run(() => {
+		if (refresh && loadedIn) {
+			out = true
+			setTimeout(() => {
+				thisPage = refresh
+				out = false
+			}, 360)
+		} else {
+			loadedIn = true
+		}
+	});
 
 	const setSquareCount = debounce(() => {
 		if (!browser) return
@@ -76,7 +84,7 @@
 	}
 </script>
 
-<svelte:window on:resize={setSquareCount} />
+<svelte:window onresize={setSquareCount} />
 
 <div class="grid-wrapper" style="--base: {base}px">
 	{#key thisPage}

@@ -1,5 +1,5 @@
 <script>
-	let volume = 0
+	let volume = $state(0)
 </script>
 
 <div class="example-component-wrapper">

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { isMenuOpen } from '$lib/data/store'
 
-	let readableMenuStateOpposite: string
-	$: readableMenuStateOpposite = $isMenuOpen ? 'Close' : 'Open'
+	let readableMenuStateOpposite: string = $derived($isMenuOpen ? 'Close' : 'Open')
+	
 </script>
 
 <button
@@ -10,12 +10,12 @@
 	aria-pressed={$isMenuOpen}
 	class:fixed={$isMenuOpen}
 	class="settings-toggle"
-	on:click={() => isMenuOpen.set(!$isMenuOpen)}
+	onclick={() => isMenuOpen.set(!$isMenuOpen)}
 >
 	<span class="sr">{readableMenuStateOpposite} menu</span>
-	<div class="line line-top" aria-hidden="true" />
-	<div class="line line-middle" aria-hidden="true" />
-	<div class="line line-bottom" aria-hidden="true" />
+	<div class="line line-top" aria-hidden="true"></div>
+	<div class="line line-middle" aria-hidden="true"></div>
+	<div class="line line-bottom" aria-hidden="true"></div>
 </button>
 
 <style lang="scss">

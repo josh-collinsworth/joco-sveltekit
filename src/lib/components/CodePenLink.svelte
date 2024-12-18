@@ -1,7 +1,12 @@
 <script lang="ts">
-	export let hash: string
+	interface Props {
+		hash: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { hash, children }: Props = $props();
 </script>
 
 <a href="https://codepen.io/collinsworth/pen/{hash}" rel="external">
-	<slot />
+	{@render children?.()}
 </a>

@@ -1,8 +1,13 @@
 <script lang="ts">
 	import { sluggify } from '$lib/assets/js/utils'
 
-	export let date: string
-	export let title: string
+	interface Props {
+		date: string;
+		title: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { date, title, children }: Props = $props();
 </script>
 
 <div class="edit" id={sluggify(title)}>
@@ -10,7 +15,7 @@
 	{#if title}
 		<h3>{title}</h3>
 	{/if}
-	<slot />
+	{@render children?.()}
 	<p class="sr">End update</p>
 </div>
 

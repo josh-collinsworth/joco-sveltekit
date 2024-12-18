@@ -2,8 +2,12 @@
 	import { onMount } from 'svelte'
 	import type { SvelteComponent } from 'svelte'
 
-	export let includeBothVues: boolean = false
-	export let dir: string
+	interface Props {
+		includeVue2and3?: boolean
+		dir: string
+	}
+
+	let { includeVue2and3 = false, dir }: Props = $props()
 
 	interface framework {
 		title: string
@@ -15,9 +19,9 @@
 		Vue2: SvelteComponent,
 		Vue3: SvelteComponent,
 		Svelte: SvelteComponent,
-		currentFramework: SvelteComponent
+		currentFramework: SvelteComponent = $state()
 
-	let frameworks: framework[] = []
+	let frameworks: framework[] = $state([])
 
 	const changeFramework = (component: SvelteComponent): void => {
 		currentFramework = component
@@ -27,7 +31,7 @@
 		Svelte = (await import(`./markdown/${dir}/svelte.md`)).default
 		React = (await import(`./markdown/${dir}/react.md`)).default
 		Vue2 = (await import(`./markdown/${dir}/vue2.md`)).default
-		if (includeBothVues) {
+		if (includeVue2and3) {
 			Vue3 = (await import(`./markdown/${dir}/vue3.md`)).default
 		}
 
@@ -43,13 +47,13 @@
 				component: React
 			},
 			{
-				title: includeBothVues ? 'Vue 2' : 'Vue',
+				title: includeVue2and3 ? 'Vue 2' : 'Vue',
 				slug: 'code-vue2',
 				component: Vue2
 			}
 		]
 
-		if (includeBothVues) {
+		if (includeVue2and3) {
 			frameworks = [
 				...frameworks,
 				{
@@ -72,7 +76,7 @@
 	>
 		{#each frameworks as framework}
 			<button
-				on:click={() => changeFramework(framework.component)}
+				onclick={() => changeFramework(framework.component)}
 				role="tab"
 				aria-controls={framework.slug}
 				aria-selected={currentFramework == framework.component}
@@ -85,13 +89,13 @@
 
 	{#each frameworks as framework}
 		<div id={framework.slug} hidden={currentFramework != framework.component}>
-			<svelte:component this={framework.component} />
+			<framework.component />
 		</div>
 	{/each}
 
 	<noscript>
 		{#each frameworks as framework}
-			<svelte:component this={framework.component} />
+			<framework.component />
 		{/each}
 	</noscript>
 </div>

@@ -2,12 +2,21 @@
 	import { TIMING_DURATION } from '$lib/data/constants'
 	import { onMount } from 'svelte'
 
-	export let color: string = 'transparent'
-	export let out: boolean = false
-	export let gridWidth: number = 0
-	export let base: number
+	interface Props {
+		color?: string;
+		out?: boolean;
+		gridWidth?: number;
+		base: number;
+	}
 
-	let size = base / 2
+	let {
+		color = 'transparent',
+		out = false,
+		gridWidth = 0,
+		base
+	}: Props = $props();
+
+	let size = $state(base / 2)
 
 	onMount(() => {
 		const cellSize = Math.random()
@@ -60,7 +69,7 @@
 				top: {randomDrop()};
 				left: {randomX()};
 			"
-		/>
+		></div>
 	{/key}
 </template>
 

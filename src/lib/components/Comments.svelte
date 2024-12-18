@@ -32,4 +32,4 @@
 </script>
 
 <noscript>JavaScript must be enabled to leave comments.</noscript>
-<div id="utterances-comments" />
+<div id="utterances-comments"></div>

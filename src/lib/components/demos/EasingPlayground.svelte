@@ -1,27 +1,34 @@
 <script>
+	import { run, createBubbler, preventDefault } from 'svelte/legacy'
+
+	const bubble = createBubbler()
 	import throttle from 'just-throttle'
 	import { clamp, formatDecimal } from '$lib/assets/js/utils'
 	import { onMount } from 'svelte'
 
 	// The SVG exists from 0 to 140 on the X axis, and 0 to 300 on the Y axis. The inner square is from 20/100 to 120/200.
-	let startHandleX = 30
-	let startHandleY = 140
-	let endHandleX = 90
-	let endHandleY = 100
-	let dragging = null
-	let currentEasingType = null
-	let copyButtonIcon = `📋`
+	let startHandleX = $state(30)
+	let startHandleY = $state(140)
+	let endHandleX = $state(90)
+	let endHandleY = $state(100)
+	let dragging = $state(null)
+	let currentEasingType = $state(null)
+	let copyButtonIcon = $state(`📋`)
 
-	let startHandle
-	let endHandle
-	let outerFrame
+	let startHandle = $state()
+	let endHandle = $state()
+	let outerFrame = $state()
 
-	$: startHandleXToBinary = formatDecimal((startHandleX - 20) / 100)
-	$: startHandleYToBinary = formatDecimal((300 - startHandleY) / 100 - 1)
-	$: endHandleXToBinary = formatDecimal((endHandleX - 20) / 100)
-	$: endHandleYToBinary = formatDecimal((300 - endHandleY) / 100 - 1)
-	$: bezierCoordinates = `${startHandleXToBinary}, ${startHandleYToBinary}, ${endHandleXToBinary}, ${endHandleYToBinary}`
-	$: curveCSS = `cubic-bezier(${bezierCoordinates})`
+	let startHandleXToBinary = $derived(formatDecimal((startHandleX - 20) / 100))
+	let startHandleYToBinary = $derived(
+		formatDecimal((300 - startHandleY) / 100 - 1)
+	)
+	let endHandleXToBinary = $derived(formatDecimal((endHandleX - 20) / 100))
+	let endHandleYToBinary = $derived(formatDecimal((300 - endHandleY) / 100 - 1))
+	let bezierCoordinates = $derived(
+		`${startHandleXToBinary}, ${startHandleYToBinary}, ${endHandleXToBinary}, ${endHandleYToBinary}`
+	)
+	let curveCSS = $derived(`cubic-bezier(${bezierCoordinates})`)
 
 	const trackMovement = (e) => {
 		if (!dragging) return
@@ -106,23 +113,29 @@
 		}
 	}
 
-	$: if (currentEasingType) {
-		const thisEasing =
-			premadeEasings[currentEasingType.group][currentEasingType.title]
-		startHandleX = thisEasing[0] * 100 + 20
-		startHandleY = 300 - (thisEasing[1] * 100 + 100)
-		endHandleX = thisEasing[2] * 100 + 20
-		endHandleY = 300 - (thisEasing[3] * 100 + 100)
-	}
+	run(() => {
+		if (currentEasingType) {
+			const thisEasing =
+				premadeEasings[currentEasingType.group][currentEasingType.title]
+			startHandleX = thisEasing[0] * 100 + 20
+			startHandleY = 300 - (thisEasing[1] * 100 + 100)
+			endHandleX = thisEasing[2] * 100 + 20
+			endHandleY = 300 - (thisEasing[3] * 100 + 100)
+		}
+	})
 
-	let isFrame = false
+	let isFrame = $state(false)
 
 	onMount(() => {
 		if (window.self !== window.top) isFrame = true
 	})
 </script>
 
-<form class="easing-demo" class:is-frame={isFrame} on:submit|preventDefault>
+<form
+	class="easing-demo"
+	class:is-frame={isFrame}
+	onsubmit={preventDefault(bubble('submit'))}
+>
 	<div class="intro intro-mobile">
 		<h2>CSS easing playground</h2>
 		<p>
@@ -134,14 +147,14 @@
 	<div
 		class="current-curve"
 		id="demo-curve"
-		on:mousemove={throttle((e) => trackMovement(e), 10, { leading: true })}
-		on:mousedown={handleDragStart}
-		on:mouseup={handleDragEnd}
-		on:mouseleave={handleDragEnd}
-		on:touchstart={handleDragStart}
-		on:touchend={handleDragEnd}
-		on:touchmove={throttle((e) => trackMovement(e), 10, { leading: true })}
-		on:touchcancel={handleDragEnd}
+		onmousemove={throttle((e) => trackMovement(e), 10, { leading: true })}
+		onmousedown={handleDragStart}
+		onmouseup={handleDragEnd}
+		onmouseleave={handleDragEnd}
+		ontouchstart={handleDragStart}
+		ontouchend={handleDragEnd}
+		ontouchmove={throttle((e) => trackMovement(e), 10, { leading: true })}
+		ontouchcancel={handleDragEnd}
 	>
 		<svg
 			bind:this={outerFrame}
@@ -219,7 +232,7 @@
 
 		<button
 			class="current-curve__copy-btn"
-			on:click={copyToClipboard}
+			onclick={copyToClipboard}
 			type="button"
 		>
 			<div class="sr">Copy CSS to clipboard</div>

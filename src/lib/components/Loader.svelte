@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let loading: boolean
+	interface Props {
+		loading: boolean;
+	}
+
+	let { loading }: Props = $props();
 </script>
 
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import type { LayoutData } from './$types'
 	// import '$lib/assets/scss/global.scss'
 
@@ -14,18 +16,25 @@
 	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation'
 	import { dev } from '$app/environment'
 
-	export let data: LayoutData
+	interface Props {
+		data: LayoutData;
+		children?: import('svelte').Snippet;
+	}
 
-	let path: string
-	$: ({ path } = data)
+	let { data, children }: Props = $props();
+
+	let path: string = $state()
+	run(() => {
+		({ path } = data)
+	});
 
 	let root: HTMLElement
 
 	let lastScrollPosition: number = 0
 	const isSinglePostCheck: RegExp = new RegExp(/\/blog\/[A-z0-9\-_]+\/?$/)
 
-	let isSinglePost: boolean
-	$: isSinglePost = isSinglePostCheck.test(path)
+	let isSinglePost: boolean = $derived(isSinglePostCheck.test(path))
+	
 
 	const handleScroll = throttle(() => {
 		// Early return if we're above mobile width
@@ -70,7 +79,7 @@
 	})
 </script>
 
-<svelte:window on:scroll={handleScroll} />
+<svelte:window onscroll={handleScroll} />
 
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
@@ -94,7 +103,7 @@
 		<PageHeading title={path} {isSinglePost} />
 
 		<PageTransition refresh={path}>
-			<slot />
+			{@render children?.()}
 		</PageTransition>
 	</div>
 

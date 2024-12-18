@@ -2,7 +2,11 @@
 	import NavLink from './NavLink.svelte'
 	import { isMenuOpen } from '$lib/data/store'
 
-	export let path: string
+	interface Props {
+		path: string;
+	}
+
+	let { path }: Props = $props();
 </script>
 
 <ul class:open={$isMenuOpen}>

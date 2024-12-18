@@ -6,7 +6,11 @@
 	import Pagination from '$lib/components/Pagination.svelte';
 	import PostList from '$lib/components/posts/PostList.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	let posts: Post[] = data.posts || [];
 	let totalPosts: number = data.totalPosts.total;

@@ -159,7 +159,7 @@
 						title="Live demo of the starter, from sveltekit-static-starter.netlify.app"
 						width="100%"
 						height="800"
-					/>
+					></iframe>
 					<figcaption>
 						<a href="https://sveltekit-static-starter.netlify.app"
 							>sveltekit-static-starter.netlify.app</a
@@ -200,7 +200,7 @@
 						title="Live demo of the starter, from sveltekit-static-starter.netlify.app"
 						width="100%"
 						height="800"
-					/>
+					></iframe>
 					<figcaption>
 						<a href="/demos/easing">joshcollinsworth.com/demos/easing</a>
 					</figcaption>

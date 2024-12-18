@@ -18,7 +18,7 @@
 				<div
 					class="swatch {color}"
 					style="background-color: {color}; outline: 1px solid {getOutlineColor(color)}"
-				/>
+				></div>
 				<span>{color}</span>
 			</li>
 		{/each}
@@ -29,7 +29,7 @@
 				<div
 					class="swatch {color}"
 					style="background-color: {color}; outline: 1px solid {getOutlineColor(color)}"
-				/>
+				></div>
 				<div>{color}</div>
 			</li>
 		{/each}

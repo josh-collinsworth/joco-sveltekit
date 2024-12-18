@@ -5,14 +5,18 @@
 	import ExternalLink from '../icons/ExternalLink.svelte'
 	import { readableDate } from '$lib/assets/js/utils'
 
-	export let external: boolean = false
-	export let post: Post
+	interface Props {
+		external?: boolean;
+		post: Post;
+	}
 
-	let slugPath: string
-	$: slugPath = external ? '' : '/blog/'
+	let { external = false, post }: Props = $props();
 
-	let computedURL: string
-	$: computedURL = slugPath + post.slug
+	let slugPath: string = $derived(external ? '' : '/blog/')
+	
+
+	let computedURL: string = $derived(slugPath + post.slug)
+	
 </script>
 
 <li>

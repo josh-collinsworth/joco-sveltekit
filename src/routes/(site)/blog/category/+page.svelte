@@ -3,7 +3,11 @@
 	import type category from '$lib/types/category'
 	import Main from '$lib/components/Main.svelte'
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	let uniqueCategories: category[] = data.uniqueCategories
 </script>

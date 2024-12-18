@@ -1,5 +1,10 @@
-<script>
-	let isSpoiled = false
+<script lang="ts">
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+	let isSpoiled = $state(false)
 
 	const toggleIsSpoiled = () => {
 		isSpoiled = !isSpoiled
@@ -10,12 +15,12 @@
 <div class="spoiler">
 	<div class="spoiler__controls">
 		⚠️ SPOILER ALERT
-		<button on:click={toggleIsSpoiled} aria-pressed={isSpoiled}>
+		<button onclick={toggleIsSpoiled} aria-pressed={isSpoiled}>
 			{isSpoiled ? 'Hide' : 'Reveal'}
 		</button>
 	</div>
 	{#if isSpoiled}
-		<slot />
+		{@render children?.()}
 	{/if}
 </div>
 

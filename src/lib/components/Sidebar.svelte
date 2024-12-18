@@ -5,8 +5,12 @@
 	import Tag from './tags/Tag.svelte'
 	import PostSearch from './PostSearch.svelte'
 
-	export let popularPosts: Post[]
-	export let allCategories: string[]
+	interface Props {
+		popularPosts: Post[]
+		allCategories: string[]
+	}
+
+	let { popularPosts, allCategories }: Props = $props()
 </script>
 
 <aside class="sidebar">
@@ -90,11 +94,6 @@
 			list-style-type: none;
 			padding: 0;
 			line-height: 1.2;
-
-			&.tag-list li {
-				margin: 0;
-				font-size: inherit;
-			}
 
 			&.sidebar__posts-list li {
 				font-size: inherit;

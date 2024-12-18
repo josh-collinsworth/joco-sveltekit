@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
 
-	export let data
+	let { data } = $props()
 </script>
 
 <svelte:head>
@@ -139,14 +139,14 @@
 			font-weight: normal;
 			text-wrap: balance;
 
-			strong {
-				background: var(--yellow);
-				color: var(--darkerGray);
-			}
-
 			&::before {
 				display: none;
 			}
+		}
+
+		h2 strong {
+			background: var(--yellow);
+			color: var(--darkerGray);
 		}
 
 		.subhead {
@@ -155,10 +155,6 @@
 			margin-bottom: var(--halfNote);
 			color: var(--darkGray);
 			line-height: 1.4;
-
-			.dark & {
-				color: var(--ink);
-			}
 
 			a {
 				text-decoration: underline;
@@ -230,6 +226,10 @@
 		@media (prefers-color-scheme: dark) {
 			color: var(--ink) !important;
 		}
+	}
+
+	:global(.dark .intro .subhead) {
+		color: var(--ink);
 	}
 
 	@keyframes fade_in_intro {

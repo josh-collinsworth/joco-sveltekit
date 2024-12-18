@@ -1,11 +1,16 @@
 <script lang="ts">
-	export let to: string
+	interface Props {
+		to: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { to, children }: Props = $props();
 </script>
 
 <template>
 	<li class="tag">
 		<a href={to} class="tag__link">
-			<slot />
+			{@render children?.()}
 		</a>
 	</li>
 </template>

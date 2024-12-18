@@ -5,7 +5,11 @@
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import { isMenuOpen, isScrollingDown } from '$lib/data/store'
 
-	export let path: string
+	interface Props {
+		path: string;
+	}
+
+	let { path }: Props = $props();
 
 	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
 	const focusMain = (e: Event): void => {
@@ -17,7 +21,7 @@
 
 <div>
 	<header class="header">
-		<a on:click={focusMain} class="skip-to-content-link" href="#main">
+		<a onclick={focusMain} class="skip-to-content-link" href="#main">
 			Skip to main content
 		</a>
 

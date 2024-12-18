@@ -5,7 +5,11 @@
 	import Main from '$lib/components/Main.svelte';
 	import PostList from '$lib/components/posts/PostList.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	let posts: Post[] = data.posts;
 	let category: string = data.category;

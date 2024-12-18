@@ -2,8 +2,12 @@
 	import type Post from '$lib/types/post'
 	import PostPreview from './PostPreview.svelte'
 	
-	export let posts: Post[]
-	export let external: boolean = false
+	interface Props {
+		posts: Post[];
+		external?: boolean;
+	}
+
+	let { posts, external = false }: Props = $props();
 </script>
 
 

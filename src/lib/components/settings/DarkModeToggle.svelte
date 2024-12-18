@@ -5,11 +5,11 @@
 	import { theme } from '$lib/data/store'
 	import { onMount, tick } from 'svelte'
 
-	let isDarkMode: boolean
-	$: isDarkMode = $theme === Themes.Dark
+	let isDarkMode: boolean = $derived($theme === Themes.Dark)
+	
 
-	let enableOrDisable: string
-	$: enableOrDisable = isDarkMode ? 'Disable' : 'Enable'
+	let enableOrDisable: string = $derived(isDarkMode ? 'Disable' : 'Enable')
+	
 
 	// There's also some code in app.html to help avoid unwanted flashes of dark/light
 	const toggleDarkMode = async (): Promise<void> => {
@@ -46,7 +46,7 @@
 
 <button
 	id="dark-mode-toggle"
-	on:click={toggleDarkMode}
+	onclick={toggleDarkMode}
 	class:dark={isDarkMode}
 	class="settings-toggle"
 	title="{enableOrDisable} dark mode"

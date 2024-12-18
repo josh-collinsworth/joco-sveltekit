@@ -1,13 +1,22 @@
 <script lang="ts">
 	import { isMenuOpen } from '$lib/data/store'
 
-	export let text: string
-	export let to: string
-	export let path: string
-	export let mobileOnly: string | boolean = false
+	interface Props {
+		text: string;
+		to: string;
+		path: string;
+		mobileOnly?: string | boolean;
+	}
 
-	let isCurrentPage: boolean
-	$: isCurrentPage = path === to
+	let {
+		text,
+		to,
+		path,
+		mobileOnly = false
+	}: Props = $props();
+
+	let isCurrentPage: boolean = $derived(path === to)
+	
 </script>
 
 <li class="nav__item" class:open={$isMenuOpen} class:mobile-only={mobileOnly}>

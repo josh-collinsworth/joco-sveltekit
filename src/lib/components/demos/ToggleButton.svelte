@@ -1,11 +1,11 @@
 <script>
-	let isTextShown = false
+	let isTextShown = $state(false)
 	
 	const toggleIsTextShown = () => {
 		isTextShown = !isTextShown
 	}
 
-	$: buttonText = isTextShown ? 'Show less' : 'Show more'
+	let buttonText = $derived(isTextShown ? 'Show less' : 'Show more')
 </script>
 
 <div class="example-component-wrapper">
@@ -17,7 +17,7 @@
 		{/if}
 	</p>
 
-	<button on:click={toggleIsTextShown}>
+	<button onclick={toggleIsTextShown}>
 		{buttonText}
 	</button>
 </div>

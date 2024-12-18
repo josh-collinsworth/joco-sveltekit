@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { preventDefault } from 'svelte/legacy'
+
 	/**
 	 * This whole approach is kind of a hack, but it's one that works better than any other
 	 * approach I could find. I even used the remark/rehype plugins, but they caused a reload
@@ -10,16 +12,16 @@
 
 	import { onMount } from 'svelte'
 
-	const scrollToHeading = (e: Event) => {
-		const anchor = e.target as HTMLAnchorElement
-		if (anchor.href) {
-			const target = anchor.href.split('#').pop()
-			document.getElementById(target).scrollIntoView({ behavior: 'smooth' })
-		}
-	}
+	// const scrollToHeading = (e: Event) => {
+	// 	const anchor = e.target as HTMLAnchorElement
+	// 	if (anchor.href) {
+	// 		const target = anchor.href.split('#').pop()
+	// 		document.getElementById(target).scrollIntoView({ behavior: 'smooth' })
+	// 	}
+	// }
 
-	let showTableOfContents: boolean = false
-	let output: string = ``
+	let showTableOfContents: boolean = $state(false)
+	let output: string = $state(``)
 
 	/**
 	 * This whole approach feels hacky, but I tried several others and kept running into walls
@@ -76,7 +78,7 @@
 				<span class="closing-bracket" aria-hidden="true">]</span>
 			</h2>
 
-			<ul class="toc-list" on:click|preventDefault={scrollToHeading}>
+			<ul class="toc-list">
 				{@html output}
 			</ul>
 		</aside>

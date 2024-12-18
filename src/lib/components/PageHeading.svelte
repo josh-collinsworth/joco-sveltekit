@@ -1,28 +1,36 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 
-	export let title: string
-	export let isSinglePost: boolean = false
-
-	let computedTitle: string = ''
-	let isWorking: boolean = false
-
-	$: if (title) {
-		if (title === '/') {
-			title = `welcome`
-		} else if (title[0] === '/') {
-			title = title.slice(1)
-		}
-
-		title = title.split('/').join(' / ').replace(/-/g, ' ')
-
-		isWorking = false
-
-		setTimeout(() => {
-			isWorking = true
-			computedTitle = title
-		}, 420)
+	interface Props {
+		title: string;
+		isSinglePost?: boolean;
 	}
+
+	let { title = $bindable(), isSinglePost = false }: Props = $props();
+
+	let computedTitle: string = $state('')
+	let isWorking: boolean = $state(false)
+
+	run(() => {
+		if (title) {
+			if (title === '/') {
+				title = `welcome`
+			} else if (title[0] === '/') {
+				title = title.slice(1)
+			}
+
+			title = title.split('/').join(' / ').replace(/-/g, ' ')
+
+			isWorking = false
+
+			setTimeout(() => {
+				isWorking = true
+				computedTitle = title
+			}, 420)
+		}
+	});
 </script>
 
 <PageTransition refresh={isSinglePost} span={true}>

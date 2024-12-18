@@ -14,7 +14,7 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 ---
 
 <script>
-	import Note from '$lib/components/Note.svelte'
+  import Note from '$lib/components/Note.svelte'
   import Callout from '$lib/components/Callout.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import PullQuote from '$lib/components/PullQuote.svelte'
@@ -22,7 +22,9 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 </script>
 
 <Note>
+
 I've done my best to keep this post up-to-date through all of SvelteKit's breaking changes. It should be fully updated for SvelteKit 1.0, but if you spot any issues, please let me know in the comments or send me a message. Thanks for reading!
+
 </Note>
 
 If you've ever recommended a favorite book, movie, or TV show to a friend who didn't enjoy it at all, you know exactly how I felt when I saw this message from a colleague:
@@ -34,7 +36,9 @@ I love [Svelte](https://svelte.dev), and I've talked plenty about how much I've 
 But as I considered their reaction, I realized: it was valid.
 
 <CalloutPlusQuote>
+
 Amazing though it is, SvelteKit isn't the simplest thing you could use as a static site&nbsp;generator.
+
 </CalloutPlusQuote>
 
 Other tools like [Astro](https://astro.build/), [Eleventy](https://www.11ty.dev/), or [Gatsby](https://www.gatsbyjs.com/) will likely get you up and running faster, since that's their sole focus. (_At one point, at least, even the SvelteKit docs admitted its focus was not making the fastest static site generator._)

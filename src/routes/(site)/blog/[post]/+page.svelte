@@ -1,14 +1,14 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import type { PageData } from './$types'
 	import type Post from '$lib/types/post'
 	import type { SvelteComponent } from 'svelte'
 
-	export let data: PageData
-	let PostContent: SvelteComponent
-	let meta: Post
+	let PostContent: SvelteComponent = $state()
+	let meta: Post = $state()
 
-	let hasScrolled = false
-	$: ({ PostContent, meta } = data)
+	let hasScrolled = $state(false)
 
 	const handleScroll = throttle(() => {
 		hasScrolled = window.scrollY > 1200
@@ -16,14 +16,22 @@
 
 	import RenderedPost from '$lib/components/RenderedPost.svelte'
 	import throttle from 'just-throttle'
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
+	run(() => {
+		({ PostContent, meta } = data)
+	});
 </script>
 
 <RenderedPost {PostContent} {meta} />
 
-<svelte:window on:scroll={handleScroll} />
+<svelte:window onscroll={handleScroll} />
 
 <a href="#app" class:show={hasScrolled}>
-	<div class="arrow" />
+	<div class="arrow"></div>
 	<div>Top</div>
 </a>
 

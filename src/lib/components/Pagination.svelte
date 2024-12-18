@@ -1,9 +1,13 @@
 <script lang="ts">
-	export let currentPage: number
-	export let totalPosts: number
+	interface Props {
+		currentPage: number;
+		totalPosts: number;
+	}
 
-	let pagesAvailable: number
-	$: pagesAvailable = Math.ceil(totalPosts / 10)
+	let { currentPage, totalPosts }: Props = $props();
+
+	let pagesAvailable: number = $derived(Math.ceil(totalPosts / 10))
+	
 
 	const isCurrentPage = (page: number): boolean => page == currentPage
 </script>

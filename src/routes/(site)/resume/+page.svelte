@@ -1,9 +1,13 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	export let data: PageData
-	$: ({ Resume } = data)
 
 	import Main from '$lib/components/Main.svelte'
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
+	let { Resume } = $derived(data)
 </script>
 
 
@@ -18,7 +22,7 @@
 
 <Main>
 	<div class="resume compressed-content">
-		<svelte:component this={Resume} />
+		<Resume />
 	</div>
 </Main>
 

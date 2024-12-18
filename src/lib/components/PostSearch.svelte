@@ -2,9 +2,9 @@
 	import type Post from '$lib/types/post'
 	import debounce from 'just-debounce'
 
-	let searchString: string = ''
-	let results: Post[] = []
-	let isWorking: boolean = false
+	let searchString: string = $state('')
+	let results: Post[] = $state([])
+	let isWorking: boolean = $state(false)
 
 	const handleSearchInput = () => {
 		isWorking = true
@@ -35,7 +35,7 @@
 	<label for="post-search" class="sr">Search post titles</label>
 	<input
 		bind:value={searchString}
-		on:input={handleSearchInput}
+		oninput={handleSearchInput}
 		id="post-search"
 		class="search"
 		type="search"

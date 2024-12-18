@@ -4,13 +4,24 @@
 	import { cubicIn, cubicOut } from 'svelte/easing'
 	import { fly } from 'svelte/transition'
 
-	let yIn = 12
-	let yOut = -12
+	let yIn = $state(12)
+	let yOut = $state(-12)
 
-	export let refresh: string | boolean = ''
-	export let span: boolean = false
-	export let transitionIn: boolean = true
-	export let transitionOut: boolean = true
+	interface Props {
+		refresh?: string | boolean;
+		span?: boolean;
+		transitionIn?: boolean;
+		transitionOut?: boolean;
+		children?: import('svelte').Snippet;
+	}
+
+	let {
+		refresh = '',
+		span = false,
+		transitionIn = true,
+		transitionOut = true,
+		children
+	}: Props = $props();
 
 	onMount(() => {
 		const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`)
@@ -39,7 +50,7 @@
 			easing: cubicIn
 		}}
 	>
-		<slot />
+		{@render children?.()}
 	</div>
 {/key}
 

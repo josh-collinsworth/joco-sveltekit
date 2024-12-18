@@ -1,14 +1,17 @@
 <script>
+	import { createBubbler, preventDefault } from 'svelte/legacy';
+
+	const bubble = createBubbler();
 	// TODO: TypeScript
 	import * as svelteEasings from 'svelte/easing'
 	import { fly } from 'svelte/transition'
 
 	
-	let currentEasingIn = 'linear'
-	let currentEasingOut = 'linear'
-	let rando = Date.now()
-	let bindEasings = true
-	let transitionDuration = 500
+	let currentEasingIn = $state('linear')
+	let currentEasingOut = $state('linear')
+	let rando = $state(Date.now())
+	let bindEasings = $state(true)
+	let transitionDuration = $state(500)
 	const allEasings = { 'none': () => {}, ...svelteEasings }
 
 	const updateRando = () => {
@@ -29,14 +32,14 @@
 		}
 	}
 	
-	$: iterableEasings = Object.entries(allEasings)
-	$: renderProps = currentEasingIn + currentEasingOut + rando
-	$: inDuration = currentEasingIn === "none" ? 0 : transitionDuration
-	$: outDuration = currentEasingOut === "none" ? 0 : transitionDuration
+	let iterableEasings = $derived(Object.entries(allEasings))
+	let renderProps = $derived(currentEasingIn + currentEasingOut + rando)
+	let inDuration = $derived(currentEasingIn === "none" ? 0 : transitionDuration)
+	let outDuration = $derived(currentEasingOut === "none" ? 0 : transitionDuration)
 </script>
 
 <div class="demo">
-	<div class="demo__wrapper" on:click={updateRando} on:keyup={updateRando}>
+	<div class="demo__wrapper" onclick={updateRando} onkeyup={updateRando}>
 		{#key renderProps}
 			<div
 				class="box"
@@ -58,22 +61,22 @@
 			</div>
 		{/key}
 	</div>
-	<form on:submit|preventDefault>
+	<form onsubmit={preventDefault(bubble('submit'))}>
 		<div class="select-wrap">
 			<label for="easing-in">Ease in:</label>
-			<select bind:value={currentEasingIn} id="easing-in" on:change={handleSync}>
+			<select bind:value={currentEasingIn} id="easing-in" onchange={handleSync}>
 				{#each iterableEasings as [title, _]}
 				<option value={title}>{title}</option>
 				{/each}
 			</select>
 			<div class="bind-wrap">
-				<button aria-pressed={bindEasings} on:click={handleBind} class="bind-btn">
+				<button aria-pressed={bindEasings} onclick={handleBind} class="bind-btn">
 					<span class="sr">Keep both types in sync</span>
 					{bindEasings ? '🔒' : '🔓'}
 				</button>
 			</div>
 			<label for="easing-out">Ease out:</label>
-			<select bind:value={currentEasingOut} id="easing-out" on:change={handleSync}>
+			<select bind:value={currentEasingOut} id="easing-out" onchange={handleSync}>
 				{#each iterableEasings as [title, _]}
 				<option value={title}>{title}</option>
 				{/each}
