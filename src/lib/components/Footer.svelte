@@ -144,6 +144,10 @@
 				margin: var(--quarterNote) 0;
 				max-width: 30em;
 			}
+
+			img {
+				width: auto;
+			}
 		}
 	}
 </style>
