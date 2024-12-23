@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { isMenuOpen } from '$lib/data/store'
 
-	let readableMenuStateOpposite: string = $derived($isMenuOpen ? 'Close' : 'Open')
-	
+	let readableMenuStateOpposite: string = $derived(
+		$isMenuOpen ? 'Close' : 'Open'
+	)
 </script>
 
 <button
@@ -76,7 +77,9 @@
 			width: 100%;
 			height: 2px;
 			background: var(--ink);
-			transition: background 0.2s, transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+			transition:
+				background 0.2s,
+				transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 			transform-origin: right;
 
 			&-middle {
