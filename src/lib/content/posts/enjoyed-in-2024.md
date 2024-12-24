@@ -402,7 +402,7 @@ Florent Gorges' unofficial series has some awkward translations, but they're a f
 
 ### Mr. Penumbra's 24-Hour Bookstore
 
-Robin Sloane's intro novel is a fun, casual read that takes a number of unexpected turns. The stakes are never particularly high, and if I'm being honest, I found myself skimming towards the end (the lengthy epilogue begins around 80% through), but although I didn't find it particularly deep or thrilling, I did enjoy the style.
+Robin Sloane's intro novel is a fun, casual read that takes a number of unexpected turns. The stakes are never particularly high, and if I'm being honest, I found myself skimming towards the end (the lengthy epilogue begins around 80% through), but although I didn't find it particularly deep or thrilling (and although its moments of Bay-area techno-optimism haven't necessarily aged well), I did enjoy the style.
 
 ### An I.V.F. Mix-Up, a Shocking Discovery and an Unbearable Choice
 
