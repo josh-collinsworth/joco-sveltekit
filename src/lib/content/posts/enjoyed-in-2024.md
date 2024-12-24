@@ -296,7 +296,7 @@ It starts slow, but trust me: the slow burn pays off. This is a journey well wor
 
 _Shrinking_ was easily my favorite show of 2023, and the second season keeps everything I loved about it moving forward (so far, at least; I haven't finished it as of publish time). Jason Segel serves as the series' de facto star, playing a therapist who's helping his patients deal with their trauma in unconventional ways, as he learns to deal with his own along the way. But _Shrinking_ is really more of an uplifting ensemble comedy than anything—albeit one that isn't afraid to examine its characters' pain, and mortality.
 
-The cast is comparatively large in the second season, thanks to some new additions, but every actor is at the top of their game. Dramedies can sometimes swing too far one way or the other, and end up either being too silly to take seriously, or too serious to laugh at, but this crew—and the writing behind them—are far too good to let that happen. Immensely enjoyable and perfectly human, shows rarely pull off the balancing act this perfectly.
+The cast is comparatively large in the second season, thanks to some new additions, but every actor is at the top of their game. Dramedies can sometimes swing too far one way or the other, and end up either being too silly to take seriously, or too serious to laugh at, but this crew—and the writing behind them—are far too good to let that happen. Immensely enjoyable and deeply human, shows rarely pull off the balancing act this perfectly.
 
 <img src="/images/post_images/2024/wwdits.webp" alt="" width="3000" height="1500" loading="lazy" />
 
