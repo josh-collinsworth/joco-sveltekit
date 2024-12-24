@@ -1,15 +1,13 @@
 ---
 title: 'Things I enjoyed in 2024'
-date: '2024-12-30'
-updated: '2024-12-30'
+date: '2024-12-24'
+updated: '2024-12-24'
 categories:
   - 'personal'
 coverImage: '2024/2024.webp'
 coverWidth: 16
 coverHeight: 9
 excerpt: Things I watched, read, played, got into, enjoyed, or did and would do again, in 2024.
-draft: true
-published: false
 ---
 
 <script>
@@ -84,13 +82,13 @@ Things I played and loved this year in the world of video games include the foll
 
 ### Balatro
 
-[Balatro](https://www.playbalatro.com/) has, at this point, become my most-played game ever. I put in over 300 hours of Balatro this year. While most of that time was on Switch, I also played on Steam and mobile (where it's actually surprisingly good, i.e., dangerously addictive).
+[Balatro](https://www.playbalatro.com/) has, at this point, become my most-played game ever. I put in over 300 hours of Balatro this year. While most of that time was on Switch, I also played on Steam and mobile (where it's actually surprisingly good, i.e., dangerously distracting).
 
-Balatro (latin for "jester," and nobody else knows how to pronounce it either, so just pick a way) is an unbelievably fun roguelike deckbuilder. But in case those words don't mean anything to you: Balatro could accurately be described as poker solitaire.
+Balatro (latin for "jester," and no, nobody else knows how to pronounce it either, so just pick a way) is an unbelievably fun roguelike deckbuilder. But in case those words don't mean anything to you: Balatro could accurately be described as poker solitaire.
 
-That is: you play with a standard four-suit, 52-card deck, and use limited discards to assemble poker hands, in order to score ever-increasing amounts of points. (The more difficult the hand is to make, the more points it's worth, naturally—e.g., four of a kind is worth far more than two pair.) The game is nothing like poker aside from the hands, however; there's no betting or bluffing, and you're only playing against yourself, really, to score the required number of points per round. Like I said: almost a kind of solitaire.
+That is: you play with a standard four-suit, 52-card deck, and use limited discards and redraws to assemble poker hands, in order to score ever-increasing amounts of points. The more difficult the hand is to make, the more points it's worth, naturally (e.g., four of a kind is worth far more than a pair). The game is nothing like poker aside from the hands, however; there's no betting or bluffing, and you're only playing against yourself, really, to score the required number of points per round. Like I said: almost a kind of solitaire.
 
-The fun comes in with the jokers: each of the game's 150 joker cards act as a permanent power-up that adds a twist to the game's rules. Some impact cards of certain suit(s); some give bonuses for certain hands or play styles; some have wild, game-breaking effects, like multiplying your score, growing more powerful over time, or altering your deck. You can generally have five active jokers at a time, which makes this a game about assembling the perfect combo and watching it go off like a satisfying Rube Goldberg machine. There are lots of other ways to alter the rules and the deck, too, so you're constantly making interesting, strategic decisions in this game.
+The fun comes in with the jokers: each of the game's 150 joker cards act as a permanent power-up that adds a twist to the game's rules. Some impact cards of certain suit(s); some give bonuses for certain hands or play styles (and possibly penalties for others); some have wild, game-breaking effects, like multiplying your score, growing more powerful over time, or altering your deck. You can generally have five active jokers at a time, which makes this a game about assembling the perfect combo and watching it go off like a satisfying Rube Goldberg machine. There are lots of other ways to alter the rules and the deck, too, so you're constantly making interesting, strategic decisions in this game.
 
 You "win" at a certain point, but if you like, you can keep going just to see how far the point-scoring machine you've assembled can go. Either way, eventually you'll hit a number that's too big to reach, and you'll start the whole thing all over again—possibly unlocking some new jokers for next time.
 
@@ -110,7 +108,7 @@ That's _Animal Well_ at first glance, and you could finish that first round of i
 
 The genius of _Animal Well_, however, lies in what happens _after_ you finish the game: you're dropped right back into it. And this is where I made my mistake.
 
-Like its obvious inspirations, Fez, and Tunic, you can complete the main goal without ever discovering everything the world has to offer. _Animal Well_'s map is full of easily missed riddles and surprises, and there's a whole _second_ goal of the game after you beat the game's so-called final boss the first time. Follow far enough down the rabbit hole (that is: collect all 64 of the eggs cleverly hidden throughout the map), by unraveling many of the game's harder puzzles, and you'll eventually reach the "true" ending. (And if that's not enough for you, there are even deeper and more deviously cryptic puzzles quietly waiting, but most players probably won't be compelled to go quite that [Pepe Silvia](https://knowyourmeme.com/memes/pepe-silvia).)
+As in its obvious inspirations _Fez_ and _Tunic_, you can complete the main goal in _Animal Well_ without ever discovering everything the world has to offer. The map is full of easily missed riddles and surprises, and there's a whole _second_ goal of the game after you beat the game's so-called final boss the first time. Follow far enough down the rabbit hole (that is: collect all 64 of the eggs cleverly hidden throughout the map), by unraveling many of the game's harder puzzles, and you'll eventually reach the "true" ending. (And if that's not enough for you, there are even deeper and more deviously cryptic puzzles quietly waiting, but most players probably won't be compelled to go quite that [Pepe Silvia](https://knowyourmeme.com/memes/pepe-silvia).)
 
 It's got some rough edges here and there, and it might not be for everyone. But if you're at all a fan of games that which drop you into a world full of clues to puzzle over and assemble yourself—_what does this item do? Why is that animal moving like that? Am I supposed to know what this inscription on the wall is for?_—you owe it to yourself to try uncovering Animal Well's secrets.
 
@@ -120,7 +118,7 @@ It's got some rough edges here and there, and it might not be for everyone. But 
 
 [_Neva_](https://neva.game) is a bit like if Studio Ghibli made an interactive silent film about a girl and her pet.
 
-The story is beautifully told without any words at all: you play as Alba, a young woman who rescues an orphaned, dog-like magical creature named Neva. The story follows the pair as they survive and travel together through _Neva_'s strikingly gorgeous world. The narrative unfolds in four discrete chapters, one for each season of their first year together.
+The story is beautifully told without any words at all: you play as Alba, a young woman who rescues an orphaned, dog-like magical creature named Neva. The story follows the pair as they survive and travel together through _Neva_'s strikingly gorgeous world, which is under siege by a mysterious dark energy that took Neva's mother. The narrative unfolds in four discrete chapters, one for each season of their first year together.
 
 As the seasons change, Neva also changes. As Neva grows, so do her abilities, often in completely unexpected ways. The pair's relationship—and how they tackle the challenges in front of them—continuously evolves as the game progresses, and you can't help but feel for both of them as you guide their journey.
 
@@ -136,7 +134,7 @@ As I posted on Bluesky the moment I finished the game: if you are in possession 
 
 [_Chants of Sennaar_](https://www.focus-entmt.com/en/games/chants-of-sennaar) is more of a pure puzzle game than _Animal Well_, and probably more accessible as well. Its riddles are more straightforward, and most of the game's challenge is mental. In fact, it's pretty close to being a point-and-click, or a _Myst_-like.
 
-In _Chants_, you navigate a massive Babel-like tower/city, where all the inhabitants speak in inscrutable runes. Your job, with the help of a trusty notebook, is to decipher what each rune means, so you can understand the lexical rules of the language, and in turn, the people and signs of the level, in order to progress.
+In _Chants_, you navigate a massive Babel-like tower/city, where all the inhabitants speak in inscrutable runes. Your job, with the help of a trusty notebook, is to decipher what each rune means, so you can understand the lexical rules of the language, and in turn, the people and signs of the level, in order to solve puzzles and progress.
 
 There are five levels in the tower, each with its own unique class of inhabitants who have their own language. Each language has its own runes and syntax. So once you've gotten one floor's language figured out, you start another, slightly more complex language, until eventually you reach the top of the tower. It might sound academic, but it's engaging and highly rewarding to put together the clues of each language, and have that "ah-ha!" moment of finally understanding what that thing you've been staring at actually means.
 
@@ -202,7 +200,7 @@ The game's difficulty is a bit on the low side, and a lot of the game's sequence
 
 _Cocoon_ takes place in 3D, for one thing, taking a top-down perspective across a series of surreal alien worlds.
 
-But the twist at the heart of _Cocoon_ is: all of the worlds you'll explore are contained in small marble-like spheres. You jump into each sphere to "warp" into the world and do things there, and then jump back out to the outer hub world. You can carry spheres around to do things like unlock doors and solve puzzles, and that's where things get interesting; each sphere also grants you a different ability while you're carrying it around, so it's a clever and challenging juggling act figuring out which sphere you need and how to get it there (and an interesting mechanic, literally carrying part of the world map around with you).
+But the twist at the heart of _Cocoon_ is: all of the worlds you'll explore are contained in small marble-like spheres. You jump into each sphere to "warp" into the world and do things there, and then jump back out to the outer hub world. You can carry spheres around to do things like unlock doors and solve puzzles, and that's where things get interesting; each sphere also grants you a different ability while you're carrying it around, so it's a clever and challenging juggling act figuring out which sphere you need and how to get it where you need it (and an interesting mechanic, literally carrying part of the world map around with you).
 
 On top of that, you can take spheres _into_ other spheres, going two or more levels deep, to overcome the obstacles in front of you and keep progressing. It's mentally challenging, but not unapproachably so, figuring out what worlds you need to bring into other worlds to solve their challenges.
 
@@ -264,7 +262,7 @@ The second challenge is the Jokerless challenge from _Balatro_. It's the final o
 
 ## Tabletop games
 
-I don't think I'll take the time to go quite as in-depth here, but here are some of the games I and my family really enjoyed this year:
+Bearing in mind that my tabletop gaming mostly revolves around games that can be enjoyed by adults and five-year-olds alike, here are some of the games I and my family really enjoyed this year:
 
 - **[Splendor](https://www.amazon.com/Asmodee-SPL01-Splendor/dp/B00IZEUFIA)** - accessible enough for my five-year-old (though a touch trying for his patience at times), it's a great 30–45-minute tactical card game that's deep enough to be interesting, but not enough to be daunting.
 - **[Chicken!](https://keymaster.fun/products/chicken)** - a quick and easy dice game with gorgeous design. Gamble with your points and take another roll? Or pass to another player, and risk them getting even more points than you?
@@ -296,9 +294,9 @@ It starts slow, but trust me: the slow burn pays off. This is a journey well wor
 
 ### Shrinking
 
-_Shrinking_ was easily my favorite show of 2023, and the second season keeps everything I loved about it moving forward. Although Jason Segel serves as the series' de facto star, it's really more of an ensemble comedy than anything—albeit one that isn't afraid to examine its characters' trauma, pain, and mortality.
+_Shrinking_ was easily my favorite show of 2023, and the second season keeps everything I loved about it moving forward (so far, at least; I haven't finished it as of publish time). Jason Segel serves as the series' de facto star, playing a therapist who's helping his patients deal with their trauma in unconventional ways, as he learns to deal with his own along the way. But _Shrinking_ really more of an uplifting ensemble comedy than anything—albeit one that isn't afraid to examine its characters' trauma, pain, and mortality.
 
-The cast is comparatively large in the second season, thanks to some new additions, but every actor is at the top of their game. "Dramedies" can sometimes swing too far one way or the other (and end up either being too silly to take seriously, or too serious to laugh at), but this crew—and the writing behind them—are far too good to let that happen. Immensely enjoyable and perfectly human, few shows pull it off like _Shrinking_.
+The cast is comparatively large in the second season, thanks to some new additions, but every actor is at the top of their game. Dramedies can sometimes swing too far one way or the other, and end up either being too silly to take seriously, or too serious to laugh at, but this crew—and the writing behind them—are far too good to let that happen. Immensely enjoyable and perfectly human, shows rarely pull it off this well.
 
 <img src="/images/post_images/2024/wwdits.webp" alt="" width="3000" height="1500" loading="lazy" />
 
@@ -306,19 +304,19 @@ The cast is comparatively large in the second season, thanks to some new additio
 
 This is apparently the final season of _WWDitS_, and as of this writing I haven't quite watched far enough to find out how it all ends. I almost don't care, though; for the show to have lasted these six seasons and remained this funny throughout is more than enough for me.
 
-The show follows the exploits of four lazy, out-of-touch vampire roommates who've been living together on Staten Island for the last few hundred years, and who mostly don't particularly care for one another. They argue, they form alliances and break them, they get up to all kinds of weird nonsense, and then mostly forget all about it and move on to the next thing—mostly thanks to Guillermo, the human familiar who's smart enough to save them from themselves.
+The show follows the exploits of four lazy, out-of-touch vampire roommates who've been living together on Staten Island for the last few hundred years, and who (like most long-term roommates with lots of history) don't always get along. They argue, they form alliances and break them, they get up to all kinds of weird nonsense, and then mostly forget all about it and move on to the next thing—usually thanks to Guillermo, the human familiar (and sole self-aware character) who manages to repeatedly save the housemates from themselves.
 
-It's a perfect formula for a serial comedy, and the cast and writing were easily solid enough to last another six seasons (and a movie).
+It sounds weird, and it is. But it's a perfect formula for a serial comedy, and the perfect cast and perennially solid writing were easily solid enough to last another six seasons (and a movie).
 
 <img src="/images/post_images/2024/smiths.webp" alt="" width="1920" height="960" loading="lazy" />
 
 ### Mr. and Mrs. Smith
 
-The title, and the fact that it has to do with secret agents, is about all this show has in common with the 2005 movie of the same name. I almost didn't even give it a shot because of its association with the film, but I'm glad I did; everything about this series is on a level far beyond its origins.
+The title, and the fact that it has to do with secret agents, is about all this show has in common with the 2005 movie of the same name. I almost didn't even give it a shot because of its association with the film, but I'm glad I did; everything about this series is on a level far above its origins.
 
-The series follows the titular secret agents, who are assigned to live together as husband and wife as part of their cover. They don't know much about the company they work for, why they're sent on the missions they are, or who the mysterious contact they both report to might be. They mostly just know: there will be a severe price to pay for failure.
+The series follows the titular secret agents, who are strangers assigned to live together as husband and wife as part of their cover. They don't know much about the company they work for, why they're sent on the missions they are, or who the mysterious contact they both report to might be. They mostly just know: there will be a severe price to pay for failure.
 
-Naturally, that means there's plenty of danger, suspense, and action (and a bit of dark humor), but the show somehow manages not to _really_ be about any of that. Instead, it's a deep, searing look at the arc of the couple's relationship, as they go from strangers to coworkers to lovers to…well, other far more complicated entanglements that aren't easy to label. (The episodes are even titled things like "First Date" and "Couples Therapy.”)
+Naturally, that means there's plenty of danger, suspense, and action (and a bit of dark humor), but the show somehow manages not to _really_ be about any of that. Instead, it's a deep, uncomfortably intimate look at the arc of the couple's relationship, as they go from strangers to coworkers to lovers to…well, other far more complicated entanglements that aren't easy to label. (The episodes are even titled things like "First Date" and "Couples Therapy.”)
 
 Donald Glover's and Maya Erskine's performances are central to the show, and they both nail the assignment perfectly. They feel like a couple you already know in real life; you aren't sure who to root for, you alternately love and hate them both, but ultimately, you just want these two flawed people to succeed in spite of themselves.
 
@@ -342,7 +340,7 @@ Oh, and don't worry: the (often dark) humor of the game series, along with its c
 
 _Say Nothing_ is a brutally impactful show. It's a film adaptation of the book, which chronicles true events in Northern Ireland, during the time of "the Troubles," mostly during the 1970s and '80s.
 
-While we see the conflict from many angles, the story mainly focuses on IRA member Dolours Price, who we see as both a brazen young zealot robbing banks and planting bombs for the cause, and as an older woman, too, reflecting on the catastrophic damage she and her compatriots caused. She's a complex character who's both the hero of the story, and in many ways, its central villain.
+While we see the conflict from many angles, the story mainly focuses on IRA member Dolours Price, who we see as both a brazen young zealot robbing banks and planting bombs for the cause, and as an older woman, reflecting on the catastrophic damage she and her compatriots caused. She's a complex character who's both the hero of the story, and in many ways, its central villain.
 
 The show presents the impossibly complicated morality of war and oppression, but doesn't bother trying to clean up the mess it's made before the series wraps up. It just leaves you with a lot to ponder for yourself.
 
@@ -350,17 +348,17 @@ The show presents the impossibly complicated morality of war and oppression, but
 
 I'll be honest: this isn't top-tier TV, as much as Peacock wants it to be. In fact, I probably wouldn't recommend it, unless you're just a big fan of the genre (that being: relentless MI6 agent chases elite shadowy assassin across Europe).
 
-Despite it being somewhere between decent and trashy, though, I appreciate that _Day of the Jackal_ regularly makes you question your allegiances to its characters. You don't want the "bad guy" to succeed, really, but you don't want him to fail, either. The show makes you wonder who you're really rooting for—and for that matter, _why_.
+Despite it being somewhere between watchable and laughable, though, I appreciate that _Day of the Jackal_ regularly makes you question your allegiances to its characters. You don't want the "bad guy" to succeed, really, but you don't want him to fail, either. The show makes you wonder who you're really rooting for—and for that matter, _why_.
 
-Eddie Redmayne's eponymous Jackal is a handsome, fit, charming, wealthy white man. His pursuer is a reckless, brash, upper-middle-class Black woman. Both characters are precariously balancing their own personal lives with their careers, and both fail their families regularly throughout the season. They both endanger others, and rarely do we see remorse from either one.
+Eddie Redmayne's eponymous Jackal is a handsome, fit, charming, wealthy white man. His pursuer is a reckless, brash, upper-middle-class Black woman. Both characters are precariously balancing their own personal lives with their careers, and both fail their families regularly throughout the season. They both casually endanger others, and rarely do we see remorse from either one.
 
-I don't know if the show set it up this way on purpose, but I think it's interesting and worthwhile to think about how race, class, appearance, and gender play into the perceptions of these two characters, and whether we'd feel the same way about the two of them were the details reversed—even if that exercise might be more interesting than the show ultimately is.
+I don't know if the show set it up this way on purpose, but I think it's interesting and worthwhile to think about how race, class, appearance, and gender play into the perceptions of these two characters, and whether we'd feel the same way about the two of them were the details reversed—even if that exercise might ultimately be more interesting than the show itself is.
 
 ### True crime docuseries, but not about murders
 
 I lump the shows on this list together because they share a common characteristic: they're all true crime docuseries, but unlike the majority of the genre, nobody gets killed in these shows.
 
-Instead, these series focus on a con of some kind; some huge web of lies that eventually unraveled. Collectively, they offer a fascinating look into some truly twisted and damaged minds—just, you know, without the murder. (Warning: most of them _do_ talk about abuse of various kinds, however, sometimes involving children.)
+Instead, these series focus on a con of some kind; some huge web of lies that eventually unraveled. Collectively, they offer a fascinating look into some truly twisted and damaged minds—just, you know, without the murder. (Warning: most of them _do_ talk about abuse of various kinds, however, sometimes involving minors.)
 
 - _Perfect Wife: the Mysterious Disappearance of Sherri Papini_ chronicles the disappearance and eventual rescue of a kidnapped housewife, and the long search for her abusive captor in the aftermath. But there's much, much more to the story—and Sherri actually knows more about what happened than she's letting on.
 
@@ -404,7 +402,7 @@ Florent Gorges' unofficial series has some awkward translations, but they're a f
 
 ### Mr. Penumbra's 24-Hour Bookstore
 
-Robin Sloane's intro novel TODO: finish this book/this paragraph
+Robin Sloane's intro novel is a fun, casual read that takes a number of unexpected turns. The stakes are never particularly high, and if I'm being honest, I found myself skimming towards the end (the lengthy epilogue begins around 80% through), but although I didn't find it particularly deep or thrilling, I did enjoy the style.
 
 ### An I.V.F. Mix-Up, a Shocking Discovery and an Unbearable Choice
 
@@ -424,21 +422,26 @@ I've written two blog posts about the Glove80 now ([an initial impressions post]
 
 Svelte has long been my frontend framework of choice, so you'd think I'd be jazzed about 5. For me, the jury's still out a little bit, though. I'm still getting used to the changes, and I'll admit, there are things I still don't love. But hey, at least Svelte 5 still supports all the old syntax, right? You don't have to migrate any faster than you want to.
 
-That said, I think it's a matter of time and comfort level. I don't want to be the guy who hates something just because it's unfamiliar, and I don't think I've put in the time yet to give Svelte 5 a fair shot. Some of my initial frustrations started making sense once I understood the reasoning behind them, and I think more things will likely fall in place in that same way.
+That said, I think it's a matter of time and comfort level. I don't want to be the guy who hates something just because it's unfamiliar, and I don't think I've put in the time yet to give Svelte 5 a fair shot. Some of my initial frustrations started making sense once I understood the reasoning behind them, and I think more things will likely fall in place in that same way. (The serif body font on the website is definitely a mistake, though. Thankfully, there's a sans option, which is miles better. For that matter, though, the toggle itself is pleasantly novel.  )
+
+Things I definitely _do_ like right off the bat: upgrading to Svelte 5 was an instant performance boost, and nobody makes upgrades easier than the Svelte team and their comprehensively helpful migration scripts. While some might criticize [the new runes system](https://svelte.dev/blog/runes) as being "too React-y," I can see, having spent extensive time in both frameworks, how runes bring a predictability and universality that was previously missing. (Before, how you managed state depended heavily on what type of file you were working in; now, state can be created and shared much more consistently.) Components are much more predictable with the new `$props` rune, among other things. And, of course, the dead-simple templating syntax at the heart of Svelte is still intact and, if anything, even closer to HTML.
+
+One of these days, I'll actually begin a side project in earnest again, and when that happens, I look forward to diving deep in to Svelte 5. (I do know it runs great on Deno.)
+
 
 ### An electric toothbrush
 
-Somehow I've never actually had an electric toothbrush before now, but it's a life upgrade worth making. (I got the Oral-B model, which is a touch on the loud side, but which I like better than the others because the head actually rotates.)
+Somehow I've never actually had an electric toothbrush before now, but it's a life upgrade worth making. (I got the Oral-B model, which is a touch on the loud side, but which I like better than the others because the head actually rotates. Others just use some kind of vibration.)
 
 ### Greenworks lawn tools
 
 Just [upgraded my trimmer](https://www.amazon.com/dp/B0BHVX71BP?th=1) this year, and got [an edger attachment](https://www.amazon.com/dp/B09SHBGKCJ) to go with it.
 
-My lawn isn't amazing; I'm not a lawn guy. But it looks better than it ever has, and I got more than one comment on the edging from neighbors, so...you know, I'm a pretty big deal out here in the suburbs.
+I'm not a lawn guy. But my yard looks better than it ever has, and I've gotten more than one compliment on the edging from my neighbors, so...you know, I'm a pretty big deal out here in the suburbs.
 
 ### MocPixel
 
-[mocpixel.com](https://www.mocpixel.com/) offers some extremely fun (and very not-exactly-legal) knockoff Lego sets that make great desk/shelf displays. The sets are often taken from popular games, movies, and TV shows, but cost a fraction of what an actual licensed lego set would. (And, free from US copyright law, span a much wider range of IPs.). I've ordered a few sets now, for display on the shelves in my office, and have had a lot of fun assembling them with my kid. The directions can be inscrutable at times, and one of my sets had issues with missing pieces, but these sets are nonetheless an enjoyable activity on your own or with kids.
+[mocpixel.com](https://www.mocpixel.com/) offers some extremely fun (and very not-exactly-legal) knockoff Lego sets that make great desk/shelf displays. The sets are often taken from popular games, movies, and TV shows, but cost a fraction of what an actual licensed lego set would. (And, free from US copyright law, span a much wider range of IPs.) I've ordered a few sets now, for display on the shelves in my office, and have had a lot of fun assembling them with my kid. The directions can be inscrutable at times, and one of my sets had issues with missing pieces, but these sets are nonetheless an enjoyable activity on your own or with kids.
 
 ## Food and drink
 
@@ -446,7 +449,7 @@ My lawn isn't amazing; I'm not a lawn guy. But it looks better than it ever has,
 
 Did this one belong in the last section? Maybe. Anyway, I guess these are trendy? I don't know. All I know is: one member of my family got one for some reason, and raved about it so much that now everyone has their own.
 
-I get it. It checks every box. It's easy to clean; it's easy to carry; it doesn't leak; it has a straw but you can _also_ drink from it like a normal bottle; you can open it with one hand; and, thanks to the straw, you can drink from it without tipping it up. I'm a big fan.
+I get it. It checks every box. It's easy to clean; it's easy to carry; it doesn't leak; it has a straw but you can _also_ drink from it like a normal bottle; you can open it with one hand; and, thanks to the straw, you can drink from it without tipping it up. It's possible to refill without taking the lid off, but even if you do, thanks to the straw, you don't have to find somewhere to put the lid down—all of which makes this bottle perfect for travel. I'm a big fan.
 
 ### This one weird Chipotle trick
 
@@ -471,13 +474,13 @@ Another Costco find, although it's available in other grocery stores as well. ([
 
 Shoptalk has been my favorite podcast pretty much since I started listening to podcasts regularly, and so it was naturally a massive honor to check "be a guest on Shoptalk" off my career bucket list back in February.
 
-We talked quite a bit about Copilot and AI, and React (of course), along with a whole bunch of other random topics related to the web. I had a lot of fun and consider this a major highlight of my year.
+[We talked quite a bit about Copilot and AI, and React (of course), along with a whole bunch of other random topics related to the web](https://shoptalkshow.com/603/). I had a lot of fun and consider this a major highlight of my year.
 
 ### Building our own patio stairs
 
-My wife and I spent a few weeks this spring and summer building stairs for our patio door from scratch. We even cut the runners ourselves. We're not pros, and if you look close, you can definitely tell it (that is: if you couldn't already tell it by the fact that it took us weeks), but the end result is really good, and something we're both proud of. It feels great to work with your hands and make something tangible instead of digital sometimes.
+My wife and I spent a few weeks this spring and summer building stairs for our patio door from scratch. We even cut the runners ourselves. We're not pros, and if you look close, you can definitely tell it (that is: if you couldn't already tell it by the fact that it took us weeks), but the end result of our slow, meticulous labor is something we're both proud of. It feels great to work with your hands and make something tangible instead of digital sometimes.
 
-### Logo designs
+### Getting to do logo design again
 
 Although I consider myself a hybrid designer/developer (whatever you want to call that role—design engineer, perhaps?), I don't often get to do full-fledged design work these days. In particular, logo design is a rarity. So it was fulfilling and an honor to get the opportunity to develop (ha) two new logos for high-profile tech projects this year; [Deno](https://deno.com/brand), and [JSR](https://jsr.io).
 
