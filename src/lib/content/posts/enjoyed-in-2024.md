@@ -312,7 +312,7 @@ It sounds weird, and it is. But it's a perfect formula for a serial comedy, and 
 
 ### Mr. and Mrs. Smith
 
-The title, and the fact that it has to do with secret agents, is about all this show has in common with the 2005 movie of the same name. I almost didn't even give it a shot because of its association with the film, but I'm glad I did; everything about this series is on a level far above its origins.
+The title, and the fact that it has to do with secret agents, are about all this show has in common with the 2005 movie of the same name. I almost didn't even give it a shot because of its association with the film, but I'm glad I did; everything about this series is on a level far above its origins.
 
 The series follows the titular secret agents, who are strangers assigned to live together as husband and wife as part of their cover. They don't know much about the company they work for, why they're sent on the missions they are, or who the mysterious contact they both report to might be. They mostly just know: there will be a severe price to pay for failure.
 
