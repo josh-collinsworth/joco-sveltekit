@@ -64,7 +64,7 @@ Work-wise, I got the opportunity to travel to both San Diego and Dublin on work 
 
 At the same time, though, 2024 brought a lot of personal challenges. This list is meant to be positive, so I won't dwell on the parts of the year that weren't. Still, I have mixed feelings on my year, and it would be disingenuous to ignore that.
 
-There were losses, setbacks, and closed doors. Some of those challenges are in the "done" column; some might not ever move out of the "in progress" column. Some are ultimately trivial (like incompetent contractors—if you live in the Kansas City area, never hire [Slagle Fence](https://slaglefence.com/)); some are more deeply personal. Among other things, my wife lost her grandpa this year, and I lost a respected and admired friend.
+There were losses, setbacks, and closed doors. Some of those challenges are in the "done" column; some might not ever move out of the "in progress" column. Some are ultimately trivial (like incompetent contractors—if you live in the Kansas City area, I've got a fencing company to avoid at all costs); some are more deeply personal. Among other things, my wife lost her grandpa this year, and I lost a respected and admired friend.
 
 I have a good life. Better than good. Still, I feel like I'm just barely keeping my head above water a lot of days.
 
