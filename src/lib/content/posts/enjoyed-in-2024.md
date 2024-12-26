@@ -434,7 +434,7 @@ Somehow I've never actually had an electric toothbrush before now, but it's a li
 
 ### Greenworks lawn tools
 
-Just [upgraded my trimmer](https://www.amazon.com/dp/B0BHVX71BP?th=1) this year, and got [an edger attachment](https://www.amazon.com/dp/B09SHBGKCJ) to go with it.
+I love these battery-powered tools. I've had the mower for several years now, and I just [upgraded my trimmer](https://www.amazon.com/dp/B0BHVX71BP?th=1) this year, and got [an edger attachment](https://www.amazon.com/dp/B09SHBGKCJ) to go with it.
 
 I'm not a lawn guy. But my yard looks better than it ever has, and I've gotten more than one compliment on the edging from my neighbors, so...you know, I'm a pretty big deal out here in the suburbs.
 
