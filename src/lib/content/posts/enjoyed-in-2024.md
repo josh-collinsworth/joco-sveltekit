@@ -1,7 +1,7 @@
 ---
 title: 'Things I enjoyed in 2024'
 date: '2024-12-24'
-updated: '2024-12-24'
+updated: '2024-12-26'
 categories:
   - 'personal'
 coverImage: '2024/2024.webp'
@@ -269,6 +269,7 @@ Bearing in mind that my tabletop gaming mostly revolves around games that can be
 - **[Pass the Pigs](https://www.hasbro.com/common/instruct/passthepigs.pdf)** - a bit similar to _Chicken!_, in that it's a risk-vs.-reward type of dice game (bank your points for the turn, or risk them to roll more?), but with a twist: you're rolling a pair of pigs rather than dice, and your points are determined by their landing position. Obviously, luck is a heavy factor here, but the silly simplicity of this game—and the wild things that can happen when someone gets on a hot streak—have made this one a hit for all ages for many years in my gaming groups.
 - **[Patchwork](https://www.amazon.com/Patchwork-Board-Game-Two-Player-Interactive/dp/B00RCCAPPE)** - a deceptively deep two-player game where both players try to complete their quilts using Tetris-like patch shapes. It's short and simple enough for kids, but with enough depth and strategy to keep things compelling for adults, too.
 - **[Skyjo](https://www.magilano.com/produkt/skyjo/?lang=en&v=1d2a83b3af1f)** - a quick and casual card game where you try to zero-out the 12 cards in front of you by replacing them from the deck. Not deep, but easy to play in any group and with other things going on.
+- **[Love Letter](https://www.zmangames.com/game/love-letter/)** - an all-time favorite of mine (though probably not for kids under about 6 or 7, due to the reading requirement), Love Letter is fast and easy to learn and play. You make interesting decisions, but there's plenty enough luck involved to keep the outcome unpredictable. I favor the classic version (which is slightly simpler, with fewer cards, roles, and rules, but which also allows for fewer players), but every one of the many versions of the game I've tried is highly enjoyable.
 
 ## TV shows
 
