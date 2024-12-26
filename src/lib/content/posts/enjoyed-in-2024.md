@@ -212,7 +212,7 @@ It's a little tough to explain, so the trailer on [the _Cocoon_ website](https:/
 
 [_Songpop Party_](https://songpop-party.com/) is a pure party game based on a dead-simple premise: listen to a short clip of a song, and name the song or artist as fast as you can. The faster you answer, the more points you get.
 
-Initially, several categories are available (hits, kids, '90s, movie themes, and many more), but the more you play, the more you earn points to unlock other expanded and often more specialized song lists. You can go deep on your favorite decade, a specific artist, or just choose playlists like "bad songs."
+Initially, a wide range of categories is available, and there are many playlists to choose from, grouped by decade, genre, or theme. There are a lot of songs, so you can replay specific playlists—say, "'80s" or "pop hits"—several times without hearing repeats. But the more you play, the more you earn points to unlock even more categories. You can go deep on your favorite decade, narrow it down to a specific artist, or even open specialty categories like "family" or "only intros."
 
 Easily enjoyable for just about anyone of any age, gamers and non-gamers alike, _Songpop Party_ was a featured staple of many gatherings this year, and I expect we'll keep playing it for a long time to come.
 
@@ -283,9 +283,9 @@ Anyway, here are the standouts from the shows we _did_ watch in 2024.
 
 ### Severance
 
-It didn't come out in 2024, but _Severance_ is easily my favorite thing I watched this year. The premise is cleverly simple: people who work for Lumon Industries are "severed"; their work memories never interact with their personal memories. The moment they go down the workplace elevator on Monday morning, they forget all about their outside lives. When they leave, the inverse happens, and they have no memory of what they did at work.
+It didn't come out in 2024, but _Severance_ is easily my favorite thing I watched this year. The premise is cleverly simple: people who work for Lumon Industries are "severed;" their work memories never interact with their personal memories. The moment they go down the workplace elevator in the morning, they forget all about their outside lives. When they leave, the inverse happens, and they have no memory of what they did at work that day.
 
-In effect, Lumon employees are two separate people, each unaware of the other's life and relationships, and this tension creates some mind-blowing narrative reveals.
+In effect, Lumon employees are each two separate people, both unaware of the other's life and relationships, and this tension creates some mind-blowing narrative reveals.
 
 Wrapping the human story is the _Lost_-esque weirdness of Lumon itself, which leads to a group of employees trying to discover exactly what's going on at the company—and who they might be on the outside.
 
@@ -295,9 +295,9 @@ It starts slow, but trust me: the slow burn pays off. This is a journey well wor
 
 ### Shrinking
 
-_Shrinking_ was easily my favorite show of 2023, and the second season keeps everything I loved about it moving forward (so far, at least; I haven't finished it as of publish time). Jason Segel serves as the series' de facto star, playing a therapist who's helping his patients deal with their trauma in unconventional ways, as he learns to deal with his own along the way. But _Shrinking_ is really more of an uplifting ensemble comedy than anything—albeit one that isn't afraid to examine its characters' pain, and mortality.
+_Shrinking_ was easily my favorite show of 2023, and the second season keeps everything I loved about it moving forward (so far, at least; I haven't finished it as of publish time). Jason Segel serves as the series' de facto star, playing a therapist who's helping his patients deal with their trauma in unconventional ways, as he learns to deal with his own along the way. But _Shrinking_ is really more of an uplifting ensemble comedy than anything—albeit one that isn't afraid to examine its characters' pain, flaws, and even their mortality.
 
-The cast is comparatively large in the second season, thanks to some new additions, but every actor is at the top of their game. Dramedies can sometimes swing too far one way or the other, and end up either being too silly to take seriously, or too serious to laugh at, but this crew—and the writing behind them—are far too good to let that happen. Immensely enjoyable and deeply human, shows rarely pull off the balancing act this perfectly.
+The cast is comparatively large in the second season, thanks to some new additions, but every actor is at the top of their game. Dramedies can sometimes swing too far one way or the other, and end up being either too silly to take seriously, or too serious to laugh at, but this crew—and the stellar writing behind them—are far too good to let that happen. It's funny, it's vulnerable, and it's deeply human. Shows rarely pull off the balancing act this perfectly.
 
 <img src="/images/post_images/2024/wwdits.webp" alt="" width="3000" height="1500" loading="lazy" />
 
@@ -347,7 +347,7 @@ The show presents the impossibly complicated morality of war and oppression, but
 
 ### Day of the Jackal
 
-I'll be honest: this isn't top-tier TV, as much as Peacock wants it to be. In fact, I probably wouldn't recommend it, unless you're just a big fan of the genre (that being: relentless MI6 agent chases elite shadowy assassin across Europe).
+I'll be honest: this isn't top-tier TV, as much as Peacock wants it to be. In fact, it's kinda bad, but at least it's enjoyably bad. I probably wouldn't recommend it, unless you're just a big fan of the genre (that being: relentless MI6 agent chases elite shadowy assassin across Europe).
 
 Despite it being somewhere between watchable and laughable, though, I appreciate that _Day of the Jackal_ regularly makes you question your allegiances to its characters. You don't want the "bad guy" to succeed, really, but you don't want him to fail, either. The show makes you wonder who you're really rooting for—and for that matter, _why_.
 
@@ -373,7 +373,7 @@ Instead, these series focus on a con of some kind; some huge web of lies that ev
 
 ## Reading
 
-I didn't read as much this year as I did last year (and what I _did_ read, I didn't always enjoy), but here are my highlights:
+I didn't read as much this year as I did last year, so that's one reason this list is a little short. Another is: what I _did_ read, I didn't always enjoy. I have a habit of buying books I know nothing about based on a recommendation I saw from someone somewhere, and that led to at least a few books I read but didn't especially enjoy this year (which I won't dwell on because that's not this list, and because it's not really those books' fault they weren't what I was looking for). All that said, here are my highlights:
 
 ### A Closed and Common Orbit
 
@@ -400,10 +400,6 @@ Most of these I read in 2023, but I kept up the series this year. Fun, short sci
 ### The "History of Nintendo" series
 
 Florent Gorges' unofficial series has some awkward translations, but they're a fun and interesting nostalgia trip nonetheless for anyone with fond memories of the NES/Famicom, Game Boy, and others. (Like this guy. 👍👍) More than a tribute, these books offer a look into the company and its politics, the business decisions, and the international marketing and events that shaped the games and systems we all know and love.
-
-### Mr. Penumbra's 24-Hour Bookstore
-
-Robin Sloane's intro novel is a fun, casual read that takes a number of unexpected turns. The stakes are never particularly high, and if I'm being honest, I found myself skimming towards the end (the lengthy epilogue begins around 80% through), but although I didn't find it particularly deep or thrilling (and although its moments of Bay-area techno-optimism haven't necessarily aged well), I did enjoy the style.
 
 ### An I.V.F. Mix-Up, a Shocking Discovery and an Unbearable Choice
 
@@ -498,6 +494,18 @@ It sounds petty, but it's wild how much of an impact it has on your mental state
 My wife and I were regular CrossFitters before our son was born, but between his infancy and then Covid, suddenly, five years had gone by without either of us ever going back to a gym. But now that our son is in school, we actually have the freedom to leave the house at the same time again, and have been using our local community center to get back in the swing of a regular fitness routine.
 
 Honestly, it feels like it's done a lot more for my mental health than my physical health (although I'm definitely in better shape, too), but it's great to be back. I'm always surprised to learn how strongly my physical health is correlated with my mental health. My workouts aren't nearly as intense as they once were (my old PR's remain well beyond my current reach, at least for the foreseeable future), but that's fine. Turns out I'm basically just a sophisticated Labrador; I need exercise to feel good, and so getting back to a gym has been a bright spot in my year.
+
+### Playing NYT games (with my wife)
+
+I started getting into crosswords this year, really for the first time ever. I'm not an expert yet (the harder puzzles still take me an hour or more, and at least a few Googles), but I've upped my game significantly, and can usually handle the first few days of the week quickly and without assistance. (I can also appreciate the cleverness of the themes and clues.)
+
+Meanwhile, my wife and I have gotten in the habit of playing _Connections_ and _Strands_ together every day, which has been a fun thing to connect over (and, occasionally, compete in). Playing games with your partner is underrated.
+
+### Quina
+
+Look, I made [the Quina app](https://quina.app) (even if I didn't invent the underlying game), so maybe this is a weird one. But I actually love playing the daily word.
+
+Wordle is most people's preference of daily word game, and it's ok, but I find it mostly too easy (or sometimes, hard for the wrong reasons). I find Quina much more interesting; there's a lot more strategy and deduction involved when the game tells you what letters are correct, and how many are in the right position—but _not_ which letters are which. (My longest daily streak is 74, incidentally.)
 
 ### Chappell Roan
 
