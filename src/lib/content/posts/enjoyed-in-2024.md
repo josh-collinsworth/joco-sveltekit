@@ -1,7 +1,7 @@
 ---
 title: 'Things I enjoyed in 2024'
 date: '2024-12-24'
-updated: '2024-12-26'
+updated: '2024-12-31'
 categories:
   - 'personal'
 coverImage: '2024/2024.webp'
@@ -264,6 +264,9 @@ The second challenge is the Jokerless challenge from _Balatro_. It's the final o
 
 Bearing in mind that my tabletop gaming mostly revolves around games that can be enjoyed by adults and five-year-olds alike, here are some of the games I and my family really enjoyed this year:
 
+- **[Dorfromantik - the Board Game](https://pegasusna.com/products/family-games/16708/dorfromantik-the-boardgame)** - also a video game (hence the subtitle; the main title loosely translates to "nostalgia for the countryside"), _Dorfromantik_ is a cooperative campaign game. That is: you work together with the other players in an attempt to score the most points together. You do this by taking turns placing hexagonal tiles that contain rivers, villages, farmland, train tracks, and forests according to certain rules requirements. (For example: make a village that spans exactly five tiles, a field that's entirely closed in on all sides, or try to get the longest continuous river possible.)
+
+  Depending on how well you do, your score "unlocks" new rules and components from within secret, sealed boxes housed inside the main game box, which allow you more ways to play to get even higher scores to unlock even more. The whole thing is beautifully designed, too. The box lists 14+ as the age range, but I find kids of 5–6 up can easily participate and enjoy with an adult guiding the game. (You can also play by yourself, if you're so inclined.)
 - **[Splendor](https://www.amazon.com/Asmodee-SPL01-Splendor/dp/B00IZEUFIA)** - accessible enough for my five-year-old (though a touch trying for his patience at times), it's a great 30–45-minute tactical card game that's deep enough to be interesting, but not enough to be daunting.
 - **[Chicken!](https://keymaster.fun/products/chicken)** - a quick and easy dice game with gorgeous design. Gamble with your points and take another roll? Or pass to another player, and risk them getting even more points than you?
 - **[Pass the Pigs](https://www.hasbro.com/common/instruct/passthepigs.pdf)** - a bit similar to _Chicken!_, in that it's a risk-vs.-reward type of dice game (bank your points for the turn, or risk them to roll more?), but with a twist: you're rolling a pair of pigs rather than dice, and your points are determined by their landing position. Obviously, luck is a heavy factor here, but the silly simplicity of this game—and the wild things that can happen when someone gets on a hot streak—have made this one a hit for all ages for many years in my gaming groups.
