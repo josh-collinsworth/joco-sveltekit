@@ -4,10 +4,10 @@
 	import { isMenuOpen } from '$lib/data/store'
 
 	interface Props {
-		path: string;
+		path: string
 	}
 
-	let { path }: Props = $props();
+	let { path }: Props = $props()
 </script>
 
 <template>
@@ -28,7 +28,8 @@
 		@media (max-width: vars.$sm) {
 			display: block;
 			position: fixed;
-			transition: transform 0.4s cubic-bezier(1, 0, 0, 1),
+			transition:
+				transform 0.4s cubic-bezier(1, 0, 0, 1),
 				opacity 0.4s cubic-bezier(1, 0, 0, 1);
 			transform: translateX(0);
 			background: hsla(var(--blackHSL), 0.95);

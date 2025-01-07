@@ -3,10 +3,10 @@
 	import { isMenuOpen } from '$lib/data/store'
 
 	interface Props {
-		path: string;
+		path: string
 	}
 
-	let { path }: Props = $props();
+	let { path }: Props = $props()
 </script>
 
 <ul class:open={$isMenuOpen}>
@@ -28,6 +28,7 @@
 		font-size: 0.875rem;
 		list-style-type: none;
 		padding: 0;
+		gap: 1.5rem;
 
 		@media (max-width: vars.$sm) {
 			list-style-type: none;

@@ -62,10 +62,39 @@ hr {
 	margin-top: var(--halfNote);
 }
 
-.ghosty button,
-.ghosty button::before {
-	transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+.header__divider {
+	height: var(--buttonSize);
+	width: 1px;
+	background: var(--lightGray);
+	display: block;
+	position: relative;
+	z-index: 11;
+
+	@media (min-width: vars.$sm) {
+		display: none;
+	}
+}
+
+.icon-container :is(button, .header__divider) {
+	transition-timing-function: cubic-bezier(1, 0, 0, 1);
+	transition-property: transform;
+	transition-duration: 0.4s;
+}
+
+@for $i from 1 through 3 {
+	.icon-container > *:nth-child(#{$i}) {
+		transition-delay: 0.08s * ($i - 1);
+	}
+}
+
+.ghosty :is(button, .header__divider) {
+	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transition-duration: 0.3s;
 	transform: translateY(-4rem);
+
+	@media (min-width: vars.$xs) {
+		transform: translateY(-6rem);
+	}
 }
 
 .table {

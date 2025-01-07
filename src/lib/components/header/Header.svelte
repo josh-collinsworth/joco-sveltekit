@@ -6,10 +6,10 @@
 	import { isMenuOpen, isScrollingDown } from '$lib/data/store'
 
 	interface Props {
-		path: string;
+		path: string
 	}
 
-	let { path }: Props = $props();
+	let { path }: Props = $props()
 
 	// I don't love any part of this, but it's necessary to make the "skip to main content" link work properly, so we'll live with it.
 	const focusMain = (e: Event): void => {
@@ -36,6 +36,7 @@
 			class:ghosty={$isScrollingDown && !$isMenuOpen}
 		>
 			<DarkModeToggle />
+			<div class="header__divider"></div>
 			<NavMenu {path} />
 		</div>
 	</header>
@@ -73,10 +74,16 @@
 		align-items: center;
 		position: fixed;
 		right: 1rem;
-		top: calc(1rem - 2px);
+		top: var(--quarterNote);
 		transition: opacity 0.2s;
+		gap: 1rem;
 
 		@media (min-width: vars.$xs) {
+			top: var(--halfNote);
+			right: var(--halfNote);
+		}
+
+		@media (min-width: vars.$sm) {
 			position: static;
 		}
 	}
@@ -103,7 +110,9 @@
 	.skip-to-content-link {
 		--itemTransition: 0.15s cubic-bezier(0.86, 0, 0.07, 1);
 
-		transition: transform var(--itemTransition), opacity var(--itemTransition);
+		transition:
+			transform var(--itemTransition),
+			opacity var(--itemTransition);
 		position: absolute;
 		top: -6rem;
 		left: 1rem;

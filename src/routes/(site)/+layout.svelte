@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
+	import { run } from 'svelte/legacy'
 
 	import type { LayoutData } from './$types'
 	// import '$lib/assets/scss/global.scss'
@@ -17,16 +17,16 @@
 	import { dev } from '$app/environment'
 
 	interface Props {
-		data: LayoutData;
-		children?: import('svelte').Snippet;
+		data: LayoutData
+		children?: import('svelte').Snippet
 	}
 
-	let { data, children }: Props = $props();
+	let { data, children }: Props = $props()
 
 	let path: string = $state()
 	run(() => {
-		({ path } = data)
-	});
+		;({ path } = data)
+	})
 
 	let root: HTMLElement
 
@@ -34,15 +34,8 @@
 	const isSinglePostCheck: RegExp = new RegExp(/\/blog\/[A-z0-9\-_]+\/?$/)
 
 	let isSinglePost: boolean = $derived(isSinglePostCheck.test(path))
-	
 
 	const handleScroll = throttle(() => {
-		// Early return if we're above mobile width
-		if (window.outerWidth >= 768) {
-			if ($isScrollingDown) $isScrollingDown = false
-			return
-		}
-
 		const currentScrollPosition = window.scrollY
 		const delta = lastScrollPosition - currentScrollPosition
 		if (delta > 0 && delta < 10) {

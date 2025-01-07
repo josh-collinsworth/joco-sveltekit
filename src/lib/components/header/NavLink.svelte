@@ -2,21 +2,15 @@
 	import { isMenuOpen } from '$lib/data/store'
 
 	interface Props {
-		text: string;
-		to: string;
-		path: string;
-		mobileOnly?: string | boolean;
+		text: string
+		to: string
+		path: string
+		mobileOnly?: string | boolean
 	}
 
-	let {
-		text,
-		to,
-		path,
-		mobileOnly = false
-	}: Props = $props();
+	let { text, to, path, mobileOnly = false }: Props = $props()
 
 	let isCurrentPage: boolean = $derived(path === to)
-	
 </script>
 
 <li class="nav__item" class:open={$isMenuOpen} class:mobile-only={mobileOnly}>
@@ -33,7 +27,7 @@
 
 <style lang="scss">
 	.nav__item {
-		margin: 0 0 0 1.5em;
+		margin: 0;
 
 		@media (max-width: vars.$sm) {
 			--itemTransition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;

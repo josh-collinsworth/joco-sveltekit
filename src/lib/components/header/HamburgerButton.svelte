@@ -28,27 +28,13 @@
 		width: var(--buttonSize);
 		height: var(--buttonSize);
 		padding: 0.55rem;
-		margin-left: 2rem;
 		background: var(--buttonBackground);
 		position: relative;
 		z-index: 11;
 		border: 2px solid var(--ink);
 		border-radius: var(--buttonSize);
 		overflow: visible;
-		transition-delay: 0.15s;
-
-		&:before {
-			content: '';
-			height: var(--buttonSize);
-			width: 1px;
-			background: var(--lightGray);
-			display: block;
-			position: absolute;
-			top: -2px;
-			left: -1.1rem;
-			transition: inherit;
-			transition-delay: 0.1s;
-		}
+		transition-delay: 0.16s;
 
 		&.fixed {
 			position: relative;

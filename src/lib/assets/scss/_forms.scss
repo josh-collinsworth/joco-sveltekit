@@ -85,7 +85,7 @@ input[type=submit] {
 	.dark & {
 		background: var(--darkBlue);
 	}
-	
+
 	&:hover {
 		background: hsla(var(--lightBlueHSL), 0.2);
 	}
@@ -99,19 +99,12 @@ input[type=submit] {
 	width: var(--buttonSize);
 	flex: 0 0 var(--buttonSize);
 	overflow: hidden;
-	margin-left: 0.75rem;
 	padding: 0;
 	position: relative;
 	border-radius: 2rem;
 	border: 2px solid var(--ink);
 	background: var(--buttonBackground);
-	transition: background var(--itemTransition), color var(--itemTransition),
-		border-color var(--itemTransition), transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 	z-index: 11;
-
-	+ .settings-toggle {
-		transition-delay: 0.05s;
-	}
 
 	&:hover {
 		background: var(--buttonBackground);
