@@ -55,7 +55,7 @@
 
 <style lang="scss">
 	.sidebar {
-		font-size: 0.85rem;
+		font-size: 0.8125rem;
 		max-width: var(--maxWidth);
 		font-family: var(--headingFont);
 		margin: var(--dottedHalfNote) 0 0;
@@ -72,11 +72,11 @@
 			font-size: 0.8em;
 			font-weight: bold;
 			text-transform: uppercase;
-			margin: 3em 0 1em;
-			padding: 0 0 0.1em 0;
+			margin: 3em 0 1.25em;
+			padding: 0 0 0.25em;
 			border: none;
-			border-bottom: 0.15em solid;
-			width: max-content;
+			border-bottom: 1px solid var(--lighterGray);
+			width: 100%;
 			text-align: inherit;
 			color: var(--headingColor);
 

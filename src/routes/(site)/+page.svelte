@@ -194,11 +194,16 @@
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
 		margin-top: var(--dottedWholeNote);
-		gap: var(--wholeNote);
-		font-size: 0.8rem;
+		gap: var(--dottedHalfNote);
+		font-size: 0.8125rem;
 		line-height: 1.5;
 		grid-column-start: 1;
 		grid-column: 1 / -1;
+
+		ul,
+		li {
+			list-style-type: unset;
+		}
 
 		@media (min-width: vars.$sm) {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -215,11 +220,14 @@
 		font-family: var(--headingFont);
 		text-transform: uppercase;
 		font-weight: bold;
-		margin: unset;
-		border-bottom: 0.15em solid var(--lightGray);
-		padding-bottom: 0.15em;
+		margin: 0;
+		border-bottom: 1px solid var(--lighterGray);
+		padding: 0.75em 0 0.5em;
 		line-height: 1;
-		display: inline-block;
+
+		@media (min-width: vars.$sm) {
+			padding: var(--eighthNote) 0 var(--sixteenthNote);
+		}
 	}
 
 	:global(html:not(.light) .intro .subhead) {
