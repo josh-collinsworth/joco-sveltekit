@@ -19,9 +19,12 @@ Experienced with React/Preact, TypeScript, Tailwind, Deno, Fresh, Knockout, jQue
 _August 2023 – present_
 
 - Lead frontend developer, and occasional design roles. Projects include:
+	- Design, development, and information architecture work across Deno properties and docs
 	- Implementing a full-scale redesign of [Deno.com](https://deno.com)
-	- Adding new features to the [Deploy](https://deno.com/deploy) dashboard
+	- Adding new features to the [Deploy](https://deno.com/deploy) dashboard and helping to build out new features and products on the Deploy platform
 	- Design, branding, and frontend work on [JSR.io](https://jsr.io)
+	- Redesign of the Deno brand
+	- Leading, designing, and building various microsite projects, such as [javascript.tm](https://javascript.tm)
 
 
 ### [Shopify](https://shopify.com/)
