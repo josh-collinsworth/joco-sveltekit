@@ -1,17 +1,16 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageData } from './$types'
 
-	import type Post from '$lib/types/post';
-	import PostList from '$lib/components/posts/PostList.svelte';
-	import Main from '$lib/components/Main.svelte';
-	import Pagination from '$lib/components/Pagination.svelte';
-
+	import type Post from '$lib/types/post'
+	import PostList from '$lib/components/posts/PostList.svelte'
+	import Main from '$lib/components/Main.svelte'
+	import Pagination from '$lib/components/Pagination.svelte'
 
 	interface Props {
-		data: PageData;
-		posts?: Post[];
-		page?: number;
-		totalPosts?: number;
+		data: PageData
+		posts?: Post[]
+		page?: number
+		totalPosts?: number
 	}
 
 	let {
@@ -19,10 +18,10 @@
 		posts = data.posts || [],
 		page = data.page || 1,
 		totalPosts = data.totalPosts
-	}: Props = $props();
+	}: Props = $props()
 
-	let lowerBound = $derived(page * 10 - 9 || 1);
-	let upperBound = $derived(Math.min(page * 10, totalPosts));
+	let lowerBound = $derived(page * 10 - 9 || 1)
+	let upperBound = $derived(Math.min(page * 10, totalPosts))
 </script>
 
 <svelte:head>
@@ -32,8 +31,10 @@
 		name="description"
 		content="Past posts on the web, development, and design."
 	/>
-	<meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
-	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png" />
+	<meta
+		property="og:image"
+		content="https://joshcollinsworth.com/images/site-image.png"
+	/>
 </svelte:head>
 
 <Main className="blog-roll">

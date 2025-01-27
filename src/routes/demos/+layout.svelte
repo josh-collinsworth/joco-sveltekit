@@ -13,10 +13,10 @@
 	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation'
 	import { dev } from '$app/environment'
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: import('svelte').Snippet
 	}
 
-	let { children }: Props = $props();
+	let { children }: Props = $props()
 
 	let root: HTMLElement
 	let isFrame = $state(false)
@@ -51,7 +51,6 @@
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
-	<meta name="twitter:card" content="summary_large_image" />
 	{#if !dev}
 		<script
 			defer
