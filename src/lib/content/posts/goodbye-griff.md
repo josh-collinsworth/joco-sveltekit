@@ -101,7 +101,7 @@ Griff was hilarious. He was a lovable, clumsy doofus, who regularly slipped, tri
 
 He possessed a hilariously unearned fearlessness. He'd walk out on a narrow ledge, and then suddenly realize he couldn't turn around, and start his desperate little growl for help.
 
-Griff was mouthy, but in such a polite way. He had this gentle growl-bark he deployed whenever he wanted to get your attention. It was so sweet, like a soft "excuse me," to let us know he wanted outside, or had perhaps lost some food in an inaccessible place.
+Griff was mouthy, but in such a polite way. He had this soft, earnest growl-bark he deployed whenever he wanted to get your attention. It was so sweet, like a soft, gradually escalating "excuse me," to let us know he wanted outside, or had perhaps lost some food in an inaccessible place.
 
 Griff desperately wanted to be able to howl, but just couldn't. He tried his hardest, but could only come up with a high-pitched falsetto vocalization, not unlike a kid who can't whistle but tries to recreate the sound with a scream. Trying to get Griff to howl (which would just cause him to make silly noises until he inevitably just started barking at all the commotion) was a reliable source of hilarity in our house.
 
