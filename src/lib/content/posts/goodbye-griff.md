@@ -39,7 +39,7 @@ We at least know he was in his favorite place at the end; snuggled cozy in bed, 
 
 ---
 
-My wife and I adopted Griff mere months after we got married, almost 13 years ago. Griff's been a part of our lives since before we even had a house; since before I was a designer, or graduated college; since before I ever wrote my first line of code; since before we had our son.
+My wife and I adopted Griff just a few months after we got married almost 13 years ago. Griff's been a part of our lives since before we even had a house, or a yard for him; since before I was a designer, or graduated college; since before I ever wrote my first line of code; since before we had our son.
 
 Our poor son. He's six. He's never cried like this, at anything. He's known Griff his whole life.
 
@@ -53,19 +53,19 @@ What little info we got from the rescue group was mixed. He was a stray, perhaps
 
 ---
 
-It began unexpectedly. We were on a trip to Bed Bath & Beyond when we saw a sandwich board in front of a nearby pet store, announcing rescue dogs for adoption were there to visit that day. That sign did its job, and we took a detour that would end up changing the next nearly 12+ years of our lives.
+It began unexpectedly. We were on a trip to Bed Bath & Beyond (the beginning of all great stories) when we saw a sandwich board in front of a nearby pet store, announcing rescue dogs for adoption were there to visit that day. That sign did its job, and we took a detour that would end up changing our world for more than a decade.
 
-We loved the dogs we saw there that day, but they weren't quite the right fit. Still, the ball was now inexorably rolling, and we went to visit the rescue group's kennels shortly thereafter, on a sweltering afternoon in July.
+We loved the dogs we saw there that day, but they weren't quite the right fit for us. Still, the ball was now inexorably rolling, and we went to visit the rescue group's kennels a few days later, to meet more dogs on a sweltering afternoon in July.
 
-That's where we met Griff the first time (the rescue group had named him Houston), tongue permanently stuck out of his mouth, panting from the heat.
+That's where we met Griff the first time (the rescue group had named him Houston), tongue permanently stuck out of his mouth, panting from the oppressive heat.
 
 <img alt="Griff, a brown and grey Yorkie of about 10 pounds or so, on the first day we met him, panting in the summer heat" src="/images/post_images/griff/griff-first.jpg" loading="lazy" />
 
-There were treatments, paperwork, and house visits to get through. We needed official approval from our landlord. The rescue group (Omaha's [Hands, Hearts and Paws](https://www.handsheartspaws.org/)) took its responsibility to give the pets a good home seriously. But in a matter of weeks, Griff was ours, and we were delighted to welcome him into our lives.
+He wasn't ready for us yet. There were vet treatments to get through (he'd been pretty neglected, and was underweight), paperwork, and house visits, too. We needed official approval from our landlord. The rescue group (Omaha's [Hands, Hearts and Paws](https://www.handsheartspaws.org/)) took its responsibility to give the pets a good home seriously. But in a matter of weeks, Griff was ours, and we were delighted to welcome him into our lives.
 
 ---
 
-It took us a while to settle on Griff's name. He was just "the dog," or "him" for several days. In fact, we initially named him "Duke," before realizing it just didn't sound right a day or two later. He wasn't a Duke.
+It took us a while to settle on Griff's name. He was just "the dog," or "him" for several days. In fact, we initially named him "Duke," before realizing a day or two later that name just didn't sound right. He wasn't a Duke.
 
 He was a Griff, as it turned out—and as everybody he met reaffirmed. Any time we told somebody our dog's name, the response was always "Griff? Aww, he looks like a Griff!"
 
@@ -75,17 +75,19 @@ He was a Griff, as it turned out—and as everybody he met reaffirmed. Any time 
 
 The first few weeks with Griff were trying. We didn't know him, and he didn't know us. It took some time.
 
-He wasn't a snuggler. He didn't like being close to us. My wife was determined to change that, though, and she succeeded resoundingly. It wasn't long before his favorite spot was next to us, wherever we happened to be (particularly if there was a blanket involved).
+He wasn't a snuggler. He didn't like being close to us. My wife was determined to change that, though, and her loving persistence eventually succeeded. It wasn't long before his favorite spot was next to us, wherever we happened to be (particularly if there was a blanket involved).
 
 <img alt="Griff, snuggling with my smiling wife on the couch" src="/images/post_images/griff/griff-cuddles.jpg" loading="lazy" />
 
-He always wanted to be where we were. The moment he saw shoes, or a suitcase, or grocery bags, he was in his carrier, waiting to go with us wherever we might be headed.
+Griff _always_ wanted to be where we were. The moment he saw shoes, or a suitcase, or grocery bags, he was in his carrier, waiting to go with us wherever we might be headed.
+
+In his older years, when his hearing started to go, he'd regularly go looking around the house for us when he realized he hadn't seen us in a while. He tried to make a bed in whatever room we were in, to keep an eye on us, make sure we weren't going anywhere without him.
 
 <img alt="Griff, waiting anxiously in his travel bag to be transported wherever we were going next" src="/images/post_images/griff/griff-bag.jpg" loading="lazy" />
 
-I'm lucky to have worked in a dog-friendly office for several years. Griff got to visit many times—he _loved_ it—and I'm happy he was able to make friends there. My coworkers would often send me DMs to tell me about the funny thing Griff did that day.
+I'm lucky to have worked in a dog-friendly office for several years. Griff got to visit many times—he _loved_ it—and I'm happy he was able to make friends there. My coworkers would often send me DMs to tell me about the funny things Griff did that day.
 
-He didn't always like other dogs. He was kind of funny about that, actually; he was an incorrigible curmudgeon, even when he was relatively young. He couldn't stand too much noise or excitement, and would let you know with a loud bark if things were getting a little too feisty. Whether it was a puppy who just wanted to play, people running, or too much roughhousing or tickling, he would always jump in with a harsh vocalization, as if to say, _hey you kids! Knock that off!_
+He didn't always like other dogs. He was kind of funny about that, actually; he was an incorrigible curmudgeon, even when he was relatively young. He couldn't stand too much noise or excitement, and would let you know with a loud bark if things were getting a little too feisty. Whether it was a puppy who just wanted to play, people running or roughhousing, or too much tickling, he would always jump in with a harsh vocalization, as if to good-naturedly say, _hey you kids! Knock that off!_
 
 He always liked the older dogs, though. He was an old soul.
 
@@ -99,11 +101,11 @@ He possessed a hilariously unearned fearlessness. He'd walk out on a narrow ledg
 
 Griff was mouthy, but in such a polite way. He had this gentle growl-bark he deployed whenever he wanted to get your attention. It was so sweet, like a soft "excuse me," to let us know he wanted outside, or had perhaps lost some food in an inaccessible place.
 
-Griff desperately wanted to be able to howl, but just couldn't. He tried his hardest, but could only come up with a high-pitched falsetto vocalization, not unlike a kid who can't whistle but tries to recreate the sound with a scream. Getting Griff to try his howl (which would just cause him to make silly noises until he inevitably just started barking at all the commotion) was a reliable source of hilarity in our house.
+Griff desperately wanted to be able to howl, but just couldn't. He tried his hardest, but could only come up with a high-pitched falsetto vocalization, not unlike a kid who can't whistle but tries to recreate the sound with a scream. Trying to get Griff to howl (which would just cause him to make silly noises until he inevitably just started barking at all the commotion) was a reliable source of hilarity in our house.
 
 Griff always wanted to be at eye level with the people in the room. If there was an empty chair, he'd be in it (even at the dinner table). If he felt like he was missing out on too much, he'd get somebody to pick him up. My brother nicknamed him "Bazooka" for his habit of getting up on the back of the sofa and standing on your shoulder just to get a better view.
 
-Griff loved blankets, and being warm and cozy, but given the choice, he preferred to use our clothes. He loved a good spot in the sun—particularly if it happened to be by the fireplace. (But in a pinch, a basket of fresh laundry, or perhaps a properly smooshed-down throw pillow would do the trick.)
+Griff loved blankets, and being warm and cozy, but given the choice, he preferred to use a piece of clothing that belonged to my wife, or to me. He loved a good spot in the sun—particularly if it happened to be by the fireplace. (But in a pinch, a basket of fresh laundry, or perhaps a properly smooshed-down throw pillow would do the trick.)
 
 <img alt="Griff, curled up in a basket of fresh laundry" src="/images/post_images/griff/griff-laundry.jpg" loading="lazy" />
 
@@ -119,11 +121,13 @@ Griff's terrier instincts could not be contained. He loved hiding under the otto
 
 More than once, he destroyed a supposedly "indestructible" toy meant for dogs five times his size in less than a day.
 
-Despite those rare instinctive and efficient bursts of violence, however, more than anything, Griff was sweet. Though he was hit-and-miss on other dogs, he _loved_ every human he ever met. (Even the delivery drivers; though he'd bark relentlessly, getting close to that stranger always seemed to confuse his instincts, and you could see the more benevolent of the two winning out, as that fiendish enemy began to look like just another new friend.) Griff even liked cats—or, at least, was fascinated by them, if perhaps a little scared of them, too.
+Despite those rare instinctive, efficient bursts of violence, however, more than anything: Griff was sweet.
 
-Everybody was a friend, to Griff. Every meeting was a cause for joy. Nothing beat seeing his cute little stump of a tail rapidly toggling back and forth.
+Though he was hit-and-miss on other dogs, he loved every human he ever met. (Even the delivery drivers; though he'd bark relentlessly, getting close to that stranger always seemed to confuse his opposing instincts, and you could see the more benevolent of the two winning out, as that fiendish enemy began to look like just another new friend upon closer inspection.) Griff even liked cats—or, at least, was fascinated by them, if perhaps a little scared of them, too.
 
-I think Griff knew how cute we thought he was. He mastered the art of putting his chin on things to look adorable.
+Everybody was a friend, to Griff. Every meeting was a cause for joy. Nothing beat seeing his cute little stump of a tail rapidly toggling back and forth in delight.
+
+I think Griff knew how cute we thought he was. He mastered the art of putting his chin on things to look adorable when he wanted something. (Sometimes he also fell asleep in this pose by accident.)
 
 <img alt="Griff, resting his chin on the table with his eyes closed" src="/images/post_images/griff/griff-table.jpg" loading="lazy" />
 
@@ -133,7 +137,7 @@ Maybe he just sensed they were also as happy to see him as he was to see them.
 
 ---
 
-Griff loved _our_ kid especially. The day we brought our son home from the hospital, Griff leaned as far as he could off the edge of the bed to get a look at the basinet, filled with loving curiosity at this tiny new human who had found its way into our lives. The two were close from then on.
+Griff loved _our_ kid especially. The first day Griff met our newborn, he leaned as far as he could off the edge of the bed to get a look at the basinet, filled with loving curiosity at this tiny new human who had found his way into our lives. My wife and I had been afraid of how Griff might react, but it was for nothing; the two were close buddies from that moment on.
 
 <img alt="Griff, giving our young, smiling son a happy lick on the face" src="/images/post_images/griff/griff-lick.jpg" loading="lazy" />
 
@@ -150,29 +154,35 @@ Griff even came to be at peace with the constant chaos our energetic young boy e
 
 ---
 
-We knew our time with Griff was short, but we never suspected it was _that_ short.
+We knew our time with Griff was short, but we never suspected it was _this_ short.
 
-He had chronic kidney disease and GI tract issues. He'd been on a special diet and pills for years. His visits to the vet had become common. Still, most of the time, he still seemed more or less like his old self, albeit a little more timid, a little less energetic.
+He had chronic kidney disease and GI tract issues. He'd been on a special diet and pills for years. His visits to the vet had become common. Still, most of the time, he seemed more or less like his old self, albeit a little more timid, a little less energetic.
 
 Whenever we walked him, people would comment about how well he seemed to be getting around for his age; how spry he still seemed to be.
 
 But he was up and down. Things got better, then worse, then better again.
 
-We knew something was up. We were already trying to figure out what it was and get the proper treatment. Saturday was a bad day for him, but we took him in to the vet, as we often did. We got him what we thought he needed. We thought he'd bounce back after a good night's sleep.
+We knew something was up. We were already trying to figure out what it was and get the proper treatment. Saturday was a bad day for him, but we took him in to the vet, as we often did. We got him what we thought he needed. He didn't seem himself, but we thought he'd bounce back after a good night's sleep.
 
-We knew the end was in the foreseeable future, but we thought we had more time.
+We thought we had more time.
+
+We had plans in our head for how we'd handle the end; plans that we never got to do.
 
 _We thought we had more time_.
 
 ---
 
-There's a certain tone your partner can have in their voice; a primal cry, sacredly reserved for only the moments when something is seriously, horrifyingly wrong. The instant you hear it, you've already dropped everything you were doing and begun sprinting towards the sound before your brain even has time for to form a conscious thought.
+When you know somebody long enough, you get to know a certain tone they can have in their voice. It's one you recognize immediately and instinctively; a primal sound, reserved for only the moments when something is seriously, horrifyingly wrong.
 
-When you hear that...you know.
+It's the kind of sound that makes you drop everything you were doing and sprint towards it at full speed, even before you have time to consciously realize you're doing it.
+
+I knew. I knew before I knew.
 
 All of us cried all morning, and on and off ever since. I'm crying writing this.
 
 Our son has scarcely stopped talking about it. "Griff was the best part of my life," he told us at one point, through interminable sobs. He was up _hours_ later than normal on Sunday night, obviously exhausted but still inconsolable. The poor kid.
+
+He's not ok. None of us are.
 
 ---
 
