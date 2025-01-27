@@ -1,15 +1,13 @@
 ---
-title: "Words and phrases lots of people get wrong (at work): a personal collection"
+title: "Rare words in common phrases, and how to avoid getting them wrong"
 date: '2025-1-21'
 updated: '2025-1-21'
 categories:
-  - web
-  - javascript
-  - svelte
+  - advice
 coverImage: 'words.png'
 coverWidth: 16
 coverHeight: 9
-excerpt: A running list of commonly mistaken words and phrases I've noticed commonly in company Slacks, emails, and social posts, to hopefully help you avoid making the same mistakes.
+excerpt: A running list of uncommon, strange, and/or archaic words embedded in common idioms, to help you type them correctly next time you use them.
 ---
 
 <script>
@@ -18,90 +16,65 @@ excerpt: A running list of commonly mistaken words and phrases I've noticed comm
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-Look, I know there are already a million articles just like this out there. But I have my own group of pet mistakes that I commonly notice, particularly from people in tech. (Or, maybe from everyone, but I just think it's people in tech because that tends to be my core digital social group.)
+English is a weird language. It's essentially centuries-old bloatware, still running, consistently being updated, but largely made up of strange, ill-advised, or nonsensical patches and legacy commits (often copied and pasted straight from other languages).
 
-Either way, here are some mistakes you can hopefully avoid after reading this post. (I plan on adding new entries as they come up.)
+One interesting result of this linguistic mishmash is that some rarely-used words survive purely because they exist in a common phrase or idiom. (Some linguists call this "fossilization;" the word is preserved inside a familiar wrapper.)
 
-## The list of words and phrases
+Take, for example the term: "wreak havoc." It's common enough that you've probably heard it fairly regularly, but I don't think I've ever heard the word "wreak" used in everyday language. I'm not even sure how else you'd use it, exactly, if it wasn't paired with "havoc." (“_Time to eat, everyone, dinner is wreaked!_” Nope, that doesn't sound right.)
 
+But in any case, I'm sure it's not _reek_ havoc. (That, I suppose, would be some kind of chaotic smell?)
 
-### Tenant / tenet
-
-A **tenant** is somebody who occupies rented space; “_we're considering leasing part of our office out to a **tenant**_.”
-
-A **tenet** is a principle or belief; “_one-way data flow is a core **tenet** of React_.”
+Ok, so you might not use that specific example a lot. Not a lot of occasion in your life to discuss havoc being wreaked, perhaps. But many similar, widely-used phrases and idioms contain old, misunderstood words. So, in the interest of helping you type these phrases correctly, let's get down to the list.
 
 
-### Phased / fazed
+## Core tenet
 
-People commonly say "unphased" when they mean "unfazed." The latter is what you want.
+A **tenet** is a principle or belief; “_one-way data flow is a core **tenet** of React_.” (By the way: be sure to keep _principle_ and _principal_ straight, but that's slightly off-topic.)
 
-A **phase** is a generally stage; something you go through, like a phase of the moon. “_We're currently in our hyper-growth **phase**_.”
+**Tenet** is commonly confused with the much more common word "tenant," which  is somebody who occupies rented space; “_we're considering leasing part of our office out to a tenant_.”
 
-**Fazed** describes a reaction of concern; “_although I worried about meeting our new goals, my manager seemed **unfazed**_.”
+So the phrase is _core **tenet**_, not _core tenant_. (I guess unless you mean the party renting the innermost center space.)
+
+## Unfazed
+
+People commonly type "unphased" when they mean “**unfazed**." The latter is what you want.
+
+**Fazed** describes a reaction of concern or disconcertion; “_although I was disturbed by my teammate's behavior, my manager seemed **unfazed**_.”
+
+The more common word "phase" is a generally stage; something you go through, like a phase of the moon. “_We're currently in our hyper-growth phase_.” But don't get them confused; you mean someone is "unfazed," not "unphased."
 
 
-### Utmost / upmost
-
-**Utmost** is a somewhat archaic word, so it's not surprising it causes confusion.
+## The utmost
 
 **Utmost** means: the absolute highest possible. “_I have the **utmost** respect for everything our CEO has accomplished, but he's still wrong about our team's needs_.” Or: “_this meeting is of the **utmost** importance_.”
 
-**Upmost** isn't a commonly used word, but it means the top thing in a group; when playing a card game, you typically draw the **upmost** card from the deck. So it's technically not _semantically wrong_ to use in place of utmost, but it's still not exactly right, either, because utmost is the word from the common phrase.
+Many people mishear **utmost** as "upmost," which actually _is_ a word, but not the right one. Upmost means "uppermost" or "top." (When playing a card game, you typically draw the _upmost_ card from the deck.) So it's technically not _semantically wrong_ to use in place of **utmost**, but it's still not exactly right, either, because **utmost** is the word from the common phrase.
 
 
-### Albeit / I'll be it / all be it
+## Albeit
 
-**Albeit** means the same thing as "although": “_they're a great client to have, **albeit** a demanding one_.” It just happens to sound like "I'll be it" (or "all be it"), which aren't correct in this context.
+**Albeit** means the same thing as "although": “_they're a great client to have, **albeit** a demanding one_.” Or: “_we're making progress, **albeit** slowly._”
 
-
-### Loose / lose
-
-Classic internet blunder here, but you **lose** your keys, or **lose** a game; **loose** is the opposite of tight.
-
-_We might **lose** this client if we don't fix our **loose** quality control._
+**Albeit** just happens to sound like "I'll be it, or "all be it," neither of which is correct in this context.
 
 
-### A part of / apart of
-
-People very frequently leave out the space in "a part," which turns it into the word "apart"—which is frequently the opposite of what you might mean by "a part."
-
-“_I'm happy to be **a part of** the team_” is correct, but you're not happy to be _**apart of**_ the team (at least, not unless you're clumsily saying you're happy to be **apart** from them and not together with them).
-
-Another way of putting it: to say _integrity is **a part of** our company's values_ is virtually the opposite of saying _integrity is **apart of** our company's values_.
-
-
-### Say my piece / say my peace
-
-These are actually both valid, but they mean slightly separate things.
-
-To **say your piece** is to state your opinion; to say your part. “_In the meeting, I said my piece on our roadmap, and everyone else chimed in with their own takes, too_.”
-
-To **say your peace** is to say everything you have to say, or finally get everything off your chest; “_I had a one-on-one with the CEO, and I said my peace on everything I've been feeling about the company's new direction, so now I'm ready to move on_.”
-
-
-### Breath / Breathe
-
-You **breathe** in and out. “_They seemed panicked, so I told them to just **breathe** deeply_.”
-
-You can lose your **breath**, have bad **breath**, and take a **breath**. But you don't **breath**; you **breathe**.
-
-
-### Moot point / mute point
+## Moot point
 
 **Moot** means meaningless or irrelevant. “_I mentioned all the ways NextJS is a poor choice for us, but it was a moot point, as it's too late to change now._”
 
-**Mute** is commonly mistaken for moot, but it means silent or speechless. A point isn't **mute**.
+People commonly mistake **moot** for "mute," but that's wrong. It's a **moot** point, not a point that's silent or speechless.
 
 
-### Rein / reign / rain
+## Rein / reign
 
-**Reins** are used to control a horse or other steed, and that's where many modern idioms come from. “_The presenter was losing the audience with her embellishments, so I told her to **rein** it in a bit_.” Or: “_Our CEO announced she'll be handing the **reins** over to a new leader._”
+**Reins** are used to control a mount or a chariot, and that's where many modern idioms come from, like **rein** (it) in: “_he kept losing the audience with bad jokes, so I told him to **rein** it in_.” Or: “_we need to figure out how to **rein** in our expenses._”
 
-**Reign** is what a ruler does, and rain, of course, might fall on a parade.
+It's also the same word used in phrases like “taking the **reins**”, i.e., passing steering control to another person: “_our CEO announced she'll be handing the **reins** over to a new leader._”
+
+**Rein** is commonly confused with _two_ homophones: reign, and rain. But reign is what a ruler or champion does, and rain, of course, might fall on a parade.
 
 
-### Wary / weary / leery
+## Wary / weary / leery
 
 These may be the most commonly confused words on this list.
 
@@ -109,59 +82,58 @@ To be **wary** is to be cautious or skeptical; “_our vendor is promising a 200
 
 **Leery** means the same thing: “_I'm **leery** of any company that makes such bold claims_.”
 
-**Weary**, however, means "tired." “_I'm **weary** of these broken promises from our vendor_.” Weary is often mistakenly used instead of wary, though, probably because it sounds a lot like leery.
+**Weary**, however, means "tired." “_I'm **weary** from being up late last night_.” Weary is often mistakenly used instead of wary, though, probably because it sounds a lot like leery.
 
 
-### I can't overstate / it can't be overstated
-
-This phrase is very commonly messed up, because it uses a negative to make a positive statement, and so it can sound like you're saying the opposite of what you mean.
-
-If you **can't overstate** something (or if it can't be overstated), that means no words could diminish its significance: “_I can't overstate the importance of sales growth this quarter_.”
-
-But the negative "can't" in there confuses a lot of speakers. So avoid saying you _can_ overstate the importance, or confusing "overstate" with "understate." (_I can't understate_ would mean: it's absolutely trivial.)
-
-
-### Per se / per say
+## Per se
 
 This one is doubly tricky, because the original phrase is not only Latin, but it's _also_ commonly misused and misunderstood.
 
 People commonly use **per se** to mean "exactly," as in: “_I wouldn't say I was mad about it, **per se**_.” But while that usage isn't always wrong, it isn't always right, either.
 
-**Per se** _actually_ means "by itself," "on its own," or "intrinsically." If it helps: you can use the phrase **per se** anywhere you might use the phrase "in and of itself": “_I don't hate Tailwind **per se**, I just can't stand the culture around it_.” Or: “_the new HR software isn't bad **per se**, but people are having a hard time getting used to it_.”
+**Per se** _actually_ means "by itself," "on its own," or "intrinsically." You can substitute **per se** anywhere you might use the phrase "in and of itself":
 
-**Per say**, as some people assume it's spelled, is actually not a phrase.
-
-
-### Chock-full / chalk(ed) full
-
-This is another one that's tricky because the main word in the phrase is a bit archaic.
-
-A **chock** is a wooden wedge stuffed into a barrel to fill any empty gaps. Chocks were used to prevent the contents of barrels from shifting in transit, and to make sure there was no empty space for anything unwanted to get into.
-
-So to say something is stuffed to the maximum, you say it's **chock-full**: “_that presentation was **chock-full** of useful information to take back to the team_.” (Notice it _is_ hyphenated, and it's not **chocked** full, because **chock** is a noun in this case, not a verb.)
-
-**Chalk full** is not a phrase, and neither are **chocked/chalked full**. (You do, however, **chalk it up** to a misunderstanding.)
+“_I don't hate Tailwind **per se** (in and of itself), I just can't stand the culture around it_.” Or: “_it wasn't a bad decision **per se** (on its own), but it's having some undesirable side effects_.”
 
 
-### Flesh out / flush out
+## Chock-full
+
+One of the more archaic words on the list, a **chock**, in this case, is a wooden wedge stuffed into a barrel to fill any empty gaps. (You may also know a "chock" as a triangular block used to keep wheels from rolling, but that's a slightly different meaning.)
+
+In this context, chocks were used to prevent the contents of containers from shifting in transit, and to make sure there was no empty space for anything unwanted to get into or hide in.
+
+So to say something is stuffed to the maximum, you say it's **chock-full**: “_that presentation was **chock-full** of useful information to take back to the team_.” (Notice the hyphenation.)
+
+Some people mishear the phrase as "chalk full," but that's not a phrase, and it's also “**chock-full**,” not “_chocked_-full." (You may, however, _chalk_ it up to a misunderstanding.)
+
+
+## Flesh out / flush out
 
 You **flesh out** a loose concept or idea; “_we had a meeting to **flesh out** the design of the new feature in more detail_.”
 
 You **flush out** something you want to be removed, especially from a hiding place. “_We were finally able to **flush out** the code causing those flaky CI errors_.”
 
 
-### Elicit / illicit
+## Elicit / illicit
 
 Probably not as common as most of the mistakes on this list, but still worth a mention, since these homophones are easily confused.
 
-To **elicit** is to evoke or draw out a reaction: “_the CEO's comments on diversity **elicited** some strong pushback_.”
+To **elicit** is to evoke or draw out a reaction: “_the CEO's sexist comments **elicited** some strong pushback_.”
 
 **Illicit** means forbidden or illegal: “_we're not supposed to have games on our company laptops, but Todd installed an **illicit** copy of Balatro_.”
 
+## Say your piece / say your peace
 
-### Discrete / discreet
+These two phrases are actually both correct, but you'd use them differently.
 
-Even ardent grammar snobs get these two confused. (I have to look it up every time myself.)
+To say your **piece** is to state your opinion; to play your part (your **piece**). “_I **said my piece** in the meeting, as did everyone else_.”
+
+To **say your peace**, on the other hand, is getting everything off your chest. You might **say your peace** at a funeral, for example, or in a deep conversation. “_We had a long conversation where I **said my peace** on everything I've been feeling, and now I'm ready to move on._” It means to be at peace, because you've said everything you have to say.
+
+
+## Discrete / discreet
+
+These words aren't as old-fashioned as many on the list, but I felt they were worth including since they're very easily confused. (I have to look it up every time myself.)
 
 **Discrete** means separate or distinct: “_our email is sent from a **discrete** server not connected with our main app_.”
 
@@ -169,35 +141,21 @@ Even ardent grammar snobs get these two confused. (I have to look it up every ti
 
 A mnemonic to help remember the two: the one that means _separate_ has the E's at the end _separated_ by a T.
 
-### Affect / effect
 
-Another very common one, **affect** is transitive (meaning: it is done _to_ something or someone else), whereas **effect** is a noun; a thing that exists, rather than an action that is done.
+## Ulterior motives
 
-“_The **effect** of the new PTO policy has been overwhelmingly damaging to morale. I can feel it **affecting** me, too._”
+**Ulterior** refers to something intentionally hidden. “_Our competitor seems interested collaborating with us on this initiative, but I suspect they have **ulterior** motives_.”
 
-You are **affected**, or you feel the **effect**. A thing has an **effect**, or it is **affecting** people.
-
-
-### Its / it's
-
-There's only an apostrophe in the word "it's" when you can substitute the phrase "it is." Otherwise, omit the apostrophe—even when conveying possession.
-
-**Right**: “_**It's** important to be correct._” (Because "it is" important; "it's" is a contraction.)
-
-**Wrong**: “_The dog lost **it's** sweater._” (Omit the apostrophe, or use a different pronoun like _his_, _her_, or _their_ if you want to convey possession. Or, just rewrite the sentence to something like “the dog's sweater was lost.”)
+**Ulterior** is commonly misspelled "alterior," because that sounds a bit like "alternate," and to say somebody has _alternate motives_ makes sense in this context. But that's not a word, and not the proper phrase.
 
 
-### Then / than
+## Sleight of hand
 
-An extremely common autocorrect fail. **Then** refers to time; **than** is a comparison.
+**Sleight** means cunning and dextrous. “_The app feels fast, but it's actually some behind-the-scenes **sleight of hand** that makes it feel more speedy than it actually is._”
 
-“_I got some work done, **then** I played ping-pong_.”
-
-“_I'd rather play ping-pong **than** go back to work_.”
+"Slight of hand" is an understandable mishearing, but it's still incorrect, as "slight" doesn't mean the same thing as **sleight**.
 
 
-### Literally
+## Eke (out)
 
-Look, I know everyone uses the word "literally" non-literally, but to be clear, it's best to avoid doing so. It can confuse the listener when a word is used as **literally** the opposite of its **literal** meaning.
-
-Besides, it's just embellishment when used in this way, and so it really isn't adding anything meaningful to your sentence to begin with. So if you find yourself saying something like “_my boss **literally** bit my head off_,” maybe just leave that word out, or find a different word to use for emphasis (if for no other reason than one day, when you say something like “_the kitchen is **literally** on fire_,” people will know to take you seriously).
+Commonly confused with **eek** (which is what you might say if you're surprised or scared), **eke** is a separate word that means to get by, but just barely. “_Thanks to that last-second field goal, they were just able to **eke** out the win_.”
