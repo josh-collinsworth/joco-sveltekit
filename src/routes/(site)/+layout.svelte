@@ -77,7 +77,6 @@
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
-	<meta name="twitter:card" content="summary_large_image" />
 	{#if !dev}
 		<script
 			defer

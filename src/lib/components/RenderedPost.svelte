@@ -12,19 +12,20 @@
 	import { dev } from '$app/environment'
 
 	interface Props {
-		PostContent: SvelteComponent;
-		meta: Post;
+		PostContent: SvelteComponent
+		meta: Post
 	}
 
-	let { PostContent, meta }: Props = $props();
+	let { PostContent, meta }: Props = $props()
 
 	const defaultImagePath = `/images/site-image.png`
-	let imagePath: string = $derived(meta.coverImage
-		? meta.coverImage.startsWith('http')
-			? meta.coverImage
-			: `/images/post_images/${meta.coverImage}`
-		: defaultImagePath)
-	
+	let imagePath: string = $derived(
+		meta.coverImage
+			? meta.coverImage.startsWith('http')
+				? meta.coverImage
+				: `/images/post_images/${meta.coverImage}`
+			: defaultImagePath
+	)
 
 	const wrapTablesInScrollableDivs = (): void => {
 		/**
@@ -78,16 +79,10 @@
 	<meta data-key="description" name="description" content={meta.excerpt} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={meta.title} />
-	<meta name="twitter:title" content={meta.title} />
 	<meta property="og:description" content={meta.excerpt} />
-	<meta name="twitter:description" content={meta.excerpt} />
 	<meta property="og:image" content="https://joshcollinsworth.com{imagePath}" />
 	<meta property="og:image:width" content={meta.coverWidth} />
 	<meta property="og:image:height" content={meta.coverHeight} />
-	<meta
-		name="twitter:image"
-		content="https://joshcollinsworth.com{imagePath}"
-	/>
 	<meta
 		property="og:url"
 		content="https://joshcollinsworth.com/blog/{meta.slug}/"
