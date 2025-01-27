@@ -77,6 +77,8 @@ The first few weeks with Griff were trying. We didn't know him, and he didn't kn
 
 He wasn't a snuggler. He didn't like being close to us. My wife was determined to change that, though, and her loving persistence eventually succeeded. It wasn't long before his favorite spot was next to us, wherever we happened to be (particularly if there was a blanket involved).
 
+Given the choice, I know he preferred her to me, but I was fine with that. I know he loved us both, but she earned her spot fair and square.
+
 <img alt="Griff, snuggling with my smiling wife on the couch" src="/images/post_images/griff/griff-cuddles.jpg" loading="lazy" />
 
 Griff _always_ wanted to be where we were. The moment he saw shoes, or a suitcase, or grocery bags, he was in his carrier, waiting to go with us wherever we might be headed.
