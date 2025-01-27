@@ -49,11 +49,11 @@ Griff was there for this entire married era of our adult lives. He saw us throug
 
 Griff was a rescue dog. We never knew for sure where he came from, or exactly how old he was. At our first visit to the vet, they estimated he was probably about 2–3 years old at the time, but it was just a best guess.
 
-What little info we got from the rescue group was mixed. He was a stray, perhaps, or maybe he was a puppy mill dog—which seemed likely, given he was a purebred Yorkie—but neither seemed to fully add up. We were never sure, but we often speculated about where he might have come from, and what he might have been through, before that fateful day when our paths happened to cross.
+What little info we got from the rescue group was mixed. He was a stray, perhaps, or maybe he was a puppy mill dog—which seemed likely, given he was a purebred Yorkie—but neither seemed to fully add up. We were never sure, but we often speculated about where he might have come from, and what he might have been through, before our paths happened to cross.
 
 ---
 
-It began unexpectedly. We were on a trip to Bed Bath & Beyond (the beginning of all great stories) when we saw a sandwich board in front of a nearby pet store, announcing rescue dogs for adoption were there to visit that day. That sign did its job, and we took a detour that would end up changing our world for more than a decade.
+It began unexpectedly. We were on a trip to Bed Bath & Beyond (the beginning of all great stories) when we saw a sandwich board in front of a nearby pet store, announcing rescue dogs for adoption were there to visit that day. That sign did its job, and we took a detour that we had no idea would end up changing our lives.
 
 We loved the dogs we saw there that day, but they weren't quite the right fit for us. Still, the ball was now inexorably rolling, and we went to visit the rescue group's kennels a few days later, to meet more dogs on a sweltering afternoon in July.
 
