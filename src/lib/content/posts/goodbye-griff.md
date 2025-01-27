@@ -27,7 +27,7 @@ img + img {
 }
 </style>
 
-Every day of my life for the past 12+ years, I've woken up, fed our dog, and let him outside. It's been a reflexive part of my morning routine for as long as I've had one. Every day after lunch, we'd all take a walk together (weather permitting), and every night, my wife and I would let him out one last time before putting him in our bed for the night.
+Every day of my life for the past 12+ years, I've woken up, fed our dog, and let him outside. It's been a reflexive part of my morning routine for as long as I've had one. He'd usually spend the day in my office with me (or going to the office with me, back when I commuted). Every day after lunch, we'd all take a walk together (weather permitting). Every evening, he'd curl up on the couch with us to watch a show, and then, my wife and I would let him out one last time before putting him in our bed for the night.
 
 It's funny; I never wanted our dog to sleep in our bed, but I lost that battle many years ago.
 
