@@ -8,8 +8,6 @@ coverImage: "griff/griff-cover.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: "A tribute to the member of our family we lost this weekend."
-draft: true
-published: false
 ---
 
 <script>
