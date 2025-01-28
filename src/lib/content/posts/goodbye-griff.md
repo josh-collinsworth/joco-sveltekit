@@ -39,13 +39,13 @@ We at least know he was in his favorite place at the end; snuggled cozy in bed, 
 
 ---
 
-My wife and I adopted Griff just a few months after we got married almost 13 years ago. Griff's been a part of our lives since before we even had a house, or a yard for him (come to think of it, we ended up fencing two different yards at two different houses just for him); since before I was a designer, or graduated college; since before I ever wrote my first line of code; since before we had our son.
+My wife and I adopted Griff just a few months after we got married almost 13 years ago. Griff's been a part of our lives since before we even had a house, or a yard for him (come to think of it, we ended up fencing two different yards at two different houses just for him). He was with us since before I was a designer, or graduated college; since before I ever wrote my first line of code; since before we had our son.
 
 Our poor son. He's six. He's never cried like this, at anything. He's known Griff his whole life.
 
-It almost feels like I have, too.
-
 Griff was there for this entire married era of our adult lives. He saw us through virtually every job either one of us had, through three houses in two cities and states. Nearly a third of my time on this Earth was shared with that adorable little ragamuffin.
+
+---
 
 Griff was a rescue. We never knew for sure where he came from, or exactly how old he was. At our first visit to the vet, they estimated he was probably about 2–3 years old at the time, but it was just a best guess.
 
