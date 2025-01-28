@@ -81,7 +81,7 @@ Given the choice, I know he preferred her to me, but I was fine with that. I kno
 
 <img alt="Griff, snuggling with my smiling wife on the couch" src="/images/post_images/griff/griff-cuddles.jpg" loading="lazy" />
 
-Griff _always_ wanted to be going wherever we were. The moment he saw shoes, or a suitcase, or grocery bags, he was in his carrier, waiting to go with us wherever we might be headed.
+Griff _always_ wanted to be going wherever we were. The moment he saw shoes, or a suitcase, or grocery bags, he was in his carrier, waiting to go with us wherever we might be headed. He went on road trips and vacations with us, always content to sit in my wife's lap.
 
 In his older years, when his hearing started to go, he'd regularly go looking around the house for us when he realized he hadn't seen us in a while. He tried to make a bed in whatever room we were in, to keep an eye on us, make sure we weren't going anywhere without him.
 
@@ -115,7 +115,7 @@ Griff loved blankets, and being warm and cozy, but given the choice, he preferre
 
 Like most dogs, Griff loved being vigilant at the window, guarding the house from unknown perceived dangers.
 
-At first he hated the mailman only, and the mere creak of the mail slot was enough to send him into an uncontrollable frenzy. (The loss of hearing that came in his later years was not entirely unwelcome, for this reason.) Eventually, though, Griff's rage expanded to other deliveries and workers, until pretty much any truck, van, or loud vehicle, and anyone wearing what might appear to be work clothes, was suspected of villainy.
+At first he hated only the mailman, and the mere creak of the mail slot was enough to send him into an uncontrollable frenzy. (The loss of hearing that came in his later years was not entirely unwelcome, for this reason.) Eventually, though, Griff's rage expanded to other deliveries and workers, until pretty much any truck, van, or loud vehicle, and anyone wearing what might appear to be work clothes, was suspected of villainy.
 
 <img alt="Griff on his hind legs, looking vigilantly out the front window of our house" src="/images/post_images/griff/griff-vigilance.jpg" loading="lazy" />
 
@@ -125,13 +125,17 @@ More than once, he destroyed a supposedly "indestructible" toy meant for dogs fi
 
 Despite those rare instinctive, efficient bursts of violence, however, more than anything: Griff was sweet.
 
+<img alt="Griff's face barely peeking out from under the covers on the bed" src="/images/post_images/griff/griff-peek.jpg" loading="lazy" />
+
 Though he was hit-and-miss on other dogs, he loved every human he ever met. (Even the delivery drivers; though he'd bark relentlessly, getting close to that stranger always seemed to confuse his opposing instincts, and you could see the more benevolent of the two winning out, as that fiendish enemy began to look like just another new friend upon closer inspection.) Griff even liked cats—or, at least, was fascinated by them, if perhaps a little scared of them, too.
 
 Everybody was a friend, to Griff. Every meeting was a cause for joy. Nothing beat seeing his cute little stub of a tail rapidly toggling back and forth in delight.
 
-I think Griff knew how cute we thought he was. He mastered the art of putting his chin on things to look adorable when he wanted something. (Sometimes he also fell asleep in this pose by accident.)
+I think Griff knew how cute we thought he was. He mastered the art of putting his chin on things to look adorable when he wanted something.
 
-<img alt="Griff, resting his chin on the table with his eyes closed" src="/images/post_images/griff/griff-table.jpg" loading="lazy" />
+<img alt="Griff, cutely resting his chin on the back of a chair where he's resting" src="/images/post_images/griff/griff-chin.jpg" loading="lazy" />
+
+Griff was the star of all our Christmas cards, before our son took over that gig.
 
 He loved kids. I think it's partly because he loved licking faces, and theirs were the easiest to get to, but I think there was also more to it than that.
 
@@ -139,7 +143,7 @@ Maybe he just sensed they were also as happy to see him as he was to see them.
 
 ---
 
-Griff loved _our_ kid especially. The first day Griff met our newborn, he leaned as far as he could off the edge of the bed to get a look at the basinet, filled with loving curiosity at this tiny new human who had found his way into our lives. My wife and I had been afraid of how Griff might react, but it was for nothing; the two were close buddies from that moment on.
+Griff loved _our_ kid especially. The first day Griff met our newborn son, he leaned as far as he could off the edge of the bed to get a look at the basinet, filled with loving curiosity at this tiny new human who had found its way into our lives. My wife and I had been afraid of how Griff might react, but it was for nothing; the two were close buddies from that moment on.
 
 <img alt="Griff, giving our young, smiling son a happy lick on the face" src="/images/post_images/griff/griff-lick.jpg" loading="lazy" />
 
@@ -153,6 +157,10 @@ Although Griff identified our kid as a mobile treat dispenser early on, Griff lo
 <img alt="Griff, carefully eyeing our toddler son's cheerios" src="/images/post_images/griff/griff-longing.jpg" loading="lazy" />
 
 Griff even came to be at peace with the constant chaos our energetic young boy embodied as a rambunctious kindergarten, and learned to sleep through the rowdy football reenactments and wrestling matches happening on the couch beside him.
+
+<img alt="Griff and our son on a walk. Our son rides his trike, circa age 3, as Griff walks alongside him on a leash" src="/images/post_images/griff/griff-walk.jpg" loading="lazy" />
+
+<img alt="Our son, around 5 in this picture, walks Griff on his own on the sidewalk, the two of them side by side" src="/images/post_images/griff/griff-walk-2.jpg" loading="lazy" />
 
 ---
 
