@@ -27,19 +27,19 @@ img + img {
 }
 </style>
 
-Every day of my life for the past 12+ years, I've woken up, fed our dog, and let him outside. It's been a reflexive part of my morning routine for as long as I've had one. He'd usually spend the day in my office with me (or going to the office with me, back when I commuted). Every day after lunch, we'd all take a walk together (weather permitting). Every evening, he'd curl up on the couch with us to watch a show, and then, my wife and I would let him out one last time before putting him in our bed for the night.
+Every day of my life for the past 12+ years, I've woken up, fed our dog, and let him outside. It's been a reflexive part of my morning routine for as long as I've had one. He'd usually spend the day in my office with me (or going to the office with me, back when I commuted). Every day after lunch, we'd all take a walk together, weather permitting. Every evening, he'd curl up on the couch with us to watch a show, and then, my wife and I would let him out one last time before putting him in our bed for the night.
 
 It's funny; I never wanted our dog to sleep in our bed, but I lost that battle many years ago.
 
 I never realized before now that I'm grateful I did.
 
-Sunday, I found out I'd already gone through those familiar motions for the last time. Our beloved pet, friend, and family member, Griff, went to bed on Saturday night, and didn't wake up on Sunday morning.
+Sunday, I found out I'd already gone through those familiar motions for the last time. Griff went to bed on Saturday night, and didn't wake up on Sunday morning.
 
 We at least know he was in his favorite place at the end; snuggled cozy in bed, peaceful, and with the ones he loved, and who loved him.
 
 ---
 
-My wife and I adopted Griff just a few months after we got married almost 13 years ago. Griff's been a part of our lives since before we even had a house, or a yard for him; since before I was a designer, or graduated college; since before I ever wrote my first line of code; since before we had our son.
+My wife and I adopted Griff just a few months after we got married almost 13 years ago. Griff's been a part of our lives since before we even had a house, or a yard for him (come to think of it, we ended up fencing two different yards at two different houses just for him); since before I was a designer, or graduated college; since before I ever wrote my first line of code; since before we had our son.
 
 Our poor son. He's six. He's never cried like this, at anything. He's known Griff his whole life.
 
@@ -47,9 +47,9 @@ It almost feels like I have, too.
 
 Griff was there for this entire married era of our adult lives. He saw us through virtually every job either one of us had, through three houses in two cities and states. Nearly a third of my time on this Earth was shared with that adorable little ragamuffin.
 
-Griff was a rescue dog. We never knew for sure where he came from, or exactly how old he was. At our first visit to the vet, they estimated he was probably about 2–3 years old at the time, but it was just a best guess.
+Griff was a rescue. We never knew for sure where he came from, or exactly how old he was. At our first visit to the vet, they estimated he was probably about 2–3 years old at the time, but it was just a best guess.
 
-What little info we got from the rescue group was mixed. He was a stray, perhaps, or maybe he was a puppy mill dog—which seemed likely, given he was a purebred Yorkie—but neither seemed to fully add up. We were never sure, but we often speculated about where he might have come from, and what he might have been through, before our paths happened to cross.
+What little info we got from the rescue group was mixed. He was a stray, perhaps, or maybe rescued from a kill shelter. Or possibly he was a puppy mill dog—which seemed likely, given he was a purebred Yorkie—but no explanation seemed to fully add up. We were never sure, but we often speculated about where he might have come from, and what he might have been through, before our paths happened to cross.
 
 ---
 
