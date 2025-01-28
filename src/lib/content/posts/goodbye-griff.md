@@ -99,9 +99,9 @@ Griff is the source of my hatred of fireworks. For many years, he'd be too frigh
 
 Griff was hilarious. He was a lovable, clumsy doofus, who regularly slipped, tripped, fell off of things, or just got himself into jams he wasn't sure how to get back out of.
 
-He possessed an unearned fearlessness, or maybe just an innocent foolishness. He'd walk out on a narrow ledge, and then suddenly realize he couldn't turn around, and start his desperate little growl for help.
+He possessed an unearned fearlessness, or maybe just an innocent foolishness. He'd walk out on a narrow ledge, and then suddenly realize he couldn't turn around—or maybe get up somewhere he couldn't get down from—and start his desperate little growl for help.
 
-Griff was mouthy, but in a polite way. He had this soft, earnest growl-bark he deployed whenever he wanted to get your attention. It was so sweet, like a soft, gradually escalating "excuse me," to let us know he wanted outside, or had perhaps lost some food in an inaccessible place.
+Griff was mouthy, but in a polite way. He had this soft, earnest growl-bark he deployed whenever he wanted to get your attention. It was like a soft, sweet, gradually escalating "excuse me," to let us know he wanted outside, or couldn't get through a narrowly opened door, or had perhaps lost some food in an inaccessible place.
 
 Griff desperately wanted to be able to howl, but just couldn't. He tried his hardest, but could only come up with a high-pitched whine, not unlike a kid who can't whistle but tries to recreate the sound with falsetto. Trying to get Griff to howl (which would just cause him to make silly noises until he inevitably just started barking at all the commotion) was a reliable source of hilarity in our house.
 
@@ -113,7 +113,7 @@ Griff loved blankets, and being warm and cozy, but given the choice, he preferre
 
 <img alt="Griff, laying on a pillow that's shaggy and similarly colored to him, as though he's hiding" src="/images/post_images/griff/griff-hiding.jpg" loading="lazy" />
 
-Like most dogs, Griff loved being vigilant at the window, guarding the house from unknown dangers—perceived dangers, that is.
+Like most dogs, Griff loved being vigilant at the window, guarding the house from unknown perceived dangers.
 
 At first he hated the mailman only, and the mere creak of the mail slot was enough to send him into an uncontrollable frenzy. (The loss of hearing that came in his later years was not entirely unwelcome, for this reason.) Eventually, though, Griff's rage expanded to other deliveries and workers, until pretty much any truck, van, or loud vehicle, and anyone wearing what might appear to be work clothes, was suspected of villainy.
 
