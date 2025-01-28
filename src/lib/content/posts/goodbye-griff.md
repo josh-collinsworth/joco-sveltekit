@@ -1,7 +1,7 @@
 ---
 title: "Goodbye, Griff. You were a good boy."
 date: '2025-1-27'
-updated: '2025-1-27'
+updated: '2025-1-28'
 categories:
   - personal
 coverImage: "griff/griff-cover.jpg"
