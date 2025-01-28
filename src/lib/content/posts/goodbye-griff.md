@@ -27,7 +27,7 @@ img + img {
 }
 </style>
 
-Every day of my life for the past 12+ years, I've woken up, fed our dog, and let him outside. It's been a reflexive part of my morning routine for as long as I've had one. He'd usually spend the day in my office with me (or going to the office with me, back when I commuted). Every day after lunch, we'd all take a walk together, weather permitting. Every evening, he'd curl up on the couch with us to watch a show, and then, my wife and I would let him out one last time before putting him in our bed for the night.
+Every day of my life for the past 12+ years, I've woken up, fed our dog, and let him outside. It's been a reflexive part of my morning routine for as long as I've had one. He'd usually spend the day in my office with me (or going to the office with me, back when I commuted). Every day after lunch, we'd all take a walk together, weather permitting. Every evening, he'd curl up on the couch with us to watch a show, snoring softly for a while before my wife and I would let him out one last time and then put him in our bed for the night.
 
 It's funny; I never wanted our dog to sleep in our bed, but I lost that battle many years ago.
 
@@ -87,7 +87,7 @@ In his older years, when his hearing started to go, he'd regularly go looking ar
 
 <img alt="Griff, waiting anxiously in his travel bag to be transported wherever we were going next" src="/images/post_images/griff/griff-bag.jpg" loading="lazy" />
 
-I'm lucky to have worked in a dog-friendly office for several years. Griff got to visit many times—he _loved_ it—and I'm happy he was able to make friends there. My coworkers would often send me DMs to tell me about the funny things Griff did that day.
+I'm lucky to have worked in dog-friendly offices for several years. Griff got to visit many times—he _loved_ it—and I'm happy he was able to make friends there. My coworkers would often send me DMs to tell me about the funny things Griff did that day.
 
 He didn't always like other dogs. He was kind of funny about that, actually; he was an incorrigible curmudgeon, even when he was relatively young. He couldn't stand too much noise or excitement, and would let you know with a loud bark if things were getting a little too feisty. Whether it was a puppy who just wanted to play, people running or roughhousing, or too much tickling, he would always jump in with a harsh vocalization, as if to say, _hey you kids! Knock that off!_
 
