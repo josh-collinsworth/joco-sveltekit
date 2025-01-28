@@ -75,13 +75,13 @@ He was a Griff, as it turned out—and as everybody he met reaffirmed. Any time 
 
 The first few weeks with Griff were trying. We didn't know him, and he didn't know us. It took some time.
 
-He wasn't a snuggler. He didn't like being close to us. My wife was determined to change that, though, and her loving persistence eventually succeeded. It wasn't long before his favorite spot was next to us, wherever we happened to be (particularly if there was a blanket involved).
+He wasn't a snuggler. He didn't like being close to us. My wife was determined to change that, though, and her loving persistence eventually succeeded. It took time, but he warmed to us, and soon, his favorite spot was next to us, wherever we happened to be (particularly if there was a blanket involved).
 
 Given the choice, I know he preferred her to me, but I was fine with that. I know he loved us both, but she earned her spot fair and square.
 
 <img alt="Griff, snuggling with my smiling wife on the couch" src="/images/post_images/griff/griff-cuddles.jpg" loading="lazy" />
 
-Griff _always_ wanted to be where we were. The moment he saw shoes, or a suitcase, or grocery bags, he was in his carrier, waiting to go with us wherever we might be headed.
+Griff _always_ wanted to be going wherever we were. The moment he saw shoes, or a suitcase, or grocery bags, he was in his carrier, waiting to go with us wherever we might be headed.
 
 In his older years, when his hearing started to go, he'd regularly go looking around the house for us when he realized he hadn't seen us in a while. He tried to make a bed in whatever room we were in, to keep an eye on us, make sure we weren't going anywhere without him.
 
@@ -89,33 +89,33 @@ In his older years, when his hearing started to go, he'd regularly go looking ar
 
 I'm lucky to have worked in a dog-friendly office for several years. Griff got to visit many times—he _loved_ it—and I'm happy he was able to make friends there. My coworkers would often send me DMs to tell me about the funny things Griff did that day.
 
-He didn't always like other dogs. He was kind of funny about that, actually; he was an incorrigible curmudgeon, even when he was relatively young. He couldn't stand too much noise or excitement, and would let you know with a loud bark if things were getting a little too feisty. Whether it was a puppy who just wanted to play, people running or roughhousing, or too much tickling, he would always jump in with a harsh vocalization, as if to good-naturedly say, _hey you kids! Knock that off!_
+He didn't always like other dogs. He was kind of funny about that, actually; he was an incorrigible curmudgeon, even when he was relatively young. He couldn't stand too much noise or excitement, and would let you know with a loud bark if things were getting a little too feisty. Whether it was a puppy who just wanted to play, people running or roughhousing, or too much tickling, he would always jump in with a harsh vocalization, as if to say, _hey you kids! Knock that off!_
 
 He always liked the older dogs, though. He was an old soul.
 
-Griff is the source of my hatred of fireworks. For many years, he'd be too frightened to go outside for basically the entire month of July (fireworks were constant enough where we lived at the time to make me repeatedly fantasize about becoming a Batman-like vigilante who would terrorize inconsiderate jerks by launching their own fireworks into their stupid faces). I'd often wake up around 3:00am, when the commotion had died down, so I could finally get him outside for some desperately needed relief.
+Griff is the source of my hatred of fireworks. For many years, he'd be too frightened to go outside for basically the entire month around the Fourth of July (fireworks were constant enough where we lived at the time to make me repeatedly fantasize about becoming a Batman-like vigilante who would terrorize inconsiderate jerks by launching their own fireworks into their stupid faces). I'd often wake up around 3:00am, when the commotion had died down, so I could finally get him outside safely.
 
 ---
 
 Griff was hilarious. He was a lovable, clumsy doofus, who regularly slipped, tripped, fell off of things, or just got himself into jams he wasn't sure how to get back out of.
 
-He possessed a hilariously unearned fearlessness. He'd walk out on a narrow ledge, and then suddenly realize he couldn't turn around, and start his desperate little growl for help.
+He possessed an unearned fearlessness, or maybe just an innocent foolishness. He'd walk out on a narrow ledge, and then suddenly realize he couldn't turn around, and start his desperate little growl for help.
 
-Griff was mouthy, but in such a polite way. He had this soft, earnest growl-bark he deployed whenever he wanted to get your attention. It was so sweet, like a soft, gradually escalating "excuse me," to let us know he wanted outside, or had perhaps lost some food in an inaccessible place.
+Griff was mouthy, but in a polite way. He had this soft, earnest growl-bark he deployed whenever he wanted to get your attention. It was so sweet, like a soft, gradually escalating "excuse me," to let us know he wanted outside, or had perhaps lost some food in an inaccessible place.
 
-Griff desperately wanted to be able to howl, but just couldn't. He tried his hardest, but could only come up with a high-pitched falsetto vocalization, not unlike a kid who can't whistle but tries to recreate the sound with a scream. Trying to get Griff to howl (which would just cause him to make silly noises until he inevitably just started barking at all the commotion) was a reliable source of hilarity in our house.
+Griff desperately wanted to be able to howl, but just couldn't. He tried his hardest, but could only come up with a high-pitched whine, not unlike a kid who can't whistle but tries to recreate the sound with falsetto. Trying to get Griff to howl (which would just cause him to make silly noises until he inevitably just started barking at all the commotion) was a reliable source of hilarity in our house.
 
-Griff always wanted to be at eye level with the people in the room. If there was an empty chair, he'd be in it (even at the dinner table). If he felt like he was missing out on too much, he'd get somebody to pick him up. My brother nicknamed him "Bazooka" for his habit of getting up on the back of the sofa and standing on your shoulder just to get a better view.
+Griff always wanted to be at eye level with the people in the room. If there was an empty chair, he'd be in it (sometimes even at the dinner table, if someone left their chair open long enough). If he felt like he was missing out on too much, he'd get somebody to pick him up. My brother nicknamed him "Bazooka" for his habit of getting up on the back of the sofa and standing on your shoulder just to get a better view.
 
-Griff loved blankets, and being warm and cozy, but given the choice, he preferred to use a piece of clothing that belonged to my wife, or to me. He loved a good spot in the sun—particularly if it happened to be by the fireplace. (But in a pinch, a basket of fresh laundry, or perhaps a properly smooshed-down throw pillow would do the trick.)
+Griff loved blankets, and being warm and cozy, but given the choice, he preferred to use a piece of clothing that belonged to my wife, or to me. He loved a good spot in the sun—particularly if it happened to be by the fireplace. But in a pinch, a basket of fresh laundry, or perhaps a properly smooshed-down throw pillow would do the trick.
 
 <img alt="Griff, curled up in a basket of fresh laundry" src="/images/post_images/griff/griff-laundry.jpg" loading="lazy" />
 
 <img alt="Griff, laying on a pillow that's shaggy and similarly colored to him, as though he's hiding" src="/images/post_images/griff/griff-hiding.jpg" loading="lazy" />
 
-Like most dogs, Griff loved being vigilant at the window, guarding the house from unknown dangers.
+Like most dogs, Griff loved being vigilant at the window, guarding the house from unknown dangers—perceived dangers, that is.
 
-At first he hated the mailman only, and the mere creak of the mail slot was enough to send him into an uncontrollable frenzy. (The loss of hearing that came in his later years was not entirely unwelcome, for this reason.) Eventually, Griff's rage expanded to pretty much any truck, van, or loud vehicle, and anyone wearing what might appear to be work clothes.
+At first he hated the mailman only, and the mere creak of the mail slot was enough to send him into an uncontrollable frenzy. (The loss of hearing that came in his later years was not entirely unwelcome, for this reason.) Eventually, though, Griff's rage expanded to other deliveries and workers, until pretty much any truck, van, or loud vehicle, and anyone wearing what might appear to be work clothes, was suspected of villainy.
 
 <img alt="Griff on his hind legs, looking vigilantly out the front window of our house" src="/images/post_images/griff/griff-vigilance.jpg" loading="lazy" />
 
@@ -127,7 +127,7 @@ Despite those rare instinctive, efficient bursts of violence, however, more than
 
 Though he was hit-and-miss on other dogs, he loved every human he ever met. (Even the delivery drivers; though he'd bark relentlessly, getting close to that stranger always seemed to confuse his opposing instincts, and you could see the more benevolent of the two winning out, as that fiendish enemy began to look like just another new friend upon closer inspection.) Griff even liked cats—or, at least, was fascinated by them, if perhaps a little scared of them, too.
 
-Everybody was a friend, to Griff. Every meeting was a cause for joy. Nothing beat seeing his cute little stump of a tail rapidly toggling back and forth in delight.
+Everybody was a friend, to Griff. Every meeting was a cause for joy. Nothing beat seeing his cute little stub of a tail rapidly toggling back and forth in delight.
 
 I think Griff knew how cute we thought he was. He mastered the art of putting his chin on things to look adorable when he wanted something. (Sometimes he also fell asleep in this pose by accident.)
 
@@ -148,11 +148,11 @@ Griff _hated_ water, and baths. But whenever we would give our son a bath as a b
 
 <img alt="Griff, before and after bath time, looking a bit like a wet rat in the latter" src="/images/post_images/griff/griff-bath.jpg" loading="lazy" />
 
-Although Griff identified our kid as a constant source of things to lick and eat early on, Griff loved being by his side no matter what, at any age. Every time our son curled up in a blanket to watch TV, Griff was there with him. Every night, when we'd read our son a bedtime story, Griff was in bed with us, too. I imagine to our only child, Griff was a little something like a sibling.
+Although Griff identified our kid as a mobile treat dispenser early on, Griff loved being by his side no matter what, at any age. Every time our son curled up to watch TV, Griff was there with him. Every night, when we'd read our son a bedtime story, Griff was in bed with us, too. I imagine to our only child, Griff was a little something like a sibling.
 
 <img alt="Griff, carefully eyeing our toddler son's cheerios" src="/images/post_images/griff/griff-longing.jpg" loading="lazy" />
 
-Griff even came to be at peace with the constant chaos our energetic young boy embodied, and learned to sleep through the rowdy football reenactments and wrestling matches happening on the couch beside him.
+Griff even came to be at peace with the constant chaos our energetic young boy embodied as a rambunctious kindergarten, and learned to sleep through the rowdy football reenactments and wrestling matches happening on the couch beside him.
 
 ---
 
@@ -188,7 +188,7 @@ He's not ok. None of us are.
 
 ---
 
-You don't realize how much of your life revolves around a pet until they're gone. They're there, every moment of every day, and you don't even fully notice it until they're not, every moment of every day.
+You don't realize how much of your life revolves around a pet until they're gone. They're there, every moment of every day, and you don't even really notice it until they're not, every moment of every day.
 
 Every time I open the front door, my foot moves to block a little dog who's no longer there, no longer trying to peer outside.
 
