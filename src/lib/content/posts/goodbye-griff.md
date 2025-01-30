@@ -164,7 +164,7 @@ Griff even came to be at peace with the constant chaos our energetic young boy e
 
 <img alt="Griff and our son on a walk. Our son rides his trike, circa age 3, as Griff walks alongside him on a leash" src="/images/post_images/griff/griff-walk.jpg" loading="lazy" />
 
-<img alt="Our son, around 5 in this picture, walks Griff on his own on the sidewalk, the two of them side by side" src="/images/post_images/griff/griff-walk-2.jpg" loading="lazy" />
+<img alt="Our son, around age 5, walks Griff on his own on the sidewalk, the two of them side by side" src="/images/post_images/griff/griff-walk-2.jpg" loading="lazy" />
 
 ---
 

@@ -142,6 +142,11 @@
   status = 301
 
 [[redirects]]
+  from = "/words-everyone-gets-wrong"
+  to = "/rare-words-in-common-phrases"
+  status = 301
+
+[[redirects]]
   from = "https://collinsworth.dev/*"
   to = "https://joshcollinsworth.com/:splat"
   status = 301

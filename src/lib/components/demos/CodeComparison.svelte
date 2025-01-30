@@ -101,6 +101,10 @@
 </div>
 
 <style lang="scss">
+	:global(.dark .svelte-code-comparison button) {
+		border-color: var(--paper);
+	}
+
 	.svelte-code-comparison {
 		margin: var(--halfNote) 0;
 
@@ -115,10 +119,6 @@
 			border-color: var(--ink);
 			border-bottom: 0 !important; // Overrides .current block below
 			border-width: 1px;
-
-			.dark & {
-				border-color: var(--paper);
-			}
 
 			@media (min-width: vars.$lg) {
 				padding-left: 1em;
