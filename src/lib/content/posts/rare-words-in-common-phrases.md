@@ -58,7 +58,7 @@ A **lede** is the opening paragraph of an article or news story, which is meant 
 
 In short: the lede should summarize the key points right off the bat.
 
-So to say somebody **buried the lede** means they concealed the most salient info, or revealed it later than they should have. “_The CEO really **buried the lede** by casually dropping the fact there would be no bonuses this year a full 90 minutes into the presentation_.”
+So to say somebody **buried the lede** means they concealed the most salient info, or revealed it later than they should have. “_The CEO really **buried the lede** by waiting 90 minutes into the presentation before mentioning there would be no bonuses this year_.”
 
 Since **lede** sounds like "lead" (as in: “we need somebody to lead us”), the phrase is commonly misspelled “bury the lead,” but that's not accurate—at least, unless you're talking about a dog who hates walks so much it dug a hole for its leash.
 
