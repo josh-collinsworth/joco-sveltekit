@@ -1,7 +1,7 @@
 ---
 title: 'Announcing Quina (My First App)!'
 date: '2020-12-10'
-updated: '2022-08-05'
+updated: '2025-02-05'
 categories:
   - javascript
   - design
@@ -63,7 +63,7 @@ I don't know how that word was _meant_ to be pronounced, but I say it, "QUINN-uh
 
 There are two ways to install Quina:
 
-- You can download the [Quina Android App from the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth). (It's $2.99, but all content is unlocked by default.)
+- ~~You can download the [Quina Android App from the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth). (It's $2.99, but all content is unlocked by default.)~~ I took this app down for privacy reasons.
 - You can install the freemium version by visiting [quina.app](https://quina.app/).
 
 When visiting the website, you _should_ see a prompt like this one (though it will depend on your browser; if you don't see the prompt, you can [follow these directions](https://mobilesyrup.com/2020/05/24/how-install-progressive-web-app-pwa-android-ios-pc-mac/)):
@@ -276,6 +276,6 @@ Incidentally, there's also a free option on the web version, just because I want
 
 I would consider Quina my biggest achievement as a developer so far. Though I've made websites, small web apps, little PWAs and novel browser games as side projects before, none has ever had this breadth of scope, and an actual Android app is brand-new territory for me!
 
-I'm proud of the work I've done here, even if nobody plays it. But I hope you'll give it a shot, and that you enjoy it if you do. (And if so, I'd love it if you'd [leave a review on the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth).)
+I'm proud of the work I've done here, even if nobody plays it. But I hope you'll give it a shot, and that you enjoy it if you do. ~~(And if so, I'd love it if you'd [leave a review on the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth).)~~ The app isn't there anymore. I took it down because Google is pretty hostile to the privacy and convenience of hobby developers.
 
 Thanks for reading! Feel free to [reach out](https://joshcollinsworth.com/contact?from_page=announcing_quina) if you have any questions or comments.
