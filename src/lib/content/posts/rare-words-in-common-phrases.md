@@ -1,7 +1,7 @@
 ---
 title: "Rare words in common phrases, and how to avoid getting them wrong"
 date: '2025-1-24'
-updated: '2025-1-30'
+updated: '2025-2-05'
 categories:
   - advice
 coverImage: 'words.png'
@@ -171,4 +171,10 @@ A mnemonic to help remember the two: the one that means _separate_ has the E's a
 
 ## Eke (out)
 
-Commonly confused with **eek** (which is what you might say if you're surprised or scared), **eke** is a separate word that means to get by, but just barely. “_Thanks to that last-second field goal, they were just able to **eke** out the win_.”
+Commonly confused with "eek" (which is what you might say if you're surprised or scared), **eke** is a separate word that means to get by, but just barely. “_Thanks to that last-second field goal, they were just able to **eke** out the win_.”
+
+## (Head) canon
+
+The term **canon** is popular in some corners of the internet. It has a few meanings, but **canon** usually means official or genuine in modern usage; a **canonical** link is the official, preferred link to follow when multiple links might be available. (And "head **canon**" is the authentic version of events according to your personal internal thinking.) “_George Lucas tried to retcon_ Star Wars, _but fans often consider it **canon** that Han shot first, not Greedo_.”
+
+Don't confuse **canon** with _cannon_, which is the large explosive weapon. (If it helps: **Canon** is also the famous camera brand. **Canon** cameras capture **canonical** reality.)
