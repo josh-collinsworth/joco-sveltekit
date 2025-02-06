@@ -14,7 +14,7 @@ Experienced with React/Preact, TypeScript, Tailwind, Deno, Fresh, Knockout, jQue
 
 ### [Deno](https://deno.com/)
 
-**Frontend Engineer**
+**Frontend Engineer/Design engineer**
 
 _August 2023 – present_
 

@@ -1,9 +1,9 @@
 <script lang="ts">
 	interface Props {
-		currentPage: string;
+		currentPage: string
 	}
 
-	let { currentPage }: Props = $props();
+	let { currentPage }: Props = $props()
 </script>
 
 <div class="bio-wrapper">
@@ -13,7 +13,7 @@
 				I'm Josh Collinsworth, a frontend developer, designer, teacher, and
 				writer. I currently live in Kansas City, and work for <a
 					href="https://deno.land">Deno</a
-				> as a senior frontend developer.
+				> as a design engineer.
 			</p>
 			<ul class="link-list">
 				<li class="link-list__kofi">
