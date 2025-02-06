@@ -29,7 +29,7 @@
 		<p class="subhead h2">
 			I currently live in the Kansas City area, and work for <a
 				href="https://deno.land">Deno</a
-			> as a frontend engineer.
+			> as a design engineer.
 		</p>
 		<p class="bio">
 			I specialize in performant, accessible, user-focused interfaces. I wrote
