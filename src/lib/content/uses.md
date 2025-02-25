@@ -119,8 +119,7 @@
 />
 <FontTester
   font="MonoLisa"
-  label="MonoLisa
-  Regular"
+  label="MonoLisa Regular"
   link="https://www.monolisa.dev/"
 />
 

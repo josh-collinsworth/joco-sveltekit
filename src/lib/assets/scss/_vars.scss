@@ -1,4 +1,4 @@
-// The naming feels a little wrong here (1024px isn't really "small") but ¯\_(ツ)_/¯
+// The naming feels a little wrong here (1024px isn't really "small") but whatever
 $xxs: 34rem;
 $xs: 42rem;
 $sm: 56rem;
@@ -43,7 +43,7 @@ $fourxl: 144rem;
 	--lightestBlue: var(--blue-100);
 	--lightBlue: var(--blue-400);
 	--lighterBlue: var(--blue-200);
-	--darkBlue: var(--blue-600);
+	--darkBlue: var(--blue-700);
 	--darkerBlue: var(--blue-950);
 
 	--gray-50: #f7f7f7;
@@ -65,8 +65,19 @@ $fourxl: 144rem;
 	--darkGray: var(--gray-900);
 	--darkerGray: var(--gray-950);
 
-	--orange: #ff6a13;
-	--red: #e6002a;
+	--orange-50: #fff6ed;
+	--orange-100: #ffebd4;
+	--orange-200: #ffd3a8;
+	--orange-300: #ffb470;
+	--orange-400: #ff8937;
+	--orange-500: #ff6a13;
+	--orange-600: #f04c06;
+	--orange-700: #c73707;
+	--orange-800: #9e2c0e;
+	--orange-900: #7f270f;
+	--orange-950: #451005;
+	--orange: var(--orange-500);
+	--red: var(--orange-700);
 
 	--headingFont: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;

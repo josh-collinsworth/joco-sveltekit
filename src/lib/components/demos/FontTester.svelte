@@ -13,7 +13,7 @@ https://svelte.dev/e/js_parse_error -->
 	export let bold: boolean = false
 	export let italic: boolean = false
 
-	let size: number = 42
+	let size: number = 22
 	let text: string = ''
 	let displayBold: boolean = false
 	let displayItalic: boolean = false
