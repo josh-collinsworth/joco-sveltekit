@@ -11,19 +11,6 @@
 		transition: opacity 0.2s !important;
 	}
 
-	&.dark {
-		--paper: var(--black);
-		--paperHSL: var(--blackHSL);
-		--ink: var(--white);
-		--headingColor: var(--trueWhite);
-		--accentColor: var(--lightBlue);
-		--linkColor: var(--ink);
-		--highlightColor: var(--darkerGray);
-		--buttonBackground: var(--paper);
-		--lightestBlue: hsl(var(--lightBlueHS), 15%);
-		--lighterBlue: hsl(var(--lightBlueHS), 20%);
-	}
-
 	&.prefers-light {
 		--paper: var(--white);
 		--paperHSL: var(--whiteHSL);

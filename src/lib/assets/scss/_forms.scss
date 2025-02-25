@@ -89,6 +89,12 @@ input[type=submit] {
 	&:hover {
 		background: var(--blue-100);
 	}
+
+	.dark & {
+		&:hover {
+			background: var(--blue-800);
+		}
+	}
 }
 
 .settings-toggle {
