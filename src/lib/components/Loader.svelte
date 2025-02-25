@@ -1,11 +1,10 @@
 <script lang="ts">
 	interface Props {
-		loading: boolean;
+		loading: boolean
 	}
 
-	let { loading }: Props = $props();
+	let { loading }: Props = $props()
 </script>
-
 
 <div class="loader" class:loading>
 	<div class="loading-wrapper">
@@ -19,10 +18,12 @@
 	</div>
 </div>
 
-
 <style lang="scss">
 	.loader {
-		background: hsla(var(--paperHSL), 0.7);
+		background: var(--paper);
+		@supports color-mix(black, transparent) {
+			background: color-mix(in srgb, var(--paper), transparent 10%);
+		}
 		position: fixed;
 		z-index: 3;
 		width: 100vw;
@@ -33,7 +34,8 @@
 		opacity: 0;
 		pointer-events: none;
 		transition: opacity 0.1s;
-		
+		backdrop-filter: blur(4px);
+
 		&.loading {
 			opacity: 1;
 			pointer-events: unset;
@@ -58,22 +60,22 @@
 			&.outer {
 				animation: outer_pop 1000ms infinite var(--easing);
 				background: var(--yellow);
-				
+
 				&:nth-of-type(2) {
 					animation-delay: 100ms;
 					background: var(--lightBlue);
 				}
-				
+
 				&:nth-of-type(3) {
 					animation-delay: 200ms;
-					background: var(--lightGray);
+					background: var(--orange);
 				}
 			}
-			
+
 			&.inner {
 				background: var(--paper);
 				animation: inner_pop 1000ms infinite var(--easing);
-				
+
 				+ .inner {
 					animation-delay: 100ms;
 
@@ -83,7 +85,7 @@
 				}
 			}
 		}
-		
+
 		.first {
 			grid-column: 2 / 3;
 		}
@@ -99,16 +101,16 @@
 
 	@keyframes outer_pop {
 		0% {
-			transform: scale(0)
+			transform: scale(0);
 		}
 		50% {
-			transform: scale(1)
+			transform: scale(1);
 		}
 		75% {
-			transform: scale(1)
+			transform: scale(1);
 		}
 		100% {
-			transform: scale(0)
+			transform: scale(0);
 		}
 	}
 

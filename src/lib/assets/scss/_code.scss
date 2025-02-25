@@ -23,7 +23,7 @@ pre {
 
 .dark {
 	code {
-		background: hsla(var(--darkBlueHSL), 0.6);
+		background: var(--blue-800);
 		border: 0;
 	}
 
@@ -34,10 +34,10 @@ pre {
 
 code {
 	font-size: 0.8em;
-	background: hsla(var(--lightBlueHSL), 0.1);
+	background: var(--blue-50);
 	padding: 0.2em 0.3em 0.2em;
 	border-radius: 2px;
-	border: 1px solid hsla(var(--lightBlueHSL), 0.2);
+	border: 1px solid var(--blue-200);
 	line-height: 1 !important;
 	white-space: nowrap;
 	font-style: normal;
@@ -92,7 +92,7 @@ pre[class*='language-'] {
 		width: 100%;
 		position: absolute;
 		background: var(--darkBlue);
-		background: linear-gradient(to right, var(--darkBlue), hsla(var(--darkBlueHSL), 0));
+		background: linear-gradient(to right, var(--darkBlue), transparent);
 	}
 }
 

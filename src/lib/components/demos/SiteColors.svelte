@@ -1,8 +1,22 @@
 <script lang="ts">
 	const white = '#fcfcfc'
 	const black = '#101820'
-	const colors: string[] = ['#ffd100', '#34657f', '#7ba7bc', '#ff6a13', '#e6002a']
-	const grays: string[] = [white, '#a7a8aa', '#878a8c', '#53565a', '#424548', '#331f22', black]
+	const colors: string[] = [
+		'#ffd100',
+		'#34657f',
+		'#599cb7',
+		'#ff6a13',
+		'#e6002a'
+	]
+	const grays: string[] = [
+		white,
+		'#a7a8aa',
+		'#86878a',
+		'#535455',
+		'#353536',
+		'#23272B',
+		black
+	]
 
 	const getOutlineColor = (color: string) => {
 		if (color === black) return white
@@ -17,7 +31,9 @@
 			<li class="color">
 				<div
 					class="swatch {color}"
-					style="background-color: {color}; outline: 1px solid {getOutlineColor(color)}"
+					style="background-color: {color}; outline: 1px solid {getOutlineColor(
+						color
+					)}"
 				></div>
 				<span>{color}</span>
 			</li>
@@ -28,7 +44,9 @@
 			<li class="color">
 				<div
 					class="swatch {color}"
-					style="background-color: {color}; outline: 1px solid {getOutlineColor(color)}"
+					style="background-color: {color}; outline: 1px solid {getOutlineColor(
+						color
+					)}"
 				></div>
 				<div>{color}</div>
 			</li>

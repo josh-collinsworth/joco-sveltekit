@@ -32,7 +32,11 @@
 				transform 0.4s cubic-bezier(1, 0, 0, 1),
 				opacity 0.4s cubic-bezier(1, 0, 0, 1);
 			transform: translateX(0);
-			background: hsla(var(--blackHSL), 0.95);
+			background: #101820f0;
+			@supports (color-mix(black, transparent)) {
+				background: color-mix(in srgb, var(--black) 95%, transparent 5%);
+			}
+			backdrop-filter: blur(4px);
 			width: 100vw;
 			height: 100vh;
 			top: 0;

@@ -6,17 +6,15 @@
 	import { readableDate } from '$lib/assets/js/utils'
 
 	interface Props {
-		external?: boolean;
-		post: Post;
+		external?: boolean
+		post: Post
 	}
 
-	let { external = false, post }: Props = $props();
+	let { external = false, post }: Props = $props()
 
 	let slugPath: string = $derived(external ? '' : '/blog/')
-	
 
 	let computedURL: string = $derived(slugPath + post.slug)
-	
 </script>
 
 <li>
@@ -136,7 +134,7 @@
 				margin: 0;
 				width: auto;
 				max-width: 100%;
-				border: 1px solid hsla(var(--darkGrayHSL), 1);
+				border: 1px solid var(--darkGray);
 			}
 		}
 

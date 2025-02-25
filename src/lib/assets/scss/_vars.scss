@@ -10,33 +10,63 @@ $xxxl: 122rem;
 $fourxl: 144rem;
 
 :root {
-	// Looks kinda messy but allows for colors to be lightened or darkened.
-	// Maybe could just use Sass color functions instead? Oh well.
-	--lightBlueHS: 199, 33%;
-	--yellowHS: 49, 100%;
-	--redHS: 349, 100%;
-	--lightGrayHS: 220, 2%;
+	--white: #fcfcfc;
+	--trueWhite: #ffffff;
 
-	--yellowHSL: 49.1, 100%, 50%; //#ffd100
-	--lightGrayHSL: 220, 2%, 66%; //#a7a8aa
-	--lightBlueHSL: 199, 33%, 60.95%; //#7ba7bc
-	--darkBlueHSL: 201, 42%, 35.2%; //#34657f
-	--orangeHSL: 22, 100%, 53.8%; //#ff6a13
-	--redHSL: 349, 100%, 45%; //#e6002a
-	--midGrayHSL: 204, 2%, 54%; // #878a8c
-	// --darkGrayHSL: 214, 4%, 34%; // Older darkGray based on #53565a
-	--darkGrayHSL: 210, 4%, 27%; // Newer, darker darkGray based on #424548
-	--darkerGrayHSL: 349, 25%, 16%; // #331f22
-	--whiteHSL: 0, 0%, 99%; // #fcfcfc
-	--trueWhiteHSL: 0, 0%, 100%; // #ffffff
-	--blackHSL: 210, 33%, 9.5%; // #101820
-	--trueBlackHSL: 0, 0%, 0%; // #000000
+	--black: #101820;
+	--trueBlack: #000000;
 
-	--white: hsl(var(--whiteHSL));
-	--trueWhite: hsl(var(--trueWhiteHSL));
+	--yellow-50: #ffffe7;
+	--yellow-100: #ffffc1;
+	--yellow-200: #fffb86;
+	--yellow-300: #fff041;
+	--yellow-400: #ffe00d;
+	--yellow-500: #ffd100;
+	--yellow-600: #d19900;
+	--yellow-700: #a66d02;
+	--yellow-800: #89550a;
+	--yellow-900: #74450f;
+	--yellow-950: #442404;
+	--yellow: var(--yellow-500);
 
-	--black: hsl(var(--blackHSL));
-	--trueBlack: hsl(var(--trueBlackHSL));
+	--blue-50: #f1f8fa;
+	--blue-100: #dcecf1;
+	--blue-200: #bddae4;
+	--blue-300: #8fc0d1;
+	--blue-400: #599cb7;
+	--blue-500: #3e809c;
+	--blue-600: #34657f;
+	--blue-700: #31576d;
+	--blue-800: #2f495b;
+	--blue-900: #2b404e;
+	--blue-950: #182834;
+	--lightestBlue: var(--blue-100);
+	--lightBlue: var(--blue-400);
+	--lighterBlue: var(--blue-200);
+	--darkBlue: var(--blue-600);
+	--darkerBlue: var(--blue-950);
+
+	--gray-50: #f7f7f7;
+	--gray-100: #ececed;
+	--gray-200: #dededf;
+	--gray-300: #c7c8c9;
+	--gray-400: #a7a8aa;
+	--gray-500: #97989a;
+	--gray-600: #86878a;
+	--gray-700: #797a7c;
+	--gray-800: #656668;
+	--gray-900: #535455;
+	--gray-950: #353536;
+	--gray-1000: #23272B;
+	--lightGray: var(--gray-400);
+	--lighterGray: var(--gray-200);
+	--lightestGray: var(--gray-100);
+	--midGray: var(--gray-600);
+	--darkGray: var(--gray-900);
+	--darkerGray: var(--gray-950);
+
+	--orange: #ff6a13;
+	--red: #e6002a;
 
 	--headingFont: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
@@ -55,26 +85,11 @@ $fourxl: 144rem;
 		--bodyFontSize: 1.25rem;
 	}
 
-	--yellow: hsl(var(--yellowHSL));
-	--orange: hsl(var(--orangeHSL));
-	--red: hsl(var(--redHSL));
-	--lightestGray: hsl(var(--lightGrayHS), 94%);
-	--lighterGray: hsl(var(--lightGrayHS), 86%);
-	--lightGray: hsl(var(--lightGrayHSL));
-	--midGray: hsl(var(--midGrayHSL));
-	--darkGray: hsl(var(--darkGrayHSL));
-	--darkerGray: hsl(var(--darkerGrayHSL));
-	--lightBlue: hsl(var(--lightBlueHSL));
-	--lighterBlue: hsl(var(--lightBlueHS), 90%);
-	--lightestBlue: hsl(var(--lightBlueHS), 95%);
-	--darkBlue: hsl(var(--darkBlueHSL));
-	--darkerBlue: hsl(var(--darkBlueHSL), 20%);
 
 	--blueToYellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
 
 	--ink: var(--darkGray);
 	--paper: var(--white);
-	--paperHSL: var(--whiteHSL);
 	--headingColor: var(--darkerGray);
 	--accentColor: var(--darkBlue);
 	--linkColor: var(--darkBlue);
@@ -115,21 +130,19 @@ $fourxl: 144rem;
 
 	&.dark {
 		--paper: var(--black);
-		--paperHSL: var(--blackHSL);
 		--ink: var(--white);
 		--headingColor: var(--white);
 		--accentColor: var(--lightBlue);
 		--linkColor: var(--lightBlue);
 		--highlightColor: var(--darkerGray);
-		--lighterGray: hsl(var(--lightGrayHS), 26%);
-		--lightestGray: hsl(var(--lightGrayHS), 13%);
+		--lighterGray: var(--gray-950);
+		--lightestGray: var(--gray-1000);
 	}
 
 	// Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes
 	&:not(.light) {
 		@media (prefers-color-scheme: dark) {
 			--paper: var(--black);
-			--paperHSL: var(--blackHSL);
 			--ink: var(--white);
 			--headingColor: var(--white);
 			--accentColor: var(--lightBlue);

@@ -1,10 +1,10 @@
 <script lang="ts">
-import WarningIcon from './icons/warning-icon.svelte'
+	import WarningIcon from './icons/warning-icon.svelte'
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: import('svelte').Snippet
 	}
 
-	let { children }: Props = $props();
+	let { children }: Props = $props()
 </script>
 
 <div class="warning">
@@ -16,7 +16,6 @@ import WarningIcon from './icons/warning-icon.svelte'
 	</div>
 </div>
 
-
 <style lang="scss">
 	.warning {
 		margin: var(--halfNote) 0;
@@ -24,7 +23,7 @@ import WarningIcon from './icons/warning-icon.svelte'
 		padding: calc(var(--quarterNote) * 1.5);
 		font-size: 0.8rem;
 		font-style: italic;
-		background: linear-gradient(to right, hsla(var(--redHS), 33%), var(--red));
+		background: var(--red);
 		color: var(--white);
 		line-height: 1.4;
 		display: grid;
@@ -38,11 +37,7 @@ import WarningIcon from './icons/warning-icon.svelte'
 
 		:global(code) {
 			background: transparent;
-			font-size: .9em;
+			font-size: 0.9em;
 		}
-	}
-
-	:global(.dark .warning) {
-		background: linear-gradient(to right, hsla(var(--redHS), 22%), hsla(var(--redHS), 28%));
 	}
 </style>

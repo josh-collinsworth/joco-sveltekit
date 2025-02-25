@@ -81,6 +81,7 @@
 				top: var(--halfNote);
 				background: var(--paper);
 				text-align: right;
+				grid-row-end: span 3; // This is a hack to make sure long headings don't show behind short ones. Probably need to figure out a better solution but it works for now.
 
 				+ h3 {
 					margin-top: 0;
@@ -90,11 +91,7 @@
 					top: calc(var(--wholeNote) * -1);
 					position: absolute;
 					width: 100%;
-					background: linear-gradient(
-						to top,
-						var(--paper),
-						hsla(var(--paperHSL), 0)
-					);
+					background: linear-gradient(to top, var(--paper), transparent);
 					height: var(--wholeNote);
 					z-index: 1;
 				}

@@ -87,7 +87,7 @@ input[type=submit] {
 	}
 
 	&:hover {
-		background: hsla(var(--lightBlueHSL), 0.2);
+		background: var(--blue-100);
 	}
 }
 

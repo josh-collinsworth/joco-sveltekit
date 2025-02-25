@@ -112,7 +112,7 @@ hr {
 			height: 100%;
 			position: absolute;
 			width: 2rem;
-			background: linear-gradient(to right, hsla(var(--whiteHSL), 0), hsla(var(--whiteHSL), 1));
+			background: linear-gradient(to right, transparent, var(--white));
 			top: 0;
 			right: 0;
 		}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
+	import { run } from 'svelte/legacy'
 
 	import GridCell from './GridCell.svelte'
 	import { onMount } from 'svelte'
@@ -7,12 +7,12 @@
 	import debounce from 'just-debounce'
 
 	interface Props {
-		refresh?: string;
-		inverted?: boolean;
-		squareCount?: number;
+		refresh?: string
+		inverted?: boolean
+		squareCount?: number
 	}
 
-	let { refresh = '', inverted = false, squareCount = 0 }: Props = $props();
+	let { refresh = '', inverted = false, squareCount = 0 }: Props = $props()
 
 	let count: number = $state(0)
 	let gridWidth: number = $state()
@@ -41,7 +41,7 @@
 		} else {
 			loadedIn = true
 		}
-	});
+	})
 
 	const setSquareCount = debounce(() => {
 		if (!browser) return
@@ -118,7 +118,7 @@
 			top: calc(var(--base) * 2.5);
 
 			&:before {
-				--paperHSL: var(--darkBlueHSL);
+				--paper: var(--darkBlue);
 				top: 0;
 			}
 		}
@@ -126,11 +126,7 @@
 		&:before {
 			width: 100%;
 			content: '';
-			background: linear-gradient(
-				60deg,
-				hsla(var(--paperHSL), 0),
-				hsla(var(--paperHSL), 0.5)
-			);
+			background: linear-gradient(60deg, transparent, var(--paper) 150%);
 			height: calc(var(--base) * 4);
 			position: absolute;
 			top: calc(var(--base) * -1);
