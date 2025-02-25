@@ -1,6 +1,4 @@
 <script lang="ts">
-	const colorNames = ['yellow', 'blue', 'gray', 'orange']
-	const colorValues = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
 	const mainColors = [
 		'yellow-500',
 		'blue-400',
@@ -66,12 +64,6 @@
 	}
 </script>
 
-<!-- <div style="display:flex; gap: 1rem;">
-	{#each mainColors as color}
-		<div class="swatch" style="background-color: var(--{color});"></div>
-	{/each}
-</div> -->
-
 <div class="color-table">
 	<div class="wide-only"></div>
 	{#each Object.keys(colorMap.yellow) as value}
@@ -79,14 +71,12 @@
 	{/each}
 	{#each Object.keys(colorMap) as color}
 		<div class="wide-only">{color}</div>
-		{#each colorValues as value}
+		{#each Object.keys(colorMap.yellow) as value}
 			<div
 				class="swatch"
 				style="background-color: var(--{color}-{value});
 					background-image: {mainColors.includes(`${color}-${value}`)
-					? // ? `radial-gradient(circle at 50% 50%, var(--paper), var(--paper) 3px, transparent 3px, transparent 100%)`
-						// : `none`};"
-						`linear-gradient(to bottom left, var(--paper) 15%, transparent 15%)`
+					? `linear-gradient(to bottom left, var(--paper) 15%, transparent 15%)`
 					: `none`};"
 			>
 				<span class="hex">{colorMap[color][value]}</span>
