@@ -98,8 +98,8 @@ $fourxl: 144rem;
 	--blue-to-yellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
 	--accent-gradient: linear-gradient(to right, var(--blue-to-yellow));
 
-	@supports(background: linear-gradient(in hsl, white, black)) {
-		--accent-gradient: linear-gradient(to right in hsl, var(--blue-light), var(--yellow) 90%);
+	@supports(background: linear-gradient(in oklab, white, black)) {
+		--accent-gradient: linear-gradient(to right in oklab, var(--blue-light) 10%, var(--yellow) 90%);
 	}
 
 	--ink: var(--neutral-dark);
@@ -145,7 +145,7 @@ $fourxl: 144rem;
 	&.dark {
 		--paper: var(--neutral-black);
 		--ink: var(--neutral-100);
-		--heading-color: var(--neutral-100);
+		--heading-color: var(--neutral-white);
 		--accent-color: var(--blue-light);
 		--link-color: var(--blue-light);
 		--neutral-lightest: var(--neutral-900);
@@ -159,7 +159,7 @@ $fourxl: 144rem;
 		@media (prefers-color-scheme: dark) {
 			--paper: var(--neutral-black);
 			--ink: var(--neutral-100);
-			--heading-color: var(--neutral-100);
+			--heading-color: var(--neutral-white);
 			--accent-color: var(--blue-light);
 			--link-color: var(--blue-light);
 			--highlight-color: var(--neutral-darker);
