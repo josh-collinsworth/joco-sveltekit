@@ -2,12 +2,12 @@
 	import { sluggify } from '$lib/assets/js/utils'
 
 	interface Props {
-		date: string;
-		title: string;
-		children?: import('svelte').Snippet;
+		date: string
+		title: string
+		children?: import('svelte').Snippet
 	}
 
-	let { date, title, children }: Props = $props();
+	let { date, title, children }: Props = $props()
 </script>
 
 <div class="edit" id={sluggify(title)}>
@@ -26,9 +26,9 @@
 
 	.edit {
 		position: relative;
-		margin-block: var(--dottedHalfNote) var(--halfNote);
+		margin-block: var(--dotted-half-note) var(--half-note);
 		margin-inline-start: 0;
-		border-left: 1px solid var(--lightBlue);
+		border-left: 1px solid var(--blue-light);
 		padding-inline-start: 16px;
 	}
 
@@ -45,7 +45,7 @@
 		);
 		font-style: italic;
 		font-size: 0.85rem;
-		color: var(--lightBlue);
+		color: var(--blue-light);
 		margin: 0;
 		padding: 0;
 		padding-block-end: 1em;

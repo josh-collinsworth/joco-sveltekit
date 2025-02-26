@@ -39,12 +39,12 @@
 
 <style lang="scss">
 	h1.h2 {
-		margin: 0 0 var(--wholeNote);
+		margin: 0 0 var(--whole-note);
 	}
 
 	li {
 		text-transform: uppercase;
-		margin-bottom: var(--quarterNote);
+		margin-bottom: var(--quarter-note);
 		font-style: italic;
 
 		a {

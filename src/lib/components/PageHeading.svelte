@@ -63,7 +63,7 @@
 	.page-head {
 		--transition: transform 0.24s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-		margin-bottom: var(--halfNote);
+		margin-bottom: var(--half-note);
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
@@ -83,7 +83,7 @@
 				font-family: var(--headingFont);
 				font-weight: normal;
 				font-size: 1.25em;
-				color: var(--lightNeutral);
+				color: var(--neutral-light);
 				margin: 0 0.1em 0 0;
 				z-index: 2;
 				position: relative;
@@ -137,6 +137,12 @@
 				-webkit-text-fill-color: transparent;
 				-webkit-background-clip: text;
 				background-clip: text;
+				@supports (background: linear-gradient(in oklch, white, black)) {
+					background: linear-gradient(90deg, var(--blue-light), var(--yellow));
+					-webkit-text-fill-color: transparent;
+					-webkit-background-clip: text;
+					background-clip: text;
+				}
 				font-family: var(--headingFont);
 				text-transform: lowercase;
 				flex: 0 1 auto;

@@ -24,11 +24,11 @@ img + h3 {
 }
 
 h2 ~ img:first-of-type {
-  margin-top: var(--quarterNote);
+  margin-top: var(--quarter-note);
 }
 
 img:has(+ h3) {
-  margin-top: var(--wholeNote);
+  margin-top: var(--whole-note);
 }
 </style>
 

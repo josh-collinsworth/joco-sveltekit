@@ -1,13 +1,12 @@
 <script lang="ts">
 	interface Props {
-		currentPage: number;
-		totalPosts: number;
+		currentPage: number
+		totalPosts: number
 	}
 
-	let { currentPage, totalPosts }: Props = $props();
+	let { currentPage, totalPosts }: Props = $props()
 
 	let pagesAvailable: number = $derived(Math.ceil(totalPosts / 10))
-	
 
 	const isCurrentPage = (page: number): boolean => page == currentPage
 </script>
@@ -32,12 +31,12 @@
 
 <style lang="scss">
 	.pagination {
-		margin: 0 0 var(--quarterNote);
+		margin: 0 0 var(--quarter-note);
 
 		h2 {
 			font-size: 1rem;
 			padding: 0;
-			margin: 0 0 var(--eighthNote);
+			margin: 0 0 var(--eighth-note);
 
 			&::before {
 				display: none;
@@ -49,7 +48,7 @@
 			flex-wrap: wrap;
 			justify-content: start;
 			list-style-type: none;
-			gap: var(--eighthNote);
+			gap: var(--eighth-note);
 			margin: 0;
 			padding: 0;
 
@@ -58,7 +57,7 @@
 			}
 
 			a {
-				background: var(--lighterBlue);
+				background: var(--blue-lighter);
 				text-decoration: none;
 				line-height: 1;
 				display: flex;
@@ -76,7 +75,7 @@
 
 				&[aria-current='true'] {
 					background: var(--yellow);
-					color: var(--black);
+					color: var(--neutral-black);
 					border: 1px solid currentColor;
 				}
 			}
@@ -84,7 +83,7 @@
 	}
 
 	:global(.dark .pagination ul a) {
-		background: var(--darkBlue) !important;
+		background: var(--blue-dark) !important;
 
 		&[aria-current='true'] {
 			background: var(--yellow) !important;

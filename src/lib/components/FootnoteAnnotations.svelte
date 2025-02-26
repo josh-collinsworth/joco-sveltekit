@@ -26,9 +26,9 @@
 <style lang="scss">
 	ol {
 		font-size: 0.8rem;
-		padding-top: var(--quarterNote);
-		margin-top: var(--halfNote);
-		border-top: 1px solid var(--lighterNeutral);
+		padding-top: var(--quarter-note);
+		margin-top: var(--half-note);
+		border-top: 1px solid var(--neutral-lighter);
 		line-height: 1.5;
 	}
 

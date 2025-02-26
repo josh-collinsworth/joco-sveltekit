@@ -91,7 +91,7 @@
 	.intro {
 		width: 100%;
 		position: relative;
-		margin-top: var(--wholeNote);
+		margin-top: var(--whole-note);
 
 		@media (min-width: vars.$md) {
 			display: grid;
@@ -124,14 +124,14 @@
 		@media (min-width: vars.$xl) {
 			display: grid;
 			grid-template-columns: repeat(5, minmax(0, 1fr));
-			gap: 0 var(--wholeNote);
+			gap: 0 var(--whole-note);
 		}
 
 		h2,
 		.subhead {
 			font-size: 2.5rem;
 			font-size: clamp(1.8rem, calc(1rem + 3vw), 3.5rem);
-			margin-bottom: var(--halfNote);
+			margin-bottom: var(--half-note);
 			font-weight: normal;
 			text-wrap: balance;
 
@@ -142,14 +142,14 @@
 
 		h2 strong {
 			background: var(--yellow);
-			color: var(--darkerNeutral);
+			color: var(--neutral-darker);
 		}
 
 		.subhead {
 			font-size: clamp(1.2rem, calc(0.6rem + 2vw), 1.8rem);
 			margin-top: 0;
-			margin-bottom: var(--halfNote);
-			color: var(--darkNeutral);
+			margin-bottom: var(--half-note);
+			color: var(--neutral-dark);
 			line-height: 1.4;
 
 			a {
@@ -189,8 +189,8 @@
 	.intro__grid {
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
-		margin-top: var(--dottedWholeNote);
-		gap: var(--dottedHalfNote);
+		margin-top: var(--dottedWhole-note);
+		gap: var(--dotted-half-note);
 		font-size: 0.8125rem;
 		line-height: 1.5;
 		grid-column-start: 1;
@@ -217,12 +217,12 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		margin: 0;
-		border-bottom: 1px solid var(--lighterNeutral);
+		border-bottom: 1px solid var(--neutral-lighter);
 		padding: 0.75em 0 0.5em;
 		line-height: 1;
 
 		@media (min-width: vars.$sm) {
-			padding: var(--eighthNote) 0 var(--sixteenthNote);
+			padding: var(--eighth-note) 0 var(--sixteenth-note);
 		}
 	}
 

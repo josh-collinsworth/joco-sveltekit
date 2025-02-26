@@ -86,13 +86,13 @@
 
 <style lang="scss">
 	.color-table {
-		margin-top: var(--quarterNote);
+		margin-top: var(--quarter-note);
 		display: grid;
 		align-items: center;
 		justify-content: center;
 		grid-template-columns: auto repeat(10, minmax(0, 1fr));
 		gap: 2px;
-		font-family: var(--codeFont);
+		font-family: var(--code-font);
 		font-size: 0.75rem;
 		text-align: right;
 

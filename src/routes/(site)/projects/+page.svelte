@@ -359,14 +359,14 @@
 <style lang="scss">
 	.projects {
 		p {
-			max-width: var(--maxWidth);
+			max-width: var(--max-width);
 			// min-width: 12em;
 		}
 
 		article {
 			display: grid;
 			grid-template-columns: 1fr;
-			gap: var(--halfNote);
+			gap: var(--half-note);
 			align-items: start;
 
 			@media (min-width: vars.$sm) {
@@ -374,7 +374,7 @@
 
 				.sticky {
 					position: sticky;
-					top: var(--halfNote);
+					top: var(--half-note);
 				}
 			}
 
@@ -397,7 +397,7 @@
 			}
 
 			img {
-				margin: 0 auto var(--halfNote);
+				margin: 0 auto var(--half-note);
 				display: block;
 				max-width: unset;
 				width: calc(100% + (var(--margin) * 2));

@@ -22,8 +22,8 @@ excerpt: If you don't often look beyond established comfortable defaults, you mi
 
 <style lang="scss">
 h4 {
-	margin-top: var(--dottedQuarterNote);
-	margin-bottom: var(--eighthNote);
+	margin-top: var(--dotted-quarter-note);
+	margin-bottom: var(--eighth-note);
 }
 </style>
 

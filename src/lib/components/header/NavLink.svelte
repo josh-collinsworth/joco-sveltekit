@@ -36,7 +36,7 @@
 			margin-bottom: 1.5rem;
 			font-size: 1.25rem;
 			line-height: 1.5em;
-			color: var(--white);
+			color: var(--neutral-white);
 			width: 100%;
 
 			@keyframes move_in_left {
@@ -67,7 +67,7 @@
 			}
 
 			a {
-				color: var(--white);
+				color: var(--neutral-white);
 			}
 		}
 

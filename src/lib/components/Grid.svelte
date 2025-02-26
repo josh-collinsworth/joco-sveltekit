@@ -23,10 +23,10 @@
 	let base = $state(16)
 
 	const gridColors: string[] = [
-		'var(--lightNeutral)',
+		'var(--neutral-light)',
 		'var(--ink)',
-		'var(--lightBlue)',
-		'var(--darkBlue)',
+		'var(--blue-light)',
+		'var(--blue-dark)',
 		'var(--yellow)',
 		'var(--orange)'
 	]
@@ -118,7 +118,7 @@
 			top: calc(var(--base) * 2.5);
 
 			&:before {
-				--paper: var(--darkBlue);
+				--paper: var(--blue-dark);
 				top: 0;
 			}
 		}

@@ -197,7 +197,7 @@ In the latter case, you might be better off going with ZSA's other major keyboar
 
 If you're curious about my own personal layout, you can check it out here:
 
-<div style="padding-top: 60%; position: relative; margin: var(--halfNote) 0;">
+<div style="padding-top: 60%; position: relative; margin: var(--half-note) 0;">
 	<iframe src="https://configure.zsa.io/embed/moonlander/layouts/6wVPq/latest/0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%" title="My Moonlander layout"></iframe>
 </div>
 

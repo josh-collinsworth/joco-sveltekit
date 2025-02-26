@@ -202,7 +202,7 @@ Want to get super meta? Here's what a code block looks like on this new site, al
 ```css
 pre[class*='language-'] {
 	padding: 4rem 1rem 1.5rem;
-	margin: var(--halfNote) 0;
+	margin: var(--half-note) 0;
 	overflow: auto;
 	border-radius: 0.3em;
 	position: relative;
@@ -223,7 +223,7 @@ This change in fonts also necessitated a redesign of my personal logo, since the
 
 I'll be honest: every time I create a new version of my logo, I feel less and less pressure to make it "something," and instead just go with what feels right to me. I suppose you could view this either as atrophy or maturation of my design skills; I'll let you be the judge of that. But in any case, this logo is a little bit of a remix of the last one, but doesn't try quite so hard to wink at you (at least, not until you hover on it in the site header).
 
-<div style="padding: 2.5rem; background: var(--white)">
+<div style="padding: 2.5rem; background: var(--neutral-white)">
   <img src="/images/post_images/Full-Logo-2018.svg" alt="The 2018 version of the logo, in Amsi Pro Ultra" style="margin-bottom: 4rem"/>
 
   <img src="/images/post_images/2020-logo-final.svg" alt="The newer 2020 version of the logo, in Pensum Display Basic Bold" />

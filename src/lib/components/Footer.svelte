@@ -64,15 +64,15 @@
 <style lang="scss">
 	.footer {
 		width: 100%;
-		background: var(--darkBlue);
-		color: var(--white);
+		background: var(--blue-dark);
+		color: var(--neutral-white);
 		line-height: 1.6em;
 		padding: 2.5rem var(--margin) 2rem;
 
 		@media (min-width: vars.$sm) {
 			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
-			gap: 0 var(--wholeNote);
+			gap: 0 var(--whole-note);
 			align-items: stretch;
 			font-size: 0.8rem;
 		}
@@ -84,7 +84,7 @@
 		h2 {
 			color: inherit;
 			font-size: 0.7rem;
-			margin: 0 0 var(--quarterNote);
+			margin: 0 0 var(--quarter-note);
 			width: max-content;
 		}
 
@@ -102,12 +102,12 @@
 		}
 
 		&__links {
-			padding: 0 var(--quarterNote) var(--quarterNote);
+			padding: 0 var(--quarter-note) var(--quarter-note);
 			margin: 2rem 2rem 2rem 1rem;
-			border-bottom: 1px solid var(--lightBlue);
+			border-bottom: 1px solid var(--blue-light);
 
 			::marker {
-				color: var(--lightBlue);
+				color: var(--blue-light);
 			}
 
 			@media (min-width: vars.$sm) {
@@ -118,7 +118,7 @@
 
 			ul {
 				list-style-type: square;
-				margin: var(--quarterNote) 0;
+				margin: var(--quarter-note) 0;
 			}
 
 			li {
@@ -141,7 +141,7 @@
 			}
 
 			p {
-				margin: var(--quarterNote) 0;
+				margin: var(--quarter-note) 0;
 				max-width: 30em;
 			}
 

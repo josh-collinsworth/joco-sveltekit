@@ -49,9 +49,9 @@
 		align-items: center;
 		align-content: center;
 		flex-wrap: wrap;
-		padding-block: var(--quarterNote);
+		padding-block: var(--quarter-note);
 		border-block: 1px solid currentColor;
-		margin-block: var(--quarterNote);
+		margin-block: var(--quarter-note);
 
 		@media (min-width: vars.$xxs) {
 			flex-wrap: nowrap;
@@ -59,20 +59,20 @@
 
 		.about {
 			font-style: italic;
-			font-family: var(--bodyFont);
+			font-family: var(--body-font);
 			line-height: 1.6;
 		}
 
 		.link-list {
 			font-family: var(--headingFont);
-			margin: var(--quarterNote) 0 0;
+			margin: var(--quarter-note) 0 0;
 			padding-left: 1.1rem;
 
 			li {
 				margin: 0 0 0.25rem;
 
 				a {
-					text-decoration-color: var(--lightNeutral);
+					text-decoration-color: var(--neutral-light);
 				}
 			}
 
@@ -92,10 +92,10 @@
 		.thumbnail {
 			width: 6rem;
 			border-radius: 3rem;
-			margin: var(--quarterNote) auto 0;
+			margin: var(--quarter-note) auto 0;
 
 			@media (min-width: vars.$xxs) {
-				margin: 0 0 0 var(--quarterNote);
+				margin: 0 0 0 var(--quarter-note);
 			}
 		}
 

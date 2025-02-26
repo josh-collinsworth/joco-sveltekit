@@ -12,12 +12,12 @@
 	}
 
 	&.prefers-light {
-		--paper: var(--white);
-		--ink: var(--darkNeutral);
-		--headingColor: var(--darkerNeutral);
-		--accentColor: var(--darkBlue);
-		--linkColor: var(--darkBlue);
-		--highlightColor: var(--darkNeutral);
+		--paper: var(--neutral-white);
+		--ink: var(--neutral-dark);
+		--heading-color: var(--neutral-darker);
+		--accent-color: var(--blue-dark);
+		--link-color: var(--blue-dark);
+		--highlight-color: var(--neutral-dark);
 		--buttonBackground: var(--paper);
 	}
 }

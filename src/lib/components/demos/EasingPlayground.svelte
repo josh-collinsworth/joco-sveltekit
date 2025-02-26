@@ -302,9 +302,9 @@
 		align-content: start;
 		justify-content: center;
 		justify-items: center;
-		gap: 0 var(--quarterNote);
+		gap: 0 var(--quarter-note);
 		grid-template-columns: 3fr 1fr;
-		margin-top: var(--dottedQuarterNote);
+		margin-top: var(--dotted-quarter-note);
 
 		@media (min-width: vars.$xs) {
 			grid-template-columns: repeat(2, 1fr);
@@ -313,13 +313,13 @@
 
 	.current-curve {
 		width: 100%;
-		margin: 0 auto var(--quarterNote) auto;
+		margin: 0 auto var(--quarter-note) auto;
 		position: sticky;
 		display: grid;
 		grid-template-columns: 100%;
 		grid-template-rows: auto auto;
-		gap: var(--quarterNote);
-		top: var(--quarterNote);
+		gap: var(--quarter-note);
+		top: var(--quarter-note);
 		justify-content: center;
 		align-content: start;
 		z-index: 3;
@@ -334,22 +334,22 @@
 		}
 
 		.current-curve__svg {
-			border: 3px solid var(--lightestNeutral);
+			border: 3px solid var(--neutral-lightest);
 			margin: 0 auto;
 			max-width: 40vh;
 			max-height: 100%;
 			display: block;
 			background: repeating-linear-gradient(
 					to bottom,
-					var(--lightestNeutral),
-					var(--lightestNeutral) 1px,
+					var(--neutral-lightest),
+					var(--neutral-lightest) 1px,
 					transparent 1px,
 					transparent 3.33%
 				),
 				repeating-linear-gradient(
 					to right,
-					var(--lightestNeutral),
-					var(--lightestNeutral) 1px,
+					var(--neutral-lightest),
+					var(--neutral-lightest) 1px,
 					transparent 1px,
 					transparent 7.14%
 				);
@@ -392,7 +392,7 @@
 
 		.current-curve__frame {
 			fill: none;
-			stroke: var(--lightNeutral);
+			stroke: var(--neutral-light);
 			stroke-width: 1px;
 			pointer-events: none;
 		}
@@ -408,7 +408,7 @@
 			text-align: center;
 			width: 100%;
 			font-size: 0.4rem;
-			font-family: var(--codeFont);
+			font-family: var(--code-font);
 			fill: var(--ink);
 		}
 
@@ -451,7 +451,7 @@
 
 	.intro {
 		justify-self: start;
-		margin-bottom: var(--dottedHalfNote);
+		margin-bottom: var(--dotted-half-note);
 
 		p {
 			max-width: 28em;
@@ -506,7 +506,7 @@
 			grid-column: 1 / -1;
 			text-align: center;
 			margin-bottom: 0;
-			margin-top: var(--quarterNote);
+			margin-top: var(--quarter-note);
 			display: block;
 
 			&:first-child {
@@ -520,7 +520,7 @@
 
 		input:checked + label,
 		input:focus + label {
-			box-shadow: 0 0 0 3px var(--accentColor);
+			box-shadow: 0 0 0 3px var(--accent-color);
 		}
 
 		label {
@@ -546,39 +546,39 @@
 		}
 
 		.circ code {
-			background: var(--lighterBlue);
-			border-color: var(--lighterBlue);
-			color: var(--black);
+			background: var(--blue-lighter);
+			border-color: var(--blue-lighter);
+			color: var(--neutral-black);
 		}
 		.sine code {
 			background: var(--yellow);
 			border-color: var(--yellow);
-			color: var(--black);
+			color: var(--neutral-black);
 		}
 		.quad code {
-			background: var(--darkBlue);
-			border-color: var(--darkBlue);
-			color: var(--white);
+			background: var(--blue-dark);
+			border-color: var(--blue-dark);
+			color: var(--neutral-white);
 		}
 		.cubi code {
-			background: var(--lightBlue);
-			border-color: var(--lightBlue);
-			color: var(--black);
+			background: var(--blue-light);
+			border-color: var(--blue-light);
+			color: var(--neutral-black);
 		}
 		.quin code {
 			background: var(--orange);
 			border-color: var(--orange);
-			color: var(--white);
+			color: var(--neutral-white);
 		}
 		.back code {
 			background: var(--red);
 			border-color: var(--red);
-			color: var(--white);
+			color: var(--neutral-white);
 		}
 		.expo code {
-			background: var(--darkNeutral);
-			border-color: var(--darkNeutral);
-			color: var(--white);
+			background: var(--neutral-dark);
+			border-color: var(--neutral-dark);
+			color: var(--neutral-white);
 		}
 	}
 
@@ -594,19 +594,19 @@
 	}
 
 	.curve-selection__illustration {
-		border: 1px solid var(--lighterNeutral);
+		border: 1px solid var(--neutral-lighter);
 		border-bottom: 0;
 		background: repeating-linear-gradient(
 				to bottom,
-				var(--lightestNeutral),
-				var(--lightestNeutral) 1px,
+				var(--neutral-lightest),
+				var(--neutral-lightest) 1px,
 				transparent 1px,
 				transparent 7.142%
 			),
 			repeating-linear-gradient(
 				to right,
-				var(--lightestNeutral),
-				var(--lightestNeutral) 1px,
+				var(--neutral-lightest),
+				var(--neutral-lightest) 1px,
 				transparent 1px,
 				transparent 7.142%
 			);
@@ -615,7 +615,7 @@
 
 	.curve-selection__frame {
 		fill: none;
-		stroke: var(--lightNeutral);
+		stroke: var(--neutral-light);
 		stroke-width: 0.025px;
 		pointer-events: none;
 	}

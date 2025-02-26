@@ -30,7 +30,7 @@
 		padding: 1.1em 0.75em;
 		background: var(--blue-100);
 		margin: 0;
-		color: var(--darkNeutral);
+		color: var(--neutral-dark);
 		text-decoration: none;
 		font-weight: bold;
 		font-family: var(--headingFont);
@@ -44,7 +44,7 @@
 		&:hover,
 		&:focus {
 			background: var(--yellow);
-			color: var(--black);
+			color: var(--neutral-black);
 		}
 	}
 

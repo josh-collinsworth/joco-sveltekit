@@ -3,11 +3,11 @@ $background: #1d1e26;
 pre {
 	font-style: normal;
 	font-weight: normal;
-	background: var(--darkerNeutral);
+	background: var(--neutral-darker);
 	background: $background;
 	padding: 1.5em;
-	margin: var(--halfNote) auto;
-	color: var(--white);
+	margin: var(--half-note) auto;
+	color: var(--neutral-white);
 	font-size: 0.8rem;
 	overflow: auto;
 	line-height: 1.5;
@@ -45,14 +45,14 @@ code {
 
 code,
 pre {
-	font-family: var(--codeFont);
+	font-family: var(--code-font);
 	font-variant: none;
 
 	&[class*='language-'] {
 		color: #f8f8f2;
 		background: none;
 		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-		font-family: var(--codeFont);
+		font-family: var(--code-font);
 		font-display: swap;
 		font-size: 0.75rem;
 		text-align: left;
@@ -75,8 +75,8 @@ pre {
 
 /* Code blocks */
 pre[class*='language-'] {
-	padding: var(--halfNote) var(--eighthNote) var(--eighthNote);
-	margin: var(--halfNote) 0;
+	padding: var(--half-note) var(--eighth-note) var(--eighth-note);
+	margin: var(--half-note) 0;
 	overflow: auto;
 	position: relative;
 	width: 100%;
@@ -88,16 +88,16 @@ pre[class*='language-'] {
 		font-size: 0.8rem;
 		font-weight: normal;
 		font-family: var(--headingFont);
-		padding: 0.3rem var(--eighthNote);
+		padding: 0.3rem var(--eighth-note);
 		width: 100%;
 		position: absolute;
-		background: var(--darkBlue);
-		background: linear-gradient(to right, var(--darkBlue), transparent);
+		background: var(--blue-dark);
+		background: linear-gradient(to right, var(--blue-dark), transparent);
 	}
 }
 
 pre.language-undefined {
-	padding-top: var(--quarterNote);
+	padding-top: var(--quarter-note);
 
 	&::before {
 		display: none;

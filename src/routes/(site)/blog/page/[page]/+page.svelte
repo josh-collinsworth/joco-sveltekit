@@ -52,7 +52,7 @@
 	h1.h2 {
 		font-size: 1.3rem;
 		padding: 0;
-		margin: 0 0 var(--halfNote);
+		margin: 0 0 var(--half-note);
 
 		&::before {
 			display: none;

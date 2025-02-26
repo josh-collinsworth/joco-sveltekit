@@ -74,13 +74,13 @@
 		align-items: center;
 		position: fixed;
 		right: 1rem;
-		top: var(--quarterNote);
+		top: var(--quarter-note);
 		transition: opacity 0.2s;
 		gap: 1rem;
 
 		@media (min-width: vars.$xs) {
-			top: var(--halfNote);
-			right: var(--halfNote);
+			top: var(--half-note);
+			right: var(--half-note);
 		}
 
 		@media (min-width: vars.$sm) {
@@ -89,7 +89,7 @@
 	}
 
 	.sticky {
-		--ink: var(--white);
+		--ink: var(--neutral-white);
 		--buttonBackground: transparent;
 	}
 
@@ -100,10 +100,10 @@
 		width: 100%;
 		position: relative;
 		z-index: 4;
-		padding: var(--quarterNote) var(--margin) var(--halfNote);
+		padding: var(--quarter-note) var(--margin) var(--half-note);
 
 		@media (min-width: vars.$xs) {
-			padding: var(--halfNote) var(--margin);
+			padding: var(--half-note) var(--margin);
 		}
 	}
 
@@ -122,8 +122,8 @@
 		justify-content: center;
 		align-items: center;
 		height: 3rem;
-		background: var(--darkBlue);
-		color: var(--white);
+		background: var(--blue-dark);
+		color: var(--neutral-white);
 		font-family: var(--headingFont);
 
 		&:focus {

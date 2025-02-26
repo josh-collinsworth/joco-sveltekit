@@ -131,7 +131,7 @@ https://svelte.dev/e/js_parse_error -->
 		}
 
 		.flex-container {
-			padding-top: var(--halfNote);
+			padding-top: var(--half-note);
 			display: flex;
 			align-items: flex-end;
 			align-content: flex-end;

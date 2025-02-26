@@ -80,7 +80,7 @@
 
 <style lang="scss">
 	li {
-		margin: 0 0 var(--halfNote);
+		margin: 0 0 var(--half-note);
 
 		@media (min-width: vars.$md) {
 			margin: 0;
@@ -95,8 +95,8 @@
 		@media (min-width: vars.$md) {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-gap: var(--halfNote);
-			margin-bottom: var(--wholeNote);
+			grid-gap: var(--half-note);
+			margin-bottom: var(--whole-note);
 		}
 
 		h2 a {
@@ -134,7 +134,7 @@
 				margin: 0;
 				width: auto;
 				max-width: 100%;
-				border: 1px solid var(--darkNeutral);
+				border: 1px solid var(--neutral-dark);
 			}
 		}
 
@@ -145,13 +145,13 @@
 			font-family: var(--headingFont);
 			font-style: normal;
 			font-size: 0.65rem;
-			color: var(--midNeutral);
+			color: var(--neutral-mid);
 			margin: 0.5em 0 0;
 		}
 
 		.excerpt {
 			font-style: italic;
-			margin: var(--quarterNote) 0 1.5rem;
+			margin: var(--quarter-note) 0 1.5rem;
 			font-size: 0.8rem;
 			line-height: 1.5;
 
@@ -161,7 +161,7 @@
 
 			a {
 				display: block;
-				margin-top: var(--quarterNote);
+				margin-top: var(--quarter-note);
 			}
 		}
 	}

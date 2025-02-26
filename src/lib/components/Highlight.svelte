@@ -1,9 +1,9 @@
 <script lang="ts">
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: import('svelte').Snippet
 	}
 
-	let { children }: Props = $props();
+	let { children }: Props = $props()
 </script>
 
 <!-- This component is just used in the Gridsome post, to keep a demo from breaking. -->
@@ -16,7 +16,7 @@
 	.highlight {
 		font-size: 1.3em;
 		line-height: 1.5;
-		margin: 0 0 var(--halfNote);
+		margin: 0 0 var(--half-note);
 		font-weight: normal;
 		font-style: normal;
 		font-family: var(--headingFont);

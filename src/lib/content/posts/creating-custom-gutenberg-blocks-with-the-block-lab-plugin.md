@@ -212,7 +212,7 @@ Here's the actual CSS code I use on this site to create that Side Note component
 	margin: 3rem 0;
 	font-size: 0.9rem;
 	font-style: italic;
-	border: 1px solid var(--lightBlue);
+	border: 1px solid var(--blue-light);
 }
 
 .side-note:before {
@@ -226,7 +226,7 @@ Here's the actual CSS code I use on this site to create that Side Note component
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 0.7rem;
-	color: var(--lightBlue);
+	color: var(--blue-light);
 }
 ```
 

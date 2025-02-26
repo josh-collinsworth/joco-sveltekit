@@ -166,11 +166,11 @@
 <style lang="scss">
 	.writing {
 		h2 {
-			margin-bottom: var(--quarterNote);
+			margin-bottom: var(--quarter-note);
 		}
 
 		hr {
-			margin: var(--quarterNote) 0 var(--dottedHalfNote);
+			margin: var(--quarter-note) 0 var(--dotted-half-note);
 		}
 
 		.subhead {
@@ -183,7 +183,7 @@
 			aspect-ratio: 1 / 1;
 			object-fit: cover;
 			border-radius: 10rem;
-			margin: 4.5rem 0 var(--quarterNote) var(--quarterNote);
+			margin: 4.5rem 0 var(--quarter-note) var(--quarter-note);
 			shape-outside: circle(6rem);
 			float: right;
 			max-width: 30vw;

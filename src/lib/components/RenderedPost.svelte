@@ -146,7 +146,7 @@
 	.post {
 		.cover-image {
 			margin: 0;
-			border: 1px solid var(--darkNeutral);
+			border: 1px solid var(--neutral-dark);
 		}
 
 		.meta + p::first-letter,
@@ -163,11 +163,11 @@
 		.meta {
 			font-size: 0.8rem;
 			line-height: 1.6;
-			margin: var(--halfNote) 0 var(--wholeNote);
+			margin: var(--half-note) 0 var(--whole-note);
 			width: max-content;
 			padding: 0.5em 0;
 			font-family: var(--headingFont);
-			border-top: 2px solid var(--lightNeutral);
+			border-top: 2px solid var(--neutral-light);
 
 			b {
 				text-transform: uppercase;
@@ -177,10 +177,10 @@
 		}
 
 		.post-footer {
-			margin: var(--wholeNote) 0 var(--halfNote);
+			margin: var(--whole-note) 0 var(--half-note);
 
 			.h4 {
-				margin: 0 0 calc(var(--quarterNote) / 2);
+				margin: 0 0 calc(var(--quarter-note) / 2);
 
 				&::before {
 					display: none;
@@ -189,7 +189,7 @@
 		}
 
 		.post-links {
-			margin: var(--halfNote) 0;
+			margin: var(--half-note) 0;
 			font-family: var(--headingFont);
 
 			a {
@@ -206,10 +206,10 @@
 		}
 
 		.section-heading-image {
-			margin-top: var(--dottedWholeNote);
+			margin-top: var(--dottedWhole-note);
 
 			& + * {
-				margin-top: var(--quarterNote);
+				margin-top: var(--quarter-note);
 			}
 		}
 

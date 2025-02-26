@@ -33,6 +33,6 @@
 
 <style lang="scss">
 	h1.h2 {
-		margin: 0 0 var(--wholeNote);
+		margin: 0 0 var(--whole-note);
 	}
 </style>

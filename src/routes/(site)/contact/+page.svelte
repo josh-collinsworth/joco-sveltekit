@@ -160,12 +160,12 @@
 
 <style lang="scss">
 	h2 {
-		margin-bottom: var(--quarterNote);
+		margin-bottom: var(--quarter-note);
 	}
 
 	.big {
 		font-family: var(--headingFont);
-		font-size: var(--quarterNote);
+		font-size: var(--quarter-note);
 		text-wrap: balance;
 	}
 
@@ -181,20 +181,20 @@
 		label {
 			font-family: var(--headingFont);
 			font-weight: bold;
-			margin-bottom: var(--sixteenthNote);
+			margin-bottom: var(--sixteenth-note);
 		}
 
 		.error {
 			background-color: var(--red);
-			color: var(--white);
-			padding: calc(var(--quarterNote) * 0.5) var(--quarterNote);
-			margin: var(--quarterNote) 0;
+			color: var(--neutral-white);
+			padding: calc(var(--quarter-note) * 0.5) var(--quarter-note);
+			margin: var(--quarter-note) 0;
 			font-style: italic;
 		}
 	}
 
 	.field,
 	button {
-		margin-top: var(--halfNote);
+		margin-top: var(--half-note);
 	}
 </style>

@@ -18,17 +18,17 @@
 
 <style lang="scss">
 	.warning {
-		margin: var(--halfNote) 0;
+		margin: var(--half-note) 0;
 		position: relative;
-		padding: calc(var(--quarterNote) * 1.5);
+		padding: calc(var(--quarter-note) * 1.5);
 		font-size: 0.8rem;
 		font-style: italic;
 		background: var(--red);
-		color: var(--white);
+		color: var(--neutral-white);
 		line-height: 1.4;
 		display: grid;
 		grid-template-columns: 2em 1fr;
-		gap: 0 var(--quarterNote);
+		gap: 0 var(--quarter-note);
 
 		.warning-icon {
 			grid-row: 1 / -1;

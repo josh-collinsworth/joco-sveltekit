@@ -106,7 +106,7 @@
 	}
 
 	.svelte-code-comparison {
-		margin: var(--halfNote) 0;
+		margin: var(--half-note) 0;
 
 		&__button-bar {
 			display: flex;
@@ -133,7 +133,7 @@
 		.current {
 			// These colors taken from _code.scss
 			background: #1d1e26;
-			border: 1px solid var(--black);
+			border: 1px solid var(--neutral-black);
 			color: #9580ff;
 			font-weight: bold;
 		}

@@ -20,19 +20,19 @@ excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonl
 
 <style lang="scss">
 	.toc-details {
-		border: 1px solid var(--lightNeutral);
+		border: 1px solid var(--neutral-light);
 		padding: 1rem;
-		margin-bottom: var(--halfNote);
+		margin-bottom: var(--half-note);
 		font-family: var(--headingFont);
 		::marker {
 			color: var(--yellow);
 		}
 		summary + ul {
-			margin-block-start: var(--quarterNote);
+			margin-block-start: var(--quarter-note);
 		}
 		ul {
-			margin-block: var(--eighthNote);
-			padding-inline-start: var(--dottedQuarterNote);
+			margin-block: var(--eighth-note);
+			padding-inline-start: var(--dotted-quarter-note);
 		}
 	}
 </style>
@@ -569,11 +569,11 @@ I've assembled a final pros and cons list, if you're just looking for the tl;dr 
 	<style lang="scss">
 		.pro-con {
 			grid-template-columns: 1fr;
-			margin-block-end: var(--halfNote);
+			margin-block-end: var(--half-note);
 			@media (min-width: 32rem) {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				gap: var(--dottedQuarterNote);
+				gap: var(--dotted-quarter-note);
 			}
 		}
 	</style>

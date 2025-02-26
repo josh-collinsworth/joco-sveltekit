@@ -82,13 +82,13 @@
 				display: inline-block;
 				transition: 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 				margin-right: 0.5em;
-				color: var(--midNeutral);
+				color: var(--neutral-mid);
 			}
 		}
 
 		.accordion__content {
 			overflow: hidden;
-			padding: calc(var(--quarterNote) / 2) 1rem var(--halfNote);
+			padding: calc(var(--quarter-note) / 2) 1rem var(--half-note);
 			display: grid;
 			grid-gap: 1rem;
 

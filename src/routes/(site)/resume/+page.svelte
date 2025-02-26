@@ -37,7 +37,7 @@
 		}
 
 		h3 {
-			margin-bottom: calc(var(--quarterNote) / 2);
+			margin-bottom: calc(var(--quarter-note) / 2);
 
 			~ p {
 				margin: 0;
@@ -57,7 +57,7 @@
 		@media (min-width: vars.$lg) {
 			display: grid;
 			grid-template-columns: 12rem 1fr;
-			gap: 0 var(--halfNote);
+			gap: 0 var(--half-note);
 
 			&.compressed-content {
 				max-width: 52rem;
@@ -66,7 +66,7 @@
 			hr {
 				display: block;
 				opacity: 0;
-				margin: var(--halfNote) 0;
+				margin: var(--half-note) 0;
 			}
 
 			* {
@@ -78,7 +78,7 @@
 				margin: 0;
 				padding-top: 0;
 				position: sticky;
-				top: var(--halfNote);
+				top: var(--half-note);
 				background: var(--paper);
 				text-align: right;
 				grid-row-end: span 3; // This is a hack to make sure long headings don't show behind short ones. Probably need to figure out a better solution but it works for now.
@@ -88,11 +88,11 @@
 				}
 
 				&::before {
-					top: calc(var(--wholeNote) * -1);
+					top: calc(var(--whole-note) * -1);
 					position: absolute;
 					width: 100%;
 					background: linear-gradient(to top, var(--paper), transparent);
-					height: var(--wholeNote);
+					height: var(--whole-note);
 					z-index: 1;
 				}
 			}
@@ -102,7 +102,7 @@
 			}
 
 			p + ul {
-				margin-top: var(--quarterNote);
+				margin-top: var(--quarter-note);
 			}
 		}
 	}

@@ -1,8 +1,8 @@
 @use './vars';
 
 body {
-	line-height: var(--bodyLineHeight);
-	font-weight: var(--bodyFontWeight);
+	line-height: var(--body-line-height);
+	font-weight: var(--body-font-weight);
 	font-variant-numeric: oldstyle-nums;
 }
 
@@ -37,7 +37,7 @@ li:not(:last-of-type) {
 a {
 	color: inherit;
 	text-decoration: underline;
-	text-decoration-color: var(--lightBlue);
+	text-decoration-color: var(--blue-light);
 	text-decoration-thickness: 1px;
 	text-underline-offset: 0.125em;
 	transition: color 0.15s, text-decoration-color 0.1s;
@@ -62,11 +62,11 @@ h6,
 .h6 {
 	font-family: var(--headingFont);
 	font-weight: bold;
-	color: var(--headingColor);
+	color: var(--heading-color);
 	line-height: 1.2;
 	position: relative;
-	margin-bottom: var(--quarterNote);
-	margin-top: var(--wholeNote);
+	margin-bottom: var(--quarter-note);
+	margin-top: var(--whole-note);
 	padding: 0;
 }
 
@@ -74,7 +74,7 @@ h1,
 .h1 {
 	font-size: 2rem;
 	position: relative;
-	margin-top: var(--quarterNote);
+	margin-top: var(--quarter-note);
 	font-weight: normal;
 
 	@media (min-width: vars.$xs) {
@@ -86,33 +86,33 @@ h2,
 .h2 {
 	font-size: 1.6rem;
 	font-weight: bold;
-	margin: var(--wholeNote) 0 var(--quarterNote);
+	margin: var(--whole-note) 0 var(--quarter-note);
 	z-index: 2;
 
 	@media (min-width: vars.$xs) {
 		font-size: 2rem;
-		margin-top: var(--tiedWholeNote);
+		margin-top: var(--tiedWhole-note);
 	}
 
 	&::before {
 		content: '';
-		width: var(--wholeNote);
+		width: var(--whole-note);
 		height: 0.125em;
 		background: currentColor;
 		display: block;
-		margin: 0 0 var(--eighthNote);
+		margin: 0 0 var(--eighth-note);
 	}
 }
 
 h2 + h3 {
-	margin-top: var(--halfNote);
+	margin-top: var(--half-note);
 }
 
 h3,
 .h3 {
 	font-size: 1.4rem;
 	font-weight: normal;
-	margin-top: var(--dottedHalfNote);
+	margin-top: var(--dotted-half-note);
 
 	@media (min-width: vars.$xs) {
 		font-size: 1.6rem;
@@ -141,7 +141,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	margin-top: var(--halfNote);
+	margin-top: var(--half-note);
 }
 
 .h3,
@@ -159,17 +159,17 @@ h6,
 }
 
 p {
-	margin: 0 0 var(--quarterNote);
+	margin: 0 0 var(--quarter-note);
 }
 
 blockquote {
-	margin: var(--halfNote) 0;
-	padding: 0 0 0 var(--quarterNote);
+	margin: var(--half-note) 0;
+	padding: 0 0 0 var(--quarter-note);
 	font-style: italic;
 	line-height: 1.5;
 	position: relative;
 	border: 0;
-	border-left: 4px solid var(--lightBlue);
+	border-left: 4px solid var(--blue-light);
 	white-space: pre-wrap;
 
 	p {
@@ -184,24 +184,24 @@ blockquote {
 ul,
 ol {
 	padding-left: 1rem;
-	margin: var(--quarterNote) 0;
+	margin: var(--quarter-note) 0;
 
 	li {
-		padding-left: var(--sixteenthNote);
+		padding-left: var(--sixteenth-note);
 	}
 
 	ul,
 	ol {
-		margin: var(--quarterNote) 0;
+		margin: var(--quarter-note) 0;
 	}
 
 	li + li {
-		margin-top: calc(var(--quarterNote) / 2);
+		margin-top: calc(var(--quarter-note) / 2);
 	}
 }
 
 figure {
-	margin: var(--halfNote) 0;
+	margin: var(--half-note) 0;
 
 	p {
 		margin: 0;
@@ -244,7 +244,7 @@ figcaption {
 
 		&::before {
 			content: '#';
-			color: var(--lightNeutral);
+			color: var(--neutral-light);
 			font-weight: normal;
 			opacity: 0;
 		}

@@ -43,7 +43,7 @@
 			animation: none;
 
 			.line {
-				background: var(--white);
+				background: var(--neutral-white);
 
 				&-top {
 					transform: translate(0.025em, -0.1em) rotate(-45deg) scaleX(1.5);

@@ -25,10 +25,10 @@ excerpt: I feel it's important to issue a critical reading of Automattic's post,
 <style>
 blockquote {
   font-weight: bold;
-  margin-block: var(--wholeNote) var(--quarterNote);
+  margin-block: var(--whole-note) var(--quarter-note);
 }
 h2 + blockquote {
-  margin-block-start: var(--halfNote);
+  margin-block-start: var(--half-note);
 }
 </style>
 

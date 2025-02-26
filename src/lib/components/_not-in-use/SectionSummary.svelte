@@ -1,9 +1,9 @@
 <script lang="ts">
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: import('svelte').Snippet
 	}
 
-	let { children }: Props = $props();
+	let { children }: Props = $props()
 </script>
 
 <div class="summary">
@@ -13,21 +13,21 @@
 
 <style lang="scss">
 	.summary {
-		// background-color: var(--lightestBlue);
-		padding: var(--quarterNote);
+		// background-color: var(--blue-lightest);
+		padding: var(--quarter-note);
 		font-size: 0.75rem;
 		font-family: var(--headingFont);
 		line-height: 1.3;
-		margin-block: var(--quarterNote);
+		margin-block: var(--quarter-note);
 		border: 1px solid var(--ink);
 
 		:global(.dark &) {
-			background-color: var(--darkBlue);
+			background-color: var(--blue-dark);
 		}
 
 		:global(html:not(.light)) & {
 			@media (prefers-color-scheme: dark) {
-				background-color: var(--darkerBlue);
+				background-color: var(--blue-darker);
 			}
 		}
 

@@ -65,7 +65,7 @@ select {
 	font-size: 1rem;
 	font-family: var(--headingFont);
 	border: 1px solid var(--ink);
-	padding: var(--sixteenthNote) var(--eighthNote);
+	padding: var(--sixteenth-note) var(--eighth-note);
 	width: max-content;
 }
 
@@ -73,7 +73,7 @@ button,
 input[type=submit] {
 	border: 1px solid;
 	padding: 0.5rem 1rem;
-	background: var(--lighterBlue);
+	background: var(--blue-lighter);
 	font-size: 1rem;
 	font-family: var(--headingFont);
 	color: var(--ink);
@@ -83,7 +83,7 @@ input[type=submit] {
 	border-bottom-width: 2px;
 
 	.dark & {
-		background: var(--darkBlue);
+		background: var(--blue-dark);
 	}
 
 	&:hover {

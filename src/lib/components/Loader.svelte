@@ -63,7 +63,7 @@
 
 				&:nth-of-type(2) {
 					animation-delay: 100ms;
-					background: var(--lightBlue);
+					background: var(--blue-light);
 				}
 
 				&:nth-of-type(3) {

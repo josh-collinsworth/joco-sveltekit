@@ -2,7 +2,7 @@
 
 .pull-quote {
   float: right;
-  margin: var(--halfNote) -12em var(--dottedHalfNote) var(--halfNote);
+  margin: var(--half-note) -12em var(--dotted-half-note) var(--half-note);
   font-size: 1.3rem;
   line-height: 1.4;
   position: relative;
@@ -31,7 +31,7 @@
     height: 0.25rem;
     width: 100%;
     margin-left: -100%;
-    background: var(--accentGradient);
+    background: var(--accent-gradient);
     bottom: 0;
     position: absolute;
   }
@@ -47,12 +47,12 @@
 }
 
 .callout {
-  margin: var(--dottedQuarterNote) 0;
+  margin: var(--dotted-quarter-note) 0;
   font-size: 1.3rem;
   line-height: 1.4;
 
   @media (min-width: vars.$lg) {
-    margin: 0 0 var(--quarterNote);
+    margin: 0 0 var(--quarter-note);
     font-size: inherit;
     line-height: inherit;
     font-family: inherit;
@@ -63,15 +63,15 @@
   --stop-1: var(--blue-100);
   --stop-2: var(--blue-50);
   position: relative;
-  margin: var(--halfNote) 0;
+  margin: var(--half-note) 0;
   font-size: 0.8rem;
   font-style: italic;
   background: linear-gradient(27deg, var(--stop-1), var(--stop-2));
-  line-height: var(--quarterNote);
+  line-height: var(--quarter-note);
   min-height: 4.5rem;
   width: calc(100% + var(--margin) + var(--margin));
   margin-left: calc(var(--margin) * -1);
-  padding: calc(var(--quarterNote) * 1.5) var(--quarterNote);
+  padding: calc(var(--quarter-note) * 1.5) var(--quarter-note);
   color: var(--ink);
   display: grid;
   grid-template-columns: 1fr;
@@ -91,7 +91,7 @@
   @media (min-width: vars.$xxs) {
     width: 100%;
     margin-left: 0;
-    padding: calc(var(--quarterNote) * 1.5);
+    padding: calc(var(--quarter-note) * 1.5);
   }
 
   em,
@@ -126,7 +126,7 @@ html:not(.light) .side-note {
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  margin: var(--halfNote) 0;
+  margin: var(--half-note) 0;
 
   .note__callout {
     background: var(--yellow);
@@ -147,7 +147,7 @@ html:not(.light) .side-note {
     white-space: pre;
     display: flex;
     align-items: center;
-    color: var(--darkNeutral);
+    color: var(--neutral-dark);
   }
 
   .note__callout-arrow {
@@ -175,7 +175,7 @@ html:not(.light) .side-note {
     font-size: 0.8rem;
     line-height: 1.5;
     font-style: italic;
-    padding: var(--dottedQuarterNote);
+    padding: var(--dotted-quarter-note);
   }
 }
 

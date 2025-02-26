@@ -34,7 +34,11 @@
 			transform: translateX(0);
 			background: #101820f0;
 			@supports (color-mix(black, transparent)) {
-				background: color-mix(in srgb, var(--black) 95%, transparent 5%);
+				background: color-mix(
+					in srgb,
+					var(--neutral-black) 95%,
+					transparent 5%
+				);
 			}
 			backdrop-filter: blur(4px);
 			width: 100vw;

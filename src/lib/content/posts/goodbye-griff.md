@@ -18,12 +18,12 @@ excerpt: "A tribute to the member of our family we lost this weekend."
 
 <style>
 p + img {
-  margin-top: var(--quarterNote);
+  margin-top: var(--quarter-note);
 }
 
 img + p,
 img + img {
-  margin-top: var(--quarterNote);
+  margin-top: var(--quarter-note);
 }
 </style>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
+	import { run } from 'svelte/legacy'
 
 	import type { PageData } from './$types'
 	import type Post from '$lib/types/post'
@@ -17,13 +17,13 @@
 	import RenderedPost from '$lib/components/RenderedPost.svelte'
 	import throttle from 'just-throttle'
 	interface Props {
-		data: PageData;
+		data: PageData
 	}
 
-	let { data }: Props = $props();
+	let { data }: Props = $props()
 	run(() => {
-		({ PostContent, meta } = data)
-	});
+		;({ PostContent, meta } = data)
+	})
 </script>
 
 <RenderedPost {PostContent} {meta} />
@@ -38,12 +38,12 @@
 <style lang="scss">
 	a[href='#app'] {
 		position: fixed;
-		bottom: var(--quarterNote);
+		bottom: var(--quarter-note);
 		right: 0;
 		padding: 0.75rem 0.5rem 0.75rem 1rem;
 		display: flex;
-		background: var(--lighterBlue);
-		// background: linear-gradient(125deg in oklch, var(--yellow), var(--lighterBlue));
+		background: var(--blue-lighter);
+		// background: linear-gradient(125deg in oklch, var(--yellow), var(--blue-lighter));
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
@@ -56,7 +56,7 @@
 		font-size: 0.75rem;
 		font-weight: bold;
 		text-decoration: none;
-		color: var(--black);
+		color: var(--neutral-black);
 		z-index: 3;
 		transform: translateX(110%);
 		transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
@@ -72,12 +72,12 @@
 		.arrow {
 			width: 1rem;
 			height: 0.5rem;
-			background: var(--black);
+			background: var(--neutral-black);
 			clip-path: polygon(0 100%, 50% 0%, 100% 100%);
 		}
 	}
 
 	:global(.dark a[href='#app']) {
-		background: var(--lightBlue) !important;
+		background: var(--blue-light) !important;
 	}
 </style>

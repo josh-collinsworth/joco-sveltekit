@@ -8,14 +8,14 @@ img {
 	width: 100%;
 	max-width: 100%;
 	height: auto;
-	margin: var(--quarterNote) 0;
+	margin: var(--quarter-note) 0;
 }
 
 hr {
-	margin: var(--halfNote) 0;
+	margin: var(--half-note) 0;
 	border: 0;
 	height: 1px;
-	background: var(--accentGradient);
+	background: var(--accent-gradient);
 }
 
 .details {
@@ -29,7 +29,7 @@ hr {
 }
 
 .categories li a {
-	background: var(--headingColor);
+	background: var(--heading-color);
 	padding: 0.5em;
 	border-radius: 8px;
 	text-align: center;
@@ -39,7 +39,7 @@ hr {
 }
 
 .layout {
-	margin: var(--quarterNote) var(--margin) var(--wholeNote) var(--margin);
+	margin: var(--quarter-note) var(--margin) var(--whole-note) var(--margin);
 	width: calc(100% - (var(--margin) * 2));
 	position: relative;
 	background: transparent;
@@ -58,14 +58,14 @@ hr {
 }
 
 .cp_embed_wrapper {
-	margin-bottom: var(--halfNote);
-	margin-top: var(--halfNote);
+	margin-bottom: var(--half-note);
+	margin-top: var(--half-note);
 }
 
 .header__divider {
 	height: var(--buttonSize);
 	width: 1px;
-	background: var(--lightNeutral);
+	background: var(--neutral-light);
 	display: block;
 	position: relative;
 	z-index: 11;
@@ -100,7 +100,7 @@ hr {
 .table {
 	width: auto;
 	overflow-x: auto;
-	margin-bottom: var(--halfNote);
+	margin-bottom: var(--half-note);
 	position: relative;
 
 	&-outer {
@@ -112,7 +112,7 @@ hr {
 			height: 100%;
 			position: absolute;
 			width: 2rem;
-			background: linear-gradient(to right, transparent, var(--white));
+			background: linear-gradient(to right, transparent, var(--neutral-white));
 			top: 0;
 			right: 0;
 		}
@@ -123,7 +123,7 @@ table {
 	min-width: 100%;
 	border-collapse: collapse;
 	font-size: 0.9rem;
-	margin: var(--dottedHalfNote) 0 var(--halfNote);
+	margin: var(--dotted-half-note) 0 var(--half-note);
 	border-right: 2rem solid transparent;
 
 	td,
@@ -151,18 +151,18 @@ table {
 	}
 
 	tbody tr {
-		border-bottom: 1px solid var(--lightNeutral);
+		border-bottom: 1px solid var(--neutral-light);
 	}
 }
 
 .twitter-tweet {
-	margin: var(--halfNote) 0 !important;
+	margin: var(--half-note) 0 !important;
 }
 
 .example-component-wrapper {
 	border: 1px solid;
-	padding: calc(var(--quarterNote) + var(--quarterNote));
-	margin: var(--halfNote) 0;
+	padding: calc(var(--quarter-note) + var(--quarter-note));
+	margin: var(--half-note) 0;
 }
 
 .blog-roll {
@@ -173,8 +173,10 @@ table {
 
 
 .toc-wrap {
-	background: linear-gradient(to bottom right, var(--lightNeutral), var(--yellow));
 	background: linear-gradient(to bottom right, #a7a8aa, #92abb2, #5eca78, #b6ec1f, #ffd100);
+	@supports(background: linear-gradient(in oklch, white, black)) {
+		background: linear-gradient(to bottom right in oklch, var(--neutral-light), var(--yellow) 80%);
+	}
 	padding: 2px;
 	margin: 3rem 0;
 }
@@ -199,7 +201,7 @@ table {
 		top: calc(-1rem - 0.6em);
 		left: 0;
 		text-transform: uppercase;
-		color: var(--lightNeutral);
+		color: var(--neutral-light);
 		display: flex;
 		width: 14em;
 		justify-content: space-between;

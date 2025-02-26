@@ -37,11 +37,11 @@ $fourxl: 144rem;
 	--blue-800: #2f495b;
 	--blue-900: #2b404e;
 	--blue-950: #182834;
-	--lightestBlue: var(--blue-100);
-	--lightBlue: var(--blue-400);
-	--lighterBlue: var(--blue-200);
-	--darkBlue: var(--blue-600);
-	--darkerBlue: var(--blue-950);
+	--blue-lightest: var(--blue-100);
+	--blue-light: var(--blue-400);
+	--blue-lighter: var(--blue-200);
+	--blue-dark: var(--blue-600);
+	--blue-darker: var(--blue-950);
 
 	--neutral-50: #fcfcfc;
 	--neutral-100: #ececec;
@@ -54,14 +54,14 @@ $fourxl: 144rem;
 	--neutral-800: #474a4d;
 	--neutral-900: #2e3236;
 	--neutral-950: #101820;
-	--white: var(--neutral-50);
-	--lightestNeutral: var(--neutral-100);
-	--lighterNeutral: var(--neutral-300);
-	--lightNeutral: var(--neutral-400);
-	--midNeutral: var(--neutral-500);
-	--darkNeutral: var(--neutral-700);
-	--darkerNeutral: var(--neutral-900);
-	--black: var(--neutral-950);
+	--neutral-white: var(--neutral-50);
+	--neutral-lightest: var(--neutral-100);
+	--neutral-lighter: var(--neutral-300);
+	--neutral-light: var(--neutral-400);
+	--neutral-mid: var(--neutral-500);
+	--neutral-dark: var(--neutral-700);
+	--neutral-darker: var(--neutral-900);
+	--neutral-black: var(--neutral-950);
 
 	--orange-50: #fff6ed;
 	--orange-100: #ffebd4;
@@ -79,92 +79,92 @@ $fourxl: 144rem;
 
 	--headingFont: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
-	--bodyFont: 'Alkes', Georgia, serif;
-	--codeFont: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	--body-font: 'Alkes', Georgia, serif;
+	--code-font: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
-	--bodyFontWeight: normal;
-	--bodyFontSize: 1.125rem;
-	--bodyLineHeight: 1.5;
+	--body-font-weight: normal;
+	--body-font-size: 1.125rem;
+	--body-line-height: 1.5;
 
 	@media (min-width: $xs) {
-		--bodyFontSize: 1.1875rem;
+		--body-font-size: 1.1875rem;
 	}
 
 	@media (min-width: $lg) {
-		--bodyFontSize: 1.25rem;
+		--body-font-size: 1.25rem;
 	}
 
 
-	--blueToYellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
-	--accentGradient: linear-gradient(to right, var(--blueToYellow));
+	--blue-to-yellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
+	--accent-gradient: linear-gradient(to right, var(--blue-to-yellow));
 
-	@supports(background: linear-gradient(in oklch, white, black)) {
-		background: linear-gradient(to right, var(--yellow), var(--lightBlue));
+	@supports(background: linear-gradient(in hsl, white, black)) {
+		--accent-gradient: linear-gradient(to right in hsl, var(--blue-light), var(--yellow) 90%);
 	}
 
-	--ink: var(--darkNeutral);
-	--paper: var(--white);
-	--headingColor: var(--darkerNeutral);
-	--accentColor: var(--darkBlue);
-	--linkColor: var(--darkBlue);
-	--highlightColor: var(--darkNeutral);
+	--ink: var(--neutral-dark);
+	--paper: var(--neutral-white);
+	--heading-color: var(--neutral-800);
+	--accent-color: var(--blue-dark);
+	--link-color: var(--blue-dark);
+	--highlight-color: var(--neutral-dark);
 
-	--maxWidth: 34rem;
-	--sidebarWidth: 15rem;
-	--margin: var(--quarterNote);
+	--max-width: 34rem;
+	--sidebar-width: 15rem;
+	--margin: var(--quarter-note);
 
-	--sixteenthNote: calc(var(--quarterNote) / 4);
-	--eighthNote: calc(var(--quarterNote) / 2);
-	--quarterNote: 1.25rem;
-	--dottedQuarterNote: calc(var(--quarterNote) * 1.5);
-	--halfNote: calc(var(--quarterNote) * 2);
-	--dottedHalfNote: calc(var(--quarterNote) * 3);
-	--wholeNote: calc(var(--quarterNote) * 4);
-	--tiedWholeNote: calc(var(--quarterNote) * 5);
-	--dottedWholeNote: calc(var(--quarterNote) * 6);
+	--sixteenth-note: calc(var(--quarter-note) / 4);
+	--eighth-note: calc(var(--quarter-note) / 2);
+	--quarter-note: 1.25rem;
+	--dotted-quarter-note: calc(var(--quarter-note) * 1.5);
+	--half-note: calc(var(--quarter-note) * 2);
+	--dotted-half-note: calc(var(--quarter-note) * 3);
+	--whole-note: calc(var(--quarter-note) * 4);
+	--tiedWhole-note: calc(var(--quarter-note) * 5);
+	--dottedWhole-note: calc(var(--quarter-note) * 6);
 
 	--buttonSize: 2.2rem;
 	--buttonBackground: var(--paper);
 
 	@media (min-width: $xs) {
-		--margin: var(--halfNote);
+		--margin: var(--half-note);
 	}
 
 	@media (min-width: $sm) {
-		--margin: var(--dottedHalfNote);
+		--margin: var(--dotted-half-note);
 	}
 
 	@media (min-width: $xxl) {
-		--margin: var(--wholeNote);
+		--margin: var(--whole-note);
 	}
 
 	@media (min-width: $xxxl) {
-		--margin: var(--dottedWholeNote);
+		--margin: var(--dottedWhole-note);
 	}
 
 	&.dark {
-		--paper: var(--black);
-		--ink: var(--white);
-		--headingColor: var(--white);
-		--accentColor: var(--lightBlue);
-		--linkColor: var(--lightBlue);
-		--lightestNeutral: var(--neutral-900);
-		--lighterNeutral: var(--neutral-700);
-		--highlightColor: var(--darkerNeutral);
-		--midNeutral: var(--neutral-400);
+		--paper: var(--neutral-black);
+		--ink: var(--neutral-100);
+		--heading-color: var(--neutral-100);
+		--accent-color: var(--blue-light);
+		--link-color: var(--blue-light);
+		--neutral-lightest: var(--neutral-900);
+		--neutral-lighter: var(--neutral-700);
+		--highlight-color: var(--neutral-darker);
+		--neutral-mid: var(--neutral-400);
 	}
 
 	// Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes
 	&:not(.light) {
 		@media (prefers-color-scheme: dark) {
-			--paper: var(--black);
-			--ink: var(--white);
-			--headingColor: var(--white);
-			--accentColor: var(--lightBlue);
-			--linkColor: var(--lightBlue);
-			--highlightColor: var(--darkerNeutral);
+			--paper: var(--neutral-black);
+			--ink: var(--neutral-100);
+			--heading-color: var(--neutral-100);
+			--accent-color: var(--blue-light);
+			--link-color: var(--blue-light);
+			--highlight-color: var(--neutral-darker);
 		}
 	}
 
-	font-size: var(--bodyFontSize);
+	font-size: var(--body-font-size);
 }

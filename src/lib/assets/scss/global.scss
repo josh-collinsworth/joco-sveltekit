@@ -17,7 +17,7 @@
 
 *:focus,
 input[type='checkbox']:focus + label {
-	outline: 2px solid var(--lightBlue);
+	outline: 2px solid var(--blue-light);
 	outline-offset: 1px;
 }
 
@@ -27,17 +27,17 @@ main:focus {
 
 ::selection {
 	background: var(--yellow);
-	color: var(--highlightColor); /* WebKit/Blink Browsers */
+	color: var(--highlight-color); /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
 	background: var(--yellow);
-	color: var(--highlightColor); /* Gecko Browsers */
+	color: var(--highlight-color); /* Gecko Browsers */
 }
 
 ::-webkit-scrollbar {
 	width: 0.5rem;
-	height: calc(var(--eighthNote) * 0.25);
+	height: calc(var(--eighth-note) * 0.25);
 }
 
 ::-webkit-scrollbar,
@@ -52,7 +52,7 @@ main:focus {
 }
 
 body {
-	font-family: var(--bodyFont);
+	font-family: var(--body-font);
 	color: var(--ink);
 	margin: 0;
 	padding: 0;
