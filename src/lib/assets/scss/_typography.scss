@@ -37,14 +37,19 @@ li:not(:last-of-type) {
 a {
 	color: inherit;
 	text-decoration: underline;
-	text-decoration-color: var(--blue-light);
+	text-decoration-color: var(--blue-dark);
 	text-decoration-thickness: 1px;
-	text-underline-offset: 0.125em;
+	text-underline-offset: 0.115em;
 	transition: color 0.15s, text-decoration-color 0.1s;
+
+	.dark & {
+		text-decoration-color: var(--blue-light);
+	}
 
 	&:hover,
 	&:focus {
-		text-decoration-color: var(--yellow);
+		color: var(--blue-light);
+		text-decoration-color: var(--blue-light);
 	}
 }
 
@@ -68,6 +73,10 @@ h6,
 	margin-bottom: var(--quarter-note);
 	margin-top: var(--whole-note);
 	padding: 0;
+
+	a {
+		color: inherit;
+	}
 }
 
 h1,

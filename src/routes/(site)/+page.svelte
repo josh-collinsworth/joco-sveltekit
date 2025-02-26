@@ -151,10 +151,6 @@
 			margin-bottom: var(--half-note);
 			color: var(--neutral-dark);
 			line-height: 1.4;
-
-			a {
-				text-decoration: underline;
-			}
 		}
 
 		.bio {
