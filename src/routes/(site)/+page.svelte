@@ -142,14 +142,14 @@
 
 		h2 strong {
 			background: var(--yellow);
-			color: var(--darkerGray);
+			color: var(--darkerNeutral);
 		}
 
 		.subhead {
 			font-size: clamp(1.2rem, calc(0.6rem + 2vw), 1.8rem);
 			margin-top: 0;
 			margin-bottom: var(--halfNote);
-			color: var(--darkGray);
+			color: var(--darkNeutral);
 			line-height: 1.4;
 
 			a {
@@ -217,7 +217,7 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		margin: 0;
-		border-bottom: 1px solid var(--lighterGray);
+		border-bottom: 1px solid var(--lighterNeutral);
 		padding: 0.75em 0 0.5em;
 		line-height: 1;
 

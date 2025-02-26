@@ -97,6 +97,14 @@ input[type=submit] {
 	}
 }
 
+::placeholder {
+	color: var(--neutral-500);
+}
+
+.dark ::placeholder {
+	color: var(--neutral-400);
+}
+
 .settings-toggle {
 	--itemTransition: 0.25s cubic-bezier(1, 0, 0, 1);
 

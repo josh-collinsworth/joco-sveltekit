@@ -13,11 +13,11 @@
 
 	&.prefers-light {
 		--paper: var(--white);
-		--ink: var(--darkGray);
-		--headingColor: var(--darkerGray);
+		--ink: var(--darkNeutral);
+		--headingColor: var(--darkerNeutral);
 		--accentColor: var(--darkBlue);
 		--linkColor: var(--darkBlue);
-		--highlightColor: var(--darkGray);
+		--highlightColor: var(--darkNeutral);
 		--buttonBackground: var(--paper);
 	}
 }

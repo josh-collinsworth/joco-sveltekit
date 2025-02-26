@@ -23,7 +23,7 @@
 	let base = $state(16)
 
 	const gridColors: string[] = [
-		'var(--lightGray)',
+		'var(--lightNeutral)',
 		'var(--ink)',
 		'var(--lightBlue)',
 		'var(--darkBlue)',

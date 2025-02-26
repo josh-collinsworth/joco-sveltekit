@@ -146,7 +146,7 @@
 	.post {
 		.cover-image {
 			margin: 0;
-			border: 1px solid var(--darkGray);
+			border: 1px solid var(--darkNeutral);
 		}
 
 		.meta + p::first-letter,
@@ -167,7 +167,7 @@
 			width: max-content;
 			padding: 0.5em 0;
 			font-family: var(--headingFont);
-			border-top: 2px solid var(--lightGray);
+			border-top: 2px solid var(--lightNeutral);
 
 			b {
 				text-transform: uppercase;

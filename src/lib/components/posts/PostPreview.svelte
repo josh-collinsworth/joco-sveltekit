@@ -134,7 +134,7 @@
 				margin: 0;
 				width: auto;
 				max-width: 100%;
-				border: 1px solid var(--darkGray);
+				border: 1px solid var(--darkNeutral);
 			}
 		}
 
@@ -145,7 +145,7 @@
 			font-family: var(--headingFont);
 			font-style: normal;
 			font-size: 0.65rem;
-			color: var(--midGray);
+			color: var(--midNeutral);
 			margin: 0.5em 0 0;
 		}
 

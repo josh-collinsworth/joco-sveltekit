@@ -1,10 +1,10 @@
 <script lang="ts">
 	interface Props {
-		to: string;
-		children?: import('svelte').Snippet;
+		to: string
+		children?: import('svelte').Snippet
 	}
 
-	let { to, children }: Props = $props();
+	let { to, children }: Props = $props()
 </script>
 
 <template>
@@ -28,16 +28,18 @@
 	.tag__link {
 		display: block;
 		padding: 1.1em 0.75em;
-		background: var(--lighterBlue);
+		background: var(--blue-100);
 		margin: 0;
-		color: var(--darkGray);
+		color: var(--darkNeutral);
 		text-decoration: none;
 		font-weight: bold;
 		font-family: var(--headingFont);
 		font-size: 0.65em;
 		line-height: 0;
 		text-transform: uppercase;
-		transition: background 0.15s, color 0.15s;
+		transition:
+			background 0.15s,
+			color 0.15s;
 
 		&:hover,
 		&:focus {
@@ -48,13 +50,13 @@
 
 	:global(.dark .tag .tag__link) {
 		color: var(--ink);
-		background: var(--darkBlue);
+		background: var(--blue-800);
 	}
 
 	:global(html:not(.light)) {
 		@media (prefers-color-scheme: dark) {
 			.tag .tag__link {
-				background: var(--darkBlue);
+				background: var(--blue-800);
 				color: var(--ink);
 			}
 		}

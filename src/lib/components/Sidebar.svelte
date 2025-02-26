@@ -75,7 +75,7 @@
 			margin: 3em 0 1.25em;
 			padding: 0 0 0.25em;
 			border: none;
-			border-bottom: 1px solid var(--lighterGray);
+			border-bottom: 1px solid var(--lighterNeutral);
 			width: 100%;
 			text-align: inherit;
 			color: var(--headingColor);

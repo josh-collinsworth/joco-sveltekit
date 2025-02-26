@@ -2,10 +2,10 @@
 	import BackUpArrow from './icons/BackUpArrow.svelte'
 
 	interface Props {
-		footnotes?: string[];
+		footnotes?: string[]
 	}
 
-	let { footnotes = [] }: Props = $props();
+	let { footnotes = [] }: Props = $props()
 </script>
 
 <footer>
@@ -28,7 +28,7 @@
 		font-size: 0.8rem;
 		padding-top: var(--quarterNote);
 		margin-top: var(--halfNote);
-		border-top: 1px solid var(--lighterGray);
+		border-top: 1px solid var(--lighterNeutral);
 		line-height: 1.5;
 	}
 

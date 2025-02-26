@@ -334,22 +334,22 @@
 		}
 
 		.current-curve__svg {
-			border: 3px solid var(--lightestGray);
+			border: 3px solid var(--lightestNeutral);
 			margin: 0 auto;
 			max-width: 40vh;
 			max-height: 100%;
 			display: block;
 			background: repeating-linear-gradient(
 					to bottom,
-					var(--lightestGray),
-					var(--lightestGray) 1px,
+					var(--lightestNeutral),
+					var(--lightestNeutral) 1px,
 					transparent 1px,
 					transparent 3.33%
 				),
 				repeating-linear-gradient(
 					to right,
-					var(--lightestGray),
-					var(--lightestGray) 1px,
+					var(--lightestNeutral),
+					var(--lightestNeutral) 1px,
 					transparent 1px,
 					transparent 7.14%
 				);
@@ -392,7 +392,7 @@
 
 		.current-curve__frame {
 			fill: none;
-			stroke: var(--lightGray);
+			stroke: var(--lightNeutral);
 			stroke-width: 1px;
 			pointer-events: none;
 		}
@@ -576,8 +576,8 @@
 			color: var(--white);
 		}
 		.expo code {
-			background: var(--darkGray);
-			border-color: var(--darkGray);
+			background: var(--darkNeutral);
+			border-color: var(--darkNeutral);
 			color: var(--white);
 		}
 	}
@@ -594,19 +594,19 @@
 	}
 
 	.curve-selection__illustration {
-		border: 1px solid var(--lighterGray);
+		border: 1px solid var(--lighterNeutral);
 		border-bottom: 0;
 		background: repeating-linear-gradient(
 				to bottom,
-				var(--lightestGray),
-				var(--lightestGray) 1px,
+				var(--lightestNeutral),
+				var(--lightestNeutral) 1px,
 				transparent 1px,
 				transparent 7.142%
 			),
 			repeating-linear-gradient(
 				to right,
-				var(--lightestGray),
-				var(--lightestGray) 1px,
+				var(--lightestNeutral),
+				var(--lightestNeutral) 1px,
 				transparent 1px,
 				transparent 7.142%
 			);
@@ -615,7 +615,7 @@
 
 	.curve-selection__frame {
 		fill: none;
-		stroke: var(--lightGray);
+		stroke: var(--lightNeutral);
 		stroke-width: 0.025px;
 		pointer-events: none;
 	}

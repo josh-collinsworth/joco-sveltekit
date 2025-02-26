@@ -38,8 +38,8 @@ a {
 	color: inherit;
 	text-decoration: underline;
 	text-decoration-color: var(--lightBlue);
-	text-decoration-thickness: 1.5px;
-	text-underline-offset: 0.1em;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.125em;
 	transition: color 0.15s, text-decoration-color 0.1s;
 
 	&:hover,
@@ -244,7 +244,7 @@ figcaption {
 
 		&::before {
 			content: '#';
-			color: var(--lightGray);
+			color: var(--lightNeutral);
 			font-weight: normal;
 			opacity: 0;
 		}

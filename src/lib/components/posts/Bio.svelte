@@ -72,7 +72,7 @@
 				margin: 0 0 0.25rem;
 
 				a {
-					text-decoration-color: var(--lightGray);
+					text-decoration-color: var(--lightNeutral);
 				}
 			}
 

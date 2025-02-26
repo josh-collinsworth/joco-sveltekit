@@ -10,10 +10,7 @@ $xxxl: 122rem;
 $fourxl: 144rem;
 
 :root {
-	--white: #fcfcfc;
 	--trueWhite: #ffffff;
-
-	--black: #101820;
 	--trueBlack: #000000;
 
 	--yellow-50: #ffffe7;
@@ -43,27 +40,28 @@ $fourxl: 144rem;
 	--lightestBlue: var(--blue-100);
 	--lightBlue: var(--blue-400);
 	--lighterBlue: var(--blue-200);
-	--darkBlue: var(--blue-700);
+	--darkBlue: var(--blue-600);
 	--darkerBlue: var(--blue-950);
 
-	--gray-50: #f7f7f7;
-	--gray-100: #ececed;
-	--gray-200: #dededf;
-	--gray-300: #c7c8c9;
-	--gray-400: #a7a8aa;
-	--gray-500: #97989a;
-	--gray-600: #86878a;
-	--gray-700: #797a7c;
-	--gray-800: #656668;
-	--gray-900: #535455;
-	--gray-950: #353536;
-	--gray-1000: #23272B;
-	--lightGray: var(--gray-400);
-	--lighterGray: var(--gray-200);
-	--lightestGray: var(--gray-100);
-	--midGray: var(--gray-600);
-	--darkGray: var(--gray-900);
-	--darkerGray: var(--gray-950);
+	--neutral-50: #fcfcfc;
+	--neutral-100: #ececec;
+	--neutral-200: #dedede;
+	--neutral-300: #d1d2d3;
+	--neutral-400: #a7a8aa;
+	--neutral-500: #8f9092;
+	--neutral-600: #787a7d;
+	--neutral-700: #5f6164;
+	--neutral-800: #474a4d;
+	--neutral-900: #2e3236;
+	--neutral-950: #101820;
+	--white: var(--neutral-50);
+	--lightestNeutral: var(--neutral-100);
+	--lighterNeutral: var(--neutral-300);
+	--lightNeutral: var(--neutral-400);
+	--midNeutral: var(--neutral-500);
+	--darkNeutral: var(--neutral-700);
+	--darkerNeutral: var(--neutral-900);
+	--black: var(--neutral-950);
 
 	--orange-50: #fff6ed;
 	--orange-100: #ffebd4;
@@ -98,13 +96,18 @@ $fourxl: 144rem;
 
 
 	--blueToYellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
+	--accentGradient: linear-gradient(to right, var(--blueToYellow));
 
-	--ink: var(--darkGray);
+	@supports(background: linear-gradient(in oklch, white, black)) {
+		background: linear-gradient(to right, var(--yellow), var(--lightBlue));
+	}
+
+	--ink: var(--darkNeutral);
 	--paper: var(--white);
-	--headingColor: var(--darkerGray);
+	--headingColor: var(--darkerNeutral);
 	--accentColor: var(--darkBlue);
 	--linkColor: var(--darkBlue);
-	--highlightColor: var(--darkGray);
+	--highlightColor: var(--darkNeutral);
 
 	--maxWidth: 34rem;
 	--sidebarWidth: 15rem;
@@ -145,9 +148,10 @@ $fourxl: 144rem;
 		--headingColor: var(--white);
 		--accentColor: var(--lightBlue);
 		--linkColor: var(--lightBlue);
-		--highlightColor: var(--darkerGray);
-		--lighterGray: var(--gray-950);
-		--lightestGray: var(--gray-1000);
+		--lightestNeutral: var(--neutral-900);
+		--lighterNeutral: var(--neutral-700);
+		--highlightColor: var(--darkerNeutral);
+		--midNeutral: var(--neutral-400);
 	}
 
 	// Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes
@@ -158,7 +162,7 @@ $fourxl: 144rem;
 			--headingColor: var(--white);
 			--accentColor: var(--lightBlue);
 			--linkColor: var(--lightBlue);
-			--highlightColor: var(--darkerGray);
+			--highlightColor: var(--darkerNeutral);
 		}
 	}
 

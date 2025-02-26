@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
+	import { run } from 'svelte/legacy'
 
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 
 	interface Props {
-		title: string;
-		isSinglePost?: boolean;
+		title: string
+		isSinglePost?: boolean
 	}
 
-	let { title = $bindable(), isSinglePost = false }: Props = $props();
+	let { title = $bindable(), isSinglePost = false }: Props = $props()
 
 	let computedTitle: string = $state('')
 	let isWorking: boolean = $state(false)
@@ -30,7 +30,7 @@
 				computedTitle = title
 			}, 420)
 		}
-	});
+	})
 </script>
 
 <PageTransition refresh={isSinglePost} span={true}>
@@ -83,7 +83,7 @@
 				font-family: var(--headingFont);
 				font-weight: normal;
 				font-size: 1.25em;
-				color: var(--lightGray);
+				color: var(--lightNeutral);
 				margin: 0 0.1em 0 0;
 				z-index: 2;
 				position: relative;

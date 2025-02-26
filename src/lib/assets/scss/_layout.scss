@@ -15,7 +15,7 @@ hr {
 	margin: var(--halfNote) 0;
 	border: 0;
 	height: 1px;
-	background: linear-gradient(to right, var(--blueToYellow));
+	background: var(--accentGradient);
 }
 
 .details {
@@ -65,7 +65,7 @@ hr {
 .header__divider {
 	height: var(--buttonSize);
 	width: 1px;
-	background: var(--lightGray);
+	background: var(--lightNeutral);
 	display: block;
 	position: relative;
 	z-index: 11;
@@ -151,7 +151,7 @@ table {
 	}
 
 	tbody tr {
-		border-bottom: 1px solid var(--lightGray);
+		border-bottom: 1px solid var(--lightNeutral);
 	}
 }
 
@@ -173,7 +173,7 @@ table {
 
 
 .toc-wrap {
-	background: linear-gradient(to bottom right, var(--lightGray), var(--yellow));
+	background: linear-gradient(to bottom right, var(--lightNeutral), var(--yellow));
 	background: linear-gradient(to bottom right, #a7a8aa, #92abb2, #5eca78, #b6ec1f, #ffd100);
 	padding: 2px;
 	margin: 3rem 0;
@@ -199,7 +199,7 @@ table {
 		top: calc(-1rem - 0.6em);
 		left: 0;
 		text-transform: uppercase;
-		color: var(--lightGray);
+		color: var(--lightNeutral);
 		display: flex;
 		width: 14em;
 		justify-content: space-between;

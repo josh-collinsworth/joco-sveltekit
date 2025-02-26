@@ -3,7 +3,7 @@ $background: #1d1e26;
 pre {
 	font-style: normal;
 	font-weight: normal;
-	background: var(--darkerGray);
+	background: var(--darkerNeutral);
 	background: $background;
 	padding: 1.5em;
 	margin: var(--halfNote) auto;
@@ -23,8 +23,8 @@ pre {
 
 .dark {
 	code {
-		background: var(--blue-800);
-		border: 0;
+		background: var(--blue-900);
+		border-color: var(--blue-700);
 	}
 
 	pre code {

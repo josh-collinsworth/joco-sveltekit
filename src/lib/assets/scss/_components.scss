@@ -31,7 +31,7 @@
     height: 0.25rem;
     width: 100%;
     margin-left: -100%;
-    background: linear-gradient(to right, var(--blueToYellow));
+    background: var(--accentGradient);
     bottom: 0;
     position: absolute;
   }
@@ -60,11 +60,13 @@
 }
 
 .side-note {
+  --stop-1: var(--blue-100);
+  --stop-2: var(--blue-50);
   position: relative;
   margin: var(--halfNote) 0;
   font-size: 0.8rem;
   font-style: italic;
-  background: linear-gradient(to right, var(--lighterBlue), var(--lightestBlue));
+  background: linear-gradient(27deg, var(--stop-1), var(--stop-2));
   line-height: var(--quarterNote);
   min-height: 4.5rem;
   width: calc(100% + var(--margin) + var(--margin));
@@ -104,12 +106,14 @@
 }
 
 .dark .side-note {
-  background: var(--darkerBlue);
+  --stop-1: var(--blue-950);
+  --stop-2: var(--blue-900);
 }
 
 html:not(.light) .side-note {
   @media (prefers-color-scheme: dark) {
-    background: var(--darkerBlue);
+    --stop-1: var(--blue-950);
+    --stop-2: var(--blue-900);
   }
 }
 
@@ -143,7 +147,7 @@ html:not(.light) .side-note {
     white-space: pre;
     display: flex;
     align-items: center;
-    color: var(--darkGray);
+    color: var(--darkNeutral);
   }
 
   .note__callout-arrow {

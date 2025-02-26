@@ -20,7 +20,7 @@ excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonl
 
 <style lang="scss">
 	.toc-details {
-		border: 1px solid var(--lightGray);
+		border: 1px solid var(--lightNeutral);
 		padding: 1rem;
 		margin-bottom: var(--halfNote);
 		font-family: var(--headingFont);
