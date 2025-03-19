@@ -43,14 +43,7 @@
 					<li>
 						<a
 							href="https://play.google.com/store/apps/details?id=app.quina.collinsworth&hl=en_US&gl=US"
-							rel="external"><del>Quina on Android</del></a
-						>
-						<small style="display: inline-block;"
-							>(<em
-								>Note: because of privacy policies hostile to small developers,
-								I've removed all apps from the Google Play store indefinitely,
-								in order to protect my personal data</em
-							>.)</small
+							rel="external">Quina on Android</a
 						>
 					</li>
 					<li>
@@ -107,14 +100,7 @@
 					<li>
 						<a
 							href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa"
-							><del>Hondo on Android</del></a
-						>
-						<small style="display: inline-block;"
-							>(<em
-								>Note: because of privacy policies hostile to small developers,
-								I've removed all apps from the Google Play store indefinitely,
-								in order to protect my personal data</em
-							>.)</small
+							>Hondo on Android</a
 						>
 					</li>
 					<li>

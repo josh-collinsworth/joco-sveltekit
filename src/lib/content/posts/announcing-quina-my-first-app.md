@@ -276,6 +276,6 @@ Incidentally, there's also a free option on the web version, just because I want
 
 I would consider Quina my biggest achievement as a developer so far. Though I've made websites, small web apps, little PWAs and novel browser games as side projects before, none has ever had this breadth of scope, and an actual Android app is brand-new territory for me!
 
-I'm proud of the work I've done here, even if nobody plays it. But I hope you'll give it a shot, and that you enjoy it if you do. ~~(And if so, I'd love it if you'd [leave a review on the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth).)~~ The app isn't there anymore. I took it down because Google is pretty hostile to the privacy and convenience of hobby developers.
+I'm proud of the work I've done here, even if nobody plays it. But I hope you'll give it a shot, and that you enjoy it if you do. (And if so, I'd love it if you'd [leave a review on the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth).)
 
 Thanks for reading! Feel free to [reach out](https://joshcollinsworth.com/contact?from_page=announcing_quina) if you have any questions or comments.
