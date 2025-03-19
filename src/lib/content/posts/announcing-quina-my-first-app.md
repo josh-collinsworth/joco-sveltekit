@@ -63,8 +63,7 @@ I don't know how that word was _meant_ to be pronounced, but I say it, "QUINN-uh
 
 There are two ways to install Quina:
 
-- ~~You can download the [Quina Android App from the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth). (It's $2.99, but all content is unlocked by default.)~~ I took this app down for privacy reasons.
-- You can install the freemium version by visiting [quina.app](https://quina.app/).
+- You can download the [Quina Android App from the Google Play Store](https://play.google.com/store/apps/details?id=app.quina.collinsworth). ~~(It's $2.99, but all content is unlocked by default.)~~ The app is now free.
 
 When visiting the website, you _should_ see a prompt like this one (though it will depend on your browser; if you don't see the prompt, you can [follow these directions](https://mobilesyrup.com/2020/05/24/how-install-progressive-web-app-pwa-android-ios-pc-mac/)):
 

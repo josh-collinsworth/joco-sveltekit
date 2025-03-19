@@ -40,7 +40,7 @@ So, I began tinkering on a _new_ project…an exploration that eventually led to
 
 Here are the links, if you'd just like to skip ahead:
 
-- ~~[Hondo on Google Play](https://play.google.com/store/apps/details?id=com.playhondo.www.twa)~~ (I took the app down for privacy reasons)
+- [Hondo on Google Play](https://play.google.com/store/apps/details?id=com.playhondo.www.twa)
 - [Hondo on the iOS App Store](https://apps.apple.com/us/app/hondo/id1636016699?platform=iphone)
 - [Hondo PWA on the web](https://playhondo.com)
 - [GitHub repo](https://github.com/josh-collinsworth/hondo)
