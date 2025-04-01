@@ -90,6 +90,8 @@
 
 		a {
 			color: inherit;
+			text-decoration: underline;
+			text-decoration-color: var(--blue-light);
 		}
 
 		img {

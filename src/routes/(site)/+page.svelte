@@ -149,7 +149,6 @@
 			font-size: clamp(1.2rem, calc(0.6rem + 2vw), 1.8rem);
 			margin-top: 0;
 			margin-bottom: var(--half-note);
-			color: var(--neutral-dark);
 			line-height: 1.4;
 		}
 
