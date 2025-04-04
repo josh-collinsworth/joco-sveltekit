@@ -27,12 +27,12 @@ main:focus {
 
 ::selection {
 	background: var(--yellow);
-	color: var(--highlight-color); /* WebKit/Blink Browsers */
+	color: var(--neutral-900); /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
 	background: var(--yellow);
-	color: var(--highlight-color); /* Gecko Browsers */
+	color: var(--neutral-900); /* Gecko Browsers */
 }
 
 ::-webkit-scrollbar {
