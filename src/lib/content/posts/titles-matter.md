@@ -154,15 +154,21 @@ What's _not good_ is to denigrate web developers by asserting—implicitly or ex
 
 A person who uses a WordPress page builder, or Squarespace, or LLMs, or whatever other website tool comes next, makes websites. But they are not, just for that, a web developer.
 
-Again: it's always been possible to build websites _without being a web developer_.
-
-The emphasis there is the key differentiator. The very fact that the previous paragraph _makes perfect sense_ confirms that we have different definitions for "person who makes websites" and "person who is a web developer."
-
 <CalloutPlusQuote>
 
 An LLM is a tool to grant an _ability_ without the requisite _expertise_; a web developer is somebody who possesses that expertise.
 
 </CalloutPlusQuote>
+
+Again: it's always been possible to build websites without being a web developer.
+
+Read that one more time:
+
+_It's always been possible to build websites without being a web developer_.
+
+Did you catch it?
+
+The very fact that the sentence repeated above _makes perfect sense_ confirms that we have different definitions for "person who makes websites" and "web developer."
 
 <SideNote>
 
