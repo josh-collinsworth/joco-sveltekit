@@ -16,13 +16,13 @@ excerpt: Is a person who prompts an LLM to generate a website a web developer? A
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-Recently, I saw a post on Bluesky that I took serious issue with. I'm not going to link to it directly or mention the author, because I don't want to direct any negativity their way. That's not why I'm writing this.
+Recently, I saw a post on Bluesky that did not sit well with me at all. I'm not going to link to it directly or mention the author, because I don't want to direct any negativity their way. That's not why I'm writing this.
 
 I _do_, however, want to respond to the core of what was said (and which some were agreeing with). That core sentiment of the post was this:
 
 > Somebody who generates websites using AI prompting is also a web developer. The qualification is "do you build websites", there are no other qualifications.
 
-This did not sit well with me. In fact, I take serious issue with this assertion.
+I take serious issue with this assertion.
 
 The idea that anyone who manages to prompt their way to a website has earned precisely the same title as those who have hard-earned expertise in the web platform—and specifically, the idea that the lone qualification of said title is making a website live—strikes me as both a wildly distorted view of the job, and a derisive view of those who practice it. And so, I felt compelled to respond in disagreement.
 
@@ -30,26 +30,26 @@ As the conversation went back and forth, it became clear to me that the core of 
 
 > "What's your definition of a web developer?"
 
-So, this post is my attempt to both answer that question, and to more fully explain my issues with handing out that title indiscriminately.
+So, this post is my attempt to both answer that question (to the degree possible), and to more fully explain my issues with handing out that title indiscriminately.
 
 
 ## Defining the terms
 
 I'll use the term "LLM" quite a bit in this post. If you're not familiar, an LLM is a Large Language Model, such as ChatGPT or Claude. These are more commonly referred to as "AI," though I personally prefer LLM, as it's more accurate; LLMs are _not_ intelligent, let alone any kind of _intelligence_.
 
-Where I reference using an LLM, I may mean using one directly, or I may mean using an LLM-based tool, such as [Figma Make](https://www.figma.com/make/) or [v0](https://v0.app/), among many others.
+Where I reference using an LLM, I may mean using one directly, or I may mean using an LLM-based tool, such as [Figma Make](https://www.figma.com/make/) or [v0](https://v0.app/), or [Claude Code](https://www.anthropic.com/claude-code), among many others.
 
 Next: because my stance is that a person who simply uses LLMs without further knowledge or expertise is ***not*** equivalent to a web developer, the natural question is: what _is_ that person then?
 
 For the sake of this post, and for distinguishing between the two sorts of website makers we're talking about: **let's refer to the group of people who use and rely on LLMs to build websites as "prompters."**
 
-I do not mean this as a value statement, and especially not a pejorative; I only intend it to be a useful shorthand for people who might generate websites using LLMs, but who rely on those tools to do the job, and who generally do not have further abilities as it pertains to building things on the web, or understanding their inner workings.
+I do not mean this as a value statement, and especially not a pejorative; I only intend it to be a useful shorthand for people who generate websites using LLMs, but who rely on LLMs to do the job, and who generally have little to no further ability as it pertains to building things on the web, or understanding their inner workings. Prompters may _become_ web developers, if they choose to, but they are not web developers simply by virtue of making websites using LLMs.
 
 <SideNote>
 
-I realize the term "vibe coder" might seem like a better descriptor than a term I just made up. But I chose against that because, to me, vibe coding is a thing that anyone might choose to _do_, more than something a person _is_ as a title; it's an approach that anybody might pick up and abandon situationally.
+I realize the term "vibe coder" might seem like a better descriptor than this term I just made up. But I chose against that because, to me, vibe coding is a thing that anyone might choose to _do_, more than something a person _is_ as a title; it's an approach that anybody might pick up or abandon situationally.
 
-I suppose you could say all prompters are vibe-coding, but not everyone who is vibe-coding is necessarily a prompter.
+I suppose you could say all prompters are vibe-coders, but not everyone who is vibe-coding is necessarily a prompter.
 
 </SideNote>
 
@@ -61,7 +61,7 @@ All web developers make websites, but not all who make websites are web develope
 
 Prompters _do_ most certainly make websites, and my issue isn't with that group using a title which conveys that ability. "I make websites, and I can make you a website" is a true statement from a prompter. Even if they're reliant on a tool to do it--and even if they have no idea how either that tool or the site itself ultimately works--prompters still make websites, and I'm fully behind them claiming that.
 
-My aim isn't to gatekeep these people or building for the web; my goal is to distinguish this as a separate practice, even if it might produce what appears to be essentially the same end result to some people.
+My aim isn't to gatekeep; my goal is to distinguish this as a separate practice, even if it might produce what appears to be essentially the same end result to some people.
 
 My issue is this:
 
@@ -215,6 +215,8 @@ In my mind, there's little difference between calling somebody who prompts their
 
 Both are bestowing an unearned title, and it is not possible to be okay with this arrangement without a severely deficient definition of what that title means.
 
+I genuinely don't know why you'd want to group people with knowledge together with people who are incapable of even knowing when they're being lied to, and call them both the same thing.
+
 <SideNote>
 
 Here, I imagine, some might argue there are actual strict rules for earning the title of doctor, and therapist, and even plumber, and that we have no such qualifications in the world of building for the web.
@@ -225,7 +227,7 @@ Regardless, though: take a different, less stringent job title, if you like. Yog
 
 No matter what job we're talking about, if you take on the title, people will very reasonably expect you to bring more to the table than accepting whatever an LLM says.
 
-A person with a title should know when an LLM is lying.
+A person with a title should at least know enough to know when they're being lied to about their claimed profession.
 
 </SideNote>
 
@@ -293,6 +295,10 @@ Web development isn't a zero-sum game. (Most things aren't.) More web developers
 
 Besides, I've long been a vocal opponent of gatekeeping in regards to development. I've been loudly saying for years that yes, CSS and HTML _are_ programming languages, and yes, you get to call yourself a programmer if you use them, because to assert otherwise _is_ gatekeeping.
 
+To that end, I understand the motivation behind the original Bluesky post that sparked this whole thing, and I agree with the spirit of it. We want to welcome people. We want to encourage newcomers and dispel imposter syndrome.
+
+But here's the thing (and my apologies in advance here, but): it's not imposter syndrome if you actually _are_ claiming to be something you're not.
+
 Gatekeeping is the _false_ assertion that a person or group deserves exclusion because they have failed at some arbitrary criteria.
 
 I emphasize "false" in the previous sentence, because: this isn't that.
@@ -340,11 +346,29 @@ It's an insult, honestly. I'm sorry, but it is. And one reason some people are s
 
 If you honestly think everything I do—everything _any_ career web developer can do—can be fully replicated and replaced by anyone with access to an LLM, then I am both offended, and convinced you have absolutely no idea what actually goes into my job.
 
+Furthermore, I suspect the same assertion would not go over as well in any other direction:
+
+> Did you get an LLM to create a database for you? Congratulations! You're a backend engineer!
+
+> Did you feed some data to an LLM? Then you're a data scientist.
+
+> Have you ever asked ChatGPT to find a vulnerability for you? Great! You're a cybersecurity specialist now.
+
+> Have you ever had Claude summarize some server logs? If so, you're a site reliability engineer.
+
+To be clear: all of the above statements are made-up (and perhaps a bit extreme), and I disagree with all of them.
+
+Still: I have an difficult time believing any of the above assertions would be met with as much agreement as the one about web developers.
+
+Because to many other people in tech—implicitly, if not explicitly—we are _less_.
+
+---
+
 I understand many new people coming into this trade will get here via the easily traveled inroad of LLMs, and we should of course welcome those people, and help them learn what they need to know, without gatekeeping them because of their tools.
 
 I'm _absolutely_ on board for that. I really am.
 
 But we can do that without throwing web developers under the bus yet again.
-We _owe it_ to web developers to draw a distinction between those who actually possess skills and knowledge, and those who do not.
+We _owe it_ to web developers to honor and respect their abilities, rather than implicitly making anyone with a Claude Code subscription their equal.
 
-And we owe it to _everyone_ to show those who want to make a career in this field what that really means, what's at stake, and how to tell when they've even done that job correctly.
+And we owe it to _everyone_ to show those who want to make a career in this field what that really means, what's at stake, and how to tell when they've even done that job correctly in the first place.
