@@ -258,7 +258,7 @@ Let me emphasize that here, "poor-quality" is not some artisinal, aesthetic judg
 
 Sadly, however, this is not at all the case.
 
-The markup produced by LLMs, even when it does _appear_ to work to most users, it is often wrong, or at the very least, some combination of inaccessible, unmaintainable, inefficient, and/or just flat-out slow.
+The markup produced by LLMs, even when it does _appear_ to work to most users, is often wrong, or at the very least, some combination of inaccessible, unmaintainable, inefficient, and/or just flat-out slow.
 
 It is, extremely commonly, incorrect on some level or another, particularly when it comes to accessibility (which, as a reminder, is a _legal requirement_ for many websites).
 
