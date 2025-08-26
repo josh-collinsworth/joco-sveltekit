@@ -61,7 +61,7 @@ All web developers make websites, but not all who make websites are web develope
 
 Prompters _do_ most certainly make websites, and my issue isn't with that group using a title which conveys that ability. "I make websites, and I can make you a website" is a true statement from a prompter. Even if they're reliant on a tool to do it--and even if they have no idea how either that tool or the site itself ultimately works--prompters still make websites, and I'm fully behind them claiming that.
 
-My aim isn't to gatekeep these people or building for the web; my goal is to distinguish this as a separate practice, even if it might produce what appears to be essentially the same end result to most people.
+My aim isn't to gatekeep these people or building for the web; my goal is to distinguish this as a separate practice, even if it might produce what appears to be essentially the same end result to some people.
 
 My issue is this:
 
@@ -142,7 +142,7 @@ Web developers know HTML, CSS, and JavaScript because that's how things happen h
 
 </CalloutPlusQuote>
 
-That skill, naturally, exists more across a wide gamut than within a precisely defined boundary. It encompasses beginners and experts, and everything in between. The unifying quality, I would say, is some degree of applied atomic knowledge.
+That skill, naturally, exists more across a wide gamut than within a precisely defined boundary. It encompasses students and experts, and everything in between. The unifying quality, I would say, is some degree of applied atomic knowledge.
 
 Of course, it's possible to put things on the web with none of this knowledge. That's been the case for decades now. Before LLMs there was Squarespace and the like; before that, WordPress, and others.
 
@@ -150,9 +150,7 @@ Of course, it's possible to put things on the web with none of this knowledge. T
 
 It's _good_ that the barrier to entry has been lowered. It's _good_ that anyone can put things on the web. It's _good_ that this technology is accessible to anyone.
 
-What's _not good_ is to denigrate web developers by asserting—implicitly or explicitly—that anyone who picks up a tool represents a precise 1:1 replacement for the entire sum total of their abilities and experience.
-
-A person who uses a WordPress page builder, or Squarespace, or LLMs, or whatever other website tool comes next, makes websites. But they are not, just for that, a web developer.
+What's _not good_ is to denigrate web developers by asserting—implicitly or explicitly—that anyone who picks up a tool represents a precise 1:1 replacement for everything they are professionally; the entire sum total of their abilities and experience.
 
 <CalloutPlusQuote>
 
@@ -215,7 +213,7 @@ A job title very clearly implies a level of expertise, and it is dangerously dec
 
 In my mind, there's little difference between calling somebody who prompts their way to a website a web developer, and calling a guy dispensing medical advice via ChatGPT a doctor.
 
-Both are bestowing an unearned title, and it is not possible to be okay with this arrangement unless you have a severely deficient definition of what that title means.
+Both are bestowing an unearned title, and it is not possible to be okay with this arrangement without a severely deficient definition of what that title means.
 
 <SideNote>
 
@@ -223,11 +221,11 @@ Here, I imagine, some might argue there are actual strict rules for earning the 
 
 This is true, but I think we probably _should_ have similar rules for the web. We're arguably just as capable of ruining people's lives with our work; our craft probably _should_ be similarly regulated.
 
-Regardless, though: take a different, less stringent job title, if you like. Yoga instructor, say. Personal trainer; handyman; math tutor; babysitter, even. Take your pick.
+Regardless, though: take a different, less stringent job title, if you like. Yoga instructor, say. Personal trainer; handyman; math tutor; babysitter; dog walker, even. Take your pick.
 
-No matter what job we're talking about, if you have the title, people will very reasonably expect you to bring more to the table than accepting whatever an LLM says.
+No matter what job we're talking about, if you take on the title, people will very reasonably expect you to bring more to the table than accepting whatever an LLM says.
 
-The first question we should ask such a person is: how do you _know_ the LLM is right?
+A person with a title should know when an LLM is lying.
 
 </SideNote>
 
@@ -246,9 +244,11 @@ There are several reasons for this. For one, it's easy to create an interface th
 
 (A shorter way to say that might be: _every_ job seems easy, when you do it extremely poorly, with little to no conception of what you overlooked.)
 
-I also suspect LLMs probably perform better in other areas of tech—dealing with backends and databases, say—where success criteria is better defined, best practices are well-established, correct examples are more plentiful in the training data, and things are generally less _squishy_. Naturally, "it depends" abounds all across the entire field of tech, and LLMs are not to be unquestioningly trusted in any domain. But perhaps nowhere is the quality of LLM code more difficult to qualify than in frontend/web development, at the intersection of design and development.
+I also suspect LLMs probably perform better in other areas of tech—dealing with backends and databases, say—where success criteria is better defined, best practices are well-established, correct examples are more plentiful in the training data, and things are generally less _squishy_.
 
-In any case, the point is: not a lot of people in tech even know what quality frontend code looks like in the first place—yes, even among web developers, but particularly among other types of developers.
+Naturally, "it depends" abounds all across the entire field of tech, and LLMs are not to be unquestioningly trusted in any domain. And to be clear: I don't mean to denigrate any _other_ practice within tech; we all have considerable challenges, and we all deserve respect for our work. But perhaps nowhere is the quality of LLM code more difficult to qualify than in frontend/web development, at the intersection of design and development.
+
+In any case: not a lot of people in tech even know what quality frontend code looks like in the first place—yes, even among web developers, but particularly among other types of developers.
 
 But know that, for the current moment, it is objectively true that LLMs generate very poor-quality frontend code a very high percentage of the time.
 
@@ -281,7 +281,7 @@ Until then, the quality of frontend code that LLMs generate, quite simply, must 
 (And this is all to say absolutely nothing of design, another skill many web developers bring to the table—or of the increasingly generic ouroboros of LLM output. Hope you want a website that looks just like Vercel's homepage.)
 
 
-## On gatekeeping
+## Disambiguation is not gatekeeping
 
 I imagine some might say my position here is essentially gatekeeping.
 
