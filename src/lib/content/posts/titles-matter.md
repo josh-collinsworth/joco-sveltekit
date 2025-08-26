@@ -337,7 +337,6 @@ I understand many new people coming into this trade will get here via the easily
 I'm _absolutely_ on board for that. I really am.
 
 But we can do that without throwing web developers under the bus yet again.
-y
 We _owe it_ to web developers to draw a distinction between those who actually possess skills and knowledge, and those who do not.
 
 And we owe it to _everyone_ to show those who want to make a career in this field what that really means, what's at stake, and how to tell when they've even done that job correctly.
