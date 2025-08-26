@@ -20,10 +20,11 @@ _August 2023 – present_
 
 - Lead frontend developer, and occasional design roles. Projects include:
 	- Design, development, and information architecture work across Deno properties and docs
-	- Implementing a full-scale redesign of [Deno.com](https://deno.com)
+	- Implementing a full-scale redesign of [Deno.com](https://deno.com), including illustration work, and a "build your own dino" interactive hero mini-app
 	- Adding new features to the [Deploy](https://deno.com/deploy) dashboard and helping to build out new features and products on the Deploy platform
 	- Design, branding, and frontend work on [JSR.io](https://jsr.io)
 	- Redesign of the Deno brand
+	- Complete redesign of [Deno Deploy](https://deno.com/deploy), including a rebrand and new marketing
 	- Leading, designing, and building various microsite projects, such as [javascript.tm](https://javascript.tm)
 
 
