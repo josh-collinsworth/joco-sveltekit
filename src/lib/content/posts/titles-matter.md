@@ -366,7 +366,11 @@ Still: I have an difficult time believing any of the above assertions would be m
 
 Because to many other people in tech—implicitly, if not explicitly—we are _less_.
 
-What we do is so misunderstood, it's widely considered virtually valueless, because so few people can tell the difference between the real practice and a pale, faulty imitation.
+What we do is so misunderstood, it's widely considered virtually valueless, because so few people can tell the difference between the real practice and a pale, faulty imitation—
+
+—well, so few of the people _in charge_, I should say.
+
+A great many users most certainly can tell.
 
 ---
 
