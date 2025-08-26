@@ -22,7 +22,7 @@ I _do_, however, want to respond to the core of what was said (and which some we
 
 > Somebody who generates websites using AI prompting is also a web developer. The qualification is "do you build websites", there are no other qualifications.
 
-I take serious issue with this assertion.
+Though I assume it's intended in goodwill, I take serious issue with this assertion.
 
 The idea that anyone who manages to prompt their way to a website has earned precisely the same title as those who have hard-earned expertise in the web platform—and specifically, the idea that the lone qualification of said title is making a website live—strikes me as both a wildly distorted view of the job, and a derisive view of those who practice it. And so, I felt compelled to respond in disagreement.
 
@@ -39,11 +39,11 @@ I'll use the term "LLM" quite a bit in this post. If you're not familiar, an LLM
 
 Where I reference using an LLM, I may mean using one directly, or I may mean using an LLM-based tool, such as [Figma Make](https://www.figma.com/make/) or [v0](https://v0.app/), or [Claude Code](https://www.anthropic.com/claude-code), among many others.
 
-Next: because my stance is that a person who simply uses LLMs without further knowledge or expertise is ***not*** equivalent to a web developer, the natural question is: what _is_ that person then?
+Next: because my stance is that a person who simply uses LLMs without further knowledge or expertise is _not_ equivalent to a web developer, the natural question is: what _is_ that person then?
 
 For the sake of this post, and for distinguishing between the two sorts of website makers we're talking about: **let's refer to the group of people who use and rely on LLMs to build websites as "prompters."**
 
-I do not mean this as a value statement, and especially not a pejorative; I only intend it to be a useful shorthand for people who generate websites using LLMs, but who rely on LLMs to do the job, and who generally have little to no further ability as it pertains to building things on the web, or understanding their inner workings. Prompters may _become_ web developers, if they choose to, but they are not web developers simply by virtue of making websites using LLMs.
+I do not mean this as a value statement, and especially not as a pejorative; I only intend it to be a useful shorthand for people who generate websites using LLMs, but who rely on LLMs to do the job, and who generally have little to no further ability as it pertains to building things on the web, or understanding their inner workings. Prompters may _become_ web developers, if they choose to, but they are not web developers simply by virtue of making websites using LLMs.
 
 <SideNote>
 
@@ -78,9 +78,9 @@ To call a prompter a web developer both elevates prompters and degrades web deve
 
 To issue any rigid definition of just about _any_ position is fraught. The more I try to lay down explicit lines around what is and is not a web developer, the more I risk engaging in a _is-a-hotdog-a-sandwich_ style of semantic debate.
 
-I suppose it might even be difficult to come up with a definition of "web developer" that does _not_ include at least some prompters.
+Any rigid definition of "web developer" is likely to include at least _some_ prompters. It's all but impossible to draw a line that completely divides one group from another with no outliers. Language is messy like that. _Reality_ is messy like that.
 
-And, of course, the more specific I get, the easier it is for anybody so motivated to poke holes (which I can never help but suspect as a motivation for requesting specificity in the first place).
+And so, of course, the more specific I get, the easier it is for anybody so motivated to poke holes in the definition (which I can never help but suspect as a motivation for requesting specificity in the first place).
 
 Still, in the interest of illuminating what I believe is the difference, the following is what I consider.
 
@@ -109,13 +109,13 @@ Web development is much more than making a website appear, in much the same way 
 
 </CalloutPlusQuote>
 
-I would expect any web development course to cover the technical aspects of how the web works and how to author web code, including (though likely not limited to) HTML, CSS, and/or JavaScript. I would probably also expect it to at least touch on related considerations, like performance and accessibility.
+**I would expect any web development course to cover the technical aspects of how the web works and how to author web code**, including (though likely not limited to) HTML, CSS, and/or JavaScript. I would probably also expect it to at least touch on related considerations, like performance and accessibility.
 
 Most people, myself included, would very much _not_ expect a so-called web development course to _only_ cover prompting your way to a website by using an LLM. That would be widely considered misleading. (Not to mention a course with highly questionable value in the first place.)
 
 I taught web development for several years. When I say that, I don't think it crosses anyone's minds that I might mean I was teaching prompting. (I wasn't.)
 
-Just about anyone who showed up for a web developer conference would feel cheated if the only topic covered was prompting an LLM, or using LLM-based tools.
+**I might expect a web development conference to feature talks about LLMs, but I wouldn't expect that to be the only topic.** I'd feel the conference was misrepresenting itself if this were the case.
 
 People who might sign up for a web development newsletter would likely be miffed if that newsletter utterly omitted any mention of JavaScript, HTML, and CSS.
 
@@ -127,14 +127,16 @@ If I tell you I know web development, there's an implicit understanding that I k
 
 </CalloutPlusQuote>
 
-No reasonable person who heard that statement would expect it to mean "I know how to get an LLM to generate a website."
+No reasonable person who heard that statement would expect it to mean "I can get an LLM to generate a website."
 
 
 ### A web developer possesses applied expertise in the workings of the web
 
-If you'd like my definition, I guess that's the closest I care to get. Nitpick it as broad, if you like. That's somewhat on purpose. Contrary to what some might argue, I'm not here to gatekeep; I'm here to disambiguate.
+If you'd like my definition, I guess that heading is the closest I care to get. Nitpick it as broad, if you like; that's somewhat on purpose.
 
-Web developers are familiar with browser code and related concepts in whatever measure, not because it's some obtuse, safely guarded pathway to enlightenment, but because it's the way the web works. It's the language of browsers.
+Contrary to what some might argue, I'm not here to gatekeep; I'm here to disambiguate, and I see no reason to get any more granular than that, other than to invite further nitpicking. I think that definition broadly serves the purpose just fine.
+
+Web developers are familiar with browser code and related concepts in whatever measure, not because it's some obtuse, carefully guarded pathway to enlightenment for the chosen few, but because it's the way the web works. It's the language of browsers and the way this whole crazy machine called the internet functions, in large part.
 
 <CalloutPlusQuote>
 
@@ -142,9 +144,9 @@ Web developers know HTML, CSS, and JavaScript because that's how things happen h
 
 </CalloutPlusQuote>
 
-That skill, naturally, exists more across a wide gamut than within a precisely defined boundary. It encompasses students and experts, and everything in between. The unifying quality, I would say, is some degree of applied atomic knowledge.
+That skill, naturally, exists more across a wide gamut than within a precisely defined boundary, which is another reason a precise definition is elusive (and futile). It encompasses new students, old experts, and everything in between. The unifying quality, I would say, is some degree of applied atomic knowledge.
 
-Of course, it's possible to put things on the web with none of this knowledge. That's been the case for decades now. Before LLMs there was Squarespace and the like; before that, WordPress, and others.
+Of course, it's possible to put things on the web with none of this. That's been the case for decades now. Before LLMs there was Squarespace and the like; before that, WordPress, and others.
 
 **It's always been possible to build websites without being a web developer.** Websites have been increasingly democratized for nearly as long as the web has even existed. And that's a _good_ thing.
 
@@ -162,7 +164,7 @@ Again: it's always been possible to build websites without being a web developer
 
 Read that one more time:
 
-_It's always been possible to build websites without being a web developer_.
+_It's always been possible to build websites **without being a web developer**_.
 
 Did you catch it?
 
@@ -189,9 +191,13 @@ LLMs might even be the new first step to learning web development for many peopl
 
 A web developer isn't somebody who never uses an LLM, or uses it only below a certain threshold; it's somebody whose awareness and familiarity with the subject domain allows them to be in control of the LLM, rather than reliant on it. A web developer is capable of calling _bullshit_ when the LLM spits out an answer that's incorrect, no matter how right it might appear.
 
+<CalloutPlusQuote>
+
 A web developer brings more to the table than an LLM. That's what the title implies.
 
 In fact, I'd go so far as to say that's what _any_ title implies.
+
+</CalloutPlusQuote>
 
 If I call a plumber, and the guy who shows up doesn't know anything except how to ask ChatGPT what to do, I will feel this person has misrepresented themselves.
 
@@ -244,9 +250,9 @@ It has been my experience that many in tech both _underestimate_ the amount of w
 
 There are several reasons for this. For one, it's easy to create an interface that _appears_ to work correctly, when you only test in one browser, at one font size, at one zoom level, using one input device, on one screen size, on one operating system, on one device that's probably less than two years old, with one set of user preferences, by one able-bodied author, on a high-speed connection, with no data restrictions, loading from one server that happens to be near to you, without the aid of any assistive technologies—and this is precisely where many people dabbling in web interfaces will stop and say "looks good to me!"
 
-(A shorter way to say that might be: _every_ job seems easy, when you do it extremely poorly, with little to no conception of what you overlooked.)
+(A shorter way to say that might be: _every_ job seems easy, when you do it extremely poorly, with little to no conception of what you've overlooked.)
 
-I also suspect LLMs probably perform better in other areas of tech—dealing with backends and databases, say—where success criteria is better defined, best practices are well-established, correct examples are more plentiful in the training data, and things are generally less _squishy_.
+I also suspect LLMs probably perform better in other areas of tech—dealing with backends or databases, say—where success criteria is better defined, best practices are well-established, correct examples are more plentiful in the training data, and things are generally less _squishy_.
 
 Naturally, "it depends" abounds all across the entire field of tech, and LLMs are not to be unquestioningly trusted in any domain. And to be clear: I don't mean to denigrate any _other_ practice within tech; we all have considerable challenges, and we all deserve respect for our work. But perhaps nowhere is the quality of LLM code more difficult to qualify than in frontend/web development, at the intersection of design and development.
 
@@ -295,13 +301,11 @@ Web development isn't a zero-sum game. (Most things aren't.) More web developers
 
 Besides, I've long been a vocal opponent of gatekeeping in regards to development. I've been loudly saying for years that yes, CSS and HTML _are_ programming languages, and yes, you get to call yourself a programmer if you use them, because to assert otherwise _is_ gatekeeping.
 
-To that end, I understand the motivation behind the original Bluesky post that sparked this whole thing, and I agree with the spirit of it. We want to welcome people. We want to encourage newcomers and dispel imposter syndrome.
+To that end, I understand the motivation behind the original Bluesky post that sparked this whole thing, and I even agree with the spirit of it. We should welcome people. We want to encourage newcomers and dispel imposter syndrome.
 
 But here's the thing (and my apologies in advance here, but): it's not imposter syndrome if you actually _are_ claiming to be something you're not.
 
 Gatekeeping is the _false_ assertion that a person or group deserves exclusion because they have failed at some arbitrary criteria.
-
-I emphasize "false" in the previous sentence, because: this isn't that.
 
 As we've covered already, when you assume a title, you clearly and unmistakably signal that you possess skill and understanding related to that title. And people whose only skill as far as building websites go is telling an LLM to do it, simply is not accurately described by the title of web developer.
 
@@ -311,11 +315,11 @@ This is not an attempt to create an out-group based on arbitrary criteria; it's 
 
 </CalloutPlusQuote>
 
-Despite my protestations, I'm sure some people will nonetheless read this and conclude that I'm a luddite, fighting the future. Or somebody who holds their own title in such precious regard as to resist sharing it.
+Despite my protestations, I'm sure some people will nonetheless read this and conclude that I'm a luddite, fighting the future. Or a jerk who wants to unjustly rain on the parade of newcomers. (“_Won't somebody please think of the children!?_”) Or a stuck-up snob who holds their own title in such precious regard as to resist sharing it.
 
-That's not why I care.
+None of that is why I care.
 
-In fact, in my mind, the offense here is actually going the _other_ direction.
+Though I'd say there _is_ an offense being committed here, in my mind, it's actually going the _other_ direction.
 
 <SideNote>
 
@@ -330,15 +334,15 @@ Most prompters, I would guess, would be the first to admit "I'm not a web develo
 
 I care because, frankly, those of us who do web development have worked damn hard to earn the proficiency we have, and we, like all other skilled laborers, deserve a measure of respect for our work.
 
-In my mind, considering web developers exactly the same thing as people who just showed up with access to an LLM is not just a gross misunderstanding of who we are and what we do; it's blatant denigration.
+Considering web developers exactly the same thing as people who just showed up with access to an LLM is not just a gross misunderstanding of who we are and what we do; it's blatant denigration.
 
-I've written at length about [the devaluation of frontend](/blog/devaluing-frontend) (which I guess I would say is mostly the same as web development, though not quite exactly). And I've already made the point that a job title confers expertise, and that assuming a job title without the accompanying expertise is a lie.
+I've written at length about [the quiet, pervasive devaluation of frontend](/blog/devaluing-frontend) (which I guess I would say is mostly the same as web development, though not quite exactly). And I've already made the point that a job title confers expertise, and that assuming a job title without the accompanying expertise is a lie.
 
 But it's more than that; it's diminishing and maligning the people who _do_ hold and deserve the title.
 
 <CalloutPlusQuote>
 
-Giving the same title to prompters and web developers is calling our labor so worthless, and our expertise so inferior, that literally anyone with a keyboard is our equal.
+Giving the same title to prompters and web developers is calling our labor of so little value, and our expertise so negligible, that literally anyone with a keyboard is our equal.
 
 </CalloutPlusQuote>
 
@@ -356,11 +360,13 @@ Furthermore, I suspect the same assertion would not go over as well in any other
 
 > Do you have Copilot summarize server logs? If so, you're a site reliability engineer.
 
-To be clear: all of the above statements are made-up (and perhaps a bit extreme), and I disagree with all of them.
+To be clear: all of the above statements are made-up (and perhaps a bit extreme), and I obviously disagree with all of them.
 
 Still: I have an difficult time believing any of the above assertions would be met with as much agreement as the one about web developers.
 
 Because to many other people in tech—implicitly, if not explicitly—we are _less_.
+
+What we do is so misunderstood, it's widely considered virtually valueless, because so few people can tell the difference between the real practice and a pale, faulty imitation.
 
 ---
 
