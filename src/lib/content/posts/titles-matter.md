@@ -148,7 +148,7 @@ Of course, it's possible to put things on the web with none of this knowledge. T
 
 It's _good_ that the barrier to entry has been lowered. It's _good_ that anyone can put things on the web. It's _good_ that this technology is accessible to anyone.
 
-What's _not good_ is to denigrate the professional experience of web developers by asserting—implicitly or explicitly—that anyone who picks up a tool represents a precise 1:1 replacement for a web developer.
+What's _not good_ is to denigrate web developers by asserting—implicitly or explicitly—that anyone who picks up a tool represents a precise 1:1 replacement for the entire sum total of their abilities and experience.
 
 A person who uses a WordPress page builder, or Squarespace, or LLMs, or whatever other website tool comes next, makes websites. But they are not, just for that, a web developer.
 
@@ -337,7 +337,7 @@ I understand many new people coming into this trade will get here via the easily
 I'm _absolutely_ on board for that. I really am.
 
 But we can do that without throwing web developers under the bus yet again.
-
+y
 We _owe it_ to web developers to draw a distinction between those who actually possess skills and knowledge, and those who do not.
 
 And we owe it to _everyone_ to show those who want to make a career in this field what that really means, what's at stake, and how to tell when they've even done that job correctly.
