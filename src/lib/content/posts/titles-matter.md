@@ -80,7 +80,7 @@ To issue any rigid definition of just about _any_ position is fraught. The more 
 
 I suppose it might even be difficult to come up with a definition of "web developer" that does _not_ include at least some prompters.
 
-Of course, nobody knows this better than people who might disagree with my position. The more specific I get, the easier it is for anybody so motivated to poke holes (which I can't help but suspect as a motivation for demanding specificity in the first place).
+And, of course, the more specific I get, the easier it is for anybody so motivated to poke holes (which I can never help but suspect as a motivation for requesting specificity in the first place).
 
 Still, in the interest of illuminating what I believe is the difference, the following is what I consider.
 
@@ -109,9 +109,9 @@ Web development is much more than making a website appear, in much the same way 
 
 </CalloutPlusQuote>
 
-I would expect any web development course to cover the technical aspects of how the web works and how to author web code, including (though likely not limited to) HTML, CSS, and/or JavaScript.
+I would expect any web development course to cover the technical aspects of how the web works and how to author web code, including (though likely not limited to) HTML, CSS, and/or JavaScript. I would probably also expect it to at least touch on related considerations, like performance and accessibility.
 
-Most people, myself included, would very much _not_ expect a so-called web development course to _only_ cover prompting your way to a website by using an LLM. That would be widely considered misleading.
+Most people, myself included, would very much _not_ expect a so-called web development course to _only_ cover prompting your way to a website by using an LLM. That would be widely considered misleading. (Not to mention a course with highly questionable value in the first place.)
 
 I taught web development for several years. When I say that, I don't think it crosses anyone's minds that I might mean I was teaching prompting. (I wasn't.)
 
@@ -119,7 +119,7 @@ Just about anyone who showed up for a web developer conference would feel cheate
 
 People who might sign up for a web development newsletter would likely be miffed if that newsletter utterly omitted any mention of JavaScript, HTML, and CSS.
 
-If I listen to a web development podcast (and I do listen to a handful), I won't be surprised if they talk about LLMs in relation to web development. But if prompting your way to a website is the _only_ thing that podcast covers, I and most other people who might have tuned in will feel that podcast was not accurately representing itself.
+If I listen to a web development podcast (and I do listen to a handful), I won't be surprised if they talk about LLMs in relation to web development. But if prompting your way to a website is the _only_ thing that podcast covers, week after week, I and most other people who tuned in will feel that podcast was not accurately representing itself.
 
 <CalloutPlusQuote>
 
@@ -142,19 +142,19 @@ Web developers know HTML, CSS, and JavaScript because that's how things happen h
 
 </CalloutPlusQuote>
 
-Again, as some will be quick to point out: it's possible to put things on the web with none of this knowledge. But that's been the case for decades now. Before LLMs there was Squarespace and the like; before that, WordPress, and others.
+Of course, it's possible to put things on the web with none of this knowledge. That's been the case for decades now. Before LLMs there was Squarespace and the like; before that, WordPress, and others.
 
-**It's always been possible to build websites without being a web developer.** Websites have been democratized in increasing measure since before a lot of us ever even touched a computer. And that's a _good_ thing.
+**It's always been possible to build websites without being a web developer.** Websites have been increasingly democratized for nearly as long as the web has even existed. And that's a _good_ thing.
 
 It's _good_ that the barrier to entry has been lowered. It's _good_ that anyone can put things on the web. It's _good_ that this technology is accessible to anyone.
 
-What's _not good_ is to denigrate the professional experience of web developers by asserting—implicitly or explicitly—that anyone who picks up a tool represents an exact 1:1 replacement for a web developer.
+What's _not good_ is to denigrate the professional experience of web developers by asserting—implicitly or explicitly—that anyone who picks up a tool represents a precise 1:1 replacement for a web developer.
 
 A person who uses a WordPress page builder, or Squarespace, or LLMs, or whatever other website tool comes next, makes websites. But they are not, just for that, a web developer.
 
 Again: it's always been possible to build websites _without being a web developer_.
 
-The emphasis there is the key differentiator. The very fact that the previous sentence _makes sense_ confirms that we have different definitions for "person who makes websites" and "person who is a web developer."
+The emphasis there is the key differentiator. The very fact that the previous paragraph _makes perfect sense_ confirms that we have different definitions for "person who makes websites" and "person who is a web developer."
 
 <CalloutPlusQuote>
 
@@ -236,21 +236,23 @@ It has been my experience that many in tech both _underestimate_ the amount of w
 
 There are several reasons for this. For one, it's easy to create an interface that _appears_ to work correctly, when you only test in one browser, at one font size, at one zoom level, using one input device, on one screen size, on one operating system, with one set of user preferences, by one able-bodied author, on on a high-speed connection with no data restrictions, loading from one server that happens to be near to you, without the aid of any assistive technologies—and this is precisely where many people dabbling in web interfaces will stop and say "looks good to me!"
 
-(A shorter way to say that might be: _every_ job seems easy, when you do it extremely poorly.)
+(A shorter way to say that might be: _every_ job seems easy, when you do it extremely poorly, with little to no conception of what you overlooked.)
 
 I also suspect LLMs probably perform better in other areas of tech—dealing with backends and databases, say—where success criteria is better defined, best practices are well-established, correct examples are more plentiful in the training data, and things are generally less _squishy_. Naturally, "it depends" abounds all across the entire field of tech, but perhaps nowhere more so than in frontend/web development, at the intersection of design and development.
 
-In any case, the point is: not a lot of people even know what quality frontend code looks like in the first place—even among web developers, but particularly among other types of developers.
+In any case, the point is: not a lot of people in tech even know what quality frontend code looks like in the first place—yes, even among web developers, but particularly among other types of developers.
 
-For the current moment, it is objectively true that LLMs generate very poor-quality frontend code.
+But know that, for the current moment, it is objectively true that LLMs generate very poor-quality frontend code a very high percentage of the time.
 
-Let me emphasize that here, "poor quality" is not some artisinal, aesthetic judgment. I'm not a code snob. If the bad code works just as well as the good code, then who cares? I sure wouldn't.
+Let me emphasize that here, "poor-quality" is not some artisinal, aesthetic judgment. I'm not a hipster code snob. If the bad code works just as well as the good code, then who cares? I sure wouldn't.
 
 Sadly, however, this is not at all the case.
 
 The markup produced by LLMs, even when it does _appear_ to work to most users, it is often wrong, or at the very least, some combination of inaccessible, unmaintainable, inefficient, and/or just flat-out slow.
 
 It is, extremely commonly, incorrect on some level or another, particularly when it comes to accessibility (which, as a reminder, is a _legal requirement_ for many websites).
+
+Prompters will overlook these deficiencies, because they largely have no idea how to detect them in the first place.
 
 <CalloutPlusQuote>
 
@@ -262,14 +264,13 @@ Without this ability, a prompter is analogous to an English teacher who insists 
 
 At the very least, a web developer is aware of accessibility principles, and recognizes their own shortcomings in that area. They should know when they need help or are out of their element, and seek out that help and understanding.
 
-An LLM, by contrast (and therefore, any person relying solely on an LLM to generate frontend code) _will_ produce inaccessible, inaccurate, non-semantic, _wrong_ frontend code.
-
+An LLM, by contrast (and therefore, any person relying solely on an LLM to generate frontend code) _will_ produce inaccessible, inaccurate, non-semantic, _wrong_ frontend code. It's not _if_; it's _when_.
 
 There may be a time when LLMs get better than humans at fulfilling all the myriad requirements of frontend code, accessibility included, but I've seen no evidence that's coming any time soon, and have little reason to believe we're even on that trajectory.
 
 Until then, the quality of frontend code that LLMs generate, quite simply, must not be trusted.
 
-(And this is all to say absolutely nothing of design, another skill many web developers bring to the table—or of the increasingly generic ouroboros of LLM output. Hope you want a website that looks exactly like Vercel's homepage.)
+(And this is all to say absolutely nothing of design, another skill many web developers bring to the table—or of the increasingly generic ouroboros of LLM output. Hope you want a website that looks just like Vercel's homepage.)
 
 
 ## The difference between protection and gatekeeping
@@ -280,7 +281,7 @@ I really don't think that's the case. I'm all for prompters—for _anyone_, usin
 
 I love websites, and I love when people are passionate enough to make their own. It's fun and it's glorious and I will never want less of it.
 
-Web development isn't a zero-sum game. (Most things aren't.) More web developers isn't a bad thing, for me or for anyone. I'm not threatened by more people building more websites. There is no encroachment happening here, in my view, on the part of the prompters themselves.
+Web development isn't a zero-sum game. (Most things aren't.) More web developers isn't a bad thing, for me or for anyone. I'm not threatened by more people building more websites. There is no encroachment happening here, in my view, on the part of the prompters themselves. There's room enough for everyone here.
 
 Besides, I've long been a vocal opponent of gatekeeping in regards to development. I've been loudly saying for years that yes, CSS and HTML _are_ programming languages, and yes, you get to call yourself a programmer if you use them, because to assert otherwise _is_ gatekeeping.
 
@@ -335,7 +336,7 @@ I understand many new people coming into this trade will get here via the easily
 
 I'm _absolutely_ on board for that. I really am.
 
-But we can do that without throwing web developers under the bus, yet another time.
+But we can do that without throwing web developers under the bus yet again.
 
 We _owe it_ to web developers to draw a distinction between those who actually possess skills and knowledge, and those who do not.
 
