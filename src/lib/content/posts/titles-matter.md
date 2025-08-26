@@ -252,6 +252,8 @@ There are several reasons for this. For one, it's easy to create an interface th
 
 (A shorter way to say that might be: _every_ job seems easy, when you do it extremely poorly, with little to no conception of what you've overlooked.)
 
+(No shade intended; I'm sure I'd do the same thing if I tried to, say, build a backend system on my own. It would probably seem to work perfectly well to me, and would probably be a mess to anyone who actually understood all the things I'd missed.)
+
 I also suspect LLMs probably perform better in other areas of tech—dealing with backends or databases, say—where success criteria is better defined, best practices are well-established, correct examples are more plentiful in the training data, and things are generally less _squishy_.
 
 Naturally, "it depends" abounds all across the entire field of tech, and LLMs are not to be unquestioningly trusted in any domain. And to be clear: I don't mean to denigrate any _other_ practice within tech; we all have considerable challenges, and we all deserve respect for our work. But perhaps nowhere is the quality of LLM code more difficult to qualify than in frontend/web development, at the intersection of design and development.
