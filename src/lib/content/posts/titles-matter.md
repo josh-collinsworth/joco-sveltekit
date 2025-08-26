@@ -290,7 +290,7 @@ Until and unless that happens, the quality of frontend code that LLMs generate, 
 
 <SideNote>
 
-I fully recognize actual human web developers have done very poorly at writing accessible code for their own part. But this is not an argument to hand things over to a machine who is at least as bad, if not worse.
+I fully recognize that actual human web developers have historically done very poorly at writing accessible code for our own part, and that this is no small part of the reason LLMs are bad at it in turn. But this is not an argument to hand things over to a machine who is at least as bad, if not worse. I question whether LLMs can actually learn better before we do.
 
 </SideNote>
 
