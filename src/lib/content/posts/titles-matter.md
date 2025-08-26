@@ -348,13 +348,13 @@ If you honestly think everything I do—everything _any_ career web developer ca
 
 Furthermore, I suspect the same assertion would not go over as well in any other direction:
 
-> Did you get an LLM to create a database for you? Congratulations! You're a backend engineer!
+> Do you get LLMs to create databases for you? Then you're a backend engineer.
 
-> Did you feed some data to an LLM? Then you're a data scientist.
+> Do you feed data to ChatGPT? Then you're a data scientist.
 
-> Have you ever asked ChatGPT to find a vulnerability for you? Great! You're a cybersecurity specialist now.
+> Do you ask Claude if your site is secure? You're a cybersecurity specialist now.
 
-> Have you ever had Claude summarize some server logs? If so, you're a site reliability engineer.
+> Do you have Copilot summarize server logs? If so, you're a site reliability engineer.
 
 To be clear: all of the above statements are made-up (and perhaps a bit extreme), and I disagree with all of them.
 
