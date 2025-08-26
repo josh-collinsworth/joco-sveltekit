@@ -281,7 +281,7 @@ Until then, the quality of frontend code that LLMs generate, quite simply, must 
 (And this is all to say absolutely nothing of design, another skill many web developers bring to the table—or of the increasingly generic ouroboros of LLM output. Hope you want a website that looks just like Vercel's homepage.)
 
 
-## The difference between protection and gatekeeping
+## On gatekeeping
 
 I imagine some might say my position here is essentially gatekeeping.
 
