@@ -156,7 +156,7 @@ A person who uses a WordPress page builder, or Squarespace, or LLMs, or whatever
 
 <CalloutPlusQuote>
 
-An LLM is a tool to grant an _ability_ without the requisite _expertise_; a web developer is somebody who possesses that expertise.
+An LLM is a tool to grant an _ability_ without the requisite _expertise_; a web developer is somebody who possesses that expertise, as it relates to building for the web.
 
 </CalloutPlusQuote>
 
