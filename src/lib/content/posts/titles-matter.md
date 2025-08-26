@@ -278,15 +278,21 @@ Without this ability, a prompter is analogous to an English teacher who insists 
 
 </CalloutPlusQuote>
 
-At the very least, a web developer is aware of accessibility principles, and recognizes their own shortcomings in that area. They should know when they need help or are out of their element, and seek out that help and understanding.
+At the very least, a web developer is aware of web principles, and recognizes their own shortcomings in that area. They should have an idea of when they need help or are out of their element, and seek out that help and understanding.
 
-An LLM, by contrast (and therefore, any person relying solely on an LLM to generate frontend code) _will_ produce inaccessible, inaccurate, non-semantic, _wrong_ frontend code. It's not _if_; it's _when_.
+An LLM, by contrast (and therefore, any person relying solely on an LLM to generate frontend code) _will_ produce inaccessible, inaccurate, non-semantic, _wrong_ frontend code with confidence and authority.
 
 There may be a time when LLMs get better than humans at fulfilling all the myriad requirements of frontend code, accessibility included, but I've seen no evidence that's coming any time soon, and have little reason to believe we're even on that trajectory.
 
-Until then, the quality of frontend code that LLMs generate, quite simply, must not be trusted.
+Until and unless that happens, the quality of frontend code that LLMs generate, quite simply, must not be trusted.
 
 (And this is all to say absolutely nothing of design, another skill many web developers bring to the table—or of the increasingly generic ouroboros of LLM output. Hope you want a website that looks just like Vercel's homepage.)
+
+<SideNote>
+
+I fully recognize actual human web developers have done very poorly at writing accessible code for their own part. But this is not an argument to hand things over to a machine who is at least as bad, if not worse.
+
+</SideNote>
 
 
 ## Disambiguation is not gatekeeping
