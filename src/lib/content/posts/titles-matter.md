@@ -142,6 +142,8 @@ Web developers know HTML, CSS, and JavaScript because that's how things happen h
 
 </CalloutPlusQuote>
 
+That skill, naturally, exists more across a wide gamut than within a precisely defined boundary. It encompasses beginners and experts, and everything in between. The unifying quality, I would say, is some degree of applied atomic knowledge.
+
 Of course, it's possible to put things on the web with none of this knowledge. That's been the case for decades now. Before LLMs there was Squarespace and the like; before that, WordPress, and others.
 
 **It's always been possible to build websites without being a web developer.** Websites have been increasingly democratized for nearly as long as the web has even existed. And that's a _good_ thing.
