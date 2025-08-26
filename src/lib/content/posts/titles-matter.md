@@ -234,7 +234,7 @@ It has been my experience that many in tech both _underestimate_ the amount of w
 
 </CalloutPlusQuote>
 
-There are several reasons for this. For one, it's easy to create an interface that _appears_ to work correctly, when you only test in one browser, at one font size, at one zoom level, using one input device, on one screen size, on one operating system, with one set of user preferences, by one able-bodied author, on on a high-speed connection with no data restrictions, loading from one server that happens to be near to you, without the aid of any assistive technologies—and this is precisely where many people dabbling in web interfaces will stop and say "looks good to me!"
+There are several reasons for this. For one, it's easy to create an interface that _appears_ to work correctly, when you only test in one browser, at one font size, at one zoom level, using one input device, on one screen size, on one operating system, with one set of user preferences, by one able-bodied author, on a high-speed connection, with no data restrictions, loading from one server that happens to be near to you, without the aid of any assistive technologies—and this is precisely where many people dabbling in web interfaces will stop and say "looks good to me!"
 
 (A shorter way to say that might be: _every_ job seems easy, when you do it extremely poorly, with little to no conception of what you overlooked.)
 
