@@ -314,7 +314,7 @@ Most prompters, I would guess, would be the first to admit "I'm not a web develo
 
 ## Why it matters
 
-I care because, frankly, those of us who do web development have worked damn hard to earn the proficiency we have, and we, like any other skilled laborer, deserve a measure of respect for that.
+I care because, frankly, those of us who do web development have worked damn hard to earn the proficiency we have, and we, like all other skilled laborers, deserve a measure of respect for our work.
 
 In my mind, considering web developers exactly the same thing as people who just showed up with access to an LLM is not just a gross misunderstanding of who we are and what we do; it's blatant denigration.
 
