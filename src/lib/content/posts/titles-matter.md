@@ -368,7 +368,7 @@ Furthermore, I suspect the same assertion would not go over as well in any other
 
 To be clear: all of the above statements are made-up (and perhaps a bit extreme), and I obviously disagree with all of them.
 
-Still: I have an difficult time believing any of the above assertions would be met with as much agreement as the one about web developers.
+Still: I have a difficult time believing any of the above assertions would be met with as much agreement as the one about web developers.
 
 Because to many other people in tech—implicitly, if not explicitly—we are _less_.
 
