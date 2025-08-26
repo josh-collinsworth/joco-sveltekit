@@ -262,7 +262,7 @@ In any case: not a lot of people in tech even know what quality frontend code lo
 
 But know that, for the current moment, it is objectively true that LLMs generate very poor-quality frontend code a very high percentage of the time.
 
-Let me emphasize that here, "poor-quality" is not some artisinal, aesthetic judgment. I'm not a hipster code snob. If the bad code works just as well as the good code, then who cares? I sure wouldn't.
+Let me emphasize that here, "poor-quality" is not some artisanal, aesthetic judgment. I'm not a hipster code snob. If the bad code works just as well as the good code, then who cares? I sure wouldn't.
 
 Sadly, however, this is not at all the case.
 
