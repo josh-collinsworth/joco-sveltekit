@@ -328,7 +328,7 @@ Giving the same title to prompters and web developers is calling our labor so wo
 
 </CalloutPlusQuote>
 
-It's an insult, honestly. I'm sorry, but it is. And I think the only reason some people are so comfortable with this unjust comparison is: they've already been disparaging and minimizing the value of web development for years.
+It's an insult, honestly. I'm sorry, but it is. And one reason some people are so comfortable with this unjust comparison is: they've already been disparaging and minimizing the value of web development for years.
 
 If you honestly think everything I do—everything _any_ career web developer can do—can be fully replicated and replaced by anyone with access to an LLM, then I am both offended, and convinced you have absolutely no idea what actually goes into my job.
 
