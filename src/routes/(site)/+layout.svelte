@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { run } from 'svelte/legacy'
-
 	import type { LayoutData } from './$types'
-	// import '$lib/assets/scss/global.scss'
+	if (dev) {
+		import('$lib/assets/scss/global.scss')
+	}
 
 	import throttle from 'just-throttle'
 	import Header from '$lib/components/header/Header.svelte'
@@ -78,6 +79,7 @@
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
 	{#if !dev}
+		<link rel="stylesheet" href="/global.css" />
 		<script
 			defer
 			data-domain="joshcollinsworth.com"

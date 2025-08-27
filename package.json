@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "scripts": {
     "original-dev": "vite dev --port 1027",
-    "watch-sass": "sass src/lib/assets/scss/global.scss static/global.css --style=compressed --watch",
-    "dev": "npm-run-all --parallel original-dev watch-sass",
+    "sass:watch": "sass src/lib/assets/scss/global.scss src/lib/assets/scss/global.css --style=compressed --watch",
+    "sass:build": "sass src/lib/assets/scss/global.scss static/global.css --style=compressed",
+    "dev": "npm-run-all --parallel sass:watch original-dev",
     "host": "vite dev --port 1027 --host",
-    "build": "vite build",
+    "build": "npm run sass:build && vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "sass": "sass static/global.scss static/global.css --style=compressed",
     "postbuild": "svelte-sitemap --domain https://joshcollinsworth.com"
   },
   "devDependencies": {
