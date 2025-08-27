@@ -61,25 +61,26 @@
 }
 
 .side-note {
-  --stop-1: var(--blue-100);
-  --stop-2: var(--blue-50);
+  --border-color: var(--blue-300);
+  --border-width: 1px;
+  border-block: var(--border-width) solid var(--border-color);
   position: relative;
   margin: var(--half-note) 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-style: italic;
-  background: linear-gradient(27deg, var(--stop-1), var(--stop-2));
   line-height: var(--quarter-note);
   min-height: 4.5rem;
   width: calc(100% + var(--margin) + var(--margin));
   margin-left: calc(var(--margin) * -1);
-  padding: calc(var(--quarter-note) * 1.5) var(--quarter-note);
+  padding: calc(var(--quarter-note) * 1.25) var(--quarter-note);
   color: var(--ink);
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
 
-  &:before {
-    content: 'Side note:';
+  &::before,
+  &::after {
+    content: 'Side note';
     font-weight: bold;
     font-family: var(--headingFont);
     font-style: normal;
@@ -87,9 +88,32 @@
     font-size: 0.8em;
     display: block;
     line-height: 1;
+    position: absolute;
+    left: calc(var(--border-width) * -1);
+    padding: var(--eighth-note);
+    top: calc(-0.5em - var(--eighth-note));
+    background: var(--paper);
+    color: var(--blue-600);
+  }
+
+  &::after {
+    content: "/ side note";
+    top: unset;
+    left: unset;
+    right: calc(var(--border-width) * -1);
+    bottom: calc(-0.5em - var(--eighth-note));
   }
 
   @media (min-width: vars.$xxs) {
+    &::before {
+      padding-left: 0;
+    }
+
+    &::after {
+      opacity: 0;
+    }
+
+    border: var(--border-width) solid var(--border-color);
     width: 100%;
     margin-left: 0;
     padding: calc(var(--quarter-note) * 1.5);
@@ -106,9 +130,9 @@
   }
 }
 
-.dark .side-note {
-  --stop-1: var(--blue-950);
-  --stop-2: var(--blue-900);
+.dark .side-note::before,
+.dark .side-note::after {
+  color: var(--blue-300);
 }
 
 html:not(.light) .side-note {

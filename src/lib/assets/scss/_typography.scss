@@ -120,12 +120,11 @@ h2 + h3 {
 
 h3,
 .h3 {
-	font-size: 1.4rem;
-	font-weight: normal;
+	font-size: 1.3rem;
 	margin-top: var(--dotted-half-note);
 
 	@media (min-width: vars.$xs) {
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
 }
 
