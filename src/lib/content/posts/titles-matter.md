@@ -18,7 +18,7 @@ excerpt: Is a person who prompts an LLM to generate a website a web developer? A
 
 Recently, I saw a post on Bluesky that did not sit well with me at all. I'm not going to link to it directly or mention the author, because I don't want to direct any negativity their way. That's not why I'm writing this.
 
-I _do_, however, want to respond to what was said (and which some were agreeing with). That core sentiment of the post was this:
+I _do_, however, want to respond to what was said (and to those who were agreeing with it). That core sentiment of the post was this:
 
 > Somebody who generates websites using AI prompting is also a web developer. The qualification is "do you build websites", there are no other qualifications.
 
