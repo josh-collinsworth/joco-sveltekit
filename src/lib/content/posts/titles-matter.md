@@ -1,7 +1,7 @@
 ---
 title: "Titles matter"
 date: '2025-08-26'
-updated: '2025-08-26'
+updated: '2025-08-27'
 categories:
   - web
   - opinion
@@ -18,7 +18,7 @@ excerpt: Is a person who prompts an LLM to generate a website a web developer? A
 
 Recently, I saw a post on Bluesky that did not sit well with me at all. I'm not going to link to it directly or mention the author, because I don't want to direct any negativity their way. That's not why I'm writing this.
 
-I _do_, however, want to respond to the core of what was said (and which some were agreeing with). That core sentiment of the post was this:
+I _do_, however, want to respond to what was said (and which some were agreeing with). That core sentiment of the post was this:
 
 > Somebody who generates websites using AI prompting is also a web developer. The qualification is "do you build websites", there are no other qualifications.
 
@@ -26,7 +26,7 @@ Though I assume it's intended in goodwill, I take serious issue with this assert
 
 The idea that anyone who manages to prompt their way to a website has earned precisely the same title as those who have hard-earned expertise in the web platform—and specifically, the idea that the lone qualification of said title is making a website live—strikes me as both a wildly distorted view of the job, and a derisive view of those who practice it. And so, I felt compelled to respond in disagreement.
 
-As the conversation went back and forth, it became clear to me that the core of the disagreement was the answer to a single question, eventually posed by the original author:
+As the conversation went back and forth, it became clear to me that the heart of the disagreement was the answer to a single question, eventually posed by the original author:
 
 > "What's your definition of a web developer?"
 
@@ -354,7 +354,9 @@ Giving the same title to prompters and web developers is calling our labor of so
 
 </CalloutPlusQuote>
 
-It's an insult, honestly. I'm sorry, but it is. And one reason some people are so comfortable with this unjust comparison is: they've already been disparaging and minimizing the value of web development for years.
+Even if it's rooted in an ostensibly positive desire to elevate one group, it does much more to slight the other.
+
+One reason some people are so comfortable with this unjust comparison is: they've already been disparaging and minimizing the value of web development for years.
 
 If you honestly think everything I do—everything _any_ career web developer can do—can be fully replicated and replaced by anyone with access to an LLM, then I am both offended, and convinced you have absolutely no idea what actually goes into my job.
 

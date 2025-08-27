@@ -14,9 +14,16 @@
 	"editor.defaultFormatter": "svelte.svelte-vscode",
 	"cSpell.words": [
 		"autoshift",
+		"Balatro",
 		"bootloader",
 		"Ergodox",
-		"Karabiner"
+		"gatekeep",
+		"gatekeeping",
+		"Karabiner",
+		"playthrough",
+		"situationally",
+		"Squarespace",
+		"teleporting"
 	],
 	"editor.wordWrap": "bounded",
 	"prettier.proseWrap": "always",
