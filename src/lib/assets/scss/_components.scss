@@ -56,7 +56,6 @@
     font-size: inherit;
     line-height: inherit;
     font-family: inherit;
-    font-size: 1.25rem;
   }
 }
 
@@ -116,7 +115,11 @@
     border: var(--border-width) solid var(--border-color);
     width: 100%;
     margin-left: 0;
-    padding: calc(var(--quarter-note) * 1.5);
+    padding: var(--dotted-quarter-note);
+  }
+
+  @media (min-width: vars.$xl) {
+    padding: var(--half-note)
   }
 
   em,
