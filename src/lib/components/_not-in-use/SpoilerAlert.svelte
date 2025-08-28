@@ -35,7 +35,7 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 			font-weight: bold;
 		}
 	}

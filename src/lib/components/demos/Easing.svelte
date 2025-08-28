@@ -145,7 +145,7 @@
 
 		label {
 			font-weight: bold;
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 			display: inline-block;
 		}
 
@@ -175,7 +175,7 @@
 			border-radius: var(--sixteenth-note);
 			color: var(--neutral-white);
 			background: var(--blue-dark);
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 			font-weight: bold;
 			position: relative;
 			margin: 0;

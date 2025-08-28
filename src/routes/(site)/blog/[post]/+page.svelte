@@ -49,7 +49,7 @@
 		flex-direction: column;
 		border-top-left-radius: 2rem;
 		border-bottom-left-radius: 2rem;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		line-height: 1;
 		gap: 0.25rem;
 		text-transform: uppercase;

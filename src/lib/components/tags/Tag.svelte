@@ -33,7 +33,7 @@
 		color: var(--neutral-dark);
 		text-decoration: none;
 		font-weight: bold;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		font-size: 0.65em;
 		line-height: 0;
 		text-transform: uppercase;

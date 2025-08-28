@@ -16,7 +16,7 @@
 		// background-color: var(--blue-lightest);
 		padding: var(--quarter-note);
 		font-size: 0.75rem;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		line-height: 1.3;
 		margin-block: var(--quarter-note);
 		border: 1px solid var(--ink);

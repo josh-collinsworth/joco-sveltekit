@@ -142,7 +142,7 @@
 		.excerpt a {
 			font-weight: bold;
 			text-transform: uppercase;
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 			font-style: normal;
 			font-size: 0.65rem;
 			color: var(--neutral-mid);

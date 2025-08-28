@@ -21,6 +21,6 @@
 		margin: 0 0 4rem;
 		max-width: 20em;
 		line-height: 1.2;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 	}
 </style>

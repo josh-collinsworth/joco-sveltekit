@@ -10,8 +10,8 @@ $xxxl: 122rem;
 $fourxl: 144rem;
 
 :root {
-	--trueWhite: #ffffff;
-	--trueBlack: #000000;
+	--true-white: #ffffff;
+	--true-black: #000000;
 
 	--yellow-50: #ffffe7;
 	--yellow-100: #ffffc1;
@@ -77,13 +77,13 @@ $fourxl: 144rem;
 	--orange: var(--orange-500);
 	--red: var(--orange-700);
 
-	--headingFont: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+	--heading-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
 	--body-font: 'Alkes', Georgia, serif;
 	--code-font: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 	--body-font-weight: normal;
-	--body-font-size: 1.125rem;
+	--body-font-size: 1.1875rem;
 	--body-line-height: 1.5;
 
 	@media (min-width: $xs) {
@@ -120,11 +120,11 @@ $fourxl: 144rem;
 	--half-note: calc(var(--quarter-note) * 2);
 	--dotted-half-note: calc(var(--quarter-note) * 3);
 	--whole-note: calc(var(--quarter-note) * 4);
-	--tiedWhole-note: calc(var(--quarter-note) * 5);
-	--dottedWhole-note: calc(var(--quarter-note) * 6);
+	--tied-whole-note: calc(var(--quarter-note) * 5);
+	--dotted-whole-note: calc(var(--quarter-note) * 6);
 
-	--buttonSize: 2.2rem;
-	--buttonBackground: var(--paper);
+	--button-size: 2.2rem;
+	--button-background: var(--paper);
 
 	@media (min-width: $xs) {
 		--margin: var(--half-note);
@@ -139,7 +139,7 @@ $fourxl: 144rem;
 	}
 
 	@media (min-width: $xxxl) {
-		--margin: var(--dottedWhole-note);
+		--margin: var(--dotted-whole-note);
 	}
 
 	&.dark {

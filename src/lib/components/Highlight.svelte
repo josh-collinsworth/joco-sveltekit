@@ -19,6 +19,6 @@
 		margin: 0 0 var(--half-note);
 		font-weight: normal;
 		font-style: normal;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 	}
 </style>

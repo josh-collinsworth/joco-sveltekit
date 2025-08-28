@@ -23,7 +23,7 @@
 <style lang="scss">
 	.main-nav {
 		text-align: right;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 
 		@media (max-width: vars.$sm) {
 			display: block;

@@ -2,7 +2,7 @@
   "name": "josh-collinsworth-sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "original-dev": "vite dev --port 1027",
+    "original-dev": "vite dev --host --port 1027",
     "sass:watch": "sass src/lib/assets/scss/global.scss src/lib/assets/scss/global.css --style=compressed --watch",
     "sass:build": "sass src/lib/assets/scss/global.scss static/global.css --style=compressed",
     "dev": "npm-run-all --parallel sass:watch original-dev",

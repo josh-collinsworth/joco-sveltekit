@@ -184,7 +184,7 @@
 	.intro__grid {
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
-		margin-top: var(--dottedWhole-note);
+		margin-top: var(--dotted-whole-note);
 		gap: var(--dotted-half-note);
 		font-size: 0.8125rem;
 		line-height: 1.5;
@@ -208,7 +208,7 @@
 
 	.list-heading {
 		font-size: 0.8rem;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		text-transform: uppercase;
 		font-weight: bold;
 		margin: 0;

@@ -66,7 +66,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	font-family: var(--headingFont);
+	font-family: var(--heading-font);
 	font-weight: bold;
 	color: var(--heading-color);
 	line-height: 1.2;
@@ -101,7 +101,7 @@ h2,
 
 	@media (min-width: vars.$xs) {
 		font-size: 2rem;
-		margin-top: var(--tiedWhole-note);
+		margin-top: var(--tied-whole-note);
 	}
 
 	&::before {

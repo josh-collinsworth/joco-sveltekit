@@ -97,7 +97,7 @@ https://svelte.dev/e/js_parse_error -->
 		overflow: visible;
 		margin: 4rem 0 0;
 		position: relative;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 
 		label {
 			font-size: 0.8rem;

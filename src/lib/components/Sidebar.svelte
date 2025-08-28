@@ -57,7 +57,7 @@
 	.sidebar {
 		font-size: 0.8125rem;
 		max-width: var(--max-width);
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		margin: var(--dotted-half-note) 0 0;
 
 		@media (min-width: vars.$lg) {

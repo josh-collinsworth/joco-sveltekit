@@ -48,7 +48,7 @@
 		font-style: italic;
 
 		a {
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 			font-weight: bold;
 			font-size: 0.85em;
 			font-style: normal;

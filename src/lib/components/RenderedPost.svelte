@@ -166,7 +166,7 @@
 			margin: var(--half-note) 0 var(--whole-note);
 			width: max-content;
 			padding: 0.5em 0;
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 			border-top: 2px solid var(--neutral-light);
 
 			b {
@@ -190,7 +190,7 @@
 
 		.post-links {
 			margin: var(--half-note) 0;
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 
 			a {
 				margin-left: 1ch;
@@ -206,7 +206,7 @@
 		}
 
 		.section-heading-image {
-			margin-top: var(--dottedWhole-note);
+			margin-top: var(--dotted-whole-note);
 
 			& + * {
 				margin-top: var(--quarter-note);

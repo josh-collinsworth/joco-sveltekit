@@ -7,8 +7,8 @@
 	<label for="volume">
 		Volume: {volume}%
 	</label>
-	
-	<input 
+
+	<input
 		id="volume"
 		type="range"
 		min="0"
@@ -28,7 +28,7 @@
 	}
 
 	label {
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		font-weight: bold;
 	}
 </style>

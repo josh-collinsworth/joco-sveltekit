@@ -23,7 +23,7 @@
 		<h2>Who I am</h2>
 
 		<p>
-			I'm currently a Frontend Engineer at <a href="https://deno.land">Deno</a>
+			I'm currently a Design Engineer at <a href="https://deno.land">Deno</a>
 			(<i
 				>I made
 				<a href="https://deno.com/brand">the new logo</a>, so I guess I'm

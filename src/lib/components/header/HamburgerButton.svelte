@@ -25,14 +25,14 @@
 		justify-content: space-between;
 		flex-direction: column;
 		align-items: stretch;
-		width: var(--buttonSize);
-		height: var(--buttonSize);
+		width: var(--button-size);
+		height: var(--button-size);
 		padding: 0.55rem;
-		background: var(--buttonBackground);
+		background: var(--button-background);
 		position: relative;
 		z-index: 11;
 		border: 2px solid var(--ink);
-		border-radius: var(--buttonSize);
+		border-radius: var(--button-size);
 		overflow: visible;
 		transition-delay: 0.16s;
 

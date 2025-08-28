@@ -90,7 +90,7 @@
 
 	.sticky {
 		--ink: var(--neutral-white);
-		--buttonBackground: transparent;
+		--button-background: transparent;
 	}
 
 	.header {
@@ -124,7 +124,7 @@
 		height: 3rem;
 		background: var(--blue-dark);
 		color: var(--neutral-white);
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 
 		&:focus {
 			transform: translateY(7rem);

@@ -164,7 +164,7 @@
 	}
 
 	.big {
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		font-size: var(--quarter-note);
 		text-wrap: balance;
 	}
@@ -179,7 +179,7 @@
 		margin-top: 4rem;
 
 		label {
-			font-family: var(--headingFont);
+			font-family: var(--heading-font);
 			font-weight: bold;
 			margin-bottom: var(--sixteenth-note);
 		}

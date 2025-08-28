@@ -125,7 +125,7 @@
 
 			li {
 				margin: 0.5rem 0 0;
-				font-family: var(--headingFont);
+				font-family: var(--heading-font);
 			}
 		}
 

@@ -63,7 +63,7 @@ hr {
 }
 
 .header__divider {
-	height: var(--buttonSize);
+	height: var(--button-size);
 	width: 1px;
 	background: var(--neutral-light);
 	display: block;
@@ -142,7 +142,7 @@ table {
 		padding-bottom: 0.5em;
 		font-weight: bold;
 		font-size: 1rem;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 	}
 
 	thead tr {
@@ -188,11 +188,11 @@ table {
 	width: 100%;
 	position: relative;
 	z-index: 2;
-	font-family: var(--headingFont);
+	font-family: var(--heading-font);
 
 	h2 {
 		font-weight: bold;
-		font-family: var(--headingFont);
+		font-family: var(--heading-font);
 		font-size: 0.8rem;
 		margin: 0;
 		background: var(--paper);

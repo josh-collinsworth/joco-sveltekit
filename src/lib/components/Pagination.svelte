@@ -65,7 +65,7 @@
 				justify-content: center;
 				width: 2em;
 				height: 2em;
-				font-family: var(--headingFont);
+				font-family: var(--heading-font);
 				font-weight: bold;
 				transition: background 0.1s;
 
