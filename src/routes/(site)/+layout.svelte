@@ -79,7 +79,7 @@
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
 	{#if !dev}
-		<link rel="stylesheet" href="/global.css" />
+		<link rel="stylesheet" href="/global.css?ver={Date.now()}" />
 		<script
 			defer
 			data-domain="joshcollinsworth.com"
