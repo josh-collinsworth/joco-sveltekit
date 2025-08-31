@@ -1,7 +1,7 @@
 ---
 title: "Titles matter"
 date: '2025-08-26'
-updated: '2025-08-27'
+updated: '2025-08-31'
 categories:
   - web
   - opinion
@@ -78,7 +78,7 @@ To call a prompter a web developer both elevates prompters and degrades web deve
 
 To issue any rigid definition of just about _any_ position is fraught. The more I try to lay down explicit lines around what is and is not a web developer, the more I risk engaging in a _is-a-hotdog-a-sandwich_ style of semantic debate.
 
-Any rigid definition of "web developer" is likely to include at least _some_ prompters. It's all but impossible to draw a line that completely divides one group from another with no outliers. Language is messy like that. _Reality_ is messy like that.
+Any rigid definition of "web developer" is likely to include at least _some_ prompters (and for that matter, leave out at least some of the people it's meant to include). It's all but impossible to draw a line that completely divides one group from another with no outliers. Language is messy like that. _Reality_ is messy like that.
 
 And so, of course, the more specific I get, the easier it is for anybody so motivated to poke holes in the definition (which I can never help but suspect as a motivation for requesting specificity in the first place).
 
@@ -322,6 +322,16 @@ As we've covered already, when you assume a title, you clearly and unmistakably 
 This is not an attempt to create an out-group based on arbitrary criteria; it's pointing out that's _literally not what those words mean_. This is an incorrect use of that language.
 
 </CalloutPlusQuote>
+
+I myself have put multiple apps into both the iOS App Store and the Google Play Store. This was before LLMs were widely available, and so I used a tool called [PWABuilder](https://www.pwabuilder.com/), which abstracted most of the heavy lifting and simply guided me through some rote tasks in order to generate my app from an existing PWA (progressive web app).
+
+<CalloutPlusQuote>
+
+Despite having technically launched Android and iOS apps, I would still never call myself an Android or iOS Developer, because that title does not describe me.
+
+</CalloutPlusQuote>
+
+I'm well aware that what I did, despite having roughly the same outcome, is a different task entirely, and that I possess none of the know-how of an actual mobile dev. (And again: I didn't even use an LLM; I used a different tool. But it was still something to grant me ability without expertise.)
 
 Despite my protestations, I'm sure some people will nonetheless read this and conclude that I'm a luddite, fighting the future. Or a jerk who wants to unjustly rain on the parade of newcomers. (“_Won't somebody please think of the children!?_”) Or a stuck-up snob who holds their own title in such precious regard as to resist sharing it.
 
