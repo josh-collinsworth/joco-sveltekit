@@ -82,7 +82,9 @@ _We care about art because it's a form of connection to other humans._ Otherwise
 
 I might be able to enjoy a book or a movie or a TV show without thinking about how it was created, but eventually, inevitably, I want to know _more_ about how it came to be, the writers behind it, and the people who helped bring it to life.
 
-We most certainly wouldn't watch interviews with the creators, or read about their stories, or be interested in the origins of their work. We wouldn't have entire genres of videos dedicated to those stories, as we do now. None of those things would matter at all to us if art could be so easily detached from the human who created it.
+If this weren't the case, we most certainly wouldn't watch interviews with the creators, or read about their stories, or be interested in the origins of their work. We wouldn't have entire genres of videos dedicated to those stories, as we do now.
+
+There might not even be any such thing as a famous artist, if art could be so easily detached from the human who created it.
 
 Art is interesting precisely _because_ a human made it, through a long, difficult process that could be unique only to them. The human story behind the art  is just as much a part of the work as the paint or the notes or the words or any other part of the medium.
 
