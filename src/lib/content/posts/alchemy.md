@@ -62,7 +62,7 @@ I would be far from alone in saying that an otherwise excellent blog post can be
 
 The market has long-since been flooded. The supply has been outpacing the demand by many orders of magnitude for years now.
 
-Generative AI is not capable of creating gold, because gold is rare and difficult to come by, and that rarity is exactly what makes it valuable.
+Generative AI is not capable of creating that figurative gold, because gold is rare and difficult to come by, and that rarity is exactly what makes it valuable.
 
 <CalloutPlusQuote>
 
@@ -70,22 +70,26 @@ Art is valuable precisely because it is not easy to create.
 
 </CalloutPlusQuote>
 
-I am interested in art—_we_ are interested in art, in any and all of its forms—_because_ a human made it.
+And I am interested in art—_we_ are interested in art, in any and all of its forms—_because_ humans made it. That's the very thing that makes it interesting; the _who_, the _how_, and especially the _why_.
 
 The existence of the work itself is only part of the point, and materializing an image out of thin air misses the point of art, in very much the same way that putting a football into a Waymo to drive it up and down the street for a few hours would be entirely missing the point of sports.
 
-The struggle that produced the art—the human who felt it, processed it, and formed it into this unique shape in the way only they could—is integral to the art itself.
+The struggle that produced the art—the human who felt it, processed it, and formed it into this unique shape in the way only they could—is integral to the art itself. The story of the human behind it is the missing, inimitable component that AI cannot reproduce.
 
-<CalloutPlusQuote>
+That's what I and so many others find so repulsive about generative AI art; it's missing the literal soul that makes art interesting in the first place.
 
-The human behind it, and their story, is the missing, inimitable component that AI cannot reproduce.
+_We care about art because it's a form of connection to other humans._ Otherwise, we wouldn't care _who_ painted a painting, or when, or how, or why. We wouldn't care which artist sings a song, or whether that song is about any experience we can relate to.
 
-</CalloutPlusQuote>
+I might be able to enjoy a book or a movie or a TV show without thinking about how it was created, but eventually, inevitably, I want to know _more_ about how it came to be, the writers behind it, and the people who helped bring it to life.
 
-That's what I and so many others find repulsive about generative AI art; it's missing the literal soul that makes it interesting to begin with.
+We most certainly wouldn't watch interviews with the creators, or read about their stories, or be interested in the origins of their work. We wouldn't have entire genres of videos dedicated to those stories, as we do now. None of those things would matter at all to us if art could be so easily detached from the human who created it.
 
-Art is interesting precisely _because_ a human made it. And that process is long, slow, painful, and beautifully _unique_. The human story behind the art  is just as much a part of the work as the paint or the notes or the words or any other part of the medium.
+Art is interesting precisely _because_ a human made it, through a long, difficult process that could be unique only to them. The human story behind the art  is just as much a part of the work as the paint or the notes or the words or any other part of the medium.
 
 And no, I'm sorry, but prompting your way to the finished piece absolutely _does not_ count.
+
+Not that it matters. I've gotten a little off-topic. AI-generated art is not really art, but that's not even my point anyway. The zone is too flooded for any of it to matter in the first place, regardless of what it is or isn't.
+
+It's everywhere, it's inescapable, and it's therefore made itself less than worthless.
 
 Good luck with that lead, though.
