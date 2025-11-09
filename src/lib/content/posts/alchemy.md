@@ -88,10 +88,22 @@ There might not even be any such thing as a famous artist, if art could be so ea
 
 Art is interesting precisely _because_ a human made it, through a long, difficult process that could be unique only to them. The human story behind the art  is just as much a part of the work as the paint or the notes or the words or any other part of the medium.
 
-And no, I'm sorry, but prompting your way to the finished piece absolutely _does not_ count.
+And no, I'm sorry, but prompting your way to the finished piece absolutely _does not_ count—
 
-Not that it matters. I've gotten a little off-topic. AI-generated art is not really art, but that's not even my point anyway. The zone is too flooded for any of it to matter in the first place, regardless of what it is or isn't.
+—Not that it matters. I've gotten a little off-topic, but whether AI-generated art is truly art isn't the point, and it doesn't really matter anyway. The zone is too flooded, regardless.
 
-It's everywhere, it's inescapable, and it's therefore made itself less than worthless.
+AI-generated content is everywhere; it's inescapable; and it's therefore made itself less than worthless.
+
+AI will doubtlessly displace countless workers, because bosses with more power than taste are ubiquitous. Still:
+
+<CalloutPlusQuote>
+
+AI will never fully displace creatives, because the moment AI can mass-produce any kind of creative work at scale, that work will stop being worth producing in the first place.
+
+</CalloutPlusQuote>
+
+It will be toxic; a trend well past its prime, already rotten on the vine.
+
+The more gold you make, the less the gold is worth.
 
 Good luck with that lead, though.
