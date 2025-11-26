@@ -70,6 +70,15 @@ Art is valuable precisely because it is not easy to create.
 
 </CalloutPlusQuote>
 
+<SideNote>
+
+Some have (quite reasonably) mistaken me to mean here that the value of art is correlated with its technical difficulty. That is not at all what I meant, though I see where my phrasing may have inadvertently inferred that.
+
+I mean that art is not easy, in the sense that it requires lived human experience and struggle. Indeed, much of what I would consider to be high art is very technically simplistic—while, conversely, a great deal of AI art would be exceedingly difficult for a human artist to recreate, and yet, I still consider valueless.
+
+</SideNote>
+
+
 And I am interested in art—_we_ are interested in art, in any and all of its forms—_because_ humans made it. That's the very thing that makes it interesting; the _who_, the _how_, and especially the _why_.
 
 The existence of the work itself is only part of the point, and materializing an image out of thin air misses the point of art, in very much the same way that putting a football into a Waymo to drive it up and down the street for a few hours would be entirely missing the point of sports.
