@@ -151,11 +151,12 @@
 
 		.meta + p::first-letter,
 		.meta + *:not(p) + p::first-letter,
-		.meta + *:not(p) + *:not(p) + p::first-letter {
-			font-size: 3.6em;
+		.meta + *:not(p) + *:not(p) + p::first-letter,
+		hr + p::first-letter {
+			font-size: 3.25em;
 			float: left;
 			line-height: 0.7em;
-			margin: 0.45rem 0.4rem 0 0;
+			margin: 0.35rem 0.3rem 0 -0.125rem;
 			color: inherit;
 			font-weight: bold;
 		}

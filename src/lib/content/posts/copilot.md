@@ -16,8 +16,6 @@ excerpt: Why I worry about the effect GitHub Copilot is having and will continue
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
   import SideNote from '$lib/components/SideNote.svelte'
   import Note from '$lib/components/Note.svelte'
-	import Footnote from '$lib/components/FootnoteLink.svelte'
-	import FootnoteAnnotations from '$lib/components/FootnoteAnnotations.svelte'
 </script>
 
 GitHub Copilot was one of the earliest "AI" tools on the market—or at least, one of the first I was aware of. It came along well before [ChatGPT](https://chat.openai.com) exploded, so I and many other developers got the opportunity to try out these large language models (LLMs) before they really broke into the mainstream.

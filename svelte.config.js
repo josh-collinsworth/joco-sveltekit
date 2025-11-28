@@ -4,6 +4,9 @@
 	import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 	import rehypeSlug from 'rehype-slug'
 	import { sveltePreprocess } from 'svelte-preprocess'
+	import { myFootnoteRehypePlugin } from './src/lib/assets/js/footnoteRehypePlugin.js'
+
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -19,6 +22,7 @@ const config = {
 			rehypePlugins: [
 				rehypeSlug,
 				rehypeAutolinkHeadings,
+				myFootnoteRehypePlugin,
 			],
 		}),
 		sveltePreprocess({

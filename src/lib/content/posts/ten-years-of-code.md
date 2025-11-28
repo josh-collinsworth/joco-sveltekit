@@ -17,8 +17,6 @@ excerpt: "A personal (read: meandering) post inspired by the realization that I 
   import SideNote from '$lib/components/SideNote.svelte'
   import Note from '$lib/components/Note.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
-	import Footnote from '$lib/components/FootnoteLink.svelte'
-	import FootnoteAnnotations from '$lib/components/FootnoteAnnotations.svelte'
 </script>
 
 It suddenly struck me today that I began first learning code, starting with the very basics of HTML and CSS, at an internship exactly ten years ago. That means I've been doing this (coding, that is; building things on the web, in some form or another) for a decade now.

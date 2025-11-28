@@ -18,8 +18,6 @@ excerpt: I keep noticing those of us in the frontend field being treated much th
   import SideNote from '$lib/components/SideNote.svelte'
   import Note from '$lib/components/Note.svelte'
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
-	import Footnote from '$lib/components/FootnoteLink.svelte'
-	import FootnoteAnnotations from '$lib/components/FootnoteAnnotations.svelte'
 </script>
 
 There's a trend I've noticed—or at least, I _think_ I've noticed. It's the kind of thing that's hard to be sure of; the kind that might genuinely be true, or might simply _appear_ to be true if you look at it a certain way.

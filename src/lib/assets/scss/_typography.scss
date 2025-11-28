@@ -198,6 +198,10 @@ ol {
 
 	li {
 		padding-left: var(--sixteenth-note);
+
+		p {
+			margin-bottom: var(--eighth-note);
+		}
 	}
 
 	ul,
@@ -206,7 +210,7 @@ ol {
 	}
 
 	li + li {
-		margin-top: calc(var(--quarter-note) / 2);
+		margin-top: var(--quarter-note);
 	}
 }
 

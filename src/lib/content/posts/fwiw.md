@@ -17,8 +17,6 @@ excerpt: "A collection of things I've learned over my decade in the industry, on
 	import SideNote from '$lib/components/SideNote.svelte'
 	import Note from '$lib/components/Note.svelte'
 	import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
-	import Footnote from '$lib/components/FootnoteLink.svelte'
-	import FootnoteAnnotations from '$lib/components/FootnoteAnnotations.svelte'
 </script>
 
 

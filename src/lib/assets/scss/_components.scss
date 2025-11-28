@@ -210,3 +210,32 @@ html:not(.light) .side-note {
 .note__content :last-child {
   margin-bottom: 0;
 }
+
+.footnote-link {
+  display: inline;
+  line-height: 0.5;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: relative;
+  bottom: 0.4em;
+  text-decoration: none;
+  margin-inline: 2px;
+  border-bottom: 1px solid;
+}
+
+.footnote-annotations {
+  font-size: 0.8rem;
+  padding-top: var(--quarter-note);
+  margin-top: var(--half-note);
+  border-top: 1px solid var(--neutral-lighter);
+  line-height: 1.5;
+}
+
+.back-link {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  border-bottom: 1px solid var(--yellow);
+}
+
