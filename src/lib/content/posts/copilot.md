@@ -74,7 +74,7 @@ There are plenty of other, similar LLM coding tools out there; Copilot is genera
 
 ## A real-world example: my simple component
 
-Recently, I set out to build a component to help me generate footnotes on this site. You know; the kind that shows up as a tiny link in some text, and that when clicked, jumps you to the bottom of the page for an accompanying annotation. <Footnote number="1" />
+Recently, I set out to build a component to help me generate footnotes on this site. You know; the kind that shows up as a tiny link in some text, and that when clicked, jumps you to the bottom of the page for an accompanying annotation. <footnote>Like this.</footnote>
 
 This is a very simple task, as far as web dev goes. In fact, it's since-the-dawn-of-HTML type of stuff; all you really need is two anchor tags. (You might reasonably wonder why it even needed to be a component in the first place; I was just trying to automate the numbering.)
 
@@ -86,7 +86,7 @@ This blog is in Svelte, and so some of the code samples in this section will be,
 
 As soon as I created the file and started typing, Copilot did all the zany things you might expect: it tried to import a library that didn't actually exist in my codebase, as well as a Svelte export that I didn't need at all. It _also_ reached for its favorite bit, and slung an ungodly amount of ghost divs into my editor.
 
-Funny, but not concerning. Ultimately, any dev with any experience at all ought to be able to immediately identify that as the hallucination it is.<Footnote number="2" /> The rest, tooling should spot, even if you didn't.
+Funny, but not concerning. Ultimately, any dev with any experience at all ought to be able to immediately identify that as the hallucination it is.<footnote>“Hallucination” is a nice word the AI industry made up to explain that its product is failing, without admitting its product is failing, and framing it as a charming side effect rather than a massive flaw.</footnote> The rest, tooling should spot, even if you didn't.
 
 As for the relevant bits of code, I'd expect most any competent frontend developer should probably know something like this markup (maybe not this exactly, but something in this general shape) is the proper solution:
 
@@ -203,7 +203,7 @@ What does it say about Copilot's knowledge of accessibility when it will hand us
 
 Copilot is encouraging us to block users unnecessarily, by suggesting obviously flawed code, which is wrong on every level: wrong ethically, wrong legally, and the wrong way to build software.
 
-I know we're not supposed to hold so-called AI<Footnote number="3" /> tools responsible for their flaws. "They're not perfect" may as well be the tagline for LLMs.
+I know we're not supposed to hold so-called AI<footnote>AI is not actually the proper term for Copilot, or ChatGPT, or just about any technology we call AI these days. In reality, they’re large language models, i.e., very complex prediction engines built on statistics. They aren’t intelligent. (“Spicy autocomplete” is my personal favorite moniker for them.)</footnote> tools responsible for their flaws. "They're not perfect" may as well be the tagline for LLMs.
 
 But if we're giving one of the world's major corporations our money, in exchange for this tool that's supposed to make us better…shouldn't it be held to _some_ standard of quality? Shouldn't the results I get from a paid service at _least_ be better than a bad StackOverflow suggestion that got down-voted to the bottom of the page (and which would probably come with additional comments and suggestions letting me know why it was ranked lower)?
 
@@ -242,7 +242,7 @@ Given that current state of affairs, I don't have a lot of faith in the status q
 
 Besides: there's a point where a dangerous tool bears some of the responsibility for its own safety.
 
-When the microwave was brand new to the market, and this new space-age technology allowed what used to take 10–20 minutes or more to get done in mere seconds, the manufacturers did't get to make ovens that stayed on when you opened the door just because the tech was new and revolutionary. They couldn't claim the user should've known better, while allowing their kitchen to fry and their pets to die of internal burns (even though, presumably, most of the people using the new microwaves were previously experienced cooks). They had to build safety features in.<Footnote number="4" />
+When the microwave was brand new to the market, and this new space-age technology allowed what used to take 10–20 minutes or more to get done in mere seconds, the manufacturers did't get to make ovens that stayed on when you opened the door just because the tech was new and revolutionary. They couldn't claim the user should've known better, while allowing their kitchen to fry and their pets to die of internal burns (even though, presumably, most of the people using the new microwaves were previously experienced cooks). They had to build safety features in.<footnote>I guess I shouldn’t assume; I wasn’t around when microwaves were first introduced. But the point still stands even if it wasn’t that way to begin with.</footnote>
 
 <CalloutPlusQuote>
 
@@ -433,7 +433,6 @@ The internet is already an overwhelmingly inequitable place.
 
 I don't think we should accept that what we get in exchange for our money is, inevitably, a force for further inequity, and yes, ultimately, for discrimination.
 
-<FootnoteAnnotations footnotes={[`Like this.`,`“Hallucination” is a nice word the AI industry made up to explain that its product is failing, without admitting its product is failing, and framing it as a charming side effect rather than a massive flaw.`,`AI is not actually the proper term for Copilot, or ChatGPT, or just about any technology we call AI these days. In reality, they’re large language models, i.e., very complex prediction engines built on statistics. They aren’t intelligent. (“Spicy autocomplete” is my personal favorite moniker for them.)`,`I guess I shouldn’t assume; I wasn’t around when microwaves were first introduced. But the point still stands even if it wasn’t that way to begin with.`]}/>
 
 
 

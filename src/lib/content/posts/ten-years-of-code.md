@@ -27,9 +27,9 @@ That's reductive, of course. Even I don't buy that.
 
 I'm lucky.
 
-I remember the magic of the moment when, almost exactly ten years ago, I built my first responsive layout. I was a graphic design intern when my manager, Brad (_also an instructor I was fortunate to have in school, and who helped me get multiple internship opportunities_), handed me [Jon Duckett's _HTML & CSS_ book](https://htmlandcssbook.com/).<Footnote number="1" /> (Thanks, Jon and Brad.)
+I remember the magic of the moment when, almost exactly ten years ago, I built my first responsive layout. I was a graphic design intern when my manager, Brad (_also an instructor I was fortunate to have in school, and who helped me get multiple internship opportunities_), handed me [Jon Duckett's _HTML & CSS_ book](https://htmlandcssbook.com/).<footnote>The website for the book itself is not responsive, ironically enough. Just locked in at 940px wide.</footnote> (Thanks, Jon and Brad.)
 
-That was back in the relatively early days of responsive web design, when floats were still how responsive layouts were achieved, Internet Explorer was still a big deal, and (largely because of that) jQuery was pretty much synonymous with JavaScript.<Footnote number="2"/>
+That was back in the relatively early days of responsive web design, when floats were still how responsive layouts were achieved, Internet Explorer was still a big deal, and (largely because of that) jQuery was pretty much synonymous with JavaScript.<footnote>If you don't remember those days, check out the CodePen here, and generally just be grateful that the web has come a long, long way since then.</footnote>
 
 So, I sat down at my computer, followed the directions, [tied an onion to my belt](https://knowyourmeme.com/memes/so-i-tied-an-onion-to-my-belt-which-was-the-style-at-the-time), and before long, I had something I could actually interact with on the screen.
 
@@ -131,7 +131,7 @@ I imagine most teachers can probably relate to all of that.
 
 ---
 
-I was lucky to land my first tech job<Footnote number="3"/> at a company like [Flywheel](https://getflywheel.com), even though I didn't realize at the time how much I and most of the people around me were being undervalued. (That's a long story with many chapters, but one common to midwestern tech companies.)
+I was lucky to land my first tech job<footnote>Actually, technically, my first tech job was as a call center rep for America Online, but we don't need to go back that far.</footnote> at a company like [Flywheel](https://getflywheel.com), even though I didn't realize at the time how much I and most of the people around me were being undervalued. (That's a long story with many chapters, but one common to midwestern tech companies.)
 
 Still, the opportunity to learn everything I learned there—both in terms of the day-to-day technical aspects, and the inner workings of a startup—was one that doesn't come along often, and one I didn't fully appreciate until years later.
 
@@ -174,5 +174,3 @@ I'm still lucky.
 I still get to do a very cool thing every single day. Although the shine has faded a bit, I still love it. Sometimes—not as much as I used to, but _sometimes_—I even do it just for fun.
 
 And despite all the mess of the way things are now, I'm excited to see where the web is another ten years from now.
-
-<FootnoteAnnotations  footnotes={[`The website for the book itself is not responsive, ironically enough. Just locked in at 940px wide.`,`If you don't remember those days, check out the CodePen here, and generally just be grateful that the web has come a long, long way since then.`,`Actually, technically, my first tech job was as a call center rep for America Online, but we don't need to go back that far.`]}/>
