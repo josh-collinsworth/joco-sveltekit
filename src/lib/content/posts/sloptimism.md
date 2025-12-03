@@ -62,7 +62,7 @@ It's late 2025, and so you don't need me to tell you how extreme opposing views 
 
 For my part, you can put me firmly on the pessimist side of the chasm, for many reasons. Some I'll get into here; others, I'll mostly pass over, as they've been well covered elsewhere.
 
-But for now, suffice to say: when I look around me, at the impact AI is _currently_ having, I see little reason for optimism or enthusiasm—let alone the little-questioned, quasi-religious belief that this fundamentally flawed technology will one imminent day bring about some sort of economic, societal, and/or scientific revolution all on its own.
+But for now, suffice to say: when I look around me at the impact AI is _currently_ having, I see little reason for enthusiasm—let alone the little-questioned, quasi-religious belief that this fundamentally flawed technology will one day soon bring about some sort of economic, societal, and/or scientific revolution all on its own.
 
 Come to think of it, "religious" might be a good word to describe how AI optimism feels, from the outside. It has fervent believers, prophecies from prominent figures to be taken on faith, and—of course, as with any religion—a central object of worship which can at all times be offered as The Answer, no matter what the question might happen to be.
 
