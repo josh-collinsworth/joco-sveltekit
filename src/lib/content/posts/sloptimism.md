@@ -58,7 +58,7 @@ So, that's why I wrote this post; to share that perspective. It's mine, and you 
 
 ---
 
-It's late 2025, and so you don't need me to tell you how extreme opposing views on AI can be. _Everyone_ has an opinion of AI, and the overwhelming majority fall one far end of the spectrum or the other. There's a vast divide between my so-called optimists and pessimists, each fiercely passionate in their own entirely opposite ways.
+It's late 2025, and so you don't need me to tell you how extreme opposing views on AI can be. _Everyone_ has an opinion of AI, and the overwhelming majority fall to one far end of the spectrum or the other. There's a vast divide between my so-called optimists and pessimists, each fiercely passionate in their own entirely opposite ways.
 
 For my part, you can put me firmly on the pessimist side of the chasm, for many reasons. Some I'll get into here; others, I'll mostly pass over, as they've been well covered elsewhere.
 
