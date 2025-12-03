@@ -218,4 +218,4 @@ The ones who see themselves riding in the self-driving car, and not as the pedes
 
 The rest of us?
 
-I guess it's hard to see the convenience as worth the price, when you know you could be among those paying for it.
+I guess it's hard to see the convenience as worth the price, when you know you--and your children, and your loved ones--could be among those paying the price for it.
