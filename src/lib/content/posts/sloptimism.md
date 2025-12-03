@@ -84,7 +84,7 @@ They see themselves as _safe_.
 
 I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. It's helpful for generating reference images to use as starting points for my illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own colorblindness. But mostly, it helps me with code.
 
-Even if my new coding buddy is severely prone to overconfidence and hallucination (and vulnerabilities, and counterproductivity), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
+Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counterproductivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
 In order to be an AI optimist about this, however: that's where I would have to stop thinking about it.
 
@@ -92,15 +92,15 @@ I would be forced to ignore what _else_ my little coding buddy is getting up to 
 
 Let's take layoffs, as an example.
 
-In order to be an AI optimist, it seems to me you have to believe yours is not one of the jobs that risk being automated or downsized, and that you are not among the potentially millions of workers staring down displacement. After all, how could you feel enthusiastic about something that's a threat to your own livelihood?
+In order to be an AI optimist, it seems to me you'd have to believe yours is not one of the jobs that risk being automated or downsized, and that you are not among the countless workers staring down displacement. After all, how could you feel enthusiastic about a threat to your own livelihood?
 
-You need to be high enough in the org chart; far enough up the pyramid; advanced enough along the career ladder.
+You'd need to be high enough in the org chart; far enough up the pyramid; advanced enough along the career ladder.
 
-To be an AI optimist, I'm guessing you must not be worried about where your next job is going to come from, or whether you can even find one. The current dire state of the job market, I have to assume, doesn't scare you. You must feel secure.
+To be an AI optimist, I'm guessing you must not be worried about where your next job might come from, or whether you can even find one. The current dire state of the job market, I have to assume, doesn't scare you. You must feel secure.
 
 Maybe it's because you've already made a name for yourself. Maybe you're known at conferences, or on podcasts. Maybe you're just senior enough that you don't need to worry about being hireable anymore; you can take that for granted.
 
-You definitely aren't a junior, though, or an intern, or somebody trying to break into the field, or anybody else near the level of the rising tide engulfing entry-level workers across our industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore. They're the first ones against the wall.
+You definitely aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the level of the rising tide engulfing entry-level workers across our industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore. They're the first ones against the wall.
 
 Seems fairly safe to assume you aren't in that group, if you're excited about what AI is doing.
 
@@ -130,9 +130,9 @@ AI optimism requires you to believe that, whoever will be impacted by the sprawl
 
 Those people on the news? I guess you must assume you won't know them.
 
-Dictators, fascists, and malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating more convincing disinformation than ever, faster than was ever previously possible.
+Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating more convincing disinformation than ever, faster than was ever previously possible.
 
-I suppose being an optimist about this technology must mean you believe that ultimately won't affect you—or at the very least, it's a worthwhile tradeoff. Whoever those in power are going after, and whoever the victims of violence are, they won't be too close to you, writing emails more efficiently than ever.
+I suppose being an optimist about this technology must mean you believe that ultimately won't affect you—or at the very least, it's a worthwhile tradeoff. Whoever those in power are going after, and whoever the victims of violence are, they won't be too close to you, writing your emails more efficiently than ever.
 
 AI is now (horrifyingly) being used in the legal system, too. From facial recognition to criminal justice, AI is increasingly being put in charge of deciding who is guilty and innocent, and what punishment those people might deserve.
 
@@ -152,17 +152,17 @@ AI optimism requires you to see the lives of at least some of your fellow humans
 
 ---
 
-To this point, I've talked about AI more or less in a vacuum. But it isn't even a standalone issue; it's become a part of _other_ technologies, exacerbated their existing problems, and accelerated the damage they're doing.
+The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies and systems, it's exacerbating their existing problems, and accelerating the damage they're doing.
 
-Propaganda and disinformation are the easy examples, but the tech is being used for rampant harm even when there's not necessarily any political intent or purpose behind it.
+I've already touched on propaganda, disinformation, and the justice system. Those are easy examples, but the tech is being used for rampant harm even when there's not necessarily any broader intent or purpose behind it.
 
-Recently, for example, Facebook was flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. It generated engagement.
+Recently, for example, Facebook was flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. That content generated engagement, and that engagement generated more of the same content.
 
-Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine working out the most effective way to generate engagement will decide to make videos of vulnerable people (like immigrants, from one recent real example) being horrifically brutalized.
+Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine working out the most effective way to farm engagement will decide to make videos of vulnerable people (like immigrants, from one recent real example) being horrifically brutalized.
 
-AI isn't just harmful on its own; it's a force multiplier for existing harms.
+In short: AI isn't just harmful on its own; it's a force multiplier for existing harms.
 
-What sort of viewpoint must it take to see this as merely a negligible side effect? A worthy compromise for faster jpegs?
+What sort of viewpoint must it take to see a;; this as merely a negligible side effect? A worthy compromise for faster jpegs?
 
 I don't know. I only know there's no amount of productivity that could possibly be worth this price to me.
 
