@@ -214,6 +214,13 @@ ol {
 	}
 }
 
+.post > ol,
+.post > ul {
+	li + li {
+		margin-top: var(--quarter-note);
+	}
+}
+
 figure {
 	margin: var(--half-note) 0;
 
