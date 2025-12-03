@@ -136,7 +136,7 @@ AI is now (horrifyingly) being used in the legal system, too. From facial recogn
 
 This obviously should've never happened, because highly predictably, these models are very wrong a far-from-trivial percentage of the time, and racist even more often. (Tech is always a mirror of its creators.) This deployment of AI has already had utterly devastating impact on real people's lives.
 
-Forgive me, but I can't imagine being excited that this technology sending innocent people to prison is helping me save a little time on coding.
+Forgive me, but I can't imagine being excited that this technology accelerating inequality is helping me save a little time on coding.
 
 I have to imagine such excitement would require me to believe that couldn't happen to _me_, or to anybody who matters to me; that the system isn't made for _us_.
 
