@@ -31,5 +31,8 @@
 	"[markdown]": {
 		"editor.wordWrap": "bounded",
 		"editor.wordWrapColumn": 80
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
 }

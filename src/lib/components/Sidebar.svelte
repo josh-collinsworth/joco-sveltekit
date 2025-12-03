@@ -66,6 +66,10 @@
 
 		li {
 			padding-left: 0;
+
+			& + li {
+				margin-top: var(--eighth-note);
+			}
 		}
 
 		:global(h2) {

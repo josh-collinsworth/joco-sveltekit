@@ -225,10 +225,31 @@ html:not(.light) .side-note {
 
 .footnote-annotations {
   font-size: 0.8rem;
-  padding-top: var(--quarter-note);
-  margin-top: var(--half-note);
+  padding-top: var(--sixteenth-note);
+  margin-top: var(--dotted-half-note);
   border-top: 1px solid var(--neutral-lighter);
   line-height: 1.5;
+
+  &::before {
+    content: 'Footnotes';
+    font-weight: bold;
+    font-family: var(--heading-font);
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: var(--eighth-note);
+    margin-bottom: var(--quarter-note);
+    margin-left: -1rem;
+    margin-top: -1em;
+    line-height: 1;
+    background: var(--paper);
+    display: block;
+    width: max-content;
+    padding-right: 1ch;
+  }
+
+  li + li {
+    margin-top: var(--eighth-note);
+  }
 }
 
 .back-link {

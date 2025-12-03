@@ -22,30 +22,41 @@ export function myFootnoteRehypePlugin() {
 	return (tree) => {
 		let footnoteCounter = 0
 		let annotations = `<ol class="footnote-annotations">`
-		tree?.children?.forEach((node) => {
+
+		const searchChildrenForFootnotes = (node) => {
 			if (node.type === 'element' && node?.children?.length) {
-				node.children = node.children.map((child, idx) => {
-					if (node?.children[idx - 1]?.value === "<footnote>") {
-						footnoteCounter++
-						annotations += `<li id="footnote-${footnoteCounter}">${child.value} <a href="#footnote-link-${footnoteCounter}" class="back-link" aria-label="Back to original location">${backUpArrowSVG}</a></li>`
-						return {
-							...child,
-							type: 'element',
-							tagName: 'a',
-							properties: {
-								href: `#footnote-${footnoteCounter}`,
-								class: 'footnote-link',
-								id: `footnote-link-${footnoteCounter}`
-							},
-							children: [{ type: 'text', value: `${footnoteCounter}` }],
-							position: child.position
+				node.children = node.children
+					.map((child, idx) => {
+						if (node?.children[idx - 1]?.value === '<footnote>') {
+							footnoteCounter++
+							annotations += `<li id="footnote-${footnoteCounter}">${child.value} <a href="#footnote-link-${footnoteCounter}" class="back-link" aria-label="Back to original location">${backUpArrowSVG}</a></li>`
+							return {
+								...child,
+								type: 'element',
+								tagName: 'a',
+								properties: {
+									href: `#footnote-${footnoteCounter}`,
+									class: 'footnote-link',
+									id: `footnote-link-${footnoteCounter}`
+								},
+								children: [{ type: 'text', value: `${footnoteCounter}` }],
+								position: child.position
+							}
+						} else if (child.type === 'element' && child?.children?.length) {
+							return searchChildrenForFootnotes(child)
+						} else {
+							return child
 						}
-					} else {
-						return child
-					}
-				}).filter(child => child.value !== "<footnote>" && child.value !== "</footnote>");
+					})
+					.filter(
+						(child) =>
+							child.value !== '<footnote>' && child.value !== '</footnote>'
+					)
 			}
-		})
+			return node
+		}
+
+		tree?.children?.forEach((node) => searchChildrenForFootnotes(node))
 		if (footnoteCounter > 0) {
 			tree.children = [
 				...tree.children,
