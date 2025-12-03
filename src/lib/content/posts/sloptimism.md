@@ -46,7 +46,7 @@ I was never exactly an optimist when it comes to AI. But that was the first time
 
 I ’ll use the term "AI optimist" a lot in this post because, while it might not be an entirely correct description of the general group I'm referring to, it's at least a serviceable label.
 
-That group, to be a bit more descriptive, is made up of people who are excited about AI, both now and in the future—but especially, are happy about the _current_ state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they're who think the current state of the technology as good, and who either aren't aware of the bad parts, or aren't overly concerned with them.
+That group, to be a bit more descriptive, is made up of people who are excited about AI, both now and in the future—but especially, are happy about the _current_ state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
 
 You almost certainly know at least one or two of these people. Maybe you even _are_ one. (If so: I'm not naive enough to think I'll change your mind with this post, but I hope I'll at least give you some things to think about.)
 
