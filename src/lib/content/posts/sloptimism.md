@@ -100,13 +100,13 @@ To be an AI optimist, I'm guessing you must not be worried about where your next
 
 Maybe it's because you've already made a name for yourself. Maybe you're known at conferences, or on podcasts. Maybe you're just senior enough that you don't need to worry about being hireable anymore; you can take that for granted.
 
-You definitely aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the level of the rising tide engulfing entry-level workers across our industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore. They're the first ones against the wall.
+You definitely aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore. They're the first ones against the wall.
 
 Seems fairly safe to assume you aren't in that group, if you're excited about what AI is doing.
 
-You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized a million people just like you.
+You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized you and a million other people who do what you do.
 
-AI optimism probably means you're in a position where nobody is taking _your_ work, or tracking _your_ productivity, or trying to measure _your_ impact against arbitrary benchmarks.
+AI optimism probably means you're in a position where nobody is taking _your_ work, or tracking _your_ productivity, or trying to decide whether you deserve to keep _your_ job.
 
 It probably means nobody is _forcing_ you to use AI—or especially, to _fix_ something AI-generated, as part of your job. You probably aren't watching a career you once enjoyed suddenly morph into something very different than what you signed up for, as you shift away from doing fulfilling work, and instead spend your days micro-managing an error-prone machine, laboriously correcting its unending mistakes.
 
