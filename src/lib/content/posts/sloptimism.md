@@ -104,7 +104,7 @@ You definitely aren't a junior, though, or an intern, or somebody trying to brea
 
 Seems fairly safe to assume you aren't in that group, if you're excited about what AI is doing.
 
-You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, by the same AI-fueled disruption, knowing that the machine which is bankrupting you is only made possible by plagiarizing from workers just like you.
+You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized a million people just like you.
 
 AI optimism probably means you're in a position where nobody is taking _your_ work, or tracking _your_ productivity, or trying to measure _your_ impact against arbitrary benchmarks.
 
@@ -198,11 +198,11 @@ Technology in general has made things like stalking and abuse easier than ever. 
 
 To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing shoddy software faster?
 
-I guess I would have to hope and believe that my kids probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends.
+I guess I would have to hope and believe that my children probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends. Better support systems.
 
 Won't ever go on a date the wrong guy, or piss off the wrong girl.
 
-Won't live in the wrong places.
+Won't live in the wrong places. Won't ever find themselves on the wrong side of the system.
 
 Won't up on the wrong side of the accelerated inequality.
 
