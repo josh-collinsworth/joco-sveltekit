@@ -206,11 +206,9 @@ Won't end up on the wrong side of the accelerated inequality.
 
 <CalloutPlusQuote>
 
-AI optimism requires that you believe you and your loved ones are safe from AI.
+AI optimism requires you to see yourself and your loved ones as safe from AI; as the passengers in the self-driving car, and not as the pedestrians it might run over.
 
 </CalloutPlusQuote>
-
-To see yourself as the passenger in the self-driving car, and not as the pedestrian it might run over.
 
 I don't know how you see yourself that way without a great deal of class privilege.
 
