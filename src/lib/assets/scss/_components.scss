@@ -212,14 +212,14 @@ html:not(.light) .side-note {
 }
 
 .footnote-link {
-  display: inline;
-  line-height: 0.5;
+  display: inline-block;
   font-weight: bold;
   font-size: 0.8em;
   position: relative;
   bottom: 0.4em;
   text-decoration: none;
-  margin-inline: 2px;
+  margin-inline: 0.1rem;
+  padding-inline: 0.1rem;
   border-bottom: 1px solid;
 }
 
@@ -253,10 +253,13 @@ html:not(.light) .side-note {
 }
 
 .back-link {
+  display: inline-block;
   font-size: 0.75em;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: underline;
   border-bottom: 1px solid var(--yellow);
+  padding-inline: 0.1rem;
+  line-height: 1;
 }
 
