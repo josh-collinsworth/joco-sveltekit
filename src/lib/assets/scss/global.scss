@@ -72,3 +72,7 @@ body {
 :target {
 	scroll-margin-block: 2rem;
 }
+
+footer :target {
+	scroll-margin-block: 1rem;
+}
