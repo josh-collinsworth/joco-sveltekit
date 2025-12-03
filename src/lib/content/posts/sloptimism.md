@@ -196,9 +196,9 @@ And I can't shake the thought that I'm welcoming her into a world where so much 
 
 Technology in general has made things like stalking and abuse easier than ever. But AI goes even further. I live knowing AI will allow any creep with an internet connection to create deepfakes of her—up to and including pornography—without her consent or anyone else's, at barely the click of a button. (If this sounds like a horrifying, disturbed thought: it is! It absolutely is! But this is already happening to countless women, many of whom are _not_ adults.)
 
-To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid.
+To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing shoddy software faster?
 
-I guess I would have to hope and believe that my kids probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends.
+I guess I would have to hope and believe that my kids probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends. Live better places. Escape the dangers.
 
 Won't ever go on a date the wrong guy, or piss off the wrong girl.
 
