@@ -198,9 +198,13 @@ Technology in general has made things like stalking and abuse easier than ever. 
 
 To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing shoddy software faster?
 
-I guess I would have to hope and believe that my kids probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends. Live better places. Escape the dangers.
+I guess I would have to hope and believe that my kids probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends. Live better places.
 
 Won't ever go on a date the wrong guy, or piss off the wrong girl.
+
+Will escape the dangers.
+
+Be on the right side of the accelerated inequality.
 
 <CalloutPlusQuote>
 
