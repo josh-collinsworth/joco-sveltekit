@@ -210,9 +210,9 @@ AI optimism requires that you believe you and your loved ones are safe from AI.
 
 </CalloutPlusQuote>
 
-And broadly, that group can be defined as either those with the requisite class privileges to think of themselves as safe—or at least, those who _see themselves_ as belonging to that class.
+To see yourself as the passenger in the self-driving car, and not as the pedestrian it might run over.
 
-The ones who see themselves riding in the self-driving car, and not as the pedestrian it might run over.
+I don't know how you see yourself that way without a great deal of class privilege.
 
 The rest of us?
 
