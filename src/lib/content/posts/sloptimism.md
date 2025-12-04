@@ -92,7 +92,7 @@ I would be forced to ignore what _else_ my little coding buddy is getting up to 
 
 Let's take layoffs, as an example.
 
-In order to be an AI optimist, it seems to me you'd have to believe yours is not one of the jobs that risk being automated or downsized, and that you are not among the countless workers staring down displacement. After all, how could you feel enthusiastic about a threat to your own livelihood?
+In order to be an AI optimist, it seems to me you'd have to believe yours is not among the jobs that risk being automated or downsized, and that you aren't among the countless workers staring down displacement. After all, how could you feel enthusiastic about a threat to your own livelihood?<footnote>AI's ability to replace workers is overstated, it should be noted. It's can handle some tasks, of course, but workers do—and are—a great deal more than the sum of a task list, as some companies who have been forced to re-hire after layoffs have already discovered. Unfortunately, however, most executives still don't seem to be deterred from trying.</footnote>
 
 You'd need to be high enough in the org chart; far enough up the pyramid; advanced enough along the career ladder.
 
@@ -100,7 +100,7 @@ To be an AI optimist, I'm guessing you must not be worried about where your next
 
 Maybe it's because you've already made a name for yourself. Maybe you're known at conferences, or on podcasts. Maybe you're just senior enough that you don't need to worry about being hireable anymore; you can take that for granted.
 
-You definitely aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore. They're the first ones against the wall.
+You definitely aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore.<footnote>Trying to replace juniors with AI is a doubly perilous bet, because you have to believe it can not only replace your juniors now, but replace the seniors and beyond they'd eventually grow into, on top of taking over for your existing seniors when they move on and their positions need to be filled. I, for one, wouldn't want to make that bet.</footnote> They're the first ones against the wall.
 
 Seems fairly safe to assume you aren't in that group, if you're excited about what AI is doing.
 
