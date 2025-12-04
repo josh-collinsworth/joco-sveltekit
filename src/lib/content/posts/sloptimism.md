@@ -194,7 +194,7 @@ Technology in general has made things like stalking and abuse easier than ever. 
 
 If this sounds like a horrifying, disturbed thought: it is! It absolutely is! But this is already happening to countless women, many of whom are _not_ adults.
 
-To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software faster?<footnote>In this post, I write as though I accept the premise that AI makes you faster and/or more productive, for the sake of brevity. I do not, however, as there's growing evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place.</footnote>
+To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software faster?<footnote>I write as though I accept the premise that AI makes you more productive, for the sake of brevity. However, as there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
 
 I guess I would have to hope and believe that my children probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends. Better support systems.
 
