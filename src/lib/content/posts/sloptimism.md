@@ -40,7 +40,7 @@ I thought: oh no, we're building the perfect bullying tool.
 
 </CalloutPlusQuote>
 
-I was never exactly an optimist when it comes to AI. But that was the first time I realized exactly how bleak the future I foresaw actually was.
+I was never exactly an optimist when it comes to AI. But that was the first time I realized exactly how dark the future I foresaw actually was.
 
 ---
 
@@ -70,7 +70,7 @@ In fairness: that's not all AI optimists. I'm mostly describing the extreme ones
 
 Even among the more moderate optimists, though—the fairly ordinary people who just seem to like the tech—the enthusiasm has always seemed…disproportionate, let's say.
 
-It seemed perplexing to me that so many of my peers seemed so eager to be across the divide from me. They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
+It was always perplexing to me that so many of my peers seemed so eager to be across the divide from me. They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
 
 We were looking at the same tech, with the same outcomes, and drawing entirely different conclusions. What was I missing?
 
@@ -78,9 +78,9 @@ The answer eventually hit me:
 
 They see themselves as belonging to a different class than me.
 
-They see themselves as _safe_.
-
 They see themselves as the ones benefiting from AI, and not as the ones it might cost.
+
+They see themselves as _safe_.
 
 ---
 
@@ -108,7 +108,7 @@ Seems fairly safe to assume you aren't in that first group against the wall, if 
 
 You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized you and a million other people who do what you do.
 
-AI optimism probably means you're in a position where nobody is taking _your_ work, or tracking _your_ productivity, or trying to decide whether you deserve to keep _your_ job.
+AI optimism probably means you're in a position where nobody is stealing _your_ work, or trying to bulldoze _your_ entire career field.
 
 It probably means nobody is _forcing_ you to use AI—or especially, to _fix_ something AI-generated, as part of your job. You probably aren't watching a career you once enjoyed suddenly morph into something very different than what you signed up for, as you shift away from doing fulfilling work, and instead spend your days micro-managing an error-prone machine, laboriously correcting its unending mistakes.
 
@@ -140,7 +140,7 @@ It's hard to imagine how one could be optimistic about the technology empowering
 
 I doubt I could feel especially good about the tech helping me write emails faster if I knew that same tech was helping to make me, or people close to me, a target of violence.
 
-In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance to data and administrative work. It's even in the legal system.
+In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance tech to data and administrative work. It's even in the legal system.
 
 This obviously should've never happened, because not only do these models make mistakes at a rate that is utterly unacceptable in this context, they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) AI is also non-deterministic, and something of a black box, with little to no way to inspect, challenge, or appeal its results.
 
@@ -154,7 +154,7 @@ Or, at the very least: that it's all undeniably unfortunate, but ultimately, in 
 
 <CalloutPlusQuote>
 
-AI optimism requires you to see the lives of at least some of your fellow humans as worthwhile sacrifices.
+AI optimism requires you to see the lives of at least some of your fellow humans as worthwhile sacrifices; just bug reports in a backlog.
 
 </CalloutPlusQuote>
 
