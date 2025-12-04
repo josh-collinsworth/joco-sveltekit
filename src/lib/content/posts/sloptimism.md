@@ -102,9 +102,9 @@ To be an AI optimist, I'm guessing you must not be worried about where your next
 
 Maybe it's because you've already made a name for yourself. Maybe you're known at conferences, or on podcasts. Maybe you're just senior enough that you don't need to worry about being hireable anymore; you can take that for granted.
 
-You definitely aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore.<footnote>Trying to replace juniors with AI is a doubly perilous gamble, because you have to believe it can not only replace your juniors now, but replace the seniors they'd eventually grow into, on top of taking over for your existing seniors when they move on and their positions need to be filled. It's closing up the entire talent pipeline all at once. I, for one, wouldn't want to be responsible for that bet.</footnote> They're the first ones against the wall.
+You almost certainly aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore.<footnote>Trying to replace juniors with AI is a doubly perilous gamble, because you have to believe it can not only replace your juniors now, but replace the seniors they'd eventually grow into, on top of taking over for your existing seniors when they move on and their positions need to be filled. It's closing up the entire talent pipeline all at once. I, for one, wouldn't want to be responsible for that bet.</footnote>
 
-Seems fairly safe to assume you aren't in that group, if you're excited about what AI is doing.
+Seems fairly safe to assume you aren't in the first group against the wall, if you're excited about what AI is doing.
 
 You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized you and a million other people who do what you do.
 
@@ -112,9 +112,13 @@ AI optimism probably means you're in a position where nobody is taking _your_ wo
 
 It probably means nobody is _forcing_ you to use AI—or especially, to _fix_ something AI-generated, as part of your job. You probably aren't watching a career you once enjoyed suddenly morph into something very different than what you signed up for, as you shift away from doing fulfilling work, and instead spend your days micro-managing an error-prone machine, laboriously correcting its unending mistakes.
 
-To be an AI optimist, you're probably not a student anymore. Or, for that matter, a teacher. Because beyond wrecking the job market, AI is wrecking education, too.
+I guess it also probably means you're not a student anymore. Or, for that matter, a teacher. Because it's _bleak_ being in education right now, on either side.
 
-It's _bleak_ being in education right now, either as a student or a teacher. Thanks largely to AI, students are looking at the worst job market since 2008, and teachers, they tell us repeatedly and desperately, are working in the most difficult learning environment since 2020.
+Thanks largely to AI, students are looking at the worst job market since 2008, and teachers, they tell us repeatedly and desperately, are working in the most difficult learning environment since 2020.
+
+Not that other technologies haven't previously made teaching difficult, of course, or that AI is the sole cause of any of this. But I think it would be dishonest, and a disservice to both groups, to treat AI as merely another new flavor of distraction, when it seems like teachers everywhere are feverishly ringing alarm bells over what it's doing to their students and to their institutions.
+
+I guess to be optimistic about AI, I'd have to forget about all that. Which, admittedly, would be easier, now that I'm not a student _or_ a teacher anymore; now that both groups are merely abstract concepts, rather than people I know.
 
 <CalloutPlusQuote>
 
@@ -128,7 +132,7 @@ AI optimism requires believing that you (and your loved ones) are not among thos
 
 AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, reportedly causing rare cancers in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever the disaster might be, your house, in your neighborhood, will be safe from it. Probably far from it.
 
-Those people on the news? I guess you must assume you won't know them.
+Those people on the news? You won't know them.
 
 Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating more convincing disinformation than ever, faster than was ever previously possible.
 
@@ -164,8 +168,6 @@ AI isn't just harmful on its own; it's a force multiplier for existing harms.
 
 What sort of viewpoint must it take to see this as merely a negligible side effect? A worthy compromise for faster jpegs?
 
-I don't know. I only know there's no amount of productivity that could possibly be worth this price to me.
-
 ---
 
 Some might argue there's another reason for optimism about AI: simply, what it _could be_.
@@ -174,15 +176,15 @@ Forget what AI actually is _now_; the models will get better, the data centers m
 
 I take issue with these predictions for many reasons:
 
-1. They're predictions. Anyone can predict anything. Predictions may or may not come true. They often don't, and even when they do, the effect is often unpredictable. (Regardless: currently, such predictions are based on literally nothing but hype.)
+1. They're predictions. Anyone can predict anything. Predictions may or may not come true. They often don't, but even when events do go as forecasted, their effect is still often unpredictable. (Regardless: currently, such prognostications are based on literally nothing but hype.)
 
 2. Most of the world-altering promises center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and the human brain is eager to anthropomorphize anything that vaguely looks like human behavior.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields, and most of them say we still don't really understand the brain yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
 
-3. Many experts (including OpenAI's own researchers) tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
+3. Many ALLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
 
 4. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay (or less). It distributes risk to the many at the bottom, while consolidating benefit to the few at the top, and there has arguably never been a more efficient mechanism for this than AI.
 
-5. Besides, AI models exist in the consolidated hands of a precious few mega corporations, which are quite obviously giddy at the prospect of doing away with as many of their workers as they possibly can. I'm not sure I see how the theoretical future is being connected with the obvious current reality. AI will serve (and is already serving) corporate interests first and foremost, and will not serve user or public interest so much as an inch past where the two diverge.<footnote>If you don't believe the output of AI can be molded to fit the interests of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
+5. Besides, AI models exist in the consolidated hands of a precious few huge companies, which are quite obviously giddy at the prospect of doing away with as many of their own workers as they possibly can. I'm not sure I see how the theoretical future is being connected with the obvious current reality. AI will serve (and is already serving) corporate interests first and foremost, and will not serve other human interests so much as an inch past where the two diverge.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
 
 6. Regardless, even if you naively believe in the tech: you're _still_ willing to put up with all the harms and dangers of AI until that imagined potential future arrives—which brings us back to the original point.
 
