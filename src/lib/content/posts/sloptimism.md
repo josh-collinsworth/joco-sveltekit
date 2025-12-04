@@ -16,7 +16,7 @@ coverHeight: 9
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-A while back, in a slightly earlier era of AI<footnote>When I say “AI” in this post, what we’re really talking about is LLMs (large language models); AI is just the marketing term for LLMs that’s widely caught on—despite the fact that what “AI” was understood to mean prior to 2022 was a very different thing than LLMs, and a new term, “AGI,” has largely replaced it in that usage. But regardless, everyone says “AI” even though they really mean LLMs, so I will here, too.</footnote>, a project was making the rounds which would read your GitHub profile, and create a personalized roast based on the contents.
+A while back, in a slightly earlier era of AI<footnote>What I really mean when I say “AI” in this post is large language models (LLMs), like Claude and ChatGPT. I realize the war is over and the terms are widely considered interchangeable at this point, but since AI used to mean something else, the pedantic side of me always feels compelled to make this distinction.</footnote>, a project was making the rounds which would read your GitHub profile, and create a personalized roast based on the contents.
 
 It was intended, I assume, as a harmless, lighthearted novelty. I wanted to join in on the fun, so I put my profile in and tried it out.
 
