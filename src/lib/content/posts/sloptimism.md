@@ -150,7 +150,7 @@ Forgive me, but I can't imagine being excited that this technology accelerating 
 
 I have to imagine such excitement would require me to think none of this could happen to _me_, or to anybody who matters to me.
 
-Or, at the very least: that it's all undeniably unfortunate, but ultimately, in service to some greater good. Merely a bug to be ironed out.
+Or, at the very least: that it's all undeniably unfortunate, but ultimately, in service to some greater good. Merely a glitch to be ironed out.
 
 <CalloutPlusQuote>
 
