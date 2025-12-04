@@ -92,7 +92,7 @@ I would be forced to ignore what _else_ my little coding buddy is getting up to 
 
 Let's take layoffs, as an example.
 
-In order to be an AI optimist, it seems to me you'd have to believe yours is not among the jobs that risk being automated or downsized, and that you aren't among the countless workers staring down displacement. After all, how could you feel enthusiastic about a threat to your own livelihood?<footnote>AI's ability to replace workers is overstated, it should be noted. It's can handle some tasks, of course, but workers do—and are—a great deal more than the sum of a task list, as some companies who have been forced to re-hire after layoffs have already discovered. Unfortunately, however, most executives still don't seem to be deterred from trying.</footnote>
+In order to be an AI optimist, it seems to me you'd have to believe yours is not among the jobs that risk being automated or downsized, and that you aren't among the countless workers staring down displacement. After all, how could you feel enthusiastic about a threat to your own livelihood?<footnote>AI's ability to replace workers is overstated, it should be noted. It can handle some tasks, of course, but workers do—and are—a great deal more than the sum of a task list, as some companies who have been forced to re-hire after layoffs have already discovered. Unfortunately, however, most executives still don't seem to be deterred from trying.</footnote>
 
 You'd need to be high enough in the org chart; far enough up the pyramid; advanced enough along the career ladder.
 
@@ -130,7 +130,7 @@ Those people on the news? I guess you must assume you won't know them.
 
 Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating more convincing disinformation than ever, faster than was ever previously possible.
 
-I suppose being an optimist about this technology must mean you believe that ultimately won't affect you—or at the very least, it's a worthwhile tradeoff. Whoever those in power are going after, and whoever the victims of violence are, they won't be too close to you, writing your emails more efficiently than ever.
+It's hard to imagine how one could be optimistic about the technology powering all that, but I suppose knowing it probably won't affect you must help. Whoever those in power are going after, whatever group they're victimizing, it must be much easier to feel good about the tech helping you write emails faster if you don't see yourself among those people.
 
 AI is now (horrifyingly) being used in the legal system, too. From facial recognition to criminal justice, AI is increasingly being put in charge of deciding who is guilty and innocent, and what punishment those people might deserve.
 
