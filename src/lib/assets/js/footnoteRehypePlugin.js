@@ -29,7 +29,7 @@ export function myFootnoteRehypePlugin() {
 					.map((child, idx) => {
 						if (node?.children[idx - 1]?.value === '<footnote>') {
 							footnoteCounter++
-							annotations += `<li id="footnote-${footnoteCounter}">${child.value} <a href="#footnote-link-${footnoteCounter}" class="back-link" aria-label="Back to original location">${backUpArrowSVG}</a></li>`
+							annotations += `<li id="footnote-${footnoteCounter}" tabindex="-1">${child.value} <a href="#footnote-link-${footnoteCounter}" class="back-link" aria-label="Back to original location">${backUpArrowSVG}</a></li>`
 							return {
 								...child,
 								type: 'element',

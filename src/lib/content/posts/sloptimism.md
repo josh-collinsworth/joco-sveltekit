@@ -16,7 +16,7 @@ coverHeight: 9
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-A while back, in a slightly earlier era of AI<footnote>What I really mean when I say “AI” in this post is large language models (LLMs), like Claude and ChatGPT. I realize the war is over and the terms are widely considered interchangeable at this point, but since AI used to mean something else, the pedantic side of me always feels compelled to make this distinction.</footnote>, a project was making the rounds which would read your GitHub profile, and create a personalized roast based on the contents.
+A while back, in a slightly earlier era of AI<footnote>What I really mean when I say “AI” is large language models (LLMs), like Claude and ChatGPT. I realize the war is over and the terms are widely considered interchangeable at this point, but since AI originally meant something else—and since LLMs aren't actually intelligent—the pedantic side of me always feels compelled to make this distinction.</footnote>, a project was making the rounds which would read your GitHub profile, and create a personalized roast based on the contents.
 
 It was intended, I assume, as a harmless, lighthearted novelty. I wanted to join in on the fun, so I put my profile in and tried it out.
 
@@ -44,21 +44,21 @@ I was never exactly an optimist when it comes to AI. But that was the first time
 
 ---
 
-I ’ll use the term "AI optimist" a lot in this post because, while it might not be an entirely correct description of the general group I'm referring to, it's at least a serviceable label.
+I will use the term "AI optimist" a lot in this post because, while it might not be an entirely correct description of the general group I'm referring to, it's at least a serviceable label.
 
-That group, to be a bit more descriptive, is made up of people who are excited about AI, both now and in the future—but especially, are happy about the _current_ state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
+That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
 
 You almost certainly know at least one or two of these people. Maybe you even _are_ one. (If so: I'm not naive enough to think I'll change your mind with this post, but I hope I'll at least give you some things to think about.)
 
 It seems to me that to be in this group—to regard AI, as it exists currently, with optimism—requires at least a certain degree of class privilege. (Hence, the somewhat blunted title of this post.)
 
-I had long struggled to put that thought into words: _AI optimism is a class privilege_. But once it crystallized, I felt as though it shifted a great deal into perspective.
+I had long struggled to put that thought into words. But once it crystallized into that one titular sentence, I felt as though a great deal around me suddenly shifted into perspective.
 
 So, that's why I wrote this post; to share that perspective. It's mine, and you can take it (or not) as you like.
 
 ---
 
-It's late 2025, and so you don't need me to tell you how extreme opposing views on AI can be. _Everyone_ has an opinion of AI, and the overwhelming majority fall to one far end of the spectrum or the other. There's a vast divide between my so-called optimists and pessimists, each fiercely passionate in their own entirely opposite ways.
+It's late 2025, and so you don't need me to tell you how extreme opposing views on AI can be. _Everyone_ has an opinion of AI, and the overwhelming majority fall to one far end of the spectrum or the other. There's a vast divide between the sides, each fiercely passionate in their own entirely opposite ways.
 
 For my part, you can put me firmly on the pessimist side of the chasm, for many reasons. Some I'll get into here; others, I'll mostly pass over, as they've been well covered elsewhere.
 
@@ -70,7 +70,7 @@ In fairness: that's not all AI optimists. I'm mostly describing the extreme ones
 
 Even among the more moderate optimists, though—the fairly ordinary people who just seem to like the tech—the enthusiasm has always seemed…disproportionate, let's say.
 
-It seemed perplexing to me that so many of my peers seemed so eager to be on that other side of the divide. They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
+It seemed perplexing to me that so many of my peers seemed so eager to be across the divide from me. They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
 
 We were looking at the same tech, with the same outcomes, and drawing entirely different conclusions. What was I missing?
 
@@ -84,7 +84,7 @@ They see themselves as the ones benefiting from AI, and not as the ones it might
 
 ---
 
-I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. It's helpful for generating reference images to use as starting points for my illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own colorblindness. But mostly, it helps me with code.
+I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. It's helpful for generating reference images to use as starting points for my illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
 
 Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counterproductivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
