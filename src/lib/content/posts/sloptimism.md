@@ -118,7 +118,7 @@ Thanks largely to AI, students are looking at the worst job market since 2008, a
 
 Not that other technologies haven't previously made teaching difficult, of course, or that AI is the sole cause of any of this. But I think it would be dishonest, and a disservice to both groups, to treat AI as merely another new flavor of distraction, when it seems like teachers everywhere are feverishly ringing alarm bells over what it's doing to their students and to their institutions.
 
-I guess to be optimistic about AI, I'd have to forget about all that. Which, admittedly, would be easier, now that I'm not a student _or_ a teacher anymore; now that both groups are merely abstract concepts, rather than people I know.
+I guess to be optimistic about AI, I'd have to forget about all that. Which, admittedly, would be easier, now that I'm not a student _or_ a teacher anymore; now that both groups are merely abstract concepts, rather than groups I belong to, or that are filled with people I know.
 
 <CalloutPlusQuote>
 
