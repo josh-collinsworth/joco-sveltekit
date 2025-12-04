@@ -44,7 +44,7 @@ I was never exactly an optimist when it comes to AI. But that was the first time
 
 ---
 
-I will use the term "AI optimist" a lot in this post because, while it might not be an entirely correct description of the general group I'm referring to, it's at least a serviceable label.
+Although it's not an entirely correct description, I'll use the term "AI optimist" a lot in this post, as it's at least a serviceable label for a general group of people.
 
 That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
 
@@ -54,7 +54,7 @@ It seems to me that to be in this group—to regard AI, as it exists currently, 
 
 I had long struggled to put that thought into words. But once it crystallized into that one titular sentence, I felt as though a great deal around me suddenly shifted into perspective.
 
-So, that's why I wrote this post; to share that perspective. It's mine, and you can take it (or not) as you like.
+So, that's why I wrote this post; to share that perspective. It is my own, and it comes from my own experiences (and yes, through the lens of my own substantial privileges, class and otherwise). You can take it, or not, as you like.
 
 ---
 
