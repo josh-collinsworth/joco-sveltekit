@@ -134,17 +134,21 @@ AI optimism requires you to believe that, whoever will be impacted by the sprawl
 
 Those people on the news? You won't know them.
 
-Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating more convincing disinformation than ever, faster than was ever previously possible.
+Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating more convincing disinformation than ever, faster than was ever previously possible. Much of what's being produced dehumanizes and victimizes vulnerable groups, like immigrants and refugees.
 
-It's hard to imagine how one could be optimistic about the technology powering all that, but I suppose knowing it probably won't affect you must help. Whoever those in power are going after, whatever group they're victimizing, it must be much easier to feel good about the tech helping you write emails faster if you don't see yourself among those people.
+It's hard to imagine how one could be optimistic about the technology empowering such horrors, but I suppose knowing it probably won't affect you must help.
 
-AI is now (horrifyingly) being used in the legal system, too. From facial recognition to criminal justice, AI is increasingly being put in charge of deciding who is guilty and innocent, and what punishment those people might deserve.
+I doubt I could feel especially good about the tech helping me write emails faster if I knew that same tech was helping to make me, or somebody I love, a target of violence.
 
-This obviously should've never happened, because highly predictably, these models are very wrong a far-from-trivial percentage of the time, and racist even more often. (Tech is always a mirror of its creators.) This deployment of AI has already had utterly devastating impact on real people's lives.
+In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance to data and administrative work. It's even in the legal system.
 
-Forgive me, but I can't imagine being excited that this technology accelerating inequality is helping me save a little time on coding.
+This obviously should've never happened, because not only do these models make mistakes at a rate that is utterly unacceptable in this context, they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) AI is also non-deterministic, and something of a black box, with little to no way to inspect, challenge, or appeal its results.
 
-I have to imagine such excitement would require me to believe that couldn't happen to _me_, or to anybody who matters to me; that the system isn't made for _us_.
+Needless to say, this deployment of AI has already had profoundly devastating impact on real people's lives—damage which shows no signs of slowing.
+
+Forgive me, but I can't imagine being excited that this technology accelerating inequality is helping me save a little time on writing code.
+
+I have to imagine such excitement would require me to think none of this could happen to _me_, or to anybody who matters to me.
 
 Or, at the very least: that it's all undeniably unfortunate, but ultimately, in service to some greater good. Merely a bug to be ironed out.
 
@@ -158,15 +162,17 @@ AI optimism requires you to see the lives of at least some of your fellow humans
 
 The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies and systems, it's exacerbating their existing problems, and accelerating the damage they're doing.
 
-I've already touched on propaganda, disinformation, and the justice system. Those are easy examples, but the tech is being used for rampant harm even when there's not necessarily any broader intent or purpose behind it.
+I've already touched on propaganda, disinformation, and the criminal justice system. Those are easy examples, but the tech is being used for rampant harm even when there's not necessarily any broader intent or purpose behind it.
 
 Recently, for example, Facebook was flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. That content generated engagement, and that engagement generated more of the same content.
 
-Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine working out the most effective way to farm engagement will decide to make videos of vulnerable people (like immigrants, from one recent real example) being horrifically brutalized.
+Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine built to provoke a reaction will inevitably hit paydirt in the horrifying, the traumatizing, and the unacceptable.
 
 AI isn't just harmful on its own; it's a force multiplier for existing harms.
 
 What sort of viewpoint must it take to see this as merely a negligible side effect? A worthy compromise for faster jpegs?
+
+How can I possibly feel positive about supporting the companies enabling all of this? About giving them my money, to help them keep on doing things just like these?
 
 ---
 
