@@ -32,7 +32,7 @@ Despite knowing this was all a soulless (and as it turns out, humorless) machine
 
 And that was the first time I remember thinking about what AI was going to do to my _children_.
 
-If I—a grown man with thick skin, hardened by decades of internet usage—could be susceptible to highly personalized online bullying, what will it be like for my son, when some mean kid inevitably gets their hands on this technology and decides to put it to malicious use?
+If I—a grown man with thick skin, hardened by decades of internet usage—can still be susceptible to highly personalized online bullying, what will it be like for my son, when some mean kid inevitably gets their hands on this technology and decides to put it to malicious use?
 
 <CalloutPlusQuote>
 
@@ -79,6 +79,8 @@ The answer eventually hit me:
 They see themselves as belonging to a different class than me.
 
 They see themselves as _safe_.
+
+They see themselves as the ones benefiting from AI, and not as the ones it might cost.
 
 ---
 
