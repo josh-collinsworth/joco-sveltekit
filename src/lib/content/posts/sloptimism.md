@@ -104,7 +104,7 @@ Maybe it's because you've already made a name for yourself. Maybe you're known a
 
 You almost certainly aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore.<footnote>Trying to replace juniors with AI is a doubly perilous gamble, because you have to believe it can not only replace your juniors now, but replace the seniors they'd eventually grow into, on top of taking over for your existing seniors when they move on and their positions need to be filled. It's closing up the entire talent pipeline all at once. I, for one, wouldn't want to be responsible for that bet.</footnote>
 
-Seems fairly safe to assume you aren't in the first group against the wall, if you're excited about what AI is doing.
+Seems fairly safe to assume you aren't in the first group against the wall, if you're excited about the thing putting them there.
 
 You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized you and a million other people who do what you do.
 
