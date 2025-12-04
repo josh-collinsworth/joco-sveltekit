@@ -134,7 +134,7 @@ AI optimism requires you to believe that, whoever will be impacted by the sprawl
 
 Those people on the news? You won't know them.
 
-Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating more convincing disinformation than ever, faster than was ever previously possible. Much of what's being produced dehumanizes and victimizes vulnerable groups, like immigrants and refugees.
+Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating disinformation that's more convincing than ever, faster than ever previously possible. Much of what's being produced dehumanizes and victimizes vulnerable groups, like immigrants, refugees, trans people, and political dissidents.
 
 It's hard to imagine how one could be optimistic about the technology empowering such horrors, but I suppose knowing it probably won't affect you must help.
 
