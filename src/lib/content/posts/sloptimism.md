@@ -138,7 +138,7 @@ Malicious state actors are wielding AI as a ruthlessly efficient propaganda mach
 
 It's hard to imagine how one could be optimistic about the technology empowering such horrors, but I suppose knowing it probably won't affect you must help.
 
-I doubt I could feel especially good about the tech helping me write emails faster if I knew that same tech was helping to make me, or somebody I love, a target of violence.
+I doubt I could feel especially good about the tech helping me write emails faster if I knew that same tech was helping to make me, or people close to me, a target of violence.
 
 In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance to data and administrative work. It's even in the legal system.
 
