@@ -170,11 +170,9 @@ Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a
 
 AI isn't just harmful on its own; it's a force multiplier for existing harms.
 
-What sort of viewpoint must it take to see this as merely a negligible side effect? A worthy compromise for faster jpegs?
+What sort of viewpoint must it take to see this as merely a negligible side effect?
 
-How can I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, and giving them my money, to help them keep on doing things just like these?
-
-These questions are rhetorical, of course. By now, you know the answer.
+How can I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, to help them keep on doing things just like these, just so I can vibe-code some app I probably could've just built myself anyway?
 
 ---
 
@@ -190,7 +188,7 @@ I take issue with these predictions for many reasons:
 
 3. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
 
-4. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay (or less). It distributes risk to the many at the bottom, while consolidating benefit to the few at the top, and there has arguably never been a more efficient mechanism for this than AI. If you become twice as productive, you don't get twice the pay or twice the time off; you just get twice the workload.
+4. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay (or less). If you become twice as productive, you don't get twice the pay or twice the time off; you just get twice the workload. This sort of technology distributes risk to the many at the bottom, while consolidating benefit at the top—and there has arguably never been a more efficient mechanism for this than AI.
 
 5. Besides, AI models exist in the consolidated hands of a precious few huge companies, which are quite obviously giddy at the prospect of doing away with as many of their own workers as they possibly can. I'm not sure I see how the theoretical future is being connected with the obvious current reality. AI will serve (and is already serving) corporate interests first and foremost, and will not serve other human interests so much as an inch past where the two diverge.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
 
