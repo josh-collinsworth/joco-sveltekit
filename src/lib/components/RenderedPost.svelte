@@ -153,9 +153,9 @@
 		.meta + *:not(p) + p::first-letter,
 		.meta + *:not(p) + *:not(p) + p::first-letter,
 		hr + p::first-letter {
-			font-size: 3.5em;
+			font-size: 3.3em;
 			float: left;
-			line-height: 0.7em;
+			line-height: 0.7;
 			margin: 0.35rem 0.3rem 0 -0.125rem;
 			color: inherit;
 			font-weight: bold;
