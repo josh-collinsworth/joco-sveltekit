@@ -34,9 +34,15 @@ And that was the first time I remember thinking about what AI was going to do to
 
 If I—a grown man with thick skin, hardened by decades of internet usage—can still be susceptible to highly personalized online bullying, what will it be like for my son, when some mean kid inevitably gets their hands on this technology and decides to put it to malicious use?
 
+By the time my kids encounter real bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example (either of his target, or of other people, aimed at that target).
+
+Imagine the shame, the intimidation, the harassment, and the trauma that would enable in a middle school or high school—if it even takes that long.
+
+Imagine how absolutely unmitigable the damage would be.
+
 <CalloutPlusQuote>
 
-I thought: oh no, we're building the perfect bullying tool.
+My reaction wasn't laughter; my reaction was horror at the realization that we're racing to build the perfect bullying tool.
 
 </CalloutPlusQuote>
 
@@ -204,13 +210,15 @@ My final example, like the one from the opening of this post, is a personal one:
 
 I began writing this post before she was born, and, mostly because of her, I'm now finishing it up several weeks later. And I can't shake the thought that I'm welcoming her into a world where so much of the potential malicious misuse of AI could one day be directed at her.
 
-Technology in general has made things like stalking and abuse easier than ever. But AI goes even further. I live knowing AI will allow any creep with an internet connection to create deepfakes of her—up to and including pornography—without any consent, at barely the click of a button.
+Technology in general has made things like stalking and abuse easier than ever. But AI goes even further. I live knowing AI will allow any degenerate pervert with an internet connection to create deepfakes of this little girl—up to and including pornography—without any consent, at barely the click of a button.
 
-If this sounds like a horrifying, disturbed thought: it is! It absolutely is! But this is already happening to countless women, many of whom are _not_ adults.
+If this sounds like a horrifying, disturbed thought: it is! _It absolutely is_! But I'm not coming up with this on my own; this is already happening to countless women, many of whom are _not_ adults.
 
 To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software faster?<footnote>I write as though I accept the premise that AI makes you more productive, for the sake of brevity. However, as there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
 
-I guess I would have to hope and believe that my children probably won't experience this. Maybe they'll be in better schools. Better neighborhoods. Have better friends. Better support systems.
+Optimism would require me to believe that my children probably won't run afoul of that kind of experience, or any others I've described here.
+
+That they'll be in better schools. Better neighborhoods. Have better friends. Better support systems.
 
 Won't ever go on a date the wrong guy, or piss off the wrong girl.
 
