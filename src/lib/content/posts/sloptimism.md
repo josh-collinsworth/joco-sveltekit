@@ -118,7 +118,7 @@ Thanks largely to AI, students are looking at the worst job market since 2008, a
 
 Not that other technologies haven't previously made teaching difficult, of course, or that AI is the sole cause of any of this. But I think it would be dishonest, and a disservice to both groups, to treat AI as merely another new flavor of distraction, when it seems like teachers everywhere are feverishly ringing alarm bells over what it's doing to their students and to their institutions.
 
-I guess to be optimistic about AI, I'd have to forget about all that. Which, admittedly, would be easier, now that I'm not a student _or_ a teacher anymore; now that both groups are merely abstract concepts, rather than groups I belong to, or that are filled with people I know.
+I guess to be optimistic about AI, I'd have to forget about all that. Which, admittedly, would be easier, now that I'm not a student _or_ a teacher anymore; now that both groups are merely abstract crowds of strangers, rather than groups I belong to, or that include people I know.
 
 <CalloutPlusQuote>
 
@@ -130,7 +130,7 @@ AI optimism requires believing that you (and your loved ones) are not among thos
 
 (Not to put too fine a point on it, but: those things are otherwise known as privileges.)
 
-AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, reportedly causing rare cancers in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever the disaster might be, your house, in your neighborhood, will be safe from it. Probably far from it.
+AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, potentially causing rare cancers and miscarriages in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever the disaster might be, your house, in your neighborhood, will be safe from it. Probably far from it.
 
 Those people on the news? You won't know them.
 
@@ -138,7 +138,7 @@ Malicious state actors are wielding AI as a ruthlessly efficient propaganda mach
 
 It's hard to imagine how one could be optimistic about the technology empowering such horrors, but I suppose knowing it probably won't affect you must help.
 
-I doubt I could feel especially good about the tech helping me write emails faster if I knew that same tech was helping to make me, or people close to me, a target of violence.
+I doubt I could feel very good about the tech helping me write emails faster if I knew that same tech was helping to make me, or people close to me, a target of violence.
 
 In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance tech to data and administrative work. It's even in the legal system.
 
@@ -172,7 +172,9 @@ AI isn't just harmful on its own; it's a force multiplier for existing harms.
 
 What sort of viewpoint must it take to see this as merely a negligible side effect? A worthy compromise for faster jpegs?
 
-How can I possibly feel positive about supporting the companies enabling all of this? About giving them my money, to help them keep on doing things just like these?
+How can I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, and giving them my money, to help them keep on doing things just like these?
+
+These questions are rhetorical, of course. By now, you know the answer.
 
 ---
 
