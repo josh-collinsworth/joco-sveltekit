@@ -178,7 +178,7 @@ AI isn't just harmful on its own; it's a force multiplier for existing harms.
 
 What sort of viewpoint must it take to see this as merely a negligible side effect?
 
-How can I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, to help them keep on doing things just like these, just so I can vibe-code some app I probably could've just built myself anyway?
+How could I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, to help them keep on doing things just like these, just so I can vibe-code some app I probably could've just built myself anyway?
 
 ---
 
