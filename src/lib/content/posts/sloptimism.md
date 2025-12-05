@@ -82,15 +82,13 @@ We were looking at the same tech, with the same outcomes, and drawing entirely d
 
 The answer eventually hit me:
 
-They see themselves as belonging to a different class than me.
-
 They see themselves as the ones benefiting from AI, and not as the ones it might cost.
 
-They see themselves as _safe_.
+They see themselves in a class of people who are _safe_.
 
 ---
 
-I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. It's helpful for generating reference images to use as starting points for my illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
+I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. I find it helpful for generating reference images to use as starting points for illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
 
 Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counterproductivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
@@ -110,7 +108,11 @@ Maybe it's because you've already made a name for yourself. Maybe you're known a
 
 You almost certainly aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore.<footnote>Trying to replace juniors with AI is a doubly perilous gamble, because you have to believe it can not only replace your juniors now, but replace the seniors they'd eventually grow into, on top of taking over for your existing seniors when they move on and their positions need to be filled. It's closing up the entire talent pipeline all at once. I, for one, wouldn't want to be responsible for that bet.</footnote>
 
-Seems fairly safe to assume you aren't in that first group against the wall, if you're excited about the thing putting them there.
+<CalloutPlusQuote>
+
+It seems fairly safe to assume you aren't in the first group against the wall, if you're excited about the thing putting them there.
+
+</CalloutPlusQuote>
 
 You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized you and a million other people who do what you do.
 
@@ -122,7 +124,7 @@ I guess it also probably means you're not a student anymore. Or, for that matter
 
 Thanks largely to AI, students are looking at the worst job market since 2008, and teachers, they tell us repeatedly and desperately, are working in the most difficult learning environment since 2020.
 
-Not that other technologies haven't previously made teaching difficult, of course, or that AI is the sole cause of any of this. But I think it would be dishonest, and a disservice to both groups, to treat AI as merely another new flavor of distraction, when it seems like teachers everywhere are feverishly ringing alarm bells over what it's doing to their students and to their institutions.
+Not that other technologies haven't previously made either position difficult, of course, or that AI is the sole cause of any of this. But I think it would be dishonest, and a disservice to both groups, to treat AI as merely another new flavor of distraction and disruption, when it seems like teachers everywhere are feverishly ringing alarm bells over what it's doing to their students and to their institutions.
 
 I guess to be optimistic about AI, I'd have to forget about all that. Which, admittedly, would be easier, now that I'm not a student _or_ a teacher anymore; now that both groups are merely abstract crowds of strangers, rather than groups I belong to, or that include people I know.
 
@@ -138,7 +140,7 @@ AI optimism requires believing that you (and your loved ones) are not among thos
 
 AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, potentially causing rare cancers and miscarriages in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever the disaster might be, your house, in your neighborhood, will be safe from it. Probably far from it.
 
-Those people on the news? You won't know them.
+Those people on the news? You won't know them, probably.
 
 Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating disinformation that's more convincing than ever, faster than ever previously possible. Much of what's being produced dehumanizes and victimizes vulnerable groups, like immigrants, refugees, trans people, and political dissidents.
 
@@ -166,7 +168,7 @@ AI optimism requires you to see the lives of at least some of your fellow humans
 
 ---
 
-The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies and systems, it's exacerbating their existing problems, and accelerating the damage they're doing.
+The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies and systems, it's exacerbating their existing problems, and accelerating damage already being done.
 
 I've already touched on propaganda, disinformation, and the criminal justice system. Those are easy examples, but the tech is being used for rampant harm even when there's not necessarily any broader intent or purpose behind it.
 
@@ -174,7 +176,7 @@ Recently, for example, Facebook was flooded with AI-generated videos of women be
 
 Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine built to provoke a reaction will inevitably hit paydirt in the horrifying, the traumatizing, and the unacceptable.
 
-AI isn't just harmful on its own; it's a force multiplier for existing harms.
+AI isn't just harmful on its own; it's a force multiplier for existing harms (like algorithms designed for engagement, rather than for safety).
 
 What sort of viewpoint must it take to see this as merely a negligible side effect?
 
