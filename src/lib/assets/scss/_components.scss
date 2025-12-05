@@ -214,13 +214,13 @@ html:not(.light) .side-note {
 .footnote-link {
   display: inline-block;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.7rem;
   position: relative;
-  bottom: 0.4em;
+  bottom: 0.5em;
   text-decoration: none;
-  margin-inline: 0.1rem;
+  margin-inline-start: 0.2rem;
   padding-inline: 0.1rem;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--neutral-light);
 }
 
 .footnote-annotations {
