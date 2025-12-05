@@ -34,9 +34,9 @@ And that was the first time I remember thinking about what AI was going to do to
 
 If I—a grown man with thick skin, hardened by decades of internet usage—can still be susceptible to highly personalized online bullying, what will it be like for my son, when some mean kid inevitably gets their hands on this technology and decides to put it to malicious use?
 
-By the time my kids encounter real bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example (either of his target, or of other people, aimed at that target).
+By the time my kids encounter _real_ bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example (either of his target, or of other people, aimed at that target).
 
-Imagine the shame, the intimidation, the harassment, and the trauma that would enable in a middle school or high school—if it even takes that long.
+Imagine the shame, intimidation, harassment, and trauma AI might enable a cruel middle-schooler or high-schooler to inflict (if it even takes that long).
 
 Imagine how absolutely unmitigable the damage would be.
 
@@ -194,7 +194,7 @@ I take issue with these predictions for many reasons:
 
 2. Most of the world-altering promises center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and the human brain is eager to anthropomorphize anything that vaguely looks like human behavior. Language is not cognition, and neither is statistics.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields, and most of them say we still don't really understand the brain yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
 
-3. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
+3. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.))
 
 4. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay or less.
 
@@ -202,7 +202,7 @@ I take issue with these predictions for many reasons:
 
   This sort of technology distributes risk to the many at the bottom, while consolidating benefit at the top—and there has arguably never been a more efficient mechanism for this than AI. I see absolutely no reason to believe this time will be different, _especially_ because:
 
-5. AI models exist in the consolidated hands of a precious few huge companies, which are themselves quite obviously giddy at the prospect of doing away with as many of their own workers as they possibly can. AI will serve, and is already serving, corporate interests first and foremost—_especially_ as these models continue to replace core infrastructure, like web search, and can steer users and manipulate information as the companies behind them please.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
+5. AI models exist in the consolidated hands of a precious few huge companies, which are themselves quite obviously happy to do away with as many of their own workers as they possibly can. AI will serve, and is already serving, corporate interests first and foremost—_especially_ as these models continue to replace core infrastructure, like web search, and can be manipulated however the companies please.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
 
 6. Regardless, even if you naively believe in the tech: you're _still_ willing to put up with all the harms and dangers of AI until that imagined potential future arrives—which brings us back to the original point.
 
@@ -212,7 +212,7 @@ My final example, like the one from the opening of this post, is a personal one:
 
 I began writing this post before she was born, and, mostly because of her, I'm now finishing it up several weeks later. And I can't shake the thought that I'm welcoming her into a world where so much of the potential malicious misuse of AI could one day be directed at her.
 
-Technology in general has made things like stalking and abuse easier than ever. But AI goes even further. I live knowing AI will allow any degenerate pervert with an internet connection to create deepfakes of this little girl—up to and including pornography—without any consent, at barely the click of a button.
+Technology in general has made things like stalking and abuse easier than ever. But AI goes even further. I live knowing AI will allow any degenerate pervert with an internet connection to create deepfakes of this little girl—up to and including pornography—without any consent at all, at barely the click of a button.
 
 If this sounds like a horrifying, disturbed thought: it is! _It absolutely is_! But I'm not coming up with this on my own; this is already happening to countless women, many of whom are _not_ adults.
 
