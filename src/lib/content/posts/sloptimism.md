@@ -214,7 +214,7 @@ I guess I would have to hope and believe that my children probably won't experie
 
 Won't ever go on a date the wrong guy, or piss off the wrong girl.
 
-Won't live in the wrong places. Won't ever find themselves on the wrong side of the system.
+Won't live in the wrong places. Won't ever find themselves in the wrong part of the system.
 
 Won't end up on the wrong side of the accelerated inequality.
 
