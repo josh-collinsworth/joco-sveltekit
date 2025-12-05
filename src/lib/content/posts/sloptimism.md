@@ -154,7 +154,7 @@ Or, at the very least: that it's all undeniably unfortunate, but ultimately, in 
 
 <CalloutPlusQuote>
 
-AI optimism requires you to see the lives of at least some of your fellow humans as worthwhile sacrifices; just bug reports in a backlog.
+AI optimism requires you to see the lives of at least some of your fellow humans as worthwhile sacrifices; bug reports in a backlog.
 
 </CalloutPlusQuote>
 
