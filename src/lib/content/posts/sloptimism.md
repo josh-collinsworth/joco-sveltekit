@@ -116,9 +116,9 @@ It seems fairly safe to assume you aren't in the first group against the wall, i
 
 You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized you and a million other people who do what you do.
 
-AI optimism probably means you're in a position where nobody is stealing _your_ work, or trying to bulldoze _your_ entire career field.
+AI optimism probably means you're in a position where nobody is stealing _your_ work, or bulldozing _your_ entire career field.
 
-It probably means nobody is _forcing_ you to use AI—or especially, to _fix_ something AI-generated, as part of your job. You probably aren't watching a career you once enjoyed suddenly morph into something very different than what you signed up for, as you shift away from doing fulfilling work, and instead spend your days micro-managing an error-prone machine, laboriously correcting its unending mistakes.
+It probably means nobody is _forcing_ you to use AI—or especially, to fix something AI-generated, as part of your job. You probably aren't watching a career you once enjoyed suddenly morph into something very different than what you signed up for, as you shift away from doing fulfilling work, and instead spend your days micro-managing an error-prone machine, laboriously correcting its unending mistakes.
 
 I guess it also probably means you're not a student anymore. Or, for that matter, a teacher. Because it's _bleak_ being in education right now, on either side.
 
@@ -138,11 +138,9 @@ AI optimism requires believing that you (and your loved ones) are not among thos
 
 (Not to put too fine a point on it, but: those things are otherwise known as privileges.)
 
-AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, potentially causing rare cancers and miscarriages in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever the disaster might be, your house, in your neighborhood, will be safe from it. Probably far from it.
+AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, potentially causing rare cancers and miscarriages in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever disaster might happen, your house, in your neighborhood, will be safe from it. Probably far from it.
 
-Those people on the news? You won't know them, probably.
-
-Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating disinformation that's more convincing than ever, faster than ever previously possible. Much of what's being produced dehumanizes and victimizes vulnerable groups, like immigrants, refugees, trans people, and political dissidents.
+Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating disinformation that's more convincing than ever, faster than ever previously possible. Much of what's being produced dehumanizes and victimizes vulnerable groups, like immigrants, refugees, queer people, and political dissidents.
 
 It's hard to imagine how one could be optimistic about the technology empowering such horrors, but I suppose knowing it probably won't affect you must help.
 
@@ -150,7 +148,7 @@ I doubt I could feel very good about the tech helping me write emails faster if 
 
 In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance tech to data and administrative work. It's even in the legal system.
 
-This obviously should've never happened, because not only do these models make mistakes at a rate that is utterly unacceptable in this context, they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) AI is also non-deterministic, and something of a black box, with little to no way to inspect, challenge, or appeal its results.
+This obviously should've never happened, because not only do these models make mistakes at a rate that is utterly unacceptable in that context, they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) Compounding this problem, AI is non-deterministic, and something of a black box, offering little to no way to inspect, challenge, or appeal its results.
 
 Needless to say, this deployment of AI has already had profoundly devastating impact on real people's lives—damage which shows no signs of slowing.
 
