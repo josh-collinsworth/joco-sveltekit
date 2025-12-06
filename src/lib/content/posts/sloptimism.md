@@ -34,11 +34,13 @@ And that was the first time I remember thinking about what AI was going to do to
 
 If I—a grown man with thick skin, hardened by decades of internet usage—can still be susceptible to highly personalized online bullying, what will it be like for my son, when some mean kid inevitably gets their hands on this technology and decides to put it to malicious use?
 
-By the time my kids encounter _real_ bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example (either of his target, or of other people, aimed at that target).
+By the time my kids encounter _real_ bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example.
 
 Imagine the shame, intimidation, harassment, and trauma AI might enable a cruel middle-schooler or high-schooler to inflict (if it even takes that long).
 
 Imagine how absolutely unmitigable the damage would be.
+
+(You don't actually have to imagine it; it's already happening.)
 
 <CalloutPlusQuote>
 
@@ -52,11 +54,11 @@ I was never exactly an optimist when it comes to AI. But that was the first time
 
 Although it's not an entirely correct description, I'll use the term "AI optimist" a lot in this post, as it's at least a serviceable label for a general group of people.
 
-That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
+That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ and near-term state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
 
 You almost certainly know at least one or two of these people. Maybe you even _are_ one. (If so: I'm not naive enough to think I'll change your mind with this post, but I hope I'll at least give you some things to think about.)
 
-It seems to me that to be in this group—to regard AI, as it exists currently, with optimism—requires at least a certain degree of class privilege. (Hence, the somewhat blunted title of this post.)
+It seems to me that to be in this group—to regard AI, as it exists currently, with optimism—requires at least a certain degree of class privilege. Hence, the somewhat blunted title of this post.
 
 I had long struggled to put that thought into words. But once it crystallized into that one titular sentence, I felt as though a great deal around me suddenly shifted into perspective.
 
@@ -66,7 +68,7 @@ So, that's why I wrote this post; to share that perspective. It is my own, and i
 
 It's late 2025, and so you don't need me to tell you how extreme opposing views on AI can be. _Everyone_ has an opinion of AI, and the overwhelming majority fall to one far end of the spectrum or the other. There's a vast divide between the sides, each fiercely passionate in their own entirely opposite ways.
 
-For my part, you can put me firmly on the pessimist side of the chasm, for many reasons. Some I'll get into here; others, I'll mostly pass over, as they've been well covered elsewhere.
+For my part, I'm decidedly on the pessimist side of the chasm, for many reasons. Some I'll get into here; others, I'll mostly pass over, as they've been well covered elsewhere.
 
 But for now, suffice to say: when I look around me at the impact AI is _currently_ having, I see little reason for enthusiasm—let alone the little-questioned, quasi-religious belief that this fundamentally flawed technology will one day soon bring about some sort of economic, societal, and/or scientific revolution all on its own.
 
@@ -154,9 +156,11 @@ Needless to say, this deployment of AI has already had profoundly devastating im
 
 Forgive me, but I can't imagine being excited that this technology accelerating inequality is helping me save a little time on writing code.
 
+I can't fathom an AI agent enabling a level of efficiency that would make me happy to trade this scale of societal destruction for it.
+
 I have to imagine such excitement would require me to think none of this could happen to _me_, or to anybody who matters to me.
 
-Or, at the very least: that it's all undeniably unfortunate, but ultimately, in service to some greater good. Merely a glitch to be ironed out.
+Or, at the very least: that it's all undeniably unfortunate, but ultimately, in service to some greater good. A justifiable tradeoff; a glitch to be ironed out.
 
 <CalloutPlusQuote>
 
