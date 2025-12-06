@@ -227,13 +227,13 @@ If this sounds like a horrifying, disturbed thought: it is! _It absolutely is_! 
 
 To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software faster?<footnote>I write as though I accept the premise that AI makes you more productive, for the sake of brevity. However, as there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
 
-Optimism would require me to believe that my children probably won't run afoul of that kind of experience, or any others I've described here.
+Optimism would require me to believe that my children probably won't have that kind of experience, or any others I've described here.
 
-That they'll be in better schools. Better neighborhoods. Have better friends. Better support systems.
+To believe they'll be in better schools. Better neighborhoods. Have better friends. Better support systems.
 
-Won't ever go on a date the wrong guy, or piss off the wrong girl.
+Won't ever attract the attention of the wrong guy, or piss off the wrong girl.
 
-Won't live in the wrong places. Won't ever find themselves in the wrong part of the system.
+Won't ever live in the wrong places. Won't ever find themselves in the wrong part of the system.
 
 Won't end up on the wrong side of the accelerated inequality.
 
