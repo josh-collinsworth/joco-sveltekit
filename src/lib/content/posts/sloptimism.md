@@ -188,7 +188,7 @@ Forget what AI actually is _now_; the models will get better, the data centers m
 
 I take issue with these predictions for several reasons:
 
-1. While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate most of the harms. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
+1. While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate most of these harms. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
 
 2. I'm wary of predictions in general,<footnote>Anyone can predict anything. I predict this post will win the Pulitzer. There, see?</footnote> but particularly those that bear little to no resemblance to observed
  reality. Absent a clear evidential link, prediction tends to be based purely on hype and speculation, and there's a wild overabundance of both around AI.
@@ -225,7 +225,7 @@ Technology in general has made things like stalking and abuse easier than ever. 
 
 If this sounds like a horrifying, disturbed thought: it is! _It absolutely is_! But I'm not coming up with this on my own; this is already happening to countless women, many of whom are _not_ adults.
 
-To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software faster?<footnote>I write as though I accept the premise that AI makes you more productive, for the sake of brevity. However, as there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
+To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software a little faster?<footnote>I write as though I accept the premise that AI makes you more productive, for the sake of brevity. However, as there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
 
 Optimism would require me to believe that my children probably won't have that kind of experience, or any others I've described here.
 
