@@ -1,7 +1,7 @@
 ---
 title: "AI optimism is a class privilege"
 date: '2025-12-03'
-updated: '2025-12-05'
+updated: '2025-12-06'
 categories:
   - opinion
 excerpt: "Along the vast divide between AI optimists and pessimists, the main factor in determining which side you fall on may be where you see yourself in the future: above the effects of AI, or beneath them."
@@ -186,14 +186,14 @@ How could I possibly feel fine—let alone _positive_—about supporting the com
 
 Some might argue I'm missing the entire point here, by focusing so much on the present. Optimism isn't about the present, they might say; it's about the future!
 
-Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, until we have something that changes the world for the better; an actual benevolent technology that solves our problems, in whatever way. Maybe it even is, or leads to, "AGI" (actual human-level artificial intelligence; the thing “AI” used to mean before 2022).
+Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, until we have something that changes the world for the better; an actual benevolent technology that solves our problems, in whatever way. Maybe it even is, or leads to, AGI (actual human-level artificial intelligence; the thing AI used to mean before 2022).
 
 I take issue with these predictions for several reasons:
 
 1. While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate most of the harms. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
 
 2. I'm wary of predictions in general,<footnote>Anyone can predict anything. I predict this post will win the Pulitzer. There, see?</footnote> but particularly those that bear little to no resemblance to observed
- reality. Absent a clear evidential link, prediction tends to be based purely on hype and speculation, and there's a wild overabundance of both around AI. 
+ reality. Absent a clear evidential link, prediction tends to be based purely on hype and speculation, and there's a wild overabundance of both around AI.
 
   It seems reasonable to believe the tech will improve; I have a much harder time believing it might suddenly change into something new, develop presently impossible capabilities, or take us somewhere far distant with absolutely no clear path or connection between here and there.
 
@@ -213,11 +213,13 @@ I take issue with these predictions for several reasons:
 
 Finally, let me take a moment to address anyone who might be thinking: _sure, AI is being used for some bad things, but I'm not personally using it that way. What's wrong with me just focusing on the good parts and enjoying the benefits to me_?
 
-My friend, you are literally describing privilege.
+My friend, that's privilege. You are literally describing privilege.
 
 ---
 
-My final example, like the one from the opening of this post, is a personal one: I have a newborn daughter.
+Let me close this post the same way it began; with a personal example from my own family.
+
+I have a newborn daughter.
 
 I began writing this post before she was born, and, mostly because of her, I'm now finishing it up several weeks later. And I can't shake the thought that I'm welcoming her into a world where so much of the potential malicious misuse of AI could one day be directed at her.
 
