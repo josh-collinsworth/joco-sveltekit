@@ -184,27 +184,29 @@ How could I possibly feel fine—let alone _positive_—about supporting the com
 
 ---
 
-Some might argue there's another reason for optimism about AI: simply, what it _could be_.
+Some might argue I'm missing the entire point here. That optimism isn't about the present; it's about the future!
 
-Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the mistakes rarer, the harms mitigated, and so on, the argument goes, until we have something that truly changes the world for the better; an actual benevolent technology that elevates human existence, in whatever way. Maybe it even leads to "AGI" (actual human-level artificial intelligence; the thing “AI” used to mean before 2022).
+Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, the argument goes, until we have something that truly changes the world for the better; an actual benevolent technology that elevates human existence, in whatever way. Maybe it even leads to "AGI" (actual human-level artificial intelligence; the thing “AI” used to mean before 2022).
 
-I take issue with these predictions for many reasons:
+I take issue with these predictions, for many reasons:
 
-1. They're predictions. Anyone can predict anything. Predictions may or may not come true. They often don't, but even when events do go as forecasted, their effect is still often unpredictable. (Regardless: currently, such prognostications are based on literally nothing but hype.)
+1. While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate many of the harms we've touched on here. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
 
-2. Most of the world-altering promises center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and the human brain is eager to anthropomorphize anything that vaguely looks like human behavior. Language is not cognition, and neither is statistics.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields, and most of them say we still don't really understand the brain yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
+2. I'm wary of predictions in general (anyone can predict anything. I predict this post will win the Pulitzer. There, see?), but I'm particularly wary of predictions that bear little to no resemblance to present reality. These tend to be based purely on hype and speculation, and there's presently an overabundance of both. I can buy the tech improving; I have a much harder time believing it might suddenly change into something new, develop presently impossible capabilities, or take us somewhere there's absolutely no clear path to right now.
 
-3. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.))
+3. Most of the world-altering promises center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and the human brain is eager to anthropomorphize anything that vaguely looks like human behavior. Language is not cognition, and neither is statistics.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields, and most of them say we still don't really understand the brain yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
 
-4. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay or less.
+4. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.))
+
+5. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay or less.
 
   If you become twice as productive, you don't get twice the pay or twice the time off; you just get twice the workload (likely because somebody else doing the same job just got laid off, and now you're doing their work, too).
 
   This sort of technology distributes risk to the many at the bottom, while consolidating benefit at the top—and there has arguably never been a more efficient mechanism for this than AI. I see absolutely no reason to believe this time will be different, _especially_ because:
 
-5. AI models exist in the consolidated hands of a precious few huge companies, which are themselves quite obviously happy to do away with as many of their own workers as they possibly can. AI will serve, and is already serving, corporate interests first and foremost—_especially_ as these models continue to replace core infrastructure, like web search, and can be manipulated however the companies please.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
+6. AI models exist in the consolidated hands of a precious few huge companies, which are themselves quite obviously happy to do away with as many of their own workers as they possibly can. AI will serve, and is already serving, corporate interests first and foremost—_especially_ as these models continue to replace core infrastructure, like web search, and can be manipulated however the companies please.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
 
-6. Regardless, even if you naively believe in the tech: you're _still_ willing to put up with all the harms and dangers of AI until that imagined potential future arrives—which brings us back to the original point.
+7. Regardless, even if you naively believe in the tech: you're _still_ willing to put up with all the harms and dangers of AI until that imagined potential future arrives—which brings us back to the original point.
 
 ---
 
