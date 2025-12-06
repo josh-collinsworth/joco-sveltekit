@@ -172,7 +172,7 @@ AI optimism requires you to see the lives of at least some of your fellow humans
 
 The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies and systems, it's exacerbating their existing problems, and accelerating damage already being done.
 
-I've already touched on propaganda, disinformation, and the criminal justice system. Those are easy examples, but the tech is being used for rampant harm even when there's not necessarily any broader intent or purpose behind it.
+I've already touched on propaganda, disinformation, and the criminal justice system. Those are easy examples. Scams and criminal activity might be another; AI is incredibly useful to criminals. But the tech is being used for rampant harm even when there's not necessarily any broader malicious intent behind it.
 
 Recently, for example, Facebook was flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. That content generated engagement, and that engagement generated more of the same content.
 
