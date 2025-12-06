@@ -184,19 +184,19 @@ How could I possibly feel fine—let alone _positive_—about supporting the com
 
 ---
 
-Some might argue I'm missing the entire point here. That optimism isn't about the present; it's about the future!
+Some might argue I'm missing the entire point here, by focusing so much on the present. Optimism isn't about the present, they might say; it's about the future!
 
-Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, the argument goes, until we have something that truly changes the world for the better; an actual benevolent technology that elevates human existence, in whatever way. Maybe it even leads to "AGI" (actual human-level artificial intelligence; the thing “AI” used to mean before 2022).
+Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, the argument goes, until we have something that changes the world for the better; an actual benevolent technology that elevates human existence, in whatever way. Maybe it even is, or leads to, "AGI" (actual human-level artificial intelligence; the thing “AI” used to mean before 2022).
 
 I take issue with these predictions, for many reasons:
 
-1. While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate many of the harms we've touched on here. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
+1. While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate many of the harms mentioned above. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
 
-2. I'm wary of predictions in general (anyone can predict anything. I predict this post will win the Pulitzer. There, see?), but I'm particularly wary of predictions that bear little to no resemblance to present reality. These tend to be based purely on hype and speculation, and there's presently an overabundance of both. I can buy the tech improving; I have a much harder time believing it might suddenly change into something new, develop presently impossible capabilities, or take us somewhere there's absolutely no clear path to right now.
+2. I'm wary of predictions in general,<footnote>Anyone can predict anything. I predict this post will win the Pulitzer. There, see?</footnote> but particularly those that bear little to no resemblance to present reality. These tend to be based purely on hype and speculation, and there's a wild overabundance of both around AI. It seems reasonable to believe the tech will improve; I have a much harder time believing it might suddenly change into something new, develop presently impossible capabilities, or take us somewhere we're nowhere near and to which there's absolutely no clear path.
 
 3. Most of the world-altering promises center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and the human brain is eager to anthropomorphize anything that vaguely looks like human behavior. Language is not cognition, and neither is statistics.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields, and most of them say we still don't really understand the brain yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
 
-4. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.))
+4. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
 
 5. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay or less.
 
