@@ -201,11 +201,11 @@ I take issue with these predictions for several reasons:
 
 4. Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, and that it's literally impossible to stop them from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
 
-5. _Literally no new technology in history has ever worked this way_. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay or less.
+5. Even if we ignore all the technical limitations, or find ways around them: new advancements simply don't work that way. (The equitable, worker-liberating way, that is.) They never have. Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay or less.
 
   If you become twice as productive, you don't get twice the pay or twice the time off; you just get twice the workload (likely because somebody else doing the same job just got laid off, and now you're doing their work, too).
 
-  This sort of technology distributes risk to the many at the bottom, while consolidating benefit at the top—and there has arguably never been a more efficient mechanism for this than AI. I see absolutely no reason to believe this time will be different, _especially_ because:
+  This sort of technology distributes instability to the many at the bottom, while consolidating benefit at the top—and there has arguably never been a more efficient mechanism for this than AI. I see absolutely no reason to believe this time will be different, _especially_ because:
 
 6. AI models exist in the consolidated hands of a precious few huge companies, which are themselves quite obviously happy to do away with as many of their own workers as they possibly can. AI will serve, and is already serving, corporate interests first and foremost—_especially_ as these models continue to replace core infrastructure, like web search, and can be manipulated however the companies please.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
 
