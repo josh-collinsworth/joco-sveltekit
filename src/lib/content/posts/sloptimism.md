@@ -208,6 +208,10 @@ I take issue with these predictions, for many reasons:
 
 7. Regardless, even if you naively believe in the tech: you're _still_ willing to put up with all the harms and dangers of AI until that imagined potential future arrives—which brings us back to the original point.
 
+Finally, let me take a moment to address anyone who might be thinking: _sure, AI is being used for some bad things, but I'm not personally using it that way. What's wrong with me just focusing on the good parts and enjoying the benefits to me_?
+
+My friend, you are literally describing privilege.
+
 ---
 
 My final example, like the one from the opening of this post, is a personal one: I have a newborn daughter.
