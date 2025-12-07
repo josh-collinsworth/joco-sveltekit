@@ -36,7 +36,7 @@ And that was the first time I remember thinking about what AI was going to do to
 
 If I—a grown man with thick skin, hardened by decades of internet usage—can still be susceptible to highly personalized online bullying, what will it be like for my son, when some mean kid inevitably gets their hands on this technology and decides to put it to malicious use?
 
-By the time my kids encounter _real_ bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example. Forget the days of starting a nasty rumor and spreading it around the school; now you can make a video of it happening.
+By the time my kids encounter _real_ bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example. Forget the days of starting a nasty rumor and spreading it around the school; now you can share a video of it happening.
 
 Imagine the shame, intimidation, harassment, and trauma AI might enable a cruel juvenile to inflict—_particularly_ once the tech has had another few years to improve.<footnote>You don't actually have to imagine this; it's already happening.</footnote>
 
