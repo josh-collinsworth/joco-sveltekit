@@ -154,9 +154,7 @@ This obviously should've never happened, because not only do these models make m
 
 Needless to say, this deployment of AI has already had profoundly devastating impact on real people's lives—damage which shows no signs of slowing.
 
-Forgive me, but I can't imagine being excited that this technology accelerating inequality is helping me save a little time on writing code.
-
-I can't fathom an AI agent enabling a level of efficiency that would make me happy to trade this scale of societal destruction for it.
+Forgive me, but I can't imagine being excited that this technology which is rapidly accelerating inequality is also helping me save a little time on writing code.
 
 I have to imagine such excitement would require me to think none of this could happen to _me_, or to anybody who matters to me.
 
@@ -172,7 +170,7 @@ AI optimism requires you to see the lives of at least some of your fellow humans
 
 The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies and systems, it's exacerbating their existing problems, and accelerating damage already being done.
 
-I've already touched on propaganda, disinformation, and the criminal justice system. Those are easy examples. Scams and fraud are another; AI is incredibly useful to criminals and con artists. But the tech is being used for rampant harm even when there's not necessarily any broader malicious intent behind it.
+I've already touched on propaganda, disinformation, and the criminal justice system. Those are easy examples. Scams and fraud are another; AI is incredibly useful to criminals and con artists. But the tech is being used for rampant harm even when there's not necessarily any broader intent behind it, malicious or otherwise.
 
 Recently, for example, Facebook was flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. That content generated engagement, and that engagement generated more of the same content.
 
