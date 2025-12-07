@@ -4,6 +4,7 @@ date: '2025-11-09'
 updated: '2025-11-26'
 categories:
   - opinion
+  - AI
 excerpt: "Some thoughts on attempts to create gold out of nothing, and how generative AI, in many ways, mirrors that doomed pursuit"
 coverImage: "alchemy.jpg"
 coverWidth: 1980

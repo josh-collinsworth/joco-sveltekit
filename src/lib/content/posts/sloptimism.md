@@ -4,6 +4,8 @@ date: '2025-12-03'
 updated: '2025-12-07'
 categories:
   - opinion
+  - personal
+  - AI
 excerpt: "Along the vast divide between AI optimists and pessimists, the main factor in determining which side you fall on may be where you see yourself in society: above the effects of AI, or beneath them."
 coverImage: 'slop.jpg'
 coverWidth: 16

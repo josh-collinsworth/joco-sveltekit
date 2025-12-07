@@ -5,6 +5,7 @@ updated: '2024-2-15'
 categories:
   - 'opinion'
   - 'a11y'
+  - 'AI'
 coverImage: 'copilot/copilot.webp'
 coverWidth: 16
 coverHeight: 9
