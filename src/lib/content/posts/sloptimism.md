@@ -221,7 +221,7 @@ I take issue with these predictions, for several reasons:
 
 Some might also point to positive use cases for AI. Accessibility is a popular one. (In fact, it's _so_ popular that online AI apologists have realized all they need to do is invoke the word "ableist" to shut down any discussion.)
 
-Yes, there are good use cases for AI. I don't think most reasonable people would argue with that. Like I said: I sometimes even use it myself, to compensate for my own physical inability. But calling out such cases tends to be a bad-faith attempt to justify all of AI's other harms by _using_ disabled people and others who might benefit from AI, rather than reckoning with the damage and rethinking our deployment of AI in order to maximize good and minimize harm for _everyone_.
+Yes, there are good use cases for AI. I don't think most reasonable people would argue with that. Like I said: I sometimes even use it myself, to compensate for my own physical inability. But calling out such cases tends to be a bad-faith attempt to justify all of AI's other harms by _using_ disabled people and others who might benefit from AI, rather than reckoning with the damage and rethinking our deployment of AI in order to maximize good and minimize harm for _everyone_. We don't have to accept every use of AI and all of its impacts just because some of them might be beneficial.
 
 Finally, let me take a moment to address anyone who might be thinking: _sure, AI is being used for some bad things, but I'm not personally using it that way. What's wrong with me just focusing on the good parts and enjoying the benefits to me_?
 
