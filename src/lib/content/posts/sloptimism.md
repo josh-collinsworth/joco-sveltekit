@@ -156,11 +156,11 @@ I doubt I could feel very good about the tech helping me write emails faster if 
 
 Even when the intent might be good, however, AI often amplifies existing harms.
 
-In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance tech to data and administrative work. It's even in the legal system.
+In the rush to shove AI into everything possible, we've now injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance tech to data and administrative work. It's even in the legal system.
 
-In theory, this is an efficiency boost. In _theory_, a machine is more just than biased humans.
+In theory, this is an efficiency boost. In _theory_, a machine should be less biased than humans.
 
-In reality, it should've never happened, because not only do these models make mistakes at a rate that is utterly unacceptable in this context; they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) Compounding this problem, AI is non-deterministic, and something of a black box, offering little to no way to inspect, challenge, or appeal its results.
+In reality, not only do these models make mistakes at a rate that is utterly unacceptable in this context; they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) Compounding this problem, AI is non-deterministic, and something of a black box, offering little to no way to inspect, challenge, or appeal its results.
 
 Needless to say, this deployment of AI has already had profoundly devastating impact on real people's lives—damage which shows no signs of slowing.
 
