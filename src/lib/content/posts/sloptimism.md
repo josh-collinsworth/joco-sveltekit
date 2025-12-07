@@ -4,7 +4,7 @@ date: '2025-12-03'
 updated: '2025-12-07'
 categories:
   - opinion
-excerpt: "Along the vast divide between AI optimists and pessimists, the main factor in determining which side you fall on may be where you see yourself in the future: above the effects of AI, or beneath them."
+excerpt: "Along the vast divide between AI optimists and pessimists, the main factor in determining which side you fall on may be where you see yourself in society: above the effects of AI, or beneath them."
 coverImage: 'slop.jpg'
 coverWidth: 16
 coverHeight: 9
@@ -16,7 +16,7 @@ coverHeight: 9
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-A while back, in a slightly earlier era of AI<footnote>What I really mean when I say “AI” is large language models (LLMs), like Claude and ChatGPT. I realize the war is over and the terms are widely considered interchangeable at this point, but since AI originally meant something else—and since LLMs aren't actually intelligent—the pedantic side of me always feels compelled to make this distinction.</footnote>, a project was making the rounds which would read your GitHub profile, and create a personalized roast based on the contents.
+A while back, in a slightly earlier era of AI<footnote>What I really mean when I say “AI” is large language models (LLMs), like ChatGPT, Claude, Gemini, Copilot, etc. I realize the war is over and the terms are widely considered interchangeable at this point, but since AI originally meant something else—and since LLMs aren't actually intelligent—the pedantic side of me always feels compelled to make this distinction.</footnote>, a project was making the rounds which would read your GitHub profile, and create a personalized roast based on the contents.
 
 It was intended, I assume, as a harmless, lighthearted novelty. I wanted to join in on the fun, so I put my profile in and tried it out.
 
@@ -52,13 +52,13 @@ I was never exactly an optimist when it comes to AI. But that was the first time
 
 Although it's not an entirely correct description, I'll use the term "AI optimist" a lot in this post, as it's at least a serviceable label for a general group of people.
 
-That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ and near-term state of AI. That part's important. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
+That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ and near-term state of AI. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
 
 You almost certainly know at least one or two of these people. Maybe you even _are_ one. (If so: I'm not naive enough to think I'll change your mind with this post, but I hope I'll at least give you some things to think about.)
 
-It seems to me that to be in this group—to regard AI, as it exists currently, with optimism—requires at least a certain degree of class privilege. Hence, the somewhat blunted title of this post.
+It seems to me that to be in this group—to regard AI, as it exists currently, with optimism and enthusiasm—requires at least a certain degree of class privilege. Hence, the somewhat blunted title of this post.
 
-I had long struggled to put that thought into words. But once it crystallized into that one titular sentence, I felt as though a great deal around me suddenly shifted into perspective.
+I had long struggled to put the thought into words. But once it crystallized into this post's titular sentence, I felt as though a great deal around me suddenly shifted into perspective.
 
 So, that's why I wrote this post; to share that perspective. It is my own, and it comes from my own experiences (and yes, through the lens of my own substantial privileges, class and otherwise). You can take it, or not, as you like.
 
@@ -176,19 +176,19 @@ AI optimism requires you to see the lives of at least some of your fellow humans
 
 </CalloutPlusQuote>
 
-But even when there's no larger system behind it, and even with no broader goal or agenda at all, malicious or otherwise: AI can still amplify existing harms.
+But even when there's no larger system behind it, and even with no broader goal or agenda at all—malicious or otherwise—AI can still amplify existing harms.
 
 One example at the top of my mind: Facebook was recently flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. That content generated engagement, and that engagement generated more of the same content.
 
-Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine built to provoke a reaction will inevitably hit paydirt in the horrifying, the traumatizing, and the unacceptable.
+A similar thing happened recently on TikTok, but this time it was videos of immigrants being ruthlessly brutalized that struck a nerve and triggered a proliferation of objectionable content across the platform.
+
+Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine built to provoke a reaction will inevitably hit paydirt in the horrifying, the traumatizing, the inhumane, and the unacceptable.
 
 AI isn't just harmful on its own; it's a force multiplier for existing harms. The intent behind it, if one even exists, is irrelevant; the impact is the same.
 
-What sort of viewpoint must it take to see all of this as merely a negligible side effect? Just the cost of business?
+The question is: what sort of viewpoint must it take to see all of this as merely a negligible side effect? Just the cost of business?
 
-How could I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, to help them keep on doing things just like these, just so I can…what, talk with a chatbot? Have a digital assistant on my phone?
-
-Vibe-code some app I probably could've just built myself anyway?
+What would vibe coding need to accomplish, in order to make all of this seem worth it?
 
 ---
 
@@ -196,18 +196,18 @@ Some might argue I'm missing the entire point here, by focusing so much on the p
 
 Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, until we have something that changes the world for the better; an actual benevolent technology that solves our problems, in whatever way. Maybe it even is, or leads to, AGI (actual human-level artificial intelligence; the thing AI used to mean before 2022).
 
-I take issue with these predictions for several reasons:
+I take issue with these predictions, for several reasons:
 
 - While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate most of these harms. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
 
 - I'm wary of predictions in general,<footnote>Anyone can predict anything. I predict this post will win the Pulitzer. There, see?</footnote> but particularly those that bear little to no resemblance to observed
  reality. Absent a clear evidential link, prediction tends to be based purely on hype and speculation, and there's a wild overabundance of both around AI.
 
-  It seems reasonable to believe the tech will improve; I have a much harder time believing it might suddenly change into something new, develop presently impossible capabilities, or take us somewhere far distant with absolutely no clear path or connection between here and there.
+  It's reasonable to believe the tech will improve. It seems much less reasonable to think it might suddenly change into something new, develop presently impossible capabilities, or take us somewhere far distant with absolutely no clear path or connection between here and there.
 
 - Most of the utopian visions of AI center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and our human brains are overly eager to anthropomorphize anything that vaguely imitates human behavior. Thinking and reasoning are very different than statistically emulating communication.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields—like neuroscience, for example—and most of them say we still don't really understand the brain yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
 
-- Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, thanks in large part to the exhaustion of training data that is not already tainted with AI content. They also tell us it's literally impossible to stop LLMs from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
+- Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, thanks in no small part to the exhaustion of training data that is not already tainted with AI content. They also tell us it's literally impossible to stop LLMs from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
 
 - Even if we ignore all the technical limitations, or find ways around them: new advancements simply don't work that way. They never have. (The equitable, worker-liberating way, that is.) Tech doesn't free workers; it forces them to do more in the same amount of time, for the same rate of pay or less.
 
@@ -221,7 +221,7 @@ I take issue with these predictions for several reasons:
 
 Some might also point to positive use cases for AI. Accessibility is a popular one. (In fact, it's _so_ popular that online AI apologists have realized all they need to do is invoke the word "ableist" to shut down any discussion.)
 
-Yes, there are good use cases for AI. I don't think most reasonable people would argue with that. Like I said: I sometimes even use it myself, to compensate for my own physical inability. But calling this out tends to be a bad-faith attempt to justify all of AI's other harms by _using_ disabled people and others who might benefit from AI, rather than reckoning with the damage and rethinking our deployment of AI in order to maximize good and minimize harm for _everyone_.
+Yes, there are good use cases for AI. I don't think most reasonable people would argue with that. Like I said: I sometimes even use it myself, to compensate for my own physical inability. But calling out such cases tends to be a bad-faith attempt to justify all of AI's other harms by _using_ disabled people and others who might benefit from AI, rather than reckoning with the damage and rethinking our deployment of AI in order to maximize good and minimize harm for _everyone_.
 
 Finally, let me take a moment to address anyone who might be thinking: _sure, AI is being used for some bad things, but I'm not personally using it that way. What's wrong with me just focusing on the good parts and enjoying the benefits to me_?
 
@@ -233,7 +233,7 @@ Let me close this post the same way it began; with a personal example from my ow
 
 I have a newborn daughter.
 
-I began writing this post before she was born, and, mostly because of her, I'm now finishing it up several weeks later. (I've fit most of this writing into her nap schedule.)
+I began writing this post before she was born, and mostly because of her, I'm now finishing it up several weeks later. (I've fit most of this writing into her nap schedule, typing as she sleeps beside me.)
 
 And I can't shake the thought that I'm welcoming her into a world where so much of the potential malicious misuse of AI could one day be directed at her.
 
@@ -241,7 +241,7 @@ Looking beyond all the things we've already talked about: technology in general 
 
 If this sounds like a horrifying, disturbed thought: it is! _It absolutely is_! But I'm not coming up with this on my own; this is already happening to untold numbers of women, many of whom are school-aged girls.
 
-To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software a little faster?<footnote>I write as though I accept the premise that AI makes you more productive, for the sake of brevity. However, there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
+To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software a little faster?<footnote>For the sake of brevity, I write as though I accept the premise that AI provides a productivity boost. However, there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
 
 Optimism would require me to believe that my children probably won't have that kind of experience, or any others I've described here.
 
