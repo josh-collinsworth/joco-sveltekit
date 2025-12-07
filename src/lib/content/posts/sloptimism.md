@@ -241,7 +241,7 @@ Looking beyond all the things we've already talked about: technology in general 
 
 If this sounds like a horrifying, disturbed thought: it is! _It absolutely is_! But I'm not coming up with this on my own; this is already happening to untold numbers of women, many of whom are school-aged girls.
 
-To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid in exchange for…what? Writing software a little faster?<footnote>For the sake of brevity, I write as though I accept the premise that AI provides a productivity boost. However, there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
+To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid (hopefully by somebody else) in exchange for…what? Writing software a little bit faster?<footnote>For the sake of brevity, I write as though I accept the premise that AI provides a productivity boost. However, there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
 
 Optimism would require me to believe that my children probably won't have that kind of experience, or any others I've described here.
 
@@ -263,4 +263,4 @@ I don't know how you see yourself that way without a great deal of class privile
 
 The rest of us?
 
-I guess it's hard to see the convenience as worth the price, when you know you could be among the ones paying for it.
+I guess it's hard to see the convenience as worth the price—let alone exciting—when you know you could be among the ones paying for it.
