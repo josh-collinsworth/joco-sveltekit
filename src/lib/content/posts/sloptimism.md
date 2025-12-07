@@ -1,7 +1,7 @@
 ---
 title: "AI optimism is a class privilege"
 date: '2025-12-03'
-updated: '2025-12-06'
+updated: '2025-12-07'
 categories:
   - opinion
 excerpt: "Along the vast divide between AI optimists and pessimists, the main factor in determining which side you fall on may be where you see yourself in the future: above the effects of AI, or beneath them."
@@ -36,11 +36,9 @@ If I—a grown man with thick skin, hardened by decades of internet usage—can 
 
 By the time my kids encounter _real_ bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example.
 
-Imagine the shame, intimidation, harassment, and trauma AI might enable a cruel middle-schooler or high-schooler to inflict (if it even takes that long).
+Imagine the shame, intimidation, harassment, and trauma AI might enable a cruel middle-schooler or high-schooler to inflict—_particularly_ once the tech has had another few years to improve.
 
 Imagine how absolutely unmitigable the damage would be.
-
-(You don't actually have to imagine it; it's already happening.)
 
 <CalloutPlusQuote>
 
