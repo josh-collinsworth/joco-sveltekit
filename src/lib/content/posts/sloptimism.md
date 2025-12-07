@@ -108,6 +108,8 @@ To be an AI optimist, I'm guessing you must not be worried about where your next
 
 Maybe it's because you've already made a name for yourself. Maybe you're known at conferences, or on podcasts. Maybe you're just senior enough that you don't need to worry about being hireable anymore; you can take that for granted.
 
+Maybe this is all a lot easier to be optimistic about when you're looking at charts and graphs in a meeting.
+
 You almost certainly aren't a junior, though, or an intern, or somebody trying to break into the field. You must not be near the rising tide engulfing entry-level workers across my industry and a wide range of others. Because, infamously, _nobody_ is hiring juniors anymore.<footnote>Trying to replace juniors with AI is a doubly perilous gamble, because you have to believe it can not only replace your juniors now, but replace the seniors they'd eventually grow into, on top of taking over for your existing seniors when they move on and their positions need to be filled. It's closing up the entire talent pipeline all at once. I, for one, wouldn't want to be responsible for that bet.</footnote>
 
 <CalloutPlusQuote>
