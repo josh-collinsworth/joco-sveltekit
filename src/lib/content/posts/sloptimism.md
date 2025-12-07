@@ -90,7 +90,7 @@ They see themselves in a class of people who are _safe_.
 
 I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. I find it helpful for generating reference images to use as starting points for illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
 
-Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counterproductivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
+Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counter-productivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
 In order to be an AI optimist about this, however: that's where I would have to stop thinking about it.
 
@@ -140,15 +140,27 @@ AI optimism requires believing that you (and your loved ones) are not among thos
 
 AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, potentially causing rare cancers and miscarriages in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever disaster might happen, your house, in your neighborhood, will be safe from it. Probably far from it.
 
-Malicious state actors are wielding AI as a ruthlessly efficient propaganda machine, disseminating disinformation that's more convincing than ever, faster than ever previously possible. Much of what's being produced dehumanizes and victimizes vulnerable groups, like immigrants, refugees, queer people, and political dissidents.
+---
+
+The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies, systems, and parts of society, it's exacerbating their existing problems, and accelerating damage already being done elsewhere.
+
+I have to believe scammers are enthusiastic about AI; there's likely never been a more helpful tool for fraud. Criminals and con artists have always been around, of course, but they've never had such powerful instruments at their disposal. It's much easier to rob somebody's unsuspecting grandma when you can simply make a video of them out of thin air, or perfectly imitate their voice on a phone call.<footnote>Not to perpetuate the stereotype; everybody is vulnerable, and even the most tech-savvy people I know have fallen victim to sophisticated scams.</footnote>
+
+But that's a relatively small scale of harms, aimed at individuals. The larger harms generally come from AI interacting with _systems_, like governments and their substructures.
+
+Malicious state actors (both in and outside of the US) are wielding AI as a ruthlessly efficient propaganda machine, disseminating disinformation that's more convincing than ever, faster than ever previously possible. Much of what's being produced serves to dehumanize and victimize vulnerable groups, like immigrants, refugees, queer people, and political dissidents. Mainly (but not exclusively), this is to bolster authoritarian power.
 
 It's hard to imagine how one could be optimistic about the technology empowering such horrors, but I suppose knowing it probably won't affect you must help.
 
 I doubt I could feel very good about the tech helping me write emails faster if I knew that same tech was helping to make me, or people close to me, a target of violence.
 
+Even when the intent might be good, however, AI often amplifies existing harms.
+
 In the rush to shove AI into everything possible, we've now horrifyingly injected it into parts of the justice system, too. It's in everything from facial recognition and surveillance tech to data and administrative work. It's even in the legal system.
 
-This obviously should've never happened, because not only do these models make mistakes at a rate that is utterly unacceptable in that context, they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) Compounding this problem, AI is non-deterministic, and something of a black box, offering little to no way to inspect, challenge, or appeal its results.
+In theory, this is an efficiency boost. In _theory_, a machine is more just than biased humans.
+
+In reality, it should've never happened, because not only do these models make mistakes at a rate that is utterly unacceptable in this context; they mimic and amplify the inherent racism present in their own training data. (Tech is always a mirror of its creators; it is never neutral.) Compounding this problem, AI is non-deterministic, and something of a black box, offering little to no way to inspect, challenge, or appeal its results.
 
 Needless to say, this deployment of AI has already had profoundly devastating impact on real people's lives—damage which shows no signs of slowing.
 
@@ -164,21 +176,19 @@ AI optimism requires you to see the lives of at least some of your fellow humans
 
 </CalloutPlusQuote>
 
----
+But even when there's no larger system behind it, and even with no broader goal or agenda _at all_, malicious or otherwise, AI can still amplify existing harms.
 
-The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies and systems, it's exacerbating their existing problems, and accelerating damage already being done.
-
-I've already touched on propaganda, disinformation, and the criminal justice system. Those are easy examples. Scams and fraud are another; AI is incredibly useful to criminals and con artists. But the tech is being used for rampant harm even when there's not necessarily any broader intent behind it, malicious or otherwise.
-
-Recently, for example, Facebook was flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. That content generated engagement, and that engagement generated more of the same content.
+One example at the top of my mind: Facebook was recently flooded with AI-generated videos of women being violently strangled. There was no apparent deeper purpose behind this horrifying wave of misogynistic terrorism, however; it just happened to be what the algorithm rewarded. That content generated engagement, and that engagement generated more of the same content.
 
 Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine built to provoke a reaction will inevitably hit paydirt in the horrifying, the traumatizing, and the unacceptable.
 
-AI isn't just harmful on its own; it's a force multiplier for existing harms (like algorithms designed for engagement, rather than for safety).
+AI isn't just harmful on its own; it's a force multiplier for existing harms. The intent behind it, if one even exists, is irrelevant; the impact is the same.
 
-What sort of viewpoint must it take to see this as merely a negligible side effect?
+What sort of viewpoint must it take to see all this as merely a negligible side effect? Just the cost of business?
 
-How could I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, to help them keep on doing things just like these, just so I can vibe-code some app I probably could've just built myself anyway?
+How could I possibly feel fine—let alone _positive_—about supporting the companies enabling all of this, to help them keep on doing things just like these, just so we can…what, have chatbots? Talk with my phone?
+
+Vibe-code some app I probably could've just built myself anyway?
 
 ---
 
@@ -208,6 +218,10 @@ I take issue with these predictions for several reasons:
 6. AI models exist in the consolidated hands of a precious few huge companies, which are themselves quite obviously happy to do away with as many of their own workers as they possibly can. AI will serve, and is already serving, corporate interests first and foremost—_especially_ as these models continue to replace core infrastructure, like web search, and can be manipulated however the companies please.<footnote>If you don't believe the output of AI can be molded to fit the agenda of a single person or corporation, I encourage you to have a look at what Grok has been up to lately.</footnote>
 
 7. Regardless, even if you naively believe in the tech: you're _still_ willing to put up with all the harms and dangers of AI until that imagined potential future arrives—which brings us back to the original point.
+
+Some might also point to positive use cases for AI; accessibility is a popular one. (In fact, it's _so_ popular that online AI apologists have realized all they need to do is invoke the word "ableist" to shut down any discussion.)
+
+Yes, there are good use cases for AI. I don't think most reasonable people would argue that. Like I said: I myself use it to compensate for my own physical disability. But "this does some good" is not the same as "this does no harm," and these arguments tend to be bad-faith attempts to force us to look the other way, rather than reckon with the damage and rethink our deployment of AI in order to do the most good and the least harm.
 
 Finally, let me take a moment to address anyone who might be thinking: _sure, AI is being used for some bad things, but I'm not personally using it that way. What's wrong with me just focusing on the good parts and enjoying the benefits to me_?
 
