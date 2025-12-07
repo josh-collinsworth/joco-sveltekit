@@ -38,7 +38,7 @@ If I—a grown man with thick skin, hardened by decades of internet usage—can 
 
 By the time my kids encounter _real_ bullying, I'm sure derogatory jokes will be about the _least_ harmful form of antagonism AI will be empowering. Imagine the damage one bad kid could cause using deepfakes, for example. Forget the days of starting a nasty rumor and spreading it around the school; now you can share a video of it happening.
 
-Imagine the shame, intimidation, harassment, and trauma AI might enable a cruel juvenile to inflict—_particularly_ once the tech has had another few years to improve.<footnote>You don't actually have to imagine this; it's already happening.</footnote>
+Imagine the shame, intimidation, harassment, and trauma AI might enable a cruel juvenile to inflict—_particularly_ once the tech has had another few years to improve.
 
 Imagine how absolutely unmitigable the damage would be.
 
