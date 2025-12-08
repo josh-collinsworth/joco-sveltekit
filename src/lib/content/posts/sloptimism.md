@@ -94,7 +94,15 @@ I concede AI can occasionally be helpful for certain tasks, and I can understand
 
 I sometimes find AI helpful for generating reference images to use as starting points for illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
 
-(_For those interested in the mundane details: I mostly only use the code completion suggestions in VS Code, even though they're pretty hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion. That's pretty much it. Every time I've tried giving AI more responsibility, it's let me down spectacularly. I am deeply skeptical that AI offers much of a measurable net productivity boost in general, and that it's actually capable of good frontend code in particular. But that's mostly a moot point anyway, because even if I'm completely wrong, my issues with AI go much, much deeper than its effectiveness._)
+<SideNote>
+
+For those interested in the mundane details: I mostly only use the code completion suggestions in VS Code, even though they're pretty hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion. That's pretty much it. Every time I've tried giving AI more responsibility, it's let me down spectacularly.
+
+I am deeply skeptical that AI offers much of a measurable net productivity boost in general, and that it's actually capable of good quality frontend code in particular. I theorize the specialty is just too subjective, and too visual, and that it's underrepresented in training data; that would explain why developers in other specialities seem to be much more enthusiastic about AI, comparatively.
+
+But that's mostly a moot point anyway, because even if I'm completely wrong, my issues with AI go much, much deeper than its effectiveness.
+
+</SideNote>
 
 Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counter-productivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
