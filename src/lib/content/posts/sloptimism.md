@@ -96,11 +96,9 @@ I sometimes find AI helpful for generating reference images to use as starting p
 
 <SideNote>
 
-For those interested in the mundane details: I mostly only use the code completion suggestions in VS Code, even though they're pretty hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion. That's pretty much it. Every time I've tried giving AI more responsibility, it's let me down spectacularly.
+For those interested in the mundane details: I mostly only use the code completion suggestions in VS Code, even though they're often hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion or pattern matching. That's pretty much it. Every time I've tried giving AI more responsibility, it's let me down pretty spectacularly.
 
-I am deeply skeptical that AI offers much of a measurable net productivity boost in general, and that it's actually capable of good quality frontend code in particular. I theorize the specialty is just too subjective, and too visual, and that it's underrepresented in training data; that would explain why developers in other specialities seem to be much more enthusiastic about AI, comparatively.
-
-But that's mostly a moot point anyway, because even if I'm completely wrong, my issues with AI go much, much deeper than its effectiveness.
+I'm deeply skeptical that AI offers a net productivity boost in general, but particularly that it's capable of high quality frontend code. I theorize good frontend is just too subjective, too visual, and too underrepresented in training data; that might explain why developers in other specialities seem to report better results. But it's a moot point anyway, because my issues with AI have little to do with its effectiveness.
 
 </SideNote>
 
