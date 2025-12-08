@@ -6,7 +6,7 @@ categories:
   - opinion
   - personal
   - AI
-excerpt: "Along the vast divide between AI optimists and pessimists, the main factor in determining which side you fall on may be where you see yourself in society: above the effects of AI, or beneath them."
+excerpt: "I think I have an idea why we're so extremely divided on AI: it's because we have an intuitive sense of who it stands to benefit, and who stands to pay the costs. I think whether you see reason for optimism has a lot to do with which group you see yourself in."
 coverImage: 'slop.jpg'
 coverWidth: 16
 coverHeight: 9
