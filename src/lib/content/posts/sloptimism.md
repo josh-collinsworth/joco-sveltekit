@@ -140,16 +140,6 @@ You probably aren't a contractor, either, or working at a consultancy. And for t
 
 AI optimism probably means you're in a position where nobody is stealing _your_ work, or bulldozing _your_ entire career field.
 
-It probably means nobody is _forcing_ you to use AI—or especially, to fix something AI-generated, as part of your job. You probably aren't watching a career you once enjoyed suddenly morph into something very different than what you signed up for, as you shift away from doing fulfilling work, and instead spend your days micro-managing an error-prone machine, laboriously correcting its unending mistakes.
-
-I guess it also probably means you're not a student anymore. Or, for that matter, a teacher. Because it's _bleak_ being in education right now, on either side.
-
-Thanks largely to AI, students are looking at the worst job market since 2008, and teachers, they tell us repeatedly and desperately, are working in the most difficult learning environment since 2020.
-
-Not that other technologies haven't previously made either position difficult, of course, or that AI is the sole cause of any of this. But I think it would be dishonest, and a disservice to both groups, to treat AI as merely another new flavor of distraction and disruption, when it seems like teachers everywhere are feverishly ringing alarm bells over what it's doing to their students and to their institutions.
-
-I guess to be optimistic about AI, I'd have to forget about all that. Which, admittedly, would be easier, now that I'm not a student _or_ a teacher anymore; now that both groups are merely abstract crowds of strangers, rather than groups I belong to, or that include people I know.
-
 <CalloutPlusQuote>
 
 That's the thing about being bullish on AI: to focus on its benefits to you, you're forced to ignore its costs to others.
@@ -207,10 +197,6 @@ A similar thing happened recently on TikTok, but this time it was videos of immi
 Sometimes this effect is more or less benign (see: Shrimp Jesus); other times, a machine built to provoke a reaction will inevitably hit paydirt in the horrifying, the traumatizing, the inhumane, and the unacceptable.
 
 AI isn't just harmful on its own; it's a force multiplier for existing harms. The intent behind it, if one even exists, is irrelevant; the impact is the same.
-
-The question is: what sort of viewpoint must it take to see all of this as merely a negligible side effect? Just the cost of business?
-
-What would vibe coding need to accomplish, in order to make all of this seem worth it?
 
 ---
 
