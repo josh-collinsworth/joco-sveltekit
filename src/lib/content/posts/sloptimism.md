@@ -202,11 +202,11 @@ AI isn't just harmful on its own; it's a force multiplier for existing harms. Th
 
 I think all of this is why so many of us are so pessimistic about AI; we can see very clearly the many ways it represents a threat to us, and to the things we care about.
 
-For so many, AI stands to take away something important to us—safety, stability, creativity—and replace it with productivity, efficiency, and profit for those above us.
+For so many, AI stands to take away something important from us and those around us—safety, stability, creativity—and replace it with benefits for somebody else; productivity and profit, going mainly to those above us.
 
 <CalloutPlusQuote>
 
-I think so many people are against AI because they see how it functions as a system for taking away from those with the least, to give even more to the already privileged.
+I think so many people are against AI because they see how it functions as a system for taking away from those with the least, to give even more to the already highly privileged.
 
 </CalloutPlusQuote>
 
