@@ -90,7 +90,9 @@ They see themselves in a class of people who are _safe_.
 
 ---
 
-I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. I find it helpful for generating reference images to use as starting points for illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
+I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. (I do still write every word of my posts on my own, though, including this one.)
+
+I sometimes find AI helpful for generating reference images to use as starting points for illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
 
 Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counter-productivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
