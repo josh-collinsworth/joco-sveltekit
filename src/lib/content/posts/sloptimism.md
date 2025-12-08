@@ -98,11 +98,11 @@ In full disclosure of all the mundane details: I mostly only use code completion
 
 I'm deeply skeptical that AI offers a net productivity boost in general<footnote>There's evidence that AI actually only makes you feel more productive—emphasis on "feel"—while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place.</footnote>, but particularly that it's capable of high-quality frontend code. I theorize good frontend is just too subjective, too visual, balances too many concerns, and is too underrepresented in training data.  (That might explain why developers in other specialties seem to report better results.)
 
-I can hear the enthusiasts scoffing and getting up to leave already, because I don't vibe code using Cursor agentic MCP, or whatever the flavor of the week is, and it's true; I've never gone that deep with it.
+I can hear the enthusiasts scoffing and getting up to leave already, because I don't vibe code using Cursor agentic MCP (or whatever the flavor of the week is), and it's true; I've never gone that deep with it.
 
 That's partly because I've heard too many horror stories about leaked secrets, deleted databases, and wiped hard drives. I don't like the idea of giving a non-deterministic black box full control of my machine and/or production.
 
-It's also partly because I _like_ using my brain. Any passion I have for what I do comes from ideating, building, and _creatively solving a problem_. Having a machine do all that for me and skipping to the result is as unsatisfying as a book full of already-completed sudoku puzzles, or loading up a save file where somebody else already played the first two thirds of the video game. I don't do this just because I want the _result_; I also do it because I like the _experience_.
+It's also because I _like_ using my brain. Any passion I have for what I do comes largely from the process of ideating, building, and creatively solving a problem. Having a machine do all that for me and skipping to the result is as unsatisfying as a book full of already-completed sudoku puzzles, or loading up a save file where somebody else already played the first two thirds of a video game. I don't do these things just because I want the _result_; I also do them because I want the _experience_. _I_ want to improve, and it's hard to imagine how that might happen if I'm not actually putting skills into practice.
 
 But all of that's mostly beside the point anyway; my issues with AI have little to do with its level of effectiveness.
 
