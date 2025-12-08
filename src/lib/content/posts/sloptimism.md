@@ -162,8 +162,6 @@ AI optimism requires believing that you (and your loved ones) are not among thos
 
 AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, potentially causing rare cancers and miscarriages in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever disaster might happen, your neighborhood will be safe from it. Probably far away from it.
 
-I think that's why so many of us are so pessimistic about AI; we can all see very clearly the many ways it represents a threat to us.
-
 ---
 
 The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies, systems, and parts of society, it's exacerbating their existing problems, and accelerating damage already being done elsewhere.
@@ -216,20 +214,36 @@ What would vibe coding need to accomplish, in order to make all of this seem wor
 
 ---
 
-Some might argue I'm missing the entire point here, by focusing so much on the present. Optimism isn't about the present, they might say; it's about the future!
+I think all of this is why so many of us are so pessimistic about AI; we can see very clearly the many ways it represents a threat to us, and to the things we care about.
 
-Forget what AI actually is _now_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, until we have something that changes the world for the better; an actual benevolent technology that solves our problems, in whatever way. Maybe it even is, or leads to, AGI (actual human-level artificial intelligence; the thing AI used to mean before 2022).
+For so many, AI stands to take away something important to us—safety, stability, creativity—and replace it with productivity, efficiency, and profit for those above us.
+
+<CalloutPlusQuote>
+
+I think so many people are against AI because they see how it functions as a system for taking away from those with the least, to give even more to the already privileged.
+
+</CalloutPlusQuote>
+
+This is why the promise of AI fixing everything and empowering workers is so important; it's the linchpin of the whole operation. It's required to get buy-in from the people who stand to lose the most.
+
+So let's talk about that next.
+
+---
+
+Some might argue I'm missing the entire point here, by focusing so much on the present. Optimism isn't about what's happening right now, they might say; it's about the future!
+
+Forget what AI actually is _currently_; the models will get better, the data centers more energy-efficient, the tokens cheaper, the mistakes rarer, the harms mitigated, and so on, until we have something that changes the world for the better; an actual benevolent technology that solves our problems, in whatever way. Maybe it even is, or leads to, AGI (actual human-level artificial intelligence; the thing AI used to mean before 2022).
 
 I take issue with these predictions, for several reasons:
 
-- While I'm sure it's true the technology and its costs will continue to improve, it's hard to see how that would mitigate most of these harms. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
+- While I'm sure the technology and its costs will continue to improve, it's hard to see how that would mitigate most of these harms. Many would just as likely be _intensified_ by greater speed, efficiency, and affordability.
 
 - I'm wary of predictions in general,<footnote>Anyone can predict anything. I predict this post will win the Pulitzer. There, see?</footnote> but particularly those that bear little to no resemblance to observed
  reality. Absent a clear evidential link, prediction tends to be based purely on hype and speculation, and there's a wild overabundance of both around AI.
 
   It's reasonable to believe the tech will improve. It seems much less reasonable to think it might suddenly change into something new, develop presently impossible capabilities, or take us somewhere far distant with absolutely no clear path or connection between here and there.
 
-- Most of the utopian visions of AI center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and our human brains are overly eager to anthropomorphize anything that vaguely imitates human behavior. Thinking and reasoning are very different than statistically emulating communication.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields—like neuroscience, for example—and most of them say we still don't really understand the brain yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
+- Most of the utopian visions of AI center on the idea that AI is sentient, which it categorically, factually, _is not_. Language and statistics can simply mimic cognition easily, and our human brains are overly eager to anthropomorphize anything that vaguely imitates human behavior. Thinking and reasoning are very different than statistically emulating communication.<footnote>You might notice the people who argue that AI is sentient tend to be on the tech side of things, and not people who actually study things like cognition, intelligence, etc. as their actual academic career. There are many such experts, across a wide range of fields—like neuroscience, for example—and most of them say no, that's not what thinking is, and for that matter: we don't even fully understand how brains work yet. But you might also notice it rarely occurs to tech people to even ask a real expert. Most just assume being an expert in code also makes them an expert in everything else, too, and confidently assert they do understand brains, actually, and have made one.</footnote>
 
 - Many LLM experts, including OpenAI's own researchers, tell us the models are already approaching their realistic ceiling, thanks in no small part to the exhaustion of training data that is not already tainted with AI content. They also tell us it's literally impossible to stop LLMs from making things up. (Really: actual people from OpenAI publicly admitted LLMs will never stop lying. It's an un-fixable bug, because it's a core component of how LLMs work.)
 
