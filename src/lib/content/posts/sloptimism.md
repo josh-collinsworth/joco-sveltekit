@@ -102,9 +102,9 @@ I can hear the enthusiasts scoffing and getting up to leave already, because I d
 
 That's partly because I've heard too many horror stories about leaked secrets, deleted databases, and wiped hard drives. I don't like the idea of giving a non-deterministic black box full control of my machine and/or production.
 
-It's also because I _like_ using my brain. Any passion I have for what I do comes largely from the process of ideating, building, and creatively solving a problem. Having a machine do all that for me and skipping to the result is as unsatisfying as a book full of already-completed sudoku puzzles, or loading up a save file where somebody else already played the first two thirds of a video game. I don't do these things just because I want the _result_; I also do them because I want the _experience_. _I_ want to improve, and it's hard to imagine how that might happen if I'm not actually putting skills into practice.
+But it's also because I _like_ using my brain. Any passion I have for what I do comes largely from the process of ideating, building, and creatively solving a problem. Having a machine do all that for me and skipping to the result is as unsatisfying as a book full of already-completed sudoku puzzles, or loading up a save file where somebody else already played the first two thirds of a video game. I don't do these things just because I want the _result_; I also do them because I want the _experience_. _I_ want to improve, and it's hard to imagine how that might happen if I'm not actually putting skills into practice.
 
-But all of that's mostly beside the point anyway; my issues with AI have little to do with its level of effectiveness.
+All of that's mostly beside the point anyway, though; my issues with AI have little to do with its level of effectiveness.
 
 ---
 
