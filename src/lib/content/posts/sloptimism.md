@@ -166,7 +166,7 @@ AI optimism requires you to believe that, whoever will be impacted by the sprawl
 
 The harms of AI aren't a standalone issue; as AI becomes a part of _other_ technologies, systems, and parts of society, it's exacerbating their existing problems, and accelerating damage already being done elsewhere.
 
-I have to believe scammers are enthusiastic about AI; there's likely never been a more helpful tool for fraud. Criminals and con artists have always been around, of course, but they've never had such powerful instruments at their disposal. After all, it's much easier to rob somebody's unsuspecting grandma when you can simply conjure a video of that person out of thin air, or perfectly imitate their voice on a phone call.<footnote>Not to perpetuate the stereotype; everybody is vulnerable, and even the youngest and most tech-savvy people I know have fallen victim to sophisticated scams.</footnote>
+I have to believe scammers are enthusiastic about AI; there's likely never been a more helpful tool for fraud. Criminals and con artists have always been around, of course, but they've never had such powerful instruments at their disposal. After all, it's much easier to rob somebody's unsuspecting grandma when you can simply conjure a video of that person out of thin air, or perfectly imitate their voice on a phone call.<footnote>Not to perpetuate the stereotype; grandmas might be tech-savvy, young people might not be, but anyone can fall victim to scams.</footnote>
 
 But that's a relatively small scale of harms, aimed at individuals. The broader harms come from AI interacting with _systems_, like governments and their substructures.
 
