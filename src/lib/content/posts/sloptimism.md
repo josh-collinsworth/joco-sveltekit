@@ -98,13 +98,17 @@ In full disclosure of all the mundane details: I mostly only use code completion
 
 I'm deeply skeptical that AI offers a net productivity boost in general<footnote>There's evidence that AI actually only makes you feel more productive—emphasis on "feel"—while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place.</footnote>, but particularly that it's capable of high-quality frontend code. I theorize good frontend is just too subjective, too visual, balances too many concerns, and is too underrepresented in training data.  (That might explain why developers in other specialties seem to report better results.)
 
-I can hear enthusiasts disregarding my opinions already, because I don't use Cursor agentic MCP or whatever, and it's true; I've never tried any of that. That's partly because I've heard too many horror stories about leaked secrets, deleted databases, and wiped hard drives, but it's mostly because none of that is the point anyway.
+I can hear the enthusiasts scoffing and getting up to leave already, because I don't vibe code using Cursor agentic MCP, or whatever the flavor of the week is, and it's true; I've never gone that deep with it.
 
-My issues with AI have little to do with its effectiveness.
+That's partly because I've heard too many horror stories about leaked secrets, deleted databases, and wiped hard drives. I don't like the idea of giving a non-deterministic black box full control of my machine and/or production.
+
+Besides: I got into this because I _like_ using my brain. Any passion I have for what I do comes from ideating, building, and _creatively solving a problem_. Having a machine do all that for me and skipping to the result is as unsatisfying as a book full of already-completed sudoku puzzles, or playing a video game by loading up a save file where somebody else already played the first 45 hours. I don't do this just because I want the _result_; I also do it because I like the _experience_.
+
+But all of that's mostly beside the point anyway; my issues with AI have little to do with its level of effectiveness.
 
 ---
 
-Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counter-productivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
+Even if my new coding buddy is severely prone to overconfidence, it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
 In order to be an AI optimist about this, however: that's where I would have to stop thinking about it.
 
