@@ -136,7 +136,7 @@ It seems fairly safe to assume you aren't in the first group against the wall, i
 
 </CalloutPlusQuote>
 
-You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched clients evaporate as their dollars are funnelled upwards, somewhere beyond and above you, knowing the AI-fueled disruption bankrupting you is only possible because it plagiarized you and a million other people who do what you do.
+You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched client dollars funnelled upwards, knowing this thing eating away at your livelihood is also only possible because it plagiarized you and a million other people who do what you do.
 
 AI optimism probably means you're in a position where nobody is stealing _your_ work, or bulldozing _your_ entire career field.
 
@@ -161,6 +161,8 @@ AI optimism requires believing that you (and your loved ones) are not among thos
 (Not to put too fine a point on it, but: those things are otherwise known as privileges.)
 
 AI optimism requires you to believe that, whoever will be impacted by the sprawling data centers, the massive electricity demands, the water consumption, and the other environmental hazards of the AI boom<footnote>I realize it's difficult to pin down the environmental impact and energy costs of AI, and that there's a wide range of estimates out there. Even if the impact is ultimately comparatively small, however—and I very much doubt that, given the frustrating opacity from AI companies, but even if that's the case—we're still currently at a worrying scale, well above what we would be without AI, at a time when our planet is already being pushed well beyond what we can afford. Besides: I saw two different news stories just yesterday, about two different data centers in two different parts of the US, potentially causing rare cancers and miscarriages in the inhabitants of nearby cities. So regardless of wider environmental impacts, we likely have other harms to reckon with.</footnote>, it won't be you. Whatever disaster might happen, your neighborhood will be safe from it. Probably far away from it.
+
+I think that's why so many of us are so pessimistic about AI; we can all see very clearly the many ways it represents a threat to us.
 
 ---
 
