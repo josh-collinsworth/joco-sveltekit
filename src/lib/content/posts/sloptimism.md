@@ -90,17 +90,19 @@ They see themselves in a class of people who are _safe_.
 
 ---
 
-I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. (I do still write every word of every post on my own, though, hand-typed em dashes and all.)
+I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. (I do still write every word of every post on my own, however, hand-typed em dashes and all.)
 
 I sometimes find AI helpful for generating reference images to use as starting points for illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
 
-<SideNote>
+In full disclosure of all the mundane details: I mostly only use code completion suggestions in VS Code, even though they're often hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion or pattern matching. That's pretty much it. Every time I've tried giving AI more responsibility, it's let me down pretty spectacularly.
 
-For those interested in the mundane details: I mostly only use the code completion suggestions in VS Code, even though they're often hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion or pattern matching. That's pretty much it. Every time I've tried giving AI more responsibility, it's let me down pretty spectacularly.
+I'm deeply skeptical that AI offers a net productivity boost in general<footnote>There's evidence that AI actually only makes you feel more productive—emphasis on "feel"—while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place.</footnote>, but particularly that it's capable of high-quality frontend code. I theorize good frontend is just too subjective, too visual, balances too many concerns, and is and too underrepresented in training data.  (That might explain why developers in other specialties seem to report better results.)
 
-I'm deeply skeptical that AI offers a net productivity boost in general, but particularly that it's capable of high quality frontend code. I theorize good frontend is just too subjective, too visual, and too underrepresented in training data; that might explain why developers in other specialities seem to report better results. But it's a moot point anyway, because my issues with AI have little to do with its effectiveness.
+I can hear enthusiasts disregarding my opinions already, because I don't use Cursor agentic MCP or whatever, and it's true; I've never tried any of that. That's partly because I've heard too many horror stories about leaked secrets, deleted databases, and wiped hard drives, but it's mostly because none of that is the point anyway.
 
-</SideNote>
+My issues with AI have little to do with its effectiveness.
+
+---
 
 Even if my new coding buddy is severely prone to overconfidence (and hallucination, and vulnerabilities, and counter-productivity…), it's still admittedly exciting when it makes tasks that would've been previously time-consuming and/or challenging quick and easy.
 
@@ -118,7 +120,7 @@ To be an AI optimist, I'm guessing you must not be worried about where your next
 
 Maybe it's because you've already made a name for yourself. Maybe you're known at conferences, or on podcasts. Maybe you're just senior enough that your résumé opens doors for you.
 
-Or maybe you've been promoted into leadership. Maybe you spend your days in important meetings. 
+Or maybe you've been promoted into leadership. Maybe you spend your days in important meetings.
 
 Maybe this is all a lot easier to be optimistic about with the right charts and graphs in front of you.
 
@@ -257,7 +259,7 @@ Looking beyond all the things we've already talked about: technology in general 
 
 If this sounds like a horrifying, disturbed thought: it is! _It absolutely is_! But I'm not coming up with this on my own; this is already happening to untold numbers of women, many of whom are school-aged girls.
 
-To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid (hopefully by somebody else) in exchange for…what? Writing software a little bit faster?<footnote>For the sake of brevity, I write as though I accept the premise that AI provides a productivity boost. However, there's significant evidence that AI actually only makes you feel more productive, while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place. But that's another post.</footnote>
+To be an AI optimist, I would need to turn away from this. Ignore it. Consider it all just part of the plan; a price to be casually paid (hopefully by somebody else) in exchange for…what? Writing software a little bit faster?
 
 Optimism would require me to believe that my children probably won't have that kind of experience, or any others I've described here.
 
