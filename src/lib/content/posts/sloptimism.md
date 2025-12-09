@@ -1,7 +1,7 @@
 ---
 title: "AI optimism is a class privilege"
 date: '2025-12-03'
-updated: '2025-12-08'
+updated: '2025-12-09'
 categories:
   - opinion
   - personal
@@ -54,11 +54,11 @@ I was never exactly an optimist when it comes to AI. But that was the first time
 
 Although it's not an entirely correct description, I'll use the term "AI optimist" a lot in this post, as it's at least a serviceable label for a general group of people.
 
-That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ and near-term state of AI. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and either aren't aware of the bad parts, or aren't overly concerned with them.
+That group, to be a bit more descriptive, is made up of people who are excited about AI, both present and future—but especially, they're happy about the _current_ and near-term state of AI. You might call them enthusiasts, or even believers, maybe. But in any case, they generally consider the current state of the technology to be good, and for whatever reason, aren't overly concerned with them.
 
 You almost certainly know at least one or two of these people. Maybe you even _are_ one. (If so: I'm not naive enough to think I'll change your mind with this post, but I hope I'll at least give you some things to think about.)
 
-It seems to me that to be in this group—to regard AI, as it exists currently, with optimism and enthusiasm—requires at least a certain degree of class privilege. Hence, the somewhat blunted title of this post.
+It seems to me that to be in this group—to regard AI, as it exists currently, with optimism and enthusiasm—requires at least a certain degree of privilege. Hence, the somewhat blunted title of this post.
 
 I had long struggled to put the thought into words. But once it crystallized into this post's titular sentence, I felt as though a great deal around me suddenly shifted into perspective.
 
@@ -70,13 +70,13 @@ It's late 2025, and so you don't need me to tell you how extreme opposing views 
 
 For my part, I'm decidedly on the pessimist side of the chasm, for many reasons. Some I'll get into here; others, I'll mostly pass over, as they've been well covered elsewhere.
 
-But for now, suffice to say: when I look around me at the impact AI is _currently_ having, I see little reason for enthusiasm—let alone the little-questioned, quasi-religious belief that this fundamentally flawed technology will one day soon bring about some sort of economic, societal, and/or scientific revolution all on its own.
+But for now, suffice to say: when I look around me at the impact AI is _currently_ having, I see little reason for enthusiasm—let alone the little-questioned, quasi-religious belief that this fundamentally flawed technology might one day soon bring about some sort of economic, societal, and/or scientific revolution all on its own.
 
 Come to think of it, "religious" might be a good word to describe how AI optimism feels, from the outside. It has fervent believers, prophecies from prominent figures to be taken on faith, and—of course, as with any religion—a central object of worship which can at all times be offered as The Answer, no matter what the question might happen to be.
 
 In fairness: that's not all AI optimists. I'm mostly describing the extreme ones.
 
-Even among the more moderate optimists, though—the fairly ordinary people who just seem to like the tech—the enthusiasm has always seemed…disproportionate, let's say.
+Even among the more moderate optimists, though—the ordinary people who just like the tech—the enthusiasm has always seemed…disproportionate, let's say.
 
 It was always perplexing to me that so many of my peers seemed so eager to be across the divide from me. They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
 
@@ -94,7 +94,7 @@ I concede AI can occasionally be helpful for certain tasks, and I can understand
 
 I sometimes find AI helpful for generating reference images to use as starting points for illustrations, and occasionally for ideating, as a "rubber duck" of sorts. I also use it once in a while to compensate for my own color vision deficiency. But mostly, it helps me with code.
 
-In full disclosure of all the mundane details: I mostly only use code completion suggestions in VS Code, even though they're often hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion or pattern matching. That's pretty much it. Every time I've tried giving AI more responsibility, it's let me down pretty spectacularly.
+In full disclosure of all the mundane details: I mostly only use code completion suggestions in VS Code, even though they're often hit and miss. I rarely use chat mode, and when I do, it tends to be mostly for rote tasks like format conversion or pattern matching. That's pretty much it. Every time I've tried giving AI more responsibility than that, it's let me down pretty spectacularly.
 
 I'm deeply skeptical that AI offers a net productivity boost in general<footnote>There's evidence that AI actually only makes you feel more productive—emphasis on "feel"—while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place.</footnote>, but particularly that it's capable of high-quality frontend code. I theorize good frontend is just too subjective, too visual, balances too many concerns, and is too underrepresented in training data.  (That might explain why developers in other specialties seem to report better results.)
 
@@ -116,7 +116,7 @@ I would be forced to ignore what _else_ my little coding buddy is getting up to 
 
 Let's take layoffs, as an example.
 
-In order to be an AI optimist, it seems to me you'd have to believe yours is not among the jobs that risk being automated or downsized, and that you aren't among the countless workers staring down displacement. After all, how could you feel enthusiastic about a threat to your own livelihood?<footnote>AI's ability to replace workers is overstated, it should be noted. It can handle some tasks, of course, but workers do—and are—a great deal more than the sum of a task list, as some companies who have been forced to re-hire after layoffs have already discovered. Unfortunately, however, most executives still don't seem to be deterred from trying.</footnote>
+In order to be an AI optimist, it seems to me you'd have to believe yours is not among the jobs that risk being automated or downsized, and that you aren't among the countless workers staring down displacement. (Or, at best, having your position reduced to babysitting AI, as it does all the work and you become its manager.) After all, how could you feel enthusiastic about a threat to your own livelihood?<footnote>AI's ability to replace workers is overstated, it should be noted. It can handle some tasks, of course, but workers do—and are—a great deal more than the sum of a task list, as some companies who have been forced to re-hire after layoffs have already discovered. Unfortunately, however, most executives still don't seem to be deterred from trying.</footnote>
 
 You'd need to be high enough in the org chart; far enough up the pyramid; advanced enough along the career ladder.
 
@@ -136,7 +136,7 @@ It seems fairly safe to assume you aren't in the first group against the wall, i
 
 </CalloutPlusQuote>
 
-You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched client dollars funnelled upwards, knowing this thing eating away at your livelihood is also only possible because it plagiarized you and a million other people who do what you do.
+You probably aren't a contractor, either, or working at a consultancy. And for that matter: you almost _certainly_ aren't an artist, or illustrator, or writer. You probably haven't watched client dollars funnelled upwards, with the bitter knowledge that this thing eroding your income is only possible because it brazenly plagiarized you and a million other people who do what you do.
 
 AI optimism probably means you're in a position where nobody is stealing _your_ work, or bulldozing _your_ entire career field.
 
