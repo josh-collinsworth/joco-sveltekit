@@ -117,9 +117,7 @@ It's really not my fault that this is all my&nbsp;fault.
 
 <hr />
 
-[_Long, deep sigh_]
-
-Ok, crew. This will be my final message.
+Ok, crew. [_Long, deep sigh_] This will be my final message.
 
 A whole lot of you seem to think this decision will actually have an _adverse_ impact on our voyage, as it will both hinder our capacity going forward _and_ decimate morale for those who remain, making them less productive and more likely to leave voluntarily.
 
