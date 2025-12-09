@@ -114,7 +114,7 @@ In order to be an AI optimist about this, however: that's where I would have to 
 
 I would be forced to ignore what _else_ my little coding buddy is getting up to when I'm not looking; the _other_ impacts he's having on _other_ people's lives.
 
-Let's take layoffs, as an example.
+Let's take layoffs as an example.
 
 In order to be an AI optimist, it seems to me you'd have to believe yours is not among the jobs that risk being automated or downsized, and that you aren't among the countless workers staring down displacement. (Or at least: at risk of AI taking over the interesting and fulfilling parts of their work, as their role becomes its manager.) After all, how could you feel enthusiastic about a threat to your own livelihood?<footnote>AI's ability to replace workers is overstated, it should be noted. It can handle some tasks, of course, but workers do—and are—a great deal more than the sum of a task list, as some companies who have been forced to re-hire after layoffs have already discovered. Unfortunately, however, most executives still don't seem to be deterred from trying.</footnote>
 
