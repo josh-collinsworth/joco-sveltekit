@@ -86,8 +86,6 @@ The answer eventually hit me:
 
 They see themselves as the ones benefiting from AI, and not as the ones it might cost.
 
-They see themselves in a class of people who are _safe_.
-
 ---
 
 I concede AI can occasionally be helpful for certain tasks, and I can understand the enthusiasm, as far as that goes. I don't use it often, but admittedly some. (I do still write every word of every post on my own, however, hand-typed em dashes and all.)
