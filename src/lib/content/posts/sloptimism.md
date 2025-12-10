@@ -78,7 +78,7 @@ In fairness: that's not all AI optimists. I'm mostly describing the extreme ones
 
 Even among the more moderate optimists, though—the ordinary people who just like the tech—the enthusiasm has always seemed…disproportionate, let's say.
 
-It was always perplexing to me that so many of my peers seemed so eager to be across the divide from me; that they were so much more impressed with AI than I was, and so indifferent to flaws and drawbacks that I found alarming.
+It was always perplexing to me that so many of my peers seemed so eager to be across the divide from me; that they were so much more impressed with AI than I was, and so indifferent to what I felt were alarming flaws and drawbacks.
 
 They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
 
