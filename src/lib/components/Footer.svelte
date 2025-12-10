@@ -69,7 +69,7 @@
 		line-height: 1.6em;
 		padding: 2.5rem var(--margin) 2rem;
 
-		@media (min-width: vars.$sm) {
+		@media (min-width: 56rem) {
 			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 			gap: 0 var(--whole-note);
@@ -77,7 +77,7 @@
 			font-size: 0.8rem;
 		}
 
-		@media (min-width: vars.$xxl) {
+		@media (min-width: 108rem) {
 			grid-template-columns: repeat(5, minmax(0, 1fr));
 		}
 
@@ -112,7 +112,7 @@
 				color: var(--blue-light);
 			}
 
-			@media (min-width: vars.$sm) {
+			@media (min-width: 56rem) {
 				border-bottom: 0;
 				padding: 0;
 				margin-inline: 0;
@@ -134,11 +134,11 @@
 			margin-left: 1rem;
 			align-self: center;
 
-			@media (min-width: vars.$sm) {
+			@media (min-width: 56rem) {
 				margin-left: 0;
 			}
 
-			@media (min-width: vars.$xxl) {
+			@media (min-width: 108rem) {
 				grid-column: span 2;
 			}
 

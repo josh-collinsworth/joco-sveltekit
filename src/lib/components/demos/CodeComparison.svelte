@@ -120,7 +120,7 @@
 			border-bottom: 0 !important; // Overrides .current block below
 			border-width: 1px;
 
-			@media (min-width: vars.$lg) {
+			@media (min-width: 82rem) {
 				padding-left: 1em;
 				padding-right: 1em;
 			}

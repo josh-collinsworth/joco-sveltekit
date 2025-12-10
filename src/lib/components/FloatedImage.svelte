@@ -13,7 +13,7 @@
 	img {
 		margin-top: 0;
 
-		@media (min-width: vars.$xs) {
+		@media (min-width: 42rem) {
 			float: right;
 			margin: 0 calc(var(--quarter-note) * -2) var(--quarter-note)
 				var(--quarter-note);

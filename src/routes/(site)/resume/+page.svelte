@@ -54,7 +54,7 @@
 			display: none;
 		}
 
-		@media (min-width: vars.$lg) {
+		@media (min-width: 82rem) {
 			display: grid;
 			grid-template-columns: 12rem 1fr;
 			gap: 0 var(--half-note);

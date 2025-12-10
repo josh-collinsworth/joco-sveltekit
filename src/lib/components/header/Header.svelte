@@ -64,7 +64,7 @@
 		height: 2rem;
 		display: block;
 
-		@media (min-width: vars.$xxl) and (min-height: vars.$md) {
+		@media (min-width: 108rem) and (min-height: 66rem) {
 			height: 3rem;
 		}
 	}
@@ -78,12 +78,12 @@
 		transition: opacity 0.2s;
 		gap: 1rem;
 
-		@media (min-width: vars.$xs) {
+		@media (min-width: 42rem) {
 			top: var(--half-note);
 			right: var(--half-note);
 		}
 
-		@media (min-width: vars.$sm) {
+		@media (min-width: 56rem) {
 			position: static;
 		}
 	}
@@ -102,7 +102,7 @@
 		z-index: 4;
 		padding: var(--quarter-note) var(--margin) var(--half-note);
 
-		@media (min-width: vars.$xs) {
+		@media (min-width: 42rem) {
 			padding: var(--half-note) var(--margin);
 		}
 	}

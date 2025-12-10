@@ -29,7 +29,7 @@
 	.nav__item {
 		margin: 0;
 
-		@media (max-width: vars.$sm) {
+		@media (max-width: 56rem) {
 			--itemTransition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 
 			opacity: 0;
@@ -60,10 +60,32 @@
 				opacity: 1;
 			}
 
-			@for $i from 1 through 9 {
-				&:nth-of-type(#{$i}) {
-					animation-delay: $i * 0.1 + s;
-				}
+			&:nth-of-type(1) {
+				animation-delay: 0.1s;
+			}
+			&:nth-of-type(2) {
+				animation-delay: 0.2s;
+			}
+			&:nth-of-type(3) {
+				animation-delay: 0.3s;
+			}
+			&:nth-of-type(4) {
+				animation-delay: 0.4s;
+			}
+			&:nth-of-type(5) {
+				animation-delay: 0.5s;
+			}
+			&:nth-of-type(6) {
+				animation-delay: 0.6s;
+			}
+			&:nth-of-type(7) {
+				animation-delay: 0.7s;
+			}
+			&:nth-of-type(8) {
+				animation-delay: 0.7s;
+			}
+			&:nth-of-type(9) {
+				animation-delay: 0.7s;
 			}
 
 			a {
@@ -118,7 +140,7 @@
 		}
 
 		&.mobile-only {
-			@media (min-width: vars.$xs) {
+			@media (min-width: 42rem) {
 				display: none;
 			}
 		}

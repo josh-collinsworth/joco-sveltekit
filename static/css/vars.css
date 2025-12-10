@@ -1,4 +1,4 @@
-// The naming feels a little wrong here (1024px isn't really "small") but whatever
+/* The naming feels a little wrong here (1024px isn't really "small") but whatever
 $xxs: 34rem;
 $xs: 42rem;
 $sm: 56rem;
@@ -7,7 +7,7 @@ $lg: 82rem;
 $xl: 92rem;
 $xxl: 108rem;
 $xxxl: 122rem;
-$fourxl: 144rem;
+$fourxl: 144rem; */
 
 :root {
 	--true-white: #ffffff;
@@ -86,11 +86,11 @@ $fourxl: 144rem;
 	--body-font-size: 1.125rem;
 	--body-line-height: 1.55;
 
-	@media (min-width: $xs) {
+	@media (min-width: 42rem) {
 		--body-font-size: 1.1875rem;
 	}
 
-	@media (min-width: $lg) {
+	@media (min-width: 82rem) {
 		--body-font-size: 1.25rem;
 	}
 
@@ -108,6 +108,7 @@ $fourxl: 144rem;
 	--accent-color: var(--blue-dark);
 	--link-color: var(--blue-dark);
 	--highlight-color: var(--neutral-dark);
+	--code-background: #1d1e26;
 
 	--max-width: 34rem;
 	--sidebar-width: 15rem;
@@ -126,19 +127,19 @@ $fourxl: 144rem;
 	--button-size: 2.2rem;
 	--button-background: var(--paper);
 
-	@media (min-width: $xs) {
+	@media (min-width: 42rem) {
 		--margin: var(--half-note);
 	}
 
-	@media (min-width: $sm) {
+	@media (min-width: 56rem) {
 		--margin: var(--dotted-half-note);
 	}
 
-	@media (min-width: $xxl) {
+	@media (min-width: 108rem) {
 		--margin: var(--whole-note);
 	}
 
-	@media (min-width: $xxxl) {
+	@media (min-width: 122rem) {
 		--margin: var(--dotted-whole-note);
 	}
 
@@ -154,7 +155,7 @@ $fourxl: 144rem;
 		--neutral-mid: var(--neutral-400);
 	}
 
-	// Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes
+	/* Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes */
 	&:not(.light) {
 		@media (prefers-color-scheme: dark) {
 			--paper: var(--neutral-black);

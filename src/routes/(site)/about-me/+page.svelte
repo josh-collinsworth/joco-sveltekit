@@ -188,7 +188,7 @@
 			float: right;
 			max-width: 30vw;
 
-			@media (min-width: vars.$xxs) {
+			@media (min-width: 34rem) {
 				max-width: 12rem;
 				shape-outside: circle(8rem);
 			}

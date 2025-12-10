@@ -23,7 +23,7 @@
 		margin: 0 0 var(--whole-note);
 		max-width: var(--max-width);
 
-		@media (min-width: vars.$md) {
+		@media (min-width: 66rem) {
 			max-width: 60rem;
 		}
 	}

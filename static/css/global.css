@@ -1,13 +1,3 @@
-@use './preferences';
-@use './fonts';
-@use './typography';
-@use './utilities';
-@use './layout';
-@use './forms';
-@use './code';
-@use './print';
-@use './components';
-
 *,
 *:before,
 *:after {

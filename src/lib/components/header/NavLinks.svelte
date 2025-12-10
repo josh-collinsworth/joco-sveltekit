@@ -30,7 +30,7 @@
 		padding: 0;
 		gap: 1.5rem;
 
-		@media (max-width: vars.$sm) {
+		@media (max-width: 56rem) {
 			list-style-type: none;
 			text-align: left;
 			width: 100%;

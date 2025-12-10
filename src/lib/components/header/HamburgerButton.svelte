@@ -80,7 +80,7 @@
 			}
 		}
 
-		@media (max-width: vars.$sm) {
+		@media (max-width: 56rem) {
 			display: flex;
 		}
 	}
