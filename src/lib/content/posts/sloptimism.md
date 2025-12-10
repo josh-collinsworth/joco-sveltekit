@@ -1,7 +1,7 @@
 ---
 title: "AI optimism is a class privilege"
 date: '2025-12-03'
-updated: '2025-12-09'
+updated: '2025-12-10'
 categories:
   - opinion
   - personal
@@ -78,7 +78,9 @@ In fairness: that's not all AI optimists. I'm mostly describing the extreme ones
 
 Even among the more moderate optimists, though—the ordinary people who just like the tech—the enthusiasm has always seemed…disproportionate, let's say.
 
-It was always perplexing to me that so many of my peers seemed so eager to be across the divide from me. They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
+It was always perplexing to me that so many of my peers seemed so eager to be across the divide from me; that they were so much more impressed with AI than I was, and so indifferent to flaws and drawbacks that I found alarming.
+
+They didn't seem particularly different than me. In fact, many were my friends, connections, and people I looked up to.
 
 We were looking at the same tech, with the same outcomes, and drawing entirely different conclusions. What was I missing?
 
@@ -96,7 +98,7 @@ In full disclosure of all the mundane details: I mostly only use code completion
 
 I'm deeply skeptical that AI offers a net productivity boost in general<footnote>There's evidence that AI actually only makes you feel more productive—emphasis on "feel"—while in fact, it slows you down. This matches my own experience; I often end up spending significantly more time trying to fix what AI has generated than I would've spent just doing it all myself in the first place.</footnote>, but particularly that it's capable of high-quality frontend code. I theorize good frontend is just too subjective, too visual, balances too many concerns, and is too underrepresented in training data.  (That might explain why developers in other specialties seem to report better results.)
 
-I can already hear the enthusiasts scoffing and getting up to leave, because I don't use AI "the right way," by vibe-coding with Cursor agentic MCP (or whatever the flavor of the week is). And it's true; I've never gone that deep with it.
+I can already hear the enthusiasts scoffing and getting up to leave, because I don't use AI "the right way," by vibe-coding with Cursor agentic MCP, or whatever the flavor of the week is. And it's true; I've never gone that deep with it.
 
 That's partly because I've heard too many horror stories about leaked secrets, deleted databases, and wiped hard drives. I don't like the idea of giving a non-deterministic black box full control of my machine and/or production.
 
