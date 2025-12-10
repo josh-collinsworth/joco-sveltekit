@@ -25,7 +25,7 @@
 		text-align: right;
 		font-family: var(--heading-font);
 
-		@media (max-width: vars.$sm) {
+		@media (max-width: 56rem) {
 			display: block;
 			position: fixed;
 			transition:
@@ -59,7 +59,7 @@
 			}
 		}
 
-		@media (min-width: vars.$sm) {
+		@media (min-width: 56rem) {
 			display: flex;
 			justify-content: flex-end;
 		}

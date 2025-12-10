@@ -1,12 +1,10 @@
-	import autoprefixer from 'autoprefixer'
-  import adapter from '@sveltejs/adapter-static'
-  import { mdsvex } from 'mdsvex'
-	import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-	import rehypeSlug from 'rehype-slug'
-	import { sveltePreprocess } from 'svelte-preprocess'
-	import { myFootnoteRehypePlugin } from './src/lib/assets/js/footnoteRehypePlugin.js'
-
-
+import autoprefixer from 'autoprefixer'
+import adapter from '@sveltejs/adapter-static'
+import { mdsvex } from 'mdsvex'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeSlug from 'rehype-slug'
+import { sveltePreprocess } from 'svelte-preprocess'
+import { myFootnoteRehypePlugin } from './src/lib/assets/js/footnoteRehypePlugin.js'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -22,22 +20,19 @@ const config = {
 			rehypePlugins: [
 				rehypeSlug,
 				rehypeAutolinkHeadings,
-				myFootnoteRehypePlugin,
-			],
+				myFootnoteRehypePlugin
+			]
 		}),
 		sveltePreprocess({
-			scss: {
-				prependData: `@use 'src/lib/assets/scss/vars';`
-			},
 			postcss: {
 				plugins: [autoprefixer]
 			}
-		}),
+		})
 	],
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter()
 	}
 }
 
-export default config;
+export default config

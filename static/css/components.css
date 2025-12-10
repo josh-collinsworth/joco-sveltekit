@@ -1,5 +1,3 @@
-@use './vars';
-
 .pull-quote {
   float: right;
   margin: var(--half-note) -12em var(--dotted-half-note) var(--half-note);
@@ -15,13 +13,13 @@
   max-width: 16em;
   text-wrap: balance;
 
-  @media (min-width: vars.$lg) {
+  @media (min-width: 82rem) {
     display: block;
     font-size: 1.4rem;
     margin-right: calc(-10rem - 13vw);
   }
 
-  @media (min-width: vars.$xl) {
+  @media (min-width: 92rem) {
     margin-right: -13em;
     max-width: 18em;
   }
@@ -51,7 +49,7 @@
   font-size: 1.2rem;
   line-height: 1.4;
 
-  @media (min-width: vars.$lg) {
+  @media (min-width: 82rem) {
     margin: 0 0 var(--quarter-note);
     font-size: inherit;
     line-height: inherit;
@@ -103,7 +101,7 @@
     bottom: calc(-0.5em - var(--eighth-note));
   }
 
-  @media (min-width: vars.$xxs) {
+  @media (min-width: 34rem) {
     &::before {
       padding-left: 0;
     }
@@ -118,7 +116,7 @@
     padding: var(--dotted-quarter-note);
   }
 
-  @media (min-width: vars.$xl) {
+  @media (min-width: 92rem) {
     padding: var(--half-note)
   }
 

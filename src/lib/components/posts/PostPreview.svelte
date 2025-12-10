@@ -82,7 +82,7 @@
 	li {
 		margin: 0 0 var(--half-note);
 
-		@media (min-width: vars.$md) {
+		@media (min-width: 66rem) {
 			margin: 0;
 		}
 	}
@@ -92,7 +92,7 @@
 		transform-origin: bottom left;
 		display: block;
 
-		@media (min-width: vars.$md) {
+		@media (min-width: 66rem) {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-gap: var(--half-note);
@@ -107,7 +107,7 @@
 			padding: 1.5rem 0;
 			max-width: 32rem;
 
-			@media (min-width: vars.$md) {
+			@media (min-width: 66rem) {
 				padding: 0;
 			}
 		}

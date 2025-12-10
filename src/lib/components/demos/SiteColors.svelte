@@ -96,7 +96,7 @@
 		font-size: 0.75rem;
 		text-align: right;
 
-		@media (min-width: vars.$sm) {
+		@media (min-width: 56rem) {
 			grid-template-columns: auto repeat(11, minmax(0, 1fr));
 		}
 	}
@@ -134,7 +134,7 @@
 	.wide-only {
 		display: none;
 
-		@media (min-width: vars.$sm) {
+		@media (min-width: 56rem) {
 			display: table-cell;
 		}
 	}

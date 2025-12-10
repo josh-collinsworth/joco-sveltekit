@@ -53,7 +53,7 @@
 		border-block: 1px solid currentColor;
 		margin-block: var(--quarter-note);
 
-		@media (min-width: vars.$xxs) {
+		@media (min-width: 34rem) {
 			flex-wrap: nowrap;
 		}
 
@@ -94,7 +94,7 @@
 			border-radius: 3rem;
 			margin: var(--quarter-note) auto 0;
 
-			@media (min-width: vars.$xxs) {
+			@media (min-width: 34rem) {
 				margin: 0 0 0 var(--quarter-note);
 			}
 		}

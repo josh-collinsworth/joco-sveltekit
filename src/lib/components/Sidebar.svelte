@@ -60,7 +60,7 @@
 		font-family: var(--heading-font);
 		margin: var(--dotted-half-note) 0 0;
 
-		@media (min-width: vars.$lg) {
+		@media (min-width: 82rem) {
 			margin: 0;
 		}
 
@@ -103,7 +103,7 @@
 				font-size: inherit;
 
 				a {
-					font-size: inerit;
+					font-size: inherit;
 					color: inherit;
 					text-decoration: none;
 					position: relative;

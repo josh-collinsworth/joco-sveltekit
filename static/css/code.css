@@ -1,10 +1,10 @@
-$background: #1d1e26;
+
 
 pre {
 	font-style: normal;
 	font-weight: normal;
 	background: var(--neutral-darker);
-	background: $background;
+	background: var(--code-background);
 	padding: 1.5em;
 	margin: var(--half-note) auto;
 	color: var(--neutral-white);
@@ -148,7 +148,7 @@ pre.language-javascript:before {
 :not(pre) > code,
 pre {
 	&[class*='language-'] {
-		background: $background;
+		background: var(--code-background);
 	}
 }
 

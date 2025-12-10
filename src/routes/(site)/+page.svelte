@@ -78,14 +78,40 @@
 	</div>
 </Main>
 
-<style lang="scss">
-	@for $i from 1 through 5 {
-		.intro > *:nth-child(#{$i}) {
-			animation-delay: 0.2 + ($i * 0.14s);
-		}
-		.intro__grid section:nth-child(#{$i}) {
-			animation-delay: 0.8 + ($i * 0.1s) !important;
-		}
+<style>
+	.intro > *:nth-child(1) {
+		animation-delay: 0.34s;
+	}
+	.intro__grid section:nth-child(1) {
+		animation-delay: 0.9s !important;
+	}
+
+	.intro > *:nth-child(2) {
+		animation-delay: 0.48s;
+	}
+	.intro__grid section:nth-child(2) {
+		animation-delay: 1s !important;
+	}
+
+	.intro > *:nth-child(3) {
+		animation-delay: 0.62s;
+	}
+	.intro__grid section:nth-child(3) {
+		animation-delay: 1.1s !important;
+	}
+
+	.intro > *:nth-child(4) {
+		animation-delay: 0.76s;
+	}
+	.intro__grid section:nth-child(4) {
+		animation-delay: 1.2s !important;
+	}
+
+	.intro > *:nth-child(5) {
+		animation-delay: 0.9s;
+	}
+	.intro__grid section:nth-child(5) {
+		animation-delay: 1.3s !important;
 	}
 
 	.intro {
@@ -93,20 +119,20 @@
 		position: relative;
 		margin-top: var(--whole-note);
 
-		@media (min-width: vars.$md) {
+		@media (min-width: 66rem) {
 			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 
 		> h2,
 		> p {
-			@media (min-width: vars.$md) {
+			@media (min-width: 66rem) {
 				grid-column: 1 / 3;
 			}
-			@media (min-width: vars.$xl) {
+			@media (min-width: 92rem) {
 				grid-column: 1 / 5;
 			}
-			@media (min-width: vars.$xxl) {
+			@media (min-width: 108rem) {
 				grid-column: 1 / 4;
 			}
 		}
@@ -121,7 +147,7 @@
 			}
 		}
 
-		@media (min-width: vars.$xl) {
+		@media (min-width: 92rem) {
 			display: grid;
 			grid-template-columns: repeat(5, minmax(0, 1fr));
 			gap: 0 var(--whole-note);
@@ -153,13 +179,13 @@
 		}
 
 		.bio {
-			@media (min-width: vars.$sm) {
+			@media (min-width: 56rem) {
 				grid-column: 1 / 3;
 			}
-			@media (min-width: vars.$xl) {
+			@media (min-width: 92rem) {
 				grid-column: 1 / 4;
 			}
-			@media (min-width: vars.$fourxl) {
+			@media (min-width: 144rem) {
 				grid-column: 1 / 3;
 			}
 		}
@@ -196,11 +222,11 @@
 			list-style-type: unset;
 		}
 
-		@media (min-width: vars.$sm) {
+		@media (min-width: 56rem) {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 
-		@media (min-width: vars.$xxl) {
+		@media (min-width: 108rem) {
 			grid-column: 3 / 6;
 			grid-row: 5 / 6;
 		}
@@ -216,7 +242,7 @@
 		padding: 0.75em 0 0.5em;
 		line-height: 1;
 
-		@media (min-width: vars.$sm) {
+		@media (min-width: 56rem) {
 			padding: var(--eighth-note) 0 var(--sixteenth-note);
 		}
 	}
