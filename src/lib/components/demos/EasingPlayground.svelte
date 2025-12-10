@@ -295,7 +295,7 @@
 	</div>
 </form>
 
-<style lang="scss">
+<style>
 	.easing-demo {
 		display: grid;
 		align-items: start;

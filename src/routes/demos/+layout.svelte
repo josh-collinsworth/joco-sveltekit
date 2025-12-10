@@ -49,6 +49,17 @@
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
+	<link rel="stylesheet" href="/css/vars.css" />
+	<link rel="stylesheet" href="/css/global.css" />
+	<link rel="stylesheet" href="/css/preferences.css" />
+	<link rel="stylesheet" href="/css/fonts.css" />
+	<link rel="stylesheet" href="/css/typography.css" />
+	<link rel="stylesheet" href="/css/utilities.css" />
+	<link rel="stylesheet" href="/css/layout.css" />
+	<link rel="stylesheet" href="/css/forms.css" />
+	<link rel="stylesheet" href="/css/code.css" />
+	<link rel="stylesheet" href="/css/print.css" />
+	<link rel="stylesheet" href="/css/components.css" />
 	{#if !dev}
 		<script
 			defer
