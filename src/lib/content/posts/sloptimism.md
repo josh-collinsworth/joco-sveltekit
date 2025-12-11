@@ -1,7 +1,7 @@
 ---
 title: "AI optimism is a class privilege"
 date: '2025-12-03'
-updated: '2025-12-10'
+updated: '2025-12-11'
 categories:
   - opinion
   - personal
