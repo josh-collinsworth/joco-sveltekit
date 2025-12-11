@@ -11,9 +11,10 @@ img {
 
 hr {
 	margin: var(--half-note) 0;
+	width: 100%;
+	height: 0;
 	border: 0;
-	height: 1px;
-	background: var(--accent-gradient);
+	border-top: 1px solid var(--neutral-light);
 }
 
 .details {
