@@ -259,5 +259,6 @@ html:not(.light) .side-note {
   border-bottom: 1px solid var(--yellow);
   padding-inline: 0.1rem;
   line-height: 1;
+  margin-inline-start: 0.2em;
 }
 

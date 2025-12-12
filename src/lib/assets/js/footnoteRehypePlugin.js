@@ -55,10 +55,13 @@ export function myFootnoteRehypePlugin() {
 								tagName: 'a',
 								properties: {
 									href: `#footnote-link-${footnoteCounter}`,
-									class: 'footnote-back-link',
-									ariaLabel: `Back to content`
+									class: 'back-link',
+									ariaLabel: `Back to original location`
 								},
-								children: [{ type: 'raw', value: backUpArrowSVG }]
+								children: [
+									{ type: 'text', value: ' ' },
+									{ type: 'raw', value: `${backUpArrowSVG}` }
+								]
 							})
 							node.children.splice(idx, closingTagIndex - idx - 1)
 							annotations.children.push(footnoteContent)
