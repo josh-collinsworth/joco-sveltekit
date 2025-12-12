@@ -23,7 +23,9 @@ excerpt: Learn the fundamentals of SvelteKit by building a statically generated 
 
 <Note>
 
-I've done my best to keep this post up-to-date through all of SvelteKit's breaking changes. It should be fully updated for SvelteKit 1.0, but if you spot any issues, please let me know in the comments or send me a message. Thanks for reading!
+[Edit December 2025]: This guide has aged. Nowadays, when when you're running the script to set up a new project, you get the option to add `mdsvex` from the get-go, so you don't have to go through a lot of these steps.
+
+This guide also predates Svelte 5, so some of the code may be a bit outdated (albeit still workable). I'm leaving it here because some parts of it may still be useful, but know it's not exactly modern anymore.
 
 </Note>
 
