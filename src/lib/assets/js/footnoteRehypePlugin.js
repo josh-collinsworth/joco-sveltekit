@@ -36,7 +36,6 @@ export function myFootnoteRehypePlugin() {
 							const closingTagIndex = node.children.findIndex(
 								(c, i) => i > idx && c.value === '</footnote>'
 							)
-							// console.log(node.children)
 							let footnoteContent = {
 								type: 'element',
 								tagName: 'li',
@@ -62,7 +61,7 @@ export function myFootnoteRehypePlugin() {
 									{ type: 'raw', value: `${backUpArrowSVG}` }
 								]
 							})
-							node.children.splice(idx, closingTagIndex - idx - 1)
+							node.children.splice(idx - 1, closingTagIndex - idx)
 							annotations.children.push(footnoteContent)
 							return {
 								...child,
@@ -82,15 +81,10 @@ export function myFootnoteRehypePlugin() {
 							return child
 						}
 					})
-					.filter(
-						(child) =>
-							child.value !== '<footnote>' && child.value !== '</footnote>'
-					)
+					.filter(Boolean)
 			}
 			return node
 		}
-
-		// console.log(annotations)
 
 		tree?.children?.forEach((node) => searchChildrenForFootnotes(node))
 		if (annotations.children.length > 0) {
