@@ -20,7 +20,6 @@ const backUpArrowSVG = `<svg
 
 export function myFootnoteRehypePlugin() {
 	return (tree) => {
-		let footnoteCounter = 0
 		let annotations = {
 			type: 'element',
 			tagName: 'ol',
@@ -33,7 +32,7 @@ export function myFootnoteRehypePlugin() {
 				node.children = node.children
 					.map((child, idx) => {
 						if (node?.children[idx - 1]?.value === '<footnote>') {
-							footnoteCounter++
+							const currentFootnoteIndex = annotations.children.length + 1
 							const closingTagIndex = node.children.findIndex(
 								(c, i) => i > idx && c.value === '</footnote>'
 							)
@@ -42,7 +41,7 @@ export function myFootnoteRehypePlugin() {
 								type: 'element',
 								tagName: 'li',
 								properties: {
-									id: `footnote-${footnoteCounter}`,
+									id: `footnote-${currentFootnoteIndex}`,
 									tabindex: '-1'
 								},
 								children: []
@@ -54,7 +53,7 @@ export function myFootnoteRehypePlugin() {
 								type: 'element',
 								tagName: 'a',
 								properties: {
-									href: `#footnote-link-${footnoteCounter}`,
+									href: `#footnote-link-${currentFootnoteIndex}`,
 									class: 'back-link',
 									ariaLabel: `Back to original location`
 								},
@@ -70,11 +69,11 @@ export function myFootnoteRehypePlugin() {
 								type: 'element',
 								tagName: 'a',
 								properties: {
-									href: `#footnote-${footnoteCounter}`,
+									href: `#footnote-${currentFootnoteIndex}`,
 									class: 'footnote-link',
-									id: `footnote-link-${footnoteCounter}`
+									id: `footnote-link-${currentFootnoteIndex}`
 								},
-								children: [{ type: 'text', value: `${footnoteCounter}` }],
+								children: [{ type: 'text', value: `${currentFootnoteIndex}` }],
 								position: child.position
 							}
 						} else if (child.type === 'element' && child?.children?.length) {
@@ -94,7 +93,7 @@ export function myFootnoteRehypePlugin() {
 		// console.log(annotations)
 
 		tree?.children?.forEach((node) => searchChildrenForFootnotes(node))
-		if (footnoteCounter > 0) {
+		if (annotations.children.length > 0) {
 			tree.children = [
 				...tree.children,
 				{
