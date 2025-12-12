@@ -21,7 +21,12 @@ const backUpArrowSVG = `<svg
 export function myFootnoteRehypePlugin() {
 	return (tree) => {
 		let footnoteCounter = 0
-		let annotations = `<ol class="footnote-annotations">`
+		let annotations = {
+			type: 'element',
+			tagName: 'ol',
+			properties: { class: 'footnote-annotations' },
+			children: []
+		}
 
 		const searchChildrenForFootnotes = (node) => {
 			if (node.type === 'element' && node?.children?.length) {
@@ -29,7 +34,34 @@ export function myFootnoteRehypePlugin() {
 					.map((child, idx) => {
 						if (node?.children[idx - 1]?.value === '<footnote>') {
 							footnoteCounter++
-							annotations += `<li id="footnote-${footnoteCounter}" tabindex="-1">${child.value} <a href="#footnote-link-${footnoteCounter}" class="back-link" aria-label="Back to original location">${backUpArrowSVG}</a></li>`
+							const closingTagIndex = node.children.findIndex(
+								(c, i) => i > idx && c.value === '</footnote>'
+							)
+							// console.log(node.children)
+							let footnoteContent = {
+								type: 'element',
+								tagName: 'li',
+								properties: {
+									id: `footnote-${footnoteCounter}`,
+									tabindex: '-1'
+								},
+								children: []
+							}
+							for (let i = idx; i < closingTagIndex; i++) {
+								footnoteContent.children.push(node.children[i])
+							}
+							footnoteContent.children.push({
+								type: 'element',
+								tagName: 'a',
+								properties: {
+									href: `#footnote-link-${footnoteCounter}`,
+									class: 'footnote-back-link',
+									ariaLabel: `Back to content`
+								},
+								children: [{ type: 'raw', value: backUpArrowSVG }]
+							})
+							node.children.splice(idx, closingTagIndex - idx - 1)
+							annotations.children.push(footnoteContent)
 							return {
 								...child,
 								type: 'element',
@@ -56,6 +88,8 @@ export function myFootnoteRehypePlugin() {
 			return node
 		}
 
+		// console.log(annotations)
+
 		tree?.children?.forEach((node) => searchChildrenForFootnotes(node))
 		if (footnoteCounter > 0) {
 			tree.children = [
@@ -64,12 +98,7 @@ export function myFootnoteRehypePlugin() {
 					type: 'element',
 					tagName: 'footer',
 					properties: {},
-					children: [
-						{
-							type: 'text',
-							value: annotations + `</ol>`
-						}
-					]
+					children: [annotations]
 				}
 			]
 		}
