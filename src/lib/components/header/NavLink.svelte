@@ -54,6 +54,7 @@
 
 		&.open {
 			animation: move_in_left var(--itemTransition);
+			--item-delay: 0.085s;
 
 			@media (prefers-reduced-motion: reduce) {
 				animation: none;
@@ -61,31 +62,31 @@
 			}
 
 			&:nth-of-type(1) {
-				animation-delay: 0.1s;
+				animation-delay: calc(var(--item-delay) * 1);
 			}
 			&:nth-of-type(2) {
-				animation-delay: 0.2s;
+				animation-delay: calc(var(--item-delay) * 2);
 			}
 			&:nth-of-type(3) {
-				animation-delay: 0.3s;
+				animation-delay: calc(var(--item-delay) * 3);
 			}
 			&:nth-of-type(4) {
-				animation-delay: 0.4s;
+				animation-delay: calc(var(--item-delay) * 4);
 			}
 			&:nth-of-type(5) {
-				animation-delay: 0.5s;
+				animation-delay: calc(var(--item-delay) * 5);
 			}
 			&:nth-of-type(6) {
-				animation-delay: 0.6s;
+				animation-delay: calc(var(--item-delay) * 6);
 			}
 			&:nth-of-type(7) {
-				animation-delay: 0.7s;
+				animation-delay: calc(var(--item-delay) * 7);
 			}
 			&:nth-of-type(8) {
-				animation-delay: 0.7s;
+				animation-delay: calc(var(--item-delay) * 8);
 			}
 			&:nth-of-type(9) {
-				animation-delay: 0.7s;
+				animation-delay: calc(var(--item-delay) * 9);
 			}
 
 			a {
