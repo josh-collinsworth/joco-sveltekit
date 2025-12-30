@@ -67,7 +67,7 @@ h6,
 	font-family: var(--heading-font);
 	font-weight: bold;
 	color: var(--heading-color);
-	line-height: 1.2;
+	line-height: 1.1;
 	position: relative;
 	margin-bottom: var(--quarter-note);
 	margin-top: var(--whole-note);
