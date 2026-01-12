@@ -1,3 +1,4 @@
+export const prerender = true
 import { fetchPosts } from '$lib/assets/js/utils'
 
 export async function GET() {
