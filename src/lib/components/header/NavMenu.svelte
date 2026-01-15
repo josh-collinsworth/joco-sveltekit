@@ -20,7 +20,7 @@
 	</div>
 </template>
 
-<style lang="scss">
+<style>
 	.main-nav {
 		text-align: right;
 		font-family: var(--heading-font);

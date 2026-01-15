@@ -100,7 +100,7 @@
 	</noscript>
 </div>
 
-<style lang="scss">
+<style>
 	:global(.dark .svelte-code-comparison button) {
 		border-color: var(--paper);
 	}
@@ -108,7 +108,7 @@
 	.svelte-code-comparison {
 		margin: var(--half-note) 0;
 
-		&__button-bar {
+		.svelte-code-comparison__button-bar {
 			display: flex;
 			justify-content: flex-start;
 		}
@@ -117,7 +117,7 @@
 			padding-left: 2vw;
 			padding-right: 2vw;
 			border-color: var(--ink);
-			border-bottom: 0 !important; // Overrides .current block below
+			border-bottom: 0 !important; /* Overrides .current block below */
 			border-width: 1px;
 
 			@media (min-width: 82rem) {
@@ -131,7 +131,7 @@
 		}
 
 		.current {
-			// These colors taken from _code.scss
+			/* These colors taken from _code.scss */
 			background: #1d1e26;
 			border: 1px solid var(--neutral-black);
 			color: #9580ff;

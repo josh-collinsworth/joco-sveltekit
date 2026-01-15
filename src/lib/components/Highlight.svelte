@@ -12,7 +12,7 @@
 	{@render children?.()}
 </div>
 
-<style lang="scss">
+<style>
 	.highlight {
 		font-size: 1.3em;
 		line-height: 1.5;

@@ -84,7 +84,7 @@
 	{/each}
 </div>
 
-<style lang="scss">
+<style>
 	.color-table {
 		margin-top: var(--quarter-note);
 		display: grid;

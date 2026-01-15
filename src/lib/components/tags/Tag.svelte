@@ -15,7 +15,7 @@
 	</li>
 </template>
 
-<style lang="scss">
+<style>
 	.tag {
 		margin: 0;
 		padding-left: 0;

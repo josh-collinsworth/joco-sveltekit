@@ -108,7 +108,7 @@ hr {
 	margin-bottom: var(--half-note);
 	position: relative;
 
-	&-outer {
+	.table-outer {
 		position: relative;
 		width: 100%;
 

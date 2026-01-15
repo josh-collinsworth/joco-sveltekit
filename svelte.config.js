@@ -32,6 +32,14 @@ const config = {
 
 	kit: {
 		adapter: adapter()
+	},
+
+	compilerOptions: {
+		// This is a temporary workaround to suppress warnings about the way I'm handling footnotes in the custom rehype plugin. The warnings are expected and don't indicate any actual issues, but they were cluttering up the console during development.
+		warningFilter: (warning) => {
+			if(warning.code === 'element_implicitly_closed' && warning.message.includes('</footnote>')) return false
+			return true
+		},
 	}
 }
 

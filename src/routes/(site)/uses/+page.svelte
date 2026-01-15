@@ -29,7 +29,7 @@
 	</div>
 </Main>
 
-<style lang="scss" global>
+<style global>
 	.uses {
 		li a,
 		p a {

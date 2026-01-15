@@ -262,3 +262,42 @@ html:not(.light) .side-note {
   margin-inline-start: 0.2em;
 }
 
+#dark-mode-toggle {
+		background: var(--button-background);
+
+		&:hover,
+		&:focus {
+			svg {
+				path,
+				circle {
+					stroke: var(--yellow);
+				}
+			}
+		}
+
+		&.dark svg {
+			transform: translateY(0);
+		}
+
+		svg {
+			--itemTransition: 0.4s cubic-bezier(0.7, -0.01, 0, 1.01);
+			width: 2rem;
+			height: 4rem;
+			transform: translateY(-1.975rem);
+			transition:
+				transform var(--itemTransition),
+				fill var(--itemTransition),
+				stroke var(--itemTransition),
+				background var(--itemTransition);
+
+			path,
+			circle {
+				transition:
+					transform var(--itemTransition),
+					fill var(--itemTransition),
+					stroke var(--itemTransition),
+					background var(--itemTransition);
+				stroke: var(--ink);
+			}
+		}
+	}

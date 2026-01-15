@@ -35,7 +35,7 @@
 	<div>Top</div>
 </a>
 
-<style lang="scss">
+<style>
 	a[href='#app'] {
 		position: fixed;
 		bottom: var(--quarter-note);
@@ -43,7 +43,6 @@
 		padding: 0.75rem 0.5rem 0.75rem 1rem;
 		display: flex;
 		background: var(--blue-lighter);
-		// background: linear-gradient(125deg in oklch, var(--yellow), var(--blue-lighter));
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;

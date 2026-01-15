@@ -25,7 +25,7 @@
 	</a>
 </li>
 
-<style lang="scss">
+<style>
 	.nav__item {
 		margin: 0;
 

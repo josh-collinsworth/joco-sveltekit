@@ -53,7 +53,7 @@
 	</div>
 </div>
 
-<style lang="scss" global>
+<style global>
 	.accordion {
 		height: 2.5em;
 		transition: height 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);

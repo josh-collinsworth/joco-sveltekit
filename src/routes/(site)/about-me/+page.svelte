@@ -163,7 +163,7 @@
 	</div>
 </Main>
 
-<style lang="scss">
+<style>
 	.writing {
 		h2 {
 			margin-bottom: var(--quarter-note);

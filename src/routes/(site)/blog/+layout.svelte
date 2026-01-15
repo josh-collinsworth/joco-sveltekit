@@ -38,7 +38,7 @@
 	{@render children?.()}
 </div>
 
-<style lang="scss">
+<style>
 	.layout-grid {
 		display: grid;
 		grid-template-columns: 100%;

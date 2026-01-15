@@ -59,7 +59,7 @@
 	</div>
 </PageTransition>
 
-<style lang="scss">
+<style>
 	.page-head {
 		--transition: transform 0.24s cubic-bezier(0.165, 0.84, 0.44, 1);
 

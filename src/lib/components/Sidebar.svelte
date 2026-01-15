@@ -53,7 +53,7 @@
 	</ul>
 </aside>
 
-<style lang="scss">
+<style>
 	.sidebar {
 		font-size: 0.8125rem;
 		max-width: var(--max-width);

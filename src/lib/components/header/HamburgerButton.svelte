@@ -19,7 +19,7 @@
 	<div class="line line-bottom" aria-hidden="true"></div>
 </button>
 
-<style lang="scss">
+<style>
 	#hamburger {
 		display: none;
 		justify-content: space-between;
@@ -44,18 +44,18 @@
 
 			.line {
 				background: var(--neutral-white);
+			}
 
-				&-top {
-					transform: translate(0.025em, -0.1em) rotate(-45deg) scaleX(1.5);
-				}
+			.line-top {
+				transform: translate(0.025em, -0.1em) rotate(-45deg) scaleX(1.5);
+			}
 
-				&-middle {
-					transform: scaleX(0);
-				}
+			.line-middle {
+				transform: scaleX(0);
+			}
 
-				&-bottom {
-					transform: translate(0.025em, 0.1em) rotate(45deg) scaleX(1.5);
-				}
+			.line-bottom {
+				transform: translate(0.025em, 0.1em) rotate(45deg) scaleX(1.5);
 			}
 		}
 
@@ -67,10 +67,10 @@
 				background 0.2s,
 				transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 			transform-origin: right;
+		}
 
-			&-middle {
-				transform-origin: center;
-			}
+		.line-middle {
+			transform-origin: center;
 		}
 
 		&:hover,

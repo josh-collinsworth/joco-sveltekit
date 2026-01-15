@@ -20,7 +20,7 @@ excerpt: If you don't often look beyond established comfortable defaults, you mi
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-<style lang="scss">
+<style>
 h4 {
 	margin-top: var(--dotted-quarter-note);
 	margin-bottom: var(--eighth-note);

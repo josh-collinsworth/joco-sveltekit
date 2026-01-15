@@ -11,7 +11,7 @@
 	{@render children?.()}
 </div>
 
-<style lang="scss">
+<style>
 	.summary {
 		// background-color: var(--blue-lightest);
 		padding: var(--quarter-note);

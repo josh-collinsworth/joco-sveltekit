@@ -18,7 +18,7 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style>
 	.loader {
 		background: var(--paper);
 		@supports color-mix(black, transparent) {

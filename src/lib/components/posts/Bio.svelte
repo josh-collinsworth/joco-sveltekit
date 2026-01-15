@@ -41,7 +41,7 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style>
 	.bio {
 		font-size: 0.85rem;
 		overflow: auto;
@@ -76,15 +76,15 @@
 				}
 			}
 
-			&__kofi::marker {
+			.link-list__kofi::marker {
 				content: '☕ ';
 			}
 
-			&__contact::marker {
+			.link-list__contact::marker {
 				content: '📩 ';
 			}
 
-			&__more::marker {
+			.link-list__more::marker {
 				content: '💁🏼‍♂️ ';
 			}
 		}

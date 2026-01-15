@@ -31,7 +31,7 @@ Other times, however, Copilot is clearly just regurgitating irrelevant code samp
 
 <figure>
 <img src="/images/post_images/copilot/div-vomit.webp" alt="" />
-<figcaption>Copilot loves suggesting about 25 nested divs as a starting point.</figure>
+<figcaption>Copilot loves suggesting about 25 nested divs as a starting point.</figcaption></figure>
 
 I assume this is because of a flaw in how LLMs work. They're prediction engines; they're literally built to guess. They're not made to give you verifiable facts or to say "I don't know" (at least, not above a certain threshold of probability).
 

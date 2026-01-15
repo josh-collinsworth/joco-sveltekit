@@ -18,7 +18,7 @@ excerpt: 'How does the Glove80 stack up against similar keyboards like the Moonl
   import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
-<style lang="scss">
+<style>
 	.toc-details {
 		border: 1px solid var(--neutral-light);
 		padding: 1rem;
@@ -566,7 +566,7 @@ I've assembled a final pros and cons list, if you're just looking for the tl;dr 
 ### Pros and cons
 
 <div class="pro-con">
-	<style lang="scss">
+	<style>
 		.pro-con {
 			grid-template-columns: 1fr;
 			margin-block-end: var(--half-note);

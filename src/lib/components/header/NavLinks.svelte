@@ -19,7 +19,7 @@
 	<NavLink to="/uses" text="Uses" {path} />
 </ul>
 
-<style lang="scss">
+<style>
 	ul {
 		display: flex;
 		flex-wrap: wrap;

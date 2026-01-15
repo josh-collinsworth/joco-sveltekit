@@ -3,10 +3,10 @@
 	import { onMount } from 'svelte'
 
 	interface Props {
-		color?: string;
-		out?: boolean;
-		gridWidth?: number;
-		base: number;
+		color?: string
+		out?: boolean
+		gridWidth?: number
+		base: number
 	}
 
 	let {
@@ -14,9 +14,9 @@
 		out = false,
 		gridWidth = 0,
 		base
-	}: Props = $props();
+	}: Props = $props()
 
-	let size = $state(base / 2)
+	let size = $derived(base / 2)
 
 	onMount(() => {
 		const cellSize = Math.random()
@@ -73,7 +73,7 @@
 	{/key}
 </template>
 
-<style lang="scss">
+<style>
 	.cell {
 		opacity: 0;
 		mix-blend-mode: overlay;

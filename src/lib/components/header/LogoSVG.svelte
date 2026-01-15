@@ -42,20 +42,20 @@
 	</svg>
 </template>
 
-<style lang="scss" global>
+<style global>
+	a:hover #logo-svg,
+	a:focus #logo-svg {
+		#bracket-left {
+			transform: translateX(11%);
+		}
+
+		#bracket-right {
+			transform: translateX(-11%);
+		}
+	}
+
 	#logo-svg {
 		width: auto;
-
-		a:hover &,
-		a:focus & {
-			#bracket-left {
-				transform: translateX(11%);
-			}
-
-			#bracket-right {
-				transform: translateX(-11%);
-			}
-		}
 
 		#bracket-left,
 		#bracket-right {

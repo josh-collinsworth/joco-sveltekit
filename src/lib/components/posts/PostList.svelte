@@ -16,7 +16,7 @@
 	{/each}
 </ul>
 
-<style lang="scss">
+<style>
 	.post-list {
 		padding: 0;
 		list-style-type: none;

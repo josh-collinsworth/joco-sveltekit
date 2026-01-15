@@ -37,7 +37,7 @@
 	</div>
 </Main>
 
-<style lang="scss">
+<style>
 	h1.h2 {
 		margin: 0 0 var(--whole-note);
 	}

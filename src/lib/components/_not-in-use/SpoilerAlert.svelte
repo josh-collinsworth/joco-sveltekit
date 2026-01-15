@@ -1,16 +1,15 @@
 <script lang="ts">
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: import('svelte').Snippet
 	}
 
-	let { children }: Props = $props();
+	let { children }: Props = $props()
 	let isSpoiled = $state(false)
 
 	const toggleIsSpoiled = () => {
 		isSpoiled = !isSpoiled
 	}
 </script>
-
 
 <div class="spoiler">
 	<div class="spoiler__controls">
@@ -24,14 +23,13 @@
 	{/if}
 </div>
 
-
-<style lang="scss">
+<style>
 	.spoiler {
 		border: 2px solid var(--red);
 		padding: 1rem;
 		margin: 2rem 0;
 
-		&__controls {
+		.spoiler__controls {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;

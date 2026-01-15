@@ -30,7 +30,7 @@
 	</div>
 </Main>
 
-<style lang="scss" global>
+<style global>
 	.resume {
 		.resume-logo {
 			display: none;

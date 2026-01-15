@@ -58,7 +58,7 @@
 	</noscript>
 </div>
 
-<style lang="scss">
+<style>
 	.logo {
 		width: auto;
 		height: 2rem;

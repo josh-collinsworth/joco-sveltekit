@@ -8,11 +8,11 @@
 	let yOut = $state(-12)
 
 	interface Props {
-		refresh?: string | boolean;
-		span?: boolean;
-		transitionIn?: boolean;
-		transitionOut?: boolean;
-		children?: import('svelte').Snippet;
+		refresh?: string | boolean
+		span?: boolean
+		transitionIn?: boolean
+		transitionOut?: boolean
+		children?: import('svelte').Snippet
 	}
 
 	let {
@@ -21,11 +21,12 @@
 		transitionIn = true,
 		transitionOut = true,
 		children
-	}: Props = $props();
+	}: Props = $props()
 
 	onMount(() => {
-		const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`)
-			.matches
+		const isReduced = window.matchMedia(
+			`(prefers-reduced-motion: reduce)`
+		).matches
 
 		if (isReduced) {
 			yIn = 0
@@ -54,7 +55,7 @@
 	</div>
 {/key}
 
-<style lang="scss">
+<style>
 	.transition-wrapper {
 		&.span {
 			grid-column: 1 / -1;

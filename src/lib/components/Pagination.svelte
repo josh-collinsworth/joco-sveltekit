@@ -29,7 +29,7 @@
 	</ul>
 </nav>
 
-<style lang="scss">
+<style>
 	.pagination {
 		margin: 0 0 var(--quarter-note);
 

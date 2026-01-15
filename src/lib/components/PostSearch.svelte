@@ -22,7 +22,7 @@
 		const response = await fetch('/api/posts/all')
 		const posts = await response.json()
 
-		const filteredPosts = await posts.filter(post => {
+		const filteredPosts = await posts.filter((post) => {
 			return post.title.toLowerCase().includes(searchString.toLowerCase())
 		})
 
@@ -51,7 +51,7 @@
 			<div class="dot" aria-hidden="true">•</div>
 		</div>
 	{/if}
-	
+
 	{#if results.length}
 		<ul class="results">
 			{#each results as result}
@@ -65,7 +65,7 @@
 	{:else if searchString && !isWorking}
 		<ul class="results">
 			<li>
-				Sorry, no matching post titles. 
+				Sorry, no matching post titles.
 				{#if searchString.includes(' ')}
 					Try fewer words and/or removing spaces.
 				{/if}
@@ -74,8 +74,7 @@
 	{/if}
 </div>
 
-
-<style lang="scss">
+<style>
 	.search {
 		font-size: 0.8em;
 	}
@@ -96,13 +95,13 @@
 
 			.dot {
 				line-height: 1;
-				animation: blink .6s ease-in-out infinite;
+				animation: blink 0.6s ease-in-out infinite;
 
 				+ .dot {
-					animation-delay: .1s;
+					animation-delay: 0.1s;
 
 					+ .dot {
-						animation-delay: .2s;
+						animation-delay: 0.2s;
 					}
 				}
 			}

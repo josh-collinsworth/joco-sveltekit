@@ -105,7 +105,7 @@
 	</form>
 </div>
 
-<style lang="scss">
+<style>
 	.demo {
 		display: flex;
 		margin: var(--half-note) 0;

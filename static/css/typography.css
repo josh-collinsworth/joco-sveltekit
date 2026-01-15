@@ -273,11 +273,11 @@ ol {
 			margin-left: 1ch;
 		}
 
-		&__contact::marker {
+		.post-links__contact::marker {
 			content: '📩';
 		}
 
-		&__blog::marker {
+		.post-links__blog::marker {
 			content: '🔙';
 		}
 	}

@@ -9,7 +9,7 @@
 
 <img src={path} {alt} />
 
-<style lang="scss">
+<style>
 	img {
 		margin-top: 0;
 

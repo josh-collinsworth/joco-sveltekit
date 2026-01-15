@@ -15,7 +15,7 @@
 	</ul>
 </Main>
 
-<style lang="scss">
+<style>
 	.subhead {
 		font-size: 1.4rem;
 		margin: 0 0 4rem;

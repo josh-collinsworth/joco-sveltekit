@@ -3,7 +3,11 @@ import { sveltekit } from '@sveltejs/kit/vite'
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [sveltekit(), devtoolsJson()]
+	plugins: [sveltekit(), devtoolsJson()],
+	onwarn: (warning, handler) => {
+		if (warning.code === 'element_implicitly_closed') return
+		handler(warning)
+	}
 }
 
 export default config

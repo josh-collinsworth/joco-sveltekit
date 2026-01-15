@@ -61,7 +61,12 @@
 	</footer>
 </div>
 
-<style lang="scss">
+<style>
+	.footer-wrapper {
+		overflow: hidden;
+		max-width: 100vw;
+	}
+
 	.footer {
 		width: 100%;
 		background: var(--blue-dark);
@@ -98,12 +103,7 @@
 			display: block;
 		}
 
-		&-wrapper {
-			overflow: hidden;
-			max-width: 100vw;
-		}
-
-		&__links {
+		.footer__links {
 			padding: 0 var(--quarter-note) var(--quarter-note);
 			margin: 2rem 2rem 2rem 1rem;
 			border-bottom: 1px solid var(--blue-light);

@@ -92,7 +92,7 @@ https://svelte.dev/e/js_parse_error -->
 	</form>
 </template>
 
-<style lang="scss">
+<style>
 	.tester-form {
 		overflow: visible;
 		margin: 4rem 0 0;

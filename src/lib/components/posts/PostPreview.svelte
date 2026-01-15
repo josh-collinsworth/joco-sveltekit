@@ -78,7 +78,7 @@
 	</article>
 </li>
 
-<style lang="scss">
+<style>
 	li {
 		margin: 0 0 var(--half-note);
 

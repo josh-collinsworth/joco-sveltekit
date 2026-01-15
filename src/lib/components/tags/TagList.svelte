@@ -1,17 +1,16 @@
 <script lang="ts">
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: import('svelte').Snippet
 	}
 
-	let { children }: Props = $props();
+	let { children }: Props = $props()
 </script>
 
 <ul class="tag-list no-bullets">
 	{@render children?.()}
 </ul>
 
-
-<style lang="scss">
+<style>
 	.tag-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -19,6 +18,6 @@
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
 </style>

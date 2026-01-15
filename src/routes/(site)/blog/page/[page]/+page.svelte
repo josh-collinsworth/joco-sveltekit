@@ -48,7 +48,7 @@
 	<Pagination currentPage={page} {totalPosts} />
 </Main>
 
-<style lang="scss">
+<style>
 	h1.h2 {
 		font-size: 1.3rem;
 		padding: 0;

@@ -16,7 +16,7 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style>
 	.warning {
 		margin: var(--half-note) 0;
 		position: relative;

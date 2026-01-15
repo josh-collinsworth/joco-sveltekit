@@ -96,7 +96,7 @@
 	{/key}
 </div>
 
-<style lang="scss">
+<style>
 	.grid-wrapper {
 		height: calc(var(--base) * 2.5);
 		position: relative;

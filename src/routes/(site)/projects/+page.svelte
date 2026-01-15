@@ -222,8 +222,8 @@
 				<h3>CodePen collections</h3>
 				<ul>
 					<li>
-						<a href="https://codepen.io/collection/GpRgyK">Showcase</a> (my best
-						pens and experiments)
+						<a href="https://codepen.io/collection/GpRgyK">Showcase</a> (my best pens
+						and experiments)
 					</li>
 					<li>
 						<a href="https://codepen.io/collection/QbLwag">Humor</a> (pens more about
@@ -342,11 +342,10 @@
 	</div>
 </Main>
 
-<style lang="scss">
+<style>
 	.projects {
 		p {
 			max-width: var(--max-width);
-			// min-width: 12em;
 		}
 
 		article {
