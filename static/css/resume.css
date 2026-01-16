@@ -1,0 +1,138 @@
+.resume {
+	.resume-logo {
+		display: none;
+	}
+
+	h3 {
+		margin-bottom: calc(var(--quarter-note) / 2);
+
+		~ p {
+			margin: 0;
+		}
+
+		a {
+			text-decoration: underline;
+			text-decoration-thickness: 1pt;
+			text-decoration-color: var(--yellow);
+		}
+	}
+
+	hr {
+		display: none;
+	}
+
+	@media (min-width: 82rem) {
+		display: grid;
+		grid-template-columns: 12rem 1fr;
+		gap: 0 var(--half-note);
+
+		&.compressed-content {
+			max-width: 52rem;
+		}
+
+		hr {
+			display: block;
+			opacity: 0;
+			margin: var(--half-note) 0;
+		}
+
+		* {
+			grid-column: 2 / -1;
+		}
+
+		h2 {
+			grid-column: 1 / 2;
+			margin: 0;
+			padding-top: 0;
+			position: sticky;
+			top: var(--half-note);
+			background: var(--paper);
+			text-align: right;
+			grid-row-end: span 3; /* This is a hack to make sure long headings don't show behind short ones. Probably need to figure out a better solution but it works for now. */
+
+			+ h3 {
+				margin-top: 0;
+			}
+
+			&::before {
+				top: calc(var(--whole-note) * -1);
+				position: absolute;
+				width: 100%;
+				background: linear-gradient(to top, var(--paper), transparent);
+				height: var(--whole-note);
+				z-index: 1;
+			}
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		p + ul {
+			margin-top: var(--quarter-note);
+		}
+	}
+}
+
+@media print {
+
+	.page-head {
+		display: none !important;
+	}
+
+	li {
+		break-inside: avoid;
+	}
+
+	.resume {
+		--quarter-note: 0.125in;
+		break-inside: avoid;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		font-size: 9pt;
+
+		.resume-logo {
+			display: inline-block;
+			margin: 0.5in 0 0;
+			max-width: 2in;
+		}
+
+		h2 {
+			font-size: 15pt;
+			position: static;
+			margin: 0.5in 0 0.125in;
+			border-bottom: 1pt solid;
+			padding-bottom: 0.05in;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		h3 {
+			font-size: 11pt;
+			margin: 0.5in 0 0.125in;
+		}
+
+		h2 + h3 {
+			margin-top: 0.25in;
+		}
+
+		ul {
+			break-inside: auto;
+		}
+
+		ul li {
+			margin: 0 0 0.05in;
+		}
+
+		hr {
+			display: none;
+		}
+
+		h2:before {
+			display: none;
+		}
+	}
+}

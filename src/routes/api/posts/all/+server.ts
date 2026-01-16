@@ -1,3 +1,5 @@
+export const prerender = true
+
 import { fetchPosts } from '$lib/assets/js/utils'
 import { json } from '@sveltejs/kit'
 

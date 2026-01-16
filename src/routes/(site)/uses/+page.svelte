@@ -29,11 +29,8 @@
 	</div>
 </Main>
 
-<style global>
-	.uses {
-		li a,
-		p a {
-			font-weight: bold;
-		}
+<style>
+	:global(.uses li a, .uses p a) {
+		font-weight: bold;
 	}
 </style>

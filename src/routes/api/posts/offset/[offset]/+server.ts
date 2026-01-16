@@ -1,11 +1,11 @@
-import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
+export const prerender = true
+
 import { fetchPosts } from '$lib/assets/js/utils'
+import type PostsEndpointOptions from '$lib/types/posts-endpoint-options'
 import { json } from '@sveltejs/kit'
 
 export const GET = async ({ params }): Promise<Response> => {
-	const options: PostsEndpointOptions = {
-		offset: 10
-	}
+	const options: PostsEndpointOptions = { offset: 10 }
 
 	if (params.offset) {
 		options.offset = params.offset
