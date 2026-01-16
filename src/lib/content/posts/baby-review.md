@@ -4,7 +4,7 @@ date: '2026-01-16'
 updated: '2026-01-16'
 categories:
   - satire
-coverImage: "nuborn.avif"
+coverImage: "nuborn.jpg"
 coverHeight: 1080
 coverWidth: 1920
 excerpt: "My Nüborn Baby arrived in October, and now that I've had a few months to get used to it, I thought I'd write up a review, in case you were thinking of getting one for yourself."
@@ -96,4 +96,4 @@ As you can tell, I'm not impressed. Frankly, aside from a few cute moments that 
 
 ...Actually, hang on, my Baby just smiled really big at me. And she just laughed, too!
 
-I take it all back. This is amazing.
+Never mind, this is amazing.
