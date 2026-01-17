@@ -24,9 +24,9 @@ I understand that logistics are complicated with this sort of product, but even 
 
 This is to say nothing of the ordering process itself; it's often not particularly easy to secure an order to even start that clock. Sometimes they're out of stock for months—or even _years_!—and you might just have to keep trying until you can finally get one sent your way.
 
-I'd understand this for a brand-new product, but Nüborn has been sending out essentially the same Baby model for ages now. Seems like there should've been some efficiency gains somewhere along the way, and it makes you wonder where the company is investing its efforts, exactly. (Nüborn's parent company, Evolütion, is known for moving extremely slowly.)
+I might understand this for a product that was new to the market, but Nüborn has been sending out essentially the same Baby model for ages now. Seems like there should've been some efficiency gains somewhere along the way, and it makes you wonder where the company is investing its efforts, exactly. (Nüborn's parent company, Evolütion, is notorious for moving extremely slowly.)
 
-When you finally _do_ manage to get your Nüborn Baby order placed, though, watch out: while shipping is _technically_ free, if you want to guarantee the best chance of successful delivery without damage or defect, it can cost thousands of dollars, depending on where you live and what previous agreements you may have made with the shipping company. (Note: this is US only; I'm told other countries have a better system.)
+When you finally _do_ manage to get your Nüborn Baby order placed, though, watch out: while shipping is _technically_ free, if you want to guarantee the best chance of successful delivery without damage or defect, it can cost thousands of dollars, depending on where you live and what previous agreements you may have made with a delivery insurance company. (Note: this is US only; I'm told other countries have a better system.)
 
 The marketing—and some owners—say this is unnecessary. And yes, you _can_ technically choose free delivery, and you might be fine if you do. But the odds of something going wrong are a lot higher than most people will be comfortable with, and so paying the extra and getting a third-party delivery specialist involved is likely the best choice for most people.
 
