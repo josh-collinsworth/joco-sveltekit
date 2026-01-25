@@ -1,303 +1,307 @@
 .pull-quote {
-  float: right;
-  margin: var(--half-note) -12em var(--dotted-half-note) var(--half-note);
-  font-size: 1.3rem;
-  line-height: 1.4;
-  position: relative;
-  background: var(--paper);
-  overflow: hidden;
-  padding: 0 0 0.75rem 0;
-  font-family: var(--heading-font);
-  font-style: normal;
-  font-weight: normal;
-  max-width: 16em;
-  text-wrap: balance;
+	float: right;
+	margin: var(--half-note) -12em var(--dotted-half-note) var(--half-note);
+	font-size: 1.3rem;
+	line-height: 1.4;
+	position: relative;
+	background: var(--paper);
+	overflow: hidden;
+	padding: 0 0 0.75rem 0;
+	font-family: var(--heading-font);
+	font-style: normal;
+	font-weight: normal;
+	max-width: 16em;
+	text-wrap: balance;
 
-  @media (min-width: 82rem) {
-    display: block;
-    font-size: 1.4rem;
-    margin-right: calc(-10rem - 13vw);
-  }
+	@media (min-width: 82rem) {
+		display: block;
+		font-size: 1.4rem;
+		margin-right: calc(-10rem - 13vw);
+	}
 
-  @media (min-width: 92rem) {
-    margin-right: -13em;
-    max-width: 18em;
-  }
+	@media (min-width: 92rem) {
+		margin-right: -13em;
+		max-width: 18em;
+	}
 
-  &:after {
-    content: '';
-    height: 0.25rem;
-    width: 100%;
-    margin-left: -100%;
-    background: var(--accent-gradient);
-    bottom: 0;
-    position: absolute;
-  }
+	&:after {
+		content: '';
+		height: 0.25rem;
+		width: 100%;
+		margin-left: -100%;
+		background: var(--accent-gradient);
+		bottom: 0;
+		position: absolute;
+	}
 }
 
 .pull-quote p:last-child {
-  display: inline;
+	display: inline;
 }
 
 .pull-quote em, .pull-quote i {
-  font-weight: bold;
-  font-style: normal;
+	font-weight: bold;
+	font-style: normal;
 }
 
 .callout {
-  margin: var(--dotted-quarter-note) 0;
-  font-size: 1.2rem;
-  line-height: 1.4;
+	margin: var(--dotted-quarter-note) 0;
+	font-size: 1.2rem;
+	line-height: 1.4;
 
-  @media (min-width: 82rem) {
-    margin: 0 0 var(--quarter-note);
-    font-size: inherit;
-    line-height: inherit;
-    font-family: inherit;
-  }
+	@media (min-width: 82rem) {
+		margin: 0 0 var(--quarter-note);
+		font-size: inherit;
+		line-height: inherit;
+		font-family: inherit;
+	}
 }
 
 .side-note {
-  --border-color: var(--blue-300);
-  --border-width: 1px;
-  border-block: var(--border-width) solid var(--border-color);
-  position: relative;
-  margin: var(--half-note) 0;
-  font-size: 0.8rem;
-  font-style: italic;
-  line-height: var(--quarter-note);
-  min-height: 4.5rem;
-  width: calc(100% + var(--margin) + var(--margin));
-  margin-left: calc(var(--margin) * -1);
-  padding: calc(var(--quarter-note) * 1.25) var(--quarter-note);
-  color: var(--ink);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--eighth-note);
+	--border-color: var(--blue-300);
+	--border-width: 1px;
+	border-block: var(--border-width) solid var(--border-color);
+	position: relative;
+	margin: var(--half-note) 0;
+	font-size: 0.8rem;
+	font-style: italic;
+	line-height: var(--quarter-note);
+	min-height: 4.5rem;
+	width: calc(100% + var(--margin) + var(--margin));
+	margin-left: calc(var(--margin) * -1);
+	padding: calc(var(--quarter-note) * 1.25) var(--quarter-note);
+	color: var(--ink);
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--eighth-note);
 
-  &::before,
-  &::after {
-    content: 'Side note';
-    font-weight: bold;
-    font-family: var(--heading-font);
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    display: block;
-    line-height: 1;
-    position: absolute;
-    left: calc(var(--border-width) * -1);
-    padding: var(--eighth-note);
-    top: calc(-0.5em - var(--eighth-note));
-    background: var(--paper);
-    color: var(--blue-600);
-  }
+	&::before,
+	&::after {
+		content: 'Side note';
+		font-weight: bold;
+		font-family: var(--heading-font);
+		font-style: normal;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		display: block;
+		line-height: 1;
+		position: absolute;
+		left: calc(var(--border-width) * -1);
+		padding: var(--eighth-note);
+		top: calc(-0.5em - var(--eighth-note));
+		background: var(--paper);
+		color: var(--blue-600);
+	}
 
-  &::after {
-    content: "/ side note";
-    top: unset;
-    left: unset;
-    right: calc(var(--border-width) * -1);
-    bottom: calc(-0.5em - var(--eighth-note));
-  }
+	&::after {
+		content: "/ side note";
+		top: unset;
+		left: unset;
+		right: calc(var(--border-width) * -1);
+		bottom: calc(-0.5em - var(--eighth-note));
+	}
 
-  @media (min-width: 34rem) {
-    &::before {
-      padding-left: 0;
-    }
+	@media (min-width: 34rem) {
+		&::before {
+			padding-left: 0;
+		}
 
-    &::after {
-      opacity: 0;
-    }
+		&::after {
+			opacity: 0;
+		}
 
-    border: var(--border-width) solid var(--border-color);
-    width: 100%;
-    margin-left: 0;
-    padding: var(--dotted-quarter-note);
-  }
+		border: var(--border-width) solid var(--border-color);
+		width: 100%;
+		margin-left: 0;
+		padding: var(--dotted-quarter-note);
+	}
 
-  @media (min-width: 92rem) {
-    padding: var(--half-note)
-  }
+	@media (min-width: 92rem) {
+		padding: var(--half-note)
+	}
 
-  em,
-  i,
-  code {
-    font-style: normal;
-  }
+	em,
+	i,
+	code {
+		font-style: normal;
+	}
 
-  p {
-    margin-bottom: 0;
-  }
+	p {
+		margin-bottom: 0;
+	}
 }
 
 .dark .side-note::before,
 .dark .side-note::after {
-  color: var(--blue-300);
+	color: var(--blue-300);
 }
 
 html:not(.light) .side-note {
-  @media (prefers-color-scheme: dark) {
-    --stop-1: var(--blue-950);
-    --stop-2: var(--blue-900);
-  }
+	@media (prefers-color-scheme: dark) {
+		--stop-1: var(--blue-950);
+		--stop-2: var(--blue-900);
+	}
 }
 
 .side-note > *:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .note {
-  border: 2px solid var(--yellow);
-  position: relative;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin: var(--half-note) 0;
+	border: 2px solid var(--yellow);
+	position: relative;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	margin: var(--half-note) 0;
 
-  .note__callout {
-    background: var(--yellow);
-    text-align: center;
-    line-height: 1.5;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: bold;
-    font-style: normal;
-    font-family: var(--heading-font);
-    width: 1.5rem;
-    display: grid;
-    place-content: center;
-  }
+	.note__callout {
+		background: var(--yellow);
+		text-align: center;
+		line-height: 1.5;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		font-weight: bold;
+		font-style: normal;
+		font-family: var(--heading-font);
+		width: 1.5rem;
+		display: grid;
+		place-content: center;
+	}
 
-  .note__callout-text {
-    transform: rotate(-90deg);
-    white-space: pre;
-    display: flex;
-    align-items: center;
-    color: var(--neutral-dark);
-  }
+	.note__callout-text {
+		transform: rotate(-90deg);
+		white-space: pre;
+		display: flex;
+		align-items: center;
+		color: var(--neutral-dark);
+	}
 
-  .note__callout-arrow {
-    display: inline-block;
-    width: 0.7em;
-    height: 0.75em;
-    border-top: 1px solid;
-    border-right: 1px solid;
-    position: relative;
+	.note__callout-arrow {
+		display: inline-block;
+		width: 0.7em;
+		height: 0.75em;
+		border-top: 1px solid;
+		border-right: 1px solid;
+		position: relative;
 
-    &::after {
-      content: '';
-      width: 0.5em;
-      height: 0.5em;
-      border-right: 1px solid;
-      border-bottom: 1px solid;
-      position: absolute;
-      transform: rotate(45deg);
-      top: 2px;
-      right: calc(-0.2em - 1px);
-    }
-  }
+		&::after {
+			content: '';
+			width: 0.5em;
+			height: 0.5em;
+			border-right: 1px solid;
+			border-bottom: 1px solid;
+			position: absolute;
+			transform: rotate(45deg);
+			top: 2px;
+			right: calc(-0.2em - 1px);
+		}
+	}
 
-  .note__content {
-    font-size: 0.8rem;
-    line-height: 1.5;
-    font-style: italic;
-    padding: var(--dotted-quarter-note);
-  }
+	.note__content {
+		font-size: 0.8rem;
+		line-height: 1.5;
+		font-style: italic;
+		padding: var(--dotted-quarter-note);
+	}
 }
 
 .note__content :last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .footnote-link {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 0.7rem;
-  position: relative;
-  bottom: 0.5em;
-  text-decoration: none;
-  margin-inline-start: 0.2em;
-  padding-inline: 0.1rem;
-  border-bottom: 1px solid var(--neutral-light);
+	display: inline-block;
+	font-weight: bold;
+	font-size: 0.7rem;
+	position: relative;
+	bottom: 0.5em;
+	text-decoration: none;
+	margin-inline-start: 0.2em;
+	padding-inline: 0.1rem;
+	border-bottom: 1px solid var(--neutral-light);
 }
 
 .footnote-annotations {
-  font-size: 0.8rem;
-  padding-top: var(--sixteenth-note);
-  margin-top: var(--dotted-half-note);
-  border-top: 1px solid var(--neutral-lighter);
-  line-height: 1.5;
+	font-size: 0.8rem;
+	padding-top: var(--sixteenth-note);
+	margin-top: var(--dotted-half-note);
+	border-top: 1px solid var(--neutral-lighter);
+	line-height: 1.5;
 
-  &::before {
-    content: 'Footnotes';
-    font-weight: bold;
-    font-family: var(--heading-font);
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: var(--eighth-note);
-    margin-bottom: var(--quarter-note);
-    margin-left: -1rem;
-    margin-top: -1em;
-    line-height: 1;
-    background: var(--paper);
-    display: block;
-    width: max-content;
-    padding-right: 1ch;
-  }
+	&::before {
+		content: 'Footnotes';
+		font-weight: bold;
+		font-family: var(--heading-font);
+		font-style: normal;
+		text-transform: uppercase;
+		font-size: var(--eighth-note);
+		margin-bottom: var(--quarter-note);
+		margin-left: -1rem;
+		margin-top: -1em;
+		line-height: 1;
+		background: var(--paper);
+		display: block;
+		width: max-content;
+		padding-right: 1ch;
+	}
 
-  li + li {
-    margin-top: var(--eighth-note);
-  }
+	li + li {
+		margin-top: var(--eighth-note);
+	}
 }
 
 .back-link {
-  display: inline-block;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: underline;
-  border-bottom: 1px solid var(--yellow);
-  padding-inline: 0.1rem;
-  line-height: 1;
-  margin-inline-start: 0.2em;
+	display: inline-block;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: underline;
+	border-bottom: 1px solid var(--yellow);
+	padding-inline: 0.1rem;
+	line-height: 1;
+	margin-inline-start: 0.2em;
+}
+
+.dark #dark-mode-toggle svg {
+	transform: translateY(0);
 }
 
 #dark-mode-toggle {
-		background: var(--button-background);
+	background: var(--button-background);
+	touch-action: manipulation;
 
-		&:hover,
-		&:focus {
-			svg {
-				path,
-				circle {
-					stroke: var(--yellow);
-				}
-			}
-		}
-
-		&.dark svg {
-			transform: translateY(0);
-		}
-
-		svg {
-			--itemTransition: 0.4s cubic-bezier(0.7, -0.01, 0, 1.01);
-			width: 2rem;
-			height: 4rem;
-			transform: translateY(-1.975rem);
-			transition:
-				transform var(--itemTransition),
-				fill var(--itemTransition),
-				stroke var(--itemTransition),
-				background var(--itemTransition);
-
+	&:hover,
+	&:focus {
+		& svg {
 			path,
 			circle {
-				transition:
-					transform var(--itemTransition),
-					fill var(--itemTransition),
-					stroke var(--itemTransition),
-					background var(--itemTransition);
-				stroke: var(--ink);
+				stroke: var(--yellow);
 			}
 		}
 	}
+}
+
+
+#dark-mode-toggle svg {
+	--itemTransition: 0.4s cubic-bezier(0.7, -0.01, 0, 1.01);
+	width: 2rem;
+	height: 4rem;
+	transform: translateY(-1.975rem);
+	transition:
+		transform var(--itemTransition),
+		fill var(--itemTransition),
+		stroke var(--itemTransition),
+		background var(--itemTransition);
+  }
+
+/* Why isn't this nested? Because Safari sucks. */
+#dark-mode-toggle svg :is(path, circle) {
+  transition:
+    transform var(--itemTransition),
+    fill var(--itemTransition),
+    stroke var(--itemTransition),
+    background var(--itemTransition);
+  stroke: var(--ink);
+}
+
+

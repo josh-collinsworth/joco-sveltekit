@@ -144,18 +144,6 @@ $fourxl: 144rem; */
 		--margin: var(--dotted-whole-note);
 	}
 
-	&.dark {
-		--paper: var(--neutral-black);
-		--ink: var(--neutral-100);
-		--heading-color: var(--neutral-white);
-		--accent-color: var(--blue-light);
-		--link-color: var(--blue-light);
-		--neutral-lightest: var(--neutral-900);
-		--neutral-lighter: var(--neutral-700);
-		--highlight-color: var(--neutral-darker);
-		--neutral-mid: var(--neutral-400);
-	}
-
 	/* Ensures media query only runs if a theme has not been set AND the user prefers dark color schemes */
 	&:not(.light) {
 		@media (prefers-color-scheme: dark) {
@@ -169,4 +157,16 @@ $fourxl: 144rem; */
 	}
 
 	font-size: var(--body-font-size);
+}
+
+:root.dark {
+	--paper: var(--neutral-black);
+	--ink: var(--neutral-100);
+	--heading-color: var(--neutral-white);
+	--accent-color: var(--blue-light);
+	--link-color: var(--blue-light);
+	--neutral-lightest: var(--neutral-900);
+	--neutral-lighter: var(--neutral-700);
+	--highlight-color: var(--neutral-darker);
+	--neutral-mid: var(--neutral-400);
 }
