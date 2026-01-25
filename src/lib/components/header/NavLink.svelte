@@ -26,30 +26,30 @@
 </li>
 
 <style>
+	@keyframes move_in_left {
+		from {
+			opacity: 0;
+			transform: translateX(-3em);
+		}
+
+		to {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+
 	.nav__item {
 		margin: 0;
 
 		@media (max-width: 56rem) {
 			--itemTransition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 
-			opacity: 0;
 			margin-bottom: 1.5rem;
 			font-size: 1.25rem;
 			line-height: 1.5em;
 			color: var(--neutral-white);
 			width: 100%;
-
-			@keyframes move_in_left {
-				from {
-					opacity: 0;
-					transform: translateX(-3em);
-				}
-
-				to {
-					transform: translateX(0);
-					opacity: 1;
-				}
-			}
+			opacity: 0;
 		}
 
 		&.open {
