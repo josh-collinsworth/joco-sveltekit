@@ -38,11 +38,9 @@
 		</div>
 
 		<div class="fine-print">
-			<a href="https://notbyai.fyi/about">
-				<img src="/images/ai-badge.svg" alt="Made by a human, not by AI." />
-			</a>
-
-			<p>©2015–{currentYear} Josh Collinsworth.</p>
+			<p>
+				©2015–{currentYear} Josh Collinsworth
+			</p>
 
 			<p>
 				This site uses no tracking or cookies, other than privacy-respecting,
@@ -56,6 +54,11 @@
 				hosted&nbsp;on&nbsp;<a rel="external" href="https://netlify.com"
 					>Netlify</a
 				>.
+			</p>
+
+			<p>
+				All content 100% written by Josh Collinsworth, a real person who really
+				types em dashes with his actual human fingers.
 			</p>
 		</div>
 	</footer>
@@ -97,10 +100,6 @@
 			color: inherit;
 			text-decoration: underline;
 			text-decoration-color: var(--blue-light);
-		}
-
-		img {
-			display: block;
 		}
 
 		.footer__links {
@@ -145,10 +144,6 @@
 			p {
 				margin: var(--quarter-note) 0;
 				max-width: 30em;
-			}
-
-			img {
-				width: auto;
 			}
 		}
 	}
