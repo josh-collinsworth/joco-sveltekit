@@ -49,16 +49,17 @@
 			</p>
 
 			<p>
-				Made with
+				All content 100% written by me, Josh Collinsworth, a real person who
+				typed everything on this site using his actual human fingers—em dashes
+				and all.
+			</p>
+
+			<p>
+				Built with
 				<a rel="external" href="https://kit.svelte.dev/">SvelteKit</a>;
 				hosted&nbsp;on&nbsp;<a rel="external" href="https://netlify.com"
 					>Netlify</a
 				>.
-			</p>
-
-			<p>
-				All content 100% written by Josh Collinsworth, a real person who really
-				types em dashes with his actual human fingers.
 			</p>
 		</div>
 	</footer>
@@ -144,6 +145,7 @@
 			p {
 				margin: var(--quarter-note) 0;
 				max-width: 30em;
+				text-wrap: balance;
 			}
 		}
 	}
