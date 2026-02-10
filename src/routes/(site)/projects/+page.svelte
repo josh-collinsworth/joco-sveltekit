@@ -39,6 +39,13 @@
 						<a href="https://apps.apple.com/us/app/quina/id1636895462"
 							>Quina on iOS</a
 						>
+
+						<small
+							><i>
+								(Note: currently unlisted by Apple for silly reasons. Working to
+								resolve or just remove.)</i
+							></small
+						>
 					</li>
 					<li>
 						<a
@@ -48,9 +55,6 @@
 					</li>
 					<li>
 						<a href="https://quina.app">Quina on the web</a>
-					</li>
-					<li>
-						<a href="https://github.com/josh-collinsworth/hondo">GitHub repo</a>
 					</li>
 					<li>
 						Read about the making of Quina <a
@@ -95,6 +99,13 @@
 					<li>
 						<a href="https://apps.apple.com/us/app/hondo/id1636016699"
 							>Hondo on iOS</a
+						>
+
+						<small
+							><i
+								>(Note: currently unlisted by Apple for silly reasons. Working
+								to resolve or just remove.)</i
+							></small
 						>
 					</li>
 					<li>
@@ -346,6 +357,14 @@
 	.projects {
 		p {
 			max-width: var(--max-width);
+		}
+
+		ul li {
+			line-height: 1.2;
+
+			& small {
+				font-size: 0.725em;
+			}
 		}
 
 		article {
