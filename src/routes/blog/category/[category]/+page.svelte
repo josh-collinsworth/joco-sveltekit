@@ -3,7 +3,6 @@
 	import type Post from '$lib/types/post'
 
 	import Main from '$lib/components/Main.svelte'
-	import Pagination from '$lib/components/Pagination.svelte'
 	import PostList from '$lib/components/posts/PostList.svelte'
 
 	interface Props {
@@ -12,17 +11,12 @@
 
 	let { data }: Props = $props()
 
-	let posts: Post[] = data.posts || []
-	let totalPosts: number = data.totalPosts.total
+	let posts: Post[] = $derived(data.posts)
+	let category: string = $derived(data.category)
 </script>
 
 <svelte:head>
-	<title>Josh Collinsworth | Blog</title>
-	<meta
-		data-key="description"
-		name="description"
-		content="Writings on development, design, and random thoughts."
-	/>
+	<title>Blog | Category: {category}</title>
 	<meta
 		property="og:image"
 		content="https://joshcollinsworth.com/images/site-image.png"
@@ -31,8 +25,14 @@
 
 <Main className="blog-roll">
 	<div class="compressed-content double-wide">
-		<PostList {posts} />
+		<h1 class="h2">Category: <b>{category}</b></h1>
 
-		<Pagination currentPage={1} {totalPosts} />
+		<PostList {posts} />
 	</div>
 </Main>
+
+<style>
+	h1.h2 {
+		margin: 0 0 var(--whole-note);
+	}
+</style>

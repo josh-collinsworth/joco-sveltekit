@@ -347,10 +347,6 @@
 
 		ul li {
 			line-height: 1.2;
-
-			& small {
-				font-size: 0.725em;
-			}
 		}
 
 		article {

@@ -9,7 +9,7 @@
 
 	let { data }: Props = $props()
 
-	let uniqueCategories: category[] = data.uniqueCategories
+	let uniqueCategories: category[] = $derived(data.uniqueCategories)
 </script>
 
 <svelte:head>

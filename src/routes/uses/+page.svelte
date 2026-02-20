@@ -7,7 +7,7 @@
 	}
 
 	let { data }: Props = $props()
-	let Uses: SvelteComponent = data.Uses
+	let Uses: SvelteComponent = $derived(data.Uses)
 </script>
 
 <svelte:head>

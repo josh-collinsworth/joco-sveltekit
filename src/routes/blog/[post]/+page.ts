@@ -14,7 +14,7 @@ export const load = async ({ params }): Promise<MarkdownPost> => {
 	}
 	try {
 		const post: SvelteComponent = await import(
-			`../../../../lib/content/posts/${params.post}.md`
+			`../../../lib/content/posts/${params.post}.md`
 		)
 
 		if (post) {

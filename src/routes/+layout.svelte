@@ -64,7 +64,10 @@
 		root = document.documentElement
 		root.classList.add('smooth-scroll')
 		if (!prefersReducedData()) {
-			preloadCode('/', '/blog', '/projects', '/about-me')
+			preloadCode('/')
+			preloadCode('/blog')
+			preloadCode('/projects')
+			preloadCode('/about-me')
 		}
 	})
 </script>
@@ -97,7 +100,9 @@
 <div id="app">
 	<Loader loading={$isLoading} />
 
-	<Header {path} />
+	{#if !path.startsWith('/demos')}
+		<Header {path} />
+	{/if}
 
 	<div class="layout">
 		<PageHeading title={path} {isSinglePost} />
