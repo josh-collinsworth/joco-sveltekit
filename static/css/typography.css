@@ -212,13 +212,6 @@ ol {
 	}
 }
 
-.post > ol,
-.post > ul {
-	li + li {
-		margin-top: var(--quarter-note);
-	}
-}
-
 .post {
 	.cover-image {
 		margin: 0;

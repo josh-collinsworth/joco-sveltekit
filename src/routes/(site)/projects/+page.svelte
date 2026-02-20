@@ -39,13 +39,6 @@
 						<a href="https://apps.apple.com/us/app/quina/id1636895462"
 							>Quina on iOS</a
 						>
-
-						<small
-							><i>
-								(Note: currently unlisted by Apple for silly reasons. Working to
-								resolve or just remove.)</i
-							></small
-						>
 					</li>
 					<li>
 						<a
@@ -99,13 +92,6 @@
 					<li>
 						<a href="https://apps.apple.com/us/app/hondo/id1636016699"
 							>Hondo on iOS</a
-						>
-
-						<small
-							><i
-								>(Note: currently unlisted by Apple for silly reasons. Working
-								to resolve or just remove.)</i
-							></small
 						>
 					</li>
 					<li>
