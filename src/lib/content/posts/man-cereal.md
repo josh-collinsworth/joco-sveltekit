@@ -92,8 +92,6 @@ They aren't really _for men_, as much as they are for people who fear being perc
 
 Because implicitly, the alternative to being a man is obviously _worse_.
 
-"For boys" is best. Anything that's not "for boys" is worse.
-
 _You're worse_ if you like things that are "for girls."
 
 <CalloutPlusQuote>
@@ -104,11 +102,9 @@ Yesterday, even though my son is barely seven years old, toxic masculinity perme
 
 His peer, who my son considers a friend and deeply admires, made my son feel inferior because, in that friend's narrow, small-minded view, my son did something that made him _like a girl_—which, that friend clearly believes, is _bad_.
 
-Man Cereal, and the other products like it, aren't "for men." Not really.
+If you look a little deeper, products like Man Cereal aren't really for men at all; they're actually for people who are so utterly insecure, so broken and lost, so tragically _traumatized_ by the toxic masculinity they continue to espouse, that they feel they need at least the _perception_ of peer approval before they can even do something so mundane as buy a goddamn box of cereal.
 
-If you look a little deeper, they're _actually_ for people who are so utterly insecure, so broken and lost, so _traumatized_ by the toxic masculinity they continue to espouse, that they feel they need societal approval before they can even do something so mundane as buy a goddamn box of cereal.
-
-These products are for people whose sense of self has been so hopelessly shredded by this false sense of masculinity, and the bullies who threaten to punish them if they dare to so much as exist outside its narrow boundaries, that they need a package on a shelf to call out to them, in ten words or fewer, "this is for you. Nobody will make fun of you if you spend your money on this."
+These products are for people whose sense of self has been so hopelessly shredded by this false sense of masculinity, and by the bullies who threaten to punish them if they dare to so much as exist outside its narrow boundaries, that they need a package on a shelf to call out to them, in ten words or fewer, "this is for you. Nobody will make fun of you if you spend your money on this."
 
 "Look! There aren't even any colors on the box! Colors are for _girls_!"
 
