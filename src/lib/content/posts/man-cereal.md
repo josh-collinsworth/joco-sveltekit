@@ -70,9 +70,7 @@ I told him everything's for everyone, so saying stuff is "for girls" is stupid, 
 
 My wife's response would probably score more points among parenting experts, but in my defense: it _is_ stupid and mean.
 
-And that's what bothers me: this whole thing is stupid and mean.
-
-Making stuff gendered that doesn't need to be is stupid and mean. Man Cereal, and every needlessly gendered product like it, is stupid and mean.
+And that's what bothers me: zoom out a little bit, and you can see this and Man Cereal are just different functions of the same machine; different expressions of the same root malignancy.
 
 It's stupid because, like I said, there is neither any need for these products, nor any shortage of what they actually are if you bother looking beneath the marketing. Cereals like this exist already. Zero-calorie soda existed already. Wet wipes existed already.
 
@@ -84,7 +82,7 @@ The only need these products meet is both psychological, and entirely manufactur
 
 _Not a man_.
 
-It's mean, because these products aren't so much about what you _are_ as what you _aren't_.
+And it's mean, because these products aren't so much about what you _are_ as what you _aren't_.
 
 They aren't really _for men_, as much as they are for people who fear being perceived as _not_ a man.
 
