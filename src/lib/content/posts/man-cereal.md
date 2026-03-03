@@ -62,7 +62,7 @@ On the way to school today, my son confided that one of his close friends and cl
 
 (I didn't ask what stuffed animal this kid brought. I can only assume they must make all-black pickup truck stuffed animals for kids like him.)
 
-My son had already confided this fact to my wife, before also confiding it to me. He's obviously very bothered to be treated this way.
+My son had already confided this fact to my wife, before also confiding it to me. He's obviously very bothered to be treated this way, and very rightly so.
 
 My wife told him that friends who talk about you behind your back aren't really your friends.
 
@@ -84,11 +84,11 @@ The only need these products meet is both psychological, and entirely manufactur
 
 _Not a man_.
 
-Because these products really aren't so much about what you _are_, as what you _aren't_.
+Because these products aren't so much about what you _are_, as what you _aren't_.
 
-These products assure you, "you're not _not_ a man for buying this."
+They aren't really _for men_, as much as they are for people who fear being perceived as _not_ a man.
 
-This product isn't "for girls."
+"Man Cereal" is, in deliberate subtext, "Not For Girls Cereal."
 
 Because implicitly, the alternative to being a man is obviously _worse_.
 
