@@ -27,7 +27,7 @@ export const load = async ({ params }): Promise<MarkdownPost> => {
 		// I don't like the nested try/catch option, but since it's just to load drafts on dev and won't really do anything on prod, I don't mind it too much. Besides, it's one of the  only ways to get this to work properly.
 		try {
 			const draft: SvelteComponent = await import(
-				`../../../../lib/content/posts/drafts/${params.post}.md`
+				`../../../lib/content/posts/drafts/${params.post}.md`
 			)
 
 			if (draft) {
