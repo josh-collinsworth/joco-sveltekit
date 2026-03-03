@@ -38,7 +38,7 @@ My son's favorite stuffed animal is one he named "Every Color," because it's a u
 
 My son would pack Every Color for sleepovers and car trips. Any time he could only bring one stuffed animal with him, Every Color was the one. And though he's old enough now that stuffed animals are more like toys than companions or things with emotional support value, Every Color still obviously holds a special place in his heart.
 
-It's his favorite. Every Color brings him some kind of happiness.
+It's his favorite. Every Color makes him. happy.
 
 That's an unambiguously delightful, joyous, heartwarming thing.
 
