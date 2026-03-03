@@ -84,7 +84,7 @@ The only need these products meet is both psychological, and entirely manufactur
 
 _Not a man_.
 
-Because these products aren't so much about what you _are_, as what you _aren't_.
+It's mean, because these products aren't so much about what you _are_ as what you _aren't_.
 
 They aren't really _for men_, as much as they are for people who fear being perceived as _not_ a man.
 
