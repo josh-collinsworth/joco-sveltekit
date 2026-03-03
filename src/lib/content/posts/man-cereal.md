@@ -86,7 +86,7 @@ And it's mean, because these products aren't so much about what you _are_ as wha
 
 They aren't really _for men_, as much as they are for people who fear being perceived as _not_ a man.
 
-"Man Cereal" is, in deliberate subtext, "Not For Girls Cereal."
+"Man Cereal" is, in deliberate subtext, "Not For Girls Cereal." (If you doubt this, go read that tagline again.)
 
 Because implicitly, the alternative to being a man is obviously _worse_.
 
