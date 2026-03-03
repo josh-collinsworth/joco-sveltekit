@@ -110,4 +110,6 @@ These products are for people whose sense of self has been so hopelessly shredde
 
 I want better than that for my son.
 
-I want better than that for _all_ our kids.
+I want better than that for _all_ kids.
+
+I want better than that for _everyone_.
