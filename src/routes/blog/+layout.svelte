@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy'
-
 	import type { LayoutData } from './$types'
 	import type Post from '$lib/types/post'
 	import Sidebar from '$lib/components/Sidebar.svelte'
@@ -15,11 +13,8 @@
 
 	let { data, children }: Props = $props()
 
-	let popularPosts: Post[] = $state()
-	let allCategories: string[] = $state()
-	run(() => {
-		;({ popularPosts, allCategories } = data)
-	})
+	let popularPosts: Post[] = $derived(data.popularPosts)
+	let allCategories: string[] = $derived(data.allCategories)
 
 	onMount(() => {
 		if (!prefersReducedData()) {

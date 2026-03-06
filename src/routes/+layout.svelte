@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy'
 	import type { LayoutData } from './$types'
 	import throttle from 'just-throttle'
 	import Header from '$lib/components/header/Header.svelte'
@@ -20,10 +19,7 @@
 
 	let { data, children }: Props = $props()
 
-	let path: string = $state()
-	run(() => {
-		;({ path } = data)
-	})
+	let path: string = $derived(data.path)
 
 	let root: HTMLElement
 

@@ -6,26 +6,26 @@
 		isSinglePost?: boolean
 	}
 
-	let { title = $bindable(), isSinglePost = false }: Props = $props()
+	let { title, isSinglePost = false }: Props = $props()
+
+	let formattedTitle: string = $derived.by(() => {
+		if (!title) return ''
+		let t = title
+		if (t === '/') return 'welcome'
+		if (t[0] === '/') t = t.slice(1)
+		return t.split('/').join(' / ').replace(/-/g, ' ')
+	})
 
 	let computedTitle: string = $state('')
 	let isWorking: boolean = $state(false)
 
 	$effect(() => {
-		if (title) {
-			if (title === '/') {
-				title = `welcome`
-			} else if (title[0] === '/') {
-				title = title.slice(1)
-			}
-
-			title = title.split('/').join(' / ').replace(/-/g, ' ')
-
+		if (formattedTitle) {
 			isWorking = false
 
 			setTimeout(() => {
 				isWorking = true
-				computedTitle = title
+				computedTitle = formattedTitle
 			}, 420)
 		}
 	})

@@ -1,12 +1,6 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy'
-
 	import type { PageData } from './$types'
 	import type Post from '$lib/types/post'
-	import type { SvelteComponent } from 'svelte'
-
-	let PostContent: SvelteComponent = $state()
-	let meta: Post = $state()
 
 	let hasScrolled = $state(false)
 
@@ -21,9 +15,8 @@
 	}
 
 	let { data }: Props = $props()
-	run(() => {
-		;({ PostContent, meta } = data)
-	})
+	let PostContent = $derived(data.PostContent)
+	let meta: Post = $derived(data.meta)
 </script>
 
 <RenderedPost {PostContent} {meta} />
