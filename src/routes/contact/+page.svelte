@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { preventDefault } from 'svelte/legacy'
-
 	import type contactFormSubmission from '$lib/types/contact-form-submission'
 	import { onMount } from 'svelte'
 	import Main from '$lib/components/Main.svelte'
@@ -29,6 +27,7 @@
 	}
 
 	const handleSubmit = (e: Event): void => {
+		e.preventDefault()
 		const { name, email, message, from_page } = formData
 
 		if (!name || !email || !message) {
@@ -99,7 +98,7 @@
 				id="contact-form"
 				name="contact"
 				method="post"
-				onsubmit={preventDefault(handleSubmit)}
+				onsubmit={handleSubmit}
 				action="/success/"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"

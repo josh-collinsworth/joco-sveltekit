@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { preventDefault } from 'svelte/legacy'
-
 	/**
 	 * This whole approach is kind of a hack, but it's one that works better than any other
 	 * approach I could find. I even used the remark/rehype plugins, but they caused a reload

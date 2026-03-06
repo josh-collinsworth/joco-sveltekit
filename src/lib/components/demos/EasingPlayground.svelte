@@ -1,7 +1,4 @@
 <script>
-	import { run, createBubbler, preventDefault } from 'svelte/legacy'
-
-	const bubble = createBubbler()
 	import throttle from 'just-throttle'
 	import { clamp, formatDecimal } from '$lib/assets/js/utils'
 	import { onMount } from 'svelte'
@@ -113,7 +110,7 @@
 		}
 	}
 
-	run(() => {
+	$effect(() => {
 		if (currentEasingType) {
 			const thisEasing =
 				premadeEasings[currentEasingType.group][currentEasingType.title]
@@ -131,12 +128,12 @@
 	})
 </script>
 
-<form
-	class="easing-demo"
-	class:is-frame={isFrame}
-	onsubmit={preventDefault(bubble('submit'))}
->
-	<div class="intro intro-mobile">
+<form class="easing-demo" class:is-frame={isFrame}>
+	<div
+		class="intro intro-mobile"
+		role="region"
+		aria-labelledby="easing-playground-title"
+	>
 		<h2>CSS easing playground</h2>
 		<p>
 			A place to try out various easing types/cubic bézier curves, and to create
@@ -156,6 +153,7 @@
 		ontouchend={handleDragEnd}
 		ontouchmove={throttle((e) => trackMovement(e), 10, { leading: true })}
 		ontouchcancel={handleDragEnd}
+		role="application"
 	>
 		<svg
 			bind:this={outerFrame}
@@ -216,6 +214,7 @@
 					cx={startHandleX}
 					cy={startHandleY}
 					r="9"
+					role="button"
 				/>
 				<circle
 					class="current-curve__handle"
@@ -223,6 +222,7 @@
 					cx={endHandleX}
 					cy={endHandleY}
 					r="9"
+					role="button"
 				/>
 			</g>
 		</svg>
@@ -340,7 +340,8 @@
 			max-width: 40vh;
 			max-height: 100%;
 			display: block;
-			background: repeating-linear-gradient(
+			background:
+				repeating-linear-gradient(
 					to bottom,
 					var(--neutral-lightest),
 					var(--neutral-lightest) 1px,
@@ -597,7 +598,8 @@
 	.curve-selection__illustration {
 		border: 1px solid var(--neutral-lighter);
 		border-bottom: 0;
-		background: repeating-linear-gradient(
+		background:
+			repeating-linear-gradient(
 				to bottom,
 				var(--neutral-lightest),
 				var(--neutral-lightest) 1px,
