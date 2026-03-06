@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { TIMING_DURATION } from '$lib/data/constants'
-	import { onMount } from 'svelte'
 
 	interface Props {
 		color?: string
@@ -18,7 +17,7 @@
 
 	let size = $derived(base / 2)
 
-	onMount(() => {
+	$effect(() => {
 		const cellSize = Math.random()
 		if (cellSize > 0.95) {
 			size = base * 1.5

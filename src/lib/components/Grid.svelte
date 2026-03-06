@@ -1,10 +1,8 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy'
-
 	import GridCell from './GridCell.svelte'
-	import { onMount } from 'svelte'
 	import { browser } from '$app/environment'
 	import debounce from 'just-debounce'
+	import { navigating } from '$app/state'
 
 	interface Props {
 		refresh?: string
@@ -31,8 +29,10 @@
 		'var(--orange)'
 	]
 
-	run(() => {
-		if (refresh && loadedIn) {
+	$effect(() => {
+		setSquareCount()
+		if (navigating.to?.route?.id === refresh) return
+		if (refresh && loadedIn && navigating.to?.route) {
 			out = true
 			setTimeout(() => {
 				thisPage = refresh
@@ -72,11 +72,6 @@
 
 		count = Math.floor(window.innerWidth / base)
 	}, 300)
-
-	onMount(() => {
-		setSquareCount()
-		thisPage = refresh
-	})
 
 	const randomColor = () => {
 		const color = Math.floor(Math.random() * gridColors.length)
