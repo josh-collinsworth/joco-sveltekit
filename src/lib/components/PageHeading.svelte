@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy'
-
 	import PageTransition from '$lib/components/transitions/PageTransition.svelte'
 
 	interface Props {
@@ -13,7 +11,7 @@
 	let computedTitle: string = $state('')
 	let isWorking: boolean = $state(false)
 
-	run(() => {
+	$effect(() => {
 		if (title) {
 			if (title === '/') {
 				title = `welcome`
