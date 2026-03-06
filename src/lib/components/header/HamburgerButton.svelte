@@ -1,17 +1,17 @@
 <script lang="ts">
-	import { isMenuOpen } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 
 	let readableMenuStateOpposite: string = $derived(
-		$isMenuOpen ? 'Close' : 'Open'
+		appState.isMenuOpen ? 'Close' : 'Open'
 	)
 </script>
 
 <button
 	id="hamburger"
-	aria-pressed={$isMenuOpen}
-	class:fixed={$isMenuOpen}
+	aria-pressed={appState.isMenuOpen}
+	class:fixed={appState.isMenuOpen}
 	class="settings-toggle"
-	onclick={() => isMenuOpen.set(!$isMenuOpen)}
+	onclick={() => appState.isMenuOpen = !appState.isMenuOpen}
 >
 	<span class="sr">{readableMenuStateOpposite} menu</span>
 	<div class="line line-top" aria-hidden="true"></div>

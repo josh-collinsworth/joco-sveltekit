@@ -1,6 +1,6 @@
 <script lang="ts">
 	import NavLink from './NavLink.svelte'
-	import { isMenuOpen } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 
 	interface Props {
 		path: string
@@ -9,7 +9,7 @@
 	let { path }: Props = $props()
 </script>
 
-<ul class:open={$isMenuOpen}>
+<ul class:open={appState.isMenuOpen}>
 	<!-- TODO: this is a lot of prop drilling and style encapsulation. Is there a better way? -->
 	<NavLink to="/" text="Home" {path} mobileOnly={true} />
 	<NavLink to="/blog" text="Blog" {path} />

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import NavLinks from '$lib/components/header/NavLinks.svelte'
 	import HamburgerButton from '$lib/components/header/HamburgerButton.svelte'
-	import { isMenuOpen } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 
 	interface Props {
 		path: string
@@ -14,7 +14,7 @@
 	<div>
 		<HamburgerButton />
 
-		<nav class="main-nav nav" class:open={$isMenuOpen}>
+		<nav class="main-nav nav" class:open={appState.isMenuOpen}>
 			<NavLinks {path} />
 		</nav>
 	</div>

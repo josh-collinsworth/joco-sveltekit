@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import type { SvelteComponent } from 'svelte'
+	import type { Component } from 'svelte'
 
 	interface Props {
 		includeVue2and3?: boolean
@@ -12,18 +12,18 @@
 	interface framework {
 		title: string
 		slug: string
-		component: SvelteComponent
+		component: Component
 	}
 
-	let React: SvelteComponent,
-		Vue2: SvelteComponent,
-		Vue3: SvelteComponent,
-		Svelte: SvelteComponent,
-		currentFramework: SvelteComponent = $state()
+	let React: Component,
+		Vue2: Component,
+		Vue3: Component,
+		Svelte: Component,
+		currentFramework: Component = $state()
 
 	let frameworks: framework[] = $state([])
 
-	const changeFramework = (component: SvelteComponent): void => {
+	const changeFramework = (component: Component): void => {
 		currentFramework = component
 	}
 

@@ -2,9 +2,9 @@
 	import { onMount } from 'svelte'
 	import { TIMING_DURATION } from '$lib/data/constants'
 	import { Themes } from '$lib/data/constants'
-	import { theme } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 
-	const siteTheme = $theme === Themes.Dark ? 'github-dark' : 'github-light'
+	const siteTheme = appState.theme === Themes.Dark ? 'github-dark' : 'github-light'
 
 	const options = {
 		src: 'https://utteranc.es/client.js',
@@ -13,7 +13,7 @@
 		crossorigin: 'anonymous',
 		theme: siteTheme,
 		async: '',
-		'issue-term': 'pathname',
+		'issue-term': 'pathname'
 	}
 
 	onMount(() => {
@@ -21,7 +21,7 @@
 		setTimeout(() => {
 			const utteranceScript = document.createElement('script')
 			const targetTag = document.getElementById('utterances-comments')
-		
+
 			for (const prop in options) {
 				utteranceScript.setAttribute(prop, options[prop])
 			}

@@ -87,7 +87,7 @@ Here's what this site's main layout file's markup looks like (slightly simplifie
 	class:prefers-dark={$prefersDarkMode}
 	class:sidebar={pageHasSidebar}
 >
-	<Loader loading={$isLoading} />
+	<Loader loading={isLoading} />
 
 	<Header />
 

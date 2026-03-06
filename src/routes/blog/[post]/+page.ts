@@ -1,9 +1,9 @@
 import type Post from '$lib/types/post'
 import { error, redirect } from '@sveltejs/kit'
-import type { SvelteComponent } from 'svelte'
+import type { Component } from 'svelte'
 
 interface MarkdownPost {
-	PostContent: SvelteComponent
+	PostContent: Component
 	meta: Post
 }
 
@@ -13,7 +13,7 @@ export const load = async ({ params }): Promise<MarkdownPost> => {
 		throw redirect(301, '/blog')
 	}
 	try {
-		const post: SvelteComponent = await import(
+		const post: Component = await import(
 			`../../../lib/content/posts/${params.post}.md`
 		)
 
@@ -26,7 +26,7 @@ export const load = async ({ params }): Promise<MarkdownPost> => {
 	} catch ({ message }) {
 		// I don't like the nested try/catch option, but since it's just to load drafts on dev and won't really do anything on prod, I don't mind it too much. Besides, it's one of the  only ways to get this to work properly.
 		try {
-			const draft: SvelteComponent = await import(
+			const draft: Component = await import(
 				`../../../lib/content/posts/drafts/${params.post}.md`
 			)
 

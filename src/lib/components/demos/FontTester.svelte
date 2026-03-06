@@ -1,34 +1,44 @@
-<!-- @migration-task Error while migrating Svelte code: Unexpected token
-https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
 	import ExternalLink from '$lib/components/icons/ExternalLink.svelte'
 	import { onMount } from 'svelte'
 
-	export let font: string
-	export let label: string = ''
-	export let fontStyle: string = 'normal'
-	export let fontWeight: string = 'normal'
-	export let placeholder: string = ''
-	export let link: string = ''
-	export let bold: boolean = false
-	export let italic: boolean = false
+	interface Props {
+		font: string
+		label: string
+		fontStyle: string
+		fontWeight: string
+		placeholder: string
+		link: string
+		bold: boolean
+		italic: boolean
+	}
 
-	let size: number = 22
-	let text: string = ''
-	let displayBold: boolean = false
-	let displayItalic: boolean = false
+	let {
+		font,
+		label = '',
+		fontStyle = 'normal',
+		fontWeight = 'normal',
+		placeholder = '',
+		link = '',
+		bold = false,
+		italic = false
+	}: Props = $props()
 
-	let sizeInPx: string
-	$: sizeInPx = size + 'px'
+	let size = $state(22)
+	let text = $state('')
+	let displayBold = $state(false)
+	let displayItalic = $state(false)
 
-	let fontName: string
-	$: fontName = label || font
+	let sizeInPx = $derived(size + 'px')
+	let fontName = $derived(label || font)
 
-	let computedFontWeight: string
-	$: computedFontWeight = (displayBold && 'bold') || fontWeight || 'normal'
+	let computedFontWeight = $derived(
+		(displayBold && 'bold') || fontWeight || 'normal'
+	)
 
-	let computedFontStyle: string
-	$: computedFontStyle = (displayItalic && 'italic') || fontStyle || 'normal'
+	let computedFontStyle = $derived(
+		(displayItalic && 'italic') || fontStyle || 'normal'
+	)
 
 	onMount(() => {
 		text = label || font
@@ -41,14 +51,14 @@ https://svelte.dev/e/js_parse_error -->
 </script>
 
 <template>
-	<form class="tester-form" on:submit|preventDefault>
+	<form class="tester-form">
 		<div class="flex-container">
 			<label for={fontName} class="sr">{fontName}</label>
 			<input
 				id={fontName}
 				type="text"
 				{placeholder}
-				on:click={select}
+				onclick={select}
 				bind:value={text}
 				style="
 					font-family: {font};

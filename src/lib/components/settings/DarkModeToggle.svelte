@@ -2,19 +2,19 @@
 	import LightDarkIcon from '../icons/LightDarkIcon.svelte'
 	import { browser } from '$app/environment'
 	import { Themes } from '$lib/data/constants'
-	import { theme } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 	import { onMount, tick } from 'svelte'
 
-	let isDarkMode: boolean = $derived($theme === Themes.Dark)
+	let isDarkMode: boolean = $derived(appState.theme === Themes.Dark)
 
 	let enableOrDisable: string = $derived(isDarkMode ? 'Disable' : 'Enable')
 
 	// There's also some code in app.html to help avoid unwanted flashes of dark/light
 	const toggleDarkMode = async (): Promise<void> => {
-		theme.set(isDarkMode ? Themes.Light : Themes.Dark)
+		appState.theme = isDarkMode ? Themes.Light : Themes.Dark
 
 		if (browser) {
-			window.localStorage.setItem('theme', JSON.stringify($theme))
+			window.localStorage.setItem('theme', JSON.stringify(appState.theme))
 
 			// Not exactly sure why this is needed but without it, the first click fails.
 			await tick()
@@ -37,7 +37,7 @@
 			(!('theme' in localStorage) &&
 				window.matchMedia('(prefers-color-scheme: dark)').matches)
 		) {
-			theme.set(Themes.Dark)
+			appState.theme = Themes.Dark
 		}
 	})
 </script>

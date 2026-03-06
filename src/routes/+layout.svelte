@@ -7,7 +7,7 @@
 	import PageHeading from '$lib/components/PageHeading.svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import { prefersReducedData } from '$lib/assets/js/utils'
-	import { isLoading, isScrollingDown, isMenuOpen } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 	import { onMount } from 'svelte'
 	import { afterNavigate, beforeNavigate, preloadCode } from '$app/navigation'
 	import { dev } from '$app/environment'
@@ -36,23 +36,23 @@
 		}
 
 		if (lastScrollPosition > currentScrollPosition) {
-			$isScrollingDown = false
+			appState.isScrollingDown = false
 		} else if (currentScrollPosition > 240) {
-			$isScrollingDown = true
+			appState.isScrollingDown = true
 		}
 		lastScrollPosition = currentScrollPosition
 	}, 100)
 
 	beforeNavigate(({ to }) => {
-		$isMenuOpen = false
+		appState.isMenuOpen = false
 		if (to?.route?.id) {
-			$isLoading = true
+			appState.isLoading = true
 			root.classList.remove('smooth-scroll')
 		}
 	})
 
 	afterNavigate(() => {
-		$isLoading = false
+		appState.isLoading = false
 		root.classList.add('smooth-scroll')
 	})
 
@@ -94,7 +94,7 @@
 </svelte:head>
 
 <div id="app">
-	<Loader loading={$isLoading} />
+	<Loader loading={appState.isLoading} />
 
 	{#if !path.startsWith('/demos')}
 		<Header {path} />

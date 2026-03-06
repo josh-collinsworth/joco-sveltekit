@@ -3,7 +3,7 @@
 	import Grid from '$lib/components/Grid.svelte'
 	import NavMenu from '$lib/components/header/NavMenu.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
-	import { isMenuOpen, isScrollingDown } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 
 	interface Props {
 		path: string
@@ -32,8 +32,8 @@
 
 		<div
 			class="icon-container"
-			class:sticky={$isMenuOpen}
-			class:ghosty={$isScrollingDown && !$isMenuOpen}
+			class:sticky={appState.isMenuOpen}
+			class:ghosty={appState.isScrollingDown && !appState.isMenuOpen}
 		>
 			<DarkModeToggle />
 			<div class="header__divider"></div>

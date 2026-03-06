@@ -1,13 +1,13 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import type { SvelteComponent } from 'svelte'
+	import type { Component } from 'svelte'
 	import Main from '$lib/components/Main.svelte'
 	interface Props {
 		data: PageData
 	}
 
 	let { data }: Props = $props()
-	let Uses: SvelteComponent = $derived(data.Uses)
+	let Uses: Component = $derived(data.Uses)
 </script>
 
 <svelte:head>

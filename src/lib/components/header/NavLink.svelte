@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { isMenuOpen } from '$lib/data/store'
+	import { appState } from '$lib/data/store.svelte'
 
 	interface Props {
 		text: string
@@ -13,7 +13,7 @@
 	let isCurrentPage: boolean = $derived(path === to)
 </script>
 
-<li class="nav__item" class:open={$isMenuOpen} class:mobile-only={mobileOnly}>
+<li class="nav__item" class:open={appState.isMenuOpen} class:mobile-only={mobileOnly}>
 	<a
 		data-sveltekit-preload-code
 		href={to}
