@@ -219,7 +219,7 @@
 
 		ul,
 		li {
-			list-style-type: unset;
+			list-style-type: square;
 		}
 
 		@media (min-width: 56rem) {

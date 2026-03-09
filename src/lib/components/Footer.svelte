@@ -39,7 +39,7 @@
 
 		<div class="fine-print">
 			<p>
-				©2015–{currentYear} Josh Collinsworth
+				©2015–{currentYear} Josh Collinsworth.
 			</p>
 
 			<p>
@@ -81,9 +81,13 @@
 		@media (min-width: 56rem) {
 			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
-			gap: 0 var(--whole-note);
+			gap: 0 var(--quarter-note);
 			align-items: stretch;
 			font-size: 0.8rem;
+		}
+
+		@media (min-width: 56rem) {
+			gap: 0 var(--dotted-half-note);
 		}
 
 		@media (min-width: 108rem) {
@@ -105,11 +109,12 @@
 
 		.footer__links {
 			padding: 0 var(--quarter-note) var(--quarter-note);
-			margin: 2rem 2rem 2rem 1rem;
+			margin: 2rem 2rem 2rem 0;
 			border-bottom: 1px solid var(--blue-light);
 
 			::marker {
 				color: var(--blue-light);
+				margin-left: -0.5em;
 			}
 
 			@media (min-width: 56rem) {
@@ -121,11 +126,13 @@
 			ul {
 				list-style-type: square;
 				margin: var(--quarter-note) 0;
+				padding: 0;
 			}
 
 			li {
 				margin: 0.5rem 0 0;
 				font-family: var(--heading-font);
+				padding: 0;
 			}
 		}
 
@@ -144,7 +151,6 @@
 
 			p {
 				margin: var(--quarter-note) 0;
-				max-width: 30em;
 				text-wrap: balance;
 			}
 		}
