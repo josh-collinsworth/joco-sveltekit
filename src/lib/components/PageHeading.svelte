@@ -11,7 +11,7 @@
 	let formattedTitle: string = $derived.by(() => {
 		if (!title) return ''
 		let t = title
-		if (t === '/') return 'welcome'
+		if (t === '/') return 'josh collinsworth'
 		if (t[0] === '/') t = t.slice(1)
 		return t.split('/').join(' / ').replace(/-/g, ' ')
 	})
