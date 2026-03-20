@@ -32,7 +32,7 @@
 		/>
 		<!-- <div></div> -->
 		<!-- <div></div> -->
-		<div class="card text-card larger big-text professionally">
+		<div class="card text-card big-text professionally">
 			<h2>Professionally</h2>
 
 			<p>
@@ -44,23 +44,17 @@
 				touches design, development, marketing, and communications.
 			</p>
 		</div>
-		<div
-			style="background: var(--neutral-950);"
-			class="center-content card image-card deno-logo"
-		>
-			<DenoLogo variant="dark" />
+		<div class="center-content card image-card deno-logo">
+			<img src="/images/deno-mark-dark-filled.svg" alt="" />
 		</div>
-		<div
-			style="padding: clamp(2%, 5%, 1rem);"
-			class="center-content card image-card deno-deploy-logo"
-		>
+		<div class="center-content card image-card deno-deploy-logo">
 			<img
-				src="/images/deploy-mark-light.svg"
+				src="/images/deploy-mark-dark.svg"
 				alt=""
 				style="height: 100%; width: auto;"
 			/>
 		</div>
-		<div style="padding: 0;" class="center-content card image-card jsr-logo">
+		<div class="center-content card image-card jsr-logo">
 			<img
 				src="/images/jsr.svg"
 				alt="JSR logo"
@@ -68,7 +62,7 @@
 			/>
 		</div>
 
-		<div class="card text-card large previously">
+		<div class="card text-card previously">
 			<h2>Previously</h2>
 
 			<p>
@@ -105,7 +99,7 @@
 			/>
 		</div>
 
-		<div class="card text-card large projects">
+		<div class="card text-card projects">
 			<h2>Projects</h2>
 			<p>
 				I
@@ -123,18 +117,14 @@
 			<LoFiDino />
 		</div>
 
-		<div class="card text-card large personally">
+		<div class="card text-card personally">
 			<h2>Personally</h2>
 
 			<p>
-				Hobby coder; font hoarder; husband since 2012; dad since 2019 (though
-				notorious for dad jokes since long before); accessibility advocate; DEI
-				accomplice; cold brew aficionado; Facebook, Instagram, and Twitter
-				abandoner; Mastodon appreciator; semi-notorious React critic; occasional
-				public speaker and podcast guest; pun enthusiast; curious learner; dog
-				person; lifelong Nintendo fan; musician/guitarist/hack pianist;
-				he/him/his; liberal abuser of semicolons.
+				I live in the Kansas City area with my wife and our two kids, Thomas
+				(first grade) and Delainey (first year of life).
 			</p>
+			<p>(<a href="/about-me">More about me here</a>)</p>
 		</div>
 
 		<div class="card text-card punditry">
@@ -148,18 +138,19 @@
 			</p>
 			<p>
 				Occasionally I'll
-				<a href="/about-me#appearances">appear on a podcast</a>, and I
-				<a href="/blog">blog on this site</a> semi-regularly.
+				<a href="/about-me#appearances">appear on a podcast</a>, and I blog on
+				this site semi-regularly.
 			</p>
+			<a href="/blog/">My blog</a>
 		</div>
 
 		<div class="card text-card proficiencies">
 			<h2>Proficiencies</h2>
 			<p>
 				I've worked in some flavor of React and Tailwind professionally for the
-				past 5 years or so, but personally, I love working in SvelteKit. I've
-				built projects in Vue/Nuxt as well, though I'm perfectly happy working
-				in vanilla JavaScript/HTML/CSS.
+				past few years, but personally, I love working in SvelteKit. I've built
+				projects in Vue/Nuxt as well, though I'm perfectly happy working in
+				vanilla JavaScript/HTML/CSS.
 			</p>
 			<p>
 				Most of my work has been frontend-focused, but I have experience with
@@ -170,11 +161,18 @@
 
 		<div class="card text-card pastimes">
 			<h2>Pastimes</h2>
-			<p>
-				I'm a lifelong Nintendo fan and avid gamer. I especially like indie
-				games, but I enjoy a good tabletop game, too. I'm an avid musician
-				(guitar/bass/piano), and I also enjoy reading and cooking.
-			</p>
+			<ul>
+				<li>Nintendo and indie games</li>
+				<li>
+					Daily logic games like <a href="https://cluesbysam.com"
+						>Clues by Sam</a
+					>
+				</li>
+				<li>Tabletop games</li>
+				<li>Music (guitar/bass/piano)</li>
+				<li>Reading</li>
+				<li>Cooking</li>
+			</ul>
 		</div>
 
 		<div class="intro__grid">
@@ -238,6 +236,10 @@
 			grid-row: span 3;
 			color: var(--neutral-900);
 
+			h2 {
+				margin-bottom: var(--quarter-note);
+			}
+
 			a {
 				color: inherit;
 				text-decoration: underline;
@@ -257,20 +259,30 @@
 			justify-content: center;
 			align-items: center;
 			align-content: center;
-			padding: var(--quarter-note);
+			padding: var(--eighth-note);
+
+			&.deno-logo {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			&.deno-deploy-logo {
+				img {
+					height: 100%;
+					width: auto;
+				}
+			}
 		}
 
 		&.big-text {
 			color: var(--neutral-800);
 			font-size: clamp(
 				calc(var(--body-font-size)),
-				2vw,
-				calc(var(--body-font-size) * 1.25)
+				4.5vw,
+				calc(var(--body-font-size) * 1.5)
 			);
-
-			@media (min-width: 128rem) {
-				font-size: calc(var(--body-font-size) * 1.375);
-			}
 		}
 
 		img {
@@ -279,14 +291,14 @@
 
 		&.professionally {
 			background-color: var(--yellow);
+
+			@media (min-width: 64rem) {
+				grid-area: span 4 / span 4;
+			}
 		}
 
 		&.personally {
 			background-color: var(--blue-light);
-
-			p {
-				font-size: calc(var(--body-font-size) * 0.675);
-			}
 		}
 
 		&.projects {
@@ -296,6 +308,7 @@
 
 		&.previously {
 			border: var(--sixteenth-note) solid var(--yellow);
+			color: var(--ink);
 		}
 
 		&.punditry {
@@ -346,21 +359,14 @@
 		.intro {
 			grid-template-columns: repeat(5, minmax(0, 1fr));
 		}
-
-		.card {
-			&.large,
-			&.larger {
-				grid-area: span 2 / span 2;
-			}
-		}
 	}
 	@media (min-width: 96rem) {
 		.intro {
-			grid-template-columns: repeat(8, minmax(0, 1fr));
+			grid-template-columns: repeat(9, minmax(0, 1fr));
 		}
 
-		.card {
-			&.larger {
+		.text-card {
+			& {
 				grid-area: span 3 / span 3;
 			}
 		}
@@ -368,20 +374,6 @@
 		.lofi-dino {
 			grid-area: span 2 / span 2;
 		}
-	}
-
-	.bio-pic,
-	.deno-logo,
-	.deno-deploy-logo {
-		/* grid-column: 1 / 2; */
-	}
-
-	.deno-logo {
-		/* grid-row-start: 2; */
-	}
-
-	.deno-deploy-logo {
-		/* grid-row-start: 3; */
 	}
 
 	h2,

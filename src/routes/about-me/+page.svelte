@@ -23,14 +23,46 @@
 		<h2>Who I am</h2>
 
 		<p>
-			I'm currently a Design Engineer at <a href="https://deno.land">Deno</a>
-			(<i
-				>I made
-				<a href="https://deno.com/brand">the new logo</a>, so I guess I'm
-				technically still a designer, too</i
-			>). I've been with Deno since 2023, and before that, I spent a couple of
-			years as a senior frontend developer at
-			<a href="https://shopify.com">Shopify</a>.
+			I'm currently a Design Engineer at <a href="https://deno.land">Deno</a>,
+			where I've been since 2023. My work at Deno has touched design,
+			development, marketing, and communications, and includes full rebrands and
+			new logos for Deno itself, Deno Deploy, and JSR—though my main focus has
+			been frontend development and design, bringing unified design systems and
+			components to Deno's products and web presence.
+		</p>
+
+		<h3>Prior professional experience</h3>
+		<p>
+			Prior to Deno, I spent a couple of years as a senior frontend developer
+			(L6) at
+			<a href="https://shopify.com">Shopify</a>; a Senior JavaScript developer
+			at <a href="https://aware3.com">Aware3</a>; and as a front-end engineer at
+			<a href="https://wpengine.com">WP Engine</a>. And before becoming a
+			full-time developer, I was a senior support lead at
+			<a href="https://getflywheel.com">Flywheel</a>, and also a course
+			instructor for
+			<a href="https://interfaceschool.com">AIM Code School</a>, where I taught
+			WordPress development, and was solely responsible for both curriculum
+			development and teaching.
+		</p>
+
+		<p>
+			Before entering tech, I spent a few years as a graphic designer (that's
+			what my degree is in), worked in foodservice, and was a regularly gigging
+			musician (though not otherwise successful).
+		</p>
+
+		<h3>Hobbies and interests</h3>
+		<p>
+			As a writer, I authored the CSS Tricks series <a
+				href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
+				>A Complete Beginner's Guide to NPM</a
+			>, and I enjoy blogging about dev, design and tech (both
+			<a href="#writing">freelance</a>
+			and
+			<a href="blog">here on this site</a>). Occasionally, I get asked to talk
+			about what I write
+			<a href="#appearances">on podcasts</a>.
 		</p>
 		<p>
 			In my spare time, I enjoy hobby coding; I'm the maker and designer of the
@@ -53,36 +85,7 @@
 			still do occasional freelance development and design.
 		</p>
 
-		<p>
-			Previously, I worked as a Senior JavaScript developer at <a
-				href="https://aware3.com">Aware3</a
-			>, and as a front-end engineer at
-			<a href="https://wpengine.com">WP Engine</a>. Before becoming a full-time
-			dev, I was a senior support lead at
-			<a href="https://getflywheel.com">Flywheel</a>, and also a course
-			instructor for
-			<a href="https://interfaceschool.com">AIM Code School</a>, where I taught
-			WordPress development, and was solely responsible for both curriculum
-			development and teaching.
-		</p>
-
-		<p>
-			As a writer, I authored the CSS Tricks series <a
-				href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
-				>A Complete Beginner's Guide to NPM</a
-			>, and I enjoy blogging about dev, design and tech (both
-			<a href="#writing">freelance</a>
-			and
-			<a href="blog">here on this site</a>). Occasionally, I get asked to talk
-			about what I write
-			<a href="#appearances">on podcasts</a>.
-		</p>
-
-		<p>
-			Before entering tech, I spent a few years as a graphic designer (that's
-			what my degree is in), worked in foodservice, and was a regularly gigging
-			musician (though not otherwise successful).
-		</p>
+		<h3>Personal life</h3>
 
 		<p>
 			I lived in Omaha for most of my career, but I've been in Kansas City since
@@ -90,13 +93,12 @@
 		</p>
 
 		<p>
-			Personally, I am a: hobby coder; font hoarder; husband since 2012; dad
-			since 2019 (though notorious for dad jokes since long before);
-			accessibility advocate; DEI accomplice; cold brew aficionado; Facebook,
-			Instagram, and Twitter abandoner; Mastodon appreciator; semi-notorious
-			React critic; occasional public speaker and podcast guest; pun enthusiast;
-			curious learner; dog person; lifelong Nintendo fan;
-			musician/guitarist/hack pianist; he/him/his; liberal abuser of semicolons.
+			Otherwise, I am a hobby coder; font hoarder; husband since 2012; dad since
+			2019 (though notorious for dad jokes since long before); aspiring advocate
+			for accessibility, equity, and social justice; cold brew aficionado;
+			semi-notorious React critic; occasional public speaker and podcast guest;
+			pun enthusiast; curious learner; dog person; lifelong Nintendo fan;
+			musician/guitarist/hack pianist; liberal abuser of semicolons.
 		</p>
 
 		<h3>More:</h3>
@@ -183,7 +185,7 @@
 			aspect-ratio: 1 / 1;
 			object-fit: cover;
 			border-radius: 10rem;
-			margin: 4.5rem 0 var(--quarter-note) var(--quarter-note);
+			margin: 4.5rem 0 var(--half-note) var(--quarter-note);
 			shape-outside: circle(6rem);
 			float: right;
 			max-width: 30vw;
