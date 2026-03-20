@@ -345,10 +345,6 @@
 			max-width: var(--max-width);
 		}
 
-		ul li {
-			line-height: 1.2;
-		}
-
 		article {
 			display: grid;
 			grid-template-columns: 1fr;
