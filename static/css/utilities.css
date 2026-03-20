@@ -36,3 +36,13 @@ input[type=checkbox] {
 		max-width: calc(var(--max-width) * 2);
 	}
 }
+
+.center-content {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}

@@ -91,9 +91,6 @@ $fourxl: 144rem; */
 		--body-font-size: 1.1875rem;
 	}
 
-	@media (min-width: 82rem) {
-		--body-font-size: 1.25rem;
-	}
 
 
 	--blue-to-yellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
