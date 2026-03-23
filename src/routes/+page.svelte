@@ -1,8 +1,5 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
-	import DenoLogo from '$lib/components/deno/icons/DenoLogo.svelte'
-	import DenoDeployLogo from '$lib/components/deno/icons/DenoDeployLogo.svelte'
-	import LoFiDino from '$lib/components/deno/runtime/LoFiDino.svelte'
 
 	let { data } = $props()
 </script>
@@ -25,155 +22,66 @@
 <Main>
 	<div class="intro">
 		<img
+			class="profile-pic"
 			src="/images/bio-photo.jpg"
-			alt=""
-			style="width: 100%; margin: 0; height: auto;"
-			class="bio-pic"
+			alt="Me, Josh Collinsworth, an average white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat."
 		/>
-		<!-- <div></div> -->
-		<!-- <div></div> -->
-		<div class="card text-card big-text professionally">
-			<h2>Professionally</h2>
 
-			<p>
-				I'm a design engineer, working as a hybrid designer and frontend
-				developer where code meets design.
-			</p>
-			<p>
-				I currently work at <a href="https://deno.com">Deno</a>, where my work
-				touches design, development, marketing, and communications.
-			</p>
-		</div>
-		<div class="center-content card image-card deno-logo">
-			<img src="/images/deno-mark-dark-filled.svg" alt="" />
-		</div>
-		<div class="center-content card image-card deno-deploy-logo">
-			<img
-				src="/images/deploy-mark-dark.svg"
-				alt=""
-				style="height: 100%; width: auto;"
-			/>
-		</div>
-		<div class="center-content card image-card jsr-logo">
-			<img
-				src="/images/jsr.svg"
-				alt="JSR logo"
-				style="width: 100%; height: auto;"
-			/>
-		</div>
+		<h2>What I do</h2>
+		<p class="big-copy">
+			I’m a frontend developer and designer, specializing in bringing delightful
+			simplicity to user interfaces.
+		</p>
 
-		<div class="card text-card previously">
-			<h2>Previously</h2>
+		<h2>Where I do it</h2>
+		<p class="big-copy">
+			I live in the Kansas City area, and currently work as a design engineer
+			for <a href="https://deno.land">Deno</a>.
+		</p>
 
-			<p>
-				I've worked in engineering at <a href="https://shopify.com">Shopify</a>,
-				<a href="https://wpengine.com">WP Engine</a>; in customer-facing
-				technical roles for
-				<a href="https://getflywheel.com">Flywheel</a>; and as a code instructor
-				for
-				<a
-					href="https://aiminstitute.org/programs/technology-training/aim-code-school/"
-					>AIM Code School</a
-				>.
-			</p>
-		</div>
+		<h2>Why I do it</h2>
+		<p class="big-copy">
+			I love building things that make the world look and work a little better,
+			and sharing what I learn along the way.
+		</p>
 
-		<div
-			class="center-content card image-card"
-			style="border-radius: 10%; background: #F0F0F0; padding: 15%;"
-		>
-			<img
-				src="/images/quina-logo.svg"
-				alt=""
-				style="height: 100%; width: auto;"
-			/>
-		</div>
-		<div
-			class="center-content card image-card"
-			style="border-radius: 5%; padding: 0;"
-		>
-			<img
-				src="/images/hondo-logo.svg"
-				alt=""
-				style="height: 100%; width: auto;"
-			/>
-		</div>
+		<h2>Why you might know me</h2>
+		<ul class="big-copy">
+			<li>
+				I wrote
+				<a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
+					><i>a Complete Beginner’s Guide to npm</i></a
+				>
+				on <a href="https://css-tricks.com">CSS Tricks</a>
+			</li>
 
-		<div class="card text-card projects">
-			<h2>Projects</h2>
-			<p>
+			<li>
+				I’m the designer behind the <a href="https://deno.com/brand"
+					>Deno logo and brand</a
+				>, plus <a href="https://deno.com/deploy">Deno Deploy</a>
+				and <a href="https://jsr.io">JSR</a>
+			</li>
+
+			<li>
 				I
 				<a href="/projects">designed and built</a>
 				the word games
 				<a href="https://quina.app">Quina</a> and
-				<a href="https://playhondo.com">Hondo</a>.
-			</p>
-		</div>
+				<a href="https://playhondo.com">Hondo</a>
+			</li>
 
-		<div
-			class="card span-3 lofi-dino"
-			style="padding: 0; overflow: hidden; isolation: isolate;"
-		>
-			<LoFiDino />
-		</div>
+			<li>
+				Sometimes something I write on
+				<a href="/blog">my blog</a> gets popular for a little bit
+				<small>(for whatever reason)</small>
+			</li>
 
-		<div class="card text-card personally">
-			<h2>Personally</h2>
-
-			<p>
-				I live in the Kansas City area with my wife and our two kids, Thomas
-				(first grade) and Delainey (first year of life).
-			</p>
-			<p>(<a href="/about-me">More about me here</a>)</p>
-		</div>
-
-		<div class="card text-card punditry">
-			<h2>Punditry</h2>
-			<p>
-				I enjoy writing, and authored (among other things)
-				<a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
-					><i>a Complete Beginner's Guide to npm</i></a
-				>
-				on <a href="https://css-tricks.com">CSS Tricks</a>.
-			</p>
-			<p>
-				Occasionally I'll
-				<a href="/about-me#appearances">appear on a podcast</a>, and I blog on
-				this site semi-regularly.
-			</p>
-			<a href="/blog/">My blog</a>
-		</div>
-
-		<div class="card text-card proficiencies">
-			<h2>Proficiencies</h2>
-			<p>
-				I've worked in some flavor of React and Tailwind professionally for the
-				past few years, but personally, I love working in SvelteKit. I've built
-				projects in Vue/Nuxt as well, though I'm perfectly happy working in
-				vanilla JavaScript/HTML/CSS.
-			</p>
-			<p>
-				Most of my work has been frontend-focused, but I have experience with
-				shipping things in Ruby on Rails, WordPress, Node, Deno, PHP, and other
-				backend technologies.
-			</p>
-		</div>
-
-		<div class="card text-card pastimes">
-			<h2>Pastimes</h2>
-			<ul>
-				<li>Nintendo and indie games</li>
-				<li>
-					Daily logic games like <a href="https://cluesbysam.com"
-						>Clues by Sam</a
-					>
-				</li>
-				<li>Tabletop games</li>
-				<li>Music (guitar/bass/piano)</li>
-				<li>Reading</li>
-				<li>Cooking</li>
-			</ul>
-		</div>
+			<li>
+				I’ve
+				<a href="/about-me#appearances">appeared on a few podcasts</a>
+				<small>(usually about one of the aforementioned blog posts)</small>
+			</li>
+		</ul>
 
 		<div class="intro__grid">
 			<section>
@@ -206,228 +114,152 @@
 				</ul>
 			</section>
 		</div>
-	</div></Main
->
+	</div>
+</Main>
 
 <style>
 	.intro {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 1rem;
+		--delay-step: 0.12s;
+	}
+	.intro > *:nth-child(1) {
+		animation-delay: var(--delay-step);
+	}
+	.intro > *:nth-child(2) {
+		animation-delay: calc(var(--delay-step) * 2);
+	}
+	.intro > *:nth-child(3) {
+		animation-delay: calc(var(--delay-step) * 3);
+	}
+	.intro > *:nth-child(4) {
+		animation-delay: calc(var(--delay-step) * 4);
+	}
+	.intro > *:nth-child(5) {
+		animation-delay: calc(var(--delay-step) * 5);
+	}
+	.intro > *:nth-child(6) {
+		animation-delay: calc(var(--delay-step) * 6);
+	}
+	.intro > *:nth-child(7) {
+		animation-delay: calc(var(--delay-step) * 7);
+	}
+	.intro > *:nth-child(8) {
+		animation-delay: calc(var(--delay-step) * 8);
+	}
+	.intro > *:nth-child(9) {
+		animation-delay: calc(var(--delay-step) * 9);
+	}
+	.intro > *:nth-child(10) {
+		animation-delay: calc(var(--delay-step) * 10);
+	}
+
+	.profile-pic {
+		aspect-ratio: 1;
+		object-fit: cover;
+		border-radius: 9999px;
+		width: 100%;
+		max-width: 380px;
+		height: auto;
+		margin: 0;
+
+		@media (min-width: 92rem) {
+			grid-column: 4 / 5;
+			grid-row: 1 / 4;
+			margin: auto auto auto 0;
+		}
+	}
+
+	.intro {
 		width: 100%;
 		position: relative;
 		margin-top: var(--whole-note);
-		height: auto;
 
-		@media (min-width: 96rem) {
-			gap: var(--quarter-note);
-		}
-	}
-
-	.card {
-		padding: var(--half-note);
-		display: flex;
-		flex-direction: column;
-		gap: var(--quarter-note);
-		aspect-ratio: 1;
-
-		&.text-card {
-			grid-column: span 3;
-			grid-row: span 3;
-			color: var(--neutral-900);
-
-			h2 {
-				margin-bottom: var(--quarter-note);
-			}
-
-			a {
-				color: inherit;
-				text-decoration: underline;
-				text-decoration-thickness: 1px;
-				text-decoration-color: inherit;
-
-				&:hover {
-					text-shadow: 0 0 8px var(--white);
-				}
-			}
-		}
-
-		&.image-card {
-			aspect-ratio: none;
-			height: 100%;
-			width: 100%;
-			justify-content: center;
-			align-items: center;
-			align-content: center;
-			padding: var(--eighth-note);
-
-			&.deno-logo {
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-
-			&.deno-deploy-logo {
-				img {
-					height: 100%;
-					width: auto;
-				}
-			}
-		}
-
-		&.big-text {
-			color: var(--neutral-800);
-			font-size: clamp(
-				calc(var(--body-font-size)),
-				4.5vw,
-				calc(var(--body-font-size) * 1.5)
-			);
-		}
-
-		img {
-			margin: 0;
-		}
-
-		&.professionally {
-			background-color: var(--yellow);
-
-			@media (min-width: 64rem) {
-				grid-area: span 4 / span 4;
-			}
-		}
-
-		&.personally {
-			background-color: var(--blue-light);
-		}
-
-		&.projects {
-			background-color: var(--blue-dark);
-			color: var(--neutral-50);
-		}
-
-		&.previously {
-			border: var(--sixteenth-note) solid var(--yellow);
-			color: var(--ink);
-		}
-
-		&.punditry {
-			background-color: var(--neutral-lighter);
-
-			:global(.dark) & {
-				color: var(--neutral-50);
-			}
-
-			@media (min-width: 64rem) {
-				grid-row: span 2;
-				aspect-ratio: unset;
-			}
-		}
-
-		&.proficiencies {
-			background-color: var(--blue-100);
-		}
-
-		&.pastimes {
-			background-color: var(--orange);
-			color: var(--neutral-darker);
-
-			@media (min-width: 64rem) {
-				grid-row: span 2;
-				aspect-ratio: unset;
-			}
-		}
-	}
-
-	.span-2 {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
-
-	.span-3 {
-		grid-column: span 3;
-		grid-row: span 3;
-	}
-
-	@media (min-width: 42rem) {
-		.intro {
+		@media (min-width: 66rem) {
+			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
-	}
 
-	@media (min-width: 64rem) {
-		.intro {
-			grid-template-columns: repeat(5, minmax(0, 1fr));
-		}
-	}
-	@media (min-width: 96rem) {
-		.intro {
-			grid-template-columns: repeat(9, minmax(0, 1fr));
-		}
+		h2 {
+			text-transform: uppercase;
+			font-size: 1rem;
+			margin-bottom: 1rem;
 
-		.text-card {
-			& {
-				grid-area: span 3 / span 3;
+			&::before {
+				display: none;
 			}
 		}
 
-		.lofi-dino {
-			grid-area: span 2 / span 2;
+		> p,
+		> h2,
+		> ul {
+			@media (min-width: 66rem) {
+				grid-column: 1 / 3;
+			}
+			@media (min-width: 92rem) {
+				grid-column: 1 / 5;
+			}
+			@media (min-width: 108rem) {
+				grid-column: 1 / 4;
+			}
 		}
-	}
 
-	h2,
-	p {
-		margin: 0;
-		color: inherit;
-	}
+		> *,
+		.intro__grid section {
+			opacity: 0;
+			animation: fade_in_intro 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 
-	h2 {
-		transform-origin: top left;
-		position: sticky;
-		top: 0;
-		width: max-content;
-		max-width: 100%;
-		position: relative;
-		text-transform: uppercase;
-		line-height: 1;
-		font-size: 1rem;
-
-		&::before {
-			display: none;
+			@media (prefers-reduced-motion: reduce) {
+				animation-name: fade_in_intro_reduced;
+			}
 		}
-	}
 
-	p {
-		text-align: balance;
+		@media (min-width: 92rem) {
+			display: grid;
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+			gap: 0 var(--whole-note);
+		}
 
-		&:last-child {
-			margin-bottom: 0;
+		.big-copy {
+			font-size: 2rem;
+			font-size: clamp(1.125rem, calc(0.45rem + 2.5vw), 1.75rem);
+			margin: 0;
+			font-weight: normal;
+			text-wrap: balance;
+		}
+
+		ul {
+			padding-left: 0.75em;
+
+			li {
+				text-wrap: balance;
+
+				+ li {
+					margin-top: 0.5em;
+				}
+
+				small {
+					font-size: 0.75em;
+					font-style: italic;
+				}
+
+				a {
+					text-decoration-thickness: 1px;
+				}
+			}
 		}
 	}
 
 	.intro__grid {
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
+		margin-top: var(--dotted-whole-note);
+		gap: var(--dotted-half-note);
 		font-size: 0.8125rem;
 		line-height: 1.5;
 		grid-column-start: 1;
 		grid-column: 1 / -1;
 
-		ul {
-			margin: 0;
-			margin-top: 1.25em;
-			list-style-type: none;
-			padding-left: 0;
-
-			li {
-				padding-left: 0;
-				text-wrap: balance;
-
-				a {
-					text-decoration-thickness: 1px;
-				}
-			}
+		@media (min-width: 72rem) {
+			font-size: 1rem;
 		}
 
 		ul,
@@ -435,20 +267,13 @@
 			list-style-type: square;
 		}
 
-		@media (min-width: 32rem) {
-			grid-template-columns: subgrid;
+		@media (min-width: 56rem) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 
-		@media (min-width: 64rem) {
-			grid-column: 2 / 5;
-		}
-
-		@media (min-width: 96rem) {
-			grid-column: 3 / 9;
-
-			section {
-				grid-column: span 2;
-			}
+		@media (min-width: 108rem) {
+			grid-column: 3 / 6;
+			/* grid-row: 5 / 6; */
 		}
 	}
 
@@ -475,5 +300,27 @@
 
 	:global(.dark .intro .subhead) {
 		color: var(--ink);
+	}
+
+	@keyframes fade_in_intro {
+		from {
+			opacity: 0;
+			transform: translateY(16px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes fade_in_intro_reduced {
+		from {
+			opacity: 0;
+			transform: translateY(0);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 </style>
