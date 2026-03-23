@@ -105,7 +105,7 @@
 
 		<ul>
 			<li>
-				<a href="/contact?from_page=about">Contact</a>
+				<a href="/resume">Resume/CV</a>
 			</li>
 			<li>
 				<a href="https://linkedin.com/in/joshcollinsworth" rel="nofollow"
@@ -116,7 +116,7 @@
 				<a href="https://github.com/josh-collinsworth" rel="nofollow">GitHub</a>
 			</li>
 			<li>
-				<a href="/resume">Resume/CV</a>
+				<a href="/contact?from_page=about">Contact</a>
 			</li>
 		</ul>
 
