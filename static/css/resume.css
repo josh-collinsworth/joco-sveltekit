@@ -23,11 +23,12 @@
 
 	@media (min-width: 82rem) {
 		display: grid;
-		grid-template-columns: 12rem 1fr;
+		grid-template-columns: 14rem 1fr;
 		gap: 0 var(--half-note);
+		align-items: baseline;
 
 		&.compressed-content {
-			max-width: 52rem;
+			max-width: 56rem;
 		}
 
 		hr {
@@ -45,6 +46,8 @@
 			margin: 0;
 			padding-top: 0;
 			position: sticky;
+			font-size: 1rem;
+			text-transform: uppercase;
 			top: var(--half-note);
 			background: var(--paper);
 			text-align: right;
@@ -64,6 +67,10 @@
 			}
 		}
 
+		h3 {
+			font-size: 1.25rem;
+		}
+
 		ul {
 			margin: 0;
 		}
@@ -75,6 +82,18 @@
 }
 
 @media print {
+	.layout {
+		width: 100%;
+		max-width: unset;
+		padding: 0 1in;
+	}
+
+	.compressed-content {
+		width: 100%;
+		max-width: unset !important;
+		padding: 0;
+		margin: 0;
+	}
 
 	.page-head {
 		display: none !important;
@@ -85,7 +104,7 @@
 	}
 
 	.resume {
-		--quarter-note: 0.125in;
+		--quarter-note: 9pt;
 		break-inside: avoid;
 		display: block;
 		width: 100%;
@@ -95,12 +114,13 @@
 		.resume-logo {
 			display: inline-block;
 			margin: 0.5in 0 0;
-			max-width: 2in;
+			max-width: 1.5in;
 		}
 
 		h2 {
-			font-size: 15pt;
+			font-size: 9pt;
 			position: static;
+			text-transform: uppercase;
 			margin: 0.5in 0 0.125in;
 			border-bottom: 1pt solid;
 			padding-bottom: 0.05in;
@@ -111,20 +131,35 @@
 		}
 
 		h3 {
-			font-size: 11pt;
-			margin: 0.5in 0 0.125in;
+			font-size: 10pt;
+			margin: 0.375in 0 0.125in;
+		}
+
+		h3,
+		h3 ~ p {
+			display: inline-block;
+			width: auto;
+			grid-column: span 1;
+			margin-right: 0.125in;
 		}
 
 		h2 + h3 {
-			margin-top: 0.25in;
+			margin-top: 0.125in;
 		}
 
 		ul {
 			break-inside: auto;
+			margin: 0;
+			padding-left: 11pt;
 		}
 
 		ul li {
-			margin: 0 0 0.05in;
+			margin: 0;
+			padding: 0;
+
+			+ li {
+				margin-top: 0.05in;
+			}
 		}
 
 		hr {

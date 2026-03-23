@@ -46,8 +46,8 @@
 		</p>
 
 		<h2>Why you might know me</h2>
-		<ul class="big-copy">
-			<li>
+		<ul>
+			<li class="big-copy">
 				I wrote
 				<a href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
 					><i>a Complete Beginner’s Guide to npm</i></a
@@ -55,14 +55,14 @@
 				on <a href="https://css-tricks.com">CSS Tricks</a>
 			</li>
 
-			<li>
+			<li class="big-copy">
 				I’m the designer behind the <a href="https://deno.com/brand"
 					>Deno logo and brand</a
 				>, plus <a href="https://deno.com/deploy">Deno Deploy</a>
 				and <a href="https://jsr.io">JSR</a>
 			</li>
 
-			<li>
+			<li class="big-copy">
 				I
 				<a href="/projects">designed and built</a>
 				the word games
@@ -70,16 +70,16 @@
 				<a href="https://playhondo.com">Hondo</a>
 			</li>
 
-			<li>
+			<li class="big-copy">
 				Sometimes something I write on
 				<a href="/blog">my blog</a> gets popular for a little bit
 				<small>(for whatever reason)</small>
 			</li>
 
-			<li>
+			<li class="big-copy">
 				I’ve
 				<a href="/about-me#appearances">appeared on a few podcasts</a>
-				<small>(usually about one of the aforementioned blog posts)</small>
+				<small>(usually about one of those blog posts)</small>
 			</li>
 		</ul>
 
@@ -162,7 +162,7 @@
 		margin: 0;
 
 		@media (min-width: 92rem) {
-			grid-column: 4 / 5;
+			grid-column: 5 / 6;
 			grid-row: 1 / 4;
 			margin: auto auto auto 0;
 		}
@@ -182,6 +182,11 @@
 			text-transform: uppercase;
 			font-size: 1rem;
 			margin-bottom: 1rem;
+			color: var(--neutral-600);
+
+			:global(.dark) & {
+				color: var(--blue-light);
+			}
 
 			&::before {
 				display: none;
@@ -218,27 +223,32 @@
 			gap: 0 var(--whole-note);
 		}
 
+		p {
+			margin: 0;
+		}
+
 		.big-copy {
 			font-size: 2rem;
-			font-size: clamp(1.125rem, calc(0.45rem + 2.5vw), 1.75rem);
-			margin: 0;
+			font-size: clamp(1.25rem, calc(0.5rem + 1.5vw), 1.675rem);
 			font-weight: normal;
 			text-wrap: balance;
 		}
 
 		ul {
-			padding-left: 0.75em;
+			padding-left: 1.5rem;
+			margin-top: 1rem;
 
 			li {
 				text-wrap: balance;
 
 				+ li {
-					margin-top: 0.5em;
+					margin-top: 1rem;
 				}
 
 				small {
 					font-size: 0.75em;
 					font-style: italic;
+					color: var(--neutral-mid);
 				}
 
 				a {
@@ -273,7 +283,6 @@
 
 		@media (min-width: 108rem) {
 			grid-column: 3 / 6;
-			/* grid-row: 5 / 6; */
 		}
 	}
 
@@ -283,8 +292,6 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		margin: 0;
-		border-bottom: 1px solid var(--neutral-lighter);
-		padding: 0.75em 0 0.5em;
 		line-height: 1;
 
 		@media (min-width: 56rem) {
