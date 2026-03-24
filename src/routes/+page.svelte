@@ -85,16 +85,16 @@
 
 		<div class="icons">
 			<a href="https://deno.com" class="icon icon--deno">
-				<img src="/images/deno-mark-dark-filled.svg" alt="" />
+				<img src="/images/deno-mark-dark-filled-custom.svg" alt="Deno logo" />
 			</a>
 			<a href="https://deno.com/deploy" class="icon icon--deno-deploy">
-				<img src="/images/deploy-mark-dark.svg" alt="" />
+				<img src="/images/deploy-mark-dark.svg" alt="Deno Deploy logo" />
 			</a>
 			<a href="https://quina.app" class="icon icon--quina">
-				<img src="/images/quina-logo.svg" alt="" />
+				<img src="/images/quina-logo.svg" alt="Quina game logo" />
 			</a>
 			<a href="https://playhondo.com" class="icon icon--hondo">
-				<img src="/images/hondo-logo.svg" alt="" />
+				<img src="/images/hondo-logo.svg" alt="Hondo game logo" />
 			</a>
 		</div>
 
@@ -187,7 +187,7 @@
 	.intro {
 		width: 100%;
 		position: relative;
-		margin-top: var(--whole-note);
+		margin-block-start: var(--whole-note);
 		gap: 0 var(--column-gap);
 		@media (min-width: 64rem) {
 			display: grid;
@@ -212,7 +212,7 @@
 		h2 {
 			text-transform: uppercase;
 			font-size: 1rem;
-			margin-bottom: 1rem;
+			margin-block-end: 1rem;
 			color: var(--neutral-600);
 
 			:global(.dark) & {
@@ -231,15 +231,12 @@
 			@media (min-width: 92rem) {
 				grid-column: 1 / 5;
 			}
-			@media (min-width: 108rem) {
+			@media (min-width: 128rem) {
 				grid-column: 1 / 4;
 			}
 		}
 
-		h2,
-		p,
-		li,
-		.icon {
+		> :where(h2, p, ul, img, .icons) {
 			opacity: 0;
 			animation:
 				fade_in 1.2s cubic-bezier(0.23, 1, 0.32, 1) both,
@@ -252,24 +249,24 @@
 
 		.big-copy {
 			font-size: 2rem;
-			font-size: clamp(1.25rem, calc(0.5rem + 1.5vw), 1.675rem);
+			font-size: clamp(1.25rem, calc(0.6rem + 1.25vw), 1.75rem);
 			font-weight: normal;
 			text-wrap: balance;
 		}
 
 		ul {
-			padding-left: 1rem;
-			margin-top: 1rem;
+			padding-inline-start: 1rem;
+			margin-block-start: 0;
 
 			@media (min-width: 64rem) {
-				padding-left: 1.25rem;
+				padding-inline-start: 1.25rem;
 			}
 
 			li {
 				text-wrap: balance;
 
 				+ li {
-					margin-top: 1rem;
+					margin-block-start: 1rem;
 				}
 
 				small {
@@ -289,7 +286,7 @@
 		justify-content: center;
 		width: 100%;
 		max-width: 28rem;
-		margin-top: var(--half-note);
+		margin-block-start: var(--half-note);
 
 		@media (min-width: 24rem) {
 			grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -367,7 +364,7 @@
 	.intro__links {
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
-		margin-top: var(--dotted-whole-note);
+		margin-block-start: var(--dotted-whole-note);
 		gap: var(--dotted-half-note);
 		font-size: 1rem;
 		line-height: 1.5;
@@ -375,20 +372,21 @@
 		grid-column: 1 / -1;
 
 		ul {
-			margin-top: var(--quarter-note);
-			padding-left: 0.875rem;
+			margin-block-start: var(--quarter-note);
+			padding-inline-start: 0.875rem;
 		}
 
 		@media (min-width: 64rem) {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
-		}
-
-		@media (min-width: 64rem) {
 			column-gap: var(--column-gap);
 		}
 
-		@media (min-width: 108rem) {
+		@media (min-width: 128rem) {
 			grid-column: 3 / 6;
+		}
+
+		@media (min-width: 128rem) {
+			margin-block-start: calc(var(--whole-note) * 2);
 		}
 	}
 
