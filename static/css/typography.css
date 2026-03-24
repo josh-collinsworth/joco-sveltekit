@@ -39,7 +39,7 @@ a {
 	text-decoration-color: var(--blue-dark);
 	text-decoration-thickness: 1px;
 	text-underline-offset: 0.115em;
-	transition: color 0.15s, text-decoration-color 0.1s ease-out, text-decoration-thickness 0.1s ease-out;
+	transition: color 0.1s, text-decoration-color 0.05s;
 
 	.dark & {
 		text-decoration-color: var(--blue-light);
