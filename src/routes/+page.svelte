@@ -11,7 +11,7 @@
 		data-key="description"
 		property="og:description"
 		name="description"
-		content="Front-end developer, designer, teacher and writer"
+		content="Frontend developer, designer, teacher and writer working as a design engineer"
 	/>
 	<meta
 		property="og:image"
@@ -34,7 +34,7 @@
 		</p>
 
 		<h2>Where I do it</h2>
-		<p class="big-copy">
+		<p class="big-copy" style="max-width: 32em;">
 			I live in the Kansas City area, and currently work as a design engineer
 			for <a href="https://deno.land">Deno</a>.
 		</p>
@@ -83,7 +83,22 @@
 			</li>
 		</ul>
 
-		<div class="intro__grid">
+		<div class="icons">
+			<a href="https://deno.com" class="icon icon--deno">
+				<img src="/images/deno-mark-dark-filled.svg" alt="" />
+			</a>
+			<a href="https://deno.com/deploy" class="icon icon--deno-deploy">
+				<img src="/images/deploy-mark-dark.svg" alt="" />
+			</a>
+			<a href="https://quina.app" class="icon icon--quina">
+				<img src="/images/quina-logo.svg" alt="" />
+			</a>
+			<a href="https://playhondo.com" class="icon icon--hondo">
+				<img src="/images/hondo-logo.svg" alt="" />
+			</a>
+		</div>
+
+		<div class="intro__links">
 			<section>
 				<h3 class="list-heading" id="links-list">More</h3>
 				<ul aria-labelledby="links-list">
@@ -119,7 +134,8 @@
 
 <style>
 	.intro {
-		--delay-step: 0.12s;
+		--delay-step: 0.1s;
+		--column-gap: 0;
 	}
 	.intro > *:nth-child(1) {
 		animation-delay: var(--delay-step);
@@ -151,6 +167,13 @@
 	.intro > *:nth-child(10) {
 		animation-delay: calc(var(--delay-step) * 10);
 	}
+	.intro > *:nth-child(11) {
+		animation-delay: calc(var(--delay-step) * 11);
+	}
+
+	img {
+		margin: 0;
+	}
 
 	.profile-pic {
 		aspect-ratio: 1;
@@ -159,23 +182,31 @@
 		width: 100%;
 		max-width: 380px;
 		height: auto;
-		margin: 0;
-
-		@media (min-width: 92rem) {
-			grid-column: 5 / 6;
-			grid-row: 1 / 4;
-			margin: auto auto auto 0;
-		}
 	}
 
 	.intro {
 		width: 100%;
 		position: relative;
 		margin-top: var(--whole-note);
-
-		@media (min-width: 66rem) {
+		gap: 0 var(--column-gap);
+		@media (min-width: 64rem) {
 			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+			align-items: center;
+		}
+
+		@media (min-width: 64rem) {
+			--column-gap: var(--whole-note);
+		}
+
+		@media (min-width: 92rem) {
+			--column-gap: var(--whole-note);
+			display: grid;
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+		}
+
+		p {
+			margin: 0;
 		}
 
 		h2 {
@@ -193,10 +224,8 @@
 			}
 		}
 
-		> p,
-		> h2,
-		> ul {
-			@media (min-width: 66rem) {
+		> :where(p, h2, ul) {
+			@media (min-width: 64rem) {
 				grid-column: 1 / 3;
 			}
 			@media (min-width: 92rem) {
@@ -207,24 +236,18 @@
 			}
 		}
 
-		> *,
-		.intro__grid section {
+		h2,
+		p,
+		li,
+		.icon {
 			opacity: 0;
-			animation: fade_in_intro 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+			animation:
+				fade_in 1.2s cubic-bezier(0.23, 1, 0.32, 1) both,
+				slide_up_in 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 
 			@media (prefers-reduced-motion: reduce) {
-				animation-name: fade_in_intro_reduced;
+				animation: fade_in 1.2s linear both;
 			}
-		}
-
-		@media (min-width: 92rem) {
-			display: grid;
-			grid-template-columns: repeat(5, minmax(0, 1fr));
-			gap: 0 var(--whole-note);
-		}
-
-		p {
-			margin: 0;
 		}
 
 		.big-copy {
@@ -235,8 +258,12 @@
 		}
 
 		ul {
-			padding-left: 1.5rem;
+			padding-left: 1rem;
 			margin-top: 1rem;
+
+			@media (min-width: 64rem) {
+				padding-left: 1.25rem;
+			}
 
 			li {
 				text-wrap: balance;
@@ -250,35 +277,114 @@
 					font-style: italic;
 					color: var(--neutral-mid);
 				}
-
-				a {
-					text-decoration-thickness: 1px;
-				}
 			}
 		}
 	}
 
-	.intro__grid {
+	.icons {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--quarter-note);
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 28rem;
+		margin-top: var(--half-note);
+
+		@media (min-width: 24rem) {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+
+		@media (min-width: 64rem) {
+			margin: 0;
+			gap: 1rem;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-template-rows: repeat(2, minmax(0, auto));
+			max-width: unset;
+		}
+
+		@media (min-width: 92rem) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		@media (min-width: 128rem) {
+			gap: 2rem;
+		}
+
+		.icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: auto;
+			aspect-ratio: 1;
+			transition: transform 0.15s cubic-bezier(0, 0.25, 0.25, 1);
+
+			&:hover {
+				transform: scale(1.05);
+			}
+
+			img {
+				height: 100%;
+				width: auto;
+				object-fit: contain;
+			}
+		}
+
+		.icon--deno-deploy {
+			height: 100%;
+			width: auto;
+			max-width: 100%;
+		}
+
+		.icon--quina {
+			padding: 10%;
+			background-color: #f0f0f0;
+			border-radius: 25%;
+		}
+	}
+
+	@media (min-width: 64rem) {
+		.profile-pic {
+			grid-column: 3 / 4;
+			grid-row: 1 / 4;
+		}
+	}
+
+	@media (min-width: 92rem) {
+		.profile-pic,
+		.icons {
+			grid-column: 5 / 6;
+			grid-row: 1 / 4;
+			margin: auto auto auto 0;
+		}
+
+		.icons {
+			grid-row: 8 / 9;
+		}
+	}
+
+	.intro__links {
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
 		margin-top: var(--dotted-whole-note);
 		gap: var(--dotted-half-note);
-		font-size: 0.8125rem;
+		font-size: 1rem;
 		line-height: 1.5;
 		grid-column-start: 1;
 		grid-column: 1 / -1;
 
-		@media (min-width: 72rem) {
-			font-size: 1rem;
+		ul {
+			margin-top: var(--quarter-note);
+			padding-left: 0.875rem;
 		}
 
-		ul,
-		li {
-			list-style-type: square;
-		}
-
-		@media (min-width: 56rem) {
+		@media (min-width: 64rem) {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		@media (min-width: 64rem) {
+			column-gap: var(--column-gap);
 		}
 
 		@media (min-width: 108rem) {
@@ -287,46 +393,32 @@
 	}
 
 	.list-heading {
-		font-size: 0.8rem;
+		font-size: 1rem;
 		font-family: var(--heading-font);
 		text-transform: uppercase;
 		font-weight: bold;
 		margin: 0;
 		line-height: 1;
 
-		@media (min-width: 56rem) {
+		@media (min-width: 64rem) {
 			padding: var(--eighth-note) 0 var(--sixteenth-note);
 		}
 	}
 
-	:global(html:not(.light) .intro .subhead) {
-		@media (prefers-color-scheme: dark) {
-			color: var(--ink) !important;
+	@keyframes fade_in {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
 		}
 	}
 
-	:global(.dark .intro .subhead) {
-		color: var(--ink);
-	}
-
-	@keyframes fade_in_intro {
+	@keyframes slide_up_in {
 		from {
-			opacity: 0;
 			transform: translateY(16px);
 		}
 		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
-	@keyframes fade_in_intro_reduced {
-		from {
-			opacity: 0;
-			transform: translateY(0);
-		}
-		to {
-			opacity: 1;
 			transform: translateY(0);
 		}
 	}

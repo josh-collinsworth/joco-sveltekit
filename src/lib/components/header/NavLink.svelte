@@ -13,11 +13,14 @@
 	let isCurrentPage: boolean = $derived(path === to)
 </script>
 
-<li class="nav__item" class:open={appState.isMenuOpen} class:mobile-only={mobileOnly}>
+<li
+	class="nav__item"
+	class:open={appState.isMenuOpen}
+	class:mobile-only={mobileOnly}
+>
 	<a
 		data-sveltekit-preload-code
 		href={to}
-		class="nav__link"
 		class:active={isCurrentPage}
 		aria-current={isCurrentPage ? 'page' : false}
 	>
@@ -103,7 +106,7 @@
 			margin: 0;
 			position: relative;
 			color: var(--ink);
-			width: max-content;
+			width: 100%;
 
 			&.active {
 				font-weight: bold;
@@ -115,6 +118,7 @@
 
 			span {
 				display: inline-block;
+				position: relative;
 
 				&:after {
 					position: absolute;

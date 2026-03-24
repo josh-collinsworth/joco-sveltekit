@@ -39,7 +39,7 @@ a {
 	text-decoration-color: var(--blue-dark);
 	text-decoration-thickness: 1px;
 	text-underline-offset: 0.115em;
-	transition: color 0.15s, text-decoration-color 0.1s;
+	transition: color 0.15s, text-decoration-color 0.1s ease-out, text-decoration-thickness 0.1s ease-out;
 
 	.dark & {
 		text-decoration-color: var(--blue-light);
@@ -47,8 +47,8 @@ a {
 
 	&:hover,
 	&:focus {
-		color: var(--blue-light);
-		text-decoration-color: var(--blue-light);
+		text-decoration-color: var(--yellow);
+		text-decoration-thickness: 0.1125em;
 	}
 }
 
@@ -100,15 +100,6 @@ h2,
 	@media (min-width: 42rem) {
 		font-size: 2rem;
 		margin-top: var(--tied-whole-note);
-	}
-
-	&::before {
-		content: '';
-		width: var(--whole-note);
-		height: 0.125em;
-		background: currentColor;
-		display: block;
-		margin: 0 0 var(--eighth-note);
 	}
 }
 
@@ -213,6 +204,15 @@ ol {
 }
 
 .post {
+	h2::before {
+		content: '';
+		width: var(--whole-note);
+		height: 0.125em;
+		background: currentColor;
+		display: block;
+		margin: 0 0 var(--eighth-note);
+	}
+
 	.cover-image {
 		margin: 0;
 		border: 1px solid var(--neutral-dark);

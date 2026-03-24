@@ -1,5 +1,5 @@
 ---
-title: "Man cereal"
+title: "Man Cereal"
 date: '2026-03-03'
 updated: '2026-03-03'
 categories:
@@ -14,7 +14,7 @@ coverWidth: 1000
   import CalloutPlusQuote from "$lib/components/CalloutPlusQuote.svelte"
 </script>
 
-The cover image of this posts shows a very real delivery truck, for a very real brand of cereal, titled "Man Cereal." The deliberately aggressive masculine tagline reads "Cereal Got Its Balls Back" because, of course it does.
+The cover image of this posts shows a very real delivery truck, with an ad on the side for a very real brand of cereal, titled "Man Cereal." The deliberately aggressive masculine tagline reads "Cereal Got Its Balls Back" because, of course it does.
 
 I [saw this image originally on Bluesky](https://bsky.app/profile/athensgrease.bsky.social/post/3mg5urx5gec2b), where it was quite rightfully being ridiculed. [My initial response was to join in on the mockery](https://bsky.app/profile/collinsworth.dev/post/3mg65fms7is25), by pointing out, among other things, that this product really isn't anything new.
 
