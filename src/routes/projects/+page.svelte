@@ -205,7 +205,7 @@
 			<div class="sticky">
 				<h2>
 					Other stuff I made <small
-						style="font-size: 0.5em; display: inline-block; line-height: 1.2; font-weight: normal;"
+						style="font-size: 0.5em; display: inline-block; line-height: 1.2; font-weight: normal; font-style: italic; font-family: var(--body-font);"
 						>(that may or may not be worthy of inclusion here)</small
 					>
 				</h2>

@@ -1,4 +1,4 @@
-<img src="/images/post_images/2020-logo-final.svg" alt="Josh Collinsworth" class="resume-logo" width="5rem" />
+<img src="/images/2026.svg" alt="Josh Collinsworth" class="resume-logo" width="5rem" />
 
 ## Summary
 
