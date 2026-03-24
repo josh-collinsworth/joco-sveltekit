@@ -49,7 +49,7 @@
 		<p>
 			Before entering tech, I spent a few years as a graphic designer (that's
 			what my degree is in), worked in foodservice, and was a regularly gigging
-			musician (though not otherwise successful).
+			musician (though not an otherwise successful one).
 		</p>
 
 		<h3>Hobbies and interests</h3>
@@ -94,11 +94,12 @@
 
 		<p>
 			Otherwise, I am a hobby coder; font hoarder; husband since 2012; dad since
-			2019 (though notorious for dad jokes since long before); aspiring advocate
-			for accessibility, equity, and social justice; cold brew aficionado;
-			semi-notorious React critic; occasional public speaker and podcast guest;
-			pun enthusiast; curious learner; dog person; lifelong Nintendo fan;
-			musician/guitarist/hack pianist; liberal abuser of semicolons.
+			2019, dad of two since 2025 (though notorious for dad jokes since long
+			before either); aspiring advocate for accessibility, equity, and social
+			justice; cold brew aficionado; semi-notorious React critic; occasional
+			public speaker and podcast guest; pun enthusiast; curious learner; dog
+			person; lifelong Nintendo fan; musician/guitarist/hack pianist; liberal
+			abuser of semicolons.
 		</p>
 
 		<h3>More:</h3>

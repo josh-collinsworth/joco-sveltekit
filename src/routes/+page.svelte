@@ -56,18 +56,18 @@
 			</li>
 
 			<li class="big-copy">
-				I’m the designer behind the <a href="https://deno.com/brand"
-					>Deno logo and brand</a
-				>, plus <a href="https://deno.com/deploy">Deno Deploy</a>
-				and <a href="https://jsr.io">JSR</a>
-			</li>
-
-			<li class="big-copy">
 				I
 				<a href="/projects">designed and built</a>
 				the word games
 				<a href="https://quina.app">Quina</a> and
 				<a href="https://playhondo.com">Hondo</a>
+			</li>
+
+			<li class="big-copy">
+				I’m the designer behind the <a href="https://deno.com/brand"
+					>Deno logo and brand</a
+				>, plus <a href="https://deno.com/deploy">Deno Deploy</a>
+				and <a href="https://jsr.io">JSR</a>
 			</li>
 
 			<li class="big-copy">
@@ -84,17 +84,17 @@
 		</ul>
 
 		<div class="icons">
-			<a href="https://deno.com" class="icon icon--deno">
-				<img src="/images/deno-mark-dark-filled-custom.svg" alt="Deno logo" />
-			</a>
-			<a href="https://deno.com/deploy" class="icon icon--deno-deploy">
-				<img src="/images/deploy-mark-dark.svg" alt="Deno Deploy logo" />
-			</a>
 			<a href="https://quina.app" class="icon icon--quina">
 				<img src="/images/quina-logo.svg" alt="Quina game logo" />
 			</a>
 			<a href="https://playhondo.com" class="icon icon--hondo">
 				<img src="/images/hondo-logo.svg" alt="Hondo game logo" />
+			</a>
+			<a href="https://deno.com" class="icon icon--deno">
+				<img src="/images/deno-mark-dark-filled-custom.svg" alt="Deno logo" />
+			</a>
+			<a href="https://deno.com/deploy" class="icon icon--deno-deploy">
+				<img src="/images/deploy-mark-dark.svg" alt="Deno Deploy logo" />
 			</a>
 		</div>
 
