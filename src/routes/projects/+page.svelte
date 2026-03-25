@@ -34,31 +34,35 @@
 					Version 2.0 was also released on the iOS App Store.
 				</p>
 
-				<ul>
+				<p>
+					I wrote about the original making of Quina <a
+						href="/blog/announcing-quina-my-first-app">on this blog</a
+					>, and
+					<a
+						rel="external"
+						href="https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/"
+					>
+						on CSS Tricks</a
+					>. <a href="https://quina.app">Check out Quina on the web</a>, or
+					download it for iOS or Android:
+				</p>
+				<ul class="app-badges">
 					<li>
 						<a href="https://apps.apple.com/us/app/quina/id1636895462"
-							>Quina on iOS</a
+							><img
+								src="/images/app-store-badge.svg"
+								alt="Download Quina on the App Store"
+							/></a
 						>
 					</li>
 					<li>
 						<a
 							href="https://play.google.com/store/apps/details?id=app.quina.collinsworth&hl=en_US&gl=US"
-							rel="external">Quina on Android</a
-						>
-					</li>
-					<li>
-						<a href="https://quina.app">Quina on the web</a>
-					</li>
-					<li>
-						Read about the making of Quina <a
-							href="/blog/announcing-quina-my-first-app">on this blog</a
-						>
-						and
-						<a
 							rel="external"
-							href="https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/"
-						>
-							on CSS Tricks</a
+							><img
+								src="/images/google-play-badge.svg"
+								alt="Get Quina on Google Play"
+							/></a
 						>
 					</li>
 				</ul>
@@ -88,26 +92,32 @@
 					The goal is to guess as many words as possible in a row, earning bonus
 					points for streaks, to get to 100 points as quickly as possible.
 				</p>
-				<ul>
+				<p>
+					<a href="/blog/announcing-hondo">Read about the making of Hondo</a>,
+					check out the<a href="https://github.com/josh-collinsworth/hondo"
+						>GitHub repo</a
+					>,
+
+					<a href="https://playhondo.com">play Hondo in your browser</a>, or
+					download Hondo from the app stores:
+				</p>
+				<ul class="app-badges">
 					<li>
 						<a href="https://apps.apple.com/us/app/hondo/id1636016699"
-							>Hondo on iOS</a
+							><img
+								src="/images/app-store-badge.svg"
+								alt="Download Hondo on the App Store"
+							/></a
 						>
 					</li>
 					<li>
 						<a
 							href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa"
-							>Hondo on Android</a
+							><img
+								src="/images/google-play-badge.svg"
+								alt="Get Hondo on Google Play"
+							/></a
 						>
-					</li>
-					<li>
-						<a href="https://playhondo.com">Hondo on the web</a>
-					</li>
-					<li>
-						<a href="https://github.com/josh-collinsworth/hondo">GitHub repo</a>
-					</li>
-					<li>
-						<a href="/blog/announcing-hondo">Read about the making of Hondo</a>
 					</li>
 				</ul>
 			</div>
@@ -118,6 +128,23 @@
 					alt=""
 					style="border: 1px solid;"
 				/>
+				<div class="screenshots">
+					<img
+						src="/images/hondo-screenshot-1.webp"
+						alt=""
+						style="margin: 0; width: 100%; max-width: unset;"
+					/>
+					<img
+						src="/images/hondo-screenshot-2.webp"
+						alt=""
+						style="margin: 0; width: 100%; max-width: unset;"
+					/>
+					<img
+						src="/images/hondo-screenshot-3.webp"
+						alt=""
+						style="margin: 0; width: 100%; max-width: unset;"
+					/>
+				</div>
 			</div>
 		</article>
 
@@ -369,11 +396,55 @@
 			}
 		}
 
+		.app-badges {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+			padding: 0;
+			margin: 0;
+			margin-block-start: var(--dotted-quarter-note);
+			list-style-type: none;
+
+			li {
+				padding: 0;
+				margin: 0;
+			}
+
+			img {
+				margin: 0;
+				height: 2.5rem;
+				width: auto;
+				display: block;
+			}
+		}
+
+		.screenshots {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 1rem;
+
+			img {
+				margin: 0;
+				width: 100%;
+				max-width: unset;
+				border: 1px solid;
+				box-shadow: 4px 4px 0 var(--neutral-100);
+				border-radius: 6px;
+
+				:global(.dark) & {
+					box-shadow: 4px 4px 0 var(--neutral-900);
+					border: 0;
+				}
+			}
+		}
+
 		article > div > h3:first-of-type {
 			margin-top: 0;
 		}
 
 		.image-gallery {
+			width: 100%;
+
 			figure {
 				margin-top: 0;
 			}

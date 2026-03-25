@@ -65,7 +65,7 @@
 		display: block;
 
 		@media (min-width: 108rem) and (min-height: 66rem) {
-			height: 3rem;
+			height: 2.5rem;
 		}
 	}
 
