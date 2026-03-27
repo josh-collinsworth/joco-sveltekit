@@ -192,8 +192,12 @@
 		object-fit: cover;
 		border-radius: 9999px;
 		width: 100%;
-		max-width: 380px;
+		max-width: 240px;
 		height: auto;
+
+		@media (min-width: 64rem) {
+			max-width: 360px;
+		}
 	}
 
 	.intro {
