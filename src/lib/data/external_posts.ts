@@ -4,7 +4,7 @@ const EXTERNAL_POSTS: Post[] = [
 	{
 		title: `Painting the Plane as We Fly It: Designing JSR`,
 		subtitle: `Deno Blog`,
-		coverImage: `/images/jsr.svg`,
+		coverImage: `/images/projects/jsr.svg`,
 		slug: `https://deno.com/blog/designing-jsr`,
 		date: `2024-09-04`,
 		excerpt: ``

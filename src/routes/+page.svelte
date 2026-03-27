@@ -27,7 +27,7 @@
 	<div class="intro">
 		<img
 			class="profile-pic"
-			src="/images/bio-photo.jpg"
+			src="/images/bio-photo.jpg?ver=032026"
 			alt="Me, Josh Collinsworth, an average white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat."
 		/>
 

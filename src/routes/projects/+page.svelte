@@ -56,7 +56,7 @@
 					<li>
 						<a href="https://apps.apple.com/us/app/quina/id1636895462"
 							><img
-								src="/images/app-store-badge.svg"
+								src="/images/projects/app-store-badge.svg"
 								alt="Download Quina on the App Store"
 							/></a
 						>
@@ -66,7 +66,7 @@
 							href="https://play.google.com/store/apps/details?id=app.quina.collinsworth&hl=en_US&gl=US"
 							rel="external"
 							><img
-								src="/images/google-play-badge.svg"
+								src="/images/projects/google-play-badge.svg"
 								alt="Get Quina on Google Play"
 							/></a
 						>
@@ -76,7 +76,7 @@
 
 			<div class="image-gallery">
 				<img
-					src="/images/quina-mockup1.png"
+					src="/images/projects/quina-mockup1.png"
 					alt=""
 					loading="lazy"
 					width="1200"
@@ -84,25 +84,25 @@
 					style="aspect-ratio: 1200 / 1697"
 				/>
 				<img
-					src="/images/quina-screenshot-0.png"
+					src="/images/projects/quina-screenshot-0.png"
 					alt=""
 					width="2360"
 					height="1640"
 				/>
 				<img
-					src="/images/quina-screenshot-1.png"
+					src="/images/projects/quina-screenshot-1.png"
 					alt=""
 					width="2360"
 					height="1640"
 				/>
 				<img
-					src="/images/quina-screenshot-2.png"
+					src="/images/projects/quina-screenshot-2.png"
 					alt=""
 					width="2360"
 					height="1664"
 				/>
 				<img
-					src="/images/quina-screenshot-4.png"
+					src="/images/projects/quina-screenshot-4.png"
 					alt=""
 					width="1640"
 					height="1588"
@@ -135,7 +135,7 @@
 					<li>
 						<a href="https://apps.apple.com/us/app/hondo/id1636016699"
 							><img
-								src="/images/app-store-badge.svg"
+								src="/images/projects/app-store-badge.svg"
 								alt="Download Hondo on the App Store"
 							/></a
 						>
@@ -144,7 +144,7 @@
 						<a
 							href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa"
 							><img
-								src="/images/google-play-badge.svg"
+								src="/images/projects/google-play-badge.svg"
 								alt="Get Hondo on Google Play"
 							/></a
 						>
@@ -160,21 +160,21 @@
 				/>
 				<div class="screenshots">
 					<img
-						src="/images/hondo-screenshot-1.webp"
+						src="/images/projects/hondo-screenshot-1.webp"
 						alt=""
 						style="margin: 0; width: 100%; max-width: unset;"
 						width="460"
 						height="996"
 					/>
 					<img
-						src="/images/hondo-screenshot-2.webp"
+						src="/images/projects/hondo-screenshot-2.webp"
 						alt=""
 						style="margin: 0; width: 100%; max-width: unset;"
 						width="460"
 						height="996"
 					/>
 					<img
-						src="/images/hondo-screenshot-3.webp"
+						src="/images/projects/hondo-screenshot-3.webp"
 						alt=""
 						style="margin: 0; width: 100%; max-width: unset;"
 						width="460"
@@ -199,12 +199,12 @@
 					<div class="logo-box">
 						<img
 							class="dark-only"
-							src="/images/deno/deno-full_dark_transparent.svg"
+							src="/images/projects/deno/deno-full_dark_transparent.svg"
 							alt="Deno logo"
 						/>
 						<img
 							class="light-only"
-							src="/images/deno/deno-full_light_transparent.svg"
+							src="/images/projects/deno/deno-full_light_transparent.svg"
 							alt="Deno logo"
 						/>
 					</div>
@@ -237,12 +237,12 @@
 					<div class="logo-box">
 						<img
 							class="dark-only"
-							src="/images/deno/deploy-full-dark.svg"
+							src="/images/projects/deno/deploy-full-dark.svg"
 							alt="Deno logo"
 						/>
 						<img
 							class="light-only"
-							src="/images/deno/deploy-full-light.svg"
+							src="/images/projects/deno/deploy-full-light.svg"
 							alt="Deno logo"
 						/>
 					</div>
@@ -253,7 +253,7 @@
 
 				<figure>
 					<img
-						src="/images/deploy-dashboard.webp"
+						src="/images/projects/deploy-dashboard.webp"
 						alt="A screenshot of the Deno Deploy dashboard, showing a list of projects under my personal organization account. The URL is console.deno.com."
 						width="2560"
 						height="2377"
@@ -266,7 +266,7 @@
 
 				<figure>
 					<div class="logo-box">
-						<img src="/images/jsr.svg" alt="JSR logo" class="jsr-logo" />
+						<img src="/images/projects/jsr.svg" alt="JSR logo" class="jsr-logo" />
 					</div>
 					<figcaption>
 						<a href="https://jsr.io">JSR</a> logo
@@ -275,7 +275,7 @@
 
 				<figure>
 					<img
-						src="/images/jsr-io.webp"
+						src="/images/projects/jsr-io.webp"
 						alt="A screenshot of JSR.io, the JavaScript package registry."
 						style="border: 1px solid;"
 						width="2544"
@@ -290,7 +290,7 @@
 
 				<figure>
 					<img
-						src="/images/javascript-tm.webp"
+						src="/images/projects/javascript-tm.webp"
 						alt="A screenshot of JavaScript.tm, the site to free JavaScript from Oracle's trademark."
 						style="border: 1px solid;"
 						width="2544"
@@ -406,7 +406,7 @@
 			<div>
 				<figure style="margin-top: 0;">
 					<a href="https://codepen.io/collection/GpRgyK">
-						<img src="/images/collection-1.webp" alt="" style="margin: 0;" />
+						<img src="/images/projects/collection-1.webp" alt="" style="margin: 0;" />
 					</a>
 					<figcaption>
 						<a href="https://codepen.io/collection/GpRgyK"
@@ -416,7 +416,7 @@
 				</figure>
 				<figure>
 					<a href="https://codepen.io/collection/QbLwag">
-						<img src="/images/collection-2.webp" alt="" style="margin: 0;" />
+						<img src="/images/projects/collection-2.webp" alt="" style="margin: 0;" />
 					</a>
 					<figcaption>
 						<a href="https://codepen.io/collection/QbLwag">Humorous pens</a>
