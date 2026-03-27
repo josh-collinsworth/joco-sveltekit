@@ -190,8 +190,7 @@
 
 				<p>
 					A selection of logos, illustrations, animations, interfaces, and other
-					design work from recent work history. (These are mostly Deno-related,
-					but )
+					design work from recent work history.
 				</p>
 			</div>
 
