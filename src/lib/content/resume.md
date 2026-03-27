@@ -18,9 +18,8 @@ _August 2023 – present_
 - Lead frontend development and design across Deno sites, products, and documentation
 - Designed and implemented a full-scale redesign of [Deno.com](https://deno.com), including a full rebrand, illustration, and animation work. This redesign correlated with the Deno 2.0, launch and helped to achieve a permanent 200% increase in web traffic and Deno monthly active users
 - Complete redesign of [Deno Deploy](https://deno.com/deploy), including a full rebrand and all-new marketing properties and app design
-- Designed and collaborated on the frontend build of [JSR.io](https://jsr.io)
+- Designed, branded, and built various Deno projects and microsites, including [JSR.io](https://jsr.io) and [javascript.tm](https://javascript.tm)
 - Built new product features and refined existing features in [Deno Deploy](https://deno.com/deploy)
-- Designed and built various microsite projects, such as [javascript.tm](https://javascript.tm)
 - Updated and maintained Deno documentation
 
 
@@ -82,11 +81,19 @@ _September 2015 – August 2019_ · _(Acquired by WP Engine June 2019)_
 
 ---
 
+## Side Projects
+
+- Independently designed and shipped two original word puzzle games — [Quina](https://quina.app) (Nuxt/Vue) and [Hondo](https://playhondo.com) (SvelteKit) — to iOS, Android, and the web as PWAs
+- Implemented game logic, daily puzzle modes, achievement systems, and streak-based scoring; handled full product lifecycle from concept through App Store submission
+- Published a technical writeup on [CSS Tricks](https://css-tricks.com/what-i-learned-building-a-word-game-app-with-nuxt-on-google-play/) covering the build process and lessons learned shipping to Google Play
+
+---
+
 ## Selected Design Work
 
 - Designed the [Deno logo and brand](https://deno.com/brand); led and implemented the comprehensive rebrand of [Deno Deploy](https://deno.com/deploy); complete brand and appearance for [JSR](https://jsr.io)
 - Illustration work across [Deno.com](https://deno.com) pages and properties, including animated/interactive hero graphics
-- Designed and built the word games [Quina](https://quina.app) and [Hondo](https://playhondo.com) (iOS, Android, and web)
+- Original brand, UI/UX, and game design for [Quina](https://quina.app) and [Hondo](https://playhondo.com)
 - Led design for various microsites and efforts such as [javascript.tm](https://javascript.tm) and miscellaneous internal microsites
 
 ---
@@ -101,7 +108,7 @@ _September 2015 – August 2019_ · _(Acquired by WP Engine June 2019)_
 ## Relevant Skills
 
 - Specialized in Svelte/SvelteKit, React, TypeScript, CSS/Sass, design systems, accessibility, web animation, SVG, and performance optimization.
-- Also experienced with Vue, Tailwind, Deno, Fresh, Preact, Knockout, jQuery, JS testing (Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, WordPress, SVG, git/GitHub, NPM, Jira, CLIs, DNS, SemVer.
+- Also experienced with Vue, Tailwind, Deno, Fresh, Preact, Knockout, jQuery, JS testing (Vitest, Karma, Mocha, Chai, framework utility libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx, NGINX, (Varnish) caching, Redux, Storybook, WordPress, SVG, git/GitHub, NPM, Jira, CLIs, DNS, SemVer.
 
 ---
 

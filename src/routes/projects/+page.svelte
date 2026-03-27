@@ -1,6 +1,12 @@
 <script lang="ts">
 	import CodePenLink from '$lib/components/CodePenLink.svelte'
 	import Main from '$lib/components/Main.svelte'
+	import DenoDeployLogo from '$lib/components/deno/icons/DenoDeployLogo.svelte'
+	import DenoLogo from '$lib/components/deno/icons/DenoLogo.svelte'
+	import LoFiDino from '$lib/components/deno/runtime/LoFiDino.svelte'
+	import Dressup from '$lib/components/deno/runtime/dressup/Dressup.svelte'
+	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
+	import QuinaLogo from '$lib/components/icons/QuinaLogo.svelte'
 </script>
 
 <svelte:head>
@@ -77,6 +83,30 @@
 					height="1697"
 					style="aspect-ratio: 1200 / 1697"
 				/>
+				<img
+					src="/images/quina-screenshot-0.png"
+					alt=""
+					width="2360"
+					height="1640"
+				/>
+				<img
+					src="/images/quina-screenshot-1.png"
+					alt=""
+					width="2360"
+					height="1640"
+				/>
+				<img
+					src="/images/quina-screenshot-2.png"
+					alt=""
+					width="2360"
+					height="1664"
+				/>
+				<img
+					src="/images/quina-screenshot-4.png"
+					alt=""
+					width="1640"
+					height="1588"
+				/>
 			</div>
 		</article>
 
@@ -133,16 +163,22 @@
 						src="/images/hondo-screenshot-1.webp"
 						alt=""
 						style="margin: 0; width: 100%; max-width: unset;"
+						width="460"
+						height="996"
 					/>
 					<img
 						src="/images/hondo-screenshot-2.webp"
 						alt=""
 						style="margin: 0; width: 100%; max-width: unset;"
+						width="460"
+						height="996"
 					/>
 					<img
 						src="/images/hondo-screenshot-3.webp"
 						alt=""
 						style="margin: 0; width: 100%; max-width: unset;"
+						width="460"
+						height="996"
 					/>
 				</div>
 			</div>
@@ -150,40 +186,120 @@
 
 		<article>
 			<div class="sticky">
-				<h2>SvelteKit static blog starter</h2>
+				<h2>Recent design work</h2>
 
 				<p>
-					A fully open-source, pre-configured starter for a SvelteKit blog.
-					Includes Markdown and Sass preprocessing; has mdsvex with rehype
-					plugins pre-installed; and includes automatic prefetching of top-level
-					routes, an RSS feed, and a JSON API.
+					A selection of logos, illustrations, animations, interfaces, and other
+					design work from recent work history. (These are mostly Deno-related,
+					but )
 				</p>
-				<ul>
-					<li>
-						<a href="https://sveltekit-static-starter.netlify.app">Live demo</a>
-					</li>
-					<li>
-						<a
-							href="https://github.com/josh-collinsworth/sveltekit-blog-starter"
-							>GitHub repo</a
-						>
-					</li>
-				</ul>
 			</div>
 
-			<div class="image-gallery">
+			<div class="design-gallery">
 				<figure>
-					<iframe
-						src="https://sveltekit-static-starter.netlify.app"
-						frameborder="0"
-						title="Live demo of the starter, from sveltekit-static-starter.netlify.app"
-						width="100%"
-						height="800"
-					></iframe>
+					<div class="logo-box">
+						<img
+							class="dark-only"
+							src="/images/deno/deno-full_dark_transparent.svg"
+							alt="Deno logo"
+						/>
+						<img
+							class="light-only"
+							src="/images/deno/deno-full_light_transparent.svg"
+							alt="Deno logo"
+						/>
+					</div>
 					<figcaption>
-						<a href="https://sveltekit-static-starter.netlify.app"
-							>sveltekit-static-starter.netlify.app</a
-						>
+						<a href="https://deno.com">Deno</a> logo since 2024
+					</figcaption>
+				</figure>
+
+				<div class="interactive-showcase">
+					<figure>
+						<LoFiDino backgroundTheme="rain" />
+						<figcaption>
+							Animated illustration for <a href="https://deno.com">Deno.com</a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="interactive-showcase">
+					<figure>
+						<Dressup alwaysOpen />
+						<figcaption>
+							Interactive dino customizer for the Deno 2.0 launch
+						</figcaption>
+					</figure>
+				</div>
+
+				<hr />
+
+				<figure>
+					<div class="logo-box">
+						<img
+							class="dark-only"
+							src="/images/deno/deploy-full-dark.svg"
+							alt="Deno logo"
+						/>
+						<img
+							class="light-only"
+							src="/images/deno/deploy-full-light.svg"
+							alt="Deno logo"
+						/>
+					</div>
+					<figcaption>
+						<a href="https://deno.com/deploy">Deno Deploy</a> logo (2025)
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="/images/deploy-dashboard.webp"
+						alt="A screenshot of the Deno Deploy dashboard, showing a list of projects under my personal organization account. The URL is console.deno.com."
+						width="2560"
+						height="2377"
+						style="filter: drop-shadow(2px 3px 6px #5f616433);"
+					/>
+					<figcaption>The Deno Deploy app dashboard</figcaption>
+				</figure>
+
+				<hr />
+
+				<figure>
+					<div class="logo-box">
+						<img src="/images/jsr.svg" alt="JSR logo" class="jsr-logo" />
+					</div>
+					<figcaption>
+						<a href="https://jsr.io">JSR</a> logo
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="/images/jsr-io.webp"
+						alt="A screenshot of JSR.io, the JavaScript package registry."
+						style="border: 1px solid;"
+						width="2544"
+						height="2038"
+					/>
+					<figcaption>
+						<a href="https://jsr.io">JSR.io</a> - the JavaScript package registry
+					</figcaption>
+				</figure>
+
+				<hr />
+
+				<figure>
+					<img
+						src="/images/javascript-tm.webp"
+						alt="A screenshot of JavaScript.tm, the site to free JavaScript from Oracle's trademark."
+						style="border: 1px solid;"
+						width="2544"
+						height="2958"
+					/>
+					<figcaption>
+						<a href="https://javascript.tm">JavaScript.tm</a> - campaign to free JavaScript
+						from Oracle's trademark
 					</figcaption>
 				</figure>
 			</div>
@@ -230,137 +346,83 @@
 
 		<article>
 			<div class="sticky">
-				<h2>
-					Other stuff I made <small
-						style="font-size: 0.5em; display: inline-block; line-height: 1.2; font-weight: normal; font-style: italic; font-family: var(--body-font);"
-						>(that may or may not be worthy of inclusion here)</small
-					>
-				</h2>
+				<h2>SvelteKit static blog starter</h2>
+
 				<p>
-					You can also find my work on <a
-						href="https://github.com/josh-collinsworth">GitHub</a
-					> (although truth be told I don't really bother curating it there at all.)
+					A fully open-source, pre-configured starter for a SvelteKit blog.
+					Includes Markdown and CSS preprocessing; has mdsvex with rehype
+					plugins pre-installed; and includes automatic prefetching of top-level
+					routes, an RSS feed, and a JSON API.
+				</p>
+
+				<p>
+					<i
+						>(Admittedly, this project is a little less relevant now that
+						SvelteKit offers most of this stuff when you set up a new project,
+						but the boilerplate remains useful for those who want a quick
+						start.)</i
+					>
+				</p>
+				<ul>
+					<li>
+						<a href="https://sveltekit-static-starter.netlify.app">Live demo</a>
+					</li>
+					<li>
+						<a
+							href="https://github.com/josh-collinsworth/sveltekit-blog-starter"
+							>GitHub repo</a
+						>
+					</li>
+				</ul>
+			</div>
+
+			<div class="image-gallery">
+				<figure>
+					<iframe
+						src="https://sveltekit-static-starter.netlify.app"
+						frameborder="0"
+						title="Live demo of the starter, from sveltekit-static-starter.netlify.app"
+						width="100%"
+						height="800"
+						style="border: 1px solid;"
+					></iframe>
+					<figcaption>
+						<a href="https://sveltekit-static-starter.netlify.app"
+							>sveltekit-static-starter.netlify.app</a
+						>
+					</figcaption>
+				</figure>
+			</div>
+		</article>
+
+		<article>
+			<div class="sticky">
+				<h2>CodePen Collections</h2>
+				<p>
+					A couple of CodePen collections showcasing some of my favorite pens
+					and experiments, along with some pens that are more about a laugh than
+					the code.
 				</p>
 			</div>
 			<div>
-				<h3>CodePen collections</h3>
-				<ul>
-					<li>
-						<a href="https://codepen.io/collection/GpRgyK">Showcase</a> (my best pens
-						and experiments)
-					</li>
-					<li>
-						<a href="https://codepen.io/collection/QbLwag">Humor</a> (pens more about
-						a laugh than the code)
-					</li>
-				</ul>
-				<h3>Websites</h3>
-				<ul>
-					<li>I mean...this one.</li>
-					<li>
-						I've been the main developer on <a href="https://deno.com"
-							>deno.com</a
-						> and a handful of related properties since 2023.
-					</li>
-					<li>
-						Some work I did is probably still floating around on <a
-							href="https://shopify.com/pos">Shopify POS</a
-						> and its sub-pages.
-					</li>
-					<li>
-						<a href="https://rise.getflywheel.com" rel="external">Rise</a>,
-						Flywheel/WP Engine's BIPOC employee resource group
-					</li>
-					<li>
-						<a href="https://nolanfabricius.com">NolanFabricius.com</a>, a sort
-						of avant-garde personal website
-					</li>
-					<li>
-						Flywheel retreat websites for <a
-							href="https://fest2019.getflywheel.com/"
-							rel="external">2019</a
+				<figure style="margin-top: 0;">
+					<a href="https://codepen.io/collection/GpRgyK">
+						<img src="/images/collection-1.webp" alt="" style="margin: 0;" />
+					</a>
+					<figcaption>
+						<a href="https://codepen.io/collection/GpRgyK"
+							>My favorite CodePens</a
 						>
-						and <a href="https://fest.getflywheel.com/" rel="external">2020</a>.
-					</li>
-				</ul>
-
-				<h3>Apps</h3>
-				<ul>
-					<li>
-						<a href="https://quina.app">Quina</a> and
-						<a href="https://playhondo.com">Hondo</a>, both featured above
-					</li>
-					<li>
-						A handy <a href="https://vlmc.netlify.app/" rel="external"
-							>liquid measurement converter</a
-						>
-						PWA, built with Vue (and the subject of
-						<a href="https://blog.logrocket.com/building-pwa-vue/"
-							>this blog post on the LogRocket blog</a
-						>)
-					</li>
-					<li>
-						<a href="https://sweet-pair-o-swine.netlify.app/" rel="external"
-							>Pass the Pigs scorekeeper app</a
-						>
-						built in React
-						<i
-							>(and currently slated for reconstruction; it was one of my very
-							first apps and has a lot of issues)</i
-						>
-					</li>
-					<li>
-						A Svelte <a href="https://dadjokefinder.netlify.app/" rel="external"
-							>Dad Joke randomizer and searcher app</a
-						>
-					</li>
-
-					<li>
-						An <a href="https://smitty.netlify.app" rel="external"
-							>item tracker for Super Metroid players</a
-						>
-					</li>
-					<li>
-						<del
-							><a
-								href="https://wpmultisitedomainreplace.vercel.app/"
-								rel="external">WPMultisiteDomainReplace</a
-							>, a Nuxt app to build SQL queries for WordPress multisites
-						</del>
-						(<i
-							>no longer live since moving off Vercel; probably won't rebuild,
-							but <a
-								href="https://github.com/josh-collinsworth/wp_multisite_domain_replace"
-								>the old repo is here</a
-							></i
-						>)
-					</li>
-				</ul>
-
-				<h3>Other things</h3>
-				<ul>
-					<li>
-						I made the new <a href="https://deno.com/brand">Deno logo</a>, and
-						the <a href="https://deno.com/blog/designing-jsr">JSR logo</a>.
-						So…guess I've got that going for me.
-					</li>
-					<li>
-						A <a
-							href="https://github.com/josh-collinsworth/flywheel-cloud-wp-load-fix"
-							>WordPress plugin</a
-						>
-						to help make various other plugins and theme compatible with
-						<a href="https://getflywheel.com/cloud-platform/"
-							>Flywheel's cloud platform</a
-						>
-					</li>
-					<li>
-						A Chrome extension, an internal knowledge base, various WordPress
-						themes, a couple of Node CLI tools, and a handful of trainings and
-						presentations (none of which I can show here because employer
-						privacy and such)
-					</li>
-				</ul>
+					</figcaption>
+				</figure>
+				<figure>
+					<a href="https://codepen.io/collection/QbLwag">
+						<img src="/images/collection-2.webp" alt="" style="margin: 0;" />
+					</a>
+					<figcaption>
+						<a href="https://codepen.io/collection/QbLwag">Humorous pens</a>
+					</figcaption>
+				</figure>
 			</div>
 		</article>
 	</div>
@@ -392,7 +454,11 @@
 			}
 
 			+ article {
-				margin-top: 6rem;
+				margin-top: var(--dotted-whole-note);
+
+				@media (min-width: 82rem) {
+					margin-top: calc(var(--whole-note) * 2);
+				}
 			}
 		}
 
@@ -436,6 +502,66 @@
 					border: 0;
 				}
 			}
+		}
+
+		.design-gallery {
+			display: flex;
+			flex-direction: column;
+			gap: var(--half-note);
+
+			hr {
+				margin-inline: auto;
+				max-width: var(--half-note);
+			}
+
+			figure {
+				margin: 0;
+				display: block;
+			}
+
+			figcaption {
+				text-align: center;
+				font-style: italic;
+				margin-top: 0.5rem;
+			}
+
+			.logo-box {
+				padding: var(--whole-note) var(--quarter-note);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 1px solid var(--neutral-darker);
+
+				@media (min-width: 32rem) {
+					padding: var(--dotted-whole-note) var(--half-note);
+				}
+
+				@media (min-width: 64rem) {
+					padding-inline: var(--whole-note);
+				}
+
+				img {
+					margin: 0;
+					width: auto;
+					max-width: unset;
+					height: 100%;
+					max-height: 4rem;
+					margin-inline: auto;
+				}
+			}
+
+			.jsr-logo {
+				transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+			}
+
+			.logo-box:has(.jsr-logo):hover .jsr-logo {
+				transform: rotate(180deg);
+			}
+		}
+
+		.interactive-showcase {
+			border-radius: 0.5rem;
+			overflow: hidden;
 		}
 
 		article > div > h3:first-of-type {

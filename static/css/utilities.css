@@ -46,3 +46,19 @@ input[type=checkbox] {
 	align-content: center;
 	text-align: center;
 }
+
+.light-only {
+	display: block;
+}
+
+.dark-only {
+	display: none;
+}
+
+.dark .dark-only {
+	display: block;
+}
+
+.dark .light-only {
+	display: none;
+}
