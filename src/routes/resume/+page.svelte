@@ -21,6 +21,7 @@
 		property="og:image"
 		content="https://joshcollinsworth.com/images/site-image.png"
 	/>
+	<meta name="robots" content="noindex,nofollow" />
 	<link rel="stylesheet" href="/css/resume.css" />
 </svelte:head>
 

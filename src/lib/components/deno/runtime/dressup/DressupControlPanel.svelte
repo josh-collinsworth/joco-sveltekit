@@ -8,38 +8,40 @@
 		toReadable,
 		randomize,
 		clearAll
-	} from './dressup-state.svelte.ts';
+	} from './dressup-state.svelte.ts'
 
 	interface Props {
-		download: () => void;
+		download: () => void
+		closable?: boolean
 	}
 
-	let { download }: Props = $props();
+	let { download, closable = true }: Props = $props()
 </script>
 
 <aside
 	class="control-panel"
+	class:standalone={!closable}
 	aria-hidden={!dressupState.isMenuOpen}
 	inert={!dressupState.isMenuOpen}
 	id="dressup-control-panel"
 >
-	<button
-		class="close-button"
-		type="button"
-		onclick={() => (dressupState.isMenuOpen = false)}
-	>
-		<span aria-hidden="true">×</span>
-		<span class="sr-only">Close</span>
-	</button>
+	{#if closable}
+		<button
+			class="close-button"
+			type="button"
+			onclick={() => (dressupState.isMenuOpen = false)}
+		>
+			<span aria-hidden="true">×</span>
+			<span class="sr-only">Close</span>
+		</button>
+	{/if}
 
-	<form
-		action=""
-		onsubmit={(e) => e.preventDefault()}
-		class="form"
-	>
+	<form action="" onsubmit={(e) => e.preventDefault()} class="form">
 		<!-- Headwear -->
 		<div class="field-group">
-			<label for="headwear-select" class="sr-only" id="headwear-label">Headwear</label>
+			<label for="headwear-select" class="sr-only" id="headwear-label"
+				>Headwear</label
+			>
 			<select
 				name="headwear"
 				id="headwear-select"
@@ -61,7 +63,7 @@
 								value={color}
 								checked={dressupState.headwearColor === color}
 								onchange={() => {
-									dressupState.headwearColor = color;
+									dressupState.headwearColor = color
 								}}
 								class="sr-only"
 							/>
@@ -80,7 +82,9 @@
 
 		<!-- Neckwear -->
 		<div class="field-group">
-			<label for="neckwear-select" class="sr-only" id="neckwear-label">Neckwear</label>
+			<label for="neckwear-select" class="sr-only" id="neckwear-label"
+				>Neckwear</label
+			>
 			<select
 				name="neckwear"
 				id="neckwear-select"
@@ -102,7 +106,7 @@
 								value={color}
 								checked={dressupState.neckwearColor === color}
 								onchange={() => {
-									dressupState.neckwearColor = color;
+									dressupState.neckwearColor = color
 								}}
 								class="sr-only"
 							/>
@@ -121,7 +125,7 @@
 
 		<!-- Accessories -->
 		<div class="field-group accessories-group">
-			<fieldset>
+			<fieldset style="border: 0; padding: 0;">
 				<legend class="sr-only">Accessories</legend>
 				<div class="checkbox-grid">
 					{#each ACCESSORIES as piece}
@@ -133,11 +137,14 @@
 								checked={dressupState.accessories.includes(piece)}
 								onchange={(e) => {
 									if (e.currentTarget.checked) {
-										dressupState.accessories = [...dressupState.accessories, piece];
+										dressupState.accessories = [
+											...dressupState.accessories,
+											piece
+										]
 									} else {
 										dressupState.accessories = dressupState.accessories.filter(
 											(a) => a !== piece
-										);
+										)
 									}
 								}}
 								id={`checkbox-${piece}`}
@@ -159,7 +166,7 @@
 								value={color}
 								checked={dressupState.accessoryColor === color}
 								onchange={() => {
-									dressupState.accessoryColor = color;
+									dressupState.accessoryColor = color
 								}}
 								class="sr-only"
 							/>
@@ -210,41 +217,29 @@
 		grid-column-start: 1;
 		grid-row-start: 1;
 		width: 100%;
-		border-radius: 0.5rem;
-		padding: 2rem 1rem;
+		padding: 1.5rem;
+		border-bottom: 2px solid #121417;
 		top: 0;
 		left: 0;
 		transition: transform 0.3s;
 		background-color: #ecf3fd;
-		box-shadow:
-			0 20px 25px -5px rgba(0, 0, 0, 0.1),
-			0 8px 10px -6px rgba(0, 0, 0, 0.1);
 		transform: rotateY(180deg);
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
-	}
+		container-type: inline-size;
 
-	.control-panel::before {
-		content: '';
-		position: absolute;
-		inset: 0;
-		background-image: radial-gradient(#07c 1px, transparent 1px);
-		background-size: 10px 10px;
-		opacity: 0.06;
-		pointer-events: none;
-		border-radius: inherit;
-	}
-
-	@media (min-width: 480px) {
-		.control-panel {
-			padding: 2rem;
+		@container (min-width: 640px) {
+			border-bottom: 0;
+			border-right: 2px solid #121417;
 		}
 	}
 
-	@media (min-width: 1024px) {
-		.control-panel {
-			padding: 3rem;
-		}
+	.standalone {
+		transform: none;
+		backface-visibility: visible;
+		-webkit-backface-visibility: visible;
+		grid-column-start: auto;
+		grid-row-start: auto;
 	}
 
 	.close-button {
@@ -265,14 +260,14 @@
 		cursor: pointer;
 	}
 
-	@media (min-width: 480px) {
+	@container (min-width: 480px) {
 		.close-button {
 			top: 0.25rem;
 			right: 0.25rem;
 		}
 	}
 
-	@media (min-width: 1024px) {
+	@container (min-width: 1024px) {
 		.close-button {
 			top: 0.5rem;
 			right: 0.5rem;
@@ -308,19 +303,17 @@
 		border: 2px solid #121417;
 		border-radius: 0.25rem;
 		background-color: white;
-		font-size: inherit;
-		font-family: inherit;
+		font: inherit;
 		cursor: pointer;
 		padding-right: 2rem;
-		background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22137px%22%20height%3D%22224px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A2%3B%22%3E%3Cg%20transform%3D%22matrix(0.741625%2C0%2C0%2C1%2C0%2C0)%22%3E%3Cpath%20d%3D%22M91.868%2C0L0%2C91.868L183.736%2C91.868L91.868%2C0Z%22%20style%3D%22fill%3Argb(35%2C31%2C32)%3B%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(-0.741625%2C-1.22465e-16%2C9.08229e-17%2C-1%2C136.264%2C223.736)%22%3E%3Cpath%20d%3D%22M91.868%2C0L0%2C91.868L183.736%2C91.868L91.868%2C0Z%22%20style%3D%22fill%3Argb(35%2C31%2C32)%3B%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+		background-image: url('data:image/svg+xml,%3Csvg%20width%3D%22137px%22%20height%3D%22224px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A2%3B%22%3E%3Cg%20transform%3D%22matrix(0.741625%2C0%2C0%2C1%2C0%2C0)%22%3E%3Cpath%20d%3D%22M91.868%2C0L0%2C91.868L183.736%2C91.868L91.868%2C0Z%22%20style%3D%22fill%3Argb(35%2C31%2C32)%3B%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(-0.741625%2C-1.22465e-16%2C9.08229e-17%2C-1%2C136.264%2C223.736)%22%3E%3Cpath%20d%3D%22M91.868%2C0L0%2C91.868L183.736%2C91.868L91.868%2C0Z%22%20style%3D%22fill%3Argb(35%2C31%2C32)%3B%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 		background-size: 0.5em;
 		background-position: right 0.5em top 50%;
 		background-repeat: no-repeat;
 	}
 
-	/* Swatch panel */
 	.swatch-fieldset {
-		border: none;
+		border: 0;
 		padding: 0;
 		margin: 0;
 	}
@@ -335,7 +328,7 @@
 		max-width: 17rem;
 	}
 
-	@media (min-width: 480px) {
+	@container (min-width: 480px) {
 		.swatch-row {
 			gap: 2px;
 			width: auto;
@@ -363,25 +356,10 @@
 		outline-offset: 1px;
 	}
 
-	/* Checkbox grid */
 	.checkbox-grid {
-		display: flex;
-		flex-wrap: wrap;
-		column-gap: 1rem;
-		row-gap: 0.5rem;
-	}
-
-	@media (min-width: 768px) {
-		.checkbox-grid {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media (min-width: 1024px) {
-		.checkbox-grid {
-			grid-template-columns: repeat(3, 1fr);
-		}
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+		gap: 0.5rem;
 	}
 
 	.checkbox-wrapper {
@@ -436,7 +414,9 @@
 		border-width: 0 2px 2px 0;
 	}
 
-	.checkbox-wrapper input[type='checkbox']:focus-visible + .checkbox-label::before {
+	.checkbox-wrapper
+		input[type='checkbox']:focus-visible
+		+ .checkbox-label::before {
 		outline: 2px solid #1d4ed8;
 		outline-offset: 2px;
 	}
@@ -458,6 +438,7 @@
 		cursor: pointer;
 		font-size: inherit;
 		font-family: inherit;
+		color: var(--neutral-darker);
 	}
 
 	.btn:hover {
@@ -467,12 +448,12 @@
 	.btn-secondary {
 		flex: 1 1 auto;
 		padding: 0.5rem 0.75rem;
-		background-color: white;
+		background-color: white !important;
 	}
 
 	.btn-download {
 		width: 100%;
 		padding: 1rem 1.5rem;
-		background-color: #70ffaf;
+		background-color: #70ffaf !important;
 	}
 </style>

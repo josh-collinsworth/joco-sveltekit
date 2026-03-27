@@ -12,7 +12,7 @@ export const HEADWEAR = [
 	'flower',
 	'hard-hat',
 	'witch-hat'
-];
+]
 
 export const NECKWEAR = [
 	'bowtie',
@@ -21,7 +21,7 @@ export const NECKWEAR = [
 	'necklace',
 	'css-necklace',
 	'two-chain'
-];
+]
 
 export const ACCESSORIES = [
 	'balloons',
@@ -35,7 +35,7 @@ export const ACCESSORIES = [
 	'tattoo',
 	'fangs',
 	'ferris'
-];
+]
 
 export const COLORS = [
 	'#70ffaf', // runtime
@@ -48,37 +48,37 @@ export const COLORS = [
 	'#f472b6', // pink-400
 	'#dc2626', // red-600
 	'#25272b' // gray-5
-];
+]
 
 export const dressupState = $state({
 	headwear: 'party-hat' as string,
 	neckwear: 'bowtie' as string,
-	accessories: [] as string[],
+	accessories: ['balloons'] as string[],
 	headwearColor: COLORS[0],
 	neckwearColor: COLORS[0],
 	accessoryColor: COLORS[4],
 	isMenuOpen: false
-});
+})
 
 export function toReadable(str: string): string {
 	return str
 		.replace(/-/g, ' ')
 		.replace(/\b\w/g, (l) => l.toUpperCase())
-		.replace('Css', 'CSS');
+		.replace('Css', 'CSS')
 }
 
 export function randomize() {
-	const getRandomColor = () => COLORS[Math.floor(Math.random() * COLORS.length)];
-	dressupState.headwear = HEADWEAR[Math.floor(Math.random() * HEADWEAR.length)];
-	dressupState.neckwear = NECKWEAR[Math.floor(Math.random() * NECKWEAR.length)];
-	dressupState.accessories = ACCESSORIES.filter(() => Math.random() > 0.5);
-	dressupState.headwearColor = getRandomColor();
-	dressupState.neckwearColor = getRandomColor();
-	dressupState.accessoryColor = getRandomColor();
+	const getRandomColor = () => COLORS[Math.floor(Math.random() * COLORS.length)]
+	dressupState.headwear = HEADWEAR[Math.floor(Math.random() * HEADWEAR.length)]
+	dressupState.neckwear = NECKWEAR[Math.floor(Math.random() * NECKWEAR.length)]
+	dressupState.accessories = ACCESSORIES.filter(() => Math.random() > 0.5)
+	dressupState.headwearColor = getRandomColor()
+	dressupState.neckwearColor = getRandomColor()
+	dressupState.accessoryColor = getRandomColor()
 }
 
 export function clearAll() {
-	dressupState.headwear = '';
-	dressupState.neckwear = '';
-	dressupState.accessories = [];
+	dressupState.headwear = ''
+	dressupState.neckwear = ''
+	dressupState.accessories = []
 }

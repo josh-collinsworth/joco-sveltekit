@@ -33,7 +33,7 @@
 	})
 </script>
 
-<div class="hero-container">
+<div class="lofi-container">
 	<img
 		class="layer bg-image"
 		class:hidden-layer={showPlaceholder}
@@ -87,18 +87,16 @@
 </div>
 
 <style>
-	.hero-container {
+	.lofi-container {
 		display: grid;
 		position: relative;
 		align-items: center;
 		justify-content: center;
 		aspect-ratio: 1;
 		overflow: clip;
-		height: 100%;
-		width: auto;
-		box-shadow:
-			0 10px 15px -3px rgb(0 0 0 / 0.1),
-			0 4px 6px -4px rgb(0 0 0 / 0.1);
+		width: 100%;
+		height: auto;
+		border-radius: 0.5rem;
 
 		img {
 			margin: 0;

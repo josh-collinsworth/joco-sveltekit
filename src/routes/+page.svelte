@@ -1,5 +1,9 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
+	import QuinaLogo from '$lib/components/icons/QuinaLogo.svelte'
+	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
+	import DenoMarkCustom from '$lib/components/icons/DenoMarkCustom.svelte'
+	import DeployMark from '$lib/components/icons/DeployMark.svelte'
 
 	let { data } = $props()
 </script>
@@ -41,8 +45,8 @@
 
 		<h2>Why I do it</h2>
 		<p class="big-copy">
-			I love building things that make the world look and work a little better,
-			and sharing what I learn along the way.
+			I love building things that solve problems, create joy, and make the world
+			a little better (and sharing what I learn along the way).
 		</p>
 
 		<h2>Why you might know me</h2>
@@ -84,17 +88,25 @@
 		</ul>
 
 		<div class="icons">
-			<a href="https://quina.app" class="icon icon--quina">
-				<img src="/images/quina-logo.svg" alt="Quina game logo" />
+			<a href="https://quina.app" class="icon icon--quina" aria-label="Quina">
+				<QuinaLogo />
 			</a>
-			<a href="https://playhondo.com" class="icon icon--hondo">
-				<img src="/images/hondo-logo.svg" alt="Hondo game logo" />
+			<a
+				href="https://playhondo.com"
+				class="icon icon--hondo"
+				aria-label="Hondo"
+			>
+				<HondoLogo />
 			</a>
-			<a href="https://deno.com" class="icon icon--deno">
-				<img src="/images/deno-mark-dark-filled-custom.svg" alt="Deno logo" />
+			<a href="https://deno.com" class="icon icon--deno" aria-label="Deno">
+				<DenoMarkCustom />
 			</a>
-			<a href="https://deno.com/deploy" class="icon icon--deno-deploy">
-				<img src="/images/deploy-mark-dark.svg" alt="Deno Deploy logo" />
+			<a
+				href="https://deno.com/deploy"
+				class="icon icon--deno-deploy"
+				aria-label="Deno Deploy"
+			>
+				<DeployMark />
 			</a>
 		</div>
 
