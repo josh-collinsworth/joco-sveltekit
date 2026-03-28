@@ -1,12 +1,7 @@
 <script lang="ts">
-	import CodePenLink from '$lib/components/CodePenLink.svelte'
 	import Main from '$lib/components/Main.svelte'
-	import DenoDeployLogo from '$lib/components/deno/icons/DenoDeployLogo.svelte'
-	import DenoLogo from '$lib/components/deno/icons/DenoLogo.svelte'
 	import LoFiDino from '$lib/components/deno/runtime/LoFiDino.svelte'
 	import Dressup from '$lib/components/deno/runtime/dressup/Dressup.svelte'
-	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
-	import QuinaLogo from '$lib/components/icons/QuinaLogo.svelte'
 </script>
 
 <svelte:head>
@@ -266,7 +261,11 @@
 
 				<figure>
 					<div class="logo-box">
-						<img src="/images/projects/jsr.svg" alt="JSR logo" class="jsr-logo" />
+						<img
+							src="/images/projects/jsr.svg"
+							alt="JSR logo"
+							class="jsr-logo"
+						/>
 					</div>
 					<figcaption>
 						<a href="https://jsr.io">JSR</a> logo
@@ -406,7 +405,11 @@
 			<div>
 				<figure style="margin-top: 0;">
 					<a href="https://codepen.io/collection/GpRgyK">
-						<img src="/images/projects/collection-1.webp" alt="" style="margin: 0;" />
+						<img
+							src="/images/projects/collection-1.webp"
+							alt=""
+							style="margin: 0;"
+						/>
 					</a>
 					<figcaption>
 						<a href="https://codepen.io/collection/GpRgyK"
@@ -416,7 +419,11 @@
 				</figure>
 				<figure>
 					<a href="https://codepen.io/collection/QbLwag">
-						<img src="/images/projects/collection-2.webp" alt="" style="margin: 0;" />
+						<img
+							src="/images/projects/collection-2.webp"
+							alt=""
+							style="margin: 0;"
+						/>
 					</a>
 					<figcaption>
 						<a href="https://codepen.io/collection/QbLwag">Humorous pens</a>
@@ -428,6 +435,7 @@
 </Main>
 
 <style>
+	/* TODO: this feels like a bit of a mess. I should probably break it up into components, and clean up the styles. But then again, it is all for a one-off page. Still, it feels messy. Actually, this kind of applies to the whole site. Everything's very ad-hoc and I didn't think through reusability very well the first time around. */
 	.projects {
 		p {
 			max-width: var(--max-width);
@@ -561,10 +569,6 @@
 		.interactive-showcase {
 			border-radius: 0.5rem;
 			overflow: hidden;
-		}
-
-		article > div > h3:first-of-type {
-			margin-top: 0;
 		}
 
 		.image-gallery {

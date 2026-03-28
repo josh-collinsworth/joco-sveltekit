@@ -1,11 +1,16 @@
 {
 	"cSpell.ignoreWords": [
 		"Goombas",
+		"dressup",
 		"premade",
 		"rando",
 		"sluggify"
 	],
 	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.removeUnusedImports": "explicit"
+	},
 	"javascript.format.semicolons": "remove",
 	"typescript.format.semicolons": "remove",
 	"javascript.preferences.quoteStyle": "single",
