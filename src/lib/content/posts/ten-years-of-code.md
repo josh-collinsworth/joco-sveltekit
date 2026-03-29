@@ -71,7 +71,7 @@ So, like a great many people in this field, this wasn't a destination I ever had
 
 <CalloutPlusQuote>
 
-That's one of the things I love about development, as a field: it's a city of immigrants. This place our home, but most of us aren't from here.
+That's one of the things I love about development, as a field: it's a city of immigrants. This place is our home, but most of us aren't from here.
 
 </CalloutPlusQuote>
 
