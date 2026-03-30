@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
-	import QuinaLogo from '$lib/components/icons/QuinaLogo.svelte'
-	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
 	import DenoMarkCustom from '$lib/components/icons/DenoMarkCustom.svelte'
 	import DeployMark from '$lib/components/icons/DeployMark.svelte'
+	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
+	import QuinaLogo from '$lib/components/icons/QuinaLogo.svelte'
 
 	let { data } = $props()
 </script>
@@ -28,13 +28,14 @@
 		<img
 			class="profile-pic"
 			src="/images/bio-photo.jpg?ver=032026"
-			alt="Me, Josh Collinsworth, an average white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat."
+			alt="Me, Josh Collinsworth, an average middle-aged white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat."
 		/>
 
 		<h2>What I do</h2>
 		<p class="big-copy">
-			I’m a frontend developer and designer, specializing in bringing delightful
-			simplicity to user interfaces.
+			I’m a frontend developer and designer, specialized in bringing code,
+			design, and messaging together to craft delightfully simple user
+			experiences.
 		</p>
 
 		<h2>Where I do it</h2>

@@ -1,7 +1,7 @@
 <script lang="ts">
+	import Main from '$lib/components/Main.svelte'
 	import { EXTERNAL_POSTS } from '$lib/data/external_posts'
 	import { talks } from '$lib/data/talks'
-	import Main from '$lib/components/Main.svelte'
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
 	<div class="compressed-content writing">
 		<img
 			class="profile-pic"
-			src="/images/bio-photo.jpg"
+			src="/images/profile-pic.webp"
 			alt="Me, Josh Collinsworth, an average white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat."
 		/>
 		<h2>Who I am</h2>
@@ -169,9 +169,12 @@
 <style>
 	.writing {
 		h2 {
-			margin-bottom: var(--quarter-note);
-		}
+			margin-bottom: 0;
 
+			& + .subhead {
+				margin-top: var(--sixteenth-note);
+			}
+		}
 		hr {
 			margin: var(--quarter-note) 0 var(--dotted-half-note);
 		}
@@ -183,17 +186,13 @@
 		}
 
 		.profile-pic {
-			aspect-ratio: 1 / 1;
-			object-fit: cover;
-			border-radius: 10rem;
-			margin: 4.5rem 0 var(--half-note) var(--quarter-note);
-			shape-outside: circle(6rem);
-			float: right;
-			max-width: 30vw;
+			margin: 0;
+			width: 100%;
+			max-width: 16rem;
 
-			@media (min-width: 34rem) {
-				max-width: 12rem;
-				shape-outside: circle(8rem);
+			& + h2 {
+				margin-top: var(--half-note);
+				margin-bottom: var(--quarter-note);
 			}
 		}
 	}
