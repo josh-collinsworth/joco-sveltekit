@@ -5,6 +5,7 @@
 		"dev": "vite dev --host --port 1027",
 		"host": "vite dev --port 1027 --host",
 		"build": "vite build",
+		"test": "vite build && vitest run",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -15,6 +16,7 @@
 		"@sveltejs/adapter-static": "^3.0.6",
 		"@sveltejs/kit": "^2.49.5",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@types/node": "^25.5.0",
 		"autoprefixer": "^10.4.2",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -31,7 +33,8 @@
 		"typescript": "^5.5.0",
 		"typescript-eslint": "^8.0.0",
 		"vite": "^6.0.0",
-		"vite-plugin-devtools-json": "^1.0.0"
+		"vite-plugin-devtools-json": "^1.0.0",
+		"vitest": "^4.1.2"
 	},
 	"type": "module",
 	"dependencies": {

@@ -3,7 +3,10 @@ import { sveltekit } from '@sveltejs/kit/vite'
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [sveltekit(), devtoolsJson()]
+	plugins: [sveltekit(), devtoolsJson()],
+	build: {
+		target: 'es2022'
+	}
 }
 
 export default config
