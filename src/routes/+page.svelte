@@ -33,9 +33,8 @@
 
 		<h2>What I do</h2>
 		<p class="big-copy">
-			I’m a frontend developer and designer, specialized in bringing code,
-			design, and messaging together to craft delightfully simple user
-			experiences.
+			I’m a frontend developer and designer who works across code, design, and
+			messaging, and refines them into something simple and seamless.
 		</p>
 
 		<h2>Where I do it</h2>
