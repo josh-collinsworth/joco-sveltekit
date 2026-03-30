@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { onMount } from 'svelte'
 	import { sluggify } from '$lib/assets/js/utils'
+	import { onMount } from 'svelte'
 
 	interface Props {
 		title?: string
@@ -91,10 +91,6 @@
 			padding: calc(var(--quarter-note) / 2) 1rem var(--half-note);
 			display: grid;
 			grid-gap: 1rem;
-
-			* {
-				margin: 0;
-			}
 		}
 
 		&.open {

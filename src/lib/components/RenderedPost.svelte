@@ -1,15 +1,15 @@
 <script lang="ts">
 	import type Post from '$lib/types/post'
 
-	import TagList from '$lib/components/tags/TagList.svelte'
-	import Tag from '$lib/components/tags/Tag.svelte'
-	import Bio from '$lib/components/posts/Bio.svelte'
+	import { dev } from '$app/environment'
+	import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
 	import Comments from '$lib/components/Comments.svelte'
 	import Main from '$lib/components/Main.svelte'
-	import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
-	import { onMount } from 'svelte'
+	import Bio from '$lib/components/posts/Bio.svelte'
+	import Tag from '$lib/components/tags/Tag.svelte'
+	import TagList from '$lib/components/tags/TagList.svelte'
 	import type { Component } from 'svelte'
-	import { dev } from '$app/environment'
+	import { onMount } from 'svelte'
 
 	interface Props {
 		PostContent: Component
@@ -81,8 +81,8 @@
 	<meta property="og:title" content={meta.title} />
 	<meta property="og:description" content={meta.excerpt} />
 	<meta property="og:image" content="https://joshcollinsworth.com{imagePath}" />
-	<meta property="og:image:width" content={meta.coverWidth} />
-	<meta property="og:image:height" content={meta.coverHeight} />
+	<meta property="og:image:width" content={String(meta.coverWidth)} />
+	<meta property="og:image:height" content={String(meta.coverHeight)} />
 	<meta
 		property="og:url"
 		content="https://joshcollinsworth.com/blog/{meta.slug}/"

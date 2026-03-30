@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import { dressupState } from './dressup-state.svelte.ts'
-	import DressupDino from './DressupDino.svelte'
+	import { dressupState } from './dressup-state.svelte'
 	import DressupControlPanel from './DressupControlPanel.svelte'
+	import DressupDino from './DressupDino.svelte'
 
 	let { alwaysOpen = false }: { alwaysOpen?: boolean } = $props()
 
@@ -26,7 +26,7 @@
 			type: 'image/svg+xml;charset=utf-8'
 		})
 
-		const DOMURL = globalThis.URL || globalThis.webkitURL || globalThis
+		const DOMURL = globalThis.URL || globalThis.webkitURL
 		const url = DOMURL.createObjectURL(svgBlob)
 
 		const image = new Image()
@@ -283,7 +283,7 @@
 	}
 
 	.toggle-btn {
-		leading-trim: both;
+		text-box-trim: both;
 		line-height: 1.25;
 		width: calc(100% - 2rem);
 		border: 1px solid #121417;

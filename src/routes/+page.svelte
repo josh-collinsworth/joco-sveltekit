@@ -34,7 +34,7 @@
 		<h2>What I do</h2>
 		<p class="big-copy">
 			I’m a frontend developer and designer who works across code, design, and
-			messaging, and refines them into something simple and seamless.
+			messaging, distilling complexity into seamless simplicity.
 		</p>
 
 		<h2>Where I do it</h2>
@@ -335,12 +335,6 @@
 
 			&:hover {
 				transform: scale(1.05);
-			}
-
-			img {
-				height: 100%;
-				width: auto;
-				object-fit: contain;
 			}
 		}
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { dressupState } from './dressup-state.svelte.ts'
+	import { dressupState } from './dressup-state.svelte'
 
 	function headwearDisplay(id: string): string {
 		return dressupState.headwear === id ? 'block' : 'none'

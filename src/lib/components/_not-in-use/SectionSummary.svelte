@@ -13,7 +13,7 @@
 
 <style>
 	.summary {
-		// background-color: var(--blue-lightest);
+		/* background-color: var(--blue-lightest); */
 		padding: var(--quarter-note);
 		font-size: 0.75rem;
 		font-family: var(--heading-font);

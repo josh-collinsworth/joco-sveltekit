@@ -5,7 +5,6 @@
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xml:space="preserve"
-	xmlns:serif="http://www.serif.com/"
 	style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;"
 >
 	<g transform="matrix(1.2349,0,0,1.21674,-2.15404,-6.34348)">

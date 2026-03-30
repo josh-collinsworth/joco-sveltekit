@@ -11,7 +11,7 @@ const fetchPosts = async ({
 	let posts: Post[]
 
 	posts = await Promise.all(
-		Object.entries(import.meta.glob(`../../../content/posts/*.md`)).map(
+		Object.entries(import.meta.glob<{ metadata: Post }>(`../../../content/posts/*.md`)).map(
 			async ([path, page]) => {
 				const { metadata } = await page()
 				const slug = path.split('/').pop().split('.').shift()
@@ -23,7 +23,7 @@ const fetchPosts = async ({
 	if (dev) {
 		const drafts = await Promise.all(
 			Object.entries(
-				import.meta.glob(`../../../content/posts/drafts/*.md`)
+				import.meta.glob<{ metadata: Post }>(`../../../content/posts/drafts/*.md`)
 			).map(async ([path, page]) => {
 				const { metadata } = await page()
 				const slug = path.split('/').pop().split('.').shift()

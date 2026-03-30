@@ -1,14 +1,14 @@
 <script lang="ts">
 	import {
+		ACCESSORIES,
+		clearAll,
+		COLORS,
 		dressupState,
 		HEADWEAR,
 		NECKWEAR,
-		ACCESSORIES,
-		COLORS,
-		toReadable,
 		randomize,
-		clearAll
-	} from './dressup-state.svelte.ts'
+		toReadable
+	} from './dressup-state.svelte'
 
 	interface Props {
 		download: () => void

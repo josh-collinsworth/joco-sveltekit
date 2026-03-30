@@ -1,8 +1,8 @@
-import type { LoadOutput } from '@sveltejs/kit'
+import type { PageLoad } from './$types'
 
-	export const load = async (): Promise<LoadOutput> => {
+export const load: PageLoad = async () => {
 	const Uses = await import('$lib/content/uses.md')
-	
+
 	return {
 		Uses: Uses.default
 	}
