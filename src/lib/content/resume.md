@@ -2,7 +2,7 @@
 
 ## Summary
 
-Design engineer and frontend developer with 7+ years building production web applications, design systems, and brands. Specialized in Svelte/SvelteKit, React, TypeScript, and CSS/Tailwind, with a strong focus on design, accessibility, web animation, and performance.
+Design engineer and frontend developer with 7+ years building production web applications, design systems, and brands. Specialized in React, Svelte/SvelteKit, TypeScript, and CSS/Tailwind, with a strong focus on design, accessibility, web animation, and performance.
 
 ---
 
@@ -62,7 +62,7 @@ _August 2019 – January 2021_
 
 **Support Technical Lead (Tier 2)**
 
-_September 2015 – August 2019_ · _(Acquired by WP Engine June 2019)_
+_September 2015 – WP Engine acquisition 2019_
 
 - Led the US Tier 2 support team; developed tools and training resources including in-depth sessions on SSL, DNS, NGINX, and platform architecture
 - Built a Chrome extension adding productivity features to Flywheel's admin panel, saving agents an estimated 15–20 minutes per day; still in use by all support agents
@@ -71,7 +71,9 @@ _September 2015 – August 2019_ · _(Acquired by WP Engine June 2019)_
 
 ### [AIM Code School](https://aiminstitute.org/programs/technical-training/aim-code-school-2/)
 
-**WordPress course instructor** · _September 2015 – July 2018_
+**WordPress course instructor**
+
+_September 2015 – July 2018_
 
 - Solely responsible for curriculum development and teaching WordPress theme development to classes of 4–12 students, covering PHP, MySQL, web performance, and accessibility fundamentals
 
@@ -115,9 +117,12 @@ _September 2015 – August 2019_ · _(Acquired by WP Engine June 2019)_
 ## Education
 
 ### Metropolitan Community College
-**August 2012 – November 2014**
 
-_Associate's of Graphic Communication Art and Design_
+**Omaha, Nebraska**
+
+_August 2012 – November 2014_
+
+Associate's of Graphic Communication Art and Design (3.95 GPA)
 
 ---
 

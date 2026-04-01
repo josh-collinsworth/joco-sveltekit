@@ -93,6 +93,7 @@
 		max-width: unset !important;
 		padding: 0;
 		margin: 0;
+		padding-top: 0.5in;
 	}
 
 	.page-head {
@@ -113,15 +114,15 @@
 
 		.resume-logo {
 			display: inline-block;
-			margin: 0.5in 0 0;
-			max-width: 1.5in;
+			margin: 0;
+			max-width: 1.75in;
 		}
 
 		h2 {
 			font-size: 9pt;
 			position: static;
 			text-transform: uppercase;
-			margin: 0.5in 0 0.125in;
+			margin: 0.375in 0 0.125in;
 			border-bottom: 1pt solid;
 			padding-bottom: 0.05in;
 
@@ -132,7 +133,16 @@
 
 		h3 {
 			font-size: 10pt;
-			margin: 0.375in 0 0.125in;
+			margin: 0.25in 0 0.125in;
+
+			&:first-of-type {
+				margin-top: 0.0625in;
+			}
+
+			a {
+				text-decoration-thickness: 1pt;
+				text-decoration-color: currentColor;
+			}
 		}
 
 		h3,
@@ -148,6 +158,7 @@
 		}
 
 		ul {
+			break-before: avoid;
 			break-inside: auto;
 			margin: 0;
 			padding-left: 11pt;
