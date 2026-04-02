@@ -2,6 +2,7 @@
 	import type { PageData } from './$types'
 
 	import Main from '$lib/components/Main.svelte'
+	import './resume.css'
 	interface Props {
 		data: PageData
 	}
@@ -26,7 +27,6 @@
 		content="https://joshcollinsworth.com/images/site-image.png"
 	/>
 	<meta name="robots" content="noindex,nofollow" />
-	<link rel="stylesheet" href="/css/resume.css" />
 </svelte:head>
 
 <Main>
