@@ -1,6 +1,6 @@
 <script lang="ts">
-	import LogoSVG from '$lib/components/header/LogoSVG.svelte'
 	import Grid from '$lib/components/Grid.svelte'
+	import LogoSVG from '$lib/components/header/LogoSVG.svelte'
 	import NavMenu from '$lib/components/header/NavMenu.svelte'
 	import DarkModeToggle from '$lib/components/settings/DarkModeToggle.svelte'
 	import { appState } from '$lib/data/store.svelte'
@@ -61,7 +61,7 @@
 <style>
 	.logo {
 		width: auto;
-		height: 2rem;
+		height: 2.25rem;
 		display: block;
 
 		@media (min-width: 108rem) and (min-height: 66rem) {
