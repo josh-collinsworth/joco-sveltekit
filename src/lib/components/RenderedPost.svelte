@@ -116,7 +116,6 @@
 			{/if}
 		</div>
 
-		<!-- TODO: TypeScript doesn't like this, but I can't find a good answer what to do about it. :/ -->
 		<PostContent />
 
 		<aside class="post-footer">

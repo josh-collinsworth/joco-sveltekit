@@ -19,7 +19,7 @@
 	}
 </script>
 
-<div>
+<div style="width: 100%;">
 	<header class="header">
 		<a onclick={focusMain} class="skip-to-content-link" href="#main">
 			Skip to main content

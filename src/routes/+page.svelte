@@ -265,7 +265,7 @@
 
 		.big-copy {
 			font-size: 2rem;
-			font-size: clamp(1.375rem, calc(0.6rem + 1.5vw), 1.75rem);
+			font-size: clamp(1.25rem, calc(0.6rem + 1.5vw), 1.75rem);
 			font-weight: normal;
 			text-wrap: balance;
 

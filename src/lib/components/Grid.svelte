@@ -1,8 +1,8 @@
 <script lang="ts">
-	import GridCell from './GridCell.svelte'
 	import { browser } from '$app/environment'
-	import debounce from 'just-debounce'
 	import { navigating } from '$app/state'
+	import debounce from 'just-debounce'
+	import GridCell from './GridCell.svelte'
 
 	interface Props {
 		refresh?: string
@@ -98,6 +98,8 @@
 		contain: layout size style;
 		width: 100%;
 		max-width: 100vw;
+		overflow-x: clip;
+		overflow-y: visible;
 	}
 
 	.cell-grid {

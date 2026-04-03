@@ -85,13 +85,11 @@ $fourxl: 144rem; */
 
 	--body-font-weight: normal;
 	--body-font-size: 100%;
+	--body-font-size: 112.5%; /* 18px */
 	--body-line-height: 1.55;
 
-	@media (min-width: 32rem) {
-		--body-font-size: 106.25%; /* 17px */
-	}
-	@media (min-width: 42rem) {
-		--body-font-size: 112.5%; /* 18px */
+	@media (min-width: 24rem) {
+		--body-font-size: 118.75%; /* 19px */
 	}
 	@media (min-width: 128rem) {
 		--body-font-size: 125%; /* 20px */
