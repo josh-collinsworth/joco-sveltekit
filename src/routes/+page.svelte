@@ -265,9 +265,25 @@
 
 		.big-copy {
 			font-size: 2rem;
-			font-size: clamp(1.25rem, calc(0.6rem + 1.25vw), 1.75rem);
+			font-size: clamp(1.375rem, calc(0.6rem + 1.5vw), 1.75rem);
 			font-weight: normal;
 			text-wrap: balance;
+
+			a {
+				background: linear-gradient(var(--yellow), var(--yellow)) no-repeat
+					right;
+				background-size: 0% 100%;
+				transition:
+					background-size 0.1s cubic-bezier(0.83, 0, 0.17, 1),
+					background-position 0s;
+
+				&:hover,
+				&:focus {
+					background-position: left;
+					background-size: 100% 100%;
+					color: var(--neutral-900);
+				}
+			}
 		}
 
 		ul {
