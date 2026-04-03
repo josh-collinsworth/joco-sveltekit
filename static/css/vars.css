@@ -94,7 +94,7 @@ $fourxl: 144rem; */
 		--body-font-size: 112.5%; /* 18px */
 	}
 	@media (min-width: 128rem) {
-		--body-font-size: 118.75%; /* 19px */
+		--body-font-size: 125%; /* 20px */
 	}
 
 
