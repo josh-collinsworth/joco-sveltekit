@@ -447,7 +447,7 @@
 			gap: var(--half-note);
 			align-items: start;
 
-			@media (min-width: 56rem) {
+			@media (min-width: 64rem) {
 				grid-template-columns: 2fr 3fr;
 
 				.sticky {
@@ -585,7 +585,7 @@
 				width: calc(100% + (var(--margin) * 2));
 				margin-left: calc(var(--margin) * -1);
 
-				@media (min-width: 56rem) {
+				@media (min-width: 64rem) {
 					max-width: calc(100% + var(--margin));
 					width: auto;
 					margin-left: 0;
