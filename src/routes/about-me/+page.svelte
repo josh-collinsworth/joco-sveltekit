@@ -32,10 +32,10 @@
 		</p>
 
 		<p>
-			These days I’m more of a coder who designs than a designer who codes, but
-			my original degree is in graphic design, and I'm proficient and passionate
-			in both roles. I also bring a background in marketing roles, teaching, and
-			technical customer support to my work. Ultimately, I'm a communicator.
+			I’m more of a coder who designs than a designer who codes, but my original
+			degree is in graphic design, and I'm proficient in both roles. I also
+			bring a background in marketing, teaching, and technical customer support
+			to my work. Ultimately, I'm a communicator.
 		</p>
 
 		<h3>Prior professional experience</h3>
@@ -60,7 +60,7 @@
 			musician (though not an otherwise successful one).
 		</p>
 
-		<h3>Hobbies and interests</h3>
+		<h3>Other work</h3>
 		<p>
 			As a writer, I authored the CSS Tricks series <a
 				href="https://css-tricks.com/a-complete-beginners-guide-to-npm/"
@@ -73,8 +73,8 @@
 			<a href="#appearances">on podcasts</a>.
 		</p>
 		<p>
-			In my spare time, I enjoy hobby coding; I’m the maker and designer of the
-			word games <i>Quina</i>
+			In my spare time, I often enjoy hobby coding; I’m the maker and designer
+			of the word games <i>Quina</i>
 			(<a href="https://apps.apple.com/us/app/quina/id1636895462">iOS</a>/<a
 				href="https://play.google.com/store/apps/details?id=app.quina.collinsworth"
 				>Android</a
@@ -85,29 +85,38 @@
 			>/<a
 				href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa"
 				>Android</a
-			>/<a href="https://playhondo.com">web</a>). I wrote and maintain an
-			open-source SvelteKit static blog starter (when I have the time, at least—<a
+			>/<a href="https://playhondo.com">web</a>). Although those are the only
+			apps I've "finished" and launched, I also tend to have a bunch of
+			half-finished game demos going at once.
+		</p>
+		<p>
+			I wrote and maintain an open-source SvelteKit static blog starter (when I
+			have the time, at least—<a
 				href="https://github.com/josh-collinsworth/sveltekit-blog-starter"
 				>repo</a
 			>/<a href="https://sveltekit-static-starter.netlify.app">demo</a>), and I
 			still do occasional freelance development and design.
 		</p>
 
-		<h3>Personal life</h3>
+		<h3>Hobbies & personal life</h3>
 
 		<p>
 			I lived in Omaha for most of my career, but I’ve been in Kansas City since
-			2022.
+			2022. I've been married since 2012, a dad since 2019, and a dad of two
+			since 2025 (though I was notorious for dad jokes since long before
+			either).
 		</p>
 
 		<p>
-			Otherwise, I am a hobby coder; font hoarder; husband since 2012; dad since
-			2019, dad of two since 2025 (though notorious for dad jokes since long
-			before either); aspiring advocate for accessibility, equity, and social
-			justice; cold brew aficionado; semi-notorious React critic; occasional
-			public speaker and podcast guest; pun enthusiast; curious learner; dog
-			person; lifelong Nintendo fan; musician/guitarist/hack pianist; liberal
-			abuser of semicolons.
+			Aside from all the above, I'm a half-decent cook; font hoarder; daily
+			puzzle game fan (particularly <a href="https://inkwellgames.com"
+				>Inkwell</a
+			>
+			and <a href="https://www.cluesbysam.com">Clues by Sam</a>); aspiring
+			advocate for accessibility, equity, and social justice; cold brew
+			aficionado; semi-notorious React critic; pun enthusiast; curious learner;
+			dog person; lifelong Nintendo fan; musician/guitarist/hack pianist;
+			liberal abuser of semicolons.
 		</p>
 
 		<h3>More:</h3>
