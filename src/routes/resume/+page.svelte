@@ -170,7 +170,7 @@
 			<li>
 				Built products used by Flywheel customers and support, including an
 				in-app communications center and a batch edit feature saving an
-				estimated 45–90 seconds per site edited
+				estimated 45–90 seconds per site
 			</li>
 			<li>
 				Rebuilt Flywheel’s site migration form and engineered the UI for a
@@ -287,8 +287,9 @@
 
 		<ul>
 			<li>
-				Designed the <a href="https://deno.com/brand">Deno logo and brand</a>;
-				led and implemented the comprehensive rebrand of
+				Redesigned the <a href="https://deno.com/brand">Deno logo and brand</a>
+				for the Deno 2.0 launch (2024); led and implemented the comprehensive rebrand
+				of
 				<a href="https://deno.com/deploy">Deno Deploy</a>; complete brand and
 				appearance for <a href="https://jsr.io">JSR</a>
 			</li>
@@ -562,6 +563,16 @@
 
 			.subsection-header {
 				margin: 0.25in 0 0.075in;
+				grid-template-columns: auto auto 1fr;
+
+				h3 + p:before {
+					content: '–';
+					padding: 0 0.5ch;
+				}
+
+				p:last-of-type {
+					text-align: right;
+				}
 
 				&:first-of-type {
 					margin-block-start: 0.15in;
