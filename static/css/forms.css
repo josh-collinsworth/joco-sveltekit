@@ -40,7 +40,7 @@ textarea {
 	display: block;
 	width: 100%;
 	background: transparent;
-	border: 1px solid var(--ink);
+	border: 2px solid var(--ink);
 	padding: 0.5rem;
 	color: inherit;
 	font-size: 1rem;
@@ -64,14 +64,14 @@ input {
 select {
 	font-size: 1rem;
 	font-family: var(--heading-font);
-	border: 1px solid var(--ink);
+	border: 2px solid var(--ink);
 	padding: var(--sixteenth-note) var(--eighth-note);
 	width: max-content;
 }
 
 button,
 input[type=submit] {
-	border: 1px solid;
+	border: 2px solid;
 	padding: 0.5rem 1rem;
 	background: var(--blue-lighter);
 	font-size: 1rem;
@@ -79,8 +79,7 @@ input[type=submit] {
 	color: var(--ink);
 	margin: 0;
 	transition: background 0.15s;
-	border-right-width: 2px;
-	border-bottom-width: 2px;
+	box-shadow: 2px 2px 0 0 currentColor;
 
 	.dark & {
 		background: var(--blue-dark);
@@ -127,4 +126,8 @@ input[type=submit] {
 	.dark & {
 		border-width: 2px; //Prevents overrides from above button styles
 	}
+}
+
+li:nth-child(2)::marker {
+	color: var(--blue-light);
 }
