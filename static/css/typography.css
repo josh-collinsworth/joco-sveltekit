@@ -1,8 +1,13 @@
+html {
+	font-size: var(--body-font-size);
+}
+
 /* cspell:ignore oldstyle-nums */
 body {
 	line-height: var(--body-line-height);
 	font-weight: var(--body-font-weight);
 	font-variant-numeric: oldstyle-nums;
+	font-size: inherit;
 }
 
 ::marker {

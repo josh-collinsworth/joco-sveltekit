@@ -84,13 +84,18 @@ $fourxl: 144rem; */
 	--code-font: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 	--body-font-weight: normal;
-	--body-font-size: 1.125rem;
+	--body-font-size: 100%;
 	--body-line-height: 1.55;
 
-	@media (min-width: 42rem) {
-		--body-font-size: 1.1875rem;
+	@media (min-width: 32rem) {
+		--body-font-size: 106.25%; /* 17px */
 	}
-
+	@media (min-width: 42rem) {
+		--body-font-size: 112.5%; /* 18px */
+	}
+	@media (min-width: 128rem) {
+		--body-font-size: 118.75%; /* 19px */
+	}
 
 
 	--blue-to-yellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
@@ -152,8 +157,6 @@ $fourxl: 144rem; */
 			--highlight-color: var(--neutral-darker);
 		}
 	}
-
-	font-size: var(--body-font-size);
 }
 
 :root.dark {

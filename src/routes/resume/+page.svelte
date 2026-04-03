@@ -105,13 +105,13 @@
 		<ul>
 			<li>
 				Led the comprehensive redesign and rebuild of all marketing pages for
-				Shopify's <a href="https://shopify.com/pos">point of sale</a> and retail products
+				Shopify’s <a href="https://shopify.com/pos">point of sale</a> and retail products
 				in Remix for over 30 locales, resulting in an 18% increase in customer conversion
 				rate
 			</li>
 			<li>
 				Developed marketing landing pages for major initiatives including
-				Shopify's enterprise offering, <a
+				Shopify’s enterprise offering, <a
 					href="https://shopify.com/commerce-components">Commerce Components</a
 				>, collaborating with designers and stakeholders on animation, technical
 				tradeoffs, and tight deadlines
@@ -173,7 +173,7 @@
 				estimated 45–90 seconds per site edited
 			</li>
 			<li>
-				Rebuilt Flywheel's site migration form and engineered the UI for a
+				Rebuilt Flywheel’s site migration form and engineered the UI for a
 				migration WordPress plugin, reducing the CS burden of migrations by
 				35–40%
 			</li>
@@ -207,7 +207,7 @@
 				architecture
 			</li>
 			<li>
-				Built a Chrome extension adding productivity features to Flywheel's
+				Built a Chrome extension adding productivity features to Flywheel’s
 				admin panel, saving agents an estimated 15–20 minutes per day; still in
 				use by all support agents
 			</li>
@@ -369,7 +369,9 @@
 
 			<p>August 2012 – November 2014</p>
 		</div>
-		<p>Associate's of Graphic Communication Art and Design (3.95 GPA)</p>
+		<ul>
+			<li>Associate’s of Graphic Communication Art and Design (3.95 GPA)</li>
+		</ul>
 
 		<hr />
 
@@ -434,43 +436,53 @@
 		h2 {
 			font-size: 1rem;
 			text-transform: uppercase;
-			margin: var(--dotted-half-note) 0 var(--quarter-note);
+			margin: var(--whole-note) 0 var(--quarter-note);
 			border-bottom: 1px solid;
 			padding-bottom: 0.2rem;
+
+			&:first-of-type {
+				margin-block-start: var(--half-note);
+			}
+		}
+
+		h2 + .subsection-header {
+			margin-block-start: var(--quarter-note);
 		}
 
 		.subsection-header {
 			display: grid;
-			grid-template-columns: auto auto 1fr;
 			column-gap: 0ch;
 			align-items: baseline;
 			page-break-inside: avoid;
-			margin: var(--half-note) 0 1rem;
+			margin: var(--dotted-half-note) 0 var(--quarter-note);
 
-			&:first-of-type {
-				margin-block-start: var(--quarter-note);
-			}
+			@media (min-width: 56rem) {
+				grid-template-columns: auto auto 1fr;
 
-			h3 {
-				font-size: 1.125rem;
-
-				+ p:before {
+				h3 + p:before {
 					content: '–';
 					padding: 0 0.5ch;
 				}
+
+				p:last-of-type {
+					text-align: right;
+				}
+			}
+
+			h3 {
+				font-size: 1rem;
+				line-height: inherit;
 
 				a {
 					text-decoration-thickness: 1px;
 					text-decoration-color: var(--yellow);
 				}
 			}
-
 			* {
 				margin: 0;
 			}
 
 			p:last-of-type {
-				text-align: right;
 				font-style: italic;
 			}
 		}
@@ -545,11 +557,11 @@
 				position: static;
 				margin: 0.375in 0 0.125in;
 				border-bottom: 1pt solid;
-				padding-bottom: 1pt;
+				padding-bottom: 2pt;
 			}
 
 			.subsection-header {
-				margin: 0.25in 0 0.1in;
+				margin: 0.25in 0 0.075in;
 
 				&:first-of-type {
 					margin-block-start: 0.15in;

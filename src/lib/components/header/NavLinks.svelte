@@ -1,6 +1,6 @@
 <script lang="ts">
-	import NavLink from './NavLink.svelte'
 	import { appState } from '$lib/data/store.svelte'
+	import NavLink from './NavLink.svelte'
 
 	interface Props {
 		path: string
@@ -25,7 +25,7 @@
 		flex-wrap: wrap;
 		margin: 0;
 		width: auto;
-		font-size: 0.875rem;
+		font-size: 1rem;
 		list-style-type: none;
 		padding: 0;
 		gap: 1.5rem;
