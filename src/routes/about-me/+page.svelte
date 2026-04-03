@@ -20,23 +20,31 @@
 			src="/images/profile-pic.webp"
 			alt="Me, Josh Collinsworth, an average white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat."
 		/>
-		<h2>Who I am</h2>
+		<h2>Who I am and what I do</h2>
 
 		<p>
-			I'm currently a Design Engineer at <a href="https://deno.land">Deno</a>,
-			where I've been since 2023. My work at Deno has touched design,
-			development, marketing, and communications, and includes full rebrands and
-			new logos for Deno itself, Deno Deploy, and JSR—though my main focus has
-			been frontend development and design, bringing unified design systems and
-			components to Deno's products and web presence.
+			I’m currently a Design Engineer at <a href="https://deno.land">Deno</a>,
+			where my work has touched design, development, marketing, and
+			communications. I've also led full rebrands for Deno itself, Deno Deploy,
+			and JSR, including logo design—though my main focus has been frontend
+			development and design, bringing unified design systems and components to
+			Deno's products, documentation, and web presence.
+		</p>
+
+		<p>
+			These days I’m more of a coder who designs than a designer who codes, but
+			my original degree is in graphic design, and I'm proficient and passionate
+			in both roles. I also bring a background in marketing roles, teaching, and
+			technical customer support to my work. Ultimately, I'm a communicator.
 		</p>
 
 		<h3>Prior professional experience</h3>
 		<p>
 			Prior to Deno, I spent a couple of years as a senior frontend developer
 			(L6) at
-			<a href="https://shopify.com">Shopify</a>; a Senior JavaScript developer
-			at <a href="https://aware3.com">Aware3</a>; and as a front-end engineer at
+			<a href="https://shopify.com">Shopify</a>; I was a Senior JavaScript
+			developer at <a href="https://aware3.com">Aware3</a> (<i>now FACTS</i>);
+			and as a front-end engineer at
 			<a href="https://wpengine.com">WP Engine</a>. And before becoming a
 			full-time developer, I was a senior support lead at
 			<a href="https://getflywheel.com">Flywheel</a>, and also a course
@@ -65,7 +73,7 @@
 			<a href="#appearances">on podcasts</a>.
 		</p>
 		<p>
-			In my spare time, I enjoy hobby coding; I'm the maker and designer of the
+			In my spare time, I enjoy hobby coding; I’m the maker and designer of the
 			word games <i>Quina</i>
 			(<a href="https://apps.apple.com/us/app/quina/id1636895462">iOS</a>/<a
 				href="https://play.google.com/store/apps/details?id=app.quina.collinsworth"
@@ -88,7 +96,7 @@
 		<h3>Personal life</h3>
 
 		<p>
-			I lived in Omaha for most of my career, but I've been in Kansas City since
+			I lived in Omaha for most of my career, but I’ve been in Kansas City since
 			2022.
 		</p>
 
