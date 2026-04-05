@@ -45,6 +45,11 @@ textarea {
 	color: inherit;
 	font-size: 1rem;
 	font-style: italic;
+	box-shadow: 3px 4px 0 0 var(--neutral-lightest);
+
+	.dark & {
+		box-shadow: 3px 4px 0 0 var(--blue-dark);
+	}
 }
 
 input {
@@ -53,12 +58,17 @@ input {
 		display: initial;
 		width: initial;
 		margin: initial;
+		box-shadow: none;
 	}
 
 	&[type=search] {
 		color: inherit;
 		font-style: inherit;
 	}
+}
+
+input[type=range] {
+	box-shadow: none;
 }
 
 select {
@@ -71,6 +81,9 @@ select {
 
 button,
 input[type=submit] {
+	--distance-x: 2px;
+	--distance-y: 2px;
+	--shadow-color: var(--ink);
 	border: 2px solid;
 	padding: 0.5rem 1rem;
 	background: var(--blue-lighter);
@@ -79,9 +92,10 @@ input[type=submit] {
 	color: var(--ink);
 	margin: 0;
 	transition: background 0.15s;
-	box-shadow: 2px 2px 0 0 currentColor;
+	box-shadow: var(--distance-x) var(--distance-y) 0 0 var(--shadow-color);
 
 	.dark & {
+		--shadow-color: var(--blue-dark);
 		background: var(--blue-dark);
 	}
 
@@ -94,6 +108,12 @@ input[type=submit] {
 			background: var(--blue-800);
 		}
 	}
+}
+
+button[type='submit'],
+input[type='submit'] {
+	--distance-x: 3px;
+	--distance-y: 4px;
 }
 
 ::placeholder {
@@ -126,8 +146,4 @@ input[type=submit] {
 	.dark & {
 		border-width: 2px; //Prevents overrides from above button styles
 	}
-}
-
-li:nth-child(2)::marker {
-	color: var(--blue-light);
 }

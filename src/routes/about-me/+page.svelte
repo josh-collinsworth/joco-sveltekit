@@ -18,46 +18,50 @@
 		<img
 			class="profile-pic"
 			src="/images/profile-pic.webp"
-			alt="Me, Josh Collinsworth, an average white guy in a patterned button-up, with a beard, glasses, and a CodePen trucker hat."
+			alt="Me, Josh Collinsworth, a bald white guy with a beard and glasses, smiling against a blurry autumn background in a button-up shirt."
 		/>
 		<h2>Who I am and what I do</h2>
 
 		<p>
 			I’m currently a Design Engineer at <a href="https://deno.land">Deno</a>,
 			where my work has touched design, development, marketing, and
-			communications. I've also led full rebrands for Deno itself, Deno Deploy,
-			and JSR, including logo design—though my main focus has been frontend
+			communications. I've led full rebrands for Deno itself, Deno Deploy, and
+			JSR, including logo design—though my main focus has been frontend
 			development and design, bringing unified design systems and components to
 			Deno's products, documentation, and web presence.
 		</p>
 
 		<p>
-			I’m more of a coder who designs than a designer who codes, but my original
-			degree is in graphic design, and I'm proficient in both roles. I also
-			bring a background in marketing, teaching, and technical customer support
-			to my work. Ultimately, I'm a communicator.
+			I’m more of a coder who designs than a designer who codes, but my degree
+			is in graphic design, and I'm proficient in both roles. I also bring a
+			background in marketing, teaching, and technical customer support to my
+			work. I suppose the common thread is communication.
 		</p>
 
 		<h3>Prior professional experience</h3>
 		<p>
 			Prior to Deno, I spent a couple of years as a senior frontend developer
 			(L6) at
-			<a href="https://shopify.com">Shopify</a>; I was a Senior JavaScript
+			<a href="https://shopify.com">Shopify</a>, focused on marketing for Point
+			of Sale products and services. Before that, I was a Senior JavaScript
 			developer at <a href="https://aware3.com">Aware3</a> (<i>now FACTS</i>);
-			and as a front-end engineer at
-			<a href="https://wpengine.com">WP Engine</a>. And before becoming a
-			full-time developer, I was a senior support lead at
-			<a href="https://getflywheel.com">Flywheel</a>, and also a course
-			instructor for
+			and a front-end engineer at
+			<a href="https://wpengine.com">WP Engine</a>.
+		</p>
+		<p>
+			Before becoming a full-time developer, I spent several years as both a
+			senior support lead at
+			<a href="https://getflywheel.com">Flywheel</a>, and a course instructor
+			for
 			<a href="https://interfaceschool.com">AIM Code School</a>, where I taught
 			WordPress development, and was solely responsible for both curriculum
 			development and teaching.
 		</p>
 
 		<p>
-			Before entering tech, I spent a few years as a graphic designer (that's
-			what my degree is in), worked in foodservice, and was a regularly gigging
-			musician (though not an otherwise successful one).
+			Before entering tech, I spent a few years as a graphic designer, worked in
+			foodservice, and was a regularly gigging musician (though not an otherwise
+			successful one).
 		</p>
 
 		<h3>Other work</h3>
@@ -108,15 +112,13 @@
 		</p>
 
 		<p>
-			Aside from all the above, I'm a half-decent cook; font hoarder; daily
-			puzzle game fan (particularly <a href="https://inkwellgames.com"
-				>Inkwell</a
-			>
-			and <a href="https://www.cluesbysam.com">Clues by Sam</a>); aspiring
-			advocate for accessibility, equity, and social justice; cold brew
-			aficionado; semi-notorious React critic; pun enthusiast; curious learner;
-			dog person; lifelong Nintendo fan; musician/guitarist/hack pianist;
-			liberal abuser of semicolons.
+			Aside from all the above, I enjoy cooking, daily puzzle games
+			(particularly <a href="https://inkwellgames.com">Inkwell</a>
+			and <a href="https://www.cluesbysam.com">Clues by Sam</a>), and games in
+			general. I'm a font hoarder; cold brew aficionado; semi-notorious React
+			critic; pun enthusiast; aspiring advocate for accessibility, equity, and
+			social justice; curious learner; dog person; lifelong Nintendo fan;
+			musician/guitarist/hack pianist; and liberal abuser of semicolons.
 		</p>
 
 		<h3>More:</h3>

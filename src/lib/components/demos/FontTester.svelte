@@ -134,6 +134,7 @@
 			height: 1em;
 			overflow: visible;
 			position: absolute;
+			box-shadow: none;
 
 			&:hover {
 				cursor: text;
