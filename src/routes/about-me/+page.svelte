@@ -24,15 +24,15 @@
 
 		<p>
 			I’m currently a Design Engineer at <a href="https://deno.land">Deno</a>,
-			where my work has touched design, development, marketing, and
-			communications. I've led full rebrands for Deno itself, Deno Deploy, and
-			JSR, including logo design—though my main focus has been frontend
+			where my work touches design, development, marketing, and
+			communications. I've led and designed full rebrands for Deno itself, Deno Deploy, and
+			JSR, though my main focus has been frontend
 			development and design, bringing unified design systems and components to
 			Deno's products, documentation, and web presence.
 		</p>
 
 		<p>
-			I’m more of a coder who designs than a designer who codes, but my degree
+			In general, I’m more of a coder who designs than a designer who codes, but my degree
 			is in graphic design, and I'm proficient in both roles. I also bring a
 			background in marketing, teaching, and technical customer support to my
 			work. Ultimately, the common thread in what I do is effective
