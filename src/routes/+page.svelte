@@ -34,7 +34,7 @@
 		<h2>What I do</h2>
 		<p class="big-copy">
 			I’m a frontend developer and designer who works across code, design, and
-			messaging, distilling complexity into seamless simplicity.
+			messaging, distilling complexity into simplicity.
 		</p>
 
 		<h2>Where I do it</h2>
