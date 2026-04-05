@@ -122,7 +122,7 @@
 			musician/guitarist/hack pianist; and liberal abuser of semicolons.
 		</p>
 
-		<h3>More:</h3>
+		<h3>More</h3>
 
 		<ul>
 			<li>
@@ -143,7 +143,7 @@
 
 		<h2 id="appearances">Talks and appearances</h2>
 		<p class="subhead">Conference presentations, trainings, and podcasts</p>
-		<hr />
+
 		<ul>
 			{#each talks as talk}
 				<li>
@@ -164,7 +164,6 @@
 
 		<h2 id="writing">Writing</h2>
 		<p class="subhead">Articles written for other publications</p>
-		<hr />
 
 		<ul>
 			{#each EXTERNAL_POSTS as post}
@@ -196,7 +195,13 @@
 			}
 		}
 		hr {
-			margin: var(--quarter-note) 0 var(--dotted-half-note);
+			display: none;
+		}
+
+		ul {
+			padding-top: var(--quarter-note);
+			margin-top: var(--quarter-note);
+			border-top: 1px solid currentColor;
 		}
 
 		.subhead {
