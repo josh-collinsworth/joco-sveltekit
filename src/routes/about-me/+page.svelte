@@ -45,9 +45,10 @@
 			(L6) at
 			<a href="https://shopify.com">Shopify</a>, focused on marketing for Point
 			of Sale products and services. Before that, I was a Senior JavaScript
-			developer at <a href="https://aware3.com">Aware3</a> (<i>now FACTS</i>);
+			developer at <a href="https://aware3.com">Aware3</a> (<i>now FACTS</i>),
 			and a front-end engineer at
-			<a href="https://wpengine.com">WP Engine</a>.
+			<a href="https://wpengine.com">WP Engine</a>, working on core product
+			features in both roles.
 		</p>
 		<p>
 			Before becoming a full-time developer, I spent several years as both a
@@ -60,8 +61,8 @@
 		</p>
 
 		<p>
-			Before entering tech, I spent a few years as a graphic designer, worked in
-			foodservice, and was a regularly gigging musician (though not an otherwise
+			Before entering tech, I spent a few years as a graphic designer; worked in
+			foodservice; and was a regularly gigging musician (though not an otherwise
 			successful one).
 		</p>
 
@@ -90,9 +91,9 @@
 			>/<a
 				href="https://play.google.com/store/apps/details?id=com.playhondo.www.twa"
 				>Android</a
-			>/<a href="https://playhondo.com">web</a>). Although those are the only
-			apps I've "finished" and launched, I also tend to have a bunch of
-			half-finished game demos going at once.
+			>/<a href="https://playhondo.com">web</a>). Although those are my only
+			“finished” and launched apps (so far), I also tend to have a bunch of
+			demos and prototypes going at once.
 		</p>
 		<p>
 			I wrote and maintain an open-source SvelteKit static blog starter (when I
