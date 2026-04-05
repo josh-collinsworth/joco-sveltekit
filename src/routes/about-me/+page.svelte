@@ -35,7 +35,8 @@
 			I’m more of a coder who designs than a designer who codes, but my degree
 			is in graphic design, and I'm proficient in both roles. I also bring a
 			background in marketing, teaching, and technical customer support to my
-			work. I suppose the common thread is communication.
+			work. Ultimately, the common thread in what I do is effective
+			communication.
 		</p>
 
 		<h3>Prior professional experience</h3>
