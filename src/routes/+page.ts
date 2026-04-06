@@ -9,7 +9,7 @@ type HomePagePosts = {
 export const load = async (): Promise<HomePagePosts> => {
 	const allPosts = await fetchPosts({ limit: -1 })
 
-	const recentPosts = [...allPosts.slice(0, 8)]
+	const recentPosts = [...allPosts.slice(0, 7)]
 	const popularPosts = [
 		...allPosts
 			.filter((post) => post.categories?.includes('popular'))

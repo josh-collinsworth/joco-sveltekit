@@ -6,6 +6,7 @@ categories:
   - personal
   - design
   - web
+  - popular
 coverImage: 'zen.jpg'
 coverWidth: 1920
 coverHeight: 1080
