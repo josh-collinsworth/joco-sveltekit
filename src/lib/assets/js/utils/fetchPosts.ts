@@ -10,28 +10,30 @@ const fetchPosts = async ({
 }: PostsEndpointOptions = {}): Promise<Post[]> => {
 	let posts: Post[]
 
-	posts = await Promise.all(
-		Object.entries(import.meta.glob<{ metadata: Post }>(`../../../content/posts/*.md`)).map(
-			async ([path, page]) => {
-				const { metadata } = await page()
-				const slug = path.split('/').pop().split('.').shift()
-				return { ...metadata, slug }
-			}
-		)
-	)
+	posts = (await Promise.all(
+		Object.entries(
+			import.meta.glob<{ metadata: Post }>(`../../../content/posts/*.md`)
+		).map(async ([path, page]) => {
+			const { metadata } = await page()
+			const slug = path.split('/').pop()!.split('.').shift()
+			return { ...metadata, slug }
+		})
+	)) as Post[]
 
 	if (dev) {
 		const drafts = await Promise.all(
 			Object.entries(
-				import.meta.glob<{ metadata: Post }>(`../../../content/posts/drafts/*.md`)
+				import.meta.glob<{ metadata: Post }>(
+					`../../../content/posts/drafts/*.md`
+				)
 			).map(async ([path, page]) => {
 				const { metadata } = await page()
-				const slug = path.split('/').pop().split('.').shift()
+				const slug = path.split('/').pop()!.split('.').shift()
 				return { ...metadata, slug }
 			})
 		)
 
-		posts = [...posts, ...drafts]
+		posts = [...posts, ...drafts] as Post[]
 	}
 
 	if (!dev) posts = posts.filter((post) => !post.draft)
@@ -41,7 +43,7 @@ const fetchPosts = async ({
 	)
 
 	if (category) {
-		sortedPosts = posts.filter((post) => post.categories.includes(category))
+		sortedPosts = posts.filter((post) => post.categories?.includes(category))
 	}
 
 	if (year) {

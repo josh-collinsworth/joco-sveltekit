@@ -114,7 +114,8 @@
 			<section>
 				<h3 class="list-heading" id="links-list">More</h3>
 				<ul aria-labelledby="links-list">
-					<li><a href="/about-me">More about me and what I do</a></li>
+					<li><a href="/about-me">More about me</a></li>
+					<li><a href="/resume">Resume/CV</a></li>
 					<li><a href="/blog">My blog</a></li>
 					<li><a href="/projects">Some of my projects</a></li>
 					<li><a href="/contact">Get in touch</a></li>

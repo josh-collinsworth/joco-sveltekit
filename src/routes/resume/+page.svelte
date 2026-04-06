@@ -211,7 +211,7 @@
 				admin panel, saving agents an estimated 15–20 minutes per day; still in
 				use by all support agents
 			</li>
-			<li>Developed and taught a "WordPress 101" course to all new hires</li>
+			<li>Developed and taught a “WordPress 101” course to all new hires</li>
 		</ul>
 
 		<div class="subsection-header">

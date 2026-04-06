@@ -24,18 +24,19 @@
 
 		<p>
 			I’m currently a Design Engineer at <a href="https://deno.land">Deno</a>,
-			where my work touches design, development, marketing, and
-			communications. I've led and designed full rebrands for Deno itself, Deno Deploy, and
-			JSR, though my main focus has been frontend
+			where my work touches design, development, marketing, and communications.
+			I’ve led and designed full rebrands for Deno itself,
+			<a href="https://deno.com/deploy">Deno Deploy</a>, and
+			<a href="https://jsr.io">JSR</a>, though my main focus has been frontend
 			development and design, bringing unified design systems and components to
-			Deno's products, documentation, and web presence.
+			Deno’s products, documentation, and web presence.
 		</p>
 
 		<p>
-			In general, I’m more of a coder who designs than a designer who codes, but my degree
-			is in graphic design, and I'm proficient in both roles. I also bring a
-			background in marketing, teaching, and technical customer support to my
-			work. Ultimately, the common thread in what I do is effective
+			In general, I’m more of a coder who designs than a designer who codes, but
+			my degree is in graphic design, and I’m proficient in both roles. I also
+			bring a background in marketing, teaching, and technical customer support
+			to my work. Ultimately, the common thread in what I do is effective
 			communication.
 		</p>
 
@@ -43,10 +44,11 @@
 		<p>
 			Prior to Deno, I spent a couple of years as a senior frontend developer
 			(L6) at
-			<a href="https://shopify.com">Shopify</a>, focused on marketing for Point
-			of Sale products and services. Before that, I was a Senior JavaScript
-			developer at <a href="https://aware3.com">Aware3</a> (<i>now FACTS</i>),
-			and a front-end engineer at
+			<a href="https://shopify.com">Shopify</a>, focused on marketing for
+			<a href="https://shopify.com/pos">Point of Sale</a>
+			products and services. Before that, I was a Senior JavaScript developer at
+			<a href="https://aware3.com">Aware3</a>
+			(<i>now FACTS</i>), and a front-end engineer at
 			<a href="https://wpengine.com">WP Engine</a>, working on core product
 			features in both roles.
 		</p>
@@ -55,7 +57,11 @@
 			senior support lead at
 			<a href="https://getflywheel.com">Flywheel</a>, and a course instructor
 			for
-			<a href="https://interfaceschool.com">AIM Code School</a>, where I taught
+			<a
+				href="https://aiminstitute.org/programs/technology-training/aim-code-school/"
+				>AIM Code School</a
+			>
+			(<i>though it was Interface Code School at the time</i>), where I taught
 			WordPress development, and was solely responsible for both curriculum
 			development and teaching.
 		</p>
@@ -110,17 +116,33 @@
 			I lived in Omaha for most of my career, but I’ve been in Kansas City since
 			2022. I've been married since 2012, a dad since 2019, and a dad of two
 			since 2025 (though I was notorious for dad jokes since long before
-			either).
+			either). My life increasingly revolves around children’s school and
+			sporting events, which I do enjoy, but my wife and I still try to carve
+			out time for our own projects and hobbies when we can.
 		</p>
 
 		<p>
-			Aside from all the above, I enjoy cooking, daily puzzle games
-			(particularly <a href="https://inkwellgames.com">Inkwell</a>
+			Personally, I enjoy cooking, daily puzzle games (particularly <a
+				href="https://inkwellgames.com">Inkwell</a
+			>
 			and <a href="https://www.cluesbysam.com">Clues by Sam</a>), and games in
-			general. I'm a font hoarder; cold brew aficionado; semi-notorious React
-			critic; pun enthusiast; aspiring advocate for accessibility, equity, and
-			social justice; curious learner; dog person; lifelong Nintendo fan;
-			musician/guitarist/hack pianist; and liberal abuser of semicolons.
+			general, being a lifelong Nintendo fan and avid board game enjoyer. I care
+			deeply about accessibility, equity, social justice, and leaving this place
+			in a little better shape for our kids. I enjoy learning new things,
+			playing music, and dogs.
+		</p>
+
+		<p>
+			I’m also a font hoarder, a certified
+			<a href="https://www.instagram.com/reel/CsguER6r9lL/">beverage goblin</a>
+			(in particular, I enjoy cold brew coffee during the week, and an IPA or a well-crafted
+			cocktail on the weekend), a maybe-weirdly big fan of Costco, and—online, at
+			least—a semi-notorious React critic. (Online, I'm also a regular in the
+			<a href="https://shoptalkshow.com">ShopTalk Show</a>
+			<a href="https://patreon.com/shoptalkshow">Discord</a>, so if you listen
+			to that podcast, you also might have heard me referred to as “Josh ‘Triple
+			Threat’ Collinsworth,” which is an honor I'm not sure I completely
+			deserve, but I'll take it.)
 		</p>
 
 		<h3>More</h3>
@@ -194,9 +216,6 @@
 			& + .subhead {
 				margin-top: var(--sixteenth-note);
 			}
-		}
-		hr {
-			display: none;
 		}
 
 		ul {
