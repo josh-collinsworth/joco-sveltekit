@@ -82,7 +82,7 @@
 				font-weight: normal;
 				font-size: 1.25em;
 				color: var(--neutral-light);
-				margin: 0 0.1em 0 0;
+				margin: 0 0.25rem 0 0;
 				z-index: 2;
 				position: relative;
 				left: -1px;
