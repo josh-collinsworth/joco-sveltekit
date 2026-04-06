@@ -324,8 +324,8 @@
 		@media (min-width: 24rem) {
 			grid-template-columns: repeat(4, minmax(0, 1fr));
 			grid-column-start: 1;
-			grid-column: 1 / 3 !important;
-			grid-row: 9 / 10 !important;
+			grid-column: 1 / -1;
+			grid-row: 9 / 10;
 		}
 
 		@media (min-width: 96rem) {

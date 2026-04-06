@@ -110,7 +110,7 @@
 			still do occasional freelance development and design.
 		</p>
 
-		<h3>Hobbies & personal life</h3>
+		<h3>Hobbies &amp; personal life</h3>
 
 		<p>
 			I lived in Omaha for most of my career, but I’ve been in Kansas City since
