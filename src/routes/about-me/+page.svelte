@@ -234,7 +234,7 @@
 			margin: 0;
 			width: 100%;
 			max-width: 250px;
-			box-shadow: 8px 9px 0 0 var(--blue-light);
+			box-shadow: 5px 7px 0 0 var(--blue-light);
 			border: 2px solid var(--paper);
 
 			:global(.dark) & {

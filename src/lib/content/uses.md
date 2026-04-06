@@ -1,20 +1,19 @@
 <script>
-  import FontTester from '$lib/components/demos/FontTester.svelte'
-  import SiteColors from '$lib/components/demos/SiteColors.svelte'
+	import FontTester from '$lib/components/demos/FontTester.svelte'
+	import SiteColors from '$lib/components/demos/SiteColors.svelte'
 </script>
 
 ## Development
 
 ### Languages and frameworks
 
-- Aside from good old fashioned HTML and CSS, JavaScript is my main language these days, and [SvelteKit](https://kit.svelte.dev/) is my framework of choice for just about any new project. I've begun to default to [TypeScript](https://www.typescriptlang.org/) for pretty much all new projects, as well (even though I'm not convinced it's always doing much for me, but it's still nice, and not a bad habit to have).
+- Aside from good old-fashioned HTML and CSS, JavaScript is my main language these days, and [SvelteKit](https://kit.svelte.dev/) is my framework of choice for just about any new project. I've been writing all my new projects in [TypeScript](https://www.typescriptlang.org/) for a few years now, as well (even though I'm not convinced it's always doing much for me, but it's still nice, and not a bad habit to have).
 
 - For CSS, I alternate between vanilla CSS and [Tailwind](https://tailwindcss.com). Tailwind is nice as a system, but I sometimes favor scoped CSS instead, which comes standard with just about every non-React framework these days. (I also favor those.) I also think maybe there's a better system for me out there, but I haven't found (or built?) it yet.
 
 ### Code tools
 
-- [Visual Studio Code](https://code.visualstudio.com/): my favorite editor ever. I was a reluctant Sublime Text convert, but the switch was more than worth it.
-
+- [Visual Studio Code](https://code.visualstudio.com/) - I’ve tried other editors, but VS Code has everything I could ever want or need, even if it does maybe come with some cruft too.
   - **Theme**: I love [Dracula Pro](https://draculatheme.com/pro); it strikes the perfect balance of contrast and color to my eye. I also appreciate that it comes with identical themes for other apps, like Slack, iTerm, and others. It _is_ expensive, however, so for a free option, I'd go with go with good ol' [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
   - **Font**: [MonoLisa](https://www.monolisa.dev/).
@@ -22,22 +21,19 @@
     [Fira Code](https://github.com/tonsky/FiraCode) is my runner-up.)
 
   - **Extensions**: I don’t have too many global recommendations here (it depends a lot on what you’re working with), but I’ll mention:
+  - [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html):
+    treats HTML inside template literal strings like actual HTML code, for the purposes of highlighting, code completion, Emmett, etc.
 
-    - [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html):
-      treats HTML inside template literal strings like actual HTML code, for the purposes of highlighting, code completion, Emmett, etc.
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens):
+    less indispensable now that VS Code has the [Timeline view](https://scotch.io/bar-talk/vs-code-v144-adds-a-git-timeline-view), but still amazingly handy for viewing git status and history in projects.
 
-    - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens):
-      less indispensable now that VS Code has the [Timeline view](https://scotch.io/bar-talk/vs-code-v144-adds-a-git-timeline-view), but still amazingly handy for viewing git status and history in projects.
+  - [Font Preview](https://marketplace.visualstudio.com/items?itemName=ctcuff.font-preview): lets you check out fonts and their features right in your editor, which is super handy, especially for variable fonts and special OpenType features like ligatures.
 
-    - [Font Preview](https://marketplace.visualstudio.com/items?itemName=ctcuff.font-preview): lets you check out fonts and their features right in your editor, which is super handy, especially for variable fonts and special features like ligatures.
+  - [Close HTML/XML Tag](https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag):
+    the only keyboard shortcut I miss from Sublime Text is easily replicated with this extension. Gives you a key command to auto-close whatever HTML tag your cursor is currently inside of.
 
-    - [Close HTML/XML Tag](https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag):
-      the only keyboard shortcut I miss from Sublime Text is easily replicated with this extension. Gives you a key command to auto-close whatever HTML tag your cursor is currently inside of.
-
-    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker):
-      Requires a bit of manual maintenance, but if you do any writing in Markdown, you'll appreciate having a spell checker along for the ride.
-
-    - [Font Preview](https://marketplace.visualstudio.com/items?itemName=ctcuff.font-preview): an incredibly handy little extension for working with fonts. Select a font file, and get a preview in your editor, complete with all the OpenType options.
+  - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker):
+    Requires a bit of manual maintenance, but if you do any writing in Markdown, you'll appreciate having a spell checker along for the ride.
 
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/):
   Firefox is a great browser with some awesome tools, plus strong privacy. I use Edge when I need to test on Chromium; I don't even install Chrome on my personal machines.
@@ -57,7 +53,7 @@
 - [Logitech MX Ergo Plus trackball mouse](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html): I was previously using an [Anker Vertical Mouse](https://www.anker.com/products/variant/xanker-24g-wireless-vertical-ergonomic-optical-mouse/xa7852011), but switched to a trackball when some wrist issues flared up. The trackball saves the arm movement. I tend to switch up what I use frequently these days, to keep any one thing from getting too repetitive (I also currently have a trackpad on my desk), but the trackball mouse has been my mainstay since summer 2022, and surprisingly easy to adjust to.
 
 - [MoErgo Glove80](https://moergo.com/) keyboard:
-	My ergonomic keyboard journey is kinda long and detailed, but the Glove80 is where I 've been since late 2023. ([First impressions here](/blog/glove80-first-impressions), and [followup here](/blog/glove80-followup/).) For my money, the Glove80 is the world's best ergonomic keyboard.
+  My ergonomic keyboard journey is kinda long and detailed, but the Glove80 is where I 've been since late 2023. ([First impressions here](/blog/glove80-first-impressions), and [followup here](/blog/glove80-followup/).) For my money, the Glove80 is the world's best ergonomic keyboard.
 
 - [Herman Miller Sayl Chair](https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/):
   I made it about two months as a full-time work-from-home employee before I went and bought one of these chairs. It’s the most comfortable and easily adjustable office chair I’ve ever sat in (and it looks really nice, too).
@@ -105,32 +101,31 @@
 ### Fonts
 
 <FontTester
-  font="Alkes"
-  label="Alkes"
-  link="https://www.myfonts.com/fonts/font-fabric/alkes/"
-  italic={true}
-  bold={true}
+	font="Alkes"
+	label="Alkes"
+	link="https://www.myfonts.com/fonts/font-fabric/alkes/"
+	italic={true}
+	bold={true}
 />
 <FontTester
-  font="Averta-Std"
-  label="Averta Std"
-  link="https://www.myfonts.com/fonts/intelligent-foundry/averta-standard/"
-  bold={true}
+	font="Averta-Std"
+	label="Averta Std"
+	link="https://www.myfonts.com/fonts/intelligent-foundry/averta-standard/" bold={true}
 />
 <FontTester
-  font="MonoLisa"
-  label="MonoLisa Regular"
-  link="https://www.monolisa.dev/"
+	font="MonoLisa"
+	label="MonoLisa Regular"
+	link="https://www.monolisa.dev/"
 />
 
 <p class="details">
-  Other fonts I've used previously:
-  <a href="https://www.myfonts.com/fonts/jcfonts/korb/" rel="external">Korb</a>
-  (both on its own and paired with <a href="https://fonts.google.com/specimen/Bitter/" rel="external">Bitter</a>);
-  <a href="https://www.myfonts.com/fonts/bitstream/clarendon/" rel="external">Clarendon BT Pro</a> +
-  <a href="https://www.myfonts.com/fonts/latinotype/texta/" rel="external">Texta</a>; and
-  <a href="https://www.myfonts.com/fonts/stawix/amsi-pro/" rel="external">Amsi Pro</a> +
-  <a href="https://www.myfonts.com/search/sagona/" rel="external">Sagona</a>;
-  <a href="https://www.myfonts.com/fonts/typemates/pensum-display/" rel="external">Pensum Display.</a>
-  (I know you do not care, but this is here mostly just for my own memory.)
+	Other fonts I've used previously:
+	<a href="https://www.myfonts.com/fonts/jcfonts/korb/" rel="external">Korb</a>
+	(both on its own and paired with <a href="https://fonts.google.com/specimen/Bitter/" rel="external">Bitter</a>);
+	<a href="https://www.myfonts.com/fonts/bitstream/clarendon/" rel="external">Clarendon BT Pro</a> +
+	<a href="https://www.myfonts.com/fonts/latinotype/texta/" rel="external">Texta</a>; and
+	<a href="https://www.myfonts.com/fonts/stawix/amsi-pro/" rel="external">Amsi Pro</a> +
+	<a href="https://www.myfonts.com/search/sagona/" rel="external">Sagona</a>;
+	<a href="https://www.myfonts.com/fonts/typemates/pensum-display/" rel="external">Pensum Display.</a>
+	(I know you do not care, but this is here mostly just for my own memory.)
 </p>
