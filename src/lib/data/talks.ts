@@ -19,7 +19,8 @@ const talks: Talk[] = [
 		year: 2016
 	},
 	{
-		title: 'A RESTed Development: Understanding the WP REST API Once and For All',
+		title:
+			'A RESTed Development: Understanding the WP REST API Once and For All',
 		link: '',
 		event: 'WordCamp Omaha 2017',
 		year: 2017
@@ -37,7 +38,8 @@ const talks: Talk[] = [
 		year: 2018
 	},
 	{
-		title: 'How Not to Make a Crappy-Looking Site: a Crash Course on (Web) Design',
+		title:
+			'How Not to Make a Crappy-Looking Site: a Crash Course on (Web) Design',
 		link: '',
 		event: 'WordCamp Omaha 2019',
 		year: 2019
@@ -56,8 +58,7 @@ const talks: Talk[] = [
 	},
 	{
 		title: 'Views on Svelte With Josh Collinsworth',
-		link:
-			'https://topenddevs.com/podcasts/views-on-vue/episodes/views-on-svelte-with-josh-collinsworth-vue-177',
+		link: 'https://topenddevs.com/podcasts/views-on-vue/episodes/views-on-svelte-with-josh-collinsworth-vue-177',
 		event: 'Views on Vue podcast',
 		year: 2022,
 		month: 1
@@ -71,24 +72,23 @@ const talks: Talk[] = [
 	},
 	{
 		title: 'Debating React, Fonts, and Fatherhood with Josh Collinsworth',
-		link:
-			'https://www.whiskeywebandwhatnot.fm/debating-react-fonts-and-fatherhood-with-josh-collinsworth/',
+		link: 'https://www.whiskeywebandwhatnot.fm/debating-react-fonts-and-fatherhood-with-josh-collinsworth/',
 		event: 'Whiskey, Web and Whatnot podcast',
 		year: 2022,
 		month: 11
 	},
 	{
 		title: 'Why React is Outdated w/ Josh Collinsworth',
-		link:
-			'https://podcasters.spotify.com/pod/show/sean-g7/episodes/Why-ReactJS-is-Outdated-w-Josh-Collinsworth-e297f7j',
+		link: 'https://podcasters.spotify.com/pod/show/sean-g7/episodes/Why-ReactJS-is-Outdated-w-Josh-Collinsworth-e297f7j',
 		event: 'Web Perspectives podcast',
 		year: 2023,
 		month: 9
 	},
 	{
-		title: 'Deno, React Alternatives, and Copilot Concerns with Triple Threat Josh Collinsworth',
+		title:
+			'Deno, React Alternatives, and Copilot Concerns with Triple Threat Josh Collinsworth',
 		link: 'https://shoptalkshow.com/603/',
-		event: 'ShpTalk Show podcast',
+		event: 'ShopTalk Show podcast',
 		year: 2024,
 		month: 2
 	}
