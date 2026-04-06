@@ -140,6 +140,8 @@
 			font-style: italic;
 			margin-left: 1rem;
 			align-self: center;
+			font-size: 0.75rem;
+			line-height: 1.5;
 
 			@media (min-width: 56rem) {
 				margin-left: 0;

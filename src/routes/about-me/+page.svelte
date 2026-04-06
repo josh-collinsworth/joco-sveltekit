@@ -221,7 +221,7 @@
 		ul {
 			padding-top: var(--quarter-note);
 			margin-top: var(--quarter-note);
-			border-top: 1px solid currentColor;
+			border-top: 1px solid var(--neutral-lighter);
 		}
 
 		.subhead {
@@ -233,7 +233,13 @@
 		.profile-pic {
 			margin: 0;
 			width: 100%;
-			max-width: 16rem;
+			max-width: 250px;
+			box-shadow: 8px 9px 0 0 var(--blue-light);
+			border: 2px solid var(--paper);
+
+			:global(.dark) & {
+				box-shadow: 5px 8px 0 0 var(--blue-dark);
+			}
 
 			& + h2 {
 				margin-top: var(--half-note);

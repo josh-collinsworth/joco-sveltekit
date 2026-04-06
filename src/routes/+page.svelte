@@ -318,27 +318,20 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		max-width: 28rem;
+		max-width: 24rem;
 		margin-block-start: var(--half-note);
 
 		@media (min-width: 24rem) {
 			grid-template-columns: repeat(4, minmax(0, 1fr));
+			grid-column-start: 1;
+			grid-column: 1 / 3 !important;
+			grid-row: 9 / 10 !important;
 		}
 
-		@media (min-width: 64rem) {
-			margin: 0;
-			gap: 1rem;
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-			grid-template-rows: repeat(2, minmax(0, auto));
-			max-width: unset;
-		}
-
-		@media (min-width: 92rem) {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-
-		@media (min-width: 128rem) {
-			gap: 2rem;
+		@media (min-width: 96rem) {
+			gap: var(--dotted-quarter-note);
+			margin-block-start: var(--dotted-half-note);
+			max-width: 30rem;
 		}
 
 		.icon {
@@ -376,15 +369,10 @@
 	}
 
 	@media (min-width: 92rem) {
-		.profile-pic,
-		.icons {
+		.profile-pic {
 			grid-column: 5 / 6;
 			grid-row: 1 / 4;
 			margin: auto auto auto 0;
-		}
-
-		.icons {
-			grid-row: 8 / 9;
 		}
 	}
 

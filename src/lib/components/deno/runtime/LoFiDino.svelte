@@ -97,6 +97,7 @@
 		width: 100%;
 		height: auto;
 		border-radius: 0.5rem;
+		z-index: 1;
 
 		img {
 			margin: 0;
