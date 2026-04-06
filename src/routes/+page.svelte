@@ -88,16 +88,6 @@
 		</ul>
 
 		<div class="icons">
-			<a href="https://quina.app" class="icon icon--quina" aria-label="Quina">
-				<QuinaLogo />
-			</a>
-			<a
-				href="https://playhondo.com"
-				class="icon icon--hondo"
-				aria-label="Hondo"
-			>
-				<HondoLogo />
-			</a>
 			<a href="https://deno.com" class="icon icon--deno" aria-label="Deno">
 				<DenoMarkCustom />
 			</a>
@@ -107,6 +97,16 @@
 				aria-label="Deno Deploy"
 			>
 				<DeployMark />
+			</a>
+			<a href="https://quina.app" class="icon icon--quina" aria-label="Quina">
+				<QuinaLogo />
+			</a>
+			<a
+				href="https://playhondo.com"
+				class="icon icon--hondo"
+				aria-label="Hondo"
+			>
+				<HondoLogo />
 			</a>
 		</div>
 
