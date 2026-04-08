@@ -234,11 +234,13 @@
 			margin: 0;
 			width: 100%;
 			max-width: 250px;
-			box-shadow: 5px 7px 0 0 var(--blue-light);
-			border: 2px solid var(--paper);
+			box-shadow: 5px 8px 0 0 var(--neutral-lighter);
+			border: 2px solid var(--ink);
 
 			:global(.dark) & {
-				box-shadow: 5px 8px 0 0 var(--blue-dark);
+				box-shadow: 7px 9px 0 -3px var(--blue-900);
+				border-color: var(--paper);
+				border-width: 3px;
 			}
 
 			& + h2 {

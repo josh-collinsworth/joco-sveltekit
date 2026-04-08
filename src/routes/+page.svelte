@@ -191,13 +191,21 @@
 	.profile-pic {
 		aspect-ratio: 1;
 		object-fit: cover;
-		border-radius: 9999px;
+		border-radius: 0;
 		width: 100%;
 		max-width: 240px;
 		height: auto;
+		border: 2px solid var(--ink);
+		box-shadow: 5px 7px 0 0 var(--neutral-lighter);
 
 		@media (min-width: 64rem) {
 			max-width: 360px;
+		}
+
+		:global(.dark) & {
+			border-color: var(--paper);
+			border-width: 4px;
+			box-shadow: 7px 9px 0 -3px var(--blue-900);
 		}
 	}
 
@@ -385,6 +393,33 @@
 		line-height: 1.5;
 		grid-column-start: 1;
 		grid-column: 1 / -1;
+
+		section {
+			h3,
+			ul {
+				animation:
+					slide_up_in 1ms cubic-bezier(0, 0.72, 0.32, 1) both,
+					fade_in 1ms linear both;
+				animation-timeline: view();
+				animation-range: 10% 20%;
+			}
+
+			@media (min-width: 64rem) {
+				&:nth-child(2) {
+					h3,
+					ul {
+						animation-range: 15% 25%;
+					}
+				}
+
+				&:nth-child(3) {
+					h3,
+					ul {
+						animation-range: 20% 30%;
+					}
+				}
+			}
+		}
 
 		ul {
 			margin-block-start: var(--quarter-note);
