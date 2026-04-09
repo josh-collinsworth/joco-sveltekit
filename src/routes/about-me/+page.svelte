@@ -126,23 +126,25 @@
 				href="https://inkwellgames.com">Inkwell</a
 			>
 			and <a href="https://www.cluesbysam.com">Clues by Sam</a>), and games in
-			general, being a lifelong Nintendo fan and avid board game enjoyer. I care
-			deeply about accessibility, equity, social justice, and leaving this place
-			in a little better shape for our kids. I enjoy learning new things,
-			playing music, and dogs.
+			general, being a lifelong Nintendo fan and avid board game enjoyer.
 		</p>
-
 		<p>
-			I’m also a font hoarder, a certified
+			I’m also a font hoarder, a reader, a dog lover, a musician
+			(guitar/bass/piano), a certified
 			<a href="https://www.instagram.com/reel/CsguER6r9lL/">beverage goblin</a>
 			(in particular, I enjoy cold brew coffee during the week, and an IPA or a well-crafted
 			cocktail on the weekend), a maybe-weirdly big fan of Costco, and—online, at
-			least—a semi-notorious React critic. (Online, I'm also a regular in the
+			least—a semi-notorious React critic. (I'm also a regular in the
 			<a href="https://shoptalkshow.com">ShopTalk Show</a>
 			<a href="https://patreon.com/shoptalkshow">Discord</a>, so if you listen
 			to that podcast, you also might have heard me referred to as “Josh ‘Triple
 			Threat’ Collinsworth,” which is an honor I'm not sure I completely
 			deserve, but I'll take it.)
+		</p>
+
+		<p>
+			Finally, I care deeply about accessibility, equity, social justice, and
+			leaving this place in a little better shape for our kids.
 		</p>
 
 		<h3>More</h3>
