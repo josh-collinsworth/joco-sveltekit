@@ -1,5 +1,5 @@
-import devtoolsJson from 'vite-plugin-devtools-json'
 import { sveltekit } from '@sveltejs/kit/vite'
+import devtoolsJson from 'vite-plugin-devtools-json'
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -9,6 +9,7 @@ const config = {
 	},
 	css: {
 		transformer: 'lightningcss',
+		devSourcemap: true
 	}
 }
 
