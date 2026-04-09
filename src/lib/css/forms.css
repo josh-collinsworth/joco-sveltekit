@@ -144,6 +144,6 @@ input[type='submit'] {
 	}
 
 	.dark & {
-		border-width: 2px; //Prevents overrides from above button styles
+		border-width: 2px; /* Prevents overrides from above button styles */
 	}
 }

@@ -1,4 +1,16 @@
 <script lang="ts">
+	import '$lib/css/vars.css'
+	import '$lib/css/global.css'
+	import '$lib/css/preferences.css'
+	import '$lib/css/fonts.css'
+	import '$lib/css/typography.css'
+	import '$lib/css/utilities.css'
+	import '$lib/css/layout.css'
+	import '$lib/css/forms.css'
+	import '$lib/css/code.css'
+	import '$lib/css/print.css'
+	import '$lib/css/components.css'
+
 	import type { LayoutData } from './$types'
 	import throttle from 'just-throttle'
 	import Header from '$lib/components/header/Header.svelte'
@@ -73,17 +85,6 @@
 <svelte:head>
 	<meta property="og:site_name" content="Josh Collinsworth" />
 	<meta property="og:locale" content="en_US" />
-	<link rel="stylesheet" href="/css/vars.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/global.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/preferences.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/fonts.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/typography.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/utilities.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/layout.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/forms.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/code.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/print.css?ver={Date.now()}" />
-	<link rel="stylesheet" href="/css/components.css?ver={Date.now()}" />
 	{#if !dev}
 		<script
 			defer

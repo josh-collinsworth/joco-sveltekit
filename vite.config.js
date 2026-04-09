@@ -6,6 +6,9 @@ const config = {
 	plugins: [sveltekit(), devtoolsJson()],
 	build: {
 		target: 'es2022'
+	},
+	css: {
+		transformer: 'lightningcss',
 	}
 }
 
