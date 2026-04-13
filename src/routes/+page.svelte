@@ -3,6 +3,7 @@
 	import DenoMarkCustom from '$lib/components/icons/DenoMarkCustom.svelte'
 	import DeployMark from '$lib/components/icons/DeployMark.svelte'
 	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
+	import JsrLogo from '$lib/components/icons/JsrLogo.svelte'
 	import QuinaLogo from '$lib/components/icons/QuinaLogo.svelte'
 
 	let { data } = $props()
@@ -107,6 +108,9 @@
 				aria-label="Hondo"
 			>
 				<HondoLogo />
+			</a>
+			<a href="https://jsr.io" class="icon icon--jsr" aria-label="JSR">
+				<JsrLogo />
 			</a>
 		</div>
 
@@ -326,11 +330,11 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		max-width: 24rem;
+		max-width: 32rem;
 		margin-block-start: var(--half-note);
 
-		@media (min-width: 24rem) {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
+		@media (min-width: 32rem) {
+			grid-template-columns: repeat(5, minmax(0, 1fr));
 			grid-column-start: 1;
 			grid-column: 1 / -1;
 			grid-row: 9 / 10;
@@ -339,7 +343,7 @@
 		@media (min-width: 96rem) {
 			gap: var(--dotted-quarter-note);
 			margin-block-start: var(--dotted-half-note);
-			max-width: 30rem;
+			max-width: 34rem;
 		}
 
 		.icon {
