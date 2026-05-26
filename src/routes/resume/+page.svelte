@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Logo from '$lib/components/Logo.svelte'
 	import Main from '$lib/components/Main.svelte'
 
 	// I don't want these values public on the internet, so I'm just populating them locally when printing only. This way keeps linter errors from popping up.
@@ -7,11 +8,12 @@
 </script>
 
 <svelte:head>
-	<title>Josh Collinsworth | Résumé</title>
+	<title>Josh Collinsworth | Resume</title>
 	<meta
 		data-key="description"
 		name="description"
-		content="My professional resume"
+		content="Josh Collinsworth — design engineer and frontend
+  developer. Resume, experience, and selected work."
 	/>
 	<meta
 		property="og:image"
@@ -22,9 +24,9 @@
 
 <Main>
 	<div class="resume compressed-content">
-		<h1>
-			<img src="/images/2026.svg" alt="Josh Collinsworth" class="resume-logo" />
-		</h1>
+		<div class="resume-logo">
+			<Logo />
+		</div>
 		{#if MY_EMAIL && MY_PHONE}
 			<ul class="hidden-contact">
 				<li>
@@ -66,7 +68,7 @@
 
 		<ul>
 			<li>
-				Lead frontend development and design across Deno sites, products, and
+				Led frontend development and design across Deno sites, products, and
 				documentation
 			</li>
 			<li>
@@ -75,6 +77,11 @@
 				>, including a full rebrand, illustration, and animation work. This
 				redesign correlated with the Deno 2.0, launch and helped to achieve a
 				permanent 200% increase in web traffic and Deno monthly active users
+			</li>
+			<li>
+				Led design and launch of <a href="https://clawpatrol.dev">Claw Patrol</a
+				>, an open-source firewall for AI agents, including brand identity,
+				dashboard UI, landing page, and launch marketing
 			</li>
 			<li>
 				Complete redesign of <a href="https://deno.com/deploy">Deno Deploy</a>,
@@ -104,10 +111,9 @@
 
 		<ul>
 			<li>
-				Led the comprehensive redesign and rebuild of all marketing pages for
-				Shopify’s <a href="https://shopify.com/pos">point of sale</a> and retail products
-				in Remix for over 30 locales, resulting in an 18% increase in customer conversion
-				rate
+				Led a comprehensive redesign and rebuild of all marketing pages for
+				Shopify <a href="https://shopify.com/pos">point of sale</a> and retail products
+				in over 30 locales, resulting in an 18% increase in customer conversion
 			</li>
 			<li>
 				Developed marketing landing pages for major initiatives including
@@ -387,10 +393,6 @@
 </Main>
 
 <style>
-	:global(.page-head) {
-		display: none !important;
-	}
-
 	:global(main) {
 		position: relative;
 	}
@@ -408,29 +410,18 @@
 		}
 	}
 
-	.compressed-content {
-		width: 100%;
-		max-width: 69ch; /* Nice */ /* I genuinely didn't do this just for the joke; it's just the width that matched print width the best */
-		padding: 0;
-		margin: 0;
-		position: relative;
-	}
-
 	.resume-logo {
-		display: inline-block;
+		display: none;
 		margin: 0;
 		width: 100%;
-		max-width: 14rem;
+		max-width: 12rem;
 		height: auto;
-	}
-
-	h1 {
-		margin: 0;
 	}
 
 	.resume {
 		display: block;
 		width: 100%;
+		max-width: 69ch; /* Nice */
 		margin: 0 auto;
 		margin-block-start: var(--whole-note);
 
@@ -516,30 +507,30 @@
 	}
 
 	@media print {
+		:global(.page-head) {
+			display: none !important;
+		}
+
 		:global(.layout) {
 			max-width: 7.5in;
-			padding: 0 1in;
 			margin-inline: auto;
 			break-inside: auto !important;
 		}
 
 		:global(.compressed-content) {
+			max-width: unset;
+			/* padding-top: 0.5in; */
+		}
+
+		:global(main) {
 			max-width: unset !important;
-			padding-top: 0.5in;
-		}
-
-		.compressed-content {
-			padding-top: 0;
-		}
-
-		h1 {
-			margin: 0;
 		}
 
 		.resume {
 			--quarter-note: 9pt;
 			font-size: 9pt;
 			margin: 0;
+			max-width: unset;
 
 			.resume-logo {
 				display: inline-block;

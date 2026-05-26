@@ -326,18 +326,20 @@
 	.icons {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--quarter-note);
+		gap: var(--dotted-quarter-note);
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		max-width: 32rem;
+		max-width: 16rem;
 		margin-block-start: var(--half-note);
 
 		@media (min-width: 32rem) {
+			max-width: 32rem;
 			grid-template-columns: repeat(5, minmax(0, 1fr));
 			grid-column-start: 1;
 			grid-column: 1 / -1;
 			grid-row: 9 / 10;
+			gap: var(--quarter-note);
 		}
 
 		@media (min-width: 96rem) {

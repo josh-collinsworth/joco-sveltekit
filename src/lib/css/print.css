@@ -23,20 +23,20 @@
 	html,
 	body,
 	.layout,
-	#app { 
-		height: auto !important; 
+	#app {
+		height: auto !important;
 		min-height: unset !important;
 	}
 
 	.layout {
 		margin: 0 auto;
 		width: 100%;
-		max-width: 5in;
 		break-inside: avoid;
+		padding-inline: 1in;
 	}
 
 	.loader + div {
-		display: none!important;
+		display: none !important;
 	}
 
 	* {

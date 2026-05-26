@@ -7,7 +7,8 @@
 }
 
 .sr,
-input[type=checkbox] {
+.sr-only,
+input[type='checkbox'] {
 	position: absolute;
 	left: -100vw;
 	opacity: 0;
