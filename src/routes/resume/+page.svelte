@@ -33,7 +33,9 @@
 					<a href="mailto:{MY_EMAIL}">{MY_EMAIL}</a>
 				</li>
 				<li>
-					<a href="tel:{`+1${MY_PHONE.replace(/[^0-9]/g, '')}`}">{MY_PHONE}</a>
+					<a href="tel:{`+1${MY_PHONE.replace(/[^0-9]/g, '')}`}"
+						>+1 {MY_PHONE}</a
+					>
 				</li>
 				<li>
 					<a
@@ -48,10 +50,12 @@
 		<h2 id="summary">Summary</h2>
 
 		<p>
-			Design engineer and frontend developer with 7+ years building production
-			web applications, design systems, and brands. Specialized in React,
-			Svelte/SvelteKit, TypeScript, and CSS/Tailwind, with a strong focus on
-			design, accessibility, web animation, and performance.
+			Design engineer and frontend developer with a formal design background and
+			7+ years of experience building production web applications, design
+			systems, and brand identities. I work where code, design, and messaging
+			meet, distilling cross-disciplinary complexity into clarity. Specialized
+			in React, SvelteKit, TypeScript, and modern CSS, with a strong focus on
+			accessibility, animation, performance, and craft.
 		</p>
 
 		<hr />
@@ -67,10 +71,6 @@
 		</div>
 
 		<ul>
-			<li>
-				Led frontend development and design across Deno sites, products, and
-				documentation
-			</li>
 			<li>
 				Designed and implemented a full-scale redesign of <a
 					href="https://deno.com">Deno.com</a
@@ -88,17 +88,21 @@
 				including full rebrand with app and marketing rebuild
 			</li>
 			<li>
-				Designed, branded, and built Deno projects and microsites, including <a
+				Built new product features and refined existing features in <a
+					href="https://deno.com/deploy">Deno Deploy</a
+				>
+			</li>
+			<li>
+				Led development and design across Deno sites and products, including <a
 					href="https://jsr.io">JSR</a
 				>
 				and <a href="https://javascript.tm">javascript.tm</a>
 			</li>
 			<li>
-				Built new product features and refined existing features in <a
-					href="https://deno.com/deploy">Deno Deploy</a
+				Updated and maintained <a href="https://docs.deno.com"
+					>Deno documentation</a
 				>
 			</li>
-			<li>Updated and maintained Deno documentation</li>
 		</ul>
 
 		<div class="subsection-header">
@@ -159,8 +163,8 @@
 			</li>
 			<li>
 				Built out design system in Storybook and implemented new components in
-				Vue/Knockout, ensuring consistent UI and tight coupling with the backend
-				Laravel application
+				Vue, ensuring consistent UI and tight coupling with the backend Laravel
+				application
 			</li>
 		</ul>
 
@@ -350,16 +354,16 @@
 
 		<ul>
 			<li>
-				Specialized in Svelte/SvelteKit, React, TypeScript, CSS/Sass, design
-				systems, accessibility, web animation, SVG, and performance
+				Specialized in Svelte/SvelteKit, React/Preact, TypeScript, CSS/Sass,
+				design systems, accessibility, web animation, SVG, and performance
 				optimization.
 			</li>
 			<li>
-				Also experienced with Vue, Tailwind, Deno, Fresh, Preact, Knockout,
+				Also experienced with Vue, Tailwind, Deno, Fresh, Node, Knockout,
 				jQuery, JS testing (Vitest, Karma, Mocha, Chai, framework utility
 				libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx,
 				NGINX, (Varnish) caching, Redux, Storybook, WordPress, SVG, git/GitHub,
-				NPM, Jira, CLIs, DNS, SemVer.
+				npm, Jira, CLIs, DNS.
 			</li>
 		</ul>
 
@@ -519,7 +523,6 @@
 
 		:global(.compressed-content) {
 			max-width: unset;
-			/* padding-top: 0.5in; */
 		}
 
 		:global(main) {
@@ -528,9 +531,12 @@
 
 		.resume {
 			--quarter-note: 9pt;
+			--top-offset: 0.25in;
+
 			font-size: 9pt;
 			margin: 0;
 			max-width: unset;
+			padding-top: var(--top-offset);
 
 			.resume-logo {
 				display: inline-block;
@@ -538,6 +544,10 @@
 				max-width: 1.75in;
 				width: 100%;
 				height: auto;
+			}
+
+			.hidden-contact {
+				top: var(--top-offset);
 			}
 
 			.resume-logo {
