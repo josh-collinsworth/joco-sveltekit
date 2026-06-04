@@ -11,7 +11,7 @@ coverHeight: 1080
 ---
 
 <script>
-import CalloutPlusQuote from '$lib/components/CalloUtPlusQuote.svelte'
+import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 </script>
 
 It's probably never crossed your mind to question the idea that AI<footnote>LLMs, more accurately, which are not any kind of intelligence, artificial or otherwise. Regardless, I'll use the terms "LLM" and "AI" interchangeably here, even though LLM is the technically correct term.</footnote> makes you more productive.
