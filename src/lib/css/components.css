@@ -26,7 +26,7 @@
 
 	&:after {
 		content: '';
-		height: 0.25rem;
+		height: 2px;
 		width: 100%;
 		margin-left: -100%;
 		background: var(--accent-gradient);
@@ -39,7 +39,8 @@
 	display: inline;
 }
 
-.pull-quote em, .pull-quote i {
+.pull-quote em,
+.pull-quote i {
 	font-weight: bold;
 	font-style: normal;
 }
@@ -94,7 +95,7 @@
 	}
 
 	&::after {
-		content: "/ side note";
+		content: '/ side note';
 		top: unset;
 		left: unset;
 		right: calc(var(--border-width) * -1);
@@ -117,7 +118,7 @@
 	}
 
 	@media (min-width: 92rem) {
-		padding: var(--half-note)
+		padding: var(--half-note);
 	}
 
 	em,
@@ -281,7 +282,6 @@ html:not(.light) .side-note {
 	}
 }
 
-
 #dark-mode-toggle svg {
 	--itemTransition: 0.4s cubic-bezier(0.7, -0.01, 0, 1.01);
 	width: 2rem;
@@ -292,16 +292,14 @@ html:not(.light) .side-note {
 		fill var(--itemTransition),
 		stroke var(--itemTransition),
 		background var(--itemTransition);
-  }
+}
 
 /* Why isn't this nested? Because Safari sucks. */
 #dark-mode-toggle svg :is(path, circle) {
-  transition:
-    transform var(--itemTransition),
-    fill var(--itemTransition),
-    stroke var(--itemTransition),
-    background var(--itemTransition);
-  stroke: var(--ink);
+	transition:
+		transform var(--itemTransition),
+		fill var(--itemTransition),
+		stroke var(--itemTransition),
+		background var(--itemTransition);
+	stroke: var(--ink);
 }
-
-
