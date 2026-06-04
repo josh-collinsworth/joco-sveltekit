@@ -16,27 +16,31 @@ import CalloutPlusQuote from '$lib/components/CalloutPlusQuote.svelte'
 
 I began to wonder exactly how productive AI<footnote>LLMs, more accurately, which are not any kind of intelligence, artificial or otherwise. Regardless, I'll use the terms "LLM" and "AI" interchangeably here, even though LLM is the technically correct term (and I mostly am referring to using LLM agents).</footnote> is making me, personally, when I stepped back a bit from what I'd been using it for.
 
-At first, when I began to use agents day-to-day, I was blown away by their capabilities, and how much they elevated my own. Certainly, the floor was raised. I can do a lot of things much faster now. That much is undeniable.
+At first, when I began to use agents day-to-day, I was blown away by their capabilities, and how much they elevated my own. Certainly, the floor was raised. I could do far more, much faster. That much was undeniable.
 
 Armed with this newfound power, I accomplished flurry of tasks I either wasn't capable of, or didn't have the time for previously:
 
 - At work, I could get up and running in new codebases without asking for help, and could contribute to them quickly
 - I got some projects updated, moved, or refactored, all in record time (including a Nuxt migration I'd been putting off for years, and that would've taken me days of work)
 - I added a bunch of features to a few apps here and there that I wouldn't have otherwise
-- I scaffolded things and build out greenfield projects in record time
+- I scaffolded new things and built out greenfield projects in record time
 - I wrote more tests, faster than ever
 - I pushed out a whole bunch of bux fixes
+
+That all sounds fantastic, of course. It _felt_ fantastic.
 
 But when I got done with all that, I had to wonder: **could I really call any of that _productive_**?
 
 - At work, I didn't understand the codebases I was working in, and though I was contributing to them, I gained no real context about them
-- Most of the updates weren't really _needed_ per se, and afterwards, the apps themselves weren't any different; the changes just made me feel good, and made no difference at all on the user side of the software
-- The new features I built weren't actually being used
+- Most of the updates weren't really _needed_ per se, and afterwards, the apps themselves weren't any different; the changes just made me feel good, and made little to no difference at all on the user side of the software
+- The new features I built were neat, but they weren't actually being used
 - The greenfield projects were quickly abandoned
 - I didn't really need the tests that bad, and I wasn't quite sure whether they were doing the anything worthwhile in the first place
 - I didn't know what had caused the bugs, or what the fixes had been
 
-So I checked off a bunch of to-dos, most of which didn't make much difference. And even where they did: I paid a cost. I didn't even come away from it with any new knowledge or skills.
+Ultimately, I just checked off a bunch of to-dos, most of which hadn't gotten done because they never mattered that much in the first place.
+
+And even where they did: I paid a cost for doing more, faster; I didn't even come away from it with any new knowledge or skills. If anything, it seemed like I knew _less_ than I did before I started.
 
 Maybe the code improved, but I sure didn't.
 
@@ -55,15 +59,15 @@ I loved it like a guilty pleasure.
 
 I wanted to keep using it, any chance I got.
 
-I could _see_ with my own two eyes that I was trading away something valuable for something petty, like a kid blowing his allowance on cheap plastic bullshit.
+I could _see_ with my own two eyes that I was trading away something valuable for something petty, like a kid blowing their allowance at a gumball machine.
 
-But I still _wanted_ the bullshit. It triggered something in my psychology. And I believed maybe if I used this thing enough, all the tiny little meaningless tasks would eventually add up to something important.
+But I still _wanted_ what the machine had. It triggered something in my psychology. And I believed maybe if I used this thing enough, all the tiny little meaningless tasks would eventually add up to something important.
 
-Sometimes I'd feel a compulsion to fire up Claude Code and have AI _do_ something, even when I had nothing in mind to accomplish. That's not sane, rational behavior.
+Sometimes I'd feel a compulsion to fire up Claude Code and have it work on something, even when I had nothing in mind to accomplish.
 
 I'm very familiar with that sort of compulsion, and I recognized it almost instantly: I wanted to _play_ AI, like a video game. If I had no reason or goal in mind, I'd try to make one up. I just wanted more of that _feeling_, like I was accomplishing something unbelievably fast. (Not entirely unlike a video game, actually.)
 
-All of the work I had AI do for me could've been a fantastic learning opportunity. Instead, I mostly just traded my own growth for...a pile of junk, essentially.
+All of the work I had AI do for me could've been a fantastic learning opportunity. Instead, I mostly just traded my own potential growth for...a pile of junk, essentially.
 
 <CalloutPlusQuote>
 
@@ -108,7 +112,7 @@ I've compiled a list of all the notable studies I'm aware of, and paraphrased th
 
 - [A 2025 study](https://arxiv.org/abs/2507.09089) found that using AI made developers _feel_ 24% faster—but in reality, actually made them 19% _slower_.<footnote>An updated study was attempted this year, with potentially different results, but the researchers have thus far been unable to get quality data.</footnote> Several smaller, unrelated follow-up experiments have produced similar findings.
 
-- [A late 2025 study (summarized here)](https://proxify.io/articles/stanford-study-of-100000-developers-on-engineering-productivity) found up to 40% gains—but only in low-complexity greenfield projects. The gains shrunk, vanished, or even went negative in existing codebases and/or higher complexity tasks, _particularly_ when accounting for "rework" (the need to revisit previously shipped LLM code). This study also found that LLM usage lowered maintainability.
+- [A late 2025 study (summarized here)](https://proxify.io/articles/stanford-study-of-100000-developers-on-engineering-productivity) found up to 40% gains—but only in low-complexity greenfield projects. The gains shrunk, vanished, or even went negative in existing codebases and/or higher complexity tasks, _particularly_ when accounting for the need to rework previously shipped LLM code. This study also found that LLM usage lowered maintainability.
 
 - [A 2024–2025 study](https://dora.dev/research/2024/dora-report/) found gains in individual productivity, but also found that they came with a shipping bottleneck, and a reduction in the stability of shipped code.
 
@@ -161,7 +165,7 @@ But that's actually only a small part of the overall question. There's much more
 
 Obviously, LLMs can write code extremely quickly; nobody denies that. If sheer volume of code is how you measure productivity, the LLM wins hands-down.
 
-But I don't think anybody who's ever worked in any real production context would agree absolute lines of code is a useful proxy for productivity. (In fact, not so long ago, would've universally agreed the opposite was often true; _fewer_ lines of code was often held up as a superior signal.)
+But I don't think anybody who's ever worked in any real production context would agree absolute lines of code is a useful proxy for productivity. (In fact, not so long ago, we mostly agreed the opposite was often true, and _fewer_ lines of code was often the superior signal.)
 
 Similarly: it doesn't really matter _how many_ PRs you're opening or merging, if you're not taking into account the _quality_ of the code they contain—as any Open Source maintainer will tell you. There have probably never been more PRs opened, and yet, the average quality has likely never been lower.
 
@@ -175,7 +179,7 @@ I think it's fair to say LLM-produced code is _not_ always as good as human code
 
 - But mostly: a human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a scalable approach.
 
-At this point, LLM enthusiasts usually say something like "but humans make mistakes, too!" or "human code isn't perfect, either!"
+At this point, LLM enthusiasts might argue that humans make mistakes, too. It's not as though we've ever been perfect, either.
 
 And that's fair. We've all messed up. Most of us have taken prod down at one point or another.
 
@@ -183,13 +187,17 @@ But I have two responses to that:
 
 1. **Nobody treats human code with such indifference**. I've never once, in all the hundreds and hundreds of PRs I've opened, had anyone express such low expectations of me, or had them treat my mistakes with such blasé detachment. So this is an obvious double standard.
 
-2. **Mistakes are how humans learn**. When something goes wrong in our code, that we wrote, there's a benefit; we discovered something about our codebase that made us wiser. We gained resilience. We leveled up. A junior who made their own big mistake is one step closer to being a senior; a junior who let an LLM make a mistake (and had an LLM fix that mistake) has probably learned nothing.
+2. **Mistakes are how humans learn**. When something goes wrong in our code, that we wrote, there's a benefit; we discovered something about our codebase that made us wiser. We gained resilience. We leveled up.
 
-Some might also argue the reduction in quality is worth the bump in speed, which I suppose may be reasonable in some cases.
+<CalloutPlusQuote>
 
-But never mind that.
+A junior who made a mistake is one step closer to being a senior; a junior who let an LLM make a mistake (and had the LLM fix it for them) has probably learned nothing.
 
-Let's set aside the code quality argument for a minute.
+</CalloutPlusQuote>
+
+Some might also argue the reduction in quality is worth the bump in speed, which I suppose may be reasonable in some cases, but not all.
+
+But never mind that; let's set aside the code quality argument for a minute.
 
 Let's ignore all the points above, and assume code written by an LLM is always at least as good as human-authored code, if not better.
 
@@ -224,9 +232,9 @@ Sure, you can use AI to speed through the work this time, too. But there's no gu
 
 This effect isn't unique to LLM usage, of course, but it's more acute in both frequency and likelihood. The more you use AI to push out code, the more little zombie tickets start punching their way out of the ground to shamble back for another bite of your brain—and the less you'll actually understand what's going wrong and why, if you outsourced your thinking, and with it, your mental grasp of the system.
 
-And remember: all of this can and will happen _even if the code itself is good_. Even great code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on true overall productivity, because the more work you do, the more work you have to _keep doing_.
+And remember: this happens more with bad code, but it still happens _even if the code is great_. Even excellent code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
 
-Maybe the ceiling was raised along with the floor, but it sure didn't disappear.
+Maybe the ceiling was raised along with the floor, but it didn't disappear.
 
 <CalloutPlusQuote>
 
@@ -234,7 +242,7 @@ No matter how fast you can build something, maintaining it is still an ongoing c
 
 </CalloutPlusQuote>
 
-This is probably why so many vibe-coded apps are abandoned or left to rot nearly as soon as they're built: building is fun, and practically free; maintenance is a slog.
+This is probably why so many vibe-coded apps are abandoned or left to rot nearly as soon as they're built: building is fun, and practically free; maintenance is a slog, even with agents doing it.
 
 It's probably also why, even though it's trivial to [slop-fork](https://www.slopfork.dev/) any software you want, most people don't seem to be doing it: because the moment you do, the maintenance and updates become _your_ problem.
 
@@ -283,9 +291,9 @@ And most importantly: **how many times until it would've been faster to just do 
 All of this is why shipping is only the beginning of the impact of your work. It's just barely entering the crucible. It's untested. So gauging your productivity at that point is at best premature, and at worst, an entirely inaccurate measure.
 
 
-## I don't trust you, and neither should you
+## How do you know you can trust yourself?
 
-Remember the study above, where engineers swore using AI made them 24% faster, while in reality, it made them 19% _slower_?
+Remember the study above, where engineers said using AI made them 24% faster, when in reality, it made them 19% _slower_?
 
 Here's what I need everyone reading this to internalize: _you're not any different from those engineers_. I'm not either. None of us are. (That's why I still felt a compulsion to keep using AI, even when I didn't have a reason, and even when I could see I was trading something valuable for something mostly pointless.)
 
@@ -328,6 +336,10 @@ Throughout this whole process, however, you'll probably still _feel_ incredibly 
 But you probably don't measure, if you're in this deep. Because you probably trust how you _feel_ too much to believe reality could possibly contradict you.
 
 It's much easier to just fudge the definition a little bit.
+
+I still believe AI agents can be massively useful tools for software development, when wielded carefully, in appropriate situations.
+
+The problem is, they're not shaped for judicious application (and they're most _certainly_ not marketed that way); they're shaped to maximize your usage. And they work exceptionally well.
 
 
 ## Productive for whom?
