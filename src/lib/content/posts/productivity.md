@@ -4,6 +4,8 @@ date: '2026-06-05'
 updated: '2026-06-05'
 categories:
   - opinion
+  - personal
+  - AI
 excerpt: "It's worth asking whether LLMs are actually making us more productive at all—and if so, what we might be sacrificing in return."
 coverImage: "bullseye.png"
 coverWidth: 1920
