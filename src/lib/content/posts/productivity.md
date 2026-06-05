@@ -27,7 +27,7 @@ Armed with this newfound power, I accomplished a flurry of tasks I either wasn't
 - I added several new features to a handful of apps here and there that I wouldn't have otherwise
 - I scaffolded new things and built out greenfield projects in record time
 - I wrote more tests, faster than ever
-- I pushed out a whole bunch of bux fixes
+- I pushed out a whole bunch of bug fixes
 
 That all sounds fantastic, of course. It _felt_ fantastic.
 
