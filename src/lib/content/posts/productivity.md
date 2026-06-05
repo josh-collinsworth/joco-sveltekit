@@ -52,7 +52,7 @@ Maybe the code improved, but I sure didn't.
 
 And that was all in the _best-case_ scenarios, where the agent worked well. Other times, I'd spend so long prompting and re-prompting it would've just been faster to do the work myself in the first place—but by that point, of course, I was so deep in the hole it seemed easier to just keep digging.
 
-I had to wonder: is this really what productivity looks like? When the dust had settled, was it really all a net gain?
+I had to ask: when the dust had settled, was it really all a net gain?
 
 <CalloutPlusQuote>
 
@@ -62,13 +62,13 @@ If I'm being honest with myself, what I was doing was often more theatrical than
 
 But being honest with myself, it turns out, was actually a lot more difficult than it should have been.
 
-That's because, despite everything above…I _loved_ it.
+Because, despite everything above…I _loved_ it.
 
 I loved using my agent like a guilty pleasure. I wanted to keep using it, any chance I got.
 
 I could _see_ with my own two eyes that I was trading away something valuable for something petty, like a kid blowing their allowance at a gumball machine.
 
-But I still _wanted_ what the machine had. It triggered something in my psychology. And I believed maybe if I used this thing enough, all the tiny little meaningless tasks would eventually add up to something important.
+But I still _wanted_ what the machine had. It triggered something in my brain. And I believed maybe if I used this thing enough, all the tiny little meaningless tasks would eventually add up to something important.
 
 Sometimes I'd feel a compulsion to fire up Claude Code and have it work on something, even when I had nothing in mind to accomplish.
 
@@ -119,7 +119,7 @@ I've compiled a list of all the notable studies and surveys I'm aware of, and pa
 
 - [A 2025 study](https://arxiv.org/abs/2507.09089) found that using AI made developers _feel_ 24% faster—but in reality, actually made them 19% _slower_.<footnote>An updated study was attempted this year, with potentially different results, but the researchers have thus far been unable to get quality data.</footnote> Several smaller, unrelated follow-up experiments have produced similar findings.
 
-- [A late 2025 study (summarized here)](https://proxify.io/articles/stanford-study-of-100000-developers-on-engineering-productivity) found up to 40% gains—but only in low-complexity greenfield projects. The gains shrunk, vanished, or even went negative in existing codebases and/or higher complexity tasks, _particularly_ when accounting for the need to rework previously shipped LLM code. This study also found that LLM usage lowered maintainability.
+- [A late 2025 study (summarized here)](https://proxify.io/articles/stanford-study-of-100000-developers-on-engineering-productivity) found up to 40% gains—but only in low-complexity greenfield projects (and in exchange for less maintainable code). The gains shrunk, vanished, or even went negative in existing codebases and/or higher complexity tasks, _particularly_ when accounting for the need to rework previously shipped LLM code.
 
 - [A 2024–2025 study](https://dora.dev/research/2024/dora-report/) found gains in individual productivity, but also found that they came with a shipping bottleneck, and a reduction in the stability of shipped code.
 
@@ -330,11 +330,11 @@ Crucially: consciously knowing this does *not* change your susceptibility, any m
 
 You probably won't even notice all the creeping technical and cognitive debt as it weighs you down, because by that point, you're most likely not thinking of it in those terms.
 
-By that point—like me—your psychology has taken over, and you're not focused on anything but how _amazing_ it feels to get all that stuff checked off so fast. Even when you have to refactor code you've already written, and even when it's directly _because_ of the LLM, you'll probably just be thinking about how great it's going to feel to get it "done" (again) this time.
+It's so difficult to spot the downsides of LLM usage, because we're psychologically inclined to _feel_ that initial positive burst, and to ignore the dozens of tiny paper cuts that follow—even when they've bled the original gains away, drip by drip.
 
-Even if you _do_ clock all of this happening, notice that **your incentives are all pointing in the wrong direction by that point**. Now that parsing the code is much harder than it would've been before (because you wrote none of it), sunk cost pushes you further down the path of least resistance.
+But even if you _do_ see it happening, notice **your incentives are all pointing in the wrong direction by that point**. Now that parsing the code is much harder than it would've been before (because you wrote none of it), sunk cost pushes you further down the path of least resistance.
 
-Faced with the decision to start all over and do things a better way, or just press the button one more time to apply another layer of patch code you never read and don't understand, all the inertia is pushing you further down the same path that got you here.
+Faced with the decision to start all over and do things a better way, or just press the button one more time to apply another layer of patch code you never read and don't understand, while staring down an ever-increasing backlog, all the inertia is pushing you further down the same path that got you here.
 
 Worse still: the less you actually take the time to read what the LLM is producing, the more you'll be tempted to trust it unquestioningly—and the less you'll be able to detect when it's doing something wrong.
 
@@ -397,4 +397,4 @@ Will you still be valuable, if and when agents cost 20 times what they do now?
 
 I've strayed into prediction. But no matter what the future holds: be careful how you measure your own productivity—and be sure you _are_ measuring it. You can't trust yourself if you don't.
 
-But most of all: be careful what you're trading for it.
+Most of all, though: be careful what you're trading for it.
