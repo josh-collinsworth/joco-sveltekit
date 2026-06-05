@@ -350,7 +350,7 @@ But you probably don't measure, if you're in this deep. Because you probably tru
 
 It's much easier to just fudge the definition a little bit.
 
-I still believe AI agents can be massively useful tools for software development, when wielded carefully, in appropriate situations.
+I still believe AI agents can be massively useful tools for software development—_productive_, even—when wielded carefully, in appropriate situations.
 
 The problem is: they're not shaped for judicious application (and they're most _certainly_ not marketed that way); they're shaped to maximize your usage. And they work exceptionally well.
 
