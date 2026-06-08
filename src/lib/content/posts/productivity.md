@@ -1,7 +1,7 @@
 ---
 title: LLMs and performative productivity
 date: '2026-06-05'
-updated: '2026-06-05'
+updated: '2026-06-08'
 categories:
   - opinion
   - personal
@@ -22,7 +22,7 @@ At first, when I began to use agents day-to-day, I was blown away by their capab
 
 Armed with this newfound power, I accomplished a flurry of tasks I either wasn't capable of, or didn't have the time for previously:
 
-- At work, I could get up and running in new codebases without asking for help, and could contribute to them much more easily
+- At work, I could get up and running in new codebases without asking for help, and could contribute to them much more easily—_especially_ when they were in programming languages I wasn't familiar with
 - I got some projects updated, moved, or refactored, all in record time (_including a particularly gnarly Nuxt upgrade I'd been putting off for years, and that would've taken me days of work, done in about an hour_)
 - I added several new features to a handful of apps here and there that I wouldn't have otherwise
 - I scaffolded new things and built out greenfield projects in record time
@@ -33,7 +33,7 @@ That all sounds fantastic, of course. It _felt_ fantastic.
 
 But when I got done with all that, I had to wonder: **could I really call any of that _productive_**?
 
-- At work, I didn't understand the codebases I was working in, and though I was contributing to them, I gained no real context about them. I was opening PRs, but I couldn't really defend what was in them, or say whether or not they worked with the system. I was constantly afraid I'd messed something up without realizing it
+- At work, I didn't understand the codebases I was working in, and though I was contributing to them, I gained no real context about them. I was opening PRs, but I couldn't really defend what was in them, or say whether or not they worked with the system. I was constantly afraid I'd messed something up without realizing it, and learned virtually nothing about the unfamiliar languages
 - Most of the other updates weren't really _needed_ per se, and afterwards, the apps themselves weren't any different; the changes just made me feel good, while making little to no difference on the user side of the software
 - The new features I built were neat, but they weren't actually being used
 - The greenfield projects were quickly abandoned
@@ -42,7 +42,7 @@ But when I got done with all that, I had to wonder: **could I really call any of
 
 <CalloutPlusQuote>
 
-I had mainly just checked off a bunch of old to-dos, most of which hadn't gotten done previously because they never mattered that much in the first place.
+I had mainly just checked off a bunch of old to-dos, most of which were unfinished because they never mattered that much in the first place.
 
 </CalloutPlusQuote>
 
@@ -50,7 +50,7 @@ And even where they _did_ matter, I paid a cost for doing more, faster. I added 
 
 If anything, it seemed like I knew _less_ than before.
 
-Maybe the code improved, but I sure didn't.
+Maybe the codebase improved, but I sure didn't.
 
 And that was all in the _best-case_ scenarios, where the agent worked well. Other times, I'd spend so long prompting and re-prompting it would've just been faster to do the work myself in the first place—but by that point, of course, I was so deep in the hole it seemed easier to just keep digging.
 
@@ -138,8 +138,7 @@ All of those studies take different approaches, but there are a few common threa
 
 - **LLM productivity benefits are highly situational**. LLMs excel at straightforward, time-consuming tasks. They're great at boilerplate and greenfield projects. And, they help less-experienced coders a lot more than experienced ones. The more you go outside that sweet spot, the less benefit there is.
 - **There's a pronounced gap between perception and reality**. This reaffirms my experience. LLM users _feel_ like the tool is doing much more for them than it actually is when measured objectively.
-- **Even where the gains are real, they come at a cost**. Several of the studies above (and others, in other fields) have confirmed LLM output is generally lower quality, in various ways. While it may be reasonable to think that particular gap is closing, there's another, even more concerning penalty:
-- **LLM usage inhibits cognition and understanding**. Which makes sense, of course; you can't expect to be ready for the game if you skip practice every day. Your comprehension of the system comes mainly from all those small, everyday touchpoints. If you outsource those, you quickly lose context and develop [cognitive debt](https://www.media.mit.edu/publications/your-brain-on-chatgpt/).<footnote>Since gains are most pronounced among novice developers, this creates a concerning catch-22: juniors have the most to gain from LLM usage, but those gains threaten to keep them reliant on the technology.</footnote>
+- **Even where the gains are real, they come at a cost**. Several of the studies above (and others, in other fields) have confirmed LLM output is generally lower quality, in various ways. While it may be reasonable to think that particular gap is closing, there's another, even more concerning penalty: LLM usage inhibits cognition and understanding. Which makes sense, of course; your comprehension of the system comes mainly from small, everyday touchpoints. If you skip practice every day, you won't be ready for the game. And if you outsource your chance to speak the language, you quickly lose context and develop [cognitive debt](https://www.media.mit.edu/publications/your-brain-on-chatgpt/).<footnote>Since gains are most pronounced among novice developers, this creates a concerning catch-22: juniors have the most to gain from LLM usage, but those gains threaten to keep them reliant on the technology.</footnote>
 - **Most studies so far have only measured productivity at the individual level, and in a vacuum**. Measurement tends to begin at authoring code and end at merging a PR. Rarely is a broader view, where impact is measured across an organization and over time, even attempted. But where it is, positive impacts tend to evaporate.
 
 This last point might be the biggest takeaway, in my mind.
@@ -170,7 +169,7 @@ Whether LLM code is as good as human code is partially load-bearing here. After 
 But that's actually only a small part of the overall question. There's much more to _actual productivity_ that we're (perhaps deliberately) overlooking right now.
 
 
-### Productivity only starts with "PR"
+### Productivity only starts with a "PR"
 
 Obviously, LLMs can write code extremely quickly; nobody denies that. If sheer volume of code is how you measure productivity, the LLM wins hands-down.
 
@@ -178,7 +177,7 @@ But I don't think anybody who's ever worked in any real production context would
 
 Similarly: it doesn't really matter _how many_ PRs you're opening or merging, if you're not taking into account the _quality_ of the code they contain—as any Open Source maintainer will tell you. There have probably never been more PRs opened, and yet, the average quality has likely never been lower.
 
-I think it's fair to say LLM-produced code is _not_ always as good as human code, for a few reasons:
+At this point, it's fair to say LLM-produced code is _not_ always as good as human code, for a few reasons:
 
 - For one: the studies above confirm it; they overwhelmingly point to a reduction in the quality and reliability of the code LLMs generate, relative to human control groups. Maybe that changes in the future, but it seems to be the truth for now, at least.<footnote>I have yet to encounter anyone who says LLM code is as good as human code, *and who also* reads all the code their LLM produces. Seems like mostly the people who believe it are taking it on faith.</footnote>
 
@@ -186,7 +185,7 @@ I think it's fair to say LLM-produced code is _not_ always as good as human code
 
 - For a third: LLM output is non-deterministic, and while that may not matter in many cases, it means any given implementation may be different every time. You either believe all implementations are essentially equal (which seems unreasonable), or you believe that matters.
 
-- But mostly: a human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a scalable approach.
+- But mostly: a human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a very scalable approach.
 
 At this point, LLM enthusiasts might argue that humans make mistakes, too. It's not as though we've ever been perfect, either.
 
@@ -194,9 +193,9 @@ And that's fair. We've all messed up. Most of us have taken prod down at one poi
 
 But I have two responses to that:
 
-1. **Nobody treats human code with such indifference**. I've never once, in all the hundreds and hundreds of PRs I've opened, had anyone express such low expectations of me, or had my mistakes with such blasé detachment. So this is an obvious double standard.<footnote>Very similar to how companies will not tolerate a human support agent lying to customers in the slightest, but will happily ignore an LLM chatbot that does the same thing.</footnote>
+1. **Nobody treats human code with such indifference**. I've never once, in over a decade of writing code, had anyone express such low expectations of me, or had my mistakes with such blasé detachment (no matter how fast I made them). So this is an obvious double standard.<footnote>Very similar to how companies will not tolerate a human support agent lying to customers in the slightest, but will happily ignore an LLM chatbot that does the same thing.</footnote>
 
-2. **Mistakes are how humans learn**. When something goes wrong in our code, that we wrote, there's a benefit; we discovered something about our codebase that made us wiser. We gained resilience. We leveled up. We probably helped other people learn along with us, too.
+2. **Mistakes are how humans learn**. When we make something go wrong, there's a benefit; we discovered something about our codebase that made us wiser. We gained resilience. We leveled up. We probably helped other people learn along with us, too.
 
 <CalloutPlusQuote>
 
@@ -204,7 +203,7 @@ A junior who made a mistake is one step closer to being a senior; a junior who l
 
 </CalloutPlusQuote>
 
-Some might also argue the reduction in quality is worth the bump in speed, which I suppose may be reasonable in some cases (but not all).
+Some might also argue the reduction in quality is worth the bump in speed, which I suppose may be reasonable in some cases (but certainly not all).
 
 But never mind that; let's set aside code quality for a minute.
 
@@ -219,7 +218,7 @@ Writing code generally isn't what slows teams down, and has never really been th
 
 **The job is so much more than that**. There's endless judgment, communication, and discernment that goes into the work. (And it feels like we all knew that, not so long ago.)
 
-It's evaluating different approaches and weighing tradeoffs. It's talking to the right people on five different teams to make everyone's in alignment. It's figuring out if what you're building is actually the right implementation of the right solution. And no matter how fast you can churn out code, _you can't skip past that part_.
+It's evaluating different approaches and weighing tradeoffs. It's talking to the right people on five different teams to make everyone's in alignment. It's figuring out if what you're building is actually the right implementation of the right solution. It's _design_. And no matter how fast you can churn out code, _you can't skip past that part_.
 
 Besides: PRs need to be reviewed, don't they? (Please say they need to be reviewed.)
 
@@ -255,9 +254,11 @@ This is probably why so many vibe-coded apps are abandoned or left to rot nearly
 
 It's probably also why, even though it's trivial to [slop-fork](https://www.slopfork.dev/) any software you want, most people don't seem to be doing it: because the moment you do, the maintenance and updates become _your_ problem.
 
-Is _your_ team prepared to shepherd the code, when it proliferates beyond human scale? Are you planning for the maintenance to increase in proportion with the throughput?
+Is _your_ team prepared to shepherd the code, if it proliferates by an order of magnitude beyond its current scale? Are you planning for the maintenance to increase in proportion with the throughput?
 
-What bugs and unforeseen side effects are hiding in the code that you haven't found yet? What happens if and when _those_ grow exponentially along with output?
+What bugs and unforeseen side effects are hiding in the code that you haven't found yet?
+
+What happens if (when) _those_ grow exponentially along with output?
 
 You likely don't know the answer to any of those questions yet, because they can often take weeks, months, or even years to be revealed. You don't fully know how well the work will hold up over time until it's actually, well, _held up over time_. (Or not).
 
@@ -281,7 +282,7 @@ When you're headed in the wrong direction, speed isn't an asset; it's a liabilit
 
 </CalloutPlusQuote>
 
-We've seen an exponential explosion in the amount of software created over the past couple of years, but outside of AI itself, there doesn't really seem to be much change in what people are using and relying on day-to-day. Disregard the AI industry—which is largely circular, and propped up almost entirely by venture capital—and I don't really see much that's changed in software in general in the last few years.
+We've seen an exponential explosion in the amount of software created over the past couple of years, but outside of AI itself, there doesn't really seem to be much change in what people are using and relying on day-to-day. Disregard the AI industry itself—which is largely circular, and propped up almost entirely by venture capital—and I don't really see much that's changed in software in general in the last few years.<footnote>In fact, I think you could make a compelling case that AI has actually _stagnated_ software, rather than accelerated it. I genuinely can't think of any major new app, feature, product, or improvement from the last 3–5 years that doesn't crudely amount to shoving AI into something that existed already. In some cases this has been undeniably useful, but in many—if not _most_—it's just unwanted noise.</footnote>
 
 It appears we're building more than ever, but that doesn't seem to correlate with any noticeable uptick in meaningful metrics like adoption, as far as I can tell. I have a theory why this might be:
 
@@ -328,13 +329,13 @@ One of the most effective ways they do this is by making you *feel* productive, 
 
 </CalloutPlusQuote>
 
-Crucially: consciously knowing this does *not* change your susceptibility, any more than knowing you're a heroin addict makes you immune to opioids. That's why objective, quantitative measurement, with a holistic definition, is so important.
+Crucially: consciously knowing this does *not* change your susceptibility, any more than knowing you're a heroin addict makes you immune to opioids. That's why objective, quantitative measurement, with a holistic definition of productivity, is so important.
 
 You probably won't even notice all the creeping technical and cognitive debt as it weighs you down, because by that point, you're most likely not thinking of it in those terms.
 
 It's so difficult to spot the downsides of LLM usage, because we're psychologically inclined to _feel_ that initial positive burst, and to ignore the dozens of tiny paper cuts that follow—even when they've bled the original gains away, drip by drip.
 
-But even if you _do_ see it happening, notice **your incentives are all pointing in the wrong direction by that point**. Now that parsing the code is much harder than it would've been before (because you wrote none of it), sunk cost pushes you further down the path of least resistance.
+But even if you _do_ see it happening, notice **your incentives are all pointing in the wrong direction by that point**. Now that parsing the code is much harder than it would've been before (because you wrote none of it), and now that maintenance is harder (because you have much more code to maintain), sunk cost pushes you further down the path of least resistance.
 
 Faced with the decision to start all over and do things a better way, or just press the button one more time to apply another layer of patch code you never read and don't understand, while staring down an ever-increasing backlog, all the inertia is pushing you further down the same path that got you here.
 
@@ -346,7 +347,7 @@ The less you understand, the more you trust AI. But the more you trust AI, the l
 
 </CalloutPlusQuote>
 
-Throughout this whole process, however, you'll probably still _feel_ incredibly productive—even when the data would suggest you're lying to yourself.
+Throughout this whole process, however, you'll probably still _feel_ incredibly productive—even when the data would suggest you're lying to yourself—because it's tough to tell the difference between being busy and being productive if you never take a step back and measure.
 
 But you probably don't measure, if you're in this deep. Because you probably trust how you _feel_ too much to believe reality could possibly contradict you.
 
@@ -391,7 +392,7 @@ But we're not; we're outsourcing all of those to AI, too.
 
 Why is anybody going to care about your company when everything about it is exactly the same homogenous AI output every other company has?
 
-The main winners in a gold rush are the ones selling pickaxes, and it sure seems to me like the token vendors are about the only ones who really stand to gain from most of this, by any coherent, holistic definition of productivity.
+The main winners in a gold rush are the ones selling pickaxes, and it sure seems to me like the token vendors are about the only ones who really stand to gain from most of this, if we're adhering to any coherent, holistic definition of productivity.
 
 But if (when) this whole bubble comes crashing down and token costs skyrocket: will you still have any idea what's going on in your codebase?
 
