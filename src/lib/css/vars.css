@@ -124,6 +124,7 @@ $fourxl: 144rem; */
 	--sixteenth-note: calc(var(--quarter-note) / 4);
 	--dotted-sixteenth-note: calc(var(--sixteenth-note) * 1.5);
 	--eighth-note: calc(var(--quarter-note) / 2);
+	--dotted-eighth-note: calc(var(--eighth-note) * 1.5);
 	--quarter-note: 1.25rem;
 	--dotted-quarter-note: calc(var(--quarter-note) * 1.5);
 	--half-note: calc(var(--quarter-note) * 2);

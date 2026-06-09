@@ -19,11 +19,11 @@
 		border-inline-start: 2px solid var(--neutral-lighter);
 		padding: 0;
 		padding-inline-start: var(--quarter-note);
-		padding-block: var(--eighth-note);
+		padding-block: var(--dotted-eighth-note);
 	}
 
 	@media (min-width: 92rem) {
-		margin-right: -15em;
+		margin-inline-end: -15em;
 		max-width: 18em;
 		padding-inline-start: 1.5rem;
 		margin-inline-start: var(--whole-note);
