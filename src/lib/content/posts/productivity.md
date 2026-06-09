@@ -175,7 +175,7 @@ Obviously, LLMs can write code extremely quickly; nobody denies that. If sheer v
 
 But I don't think anybody who's ever worked in any real production context would agree absolute lines of code is a useful proxy for productivity. (In fact, not so long ago, we mostly agreed the opposite was often true, and _fewer_ lines of code was often the superior signal.)
 
-Similarly: it doesn't really matter _how many_ PRs are getting opened—as just about any Open Source maintainer could tell you. There have probably never been more PRs opened on open-source repos, but maintainers are perhaps under more stress than ever. 
+Similarly: it doesn't really matter _how many_ PRs are getting opened—as just about any Open Source maintainer could tell you. There have probably never been more PRs opened on open-source repos, but maintainers seem to be under more stress than ever. 
 
 At this point, it's fair to say LLM-produced code is _not_ always as good as human code, for a few reasons:
 
@@ -218,7 +218,7 @@ Writing code generally isn't what slows teams down, and has never really been th
 
 **The job is so much more than that**. There's endless judgment, communication, and discernment that goes into the work. (And it feels like we all knew that, not so long ago.)
 
-It's evaluating different approaches and weighing tradeoffs. It's talking to the right people on five different teams to make everyone's in alignment. It's figuring out if what you're building is actually the right implementation of the right solution. It's _design_. And no matter how fast you can churn out code, _you can't skip past that part_.
+It's evaluating different approaches and weighing tradeoffs. It's talking to the right people on five different teams to make sure everyone's in alignment. It's figuring out if what you're building is actually the right implementation of the right solution. It's _design_. And no matter how fast you can churn out code, _you can't skip past that part_.
 
 Even if you take the rosy view that making the code part faster simply clears room for more of everything else: I doubt it actually works that way in practice. Even if you eliminate 100% of the coding, there's little reason to think productivity increases significantly as a result. We can all only give so much in a day, and replacing one mentally taxing activity for another doesn't actually raise that ceiling much at all.
 
@@ -234,7 +234,7 @@ Maybe your company's also given up on PR reviews (_he said with a shudder_). But
 
 Even then—even after you've closed the PR and shipped to production—the measure of your productivity can't be taken yet. In fact, it's really only beginning.
 
-You still have to maintain the code, fix any bugs that might pop up, manage updates, and all the other stuff that comes with ownership.
+You still have to maintain the code, fix any bugs that might pop up, manage updates, and all the other stuff that comes with ownership, now that it's being tested at real-world production scale.
 
 **The more you push out, the more you have to maintain**. The more you add, the more complicated your software becomes (which in turn, remember, lowers the effectiveness of LLMs). And inevitably, this means more and more of your time is spent working on code you've already "finished," as it boomerangs its way back to you.
 
