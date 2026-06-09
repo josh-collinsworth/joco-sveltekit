@@ -113,6 +113,7 @@ But before we get to all that: let's look at those studies I mentioned.
 
 I've compiled a list of all the notable studies and surveys I'm aware of, and paraphrased their findings below.
 
+
 ## Studies on the impact of LLMs on developer productivity
 
 - Early this year, [a study by Anthropic itself](https://www.anthropic.com/research/AI-assistance-coding-skills) found AI usage offered statistically insignificant benefits, in exchange for _significant_ tradeoff in skills built on the job.<footnote>Interesting to note: careful LLM usage was able to offset both impacts…meaning that the best-case scenario was, simply, no impact at all.</footnote> [Similar studies in other areas, like this one](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/) have noted the same effect; whatever speed LLMs might provide comes with a toll on cognition.
@@ -139,7 +140,7 @@ All of those studies take different approaches, but there are a few common threa
 - **LLM productivity benefits are highly situational**. LLMs excel at straightforward, time-consuming tasks. They're great at boilerplate and greenfield projects. And, they help less-experienced coders a lot more than experienced ones. The more you go outside that sweet spot, the less benefit there is.
 - **There's a pronounced gap between perception and reality**. This reaffirms my experience. LLM users _feel_ like the tool is doing much more for them than it actually is when measured objectively.
 - **Even where the gains are real, they come at a cost**. Several of the studies above (and others, in other fields) have confirmed LLM output is generally lower quality, in various ways. While it may be reasonable to think that particular gap is closing, there's another, even more concerning penalty: LLM usage inhibits cognition and understanding. Which makes sense, of course; your comprehension of the system comes mainly from small, everyday touchpoints. If you skip practice every day, you won't be ready for the game. And if you outsource your chance to speak the language, you quickly lose context and develop [cognitive debt](https://www.media.mit.edu/publications/your-brain-on-chatgpt/).<footnote>Since gains are most pronounced among novice developers, this creates a concerning catch-22: juniors have the most to gain from LLM usage, but those gains threaten to keep them reliant on the technology.</footnote>
-- **Most studies so far have only measured productivity at the individual level, and in a vacuum**. Measurement tends to begin and end at authoring code. Occasionally, they'll go a little further and measure up to a merged PR. But rarely, if ever, is a broader view, where impact is measured across an organization and over time, even attempted. And where it is, positive impacts tend to evaporate.
+- **Most studies so far have only measured productivity at the individual level, and in a vacuum**. Measurement tends to begin and end at authoring code. Occasionally, they'll go a little further and measure up to a merged PR. But rarely, if ever, is a broader view even attempted; one where impact is measured across an organization and over time, in a real production scenario. And in the rare instance where it is, positive impacts tend to evaporate.
 
 This last point might be the biggest takeaway, in my mind.
 
@@ -164,6 +165,16 @@ In fact, it feels like we're actively being told to _stop_ caring about any idea
 
 We're told to stop writing code by hand, not because our code wasn't good enough, or because we were doing something wrong, but simply because…it isn't as fast.
 
+The focus has quietly (or perhaps loudly) shifted from our output to our tooling, which seems very much backwards.
+
+<CalloutPlusQuote>
+
+Many leaders are largely overlooking the total impact of work in favor of rubber-stamping the workflow that led to it, which is the modern-era equivalent of measuring productivity by time spent at desk.
+
+</CalloutPlusQuote>
+
+This of course produces perverse incentives. In a famous example: [Amazon had to shut down its internal AI leaderboard](https://www.businessinsider.com/amazon-ai-leaderboard-tokenmaxxing-2026-5) when employees (very predictably) began to game the system, and burned through tokens as fast as possible on nothing productive at all.
+
 Whether LLM code is as good as human code is partially load-bearing here. After all, if the machine _can_ write code as well as humans (or even close), why _not_ do it faster?
 
 But that's actually only a small part of the overall question. There's much more to _actual productivity_ that we're (perhaps deliberately) overlooking right now.
@@ -175,7 +186,7 @@ Obviously, LLMs can write code extremely quickly; nobody denies that. If sheer v
 
 But I don't think anybody who's ever worked in any real production context would agree absolute lines of code is a useful proxy for productivity. (In fact, not so long ago, we mostly agreed the opposite was often true, and _fewer_ lines of code was often the superior signal.)
 
-Similarly: it doesn't really matter _how many_ PRs are getting opened—as just about any Open Source maintainer could tell you. There have probably never been more PRs opened on open-source repos, but maintainers seem to be under more stress than ever. 
+Similarly: it doesn't really matter _how many_ PRs are getting opened—as just about any Open Source maintainer could tell you. There have probably never been more PRs opened on open-source repos, but maintainers seem to be under more stress than ever.
 
 At this point, it's fair to say LLM-produced code is _not_ always as good as human code, for a few reasons:
 
