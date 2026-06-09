@@ -46,7 +46,7 @@ I had mainly just checked off a bunch of old to-dos, most of which were unfinish
 
 </CalloutPlusQuote>
 
-And even where they _did_ matter, I paid a cost for doing more, faster. I added a bunch of abandoned side-projects to the old pile, but unlike before, I didn't even come away with any new skills or experience.
+And even where they _did_ matter, I paid a cost for doing more, faster. I added a bunch of abandoned side projects to the old pile, but unlike before, I didn't even come away with any new skills or experience.
 
 If anything, it seemed like I knew _less_ than before.
 
@@ -74,7 +74,7 @@ But I still _wanted_ what the machine had. It triggered something in my brain. A
 
 Sometimes I'd feel a compulsion to fire up Claude Code and have it work on something, even when I had nothing in mind to accomplish.
 
-I'm very familiar with that sort of compulsion, and I recognized it as soon as I stepped back: I wanted to _play_ AI, like a video game. If I had no reason or goal in mind, I'd try to make one up. I just wanted more of that _feeling_, like I was accomplishing something unbelievably fast. (Not unlike a video game, actually.)
+I'm very familiar with that sort of compulsion, and I recognized it as soon as I stepped back: I wanted to _play_ AI, like a video game. If I had no reason or goal in mind, I'd try to make one up. I just wanted more of that _feeling_; that dopamine hit of accomplishing things unbelievably fast. (Not unlike a video game, actually.)
 
 All the work I had AI do for me could've been a fantastic learning opportunity. Instead, I mostly just traded my own potential growth for...a pile of junk, essentially. And I did it _happily_. Enthusiastically, even.
 
@@ -105,7 +105,7 @@ A lot of the supposed productivity gains from LLM usage seem to rely on a questi
 
 </CalloutPlusQuote>
 
-The studies that report the most impressive productivity boosts _also_ tend to have the most contrived notion of what it means. Often, all they measure is how fast participants can complete a simple coding exercise, or a basic greenfield "hello world" app.
+The studies that report the most impressive just to productivity _also_ tend to have the most contrived notion of what it means. Often, all they measure is how fast participants can complete a simple coding exercise, or a basic greenfield "hello world" app.
 
 Which is a partially accurate definition, I suppose. But it's missing a great deal, including _how well_ the task was done, what might have been traded for that burst of speed, and whether the findings can actually be applied to real-world scenarios, among other things.
 
@@ -139,7 +139,7 @@ All of those studies take different approaches, but there are a few common threa
 - **LLM productivity benefits are highly situational**. LLMs excel at straightforward, time-consuming tasks. They're great at boilerplate and greenfield projects. And, they help less-experienced coders a lot more than experienced ones. The more you go outside that sweet spot, the less benefit there is.
 - **There's a pronounced gap between perception and reality**. This reaffirms my experience. LLM users _feel_ like the tool is doing much more for them than it actually is when measured objectively.
 - **Even where the gains are real, they come at a cost**. Several of the studies above (and others, in other fields) have confirmed LLM output is generally lower quality, in various ways. While it may be reasonable to think that particular gap is closing, there's another, even more concerning penalty: LLM usage inhibits cognition and understanding. Which makes sense, of course; your comprehension of the system comes mainly from small, everyday touchpoints. If you skip practice every day, you won't be ready for the game. And if you outsource your chance to speak the language, you quickly lose context and develop [cognitive debt](https://www.media.mit.edu/publications/your-brain-on-chatgpt/).<footnote>Since gains are most pronounced among novice developers, this creates a concerning catch-22: juniors have the most to gain from LLM usage, but those gains threaten to keep them reliant on the technology.</footnote>
-- **Most studies so far have only measured productivity at the individual level, and in a vacuum**. Measurement tends to begin at authoring code and end at merging a PR. Rarely is a broader view, where impact is measured across an organization and over time, even attempted. But where it is, positive impacts tend to evaporate.
+- **Most studies so far have only measured productivity at the individual level, and in a vacuum**. Measurement tends to begin and end at authoring code. Occasionally, they'll go a little further and measure up to a merged PR. But rarely, if ever, is a broader view, where impact is measured across an organization and over time, even attempted. And where it is, positive impacts tend to evaporate.
 
 This last point might be the biggest takeaway, in my mind.
 
@@ -175,7 +175,7 @@ Obviously, LLMs can write code extremely quickly; nobody denies that. If sheer v
 
 But I don't think anybody who's ever worked in any real production context would agree absolute lines of code is a useful proxy for productivity. (In fact, not so long ago, we mostly agreed the opposite was often true, and _fewer_ lines of code was often the superior signal.)
 
-Similarly: it doesn't really matter _how many_ PRs you're opening or merging, if you're not taking into account the _quality_ of the code they contain—as any Open Source maintainer will tell you. There have probably never been more PRs opened, and yet, the average quality has likely never been lower.
+Similarly: it doesn't really matter _how many_ PRs are getting opened—as just about any Open Source maintainer could tell you. There have probably never been more PRs opened on open-source repos, but maintainers are perhaps under more stress than ever. 
 
 At this point, it's fair to say LLM-produced code is _not_ always as good as human code, for a few reasons:
 
@@ -219,6 +219,8 @@ Writing code generally isn't what slows teams down, and has never really been th
 **The job is so much more than that**. There's endless judgment, communication, and discernment that goes into the work. (And it feels like we all knew that, not so long ago.)
 
 It's evaluating different approaches and weighing tradeoffs. It's talking to the right people on five different teams to make everyone's in alignment. It's figuring out if what you're building is actually the right implementation of the right solution. It's _design_. And no matter how fast you can churn out code, _you can't skip past that part_.
+
+Even if you take the rosy view that making the code part faster simply clears room for more of everything else: I doubt it actually works that way in practice. Even if you eliminate 100% of the coding, there's little reason to think productivity increases significantly as a result. We can all only give so much in a day, and replacing one mentally taxing activity for another doesn't actually raise that ceiling much at all.
 
 Besides: PRs need to be reviewed, don't they? (Please say they need to be reviewed.)
 
@@ -294,13 +296,11 @@ Building things got cheap, but building *the right thing* didn't get any easier.
 
 Even perfect code can still make bad products.
 
-Does anybody _want_ it? Does anybody _care_?
+If all you did was build the wrong thing fast, could you really call that being "productive?"
 
-And if they don't—if you built the wrong thing entirely—could you really call that being "productive?"
+_Maybe_. Maybe if you're just using AI to launch things at the wall as fast as possible to see what sticks, you could call faster failure productive. But even then, it's worth asking: how long is this approach actually a net gain?
 
-_Maybe_. Maybe if you're just using AI to launch things at the wall as fast as possible to see what sticks, you could potentially call failure a step in the right direction. But even then, it's worth asking: is this approach actually a net gain?
-
-There's a finite limit to how often you can do the bad job quickly before it starts costing more than doing a good job slowly. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically in the first place?
+There's a finite limit to how often you can do the bad job quickly before it starts costing more than slowing down. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically in the first place?
 
 All of this is why shipping some code is only the beginning of the impact of your work. It's just barely entering the crucible. It's untested. So gauging your productivity at that point is at best premature, and at worst, an entirely inaccurate measure.
 
@@ -333,7 +333,7 @@ Crucially: consciously knowing this does *not* change your susceptibility, any m
 
 You probably won't even notice all the creeping technical and cognitive debt as it weighs you down, because by that point, you're most likely not thinking of it in those terms.
 
-It's so difficult to spot the downsides of LLM usage, because we're psychologically inclined to _feel_ that initial positive burst, and to ignore the dozens of tiny paper cuts that follow—even when they've bled the original gains away, drip by drip.
+It's so difficult to spot the downsides of LLM usage because we're psychologically inclined to _feel_ that initial positive burst, and to ignore the dozens of tiny paper cuts that follow—even when they've bled the original gains away, drip by drip.
 
 But even if you _do_ see it happening, notice **your incentives are all pointing in the wrong direction by that point**. Now that parsing the code is much harder than it would've been before (because you wrote none of it), and now that maintenance is harder (because you have much more code to maintain), sunk cost pushes you further down the path of least resistance.
 
