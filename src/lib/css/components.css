@@ -1,37 +1,32 @@
 .pull-quote {
-	float: right;
-	margin: var(--half-note) -12em var(--dotted-half-note) var(--half-note);
-	font-size: 1.3rem;
-	line-height: 1.4;
-	position: relative;
-	background: var(--paper);
-	overflow: hidden;
-	padding: 0 0 0.75rem 0;
-	font-family: var(--heading-font);
-	font-style: normal;
-	font-weight: normal;
-	max-width: 16em;
-	text-wrap: balance;
+	display: none;
 
 	@media (min-width: 82rem) {
+		float: right;
+		line-height: 1.3;
+		position: relative;
+		font-family: var(--heading-font);
+		font-style: normal;
+		font-weight: normal;
+		max-width: 18em;
+		text-wrap: balance;
 		display: block;
-		font-size: 1.4rem;
-		margin-right: calc(-10rem - 13vw);
+		font-size: var(--quarter-note);
+		margin-block-start: var(--dotted-sixteenth-note);
+		margin-block-end: var(--dotted-half-note);
+		margin-inline-end: calc(-10rem - 13vw);
+		margin-inline-start: var(--half-note);
+		border-inline-start: 2px solid var(--neutral-lighter);
+		padding: 0;
+		padding-inline-start: var(--quarter-note);
+		padding-block: var(--eighth-note);
 	}
 
 	@media (min-width: 92rem) {
-		margin-right: -13em;
+		margin-right: -15em;
 		max-width: 18em;
-	}
-
-	&:after {
-		content: '';
-		height: 2px;
-		width: 100%;
-		margin-left: -100%;
-		background: var(--accent-gradient);
-		bottom: 0;
-		position: absolute;
+		padding-inline-start: 1.5rem;
+		margin-inline-start: var(--whole-note);
 	}
 }
 

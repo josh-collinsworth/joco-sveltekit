@@ -78,10 +78,12 @@ $fourxl: 144rem; */
 	--orange: var(--orange-500);
 	--red: var(--orange-700);
 
-	--heading-font: 'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		'Helvetica Neue', Arial, sans-serif;
+	--heading-font:
+		'Averta-Std', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, 'Helvetica Neue', Arial, sans-serif;
 	--body-font: 'Alkes', Georgia, serif;
-	--code-font: 'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	--code-font:
+		'MonoLisa', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 	--body-font-weight: normal;
 	--body-font-size: 100%;
@@ -95,12 +97,16 @@ $fourxl: 144rem; */
 		--body-font-size: 125%; /* 20px */
 	}
 
-
-	--blue-to-yellow: #7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
+	--blue-to-yellow:
+		#7ba7bc, #75b1bf, #66c6b6, #4fd27b, #56e035, #acef1b, #faf008, #ffd100;
 	--accent-gradient: linear-gradient(to right, var(--blue-to-yellow));
 
-	@supports(background: linear-gradient(in oklab, white, black)) {
-		--accent-gradient: linear-gradient(to right in oklab, var(--blue-light) 10%, var(--yellow) 90%);
+	@supports (background: linear-gradient(in oklab, white, black)) {
+		--accent-gradient: linear-gradient(
+			to right in oklab,
+			var(--blue-light) 10%,
+			var(--yellow) 90%
+		);
 	}
 
 	--ink: var(--neutral-800);
@@ -116,14 +122,15 @@ $fourxl: 144rem; */
 	--margin: var(--quarter-note);
 
 	--sixteenth-note: calc(var(--quarter-note) / 4);
+	--dotted-sixteenth-note: calc(var(--sixteenth-note) * 1.5);
 	--eighth-note: calc(var(--quarter-note) / 2);
 	--quarter-note: 1.25rem;
 	--dotted-quarter-note: calc(var(--quarter-note) * 1.5);
 	--half-note: calc(var(--quarter-note) * 2);
-	--dotted-half-note: calc(var(--quarter-note) * 3);
+	--dotted-half-note: calc(var(--half-note) * 1.5);
 	--whole-note: calc(var(--quarter-note) * 4);
 	--tied-whole-note: calc(var(--quarter-note) * 5);
-	--dotted-whole-note: calc(var(--quarter-note) * 6);
+	--dotted-whole-note: calc(var(--whole-note) * 1.5);
 
 	--button-size: 2.2rem;
 	--button-background: var(--paper);

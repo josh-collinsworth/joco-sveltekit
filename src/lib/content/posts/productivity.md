@@ -1,7 +1,7 @@
 ---
 title: LLMs and performative productivity
 date: '2026-06-05'
-updated: '2026-06-08'
+updated: '2026-06-09'
 categories:
   - opinion
   - personal
@@ -105,7 +105,7 @@ A lot of the supposed productivity gains from LLM usage seem to rely on a questi
 
 </CalloutPlusQuote>
 
-The studies that report the most impressive just to productivity _also_ tend to have the most contrived notion of what it means. Often, all they measure is how fast participants can complete a simple coding exercise, or a basic greenfield "hello world" app.
+The studies that report the most impressive boost to productivity _also_ tend to have the most contrived notion of what it means. Often, all they measure is how fast participants can complete a simple coding exercise, or a basic greenfield "hello world" app.
 
 Which is a partially accurate definition, I suppose. But it's missing a great deal, including _how well_ the task was done, what might have been traded for that burst of speed, and whether the findings can actually be applied to real-world scenarios, among other things.
 
@@ -165,19 +165,19 @@ In fact, it feels like we're actively being told to _stop_ caring about any idea
 
 We're told to stop writing code by hand, not because our code wasn't good enough, or because we were doing something wrong, but simply because…it isn't as fast.
 
-The focus has quietly (or perhaps loudly) shifted from our output to our tooling, which seems very much backwards.
+The focus has quietly (or perhaps loudly) shifted from our _output_ to our _tooling_—from the end product to the specifics of the sausage-making—which seems very much backwards.
 
 <CalloutPlusQuote>
 
-Many leaders are largely overlooking the total impact of work in favor of rubber-stamping the workflow that led to it, which is the modern-era equivalent of measuring productivity by time spent at desk.
+Many leaders are largely overlooking the total impact of work in favor of rubber-stamping the workflow—which is the modern-era equivalent of measuring productivity solely by time-at-desk.
 
 </CalloutPlusQuote>
 
-This of course produces perverse incentives. In a famous example: [Amazon had to shut down its internal AI leaderboard](https://www.businessinsider.com/amazon-ai-leaderboard-tokenmaxxing-2026-5) when employees (very predictably) began to game the system, and burned through tokens as fast as possible on nothing productive at all.
+This of course produces perverse incentives. In a recent example: [Amazon had to shut down its internal AI leaderboard](https://www.businessinsider.com/amazon-ai-leaderboard-tokenmaxxing-2026-5) when employees (very predictably) began to game the system, and burned through tokens as fast as possible on nothing productive at all.
 
 Whether LLM code is as good as human code is partially load-bearing here. After all, if the machine _can_ write code as well as humans (or even close), why _not_ do it faster?
 
-But that's actually only a small part of the overall question. There's much more to _actual productivity_ that we're (perhaps deliberately) overlooking right now.
+But that's actually only a small part of the overall question. There's much more to _actual productivity_ that we're (perhaps deliberately) overlooking right now, as we focus on entirely the wrong thing.
 
 
 ### Productivity only starts with a "PR"
