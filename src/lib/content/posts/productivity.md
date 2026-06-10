@@ -319,13 +319,13 @@ But this is all assuming AI actually speeds up the iteration loop in the first p
 
 Why? Because you're moving faster _before_ the point you realize it's not worth further iteration, drop it, and move on...but that point moves _later in the process_.
 
-Previously, you would've paused before going too far—say, before implementing the login system—because you would've stopped to consider whether that was worthwhile before investing so much time and effort. You might have decided it wasn't.
+Previously, you would've paused before going too far—say, before implementing the login system—because you would've stopped to consider whether it was worthwhile to invest so much time and effort. You might have decided it wasn't.
 
-But when using AI, because the investment is far more trivial, you just keep going a lot longer than you would have, until the initial gains becomes a wash.
+But when using AI, because that investment is far more trivial, you just keep going a lot longer than you would have, until the initial gains become a wash.
 
 <CalloutPlusQuote>
 
-You probably won't iterate faster using AI; you'll likely just build much more fleshed-out failures, in roughly the same amount of time.
+There's a good chance you won't actually iterate faster using AI; it's likely you'll just build much more fleshed-out failures, in roughly the same amount of time.
 
 </CalloutPlusQuote>
 
