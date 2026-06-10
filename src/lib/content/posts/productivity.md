@@ -206,7 +206,7 @@ And that's fair. We've all messed up. Most of us have taken prod down at one poi
 
 But I have two responses to that:
 
-1. **Nobody treats human code with such indifference**. I've never once, in over a decade of writing code, had anyone express such low expectations of me, or had my mistakes with such blasé detachment (no matter how fast I made them). So this is an obvious double standard.<footnote>Very similar to how companies will not tolerate a human support agent lying to customers in the slightest, but will happily ignore an LLM chatbot that does the same thing.</footnote>
+1. **Nobody treats human code with such indifference**. I've never once, in over a decade of writing code, had anyone express such low expectations of me, or treat my mistakes with such blasé detachment (no matter how fast I made them). So this is an obvious double standard.<footnote>Very similar to how companies will not tolerate a human support agent lying to customers in the slightest, but will happily ignore an LLM chatbot that does the same thing.</footnote>
 
 2. **Mistakes are how humans learn**. When we make something go wrong, there's a benefit; we discovered something about our codebase that made us wiser. We gained resilience. We leveled up. We probably helped other people learn along with us, too.
 
@@ -255,7 +255,7 @@ Sure, you can use AI to speed through the work this time, too. But there's no gu
 
 This effect isn't unique to LLM usage, of course, but it's more acute in both frequency and likelihood. The more you use AI to push out code, the more little zombie tickets start punching their way out of the ground to shamble back for another bite of your brain—and the less you'll actually understand what's going wrong and why, if you outsourced your thinking, and with it, your mental grasp of the system.
 
-And remember: this happens more with bad code, but it still happens _even if the code is great_. Even excellent code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
+And remember: this still happens _even if the code itself is great_. Even excellent code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
 
 Maybe the ceiling was raised along with the floor, but it didn't disappear.
 
@@ -297,9 +297,9 @@ When you're headed in the wrong direction, speed isn't an asset; it's a liabilit
 
 </CalloutPlusQuote>
 
-We've seen an exponential explosion in the amount of software created over the past couple of years, but outside of AI itself, there doesn't really seem to be much change in what people are using and relying on day-to-day. Disregard the AI industry itself—which is largely circular, and propped up almost entirely by venture capital—and I don't really see much that's changed in software in general in the last few years.<footnote>In fact, I think you could make a compelling case that AI has actually _stagnated_ software, rather than accelerated it. I genuinely can't think of any major new app, feature, product, or improvement from the last 3–5 years that doesn't crudely amount to shoving AI into something that existed already. In some cases this has been undeniably useful, but in many—if not _most_—it's just unwanted noise.</footnote>
+We've seen an exponential explosion in the amount of software created over the past couple of years, but outside of AI itself, there doesn't really seem to be much change in what people are using and relying on day-to-day. Disregard the AI industry itself—which is largely circular, and propped up almost entirely by venture capital—and I don't really see much that's changed in software in general in the last few years.<footnote>In fact, I think you could make a compelling case that AI has actually _stagnated_ software, rather than accelerated it. I genuinely can't think of any major new app, feature, product, or improvement from the last 3–5 years that doesn't crudely amount to a different place to talk to AI. In some cases this has been undeniably useful, but in many—if not _most_—it's just unwanted noise.</footnote>
 
-It appears we're building more than ever, but that doesn't seem to correlate with any noticeable uptick in meaningful metrics like adoption, as far as I can tell. I have a theory why this might be:
+It appears we're building more than ever, but that doesn't seem to correlate with any noticeable uptick in meaningful metrics like adoption, as far as I can tell. If we're building more apps, we don't really seem to be using them. I have a theory why this might be:
 
 <CalloutPlusQuote>
 
