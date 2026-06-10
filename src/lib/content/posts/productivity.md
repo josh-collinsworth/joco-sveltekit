@@ -169,7 +169,7 @@ The focus has quietly (or perhaps loudly) shifted from our _output_ to our _tool
 
 <CalloutPlusQuote>
 
-Many leaders are overlooking the total impact of work in favor of rubber-stamping the workflow—which is the modern equivalent of measuring productivity solely by time-at-desk.
+Many leaders are overlooking the total impact of work in favor of rubber-stamping the workflow—which strikes me as the modern equivalent of measuring productivity solely by time-at-desk.
 
 </CalloutPlusQuote>
 
@@ -190,15 +190,17 @@ Similarly: it doesn't really matter _how many_ PRs are getting opened—as just 
 
 At this point, it's fair to say LLM-produced code is _not_ always as good as human code, for a few reasons:
 
-- For one: the studies above confirm it; they overwhelmingly point to a reduction in the quality and reliability of the code LLMs generate, relative to human control groups. Maybe that changes in the future, but it seems to be the truth for now, at least.<footnote>I have yet to encounter anyone who says LLM code is as good as human code, *and who also* reads all the code their LLM produces. Seems like mostly the people who believe it are taking it on faith.</footnote>
+1. The studies above confirm it; they overwhelmingly point to a reduction in the quality and reliability of the code LLMs generate, relative to human control groups. Maybe that changes in the future, but it seems to be the truth for now, at least.<footnote>I have yet to encounter anyone who says LLM code is as good as human code, *and who also* reads all the code their LLM produces. Seems like mostly the people who believe it are taking it on faith.</footnote>
 
-- For another: LLMs were trained on average code, and thus generally have average outputs.
+2. LLMs were trained on average code, and thus generally have average outputs. They're likely to throw React/NextJS at every problem, even when that's a horrible decision, just because that's what most mediocre developers would do.<footnote>React is a questionable choice for anything in 2026—Nuxt, SvelteKit, and others do virtually everything NextJS does, with _massively_ better performance (and less vendor lock-in)—but it's an _especially_ bad choice if you're letting an LLM write all the code anyway. Literally the only reason to pick React was because everybody knows it already; its the default. But when the reason to pick the default is gone, and your LLM already knows all the other options too, there's really no excuse _not_ to pick something actually, measurably better.</footnote>
 
-- For a third: LLM output is non-deterministic, and while that may not matter in many cases, it means any given implementation may be different every time. You either believe all implementations are essentially equal (which seems unreasonable), or you believe that matters.
+3. LLM output is non-deterministic, and while that may not matter in some cases, it means you're rolling the dice, to some degree. You either believe all implementations are essentially equal (which seems unreasonable), or you believe that matters.
 
-- For a fourth: virtually every engineer I know who's being forced to engage with LLM code in any way is _absolutely burned out_ right now, mainly by the losing fight over quality. (This is anecdotal, of course, but I think it matches broad industry sentiment, at least at the contributor level.) If the code were just as good or better, we could logically expect the _opposite_ effect; we would see a golden era of excellence and satisfaction. Dissenters would be the rare exception. Some people might be bummed they aren't doing the coding themselves anymore, but we'd at least see this balanced with an appreciation for things getting _better_. But yet, as far as I can see, everywhere I look, the most qualified and artful engineers are being driven out of the industry, because they didn't stop caring when everybody else did.
+4. Virtually every engineer I know who's being forced to engage with LLM code in any way is _absolutely burned out_ right now, mainly by the losing fight over quality. (This is anecdotal, of course, but I think it matches broad industry sentiment, at least at the contributor level.)
 
-- But mostly (and finally): a human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a very scalable approach.
+  If the code were just as good or better, we could logically expect the _opposite_ effect; we would see a golden era of excellence and satisfaction. Dissenters would be the rare exception. Some people might be bummed they aren't doing the coding themselves anymore, but we'd at least see this balanced with an appreciation for things getting _better_. But yet, as far as I can see, everywhere I look, the most qualified and artful engineers are being driven out of the industry, because they didn't stop caring when everybody else did.
+
+5. Mostly (finally): human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a very scalable approach.
 
 At this point, LLM enthusiasts might argue that humans make mistakes, too. It's not as though we've ever been perfect, either.
 
@@ -222,7 +224,7 @@ But never mind that; let's set aside code quality for a minute.
 
 Let's ignore all the points above, and assume code written by an LLM is always at least as good as human-authored code, if not better.
 
-Even in that scenario, we still have a whole bunch of problems.
+Even in that scenario, we still have a whole bunch of problems to deal with before we can actually consider what we're doing _productive_.
 
 
 ### Code has never been the bottleneck
@@ -251,13 +253,9 @@ You still have to maintain the code, fix any bugs that might pop up, manage upda
 
 **The more you push out, the more you have to maintain**. The more you add, the more complicated your software becomes (which in turn, remember, lowers the effectiveness of LLMs). And inevitably, this means more and more of your time is spent working on code you've already "finished," as it boomerangs its way back to you.
 
-Sure, you can use AI to speed through the work this time, too. But there's no guarantee this time goes any differently than the first time. You _still_ might not be done, and this one thing you were working on might still continue to leech away your time and energy.
-
 This effect isn't unique to LLM usage, of course, but it's more acute in both frequency and likelihood. The more you use AI to push out code, the more little zombie tickets start punching their way out of the ground to shamble back for another bite of your brain—and the less you'll actually understand what's going wrong and why, if you outsourced your thinking, and with it, your mental grasp of the system.
 
 And remember: this still happens _even if the code itself is great_. Even excellent code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
-
-Maybe the ceiling was raised along with the floor, but it didn't disappear.
 
 <CalloutPlusQuote>
 
@@ -265,7 +263,9 @@ No matter how fast you can build something, maintaining it is still an ongoing c
 
 </CalloutPlusQuote>
 
-This is probably why so many vibe-coded apps are abandoned or left to rot nearly as soon as they're built: building is fun, and practically free; maintenance is a slog, even with agents doing it.
+Just because the floor was raised, it doesn't mean the ceiling disappeared.
+
+This is probably why so many vibe-coded apps are abandoned nearly as soon as they're built: building is fun, and practically free (_for now_); maintenance is a slog, even with agents doing it.
 
 It's probably also why, even though it's trivial to [slop-fork](https://www.slopfork.dev/) any software you want, most people don't seem to be doing it: because the moment you do, the maintenance and updates become _your_ problem.
 
@@ -280,12 +280,9 @@ You likely don't know the answer to any of those questions yet, because they can
 Before that point, you have only a limited idea of how truly productive your work actually was.
 
 
-
 ### 10x faster in the wrong direction
 
-We're a few layers deep down our little theoretical rabbit hole at this point, so why not go one more?
-
-Let's say your LLM authored great code, super fast. Let's say it went through review without issue. It was merged into prod successfully. It's out there in the wild, and it's so good, you don't even have to touch it. It's bug-free and pristine.
+Let's say your LLM authored great code, super fast. It sped through review and was merged into prod successfully. It's out there in the wild, and it's so good, you don't even have to touch it. It's bug-free and pristine.
 
 Great! You still might have built the wrong thing.
 
@@ -297,9 +294,9 @@ When you're headed in the wrong direction, speed isn't an asset; it's a liabilit
 
 </CalloutPlusQuote>
 
-We've seen an exponential explosion in the amount of software created over the past couple of years, but outside of AI itself, there doesn't really seem to be much change in what people are using and relying on day-to-day. Disregard the AI industry itself—which is largely circular, and propped up almost entirely by venture capital—and I don't really see much that's changed in software in general in the last few years.<footnote>In fact, I think you could make a compelling case that AI has actually _stagnated_ software, rather than accelerated it. I genuinely can't think of any major new app, feature, product, or improvement from the last 3–5 years that doesn't crudely amount to a different place to talk to AI. In some cases this has been undeniably useful, but in many—if not _most_—it's just unwanted noise.</footnote>
+We've seen an exponential explosion in the amount of software created over the past few years, but outside of AI itself, it doesn't seem like much has changed for most people.<footnote>In fact, I think you could make a compelling case that AI has actually _stagnated_ software, rather than accelerated it. I genuinely can't think of any major new app, feature, product, or improvement from the last 3–5 years that doesn't crudely amount to a different place to talk to AI. In some cases this has been undeniably useful, but in many—if not _most_—it's just unwanted noise.</footnote> We're building way more things than ever before, but with very few exceptions, nobody really seems to be using them.
 
-It appears we're building more than ever, but that doesn't seem to correlate with any noticeable uptick in meaningful metrics like adoption, as far as I can tell. If we're building more apps, we don't really seem to be using them. I have a theory why this might be:
+I have a theory why this might be:
 
 <CalloutPlusQuote>
 
@@ -307,25 +304,23 @@ Building things got cheap, but building *the right thing* didn't get any easier.
 
 </CalloutPlusQuote>
 
-Even perfect code can still make bad products.
+Even perfect code can still make bad products. And if all you did was build the wrong thing fast, could you really call that being "productive?"
 
-If all you did was build the wrong thing fast, could you really call that being "productive?"
+_Maybe_. Maybe if you're just using AI to launch things at the wall as fast as possible to see what sticks, you could call faster failure productive. But even then, it's worth asking: how long is that approach actually a net gain?
 
-_Maybe_. Maybe if you're just using AI to launch things at the wall as fast as possible to see what sticks, you could call faster failure productive. But even then, it's worth asking: how long is this approach actually a net gain?
+There's a finite limit to how often you can do a bad job quickly before it starts costing more than slowing down would have. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically from the start?
 
-There's a finite limit to how often you can do a bad job quickly before it starts costing more than slowing down would have. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically in the first place?
+But this is all assuming AI actually speeds up the iteration loop in the first place—and while that seems like a sound theory on paper, there's reason to believe it might not always be the case in practice.
 
-But this is all assuming AI actually speeds up the iteration loop in the first place—and while that seems like a sound theory on paper, there's reason to believe it might not be the case at all in practice.
-
-Why? Because you're moving faster _before_ the point you realize it's not worth further iteration, drop it, and move on...but that point moves _later in the process_.
+Why? Because you're moving faster _before_ the point you realize it's not worth further iteration...but that point moves _later in the process_.
 
 Previously, you would've paused before going too far—say, before implementing the login system—because you would've stopped to consider whether it was worthwhile to invest so much time and effort. You might have decided it wasn't.
 
-But when using AI, because that investment is far more trivial, you just keep going a lot longer than you would have, until the initial gains become a wash.
+But when using AI, because that investment is far more trivial, you'll likely just keep going a lot longer than you would have otherwise—maybe even past the point where the initial gains are a wash.
 
 <CalloutPlusQuote>
 
-There's a good chance you won't actually iterate faster using AI; it's likely you'll just build much more fleshed-out failures, in roughly the same amount of time.
+There's a good chance you won't actually iterate faster using AI; you might just build much more fleshed-out failures, in roughly the same amount of time.
 
 </CalloutPlusQuote>
 
@@ -366,7 +361,9 @@ But even if you _do_ see it happening, notice **your incentives are all pointing
 
 Faced with the decision to start all over and do things a better way, or just press the button one more time to apply another layer of patch code you never read and don't understand, while staring down an ever-increasing backlog, all the inertia is pushing you further down the same path that got you here.
 
-Worse still: the less you actually take the time to read what the LLM is producing, the more you'll be tempted to trust it unquestioningly—and the less you'll be able to detect when it's doing something wrong.
+Worse: there's now a pressure to _keep the agent busy_. It feels like you're wasting time if you don't. So the priority shifts from building the right thing, the right way, to simply burning all the tokens you can.
+
+Compounding all of this: the less you actually take the time to read what the LLM is producing, the more you'll be tempted to trust it unquestioningly—and the less you'll be able to detect when it's doing something wrong.
 
 <CalloutPlusQuote>
 
@@ -378,9 +375,11 @@ Throughout this whole process, however, you'll probably still _feel_ incredibly 
 
 But you probably don't measure, if you're in this deep. Because you probably trust how you _feel_ too much to believe reality could possibly contradict you.
 
-It's much easier to just fudge the definition a little bit.
+It's much easier to just fudge the definition a little bit; I've generated a lot of code, so I'm productive. My agent's always working, so I'm productive.
 
-I still believe AI agents can be massively useful tools for software development—_productive_, even—when wielded carefully, in appropriate situations.
+I'm _stressed and busy_, so I must be productive.
+
+I still believe AI agents can be massively useful tools for software development, when wielded carefully, in appropriate situations.
 
 The problem is: they're not shaped for judicious application (and they're most _certainly_ not marketed that way); they're shaped to maximize your usage. And they work exceptionally well.
 
