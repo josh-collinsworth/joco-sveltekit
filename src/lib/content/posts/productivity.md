@@ -311,7 +311,19 @@ If all you did was build the wrong thing fast, could you really call that being 
 
 _Maybe_. Maybe if you're just using AI to launch things at the wall as fast as possible to see what sticks, you could call faster failure productive. But even then, it's worth asking: how long is this approach actually a net gain?
 
-There's a finite limit to how often you can do a bad job quickly before it starts costing more than slowing down would have. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically in the first place?<footnote>There's a separate argument to be made that AI won't actually save you any time even in a rapid prototype scenario anyway: you're moving faster _before_ the point you realize it's not worth further iteration and move on, but _that point moves later in the process_. Previously, you would've stopped before, say, implementing the login system. But when using AI, because that's much more trivial, you just keep going a lot longer than you would have, and the initial gain becomes a wash. You probably don't iterate much faster; you just get further into each iteration in the same amount of time.</footnote>
+There's a finite limit to how often you can do a bad job quickly before it starts costing more than slowing down would have. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically in the first place?
+
+Besides: AI probably won't actually speed you up even in a rapid prototype scenario.
+
+Why? Because you're moving faster _before_ the point you realize it's not worth further iteration, drop it, and move on...but that point moves _later in the process_.
+
+Previously, you would've stopped before, say, implementing the login system, because you would've stopped consider whether that was worthwhile before investing so much time and effort. But when using AI, because the investment is far more trivial, you just keep going a lot longer than you would have, and the initial gains becomes a wash. 
+
+<CalloutPlusQuote>
+
+You probably won't actually iterate faster using AI; you'll just build much more fleshed-out failures, in roughly the same amount of time.
+
+</CalloutPlusQuote>
 
 All of this is why shipping some code is only the beginning of the impact of your work. It's just barely entering the crucible. It's untested. So gauging your productivity at that point is at best premature, and at worst, an entirely inaccurate measure.
 
