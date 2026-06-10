@@ -1,7 +1,7 @@
 ---
 title: LLMs and performative productivity
 date: '2026-06-05'
-updated: '2026-06-09'
+updated: '2026-06-10'
 categories:
   - opinion
   - personal
@@ -169,7 +169,7 @@ The focus has quietly (or perhaps loudly) shifted from our _output_ to our _tool
 
 <CalloutPlusQuote>
 
-Many leaders are overlooking the total impact of work in favor of rubber-stamping the workflow—which is the modern-era equivalent of measuring productivity solely by time-at-desk.
+Many leaders are overlooking the total impact of work in favor of rubber-stamping the workflow—which is the modern equivalent of measuring productivity solely by time-at-desk.
 
 </CalloutPlusQuote>
 
@@ -196,7 +196,9 @@ At this point, it's fair to say LLM-produced code is _not_ always as good as hum
 
 - For a third: LLM output is non-deterministic, and while that may not matter in many cases, it means any given implementation may be different every time. You either believe all implementations are essentially equal (which seems unreasonable), or you believe that matters.
 
-- But mostly: a human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a very scalable approach.
+- For a fourth: virtually every engineer I know who's being forced to engage with LLM code in any way is _absolutely burned out_ right now, mainly by the losing fight over quality. (This is anecdotal, of course, but I think it matches broad industry sentiment, at least at the contributor level.) If the code were just as good or better, we could logically expect the _opposite_ effect; we would see a golden era of excellence and satisfaction. Dissenters would be the rare exception. Some people might be bummed they aren't doing the coding themselves anymore, but we'd at least see this balanced with an appreciation for things getting _better_. But yet, as far as I can see, everywhere I look, the most qualified and artful engineers are being driven out of the industry, because they didn't stop caring when everybody else did.
+
+- But mostly (and finally): a human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a very scalable approach.
 
 At this point, LLM enthusiasts might argue that humans make mistakes, too. It's not as though we've ever been perfect, either.
 
@@ -313,15 +315,17 @@ _Maybe_. Maybe if you're just using AI to launch things at the wall as fast as p
 
 There's a finite limit to how often you can do a bad job quickly before it starts costing more than slowing down would have. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically in the first place?
 
-Besides: AI probably won't actually speed you up even in a rapid prototype scenario.
+But this is all assuming AI actually speeds up the iteration loop in the first place—and while that seems like a sound theory on paper, there's reason to believe it might not be the case at all in practice.
 
 Why? Because you're moving faster _before_ the point you realize it's not worth further iteration, drop it, and move on...but that point moves _later in the process_.
 
-Previously, you would've stopped before, say, implementing the login system, because you would've stopped consider whether that was worthwhile before investing so much time and effort. But when using AI, because the investment is far more trivial, you just keep going a lot longer than you would have, and the initial gains becomes a wash. 
+Previously, you would've paused before going too far—say, before implementing the login system—because you would've stopped to consider whether that was worthwhile before investing so much time and effort. You might have decided it wasn't.
+
+But when using AI, because the investment is far more trivial, you just keep going a lot longer than you would have, until the initial gains becomes a wash.
 
 <CalloutPlusQuote>
 
-You probably won't actually iterate faster using AI; you'll just build much more fleshed-out failures, in roughly the same amount of time.
+You probably won't iterate faster using AI; you'll likely just build much more fleshed-out failures, in roughly the same amount of time.
 
 </CalloutPlusQuote>
 
