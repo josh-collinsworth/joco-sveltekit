@@ -235,7 +235,7 @@ ol {
 		width: max-content;
 		padding: 0.5em 0;
 		font-family: var(--heading-font);
-		border-top: 2px solid var(--neutral-light);
+		border-top: 2px solid var(--neutral-lighter);
 
 		b {
 			text-transform: uppercase;

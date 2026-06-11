@@ -13,7 +13,7 @@ hr {
 	margin: var(--half-note) 0;
 	height: 0;
 	border: 0;
-	border-top: 1px solid var(--neutral-light);
+	border-top: 2px solid var(--neutral-lighter);
 }
 
 .details {

@@ -111,7 +111,7 @@
 			{readableDate(meta.date)}
 			{#if meta.date != meta.updated}
 				<br />
-				<b>Updated:</b>
+				<b>Last updated:</b>
 				{readableDate(meta.updated)}
 			{/if}
 		</div>
