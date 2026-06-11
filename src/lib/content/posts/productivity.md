@@ -229,7 +229,9 @@ A junior who made a mistake is one step closer to being a senior; a junior who l
 
 Some might also argue the reduction in quality is worth the bump in speed, which I suppose may be reasonable in some cases (but certainly not all).
 
-But never mind that; let's set aside code quality for a minute.
+But never mind that.
+
+Let's set aside code quality for a minute.
 
 Let's ignore all the points above, and assume code written by an LLM is always at least as good as human-authored code, if not better.
 
@@ -254,20 +256,20 @@ If you're opening PRs faster than anyone can review them, you're not increasing 
 
 </CalloutPlusQuote>
 
-Maybe your company's also given up on PR reviews (_he said with a shudder_). But just for the sake of argument, let's say all your PRs are full of great code, they all coast through review quickly and seamlessly, and they all get merged into prod without issue (even though none of that sounds realistic to me).
+But just for the sake of argument, let's say all your PRs are full of great code, they all coast through review quickly and seamlessly, and they all get merged into prod without issue (even though none of that sounds realistic to me).
 
-Even then—even after you've closed the PR and shipped to production—the measure of your productivity can't be taken yet. In fact, it's really only beginning.
+Even then, the measure of your productivity can't be taken yet. In fact, it's really only beginning.
 
 
 ### The cost of maintenance
 
 You're not done once you've merged the code and it's running in production. You still have to _maintain_ the code, fix any bugs that might pop up, manage updates, and all the other stuff that comes with ownership, now that it's being tested at real-world production scale.
 
-**The more you push out, the more you have to maintain**. The more you add, the more complicated your software becomes (which in turn, remember, lowers the effectiveness of LLMs). And inevitably, this means more and more of your time is spent working on code you've already "finished," as it boomerangs its way back to you.
+**The more you push out, the more you have to maintain**. The more you add, the more complicated your software becomes—which in turn, remember, lowers the effectiveness of LLMs, and makes adding new features harder. And inevitably, this means more and more of your time is spent working on and around code you've already "finished," as it boomerangs its way back to you.
 
-This effect isn't unique to LLM usage, of course, but it's more acute in both frequency and likelihood. The more you use AI to push out code, the more little zombie tickets start punching their way out of the ground to shamble back for another bite of your brain—and the less you'll actually understand what's going wrong and why, if you outsourced your thinking, and with it, your mental grasp of the system.
+This effect isn't unique to LLM usage, of course, but it's more acute. The more you use AI to push out code, the more little zombie tickets start punching their way out of the ground to shamble back for another bite of your brain—and the less you'll actually understand what's going wrong and why, if you outsourced your thinking, and with it, your mental grasp of the system.
 
-And remember: this still happens _even if the code itself is great_. Even excellent code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
+And remember: this still happens _even if the code itself is great_. The best code still complicates your codebase. Even excellent code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
 
 <CalloutPlusQuote>
 
@@ -283,13 +285,9 @@ It's probably also why, even though it's trivial to [slop-fork](https://www.slop
 
 Is _your_ team prepared to shepherd the code, if it proliferates by an order of magnitude beyond its current scale? Are you planning for the maintenance to increase in proportion with the throughput?
 
-What bugs and unforeseen side effects are hiding in the code that you haven't found yet?
+What bugs and unforeseen side effects are hiding in the code that you haven't found yet? What happens if (when) _those_ grow exponentially along with output?
 
-What happens if (when) _those_ grow exponentially along with output?
-
-You likely don't know the answer to any of those questions yet, because they can often take weeks, months, or even years to be revealed. You don't fully know how well the work will hold up over time until it's actually, well, _held up over time_. (Or not).
-
-Before that point, you have only a limited idea of how truly productive your work actually was.
+Are you accounting for all of that, in your view of productivity?
 
 
 ### Speeding in the wrong direction
@@ -320,9 +318,9 @@ Even perfect code can still make bad products. And if all you did was build the 
 
 _Maybe_. Maybe if you're just using AI to launch things at the wall as fast as possible to see what sticks, you could call faster failure productive. But even then, it's worth asking: how long is that approach actually a net gain?
 
-There's a finite limit to how often you can do a bad job quickly before it starts costing more than slowing down would have. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically from the start?
+How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically from the start?
 
-But this is all assuming AI actually speeds up the iteration loop in the first place.
+But this is all assuming AI actually speeds up the iteration loop in the first place. And I think there's good reason to question even that.
 
 
 ### The iteration loop
