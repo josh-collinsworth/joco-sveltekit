@@ -178,11 +178,11 @@ Whether LLM code is as good as human code is partially load-bearing here; after 
 So let's poke at that notion a little, before moving on. (Because ultimately, it doesn't really matter much if we're not focused on the right things in the first place.)
 
 
-### Five good reasons to question LLM code quality
+### Five reasons to question LLM code quality
 
 The technology is moving quickly, and it's conceivable that at some point, LLMs may catch up to or overtake humans in code quality. At this point, however, it's fair to say that hasn't happened yet, for a few reasons:
 
-- The studies above overwhelmingly point to a reduction in the quality and reliability of the code LLMs generate, relative to human control groups. Maybe that changes in the future, but it seems to be the truth for now, at least.<footnote>I have yet to encounter anyone who says LLM code is as good as human code, *and who also* reads all the code their LLM produces. Seems like mostly the people who believe it are taking it on faith.</footnote>
+- The studies above overwhelmingly point to a reduction in the quality and reliability, relative to human control groups. Maybe that changes in the future, but it seems to be the truth for now, at least.<footnote>I have yet to encounter anyone who says LLM code is as good as human code, *and who also* reads all the code their LLM produces. Seems like mostly the people who believe it are taking it on faith.</footnote>
 
 - LLMs were trained on average code, and thus generally have average outputs. They're likely to throw React/NextJS at every problem, even when that's a horrible decision, just because that's what most mediocre developers would do.<footnote>React is a questionable choice for anything in 2026—Nuxt, SvelteKit, and others do virtually everything NextJS does, with _massively_ better performance (and less vendor lock-in)—but it's an _especially_ bad choice if you're letting an LLM write all the code anyway. Literally the only reason to pick React was because everybody knew it already; it's the default. But when the reason to pick the default is gone, and your LLM already knows all the other options too, there's very little excuse _not_ to pick something measurably better.</footnote> The case could probably be made that LLMs are better than the average developer, in many ways. But they're definitely not better than a good one with specialized knowledge.
 
@@ -194,13 +194,21 @@ The technology is moving quickly, and it's conceivable that at some point, LLMs 
 
 Think about it: if LLM code was reliably of higher quality than human code, then LLMs would be making software more accessible, more maintainable, more performant, more usable, and more reliable. And the people who care about those things would be _absolutely thrilled_ about it!
 
-Accessibility advocates, open source maintainers, performance engineers, UX people, support workers, SREs, QAEs—we could expect them all to be _elated_, if LLMs were actually moving the metrics they care about.
+Accessibility advocates, open source maintainers, performance engineers, UX workers, support, SREs, QAEs—we could expect them all to be _elated_, if LLMs were actually moving the metrics they care about.
 
 But that's pretty much the opposite of what's happening, as far as I can tell.
 
-Instead, everywhere I look, specialized craftspeople are overwhelmingly _burned out_ from fighting a losing fight to get people to _care_—a fight that's in many ways harder than ever.
+Instead, everywhere I look, specialized craftspeople are overwhelmingly _burned out_ from fighting a losing fight to get people to _care_—a fight that is, in many ways, harder than ever now.
 
 They feel like they're being driven out of the industry because they didn't stop caring when everybody else seemed to.
+
+<CalloutPlusQuote>
+
+If LLMs were actually writing such good code, we'd have better software by now.
+
+</CalloutPlusQuote>
+
+But we don't. In fact, most people would agree software largely seems worse than ever. The best software seems to have gotten worse; bad software has multiplied tenfold. And the people who know best and care most seem to be begging anyone who'll listen to see it's not going the right way right now.
 
 
 ### Reductionism
