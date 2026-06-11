@@ -139,7 +139,7 @@ All of those studies take different approaches, but there are a few common threa
 
 - **LLM productivity benefits are highly situational**. LLMs excel at straightforward, time-consuming tasks. They're great at boilerplate and greenfield projects. And, they help less-experienced coders a lot more than experienced ones. The more you go outside that sweet spot, the less benefit there is.
 - **There's a pronounced gap between perception and reality**. This reaffirms my experience. LLM users _feel_ like the tool is doing much more for them than it actually is when measured objectively.
-- **Even where the gains are real, they come at a cost**. Several of the studies above (and others, in other fields) have confirmed LLM output is generally lower quality, in various ways. While it may be reasonable to think that particular gap is closing, there's another, even more concerning penalty: LLM usage inhibits cognition and understanding. Which makes sense, of course; your comprehension of the system comes mainly from small, everyday touchpoints. If you skip practice every day, you won't be ready for the game. And if you outsource your chance to speak the language, you quickly lose context and develop [cognitive debt](https://www.media.mit.edu/publications/your-brain-on-chatgpt/).<footnote>Since gains are most pronounced among novice developers, this creates a concerning catch-22: juniors have the most to gain from LLM usage, but those gains threaten to keep them reliant on the technology.</footnote>
+- **Even where the gains are real, they come at a cost**. Several of the studies above (and others, in other fields) have confirmed LLM output is generally lower quality, in various ways. While it may be reasonable to think that particular gap is closing, there's another, even more concerning penalty: LLM usage inhibits cognition and understanding. Which makes sense, of course; your comprehension of the system comes mainly from small, everyday touchpoints. If you outsource your chance to speak the language, you quickly develop [cognitive debt](https://www.media.mit.edu/publications/your-brain-on-chatgpt/).<footnote>Since gains are most pronounced among novice developers, this creates a concerning catch-22: juniors have the most to gain from LLM usage, but those gains threaten to keep them reliant on the technology.</footnote>
 - **Most studies so far have only measured productivity at the individual level, and in a vacuum**. Measurement tends to begin and end at authoring code. Occasionally, they'll go a little further and measure up to a merged PR. But rarely, if ever, is a broader view even attempted; one where impact is measured across an organization and over time, in a real production scenario. And in the rare instance where it is, positive impacts tend to evaporate.
 
 This last point might be the biggest takeaway, in my mind.
@@ -165,11 +165,11 @@ In fact, it feels like we're actively being told to _stop_ caring about any idea
 
 We're told to stop writing code by hand, not because our code wasn't good enough, or because we were doing something wrong, but simply because…it isn't as fast.
 
-The focus has quietly (or perhaps loudly) shifted from our _output_ to our _tooling_—from the end product to the specifics of the sausage-making—which seems very much backwards.
+The focus has quietly (or perhaps loudly) shifted from our _output_ to our _process_—from the end product to the specifics of the sausage-making—which seems very much backwards.
 
 <CalloutPlusQuote>
 
-Many leaders are overlooking the total impact of work in favor of rubber-stamping the workflow—which strikes me as the modern equivalent of measuring productivity solely by time-at-desk.
+Many leaders are overlooking results in favor of rubber-stamping workflows—which strikes me as the modern equivalent of measuring productivity solely by time at-desk.
 
 </CalloutPlusQuote>
 
@@ -186,19 +186,19 @@ Obviously, LLMs can write code extremely quickly; nobody denies that. If sheer v
 
 But I don't think anybody who's ever worked in any real production context would agree absolute lines of code is a useful proxy for productivity. (In fact, not so long ago, we mostly agreed the opposite was often true, and _fewer_ lines of code was often the superior signal.)
 
-Similarly: it doesn't really matter _how many_ PRs are getting opened—as just about any Open Source maintainer could tell you. There have probably never been more PRs opened on open-source repos, but maintainers seem to be under more stress than ever.
+Similarly: it doesn't really matter _how many_ PRs are getting opened—as just about any Open Source maintainer could tell you. There have probably never been more PRs opened on open-source repos, but maintainers widely report they're under more stress than ever.
 
 At this point, it's fair to say LLM-produced code is _not_ always as good as human code, for a few reasons:
 
 1. The studies above confirm it; they overwhelmingly point to a reduction in the quality and reliability of the code LLMs generate, relative to human control groups. Maybe that changes in the future, but it seems to be the truth for now, at least.<footnote>I have yet to encounter anyone who says LLM code is as good as human code, *and who also* reads all the code their LLM produces. Seems like mostly the people who believe it are taking it on faith.</footnote>
 
-2. LLMs were trained on average code, and thus generally have average outputs. They're likely to throw React/NextJS at every problem, even when that's a horrible decision, just because that's what most mediocre developers would do.<footnote>React is a questionable choice for anything in 2026—Nuxt, SvelteKit, and others do virtually everything NextJS does, with _massively_ better performance (and less vendor lock-in)—but it's an _especially_ bad choice if you're letting an LLM write all the code anyway. Literally the only reason to pick React was because everybody knows it already; its the default. But when the reason to pick the default is gone, and your LLM already knows all the other options too, there's really no excuse _not_ to pick something actually, measurably better.</footnote>
+2. LLMs were trained on average code, and thus generally have average outputs. They're likely to throw React/NextJS at every problem, even when that's a horrible decision, just because that's what most mediocre developers would do.<footnote>React is a questionable choice for anything in 2026—Nuxt, SvelteKit, and others do virtually everything NextJS does, with _massively_ better performance (and less vendor lock-in)—but it's an _especially_ bad choice if you're letting an LLM write all the code anyway. Literally the only reason to pick React was because everybody knew it already; it's the default. But when the reason to pick the default is gone, and your LLM already knows all the other options too, there's very little excuse _not_ to pick something measurably better.</footnote>
 
 3. LLM output is non-deterministic, and while that may not matter in some cases, it means you're rolling the dice, to some degree. You either believe all implementations are essentially equal (which seems unreasonable), or you believe that matters.
 
 4. Virtually every engineer I know who's being forced to engage with LLM code in any way is _absolutely burned out_ right now, mainly by the losing fight over quality. (This is anecdotal, of course, but I think it matches broad industry sentiment, at least at the contributor level.)
 
-  If the code were just as good or better, we could logically expect the _opposite_ effect; we would see a golden era of excellence and satisfaction. Dissenters would be the rare exception. Some people might be bummed they aren't doing the coding themselves anymore, but we'd at least see this balanced with an appreciation for things getting _better_. But yet, as far as I can see, everywhere I look, the most qualified and artful engineers are being driven out of the industry, because they didn't stop caring when everybody else did.
+  If the code were just as good or better, we could logically expect the _opposite_ effect; we would see a golden era of excellence and satisfaction. Some devs might be bummed they aren't doing the coding themselves anymore, but we'd at least see this balanced with an appreciation for things getting _better_. OS maintainers, craftspeople, performance-minded engineers, and accessibility workers would all be thrilled to see improvements—but they aren't. And these folks, along with many other extremely good engineers, feel they're being driven out of the industry because they didn't stop caring when everybody else seemed to.
 
 5. Mostly (finally): human will inevitably have a more comprehensive understanding of the organization, the team, the problem space, the history, the users, and so on. An LLM's context window is only so wide, and it's unlikely to reliably account for all of those things that may exist entirely _outside_ the codebase and in the real world. Best-case: a human will need to actively provide all that context, and that's not a very scalable approach.
 
