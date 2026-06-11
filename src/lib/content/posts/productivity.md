@@ -250,7 +250,10 @@ Maybe your company's also given up on PR reviews (_he said with a shudder_). But
 
 Even then—even after you've closed the PR and shipped to production—the measure of your productivity can't be taken yet. In fact, it's really only beginning.
 
-You still have to maintain the code, fix any bugs that might pop up, manage updates, and all the other stuff that comes with ownership, now that it's being tested at real-world production scale.
+
+### The cost of maintenance
+
+You're not done once you've merged the code and it's running in production. You still have to _maintain_ the code, fix any bugs that might pop up, manage updates, and all the other stuff that comes with ownership, now that it's being tested at real-world production scale.
 
 **The more you push out, the more you have to maintain**. The more you add, the more complicated your software becomes (which in turn, remember, lowers the effectiveness of LLMs). And inevitably, this means more and more of your time is spent working on code you've already "finished," as it boomerangs its way back to you.
 
@@ -281,7 +284,7 @@ You likely don't know the answer to any of those questions yet, because they can
 Before that point, you have only a limited idea of how truly productive your work actually was.
 
 
-### 10x faster in the wrong direction
+### Speeding in the wrong direction
 
 Let's say your LLM authored great code, super fast. It sped through review and was merged into prod successfully. It's out there in the wild, and it's so good, you don't even have to touch it. It's bug-free and pristine.
 
@@ -311,13 +314,18 @@ _Maybe_. Maybe if you're just using AI to launch things at the wall as fast as p
 
 There's a finite limit to how often you can do a bad job quickly before it starts costing more than slowing down would have. How many fast, cheap iteration cycles will you burn through before it would've been more efficient to just do it slowly and methodically from the start?
 
-But this is all assuming AI actually speeds up the iteration loop in the first place—and while that seems like a sound theory on paper, there's reason to believe it might not always be the case in practice.
+But this is all assuming AI actually speeds up the iteration loop in the first place.
 
-Why? Because you're moving faster _before_ the point you realize it's not worth further iteration...but that point moves _later in the process_.
 
-Previously, you would've paused before going too far—say, before implementing the login system—because you would've stopped to consider whether it was worthwhile to invest so much time and effort. You might have decided it wasn't.
+### The iteration loop
 
-But when using AI, because that investment is far more trivial, you'll likely just keep going a lot longer than you would have otherwise—maybe even past the point where the initial gains are a wash.
+While the idea that AI lets you iterate more quickly seems like a sound theory on paper, there's reason to believe it might not always work out that way in practice.
+
+Yes, you're moving faster _before_ the point you realize it's not worth going further and you move on to the next iteration...but that point moves _later in the process_.
+
+Previously, you might've stopped before taking on too much—say, before implementing the login system—because you would've paused to consider whether it was worthwhile to invest so much time and effort. You might have decided it wasn't. Every addition comes with a cost, and so you get a natural chance to reevaluate, and potentially discover when things aren't working and it's time to move on.
+
+But when using AI, because that investment is far more trivial, you'll likely just keep going a lot longer than you would have otherwise—maybe even past the point where the initial gains become a wash.
 
 <CalloutPlusQuote>
 
