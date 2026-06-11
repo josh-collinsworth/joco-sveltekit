@@ -169,7 +169,7 @@ Many leaders are now overlooking results in favor of rubber-stamping workflows�
 
 </CalloutPlusQuote>
 
-These measures create predictably perverse incentives: I can easily churn out 10,000 lines of meaningless code, or sit at a desk 12 hours a day without getting anything at all done. And as we've recently seen: [Amazon workers can burn through staggering quantities of tokens](https://www.businessinsider.com/amazon-ai-leaderboard-tokenmaxxing-2026-5) on nothing productive at all.
+These measures create predictably perverse incentives: I can easily churn out 10,000 lines of meaningless code, or sit at a desk 12 hours a day without getting anything at all done. And as we've recently seen, [Amazon workers can burn through staggering quantities of tokens](https://www.businessinsider.com/amazon-ai-leaderboard-tokenmaxxing-2026-5) on nothing productive at all.
 
 Whether LLM code is as good as human code is partially load-bearing here. After all, if the machine _can_ write code as well as humans (or even close to it), why _not_ do that faster?
 
@@ -198,7 +198,7 @@ But that's pretty much the opposite of what's happening, as far as I can tell.
 
 Instead, everywhere I look, specialized craftspeople are overwhelmingly _burned out_ from fighting a losing fight to get people to _care_—a fight that is, in many ways, harder now than ever.
 
-I've lost track of how many exceptional developers have said they feel like they're being driven out of the industry because, essentially, they didn't stop caring when everybody else seemed to.
+I've lost track of how many exceptional developers I've heard admitting they feel like they're being driven out of the industry because, essentially, they didn't stop caring when everybody else seemed to.
 
 <CalloutPlusQuote>
 
@@ -206,7 +206,8 @@ If LLMs were actually writing such good code, we'd be seeing better software by 
 
 </CalloutPlusQuote>
 
-But we don't. In fact, most people seem to agree it's worse than ever. Across the board, the best software seems to have gotten worse, while bad software has proliferated tenfold.
+But we don't. In fact, most people seem to agree it's worse than ever. Across the board, the best software seems to have gotten worse. And while you could _maybe_ argue bad software is better now than it would've been, it's also proliferated tenfold.
+
 
 ### Reductionism
 
@@ -237,7 +238,7 @@ Even in that scenario, we still have a whole bunch of problems to deal with befo
 
 Writing code generally isn't what slows teams down, and has never really been the hard part of software engineering at all. I've never, in over a decade in tech, heard even the most jaded CTO cite "typing speed" as a major blocker.
 
-**The job is so much more than that**. There's endless judgment, communication, and discernment that goes into the work.
+_The job is so much more than that_. There's endless judgment, communication, and discernment that goes into the work.
 
 It's evaluating different approaches and weighing tradeoffs. It's talking to the right people on five different teams to make sure everyone's in alignment. It's figuring out if what you're building is actually the right implementation of the right solution. It's _design_. And no matter how fast you can churn out code, _you can't skip past that part_.
 
@@ -260,11 +261,11 @@ Even then, the measure of your productivity can't be taken yet. In fact, it's re
 
 You're not done once you've merged the code and it's running in production. You still have to _maintain_ the code, fix any bugs that might pop up, manage updates, and all the other stuff that comes with ownership, now that it's being tested at real-world production scale.
 
-**The more you push out, the more you have to maintain**. The more you add, the more complicated your software becomes—which in turn, remember, lowers the effectiveness of LLMs, and makes adding new features harder. And inevitably, this means more and more of your time is spent working on and around code you've already "finished," as it boomerangs its way back to you.
+The more you push out, the more you have to maintain. The more you add, the more complex your software becomes—which in turn, remember, lowers the effectiveness of LLMs, and makes adding new features harder. Inevitably, this means more and more of your time is spent working on and around code you've already "finished," as it boomerangs its way back to you.
 
 This effect isn't unique to LLM usage, of course, but it's more acute. The more code you merge, the more little zombie tickets start punching their way out of the ground to shamble back for another bite of your brain—and the less you'll actually understand what's going wrong and why, if you outsourced your mental grasp of the system. So you're more likely to cause future trip-ups, and the cycle accelerates.
 
-And remember: this still happens _even if the code itself is great_. The best code still complicates your codebase. Even excellent code needs maintenance. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
+But whether or not you're using an LLM, this still happens _even if the code itself is great_. Even excellent code adds overhead. So shipping out amazing PRs at record pace, even in a best-case scenario, offers only diminishing returns on overall productivity, because the more work you do, the more work you have to _keep doing_.
 
 <CalloutPlusQuote>
 
@@ -276,15 +277,15 @@ Just because the floor was raised, it doesn't mean the ceiling disappeared.
 
 This is probably why so many vibe-coded apps are abandoned nearly as soon as they're built: building is fun, and practically free (_for now_); maintenance is a slog, even with agents doing it.
 
-It's probably also why, even though it's trivial to [slop-fork](https://www.slopfork.dev/) pretty much anything you want, most people don't seem to be doing it: because the moment you do, the maintenance and updates become _your_ problem.
+It's probably also why, even though it's trivial to [slop-fork](https://www.slopfork.dev/) pretty much anything you want, most people don't seem to be doing it: because the moment you do, _you're_ on the hook for all the maintenance and updates.
 
-Is _your_ team prepared to shepherd the code, if it proliferates by an order of magnitude beyond its current scale? Are you planning for maintenance and complexity to increase in proportion with the throughput?
+Is your team prepared to shepherd the code, if it proliferates by an order of magnitude beyond its current scale? Are you planning for maintenance and complexity to increase in proportion with the throughput?
 
 What bugs and unforeseen side effects are hiding in the code that you haven't found yet? What happens if (when) _those_ grow exponentially along with output?
 
 Are you accounting for all of that in your view of productivity?
 
-Or are you just counting how fast it got built the first time?
+Or are you just looking at how fast it got built the first time?
 
 
 ### Speeding in the wrong direction
