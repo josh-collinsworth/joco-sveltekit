@@ -44,7 +44,9 @@ a {
 	text-decoration-color: var(--blue-dark);
 	text-decoration-thickness: 1px;
 	text-underline-offset: 0.115em;
-	transition: color 0.1s, text-decoration-color 0.05s;
+	transition:
+		color 0.1s,
+		text-decoration-color 0.05s;
 
 	.dark & {
 		text-decoration-color: var(--blue-light);
@@ -209,15 +211,6 @@ ol {
 }
 
 .post {
-	h2::before {
-		content: '';
-		width: var(--whole-note);
-		height: 0.125em;
-		background: currentColor;
-		display: block;
-		margin: 0 0 var(--eighth-note);
-	}
-
 	.cover-image {
 		margin: 0;
 		border: 1px solid var(--neutral-dark);
