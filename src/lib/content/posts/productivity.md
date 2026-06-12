@@ -431,7 +431,7 @@ The main winners in a gold rush are the ones selling pickaxes, and it sure seems
 
 But remember: LLM costs are heavily subsidized right now, and the prices won't (_can't_) stay this way. If and when that whole bubble bursts and token costs skyrocket: will you still have any idea what's going on in your codebase?
 
-Will you still be valuable, in a scenario where agents cost 10–20 times what they do now?
+Will your skills still be valuable, in a scenario where agents cost 10–20 times what they do now?
 
 I've strayed into prediction. But no matter what the future holds: be careful how you measure your own productivity—and be sure you _are_ measuring it. You can't trust yourself if you don't.
 
