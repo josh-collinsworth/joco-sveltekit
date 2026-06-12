@@ -35,7 +35,7 @@ But when I got done with all that, I had to wonder: **could I really call any of
 - Most of the other updates weren't really _needed_. The changes just made me feel good, while making little to no difference on the user side of the software. (_And even though I'd migrated to the newest version of Nuxt, all my Nuxt knowledge was still out of date_.)
 - The new features weren't actually being used
 - The greenfield projects were quickly abandoned
-- I didn't really need the tests that bad, and I wasn't quite sure whether they were doing the anything worthwhile in the first place
+- I didn't really need the tests that bad, and I wasn't quite sure whether they were doing anything worthwhile in the first place
 - I didn't know what had caused the bugs, or what the fixes had been
 
 <CalloutPlusQuote>
