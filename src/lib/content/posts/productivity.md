@@ -196,7 +196,7 @@ Think about it: if LLM code was reliably of higher quality than human code, then
 
 Accessibility advocates, open source maintainers, performance engineers, UX workers, reliability engineers, support teams, QA—we could expect them all to be _elated_, if LLMs were actually moving the metrics they care about.
 
-But that's pretty much the opposite of what's happening, as far as I can tell.
+But that's [pretty much the opposite of what's happening](https://webaim.org/projects/million/).
 
 Instead, everywhere I look, specialized craftspeople are overwhelmingly _burned out_ from fighting a losing fight to get people to _care_—a fight that is, in many ways, harder now than ever.
 
