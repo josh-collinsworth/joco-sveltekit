@@ -1,7 +1,7 @@
 ---
 title: LLMs and performative productivity
 date: '2026-06-05'
-updated: '2026-06-11'
+updated: '2026-06-12'
 categories:
   - opinion
   - personal
@@ -115,6 +115,8 @@ I've compiled a list of the notable studies and surveys I'm aware of, and paraph
 - Early this year, [a study by Anthropic itself](https://www.anthropic.com/research/AI-assistance-coding-skills) found AI usage offered statistically insignificant benefits, in exchange for _significant_ tradeoff in skills built on the job.<footnote>Interesting to note: careful LLM usage was able to offset both impacts…meaning that the best-case scenario was, simply, no impact at all.</footnote> [Similar studies in other areas, like this one](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/) have noted the same effect; whatever speed LLMs might provide comes with a toll on cognition.
 
 - In a survey also from earlier this year, [CEOs overwhelmingly admitted little to no correlation between AI adoption and company-wide productivity gains](https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study/).
+
+- [This 2026 report](https://pages.faros.ai/hubfs/AI_Engineering_Report_2026_The_Acceleration_Whiplash_Faros.pdf) found that while AI increased the overall amount of work being done, it also lowered quality in several ways. Code that was eventually reworked or deleted increased nearly tenfold, while the likelihood of bugs and other incidents nearly _tripled_.<footnote>In fairness: this report was conducted by a company with a monetary stake in highlighting these issues, so there's reason to question it. However, the scope and methodology are sound enough to warrant inclusion.</footnote>
 
 - [A 2025 study](https://arxiv.org/abs/2507.09089) found that using AI made developers _feel_ 24% faster—but in reality, actually made them 19% _slower_.<footnote>An updated study was attempted this year, with potentially different results, but the researchers have thus far been unable to get quality data.</footnote>
 
