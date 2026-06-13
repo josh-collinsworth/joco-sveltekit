@@ -429,7 +429,7 @@ Why is anybody going to care about the company when everything about it is exact
 
 The main winners in a gold rush are the ones selling pickaxes, and it sure seems to me like the token vendors are about the only ones who really stand to gain from most of this, if we're adhering to any coherent, holistic definition of productivity.
 
-But remember: LLM costs are heavily subsidized right now, and the prices won't (_can't_) stay this way. (And this is all to say nothing of other risks, like prompt injection, data leaks, model degradation, and outages, just to name a few.) If and when that whole bubble bursts and token costs skyrocket: will you still have any idea what's going on in your codebase?
+But remember: LLM costs are heavily subsidized right now, and the prices won't (_can't_) stay this way. (And this is all to say nothing of other LLM-specific risks, like prompt injection, model collapse, and outages, just to name a few.) If and when that whole bubble bursts and token costs skyrocket: will you still have any idea what's going on in your codebase?
 
 Will your skills still be valuable, in a scenario where agents cost 10–20 times what they do now?
 
