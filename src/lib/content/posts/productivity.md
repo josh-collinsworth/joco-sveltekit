@@ -29,7 +29,7 @@ Armed with this newfound power, I accomplished a flurry of tasks I either wasn't
 
 That all sounds fantastic, of course. It _felt_ fantastic.
 
-But when I got done with all that, I had to wonder: **could I really call any of that _productive_**?
+But when I got done with all that, I had to wonder: **could I really call all of that _productive_**?
 
 - At work, I didn't understand the codebases I was working in, and though I was contributing to them, I gained no real context about them. I was opening PRs, but I couldn't really speak well to what was in them. I was constantly afraid I'd messed something up without realizing it, and I learned virtually nothing about the unfamiliar languages
 - Most of the other updates weren't really _needed_. The changes just made me feel good, while making little to no difference on the user side of the software. (_And even though I'd migrated to the newest version of Nuxt, all my Nuxt knowledge was still out of date_.)
@@ -62,7 +62,7 @@ If I'm being honest with myself, what I was doing was often more theatrical than
 
 But being honest with myself, it turns out, was actually a lot more difficult than it should have been.
 
-Intellectually, I knew it was questionable. But emotionally, I _loved_ it.
+Intellectually, I knew what I was doing was questionable. But emotionally, I _loved_ it.
 
 I loved using my agent like a guilty pleasure. I wanted to keep using it, any chance I got.
 
@@ -95,9 +95,7 @@ Regardless: this assumption has always surprised me a bit, because it seems to c
 
 Among such attempts, I'm aware of none that's come back with an unqualified "yes." Whatever gains LLMs might offer, they're always situational, and always come with tradeoffs.
 
-Muddying the waters further: few of the studies take a holistic view of productivity, by examining impact on a broad scale. But the more they do, the less benefit they're able to find.
-
-Often, all they measure is how fast participants can complete a simple coding exercise, or a basic greenfield "hello world" app—far from a real-world measure.
+Muddying the waters further: few take a holistic view of productivity. Often, all they measure is how fast participants can complete a simple coding exercise, or a basic greenfield "hello world" app. But the more they zoom out to real-world scale, the less benefit they report.
 
 <CalloutPlusQuote>
 
