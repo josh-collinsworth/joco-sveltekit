@@ -1,7 +1,7 @@
 ---
 title: LLMs and performative productivity
 date: '2026-06-05'
-updated: '2026-06-12'
+updated: '2026-06-13'
 categories:
   - opinion
   - personal
