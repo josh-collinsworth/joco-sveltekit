@@ -421,7 +421,7 @@ Not for me, if I'm not advancing and honing my skills. Certainly not for the jun
 
 Not for your company, if it's severing its own developer pipeline, and all its engineering output is essentially a regression to the mean.
 
-If all we're doing is using the same AI tools every other company's also using, our software is nothing special under the hood. In that case, we'd need to lean heavily on other differentiators—marketing, design, customer service, etc.—
+If all we're doing is using the same AI tools every other company's also using, our software is nothing special under the hood. In that case, we'd need to lean heavily on other differentiators; marketing, design, customer service, etc.—
 
 —But we're not. We're outsourcing all of those to AI, too.
 
@@ -429,7 +429,7 @@ Why is anybody going to care about the company when everything about it is exact
 
 The main winners in a gold rush are the ones selling pickaxes, and it sure seems to me like the token vendors are about the only ones who really stand to gain from most of this, if we're adhering to any coherent, holistic definition of productivity.
 
-But remember: LLM costs are heavily subsidized right now, and the prices won't (_can't_) stay this way. If and when that whole bubble bursts and token costs skyrocket: will you still have any idea what's going on in your codebase?
+But remember: LLM costs are heavily subsidized right now, and the prices won't (_can't_) stay this way. (And this is all to say nothing of other risks, like prompt injection, data leaks, model degradation, and outages, just to name a few.) If and when that whole bubble bursts and token costs skyrocket: will you still have any idea what's going on in your codebase?
 
 Will your skills still be valuable, in a scenario where agents cost 10–20 times what they do now?
 
