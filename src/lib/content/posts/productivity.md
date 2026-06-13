@@ -206,7 +206,7 @@ If LLMs were actually writing such good code, we'd be seeing better software by 
 
 </CalloutPlusQuote>
 
-But we don't. In fact, most people seem to agree it's worse than ever. Across the board, the best software seems to have gotten worse. And while you could _maybe_ argue bad software is better now than it would've been, it's also proliferated tenfold.
+But we don't. In fact, many people seem to agree it's worse than ever. Across the board, the best software seems to have gotten worse. And while you could _maybe_ argue bad software is better now than it would've been, it's also proliferated tenfold.
 
 
 ### Reductionism
