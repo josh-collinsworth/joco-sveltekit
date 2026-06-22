@@ -181,6 +181,65 @@
 
 		<article>
 			<div class="sticky">
+				<h2>Deno Deploy</h2>
+
+				<p>
+					All-new branding and interface design for
+					<a href="https://deno.com/deploy">Deno Deploy</a>, Deno's serverless
+					platform for JavaScript and TypeScript applications.
+				</p>
+			</div>
+
+			<div class="design-gallery">
+				<figure>
+					<div class="logo-box">
+						<img
+							class="dark-only"
+							src="/images/projects/deno/deploy-full-dark.svg"
+							alt="Deno Deploy logo"
+						/>
+						<img
+							class="light-only"
+							src="/images/projects/deno/deploy-full-light.svg"
+							alt="Deno Deploy logo"
+						/>
+					</div>
+					<figcaption>
+						<a href="https://deno.com/deploy">Deno Deploy</a> logo (2025)
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="/images/projects/deploy-dashboard.webp"
+						alt="A screenshot of the Deno Deploy dashboard, showing a list of projects under my personal organization account. The URL is console.deno.com."
+						width="2560"
+						height="2377"
+						style="filter: drop-shadow(2px 3px 6px #5f616433);"
+					/>
+					<figcaption>The Deno Deploy app dashboard</figcaption>
+				</figure>
+
+				<img
+					src="/images/projects/deploy-dashboard-overview.webp"
+					alt="A screenshot of a Deno Deploy app overview page, showing production metrics for throughput, latency, and error rate, alongside a list of recent production builds."
+					width="2558"
+					height="1376"
+					style="filter: drop-shadow(2px 3px 6px #5f616433); margin: 0;"
+				/>
+
+				<img
+					src="/images/projects/deploy-dashboard-sandbox.webp"
+					alt="A screenshot of a Deno Deploy sandbox detail page, showing a running sandbox with its CPU time, memory time, wall clock time, and HTTP request count, plus a list of sandbox events."
+					width="2560"
+					height="1536"
+					style="filter: drop-shadow(2px 3px 6px #5f616433); margin: 0;"
+				/>
+			</div>
+		</article>
+
+		<article>
+			<div class="sticky">
 				<h2>Recent design work</h2>
 
 				<p>
@@ -208,6 +267,47 @@
 					</figcaption>
 				</figure>
 
+				<hr />
+
+				<figure>
+					<div class="logo-box logo-box--canvas">
+						<img
+							src="/images/projects/claw-patrol-logo.svg"
+							alt="Claw Patrol logo"
+						/>
+					</div>
+					<figcaption>
+						Logo for <a href="https://clawpatrol.dev">Claw Patrol</a>, a secure
+						firewall for agents.
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="/images/projects/claw-patrol-homepage.webp"
+						alt="A screenshot of the Claw Patrol homepage, headlined The missing option between babysitting and YOLO mode, with the tagline The security firewall for any agent, an install command, and an isometric stack of integration logos."
+						style="border: 1px solid;"
+						width="2528"
+						height="1930"
+					/>
+					<figcaption>
+						<a href="https://clawpatrol.dev">Claw Patrol</a> homepage
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="/images/projects/claw-patrol-analytics.webp"
+						alt="A screenshot of the Claw Patrol analytics dashboard, showing request counts, latency charts, and top routes for an agent's traffic."
+						style="border: 1px solid;"
+						width="2560"
+						height="2374"
+					/>
+					<figcaption>The Claw Patrol analytics dashboard</figcaption>
+				</figure>
+
+				<hr />
+
 				<div class="interactive-showcase">
 					<figure>
 						<LoFiDino backgroundTheme="rain" />
@@ -225,37 +325,6 @@
 						</figcaption>
 					</figure>
 				</div>
-
-				<hr />
-
-				<figure>
-					<div class="logo-box">
-						<img
-							class="dark-only"
-							src="/images/projects/deno/deploy-full-dark.svg"
-							alt="Deno logo"
-						/>
-						<img
-							class="light-only"
-							src="/images/projects/deno/deploy-full-light.svg"
-							alt="Deno logo"
-						/>
-					</div>
-					<figcaption>
-						<a href="https://deno.com/deploy">Deno Deploy</a> logo (2025)
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img
-						src="/images/projects/deploy-dashboard.webp"
-						alt="A screenshot of the Deno Deploy dashboard, showing a list of projects under my personal organization account. The URL is console.deno.com."
-						width="2560"
-						height="2377"
-						style="filter: drop-shadow(2px 3px 6px #5f616433);"
-					/>
-					<figcaption>The Deno Deploy app dashboard</figcaption>
-				</figure>
 
 				<hr />
 
@@ -555,6 +624,12 @@
 					max-height: 4rem;
 					margin-inline: auto;
 				}
+			}
+
+			.logo-box--canvas {
+				/* Claw Patrol's brand canvas color, matching clawpatrol.dev and its
+				   screenshots, so the dark logo stays legible in dark mode. */
+				background-color: #fbf8f1;
 			}
 
 			.jsr-logo {

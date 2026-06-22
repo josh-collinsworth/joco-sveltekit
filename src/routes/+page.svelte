@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
+	import ClawPatrolMark from '$lib/components/icons/ClawPatrolMark.svelte'
 	import DenoMarkCustom from '$lib/components/icons/DenoMarkCustom.svelte'
 	import DeployMark from '$lib/components/icons/DeployMark.svelte'
 	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
@@ -111,6 +112,13 @@
 			</a>
 			<a href="https://jsr.io" class="icon icon--jsr" aria-label="JSR">
 				<JsrLogo />
+			</a>
+			<a
+				href="https://clawpatrol.dev"
+				class="icon icon--claw-patrol"
+				aria-label="Claw Patrol"
+			>
+				<ClawPatrolMark />
 			</a>
 		</div>
 
@@ -335,7 +343,7 @@
 
 		@media (min-width: 32rem) {
 			max-width: 32rem;
-			grid-template-columns: repeat(5, minmax(0, 1fr));
+			grid-template-columns: repeat(6, minmax(0, 1fr));
 			grid-column-start: 1;
 			grid-column: 1 / -1;
 			grid-row: 9 / 10;
