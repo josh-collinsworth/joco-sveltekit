@@ -35,8 +35,8 @@
 
 		<h2>What I do</h2>
 		<p class="big-copy">
-			I’m a frontend developer and designer who works across code, design, and
-			messaging, distilling complexity into simplicity.
+			I’m a frontend developer and graphic designer who works across
+			engineering, design, and messaging to clarify complexity.
 		</p>
 
 		<h2>Where I do it</h2>
@@ -126,10 +126,10 @@
 			<section>
 				<h3 class="list-heading" id="links-list">More</h3>
 				<ul aria-labelledby="links-list">
+					<li><a href="/projects">Work showcase</a></li>
+					<li><a href="/blog">Blog</a></li>
 					<li><a href="/about-me">More about me</a></li>
 					<li><a href="/resume">Resume/CV</a></li>
-					<li><a href="/blog">My blog</a></li>
-					<li><a href="/projects">Some of my projects</a></li>
 					<li><a href="/contact">Get in touch</a></li>
 				</ul>
 			</section>
