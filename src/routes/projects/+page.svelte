@@ -209,23 +209,12 @@
 					</figcaption>
 				</figure>
 
-				<figure>
-					<img
-						src="/images/projects/deploy-new-app.webp"
-						alt="A screenshot of the Deno Deploy 'Create a new application' page, showing options to choose a GitHub repository, set an app name and deployment targets, alongside an app config panel, routing details, and a map of selected regions."
-						width="2558"
-						height="2314"
-						style="filter: drop-shadow(2px 3px 6px #5f616433);"
-					/>
-					<figcaption>The Deno Deploy new application page</figcaption>
-				</figure>
-
 				<img
-					src="/images/projects/deploy-dashboard-overview.webp"
-					alt="A screenshot of a Deno Deploy app overview page, showing production metrics for throughput, latency, and error rate, alongside a list of recent production builds."
+					src="/images/projects/deploy-new-app.webp"
+					alt="A screenshot of the Deno Deploy 'Create a new application' page, showing options to choose a GitHub repository, set an app name and deployment targets, alongside an app config panel, routing details, and a map of selected regions."
 					width="2558"
-					height="1376"
-					style="filter: drop-shadow(2px 3px 6px #5f616433); margin: 0;"
+					height="2314"
+					style="filter: drop-shadow(2px 3px 6px #5f616433);"
 				/>
 
 				<img
