@@ -211,13 +211,13 @@
 
 				<figure>
 					<img
-						src="/images/projects/deploy-dashboard.webp"
-						alt="A screenshot of the Deno Deploy dashboard, showing a list of projects under my personal organization account. The URL is console.deno.com."
-						width="2560"
-						height="2377"
+						src="/images/projects/deploy-new-app.webp"
+						alt="A screenshot of the Deno Deploy 'Create a new application' page, showing options to choose a GitHub repository, set an app name and deployment targets, alongside an app config panel, routing details, and a map of selected regions."
+						width="2558"
+						height="2314"
 						style="filter: drop-shadow(2px 3px 6px #5f616433);"
 					/>
-					<figcaption>The Deno Deploy app dashboard</figcaption>
+					<figcaption>The Deno Deploy new application page</figcaption>
 				</figure>
 
 				<img
