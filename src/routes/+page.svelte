@@ -36,7 +36,7 @@
 		<h2>What I do</h2>
 		<p class="big-copy">
 			I’m a frontend developer and graphic designer who works across
-			engineering, design, and messaging to clarify complexity.
+			engineering, design, and messaging.
 		</p>
 
 		<h2>Where I do it</h2>
@@ -70,13 +70,6 @@
 			</li>
 
 			<li class="big-copy">
-				I’m the designer behind the <a href="https://deno.com/brand"
-					>Deno logo and brand</a
-				>, plus <a href="https://deno.com/deploy">Deno Deploy</a>
-				and <a href="https://jsr.io">JSR</a>
-			</li>
-
-			<li class="big-copy">
 				Sometimes something I write on
 				<a href="/blog">my blog</a> gets popular for a little bit
 				<small>(for whatever reason)</small>
@@ -86,6 +79,12 @@
 				I’ve
 				<a href="/about-me#appearances">appeared on a few podcasts</a>
 				<small>(usually about one of those blog posts)</small>
+			</li>
+
+			<li class="big-copy">
+				I made these logos, among others <small
+					>(and generally had a hand in the things they stand for, too)</small
+				>
 			</li>
 		</ul>
 
@@ -323,9 +322,10 @@
 				}
 
 				small {
-					font-size: 0.75em;
+					font-size: 0.65em;
 					font-style: italic;
 					color: var(--neutral-mid);
+					position: relative;
 				}
 			}
 		}
@@ -353,7 +353,7 @@
 		@media (min-width: 96rem) {
 			gap: var(--dotted-quarter-note);
 			margin-block-start: var(--dotted-half-note);
-			max-width: 34rem;
+			max-width: 40rem;
 		}
 
 		.icon {
