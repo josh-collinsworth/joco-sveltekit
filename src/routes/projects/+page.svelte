@@ -79,12 +79,6 @@
 					style="aspect-ratio: 1200 / 1697"
 				/>
 				<img
-					src="/images/projects/quina-screenshot-0.png"
-					alt=""
-					width="2360"
-					height="1640"
-				/>
-				<img
 					src="/images/projects/quina-screenshot-1.png"
 					alt=""
 					width="2360"
@@ -97,10 +91,10 @@
 					height="1664"
 				/>
 				<img
-					src="/images/projects/quina-screenshot-4.png"
+					src="/images/projects/quina-screenshot-4.webp"
 					alt=""
-					width="1640"
-					height="1588"
+					width="1920"
+					height="1080"
 				/>
 			</div>
 		</article>
@@ -209,12 +203,23 @@
 					</figcaption>
 				</figure>
 
+				<figure>
+					<img
+						src="/images/projects/deploy-dashboard.webp"
+						alt="A screenshot of the Deno Deploy dashboard, showing a list of projects under my personal organization account. The URL is console.deno.com."
+						width="2560"
+						height="2377"
+						class="project-screenshot"
+					/>
+					<figcaption>The Deno Deploy app dashboard</figcaption>
+				</figure>
+
 				<img
 					src="/images/projects/deploy-new-app.webp"
 					alt="A screenshot of the Deno Deploy 'Create a new application' page, showing options to choose a GitHub repository, set an app name and deployment targets, alongside an app config panel, routing details, and a map of selected regions."
 					width="2558"
 					height="2314"
-					style="filter: drop-shadow(2px 3px 6px #5f616433);"
+					class="project-screenshot"
 				/>
 
 				<img
@@ -222,7 +227,7 @@
 					alt="A screenshot of a Deno Deploy sandbox detail page, showing a running sandbox with its CPU time, memory time, wall clock time, and HTTP request count, plus a list of sandbox events."
 					width="2560"
 					height="1536"
-					style="filter: drop-shadow(2px 3px 6px #5f616433); margin: 0;"
+					class="project-screenshot"
 				/>
 			</div>
 		</article>
@@ -275,7 +280,7 @@
 					<img
 						src="/images/projects/claw-patrol-homepage.webp"
 						alt="A screenshot of the Claw Patrol homepage, headlined The missing option between babysitting and YOLO mode, with the tagline The security firewall for any agent, an install command, and an isometric stack of integration logos."
-						style="border: 1px solid;"
+						class="project-screenshot"
 						width="2528"
 						height="1930"
 					/>
@@ -288,7 +293,7 @@
 					<img
 						src="/images/projects/claw-patrol-analytics.webp"
 						alt="A screenshot of the Claw Patrol analytics dashboard, showing request counts, latency charts, and top routes for an agent's traffic."
-						style="border: 1px solid;"
+						class="project-screenshot"
 						width="2560"
 						height="2374"
 					/>
@@ -334,7 +339,7 @@
 					<img
 						src="/images/projects/jsr-io.webp"
 						alt="A screenshot of JSR.io, the JavaScript package registry."
-						style="border: 1px solid;"
+						class="project-screenshot"
 						width="2544"
 						height="2038"
 					/>
@@ -349,7 +354,7 @@
 					<img
 						src="/images/projects/javascript-tm.webp"
 						alt="A screenshot of JavaScript.tm, the site to free JavaScript from Oracle's trademark."
-						style="border: 1px solid;"
+						class="project-screenshot"
 						width="2544"
 						height="2958"
 					/>
@@ -392,6 +397,7 @@
 						title="Live demo of the starter, from sveltekit-static-starter.netlify.app"
 						width="100%"
 						height="800"
+						style="border: 1px solid;"
 					></iframe>
 					<figcaption>
 						<a href="/demos/easing">joshcollinsworth.com/demos/easing</a>

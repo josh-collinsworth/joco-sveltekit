@@ -63,3 +63,7 @@ input[type='checkbox'] {
 .dark .light-only {
 	display: none;
 }
+
+.project-screenshot {
+	filter: drop-shadow(2px 3px 6px #5f616433);
+}
