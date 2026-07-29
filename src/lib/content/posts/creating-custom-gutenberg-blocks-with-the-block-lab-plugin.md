@@ -20,7 +20,7 @@ excerpt: Block Lab is a WordPress plugin that simplifies the process of creating
   import SideNote from '$lib/components/SideNote.svelte'
 </script>
 
-I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in my post on [going headless with Gridsome](https://api.joshcollinsworth.com/a-new-headless-site-with-gridsome/), but I find it to be such a handy plugin that I thought I'd write just a bit more in depth on what it does and how to use it, as well as how I've adapted it specifically to my workflow in writing content for a headless WordPress site.
+I wrote briefly about [Block Lab](https://wordpress.org/plugins/block-lab/) in my post on [going headless with Gridsome](https://joshcollinsworth.com/blog/a-new-headless-site-with-gridsome), but I find it to be such a handy plugin that I thought I'd write just a bit more in depth on what it does and how to use it, as well as how I've adapted it specifically to my workflow in writing content for a headless WordPress site.
 
 ## What is Block Lab and what does it do?
 
@@ -154,7 +154,7 @@ Technically, your block is available to choose in the block editor at this point
 
 ### Create a template file for your custom block
 
-In order to display your custom block (either in the block editor or on the front end of the site), you'll need to create a PHP template file for it. Don't panic, though. As I've already mentioned: the beautiful thing about Block Lab is that you don't need to know anything about PHP to create custom blocks. Just a little HTML and CSS is enough. All you'll need to know is where to find your theme's folder, and how to add files to it. (And it may go without saying, but be sure you're using a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) or your own custom theme before you attempt this, or your work will probably be overwritten next time your theme updates.)
+In order to display your custom block (either in the block editor or on the front end of the site), you'll need to create a PHP template file for it. Don't panic, though. As I've already mentioned: the beautiful thing about Block Lab is that you don't need to know anything about PHP to create custom blocks. Just a little HTML and CSS is enough. All you'll need to know is where to find your theme's folder, and how to add files to it. (And it may go without saying, but be sure you're using a [child theme](https://joshcollinsworth.com/blog/wordpress-child-theme-explanation/) or your own custom theme before you attempt this, or your work will probably be overwritten next time your theme updates.)
 
 <PullQuote>
 The beautiful thing about Block Lab is that you don’t need to know anything about PHP to create custom blocks. Just a little HTML and CSS is&nbsp;enough.

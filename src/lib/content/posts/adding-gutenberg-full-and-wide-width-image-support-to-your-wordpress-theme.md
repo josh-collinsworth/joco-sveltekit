@@ -29,7 +29,7 @@ Here's a visual example of what I mean:
 
 ## Adding Theme Support
 
-Adding support for wide- and full-width images is up to the theme developer. Fortunately, from the backend, it's dead simple; just add this line to the theme's `functions.php` file (please be sure to use a [child theme](https://api.joshcollinsworth.com/wordpress-child-theme-explanation/) as appropriate):
+Adding support for wide- and full-width images is up to the theme developer. Fortunately, from the backend, it's dead simple; just add this line to the theme's `functions.php` file (please be sure to use a [child theme](https://joshcollinsworth.com/blog/wordpress-child-theme-explanation) as appropriate):
 
 ```php
 //functions.php
