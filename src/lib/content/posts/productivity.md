@@ -1,7 +1,7 @@
 ---
 title: LLMs and performative productivity
 date: '2026-06-05'
-updated: '2026-06-13'
+updated: '2026-08-01'
 categories:
   - opinion
   - personal
@@ -72,7 +72,9 @@ But I still _wanted_ what the machine had. It triggered something in my brain. I
 
 Sometimes I'd feel a compulsion to fire up Claude Code and have it work on something, even when I had nothing in mind to accomplish. At times, I'd even catch myself about to ask AI to help me skip past things in _real life_, it had become so habitual. _Hey Claude, do these dishes for me_.
 
-I'm very familiar with that sort of compulsion, and I recognized it as soon as I stepped back: I wanted to _play_ AI, like a video game. I craved more of that _feeling_; that dopamine hit of accomplishing things unbelievably fast. (Not unlike a video game, actually.)
+I'm very familiar with that sort of compulsion, and I recognized it as soon as I stepped back: I wanted to _play_ AI, like a video game. I wanted that dopamine hit of _feeling like_ I was accomplishing things unbelievably fast. (Not unlike a video game, actually.)
+
+It wasn't just the _result_ I was after; it was also the feeling. And that should've been a major warning that my priorities were out of alignment.
 
 All the work I had AI do for me could've been a fantastic learning opportunity. Instead, I mostly just traded my own potential growth for...a pile of junk, essentially. And I did it _happily_. Enthusiastically, even.
 
