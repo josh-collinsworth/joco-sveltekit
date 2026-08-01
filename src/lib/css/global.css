@@ -41,6 +41,11 @@ main:focus {
 	background: var(--yellow);
 }
 
+html {
+	/* Prevent unpainted edges from showing through */
+	background: var(--paper);
+}
+
 body {
 	font-family: var(--body-font);
 	color: var(--ink);
