@@ -28,7 +28,12 @@ const config = {
 	kit: {
 		adapter: adapter({
 			fallback: '404.html'
-		})
+		}),
+		prerender: {
+			// The at:// links in blog post heads (see scripts/sync-standard-site.js)
+			// aren't parseable as URLs, which would otherwise fail the build
+			handleInvalidUrl: 'warn'
+		}
 	},
 
 	compilerOptions: {
