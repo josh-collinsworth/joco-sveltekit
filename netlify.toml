@@ -2,6 +2,13 @@
   publish = "build"
   command = "vite build"
 
+# Production builds first sync AT Protocol records for standard.site
+# (see scripts/sync-standard-site.js). Requires the ATPROTO_APP_PASSWORD
+# environment variable, set in the Netlify UI. --soft-fail means a sync
+# failure (like a Bluesky outage) logs an error but never blocks a deploy.
+[context.production]
+  command = "node scripts/sync-standard-site.js --soft-fail --prune && vite build"
+
 # ---
 # Redirects
 # ---
