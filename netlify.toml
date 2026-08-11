@@ -156,6 +156,13 @@
 # Headers
 # ---
 
+# The standard.site publication verification endpoint has no file
+# extension, so we set its content type explicitly
+[[headers]]
+  for = "/.well-known/site.standard.publication"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
 [[headers]]
   for = "/*"
   [headers.values]

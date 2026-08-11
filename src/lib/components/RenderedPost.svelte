@@ -3,6 +3,7 @@
 
 	import { dev } from '$app/environment'
 	import { appendScriptToHead, readableDate } from '$lib/assets/js/utils'
+	import standardSite from '$lib/data/standard-site.json'
 	import Comments from '$lib/components/Comments.svelte'
 	import Main from '$lib/components/Main.svelte'
 	import Bio from '$lib/components/posts/Bio.svelte'
@@ -17,6 +18,12 @@
 	}
 
 	let { PostContent, meta }: Props = $props()
+
+	// AT Protocol record for this post, if one has been synced
+	// (see scripts/sync-standard-site.js)
+	let documentAtUri: string | undefined = $derived(
+		(standardSite.documents as Record<string, string>)[meta.slug]
+	)
 
 	const defaultImagePath = `/images/site-image.png`
 	let imagePath: string = $derived(
@@ -87,6 +94,9 @@
 		property="og:url"
 		content="https://joshcollinsworth.com/blog/{meta.slug}/"
 	/>
+	{#if documentAtUri}
+		<link rel="site.standard.document" href={documentAtUri} />
+	{/if}
 </svelte:head>
 
 <Main>
