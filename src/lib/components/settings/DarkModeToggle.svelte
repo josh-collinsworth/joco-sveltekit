@@ -1,9 +1,9 @@
 <script lang="ts">
-	import LightDarkIcon from '../icons/LightDarkIcon.svelte'
 	import { browser } from '$app/environment'
 	import { Themes } from '$lib/data/constants'
 	import { appState } from '$lib/data/store.svelte'
-	import { onMount, tick } from 'svelte'
+	import { onMount } from 'svelte'
+	import LightDarkIcon from '../icons/LightDarkIcon.svelte'
 
 	let isDarkMode: boolean = $derived(appState.theme === Themes.Dark)
 
@@ -12,20 +12,25 @@
 	// There's also some code in app.html to help avoid unwanted flashes of dark/light
 	const toggleDarkMode = async (): Promise<void> => {
 		appState.theme = isDarkMode ? Themes.Light : Themes.Dark
+		const userPrefersDarkMode = window.matchMedia(
+			'(prefers-color-scheme: dark)'
+		).matches
+		if (!browser) return
 
-		if (browser) {
+		if (
+			(appState.theme === Themes.Dark && userPrefersDarkMode) ||
+			(appState.theme === Themes.Light && !userPrefersDarkMode)
+		) {
+			window.localStorage.removeItem('theme')
+		} else {
 			window.localStorage.setItem('theme', JSON.stringify(appState.theme))
-
-			// Not exactly sure why this is needed but without it, the first click fails.
-			await tick()
-
-			if (isDarkMode) {
-				document.documentElement.classList.add('dark')
-				document.documentElement.classList.remove('light')
-			} else {
-				document.documentElement.classList.remove('dark')
-				document.documentElement.classList.add('light')
-			}
+		}
+		if (isDarkMode) {
+			document.documentElement.classList.add('dark')
+			document.documentElement.classList.remove('light')
+		} else {
+			document.documentElement.classList.remove('dark')
+			document.documentElement.classList.add('light')
 		}
 	}
 
