@@ -187,7 +187,7 @@ In his post, Bramus also points to [a tri-state implementation by Vale](https://
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-It's certainly clever; it _appears_ to be a two-state toggle, but defaults to system preference by having _neither_ option selected. If you _do_ pick either theme, you can click it again to remove it, which causes the toggle to again fall back to the system default.
+It's certainly clever; it _appears_ to be a two-state toggle, but defaults to system preference by having _neither_ option selected. If you _do_ pick either theme, you can click it again to remove it, which causes the toggle to once more fall back to the system default.
 
 I get why that feels nice. If somebody wanted to use this on their personal website or something, I'd say "cool! Go for it!" It's neat.
 
