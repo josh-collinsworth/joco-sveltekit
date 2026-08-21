@@ -210,7 +210,7 @@ After all of this, we we circle back once again to the original post, because de
 
 - **If a toggle is a part of the main UI, make it a two-state toggle**. This serves users who simply want to change the theme from whatever it happens to be at the moment, which will be the overwhelming majority of users, and the main purpose of any control that's featured in the main user interface. Don't give somebody configuration when they're just looking for the light switch.
 
-- **If it's in a settings or account page, an explicit three-state toggle is probably better**. If a user is in the mindset of setting up an app how they prefer, or choosing for their account, the choice is warranted. In those cases, users are deciding what experience they want to have _in the future_, and not just at this specific moment.
+- **If it's in a settings or account page, an explicit three-state toggle is probably better**. If a user is in the mindset of setting up an app how they prefer, or choosing for their account, the choice is warranted. In those cases, users are deciding what experience they want to have _in the future_, and not just at this specific moment. (And, we have the space to dedicate to labeling each option clearly.)
 
 Further, I'd say any app or site a user might be looking at all day long, or multiple times a day—Slack or GitHub, for example—probably warrants a three-way toggle. Most sites and apps won't fall into this category, but some will.
 
