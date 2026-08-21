@@ -6,6 +6,7 @@ categories:
   - design
   - personal
   - opinion
+  - advice
 coverImage: 'what-i-wish.png'
 coverWidth: 48
 coverHeight: 29

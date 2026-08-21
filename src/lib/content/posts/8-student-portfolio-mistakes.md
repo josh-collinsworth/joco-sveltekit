@@ -5,6 +5,7 @@ updated: '2021-01-19'
 categories:
   - design
   - opinion
+  - advice
 coverImage: 'Negative-Space.png'
 coverWidth: 4
 coverHeight: 3

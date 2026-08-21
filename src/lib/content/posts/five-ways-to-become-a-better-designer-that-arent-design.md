@@ -5,6 +5,7 @@ updated: '2020-05-18'
 categories:
   - design
   - opinion
+  - advice
 coverImage: 'toa-heftiba-195458-1-1.jpg'
 coverWidth: 80
 coverHeight: 51

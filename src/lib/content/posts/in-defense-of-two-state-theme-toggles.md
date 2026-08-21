@@ -4,6 +4,8 @@ date: '2026-8-21'
 updated: '2026-8-21'
 categories:
   - opinion
+  - web
+  - design
 excerpt: "There's a lively debate going on over whether theme toggles should have two options (light/dark) or three, with an added \"system\" option. I maintain two-state toggles are better in most cases (though not all), and that the case for a third option rests mainly on problems most users don't actually have."
 coverImage: "two-state.webp"
 coverWidth: 1920

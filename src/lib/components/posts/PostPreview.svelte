@@ -1,23 +1,24 @@
 <script lang="ts">
+	import { readableDate } from '$lib/assets/js/utils'
 	import type Post from '$lib/types/post'
+	import ExternalLink from '../icons/ExternalLink.svelte'
 	import Tag from '../tags/Tag.svelte'
 	import TagList from '../tags/TagList.svelte'
-	import ExternalLink from '../icons/ExternalLink.svelte'
-	import { readableDate } from '$lib/assets/js/utils'
 
 	interface Props {
 		external?: boolean
 		post: Post
+		index: number
 	}
 
-	let { external = false, post }: Props = $props()
+	let { external = false, post, index }: Props = $props()
 
 	let slugPath: string = $derived(external ? '' : '/blog/')
 
 	let computedURL: string = $derived(slugPath + post.slug)
 </script>
 
-<li>
+<li style="animation-delay: {0.25 + index * 0.2}s">
 	<article class="post-preview">
 		<a href={computedURL} data-sveltekit-preload-code class="image-link">
 			{#if post.coverImage}
@@ -79,7 +80,20 @@
 </li>
 
 <style>
+	@keyframes slide_up_in {
+		from {
+			opacity: 0;
+			transform: translateY(16px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
 	li {
+		opacity: 0;
+		animation: slide_up_in 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 		margin: 0 0 var(--half-note);
 
 		@media (min-width: 66rem) {

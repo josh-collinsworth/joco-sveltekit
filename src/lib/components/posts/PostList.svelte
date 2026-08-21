@@ -11,8 +11,8 @@
 </script>
 
 <ul class="no-bullets post-list">
-	{#each posts as post}
-		<PostPreview {post} {external} />
+	{#each posts as post, index (post.slug)}
+		<PostPreview {post} {external} {index} />
 	{/each}
 </ul>
 

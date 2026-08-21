@@ -5,6 +5,7 @@ updated: 2024-07-23
 categories:
   - opinion
   - personal
+  - advice
 coverImage: fwiw.svg
 coverWidth: 1920
 coverHeight: 1080
