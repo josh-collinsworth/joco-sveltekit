@@ -137,7 +137,9 @@ I suspect a non-trivial number of users probably aren't even aware they _have_ a
 
 And that's all assuming the word "system" (or "OS" or "device" or whatever) is present to begin with; many three-state toggles simply show a little computer-like icon, which could quite easily compound the confusion.
 
-You and I know what that computer icon means, but would everyone you know immediately understand it? I suspect not.
+Bramus at one point asserts a tri-state toggle makes users think less (with a nod to [the Steve Krug book](https://sensible.com/dont-make-me-think/)), which, as I hope I've made clear by now, is very likely _not_ the case for a significant number of users. So that appeal to authority is misplaced, in my opinion.
+
+You and I know what that computer icon means, but would everyone you know immediately understand it, without thinking? I suspect not.
 
 
 ### "System" is only useful in highly specific situations
@@ -179,7 +181,7 @@ But most importantly: **this audience is likely to be heavily comprised of devel
 
 ### The Vale approach
 
-In his post, Bramus also points to [a tri-state implementation by Vale](https://vale.rocks/micros/20260810-0330) that he feels may be the ideal middle ground, but I can't say I agree it's worthy of consideration. Here's an embedded CodePen demo:
+In his post, Bramus also points to [a tri-state implementation by Vale](https://vale.rocks/micros/20260810-0330) (AKA Declan Chidlow) that he feels may be the ideal middle ground, but I can't say I agree it's worthy of consideration. Here's an embedded CodePen demo:
 
 <p class="codepen" data-height="300" data-pen-title="Light/Dark/System Theme Setting" data-version="2" data-default-tab="result" data-slug-hash="emgXqvQ" data-user="OuterVale" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/editor/OuterVale/pen/019fe98c-2d9b-71e4-849d-726543589635">
@@ -189,7 +191,7 @@ In his post, Bramus also points to [a tri-state implementation by Vale](https://
 
 It's certainly clever; it _appears_ to be a two-state toggle, but defaults to system preference by having _neither_ option selected. If you _do_ pick either theme, you can click it again to remove it, which causes the toggle to once more fall back to the system default.
 
-I get why that feels nice. If somebody wanted to use this on their personal website or something, I'd say "cool! Go for it!" It's neat.
+I get why that feels nice. If somebody wanted to use this on their personal website or a small app, I'd say go for it. It's neat.
 
 But I would personally advocate _against_ this approach at any meaningful scale.
 
@@ -197,9 +199,7 @@ My main issue with this implementation is: **there is no existing affordance lik
 
 It's effectively a three-state toggle masquerading as a two-state, with properties of both checkboxes and radio buttons intermingled. Neither its true nature nor the option to deselect the current theme is at all apparent or discoverable, except by trial. (It's ironic, then, that this approach is favored by some who critique the Verou approach over its lack of clarity and transparency.)
 
-I suppose you could argue the Vale toggle functions as a two-way toggle frictionlessly enough, with a nice secret third option some users might learn about. But to that, I would ask: what's the point? It's more complex, _and_ less clear.
-
-Bramus also asserts the tri-state toggle makes users think less (with a nod to Steve Krug), which, as I hope I've made clear by now, is very likely _not_ the case for a significant number of users. So that appeal to authority seems misplaced, in my opinion.
+I suppose you could argue the Vale toggle functions as a two-way toggle frictionlessly enough, with a nice secret third option some users might learn about and use. But to that, I would ask: what's the point? It's more complex _and_ less clear.
 
 
 ## So what's the right approach?
@@ -210,7 +210,7 @@ After all of this, we we circle back once again to the original post, because de
 
 - **If it's in a settings or account page, an explicit three-state toggle is probably better**. If a user is in the mindset of setting up an app how they prefer, or choosing for their account, the choice is warranted. In those cases, users are deciding what experience they want to have _in the future_, and not just at this specific moment.
 
-Further, I'd say any app or site a user might be looking at all day long, or multiple times a day—Slack or GitHub, for example—probably warrants a three-way toggle. Most sites and apps won't fall into this category, and some will.
+Further, I'd say any app or site a user might be looking at all day long, or multiple times a day—Slack or GitHub, for example—probably warrants a three-way toggle. Most sites and apps won't fall into this category, but some will.
 
 But here I'm mostly just repeating what's already been written quite clearly by Dr. Lea Verou.
 
