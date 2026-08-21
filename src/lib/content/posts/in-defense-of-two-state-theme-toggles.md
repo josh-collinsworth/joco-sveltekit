@@ -62,7 +62,7 @@ Almost all arguments _against_ the two-state toggle and in favor of a three-stat
 1. Favoring clarity over simplicity; or
 2. Accounting for users who might have a _dynamic_ system theme, which changes between light and dark mode based on time of day.
 
-The first point is valid, even if I personally believe the tradeoff is worthwhile in most cases, and with the caveats already mentioned above. It's possible some users might want that choice, and it's nice for them to have it if they do. Reasonable cases can be made both ways here, and—once again—context should affect the answer.
+The first point is valid, even if I personally believe the tradeoff is worthwhile in most cases (with the caveats already mentioned). It's possible some users might want that choice, and it's nice for them to have it if they do. Reasonable cases can be made both ways here, and—once again—context should affect the answer.
 
 Dynamic themes, however, seem like a bit of an extreme edge case to me.
 
@@ -70,9 +70,9 @@ I say "edge case" because, while we don't have data directly from Apple or other
 
 But remember: **the two-state approach isn't automatically an issue for those users**. A two-state toggle doesn't actually become a problem for users with a dynamic OS theme, _except_ in the following case:
 
-- Somebody with a dynamic theme enabled visits the site _and_ decides to change the site's theme manually
-- They come back to the site _later_, _after_ their dynamic theme has shifted between light and dark, ***and***
-- Upon that change, the theme is not what the user wants, and they want to change it again
+1. Somebody with a dynamic theme enabled visits the site _and_ decides to change the site's theme manually
+2. They come back to the site _later_, _after_ their dynamic theme has shifted between light and dark, ***and***
+3. Upon that change, the theme is not what the user wants, and they want to change it again
 
 That's a _lot_ of conditions to build a UI around, and a user has to get through _all_ of them before we've maybe got a problem. Even if we assume 10% of all users have a dynamic OS theme (which, again, is almost certainly an extremly high estimate), _some_ portion of those users are dropping off at every step above. What we're left with is quite likely very close to zero.
 
