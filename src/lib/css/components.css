@@ -33,12 +33,6 @@
 	display: inline;
 }
 
-.pull-quote em,
-.pull-quote i {
-	font-weight: bold;
-	font-style: normal;
-}
-
 .callout {
 	margin: var(--dotted-quarter-note) 0;
 	font-size: 1.2rem;
