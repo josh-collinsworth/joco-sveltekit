@@ -133,7 +133,7 @@ But still: this unavoidably indicates that _some number of users don't even know
 
 I suspect a non-trivial number of users probably aren't even aware they _have_ a default theme, simply because they've gotten so used to whatever is currently set on their device they forgot they ever set anything at all. They think things just look the way they look.
 
-**A "system" setting is an obstacle to those users**. To provide that option is to throw extra complexity at them, which could very well be confusing (_especially because, again: two of the three options look exactly alike, and a user might not understand what the difference is, or might even think one of the three is broken_).
+**A "system" setting is actively unhelpful to those users**. To provide that option is to throw extra complexity at them, which could very well be confusing (_especially because, again: two of the three options look exactly alike, and a user might not understand what the difference is, or might even think one of the three is broken_).
 
 And that's all assuming the word "system" (or "OS" or "device" or whatever) is present to begin with; many three-state toggles simply show a little computer-like icon, which could quite easily compound the confusion.
 
