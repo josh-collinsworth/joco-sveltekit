@@ -103,11 +103,11 @@ Which actually brings me to my next point…
 
 ### "System" is unclear to many users
 
-My main belief in all of this is: users might have a preference, but I severely doubt most users think even a tiny fraction as much about theming as we do, as developers.
-
 It's a common pitfall of human psychology that we imagine everyone thinks like we do. Finance people think everyone understands interest and investments; car people think everyone knows how to change their oil; developers think everyone obsesses over color themes.
 
-But I see little evidence of non-developer users caring nearly as much as we seem to.
+But I see little evidence of non-computer-nerd users caring nearly as much as we seem to. Many users have a preference, certainly, but I severely doubt most users think even a tiny fraction as much about theming as we do.
+
+Our [curse of knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge) makes us forget not everyone knows everything we do about color themes. Many users likely don't have any understanding of them at all.
 
 <CalloutPlusQuote>
 
@@ -125,24 +125,26 @@ Then I asked whether she's ever pressed the button on a site or app to change to
 
 She said no. Literally never.
 
+Basically: she knew light mode and dark mode both existed, and that was the entirety of her knowledge and experience on the topic, even as it pertained to her own preferences.
+
 Now, **I acknowledge this is only one singular data point**. I don't for a moment pretend this is meaningful research, or imagine my wife happens to represent the majority of any user base. Users undoubtedly exist on a wide spectrum between her and, well, nerds who think about this stuff enough to write blog posts about it. (_Ahem._)
 
 But still: this unavoidably indicates that _some number of users don't even know what their system theme is_—or might not even understand what "system" means in the first place!
 
 I suspect a non-trivial number of users probably aren't even aware they _have_ a default theme, simply because they've gotten so used to whatever is currently set on their device they forgot they ever set anything at all. They think things just look the way they look.
 
-**A "system" setting is likely meaningless to those users**. To provide that option is to throw extra complexity at them, which could very well be confusing (_especially because, again: two of the three options look exactly alike, and a user might not even understand what the difference is_).
+**A "system" setting is an obstacle to those users**. To provide that option is to throw extra complexity at them, which could very well be confusing (_especially because, again: two of the three options look exactly alike, and a user might not understand what the difference is, or might even think one of the three is broken_).
 
-And that's all assuming the word "system" (or "OS" or "device" or whatever) is present to begin with. Many three-state toggles simply show a little computer-like icon, which could quite easily compound the confusion.
+And that's all assuming the word "system" (or "OS" or "device" or whatever) is present to begin with; many three-state toggles simply show a little computer-like icon, which could quite easily compound the confusion.
 
-Further: because the "system" option is the default anyway, it's only important if somebody switches _away_ from it, _and then wants to switch back_. That's yet another multi-step logic flow, and probably not one that many ordinary users are regularly encountering.
-
-Personally: being a developer, and being acutely aware of this stuff, I have strong preferences and opinions on my theme. But to be honest, I can't remember a time when I've ever clicked the "system" option when I _wasn't_ just testing things out. I can't say it's ever been something I had to seek out or even _wanted_, operating a site or app as a user (probably mostly because, again: it's the default already). But of course, that's just me.
+You and I know what that computer icon means, but would everyone you know immediately understand it? I suspect not.
 
 
 ### "System" is only useful in highly specific situations
 
-In order for the "system" option to be useful, a minimum of _four_ conditions must first be met:
+It's worth noting that because the "system" option is the default anyway, it's only important if somebody switches _away_ from it, _and then wants to switch back_.
+
+So in order for the "system" option to be useful, a minimum of _four_ conditions must first be met:
 
 - The user must be aware of what their system theme is;
 - The user must _also_ understand what that little computer icon represents (or otherwise, the option must clearly be labeled);
@@ -151,7 +153,7 @@ In order for the "system" option to be useful, a minimum of _four_ conditions mu
 
 I suspect few users regularly, if ever, check all of those boxes.
 
-I further suspect most who do are themselves developers, or are otherwise deliberately running every setting through its paces just for the sake of testing.
+I further suspect most who do are either already highly knowledgeable in this area, or are just deliberately running every setting through its paces for the sake of testing. (Personally, testing scenarios are the only times I can ever remember clicking the "system" option.)
 
 Regardless, because people seem to skip over this point, I think it's worth reiterating once more: **this doesn't mean we should never use a three-state toggle**. They have their place, and context is important. I (and Dr. Verou, and others who favor two-state toggles) are completely in favor of three-state where it makes sense.
 
@@ -159,7 +161,7 @@ I just don't think that's in the main site UI.
 
 <CalloutPlusQuote>
 
-The charge to make tri-state the default is mostly in the name of accommodating an extreme minority of users that _probably doesn't even need accommodation in the first place_, at the expense of likely confusing or slowing down at least as many more.
+The push to make tri-state the default is mostly in the name of accommodating an extreme minority of users that _probably doesn't even need accommodation in the first place_, at the expense of likely confusing or slowing down at least as many more.
 
 </CalloutPlusQuote>
 
@@ -172,7 +174,7 @@ First: **people will always _say_ they want more options**. Psychologically, we 
 
 Secondly: Bramus hints there's an option he prefers, which could further skew the results; respondents might be compelled to guess what Bramus thinks the right answer is, rather than supply their own.
 
-But most importantly: **this audience is likely to be heavily comprised of developers**. The result is therefore bound to reflect the opinions of developers, rather than the preferences of users. (Not that devs should be excluded from the discussion, of course; they're users, too. But it means we're hearing almost entirely about users who either are themselves developers, or who have been fully invented in the imagination of a developer, rather than from a representative group of users.)
+But most importantly: **this audience is likely to be heavily comprised of developers**. The result is therefore bound to reflect the opinions of developers, rather than the preferences of users. It means we're probably hearing almost entirely from those with uncommonly deep knowledge of the topic (and uncommonly strong opinions on it), rather than from a representative group of users, whose own understanding and preferences could very well be different.
 
 
 ### The Vale approach
@@ -187,13 +189,15 @@ In his post, Bramus also points to [a tri-state implementation by Vale](https://
 
 It's certainly clever; it _appears_ to be a two-state toggle, but defaults to system preference by having _neither_ option selected. If you _do_ pick either theme, you can click it again to remove it, which causes the toggle to again fall back to the system default.
 
-If somebody wanted to use this on their personal website or something, I'd say fine. That's neat. But I would personally advocate _against_ this approach at any meaningful scale.
+I get why that feels nice. If somebody wanted to use this on their personal website or something, I'd say "cool! Go for it!" It's neat.
 
-My issue with this implementation is: **there is no existing affordance like this**. There's no common user control anywhere I'm aware of that matches this toggle or works like it; it's novel, invented behavior, which users are unlikely to have ever encountered. That's bound to be unavoidably confusing, regardless of how clever it might be or what feature it's actually manipulating under the hood.
+But I would personally advocate _against_ this approach at any meaningful scale.
 
-It's effectively a multi-state toggle masquerading as a two-state, with properties of both checkboxes and radio buttons intermingled. Neither its nature nor the option to deselect the current theme to revert to the system default is at all apparent or discoverable, except by trial. (It's ironic, then, that this approach is favored by some who critique the Verou approach over its lack of clarity and transparency.)
+My main issue with this implementation is: **there is no existing affordance like this**. There's no common user control anywhere I'm aware of that matches this toggle or works like it; it's novel, invented behavior, which users are unlikely to have ever encountered before. That's bound to be unavoidably confusing, regardless of how clever it might be or what feature it's actually manipulating under the hood.
 
-You could argue the Vale toggle functions as a two-way toggle frictionlessly enough, with a nice secret third option. But to that, I would then ask: what's the point?
+It's effectively a three-state toggle masquerading as a two-state, with properties of both checkboxes and radio buttons intermingled. Neither its true nature nor the option to deselect the current theme is at all apparent or discoverable, except by trial. (It's ironic, then, that this approach is favored by some who critique the Verou approach over its lack of clarity and transparency.)
+
+I suppose you could argue the Vale toggle functions as a two-way toggle frictionlessly enough, with a nice secret third option some users might learn about. But to that, I would ask: what's the point? It's more complex, _and_ less clear.
 
 Bramus also asserts the tri-state toggle makes users think less (with a nod to Steve Krug), which, as I hope I've made clear by now, is very likely _not_ the case for a significant number of users. So that appeal to authority seems misplaced, in my opinion.
 
