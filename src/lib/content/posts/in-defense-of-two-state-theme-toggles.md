@@ -1,7 +1,7 @@
 ---
 title: "In defense of two-state theme toggles"
 date: '2026-8-21'
-updated: '2026-8-21'
+updated: '2026-8-22'
 categories:
   - opinion
   - web
@@ -201,7 +201,9 @@ My main issue with this implementation is: **there is no existing affordance lik
 
 It's effectively a three-state toggle masquerading as a two-state, with properties of both checkboxes and radio buttons intermingled. Neither its true nature nor the option to deselect the current theme is at all apparent or discoverable, except by trial. (It's ironic, then, that this approach is favored by some who critique the Verou approach over its lack of clarity and transparency.)
 
-I suppose you could argue the Vale toggle functions as a two-way toggle frictionlessly enough, with a nice secret third option some users might learn about and use. But to that, I would ask: what's the point? It's more complex _and_ less clear.
+I suppose you could argue the Vale toggle functions as a two-way toggle frictionlessly enough, with a nice secret third option some users might learn about and use. But if you're actually concerned about the system option being easily accessible, it makes for a strange choice.
+
+\[Edited 8/22/2026\] [Sara Joy pointed out on Mastodon](https://front-end.social/@sarajw/117135267012668951) that one advantage of Vale's approach is: it makes what state you're switching _to_ abundantly clear. I agree that's one very nice thing about it, and about tri-state, for that matter. This also brings up the question of what _should_ be shown on a two-state toggle; the _current_ state, or the _new_ state the toggle will switch to if pressed, which I don't think I have a strong opinion on at this point, but which I suspect could spark an entirely new lively debate all on its own.
 
 
 ## So what's the right approach?
