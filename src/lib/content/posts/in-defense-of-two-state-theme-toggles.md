@@ -74,7 +74,7 @@ But remember: **the two-state approach isn't automatically an issue for those us
 2. They come back to the site _later_, _after_ their dynamic theme has shifted between light and dark, ***and***
 3. Upon that change, the theme is not what the user wants, and they want to change it again
 
-That's a _lot_ of conditions to build a UI around, and a user has to get through _all_ of them before we've maybe got a problem. Even if we assume 10% of all users have a dynamic OS theme (which, again, is almost certainly an extremly high estimate), _some_ portion of those users are dropping off at every step above. What we're left with is quite likely very close to zero.
+That's a _lot_ of conditions to build a UI around, and a user has to get through _all_ of them before we've maybe got a problem. Even if we assume 10% of all users have a dynamic OS theme (which, again, is almost certainly an extreme overestimate), _some_ portion of those users are dropping off at every step above. What we're left with is quite likely very close to zero.
 
 And _even in that case_, let's remember: the "problem" in question is literally _one extra click_, for whatever vanishingly tiny percentage of users remain at the end of all those logic gates.
 
