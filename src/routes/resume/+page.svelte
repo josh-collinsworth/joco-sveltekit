@@ -50,12 +50,13 @@
 		<h2 id="summary">Summary</h2>
 
 		<p>
-			Design engineer and frontend developer with a formal design background and
-			7+ years of experience building production web applications, design
-			systems, and brand identities. I work where code, design, and messaging
-			meet, distilling cross-disciplinary complexity into clarity. Specialized
-			in React, SvelteKit, TypeScript, and modern CSS, with a strong focus on
-			accessibility, animation, performance, and craft.
+			Design engineer and frontend developer with over a decade of experience,
+			including 7+ years building production web applications, design systems,
+			and brand identities full-time. Formally trained as a designer, I work
+			where code, design, and messaging meet, distilling cross-disciplinary
+			complexity into clarity. Specialized in React, SvelteKit, TypeScript,
+			Tailwind, and modern CSS, with a focus on accessibility, animation,
+			performance, and craft.
 		</p>
 
 		<hr />
@@ -71,6 +72,13 @@
 		</div>
 
 		<ul>
+			<li>
+				Led design and UI development for <a href="https://dactyl.dev">Dactyl</a
+				>, an AI-powered platform for building and publishing native apps from
+				the browser. Independently owned brand identity, landing page, and
+				extensive product UI/UX including the workspace dashboard, chat
+				experience, mobile app flows, onboarding, and billing.
+			</li>
 			<li>
 				Designed and implemented a full-scale redesign of <a
 					href="https://deno.com">Deno.com</a
@@ -301,7 +309,8 @@
 				for the Deno 2.0 launch (2024); led and implemented the comprehensive rebrand
 				of
 				<a href="https://deno.com/deploy">Deno Deploy</a>; complete brand and
-				appearance for <a href="https://jsr.io">JSR</a>
+				appearance for <a href="https://jsr.io">JSR</a> and
+				<a href="https://dactyl.dev">Dactyl</a>
 			</li>
 			<li>
 				Illustration work across <a href="https://deno.com">Deno.com</a> pages and
