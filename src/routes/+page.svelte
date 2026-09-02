@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
 	import ClawPatrolMark from '$lib/components/icons/ClawPatrolMark.svelte'
+	import DactylMark from '$lib/components/icons/DactylMark.svelte'
 	import DenoMarkCustom from '$lib/components/icons/DenoMarkCustom.svelte'
 	import DeployMark from '$lib/components/icons/DeployMark.svelte'
 	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
@@ -111,6 +112,13 @@
 			</a>
 			<a href="https://jsr.io" class="icon icon--jsr" aria-label="JSR">
 				<JsrLogo />
+			</a>
+			<a
+				href="https://dactyl.dev"
+				class="icon icon--dactyl"
+				aria-label="Dactyl"
+			>
+				<DactylMark />
 			</a>
 			<a
 				href="https://clawpatrol.dev"
@@ -334,16 +342,21 @@
 	.icons {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--dotted-quarter-note);
+		gap: clamp(var(--dotted-quarter-note), 20vw, var(--dotted-half-note));
 		align-items: center;
 		justify-content: center;
+		justify-items: center;
 		width: 100%;
-		max-width: 16rem;
 		margin-block-start: var(--half-note);
 
+		@media (min-width: 24rem) {
+			gap: var(--dotted-quarter-note);
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+
 		@media (min-width: 32rem) {
-			max-width: 32rem;
-			grid-template-columns: repeat(6, minmax(0, 1fr));
+			max-width: 36rem;
+			grid-template-columns: repeat(7, minmax(0, 1fr));
 			grid-column-start: 1;
 			grid-column: 1 / -1;
 			grid-row: 9 / 10;
@@ -353,7 +366,7 @@
 		@media (min-width: 96rem) {
 			gap: var(--dotted-quarter-note);
 			margin-block-start: var(--dotted-half-note);
-			max-width: 40rem;
+			max-width: 46rem;
 		}
 
 		.icon {
@@ -380,6 +393,10 @@
 			padding: 10%;
 			background-color: #f0f0f0;
 			border-radius: 25%;
+		}
+
+		.icon--dactyl {
+			padding: 10%;
 		}
 	}
 

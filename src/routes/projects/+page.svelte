@@ -234,7 +234,71 @@
 
 		<article>
 			<div class="sticky">
-				<h2>Recent design work</h2>
+				<h2>Dactyl</h2>
+
+				<p>
+					Interface design, landing page design, and branding for
+					<a href="https://dactyl.dev">Dactyl</a>, a platform for building real,
+					native iPhone, iPad, and Android apps using AI.
+				</p>
+				<p>
+					Apps run live in an in-browser simulator as the agent builds them, and
+					can be installed on real devices. Dactyl also helps with publishing to
+					TestFlight and the app stores.
+				</p>
+			</div>
+
+			<div class="design-gallery">
+				<figure>
+					<div class="logo-box">
+						<img
+							class="dark-only"
+							src="/images/projects/dactyl/dactyl-logo-dark.svg"
+							alt="Dactyl logo"
+						/>
+						<img
+							class="light-only"
+							src="/images/projects/dactyl/dactyl-logo.svg"
+							alt="Dactyl logo"
+						/>
+					</div>
+					<figcaption>
+						<a href="https://dactyl.dev">Dactyl</a> logo (2026)
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="/images/projects/dactyl-landing-2.webp"
+						alt="A screenshot of the Dactyl homepage, headlined 'Build real iPhone apps just by describing them,' with a prompt box mid-typing and a stack of iPhones running example apps, the front one showing a book tracker."
+						width="2557"
+						height="1605"
+						class="project-screenshot"
+					/>
+					<figcaption>
+						The <a href="https://dactyl.dev">Dactyl.dev</a> homepage
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="/images/projects/dactyl-dash.webp"
+						alt="A screenshot of the Dactyl builder, showing an agent conversation about refining a workout timer app on the left, and the finished app running live in an iPhone simulator on the right, with colorful run, recover, and sprint interval cards."
+						width="2555"
+						height="1567"
+						class="project-screenshot"
+					/>
+					<figcaption>
+						The Dactyl builder: an agent conversation on the left, and the
+						resulting app running live in the simulator
+					</figcaption>
+				</figure>
+			</div>
+		</article>
+
+		<article>
+			<div class="sticky">
+				<h2>Other recent design work</h2>
 
 				<p>
 					A selection of logos, illustrations, animations, interfaces, and other
