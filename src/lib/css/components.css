@@ -259,8 +259,7 @@ html:not(.light) .side-note {
 	background: var(--button-background);
 	touch-action: manipulation;
 
-	&:hover,
-	&:focus {
+	&:hover {
 		& svg {
 			path,
 			circle {
