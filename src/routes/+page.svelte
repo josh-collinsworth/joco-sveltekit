@@ -7,6 +7,7 @@
 	import HondoLogo from '$lib/components/icons/HondoLogo.svelte'
 	import JsrLogo from '$lib/components/icons/JsrLogo.svelte'
 	import QuinaLogo from '$lib/components/icons/QuinaLogo.svelte'
+	import TupoMark from '$lib/components/icons/TupoMark.svelte'
 
 	let { data } = $props()
 </script>
@@ -126,6 +127,9 @@
 				aria-label="Claw Patrol"
 			>
 				<ClawPatrolMark />
+			</a>
+			<a href="https://playtupo.com" class="icon icon--tupo" aria-label="Tupo">
+				<TupoMark />
 			</a>
 		</div>
 
@@ -340,33 +344,37 @@
 	}
 
 	.icons {
+		--left-space: calc(1rem + var(--sixteenth-note));
+
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: clamp(var(--dotted-quarter-note), 20vw, var(--dotted-half-note));
+		gap: clamp(var(--dotted-quarter-note), 16vw, var(--dotted-half-note));
 		align-items: center;
 		justify-content: center;
 		justify-items: center;
 		width: 100%;
+		max-width: calc(100% - 2rem);
 		margin-block-start: var(--half-note);
+		margin-inline: var(--left-space);
 
 		@media (min-width: 24rem) {
 			gap: var(--dotted-quarter-note);
 			grid-template-columns: repeat(4, minmax(0, 1fr));
+			max-width: min(22rem, calc(100% - var(--left-space)));
+			margin-inline-end: 0;
 		}
 
 		@media (min-width: 32rem) {
-			max-width: 36rem;
-			grid-template-columns: repeat(7, minmax(0, 1fr));
 			grid-column-start: 1;
 			grid-column: 1 / -1;
 			grid-row: 9 / 10;
-			gap: var(--quarter-note);
 		}
 
 		@media (min-width: 96rem) {
+			/* grid-template-columns: repeat(8, minmax(0, 1fr));
 			gap: var(--dotted-quarter-note);
 			margin-block-start: var(--dotted-half-note);
-			max-width: 46rem;
+			max-width: 46rem; */
 		}
 
 		.icon {

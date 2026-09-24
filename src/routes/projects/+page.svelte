@@ -21,7 +21,79 @@
 	<div class="projects compressed-content double-wide">
 		<article>
 			<div class="sticky">
-				<h2>Featured project: Quina</h2>
+				<h2>Tupo</h2>
+
+				<p>
+					My latest game project is a daily logic puzzle in the sudoku family,
+					built with SvelteKit. There are just three simple rules: every tile
+					gets both a number <em>and</em> a color; neither can repeat in a row
+					or column; and every number–color pairing must appear exactly
+					<em>once</em>.
+				</p>
+				<p>
+					Depending on the day/difficulty, Tupo’s board is either 4×4 or 5×5.
+					That might seem simple, but the two interwoven dimensions make a small
+					grid surprisingly challenging. Tupo includes weekly bonus puzzles,
+					light and dark themes, and a colorblind mode that pairs every color
+					with a shape.
+				</p>
+				<p>
+					Design, branding, and development are all mine. Tupo was released in
+					September 2026 as an installable progressive web app. (<em>
+						I decided to skip the app stores on this one
+					</em>.)
+					<!-- TODO: once the post is published, add:
+					<a href="/blog/tupo">Read about the making of Tupo</a>, or -->
+				</p>
+				<p><a href="https://playtupo.com">Play Tupo in your browser here</a></p>
+			</div>
+
+			<div class="image-gallery">
+				<img
+					src="/images/post_images/tupo/tupo-share-image.webp"
+					alt="A solved Tupo puzzle: a five-by-five grid of tiles, each with a number from 1 to 5 on one of five colors, with no number or color repeated in any row or column."
+					class="project-screenshot"
+					width="2560"
+					height="1600"
+					style="border: 1px solid #ccc6; border-radius: 8px"
+				/>
+				<img
+					src="/images/post_images/tupo/tupo-game-4x4-desktop.webp"
+					alt="A solved Tupo puzzle: a five-by-five grid of tiles, each with a number from 1 to 5 on one of five colors, with no number or color repeated in any row or column."
+					class="project-screenshot"
+					width="2560"
+					height="1600"
+					style="border: 1px solid #ccc6; border-radius: 8px"
+				/>
+				<div class="screenshots">
+					<img
+						src="/images/post_images/tupo/tupo-game-5x5-phone-colorblind.webp"
+						alt="A Tupo puzzle in progress on a phone, with colorblind mode on: each colored tile also carries a shape, such as a circle on red or a star on yellow. Some tiles show only a number, some only a color, and a keypad of numbers and colors sits below the board."
+						loading="lazy"
+						width="780"
+						height="1688"
+					/>
+					<img
+						src="/images/post_images/tupo/tupo-game-4x4-phone-dark.webp"
+						alt="A smaller, four-by-four Tupo puzzle in progress, shown in the dark theme."
+						loading="lazy"
+						width="780"
+						height="1688"
+					/>
+					<img
+						src="/images/post_images/tupo/tupo-win-phone.webp"
+						alt="Tupo’s results dialog, reading: Solved in 1:55, a perfect game, 1-day streak, with a button to copy the result as text."
+						loading="lazy"
+						width="780"
+						height="1688"
+					/>
+				</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="sticky">
+				<h2>Quina</h2>
 
 				<p>
 					Quina is a strategic, logical word game, built from scratch with Nuxt.
@@ -624,7 +696,8 @@
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 			gap: 1rem;
 
-			img {
+			/* The extra class lets these win over `.image-gallery img` below. */
+			.image-gallery & img {
 				margin: 0;
 				width: 100%;
 				max-width: unset;
