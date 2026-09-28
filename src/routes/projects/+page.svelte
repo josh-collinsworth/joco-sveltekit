@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Main from '$lib/components/Main.svelte'
+	import DactylLogoAnimated from '$lib/components/dactyl/DactylLogoAnimated.svelte'
 	import LoFiDino from '$lib/components/deno/runtime/LoFiDino.svelte'
 	import Dressup from '$lib/components/deno/runtime/dressup/Dressup.svelte'
 </script>
@@ -364,6 +365,15 @@
 						The Dactyl builder: an agent conversation on the left, and the
 						resulting app running live in the simulator
 					</figcaption>
+				</figure>
+
+				<figure>
+					<div
+						style="padding-inline: calc(50% - 4rem); padding-block-start:var(--dotted-half-note);"
+					>
+						<DactylLogoAnimated class="dactyl-loader" />
+					</div>
+					<figcaption>A loading animation using the Dactyl mark</figcaption>
 				</figure>
 			</div>
 		</article>
@@ -756,6 +766,11 @@
 					max-height: 4rem;
 					margin-inline: auto;
 				}
+			}
+
+			.logo-box :global(.dactyl-loader) {
+				height: 4rem;
+				width: auto;
 			}
 
 			.logo-box--canvas {
