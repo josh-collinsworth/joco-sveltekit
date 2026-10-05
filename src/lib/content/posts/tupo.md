@@ -6,10 +6,10 @@ categories:
   - personal
   - design
   - web
-coverImage: '/tupo/tupo-share-image.webp'
+coverImage: 'tupo/tupo-share-image.webp'
 coverWidth: 1200
 coverHeight: 630
-excerpt: "Tupo is my first new game in four years, and I'm superlatively excited to share it with the world."
+excerpt: "Tupo is my first new game in four years. I'm excited to share it with the world, and to talk about the process behind it."
 ---
 
 <script>
