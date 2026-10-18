@@ -65,8 +65,8 @@
 
 ## Productivity &amp; Utility
 
-- [1Password](https://1password.com):
-  The first thing I install on every new device. I’ve tried and liked other password software, but 1Password is just the most reliable cross-platform and -device in my experience.
+- [Proton Pass](https://proton.me/pass):
+  I did away with 1Password for my family after many otherwise happy years, due to some decisions and statements from their ownership which I firmly disagreed with. Proton is a solid replacement and the change has been mostly frictionless.
 
 - [Raycast](https://www.raycast.com/):
   the _second_ thing I install on every new Mac. (I previously used [Alfred](https://www.alfredapp.com/), which I still love and support—and even go back and forth between, as I [wrote about here](/blog/alfred-raycast).) The main features I love are clipboard history, snippet expansion, file search, and workflows to automate repetitive or tedious tasks. I love being able to just type a command to do it, without searching for anything or moving away from the current window. Wouldn’t ever want to work without it. As an added bonus, Raycast includes window management and emoji picking, which means you can forego some of the other apps previously on this list like [Rectangle](https://rectangleapp.com/).
