@@ -64,11 +64,19 @@
 		<h2 id="experience">Experience</h2>
 
 		<div class="subsection-header">
+			<h3 id="cloudflare">Cloudflare</h3>
+
+			<p>Design engineer</p>
+
+			<p>August 2023 – October 2026</p>
+		</div>
+
+		<div class="subsection-header">
 			<h3 id="deno"><a href="https://deno.com/">Deno</a></h3>
 
 			<p>Frontend Engineer/Design engineer</p>
 
-			<p>August 2023 – present</p>
+			<p>August 2023 – October 2026</p>
 		</div>
 
 		<ul>
