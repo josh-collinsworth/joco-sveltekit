@@ -44,7 +44,7 @@
 		<h2>Where I do it</h2>
 		<p class="big-copy" style="max-width: 32em;">
 			I live in the Kansas City area, and currently work as a design engineer
-			for <a href="https://deno.land">Deno</a>.
+			for <a href="https://cloudflare.com">Cloudflare</a>.
 		</p>
 
 		<h2>Why I do it</h2>

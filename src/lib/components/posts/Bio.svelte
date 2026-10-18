@@ -12,7 +12,7 @@
 			<p class="about">
 				I'm Josh Collinsworth, a frontend developer, designer, teacher, and
 				writer. I currently live in Kansas City, and work for <a
-					href="https://deno.land">Deno</a
+					href="https://cloudflare.com">Cloudflare</a
 				> as a design engineer.
 			</p>
 			<ul class="link-list">

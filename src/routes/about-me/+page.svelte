@@ -23,24 +23,34 @@
 		<h2>Who I am and what I do</h2>
 
 		<p>
-			I’m currently a Design Engineer at <a href="https://deno.land">Deno</a>,
-			where my work touches design, development, marketing, and communications.
-			I’ve led and designed full rebrands for Deno itself,
-			<a href="https://deno.com/deploy">Deno Deploy</a>, and
-			<a href="https://jsr.io">JSR</a>, though my main focus has been frontend
-			development and design, bringing unified design systems and components to
-			Deno’s products, documentation, and web presence.
-		</p>
-
-		<p>
 			In general, I’m more of a coder who designs than a designer who codes, but
 			my degree is in graphic design, and I’m proficient in both roles. I also
 			bring a background in marketing, teaching, and technical customer support
 			to my work. Ultimately, the common thread in what I do is effective
-			communication.
+			communication. I love living in the gap between disciplines and speaking
+			both languages to pull them together.
+		</p>
+
+		<p>
+			I’m currently a Design Engineer at <a href="https://cloudflare.com"
+				>Cloudflare</a
+			>.
 		</p>
 
 		<h3>Prior professional experience</h3>
+		<p>
+			Previously, I worked for <a href="https://deno.land">Deno</a> for three
+			years, working across design, development, marketing, and communications.
+			I led and designed full (re)brands for Deno itself, as well as several
+			Deno products and open-source projects, including
+			<a href="https://deno.com/deploy">Deno Deploy</a>,
+			<a href="https://jsr.io">JSR</a>,
+			<a href="https://clawpatrol.dev">Claw Patrol</a>,
+			<a href="https://dactyl.dev">Dactyl</a>, and others. However, my main
+			focus was on frontend development and design, bringing unified design
+			systems and components to Deno’s products, documentation, and web
+			presence.
+		</p>
 		<p>
 			Prior to Deno, I spent a couple of years as a senior frontend developer
 			(L6) at

@@ -175,9 +175,8 @@ However: the tile colors remain the same in both modes, which I felt was importa
 I also felt it was important to include a colorblind mode (I use it; I have color vision deficiency), and to make it not just _work well_, but _look good_. The stylized shapes, I think, handle that job well.
 
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%;">
-<img src="/images/post_images/tupo/comparison-light.webp" alt="" />
-<img src="/images/post_images/tupo/comparison-dark.webp" alt="" />
-
+  <img src="/images/post_images/tupo/comparison-light.webp" alt="" />
+  <img src="/images/post_images/tupo/comparison-dark.webp" alt="" />
 </div>
 
 
