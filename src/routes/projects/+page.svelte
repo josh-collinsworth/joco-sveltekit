@@ -43,10 +43,11 @@
 					September 2026 as an installable progressive web app. (<em>
 						I decided to skip the app stores on this one
 					</em>.)
-					<!-- TODO: once the post is published, add:
-					<a href="/blog/tupo">Read about the making of Tupo</a>, or -->
 				</p>
-				<p><a href="https://playtupo.com">Play Tupo in your browser here</a></p>
+				<p>
+					<a href="/blog/tupo">Read about the making of Tupo</a>, or
+					<a href="https://playtupo.com">play Tupo in your browser here</a>
+				</p>
 			</div>
 
 			<div class="image-gallery">

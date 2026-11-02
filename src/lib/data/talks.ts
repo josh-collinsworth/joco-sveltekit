@@ -91,6 +91,13 @@ const talks: Talk[] = [
 		event: 'ShopTalk Show podcast',
 		year: 2024,
 		month: 2
+	},
+	{
+		title: 'How to Build a Great Puzzle Game with Josh Collinsworth',
+		link: 'https://shoptalkshow.com/739/',
+		event: 'ShopTalk Show podcast',
+		year: 2026,
+		month: 11
 	}
 ]
 

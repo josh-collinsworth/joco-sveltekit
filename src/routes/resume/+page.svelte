@@ -66,15 +66,15 @@
 		<div class="subsection-header">
 			<h3 id="cloudflare">Cloudflare</h3>
 
-			<p>Design engineer</p>
+			<p>Design Engineer</p>
 
-			<p>August 2023 – October 2026</p>
+			<p>October 2026 – present</p>
 		</div>
 
 		<div class="subsection-header">
 			<h3 id="deno"><a href="https://deno.com/">Deno</a></h3>
 
-			<p>Frontend Engineer/Design engineer</p>
+			<p>Frontend Engineer/Design Engineer</p>
 
 			<p>August 2023 – October 2026</p>
 		</div>
@@ -101,12 +101,8 @@
 			</li>
 			<li>
 				Complete redesign of <a href="https://deno.com/deploy">Deno Deploy</a>,
-				including full rebrand with app and marketing rebuild
-			</li>
-			<li>
-				Built new product features and refined existing features in <a
-					href="https://deno.com/deploy">Deno Deploy</a
-				>
+				including full rebrand with app and marketing rebuild, plus new product
+				features and refinements to existing ones
 			</li>
 			<li>
 				Led development and design across Deno sites and products, including <a
@@ -168,7 +164,7 @@
 
 		<ul>
 			<li>
-				Mentored junior engineers on front-end best practices; created and
+				Mentored junior engineers on frontend best practices; created and
 				delivered training on web accessibility covering assistive technologies,
 				semantic HTML, ARIA, and WCAG
 			</li>
@@ -234,8 +230,8 @@
 			</li>
 			<li>
 				Built a Chrome extension adding productivity features to Flywheel’s
-				admin panel, saving agents an estimated 15–20 minutes per day; still in
-				use by all support agents
+				admin panel, saving agents an estimated 15–20 minutes per day; adopted
+				by all support agents
 			</li>
 			<li>Developed and taught a “WordPress 101” course to all new hires</li>
 		</ul>
@@ -248,7 +244,7 @@
 				>
 			</h3>
 
-			<p>WordPress course instructor</p>
+			<p>WordPress Course Instructor</p>
 
 			<p>September 2015 – July 2018</p>
 		</div>
@@ -266,7 +262,7 @@
 				<a href="https://dday.com">David Day &amp; Associates</a>
 			</h3>
 
-			<p>Graphic designer/WordPress developer</p>
+			<p>Graphic Designer/WordPress Developer</p>
 
 			<p>2014–2015</p>
 		</div>
@@ -317,18 +313,19 @@
 				for the Deno 2.0 launch (2024); led and implemented the comprehensive rebrand
 				of
 				<a href="https://deno.com/deploy">Deno Deploy</a>; complete brand and
-				appearance for <a href="https://jsr.io">JSR</a> and
-				<a href="https://dactyl.dev">Dactyl</a>
+				appearance for <a href="https://jsr.io">JSR</a>,
+				<a href="https://dactyl.dev">Dactyl</a>, and
+				<a href="https://clawpatrol.dev">Claw Patrol</a>
 			</li>
 			<li>
 				Illustration work across <a href="https://deno.com">Deno.com</a> pages and
 				properties, including animated/interactive hero graphics
 			</li>
 			<li>
-				Original brand, UI/UX, and game design for <a href="https://quina.app"
-					>Quina</a
-				>
-				and <a href="https://playhondo.com">Hondo</a>
+				Original brand, UI/UX, and game design for <a
+					href="https://playtupo.com">Tupo</a
+				>, <a href="https://quina.app">Quina</a>, and
+				<a href="https://playhondo.com">Hondo</a>
 			</li>
 			<li>
 				Led design for various microsites and efforts such as <a
@@ -352,16 +349,16 @@
 				<a
 					href="https://getflywheel.com/layout/leveling-up-flywheels-retreat-website/"
 					>The Layout</a
-				>.
+				>
 			</li>
 			<li>
-				Podcast guest on <a href="https://shoptalkshow.com/603/"
+				Podcast guest on <a href="https://shoptalkshow.com/739/"
 					>ShopTalk Show</a
 				>, <a href="https://changelog.com/jsparty/244">JS Party</a>,
 				<a
 					href="https://www.whiskeywebandwhatnot.fm/debating-react-fonts-and-fatherhood-with-josh-collinsworth/"
 					>Whiskey Web and Whatnot</a
-				>, and others. Speaker at multiple WordCamps and BarCamp Omaha.
+				>, and others. Speaker at multiple WordCamps and BarCamp Omaha
 			</li>
 		</ul>
 
@@ -371,16 +368,15 @@
 
 		<ul>
 			<li>
-				Specialized in Svelte/SvelteKit, React/Preact, TypeScript, CSS/Sass,
-				design systems, accessibility, web animation, SVG, and performance
-				optimization.
+				Specialized in React/Preact, Svelte/SvelteKit, TypeScript, Tailwind,
+				CSS/Sass, design systems, accessibility, web animation, SVG, and
+				performance optimization
 			</li>
 			<li>
-				Also experienced with Vue, Tailwind, Deno, Fresh, Node, Knockout,
-				jQuery, JS testing (Vitest, Karma, Mocha, Chai, framework utility
-				libraries), PHP, MySQL, Ruby on Rails, Laravel, Docker, AWS, RegEx,
-				NGINX, (Varnish) caching, Redux, Storybook, WordPress, SVG, git/GitHub,
-				npm, Jira, CLIs, DNS.
+				Also experienced with Vue, Deno, Fresh, Node, jQuery, JS testing
+				(Vitest, framework utility libraries), PHP, MySQL, Ruby on Rails,
+				Laravel, Docker, AWS, RegEx, NGINX, caching, Redux, Storybook,
+				WordPress, git/GitHub, npm, Jira, CLIs, DNS
 			</li>
 		</ul>
 
