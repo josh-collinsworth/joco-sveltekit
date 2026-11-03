@@ -26,27 +26,32 @@
 
 				<p>
 					My latest game project is a daily logic puzzle in the sudoku family,
-					built with SvelteKit. There are just three simple rules: every tile
-					gets both a number <em>and</em> a color; neither can repeat in a row
-					or column; and every number–color pairing must appear exactly
+					built with <a href="https://svelte.dev/docs/kit/introduction"
+						>SvelteKit</a
+					>. There are just three simple rules: every tile gets both a number
+					<em>and</em> a color; neither can repeat in a row or column; and every
+					number–color pairing must appear exactly
 					<em>once</em>.
 				</p>
 				<p>
 					Depending on the day/difficulty, Tupo’s board is either 4×4 or 5×5.
-					That might seem simple, but the two interwoven dimensions make a small
-					grid surprisingly challenging. Tupo includes weekly bonus puzzles,
-					light and dark themes, and a colorblind mode that pairs every color
-					with a shape.
+					That might seem simple, but the two interwoven layers make a small
+					grid surprisingly challenging.
 				</p>
 				<p>
 					Design, branding, and development are all mine. Tupo was released in
 					September 2026 as an installable progressive web app. (<em>
 						I decided to skip the app stores on this one
-					</em>.)
+					</em>.) The accounts system uses a
+					<a href="https://pocketbase.io/">PocketBase</a> backend, and purchases
+					flow through <a href="https://www.paddle.com/">Paddle</a>.
 				</p>
 				<p>
-					<a href="/blog/tupo">Read about the making of Tupo</a>, or
-					<a href="https://playtupo.com">play Tupo in your browser here</a>
+					<a href="/blog/tupo">Read about the making of Tupo</a>,
+					<a href="https://shoptalkshow.com/739/"
+						>listen to the ShopTalk Show episode about it</a
+					>, or
+					<a href="https://playtupo.com">play Tupo in your browser here</a>.
 				</p>
 			</div>
 
