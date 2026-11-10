@@ -170,6 +170,13 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
 
+# Joshternet declaration (https://joshternet.org/join/); no file
+# extension, so it needs an explicit JSON content type
+[[headers]]
+  for = "/.well-known/josh"
+  [headers.values]
+    Content-Type = "application/json"
+
 [[headers]]
   for = "/*"
   [headers.values]
